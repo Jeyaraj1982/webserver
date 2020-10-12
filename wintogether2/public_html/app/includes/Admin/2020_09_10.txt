@@ -1,0 +1,1 @@
+[2020-09-10 15:17:25]	select * from _tbl_master_districtnames where StateID='2'

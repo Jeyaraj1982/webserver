@@ -1,0 +1,149 @@
+Return-Path: <campaign-icicibanksmartech-54938-236358-33945954-stephen=wintogether2.com@delivery.custcomm.icicibank.com>
+Delivered-To: stephen@wintogether2.com
+Received: from 119-18-48-204.webhostbox.net
+	by 119-18-48-204.webhostbox.net with LMTP
+	id OQpJMC0QgF/9fQAAFI3O4Q
+	(envelope-from <campaign-icicibanksmartech-54938-236358-33945954-stephen=wintogether2.com@delivery.custcomm.icicibank.com>)
+	for <stephen@wintogether2.com>; Fri, 09 Oct 2020 12:54:29 +0530
+Return-path: <campaign-icicibanksmartech-54938-236358-33945954-stephen=wintogether2.com@delivery.custcomm.icicibank.com>
+Envelope-to: stephen@wintogether2.com
+Delivery-date: Fri, 09 Oct 2020 12:54:29 +0530
+Received: from ncmail23.custcomm.icicibank.com ([175.158.64.23]:60161)
+	by 119-18-48-204.webhostbox.net with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.93)
+	(envelope-from <campaign-icicibanksmartech-54938-236358-33945954-stephen=wintogether2.com@delivery.custcomm.icicibank.com>)
+	id 1kQmlM-0008NZ-Ht
+	for stephen@wintogether2.com; Fri, 09 Oct 2020 12:54:29 +0530
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=fnc; d=custcomm.icicibank.com;
+ h=To:From:Reply-To:Subject:Message-ID:List-Unsubscribe:MIME-Version:Content-Type:Date;
+ bh=Qsh8QMHO0WpaNuyy/kVchANKLF0=;
+ b=P/Orrf3ry259/8alMSPzuA/EkiMFx7qaL1EG1W0nj+GEZmr4l++LDY5M1995Lh2l+zR4Mhi5aluX
+   BNv7RPOmN5Plobkzbr6AHIl1G2JHdRgFGA2HsYzi3ViPi+ZZvi2amrpqAV71EnOgcE5nrf4+0yxo
+   6yTVGCQqvDJYMyOLdRo=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=fnc; d=icicibank.com;
+ h=To:From:Reply-To:Subject:Message-ID:List-Unsubscribe:MIME-Version:Content-Type:Date;
+ bh=Qsh8QMHO0WpaNuyy/kVchANKLF0=;
+ b=kyEjzD9XNeR9NKnxEUAXhTl8Y2X1aRBlRqsgbrZJsbn51GEhiSNQrxkCwNxbaSm1XVdQHMKE83Qq
+   wjfwttr0rrj/5Nd6TcQaoaFayDZC8lWN/q9NUVc/nJ8TRIHp6OwUqmJyOLphgXYIX/DMa8VAAkJo
+   N//JTiaxsnxdjHQTDn8=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=fnc; d=custcomm.icicibank.com;
+ b=dN97w0UIYhTR9S3jvah+3MqSe8TtohiOJaRcQojltkDSDGF6kQ9BKpFjzlBew0gg8Czar5tqsOHY
+   8nl2BMNlTEaxnu1S6r9QJOS+s6MqKVkNBowFtlC/MEKFEK/HcMEq5oJgDn8dHuJJJ/Jjj4BCOT26
+   Gs4Vx3ljlm9ckaYrwNU=;
+To: stephen@wintogether2.com
+From: "ICICI Bank" <services@custcomm.icicibank.com>
+Reply-To: "ICICI Bank" <services@custcomm.icicibank.com>
+Subject: 5% TCS on LRS transactions
+Message-ID: <513892949233945954@mailmx1.forcemail.in>
+X-Abuse-Reports-To: abuse@bosemail.com
+List-Unsubscribe: <mailto:icicibanksmartech-54938-236358-33945954-cf30a1de945d335cfeb2f04eb9ddf569@usub.forcemail.in?subject=Unsubscribe>, <http://lnk.custmail.icicibank.com/jtrack?d=0&id=K04AVQEHDQAFBkkIAFcBVVUCXBpVXF0eV0ZKEVoHC14aCAdcUg1SAlZYHFpWWkQ=UlZcDARfUFVIR0NQRQpUXCIUW14RXFVdQF9TRwoeBl0O&client=54938&c=>
+Feedback-ID: 236358:54938:20201009115208:nczc
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_6b99be216c6a74806b7c962953bae889"
+Date: Fri, 9 Oct 2020 12:54:24 +0530
+X-Spam-Status: No, score=-0.2
+X-Spam-Score: -1
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "119-18-48-204.webhostbox.net",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  ICICI Bank Online 5% TCS on LRS transactions Dear Customer,
+    
+ Content analysis details:   (-0.2 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: icicibank.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or
+                             identical to background
+  0.0 HTML_IMAGE_RATIO_02    BODY: HTML has a low ratio of text to image
+                             area
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.0 LOTS_OF_MONEY          Huge... sums of money
+  0.0 T_REMOTE_IMAGE         Message contains an external image
+X-Spam-Flag: NO
+
+
+
+
+--b1_6b99be216c6a74806b7c962953bae889
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+
+ICICI Bank Online 
+
+ 5% TCS on LRS transactions 
+
+ Dear Customer, 
+ 
+ As per the Union Budget 2020, a 5% Tax Collection at Source (TCS) is
+applicable for Resident Individuals on ICICI Bank Debit Card, Forex
+Prepaid Card, Outward Remittances and other Forex instruments
+totalling to Rs 7 lakh or more in a financial year, under the
+Liberalised Remittances Scheme (LRS). This change came into
+effect from Oct 01, 2020. As per the RBI guidelines, you can remit up
+to USD 2,50,000 in a financial year under LRS. 
+ 
+ For all the transactions falling under LRS, TCS shall be applicable
+on the amount in excess of 7 lakh in a financial year. Below example
+is for your reference: 
+
+ Once the threshold is crossed, TCS would be applicable on the
+incremental amount. The credit of tax collected will continue to the
+buyer. 
+ 
+ Sincerely, 
+ 
+ ICICI Bank Ltd. 
+
+ <http://lnk.custmail.icicibank.com/jtrack?d=0&id=UlZcDARfUFVIR0NQRQpUXCIUW14RXFVdQF9TRwoeBl0O&client=54938>
+ <http://lnk.custmail.icicibank.com/jtrack?d=0&id=UlZcDARfUFVIR0NQRQpUXCIUW14RXFVdQF9TRwoeBl0O&client=54938>
+ <http://lnk.custmail.icicibank.com/jtrack?d=0&id=UlZcDARfUFVIR0NQRQpUXCIUW14RXFVdQF9TRwoeBl0O&client=54938>
+ <http://lnk.custmail.icicibank.com/jtrack?d=0&id=UlZcDARfUFVIR0NQRQpUXCIUW14RXFVdQF9TRwoeBl0O&client=54938>
+
+ Click here
+<http://lnk.custmail.icicibank.com/jtrack?d=0&id=UlZcDARfUFVIR0NQRQpUXCIUW14RXFVdQF9TRwoeBl0O&client=54938>
+ for disclaimer 
+
+
+
+--b1_6b99be216c6a74806b7c962953bae889
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" /> <title>ICICI Bank Online</title> <style type="text/css"> html { width: 100%; margin: 0; padding: 0; } ::-moz-selection { background: #b40202; color: #fff } ::selection { background: #b40202; color: #fff } body { background: #ffffff; margin: 0;
+padding: 0 } .ExternalClass, .ReadMsgBody { width: 100%; background-color: #ffffff } a { color: #b40202; text-decoration: underline; font-style: normal } a:hover { color: #b40202; text-decoration: none; font-style: normal } div, p { margin: 0!important } @media only screen and (max-width: 650px) { table table, td[class=main_body_width] { width: 100%!important } table[class=mobile_width] { width: 650px!important; margin: 0 auto!important } table[class=featured_area] { width: 650px!important; margin: 0 auto!important } img[class=mobile_img_width] { width: 100%!important; height: auto!important }
+table[class=hide_content], td[class=hide_content] { display: none!important } td[class=center] { text-align: center!important } table[class=main_body] { width: 400px!important; margin-left: 20px!important; margin-right: 20px!important } } @media only screen and (max-width: 479px) { table table, td[class=main_body_width] { width: 100%!important } table[class=mobile_width] { width: 324px!important; margin: 0 auto!important } table[class=featured_area] { width: 290px!important; margin: 0 auto!important } img[class=mobile_img_width] { width: 100%!important; height: auto!important }
+table[class=hide_content], td[class=hide_content] { display: none!important } td[class=center] { text-align: left!important; padding-left: 10px; } table[class=main_body] { width: 240px!important; margin-left: 20px!important; margin-right: 20px!important } td[class=maniabox] { padding-top: 10px; !important } table[class=container], td[class=DDSresponsiveCell] { width: 100% !important; } td[class=DDSresponsiveCell] { display: block !important; } } </style></head><body style="background:#f1f1f1"> <!-- START MAIN BANNER BODY --> <table width="100%" bgcolor="#f1f1f1" align="center" cellpadding="0"
+cellspacing="0" border="0"> <tbody> <tr> <td width="100%"> <!-- START OF HEADER BLOCK--> <table width="100%" align="center" bgcolor="#f1f1f1" cellpadding="0" cellspacing="0" border="0" style="font-size:0px;"> <tbody> <tr> <td width="100%"> <table bgcolor="#ffffff" class="mobile_width" width="650" align="center" cellpadding="0" cellspacing="0" border="0"> <tbody> <tr> <td width="100%" height="25"> <table width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td style="border-left:#e56e2e solid 1px; border-right:#e56e2e solid 1px; font-size:0px;"> <table width="100%" border="0"
+align="center" cellpadding="0" cellspacing="0" class="mobile_width"> <tbody> <!-- START MAIN BANNER IMAGE --> <tr> <td width="100%" align="center" valign="bottom"> <table align="center" cellpadding="0" cellspacing="0" border="0" class="mobile_width" style="font-size:0;"> <tbody> <tr> <td width="100%" align="center" valign="bottom"> <img src="https://www.icicibank.com/campaigns/mailers/october-2020/TCS-LRS-mailer/GB/images/toplogo.gif" width="648" height="100" class="mobile_img_width" style="display:block;" /> </td> </tr> <tr> <td width="100%" align="center" valign="bottom"> <img
+src="https://www.icicibank.com/campaigns/mailers/october-2020/TCS-LRS-mailer/GB/images/topimg.jpg" alt="main_banner" width="648" height="392" border="0" class="mobile_img_width" editable="true" label="image" style="display:block;" /> </td> </tr> <tr> <td height="5" align="center" bgcolor="#e77817" style="padding:10px;"> <font face="Zurich BT, Zurich Cn BT, Arial" color="#ffffff" style="font-size:28px"><strong>5% TCS on LRS transactions</strong></font> </td> </tr> </tbody> </table> </td> </tr> <tr> <td align="center" style="padding:20px;"> <table width="580" border="0" align="center"
+cellpadding="0" cellspacing="0"> <tr> <td align="left" style="text-align:justify;"> <font face="Zurich BT, Zurich Cn BT, Arial" color="#000000" style="font-size:15px"> Dear Customer, <br /> <br /> As per the Union Budget 2020, a 5% <strong style="color:#a41c2b;">Tax Collection at Source (TCS)</strong> is applicable for Resident Individuals on ICICI Bank Debit Card, Forex Prepaid Card, Outward Remittances and other Forex instruments totalling to Rs 7 lakh or more in a financial year, under the <strong style="color:#a41c2b;">Liberalised Remittances Scheme (LRS)</strong>. This change came into
+effect from Oct 01, 2020. As per the RBI guidelines, you can remit up to USD 2,50,000 in a financial year under LRS. <br /> <br /> For all the transactions falling under LRS, TCS shall be applicable on the amount in excess of <img src="https://www.icicibank.com/campaigns/mailers/october-2020/TCS-LRS-mailer/GB/images/rupee.png" width="9" height="11" /> 7 lakh in a financial year. Below example is for your reference: </font> </td> </tr> <tr> <td height="12" align="left"></td> </tr> <tr> <td height="25" align="left"> <img
+src="https://www.icicibank.com/campaigns/mailers/october-2020/TCS-LRS-mailer/GB/images/middlimg.gif" width="580" height="293" class="mobile_img_width" /> </td> </tr> <tr> <td height="12" align="left"></td> </tr> <tr> <td align="left"> <font face="Zurich BT, Zurich Cn BT, Arial" color="#000000" style="font-size:15px"> Once the threshold is crossed, TCS would be applicable on the incremental amount. The credit of tax collected will continue to the buyer. <br /> <br /> Sincerely, <br /> <br /> ICICI Bank Ltd. </font> </td> </tr> </table> </td> </tr> <tr> <td align="center" bgcolor="#e77817">
+<table border="0" align="right" cellpadding="0" cellspacing="0"> <tr> <td width="50" height="35" align="center" style="border-right:#ffffff solid 1px;"> <a href='http://lnk.custmail.icicibank.com/jtrack?d=0&id=K04AVQEHDAEBD0kIAFcBVVUCXBpVXF0eV0ZKEVoHC14aCAdcUg1SAlZYHFpWWkQ=UlZcDARfUFVIR0NQRQpUXCIUW14RXFVdQF9TRwoeBl0O&client=54938'  target="_blank"> <img src="https://www.icicibank.com/campaigns/mailers/october-2020/TCS-LRS-mailer/GB/images/icon-facebook.jpg" alt="" width="24" height="24" border="0" /> </a> </td> <td width="50" height="35" align="center" style="border-right:#ffffff solid 1px;"> <a
+href='http://lnk.custmail.icicibank.com/jtrack?d=0&id=K04AVQEHDAEABkkIAFcBVVUCXBpVXF0eV0ZKEVoHC14aCAdcUg1SAlZYHFpWWkQ=UlZcDARfUFVIR0NQRQpUXCIUW14RXFVdQF9TRwoeBl0O&client=54938'  target="_blank"> <img src="https://www.icicibank.com/campaigns/mailers/october-2020/TCS-LRS-mailer/GB/images/icon-twitter.jpg" alt="" width="24" height="24" border="0" /> </a> </td> <td width="50" height="35" align="center" style="border-right:#ffffff solid 1px;"> <a href='http://lnk.custmail.icicibank.com/jtrack?d=0&id=K04AVQEHDAEAB0kIAFcBVVUCXBpVXF0eV0ZKEVoHC14aCAdcUg1SAlZYHFpWWkQ=UlZcDARfUFVIR0NQRQpUXCIUW14RXFVdQF9TRwoeBl0O&client=54938'  target="_blank"> <img
+src="https://www.icicibank.com/campaigns/mailers/october-2020/TCS-LRS-mailer/GB/images/icon-youtube.png" alt=""
+width="25" height="24" border="0" /> </a> </td> <td width="50" height="35" align="center"> <a href='http://lnk.custmail.icicibank.com/jtrack?d=0&id=K04AVQEHDAEABEkIAFcBVVUCXBpVXF0eV0ZKEVoHC14aCAdcUg1SAlZYHFpWWkQ=UlZcDARfUFVIR0NQRQpUXCIUW14RXFVdQF9TRwoeBl0O&client=54938'  target="_blank"> <img src="https://www.icicibank.com/campaigns/mailers/october-2020/TCS-LRS-mailer/GB/images/icon-linkdin.jpg" alt="" width="24" height="24" border="0" /> </a> </td> </tr> </table> </td> </tr> <!-- END MAIN BANNER IMAGE --> </tbody> </table> </td> </tr> </table> </td> </tr> </tbody> </table> <table class="mobile_width" align="center"
+width="650" cellpadding="0" cellspacing="0" border="0"
+bgcolor="#e77817"> <tr bgcolor="#ffffff"> <td align="right" style="padding:5px 10px; text-align:justify;"> <font face="Zurich BT, Zurich Cn BT, Arial" color="#000000" style="font-size:10px;"><a href='http://lnk.custmail.icicibank.com/jtrack?d=0&id=K04AVQEHDAEABUkIAFcBVVUCXBpVXF0eV0ZKEVoHC14aCAdcUg1SAlZYHFpWWkQ=UlZcDARfUFVIR0NQRQpUXCIUW14RXFVdQF9TRwoeBl0O&client=54938'  target="_blank">Click here</a> for disclaimer</font> </td> </tr> </table> </td> </tr> </tbody> </table> </td> </tr> </tbody> </table> <div itemscope itemtype="http://schema.org/Organization"> <meta itemprop="name" content="Gmail" /> <meta itemprop="logo"
+content="https://www.icicibank.com/campaigns/mailers/june-2020/Consumer-Finance-Yoursinsecond-General/gb/images/logo.jpg" /></div><br/><div></div><img border="0" src="http://lnk.custmail.icicibank.com/jtrack?d=0&m=236358&eu=UwIDVgoGDQ0CAklLRABCCwNZJBFQXEJfU1ZNDVIUUBxXDgk=&u=cf30a1de945d335cfeb2f04eb9ddf569&client=54938&c=0000" ></body></html>
+
+
+
+--b1_6b99be216c6a74806b7c962953bae889--
+

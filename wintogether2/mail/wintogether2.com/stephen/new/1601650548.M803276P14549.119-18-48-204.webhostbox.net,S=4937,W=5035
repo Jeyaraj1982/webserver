@@ -1,0 +1,98 @@
+Return-Path: <alert@icicibank.com>
+Delivered-To: STEPHEN@WINTOGETHER2.COM
+Received: from 119-18-48-204.webhostbox.net
+	by 119-18-48-204.webhostbox.net with LMTP
+	id WZ/0LHQ/d1/VOAAAFI3O4Q
+	(envelope-from <alert@icicibank.com>)
+	for <STEPHEN@WINTOGETHER2.COM>; Fri, 02 Oct 2020 20:25:48 +0530
+Return-path: <alert@icicibank.com>
+Envelope-to: STEPHEN@WINTOGETHER2.COM
+Delivery-date: Fri, 02 Oct 2020 20:25:48 +0530
+Received: from mlxmail4.icicibank.com ([203.27.235.123]:48225 helo=mlxtrend4.icicibank.com)
+	by 119-18-48-204.webhostbox.net with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.93)
+	(envelope-from <alert@icicibank.com>)
+	id 1kOMTK-0003m4-5v
+	for STEPHEN@WINTOGETHER2.COM; Fri, 02 Oct 2020 20:25:48 +0530
+Received: from localhost.localdomain ()
+	by mlxtrend4.icicibank.com  with ESMTP id 092CIYkV029707
+	for <STEPHEN@WINTOGETHER2.COM>; Fri, 2 Oct 2020 17:48:34 +0530 (IST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=icicibank.com;
+	s=icicibank.com; t=1601641114;
+	bh=hgasFZGIiClnb6ycNWyEEdDOA+Shs0PdUfzMGODb8fY=;
+	h=Date:From:To:Subject:Reply-To;
+	b=mcgnY8/DxDkHKRj9aZlQYFLeY5xm+GXppSVBkOTXZih+/LWNMi2orHSJLiRgur/7Q
+	 ElmdPFcEJpZv33HDxCx2zr7Yybxmdw5QinFkXlizJ1pJKQ2QbhhN3rPQ4mUKz0vpsP
+	 Vh0iIG06YdF5W1ObZ3Y/a3oNPQ/8opG2BGWExZtg=
+Received: from masssmtp05.icicibank.com ()
+	by localhost.localdomain (8.14.5/8.14.5) with ESMTP id 092CIaF4004471
+	for <STEPHEN@WINTOGETHER2.COM>; Fri, 2 Oct 2020 17:48:36 +0530
+Received: from IHYDSUNT5-16-LD04.icicibankltd.com (ihydsunt5-16-ld04.icicibankltd.com [10.24.187.133])
+	by masssmtp05.icicibank.com (Postfix) with ESMTP id 3DCD75B78E
+	for <STEPHEN@WINTOGETHER2.COM>; Fri,  2 Oct 2020 17:48:34 +0530 (IST)
+Received: (from coreadm@localhost)
+	by IHYDSUNT5-16-LD04.icicibankltd.com (8.15.1+Sun/8.12.2) id 092CIYKT029034
+	for STEPHEN@WINTOGETHER2.COM; Fri, 2 Oct 2020 17:48:34 +0530 (IST)
+X-Authentication-Warning: IHYDSUNT5-16-LD04.icicibankltd.com: coreadm set sender to alert@icicibank.com using -f
+Date: Fri, 2 Oct 2020 17:48:34 +0530
+From: "alert @ icicibank . com" <alert@icicibank.com>
+To: STEPHEN@WINTOGETHER2.COM
+Subject: Transaction alert for your ICICI Bank debit card
+Message-ID: <20201002174834.A29032@IHYDSUNT5-16-LD04.icicibankltd.com>
+Reply-To: "info @ icicibank . com" <info@icicibank.com>
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5i
+X-Spam-Status: No, score=-0.2
+X-Spam-Score: -1
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "119-18-48-204.webhostbox.net",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Dear Customer, Greetings from ICICI Bank. Cash Withdrawal
+   of INR 5,000.00 has been made at an ATM using your Debit Card linked to Account
+    XX048 on 02-OCT-20. Info: ATM*S1CNQ586*CA. 
+ Content analysis details:   (-0.2 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: icicibank.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay
+                             lines
+X-Spam-Flag: NO
+
+Dear Customer,
+
+Greetings from ICICI Bank.
+
+Cash Withdrawal of INR 5,000.00 has been made at an ATM using your Debit Card linked to Account XX048 on 02-OCT-20. Info: ATM*S1CNQ586*CA.
+
+The Available Balance in your Account is INR 53,075.00.
+
+In case you have not done this transaction, please call on 18002662 or SMS BLOCK 048 to 9215676766  from your registered mobile number.
+
+NEVER SHARE your Card number, CVV, PIN, OTP, Internet Banking User ID, Password or URN with anyone, even if the caller claims to be a bank employee. Sharing these details can lead to unauthorised access to your account.
+
+Looking forward to more opportunities to be of service to you.
+
+Sincerely,
+
+Customer Service Team
+ICICI Bank Limited
+
+This is a system-generated e-mail. Please do not reply to this e-mail.

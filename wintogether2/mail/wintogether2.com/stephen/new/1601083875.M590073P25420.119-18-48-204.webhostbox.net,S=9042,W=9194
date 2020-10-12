@@ -1,0 +1,152 @@
+Return-Path: <customercare@icicibank.com>
+Delivered-To: STEPHEN@WINTOGETHER2.COM
+Received: from 119-18-48-204.webhostbox.net
+	by 119-18-48-204.webhostbox.net with LMTP
+	id GWKMIuOZbl9MYwAAFI3O4Q
+	(envelope-from <customercare@icicibank.com>)
+	for <STEPHEN@WINTOGETHER2.COM>; Sat, 26 Sep 2020 07:01:15 +0530
+Return-path: <customercare@icicibank.com>
+Envelope-to: STEPHEN@WINTOGETHER2.COM
+Delivery-date: Sat, 26 Sep 2020 07:01:15 +0530
+Received: from mlxmail4.icicibank.com ([203.27.235.123]:46190 helo=mlxtrend4.icicibank.com)
+	by 119-18-48-204.webhostbox.net with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.93)
+	(envelope-from <customercare@icicibank.com>)
+	id 1kLz3P-0006ad-2w
+	for STEPHEN@WINTOGETHER2.COM; Sat, 26 Sep 2020 07:01:15 +0530
+Received: from localhost.localdomain ()
+	by mlxtrend4.icicibank.com  with ESMTP id 08P252R9009356
+	for <STEPHEN@WINTOGETHER2.COM>; Fri, 25 Sep 2020 07:35:02 +0530 (IST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=icicibank.com;
+	s=icicibank.com; t=1600999502;
+	bh=38EW8sZYccWOYfr9hUY3fv/8JhpihiHoIyyAqVQXr5g=;
+	h=Date:From:To:Subject:Reply-To;
+	b=djbU1MZvZ/3s6DPAkNbGt+WdZYb/sAHRhJ/IYmJmDEx8Dm9YFFm0Z8hLwAqoEuOeU
+	 D0TVs84sedb9Wyh7GY+836E+DvT4Lrz6eAYM62HNR26ksklaZxfGpPTbf4ZK3/WEgC
+	 j6J4cmniuwOAyi1KmRoIqEQymj2P+2z1W6IZTu0g=
+Received: from masssmtp06.icicibank.com ()
+	by localhost.localdomain (8.14.5/8.14.5) with ESMTP id 08P252Gc010571
+	for <STEPHEN@WINTOGETHER2.COM>; Fri, 25 Sep 2020 07:35:02 +0530
+Received: from hydicorewls4.icicibankltd.com (ihydsunt5-12-ld02.icicibankltd.com [10.24.187.143])
+	by masssmtp06.icicibank.com (Postfix) with ESMTP id 1678418019F
+	for <STEPHEN@WINTOGETHER2.COM>; Fri, 25 Sep 2020 07:35:02 +0530 (IST)
+Received: (from coreadm@localhost)
+	by hydicorewls4.icicibankltd.com (8.15.1+Sun/8.12.2) id 08P2522g000152
+	for STEPHEN@WINTOGETHER2.COM; Fri, 25 Sep 2020 07:35:02 +0530 (IST)
+X-Authentication-Warning: hydicorewls4.icicibankltd.com: coreadm set sender to customercare@icicibank.com using -f
+Date: Fri, 25 Sep 2020 07:35:01 +0530
+From: "customercare @ icicibank . com" <customercare@icicibank.com>
+To: STEPHEN@WINTOGETHER2.COM
+Subject: Confirmation e-mail on registration of new e-mail ID
+Message-ID: <20200925073501.A149@IHYDSUNT5-12-LD02.icicibankltd.com>
+Reply-To: "ccmailreply @ icicibank . com" <ccmailreply@icicibank.com>
+Mime-Version: 1.0
+Content-Type: text/html; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5i
+X-Spam-Status: No, score=-0.1
+X-Spam-Score: 0
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "119-18-48-204.webhostbox.net",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Your e-mail ID has been updated for your account. Dear Customer,
+    Your e-mail ID has been updated for your account. You may check the details
+    on Mobile app, Internet Banking or by visiting ICICI Bank branch. In case
+    of clarification, please call our Customer Care. 
+ Content analysis details:   (-0.1 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: icicibank.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+  0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay
+                             lines
+X-Spam-Flag: NO
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Your e-mail ID has been updated for your account.</title>
+</head>
+
+<body>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+ 
+  <tr>
+    <td></td>
+    <td width="650" style="max-width:100%;"><table width="100%" border="1"  bordercolor="#0e7939"  cellspacing="0" cellpadding="0" style="border-collapse:collapse; border:1px solid #0e7939;">
+  <tr>
+    <td><table width="100%" border="0" cellpadding="0" cellspacing="0" >
+      <tr>
+        <td><img src="https://www.icicibank.com/campaigns/mailers/2017-february/transaction-alert-mailer/images/header.jpg" alt="Header" width="100%" border="0" style="display:block; height:auto;" title="Header"/></td>
+      </tr>
+      <tr>
+        <td style="padding:0 25px; text-align:justify;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="padding:0 25px; text-align:justify;"><font style="   font-size:14px; color:#333333; font-family: Zurich BT, Arial;">Dear Customer,<br />
+<br />
+	Your e-mail ID has been updated for your account. You may check the details on Mobile app, Internet Banking or by visiting ICICI Bank branch. In case of clarification, please call our Customer Care.
+<br />
+<br />
+Sincerely,
+<br />
+<br />
+Customer Service Team
+<br />
+<br />
+ICICI Bank Ltd.<br />
+<br />
+This is a system-generated e-mail. Please do not reply to this e-mail.
+        </font></td>
+      </tr>
+      <tr>
+        <td style="padding:0 25px; text-align:justify;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td><img src="https://www.icicibank.com/campaigns/mailers/2017-february/transaction-alert-mailer/images/image.jpg" alt="Mailer" width="100%" border="0" style="display:block; height:auto;" title="Header"/></td>
+      </tr>
+      <tr>
+        <td height="30" align="right" bgcolor="#01732D"><table border="0" align="right" cellpadding="0" cellspacing="0" >
+          <tbody>
+            <tr>
+              <td align="center" valign="middle" style="border-right:1px solid #ffffff;"  ><a href="https://www.icicibank.com/campaigns/mailers/2017-february/transaction-alert-mailer/disclaimerfacebook.html" target="_blank"><img src="https://www.icicibank.com/campaigns/mailers/2017-february/transaction-alert-mailer/images/icon-facebook.jpg" alt="icon-googleplus" width="33" height="31" hspace="0" vspace="0" border="0" style="max-width:40px;" editable="true" label="image" /></a></td>
+              <td align="center" valign="middle"  ><a href="https://www.icicibank.com/campaigns/mailers/2017-february/transaction-alert-mailer/disclaimertwitter.html" target="_blank"><img src="https://www.icicibank.com/campaigns/mailers/2017-february/transaction-alert-mailer/images/icon-twitter.jpg" alt="icon-twitter" width="33" height="31" hspace="0" vspace="0" border="0" style="max-width:40px;" editable="true" label="image" /></a></td>
+              <td align="center" valign="middle" style="border-right:1px solid #ffffff; border-left:1px solid #ffffff;" ><a href="https://www.icicibank.com/campaigns/mailers/2017-february/transaction-alert-mailer/disclaimeryoutube.html" target="_blank"><img src="https://www.icicibank.com/campaigns/mailers/2017-february/transaction-alert-mailer/images/icon-youtube.jpg" alt="icon-twitter" width="33" height="31" hspace="0" vspace="0" border="0" style="max-width:40px;" editable="true" label="image" /></a></td>
+              <td align="center" valign="middle"><a href="https://www.icicibank.com/campaigns/mailers/2017-february/transaction-alert-mailer/disclaimerlinkedin.html" target="_blank"><img src="https://www.icicibank.com/campaigns/mailers/2017-february/transaction-alert-mailer/images/icon-linkedin.jpg" alt="icon-twitter" width="33" height="31" hspace="0" vspace="0" border="0" style="max-width:40px;" editable="true" label="image" /></a></td>
+              </tr>
+            </tbody>
+          </table></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+</td>
+    <td></td>
+  </tr>
+   <tr>
+    <td></td>
+    <td  width="650" style="max-width:100%; padding:5px 0; text-align:justify;"><font style="   font-size:11px ; color:#333333; font-family: Zurich BT, Arial; text-align:justify;"> If you do not wish to receive further marketing e-mails, to unsubscribe, <a href="https://www.icicibank.com/campaigns/mailers/2017-february/transaction-alert-mailer/dnc.html" target="blank"><font color="#a41c2b">click here.</font></a></font></td>
+    <td></td>
+  </tr>
+</table>
+</body>
+</html>

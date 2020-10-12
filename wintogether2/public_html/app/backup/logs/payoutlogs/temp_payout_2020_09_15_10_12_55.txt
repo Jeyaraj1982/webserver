@@ -1,0 +1,203 @@
+
+[2020-09-15 10:12:55]	=== Binary Eligible Starts ===
+[2020-09-15 10:12:55]	WTSTE00004	... eligible	L:10	R:3
+[2020-09-15 10:12:55]	WTSTE00005	... eligible	L:3	R:3
+[2020-09-15 10:12:55]	WTSTE00006	... eligible	L:3	R:3
+[2020-09-15 10:12:55]	WTSTE00007	... eligible	L:3	R:3
+[2020-09-15 10:12:55]	WTSHE00008	... eligible	L:8	R:1
+[2020-09-15 10:12:55]	WTSHE00009	... eligible	L:1	R:1
+[2020-09-15 10:12:55]	WTSHE00010	... eligible	L:1	R:1
+[2020-09-15 10:12:55]	WTSHE00011	... eligible	L:1	R:1
+[2020-09-15 10:12:55]	WTSHE00012	... eligible	L:1	R:1
+[2020-09-15 10:12:55]	WTSHE00013	... eligible	L:1	R:1
+[2020-09-15 10:12:55]	WTSHE00014	... eligible	L:1	R:1
+[2020-09-15 10:12:55]	WTSHE00015	... eligible	L:1	R:1
+[2020-09-15 10:12:55]	WTPRE00016	... eligible	L:4	R:3
+[2020-09-15 10:12:55]	WTPRE00017	not eligible	L:0	R:0
+[2020-09-15 10:12:55]	WTPRE00018	not eligible	L:0	R:0
+[2020-09-15 10:12:55]	WTPRE00019	not eligible	L:0	R:0
+[2020-09-15 10:12:55]	WTPRE00020	not eligible	L:0	R:0
+[2020-09-15 10:12:55]	WTPRE00021	not eligible	L:0	R:0
+[2020-09-15 10:12:55]	WTPRE00022	not eligible	L:0	R:0
+[2020-09-15 10:12:55]	WTPRE00023	not eligible	L:0	R:0
+[2020-09-15 10:12:55]	WTPRE00024	not eligible	L:0	R:0
+[2020-09-15 10:12:55]	WTPRE00025	not eligible	L:0	R:0
+[2020-09-15 10:12:55]	WTPRE00026	not eligible	L:0	R:0
+[2020-09-15 10:12:55]	WTPRE00027	not eligible	L:0	R:0
+[2020-09-15 10:12:55]	WTPRE00028	not eligible	L:0	R:0
+[2020-09-15 10:12:55]	WTPRE00029	not eligible	L:0	R:0
+[2020-09-15 10:12:55]	WTPRE00030	not eligible	L:0	R:0
+[2020-09-15 10:12:55]	WTPRE00031	not eligible	L:0	R:0
+[2020-09-15 10:12:55]	WTKEM00033	... eligible	L:1	R:1
+[2020-09-15 10:12:55]	WTFAT00034	not eligible	L:1	R:0
+[2020-09-15 10:12:55]	WTFAT00035	not eligible	L:0	R:0
+[2020-09-15 10:12:55]	WTNOO00036	not eligible	L:0	R:0
+[2020-09-15 10:12:55]	WTKEM00037	not eligible	L:0	R:0
+[2020-09-15 10:12:55]	WTKEM00038	not eligible	L:0	R:0
+[2020-09-15 10:12:55]	=== Binary Eligible End ===
+[2020-09-15 10:12:55]	
+=== Payout Eligible Starts ===
+[2020-09-15 10:12:55]	=== Payout Eligible End ===
+[2020-09-15 10:12:55]	
+=== Payout Process Starts ===
+[2020-09-15 10:12:55]	First Payout
+[2020-09-15 10:12:55]	Member: WT000001	Left: 1100	Today Left:1100	Right: 0750	Today Right: 0750	TodayPayoutPV: 0700	Available Left: 1100	Available Right: 0750	Txn Left: 0750	Txn Right: 0750	Available Left: 0350	Available Right: 0000	Package: 0000	Eligible Minimum PayoutPV: 0000	Eligible Maximum PayoutPV: 1000	Payable PayoutPV: 0700	Payable Amount: 700	CompanyLeft: 0000	CompanyRight: 0000	IsPayoutEligible: 1	Charges: 20%	ChargeAmount: 0140	PayableAmountDebitCharge: 0560	processedon: 2020-09-15 10:12:55
+[2020-09-15 10:12:55]	Credit Amount:	Credited: 700	WalletTxnID: 1
+[2020-09-15 10:12:55]	Charges Debit:	Debited: 140	WalletTxnID: 2
+[2020-09-15 10:12:55]	First Payout
+[2020-09-15 10:12:55]	Member: WTSTE00002	Left: 0700	Today Left:0700	Right: 0350	Today Right: 0350	TodayPayoutPV: 0300	Available Left: 0700	Available Right: 0350	Txn Left: 0350	Txn Right: 0350	Available Left: 0350	Available Right: 0000	Package: 0000	Eligible Minimum PayoutPV: 0000	Eligible Maximum PayoutPV: 1000	Payable PayoutPV: 0300	Payable Amount: 300	CompanyLeft: 0000	CompanyRight: 0000	IsPayoutEligible: 1	Charges: 20%	ChargeAmount: 0060	PayableAmountDebitCharge: 0240	processedon: 2020-09-15 10:12:55
+[2020-09-15 10:12:55]	Credit Amount:	Credited: 300	WalletTxnID: 3
+[2020-09-15 10:12:55]	Charges Debit:	Debited: 60	WalletTxnID: 4
+[2020-09-15 10:12:55]	First Payout
+[2020-09-15 10:12:55]	Member: WTSTE00003	Left: 0350	Today Left:0350	Right: 0350	Today Right: 0350	TodayPayoutPV: 0300	Available Left: 0350	Available Right: 0350	Txn Left: 0350	Txn Right: 0350	Available Left: 0000	Available Right: 0000	Package: 0000	Eligible Minimum PayoutPV: 0000	Eligible Maximum PayoutPV: 1000	Payable PayoutPV: 0300	Payable Amount: 300	CompanyLeft: 0000	CompanyRight: 0000	IsPayoutEligible: 1	Charges: 20%	ChargeAmount: 0060	PayableAmountDebitCharge: 0240	processedon: 2020-09-15 10:12:55
+[2020-09-15 10:12:55]	Credit Amount:	Credited: 300	WalletTxnID: 5
+[2020-09-15 10:12:55]	Charges Debit:	Debited: 60	WalletTxnID: 6
+[2020-09-15 10:12:55]	Member: WTSTE00004	Left: 0500	Today Left:0500	Right: 0150	Today Right: 0150	TodayPayoutPV: 0300	Available Left: 0500	Available Right: 0150	Txn Left: 0000	Txn Right: 0000	Available Left: 0500	Available Right: 0150	Package: 0000	Eligible Minimum PayoutPV: 0000	Eligible Maximum PayoutPV: 1000	Payable PayoutPV: 0000	Payable Amount: 0	CompanyLeft: 0000	CompanyRight: 0000	IsPayoutEligible: 0	Charges: 20%	ChargeAmount: 0000	PayableAmountDebitCharge: 0000	processedon: 2020-09-15 10:12:55
+[2020-09-15 10:12:55]	Member: WTSTE00005	Left: 0150	Today Left:0150	Right: 0150	Today Right: 0150	TodayPayoutPV: 0300	Available Left: 0150	Available Right: 0150	Txn Left: 0000	Txn Right: 0000	Available Left: 0150	Available Right: 0150	Package: 0000	Eligible Minimum PayoutPV: 0000	Eligible Maximum PayoutPV: 1000	Payable PayoutPV: 0000	Payable Amount: 0	CompanyLeft: 0000	CompanyRight: 0000	IsPayoutEligible: 0	Charges: 20%	ChargeAmount: 0000	PayableAmountDebitCharge: 0000	processedon: 2020-09-15 10:12:55
+[2020-09-15 10:12:55]	Member: WTSTE00006	Left: 0150	Today Left:0150	Right: 0150	Today Right: 0150	TodayPayoutPV: 0300	Available Left: 0150	Available Right: 0150	Txn Left: 0000	Txn Right: 0000	Available Left: 0150	Available Right: 0150	Package: 0000	Eligible Minimum PayoutPV: 0000	Eligible Maximum PayoutPV: 1000	Payable PayoutPV: 0000	Payable Amount: 0	CompanyLeft: 0000	CompanyRight: 0000	IsPayoutEligible: 0	Charges: 20%	ChargeAmount: 0000	PayableAmountDebitCharge: 0000	processedon: 2020-09-15 10:12:55
+[2020-09-15 10:12:55]	Member: WTSTE00007	Left: 0150	Today Left:0150	Right: 0150	Today Right: 0150	TodayPayoutPV: 0300	Available Left: 0150	Available Right: 0150	Txn Left: 0000	Txn Right: 0000	Available Left: 0150	Available Right: 0150	Package: 0000	Eligible Minimum PayoutPV: 0000	Eligible Maximum PayoutPV: 1000	Payable PayoutPV: 0000	Payable Amount: 0	CompanyLeft: 0000	CompanyRight: 0000	IsPayoutEligible: 0	Charges: 20%	ChargeAmount: 0000	PayableAmountDebitCharge: 0000	processedon: 2020-09-15 10:12:55
+[2020-09-15 10:12:55]	Member: WTSHE00008	Left: 0400	Today Left:0400	Right: 0050	Today Right: 0050	TodayPayoutPV: 0300	Available Left: 0400	Available Right: 0050	Txn Left: 0000	Txn Right: 0000	Available Left: 0400	Available Right: 0050	Package: 0000	Eligible Minimum PayoutPV: 0000	Eligible Maximum PayoutPV: 1000	Payable PayoutPV: 0000	Payable Amount: 0	CompanyLeft: 0000	CompanyRight: 0000	IsPayoutEligible: 0	Charges: 20%	ChargeAmount: 0000	PayableAmountDebitCharge: 0000	processedon: 2020-09-15 10:12:55
+[2020-09-15 10:12:55]	Member: WTSHE00009	Left: 0050	Today Left:0050	Right: 0050	Today Right: 0050	TodayPayoutPV: 0300	Available Left: 0050	Available Right: 0050	Txn Left: 0000	Txn Right: 0000	Available Left: 0050	Available Right: 0050	Package: 0000	Eligible Minimum PayoutPV: 0000	Eligible Maximum PayoutPV: 1000	Payable PayoutPV: 0000	Payable Amount: 0	CompanyLeft: 0000	CompanyRight: 0000	IsPayoutEligible: 0	Charges: 20%	ChargeAmount: 0000	PayableAmountDebitCharge: 0000	processedon: 2020-09-15 10:12:55
+[2020-09-15 10:12:55]	Member: WTSHE00010	Left: 0050	Today Left:0050	Right: 0050	Today Right: 0050	TodayPayoutPV: 0300	Available Left: 0050	Available Right: 0050	Txn Left: 0000	Txn Right: 0000	Available Left: 0050	Available Right: 0050	Package: 0000	Eligible Minimum PayoutPV: 0000	Eligible Maximum PayoutPV: 1000	Payable PayoutPV: 0000	Payable Amount: 0	CompanyLeft: 0000	CompanyRight: 0000	IsPayoutEligible: 0	Charges: 20%	ChargeAmount: 0000	PayableAmountDebitCharge: 0000	processedon: 2020-09-15 10:12:55
+[2020-09-15 10:12:55]	Member: WTSHE00011	Left: 0050	Today Left:0050	Right: 0050	Today Right: 0050	TodayPayoutPV: 0300	Available Left: 0050	Available Right: 0050	Txn Left: 0000	Txn Right: 0000	Available Left: 0050	Available Right: 0050	Package: 0000	Eligible Minimum PayoutPV: 0000	Eligible Maximum PayoutPV: 1000	Payable PayoutPV: 0000	Payable Amount: 0	CompanyLeft: 0000	CompanyRight: 0000	IsPayoutEligible: 0	Charges: 20%	ChargeAmount: 0000	PayableAmountDebitCharge: 0000	processedon: 2020-09-15 10:12:55
+[2020-09-15 10:12:55]	Member: WTSHE00012	Left: 0050	Today Left:0050	Right: 0050	Today Right: 0050	TodayPayoutPV: 0300	Available Left: 0050	Available Right: 0050	Txn Left: 0000	Txn Right: 0000	Available Left: 0050	Available Right: 0050	Package: 0000	Eligible Minimum PayoutPV: 0000	Eligible Maximum PayoutPV: 1000	Payable PayoutPV: 0000	Payable Amount: 0	CompanyLeft: 0000	CompanyRight: 0000	IsPayoutEligible: 0	Charges: 20%	ChargeAmount: 0000	PayableAmountDebitCharge: 0000	processedon: 2020-09-15 10:12:55
+[2020-09-15 10:12:55]	Member: WTSHE00013	Left: 0050	Today Left:0050	Right: 0050	Today Right: 0050	TodayPayoutPV: 0300	Available Left: 0050	Available Right: 0050	Txn Left: 0000	Txn Right: 0000	Available Left: 0050	Available Right: 0050	Package: 0000	Eligible Minimum PayoutPV: 0000	Eligible Maximum PayoutPV: 1000	Payable PayoutPV: 0000	Payable Amount: 0	CompanyLeft: 0000	CompanyRight: 0000	IsPayoutEligible: 0	Charges: 20%	ChargeAmount: 0000	PayableAmountDebitCharge: 0000	processedon: 2020-09-15 10:12:55
+[2020-09-15 10:12:55]	Member: WTSHE00014	Left: 0050	Today Left:0050	Right: 0050	Today Right: 0050	TodayPayoutPV: 0300	Available Left: 0050	Available Right: 0050	Txn Left: 0000	Txn Right: 0000	Available Left: 0050	Available Right: 0050	Package: 0000	Eligible Minimum PayoutPV: 0000	Eligible Maximum PayoutPV: 1000	Payable PayoutPV: 0000	Payable Amount: 0	CompanyLeft: 0000	CompanyRight: 0000	IsPayoutEligible: 0	Charges: 20%	ChargeAmount: 0000	PayableAmountDebitCharge: 0000	processedon: 2020-09-15 10:12:55
+[2020-09-15 10:12:55]	Member: WTSHE00015	Left: 0050	Today Left:0050	Right: 0050	Today Right: 0050	TodayPayoutPV: 0300	Available Left: 0050	Available Right: 0050	Txn Left: 0000	Txn Right: 0000	Available Left: 0050	Available Right: 0050	Package: 0000	Eligible Minimum PayoutPV: 0000	Eligible Maximum PayoutPV: 1000	Payable PayoutPV: 0000	Payable Amount: 0	CompanyLeft: 0000	CompanyRight: 0000	IsPayoutEligible: 0	Charges: 20%	ChargeAmount: 0000	PayableAmountDebitCharge: 0000	processedon: 2020-09-15 10:12:55
+[2020-09-15 10:12:55]	Member: WTPRE00016	Left: 0200	Today Left:0200	Right: 0150	Today Right: 0150	TodayPayoutPV: 0300	Available Left: 0200	Available Right: 0150	Txn Left: 0000	Txn Right: 0000	Available Left: 0200	Available Right: 0150	Package: 0000	Eligible Minimum PayoutPV: 0000	Eligible Maximum PayoutPV: 1000	Payable PayoutPV: 0000	Payable Amount: 0	CompanyLeft: 0000	CompanyRight: 0000	IsPayoutEligible: 0	Charges: 20%	ChargeAmount: 0000	PayableAmountDebitCharge: 0000	processedon: 2020-09-15 10:12:55
+[2020-09-15 10:12:55]	Member: WTPRE00017	Left: 0000	Today Left:0000	Right: 0000	Today Right: 0000	TodayPayoutPV: 0300	Available Left: 0000	Available Right: 0000	Txn Left: 0000	Txn Right: 0000	Available Left: 0000	Available Right: 0000	Package: 0000	Eligible Minimum PayoutPV: 0000	Eligible Maximum PayoutPV: 1000	Payable PayoutPV: 0000	Payable Amount: 0	CompanyLeft: 0000	CompanyRight: 0000	IsPayoutEligible: 0	Charges: 20%	ChargeAmount: 0000	PayableAmountDebitCharge: 0000	processedon: 2020-09-15 10:12:55
+[2020-09-15 10:12:55]	Member: WTPRE00018	Left: 0000	Today Left:0000	Right: 0000	Today Right: 0000	TodayPayoutPV: 0300	Available Left: 0000	Available Right: 0000	Txn Left: 0000	Txn Right: 0000	Available Left: 0000	Available Right: 0000	Package: 0000	Eligible Minimum PayoutPV: 0000	Eligible Maximum PayoutPV: 1000	Payable PayoutPV: 0000	Payable Amount: 0	CompanyLeft: 0000	CompanyRight: 0000	IsPayoutEligible: 0	Charges: 20%	ChargeAmount: 0000	PayableAmountDebitCharge: 0000	processedon: 2020-09-15 10:12:55
+[2020-09-15 10:12:55]	Member: WTPRE00019	Left: 0000	Today Left:0000	Right: 0000	Today Right: 0000	TodayPayoutPV: 0300	Available Left: 0000	Available Right: 0000	Txn Left: 0000	Txn Right: 0000	Available Left: 0000	Available Right: 0000	Package: 0000	Eligible Minimum PayoutPV: 0000	Eligible Maximum PayoutPV: 1000	Payable PayoutPV: 0000	Payable Amount: 0	CompanyLeft: 0000	CompanyRight: 0000	IsPayoutEligible: 0	Charges: 20%	ChargeAmount: 0000	PayableAmountDebitCharge: 0000	processedon: 2020-09-15 10:12:55
+[2020-09-15 10:12:56]	Member: WTPRE00020	Left: 0000	Today Left:0000	Right: 0000	Today Right: 0000	TodayPayoutPV: 0300	Available Left: 0000	Available Right: 0000	Txn Left: 0000	Txn Right: 0000	Available Left: 0000	Available Right: 0000	Package: 0000	Eligible Minimum PayoutPV: 0000	Eligible Maximum PayoutPV: 1000	Payable PayoutPV: 0000	Payable Amount: 0	CompanyLeft: 0000	CompanyRight: 0000	IsPayoutEligible: 0	Charges: 20%	ChargeAmount: 0000	PayableAmountDebitCharge: 0000	processedon: 2020-09-15 10:12:56
+[2020-09-15 10:12:56]	Member: WTPRE00021	Left: 0000	Today Left:0000	Right: 0000	Today Right: 0000	TodayPayoutPV: 0300	Available Left: 0000	Available Right: 0000	Txn Left: 0000	Txn Right: 0000	Available Left: 0000	Available Right: 0000	Package: 0000	Eligible Minimum PayoutPV: 0000	Eligible Maximum PayoutPV: 1000	Payable PayoutPV: 0000	Payable Amount: 0	CompanyLeft: 0000	CompanyRight: 0000	IsPayoutEligible: 0	Charges: 20%	ChargeAmount: 0000	PayableAmountDebitCharge: 0000	processedon: 2020-09-15 10:12:56
+[2020-09-15 10:12:56]	Member: WTPRE00022	Left: 0000	Today Left:0000	Right: 0000	Today Right: 0000	TodayPayoutPV: 0300	Available Left: 0000	Available Right: 0000	Txn Left: 0000	Txn Right: 0000	Available Left: 0000	Available Right: 0000	Package: 0000	Eligible Minimum PayoutPV: 0000	Eligible Maximum PayoutPV: 1000	Payable PayoutPV: 0000	Payable Amount: 0	CompanyLeft: 0000	CompanyRight: 0000	IsPayoutEligible: 0	Charges: 20%	ChargeAmount: 0000	PayableAmountDebitCharge: 0000	processedon: 2020-09-15 10:12:56
+[2020-09-15 10:12:56]	Member: WTPRE00023	Left: 0000	Today Left:0000	Right: 0000	Today Right: 0000	TodayPayoutPV: 0300	Available Left: 0000	Available Right: 0000	Txn Left: 0000	Txn Right: 0000	Available Left: 0000	Available Right: 0000	Package: 0000	Eligible Minimum PayoutPV: 0000	Eligible Maximum PayoutPV: 1000	Payable PayoutPV: 0000	Payable Amount: 0	CompanyLeft: 0000	CompanyRight: 0000	IsPayoutEligible: 0	Charges: 20%	ChargeAmount: 0000	PayableAmountDebitCharge: 0000	processedon: 2020-09-15 10:12:56
+[2020-09-15 10:12:56]	Member: WTPRE00024	Left: 0000	Today Left:0000	Right: 0000	Today Right: 0000	TodayPayoutPV: 0300	Available Left: 0000	Available Right: 0000	Txn Left: 0000	Txn Right: 0000	Available Left: 0000	Available Right: 0000	Package: 0000	Eligible Minimum PayoutPV: 0000	Eligible Maximum PayoutPV: 1000	Payable PayoutPV: 0000	Payable Amount: 0	CompanyLeft: 0000	CompanyRight: 0000	IsPayoutEligible: 0	Charges: 20%	ChargeAmount: 0000	PayableAmountDebitCharge: 0000	processedon: 2020-09-15 10:12:56
+[2020-09-15 10:12:56]	Member: WTPRE00025	Left: 0000	Today Left:0000	Right: 0000	Today Right: 0000	TodayPayoutPV: 0300	Available Left: 0000	Available Right: 0000	Txn Left: 0000	Txn Right: 0000	Available Left: 0000	Available Right: 0000	Package: 0000	Eligible Minimum PayoutPV: 0000	Eligible Maximum PayoutPV: 1000	Payable PayoutPV: 0000	Payable Amount: 0	CompanyLeft: 0000	CompanyRight: 0000	IsPayoutEligible: 0	Charges: 20%	ChargeAmount: 0000	PayableAmountDebitCharge: 0000	processedon: 2020-09-15 10:12:56
+[2020-09-15 10:12:56]	Member: WTPRE00026	Left: 0000	Today Left:0000	Right: 0000	Today Right: 0000	TodayPayoutPV: 0300	Available Left: 0000	Available Right: 0000	Txn Left: 0000	Txn Right: 0000	Available Left: 0000	Available Right: 0000	Package: 0000	Eligible Minimum PayoutPV: 0000	Eligible Maximum PayoutPV: 1000	Payable PayoutPV: 0000	Payable Amount: 0	CompanyLeft: 0000	CompanyRight: 0000	IsPayoutEligible: 0	Charges: 20%	ChargeAmount: 0000	PayableAmountDebitCharge: 0000	processedon: 2020-09-15 10:12:56
+[2020-09-15 10:12:56]	Member: WTPRE00027	Left: 0000	Today Left:0000	Right: 0000	Today Right: 0000	TodayPayoutPV: 0300	Available Left: 0000	Available Right: 0000	Txn Left: 0000	Txn Right: 0000	Available Left: 0000	Available Right: 0000	Package: 0000	Eligible Minimum PayoutPV: 0000	Eligible Maximum PayoutPV: 1000	Payable PayoutPV: 0000	Payable Amount: 0	CompanyLeft: 0000	CompanyRight: 0000	IsPayoutEligible: 0	Charges: 20%	ChargeAmount: 0000	PayableAmountDebitCharge: 0000	processedon: 2020-09-15 10:12:56
+[2020-09-15 10:12:56]	Member: WTPRE00028	Left: 0000	Today Left:0000	Right: 0000	Today Right: 0000	TodayPayoutPV: 0300	Available Left: 0000	Available Right: 0000	Txn Left: 0000	Txn Right: 0000	Available Left: 0000	Available Right: 0000	Package: 0000	Eligible Minimum PayoutPV: 0000	Eligible Maximum PayoutPV: 1000	Payable PayoutPV: 0000	Payable Amount: 0	CompanyLeft: 0000	CompanyRight: 0000	IsPayoutEligible: 0	Charges: 20%	ChargeAmount: 0000	PayableAmountDebitCharge: 0000	processedon: 2020-09-15 10:12:56
+[2020-09-15 10:12:56]	Member: WTPRE00029	Left: 0000	Today Left:0000	Right: 0000	Today Right: 0000	TodayPayoutPV: 0300	Available Left: 0000	Available Right: 0000	Txn Left: 0000	Txn Right: 0000	Available Left: 0000	Available Right: 0000	Package: 0000	Eligible Minimum PayoutPV: 0000	Eligible Maximum PayoutPV: 1000	Payable PayoutPV: 0000	Payable Amount: 0	CompanyLeft: 0000	CompanyRight: 0000	IsPayoutEligible: 0	Charges: 20%	ChargeAmount: 0000	PayableAmountDebitCharge: 0000	processedon: 2020-09-15 10:12:56
+[2020-09-15 10:12:56]	Member: WTPRE00030	Left: 0000	Today Left:0000	Right: 0000	Today Right: 0000	TodayPayoutPV: 0300	Available Left: 0000	Available Right: 0000	Txn Left: 0000	Txn Right: 0000	Available Left: 0000	Available Right: 0000	Package: 0000	Eligible Minimum PayoutPV: 0000	Eligible Maximum PayoutPV: 1000	Payable PayoutPV: 0000	Payable Amount: 0	CompanyLeft: 0000	CompanyRight: 0000	IsPayoutEligible: 0	Charges: 20%	ChargeAmount: 0000	PayableAmountDebitCharge: 0000	processedon: 2020-09-15 10:12:56
+[2020-09-15 10:12:56]	Member: WTPRE00031	Left: 0000	Today Left:0000	Right: 0000	Today Right: 0000	TodayPayoutPV: 0300	Available Left: 0000	Available Right: 0000	Txn Left: 0000	Txn Right: 0000	Available Left: 0000	Available Right: 0000	Package: 0000	Eligible Minimum PayoutPV: 0000	Eligible Maximum PayoutPV: 1000	Payable PayoutPV: 0000	Payable Amount: 0	CompanyLeft: 0000	CompanyRight: 0000	IsPayoutEligible: 0	Charges: 20%	ChargeAmount: 0000	PayableAmountDebitCharge: 0000	processedon: 2020-09-15 10:12:56
+[2020-09-15 10:12:56]	First Payout
+[2020-09-15 10:12:56]	Member: WTFAT00032	Left: 0100	Today Left:0100	Right: 0050	Today Right: 0050	TodayPayoutPV: 0000	Available Left: 0100	Available Right: 0050	Txn Left: 0050	Txn Right: 0050	Available Left: 0050	Available Right: 0000	Package: 0000	Eligible Minimum PayoutPV: 0000	Eligible Maximum PayoutPV: 1000	Payable PayoutPV: 0000	Payable Amount: 0	CompanyLeft: 0000	CompanyRight: 0000	IsPayoutEligible: 1	Charges: 20%	ChargeAmount: 0000	PayableAmountDebitCharge: 0000	processedon: 2020-09-15 10:12:56
+[2020-09-15 10:12:56]	Member: WTKEM00033	Left: 0050	Today Left:0050	Right: 0050	Today Right: 0050	TodayPayoutPV: 0000	Available Left: 0050	Available Right: 0050	Txn Left: 0000	Txn Right: 0000	Available Left: 0050	Available Right: 0050	Package: 0000	Eligible Minimum PayoutPV: 0000	Eligible Maximum PayoutPV: 1000	Payable PayoutPV: 0000	Payable Amount: 0	CompanyLeft: 0000	CompanyRight: 0000	IsPayoutEligible: 0	Charges: 20%	ChargeAmount: 0000	PayableAmountDebitCharge: 0000	processedon: 2020-09-15 10:12:56
+[2020-09-15 10:12:56]	Member: WTFAT00034	Left: 0050	Today Left:0050	Right: 0000	Today Right: 0000	TodayPayoutPV: 0000	Available Left: 0050	Available Right: 0000	Txn Left: 0000	Txn Right: 0000	Available Left: 0050	Available Right: 0000	Package: 0000	Eligible Minimum PayoutPV: 0000	Eligible Maximum PayoutPV: 1000	Payable PayoutPV: 0000	Payable Amount: 0	CompanyLeft: 0000	CompanyRight: 0000	IsPayoutEligible: 0	Charges: 20%	ChargeAmount: 0000	PayableAmountDebitCharge: 0000	processedon: 2020-09-15 10:12:56
+[2020-09-15 10:12:56]	Member: WTFAT00035	Left: 0000	Today Left:0000	Right: 0000	Today Right: 0000	TodayPayoutPV: 0000	Available Left: 0000	Available Right: 0000	Txn Left: 0000	Txn Right: 0000	Available Left: 0000	Available Right: 0000	Package: 0000	Eligible Minimum PayoutPV: 0000	Eligible Maximum PayoutPV: 1000	Payable PayoutPV: 0000	Payable Amount: 0	CompanyLeft: 0000	CompanyRight: 0000	IsPayoutEligible: 0	Charges: 20%	ChargeAmount: 0000	PayableAmountDebitCharge: 0000	processedon: 2020-09-15 10:12:56
+[2020-09-15 10:12:56]	Member: WTNOO00036	Left: 0000	Today Left:0000	Right: 0000	Today Right: 0000	TodayPayoutPV: 0000	Available Left: 0000	Available Right: 0000	Txn Left: 0000	Txn Right: 0000	Available Left: 0000	Available Right: 0000	Package: 0000	Eligible Minimum PayoutPV: 0000	Eligible Maximum PayoutPV: 1000	Payable PayoutPV: 0000	Payable Amount: 0	CompanyLeft: 0000	CompanyRight: 0000	IsPayoutEligible: 0	Charges: 20%	ChargeAmount: 0000	PayableAmountDebitCharge: 0000	processedon: 2020-09-15 10:12:56
+[2020-09-15 10:12:56]	Member: WTKEM00037	Left: 0000	Today Left:0000	Right: 0000	Today Right: 0000	TodayPayoutPV: 0000	Available Left: 0000	Available Right: 0000	Txn Left: 0000	Txn Right: 0000	Available Left: 0000	Available Right: 0000	Package: 0000	Eligible Minimum PayoutPV: 0000	Eligible Maximum PayoutPV: 1000	Payable PayoutPV: 0000	Payable Amount: 0	CompanyLeft: 0000	CompanyRight: 0000	IsPayoutEligible: 0	Charges: 20%	ChargeAmount: 0000	PayableAmountDebitCharge: 0000	processedon: 2020-09-15 10:12:56
+[2020-09-15 10:12:56]	Member: WTKEM00038	Left: 0000	Today Left:0000	Right: 0000	Today Right: 0000	TodayPayoutPV: 0000	Available Left: 0000	Available Right: 0000	Txn Left: 0000	Txn Right: 0000	Available Left: 0000	Available Right: 0000	Package: 0000	Eligible Minimum PayoutPV: 0000	Eligible Maximum PayoutPV: 1000	Payable PayoutPV: 0000	Payable Amount: 0	CompanyLeft: 0000	CompanyRight: 0000	IsPayoutEligible: 0	Charges: 20%	ChargeAmount: 0000	PayableAmountDebitCharge: 0000	processedon: 2020-09-15 10:12:56
+[2020-09-15 10:12:56]	<br>========================================== Direct Referal Payout: 2020-09-14 ========================================== 
+[2020-09-15 10:12:56]	<br><br>WT000001
+[2020-09-15 10:12:56]	<br>---WTSTE00002
+[2020-09-15 10:12:56]	--- WTBasic ---50
+[2020-09-15 10:12:56]	<br>---WTSTE00003
+[2020-09-15 10:12:56]	--- WTBasic ---50
+[2020-09-15 10:12:56]	<br>---  ---  Total Referal Earnings --- --- --- Rs.100 --- --- Charges --- Rs.20 --- --- Payable Amount --- --- Rs.80<br>
+[2020-09-15 10:12:56]	<br><br>WTFAT00032
+[2020-09-15 10:12:56]	<br>---WTFAT00034
+[2020-09-15 10:12:56]	--- WTBasic ---50
+[2020-09-15 10:12:56]	<br>---WTFAT00035
+[2020-09-15 10:12:56]	--- WTBasic ---50
+[2020-09-15 10:12:56]	<br>---  ---  Total Referal Earnings --- --- --- Rs.100 --- --- Charges --- Rs.20 --- --- Payable Amount --- --- Rs.80<br>
+[2020-09-15 10:12:56]	<br><br>WTFAT00034
+[2020-09-15 10:12:56]	<br>---WTNOO00036
+[2020-09-15 10:12:56]	--- WTBasic ---50
+[2020-09-15 10:12:56]	<br>---  ---  Total Referal Earnings --- --- --- Rs.50 --- --- Charges --- Rs.10 --- --- Payable Amount --- --- Rs.40<br>
+[2020-09-15 10:12:56]	<br><br>WTKEM00033
+[2020-09-15 10:12:56]	<br>---WTKEM00037
+[2020-09-15 10:12:56]	--- WTBasic ---50
+[2020-09-15 10:12:56]	<br>---WTKEM00038
+[2020-09-15 10:12:56]	--- WTBasic ---50
+[2020-09-15 10:12:56]	<br>---  ---  Total Referal Earnings --- --- --- Rs.100 --- --- Charges --- Rs.20 --- --- Payable Amount --- --- Rs.80<br>
+[2020-09-15 10:12:56]	<br><br>WTPRE00016
+[2020-09-15 10:12:56]	<br>---WTFAT00032
+[2020-09-15 10:12:56]	--- WTBasic ---50
+[2020-09-15 10:12:56]	<br>---WTKEM00033
+[2020-09-15 10:12:56]	--- WTBasic ---50
+[2020-09-15 10:12:56]	<br>---  ---  Total Referal Earnings --- --- --- Rs.100 --- --- Charges --- Rs.20 --- --- Payable Amount --- --- Rs.80<br>
+[2020-09-15 10:12:56]	<br><br>WTSHE00008
+[2020-09-15 10:12:56]	<br>---WTPRE00016
+[2020-09-15 10:12:56]	--- WTBasic ---50
+[2020-09-15 10:12:56]	<br>---WTPRE00017
+[2020-09-15 10:12:56]	--- WTBasic ---50
+[2020-09-15 10:12:56]	<br>---  ---  Total Referal Earnings --- --- --- Rs.100 --- --- Charges --- Rs.20 --- --- Payable Amount --- --- Rs.80<br>
+[2020-09-15 10:12:56]	<br><br>WTSHE00009
+[2020-09-15 10:12:56]	<br>---WTPRE00018
+[2020-09-15 10:12:56]	--- WTBasic ---50
+[2020-09-15 10:12:56]	<br>---WTPRE00019
+[2020-09-15 10:12:56]	--- WTBasic ---50
+[2020-09-15 10:12:56]	<br>---  ---  Total Referal Earnings --- --- --- Rs.100 --- --- Charges --- Rs.20 --- --- Payable Amount --- --- Rs.80<br>
+[2020-09-15 10:12:56]	<br><br>WTSHE00010
+[2020-09-15 10:12:56]	<br>---WTPRE00020
+[2020-09-15 10:12:56]	--- WTBasic ---50
+[2020-09-15 10:12:56]	<br>---WTPRE00021
+[2020-09-15 10:12:56]	--- WTBasic ---50
+[2020-09-15 10:12:56]	<br>---  ---  Total Referal Earnings --- --- --- Rs.100 --- --- Charges --- Rs.20 --- --- Payable Amount --- --- Rs.80<br>
+[2020-09-15 10:12:56]	<br><br>WTSHE00011
+[2020-09-15 10:12:56]	<br>---WTPRE00022
+[2020-09-15 10:12:56]	--- WTBasic ---50
+[2020-09-15 10:12:56]	<br>---WTPRE00023
+[2020-09-15 10:12:56]	--- WTBasic ---50
+[2020-09-15 10:12:56]	<br>---  ---  Total Referal Earnings --- --- --- Rs.100 --- --- Charges --- Rs.20 --- --- Payable Amount --- --- Rs.80<br>
+[2020-09-15 10:12:56]	<br><br>WTSHE00012
+[2020-09-15 10:12:56]	<br>---WTPRE00024
+[2020-09-15 10:12:56]	--- WTBasic ---50
+[2020-09-15 10:12:56]	<br>---WTPRE00025
+[2020-09-15 10:12:56]	--- WTBasic ---50
+[2020-09-15 10:12:56]	<br>---  ---  Total Referal Earnings --- --- --- Rs.100 --- --- Charges --- Rs.20 --- --- Payable Amount --- --- Rs.80<br>
+[2020-09-15 10:12:56]	<br><br>WTSHE00013
+[2020-09-15 10:12:56]	<br>---WTPRE00026
+[2020-09-15 10:12:56]	--- WTBasic ---50
+[2020-09-15 10:12:56]	<br>---WTPRE00027
+[2020-09-15 10:12:56]	--- WTBasic ---50
+[2020-09-15 10:12:56]	<br>---  ---  Total Referal Earnings --- --- --- Rs.100 --- --- Charges --- Rs.20 --- --- Payable Amount --- --- Rs.80<br>
+[2020-09-15 10:12:56]	<br><br>WTSHE00014
+[2020-09-15 10:12:56]	<br>---WTPRE00028
+[2020-09-15 10:12:56]	--- WTBasic ---50
+[2020-09-15 10:12:56]	<br>---WTPRE00029
+[2020-09-15 10:12:56]	--- WTBasic ---50
+[2020-09-15 10:12:56]	<br>---  ---  Total Referal Earnings --- --- --- Rs.100 --- --- Charges --- Rs.20 --- --- Payable Amount --- --- Rs.80<br>
+[2020-09-15 10:12:56]	<br><br>WTSHE00015
+[2020-09-15 10:12:56]	<br>---WTPRE00030
+[2020-09-15 10:12:56]	--- WTBasic ---50
+[2020-09-15 10:12:56]	<br>---WTPRE00031
+[2020-09-15 10:12:56]	--- WTBasic ---50
+[2020-09-15 10:12:56]	<br>---  ---  Total Referal Earnings --- --- --- Rs.100 --- --- Charges --- Rs.20 --- --- Payable Amount --- --- Rs.80<br>
+[2020-09-15 10:12:56]	<br><br>WTSTE00002
+[2020-09-15 10:12:56]	<br>---WTSTE00004
+[2020-09-15 10:12:56]	--- WTBasic ---50
+[2020-09-15 10:12:56]	<br>---WTSTE00005
+[2020-09-15 10:12:56]	--- WTBasic ---50
+[2020-09-15 10:12:56]	<br>---  ---  Total Referal Earnings --- --- --- Rs.100 --- --- Charges --- Rs.20 --- --- Payable Amount --- --- Rs.80<br>
+[2020-09-15 10:12:56]	<br><br>WTSTE00003
+[2020-09-15 10:12:56]	<br>---WTSTE00006
+[2020-09-15 10:12:56]	--- WTBasic ---50
+[2020-09-15 10:12:56]	<br>---WTSTE00007
+[2020-09-15 10:12:56]	--- WTBasic ---50
+[2020-09-15 10:12:56]	<br>---  ---  Total Referal Earnings --- --- --- Rs.100 --- --- Charges --- Rs.20 --- --- Payable Amount --- --- Rs.80<br>
+[2020-09-15 10:12:56]	<br><br>WTSTE00004
+[2020-09-15 10:12:56]	<br>---WTSHE00008
+[2020-09-15 10:12:56]	--- WTBasic ---50
+[2020-09-15 10:12:56]	<br>---WTSHE00009
+[2020-09-15 10:12:56]	--- WTBasic ---50
+[2020-09-15 10:12:56]	<br>---  ---  Total Referal Earnings --- --- --- Rs.100 --- --- Charges --- Rs.20 --- --- Payable Amount --- --- Rs.80<br>
+[2020-09-15 10:12:56]	<br><br>WTSTE00005
+[2020-09-15 10:12:56]	<br>---WTSHE00010
+[2020-09-15 10:12:56]	--- WTBasic ---50
+[2020-09-15 10:12:56]	<br>---WTSHE00011
+[2020-09-15 10:12:56]	--- WTBasic ---50
+[2020-09-15 10:12:56]	<br>---  ---  Total Referal Earnings --- --- --- Rs.100 --- --- Charges --- Rs.20 --- --- Payable Amount --- --- Rs.80<br>
+[2020-09-15 10:12:56]	<br><br>WTSTE00006
+[2020-09-15 10:12:56]	<br>---WTSHE00012
+[2020-09-15 10:12:56]	--- WTBasic ---50
+[2020-09-15 10:12:56]	<br>---WTSHE00013
+[2020-09-15 10:12:56]	--- WTBasic ---50
+[2020-09-15 10:12:56]	<br>---  ---  Total Referal Earnings --- --- --- Rs.100 --- --- Charges --- Rs.20 --- --- Payable Amount --- --- Rs.80<br>
+[2020-09-15 10:12:56]	<br><br>WTSTE00007
+[2020-09-15 10:12:56]	<br>---WTSHE00014
+[2020-09-15 10:12:56]	--- WTBasic ---50
+[2020-09-15 10:12:56]	<br>---WTSHE00015
+[2020-09-15 10:12:56]	--- WTBasic ---50
+[2020-09-15 10:12:56]	<br>---  ---  Total Referal Earnings --- --- --- Rs.100 --- --- Charges --- Rs.20 --- --- Payable Amount --- --- Rs.80<br>

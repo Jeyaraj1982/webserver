@@ -1,0 +1,96 @@
+Return-Path: <mangaleshwaranr@gmail.com>
+Delivered-To: stephen@wintogether2.com
+Received: from 119-18-48-204.webhostbox.net
+	by 119-18-48-204.webhostbox.net with LMTP
+	id y/F3CTIkcF+RBwAAFI3O4Q
+	(envelope-from <mangaleshwaranr@gmail.com>)
+	for <stephen@wintogether2.com>; Sun, 27 Sep 2020 11:03:38 +0530
+Return-path: <mangaleshwaranr@gmail.com>
+Envelope-to: stephen@wintogether2.com
+Delivery-date: Sun, 27 Sep 2020 11:03:38 +0530
+Received: from mail-ed1-f53.google.com ([209.85.208.53]:34368)
+	by 119-18-48-204.webhostbox.net with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.93)
+	(envelope-from <mangaleshwaranr@gmail.com>)
+	id 1kMPJX-0000W4-7g
+	for stephen@wintogether2.com; Sun, 27 Sep 2020 11:03:38 +0530
+Received: by mail-ed1-f53.google.com with SMTP id k14so6586824edo.1
+        for <stephen@wintogether2.com>; Sat, 26 Sep 2020 22:33:16 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=VHM1I8hV5Rmj8oQC6yJVlqdCY0AY6N51A2f3bMsAnrg=;
+        b=amtg3tYq7yKHGn8XtgdcDrVg8e/kHzm5cGxJBkVUV/3M7EZiHmwMqP15zdQJGF+rGQ
+         gO4QGIloFB0US4XNYs6TVrRP6e+jzfcwUiI50QONGxo1j3gAsq+B510QfTJIRcF1pbXq
+         4h7TxYN8ZDGuvTWaRc33Yxm9DIRZde2K7OyC6RUWK5Oub5lxgIgiOhpmLodnJhZim8En
+         n8FXt1TOIGYRxsy4yJEAH3Xyqn6yBbdwzoKevDE7qBkHSlAHhCKFVQUYiKzT/Kjv6EaZ
+         a66zimlx7huVBGW+jxiT89zo5yadeaUQw+NIobxvdtiR6KWhzK25yoA2hhUWTDstXCyG
+         64jw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=VHM1I8hV5Rmj8oQC6yJVlqdCY0AY6N51A2f3bMsAnrg=;
+        b=TO7mABlUu3l9GbOMTcIlAbbo0mW6NfrRSLw0LpciX5Yg54U6tZK1Hbzr2Zk3nWtPS1
+         8RSHrFrGGFcSnTx2MenxiDFfGJ2qoutv79TXetM0QFB7T99S4An52CGzf4721ZJIZZsa
+         CJBOow+cPLnamO7Cz6AkD2ItAzp3jkZg6wmWIhYyAirb5s9QLJ6W2UM75POONpoue2B8
+         S/Vp3PD5uq7G3cuyS5fi0uPjHqA1uNqLEPv83o9ohDH2OGGA6tJkYFyN/+/UyDJD8R6U
+         YkqCl52DDhtDxwreH5nzpu2znglUijTmNlepcfHBvBEZTX7zfZZ2r2XHWRC7emjfOjpm
+         tfYA==
+X-Gm-Message-State: AOAM531FnoKJAEQsBdZnoKoTD91FeSpkawTV6jrMYaCyhGX7o6Af+7Cz
+	5+pOdiv2qkBxukn2lRoIfWX7PKdHArHouOipcUYPvxwntrE=
+X-Google-Smtp-Source: ABdhPJxtSO5oWo7kvQ79c8pQAh41OQsqSnQTJQK5fh8KE4H59i/VDIQvb/Sl9fTLuY7abkFYYwq6y3j+sAdaqzb7WAQ=
+X-Received: by 2002:a50:f28b:: with SMTP id f11mr9425752edm.44.1601184773277;
+ Sat, 26 Sep 2020 22:32:53 -0700 (PDT)
+MIME-Version: 1.0
+From: Mangaleshwaran R <mangaleshwaranr@gmail.com>
+Date: Sun, 27 Sep 2020 11:02:42 +0530
+Message-ID: <CA+A6r9N7fR3PLvPGub-Xthz=4AMxQFyYjTpmkajKgQshtpVYyQ@mail.gmail.com>
+Subject: Business tie up
+To: stephen@wintogether2.com
+Content-Type: multipart/alternative; boundary="000000000000a1896c05b044e1ca"
+X-Spam-Status: No, score=-0.2
+X-Spam-Score: -1
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "119-18-48-204.webhostbox.net",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Hi, Stephen Sir, Test Message, Pl Reply back sir. Regards
+   Mangalewaran R 
+ Content analysis details:   (-0.2 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [mangaleshwaranr[at]gmail.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+X-Spam-Flag: NO
+
+--000000000000a1896c05b044e1ca
+Content-Type: text/plain; charset="UTF-8"
+
+Hi, Stephen Sir,
+
+Test Message, Pl Reply back sir.
+
+Regards
+Mangalewaran R
+
+--000000000000a1896c05b044e1ca
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hi, Stephen Sir,<div><br></div><div>Test Message, Pl Reply=
+ back sir.</div><div><br></div><div>Regards</div><div>Mangalewaran=C2=A0R</=
+div></div>
+
+--000000000000a1896c05b044e1ca--

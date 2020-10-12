@@ -1,0 +1,84 @@
+Return-Path: <Account_Services@icicibank.com>
+Delivered-To: STEPHEN@WINTOGETHER2.COM
+Received: from 119-18-48-204.webhostbox.net
+	by 119-18-48-204.webhostbox.net with LMTP
+	id UM+RGIy6eF9eQQAAFI3O4Q
+	(envelope-from <Account_Services@icicibank.com>)
+	for <STEPHEN@WINTOGETHER2.COM>; Sat, 03 Oct 2020 23:23:16 +0530
+Return-path: <Account_Services@icicibank.com>
+Envelope-to: STEPHEN@WINTOGETHER2.COM
+Delivery-date: Sat, 03 Oct 2020 23:23:16 +0530
+Received: from mlxmail4.icicibank.com ([203.27.235.122]:36938)
+	by 119-18-48-204.webhostbox.net with esmtps  (TLS1.2) tls TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.93)
+	(envelope-from <Account_Services@icicibank.com>)
+	id 1kOlib-0004LZ-Is
+	for STEPHEN@WINTOGETHER2.COM; Sat, 03 Oct 2020 23:23:16 +0530
+Received: from MLXMASSSMTP01.icicibank.com ()
+	by mlxmail4.icicibank.com  with ESMTP id 093HAF9v029730
+	for <STEPHEN@WINTOGETHER2.COM>; Sat, 3 Oct 2020 22:40:15 +0530 (IST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=icicibank.com;
+	s=icicibank.com; t=1601745015;
+	bh=nbOBaaCUDg03V5W7XbJWMniYEaNDnGYnLWTMbuXib5I=;
+	h=From:To:Date:Subject;
+	b=W3OXa5fTWUluJCSzTwYxCTATZ8vyBPQXyoaoj3jUDLrp1e/dZOp3xZRkExZakMmuc
+	 Dy03lhGld9FTKtH3vATIB9AGCn6BhJiSv7l01NOKZ4vFAuV4zfd2p622devUZx9ujG
+	 dRIQpLe0R/daRIUJCFET3ehPZuCRAIfFkpcaJi4k=
+Received: from HYDDMPPRODT3 ()
+	by MLXMASSSMTP01.icicibank.com  with ESMTP id 093H9tut015018
+	for <STEPHEN@WINTOGETHER2.COM>; Sat, 3 Oct 2020 22:40:15 +0530
+Message-Id: <202010031710.093H9tut015018@MLXMASSSMTP01.icicibank.com>
+MIME-Version: 1.0
+From: Account_Services@icicibank.com
+To: STEPHEN@WINTOGETHER2.COM
+Date: 3 Oct 2020 22:40:15 +0530
+Subject: Dispatched: Your ICICI Bank Debit Pin status
+Content-Type: text/html; charset=us-ascii
+Content-Transfer-Encoding: quoted-printable
+X-Spam-Status: No, score=0.5
+X-Spam-Score: 5
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "119-18-48-204.webhostbox.net",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Dear Customer, Greetings from ICICI Bank. The Debit Pin for
+    your Account XX0048 has been sent by Local Post on 03-OCT-20. You will receive
+    it within 12 working days. 
+ Content analysis details:   (0.5 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: icicibank.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay
+                             lines
+  0.6 HTML_MIME_NO_HTML_TAG  HTML-only message, but there is no HTML
+                             tag
+X-Spam-Flag: NO
+
+<BODY style=3D"font-family:Zurich BT;font-size:11pt"><p>Dear Cust=
+omer,</p>=0A<p>Greetings from ICICI Bank.</p>=0A<p>The Debit Pin =
+ for your Account XX0048 has been sent by Local Post on 03-OCT-20=
+. You will receive it within 12 working days.</p>=0A<p>Now get di=
+gital convenience with iMobile app and Internet Banking. Access a=
+ host of services like Generate PIN, Re-issue Debit Card, Order C=
+heque Book, View/ Download Statements and much more. To know more=
+, visit www.icicibank.com/bankdigital.</p>=0A<p>Looking forward t=
+o more opportunities to be of service to you.</p>=0A<p>Sincerely,=
+</p><p>Customer Service Team<br />ICICI Bank Limited.</p><p>This =
+is an auto generated e-mail. Please do not reply.</p></BODY>
+
