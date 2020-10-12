@@ -1,0 +1,973 @@
+Return-Path: <bounces+18125970-6800-info=mprbuilders.com@sendgrid.net>
+Delivered-To: mprbuilders@119-18-48-204.webhostbox.net
+Received: from 119-18-48-204.webhostbox.net
+	by 119-18-48-204.webhostbox.net with LMTP
+	id O3FkKTuQVF9cJQAAFI3O4Q
+	(envelope-from <bounces+18125970-6800-info=mprbuilders.com@sendgrid.net>)
+	for <mprbuilders@119-18-48-204.webhostbox.net>; Sun, 06 Sep 2020 13:01:07 +0530
+Return-path: <bounces+18125970-6800-info=mprbuilders.com@sendgrid.net>
+Envelope-to: info@mprbuilders.com
+Delivery-date: Sun, 06 Sep 2020 13:01:07 +0530
+Received: from xtrwkvxq.outbound-mail.sendgrid.net ([167.89.24.164]:49046)
+	by 119-18-48-204.webhostbox.net with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.93)
+	(envelope-from <bounces+18125970-6800-info=mprbuilders.com@sendgrid.net>)
+	id 1kEp8g-0002TQ-8O
+	for info@mprbuilders.com; Sun, 06 Sep 2020 13:01:07 +0530
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sendgrid.net;
+	h=content-type:from:mime-version:subject:reply-to:to:list-unsubscribe;
+	s=smtpapi; bh=tT4TCf8yzjVZSMwynUgLLis2QJs/Fod8WOwurnkPgMA=;
+	b=urbcibFDobpOLYsZFUWkvAQwcK3AwdkM3iNI6FyVKETvPFAPJX6mJmsPDi92r7swT2U9
+	JZT9Uo6Iuww7d6esS0AjdADuXJ6cr8vqGaz8bAek9+leBQkDf2u9KSKdP/rjtGKRErp9hr
+	LMtccS/8CzrLSCKdsgW51T0q634uAxCX8=
+Received: by filterdrecv-p3iad2-865cf6bb5-q92g4 with SMTP id filterdrecv-p3iad2-865cf6bb5-q92g4-18-5F54900A-91
+        2020-09-06 07:30:18.731547894 +0000 UTC m=+390513.585795473
+Received: from MTgxMjU5NzA (unknown)
+	by ismtpd0031p1iad2.sendgrid.net (SG)
+	with HTTP
+	id WSpyoglETcu8h_c7ZxXCnA
+	Sun, 06 Sep 2020 07:30:18.689 +0000 (UTC)
+Content-Type: multipart/alternative; boundary=e4ed801235fb5e7dcf55b5da623b5077b330e4b2f599a77df1877da44062
+Date: Sun, 06 Sep 2020 07:30:19 +0000 (UTC)
+From: Tripolystudio Pvt Ltd <info@tripolystudio.com>
+Mime-Version: 1.0
+Message-ID: <WSpyoglETcu8h_c7ZxXCnA@ismtpd0031p1iad2.sendgrid.net>
+Subject: Future of Architectural Visualization
+Reply-To: info@tripolystudio.com
+X-SG-EID: 
+ =?us-ascii?Q?u4RIgR9uUDQN6FTc4Ywj9YwwoEVJnKYrMarMKEhb6pkInkiAR3NjnuBAP8KKUo?=
+ =?us-ascii?Q?U+EWZgbZUCkWIxczkTBvJUFwXZVfHjkvY7dLqRh?=
+ =?us-ascii?Q?mixt+9VMheYp4H4=2FhivFfAJKeGcddo7PlbDCaOS?=
+ =?us-ascii?Q?q9jjd+sfKx=2FCc=2F01womB4eVr6cbADHluD3F=2F4sL?=
+ =?us-ascii?Q?uWBeExB9yXvscB+WwWpnxuSxlBMbOdjbxFZUwjW?=
+ =?us-ascii?Q?pYZBJ7IDwYqt25M6P9kaK8Tii1k2brI3g9fWbes?=
+ =?us-ascii?Q?Gp8YAMjPTtWm=2FEdwA=2Fp4Q=3D=3D?=
+X-SG-ID: 
+ =?us-ascii?Q?se=2F49CGmbS0sfR97ImeXvDoOrI1ra2UfBi=2FYp+tM4sZNnFcdeo8cVPRMz3vfJ1?=
+ =?us-ascii?Q?B4lB8ss1VLTXJ6ibLPDs95VBUlMzbRCfT5eXVrQ?=
+ =?us-ascii?Q?W0=2FHUH1DVLNOUXA9CJ6ZlMWoj9IAHcxRpcyE6tJ?=
+ =?us-ascii?Q?=2FKKVqqrw39LiEp8J8pyaM6SBU2841QpBt7gUIZi?=
+ =?us-ascii?Q?8lIEuWkG4xYNqx9vrdLmy6oPgc0iTzNuCQWodWB?=
+ =?us-ascii?Q?=2F9tFU2VaAs0OJyudTuKun8rWTnEu3eai+vUJE8d?=
+ =?us-ascii?Q?AAmzUmFuUaGER2KgokCQzUrPjF95yNwLRe25pFZ?=
+ =?us-ascii?Q?a+EDxiOEJRG6JlxYJ9GsVg7Dn8e6=2FfNXqK9GVFe?=
+ =?us-ascii?Q?mydVcX=2FRXaO6+Vt+sbIJohOuw7gOvwmAelAu4KI?=
+ =?us-ascii?Q?0Bb780h37oySyKeRjpl+u+AosJ1tSUP92ZK8MFz?=
+ =?us-ascii?Q?BllGKhnutaoJZa1aXITtDEzdg7FaqssmM=2FhST+T?=
+ =?us-ascii?Q?PX+JUm6jfJanKSr9riHMEnKHmeIbOn2NCAj37D=2F?=
+ =?us-ascii?Q?LzYkXkORwZva6ea7GVh7GJ3fhKzmQ0cCgpsWYJa?=
+ =?us-ascii?Q?m7teJWO1M9JxMkgfjF0w2MIx46PDaXRhZKj3Umy?=
+ =?us-ascii?Q?ROc2eBYmLcrg6mChxkTsYawZLMXeu8CEzs8iPoJ?=
+ =?us-ascii?Q?GGF3HU9ANx5QB2YkfUTvl58mYqOTWTfTvQa=2FfPD?=
+ =?us-ascii?Q?yCAtEtFtTJuBHwxI6gp=2FUppte5u0JTnOtYuWAsu?=
+ =?us-ascii?Q?a8KYudSuu4+UWux+9PWpNg6q933VKCQkGD3VyL4?=
+ =?us-ascii?Q?f36adZHZUHD8xAI1NKwIr4=3D?=
+To: Pravin Raj <info@mprbuilders.com>
+List-Unsubscribe: 
+ =?us-ascii?Q?=3Cmailto=3Aunsubscribe=40sendgrid=2Enet=3Fsubject=3Dhttps=3A=2F=2Fu18125970=2Ect=2E?=
+ =?us-ascii?Q?sendgrid=2Enet=2Fwf=2Funsubscribe*q*upn=3DcFtNQ?=
+ =?us-ascii?Q?LX-2BwMV63fQk2MziV1j-2BvS9eMpoVW-2FY5eP?=
+ =?us-ascii?Q?wCtYNUp6u0AwH0Up0iIUW-2Bk7rjTAdgGsa5e3B?=
+ =?us-ascii?Q?GZpaaWUx15Dphd7nDjXZS9nzceu3EXjQkGTukpN?=
+ =?us-ascii?Q?Bnz895IstMiIYIgd2CsVgo9eTj-2Fz67KTp3mi9?=
+ =?us-ascii?Q?QPbbLZB7ZTLPP0jkuoUtVvfAcU7aIs4zCOw0I-2?=
+ =?us-ascii?Q?FMTjLsYCoo6ycwH2FzSjVsmjglwbqN-2BzRYFTb?=
+ =?us-ascii?Q?O29Now470pnKI4iroY-2BlQTcfxWkeAYYHI1STZ?=
+ =?us-ascii?Q?jdh-2F6sx6wz72elzXre8lF1lnS6Df-2FD4CvPJ?=
+ =?us-ascii?Q?ZecO10AOKifMeTcRXzspDKfQ2g5jMAWvu9C4uy8?=
+ =?us-ascii?Q?2HJf57G9GOuZqqZVCJA-2BKKkjndYcMaAp1ehQQ?=
+ =?us-ascii?Q?SL-2BfvDytpW1EIDpREMnlRdfEZLvy5-2BMfkL7?=
+ =?us-ascii?Q?qortt5flwvaUeObPIrzq2hznN9l6Gkyh3x0HQDU?=
+ =?us-ascii?Q?t0Y9a4Ar4K8VJjwryrN6YNNOM3wnr5bHQZLRYDn?=
+ =?us-ascii?Q?q6QWFz4oqkE9aIuNU3EM4J7KwxyOt6d8-2Fm8A7?=
+ =?us-ascii?Q?ZlTeeiJ9Qt08PfxVjevOQAht2kSCxBTAB-2FeJN?=
+ =?us-ascii?Q?Z7GnJHti9-2BWVDmY9h1U5CnuHiAKGf7MPyfoWq?=
+ =?us-ascii?Q?HHad6fKYkzEisppAf6S21Gs7QfhNgz5a49jGaki?=
+ =?us-ascii?Q?1MnE1-2BgpigwoXvjP1Cxpy8YFs7K07273pwi-2?=
+ =?us-ascii?Q?BLZSwU7sPIE2eLTrSq19XYwgjTJa8y9hTtYOEEw?=
+ =?us-ascii?Q?5cXMz7Ie59kpdui1zgdPrMBQFrCPFrbt-2FPzNW?=
+ =?us-ascii?Q?d5FvGZgKkUyXwmyetGHofEhBpkoSOsU7J5tDi2-?=
+ =?us-ascii?Q?2BdmeFIc6TtCRpog9u1IrO0q30-2BTpnxJMsAwl?=
+ =?us-ascii?Q?z3iJDujl9HnMuVCPOKDvJUAPSV4bITUm0rIfMO3?=
+ =?us-ascii?Q?10XCoa5oTcN-2FCI1CQXCXCLQmCy6e65AyIP3xX?=
+ =?us-ascii?Q?-2FtfE1cX6XWLFfv9up-2Fr3jY869VIO-2Bc2RJ?=
+ =?us-ascii?Q?jnBDRqIcf5zaijhh2uueNBhmYN3Jbz=3E?=
+X-Spam-Status: No, score=4.0
+X-Spam-Score: 40
+X-Spam-Bar: ++++
+X-Ham-Report: Spam detection software, running on the system "119-18-48-204.webhostbox.net",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  You've found the secret! *Greetings!* With the current Pandemic
+    storming the world with worry and despair. We would like to reach out to
+   the architectural community. Hoping this email finds you healthy and well.I
+    would like to this opport [...] 
+ Content analysis details:   (4.0 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: sendgrid.net]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.0 T_KAM_HTML_FONT_INVALID BODY: Test for Invalidly Named or
+                             Formatted Colors in HTML
+  1.1 KAM_REALLYHUGEIMGSRC   RAW: Spam with image tags with ridiculously
+                              huge http urls
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay
+                             lines
+  3.0 KAM_SENDGRID           Sendgrid being exploited by scammers
+  0.0 SENDGRID_REDIR         Redirect URI via Sendgrid
+  0.0 T_REMOTE_IMAGE         Message contains an external image
+X-Spam-Flag: NO
+
+--e4ed801235fb5e7dcf55b5da623b5077b330e4b2f599a77df1877da44062
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=iso-8859-1
+Mime-Version: 1.0
+
+You've found the secret!
+
+*Greetings!*
+
+With the current Pandemic storming the world with worry and despair. We wou=
+ld like to reach out to the architectural community. Hoping this email find=
+s you healthy and well.I would like to this opportunity and introduce ourse=
+lves.
+We are the Tripoly Studio, and we have been practicing architectural visual=
+ization for the past 15 years.=A0We have not only developed new ideas for t=
+he Concept of Visualization but also innovated new techniques, which have r=
+esulted exceptionally.
+Our Best wishes stand with you and support and comradeship.=A0We will get t=
+hrough this together. And Together we pledge to create a better, cleaner, a=
+nd sustainable future for the generations to come.
+
+Browse Our Architectural Profile ( http://tripolystudio.com/architecture-pr=
+ofile/Tripolystudio-architecture.pdf )
+
+Browse Our Branding Profile ( http://tripolystudio.com/branding-profile/Tri=
+polystudio-branding.pdf )
+
+Browse Our Architectural Walkthrough Videos ( https://www.youtube.com/user/=
+tripolystudio )
+
+*Thanks & Regards,*
+*Vishal Bharadva*
+*Director*
+*M:-* *+91 98988 69160* **
+*BRANCHES*
+*AHMEDABAD | RAJKOT | SURAT | BHAVNAGAR |MUMBAI | DELHI | BENGALURU | DUBAI=
+ | AUSTRALIA*
+*AHMEDABAD =A0:*
+*303, B SQUARE 1, NR.NEPTUNE HOUSE, VIKARAM NAGAR,
+AMBALI - BOPAL RD, AHMEDABAD - 380058 INDIA, GUJARAT.*
+*O :* *+07940371717 =A0|* *M :* *+91 98983 71717 |* *+91 98983 61717*
+*WEB :* *www.tripolystudio.com* ( http://tripolystudio.com )
+
+( https://www.facebook.com/tripolystudiopvtltd/ ) ( https://twitter.com/stu=
+diotripoly/ ) ( https://www.instagram.com/tripolystudio__official/ ) ( http=
+s://in.pinterest.com/studiotripoly/ ) ( https://www.youtube.com/user/tripol=
+ystudio ) ( https://www.linkedin.com/company/tripoly-studio-private-limited=
+ )
+
+*Manage By :* *www.Digitaltripolystudio.com* ( http://digitaltripolystudio.=
+com )
+--e4ed801235fb5e7dcf55b5da623b5077b330e4b2f599a77df1877da44062
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=us-ascii
+Mime-Version: 1.0
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html data-editor-version=3D"2" class=3D"sg-campaigns" xmlns=3D"http://www.=
+w3.org/1999/xhtml">
+    <head>
+      <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8">
+      <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scal=
+e=3D1, minimum-scale=3D1, maximum-scale=3D1">
+      <!--[if !mso]><!-->
+      <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3DEdge">
+      <!--<![endif]-->
+      <!--[if (gte mso 9)|(IE)]>
+      <xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG/>
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+      <![endif]-->
+      <!--[if (gte mso 9)|(IE)]>
+  <style type=3D"text/css">
+    body {width: 700px;margin: 0 auto;}
+    table {border-collapse: collapse;}
+    table, td {mso-table-lspace: 0pt;mso-table-rspace: 0pt;}
+    img {-ms-interpolation-mode: bicubic;}
+  </style>
+<![endif]-->
+      <style type=3D"text/css">
+    body, p, div {
+      font-family: courier, monospace;
+      font-size: 16px;
+    }
+    body {
+      color: #FFFFFF;
+    }
+    body a {
+      color: #fe5d61;
+      text-decoration: none;
+    }
+    p { margin: 0; padding: 0; }
+    table.wrapper {
+      width:100% !important;
+      table-layout: fixed;
+      -webkit-font-smoothing: antialiased;
+      -webkit-text-size-adjust: 100%;
+      -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+    img.max-width {
+      max-width: 100% !important;
+    }
+    .column.of-2 {
+      width: 50%;
+    }
+    .column.of-3 {
+      width: 33.333%;
+    }
+    .column.of-4 {
+      width: 25%;
+    }
+    @media screen and (max-width:480px) {
+      .preheader .rightColumnContent,
+      .footer .rightColumnContent {
+        text-align: left !important;
+      }
+      .preheader .rightColumnContent div,
+      .preheader .rightColumnContent span,
+      .footer .rightColumnContent div,
+      .footer .rightColumnContent span {
+        text-align: left !important;
+      }
+      .preheader .rightColumnContent,
+      .preheader .leftColumnContent {
+        font-size: 80% !important;
+        padding: 5px 0;
+      }
+      table.wrapper-mobile {
+        width: 100% !important;
+        table-layout: fixed;
+      }
+      img.max-width {
+        height: auto !important;
+        max-width: 100% !important;
+      }
+      a.bulletproof-button {
+        display: block !important;
+        width: auto !important;
+        font-size: 80%;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+      .columns {
+        width: 100% !important;
+      }
+      .column {
+        display: block !important;
+        width: 100% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+      }
+      .social-icon-column {
+        display: inline-block !important;
+      }
+    }
+  </style>
+      <!--user entered Head Start-->
+
+     <!--End Head user entered-->
+    </head>
+    <body>
+      <center class=3D"wrapper" data-link-color=3D"#fe5d61" data-body-style=
+=3D"font-size:16px; font-family:courier, monospace; color:#FFFFFF; backgrou=
+nd-color:#f2f4fb;">
+        <div class=3D"webkit">
+          <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"=
+100%" class=3D"wrapper" bgcolor=3D"#f2f4fb">
+            <tr>
+              <td valign=3D"top" bgcolor=3D"#f2f4fb" width=3D"100%">
+                <table width=3D"100%" role=3D"content-container" class=3D"o=
+uter" align=3D"center" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+                  <tr>
+                    <td width=3D"100%">
+                      <table width=3D"100%" cellpadding=3D"0" cellspacing=
+=3D"0" border=3D"0">
+                        <tr>
+                          <td>
+                            <!--[if mso]>
+    <center>
+    <table><tr><td width=3D"700">
+  <![endif]-->
+                                    <table width=3D"100%" cellpadding=3D"0"=
+ cellspacing=3D"0" border=3D"0" style=3D"width:100%; max-width:700px;" alig=
+n=3D"center">
+                                      <tr>
+                                        <td role=3D"modules-container" styl=
+e=3D"padding:2px 2px 2px 2px; color:#FFFFFF; text-align:left;" bgcolor=3D"#=
+F2F4FB" width=3D"100%" align=3D"left"><table class=3D"module preheader preh=
+eader-hide" role=3D"module" data-type=3D"preheader" border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"display: none !important;=
+ mso-hide: all; visibility: hidden; opacity: 0; color: transparent; height:=
+ 0; width: 0;">
+    <tr>
+      <td role=3D"module-content">
+        <p>You've found the secret!</p>
+      </td>
+    </tr>
+  </table><table class=3D"wrapper" role=3D"module" data-type=3D"image" bord=
+er=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"table-=
+layout: fixed;" data-muid=3D"98ndJyAY9BSGjoVqrr6FYx">
+      <tbody><tr>
+        <td style=3D"font-size:6px; line-height:10px; padding:0px 0px 2px 0=
+px;" valign=3D"top" align=3D"left">
+          <img class=3D"max-width" border=3D"0" style=3D"display:block; col=
+or:#000000; text-decoration:none; font-family:Helvetica, arial, sans-serif;=
+ font-size:16px; max-width:100% !important; width:100%; height:auto !import=
+ant;" src=3D"http://cdn.mcauto-images-production.sendgrid.net/dfdab1c2da785=
+cb5/959f084b-922e-4f11-ad24-507c3ba82a47/960x269.png" alt=3D"Off Grid Adven=
+tures" width=3D"696" data-responsive=3D"true" data-proportionally-constrain=
+ed=3D"false">
+        </td>
+      </tr>
+    </tbody></table><table class=3D"wrapper" role=3D"module" data-type=3D"i=
+mage" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=
+=3D"table-layout: fixed;" data-muid=3D"3Ypdby9Xfsf2rN27zTDEfN">
+      <tbody><tr>
+        <td style=3D"font-size:6px; line-height:10px; padding:2px 0px 2px 0=
+px;" valign=3D"top" align=3D"center">
+          <img class=3D"max-width" border=3D"0" style=3D"display:block; col=
+or:#000000; text-decoration:none; font-family:Helvetica, arial, sans-serif;=
+ font-size:16px; max-width:100% !important; width:100%; height:auto !import=
+ant;" src=3D"http://cdn.mcauto-images-production.sendgrid.net/dfdab1c2da785=
+cb5/a7284aec-9597-407c-868f-d3b8cbd37c76/2700x546.png" alt=3D"" width=3D"69=
+6" data-responsive=3D"true" data-proportionally-constrained=3D"false">
+        </td>
+      </tr>
+    </tbody></table><table class=3D"wrapper" role=3D"module" data-type=3D"i=
+mage" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=
+=3D"table-layout: fixed;" data-muid=3D"3Ypdby9Xfsf2rN27zTDEfN.1">
+    <tbody>
+      <tr>
+        <td style=3D"font-size:6px; line-height:10px; padding:2px 0px 2px 0=
+px;" valign=3D"top" align=3D"center">
+          <img class=3D"max-width" border=3D"0" style=3D"display:block; col=
+or:#000000; text-decoration:none; font-family:Helvetica, arial, sans-serif;=
+ font-size:16px; max-width:100% !important; width:100%; height:auto !import=
+ant;" width=3D"696" alt=3D"" data-proportionally-constrained=3D"false" data=
+-responsive=3D"true" src=3D"http://cdn.mcauto-images-production.sendgrid.ne=
+t/dfdab1c2da785cb5/d3255bea-e063-48e8-be18-17c5d43611ae/4000x809.png">
+        </td>
+      </tr>
+    </tbody>
+  </table><table class=3D"module" role=3D"module" data-type=3D"text" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"table-la=
+yout: fixed;" data-muid=3D"7pyDCmyDaGcm5WsBBSaEgv" data-mc-module-version=
+=3D"2019-10-22">
+      <tbody><tr>
+        <td style=3D"background-color:#F2F4FB; padding:0px 0px 0px 0px; lin=
+e-height:22px; text-align:inherit;" height=3D"100%" valign=3D"top" bgcolor=
+=3D"#F2F4FB"><div><div style=3D"font-family: inherit; text-align: inherit">=
+<span style=3D"font-family: verdana, geneva, sans-serif; color: #000000; fo=
+nt-size: 14px"><strong>Greetings!</strong></span></div><div></div></div></t=
+d>
+      </tr>
+    </tbody></table><table class=3D"module" role=3D"module" data-type=3D"di=
+vider" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" styl=
+e=3D"table-layout: fixed;" data-muid=3D"mVyZz43HETwfwb72TGh4iy.1.1">
+    <tbody>
+      <tr>
+        <td style=3D"padding:0px 0px 0px 0px;" role=3D"module-content" heig=
+ht=3D"100%" valign=3D"top" bgcolor=3D"">
+          <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"=
+center" width=3D"100%" height=3D"3px" style=3D"line-height:3px; font-size:3=
+px;">
+            <tbody>
+              <tr>
+                <td style=3D"padding:0px 0px 3px 0px;" bgcolor=3D"#F1C232">=
+</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table><table class=3D"module" role=3D"module" data-type=3D"code" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"table-la=
+yout: fixed;" data-muid=3D"nSVYnVzPLnGZ4wUdynLiKo">
+    <tbody>
+      <tr>
+        <td height=3D"100%" valign=3D"top" role=3D"module-content"><div sty=
+le=3D"font-family: inherit; text-align: justify"><span style=3D"color: #000=
+000; font-style: normal; font-variant-ligatures: normal; font-variant-caps:=
+ normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent:=
+ 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0=
+px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-de=
+coration-color: initial; text-align: start; line-height: normal; background=
+-image: initial; background-size: initial; background-origin: initial; back=
+ground-clip: initial; font-family: verdana, geneva, sans-serif; font-size: =
+14px; background-color: #F2F4FB">With the current Pandemic storming the wor=
+ld with worry and despair. We would like to reach out to the architectural =
+community. Hoping this email finds you healthy and well.I would like to thi=
+s opportunity and introduce ourselves.</span></div>
+
+<div style=3D"font-family: inherit; text-align: justify"><span style=3D"col=
+or: #000000; font-style: normal; font-variant-ligatures: normal; font-varia=
+nt-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text=
+-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-sp=
+acing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial;=
+ text-decoration-color: initial; text-align: start; line-height: normal; ba=
+ckground-image: initial; background-size: initial; background-origin: initi=
+al; background-clip: initial; font-family: verdana, geneva, sans-serif; fon=
+t-size: 14px; background-color: #F2F4FB">&nbsp; &nbsp; &nbsp; We are the Tr=
+ipoly Studio, and we have been practicing architectural visualization for t=
+he past 15 years.&nbsp;We have not only developed new ideas for the Concept=
+ of Visualization but also innovated new techniques, which have resulted ex=
+ceptionally.&nbsp;</span></div>
+<div style=3D"font-family: inherit; text-align: justify"><span style=3D"fon=
+t-family: verdana, geneva, sans-serif; font-size: 14px; background-color: #=
+F2F4FB">&nbsp;&nbsp;&nbsp;</span><span style=3D"color: #000000; font-style:=
+ normal; font-variant-ligatures: normal; font-variant-caps: normal; font-we=
+ight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-trans=
+form: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text=
+-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: =
+initial; text-align: start; line-height: normal; background-image: initial;=
+ background-size: initial; background-origin: initial; background-clip: ini=
+tial; font-family: verdana, geneva, sans-serif; font-size: 14px; background=
+-color: #F2F4FB">Our Best wishes stand with you and support and comradeship=
+.&nbsp;We will get through this together. And Together we pledge to create =
+a better, cleaner, and sustainable future for the generations to come.</spa=
+n></div></td>
+      </tr>
+    </tbody>
+  </table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"=
+center" width=3D"100%" role=3D"module" data-type=3D"columns" style=3D"paddi=
+ng:0px 0px 0px 0px;" bgcolor=3D"#F2F4FB">
+    <tbody>
+      <tr role=3D"module-content">
+        <td height=3D"100%" valign=3D"top"><table width=3D"348" style=3D"wi=
+dth:348px; border-spacing:0; border-collapse:collapse; margin:0px 0px 0px 0=
+px;" cellpadding=3D"0" cellspacing=3D"0" align=3D"left" border=3D"0" bgcolo=
+r=3D"" class=3D"column column-0">
+      <tbody>
+        <tr>
+          <td style=3D"padding:0px;margin:0px;border-spacing:0;"><table bor=
+der=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"module" data-role=3D=
+"module-button" data-type=3D"button" role=3D"module" style=3D"table-layout:=
+fixed;" width=3D"100%" data-muid=3D"b7ab69f3-dd17-4d0a-a507-712dbe89a5d6">
+      <tbody>
+        <tr>
+          <td align=3D"center" bgcolor=3D"#F2F4FB" class=3D"outer-td" style=
+=3D"padding:5px 5px 5px 5px; background-color:#F2F4FB;">
+            <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=
+=3D"wrapper-mobile" style=3D"text-align:center;">
+              <tbody>
+                <tr>
+                <td align=3D"center" bgcolor=3D"#000000" class=3D"inner-td"=
+ style=3D"border-radius:6px; font-size:16px; text-align:center; background-=
+color:inherit;">
+                  <a href=3D"https://u18125970.ct.sendgrid.net/ls/click?upn=
+=3Do1rcgGwUQggsEnFANDh8cyBdBj4cC1yzhY2uqVZ5oxpIlQgCj2bJRDxsvjqqA6dozg5FFDvI=
+z6XytCDyey8FPX6ym9uWcjU6ZNd-2BfzJpBSsrF9gLrf8srnkRM59-2BDgvV5EtL_wgs66OEZxJ=
+beuTUjQr57WB4X37Akqr9IGcR3-2F7nRftSLKpxsuFIZ-2B2eSETuGOuUS9CGNWMTkeHatq3jqc=
+7g7NbJteZaWYjR8OBtsiwAdld1FHvnt3-2BBsjaKGJV0-2FYf4TsyihSCkLB7JXzIK0DrA-2BNS=
+mVE7S-2BiGytOSErAS05065pSiMWs4MvEq-2F088odDpxiBI6Jve0eBF5hs9Wide8Ry-2BfTJKI=
+khyD1A-2Fmlpm5d7dWbWpWFJ-2BHA7gn3N15fnomyxOswGQm2zoldmMs-2Bi6S0Nj8H9pld0n6Z=
+xbb4bgM1QN6U2DClW4ZWmJjM3D272r0n2OzYZiyPthvFnKxm52pAa-2FA8QWh2DIDgMFZ5bZ-2F=
+-2FoZ2E-2F7ocT5biSynZ-2FB1ntFeGYJUSMk7McDhVIcxaPwJWRLiIkV0B8I-2BXDy2gx2INFj=
+pBZGG6C-2BCAvOmld1LLkNNRbzFlyI1YcosqXrdfBe6rcGS2VM-2FVAAtePMP5-2BiaqX-2FH5v=
+V6q05xkGioij4Bxo321B5CSvHkPVPRsScVKPTJl28lUJb-2BRz8lOUCAruqrNUQzTjTBU6Qq71-=
+2B9-2FtIfB36SDieq5C0Km8ZowmQbq-2BdVRCvs6ELj31QmfU1GITRAT569RaIGUze9-2B-2FPb=
+Rk6RjTyAl8DmVwHU9-2F-2FeafN7nf3Q6ClZNoooyW-2FnzYGscRJ4Sl0TehAqG5LPX0qtt6Plz=
+O2crScrvbsV1-2BaLgQ5BlcAc5F3MQU5x32aa6Fe-2BhYr8qJAWDtsw-2FxpA-2Fkbe3XeqSdkW=
+juMQlmjU4GwVr-2FUCHd2hsQtwBMT0-2BUu7-2BWQZfbZcHKrswhnTWpdQL9zueJ5-2FJbtsjnY=
+bp8RYP7GGENTwiLwP-2BvOfTvDo1jT9s0XwOvn-2F-2FTcu1P9cUFtMrGe5UbvezT52HzynUskG=
+ws-2FkXPyvVxR7pJhfuEN8ENXrfGXj0dhoQkhY-3D" style=3D"background-color:#00000=
+0; border:0px solid #000000; border-color:#000000; border-radius:25px; bord=
+er-width:0px; color:#F1C232; display:inline-block; font-size:11px; font-wei=
+ght:700; letter-spacing:1px; line-height:normal; padding:10px 10px 10px 10p=
+x; text-align:center; text-decoration:none; border-style:solid; font-family=
+:verdana,geneva,sans-serif;" target=3D"_blank">Browse Our Architectural Pro=
+file</a>
+                </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table></td>
+        </tr>
+      </tbody>
+    </table><table width=3D"348" style=3D"width:348px; border-spacing:0; bo=
+rder-collapse:collapse; margin:0px 0px 0px 0px;" cellpadding=3D"0" cellspac=
+ing=3D"0" align=3D"left" border=3D"0" bgcolor=3D"" class=3D"column column-1=
+">
+      <tbody>
+        <tr>
+          <td style=3D"padding:0px;margin:0px;border-spacing:0;"><table bor=
+der=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"module" data-role=3D=
+"module-button" data-type=3D"button" role=3D"module" style=3D"table-layout:=
+fixed;" width=3D"100%" data-muid=3D"0671bfc7-1404-4e0d-b231-a27273c10e4f">
+      <tbody>
+        <tr>
+          <td align=3D"center" bgcolor=3D"#F2F4FB" class=3D"outer-td" style=
+=3D"padding:5px 5px 5px 5px; background-color:#F2F4FB;">
+            <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=
+=3D"wrapper-mobile" style=3D"text-align:center;">
+              <tbody>
+                <tr>
+                <td align=3D"center" bgcolor=3D"#000000" class=3D"inner-td"=
+ style=3D"border-radius:6px; font-size:16px; text-align:center; background-=
+color:inherit;">
+                  <a href=3D"https://u18125970.ct.sendgrid.net/ls/click?upn=
+=3Do1rcgGwUQggsEnFANDh8cyBdBj4cC1yzhY2uqVZ5oxrOE8sl1QzFHAuvl8JqYMaq7F6KQ6e-=
+2FOs-2BFZbDGzX9DIaVn32IY3nrQ-2Blihj6ZY7yg-3DPtKw_wgs66OEZxJbeuTUjQr57WB4X37=
+Akqr9IGcR3-2F7nRftSLKpxsuFIZ-2B2eSETuGOuUS9CGNWMTkeHatq3jqc7g7NbJteZaWYjR8O=
+BtsiwAdld1FHvnt3-2BBsjaKGJV0-2FYf4TsyihSCkLB7JXzIK0DrA-2BNSmVE7S-2BiGytOSEr=
+AS05065pSiMWs4MvEq-2F088odDpxiBI6Jve0eBF5hs9Wide8Ry-2BfTJKIkhyD1A-2Fmlpm5d7=
+dWbWpWFJ-2BHA7gn3N15fnomyxOswGQm2zoldmMs-2Bi6S0Nj8H9pld0n6Zxbb4bgM1QN6U2DCl=
+W4ZWmJjM3D272r0n2OzYZiyPthvFnKxm52pAa-2FA8QWh2DIDgMFZ5bZ-2F-2FoZ2E-2F7ocT5b=
+iSynZ-2FB1ntFeGYJUSMk7McDhVIcxaPwJWRLiIkV0B8I-2BXDy2gx2INFjpBZGG6C-2BCAvOml=
+d1LLkNNRbzFlyI1YcosqXrdfBe6rcGS2VM-2FVAAtePMP5-2BiaqX-2FH5vV6q05xkGioij4Bxo=
+321B5CSvHkPVPRsScVKPTJl28lUJb-2BRz8lOUCAruqrNUQzTjTBU6Qq71-2B9-2FtIfB36SDie=
+q5C0Km8ZowmQbq-2BdVRCvs6ELj31QmfU1GITRAT569RaIGUze9-2B-2FPbRk6RjTyAl8DmVwHU=
+9-2F-2FeafN7nf3Q6ClZNoooyW-2FnzYGscRJ4Sl0TehAqG5LPX0qtt6PlzO2crScrvbsV1-2Ba=
+LgQ5BlcAc5F3MQU5x32aa6Fe-2BhYr8qJAWDtsw-2FxpA-2Fkbe3XeqSdkWj3LLQBA3X60RBkkU=
+kQkcyP54ikT8hbTP0-2B0T7hd66BNhusjhGt9Qkr2ioqs1SCf3cYtgaPToLkRcmeN2kr7FbfrLo=
+Kc16U3oOHjYkaPcIy2ASLsAjrmxwfRgpJgj2EboTMMFh8b5k96oa3Qj3LhIj2QCx-2BLqMKelMR=
+WHVhZmfw4A-3D" style=3D"background-color:#000000; border:0px solid #000000;=
+ border-color:#000000; border-radius:25px; border-width:0px; color:#F1C232;=
+ display:inline-block; font-size:11px; font-weight:700; letter-spacing:1px;=
+ line-height:normal; padding:10px 10px 10px 10px; text-align:center; text-d=
+ecoration:none; border-style:solid; font-family:verdana,geneva,sans-serif;"=
+ target=3D"_blank">Browse Our Branding Profile</a>
+                </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table></td>
+        </tr>
+      </tbody>
+    </table></td>
+      </tr>
+    </tbody>
+  </table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"=
+module" data-role=3D"module-button" data-type=3D"button" role=3D"module" st=
+yle=3D"table-layout:fixed" width=3D"100%" data-muid=3D"4ywPd9vJ6WFyV1Si75h9=
+vh"><tbody><tr><td align=3D"center" bgcolor=3D"#F2F4FB" class=3D"outer-td" =
+style=3D"padding:5px 5px 5px 5px; background-color:#F2F4FB;"><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"button-css__deep-table_=
+__2OZyb wrapper-mobile" style=3D"text-align:center"><tbody><tr><td align=3D=
+"center" bgcolor=3D"#000000" class=3D"inner-td" style=3D"border-radius:6px;=
+ font-size:16px; text-align:center; background-color:inherit;"><a style=3D"=
+background-color:#000000; border:0px solid #000000; border-color:#000000; b=
+order-radius:25px; border-width:0px; color:#F1C232; display:inline-block; f=
+ont-size:11px; font-weight:700; letter-spacing:1px; line-height:normal; pad=
+ding:10px 10px 10px 10px; text-align:center; text-decoration:none; border-s=
+tyle:solid; font-family:verdana,geneva,sans-serif;" href=3D"https://u181259=
+70.ct.sendgrid.net/ls/click?upn=3DBReqw311F3pwN62LwGQ8NvrzxMGLJcX6J3bQZO31z=
+BHey4VrugRtAjDw-2BG4RrxMqYU-2BHtC78wOsuzQaqcP8wKA-3D-3DG3V0_wgs66OEZxJbeuTU=
+jQr57WB4X37Akqr9IGcR3-2F7nRftSLKpxsuFIZ-2B2eSETuGOuUS9CGNWMTkeHatq3jqc7g7Nb=
+JteZaWYjR8OBtsiwAdld1FHvnt3-2BBsjaKGJV0-2FYf4TsyihSCkLB7JXzIK0DrA-2BNSmVE7S=
+-2BiGytOSErAS05065pSiMWs4MvEq-2F088odDpxiBI6Jve0eBF5hs9Wide8Ry-2BfTJKIkhyD1=
+A-2Fmlpm5d7dWbWpWFJ-2BHA7gn3N15fnomyxOswGQm2zoldmMs-2Bi6S0Nj8H9pld0n6Zxbb4b=
+gM1QN6U2DClW4ZWmJjM3D272r0n2OzYZiyPthvFnKxm52pAa-2FA8QWh2DIDgMFZ5bZ-2F-2FoZ=
+2E-2F7ocT5biSynZ-2FB1ntFeGYJUSMk7McDhVIcxaPwJWRLiIkV0B8I-2BXDy2gx2INFjpBZGG=
+6C-2BCAvOmld1LLkNNRbzFlyI1YcosqXrdfBe6rcGS2VM-2FVAAtePMP5-2BiaqX-2FH5vV6q05=
+xkGioij4Bxo321B5CSvHkPVPRsScVKPTJl28lUJb-2BRz8lOUCAruqrNUQzTjTBU6Qq71-2B9-2=
+FtIfB36SDieq5C0Km8ZowmQbq-2BdVRCvs6ELj31QmfU1GITRAT569RaIGUze9-2B-2FPbRk6Rj=
+TyAl8DmVwHU9-2F-2FeafN7nf3Q6ClZNoooyW-2FnzYGscRJ4Sl0TehAqG5LPX0qtt6PlzO2crS=
+crvbsV1-2BaLgQ5BlcAc5F3MQU5x32aa6Fe-2BhYr8qJAWDtsw-2FxpA-2Fkbe3XeqSdkWj2Gi7=
+uYw7K1jAtytwVWvEAouXcJGv50jKJMFkIyqRAjZ9oDtyaS98cvEHdvXVZNsyIXDyZK6Ztf8BnHp=
+fcywpP4Gg-2BlClMJysAba50n0udTXmxURBLzPAChbUAw5msAWrDyomtUK-2BQYNnfKAvAnzNHL=
+yUh94P-2FhMLnkKTH-2BfSrhY-3D" target=3D"_blank">Browse Our Architectural Wa=
+lkthrough Videos</a></td></tr></tbody></table></td></tr></tbody></table><ta=
+ble class=3D"module" role=3D"module" data-type=3D"divider" border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"table-layout: fixe=
+d;" data-muid=3D"mVyZz43HETwfwb72TGh4iy.1.1.1">
+    <tbody>
+      <tr>
+        <td style=3D"padding:0px 0px 0px 0px;" role=3D"module-content" heig=
+ht=3D"100%" valign=3D"top" bgcolor=3D"">
+          <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"=
+center" width=3D"100%" height=3D"3px" style=3D"line-height:3px; font-size:3=
+px;">
+            <tbody>
+              <tr>
+                <td style=3D"padding:0px 0px 3px 0px;" bgcolor=3D"#F1C232">=
+</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table><table class=3D"module" role=3D"module" data-type=3D"text" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"table-la=
+yout: fixed;" data-muid=3D"933c8a9d-4b07-4650-810a-9d31f867ae0b" data-mc-mo=
+dule-version=3D"2019-10-22">
+    <tbody>
+      <tr>
+        <td style=3D"padding:2px 2px 2px 2px; line-height:22px; text-align:=
+inherit;" height=3D"100%" valign=3D"top" bgcolor=3D"" role=3D"module-conten=
+t"><div><div style=3D"font-family: inherit; text-align: inherit"><span styl=
+e=3D"color: #000000; font-size: 10px; font-family: verdana, geneva, sans-se=
+rif"><strong>Thanks &amp; Regards,</strong></span></div>
+<div style=3D"font-family: inherit; text-align: inherit"><span style=3D"col=
+or: #f1c232; font-size: 10px; font-family: verdana, geneva, sans-serif"><st=
+rong>Vishal Bharadva &nbsp;</strong></span></div>
+<div style=3D"font-family: inherit; text-align: inherit"><span style=3D"col=
+or: #000000; font-size: 10px; font-family: verdana, geneva, sans-serif"><st=
+rong>Director&nbsp;</strong></span></div>
+<div style=3D"font-family: inherit; text-align: inherit"><span style=3D"col=
+or: #f1c232; font-size: 10px; font-family: verdana, geneva, sans-serif"><st=
+rong>M:- &nbsp;</strong></span><span style=3D"display: inline; line-height:=
+ 14px; white-space: nowrap; color: #f1c232; font-size: 10px; font-family: v=
+erdana, geneva, sans-serif"><strong>+91 98988 69160</strong></span><span st=
+yle=3D"color: #f1c232; font-size: 10px; font-family: verdana, geneva, sans-=
+serif"><strong>&nbsp;</strong></span></div>
+<div style=3D"font-family: inherit; text-align: left"><span style=3D"text-t=
+ransform: uppercase; line-height: 26px; color: #000000; font-size: 10px; fo=
+nt-family: verdana, geneva, sans-serif"><strong>BRANCHES&nbsp;</strong></sp=
+an></div>
+<div style=3D"font-family: inherit; text-align: left"><span style=3D"color:=
+ #f1c232; font-size: 10px; font-family: verdana, geneva, sans-serif"><stron=
+g>AHMEDABAD | RAJKOT | SURAT | BHAVNAGAR |MUMBAI | DELHI | BENGALURU | DUBA=
+I | AUSTRALIA</strong></span><span style=3D"color: #000000; font-size: 10px=
+; font-family: verdana, geneva, sans-serif">&nbsp;</span></div>
+<div style=3D"font-family: inherit; text-align: left"><span style=3D"color:=
+ #000000; font-size: 10px; font-family: verdana, geneva, sans-serif"><stron=
+g>AHMEDABAD &nbsp;:</strong></span></div>
+<div style=3D"font-family: inherit; text-align: left"><span style=3D"displa=
+y: inline; color: #000000; font-size: 10px; font-family: verdana, geneva, s=
+ans-serif"><strong>303, B SQUARE 1, NR.NEPTUNE HOUSE, VIKARAM NAGAR,<br>
+AMBALI - BOPAL RD, AHMEDABAD - 380058 INDIA, GUJARAT.</strong></span></div>
+<div style=3D"font-family: inherit; text-align: left"><span style=3D"color:=
+ #000000; font-size: 10px; font-family: verdana, geneva, sans-serif"><stron=
+g>O : </strong></span><span style=3D"line-height: 14px; white-space: nowrap=
+; color: #000000; font-size: 10px; font-family: verdana, geneva, sans-serif=
+"><strong>+07940371717 &nbsp;| &nbsp;</strong></span><span style=3D"color: =
+#000000; font-size: 10px; font-family: verdana, geneva, sans-serif"><strong=
+>M :</strong></span><span style=3D"color: #000000; font-size: 10px; font-fa=
+mily: verdana, geneva, sans-serif"> </span><span style=3D"margin-top: 0px; =
+margin-right: 0px; margin-bottom: 0px; margin-left: 0px; border-top-width: =
+0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: =
+0px; border-top-style: initial; border-right-style: initial; border-bottom-=
+style: initial; border-left-style: initial; border-top-color: rgb(0, 0, 0);=
+ border-right-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); borde=
+r-left-color: rgb(0, 0, 0); border-image-source: initial; border-image-slic=
+e: initial; border-image-width: initial; border-image-outset: initial; bord=
+er-image-repeat: initial; padding-top: 0px; padding-right: 0px; padding-bot=
+tom: 0px; padding-left: 0px; width: auto; line-height: 1px; letter-spacing:=
+ 0px; overflow-x: hidden; overflow-y: hidden; clear: none; word-spacing: no=
+rmal; vertical-align: baseline; float: none; display: inline; list-style-ty=
+pe: disc; list-style-position: outside; white-space: nowrap; border-collaps=
+e: separate; table-layout: auto; direction: ltr; min-height: 14px; backgrou=
+nd-image: none; background-color: transparent; color: #000000; font-size: 1=
+0px; font-family: verdana, geneva, sans-serif"><strong>+91 98983 71717 | </=
+strong></span><span style=3D"display: inline; line-height: 1px; white-space=
+: nowrap; color: #000000; font-size: 10px; font-family: verdana, geneva, sa=
+ns-serif"><strong>+91 98983 61717</strong></span><span style=3D"color: #000=
+000; font-size: 10px; font-family: verdana, geneva, sans-serif">&nbsp;</spa=
+n></div>
+<div style=3D"font-family: inherit"><span style=3D"font-family: verdana,gen=
+eva,sans-serif; font-size: 10px; color: #010101"><strong>WEB :</strong></sp=
+an><span style=3D"font-family: verdana,geneva,sans-serif; font-size: 10px; =
+color: #010101"> </span><a href=3D"https://u18125970.ct.sendgrid.net/ls/cli=
+ck?upn=3Do1rcgGwUQggsEnFANDh8cyBdBj4cC1yzhY2uqVZ5oxr2rCFy0vxE-2BdirTkPIqyPN=
+ldRW_wgs66OEZxJbeuTUjQr57WB4X37Akqr9IGcR3-2F7nRftSLKpxsuFIZ-2B2eSETuGOuUS9C=
+GNWMTkeHatq3jqc7g7NbJteZaWYjR8OBtsiwAdld1FHvnt3-2BBsjaKGJV0-2FYf4TsyihSCkLB=
+7JXzIK0DrA-2BNSmVE7S-2BiGytOSErAS05065pSiMWs4MvEq-2F088odDpxiBI6Jve0eBF5hs9=
+Wide8Ry-2BfTJKIkhyD1A-2Fmlpm5d7dWbWpWFJ-2BHA7gn3N15fnomyxOswGQm2zoldmMs-2Bi=
+6S0Nj8H9pld0n6Zxbb4bgM1QN6U2DClW4ZWmJjM3D272r0n2OzYZiyPthvFnKxm52pAa-2FA8QW=
+h2DIDgMFZ5bZ-2F-2FoZ2E-2F7ocT5biSynZ-2FB1ntFeGYJUSMk7McDhVIcxaPwJWRLiIkV0B8=
+I-2BXDy2gx2INFjpBZGG6C-2BCAvOmld1LLkNNRbzFlyI1YcosqXrdfBe6rcGS2VM-2FVAAtePM=
+P5-2BiaqX-2FH5vV6q05xkGioij4Bxo321B5CSvHkPVPRsScVKPTJl28lUJb-2BRz8lOUCAruqr=
+NUQzTjTBU6Qq71-2B9-2FtIfB36SDieq5C0Km8ZowmQbq-2BdVRCvs6ELj31QmfU1GITRAT569R=
+aIGUze9-2B-2FPbRk6RjTyAl8DmVwHU9-2F-2FeafN7nf3Q6ClZNoooyW-2FnzYGscRJ4Sl0Teh=
+AqG5LPX0qtt6PlzO2crScrvbsV1-2BaLgQ5BlcAc5F3MQU5x32aa6Fe-2BhYr8qJAWDtsw-2Fxp=
+A-2Fkbe3XeqSdkWjA0zYwe0vAJ-2FrbC74W5wqoL65VFwKXCD6OQboRynRQbj0oM4L88jee6peR=
+IOIfuwo0OscZxY478NuJVZw7EwG7a3o450l6-2BFYGVXeWE-2BFgwgyMJ3Z5Swkqd9C7TnpN-2F=
+kOl-2BHlmCj-2BR7tbbBD-2Bbsha4EPyr-2FUZIRP9Hct4uNJBtNM-3D"><span style=3D"fo=
+nt-family: verdana,geneva,sans-serif; font-size: 10px; color: #010101"><str=
+ong>www.tripolystudio.com</strong></span></a></div><div></div></div></td>
+      </tr>
+    </tbody>
+  </table><table class=3D"module" role=3D"module" data-type=3D"social" alig=
+n=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%=
+" style=3D"table-layout: fixed;" data-muid=3D"kTqJe3Ke2movtrLxSjKW3C">
+      <tbody>
+        <tr>
+          <td valign=3D"top" style=3D"padding:0px 0px 0px 0px; font-size:6p=
+x; line-height:10px;" align=3D"center">
+            <table align=3D"center">
+              <tbody><tr align=3D"center"><td style=3D"padding: 0px 5px;" c=
+lass=3D"social-icon-column">
+      <a role=3D"social-icon-link" href=3D"https://u18125970.ct.sendgrid.ne=
+t/ls/click?upn=3DBReqw311F3pwN62LwGQ8Nn7iPwvym2-2BHmv9xrc1p5EtvFCzpmIiexT0u=
+J02XYCxUm3IYMKfmit6ywlK2jblwYg-3D-3DbnNU_wgs66OEZxJbeuTUjQr57WB4X37Akqr9IGc=
+R3-2F7nRftSLKpxsuFIZ-2B2eSETuGOuUS9CGNWMTkeHatq3jqc7g7NbJteZaWYjR8OBtsiwAdl=
+d1FHvnt3-2BBsjaKGJV0-2FYf4TsyihSCkLB7JXzIK0DrA-2BNSmVE7S-2BiGytOSErAS05065p=
+SiMWs4MvEq-2F088odDpxiBI6Jve0eBF5hs9Wide8Ry-2BfTJKIkhyD1A-2Fmlpm5d7dWbWpWFJ=
+-2BHA7gn3N15fnomyxOswGQm2zoldmMs-2Bi6S0Nj8H9pld0n6Zxbb4bgM1QN6U2DClW4ZWmJjM=
+3D272r0n2OzYZiyPthvFnKxm52pAa-2FA8QWh2DIDgMFZ5bZ-2F-2FoZ2E-2F7ocT5biSynZ-2F=
+B1ntFeGYJUSMk7McDhVIcxaPwJWRLiIkV0B8I-2BXDy2gx2INFjpBZGG6C-2BCAvOmld1LLkNNR=
+bzFlyI1YcosqXrdfBe6rcGS2VM-2FVAAtePMP5-2BiaqX-2FH5vV6q05xkGioij4Bxo321B5CSv=
+HkPVPRsScVKPTJl28lUJb-2BRz8lOUCAruqrNUQzTjTBU6Qq71-2B9-2FtIfB36SDieq5C0Km8Z=
+owmQbq-2BdVRCvs6ELj31QmfU1GITRAT569RaIGUze9-2B-2FPbRk6RjTyAl8DmVwHU9-2F-2Fe=
+afN7nf3Q6ClZNoooyW-2FnzYGscRJ4Sl0TehAqG5LPX0qtt6PlzO2crScrvbsV1-2BaLgQ5BlcA=
+c5F3MQU5x32aa6Fe-2BhYr8qJAWDtsw-2FxpA-2Fkbe3XeqSdkWjBr7dF3o5FxKY0UEoXptPQWN=
+lcMQs0IFqf4x-2BmslkOI7s80yIWgq23aYEoIFSBwFM3yJEqzlrOpjuCsmUzbEPdBh2ktNE9Jnc=
+N2XTbF6EygIn-2F9aCN6T-2Fj7GzEUXSbCiMm1uYUfPdFdg-2Bwtdltv9GEYc-2BX2y0VpNAt3m=
+mKgSXnS4-3D" target=3D"_blank" alt=3D"Facebook" title=3D"Facebook" style=3D=
+"display:inline-block; background-color:#F1C232; height:30px; width:30px; b=
+order-radius:2px; -webkit-border-radius:2px; -moz-border-radius:2px;">
+        <img role=3D"social-icon" alt=3D"Facebook" title=3D"Facebook" src=
+=3D"https://marketing-image-production.s3.amazonaws.com/social/white/facebo=
+ok.png" style=3D"height:30px; width:30px;" height=3D"30" width=3D"30">
+      </a>
+    </td><td style=3D"padding: 0px 5px;" class=3D"social-icon-column">
+      <a role=3D"social-icon-link" href=3D"https://u18125970.ct.sendgrid.ne=
+t/ls/click?upn=3DBReqw311F3pwN62LwGQ8Nr-2BBb30Xn2cODvIngNrVMRfg2nUIoK64-2FR=
+0XeIZPKFTxlPXU_wgs66OEZxJbeuTUjQr57WB4X37Akqr9IGcR3-2F7nRftSLKpxsuFIZ-2B2eS=
+ETuGOuUS9CGNWMTkeHatq3jqc7g7NbJteZaWYjR8OBtsiwAdld1FHvnt3-2BBsjaKGJV0-2FYf4=
+TsyihSCkLB7JXzIK0DrA-2BNSmVE7S-2BiGytOSErAS05065pSiMWs4MvEq-2F088odDpxiBI6J=
+ve0eBF5hs9Wide8Ry-2BfTJKIkhyD1A-2Fmlpm5d7dWbWpWFJ-2BHA7gn3N15fnomyxOswGQm2z=
+oldmMs-2Bi6S0Nj8H9pld0n6Zxbb4bgM1QN6U2DClW4ZWmJjM3D272r0n2OzYZiyPthvFnKxm52=
+pAa-2FA8QWh2DIDgMFZ5bZ-2F-2FoZ2E-2F7ocT5biSynZ-2FB1ntFeGYJUSMk7McDhVIcxaPwJ=
+WRLiIkV0B8I-2BXDy2gx2INFjpBZGG6C-2BCAvOmld1LLkNNRbzFlyI1YcosqXrdfBe6rcGS2VM=
+-2FVAAtePMP5-2BiaqX-2FH5vV6q05xkGioij4Bxo321B5CSvHkPVPRsScVKPTJl28lUJb-2BRz=
+8lOUCAruqrNUQzTjTBU6Qq71-2B9-2FtIfB36SDieq5C0Km8ZowmQbq-2BdVRCvs6ELj31QmfU1=
+GITRAT569RaIGUze9-2B-2FPbRk6RjTyAl8DmVwHU9-2F-2FeafN7nf3Q6ClZNoooyW-2FnzYGs=
+cRJ4Sl0TehAqG5LPX0qtt6PlzO2crScrvbsV1-2BaLgQ5BlcAc5F3MQU5x32aa6Fe-2BhYr8qJA=
+WDtsw-2FxpA-2Fkbe3XeqSdkWjUEcAEM4pwPJUOhrYusr5w-2F0Sp4542HivYiffBkEDyOYsvbm=
+cNGitfwCkFZxQFJOBNLaB41UzsX5gJOKfhmuXzulSoQjnUm1syNtyJ6WuOmOXN6i5I1EXHkpzrB=
+aYysBA2HxshkiRegV8Vo1wdkUKogBBKb-2BqIHDJ7Q41ZI3z2fw-3D" target=3D"_blank" a=
+lt=3D"Twitter" title=3D"Twitter" style=3D"display:inline-block; background-=
+color:#F1C232; height:30px; width:30px; border-radius:2px; -webkit-border-r=
+adius:2px; -moz-border-radius:2px;">
+        <img role=3D"social-icon" alt=3D"Twitter" title=3D"Twitter" src=3D"=
+https://marketing-image-production.s3.amazonaws.com/social/white/twitter.pn=
+g" style=3D"height:30px; width:30px;" height=3D"30" width=3D"30">
+      </a>
+    </td><td style=3D"padding: 0px 5px;" class=3D"social-icon-column">
+      <a role=3D"social-icon-link" href=3D"https://u18125970.ct.sendgrid.ne=
+t/ls/click?upn=3DBReqw311F3pwN62LwGQ8NsT3RmuS0PMclngIylSnRpZ-2BiaUf89YAihoJ=
+cyggAoIhqAvmXYQnvJuyD4ho-2BN0iEg-3D-3DT38T_wgs66OEZxJbeuTUjQr57WB4X37Akqr9I=
+GcR3-2F7nRftSLKpxsuFIZ-2B2eSETuGOuUS9CGNWMTkeHatq3jqc7g7NbJteZaWYjR8OBtsiwA=
+dld1FHvnt3-2BBsjaKGJV0-2FYf4TsyihSCkLB7JXzIK0DrA-2BNSmVE7S-2BiGytOSErAS0506=
+5pSiMWs4MvEq-2F088odDpxiBI6Jve0eBF5hs9Wide8Ry-2BfTJKIkhyD1A-2Fmlpm5d7dWbWpW=
+FJ-2BHA7gn3N15fnomyxOswGQm2zoldmMs-2Bi6S0Nj8H9pld0n6Zxbb4bgM1QN6U2DClW4ZWmJ=
+jM3D272r0n2OzYZiyPthvFnKxm52pAa-2FA8QWh2DIDgMFZ5bZ-2F-2FoZ2E-2F7ocT5biSynZ-=
+2FB1ntFeGYJUSMk7McDhVIcxaPwJWRLiIkV0B8I-2BXDy2gx2INFjpBZGG6C-2BCAvOmld1LLkN=
+NRbzFlyI1YcosqXrdfBe6rcGS2VM-2FVAAtePMP5-2BiaqX-2FH5vV6q05xkGioij4Bxo321B5C=
+SvHkPVPRsScVKPTJl28lUJb-2BRz8lOUCAruqrNUQzTjTBU6Qq71-2B9-2FtIfB36SDieq5C0Km=
+8ZowmQbq-2BdVRCvs6ELj31QmfU1GITRAT569RaIGUze9-2B-2FPbRk6RjTyAl8DmVwHU9-2F-2=
+FeafN7nf3Q6ClZNoooyW-2FnzYGscRJ4Sl0TehAqG5LPX0qtt6PlzO2crScrvbsV1-2BaLgQ5Bl=
+cAc5F3MQU5x32aa6Fe-2BhYr8qJAWDtsw-2FxpA-2Fkbe3XeqSdkWjvoMISOgxFSR776szPjwSp=
+nUNnQAFwYhTC51EVUbdctUyM5FaiAaSyCiUuyMzonI2Upc92hBa9rmAAqYRYDbz2pw002VfrjkG=
+1EMUK6JoUv12E9HdDmZIWNXz51REJF7YOn3WDN9-2BY4OepTC1MTRD0uivsnjDNtEw9EVZk0OxI=
+Cw-3D" target=3D"_blank" alt=3D"Instagram" title=3D"Instagram" style=3D"dis=
+play:inline-block; background-color:#F1C232; height:30px; width:30px; borde=
+r-radius:2px; -webkit-border-radius:2px; -moz-border-radius:2px;">
+        <img role=3D"social-icon" alt=3D"Instagram" title=3D"Instagram" src=
+=3D"https://marketing-image-production.s3.amazonaws.com/social/white/instag=
+ram.png" style=3D"height:30px; width:30px;" height=3D"30" width=3D"30">
+      </a>
+    </td><td style=3D"padding: 0px 5px;" class=3D"social-icon-column">
+      <a role=3D"social-icon-link" href=3D"https://u18125970.ct.sendgrid.ne=
+t/ls/click?upn=3DBReqw311F3pwN62LwGQ8NlHbI8LxDZLX729A40BeufjUmvw8sLHzTVqzlo=
+mTRKzJXZdR-2Byiao1biDKXyKOJBOw-3D-3Dfz1__wgs66OEZxJbeuTUjQr57WB4X37Akqr9IGc=
+R3-2F7nRftSLKpxsuFIZ-2B2eSETuGOuUS9CGNWMTkeHatq3jqc7g7NbJteZaWYjR8OBtsiwAdl=
+d1FHvnt3-2BBsjaKGJV0-2FYf4TsyihSCkLB7JXzIK0DrA-2BNSmVE7S-2BiGytOSErAS05065p=
+SiMWs4MvEq-2F088odDpxiBI6Jve0eBF5hs9Wide8Ry-2BfTJKIkhyD1A-2Fmlpm5d7dWbWpWFJ=
+-2BHA7gn3N15fnomyxOswGQm2zoldmMs-2Bi6S0Nj8H9pld0n6Zxbb4bgM1QN6U2DClW4ZWmJjM=
+3D272r0n2OzYZiyPthvFnKxm52pAa-2FA8QWh2DIDgMFZ5bZ-2F-2FoZ2E-2F7ocT5biSynZ-2F=
+B1ntFeGYJUSMk7McDhVIcxaPwJWRLiIkV0B8I-2BXDy2gx2INFjpBZGG6C-2BCAvOmld1LLkNNR=
+bzFlyI1YcosqXrdfBe6rcGS2VM-2FVAAtePMP5-2BiaqX-2FH5vV6q05xkGioij4Bxo321B5CSv=
+HkPVPRsScVKPTJl28lUJb-2BRz8lOUCAruqrNUQzTjTBU6Qq71-2B9-2FtIfB36SDieq5C0Km8Z=
+owmQbq-2BdVRCvs6ELj31QmfU1GITRAT569RaIGUze9-2B-2FPbRk6RjTyAl8DmVwHU9-2F-2Fe=
+afN7nf3Q6ClZNoooyW-2FnzYGscRJ4Sl0TehAqG5LPX0qtt6PlzO2crScrvbsV1-2BaLgQ5BlcA=
+c5F3MQU5x32aa6Fe-2BhYr8qJAWDtsw-2FxpA-2Fkbe3XeqSdkWj9MCPaC3ot5Y-2BEbUI2mNKx=
+IqN-2FNslKJ47gVlIIYTM-2FWrVy1zAckkGV3nQ-2FcJX6u0WfECb5FxDam51cZuPSp-2F6X269=
+50qLHvIOSnx-2BiHmymPjdlR5p1bJjkcaZ4nIo7JNsR7QjsvYFZAoZjNQtX78rNX-2BFCo-2FID=
+XekS7Y1bFkq664-3D" target=3D"_blank" alt=3D"Pinterest" title=3D"Pinterest" =
+style=3D"display:inline-block; background-color:#F1C232; height:30px; width=
+:30px; border-radius:2px; -webkit-border-radius:2px; -moz-border-radius:2px=
+;">
+        <img role=3D"social-icon" alt=3D"Pinterest" title=3D"Pinterest" src=
+=3D"https://marketing-image-production.s3.amazonaws.com/social/white/pinter=
+est.png" style=3D"height:30px; width:30px;" height=3D"30" width=3D"30">
+      </a>
+    </td><td style=3D"padding: 0px 5px;" class=3D"social-icon-column">
+      <a role=3D"social-icon-link" href=3D"https://u18125970.ct.sendgrid.ne=
+t/ls/click?upn=3DBReqw311F3pwN62LwGQ8NvrzxMGLJcX6J3bQZO31zBHey4VrugRtAjDw-2=
+BG4RrxMqYU-2BHtC78wOsuzQaqcP8wKA-3D-3DNGvg_wgs66OEZxJbeuTUjQr57WB4X37Akqr9I=
+GcR3-2F7nRftSLKpxsuFIZ-2B2eSETuGOuUS9CGNWMTkeHatq3jqc7g7NbJteZaWYjR8OBtsiwA=
+dld1FHvnt3-2BBsjaKGJV0-2FYf4TsyihSCkLB7JXzIK0DrA-2BNSmVE7S-2BiGytOSErAS0506=
+5pSiMWs4MvEq-2F088odDpxiBI6Jve0eBF5hs9Wide8Ry-2BfTJKIkhyD1A-2Fmlpm5d7dWbWpW=
+FJ-2BHA7gn3N15fnomyxOswGQm2zoldmMs-2Bi6S0Nj8H9pld0n6Zxbb4bgM1QN6U2DClW4ZWmJ=
+jM3D272r0n2OzYZiyPthvFnKxm52pAa-2FA8QWh2DIDgMFZ5bZ-2F-2FoZ2E-2F7ocT5biSynZ-=
+2FB1ntFeGYJUSMk7McDhVIcxaPwJWRLiIkV0B8I-2BXDy2gx2INFjpBZGG6C-2BCAvOmld1LLkN=
+NRbzFlyI1YcosqXrdfBe6rcGS2VM-2FVAAtePMP5-2BiaqX-2FH5vV6q05xkGioij4Bxo321B5C=
+SvHkPVPRsScVKPTJl28lUJb-2BRz8lOUCAruqrNUQzTjTBU6Qq71-2B9-2FtIfB36SDieq5C0Km=
+8ZowmQbq-2BdVRCvs6ELj31QmfU1GITRAT569RaIGUze9-2B-2FPbRk6RjTyAl8DmVwHU9-2F-2=
+FeafN7nf3Q6ClZNoooyW-2FnzYGscRJ4Sl0TehAqG5LPX0qtt6PlzO2crScrvbsV1-2BaLgQ5Bl=
+cAc5F3MQU5x32aa6Fe-2BhYr8qJAWDtsw-2FxpA-2Fkbe3XeqSdkWjXnKmmRChqWXsNamXzpbsV=
+HWf-2BS3-2FFDlARRPdIyYdmKCzxnz-2FUaFOsfetDJy459TWUrTgNut1EToYSuxyPFiU0PxEqz=
+p7rQGjrBEP8cNYhORyv9iNq2ffkzsCogL0G328NebJiCmd804jTHhD6Hmqkf-2Flq-2FYWCbfB6=
+hORQorUUx4-3D" target=3D"_blank" alt=3D"Google" title=3D"Google" style=3D"d=
+isplay:inline-block; background-color:#F1C232; height:30px; width:30px; bor=
+der-radius:2px; -webkit-border-radius:2px; -moz-border-radius:2px;">
+        <img role=3D"social-icon" alt=3D"Google" title=3D"Google" src=3D"ht=
+tps://marketing-image-production.s3.amazonaws.com/social/white/google-plus.=
+png" style=3D"height:30px; width:30px;" height=3D"30" width=3D"30">
+      </a>
+    </td><td style=3D"padding: 0px 5px;" class=3D"social-icon-column">
+      <a role=3D"social-icon-link" href=3D"https://u18125970.ct.sendgrid.ne=
+t/ls/click?upn=3DBReqw311F3pwN62LwGQ8NvZBGb-2Frfhqoy6vpqJR6ChMgGLvCcx7M-2Fs=
+7IB-2F6pa7JJM6j0u8ywDZQENy7AaHZF5mAW9mUMlogazwiXVf31-2BoU-3DZ7fi_wgs66OEZxJ=
+beuTUjQr57WB4X37Akqr9IGcR3-2F7nRftSLKpxsuFIZ-2B2eSETuGOuUS9CGNWMTkeHatq3jqc=
+7g7NbJteZaWYjR8OBtsiwAdld1FHvnt3-2BBsjaKGJV0-2FYf4TsyihSCkLB7JXzIK0DrA-2BNS=
+mVE7S-2BiGytOSErAS05065pSiMWs4MvEq-2F088odDpxiBI6Jve0eBF5hs9Wide8Ry-2BfTJKI=
+khyD1A-2Fmlpm5d7dWbWpWFJ-2BHA7gn3N15fnomyxOswGQm2zoldmMs-2Bi6S0Nj8H9pld0n6Z=
+xbb4bgM1QN6U2DClW4ZWmJjM3D272r0n2OzYZiyPthvFnKxm52pAa-2FA8QWh2DIDgMFZ5bZ-2F=
+-2FoZ2E-2F7ocT5biSynZ-2FB1ntFeGYJUSMk7McDhVIcxaPwJWRLiIkV0B8I-2BXDy2gx2INFj=
+pBZGG6C-2BCAvOmld1LLkNNRbzFlyI1YcosqXrdfBe6rcGS2VM-2FVAAtePMP5-2BiaqX-2FH5v=
+V6q05xkGioij4Bxo321B5CSvHkPVPRsScVKPTJl28lUJb-2BRz8lOUCAruqrNUQzTjTBU6Qq71-=
+2B9-2FtIfB36SDieq5C0Km8ZowmQbq-2BdVRCvs6ELj31QmfU1GITRAT569RaIGUze9-2B-2FPb=
+Rk6RjTyAl8DmVwHU9-2F-2FeafN7nf3Q6ClZNoooyW-2FnzYGscRJ4Sl0TehAqG5LPX0qtt6Plz=
+O2crScrvbsV1-2BaLgQ5BlcAc5F3MQU5x32aa6Fe-2BhYr8qJAWDtsw-2FxpA-2Fkbe3XeqSdkW=
+jWLzXAw7mDtnCFGLbSt2U0s8fRJK0ObAXILignP8yuz86n24BxcdV-2Bt1sN26Tazf1lbOs7Eqe=
+hpY8vfCAmPqpSqBjje6IMeMJt3GXlCpjSJBKnPUoELQEcY2L4eEN0GP4zTmf-2FHZUSb6kP9zqs=
+IQWE1Rn9R0NyLJuFNKsSZMh5cs-3D" target=3D"_blank" alt=3D"LinkedIn" title=3D"=
+LinkedIn" style=3D"display:inline-block; background-color:#F1C232; height:3=
+0px; width:30px; border-radius:2px; -webkit-border-radius:2px; -moz-border-=
+radius:2px;">
+        <img role=3D"social-icon" alt=3D"LinkedIn" title=3D"LinkedIn" src=
+=3D"https://marketing-image-production.s3.amazonaws.com/social/white/linked=
+in.png" style=3D"height:30px; width:30px;" height=3D"30" width=3D"30">
+      </a>
+    </td></tr></tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table><table class=3D"module" role=3D"module" data-type=3D"divider" b=
+order=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"tab=
+le-layout: fixed;" data-muid=3D"mVyZz43HETwfwb72TGh4iy.1.1.1.1">
+    <tbody>
+      <tr>
+        <td style=3D"padding:0px 0px 0px 0px;" role=3D"module-content" heig=
+ht=3D"100%" valign=3D"top" bgcolor=3D"">
+          <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"=
+center" width=3D"100%" height=3D"3px" style=3D"line-height:3px; font-size:3=
+px;">
+            <tbody>
+              <tr>
+                <td style=3D"padding:0px 0px 3px 0px;" bgcolor=3D"#F1C232">=
+</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table><table class=3D"module" role=3D"module" data-type=3D"text" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"table-la=
+yout: fixed;" data-muid=3D"6759f91b-a7c7-4116-a091-d67c9afe246a">
+    <tbody>
+      <tr>
+        <td style=3D"padding:2px 2px 2px 2px; line-height:22px; text-align:=
+inherit;" height=3D"100%" valign=3D"top" bgcolor=3D"" role=3D"module-conten=
+t"><div><div style=3D"font-family: inherit; text-align: center"><span style=
+=3D"font-family: verdana,geneva,sans-serif; font-size: 9px; color: #F1C232"=
+><strong>Manage By :</strong></span><span style=3D"font-family: verdana,gen=
+eva,sans-serif; font-size: 9px; color: #F1C232"> </span><a href=3D"https://=
+u18125970.ct.sendgrid.net/ls/click?upn=3Do1rcgGwUQggsEnFANDh8c53kEnTfAx0njJ=
+ogXZ5A6J226J5Oba3U6e7mc325stJACYKi_wgs66OEZxJbeuTUjQr57WB4X37Akqr9IGcR3-2F7=
+nRftSLKpxsuFIZ-2B2eSETuGOuUS9CGNWMTkeHatq3jqc7g7NbJteZaWYjR8OBtsiwAdld1FHvn=
+t3-2BBsjaKGJV0-2FYf4TsyihSCkLB7JXzIK0DrA-2BNSmVE7S-2BiGytOSErAS05065pSiMWs4=
+MvEq-2F088odDpxiBI6Jve0eBF5hs9Wide8Ry-2BfTJKIkhyD1A-2Fmlpm5d7dWbWpWFJ-2BHA7=
+gn3N15fnomyxOswGQm2zoldmMs-2Bi6S0Nj8H9pld0n6Zxbb4bgM1QN6U2DClW4ZWmJjM3D272r=
+0n2OzYZiyPthvFnKxm52pAa-2FA8QWh2DIDgMFZ5bZ-2F-2FoZ2E-2F7ocT5biSynZ-2FB1ntFe=
+GYJUSMk7McDhVIcxaPwJWRLiIkV0B8I-2BXDy2gx2INFjpBZGG6C-2BCAvOmld1LLkNNRbzFlyI=
+1YcosqXrdfBe6rcGS2VM-2FVAAtePMP5-2BiaqX-2FH5vV6q05xkGioij4Bxo321B5CSvHkPVPR=
+sScVKPTJl28lUJb-2BRz8lOUCAruqrNUQzTjTBU6Qq71-2B9-2FtIfB36SDieq5C0Km8ZowmQbq=
+-2BdVRCvs6ELj31QmfU1GITRAT569RaIGUze9-2B-2FPbRk6RjTyAl8DmVwHU9-2F-2FeafN7nf=
+3Q6ClZNoooyW-2FnzYGscRJ4Sl0TehAqG5LPX0qtt6PlzO2crScrvbsV1-2BaLgQ5BlcAc5F3MQ=
+U5x32aa6Fe-2BhYr8qJAWDtsw-2FxpA-2Fkbe3XeqSdkWj3LLQBA3X60RBkkUkQkcyPweQ1dnwJ=
+r5Gwp-2BKNUF-2BxtUs5IhegFhh5QHm4ZnAqkMaiCJKU5uImAwXAaWFZQtrKRAwv6h1oXc519jQ=
+QbJ0ruPIt1g1RBbGs7iK5jJf5cWUKoTn3uETAa-2F1-2FQf2raET-2FhvCWCM0Z19wFiIoe7BVD=
+oc-3D"><span style=3D"font-family: verdana,geneva,sans-serif; font-size: 9p=
+x; color: #F1C232"><strong>www.Digitaltripolystudio.com</strong></span></a>=
+</div><div></div></div></td>
+      </tr>
+    </tbody>
+  </table></td>
+                                      </tr>
+                                    </table>
+                                    <!--[if mso]>
+                                  </td>
+                                </tr>
+                              </table>
+                            </center>
+                            <![endif]-->
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </center>
+    <img src=3D"https://u18125970.ct.sendgrid.net/wf/open?upn=3DcFtNQLX-2Bw=
+MV63fQk2MziV1j-2BvS9eMpoVW-2FY5ePwCtYNUp6u0AwH0Up0iIUW-2Bk7rjTAdgGsa5e3BGZp=
+aaWUx15Dphd7nDjXZS9nzceu3EXjQkGTukpNBnz895IstMiIYIgd2CsVgo9eTj-2Fz67KTp3mi9=
+QPbbLZB7ZTLPP0jkuoUtVvfAcU7aIs4zCOw0I-2FMTjLsYCoo6ycwH2FzSjVsmjglwbqN-2BzRY=
+FTbO29Now470pnKI4iroY-2BlQTcfxWkeAYYHI1STZjdh-2F6sx6wz72elzXre8lF1lnS6Df-2F=
+D4CvPJZecO10AOKifMeTcRXzspDKfQ2g5jMAWvu9C4uy82HJf57G9GOuZqqZVCJA-2BKKkjndYc=
+MaAp1ehQQSL-2BfvDytpW1EIDpREMnlRdfEZLvy5-2BMfkL7qortt5flwvaUeObPIrzq2hznN9l=
+6Gkyh3x0HQDUt0Y9a4Ar4K8VJjwryrN6YNNOM3wnr5bHQZLRYDnq6QWFz4oqkE9aIuNU3EM4J7K=
+wxyOt6d8-2Fm8A7ZlTeeiJ9Qt08PfxVjevOQAht2kSCxBTAB-2FeJNZ7GnJHti9-2BWVDmY9h1U=
+5CnuHiAKGf7MPyfoWqHHad6fKYkzEisppAf6S21Gs7QfhNgz5a49jGaki1MnE1-2BgpigwoXvjP=
+1Cxpy8YFs7K07273pwi-2BLZSwU7sPIE2eLTrSq19XYwgjTJa8y9hTtYOEEw5cXMz7Ie59kpdui=
+1zgdPrMBQFrCPFrbt-2FPzNWd5FvGZgKkUyXwmyetGHof6gpM5l8znViA5iv5bYmKsLjQC63aus=
+qsHSiSyFRdoBZoe153r8K7OiJqp2394OVS7ORZIDpYjXhjwMHctFwVpoXWVh0LSCr5bozSDkDtL=
+kGqnmPLo2-2B6MS9etZSyf6onIXSw9nxOygMqCrT2oMAw34j425qnPfGbJta-2B89sd4M0-3D" =
+alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"height:1px !importa=
+nt;width:1px !important;border-width:0 !important;margin-top:0 !important;m=
+argin-bottom:0 !important;margin-right:0 !important;margin-left:0 !importan=
+t;padding-top:0 !important;padding-bottom:0 !important;padding-right:0 !imp=
+ortant;padding-left:0 !important;"/></body>
+  </html>
+--e4ed801235fb5e7dcf55b5da623b5077b330e4b2f599a77df1877da44062--

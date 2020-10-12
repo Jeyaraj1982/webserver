@@ -1,0 +1,94 @@
+Return-Path: <thelmausa16@gmail.com>
+Delivered-To: mprbuilders@119-18-48-204.webhostbox.net
+Received: from 119-18-48-204.webhostbox.net
+	by 119-18-48-204.webhostbox.net with LMTP
+	id mUOSJUDtSl+1WgAAFI3O4Q
+	(envelope-from <thelmausa16@gmail.com>)
+	for <mprbuilders@119-18-48-204.webhostbox.net>; Sun, 30 Aug 2020 05:35:20 +0530
+Return-path: <thelmausa16@gmail.com>
+Envelope-to: pravinraj@mprbuilders.com
+Delivery-date: Sun, 30 Aug 2020 05:35:20 +0530
+Received: from mail-lf1-f68.google.com ([209.85.167.68]:41337)
+	by 119-18-48-204.webhostbox.net with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.93)
+	(envelope-from <thelmausa16@gmail.com>)
+	id 1kCAqT-00061u-Kr
+	for pravinraj@mprbuilders.com; Sun, 30 Aug 2020 05:35:20 +0530
+Received: by mail-lf1-f68.google.com with SMTP id y17so1597387lfa.8
+        for <pravinraj@mprbuilders.com>; Sat, 29 Aug 2020 17:04:57 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=hdOPmauOaTrwUda+79RTGJ+lbs1c7hjNulmxjr2Eg/k=;
+        b=AeT4D8n/CAFBJeMTC1Q31ouxv38NS1kub9BailugMaTpx3T7cqj4PHlW4HoRYvDJag
+         I+MocyFdq8JdTFPC16jSuzPfmbqAigd50sVbc39cJKcdoN8c8eQq1nCSbLA9IRxALpXU
+         4DUn97V3smFQ9AH0H7ijnZL1hqtADM8NDt2qpiKP792LGVbi7Pry52z9aK9KdeJFmrPg
+         aEtXksdzP4BJmHqwJYC7z+/ZvyLW4iG0j8YfyYZxrs5uIsyiWRxxkzPBxPG00Lz9xF8g
+         zHR7mp6I9d1oE5cBaHkkmNDGOOJQQSDRVJSAKehLTUdIY0Hg+22/oXvq0xJpBG+1kgyE
+         twAA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=hdOPmauOaTrwUda+79RTGJ+lbs1c7hjNulmxjr2Eg/k=;
+        b=crG/9gFQomrpiLZ2CUY1WJ2ocYMi95UX4OLW/apXm6PHKN+3f4Sttw4OjaIGQwOlaF
+         gRTU7Xw6N+gZh8ptIGjw99Zd09fjVP63WpYBXI5KYNP+7oTbq+v9CIvWccPq/6QQ28xl
+         IzYA4WtOKbpZD4rhyKwpzg7L89t9q1l2Fc8SpyQ3moVAfOwIsNmpIGoKR0bBkeMFuJQE
+         bd5ujgd+Gvt80mBVhhb7jbeEXFGs9EYrNEHYOOGKhN/aGekwOY5rFKyisKhzLBtH2Jdo
+         QRj8HOALd5kiUcZxGXvALGoShBSzfAQIAVMlX2H2AeEfSIZC36kBix9OhQVDkqdojhmA
+         54cA==
+X-Gm-Message-State: AOAM533BKO1pfZMztGGEuU0ODvhAHwbAUTAkWmO4gblEd3cqTv4DoO28
+	I2sIVDovpd0Dru3/NOoN6aH2VESAX2gWjDfgcGQ=
+X-Google-Smtp-Source: ABdhPJxT+ONjckWLR7RlH6cU7hOSDXHu88nev3Qwj+HgtuPYV0HzpEkRTDz9sDpNv462HO8xEJmHjxhWGtFLGT7p3Dk=
+X-Received: by 2002:ac2:4911:: with SMTP id n17mr2454438lfi.185.1598745874540;
+ Sat, 29 Aug 2020 17:04:34 -0700 (PDT)
+MIME-Version: 1.0
+From: Alma <ahaver39@gmail.com>
+Date: Sun, 30 Aug 2020 00:04:17 +0000
+Message-ID: <CAB5NafFDW3yfEQN0YP=86Jv6i3ToOZMBChSZ5qX=jJykQ8PVCQ@mail.gmail.com>
+Subject: I rely on you
+To: undisclosed-recipients:;
+Content-Type: multipart/alternative; boundary="000000000000f02fae05ae0d0783"
+Bcc: pravinraj@mprbuilders.com
+X-Spam-Status: No, score=2.7
+X-Spam-Score: 27
+X-Spam-Bar: ++
+X-Ham-Report: Spam detection software, running on the system "119-18-48-204.webhostbox.net",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Dear friend we shall meet after the project Dear friend we
+    shall meet after the project 
+ Content analysis details:   (2.7 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [thelmausa16[at]gmail.com]
+  0.2 FREEMAIL_ENVFROM_END_DIGIT Envelope-from freemail username ends
+                             in digit
+                             [thelmausa16[at]gmail.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  2.6 DEAR_FRIEND            BODY: Dear Friend? That's not very dear!
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+X-Spam-Flag: NO
+
+--000000000000f02fae05ae0d0783
+Content-Type: text/plain; charset="UTF-8"
+
+Dear friend
+we shall meet after the project
+
+--000000000000f02fae05ae0d0783
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="ltr"><div dir="ltr"><div>Dear friend</div><div>we shall meet after the project</div></div></div>
+
+--000000000000f02fae05ae0d0783--

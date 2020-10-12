@@ -1,0 +1,258 @@
+Return-Path: <bounce@improvehound.com>
+Delivered-To: mprbuilders+spam@119-18-48-204.webhostbox.net
+Received: from 119-18-48-204.webhostbox.net
+	by 119-18-48-204.webhostbox.net with LMTP
+	id PfHtMIkSQ1+SDAAAFI3O4Q
+	(envelope-from <bounce@improvehound.com>)
+	for <mprbuilders+spam@119-18-48-204.webhostbox.net>; Mon, 24 Aug 2020 06:36:17 +0530
+Return-path: <bounce@improvehound.com>
+Envelope-to: pravinraj@mprbuilders.com
+Delivery-date: Mon, 24 Aug 2020 06:36:17 +0530
+Received: from server.improvehound.com ([162.214.127.151]:46416)
+	by 119-18-48-204.webhostbox.net with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.93)
+	(envelope-from <bounce@improvehound.com>)
+	id 1kA0w9-0000pg-0X
+	for pravinraj@mprbuilders.com; Mon, 24 Aug 2020 06:36:17 +0530
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=improvehound.com; s=default; h=List-Id:List-Unsubscribe:Content-Type:
+	MIME-Version:To:Reply-To:From:Subject:Date:Message-ID:Sender:Cc:
+	Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
+	Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+	References:List-Help:List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=8dEsPRqmU3N5VQj6GHIa9XBlWjacT9VINtMwOyI8/J4=; b=iAfBaxyFU+k5yLn82Kc9tmiDww
+	zWnYqMxPlUu3ac8LgRy5XcX6kYGwahF4haR2IIsUZ4kpGRmGt2Dn8bgigbj15IrhxZ7d5v6lQgSID
+	xwuMV58hRlch0v1USeHO8C+spfZ7yJY0nrHlrZ5iEKqscP/YQTCIAuVyUp0RWaIkaTKc78UHJV19R
+	Xm4Bx+Wwa+SSwufubl09GDjZyGMwqMUHteRzwGbwzG1MXxjSP0tzDTUec+NCBLvyS7/0myvAFL40m
+	iw8fdA8HyB8VCgOw8/ZQwQKrLZxeimVqaCocZxMEB9f6pyJ48F5oCzIOY8HY/ZCqzJbcCa/R278BM
+	bcg7scaw==;
+Received: from [162.241.176.47] (port=48746 helo=webmailrapid.com)
+	by server.improvehound.com with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.93)
+	(envelope-from <bounce@improvehound.com>)
+	id 1k9zUx-0003wo-Id
+	for pravinraj@mprbuilders.com; Sun, 23 Aug 2020 17:34:03 -0600
+Message-ID: <a86f24401fe0424841803ac006ed3b3d@improvehound.com>
+Date: Sun, 23 Aug 2020 23:33:53 +0000
+From: Harsh Kumar / Exim Engine <harsh@improvehound.com>
+Reply-To: Harsh Kumar / Exim Engine <harshkumar@tradegenius.co.in>
+To: "pravinraj@mprbuilders.com" <pravinraj@mprbuilders.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift_v4_1598225633_97e352a0cb2e1c8ef25dc23e564ff44a_=_"
+X-Sender: bounce@improvehound.com
+X-Report-Abuse: Please report abuse for this campaign here:
+ http://webmailrapid.com/mail/index.php/campaigns/eq3543ne8r491/report-abuse/oj713l49q9e4e/ll528eqdyec4a
+X-Receiver: pravinraj@mprbuilders.com
+X-Apfc-Tracking-Did: 0
+X-Apfc-Subscriber-Uid: ll528eqdyec4a
+X-Apfc-Mailer: SwiftMailer - 5.4.x
+X-Apfc-EBS: http://webmailrapid.com/mail/index.php/lists/block-address
+X-Apfc-Delivery-Sid: 123
+X-Apfc-Customer-Uid: pq901qvsndf83
+X-Apfc-Customer-Gid: 0
+X-Apfc-Campaign-Uid: eq3543ne8r491
+Precedence: bulk
+List-Unsubscribe: <http://webmailrapid.com/mail/index.php/lists/oj713l49q9e4e/unsubscribe/ll528eqdyec4a/eq3543ne8r491/unsubscribe-direct?source=email-client-unsubscribe-button>,
+ <mailto:harshkumar@tradegenius.co.in?subject=Campaign-Uid:eq3543ne8r491 /
+ Subscriber-Uid:ll528eqdyec4a - Unsubscribe request&body=Please unsubscribe
+ me!>
+List-Id: oj713l49q9e4e <695017 to 852133-NA-G-Y_20 TGPL>
+Feedback-ID: eq3543ne8r491:ll528eqdyec4a:oj713l49q9e4e:pq901qvsndf83
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - server.improvehound.com
+X-AntiAbuse: Original Domain - mprbuilders.com
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - improvehound.com
+X-Get-Message-Sender-Via: server.improvehound.com: authenticated_id: harsh@improvehound.com
+X-Authenticated-Sender: server.improvehound.com: harsh@improvehound.com
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Spam-Status: Yes, score=6.7
+X-Spam-Score: 67
+X-Spam-Bar: ++++++
+X-Spam-Report: Spam detection software, running on the system "119-18-48-204.webhostbox.net",
+ has identified this incoming email as possible spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Online Import Export Data Search Hello Pravin Raj, How are
+    you! This is Harsh from Exim Engine. Now, to fortify your business growth
+    with well flow, we are providing Actual Buyers & Suppliers details [...] 
+ Content analysis details:   (6.7 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: tradegeniusindia.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+  2.4 RAZOR2_CF_RANGE_51_100 Razor2 gives confidence level above 50%
+                             [cf: 100]
+  1.7 RAZOR2_CHECK           Listed in Razor2 (http://razor.sf.net/)
+  1.3 RCVD_IN_RP_RNBL        RBL: Relay in RNBL,
+                             https://senderscore.org/blacklistlookup/
+                           [162.214.127.151 listed in bl.score.senderscore.com]
+  2.0 PYZOR_CHECK            Listed in Pyzor
+                             (https://pyzor.readthedocs.io/en/latest/)
+ -1.0 MAILING_LIST_MULTI     Multiple indicators imply a widely-seen list
+                             manager
+  0.5 KAM_NUMSUBJECT         Subject ends in numbers excluding current years
+X-Spam-Flag: YES
+Subject:  ***SPAM***  Enquiry: Live Search of Buyers and Suppliers June 2020
+
+
+--_=_swift_v4_1598225633_97e352a0cb2e1c8ef25dc23e564ff44a_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Online Import Export Data Search
+Hello Pravin Raj,
+How are you!
+This =
+is Harsh from Exim Engine. Now, to fortify your business growth
+with well=
+ flow, we are providing Actual Buyers & Suppliers details of
+Export Impor=
+t Data. We can probably provide you the most competitive
+commercials whic=
+h would help you save cost and increase efficiencies
+of scale. In :-
+Ev=
+aluate Suppliers | Monitor Competitors | Find Sales Prospects |
+Research =
+Markets and more..
+Exim Engine serves as your one stop solution for Expor=
+t Import trade
+intelligence data. We help you gain competitive advantage =
+through the
+power of data analysis. Get instant access to Export and Impo=
+rt data
+meticulously collated and processed from bills of entry, shipping=
+
+bills, shipping manifests on a near real time basis.
+Please submit req=
+uest for sample data for more details.
+http://webmailrapid.com/mail/index=
+.php/campaigns/eq3543ne8r491/track-url/ll528eqdyec4a/f27a901e846c8d865505e8=
+943342634e49fae9c2
+If you want to know more information about our company=
+ and products,
+please revert us with below details. Your Name:
+Your Con=
+tact Number:
+Your Company Name:
+Assuring you the best of our services.=
+
+With Best Regards --
+Harsh (Senior BDE)
+Exim Engine | Trade Genius I=
+ndia
+(New Delhi)
+Contact: +91-8130246989
+Email: harshkumar@tradegeniu=
+sindia.com
+Web: www.eximengine.com
+http://webmailrapid.com/mail/index.p=
+hp/campaigns/eq3543ne8r491/track-url/ll528eqdyec4a/8b46265b9991a4c76c8be437=
+354fda0b1a027e3a
+Web: www.tradegeniusindia.com
+http://webmailrapid.com/=
+mail/index.php/campaigns/eq3543ne8r491/track-url/ll528eqdyec4a/3d22a9481771=
+7027ea5aec9eac2ff8b73417ce27
+-------------------------
+UNSUBSCRIBE
+ht=
+tp://webmailrapid.com/mail/index.php/campaigns/eq3543ne8r491/track-url/ll52=
+8eqdyec4a/f5aea794400ec18939175bd14caac34324880f29,
+Trade Genius, Central=
+ Delhi, New Delhi, 110023, India
+
+--_=_swift_v4_1598225633_97e352a0cb2e1c8ef25dc23e564ff44a_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html>
+<head><meta charset=3D"utf-8"/>
+=09<title></title>
+<style type=3D"text/css">span.preheader{display:none!important;mso-hide:all=
+;}</style></head>
+<body><span class=3D"preheader" style=3D"display:none!important;mso-hide:al=
+l;">Online Import Export Data Search</span>
+<div style=3D"color: #1D2887; font-size: 15px;">
+<p><strong>Hello Pravin Raj,</strong></p>
+
+<p>How are you!</p>
+
+<p>This is Harsh from Exim Engine. Now, to fortify your business growth wit=
+h well flow, we are providing Actual Buyers & Suppliers details of Export I=
+mport Data. We can probably provide you the most competitive commercials wh=
+ich would help you save cost and increase efficiencies of scale. In :-</p>
+
+<p><strong>Evaluate Suppliers | Monitor Competitors | Find Sales Prospects =
+| Research Markets and more.. </strong></p>
+
+<p>Exim Engine serves as your one stop solution for Export Import trade int=
+elligence data. We help you gain competitive advantage through the power of=
+ data analysis. Get instant access to Export and Import data meticulously c=
+ollated and processed from bills of entry, shipping bills, shipping manifes=
+ts on a near real time basis.</p>
+
+<p><strong>Please submit request for sample data for more details.</strong>=
+</p>
+<a href=3D"http://webmailrapid.com/mail/index.php/campaigns/eq3543ne8r491/t=
+rack-url/ll528eqdyec4a/f27a901e846c8d865505e8943342634e49fae9c2" target=3D"=
+_blank"><img alt=3D"Exim Engine Online Demo Request" src=3D"http://webmailr=
+apid.com/mail/frontend/assets/files/customer/pq901qvsndf83/Exim-Engine-Onli=
+ne-Demo.png" style=3D"width: 253px; height: 57px;" /></a>
+
+<p>If you want to know more information about our company and products, ple=
+ase revert us with below details.</p>
+<span style=3D"font-weight: 600; line-height: 25px">Your Name:<br />
+Your Contact Number:<br />
+Your Company Name: </span>
+
+<p>Assuring you the best of our services.</p>
+
+<p>With Best Regards</p>
+<span style=3D"font-family: 'Calibri Light'; font-size: 15px; line-height: =
+20px">--<br />
+<strong>Harsh (Senior BDE)</strong><br />
+<span style=3D"font-family: 'Arial Black'; font-size: 15px">Exim Engine | T=
+rade Genius India<br />
+(New Delhi)</span><br />
+<strong>Contact: +91-8130246989</strong><br />
+<strong>Email: <a href=3D"mailto:harshkumar@tradegeniusindia.com" onclick=
+=3D"return rcmail.command('compose','harshkumar@tradegeniusindia.com',this)=
+" rel=3D"noreferrer">harshkumar@tradegeniusindia.com</a></strong><br />
+<strong>Web: <a href=3D"http://webmailrapid.com/mail/index.php/campaigns/eq=
+3543ne8r491/track-url/ll528eqdyec4a/8b46265b9991a4c76c8be437354fda0b1a027e3=
+a" rel=3D"noreferrer" target=3D"_blank">www.eximengine.com</a></strong><br =
+/>
+<strong>Web: <a href=3D"http://webmailrapid.com/mail/index.php/campaigns/eq=
+3543ne8r491/track-url/ll528eqdyec4a/3d22a94817717027ea5aec9eac2ff8b73417ce2=
+7" rel=3D"noreferrer" target=3D"_blank">www.tradegeniusindia.com</a></stron=
+g></span>
+
+<hr /><a data-unsubtag=3D"_UNSUBSCRIBE_URL_" href=3D"http://webmailrapid.co=
+m/mail/index.php/campaigns/eq3543ne8r491/track-url/ll528eqdyec4a/f5aea79440=
+0ec18939175bd14caac34324880f29">UNSUBSCRIBE</a>, Trade Genius, Central Delh=
+i, New Delhi, 110023, India</div>
+<img width=3D"1" height=3D"1" src=3D"http://webmailrapid.com/mail/index.php=
+/campaigns/eq3543ne8r491/track-opening/ll528eqdyec4a" alt=3D"" />
+</body>
+</html>
+
+--_=_swift_v4_1598225633_97e352a0cb2e1c8ef25dc23e564ff44a_=_--
+

@@ -1,0 +1,132 @@
+Return-Path: <jean.billa2017@gmail.com>
+Delivered-To: mprbuilders+spam@119-18-48-204.webhostbox.net
+Received: from 119-18-48-204.webhostbox.net
+	by 119-18-48-204.webhostbox.net with LMTP
+	id MKXlFypSRV8ZCgAAFI3O4Q
+	(envelope-from <jean.billa2017@gmail.com>)
+	for <mprbuilders+spam@119-18-48-204.webhostbox.net>; Tue, 25 Aug 2020 23:32:18 +0530
+Return-path: <jean.billa2017@gmail.com>
+Envelope-to: investors@mprbuilders.com
+Delivery-date: Tue, 25 Aug 2020 23:32:18 +0530
+Received: from mail-ua1-f67.google.com ([209.85.222.67]:33422)
+	by 119-18-48-204.webhostbox.net with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.93)
+	(envelope-from <jean.billa2017@gmail.com>)
+	id 1kAdGx-0000fI-7t
+	for investors@mprbuilders.com; Tue, 25 Aug 2020 23:32:18 +0530
+Received: by mail-ua1-f67.google.com with SMTP id y2so429161uaq.0
+        for <investors@mprbuilders.com>; Tue, 25 Aug 2020 11:01:55 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:reply-to:from:date:message-id:subject:to
+         :content-transfer-encoding;
+        bh=xb+hUdzGcmYb1tdee10b1WTQemVRYLw6kBOawNaIaf4=;
+        b=mQIh7e0nJMO32icmz6+529AFa40j5woVkMOT8rkt7Gb64xagqc+apOmI67x7waT64T
+         CWJbzvxRXi+JdLEVacoYTt+nUSTIdejOukdThepUA0j5+j9t1UcQ+pSxJDBPj8PQS1Pa
+         XUqVYi58+EL8xyB5mQyhA9AI6iqq+YPCNyr/b7gcpKvlGozi+Z66FaBsmbhc11NAReNg
+         Th32cbWt+gw6Iawb/wBVaJ0cN43p7m6DFiJwAIlNMK2L8bA7hz7oqMq4ANyw3gnlKcmT
+         KkAkCYlHEmHXxuyG93A1xNZwfw6UfoakJRZdrVajDDQNkR1i2cA+ivnGjQZg8zOlyGKL
+         Xfog==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:reply-to:from:date:message-id
+         :subject:to:content-transfer-encoding;
+        bh=xb+hUdzGcmYb1tdee10b1WTQemVRYLw6kBOawNaIaf4=;
+        b=tTKoyyZEzxb2s9z2LZ0tUQq9x7SddrebDTibCjz1hCJL2EDaTY25EsTuN/CKSuZClK
+         DQzeRIqu8T4Wg6nclNEEbBVL+w8AK1LgwEafzDAgQLtlSgE6MXWKI1JhQ2N0oG7w1nsz
+         Ql+9V4n2Td1GggEw4H6uWFVn1wP0Jlyke26RkQ8SJZDlkzbSSduB2fE9tNLzA9Ax08bk
+         1MaflZ+j/F/V36AsKRtsma41DNOeqfkr8woR0m9+QOTdl4pR46RhvsUj7SVVyK2N43UC
+         ZV6kKNpxLTnyC/VWG22+nRYhBcwoUwRQP6Bz9bRD7WRjn72vsXRMouC20ZvzeaUvWekt
+         E70w==
+X-Gm-Message-State: AOAM5329fCrAoyh/Q88VPgrRI8DNUh/fqZVFhjxvkDa8tQrUb4LTHnph
+	UJ44RVL7cSXYA1w/1StGPUiOBa8k+5KETG6rPJ8=
+X-Google-Smtp-Source: ABdhPJwNSlxAkqZhPjJQHLBQ/ujziXp7jLdYWhFb5xbqTisXa2DB0L8nT9u8jDKI/zDd6lek2F2FHHrM+EIZ0i690NA=
+X-Received: by 2002:ab0:77c1:: with SMTP id y1mr4696950uar.120.1598378492068;
+ Tue, 25 Aug 2020 11:01:32 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 2002:a9f:3489:0:0:0:0:0 with HTTP; Tue, 25 Aug 2020 11:01:31
+ -0700 (PDT)
+Reply-To: jean.billa2017@gmail.com
+From: =?UTF-8?B?RHIuQW3DqWTDqSBLb2ZmaQ==?= <jean.billa2017@gmail.com>
+Date: Tue, 25 Aug 2020 18:01:31 +0000
+Message-ID: <CAHfVXdd18PqRJLe0a9f2bDhV42LZFUf-T6w9stL5Mif1OWinOg@mail.gmail.com>
+To: undisclosed-recipients:;
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+Bcc: investors@mprbuilders.com
+X-Spam-Status: Yes, score=7.7
+X-Spam-Score: 77
+X-Spam-Bar: +++++++
+X-Spam-Report: Spam detection software, running on the system "119-18-48-204.webhostbox.net",
+ has identified this incoming email as possible spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Attention: Sir, I am Dr.Amédé Koffi Kouakou,(Minister of
+    Infrastructure and Economic) & the Chairman COMMITTEE ON CONTRACTS CLAIM
+   BETWEEN 2005 TO 2020. His Excellency,President Alassane Ouattara ordered for
+    immedia [...] 
+ Content analysis details:   (7.7 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  1.9 MILLION_HUNDRED        BODY: Million "One to Nine" Hundred
+  0.2 FREEMAIL_ENVFROM_END_DIGIT Envelope-from freemail username ends
+                             in digit
+                             [jean.billa2017[at]gmail.com]
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [jean.billa2017[at]gmail.com]
+  0.2 FREEMAIL_REPLYTO_END_DIGIT Reply-To freemail username ends in
+                             digit
+                             [jean.billa2017[at]gmail.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  0.0 LOTS_OF_MONEY          Huge... sums of money
+  1.0 FREEMAIL_REPLYTO       Reply-To/From or Reply-To/body contain
+                             different freemails
+  2.5 MONEY_FRAUD_3          Lots of money and several fraud phrases
+  2.0 ADVANCE_FEE_2_NEW_MONEY Advance Fee fraud and lots of money
+X-Spam-Flag: YES
+Subject:  ***SPAM***  Attention: Sir,
+
+Attention: Sir,
+
+I am Dr.Am=C3=A9d=C3=A9 Koffi Kouakou,(Minister of Infrastructure and Econo=
+mic)
+& the Chairman COMMITTEE ON CONTRACTS CLAIM BETWEEN 2005 TO 2020. His
+Excellency,President Alassane Ouattara ordered for immediate review
+and investigation on contracts awarded to both Local and Foreign
+contractors starting from 2005 to date, both executed and non-executed
+for immediate review and payment on any contract satisfactorily done
+and confirmed to be legally awarded by this committee.
+
+I decided to seek your confidential co-operation to stand as the
+rightful beneficiary to one of the contract payment which nobody knows
+the outcome of this investigation as its on me as the chairman to put
+up a final report. I decided to keep it confidential to seek your
+opinion on this matter. " I HAVE INTEREST ON THIS FUND" and I will
+write a favorable report on your behalf confirming this claims to be
+genuine.
+
+I came accross your email contact and i pick up interest to write you
+for investment plan and finances towards legal procedures.The said
+contract fund worth the sum of twenty million five hundred thousand
+United States Dollars ($20,500,000.00).
+
+I Know there will be something coming to your mind right now, WHY ME and
+WHAT IS MY GAIN? once I receive your reply to Partner with me the question
+will be answered and also I will explain to you how the deal will be finali=
+se.
+
+Please if you're interested kindly get back to me for more details via
+my email at:  jean.billa@yahoo.fr
+
+Thanks and waiting for your response.
+Regards,
+Dr.Am=C3=A9d=C3=A9 Koffi Kouakou.

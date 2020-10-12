@@ -1,0 +1,230 @@
+Return-Path: <anshika@websollutions.com>
+Delivered-To: mprbuilders@119-18-48-204.webhostbox.net
+Received: from 119-18-48-204.webhostbox.net
+	by 119-18-48-204.webhostbox.net with LMTP
+	id obwSLGd9UF+iRQAAFI3O4Q
+	(envelope-from <anshika@websollutions.com>)
+	for <mprbuilders@119-18-48-204.webhostbox.net>; Thu, 03 Sep 2020 10:51:43 +0530
+Return-path: <anshika@websollutions.com>
+Envelope-to: pravinraj@mprbuilders.com
+Delivery-date: Thu, 03 Sep 2020 10:51:43 +0530
+Received: from mail-pf1-f196.google.com ([209.85.210.196]:41065)
+	by 119-18-48-204.webhostbox.net with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.93)
+	(envelope-from <anshika@websollutions.com>)
+	id 1kDhgo-0004c6-Pr
+	for pravinraj@mprbuilders.com; Thu, 03 Sep 2020 10:51:43 +0530
+Received: by mail-pf1-f196.google.com with SMTP id t9so1301028pfq.8
+        for <pravinraj@mprbuilders.com>; Wed, 02 Sep 2020 22:21:18 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=websollutions-com.20150623.gappssmtp.com; s=20150623;
+        h=from:to:subject:date:message-id:mime-version:thread-index
+         :content-language;
+        bh=vgJIZRDBDLMb6ub6e1nor/AJ6BSpqxCGKl1UDpay2pE=;
+        b=D6GxoXc2Q2kRdKvr4xCLYmyyIGjlUHBwQjkut0aqaJDaDTUMRbzlxXqyc7Lh8B8hpu
+         hlPvMWrbNGkLiSjlJRwX+3A3A+BOIWlxeWwrzxEusI5mJzXTOpA+dje/xLl3Tj+mqGq1
+         aiZNK/ga+s0QCk4bXwI7EvWjmIwFldeGx2eq/EPXok1qw7oObBnLGqV4XSnPurmdpSpA
+         yoM+vmSYiIcOOT0PpSWoOmxJ5is89VbD6c0Xv41/es12bIva8R/U92l8zsWZvGVYEPC4
+         qfteV9Ndv8NupBISxUCPViqO5T2H/HQAehED38QbxArNHMQGR1FWJWrydpjHQNdPmTq+
+         XPTg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:from:to:subject:date:message-id:mime-version
+         :thread-index:content-language;
+        bh=vgJIZRDBDLMb6ub6e1nor/AJ6BSpqxCGKl1UDpay2pE=;
+        b=GQmkMpr0Oykyp5zptzSyAIb05GRoor7aPQM0Rl8ifw+NzcnvKTxiWvxOhKeIszSzfo
+         b4fG8RCETxFEoOP3HXf1Rq+NlDY8l4/mgyor96F06tI5XZI+YN9ct16uDWdYkLMlyIKH
+         Qq43qPtt+/OGEMvQJ4zJJezAuaFORpazyNQrx4Db5WB8DzcCtGc6XZ++aO6iedgMvNLN
+         iUM6p0cSB72AEfPp5LxIlYmpDAnKI16pU+kJiFcuw19Je4jD1qmindSzGTXU5VkHjJRu
+         kHI55bM4WuwA16gIXfq+0QXI+ZiR48J5GFWbbiRYduHmPg5CjdNu/IGRh4ywg9B/6/Dy
+         RWxw==
+X-Gm-Message-State: AOAM532z2ukhPFH1+LJMK9IpY5fzEBDA46u6AObgFwYyNAgmgdDEwp8/
+	EOn+LeP912j6lVKKalWwVrWcShIjUSa+Ww==
+X-Google-Smtp-Source: ABdhPJyBljVB5uvvH/U2z7GsS5S08FwiSaU1PszJPVNcpKtJ08biZ6Yuy0qEob1g91T94B12qtH10A==
+X-Received: by 2002:a62:cdcb:: with SMTP id o194mr2137837pfg.32.1599110456160;
+        Wed, 02 Sep 2020 22:20:56 -0700 (PDT)
+Received: from sPC ([106.215.50.230])
+        by smtp.gmail.com with ESMTPSA id 193sm1333282pfu.169.2020.09.02.22.20.54
+        for <pravinraj@mprbuilders.com>
+        (version=TLS1 cipher=ECDHE-ECDSA-AES128-SHA bits=128/128);
+        Wed, 02 Sep 2020 22:20:55 -0700 (PDT)
+From: "Anshika" <anshika@websollutions.com>
+To: <pravinraj@mprbuilders.com>
+Subject: Maximise sales and ROI
+Date: Thu, 3 Sep 2020 10:50:07 +0530
+Message-ID: <088901d681b2$12f13dd0$38d3b970$@com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_088A_01D681E0.2CA979D0"
+X-Mailer: Microsoft Office Outlook 12.0
+Thread-Index: AdaBsd6iLf3JeUIYRAqVvyMLZkrs2w==
+Content-Language: en-us
+X-Spam-Status: No, score=0.0
+X-Spam-Score: 0
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "119-18-48-204.webhostbox.net",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Hi, Do you want Top Listing on Google 1st Page? Please share
+    with me your:- ●Keyword's ●Website URL ●Targeted Area
+    ●Contact number or Skype id. 
+ Content analysis details:   (0.0 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+X-Spam-Flag: NO
+
+This is a multipart message in MIME format.
+
+------=_NextPart_000_088A_01D681E0.2CA979D0
+Content-Type: text/plain;
+	charset="iso-2022-jp"
+Content-Transfer-Encoding: 7bit
+
+Hi,
+
+
+Do you want Top Listing on Google 1st Page?
+
+
+Please share with me your:-
+●Keyword's
+●Website URL
+●Targeted Area
+●Contact number or Skype id.
+
+ 
+
+We are offering our services at highly affordable price due to COVID - 19
+
+ 
+
+Thanks & Regards,
+Anshika
+
+
+------=_NextPart_000_088A_01D681E0.2CA979D0
+Content-Type: text/html;
+	charset="iso-2022-jp"
+Content-Transfer-Encoding: quoted-printable
+
+<META HTTP-EQUIV=3D"Content-Type" CONTENT=3D"text/html; =
+charset=3Diso-2022-jp">
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" =
+xmlns:o=3D"urn:schemas-microsoft-com:office:office" =
+xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" =
+xmlns=3D"http://www.w3.org/TR/REC-html40">
+
+<head>
+
+<meta name=3DGenerator content=3D"Microsoft Word 12 (filtered medium)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Comic Sans MS";
+	panose-1:3 15 7 2 3 3 2 2 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{mso-style-priority:1;
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+.MsoChpDefault
+	{mso-style-type:export-only;}
+.MsoPapDefault
+	{mso-style-type:export-only;
+	margin-bottom:10.0pt;
+	line-height:115%;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext=3D"edit">
+  <o:idmap v:ext=3D"edit" data=3D"1" />
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=3DEN-US link=3Dblue vlink=3Dpurple>
+
+<div class=3DSection1>
+
+<p class=3DMsoNoSpacing><span =
+style=3D'font-size:12.0pt;font-family:"Comic Sans =
+MS"'>Hi,<o:p></o:p></span></p>
+
+<p class=3DMsoNoSpacing><span =
+style=3D'font-size:12.0pt;font-family:"Comic Sans MS"'><br>
+Do you want Top Listing on Google 1st Page?<o:p></o:p></span></p>
+
+<p class=3DMsoNoSpacing><span =
+style=3D'font-size:12.0pt;font-family:"Comic Sans MS"'><br>
+Please share with me your:-<br>
+<span style=3D'color:#00B0F0'>=1B$B!|=1B(JKeyword's</span><br>
+<span style=3D'color:#C00000'>=1B$B!|=1B(JWebsite URL</span><br>
+<span style=3D'color:#00B050'>=1B$B!|=1B(JTargeted Area</span><br>
+<span style=3D'color:#7030A0'>=1B$B!|=1B(JContact number or Skype =
+id.</span><o:p></o:p></span></p>
+
+<p class=3DMsoNoSpacing><span =
+style=3D'font-size:12.0pt;font-family:"Comic Sans =
+MS"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=3DMsoNoSpacing><span =
+style=3D'font-size:12.0pt;font-family:"Comic Sans MS"'>We
+are offering our services at highly affordable price due to COVID - =
+19<o:p></o:p></span></p>
+
+<p class=3DMsoNoSpacing><span =
+style=3D'font-size:12.0pt;font-family:"Comic Sans =
+MS"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=3DMsoNoSpacing><span =
+style=3D'font-size:12.0pt;font-family:"Comic Sans MS"'>Thanks
+&amp; Regards,<br>
+Anshika<o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>
+
+------=_NextPart_000_088A_01D681E0.2CA979D0--
+
