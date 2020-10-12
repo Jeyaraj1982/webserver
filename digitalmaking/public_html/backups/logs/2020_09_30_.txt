@@ -1,0 +1,35 @@
+[2020-09-30 20:26:02]	select * from _tbl_resume_admin where UserName='9111111111' and Password='123456' 
+[2020-09-30 20:54:22]	select * from _tbl_resume_general_info where ResumeID='14' and IsDelete='0'
+[2020-09-30 20:54:22]	select * from _tbl_resume_education where ResumeID='14'
+[2020-09-30 20:54:22]	select * from _tbl_resume_experience where ResumeID='14'
+[2020-09-30 20:54:22]	select * from _tbl_resume_skills where ResumeID='14'
+[2020-09-30 20:54:22]	select * from _tbl_resume_additional_info where ResumeID='14' and AdditionalInfo='Carrier Objectives'
+[2020-09-30 20:54:22]	select * from _tbl_resume_additional_info where ResumeID='14'
+[2020-09-30 20:54:22]	select * from resume_visitor_log where ResumeID='14' and ipaddress='49.206.124.116'
+[2020-09-30 20:54:22]	select * from resume_visitor_log where ResumeID='14'  
+[2020-09-30 21:01:37]	select * from _tbl_resume_general_info where CreatedBy='Franchisee' and CreatedByID='' and IsDelete='0'
+[2020-09-30 21:01:37]	select * from _tbl_resume_general_info where CreatedBy='Franchisee' and CreatedByID='' and IsDelete='1'
+[2020-09-30 21:01:37]	select (sum(Credits)-sum(Debits)) as bal from _tbl_franchisee_credits where FranchiseeID=''
+[2020-09-30 21:01:37]	select * from _tbl_card_general_info where CreatedBy='Franchisee' and CreatedByID='' and IsDelete='0'
+[2020-09-30 21:01:37]	select * from _tbl_card_general_info where CreatedBy='Franchisee' and CreatedByID='' and IsDelete='1'
+[2020-09-30 21:01:37]	select * from _tbl_resume_general_info where IsDelete='0' and CreatedBy='Franchisee' and CreatedByID='' order by ResumeID desc limit 0,5
+[2020-09-30 21:01:37]	select * from _tbl_card_general_info where IsDelete='0' and CreatedBy='Franchisee' and CreatedByID='' order by ResumeID desc limit 0,5
+[2020-09-30 21:01:52]	select * from _tbl_resume_general_info where CreatedBy='Franchisee' and CreatedByID='' and IsDelete='0'
+[2020-09-30 21:01:52]	select * from _tbl_resume_general_info where CreatedBy='Franchisee' and CreatedByID='' and IsDelete='1'
+[2020-09-30 21:01:52]	select (sum(Credits)-sum(Debits)) as bal from _tbl_franchisee_credits where FranchiseeID=''
+[2020-09-30 21:01:52]	select * from _tbl_card_general_info where CreatedBy='Franchisee' and CreatedByID='' and IsDelete='0'
+[2020-09-30 21:01:52]	select * from _tbl_card_general_info where CreatedBy='Franchisee' and CreatedByID='' and IsDelete='1'
+[2020-09-30 21:01:52]	select * from _tbl_resume_general_info where IsDelete='0' and CreatedBy='Franchisee' and CreatedByID='' order by ResumeID desc limit 0,5
+[2020-09-30 21:01:52]	select * from _tbl_card_general_info where IsDelete='0' and CreatedBy='Franchisee' and CreatedByID='' order by ResumeID desc limit 0,5
+[2020-09-30 21:01:56]	select * from _tbl_resume_general_info where IsDelete='0' and CreatedBy='Franchisee' and CreatedByID='' order by ResumeID desc limit 0,5
+[2020-09-30 21:02:01]	select (sum(Credits)-sum(Debits)) as bal from _tbl_franchisee_credits where FranchiseeID=''
+[2020-09-30 21:02:13]	select * from _tbl_resume_general_info where IsDelete='0' and CreatedBy='Franchisee' and CreatedByID='' order by ResumeID desc limit 0,5
+[2020-09-30 21:11:54]	select * from _tbl_resume_general_info where ResumeID='14' and IsDelete='0'
+[2020-09-30 21:11:54]	select * from _tbl_resume_education where ResumeID='14'
+[2020-09-30 21:11:54]	select * from _tbl_resume_experience where ResumeID='14'
+[2020-09-30 21:11:54]	select * from _tbl_resume_skills where ResumeID='14'
+[2020-09-30 21:11:54]	select * from _tbl_resume_additional_info where ResumeID='14' and AdditionalInfo='Carrier Objectives'
+[2020-09-30 21:11:54]	select * from _tbl_resume_additional_info where ResumeID='14'
+[2020-09-30 21:11:54]	select * from resume_visitor_log where ResumeID='14' and ipaddress='157.46.103.121'
+[2020-09-30 21:11:54]	select * from resume_visitor_log where ResumeID='14'  
+[2020-09-30 21:11:54]	insert into `resume_visitor_log` (`ResumeID`,`viewed`,`ipaddress`,`ViewedOn`) values ('14','1','157.46.103.121','2020-09-30 21:11:54')

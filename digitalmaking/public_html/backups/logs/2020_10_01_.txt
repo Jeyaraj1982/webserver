@@ -1,0 +1,9 @@
+[2020-10-01 16:36:54]	select * from _tbl_resume_general_info where ResumeID='14' and IsDelete='0'
+[2020-10-01 16:36:54]	select * from _tbl_resume_education where ResumeID='14'
+[2020-10-01 16:36:54]	select * from _tbl_resume_experience where ResumeID='14'
+[2020-10-01 16:36:54]	select * from _tbl_resume_skills where ResumeID='14'
+[2020-10-01 16:36:54]	select * from _tbl_resume_additional_info where ResumeID='14' and AdditionalInfo='Carrier Objectives'
+[2020-10-01 16:36:54]	select * from _tbl_resume_additional_info where ResumeID='14'
+[2020-10-01 16:36:54]	select * from resume_visitor_log where ResumeID='14' and ipaddress='157.46.79.182'
+[2020-10-01 16:36:54]	select * from resume_visitor_log where ResumeID='14'  
+[2020-10-01 16:36:54]	insert into `resume_visitor_log` (`ResumeID`,`viewed`,`ipaddress`,`ViewedOn`) values ('14','1','157.46.79.182','2020-10-01 16:36:54')
