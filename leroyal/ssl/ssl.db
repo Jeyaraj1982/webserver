@@ -1,0 +1,87 @@
+--- 
+files: 
+  certificate: 
+    leroyal_in_b28ff_4fb9f_1630407020_51c1102c3f9d2364b61cb25029239fdc: 
+      created: '1598871020'
+      domains: 
+        - leroyal.in
+        - mail.leroyal.in
+        - www.leroyal.in
+        - cpanel.leroyal.in
+        - webmail.leroyal.in
+        - webdisk.leroyal.in
+        - cpcontacts.leroyal.in
+        - cpcalendars.leroyal.in
+      friendly_name: Cert for “leroyal.in”
+      id: leroyal_in_b28ff_4fb9f_1630407020_51c1102c3f9d2364b61cb25029239fdc
+      is_self_signed: 1
+      issuer.commonName: leroyal.in
+      issuer.organizationName: ~
+      modulus: b28ff8512d4d7f618658b37cce1e5c8b2c7215a2751b0961d1bc4b195b1f7dd871fe28d0a47e419c46299a3f11fa161b49abedb023dd2a99d722d99fc8a3817405d6b0e1970c037504f333b8e41f36b528c0e50376aa79a92bc584bd5e3c300e0b2d5dff2d4359e9e3bf442f4e8ede80f54534d3bc3a17a63c5fc6cbc6a5b2813a44246303aa7bad7c1bb106e58c67b81cae622e46bfd5e0a84d05fb38fe9957804dc61682eeaf16bc274b91dfa5225cda98d060db31d556e7a34fdbfbe0f5767f4544e49ea3942d657bedf744b011b8fa8d35708ba808bf8b2c4e5aa720bc3b01938384f10ca86ec6e259dc7583d64afd1ab5c7388652e576788aeac714fb9f
+      modulus_length: 2048
+      not_after: '1630407020'
+      not_before: '1598871020'
+      serial: 0192a34663
+      signature_algorithm: sha256WithRSAEncryption
+      subject.commonName: leroyal.in
+      validation_type: ~
+    leroyal_in_e38da_941a3_1606780799_f0a933e9ce5e0fa36909daa480f63bfd: 
+      created: '1598933042'
+      domains: 
+        - leroyal.in
+        - cpanel.leroyal.in
+        - cpcalendars.leroyal.in
+        - cpcontacts.leroyal.in
+        - mail.leroyal.in
+        - webdisk.leroyal.in
+        - webmail.leroyal.in
+        - www.leroyal.in
+      friendly_name: Cert for “leroyal.in” 1598933042.0
+      id: leroyal_in_e38da_941a3_1606780799_f0a933e9ce5e0fa36909daa480f63bfd
+      is_self_signed: 0
+      issuer.commonName: cPanel, Inc. Certification Authority
+      issuer.organizationName: cPanel, Inc.
+      modulus: e38da1a164b869cb4e30d3ed768a78348a58e9c156f9e6bf5b66e257d04c19a006e9bff1c47efd5d54ab71daf03b2c77379517bd58656ebeac986ad4ae6488a17290b914d1962d768f944bf8d3d2840f933f6bf0ba09878c56a440cc94da16bf3ad107e4aa91c7cdc2280ddf1933b683e314c3f9e62c303a84ca823f49ffce035ba0ae2f8ee09537821a4254bfe1ae3cc0e77a7a9846037e1f6a4c977765c70390fdf05f6dacc4ebcfc2f613b258011c8a1fa5650e4304786f6c2a8cfb6cfe87001997b2816010f54e68bd42348c2f12e0c7b0566a18358dc71c46d2f7b5619b9c60291190891139dd620e33337ba8cfbbb419e0afe7df41200a4fc9988941a3
+      modulus_length: 2048
+      not_after: '1606780799'
+      not_before: '1598918400'
+      serial: a708a9963295afa7b69c0118ca9f3081
+      signature_algorithm: sha256WithRSAEncryption
+      subject.commonName: leroyal.in
+      validation_type: dv
+  key: 
+    b28ff_4fb9f_b211f869eed4876e522e1bca4a4ffdfa: 
+      created: '1598871020'
+      friendly_name: Key for “leroyal.in”
+      id: b28ff_4fb9f_b211f869eed4876e522e1bca4a4ffdfa
+      modulus: b28ff8512d4d7f618658b37cce1e5c8b2c7215a2751b0961d1bc4b195b1f7dd871fe28d0a47e419c46299a3f11fa161b49abedb023dd2a99d722d99fc8a3817405d6b0e1970c037504f333b8e41f36b528c0e50376aa79a92bc584bd5e3c300e0b2d5dff2d4359e9e3bf442f4e8ede80f54534d3bc3a17a63c5fc6cbc6a5b2813a44246303aa7bad7c1bb106e58c67b81cae622e46bfd5e0a84d05fb38fe9957804dc61682eeaf16bc274b91dfa5225cda98d060db31d556e7a34fdbfbe0f5767f4544e49ea3942d657bedf744b011b8fa8d35708ba808bf8b2c4e5aa720bc3b01938384f10ca86ec6e259dc7583d64afd1ab5c7388652e576788aeac714fb9f
+      modulus_length: 2048
+    e38da_941a3_11e31e61d6ee4ab531ad76d500eb5642: 
+      created: '1598933042'
+      friendly_name: Key for “leroyal.in” 1598933042.0
+      id: e38da_941a3_11e31e61d6ee4ab531ad76d500eb5642
+      modulus: e38da1a164b869cb4e30d3ed768a78348a58e9c156f9e6bf5b66e257d04c19a006e9bff1c47efd5d54ab71daf03b2c77379517bd58656ebeac986ad4ae6488a17290b914d1962d768f944bf8d3d2840f933f6bf0ba09878c56a440cc94da16bf3ad107e4aa91c7cdc2280ddf1933b683e314c3f9e62c303a84ca823f49ffce035ba0ae2f8ee09537821a4254bfe1ae3cc0e77a7a9846037e1f6a4c977765c70390fdf05f6dacc4ebcfc2f613b258011c8a1fa5650e4304786f6c2a8cfb6cfe87001997b2816010f54e68bd42348c2f12e0c7b0566a18358dc71c46d2f7b5619b9c60291190891139dd620e33337ba8cfbbb419e0afe7df41200a4fc9988941a3
+      modulus_length: 2048
+indexes: 
+  certificate: 
+    modulus: 
+      b28ff8512d4d7f618658b37cce1e5c8b2c7215a2751b0961d1bc4b195b1f7dd871fe28d0a47e419c46299a3f11fa161b49abedb023dd2a99d722d99fc8a3817405d6b0e1970c037504f333b8e41f36b528c0e50376aa79a92bc584bd5e3c300e0b2d5dff2d4359e9e3bf442f4e8ede80f54534d3bc3a17a63c5fc6cbc6a5b2813a44246303aa7bad7c1bb106e58c67b81cae622e46bfd5e0a84d05fb38fe9957804dc61682eeaf16bc274b91dfa5225cda98d060db31d556e7a34fdbfbe0f5767f4544e49ea3942d657bedf744b011b8fa8d35708ba808bf8b2c4e5aa720bc3b01938384f10ca86ec6e259dc7583d64afd1ab5c7388652e576788aeac714fb9f: 
+        leroyal_in_b28ff_4fb9f_1630407020_51c1102c3f9d2364b61cb25029239fdc: ~
+      e38da1a164b869cb4e30d3ed768a78348a58e9c156f9e6bf5b66e257d04c19a006e9bff1c47efd5d54ab71daf03b2c77379517bd58656ebeac986ad4ae6488a17290b914d1962d768f944bf8d3d2840f933f6bf0ba09878c56a440cc94da16bf3ad107e4aa91c7cdc2280ddf1933b683e314c3f9e62c303a84ca823f49ffce035ba0ae2f8ee09537821a4254bfe1ae3cc0e77a7a9846037e1f6a4c977765c70390fdf05f6dacc4ebcfc2f613b258011c8a1fa5650e4304786f6c2a8cfb6cfe87001997b2816010f54e68bd42348c2f12e0c7b0566a18358dc71c46d2f7b5619b9c60291190891139dd620e33337ba8cfbbb419e0afe7df41200a4fc9988941a3: 
+        leroyal_in_e38da_941a3_1606780799_f0a933e9ce5e0fa36909daa480f63bfd: ~
+    subject.commonName: 
+      leroyal.in: 
+        leroyal_in_b28ff_4fb9f_1630407020_51c1102c3f9d2364b61cb25029239fdc: ~
+        leroyal_in_e38da_941a3_1606780799_f0a933e9ce5e0fa36909daa480f63bfd: ~
+uniques: 
+  certificate: 
+    friendly_name: 
+      Cert for “leroyal.in”: leroyal_in_b28ff_4fb9f_1630407020_51c1102c3f9d2364b61cb25029239fdc
+      Cert for “leroyal.in” 1598933042.0: leroyal_in_e38da_941a3_1606780799_f0a933e9ce5e0fa36909daa480f63bfd
+  key: 
+    friendly_name: 
+      Key for “leroyal.in”: b28ff_4fb9f_b211f869eed4876e522e1bca4a4ffdfa
+      Key for “leroyal.in” 1598933042.0: e38da_941a3_11e31e61d6ee4ab531ad76d500eb5642
+    modulus: 
+      b28ff8512d4d7f618658b37cce1e5c8b2c7215a2751b0961d1bc4b195b1f7dd871fe28d0a47e419c46299a3f11fa161b49abedb023dd2a99d722d99fc8a3817405d6b0e1970c037504f333b8e41f36b528c0e50376aa79a92bc584bd5e3c300e0b2d5dff2d4359e9e3bf442f4e8ede80f54534d3bc3a17a63c5fc6cbc6a5b2813a44246303aa7bad7c1bb106e58c67b81cae622e46bfd5e0a84d05fb38fe9957804dc61682eeaf16bc274b91dfa5225cda98d060db31d556e7a34fdbfbe0f5767f4544e49ea3942d657bedf744b011b8fa8d35708ba808bf8b2c4e5aa720bc3b01938384f10ca86ec6e259dc7583d64afd1ab5c7388652e576788aeac714fb9f: b28ff_4fb9f_b211f869eed4876e522e1bca4a4ffdfa
+      e38da1a164b869cb4e30d3ed768a78348a58e9c156f9e6bf5b66e257d04c19a006e9bff1c47efd5d54ab71daf03b2c77379517bd58656ebeac986ad4ae6488a17290b914d1962d768f944bf8d3d2840f933f6bf0ba09878c56a440cc94da16bf3ad107e4aa91c7cdc2280ddf1933b683e314c3f9e62c303a84ca823f49ffce035ba0ae2f8ee09537821a4254bfe1ae3cc0e77a7a9846037e1f6a4c977765c70390fdf05f6dacc4ebcfc2f613b258011c8a1fa5650e4304786f6c2a8cfb6cfe87001997b2816010f54e68bd42348c2f12e0c7b0566a18358dc71c46d2f7b5619b9c60291190891139dd620e33337ba8cfbbb419e0afe7df41200a4fc9988941a3: e38da_941a3_11e31e61d6ee4ab531ad76d500eb5642
