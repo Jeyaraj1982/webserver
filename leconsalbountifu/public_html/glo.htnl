@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>:::Welcome to Leconsal Bountiful Trust:::</title>
+<link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="menu_style.css" type="text/css" />
+</head>
+
+<body>
+<div id="wrap">
+	<div id="top">
+		<div id="logo">
+			<img src="images/logo.jpg" style="float:left;" /><img style="padding-left:50px; float:left; margin-top:40px;" src="images/comnam.jpg" />
+			<div class="jesus">&nbsp;</div>
+		</div>
+		<div id="nav">
+			<div class="menu">
+		<ul>
+			<li style="width:150px;">&nbsp;</li>
+			<li><a href="index.html" >Home</a></li>
+			<li><a href="#" id="current">About us</a>
+				<ul>
+					<li><a href="About us.htm">Mission</a></li>
+					<li><a href="Trustee.htm">Trustees</a></li>
+					<li><a href="Counseller.htm">Counsellors</a></li>
+					<li><a href="Co-ordinators Gallery.htm">Co-Ordinators</a></li>
+					<li><a href="doctors.htm">Doctors</a></li>
+			   </ul>
+		  </li>
+			<li><a href="#" id="current">Activities</a>
+				<ul>
+					<li><a href="Education.htm">Education</a></li>
+					<li><a href="Medical.htm">Medical</a></li>
+					<li><a href="Child Development.htm">Child Development</a></li>
+					<li><a href="Women Enpowerment.htm">Home for Aged</a></li>
+					<li><a href="Protection.htm">Global Worming</a></li>
+					<li><a href="Awareness.htm">Awareness</a></li>
+			   </ul>
+		  </li>
+		  <li><a href="projects.htm">Projects</a></li>
+		  <li><a href="Donate.htm">Donate</a></li>
+				<li><a href="Contact us.htm">Contact Us</a></li>
+		</ul>
+	</div>
+		</div>
+	</div>
+	<div id="container">
+  						
+    <div id="bodycontainer">
+      <div>
+        <div style="height:30px; width:200px; float:right;"><h2>Global</h2>
+        <h3>worming</h3></div>
+        <br />
+        <div class="clr"></div>
+        <div id="img2"><img src="images/pic4.jpg" /></div>
+		<div class="inside">
+		
+<p>
+•	Awareness<br />
+text to be added<br />
+•	Planting Trees<br />
+text to be added<br />
+•	Environmental <br />
+text to be added
+
+</p>
+		
+        <br />
+        
+        <br />
+
+ </div>
+      
+<div class="clr"></div>
+
+      </div>
+    </div>
+    <div class="clr"></div>
+	<div id="footerlin"></div>
+	<div id="footer">
+	<div class="footerlft">All Rights Reserved © Le Royal Groups 2011</div>
+	<div class="footerrgt">Maintained by <a href="" class="footlink">Horizon Solutions & Services</a></div>
+	</div>
+  </div>
+</div>
+</div>
+</body>
+</html>

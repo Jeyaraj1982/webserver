@@ -1,0 +1,300 @@
+/*
+Designed By Sa Sa Sa Groups
+http://www.St. Gonsalo College of Education
+
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #EBEBEB url(images/img01.gif) repeat-x left top;
+	text-align: justify;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #454545;
+}
+
+h1, h2, h3 {
+	margin-top: 0;
+	color: #8C0209;
+}
+
+h1 {
+	font-size: 16px;
+	font-family: "Times New Roman", Times, serif;
+	font-weight: normal;
+	color: #333333;
+}
+
+h2 {
+	font-size: 1.6em;
+}
+
+h3 {
+	font-size: 18px;
+	text-decoration: none;
+	color:#333333;
+	font-family: "Times New Roman", Times, serif;
+	font-weight: bold;
+}
+
+ul {
+}
+
+a {
+	text-decoration: none;
+	color: #3F5C10;
+}
+
+a:hover {
+	border-bottom: none;
+}
+
+a img {
+	border: none;
+}
+
+img.left {
+	float: left;
+	margin: 0 20px 0 0;
+}
+
+img.right {
+	float: right;
+	margin: 0 0 0 20px;
+}
+
+#header {
+	width: 1000px;
+	height: 203px;
+	margin: 0 auto;
+}
+
+/* Header */
+
+
+#logo {
+	width: 960px;
+	height: 150px;
+	margin: 0 auto;
+	background: url(images/img02.jpg) no-repeat left top;
+}
+#logoimag{
+   margin: 0 auto;
+   background: url(images/logo08.gif); 
+   background-repeat: no-repeat;
+   margin-top: 20px;
+   float: right;
+   width: 120px;
+   height: 120px;
+   }
+#logoimag1{
+   margin: 0 auto;
+   background: url(images/logo07.gif); 
+   background-repeat: no-repeat;
+   margin-top: 20px;
+   float: left;
+   width: 120px;
+   height: 120px;
+   }
+#logo h1, #logo p {
+	float: left;
+	margin: 0px;
+}
+
+#logo span {
+	color: #FFFFFF;
+}
+
+#logo h1 {
+   margin-left: 10px;
+	padding-top: 45px;
+	letter-spacing: -1px;
+	font-weight: normal;
+	font-size: 3em;
+	font-family: "Times New Roman", Times, serif;
+}
+
+#logo p {
+	display: block;
+	padding-top: 70px;
+	text-transform: uppercase;
+	font-size: 10px;
+	color: #FFFFFF;
+}
+
+#logo a {
+	border: none;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+
+/* Menu */
+
+#menu {
+	width: 960px;
+	margin: 0 auto;
+	padding: 0;
+	height: 50px;
+	background: #DD6F00;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#menu li {
+	display: inline;
+}
+
+#menu a {
+	display: block;
+	float: left;
+	margin: 1px 0px 0px 0px;
+	padding: 5px 10px 0px 35px;
+	text-decoration: none;
+	text-transform: capitalize;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #FFFFFF;
+}
+
+#menu a:hover {
+	color: #FFFFFF;
+}
+
+#menu .current_page_item a {
+	color: #FFFFFF;
+}
+
+#menu .first {
+	background: none;
+}
+
+/* Wrapper */
+
+#wrapper {
+}
+
+/* Page */
+
+#page {
+	width: 960px;
+	margin: 0 auto;
+	background: #FFFFFF;
+}
+
+#page-bg {
+	background: #FFFFFF;
+	padding: 0px 10px;
+}
+
+/* Latest Post */
+
+#latest-post {
+	padding: 20px;
+	border: 1px solid #E7E7E7;
+}
+
+/* Content */
+
+#content {
+	float: left;
+	width: 95%;
+	padding: 10px 10px 0px 10px;
+}
+
+.post {
+	padding-bottom: 45px;
+	line-height: 170%;
+}
+
+.post h1 {
+	font-weight: normal;
+}
+
+.title {
+	margin: 0px;
+	padding: 0px 0px 14px 0px;
+	letter-spacing: -1px;
+	font-size: 2em;
+	font-weight: normal;
+	background: url(images/img04.gif) repeat-x left bottom;
+}
+
+.title a {
+	border-bottom: none;
+	color: #454545;
+}
+
+.title a:hover {
+}
+
+.byline {
+	background: url(images/img04.jpg) repeat-x left bottom;
+	padding-bottom: 10px;
+	font-size: 20px;
+	color: #B33A00;
+}
+
+.tag {
+	padding: 0 15px;
+}
+
+.entry {
+margin:10px;
+width:95%;
+}
+
+.links {
+	padding: 4px 0px;
+	text-align: right;
+	font-weight: bold;
+}
+
+.links a {
+	border: none;
+}
+
+.links a:hover {
+}
+
+/* Sidebars */
+
+
+
+/* Footer */
+
+#footer {
+	width: 100%;
+	height: 70px;
+	margin: 0 auto;
+	background: #161600;
+}
+
+#footer-bg {
+	width: 960px;
+	margin:  auto auto;
+}
+
+#footer p {
+	margin: 0 auto;
+	padding: 10px 0 0 0;
+	text-align: center;
+	font-size: small;
+	color: #FFFFFF;
+}
+
+#footer a {
+	color: #FFFFFF;
+}
+
+#footer .link {
+}
+
+#footer .copyright {
+	float:left;
+}

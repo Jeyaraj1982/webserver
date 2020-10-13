@@ -1,0 +1,403 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin:0px;
+	background:url(../images/bg.jpg) repeat-x  #FFFFFF top center ;
+	
+}
+
+.follow{
+	width:130px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	font-weight:bold;
+	color:#333;
+	padding:15px 0px 0px 150px;
+}
+
+.main-table{
+	width:948px;
+	height:auto;
+	margin:auto;
+	
+}
+
+.second-table{
+	width:948px;
+	height:auto;
+	margin:auto;
+	float:left;
+	
+}
+
+.header{
+	width:948px;
+	height:69px;
+	
+	
+}
+
+.menu-bg{
+	width:948px;
+	height:49px;
+	background:url(../images/menu-bg.jpg) repeat-x top left;
+	
+}
+
+.flash-bg{
+	width:948px;
+	height:442px;
+
+		
+}
+
+.flash-inner-bg{
+	width:946px;
+	height:302px;
+	background:url(../images/banner-bg.jpg) no-repeat top left;
+	
+}
+
+.content-part{
+	float:left;
+	width:948px;
+	
+}
+.content-part p{
+    font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	text-align:justify;
+	line-height:22px;
+	color:#5f5f5f;
+	
+}
+.content-left{
+	width:250px;
+	float:left;
+}
+.content-left1{
+	width:210px;
+	float:left;
+}
+.content-right{
+	width:632px;
+	float:right;
+}
+.content-right1{
+	width:688px;
+	float:right;
+	
+	
+}
+
+
+.menu{
+	font-family:Arial, Helvetica, sans-serif;
+	margin:0px;
+}
+
+.menu a{
+	float:left;
+	font-size:14px;
+	font-weight:bold;
+	text-align:center;
+	text-decoration:none;
+	line-height:43px;
+	color:#5f5f5f;
+	margin:0px;
+	padding:0px 24px 0px 55px;
+}
+
+.menu a:hover{
+	float:left;
+	font-size:14px;
+	font-weight:bold;
+	text-align:center;
+	line-height:43px;
+	color:#000;
+	margin:0px;
+	padding:0px 24px 0px 55px;
+}
+
+.menu .current{
+	background:url(../images/arrow-top-menu.jpg) no-repeat bottom center;
+	float:left;
+	font-size:14px;
+	font-weight:bold;
+	text-align:center;
+	line-height:43px;
+	color:#000;
+	margin:0px;
+	padding:0px 24px 0px 55px;
+}
+body.home a.home, body.aboutus a.aboutus, body.enquiry a.enquiry, body.product a.product, body.technology a.technology, body.careers a.careers, body.enquiry a.enquiry, body.feedback a.feedback, body.contact a.contact, body.gallery a.gallery {
+
+background:url(../images/arrow-top-menu.jpg) no-repeat bottom center;
+float:left;
+	font-size:14px;
+	font-weight:bold;
+	text-align:center;
+	line-height:43px;
+	color:#000;
+	margin:0px;
+	padding:0px 24px 0px 55px;
+
+}
+.menu span{
+	float:left;
+}
+
+/*menu for service app */
+.menua{
+	font-family:Arial, Helvetica, sans-serif;
+	margin:0px;
+}
+
+.menua a{
+	float:left;
+	font-size:14px;
+	font-weight:bold;
+	text-align:center;
+	text-decoration:none;
+	line-height:43px;
+	color:#5f5f5f;
+	margin:0px;
+	padding:0px 24px 0px 35px;
+}
+
+.menua a:hover{
+	float:left;
+	font-size:14px;
+	font-weight:bold;
+	text-align:center;
+	line-height:43px;
+	color:#000;
+	margin:0px;
+	padding:0px 24px 0px 35px;
+}
+
+.menua .current{
+	background:url(../images/arrow-top-menu.jpg) no-repeat bottom center;
+	float:left;
+	font-size:14px;
+	font-weight:bold;
+	text-align:center;
+	line-height:43px;
+	color:#000;
+	margin:0px;
+	padding:0px 24px 0px 35px;
+}
+body.home a.home, body.aboutus a.aboutus, body.enquiry a.enquiry, body.product a.product, body.technology a.technology, body.careers a.careers, body.enquiry a.enquiry, body.feedback a.feedback, body.contact a.contact, body.gallery a.gallery {
+
+background:url(../images/arrow-top-menu.jpg) no-repeat bottom center;
+float:left;
+	font-size:14px;
+	font-weight:bold;
+	text-align:center;
+	line-height:43px;
+	color:#000;
+	margin:0px;
+	padding:0px 24px 0px 35px;
+
+}
+.menua span{
+	float:left;
+}
+
+/******************* content ************/
+
+#content{
+	font-family:Arial, Helvetica, sans-serif;
+	margin:0px;
+}
+
+
+#content h1{
+	font-size:16px;
+	font-weight:bold;
+	text-align:left;
+	line-height:22px;
+	color:#666;
+	margin:0px;
+	padding:12px 0px 5px 0px;
+}
+
+
+#content h2{
+	font-size:20px;
+	font-weight:normal;
+	text-align:left;
+	line-height:22px;
+	color:#048db9;
+	margin:0px 0px 5px 0px;
+	padding:12px 0px 1px 0px;
+	border-bottom:1px dashed #CCC;
+}
+
+#content p{
+	font-size:13px;
+	font-weight:normal;
+	text-align:justify;
+	line-height:22px;
+	color:#666;
+	margin:0px;
+	padding:7px 0px 7px 0px;
+}
+
+.content-part ul{
+	list-style-type:none;
+	margin:0px;
+	padding:0px 0px 0px 18px;
+}
+
+.content-part li{
+	background:url(../images/arrow1.jpg) no-repeat left 14px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	font-weight:normal;
+	text-align:left;
+	line-height:22px;
+	color:#666;
+	margin:0px;
+	padding:5px 0px 5px 12px;
+}
+
+
+
+/******************* cont-left ************/
+
+#cont-left{
+	font-family:Arial, Helvetica, sans-serif;
+	margin:0px;
+}
+
+
+#cont-left h1{
+	font-size:16px;
+	font-weight:bold;
+	text-align:left;
+	line-height:22px;
+	color:#666;
+	margin:0px;
+	padding:12px 0px 5px 0px;
+}
+
+
+#cont-left h2{
+	font-size:16px;
+	font-weight:bold;
+	text-align:left;
+	line-height:22px;
+	color:#666;
+	margin:0px;
+	padding:12px 0px 5px 0px;
+}
+
+#cont-left p{
+	font-size:13px;
+	font-weight:normal;
+	text-align:justify;
+	line-height:22px;
+	color:#666;
+	margin:0px;
+	padding:7px 0px 7px 0px;
+}
+
+
+/************** enquiry ******/
+
+#enquiry {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	font-weight:bold;
+	text-align:left;
+	line-height:22px;
+	color:#666;
+	margin:0px;
+	padding:7px 0px 7px 0px;
+}
+
+.en-with{
+	width:260px;
+	height:18px;
+	border-bottom:1px solid #e0dddd;
+	border-left:1px solid #e0dddd;
+	border-right:1px solid #e0dddd;
+	border-top:none;
+	background-color:#eeecec;
+}
+
+.en-description{
+	width:260px;
+	height:108px;
+	border-bottom:1px solid #e0dddd;
+	border-left:1px solid #e0dddd;
+	border-right:1px solid #e0dddd;
+	border-top:none;
+	background-color:#eeecec;
+}
+
+.contact-description{
+	width:320px;
+	height:118px;
+	border-bottom:1px solid #e0dddd;
+	border-left:1px solid #e0dddd;
+	border-right:1px solid #e0dddd;
+	border-top:none;
+	background-color:#eeecec;
+}
+
+
+/********** footer *****/
+
+.footer{
+	float:left;
+	width:948px;
+	height:50px;
+	background-color:#182132;
+}
+
+.foot{
+	font-family:Arial, Helvetica, sans-serif;
+	margin:0px;
+}
+
+.foot p{
+	font-size:11px;
+	font-weight:normal;
+	line-height:20px;
+	color:#FFF;
+	margin:0px;
+	padding:0px 20px 0px 20px;
+}
+
+.foot a{
+	font-size:11px;
+	font-weight:normal;
+	line-height:20px;
+	text-decoration:none;
+	color:#FFF;
+	margin:0px;
+	padding:0px 0px 0px 0px;
+}
+
+.table
+{
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+color:#666;
+border:solid 1px #CCCCCC;
+
+}
+
+.td
+{
+padding:5px;
+border:solid 1px #CCCCCC;
+}
+img
+{
+border:0px;
+}
