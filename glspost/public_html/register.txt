@@ -1,0 +1,451 @@
+<div class="aq-block aq-block-aq_start_content_block aq_span12 aq-first cf">
+			<style scoped>.mainwrap.rand-692 #headerwrap{background:#333333 !important;}</style>
+            <div  class="mainwrap rand-692    mainarrow  " style="background:#333333 url(http://ecorecycle.premiumcoding.com/wp-content/uploads/2013/12/background-recycle-icon1.png) 50% 0;background-size:cover;border-top:0px solid #fff;border-bottom:0px solid #fff;padding:57px 0 85px 0;">
+                <div class="main clearfix ">
+                    <div class="content fullwidth">
+			    </div>	
+			    <div class="aq-block aq-block-aq_title_border_block aq_span12 aq-first cf">
+			        <div class="titletext "> </div>
+                    <div class="border-block" id="clients">
+                        <div class="title-block-wrap">
+			            </div>					
+			            <div id="aq-block-9663-9" class="aq-block aq-block-pmc_prebuild_start_title_small aq_span12 aq-first cf">
+                            <div id="aq-block-9663-10" class="aq-block aq-block-aq_richtext_block aq_span12 aq-first cf">
+                                <h2 style="text-align: center; font-size: 72px !important; line-height: 110%;"><strong><span style="color: #ffffff;">ECO</span><span style="color: #94bb54;">.</span><span style="color: #ffffff;">RECYCLING</span> </strong><span style="color: #94bb54;"><strong>SERVICES</strong><br /></span></h2>
+                                <div style="text-align: center;"><span style="color: #ffffff; font-size: 18px;">We provide several services that will help you with your recycling Process</span></div></div></div>			
+			                        <div class="aq-block aq-block-aq_end_content_block aq_span12 aq-first cf">
+			                        </div>
+                                </div>			
+                            </div>			
+			                <div class="aq-block aq-block-aq_end_content_block aq_span12 aq-first cf"></div>
+                        </div>
+					</div>			
+                </div>			
+			    <div id="aq-block-9663-11" class="aq-block aq-block-aq_clear_block aq_span12 aq-first cf">
+                    <div class="cf" style="height:110px; background:#fff"></div>
+                </div>
+                <div id="aq-block-9663-12" class="aq-block aq-block-aq_start_content_block aq_span12 aq-first cf">
+                    <style scoped>.mainwrap.rand-488 #headerwrap{background:#ffffff !important;}</style>
+                    <div  class="mainwrap rand-488      " style="background:#ffffff url() 50% 0;background-size:cover;border-top:0px solid #ffffff;border-bottom:0px solid #ffffff;padding:0px 0 0px 0;">
+                        <div class="main clearfix ">
+                            <div class="content fullwidth">
+                        </div>
+                    <div id="aq-block-9663-13" class="aq-block aq-block-aq_richtext_block aq_span12 aq-first cf">
+                        <div class="one_half"> 
+                            <div id="rand-522" class="pmc-animate pmc-animated pmc-icon animated fadeInUp">
+                                <div style="box-shadow: 0 0 0 5px #94bb54;border-color:#94bb54;background:#94bb54" class="pmc-icon-icon medium left"><a href="http://premiumcoding.com/" ><i class="fa fa-laptop"></i></a></div>
+                                <div class="pmc-icon-wraper left medium"><div class="pmc-icon-title">Ultra Responsive</div>
+                                <div class="pmc-icon-border"></div>
+                                <div class="pmc-icon-content">Vestibulum ante ipsum primis in fauc ibus orci luctus et ultrices. &nbsp;Lorem ipsum dolor sit.</div>
+                            </div>
+                        </div> 
+                    <div id="rand-1816" class="pmc-animate pmc-animated pmc-icon animated fadeInUp">
+                        <div style="box-shadow: 0 0 0 5px #94bb54;border-color:#94bb54;background:#94bb54" class="pmc-icon-icon medium left"><a href="http://premiumcoding.com/" ><i class="fa fa-dropbox"></i></a></div>
+                        <div class="pmc-icon-wraper left medium"><div class="pmc-icon-title">One Click Demo Install</div>
+                        <div class="pmc-icon-border"></div>
+                        <div class="pmc-icon-content">Vestibulum ante ipsum primis in fauc ibus orci luctus et ultrices. &nbsp;Lorem ipsum dolor sit.</div>
+                        </div>
+                    </div> 
+                    <div id="rand-874" class="pmc-animate pmc-animated pmc-icon animated fadeInUp">
+                        <div style="box-shadow: 0 0 0 5px #94bb54;border-color:#94bb54;background:#94bb54" class="pmc-icon-icon medium left"><a href="http://premiumcoding.com/" ><i class="fa fa-cubes"></i></a></div>
+                        <div class="pmc-icon-wraper left medium">
+                            <div class="pmc-icon-title">Premiumcoding Page Builder</div>
+                            <div class="pmc-icon-border"></div>
+                            <div class="pmc-icon-content">Vestibulum ante ipsum primis in fauc ibus orci luctus et ultrices.&nbsp;Lorem ipsum dolor sit.</div>
+                        </div>
+                    </div> 
+                </div> 
+                <div class="one_half last">
+<h3 style="margin-bottom: 10px; color: #333;">ECOLOGICAL RESTORATION</h3>
+<iframe src="//www.youtube.com/embed/CR-vsAwCR0Q?autoplay=0&amp;showinfo=0&amp;controls=0" width="567" height="308" frameborder="0" allowfullscreen="allowfullscreen"></iframe>&nbsp;</div></div><div id="aq-block-9663-14" class="aq-block aq-block-aq_end_content_block aq_span12 aq-first cf">		</div></div>
+
+
+					</div></div><div id="aq-block-9663-15" class="aq-block aq-block-aq_clear_block aq_span12 aq-first cf"><div class="cf" style="height:70px; background:#fff"></div></div><div id="aq-block-9663-16" class="aq-block aq-block-aq_start_content_block aq_span12 aq-first cf"><style scoped>.mainwrap.rand-737 #headerwrap{background:#f8f8f8 !important;}</style><div  class="mainwrap rand-737    no_navigation  " style="background:#f8f8f8 url() 50% 0;background-size:cover;border-top:1px solid #dddddd;border-bottom:1px solid #dddddd;padding:65px 0 90px 0;">
+<div class="main clearfix ">
+<div class="content fullwidth">
+</div><div id="aq-block-9663-17" class="aq-block aq-block-aq_title_border_block aq_span12 aq-first cf"><div class="titletext ">SOME OF THE PROJECTS WE JUST FINISHED </div>
+<div class="border-block" >
+<div class="title-block-wrap">
+<h2 style="color:#2a2b2c" class="titleborderh2">OUR LATEST ACHIEVEMENTS</h2>
+<div class="titleborderOut">
+<div class="titleborder "></div>
+</div>
+</div><div id="aq-block-9663-18" class="aq-block aq-block-aq_clear_block aq_span12 aq-first cf"><div class="cf" style="height:10px; background:"></div></div><div id="aq-block-9663-19" class="aq-block aq-block-aq_portfolio_page_block aq_span12 aq-first cf">			<input id = "plugin-url" type = "hidden" value="http://ecorecycle.premiumcoding.com/wp-content/plugins/page-builder-pmc/">	
+
+				<div class="homerecent pagePort">
+		<div class="homerecentInner portfolio-page">
+		<div id = "showpost-portfolio">
+			<div class="showpostload"><div class="loading"></div></div>
+			<div class = "closehomeshow-portfolio port closeajax"><i class="fa fa-times"></i></div>
+			<div class="showpostpostcontent"></div>
+		</div>	
+		<div class="portfolio">	
+			<div id="portitems4">
+					<div class="one_fourth item4 Videos  masonry_pmc" data-category="Videos " >											
+									<div class="recentimage">
+																																	<a href = "http://ecorecycle.premiumcoding.com/portfolio/new-windmills-constructed/"  title="New Windmills Constructed"  >
+																							
+											
+										<div class="overdefult">
+										
+											<div class="recentdescription">
+										
+																																													
+											</div>
+										</div>	
+																															</a>
+																				
+										<div class="image">
+																																																		<a href = "http://ecorecycle.premiumcoding.com/portfolio/new-windmills-constructed/"  title="New Windmills Constructed"  >
+																																						
+																																														
+													<img class="portfolio-home-image" src="http://ecorecycle.premiumcoding.com/wp-content/uploads/2012/04/portfolio-eco-image-2-280x220.jpg" alt="New Windmills Constructed"  width="280px" height="220px" >
+												
+													
+												
+																																				</a>
+																								
+										</div>
+									</div>								
+
+									<div class="port-meta">
+																																																			<a href = "http://ecorecycle.premiumcoding.com/portfolio/new-windmills-constructed/"  title="New Windmills Constructed"  >
+																														
+										<div class="port-meta title">New Windmills Constructed</div>
+																					</a>
+											
+											
+																			<div class="home-portfolio-categories pagePort">Videos</div>
+																	
+																																				</div>
+															</div>
+						<div class="one_fourth item4 Audio  masonry_pmc" data-category="Audio " >											
+									<div class="recentimage">
+																																	<a href = "http://ecorecycle.premiumcoding.com/portfolio/new-way-of-paper-recycling/"  title="New way of Paper Recycling"  >
+																							
+											
+										<div class="overdefult">
+										
+											<div class="recentdescription">
+										
+																																													
+											</div>
+										</div>	
+																															</a>
+																				
+										<div class="image">
+																																																		<a href = "http://ecorecycle.premiumcoding.com/portfolio/new-way-of-paper-recycling/"  title="New way of Paper Recycling"  >
+																																						
+																																														
+													<img class="portfolio-home-image" src="http://ecorecycle.premiumcoding.com/wp-content/uploads/2012/04/portfolio-eco-image-31-280x220.jpg" alt="New way of Paper Recycling"  width="280px" height="220px" >
+												
+													
+												
+																																				</a>
+																								
+										</div>
+									</div>								
+
+									<div class="port-meta">
+																																																			<a href = "http://ecorecycle.premiumcoding.com/portfolio/new-way-of-paper-recycling/"  title="New way of Paper Recycling"  >
+																														
+										<div class="port-meta title">New way of Paper Recycling</div>
+																					</a>
+											
+											
+																			<div class="home-portfolio-categories pagePort">Audio</div>
+																	
+																																				</div>
+															</div>
+						<div class="one_fourth item4 Audio Photography  masonry_pmc" data-category="Audio Photography " >											
+									<div class="recentimage">
+																																	<a href = "http://ecorecycle.premiumcoding.com/portfolio/educate-your-children/"  title="Educate your Children"  >
+																							
+											
+										<div class="overdefult">
+										
+											<div class="recentdescription">
+										
+																																													
+											</div>
+										</div>	
+																															</a>
+																				
+										<div class="image">
+																																																		<a href = "http://ecorecycle.premiumcoding.com/portfolio/educate-your-children/"  title="Educate your Children"  >
+																																						
+																																														
+													<img class="portfolio-home-image" src="http://ecorecycle.premiumcoding.com/wp-content/uploads/2012/04/portfolio-eco-image-4-280x220.jpg" alt="Educate your Children"  width="280px" height="220px" >
+												
+													
+												
+																																				</a>
+																								
+										</div>
+									</div>								
+
+									<div class="port-meta">
+																																																			<a href = "http://ecorecycle.premiumcoding.com/portfolio/educate-your-children/"  title="Educate your Children"  >
+																														
+										<div class="port-meta title">Educate your Children</div>
+																					</a>
+											
+											
+																			<div class="home-portfolio-categories pagePort">Audio, Photography</div>
+																	
+																																				</div>
+															</div>
+						<div class="one_fourth item4 Videos  masonry_pmc" data-category="Videos " >											
+									<div class="recentimage">
+																																	<a href = "http://ecorecycle.premiumcoding.com/portfolio/green-houses/"  title="Green Houses"  >
+																							
+											
+										<div class="overdefult">
+										
+											<div class="recentdescription">
+										
+																																													
+											</div>
+										</div>	
+																															</a>
+																				
+										<div class="image">
+																																																		<a href = "http://ecorecycle.premiumcoding.com/portfolio/green-houses/"  title="Green Houses"  >
+																																						
+																																														
+													<img class="portfolio-home-image" src="http://ecorecycle.premiumcoding.com/wp-content/uploads/2012/02/portfolio-eco-image-6-280x220.jpg" alt="Green Houses"  width="280px" height="220px" >
+												
+													
+												
+																																				</a>
+																								
+										</div>
+									</div>								
+
+									<div class="port-meta">
+																																																			<a href = "http://ecorecycle.premiumcoding.com/portfolio/green-houses/"  title="Green Houses"  >
+																														
+										<div class="port-meta title">Green Houses</div>
+																					</a>
+											
+											
+																			<div class="home-portfolio-categories pagePort">Videos</div>
+																	
+																																				</div>
+															</div>
+															</div>
+				
+			<div class="wp-pagenavi">
+<span class="pages">Page 1 of 3 </span><span class="current">1</span><a href="http://ecorecycle.premiumcoding.com/home-page-version-3/page/2/" class="page" title="2">2</a><a href="http://ecorecycle.premiumcoding.com/home-page-version-3/page/3/" class="page" title="3">3</a><a href="http://ecorecycle.premiumcoding.com/home-page-version-3/page/2/" class="nextpostslink">&raquo;</a></div>
+			
+			</div>			
+		</div>
+		</div>
+							
+		</div><div id="aq-block-9663-20" class="aq-block aq-block-aq_title_border_block_end aq_span12 aq-first cf"></div></div></div><div id="aq-block-9663-21" class="aq-block aq-block-aq_end_content_block aq_span12 aq-first cf">		</div></div>
+
+
+					</div></div><div id="aq-block-9663-22" class="aq-block aq-block-aq_start_content_block aq_span12 aq-first cf"><style scoped>.mainwrap.rand-178 #headerwrap{background:#333333 !important;}</style><div  class="mainwrap rand-178 pmc_parallax   mainarrow  " style="background:#333333 url(http://ecorecycle.premiumcoding.com/wp-content/uploads/2013/12/slideshow-eco-4.jpg) 50% 0;background-size:cover;border-top:0px solid #fff;border-bottom:0px solid #fff;padding:80px 0 80px 0;">
+<div class="main clearfix ">
+<div class="content fullwidth">
+</div><div id="aq-block-9663-23" class="aq-block aq-block-aq_richtext_block aq_span12 aq-first cf"><p style="color: #333333; font-family: Georgia, 'Times New Roman', 'Bitstream Charter', Times, serif; font-size: 13px; line-height: 19px;"><div class="break clearfix">&nbsp;</div></p>
+<p style="color: #333333; font-family: Georgia, 'Times New Roman', 'Bitstream Charter', Times, serif; font-size: 13px; line-height: 19px;"><div class="one_fourth"></p>
+<p style="color: #333333; font-family: Georgia, 'Times New Roman', 'Bitstream Charter', Times, serif; font-size: 13px; line-height: 19px;"><div class="pmc-count-simple" style="background-color:#fff; color:#2a2b2c"><div class="pmc-count-icon"><i class="fa fa-tree"></i></div><div id="number-241" class="pmc-count-number number-animate">565</div><div class="pmc-count-number-border"></div><div class="pmc-count-text">TREES SAVED</div></div></p>
+<p style="color: #333333; font-family: Georgia, 'Times New Roman', 'Bitstream Charter', Times, serif; font-size: 13px; line-height: 19px;"></div></p>
+<p style="color: #333333; font-family: Georgia, 'Times New Roman', 'Bitstream Charter', Times, serif; font-size: 13px; line-height: 19px;"><div class="one_fourth"></p>
+<p style="color: #333333; font-family: Georgia, 'Times New Roman', 'Bitstream Charter', Times, serif; font-size: 13px; line-height: 19px;"><div class="pmc-count-simple" style="background-color:#fff; color:#2a2b2c"><div class="pmc-count-icon"><i class="fa fa-car"></i></div><div id="number-5" class="pmc-count-number number-animate">225</div><div class="pmc-count-number-border"></div><div class="pmc-count-text">CARS RECYCLED</div></div></p>
+<p style="color: #333333; font-family: Georgia, 'Times New Roman', 'Bitstream Charter', Times, serif; font-size: 13px; line-height: 19px;"></div></p>
+<p style="color: #333333; font-family: Georgia, 'Times New Roman', 'Bitstream Charter', Times, serif; font-size: 13px; line-height: 19px;"><div class="one_fourth"></p>
+<p style="color: #333333; font-family: Georgia, 'Times New Roman', 'Bitstream Charter', Times, serif; font-size: 13px; line-height: 19px;"><div class="pmc-count-simple" style="background-color:#fff; color:#2a2b2c"><div class="pmc-count-icon"><i class="fa fa-child"></i></div><div id="number-721" class="pmc-count-number number-animate">115</div><div class="pmc-count-number-border"></div><div class="pmc-count-text">CHILDREN TAUGHT</div></div></p>
+<p style="color: #333333; font-family: Georgia, 'Times New Roman', 'Bitstream Charter', Times, serif; font-size: 13px; line-height: 19px;"></div></p>
+<p style="color: #333333; font-family: Georgia, 'Times New Roman', 'Bitstream Charter', Times, serif; font-size: 13px; line-height: 19px;"><div class="one_fourth last"></p>
+<p style="color: #333333; font-family: Georgia, 'Times New Roman', 'Bitstream Charter', Times, serif; font-size: 13px; line-height: 19px;"><div class="pmc-count-simple" style="background-color:#fff; color:#2a2b2c"><div class="pmc-count-icon"><i class="fa fa-truck"></i></div><div id="number-891" class="pmc-count-number number-animate">136</div><div class="pmc-count-number-border"></div><div class="pmc-count-text">TONS RECYCLED</div></div></p>
+<p style="color: #333333; font-family: Georgia, 'Times New Roman', 'Bitstream Charter', Times, serif; font-size: 13px; line-height: 19px;"></div></p></div><div id="aq-block-9663-24" class="aq-block aq-block-aq_end_content_block aq_span12 aq-first cf">		</div></div>
+
+
+					</div></div><div id="aq-block-9663-25" class="aq-block aq-block-aq_clear_block aq_span12 aq-first cf"><div class="cf" style="height:70px; background:#fff"></div></div><div id="aq-block-9663-26" class="aq-block aq-block-aq_start_content_block aq_span12 aq-first cf"><style scoped>.mainwrap.rand-464 #headerwrap{background:#fff !important;}</style><div  class="mainwrap rand-464      " style="background:#fff url() 50% 0;background-size:cover;border-top:0px solid #fff;border-bottom:0px solid #fff;padding:40px 0 40px 0;">
+<div class="main clearfix ">
+<div class="content fullwidth">
+</div><div id="aq-block-9663-27" class="aq-block aq-block-aq_richtext_block aq_span12 aq-first cf"><div style="text-align: center;"><div class="one_fourth"><div class="pmc-image animated fadeInUp pmc-animated" id="rand-644"><a target="" href="http://premiumcoding.com"><div class="img"><img src="http://ecorecycle.premiumcoding.com/wp-content/uploads/2013/12/big-bulb-icon1.png" alt="img"></div><div class="info"><div class="image-over"><div class="image-icon"><i class="fa fa-gear"></i></div></div></div></a></div></div>
+</div><div class="three_fourths last">
+<h1 style="line-height: 100%;">HOW TO IMPROVE OUR RECYCLING PROCESS</h1>
+<p>&nbsp;</p>
+<p><span style="font-size: 16px; line-height: 32px; color: #333333;"><strong>Recycling</strong> is a process to change (waste) materials into new products to prevent waste of potentially useful materials, reduce the consumption of fresh raw materials, reduce energy usage, reduce air pollution (from incineration) and water pollution (from landfilling) by reducing the need for "conventional" waste disposal, and<strong> lower greenhouse</strong> gas emissions as compared to plastic production. <strong>Recycling</strong> is a key component of <strong>modern waste</strong> reduction and is the third component of the "Reduce, Reuse and Recycle" waste hierarchy.<br /><br />Recyclable materials include many kinds of <strong>glass, paper, metal, plastic, textiles,</strong> and electronics. The composting or other reuse of biodegradable waste&mdash;such as food or garden waste&mdash;is also considered recycling.[2] Materials to be recycled are either brought to a collection center or picked up from the curbside, then sorted, cleaned, and <strong>reprocessed into new materials</strong> bound for manufacturing.&nbsp;</span></p>
+</div><br /><br /></div><div id="aq-block-9663-28" class="aq-block aq-block-aq_end_content_block aq_span12 aq-first cf">		</div></div>
+
+
+					</div></div><div id="aq-block-9663-29" class="aq-block aq-block-aq_clear_block aq_span12 aq-first cf"><div class="cf" style="height:50px; background:#fff"></div></div>			
+			<div class="aq-block aq-block-aq_start_content_block aq_span12 aq-first cf">
+			<style scoped>.mainwrap.rand-839 #headerwrap{background:#f8f8f8 !important;}</style><div  class="mainwrap rand-839      " style="background:#f8f8f8 url() 50% 0;background-size:cover;border-top:1px solid #dddddd;border-bottom:1px solid #dddddd;padding:70px 0 0px 0;">
+<div class="main clearfix ">
+<div class="content fullwidth">
+			</div>	
+			<div class="aq-block aq-block-aq_title_border_block aq_span12 aq-first cf">
+			<div class="titletext ">READ ABOUT RECYCLING PROCESSES FOR CERTAIN GROUPS </div>
+<div class="border-block" >
+<div class="title-block-wrap">
+<h2 style="color:#2a2b2c" class="titleborderh2">WHAT AND HOW TO RECYCLE</h2>
+<div class="titleborderOut">
+<div class="titleborder "></div>
+</div>
+			</div>					
+			<div id="aq-block-9663-30" class="aq-block aq-block-pmc_prebuild_start_title_small aq_span12 aq-first cf"><div id="aq-block-9663-31" class="aq-block aq-block-aq_clear_block aq_span12 aq-first cf"><div class="cf" style="height:40px; background:"></div></div><div id="aq-block-9663-32" class="aq-block aq-block-aq_column_block aq_span3 aq-first cf"><div id="aq-block-9663-33" class="aq-block aq-block-aq_featured_block aq_span3 aq-first cf">				<a href="http://premiumcoding.com">
+						
+			<div class="featured-block animated fadeInLeft" style="background:#94bc53; ">
+			
+				<div class="featured-block-title" > <h5 class="feature-title " style="color:#ffffff !important; " >Paper</h5> </div>
+				<div class = "featuredIcon"><i class="fa "></i></div>
+				<div class="featured-block-text" style="color:#ffffff !important; "><p><img src="http://ecorecycle.premiumcoding.com/wp-content/uploads/2013/12/eco-shortcode-image-6.jpg" alt="" width="200" height="200" /></p>
+</div>
+			
+			</div>
+							</a>
+						
+			</div><div id="aq-block-9663-34" class="aq-block aq-block-aq_richtext_block aq_span12 aq-first cf"><h5 style="text-align: center; line-height: 100%;"><br />PAPER RECYCLING</h5>
+<div style="text-align: center;"><span style="color: #808080;"><span style="color: #c0c0c0;">WHAT&nbsp;TO DO WITH PAPER</span><br /><br />Different grades of paper are used to produce a range of everyday items &ndash; from papers and magazines to advertising leaflets.<br /><br /><div class="pmc-button pmc-simple-button" target="" style="background-color:#80a93d;border-color:#759e32"><a href="http://premiumcoding.com" style="color:#fff">READ MORE</a></div></span></div></div></div><div id="aq-block-9663-35" class="aq-block aq-block-aq_column_block aq_span3  cf"><div id="aq-block-9663-36" class="aq-block aq-block-aq_featured_block aq_span3 aq-first cf">				<a href="http://premiumcoding.com">
+						
+			<div class="featured-block animated fadeInLeft" style="background:#333333; ">
+			
+				<div class="featured-block-title" ></div>
+				<div class = "featuredIcon"><i class="fa "></i></div>
+				<div class="featured-block-text" style="color:#FFFFFF !important; "><p><img src="http://ecorecycle.premiumcoding.com/wp-content/uploads/2013/12/eco-shortcode-image-4.jpg" alt="" width="200" height="200" /></p>
+</div>
+			
+			</div>
+							</a>
+						
+			</div><div id="aq-block-9663-37" class="aq-block aq-block-aq_richtext_block aq_span12 aq-first cf"><h5 style="text-align: center; line-height: 100%;"><br />ELECTRICAL ITEMS</h5>
+<div style="text-align: center;"><span style="color: #808080;"><span style="color: #c0c0c0;">WHAT&nbsp;TO DO WITH&nbsp;ELECTRIC</span><br /><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus commodo inter.&nbsp;Quisque tempor, justo sit amet.<br /><br /><div class="pmc-button pmc-simple-button" target="" style="background-color:#333;border-color:#111"><a href="http://premiumcoding.com" style="color:#fff">READ MORE</a></div><br /></span></div></div></div><div id="aq-block-9663-38" class="aq-block aq-block-aq_column_block aq_span3  cf"><div id="aq-block-9663-39" class="aq-block aq-block-aq_featured_block aq_span3 aq-first cf">				<a href="http://premiumcoding.com">
+						
+			<div class="featured-block animated fadeInLeft" style="background:#94bc53; ">
+			
+				<div class="featured-block-title" ></div>
+				<div class = "featuredIcon"><i class="fa "></i></div>
+				<div class="featured-block-text" style="color:#FFFFFF !important; "><p><img src="http://ecorecycle.premiumcoding.com/wp-content/uploads/2013/12/eco-shortcode-image-7.jpg" alt="" width="200" height="200" /></p>
+</div>
+			
+			</div>
+							</a>
+						
+			</div><div id="aq-block-9663-40" class="aq-block aq-block-aq_richtext_block aq_span12 aq-first cf"><h5 style="text-align: center; line-height: 100%;"><br />COMPOST&nbsp;RECYCLING</h5>
+<div style="text-align: center;"><span style="color: #808080;"><span style="color: #c0c0c0;">WHAT&nbsp;TO DO WITH&nbsp;COMPOST</span><br /><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus commodo inter.&nbsp;Quisque tempor, justo sit amet.<br /><br /><div class="pmc-button pmc-simple-button" target="" style="background-color:#80a93d;border-color:#759e32"><a href="http://premiumcoding.com" style="color:#fff">READ MORE</a></div><br /></span></div></div></div><div id="aq-block-9663-41" class="aq-block aq-block-aq_column_block aq_span3  cf"><div id="aq-block-9663-42" class="aq-block aq-block-aq_featured_block aq_span3 aq-first cf">				<a href="http://premiumcoding.com">
+						
+			<div class="featured-block animated fadeInLeft" style="background:#333333; ">
+			
+				<div class="featured-block-title" ></div>
+				<div class = "featuredIcon"><i class="fa "></i></div>
+				<div class="featured-block-text" style="color:#FFFFFF !important; "><p><img src="http://ecorecycle.premiumcoding.com/wp-content/uploads/2013/12/eco-shortcode-image-8.jpg" alt="" width="200" height="200" /></p>
+</div>
+			
+			</div>
+							</a>
+						
+			</div><div id="aq-block-9663-43" class="aq-block aq-block-aq_richtext_block aq_span12 aq-first cf"><h5 style="text-align: center; line-height: 100%;"><br />CLOTHES&nbsp;RECYCLING</h5>
+<div style="text-align: center;"><span style="color: #808080;"><span style="color: #c0c0c0;">WHAT&nbsp;TO DO WITH&nbsp;CLOTHES</span><br /><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus commodo inter.&nbsp;Quisque tempor, justo sit amet.<br /><br /><div class="pmc-button pmc-simple-button" target="" style="background-color:#333;border-color:#111"><a href="http://premiumcoding.com" style="color:#fff">READ MORE</a></div><br /></span></div></div></div><div id="aq-block-9663-44" class="aq-block aq-block-aq_clear_block aq_span12 aq-first cf"><div class="cf" style="height:75px; background:"></div></div></div>			
+			<div class="aq-block aq-block-aq_end_content_block aq_span12 aq-first cf">
+			</div></div>			</div>			
+			<div class="aq-block aq-block-aq_end_content_block aq_span12 aq-first cf">
+					</div></div>
+
+
+					</div>			</div>			
+			
+						
+			<div class="aq-block aq-block-aq_start_content_block aq_span12 aq-first cf">
+			<style scoped>.mainwrap.rand-645 #headerwrap{background:#fff !important;}</style><div  class="mainwrap rand-645 pmc_parallax     " style="background:#fff url(http://ecorecycle.premiumcoding.com/wp-content/uploads/2013/12/quote-background-eco.jpg) 50% 0;background-size:cover;border-top:0px solid #fff;border-bottom:0px solid #fff;padding:100px 0 120px 0;">
+<div class="main clearfix ">
+<div class="content fullwidth">
+			</div>	
+			<div class="aq-block aq-block-aq_title_border_block aq_span12 aq-first cf">
+			<div class="border-block" >
+<div class="title-block-wrap">
+<div class="titletext margintitle"> </div>
+			</div>					
+			<div id="aq-block-9663-45" class="aq-block aq-block-pmc_prebuild_start_title_small aq_span12 aq-first cf"><div id="aq-block-9663-46" class="aq-block aq-block-aq_quote_title_block aq_span12 aq-first cf">		<div class="infotextwrap" >
+			
+			<div class="infotext">
+			<div class="infotext-before"></div>
+			<div class="infotext-title">
+				<h2 style="color:#fff">START RECYCLING NOW</h2>
+				<div class="infotext-title-small" style="color:#fff"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus commodo interdum.</p>
+</div>
+			</div>
+			<div class="infotext-after"></div>
+			</div>
+		</div>
+		</div><div id="aq-block-9663-47" class="aq-block aq-block-aq_clear_block aq_span12 aq-first cf"><div class="cf" style="height:30px; background:"></div></div><div id="aq-block-9663-48" class="aq-block aq-block-aq_logo_block aq_span12 aq-first cf">			
+			<div class="logo-center">
+									<a href="http://ecorecycle.premiumcoding.com">
+                                    <!--<img src="				http://ecorecycle.premiumcoding.com/wp-content/uploads/2014/06/ecorecycling-logo-main.png" alt="Eco Premium Theme - Eco Premium Theme" />-->
+                                    GLSPost
+                                    </a>
+			</div>
+		</div><div id="aq-block-9663-49" class="aq-block aq-block-aq_richtext_block aq_span12 aq-first cf"><br />
+<div class="contact-eco-button" style="text-align: center;"><a title="Contact Eco Recycling" href="http://ecorecycle.premiumcoding.com/contact/" target="_blank">CONTACT US NOW</a></div></div></div>			
+			<div class="aq-block aq-block-aq_end_content_block aq_span12 aq-first cf">
+			</div></div>			</div>			
+			<div class="aq-block aq-block-aq_end_content_block aq_span12 aq-first cf">
+					</div></div>
+
+
+					</div>			</div>			
+			
+			<div id="aq-block-9663-50" class="aq-block aq-block-aq_start_content_block aq_span12 aq-first cf"><style scoped>.mainwrap.rand-593 #headerwrap{background:#ffffff !important;}</style><div  class="mainwrap rand-593      " style="background:#ffffff url() 50% 0;background-size:cover;border-top:0px solid #fff;border-bottom:0px solid #fff;padding:105px 0 100px 0;">
+<div class="main clearfix ">
+<div class="content fullwidth">
+</div><div id="aq-block-9663-51" class="aq-block aq-block-aq_advertise_block aq_span12 aq-first cf">		<script>
+		jQuery(document).ready(function(){	  
+				// Slider
+		var $slider = jQuery('.sliderAdvertise-533').bxSlider({
+			maxSlides:5,
+			minSlides:1,
+			moveSlides:1,
+			prevText : '<i class="fa fa-angle-left"></i>',
+			nextText : '<i class="fa fa-angle-right"></i>',
+			auto : true,
+			easing : 'easeInOutQuint',
+			pause : 8000,
+			pager :false,
+			controls: true,
+		});
+		 
+		 });
+	</script>
+	<div class="advertise">
+		<div class="advertiseInner">
+							<ul class="sliderAdvertise sliderAdvertise-533">
+									<li>
+												<img src="http://cherrycorporate.premiumcoding.com/wp-content/uploads/2013/12/advertisers-1-gray.png" alt="Sponsor 1" width="225px" height="132px"/>
+														
+										</li>
+									<li>
+												<img src="http://cherrycorporate.premiumcoding.com/wp-content/uploads/2013/12/advertisers-2-gray.png" alt="Sponsor 6" width="225px" height="132px"/>
+														
+										</li>
+									<li>
+												<img src="http://cherrycorporate.premiumcoding.com/wp-content/uploads/2013/12/advertisers-3-gray.png" alt="Sponsor 4" width="225px" height="132px"/>
+														
+										</li>
+									<li>
+												<img src="http://cherrycorporate.premiumcoding.com/wp-content/uploads/2013/12/advertisers-4-gray.png" alt="Sponsor 2" width="225px" height="132px"/>
+														
+										</li>
+									<li>
+												<img src="http://cherrycorporate.premiumcoding.com/wp-content/uploads/2013/12/advertisers-5-gray.png" alt="Sponsor 3" width="225px" height="132px"/>
+														
+										</li>
+									<li>
+												<img src="http://cherrycorporate.premiumcoding.com/wp-content/uploads/2013/12/advertisers-6-gray.png" alt="Sponsor 5" width="225px" height="132px"/>
+														
+										</li>
+								</ul>
+				
+		</div>
+	</div>
+	</div><div id="aq-block-9663-52" class="aq-block aq-block-aq_richtext_block aq_span12 aq-first cf"><div style="text-align: center;"><strong style="color: #333333; font-size: 18px;"><br /></strong><span style="color: #999999; font-size: 16px;">This is a list of <strong>companies</strong> that already trust us with their recycling process. Do join them.</span></div></div><div id="aq-block-9663-53" class="aq-block aq-block-aq_end_content_block aq_span12 aq-first cf">		</div></div>
+
+
+					</div></div></div>	
+				
+	</div>
+	<div class="totop"><div class="gototop"><div class="arrowgototop"></div></div></div>
