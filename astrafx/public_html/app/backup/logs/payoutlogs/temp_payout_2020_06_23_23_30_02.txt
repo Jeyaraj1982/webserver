@@ -1,0 +1,8 @@
+
+[2020-06-23 23:30:02]	
+=== Payout Process Starts ===
+[2020-06-23 23:30:02]	Member: AstraFx00001	Left: 0150	Today Left:0150	Right: 0350	Today Right: 0350	TodayPayoutPV: 0150	Available Left: 0150	Available Right: 0350	Txn Left: 0035	Txn Right: 0035	Available Left: 0115	Available Right: 0315	Package: 0000	Eligible Minimum PayoutPV: 0001	Eligible Maximum PayoutPV: 0035	Payable PayoutPV: 0035	Payable Amount: 35	CompanyLeft: 0000	CompanyRight: 0000	IsPayoutEligible: 0	Charges: 10%	ChargeAmount: 0003	PayableAmountDebitCharge: 0031	processedon: 2020-06-23 23:30:02
+[2020-06-23 23:30:02]	Credit Amount:	Credited: 35	WalletTxnID: 5
+[2020-06-23 23:30:02]	Charges Debit:	Debited: 	WalletTxnID: 6
+[2020-06-23 23:30:02]	Member: AFAST00002	Left: 0000	Today Left:0000	Right: 0000	Today Right: 0000	TodayPayoutPV: 0150	Available Left: 0000	Available Right: 0000	Txn Left: 0000	Txn Right: 0000	Available Left: 0000	Available Right: 0000	Package: 0000	Eligible Minimum PayoutPV: 0001	Eligible Maximum PayoutPV: 0100	Payable PayoutPV: 0000	Payable Amount: 0	CompanyLeft: 0000	CompanyRight: 0000	IsPayoutEligible: 0	Charges: 10%	ChargeAmount: 0000	PayableAmountDebitCharge: 0000	processedon: 2020-06-23 23:30:02
+[2020-06-23 23:30:02]	Member: AFAST00003	Left: 0000	Today Left:0000	Right: 0000	Today Right: 0000	TodayPayoutPV: 0150	Available Left: 0000	Available Right: 0000	Txn Left: 0000	Txn Right: 0000	Available Left: 0000	Available Right: 0000	Package: 0000	Eligible Minimum PayoutPV: 0001	Eligible Maximum PayoutPV: 0100	Payable PayoutPV: 0000	Payable Amount: 0	CompanyLeft: 0000	CompanyRight: 0000	IsPayoutEligible: 0	Charges: 10%	ChargeAmount: 0000	PayableAmountDebitCharge: 0000	processedon: 2020-06-23 23:30:02

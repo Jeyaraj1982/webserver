@@ -1,0 +1,48 @@
+Return-Path: <astrafx@119-18-48-204.webhostbox.net>
+Delivered-To: astrafx@119-18-48-204.webhostbox.net
+Received: from 119-18-48-204.webhostbox.net
+	by 119-18-48-204.webhostbox.net with LMTP
+	id vgU0BiKkY184DQAAFI3O4Q
+	(envelope-from <astrafx@119-18-48-204.webhostbox.net>)
+	for <astrafx@119-18-48-204.webhostbox.net>; Thu, 17 Sep 2020 23:30:02 +0530
+Return-path: <astrafx@119-18-48-204.webhostbox.net>
+Envelope-to: astrafx@119-18-48-204.webhostbox.net
+Delivery-date: Thu, 17 Sep 2020 23:30:02 +0530
+Received: from astrafx by 119-18-48-204.webhostbox.net with local (Exim 4.93)
+	(envelope-from <astrafx@119-18-48-204.webhostbox.net>)
+	id 1kIyCQ-0000sU-0V
+	for astrafx@119-18-48-204.webhostbox.net; Thu, 17 Sep 2020 23:30:02 +0530
+From: "(Cron Daemon)" <astrafx@119-18-48-204.webhostbox.net>
+To: astrafx@119-18-48-204.webhostbox.net
+Subject: Cron <astrafx@119-18-48-204> /usr/local/bin/php /home/astrafx/public_html/cron.php
+Content-Type: text/plain; charset=UTF-8
+Auto-Submitted: auto-generated
+Precedence: bulk
+X-Cron-Env: <XDG_SESSION_ID=15472>
+X-Cron-Env: <XDG_RUNTIME_DIR=/run/user/1020>
+X-Cron-Env: <LANG=en_US.UTF-8>
+X-Cron-Env: <SHELL=/bin/bash>
+X-Cron-Env: <HOME=/home/astrafx>
+X-Cron-Env: <PATH=/usr/bin:/bin>
+X-Cron-Env: <LOGNAME=astrafx>
+X-Cron-Env: <USER=astrafx>
+Message-Id: <E1kIyCQ-0000sU-0V@119-18-48-204.webhostbox.net>
+Date: Thu, 17 Sep 2020 23:30:02 +0530
+
+  mysqldump: [Warning] Using a password on the command line interface can be insecure.
+mysqldump: Error: 'Access denied; you need (at least one of) the PROCESS privilege(s) for this operation' when trying to dump tablespaces
+<pre>
+[2020-09-17 23:30:01]	
+=== Payout Process Starts ===
+[2020-09-17 23:30:01]	Member: AstraFx00001	Left: 0300	Today Left:0000	Right: 0350	Today Right: 0000	TodayPayoutPV: 0000	Available Left: 0300	Available Right: 0000	Txn Left: 0000	Txn Right: 0000	Available Left: 0300	Available Right: 0350	Package: 0000	Eligible Minimum PayoutPV: 0001	Eligible Maximum PayoutPV: 0035	Payable PayoutPV: 0000	Payable Amount: 0	CompanyLeft: 0000	CompanyRight: 0000	IsPayoutEligible: 0	Charges: 10%	ChargeAmount: 0000	PayableAmountDebitCharge: 0000	processedon: 2020-09-17 23:30:01
+[2020-09-17 23:30:01]	Member: AFAST00002	Left: 0150	Today Left:0000	Right: 0000	Today Right: 0000	TodayPayoutPV: 0000	Available Left: 0150	Available Right: 0000	Txn Left: 0000	Txn Right: 0000	Available Left: 0150	Available Right: 0000	Package: 0000	Eligible Minimum PayoutPV: 0001	Eligible Maximum PayoutPV: 0100	Payable PayoutPV: 0000	Payable Amount: 0	CompanyLeft: 0000	CompanyRight: 0000	IsPayoutEligible: 0	Charges: 10%	ChargeAmount: 0000	PayableAmountDebitCharge: 0000	processedon: 2020-09-17 23:30:01
+[2020-09-17 23:30:01]	Member: AFAST00003	Left: 0000	Today Left:0000	Right: 0000	Today Right: 0000	TodayPayoutPV: 0000	Available Left: 0000	Available Right: 0000	Txn Left: 0000	Txn Right: 0000	Available Left: 0000	Available Right: 0000	Package: 0000	Eligible Minimum PayoutPV: 0001	Eligible Maximum PayoutPV: 0100	Payable PayoutPV: 0000	Payable Amount: 0	CompanyLeft: 0000	CompanyRight: 0000	IsPayoutEligible: 0	Charges: 10%	ChargeAmount: 0000	PayableAmountDebitCharge: 0000	processedon: 2020-09-17 23:30:01
+[2020-09-17 23:30:01]	Member: AFAST00004	Left: 0000	Today Left:0000	Right: 0000	Today Right: 0000	TodayPayoutPV: 0000	Available Left: 0000	Available Right: 0000	Txn Left: 0000	Txn Right: 0000	Available Left: 0000	Available Right: 0000	Package: 0000	Eligible Minimum PayoutPV: 0001	Eligible Maximum PayoutPV: 0100	Payable PayoutPV: 0000	Payable Amount: 0	CompanyLeft: 0000	CompanyRight: 0000	IsPayoutEligible: 0	Charges: 10%	ChargeAmount: 0000	PayableAmountDebitCharge: 0000	processedon: 2020-09-17 23:30:01
+[2020-09-17 23:30:01]	Package ROI Credit Amount:	Credited: 0	WalletTxnID: 582
+[2020-09-17 23:30:01]	Charges Debit:	Debited: 	WalletTxnID: 582
+[2020-09-17 23:30:01]	Package ROI Credit Amount:	Credited: 0	WalletTxnID: 584
+[2020-09-17 23:30:01]	Charges Debit:	Debited: 	WalletTxnID: 584
+[2020-09-17 23:30:01]	Package ROI Credit Amount:	Credited: 0	WalletTxnID: 586
+[2020-09-17 23:30:01]	Charges Debit:	Debited: 	WalletTxnID: 586
+[2020-09-17 23:30:01]	Package ROI Credit Amount:	Credited: 0	WalletTxnID: 588
+[2020-09-17 23:30:02]	Charges Debit:	Debited: 	WalletTxnID: 588</pre>

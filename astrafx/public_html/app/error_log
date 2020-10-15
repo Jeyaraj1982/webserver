@@ -1,0 +1,129 @@
+[20-Jun-2020 13:13:55 Asia/Calcutta] PHP Warning:  sizeof(): Parameter must be an array or an object that implements Countable in /home/astrafx/public_html/app/includes/Admin/BankTransfer/BinaryIncome.php on line 72
+[20-Jun-2020 13:13:55 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in /home/astrafx/public_html/app/includes/Admin/BankTransfer/BinaryIncome.php on line 77
+[20-Jun-2020 13:14:07 Asia/Calcutta] PHP Warning:  sizeof(): Parameter must be an array or an object that implements Countable in /home/astrafx/public_html/app/includes/Admin/BankTransfer/ROI.php on line 72
+[20-Jun-2020 13:14:07 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in /home/astrafx/public_html/app/includes/Admin/BankTransfer/ROI.php on line 77
+[20-Jun-2020 13:14:15 Asia/Calcutta] PHP Warning:  sizeof(): Parameter must be an array or an object that implements Countable in /home/astrafx/public_html/app/includes/Admin/BankTransfer/ReferalIncome.php on line 72
+[20-Jun-2020 13:14:15 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in /home/astrafx/public_html/app/includes/Admin/BankTransfer/ReferalIncome.php on line 77
+[20-Jun-2020 13:14:23 Asia/Calcutta] PHP Warning:  sizeof(): Parameter must be an array or an object that implements Countable in /home/astrafx/public_html/app/includes/Admin/BankTransfer/ReferalIncome.php on line 72
+[20-Jun-2020 13:14:23 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in /home/astrafx/public_html/app/includes/Admin/BankTransfer/ReferalIncome.php on line 77
+[21-Jun-2020 18:47:54 Asia/Calcutta] PHP Warning:  sizeof(): Parameter must be an array or an object that implements Countable in /home/astrafx/public_html/app/includes/Admin/BankTransfer/BinaryIncome.php on line 72
+[21-Jun-2020 18:47:54 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in /home/astrafx/public_html/app/includes/Admin/BankTransfer/BinaryIncome.php on line 77
+[21-Jun-2020 18:48:14 Asia/Calcutta] PHP Warning:  sizeof(): Parameter must be an array or an object that implements Countable in /home/astrafx/public_html/app/includes/Admin/BankTransfer/ReferalIncome.php on line 72
+[21-Jun-2020 18:48:14 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in /home/astrafx/public_html/app/includes/Admin/BankTransfer/ReferalIncome.php on line 77
+[21-Jun-2020 20:27:27 Asia/Calcutta] PHP Warning:  Use of undefined constant UserRole - assumed 'UserRole' (this will throw an Error in a future version of PHP) in /home/astrafx/public_html/app/dashboard.php on line 12
+[21-Jun-2020 20:27:27 Asia/Calcutta] PHP Warning:  Use of undefined constant UserRole - assumed 'UserRole' (this will throw an Error in a future version of PHP) in /home/astrafx/public_html/app/dashboard.php on line 363
+[21-Jun-2020 20:27:27 Asia/Calcutta] PHP Warning:  include_once(includes/UserRole/leftmenu.php): failed to open stream: No such file or directory in /home/astrafx/public_html/app/dashboard.php on line 363
+[21-Jun-2020 20:27:27 Asia/Calcutta] PHP Warning:  include_once(): Failed opening 'includes/UserRole/leftmenu.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/astrafx/public_html/app/dashboard.php on line 363
+[21-Jun-2020 20:27:27 Asia/Calcutta] PHP Warning:  Use of undefined constant UserRole - assumed 'UserRole' (this will throw an Error in a future version of PHP) in /home/astrafx/public_html/app/dashboard.php on line 373
+[21-Jun-2020 20:27:27 Asia/Calcutta] PHP Warning:  include_once(includes/UserRole/BankTransfer/ROI.php): failed to open stream: No such file or directory in /home/astrafx/public_html/app/dashboard.php on line 373
+[21-Jun-2020 20:27:27 Asia/Calcutta] PHP Warning:  include_once(): Failed opening 'includes/UserRole/BankTransfer/ROI.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/astrafx/public_html/app/dashboard.php on line 373
+[21-Jun-2020 20:27:47 Asia/Calcutta] PHP Warning:  sizeof(): Parameter must be an array or an object that implements Countable in /home/astrafx/public_html/app/includes/Admin/BankTransfer/WorkingPayout.php on line 72
+[21-Jun-2020 20:27:47 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in /home/astrafx/public_html/app/includes/Admin/BankTransfer/WorkingPayout.php on line 77
+[21-Jun-2020 20:31:03 Asia/Calcutta] PHP Warning:  sizeof(): Parameter must be an array or an object that implements Countable in /home/astrafx/public_html/app/includes/Admin/BankTransfer/WorkingPayout.php on line 83
+[21-Jun-2020 20:31:03 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in /home/astrafx/public_html/app/includes/Admin/BankTransfer/WorkingPayout.php on line 88
+[21-Jun-2020 20:31:32 Asia/Calcutta] PHP Warning:  sizeof(): Parameter must be an array or an object that implements Countable in /home/astrafx/public_html/app/includes/Admin/BankTransfer/WorkingPayout.php on line 83
+[21-Jun-2020 20:31:32 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in /home/astrafx/public_html/app/includes/Admin/BankTransfer/WorkingPayout.php on line 88
+[21-Jun-2020 20:31:52 Asia/Calcutta] PHP Warning:  sizeof(): Parameter must be an array or an object that implements Countable in /home/astrafx/public_html/app/includes/Admin/BankTransfer/WorkingPayout.php on line 83
+[21-Jun-2020 20:31:52 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in /home/astrafx/public_html/app/includes/Admin/BankTransfer/WorkingPayout.php on line 88
+[21-Jun-2020 20:33:19 Asia/Calcutta] PHP Warning:  sizeof(): Parameter must be an array or an object that implements Countable in /home/astrafx/public_html/app/includes/Admin/BankTransfer/WorkingPayout.php on line 68
+[21-Jun-2020 20:33:19 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in /home/astrafx/public_html/app/includes/Admin/BankTransfer/WorkingPayout.php on line 73
+[21-Jun-2020 20:34:26 Asia/Calcutta] PHP Warning:  sizeof(): Parameter must be an array or an object that implements Countable in /home/astrafx/public_html/app/includes/Admin/BankTransfer/WorkingPayout.php on line 74
+[21-Jun-2020 20:34:26 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in /home/astrafx/public_html/app/includes/Admin/BankTransfer/WorkingPayout.php on line 79
+[21-Jun-2020 20:34:51 Asia/Calcutta] PHP Warning:  sizeof(): Parameter must be an array or an object that implements Countable in /home/astrafx/public_html/app/includes/Admin/BankTransfer/WorkingPayout.php on line 78
+[21-Jun-2020 20:34:51 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in /home/astrafx/public_html/app/includes/Admin/BankTransfer/WorkingPayout.php on line 83
+[21-Jun-2020 20:35:25 Asia/Calcutta] PHP Warning:  sizeof(): Parameter must be an array or an object that implements Countable in /home/astrafx/public_html/app/includes/Admin/BankTransfer/WorkingPayout.php on line 84
+[21-Jun-2020 20:35:25 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in /home/astrafx/public_html/app/includes/Admin/BankTransfer/WorkingPayout.php on line 89
+[21-Jun-2020 21:52:51 Asia/Calcutta] PHP Warning:  sizeof(): Parameter must be an array or an object that implements Countable in /home/astrafx/public_html/app/includes/Admin/BankTransfer/ROI.php on line 72
+[21-Jun-2020 21:52:51 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in /home/astrafx/public_html/app/includes/Admin/BankTransfer/ROI.php on line 77
+[21-Jun-2020 21:53:07 Asia/Calcutta] PHP Warning:  sizeof(): Parameter must be an array or an object that implements Countable in /home/astrafx/public_html/app/includes/Admin/BankTransfer/WorkingPayout.php on line 84
+[21-Jun-2020 21:53:07 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in /home/astrafx/public_html/app/includes/Admin/BankTransfer/WorkingPayout.php on line 89
+[22-Jun-2020 11:52:15 Asia/Calcutta] PHP Parse error:  syntax error, unexpected end of file in /home/astrafx/public_html/app/includes/Admin/Settings/EditEnrollmentPackage.php on line 153
+[22-Jun-2020 11:55:19 Asia/Calcutta] PHP Warning:  include_once(footer.php): failed to open stream: No such file or directory in /home/astrafx/public_html/app/includes/Admin/Wallets/Refill.php on line 88
+[22-Jun-2020 11:55:19 Asia/Calcutta] PHP Warning:  include_once(): Failed opening 'footer.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/astrafx/public_html/app/includes/Admin/Wallets/Refill.php on line 88
+[22-Jun-2020 11:55:30 Asia/Calcutta] PHP Warning:  A non-numeric value encountered in /home/astrafx/public_html/app/includes/Admin/Wallets/Refill.php on line 9
+[22-Jun-2020 11:55:30 Asia/Calcutta] PHP Warning:  include_once(footer.php): failed to open stream: No such file or directory in /home/astrafx/public_html/app/includes/Admin/Wallets/Refill.php on line 88
+[22-Jun-2020 11:55:30 Asia/Calcutta] PHP Warning:  include_once(): Failed opening 'footer.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/astrafx/public_html/app/includes/Admin/Wallets/Refill.php on line 88
+[22-Jun-2020 14:05:01 Asia/Calcutta] PHP Warning:  Use of undefined constant UserRole - assumed 'UserRole' (this will throw an Error in a future version of PHP) in /home/astrafx/public_html/app/dashboard.php on line 12
+[22-Jun-2020 14:05:01 Asia/Calcutta] PHP Warning:  Use of undefined constant UserRole - assumed 'UserRole' (this will throw an Error in a future version of PHP) in /home/astrafx/public_html/app/dashboard.php on line 363
+[22-Jun-2020 14:05:01 Asia/Calcutta] PHP Warning:  include_once(includes/UserRole/leftmenu.php): failed to open stream: No such file or directory in /home/astrafx/public_html/app/dashboard.php on line 363
+[22-Jun-2020 14:05:01 Asia/Calcutta] PHP Warning:  include_once(): Failed opening 'includes/UserRole/leftmenu.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/astrafx/public_html/app/dashboard.php on line 363
+[22-Jun-2020 14:05:01 Asia/Calcutta] PHP Warning:  Use of undefined constant UserRole - assumed 'UserRole' (this will throw an Error in a future version of PHP) in /home/astrafx/public_html/app/dashboard.php on line 373
+[22-Jun-2020 14:05:01 Asia/Calcutta] PHP Warning:  include_once(includes/UserRole/Settings/EditEnrollmentPackage.php): failed to open stream: No such file or directory in /home/astrafx/public_html/app/dashboard.php on line 373
+[22-Jun-2020 14:05:01 Asia/Calcutta] PHP Warning:  include_once(): Failed opening 'includes/UserRole/Settings/EditEnrollmentPackage.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/astrafx/public_html/app/dashboard.php on line 373
+[23-Jun-2020 19:22:28 Asia/Calcutta] PHP Warning:  include_once(footer.php): failed to open stream: No such file or directory in /home/astrafx/public_html/app/includes/Admin/Wallets/Refill.php on line 88
+[23-Jun-2020 19:22:28 Asia/Calcutta] PHP Warning:  include_once(): Failed opening 'footer.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/astrafx/public_html/app/includes/Admin/Wallets/Refill.php on line 88
+[23-Jun-2020 19:23:34 Asia/Calcutta] PHP Warning:  sizeof(): Parameter must be an array or an object that implements Countable in /home/astrafx/public_html/app/includes/Admin/BankTransfer/ROI.php on line 72
+[23-Jun-2020 19:23:34 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in /home/astrafx/public_html/app/includes/Admin/BankTransfer/ROI.php on line 77
+[23-Jun-2020 19:23:51 Asia/Calcutta] PHP Warning:  sizeof(): Parameter must be an array or an object that implements Countable in /home/astrafx/public_html/app/includes/Admin/BankTransfer/WorkingPayout.php on line 84
+[23-Jun-2020 19:23:51 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in /home/astrafx/public_html/app/includes/Admin/BankTransfer/WorkingPayout.php on line 89
+[23-Jun-2020 19:31:13 Asia/Calcutta] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/astrafx/public_html/app/includes/Admin/Wallets/UtilityViewWalletRequest.php on line 46
+[23-Jun-2020 19:37:17 Asia/Calcutta] PHP Warning:  include_once(footer.php): failed to open stream: No such file or directory in /home/astrafx/public_html/app/includes/Admin/Wallets/Refill.php on line 88
+[23-Jun-2020 19:37:17 Asia/Calcutta] PHP Warning:  include_once(): Failed opening 'footer.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/astrafx/public_html/app/includes/Admin/Wallets/Refill.php on line 88
+[23-Jun-2020 19:37:35 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Class 'MobileSMS' not found in /home/astrafx/public_html/app/includes/Admin/Wallets/Refill.php:22
+Stack trace:
+#0 /home/astrafx/public_html/app/dashboard.php(373): include_once()
+#1 {main}
+  thrown in /home/astrafx/public_html/app/includes/Admin/Wallets/Refill.php on line 22
+[23-Jun-2020 19:38:46 Asia/Calcutta] PHP Warning:  include_once(footer.php): failed to open stream: No such file or directory in /home/astrafx/public_html/app/includes/Admin/Wallets/Refill.php on line 88
+[23-Jun-2020 19:38:46 Asia/Calcutta] PHP Warning:  include_once(): Failed opening 'footer.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/astrafx/public_html/app/includes/Admin/Wallets/Refill.php on line 88
+[23-Jun-2020 19:40:51 Asia/Calcutta] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/astrafx/public_html/app/includes/Admin/Wallets/UtilityViewWalletRequest.php on line 46
+[23-Jun-2020 19:49:23 Asia/Calcutta] PHP Warning:  sizeof(): Parameter must be an array or an object that implements Countable in /home/astrafx/public_html/app/includes/Member/Reports/BankTransfer.php on line 75
+[23-Jun-2020 19:49:23 Asia/Calcutta] PHP Warning:  Invalid argument supplied for foreach() in /home/astrafx/public_html/app/includes/Member/Reports/BankTransfer.php on line 80
+[24-Jun-2020 09:41:43 Asia/Calcutta] PHP Warning:  Use of undefined constant UserRole - assumed 'UserRole' (this will throw an Error in a future version of PHP) in /home/astrafx/public_html/app/dashboard.php on line 12
+[24-Jun-2020 09:41:43 Asia/Calcutta] PHP Warning:  Use of undefined constant UserRole - assumed 'UserRole' (this will throw an Error in a future version of PHP) in /home/astrafx/public_html/app/dashboard.php on line 363
+[24-Jun-2020 09:41:43 Asia/Calcutta] PHP Warning:  include_once(includes/UserRole/leftmenu.php): failed to open stream: No such file or directory in /home/astrafx/public_html/app/dashboard.php on line 363
+[24-Jun-2020 09:41:43 Asia/Calcutta] PHP Warning:  include_once(): Failed opening 'includes/UserRole/leftmenu.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/astrafx/public_html/app/dashboard.php on line 363
+[24-Jun-2020 09:41:43 Asia/Calcutta] PHP Warning:  Use of undefined constant UserRole - assumed 'UserRole' (this will throw an Error in a future version of PHP) in /home/astrafx/public_html/app/dashboard.php on line 373
+[24-Jun-2020 09:41:43 Asia/Calcutta] PHP Warning:  include_once(includes/UserRole/Settings/MyProfile.php): failed to open stream: No such file or directory in /home/astrafx/public_html/app/dashboard.php on line 373
+[24-Jun-2020 09:41:43 Asia/Calcutta] PHP Warning:  include_once(): Failed opening 'includes/UserRole/Settings/MyProfile.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/astrafx/public_html/app/dashboard.php on line 373
+[27-Jun-2020 04:25:27 UTC] PHP Warning:  Use of undefined constant UserRole - assumed 'UserRole' (this will throw an Error in a future version of PHP) in /home/astrafx/public_html/app/dashboard.php on line 12
+[27-Jun-2020 04:25:27 UTC] PHP Warning:  Use of undefined constant SITE_TITLE - assumed 'SITE_TITLE' (this will throw an Error in a future version of PHP) in /home/astrafx/public_html/app/dashboard.php on line 25
+[27-Jun-2020 04:25:27 UTC] PHP Warning:  Creating default object from empty value in /home/astrafx/public_html/app/dashboard.php on line 83
+[27-Jun-2020 04:25:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::getTotalLeftCount() in /home/astrafx/public_html/app/dashboard.php:84
+Stack trace:
+#0 {main}
+  thrown in /home/astrafx/public_html/app/dashboard.php on line 84
+[27-Jun-2020 05:25:37 UTC] PHP Warning:  Use of undefined constant UserRole - assumed 'UserRole' (this will throw an Error in a future version of PHP) in /home/astrafx/public_html/app/dashboard.php on line 12
+[27-Jun-2020 05:25:37 UTC] PHP Warning:  Use of undefined constant SITE_TITLE - assumed 'SITE_TITLE' (this will throw an Error in a future version of PHP) in /home/astrafx/public_html/app/dashboard.php on line 25
+[27-Jun-2020 05:25:37 UTC] PHP Warning:  Creating default object from empty value in /home/astrafx/public_html/app/dashboard.php on line 83
+[27-Jun-2020 05:25:37 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::getTotalLeftCount() in /home/astrafx/public_html/app/dashboard.php:84
+Stack trace:
+#0 {main}
+  thrown in /home/astrafx/public_html/app/dashboard.php on line 84
+[27-Jun-2020 05:41:20 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /home/astrafx/public_html/app/dashboard.php on line 321
+[27-Jun-2020 05:41:24 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /home/astrafx/public_html/app/dashboard.php on line 321
+[29-Jun-2020 14:57:02 Asia/Calcutta] PHP Warning:  Use of undefined constant UserRole - assumed 'UserRole' (this will throw an Error in a future version of PHP) in /home/astrafx/public_html/app/dashboard.php on line 12
+[29-Jun-2020 14:57:02 Asia/Calcutta] PHP Warning:  Use of undefined constant UserRole - assumed 'UserRole' (this will throw an Error in a future version of PHP) in /home/astrafx/public_html/app/dashboard.php on line 364
+[29-Jun-2020 14:57:02 Asia/Calcutta] PHP Warning:  include_once(includes/UserRole/leftmenu.php): failed to open stream: No such file or directory in /home/astrafx/public_html/app/dashboard.php on line 364
+[29-Jun-2020 14:57:02 Asia/Calcutta] PHP Warning:  include_once(): Failed opening 'includes/UserRole/leftmenu.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/astrafx/public_html/app/dashboard.php on line 364
+[29-Jun-2020 14:57:02 Asia/Calcutta] PHP Warning:  Use of undefined constant UserRole - assumed 'UserRole' (this will throw an Error in a future version of PHP) in /home/astrafx/public_html/app/dashboard.php on line 374
+[29-Jun-2020 14:57:02 Asia/Calcutta] PHP Warning:  include_once(includes/UserRole/Settings/EnrollmentPackage.php): failed to open stream: No such file or directory in /home/astrafx/public_html/app/dashboard.php on line 374
+[29-Jun-2020 14:57:02 Asia/Calcutta] PHP Warning:  include_once(): Failed opening 'includes/UserRole/Settings/EnrollmentPackage.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/astrafx/public_html/app/dashboard.php on line 374
+[30-Jun-2020 10:58:47 Asia/Calcutta] PHP Warning:  Use of undefined constant UserRole - assumed 'UserRole' (this will throw an Error in a future version of PHP) in /home/astrafx/public_html/app/dashboard.php on line 12
+[30-Jun-2020 10:58:47 Asia/Calcutta] PHP Warning:  Use of undefined constant UserRole - assumed 'UserRole' (this will throw an Error in a future version of PHP) in /home/astrafx/public_html/app/dashboard.php on line 364
+[30-Jun-2020 10:58:47 Asia/Calcutta] PHP Warning:  include_once(includes/UserRole/leftmenu.php): failed to open stream: No such file or directory in /home/astrafx/public_html/app/dashboard.php on line 364
+[30-Jun-2020 10:58:47 Asia/Calcutta] PHP Warning:  include_once(): Failed opening 'includes/UserRole/leftmenu.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/astrafx/public_html/app/dashboard.php on line 364
+[30-Jun-2020 10:58:47 Asia/Calcutta] PHP Warning:  Use of undefined constant UserRole - assumed 'UserRole' (this will throw an Error in a future version of PHP) in /home/astrafx/public_html/app/dashboard.php on line 374
+[30-Jun-2020 10:58:47 Asia/Calcutta] PHP Warning:  include_once(includes/UserRole/Settings/MyProfile.php): failed to open stream: No such file or directory in /home/astrafx/public_html/app/dashboard.php on line 374
+[30-Jun-2020 10:58:47 Asia/Calcutta] PHP Warning:  include_once(): Failed opening 'includes/UserRole/Settings/MyProfile.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/astrafx/public_html/app/dashboard.php on line 374
+[01-Jul-2020 09:46:40 Asia/Calcutta] PHP Warning:  Use of undefined constant UserRole - assumed 'UserRole' (this will throw an Error in a future version of PHP) in /home/astrafx/public_html/app/dashboard.php on line 12
+[01-Jul-2020 09:46:40 Asia/Calcutta] PHP Warning:  Use of undefined constant UserRole - assumed 'UserRole' (this will throw an Error in a future version of PHP) in /home/astrafx/public_html/app/dashboard.php on line 364
+[01-Jul-2020 09:46:40 Asia/Calcutta] PHP Warning:  include_once(includes/UserRole/leftmenu.php): failed to open stream: No such file or directory in /home/astrafx/public_html/app/dashboard.php on line 364
+[01-Jul-2020 09:46:40 Asia/Calcutta] PHP Warning:  include_once(): Failed opening 'includes/UserRole/leftmenu.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/astrafx/public_html/app/dashboard.php on line 364
+[01-Jul-2020 09:46:40 Asia/Calcutta] PHP Warning:  Use of undefined constant UserRole - assumed 'UserRole' (this will throw an Error in a future version of PHP) in /home/astrafx/public_html/app/dashboard.php on line 374
+[01-Jul-2020 09:46:40 Asia/Calcutta] PHP Warning:  include_once(includes/UserRole/Settings/MyProfile.php): failed to open stream: No such file or directory in /home/astrafx/public_html/app/dashboard.php on line 374
+[01-Jul-2020 09:46:40 Asia/Calcutta] PHP Warning:  include_once(): Failed opening 'includes/UserRole/Settings/MyProfile.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/astrafx/public_html/app/dashboard.php on line 374
+[02-Jul-2020 09:44:08 Asia/Calcutta] PHP Warning:  Use of undefined constant UserRole - assumed 'UserRole' (this will throw an Error in a future version of PHP) in /home/astrafx/public_html/app/dashboard.php on line 12
+[02-Jul-2020 09:44:08 Asia/Calcutta] PHP Warning:  Use of undefined constant UserRole - assumed 'UserRole' (this will throw an Error in a future version of PHP) in /home/astrafx/public_html/app/dashboard.php on line 364
+[02-Jul-2020 09:44:08 Asia/Calcutta] PHP Warning:  include_once(includes/UserRole/leftmenu.php): failed to open stream: No such file or directory in /home/astrafx/public_html/app/dashboard.php on line 364
+[02-Jul-2020 09:44:08 Asia/Calcutta] PHP Warning:  include_once(): Failed opening 'includes/UserRole/leftmenu.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/astrafx/public_html/app/dashboard.php on line 364
+[02-Jul-2020 09:44:08 Asia/Calcutta] PHP Warning:  Use of undefined constant UserRole - assumed 'UserRole' (this will throw an Error in a future version of PHP) in /home/astrafx/public_html/app/dashboard.php on line 374
+[02-Jul-2020 09:44:08 Asia/Calcutta] PHP Warning:  include_once(includes/UserRole/Settings/MyProfile.php): failed to open stream: No such file or directory in /home/astrafx/public_html/app/dashboard.php on line 374
+[02-Jul-2020 09:44:08 Asia/Calcutta] PHP Warning:  include_once(): Failed opening 'includes/UserRole/Settings/MyProfile.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/astrafx/public_html/app/dashboard.php on line 374
+[07-Jul-2020 08:14:11 Asia/Calcutta] PHP Warning:  Use of undefined constant UserRole - assumed 'UserRole' (this will throw an Error in a future version of PHP) in /home/astrafx/public_html/app/dashboard.php on line 12
+[07-Jul-2020 08:14:11 Asia/Calcutta] PHP Warning:  Use of undefined constant UserRole - assumed 'UserRole' (this will throw an Error in a future version of PHP) in /home/astrafx/public_html/app/dashboard.php on line 364
+[07-Jul-2020 08:14:11 Asia/Calcutta] PHP Warning:  include_once(includes/UserRole/leftmenu.php): failed to open stream: No such file or directory in /home/astrafx/public_html/app/dashboard.php on line 364
+[07-Jul-2020 08:14:11 Asia/Calcutta] PHP Warning:  include_once(): Failed opening 'includes/UserRole/leftmenu.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/astrafx/public_html/app/dashboard.php on line 364
+[07-Jul-2020 08:14:11 Asia/Calcutta] PHP Warning:  Use of undefined constant UserRole - assumed 'UserRole' (this will throw an Error in a future version of PHP) in /home/astrafx/public_html/app/dashboard.php on line 374
+[07-Jul-2020 08:14:11 Asia/Calcutta] PHP Warning:  include_once(includes/UserRole/Settings/MyProfile.php): failed to open stream: No such file or directory in /home/astrafx/public_html/app/dashboard.php on line 374
+[07-Jul-2020 08:14:11 Asia/Calcutta] PHP Warning:  include_once(): Failed opening 'includes/UserRole/Settings/MyProfile.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/astrafx/public_html/app/dashboard.php on line 374

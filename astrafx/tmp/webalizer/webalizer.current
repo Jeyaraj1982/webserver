@@ -1,0 +1,681 @@
+# Webalizer V2.23-08 Incremental Data - 09/28/2020 16:26:12
+2020 9 28 16 26 12
+305 0 146 0 6 48 74277 86 70 0
+7 2 35 1 28
+17 0 3899 6 8 4
+12 0 2628 5 6 4
+62 0 15657 8 13 8
+19 0 4606 6 2 2
+9 0 2342 6 3 3
+5 0 1278 4 2 2
+13 0 3125 7 1 1
+13 0 3274 10 4 4
+2 0 472 2 1 1
+8 0 2157 5 2 2
+1 0 227 1 1 1
+9 0 2137 6 2 2
+7 0 1645 4 2 2
+3 0 686 3 3 3
+12 0 2909 8 2 2
+2 0 454 1 2 1
+41 0 10285 38 3 3
+2 0 486 2 0 0
+4 0 931 3 4 3
+0 0 0 0 0 0
+1 0 0 1 1 1
+22 0 5441 5 7 4
+1 0 227 1 1 1
+2 0 466 2 1 1
+8 0 1865 8 4 4
+7 0 1653 5 2 2
+11 0 2593 9 5 5
+12 0 2834 7 4 4
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+9 0 2177 3
+38 0 9561 3
+4 0 954 1
+4 0 936 2
+18 0 4314 7
+7 0 1400 4
+9 0 2201 4
+34 0 8163 9
+23 0 5729 6
+18 0 4062 7
+16 0 3875 6
+5 0 1187 1
+2 0 454 2
+5 0 1186 2
+19 0 4714 5
+1 0 0 1
+3 0 711 1
+4 0 992 2
+42 0 10799 6
+9 0 2342 3
+10 0 2413 3
+7 0 1635 3
+3 0 705 1
+15 0 3767 4
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+305
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+# -urls- 
+# End Of Table - urls
+# -sites- (monthly)
+62-210-75-68.rev.poneytelecom.eu
+0 1 0 244 0 0
+-
+ns517369.ip-158-69-27.net
+0 1 0 259 0 0
+-
+51.75.95.101
+0 4 0 930 2 1599128375
+-
+202.133.54.75
+0 6 0 1460 1 1599042190
+-
+crawl-66-249-79-218.googlebot.com
+0 1 0 227 1 1600315819
+-
+n3nlwpweb055.prod.ams3.secureserver.net
+0 1 0 259 0 0
+-
+192.71.30.89
+0 1 0 227 1 1600366819
+-
+138.68.180.18
+0 1 0 227 1 1599330884
+-
+23.99.130.45
+0 48 0 12338 2 1599156562
+-
+192.71.224.240
+0 2 0 471 0 0
+-
+21.185.121.34.bc.googleusercontent.com
+0 1 0 231 1 1600191470
+-
+175.44.42.146
+0 1 0 0 1 1599061936
+-
+ns3010030.ip-149-202-67.eu
+0 1 0 227 1 1599540136
+-
+ns510409.ip-192-95-30.net
+0 4 0 1169 0 0
+-
+45.76.229.104.vultr.com
+0 1 0 244 0 0
+-
+ec2-18-236-166-131.us-west-2.compute.amazonaws.com
+0 1 0 227 1 1599536811
+-
+save-today.info
+0 1 0 239 0 0
+-
+ec2-35-167-136-246.us-west-2.compute.amazonaws.com
+0 1 0 227 1 1600764436
+-
+ec2-54-213-148-62.us-west-2.compute.amazonaws.com
+0 1 0 227 1 1601021551
+-
+crawlbap115.1and1.org
+0 3 0 715 1 1600163322
+-
+msnbot-157-55-39-14.search.msn.com
+0 2 0 478 0 0
+-
+n3nlwpweb050.prod.ams3.secureserver.net
+0 1 0 262 0 0
+-
+crawlbap67.1and1.org
+0 2 0 496 0 0
+-
+5.188.62.147
+0 2 0 464 1 1599023687
+-
+crawl-66-249-68-35.googlebot.com
+0 1 0 241 0 0
+-
+msnbot-40-77-167-199.search.msn.com
+0 4 0 960 0 0
+-
+42.118.141.180
+0 6 0 1460 1 1599092881
+-
+gwc.cluster027.hosting.ovh.net
+0 1 0 239 0 0
+-
+server-46.45.161.42.as42926.net
+0 1 0 262 0 0
+-
+crawl-66-249-65-62.googlebot.com
+0 1 0 227 1 1600748726
+-
+msnbot-207-46-13-131.search.msn.com
+0 3 0 719 0 0
+-
+199.244.88.132
+0 2 0 454 2 1600521454
+-
+sg2plcpnl0095.prod.sin2.secureserver.net
+0 1 0 257 0 0
+-
+195-154-235-104.rev.poneytelecom.eu
+0 1 0 233 1 1599576770
+-
+192.71.126.175
+0 1 0 234 0 0
+-
+crawl-66-249-71-35.googlebot.com
+0 1 0 231 1 1601062589
+-
+205.87.66.34.bc.googleusercontent.com
+0 1 0 232 1 1600080741
+-
+ec2-18-237-245-36.us-west-2.compute.amazonaws.com
+0 1 0 227 1 1601279910
+-
+134.122.72.53
+0 1 0 239 0 0
+-
+69.160.160.56
+0 2 0 454 1 1600236942
+-
+13.72.81.155
+0 13 0 3183 1 1599144640
+-
+host-37.247.107.75.routergate.com
+0 1 0 260 0 0
+-
+165.22.35.21
+0 1 0 239 0 0
+-
+139.59.43.196
+0 1 0 239 0 0
+-
+192.71.38.71
+0 1 0 237 0 0
+-
+ec2-13-235-43-39.ap-south-1.compute.amazonaws.com
+0 1 0 259 0 0
+-
+crawl-66-249-69-67.googlebot.com
+0 2 0 462 2 1601172322
+-
+ec2-52-41-209-196.us-west-2.compute.amazonaws.com
+0 1 0 227 1 1601107175
+-
+129.226.177.249
+0 1 0 239 0 0
+-
+192.71.12.140
+0 1 0 227 1 1600996225
+-
+ec2-34-222-75-44.us-west-2.compute.amazonaws.com
+0 1 0 227 1 1600934359
+-
+n3nlwpweb035.prod.ams3.secureserver.net
+0 1 0 258 0 0
+-
+51-158-154-131.rev.poneytelecom.eu
+0 1 0 227 1 1599121107
+-
+sg2nlhg005.shr.prod.sin2.secureserver.net
+0 1 0 260 0 0
+-
+crawl-66-249-65-58.googlebot.com
+0 1 0 237 0 0
+-
+73.157.198.104.bc.googleusercontent.com
+0 2 0 459 2 1599859605
+-
+au.panelserwer.pl
+0 1 0 244 0 0
+-
+ns3134401.ip-51-77-64.eu
+0 1 0 227 1 1599309598
+-
+nb3.servidoraweb.net
+0 1 0 259 0 0
+-
+ns3050428.ip-188-165-211.eu
+0 2 0 477 1 1600499630
+-
+online-bewerbungsportal.de
+0 1 0 239 0 0
+-
+p3nlhg505.shr.prod.phx3.secureserver.net
+0 1 0 264 0 0
+-
+ec2-100-25-43-223.compute-1.amazonaws.com
+0 1 0 295 0 0
+-
+115683.cloudwaysapps.com
+0 1 0 243 0 0
+-
+p3nwvpweb189.shr.prod.phx3.secureserver.net
+0 1 0 259 0 0
+-
+crawlbs101.1and1.org
+0 1 0 237 0 0
+-
+23.101.123.2
+0 1 0 239 0 0
+-
+110.ip-51-77-140.eu
+0 1 0 243 0 0
+-
+hn.kd.ny.adsl
+0 1 0 232 1 1598947354
+-
+crawl-66-249-71-62.googlebot.com
+0 6 0 1416 3 1601310372
+-
+crawl-66-249-71-32.googlebot.com
+0 1 0 231 1 1601271869
+-
+crawlbap99.1and1.org
+0 2 0 496 0 0
+-
+reverse-31-186-26-130.turkticaret.net
+0 1 0 259 0 0
+-
+crawlbap19.1and1.org
+0 1 0 237 0 0
+-
+192.71.103.173
+0 3 0 698 1 1599596365
+-
+crawlbs109.1and1.org
+0 1 0 241 0 0
+-
+ec2-34-222-222-20.us-west-2.compute.amazonaws.com
+0 1 0 227 1 1601193243
+-
+msnbot-207-46-13-222.search.msn.com
+0 2 0 478 0 0
+-
+rdn.zemta.com.tr
+0 1 0 244 0 0
+-
+fm-dyn-139-228-223-86.fast.net.id
+0 6 0 1460 1 1598953401
+-
+server.abnoos.com
+0 1 0 256 0 0
+-
+192.241.131.189
+0 1 0 227 1 1599730331
+-
+5.188.62.25
+0 2 0 464 1 1600032408
+-
+ec2-18-237-143-76.us-west-2.compute.amazonaws.com
+0 1 0 227 1 1600847370
+-
+ip-208-109-54-139.ip.secureserver.net
+0 1 0 243 0 0
+-
+a2nlwpweb068.prod.iad2.secureserver.net
+0 1 0 258 0 0
+-
+165.227.39.176
+0 1 0 239 0 0
+-
+msnbot-207-46-13-237.search.msn.com
+0 3 0 715 0 0
+-
+103.97.100.15
+0 1 0 259 0 0
+-
+193.169.254.93
+0 6 0 1434 0 0
+-
+seadragon.ip-asia.com
+0 1 0 257 0 0
+-
+ngcobalt74.manitu.net
+0 1 0 244 0 0
+-
+cpc94366-ward12-2-0-cust261.10-2.cable.virginm.net
+0 1 0 227 1 1599742523
+-
+198.251.65.242
+0 1 0 227 1 1600492596
+-
+crawlbap03.1and1.org
+0 1 0 254 0 0
+-
+344532.cloudwaysapps.com
+0 1 0 239 0 0
+-
+221.146.132.137
+0 15 0 3772 1 1600785657
+-
+185.253.97.253
+0 1 0 227 1 1599201049
+-
+213.248.241.201
+0 1 0 0 1 1598951069
+-
+84.ip-51-178-52.eu
+0 1 0 244 0 0
+-
+83.202.162.45.in-addr.arpa
+0 2 0 518 1 1600362525
+-
+192.71.225.127
+0 1 0 237 0 0
+-
+msnbot-157-55-39-207.search.msn.com
+0 2 0 478 0 0
+-
+vps.serviziwebpmi.it
+0 1 0 239 0 0
+-
+ec2-34-221-97-133.us-west-2.compute.amazonaws.com
+0 1 0 227 1 1600110701
+-
+165.22.112.128
+0 1 0 244 0 0
+-
+ns311392.ip-188-165-206.eu
+0 1 0 227 1 1599168906
+-
+81.22.189.117
+0 1 0 243 0 0
+-
+crawl-66-249-69-94.googlebot.com
+0 1 0 241 0 0
+-
+ipv4-64-246-165-170.greenhousedata.net
+0 2 0 472 1 1599954729
+-
+248.ip-54-38-54.eu
+0 1 0 243 0 0
+-
+crawl-66-249-68-32.googlebot.com
+0 1 0 231 1 1599694292
+-
+crawl-66-249-70-4.googlebot.com
+0 1 0 241 0 0
+-
+p3nlhg1028.shr.prod.phx3.secureserver.net
+0 1 0 262 0 0
+-
+ns545391.ip-198-245-62.net
+0 1 0 239 0 0
+-
+195-154-236-210.rev.poneytelecom.eu
+0 1 0 237 1 1599338168
+-
+towing.carsmemo.com
+0 1 0 227 1 1599430615
+-
+ec2-34-221-207-227.us-west-2.compute.amazonaws.com
+0 2 0 464 1 1599984728
+-
+crawlbap91.1and1.org
+0 1 0 241 0 0
+-
+ns382983.ip-46-105-102.eu
+0 1 0 239 0 0
+-
+crawlbs05.1and1.org
+0 3 0 715 1 1599462138
+-
+ns501102.ip-192-99-14.net
+0 4 0 1165 0 0
+-
+p3nlhg659.shr.prod.phx3.secureserver.net
+0 1 0 259 0 0
+-
+fw-snet-n01.wc2.phx1.stabletransit.com
+0 1 0 258 0 0
+-
+p3nlhg1092.shr.prod.phx3.secureserver.net
+0 1 0 261 0 0
+-
+192.71.2.171
+0 1 0 237 0 0
+-
+crawlbs37.1and1.org
+0 2 0 496 0 0
+-
+185.234.216.28
+0 4 0 956 0 0
+-
+142.93.18.7
+0 1 0 239 0 0
+-
+n3nlwpweb063.prod.ams3.secureserver.net
+0 1 0 259 0 0
+-
+144.168.162.250
+0 1 0 227 1 1600127715
+-
+crawl-66-249-79-138.googlebot.com
+0 1 0 231 1 1601238890
+-
+unn-84-17-48-134.cdn77.com
+0 1 0 227 1 1601301182
+-
+51-159-34-83.rev.poneytelecom.eu
+0 1 0 231 1 1599122997
+-
+ec2-13-125-243-152.ap-northeast-2.compute.amazonaws.com
+0 1 0 0 1 1600667868
+-
+crawl-66-249-79-222.googlebot.com
+0 1 0 237 0 0
+-
+192.36.70.176
+0 1 0 237 0 0
+-
+ec2-3-235-193-165.compute-1.amazonaws.com
+0 1 0 239 0 0
+-
+40.88.21.235
+0 4 0 930 2 1601179069
+-
+165.22.40.128
+0 1 0 239 0 0
+-
+ns313245.ip-188-165-230.eu
+0 2 0 580 0 0
+-
+msnbot-157-55-39-21.search.msn.com
+0 4 0 956 0 0
+-
+a2e46.netcup.net
+0 1 0 239 0 0
+-
+ns506133.ip-192-99-4.net
+0 8 0 2147 1 1600737592
+-
+187.95.16.132.netjacarei.nipcable.com
+0 6 0 1490 1 1598935995
+-
+a2nlwpweb031.prod.iad2.secureserver.net
+0 1 0 257 0 0
+-
+# End Of Table - sites (monthly)
+# -sites- (daily)
+msnbot-157-55-39-14.search.msn.com
+0 2 0 478 0 0
+-
+msnbot-40-77-167-199.search.msn.com
+0 4 0 960 0 0
+-
+ec2-18-237-245-36.us-west-2.compute.amazonaws.com
+0 1 0 227 1 1601279910
+-
+129.226.177.249
+0 1 0 239 0 0
+-
+crawl-66-249-71-62.googlebot.com
+0 2 0 472 1 1601310372
+-
+crawl-66-249-71-32.googlebot.com
+0 1 0 231 1 1601271869
+-
+unn-84-17-48-134.cdn77.com
+0 1 0 227 1 1601301182
+-
+# End Of Table - sites (daily)
+# -referrers- 
+http://astrafx.uk/favicon.ico
+0 2
+http://astrafx.uk/
+0 4
+http://baidu.com/
+0 1
+- (Direct Request)
+0 295
+www.google.com
+0 1
+http://astrafx.uk
+0 2
+# End Of Table - referrers
+# -agents- 
+Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.62 Safari/537.36
+0 6
+Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36
+0 2
+Mozilla/5.0 (compatible; DuckDuckGo-Favicons-Bot/1.0; +http://duckduckgo.com)
+0 4
+Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.92 Mobile S
+0 1
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; WOW64; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; InfoPath.2; .NET CL
+0 1
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko; compatible; BW/1.1; bit.ly/2W6Px8S) Chrome/8
+0 2
+Mozilla/5.0 (Linux; U; Android 8.1.0; zh-CN; EML-AL00 Build/HUAWEIEML-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.
+0 1
+Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.131 Safari/537.36
+0 1
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.77.4 (KHTML, like Gecko) Version/7.0.5 Safari/537.77.4
+0 2
+Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1623.0 Safari/537.36
+0 6
+Mozilla/5.0 (Windows NT 10.0; Win64; x64)AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+0 7
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36 OPR/54.0.2
+0 1
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36
+0 1
+CheckMarkNetwork/1.0 (+http://www.checkmarknetwork.com/spider.html)
+0 1
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+0 1
+Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+0 9
+Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)
+0 20
+python-requests/2.24.0
+0 2
+curl/7.68.0
+0 14
+Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:79.0) Gecko/20100101 Firefox/79.0
+0 4
+Go-http-client/1.1
+0 12
+Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.118 Mobile 
+0 8
+Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_8; en-us) AppleWebKit/534.50 (KHTML, like Gecko) Version/5.1 Safari/534.50
+0 2
+Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:28.0) Gecko/20100101 Firefox/28.0
+0 48
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+0 23
+Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/81.0.4044.92 Safari/537.36
+0 1
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36
+0 1
+crawler4j (https://github.com/yasserg/crawler4j/)
+0 17
+Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36
+0 1
+Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2227.1 Safari/537.36
+0 2
+Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0
+0 3
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2227.1 Safari/537.36
+0 6
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.47 Safari/537.36
+0 2
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+0 1
+Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36
+0 1
+Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.122 Mobile 
+0 1
+https://www.nominet.uk/privacy-notice
+0 1
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:59.0) Gecko/20100101 Firefox/59.0
+0 2
+Mozilla/5.0 (Windows NT 6.1; rv:57.0) Gecko/20100101 Firefox/57.0
+0 4
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36
+0 2
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36
+0 2
+Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0
+0 31
+Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.116 Safari/537.36
+0 1
+Mozilla/5.0 (Windows NT 6.4; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2225.0 Safari/537.36
+0 6
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36 OPR/55.0.
+0 1
+Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2224.3 Safari/537.36
+0 2
+Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)
+0 11
+Mozlila/5.0 (Linux; Android 7.0; SM-G892A Bulid/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.31
+0 25
+# End Of Table - agents
+# -search strings- 
+# End Of Table - search strings
+# -usernames- 
+# End Of Table - usernames
