@@ -1,0 +1,2 @@
+[13-Mar-2020 17:28:54 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/klxco/public_html/config.php on line 2
+[16-Mar-2020 05:20:35 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/klxco/public_html/config.php on line 2

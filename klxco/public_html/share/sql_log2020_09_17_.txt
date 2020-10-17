@@ -1,0 +1,3 @@
+[2020-09-17 05:33:48]	select * from _tbl_resume_general_info where ResumeID=''
+[2020-09-17 05:33:48]	select * from _tbl_resume_education where ResumeID=''
+[2020-09-17 05:33:48]	select * from _tbl_resume_experience where ResumeID=''

@@ -1,0 +1,5 @@
+[2020-03-18 14:27:04]	select * from _jpostads  order by postadid desc limit 0,50 
+[2020-03-18 14:27:41]	select * from _jpostads  where date(postedon)=date('2020-03-18')  
+[2020-03-18 14:27:41]	select * from _jpostads  where date(postedon)=date('2020-03-18')  order by postadid desc limit 0, 20 
+[2020-03-18 14:27:49]	select * from _jpostads  where date(postedon)=date('2020-03-18')  
+[2020-03-18 14:27:49]	select * from _jpostads  where date(postedon)=date('2020-03-18')  order by postadid desc limit 0, 20 

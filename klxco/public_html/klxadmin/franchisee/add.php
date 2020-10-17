@@ -1,0 +1,293 @@
+<?php
+     $obj = new CommonController();
+     
+          if(isset($_POST{"save"})) {
+            
+            $ErrorCount =0;
+            
+            $dupemail = $mysql->select("select * from _tbl_franchisee where EmailID='".$_POST['emailid']."'");
+            if(sizeof($dupemail)>0){
+                $Erremailid ="EmailID Already Exist";
+                $ErrorCount++;
+            }
+            
+            if($ErrorCount==0){
+              $c = $mysql->select("select * from _jcountrynames where countryid='".$_POST['country']."'");
+              
+              $sn = $mysql->select("select * from _jstatenames where stateid='".$_POST['state']."'");
+              
+              $dn = $mysql->select("select * from _jdistrictnames where distcid='".$_POST['district']."'");  
+              
+         /*     if(JFranchiseetable::addFranchisee($_POST['franchiseename'],$_POST['emailid'],$_POST['password'],$_POST['country'],$c[0]['countryname'],$_POST['state'],$sn[0]['statenames'],$_POST['district'],$dn[0]['districtname'],date("Y-m-d H:i:s"))>0){
+                        echo  CommonController::printSuccess("Franchisee added successfully");        
+                } else {
+                        echo CommonController::printError("Error Adding Franchisee"); 
+                }  */   
+                
+              
+                  
+                  $param=array("FranchiseeName" => $_POST['franchiseename'],
+                               "EmailID"        => $_POST['emailid'],
+                               "Password"       => $_POST['password'],
+                               "CountryID"      => $_POST['country'],                  
+                               "CountryName"    => $c[0]['countryname'],                  
+                               "StateID"        => $_POST['state'],
+                               "StateName"      => $sn[0]['statenames'],
+                               "DistrictID"     => $_POST['district'],
+                               "DistrictName"   => $dn[0]['districtname'],
+                               "CreatedOn"      => date("Y-m-d H:i:s"));
+               $id = $mysql->insert("_tbl_franchisee",$param);
+               if(sizeof($id)>0){
+                   unset($_POST);
+                  echo $obj->printSuccess("New Franchisees added successfully");
+              }  else {
+                  echo $obj->printError("Error adding Franchisees");
+              }  
+            }
+      }                             
+?>
+<script>
+ 
+     function getState(CountryID) {
+        $.ajax({url:'../../webservice.php?action=getStateNames&countryid='+CountryID,success:function(data){
+            $('#div_statenames').html(data);
+        }});
+    }
+    function getDistrict(stateID) {
+        $.ajax({url:'../../webservice.php?action=getDistrict&stateID='+stateID,success:function(data){
+            $('#div_districtnames').html(data);
+        }});
+    }
+  
+     function is_AlphaNumeric(acname) {
+    
+        if (acname.length==0) {
+            return false;
+        }
+        var reg = /^[a-z0-9\-\s]+$/i
+        if (acname.match(reg)) {
+            return true
+        }
+        return false;
+    }
+    
+ function IsEmail(email) {
+        if (email.length==0) {
+            return false;
+        }
+        var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,8})$/
+        if (email.match(reg)) {
+            return true
+        }
+        return false;
+    } 
+ $(document).ready(function(){
+        $("#franchiseename").blur(function() { 
+          $('#Errfranchiseename').html("");    
+            var fr_name = $('#franchiseename').val().trim();
+                if (fr_name.length==0) {
+                    $('#Errfranchiseename').html("Please Enter Franchisee Name");   
+                } else {
+                    if (!(is_AlphaNumeric(fr_name))) {
+                        $('#Errfranchiseename').html("Please Enter Alpha Numeric Characters Only");
+                    }
+                }
+        });
+        
+        $("#emailid").blur(function() {   
+            $('#Erremailid').html("");    
+            var email = $('#emailid').val().trim();
+            if (email.length==0) {
+                $('#Erremailid').html("Please Enter Email ID");   
+            } else {
+                if (!(IsEmail(email))) {
+                    $('#Erremailid').html("Please Enter Valid Email ID");
+                }
+            }
+        });
+        
+        $("#password").blur(function() {   
+            $('#Errpassword').html("");    
+            var pass = $('#password').val().trim();
+            if (pass.length==0) {
+                $('#Errpassword').html("Please Enter Password");   
+            } else {
+                if (pass.length<6) {
+                    $('#Errpassword').html("Please Enter Maximum 6 Charcters");
+                }
+            }
+        });
+        $("#confirmpassword").blur(function() {   
+            $('#Errconfirmpassword').html("");    
+            var cpass = $('#confirmpassword').val().trim();
+            var pass = $('#password').val().trim();
+            if (cpass.length==0) {
+                $('#Errconfirmpassword').html("Please Enter Confirm Password");   
+            } else {
+               if (pass!=cpass) {
+                    $('#Errconfirmpassword').html("Password & Confirm Password must have same");
+                }
+            }
+        });
+        $("#country").blur(function() {   
+            $('#Errcountry').html("");    
+            var country = $('#country').val().trim();
+            if (country==0) {
+                $('#Errcountry').html("Please Select Country");   
+            } 
+        });
+ });
+ 
+  function checkInputs() {
+    $('#Errfranchiseename').html(""); 
+    $('#Erremailid').html(""); 
+    $('#Errpassword').html(""); 
+    $('#Errcountry').html(""); 
+   
+    var ErrorCount=0;                                                                                    
+     
+       var fr_name = $('#franchiseename').val().trim();
+        if (fr_name.length==0) {
+            $('#Errfranchiseename').html("Please Enter Franchisee Name");   
+            ErrorCount++;      
+        } else {
+            if (!(is_AlphaNumeric(fr_name))) {
+                $('#Errfranchiseename').html("Please Enter Alpha Numeric Characters Only");
+            ErrorCount++; 
+            }
+        }
+        var email = $('#emailid').val().trim();
+        if (email.length==0) {
+            $('#Erremailid').html("Please Enter Email ID");   
+            ErrorCount++;      
+        } else {
+            if (!(IsEmail(email))) {
+                $('#Erremailid').html("Please Enter Valid Email ID");
+            ErrorCount++; 
+            }
+        }
+        var pass = $('#password').val().trim();
+        if (pass.length==0) {
+            $('#Errpassword').html("Please Enter Password");   
+            ErrorCount++;      
+        } else {
+            if (pass.length<6) {
+                $('#Errpassword').html("Please Enter Maximum 6 Charcters");
+            ErrorCount++; 
+            }
+        }
+        var cpass = $('#confirmpassword').val().trim();
+        if (cpass.length==0) {
+            $('#Errconfirmpassword').html("Please Enter Confirm Password");   
+            ErrorCount++;      
+        } else {
+           if (pass!=cpass) {
+                $('#Errconfirmpassword').html("Password & Confirm Password must have same");
+            ErrorCount++; 
+            }
+        }
+         var country = $('#country').val().trim();
+        if (country==0) {
+            $('#Errcountry').html("Please Select Country");   
+            ErrorCount++;      
+        } 
+         if (ErrorCount>0) {
+            return false;
+        }else {
+            return true;
+        }
+        
+       
+   }
+        
+    
+ </script>
+<div class="main-panel">
+    <div class="container">
+        <div class="page-inner">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header" style="padding-top:10px;padding-bottom:10px">
+                            <div class="card-title">
+                                Add Franchisee
+                            </div>
+                        </div>
+                        <form action="" method="post" enctype="multipart/form-data" onsubmit="return checkInputs();">
+                            <div class="card-body">
+                                <div class="form-group row">
+                                    <label for="Name" class="col-md-3 text-right">Franchisee Name</label>
+                                    <div class="col-md-3">
+                                        <input type="text" name="franchiseename" id="franchiseename" class="form-control" value="<?php echo isset($_POST['franchiseename']) ? $_POST['franchiseename'] : ""; ?>">
+                                        <span class="errorstring" id="Errfranchiseename"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="Name" class="col-md-3 text-right">Email ID</label>
+                                    <div class="col-md-3">
+                                        <input type="text" name="emailid" id="emailid" class="form-control" value="<?php echo isset($_POST['emailid']) ? $_POST['emailid'] : ""; ?>">
+                                        <span class="errorstring" id="Erremailid"><?php echo $Erremailid;?></span>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="Name" class="col-md-3 text-right">Password</label>
+                                    <div class="col-md-3">
+                                        <input type="password" name="password" id="password" class="form-control" value="<?php echo isset($_POST['password']) ? $_POST['password'] : ""; ?>">
+                                        <span class="errorstring" id="Errpassword"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="Name" class="col-md-3 text-right">Confirm Password</label>
+                                    <div class="col-md-3">
+                                        <input type="password" name="confirmpassword" id="confirmpassword" class="form-control" value="<?php echo isset($_POST['confirmpassword']) ? $_POST['confirmpassword'] : ""; ?>">
+                                        <span class="errorstring" id="Errconfirmpassword"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="Name" class="col-md-3 text-right">Country Name</label>
+                                    <div class="col-md-3">
+                                        <select name="country" id="country" onchange="getState($(this).val())" class="form-control" >
+                                            <option value="0" selected="selected">Select Country</option> 
+                                                <?php foreach(JPostads::getCountryNames() as $countryname) {?>
+                                                <option value="<?php echo $countryname['countryid'];?>" <?php echo ($countryname['countryid']==$pageContent[0]['countryid'])? 'selected="selected"':'';?><?php echo isset($_POST['country']) ? $_POST['countryid'] : ""; ?>><?php echo $countryname['countryname'];?></option>
+                                                <?php } ?>
+                                         </select> 
+                                         <span class="errorstring" id="Errcountry"></span>
+                                    </div>
+                               </div>
+                               <div class="form-group row">
+                                    <label for="Name" class="col-md-3 text-right">State Name</label>
+                                    <div class="col-md-3">
+                                        <div id="div_statenames">
+                                           <select name="state" class="form-control" id="state" onchange="getDistrict($(this).val())" class="form-control" >
+                                                    <option value="" selected="selected">Select State Name</option> 
+                                             </select> 
+                                        </div>
+                                    </div>
+                               </div>  
+                               <div class="form-group row">
+                                    <label for="Name" class="col-md-3 text-right">District Name</label>
+                                    <div class="col-md-3">
+                                        <div id="div_districtnames">
+                                            <select class="form-control" name="district" id="district" class="form-control">
+                                                <option value="" selected="selected">Select District Name</option> 
+                                            </select> 
+                                        </div>
+                                    </div>
+                               </div>
+                            </div>
+                            <div class="card-action">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <button type="submit" class="btn btn-success" name="save">Save</button>
+                                    </div>                                        
+                                </div>
+                            </div>
+                        </form>                          
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>$('#success').hide(3000);</script> 

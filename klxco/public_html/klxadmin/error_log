@@ -1,0 +1,59 @@
+[30-Jul-2020 05:32:35 UTC] PHP Warning:  include_once(config.php): failed to open stream: No such file or directory in /home/klxco/public_html/klxadmin/dash.php on line 2
+[30-Jul-2020 05:32:35 UTC] PHP Warning:  include_once(): Failed opening 'config.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/klxco/public_html/klxadmin/dash.php on line 2
+[30-Jul-2020 05:33:03 UTC] PHP Warning:  include_once(config.php): failed to open stream: No such file or directory in /home/klxco/public_html/klxadmin/dash.php on line 2
+[30-Jul-2020 05:33:03 UTC] PHP Warning:  include_once(): Failed opening 'config.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/klxco/public_html/klxadmin/dash.php on line 2
+[30-Jul-2020 05:33:47 UTC] PHP Warning:  include_once(config.php): failed to open stream: No such file or directory in /home/klxco/public_html/klxadmin/dash.php on line 2
+[30-Jul-2020 05:33:47 UTC] PHP Warning:  include_once(): Failed opening 'config.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/klxco/public_html/klxadmin/dash.php on line 2
+[30-Jul-2020 05:59:25 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/klxco/public_html/config.php on line 2
+[30-Jul-2020 11:29:25 Asia/kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/klxco/public_html/klxadmin/dashboard.php:1) in /home/klxco/public_html/config.php on line 4
+[30-Jul-2020 11:29:25 Asia/kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/klxco/public_html/klxadmin/dashboard.php:1) in /home/klxco/public_html/config.php on line 5
+[30-Jul-2020 07:07:51 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/klxco/public_html/config.php on line 2
+[30-Jul-2020 12:37:51 Asia/kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/klxco/public_html/klxadmin/dashboard.php:1) in /home/klxco/public_html/config.php on line 4
+[30-Jul-2020 12:37:51 Asia/kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/klxco/public_html/klxadmin/dashboard.php:1) in /home/klxco/public_html/config.php on line 5
+[30-Jul-2020 07:10:32 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/klxco/public_html/config.php on line 2
+[30-Jul-2020 12:40:32 Asia/kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/klxco/public_html/klxadmin/dashboard.php:1) in /home/klxco/public_html/config.php on line 4
+[30-Jul-2020 12:40:32 Asia/kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/klxco/public_html/klxadmin/dashboard.php:1) in /home/klxco/public_html/config.php on line 5
+[30-Jul-2020 07:10:41 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/klxco/public_html/config.php on line 2
+[30-Jul-2020 12:40:41 Asia/kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/klxco/public_html/klxadmin/dashboard.php:1) in /home/klxco/public_html/config.php on line 4
+[30-Jul-2020 12:40:41 Asia/kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/klxco/public_html/klxadmin/dashboard.php:1) in /home/klxco/public_html/config.php on line 5
+[30-Jul-2020 22:53:53 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/klxco/public_html/config.php on line 2
+[31-Jul-2020 04:23:53 Asia/kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/klxco/public_html/klxadmin/dashboard.php:1) in /home/klxco/public_html/config.php on line 4
+[31-Jul-2020 04:23:53 Asia/kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/klxco/public_html/klxadmin/dashboard.php:1) in /home/klxco/public_html/config.php on line 5
+[30-Jul-2020 22:55:37 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/klxco/public_html/config.php on line 2
+[31-Jul-2020 04:25:37 Asia/kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/klxco/public_html/klxadmin/dashboard.php:1) in /home/klxco/public_html/config.php on line 4
+[31-Jul-2020 04:25:37 Asia/kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/klxco/public_html/klxadmin/dashboard.php:1) in /home/klxco/public_html/config.php on line 5
+[30-Jul-2020 22:56:29 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/klxco/public_html/config.php on line 2
+[31-Jul-2020 04:26:29 Asia/kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/klxco/public_html/klxadmin/dashboard.php:1) in /home/klxco/public_html/config.php on line 4
+[31-Jul-2020 04:26:29 Asia/kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/klxco/public_html/klxadmin/dashboard.php:1) in /home/klxco/public_html/config.php on line 5
+[30-Jul-2020 22:56:34 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/klxco/public_html/config.php on line 2
+[31-Jul-2020 04:26:34 Asia/kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/klxco/public_html/klxadmin/dashboard.php:1) in /home/klxco/public_html/config.php on line 4
+[31-Jul-2020 04:26:34 Asia/kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/klxco/public_html/klxadmin/dashboard.php:1) in /home/klxco/public_html/config.php on line 5
+[30-Jul-2020 22:57:04 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/klxco/public_html/config.php on line 2
+[31-Jul-2020 04:27:04 Asia/kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/klxco/public_html/klxadmin/dashboard.php:1) in /home/klxco/public_html/config.php on line 4
+[31-Jul-2020 04:27:04 Asia/kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/klxco/public_html/klxadmin/dashboard.php:1) in /home/klxco/public_html/config.php on line 5
+[30-Jul-2020 22:57:09 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/klxco/public_html/config.php on line 2
+[31-Jul-2020 04:27:09 Asia/kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/klxco/public_html/klxadmin/dashboard.php:1) in /home/klxco/public_html/config.php on line 4
+[31-Jul-2020 04:27:09 Asia/kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/klxco/public_html/klxadmin/dashboard.php:1) in /home/klxco/public_html/config.php on line 5
+[30-Jul-2020 22:57:33 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/klxco/public_html/config.php on line 2
+[31-Jul-2020 04:27:33 Asia/kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/klxco/public_html/klxadmin/dashboard.php:1) in /home/klxco/public_html/config.php on line 4
+[31-Jul-2020 04:27:33 Asia/kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/klxco/public_html/klxadmin/dashboard.php:1) in /home/klxco/public_html/config.php on line 5
+[30-Jul-2020 22:57:36 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/klxco/public_html/config.php on line 2
+[31-Jul-2020 04:27:36 Asia/kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/klxco/public_html/klxadmin/dashboard.php:1) in /home/klxco/public_html/config.php on line 4
+[31-Jul-2020 04:27:36 Asia/kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/klxco/public_html/klxadmin/dashboard.php:1) in /home/klxco/public_html/config.php on line 5
+[30-Jul-2020 22:58:39 UTC] PHP Warning:  include_once(config.php): failed to open stream: No such file or directory in /home/klxco/public_html/klxadmin/dashboard.php on line 2
+[30-Jul-2020 22:58:39 UTC] PHP Warning:  include_once(): Failed opening 'config.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/klxco/public_html/klxadmin/dashboard.php on line 2
+[30-Jul-2020 22:58:39 UTC] PHP Fatal error:  Uncaught Error: Class 'JPostads' not found in /home/klxco/public_html/klxadmin/postad/viewpostads.php:57
+Stack trace:
+#0 /home/klxco/public_html/klxadmin/dashboard.php(6): include_once()
+#1 {main}
+  thrown in /home/klxco/public_html/klxadmin/postad/viewpostads.php on line 57
+[30-Jul-2020 22:58:44 UTC] PHP Warning:  include_once(config.php): failed to open stream: No such file or directory in /home/klxco/public_html/klxadmin/dashboard.php on line 2
+[30-Jul-2020 22:58:44 UTC] PHP Warning:  include_once(): Failed opening 'config.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/klxco/public_html/klxadmin/dashboard.php on line 2
+[30-Jul-2020 22:58:46 UTC] PHP Warning:  include_once(config.php): failed to open stream: No such file or directory in /home/klxco/public_html/klxadmin/dashboard.php on line 2
+[30-Jul-2020 22:58:46 UTC] PHP Warning:  include_once(): Failed opening 'config.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/klxco/public_html/klxadmin/dashboard.php on line 2
+[30-Jul-2020 22:58:46 UTC] PHP Fatal error:  Uncaught Error: Class 'JPostads' not found in /home/klxco/public_html/klxadmin/postad/viewpostads.php:57
+Stack trace:
+#0 /home/klxco/public_html/klxadmin/dashboard.php(6): include_once()
+#1 {main}
+  thrown in /home/klxco/public_html/klxadmin/postad/viewpostads.php on line 57
+[20-Sep-2020 12:16:06 UTC] PHP Warning:  POST Content-Length of 15092783 bytes exceeds the limit of 8388608 bytes in Unknown on line 0

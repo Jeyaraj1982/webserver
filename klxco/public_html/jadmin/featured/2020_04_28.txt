@@ -1,0 +1,236 @@
+[2020-04-28 10:48:41]	select * from _jpostads  order by postadid desc limit 0,50 
+[2020-04-28 10:49:19]	select * from _jstatenames
+[2020-04-28 10:49:19]	select * from _jcategory
+[2020-04-28 11:28:05]	select * from _jstatenames
+[2020-04-28 11:28:05]	select * from _jcategory
+[2020-04-28 11:28:55]	select * from _jstatenames
+[2020-04-28 11:28:55]	select * from _jcategory
+[2020-04-28 11:29:01]	select * from _jstatenames
+[2020-04-28 11:29:01]	select * from _jcategory
+[2020-04-28 11:29:46]	select * from _jstatenames
+[2020-04-28 11:29:46]	select * from _jcategory
+[2020-04-28 11:30:43]	select * from _jstatenames
+[2020-04-28 11:30:43]	select * from _jcategory
+[2020-04-28 11:31:55]	select * from _jstatenames
+[2020-04-28 11:31:55]	select * from _jcategory
+[2020-04-28 11:32:17]	select * from _jstatenames
+[2020-04-28 11:32:17]	select * from _jcategory
+[2020-04-28 12:03:10]	select * from _jstatenames
+[2020-04-28 12:03:10]	select * from _jcategory
+[2020-04-28 12:03:36]	insert into `_tbl_featured` (`adid`,`categoryid`,`subcategoryid`,`countryid`,`stateid`,`districtid`,`duration`,`startdate`,`enddate`,`amount`,`createdon`) values ('2917','5','79','1','31','52','10','2020-04-28 12:03:36','2020-04-28 12:03:36','100','2020-04-28 12:03:36')
+[2020-04-28 12:03:36]	select * from _jstatenames
+[2020-04-28 12:03:36]	select * from _jcategory
+[2020-04-28 12:18:48]	select * from _jpostads  order by postadid desc limit 0,50 
+[2020-04-28 12:19:00]	select * from _jpostads  order by postadid desc limit 0,50 
+[2020-04-28 12:19:03]	select * from _jpostads  order by postadid desc limit 0,50 
+[2020-04-28 12:19:43]	select * from _jpostads  order by postadid desc limit 0,50 
+[2020-04-28 12:20:07]	select * from _jstatenames
+[2020-04-28 12:20:07]	select * from _jcategory
+[2020-04-28 12:20:10]	select * from _tbl_featured order by featureadid desc
+[2020-04-28 12:23:45]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid
+ORDER BY fad.featureadid desc
+[2020-04-28 12:24:23]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid
+ORDER BY fad.featureadid desc
+[2020-04-28 12:24:33]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid
+ORDER BY fad.featureadid desc
+[2020-04-28 12:24:59]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid
+ORDER BY fad.featureadid desc
+[2020-04-28 12:33:02]	select * from _jstatenames
+[2020-04-28 12:33:02]	select * from _jcategory
+[2020-04-28 12:33:22]	select * from _jcategory where categid='5'
+[2020-04-28 12:33:22]	select * from _jsubcategory where subcateid='70'
+[2020-04-28 12:33:22]	select * from _jstatenames where stateid='31'
+[2020-04-28 12:33:22]	select * from _jdistrictnames where distcid='52'
+[2020-04-28 12:33:22]	insert into `_tbl_featured` (`adid`,`categoryid`,`categoryname`,`subcategoryid`,`subcategoryname`,`countryid`,`stateid`,`statename`,`districtid`,`districtname`,`duration`,`startdate`,`enddate`,`amount`,`createdon`) values ('2917','5','Jobs','70','Office Assistant','1','31','','52','','10','2020-04-28 12:33:22','2020-04-28 12:33:22','100','2020-04-28 12:33:22')
+[2020-04-28 12:33:22]	select * from _jstatenames
+[2020-04-28 12:33:22]	select * from _jcategory
+[2020-04-28 12:33:27]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid
+ORDER BY fad.featureadid desc
+[2020-04-28 12:34:17]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid
+ORDER BY fad.featureadid desc
+[2020-04-28 12:35:39]	select * from _jstatenames
+[2020-04-28 12:35:39]	select * from _jcategory
+[2020-04-28 12:35:58]	select * from _jcategory where categid='5'
+[2020-04-28 12:35:58]	select * from _jsubcategory where subcateid='27'
+[2020-04-28 12:35:58]	select * from _jstatenames where stateid='31'
+[2020-04-28 12:35:58]	select * from _jdistrictnames where distcid='52'
+[2020-04-28 12:35:58]	insert into `_tbl_featured` (`adid`,`categoryid`,`categoryname`,`subcategoryid`,`subcategoryname`,`countryid`,`countryname`,`stateid`,`statename`,`districtid`,`districtname`,`duration`,`startdate`,`enddate`,`amount`,`createdon`) values ('2917','5','Jobs','27','IT Engineer & Developer','1','india','31','TamilNadu','52','Chennai','10','2020-04-28 12:35:58','2020-04-28 12:35:58','100','2020-04-28 12:35:58')
+[2020-04-28 12:35:58]	select * from _jstatenames
+[2020-04-28 12:35:58]	select * from _jcategory
+[2020-04-28 12:35:59]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid
+ORDER BY fad.featureadid desc
+[2020-04-28 14:10:23]	select * from _jstatenames
+[2020-04-28 14:10:23]	select * from _jcategory
+[2020-04-28 14:16:10]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid
+ORDER BY fad.featureadid desc
+[2020-04-28 14:20:36]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where (date('2020-04-28')>=date(fad.startdate) and date(fad.enddate)<=date('2020-04-28') )  and  ORDER BY fad.featureadid desc
+[2020-04-28 14:20:36]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY fad.featureadid desc' at line 1
+[2020-04-28 14:20:38]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid ORDER BY fad.featureadid desc
+[2020-04-28 14:20:55]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where (date('2020-04-28')>=date(fad.startdate) and date(fad.enddate)<=date('2020-04-28') )  and  ORDER BY fad.featureadid desc
+[2020-04-28 14:20:55]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY fad.featureadid desc' at line 1
+[2020-04-28 14:20:56]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where (date('2020-04-28')>=date(fad.startdate) and date(fad.enddate)<=date('2020-04-28') )  and  ORDER BY fad.featureadid desc
+[2020-04-28 14:20:56]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY fad.featureadid desc' at line 1
+[2020-04-28 14:20:57]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where  date(fad.enddate)>date('2020-04-28') )  ORDER BY fad.featureadid desc
+[2020-04-28 14:20:57]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')  ORDER BY fad.featureadid desc' at line 1
+[2020-04-28 14:20:59]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid ORDER BY fad.featureadid desc
+[2020-04-28 14:21:01]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where (date('2020-04-28')>=date(fad.startdate) and date(fad.enddate)<=date('2020-04-28') )  and  ORDER BY fad.featureadid desc
+[2020-04-28 14:21:01]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY fad.featureadid desc' at line 1
+[2020-04-28 14:21:31]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where  date(fad.enddate)<=date('2020-04-28')   and  ORDER BY fad.featureadid desc
+[2020-04-28 14:21:31]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY fad.featureadid desc' at line 1
+[2020-04-28 14:21:32]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where  date(fad.enddate)<=date('2020-04-28')   and  ORDER BY fad.featureadid desc
+[2020-04-28 14:21:32]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY fad.featureadid desc' at line 1
+[2020-04-28 14:21:32]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where  date(fad.enddate)<=date('2020-04-28')   and  ORDER BY fad.featureadid desc
+[2020-04-28 14:21:32]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY fad.featureadid desc' at line 1
+[2020-04-28 14:21:32]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where  date(fad.enddate)<=date('2020-04-28')   and  ORDER BY fad.featureadid desc
+[2020-04-28 14:21:32]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY fad.featureadid desc' at line 1
+[2020-04-28 14:21:54]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where  date(fad.enddate)<=date('2020-04-28')     ORDER BY fad.featureadid desc
+[2020-04-28 14:21:55]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where  date(fad.enddate)>date('2020-04-28') )  ORDER BY fad.featureadid desc
+[2020-04-28 14:21:55]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')  ORDER BY fad.featureadid desc' at line 1
+[2020-04-28 14:22:09]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid ORDER BY fad.featureadid desc
+[2020-04-28 14:22:10]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where  date(fad.enddate)<=date('2020-04-28')     ORDER BY fad.featureadid desc
+[2020-04-28 14:22:11]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where  date(fad.enddate)>date('2020-04-28') )  ORDER BY fad.featureadid desc
+[2020-04-28 14:22:11]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')  ORDER BY fad.featureadid desc' at line 1
+[2020-04-28 14:22:29]	select * from _jstatenames
+[2020-04-28 14:22:29]	select * from _jcategory
+[2020-04-28 14:29:33]	select * from _jstatenames
+[2020-04-28 14:29:33]	select * from _jcategory
+[2020-04-28 14:42:36]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid ORDER BY fad.featureadid desc
+[2020-04-28 14:43:09]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where fad.ispublish='0' ORDER BY fad.featureadid desc
+[2020-04-28 14:43:10]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where fad.ispublish='1' and  date(fad.enddate)>date('2020-04-28') )  ORDER BY fad.featureadid desc
+[2020-04-28 14:43:10]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')  ORDER BY fad.featureadid desc' at line 1
+[2020-04-28 14:43:14]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where fad.ispublish='0' ORDER BY fad.featureadid desc
+[2020-04-28 14:43:15]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where fad.ispublish='1' and  date(fad.enddate)>date('2020-04-28') )  ORDER BY fad.featureadid desc
+[2020-04-28 14:43:15]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')  ORDER BY fad.featureadid desc' at line 1
+[2020-04-28 14:43:18]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where fad.ispublish='1' and date(fad.enddate)<=date('2020-04-28')     ORDER BY fad.featureadid desc
+[2020-04-28 14:43:31]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid ORDER BY fad.featureadid desc
+[2020-04-28 14:44:20]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where fad.ispublish='1' and date(fad.enddate)<=date('2020-04-28')     ORDER BY fad.featureadid desc
+[2020-04-28 14:44:44]	select * from _jstatenames
+[2020-04-28 14:44:44]	select * from _jcategory
+[2020-04-28 14:44:44]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid ORDER BY fad.featureadid desc
+[2020-04-28 14:45:26]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid ORDER BY fad.featureadid desc
+[2020-04-28 14:45:59]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid ORDER BY fad.featureadid desc
+[2020-04-28 14:46:14]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid ORDER BY fad.featureadid desc
+[2020-04-28 14:46:38]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid ORDER BY fad.featureadid desc
+[2020-04-28 14:46:41]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid ORDER BY fad.featureadid desc
+[2020-04-28 14:46:43]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid ORDER BY fad.featureadid desc
+[2020-04-28 14:47:28]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid ORDER BY fad.featureadid desc
+[2020-04-28 14:47:52]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid ORDER BY fad.featureadid desc
+[2020-04-28 14:48:32]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid ORDER BY fad.featureadid desc
+[2020-04-28 14:48:54]	update _tbl_featured set ispublish='0' where featureadid='1'
+[2020-04-28 14:48:54]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid ORDER BY fad.featureadid desc
+[2020-04-28 14:49:00]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid ORDER BY fad.featureadid desc
+[2020-04-28 14:49:03]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where fad.ispublish='0' ORDER BY fad.featureadid desc
+[2020-04-28 14:49:05]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where fad.ispublish='0' ORDER BY fad.featureadid desc
+[2020-04-28 14:49:43]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid ORDER BY fad.featureadid desc
+[2020-04-28 14:50:55]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where fad.ispublish='1' and date(fad.enddate)<=date('2020-04-28')     ORDER BY fad.featureadid desc
+[2020-04-28 14:50:56]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where fad.ispublish='1' and  date(fad.enddate)>date('2020-04-28') )  ORDER BY fad.featureadid desc
+[2020-04-28 14:50:56]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')  ORDER BY fad.featureadid desc' at line 1
+[2020-04-28 14:50:57]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where fad.ispublish='0' ORDER BY fad.featureadid desc
+[2020-04-28 14:53:30]	select * from _jstatenames
+[2020-04-28 14:53:30]	select * from _jcategory
+[2020-04-28 14:54:47]	select * from _jcategory where categid='5'
+[2020-04-28 14:54:47]	select * from _jstatenames where stateid='31'
+[2020-04-28 14:54:47]	select * from _jsubcategory where subcateid='27'
+[2020-04-28 14:54:47]	select * from _jdistrictnames where distcid='75'
+[2020-04-28 14:54:47]	insert into `_tbl_featured` (`adid`,`categoryid`,`categoryname`,`subcategoryid`,`subcategoryname`,`countryid`,`countryname`,`stateid`,`statename`,`districtid`,`districtname`,`duration`,`startdate`,`enddate`,`amount`,`createdon`) values ('2917','5','Jobs','27','IT Engineer & Developer','India','india','31','TamilNadu','75','Kanyakumari','6','2020-04-28 14:54:47','2020-04-28 14:54:47','250','2020-04-28 14:54:47')
+[2020-04-28 14:54:47]	SQLSTATE[HY000]: General error: 1366 Incorrect integer value: 'India' for column 'countryid' at row 1
+[2020-04-28 14:54:47]	select * from _jstatenames
+[2020-04-28 14:54:47]	select * from _jcategory
+[2020-04-28 14:54:56]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where fad.ispublish='1' and date(fad.enddate)<=date('2020-04-28')     ORDER BY fad.featureadid desc
+[2020-04-28 14:54:58]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where fad.ispublish='1' and  date(fad.enddate)>date('2020-04-28') )  ORDER BY fad.featureadid desc
+[2020-04-28 14:54:58]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')  ORDER BY fad.featureadid desc' at line 1
+[2020-04-28 14:54:59]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where fad.ispublish='0' ORDER BY fad.featureadid desc
+[2020-04-28 14:55:01]	select * from _jstatenames
+[2020-04-28 14:55:01]	select * from _jcategory
+[2020-04-28 14:57:25]	select * from _jcategory where categid='5'
+[2020-04-28 14:57:25]	select * from _jstatenames where stateid='31'
+[2020-04-28 14:57:25]	select * from _jsubcategory where subcateid='77'
+[2020-04-28 14:57:25]	select * from _jdistrictnames where distcid='75'
+[2020-04-28 14:57:25]	insert into `_tbl_featured` (`adid`,`categoryid`,`categoryname`,`subcategoryid`,`subcategoryname`,`countryid`,`countryname`,`stateid`,`statename`,`districtid`,`districtname`,`duration`,`startdate`,`enddate`,`amount`,`createdon`) values ('2917','5','Jobs','77','Accountant','India','india','31','TamilNadu','75','Kanyakumari','6','2020-04-28 14:57:25','2020-04-28 14:57:25','100','2020-04-28 14:57:25')
+[2020-04-28 14:57:25]	SQLSTATE[HY000]: General error: 1366 Incorrect integer value: 'India' for column 'countryid' at row 1
+[2020-04-28 14:57:25]	select * from _jstatenames
+[2020-04-28 14:57:25]	select * from _jcategory
+[2020-04-28 14:57:30]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where fad.ispublish='1' and date(fad.enddate)<=date('2020-04-28')     ORDER BY fad.featureadid desc
+[2020-04-28 14:57:32]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where fad.ispublish='1' and  date(fad.enddate)>date('2020-04-28') )  ORDER BY fad.featureadid desc
+[2020-04-28 14:57:32]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')  ORDER BY fad.featureadid desc' at line 1
+[2020-04-28 14:57:33]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where fad.ispublish='0' ORDER BY fad.featureadid desc
+[2020-04-28 14:58:40]	select * from _jstatenames
+[2020-04-28 14:58:40]	select * from _jcategory
+[2020-04-28 14:58:59]	select * from _jcategory where categid='5'
+[2020-04-28 14:58:59]	select * from _jstatenames where stateid='31'
+[2020-04-28 14:58:59]	select * from _jsubcategory where subcateid='77'
+[2020-04-28 14:58:59]	select * from _jdistrictnames where distcid='75'
+[2020-04-28 14:58:59]	insert into `_tbl_featured` (`adid`,`categoryid`,`categoryname`,`subcategoryid`,`subcategoryname`,`countryid`,`countryname`,`stateid`,`statename`,`districtid`,`districtname`,`duration`,`startdate`,`enddate`,`amount`,`createdon`) values ('2917','5','Jobs','77','Accountant','1','India','31','TamilNadu','75','Kanyakumari','10','2020-04-28 14:58:59','2020-04-28 14:58:59','100','2020-04-28 14:58:59')
+[2020-04-28 14:58:59]	select * from _jstatenames
+[2020-04-28 14:58:59]	select * from _jcategory
+[2020-04-28 14:59:02]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where fad.ispublish='1' and date(fad.enddate)<=date('2020-04-28')     ORDER BY fad.featureadid desc
+[2020-04-28 15:01:31]	select * from _jstatenames
+[2020-04-28 15:01:31]	select * from _jcategory
+[2020-04-28 15:02:03]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where fad.ispublish='1' and date(fad.enddate)<=date('2020-04-28')     ORDER BY fad.featureadid desc
+[2020-04-28 15:02:16]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where fad.ispublish='1' and  date(fad.enddate)>date('2020-04-28') )  ORDER BY fad.featureadid desc
+[2020-04-28 15:02:16]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')  ORDER BY fad.featureadid desc' at line 1
+[2020-04-28 15:02:20]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where fad.ispublish='0' ORDER BY fad.featureadid desc
+[2020-04-28 15:03:07]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where fad.ispublish='1' and date(fad.enddate)<=date('2020-04-28')     ORDER BY fad.featureadid desc
+[2020-04-28 15:03:08]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where fad.ispublish='1' and  date(fad.enddate)>date('2020-04-28') )  ORDER BY fad.featureadid desc
+[2020-04-28 15:03:08]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')  ORDER BY fad.featureadid desc' at line 1
+[2020-04-28 15:03:09]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where fad.ispublish='0' ORDER BY fad.featureadid desc
+[2020-04-28 15:03:12]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where fad.ispublish='1' and date(fad.enddate)<=date('2020-04-28')     ORDER BY fad.featureadid desc
+[2020-04-28 15:03:14]	select * from _jstatenames
+[2020-04-28 15:03:14]	select * from _jcategory
+[2020-04-28 15:03:46]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where fad.ispublish='1' and date(fad.enddate)<=date('2020-04-28')     ORDER BY fad.featureadid desc
+[2020-04-28 15:03:48]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where fad.ispublish='1' and  date(fad.enddate)>date('2020-04-28') )  ORDER BY fad.featureadid desc
+[2020-04-28 15:03:48]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')  ORDER BY fad.featureadid desc' at line 1
+[2020-04-28 15:03:50]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where fad.ispublish='0' ORDER BY fad.featureadid desc
+[2020-04-28 15:04:04]	select * from _jstatenames
+[2020-04-28 15:04:04]	select * from _jcategory
+[2020-04-28 15:06:07]	select * from _jcategory where categid='5'
+[2020-04-28 15:06:07]	select * from _jstatenames where stateid='31'
+[2020-04-28 15:06:07]	select * from _jsubcategory where subcateid='0'
+[2020-04-28 15:06:07]	select * from _jdistrictnames where distcid='52'
+[2020-04-28 15:06:07]	insert into `_tbl_featured` (`adid`,`categoryid`,`categoryname`,`subcategoryid`,`subcategoryname`,`countryid`,`countryname`,`stateid`,`statename`,`districtid`,`districtname`,`duration`,`startdate`,`enddate`,`faamount`,`createdon`) values ('2895','5','Jobs','0','','1','India','31','TamilNadu','52','Chennai','1','2020-04-28 15:06:07','2020-04-29 15:06:07','100','2020-04-28 15:06:07')
+[2020-04-28 15:06:07]	select * from _jstatenames
+[2020-04-28 15:06:07]	select * from _jcategory
+[2020-04-28 15:08:01]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where fad.ispublish='1' and date(fad.enddate)<=date('2020-04-28')     ORDER BY fad.featureadid desc
+[2020-04-28 15:08:16]	select * from _jstatenames
+[2020-04-28 15:08:16]	select * from _jcategory
+[2020-04-28 15:08:18]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where fad.ispublish='1' and date(fad.enddate)<=date('2020-04-28')     ORDER BY fad.featureadid desc
+[2020-04-28 15:14:33]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where fad.ispublish='1' and date(fad.enddate)<=date('2020-04-28')     ORDER BY fad.featureadid desc
+[2020-04-28 15:14:35]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where fad.ispublish='1' and date(fad.enddate)<=date('2020-04-28')     ORDER BY fad.featureadid desc
+[2020-04-28 15:14:36]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where fad.ispublish='1' and  date(fad.enddate)>date('2020-04-28')   ORDER BY fad.featureadid desc
+[2020-04-28 15:14:36]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where fad.ispublish='1' and date(fad.enddate)<=date('2020-04-28')     ORDER BY fad.featureadid desc
+[2020-04-28 15:14:48]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where fad.ispublish='0' ORDER BY fad.featureadid desc
+[2020-04-28 15:14:49]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where fad.ispublish='1' and  date(fad.enddate)>date('2020-04-28')   ORDER BY fad.featureadid desc
+[2020-04-28 15:14:51]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where fad.ispublish='1' and date(fad.enddate)<=date('2020-04-28')     ORDER BY fad.featureadid desc
+[2020-04-28 15:16:32]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where fad.ispublish='1' and date(fad.enddate)<=date('2020-04-28') ORDER BY fad.featureadid desc
+[2020-04-28 15:19:02]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where fad.ispublish='1' and date(fad.enddate)>=date('2020-04-28') ORDER BY fad.featureadid desc
+[2020-04-28 15:19:04]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where fad.ispublish='1' and  date(fad.enddate)<date('2020-04-28')   ORDER BY fad.featureadid desc
+[2020-04-28 15:19:05]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where fad.ispublish='0' ORDER BY fad.featureadid desc
+[2020-04-28 15:34:17]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where fad.ispublish='1' and date(fad.enddate)>=date('2020-04-28') ORDER BY fad.featureadid desc
+[2020-04-28 15:34:18]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where fad.ispublish='1' and date(fad.enddate)>=date('2020-04-28') ORDER BY fad.featureadid desc
+[2020-04-28 15:35:18]	select * from _jcategory where categid='5'
+[2020-04-28 15:35:18]	select * from _jstatenames where stateid='31'
+[2020-04-28 15:35:18]	select * from _jsubcategory where subcateid='0'
+[2020-04-28 15:35:18]	select * from _jdistrictnames where distcid='52'
+[2020-04-28 15:35:18]	insert into `_tbl_featured` (`adid`,`categoryid`,`categoryname`,`subcategoryid`,`subcategoryname`,`countryid`,`countryname`,`stateid`,`statename`,`districtid`,`districtname`,`duration`,`startdate`,`enddate`,`faamount`,`createdon`) values ('2907','5','Jobs','0','','1','India','31','TamilNadu','52','Chennai','2','2020-04-28 15:35:18','2020-04-30 15:35:18','1000','2020-04-28 15:35:18')
+[2020-04-28 15:35:18]	select * from _jstatenames
+[2020-04-28 15:35:18]	select * from _jcategory
+[2020-04-28 15:37:38]	select * from _jcategory where categid='0'
+[2020-04-28 15:37:38]	select * from _jstatenames where stateid='18'
+[2020-04-28 15:37:38]	select * from _jstatenames
+[2020-04-28 15:37:38]	select * from _jcategory
+[2020-04-28 15:38:13]	select * from _jcategory where categid='5'
+[2020-04-28 15:38:13]	select * from _jstatenames where stateid='18'
+[2020-04-28 15:38:13]	select * from _jsubcategory where subcateid='0'
+[2020-04-28 15:38:13]	select * from _jdistrictnames where distcid='0'
+[2020-04-28 15:38:13]	insert into `_tbl_featured` (`adid`,`categoryid`,`categoryname`,`subcategoryid`,`subcategoryname`,`countryid`,`countryname`,`stateid`,`statename`,`districtid`,`districtname`,`duration`,`startdate`,`enddate`,`faamount`,`createdon`) values ('2907','5','Jobs','0','','1','India','18','Kerala','0','','2','2020-04-28 15:38:13','2020-04-30 15:38:13','1000','2020-04-28 15:38:13')
+[2020-04-28 15:38:13]	select * from _jstatenames
+[2020-04-28 15:38:13]	select * from _jcategory
+[2020-04-28 19:04:48]	select * from _jstatenames
+[2020-04-28 19:04:48]	select * from _jcategory
+[2020-04-28 19:05:21]	select * from _jcategory where categid='7'
+[2020-04-28 19:05:21]	select * from _jstatenames where stateid='31'
+[2020-04-28 19:05:21]	select * from _jsubcategory where subcateid='0'
+[2020-04-28 19:05:21]	select * from _jdistrictnames where distcid='0'
+[2020-04-28 19:05:21]	insert into `_tbl_featured` (`adid`,`categoryid`,`categoryname`,`subcategoryid`,`subcategoryname`,`countryid`,`countryname`,`stateid`,`statename`,`districtid`,`districtname`,`duration`,`startdate`,`enddate`,`faamount`,`createdon`) values ('2918','7','Education & Learning','0','','1','India','31','TamilNadu','0','','7','2020-04-28 19:05:21','2020-05-05 19:05:21','2000','2020-04-28 19:05:21')
+[2020-04-28 19:05:21]	select * from _jstatenames
+[2020-04-28 19:05:21]	select * from _jcategory

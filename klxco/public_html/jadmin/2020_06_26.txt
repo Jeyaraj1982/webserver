@@ -1,0 +1,8 @@
+[2020-06-26 09:39:05]	select * from _jusertable where email='admin@klx.co.in' and pwd='nagercoil123'
+[2020-06-26 09:39:06]	select * from _jsitesettings
+[2020-06-26 09:41:37]	select * from _jsitesettings
+[2020-06-26 09:42:45]	select * from _jsitesettings
+[2020-06-26 09:43:08]	select * from _jsitesettings
+[2020-06-26 10:15:35]	select * from _jsitesettings
+[2020-06-26 10:15:45]	select * from _jusertable where email='admin@klx.co.in' and pwd='nagercoil123'
+[2020-06-26 10:15:45]	select * from _jsitesettings

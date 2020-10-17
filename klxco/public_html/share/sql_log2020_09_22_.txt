@@ -1,0 +1,24 @@
+[2020-09-22 09:06:01]	select * from _tbl_resume_general_info where ResumeID='3'
+[2020-09-22 09:06:01]	select * from _tbl_resume_education where ResumeID='3'
+[2020-09-22 09:06:01]	select * from _tbl_resume_experience where ResumeID='3'
+[2020-09-22 09:06:01]	insert into `resume_card_visitor_log` (`ResumeID`,`viewed`,`ViewedOn`) values ('3','1','2020-09-22 09:06:01')
+[2020-09-22 09:43:07]	select * from _tbl_resume_general_info where ResumeID='3'
+[2020-09-22 09:43:07]	select * from _tbl_resume_education where ResumeID='3'
+[2020-09-22 09:43:07]	select * from _tbl_resume_experience where ResumeID='3'
+[2020-09-22 09:43:07]	insert into `resume_visitor_log` (`ResumeID`,`viewed`,`ViewedOn`) values ('3','1','2020-09-22 09:43:07')
+[2020-09-22 09:43:31]	select * from _tbl_resume_general_info where ResumeID='3'
+[2020-09-22 09:43:31]	select * from _tbl_resume_education where ResumeID='3'
+[2020-09-22 09:43:31]	select * from _tbl_resume_experience where ResumeID='3'
+[2020-09-22 09:43:31]	insert into `resume_card_visitor_log` (`ResumeID`,`viewed`,`ViewedOn`) values ('3','1','2020-09-22 09:43:31')
+[2020-09-22 11:07:24]	select * from _tbl_resume_general_info where ResumeID='3'
+[2020-09-22 11:07:24]	select * from _tbl_resume_education where ResumeID='3'
+[2020-09-22 11:07:24]	select * from _tbl_resume_experience where ResumeID='3'
+[2020-09-22 11:07:24]	insert into `resume_card_visitor_log` (`ResumeID`,`viewed`,`ViewedOn`) values ('3','1','2020-09-22 11:07:24')
+[2020-09-22 11:08:31]	select * from _tbl_resume_general_info where ResumeID='3'
+[2020-09-22 11:08:31]	select * from _tbl_resume_education where ResumeID='3'
+[2020-09-22 11:08:31]	select * from _tbl_resume_experience where ResumeID='3'
+[2020-09-22 11:08:31]	insert into `resume_visitor_log` (`ResumeID`,`viewed`,`ViewedOn`) values ('3','1','2020-09-22 11:08:31')
+[2020-09-22 11:25:12]	select * from _tbl_resume_general_info where ResumeID='3'
+[2020-09-22 11:25:12]	select * from _tbl_resume_education where ResumeID='3'
+[2020-09-22 11:25:12]	select * from _tbl_resume_experience where ResumeID='3'
+[2020-09-22 11:25:12]	insert into `resume_card_visitor_log` (`ResumeID`,`viewed`,`ViewedOn`) values ('3','1','2020-09-22 11:25:12')
