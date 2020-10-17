@@ -1,0 +1,24 @@
+[2020-09-29 11:39:00]	insert into `_tbl_admissionform` (`ApplicantName`,`ApplicantEmail`,`ApplicantMobile`,`ApplicantAddress`,`ApplicantParentName`,`ApplicantParentMobile`,`DateofBirth`,`Age`,`Gender`,`Community`,`Nationality`,`Religion`,`Caste`,`ApplicantInstitution`,`SportsPlayer`,`SportsFile`,`CreatedOn`) values ('Sri Vishnu Bharahi L','osramlux@hotmail.com','9245192033','508/575 South vaithiya nathapuram street','Lakshmanan R','9245192033','2003-01-15','17','Female','BC','Indian','Hindu','Saliyar','P A C R Ammani Ammals Girl's Hr. sec.School,Rajapalayam-626117','No','','2020-09-29 11:39:00')
+[2020-09-29 11:39:00]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 's Hr. sec.School,Rajapalayam-626117','No','','2020-09-29 11:39:00')' at line 1
+[2020-09-29 11:40:46]	insert into `_tbl_admissionform` (`ApplicantName`,`ApplicantEmail`,`ApplicantMobile`,`ApplicantAddress`,`ApplicantParentName`,`ApplicantParentMobile`,`DateofBirth`,`Age`,`Gender`,`Community`,`Nationality`,`Religion`,`Caste`,`ApplicantInstitution`,`SportsPlayer`,`SportsFile`,`CreatedOn`) values ('Sri Vishnu Bharahi L','osramlux@hotmail.com','9245192033','508/575 South vaithiya nathapuram street','Lakshmanan R','9245192033','2003-01-15','17','Female','BC','Indian','Hindu','Saliyar','P A C R Ammani Ammals Girl's Hr. sec.School,Rajapalayam-626117','No','','2020-09-29 11:40:46')
+[2020-09-29 11:40:46]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 's Hr. sec.School,Rajapalayam-626117','No','','2020-09-29 11:40:46')' at line 1
+[2020-09-29 11:43:11]	insert into `contacts` (`contactname`,`emailid`,`mobile`,`comments`,`postedon`) values ('Lakshmanan R','osramlux@hotmail.com','9245192033','My daughter like to study BNYS.So please send the the details to join your college.
+Thanking you.','2020-09-29 11:43:11')
+[2020-09-29 11:43:11]	Select * from admintable
+[2020-09-29 11:43:11]	insert into `_tbl_Log_MobileSMS` (`MemberID`,`SmsTo`,`Message`,`Url`,`MessagedOn`) values ('7','8531070201','Dear Admin, You have received contact enquiry Contact Name : Lakshmanan RMobile Number : 9245192033',' ','2020-09-29 11:43:11')
+[2020-09-29 11:43:11]	update _tbl_Log_MobileSMS set Url='http://smssparkalerts.in/api/sendmsg.php?user=stmc&pass=123456&service=TRANS&sender=SMSSPK&phone=8531070201&text=Dear+Admin%2C+You+have+received+contact+enquiry+Contact+Name+%3A+Lakshmanan+RMobile+Number+%3A+9245192033&stype=normal&popup=true' where SMSID='16'
+[2020-09-29 11:43:12]	update _tbl_Log_MobileSMS set APIResponse='{"status":true,"message":"1 Message Send"}' where SMSID='16'
+[2020-09-29 19:56:25]	insert into `contacts` (`contactname`,`emailid`,`mobile`,`comments`,`postedon`) values ('Jean','info@stmcnys.com','0611 76 22 43','Hi 
+ 
+CAREDOGBEST™ - Personalized Dog Harness. All sizes from XS to XXL.  Easy ON/OFF in just 2 seconds.  LIFETIME WARRANTY.
+
+Click here: caredogbest.online
+ 
+ 
+Best regards, 
+ 
+S. THANGAPAZHAM COLLEGE OF NATUROPATHY AND YOGA SCIENCE','2020-09-29 19:56:25')
+[2020-09-29 19:56:25]	Select * from admintable
+[2020-09-29 19:56:25]	insert into `_tbl_Log_MobileSMS` (`MemberID`,`SmsTo`,`Message`,`Url`,`MessagedOn`) values ('8','8531070201','Dear Admin, You have received contact enquiry Contact Name : JeanMobile Number : 0611 76 22 43',' ','2020-09-29 19:56:25')
+[2020-09-29 19:56:25]	update _tbl_Log_MobileSMS set Url='http://smssparkalerts.in/api/sendmsg.php?user=stmc&pass=123456&service=TRANS&sender=SMSSPK&phone=8531070201&text=Dear+Admin%2C+You+have+received+contact+enquiry+Contact+Name+%3A+JeanMobile+Number+%3A+0611+76+22+43&stype=normal&popup=true' where SMSID='17'
+[2020-09-29 19:56:25]	update _tbl_Log_MobileSMS set APIResponse='{"status":true,"message":"1 Message Send"}' where SMSID='17'

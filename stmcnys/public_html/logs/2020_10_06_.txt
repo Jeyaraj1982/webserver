@@ -1,0 +1,23 @@
+[2020-10-06 22:23:11]	insert into `contacts` (`contactname`,`emailid`,`mobile`,`comments`,`postedon`) values ('Hudson','info@stmcnys.com','0352 6637139','Good Morning 
+ 
+Body Revolution - Medico Postura™ Body Posture Corrector
+
+Improve Your Posture INSTANTLY!
+
+Get it while it's still 50% OFF!
+
+FREE Worldwide Shipping!
+
+
+Get yours here: medicopostura.online
+ 
+ 
+Sincerely, 
+ 
+S. THANGAPAZHAM COLLEGE OF NATUROPATHY AND YOGA SCIENCE','2020-10-06 22:23:11')
+[2020-10-06 22:23:11]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 's still 50% OFF!
+
+FREE Worldwide Shipping!
+
+
+Get yours here: medicopostura.' at line 1

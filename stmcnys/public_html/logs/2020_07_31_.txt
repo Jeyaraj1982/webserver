@@ -1,0 +1,114 @@
+[2020-07-31 06:10:08]	insert into `register` (`ApplicantName`,`ApplicantEmail`,`ApplicantMobile`,`ApplicantAddress`,`ApplicantParentName`,`ApplicantParentMobile`,`DateofBirth`,`Age`,`Gender`,`Community`,`ApplicantInstitution`,`SportsPlayer`,`SportsFile`,`CreatedOn`) values ('sasah','DemoS@gmail.com','9944872965','sfahashsahsah','fsafhsfahsaf','9944872965','1982-02-01','38','Male','OC','aasfbhfsa','No','','2020-07-31 06:10:08')
+[2020-07-31 06:10:08]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'stmcnys_database.register' doesn't exist
+[2020-07-31 06:37:48]	insert into `_tbl_admissionform` (`ApplicantName`,`ApplicantEmail`,`ApplicantMobile`,`ApplicantAddress`,`ApplicantParentName`,`ApplicantParentMobile`,`DateofBirth`,`Age`,`Gender`,`Community`,`Nationality`,`Religion`,`Caste`,`ApplicantInstitution`,`SportsPlayer`,`SportsFile`,`CreatedOn`) values ('sssssss','subuswar@gmail.com','9877777777','sdas','asda','9888888888','1990-10-10','29','Male','BC','hjbjh','asfasf','asfsaf','asfasfas','','','2020-07-31 06:37:48')
+[2020-07-31 06:37:48]	insert into `_tbl_logs_email` (`EmailTo`,`EmaildFor`,`MemberID`,`EmailSubject`,`EmailContent`,`EmailRequestedOn`) values ('subuswar@gmail.com','','1','Applicant Registration Completed','<div style="padding:45px;background:#e5e5e5;margin:20px;border-radius:10px;padding-top:20px;padding-bottom:10px;">
+                            <div style="text-align:center;padding-bottom:20px;">
+                                <img src="https://stmcnys.com/assets/footerlogo.png">&nbsp;&nbsp;
+                            </div>
+                            <div style="border:0px solid black;text-align:left;padding:30px;background:white;border-radius:10px;">
+                                Hello,
+                                <br><br>
+                                Your Application Saved:
+                                <br><br>
+                                <p style="text-align:center">
+                                    <a href="https://stmcnys.com/viewapplication.php?id=1" style="font-size:16px;font-family:Poppins,sans-serif;font-weight:600;color:#ffffff;text-decoration:none;background-color:#3a77ff;border-top:12px solid #3a77ff;border-bottom:12px solid #3a77ff;border-left:36px solid #3a77ff;border-right:36px solid #3a77ff;display:inline-block">VIEW APPLICATION</a>
+                                </p>               
+                                <br> 
+                                Thanks <br>                                                                  
+                                S. THANGAPAZHAM COLLEGE OF NATUROPATHY AND YOGA SCIENCE
+                            </div>
+                            <p style="color:#888;padding:10px;text-align:center">Please do not reply this email. Replies to this message are routed to an unmonitored mailbox. For more information visit our help page or contact us here.</p>
+                        </div>','2020-07-31 06:37:48')
+[2020-07-31 06:37:48]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'stmcnys_database._tbl_logs_email' doesn't exist
+[2020-07-31 06:37:48]	update _tbl_logs_email set IsSuccess='1' where EmailLogID='0'
+[2020-07-31 06:37:48]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'stmcnys_database._tbl_logs_email' doesn't exist
+[2020-07-31 06:39:12]	insert into `_tbl_admissionform` (`ApplicantName`,`ApplicantEmail`,`ApplicantMobile`,`ApplicantAddress`,`ApplicantParentName`,`ApplicantParentMobile`,`DateofBirth`,`Age`,`Gender`,`Community`,`Nationality`,`Religion`,`Caste`,`ApplicantInstitution`,`SportsPlayer`,`SportsFile`,`CreatedOn`) values ('sssssss','subuswar@gmail.com','9877777777','sdas','asda','9888888888','1990-10-10','29','Male','BC','hjbjh','asfasf','asfsaf','asfasfas','','','2020-07-31 06:39:12')
+[2020-07-31 06:39:12]	insert into `_tbl_logs_email` (`EmailTo`,`EmaildFor`,`MemberID`,`EmailSubject`,`EmailContent`,`EmailRequestedOn`) values ('subuswar@gmail.com','','2','Applicant Registration Completed','<div style="padding:45px;background:#e5e5e5;margin:20px;border-radius:10px;padding-top:20px;padding-bottom:10px;">
+                            <div style="text-align:center;padding-bottom:20px;">
+                                <img src="https://stmcnys.com/assets/footerlogo.png">&nbsp;&nbsp;
+                            </div>
+                            <div style="border:0px solid black;text-align:left;padding:30px;background:white;border-radius:10px;">
+                                Hello,
+                                <br><br>
+                                Your Application Saved:
+                                <br><br>
+                                <p style="text-align:center">
+                                    <a href="https://stmcnys.com/viewapplication.php?id=2" style="font-size:16px;font-family:Poppins,sans-serif;font-weight:600;color:#ffffff;text-decoration:none;background-color:#3a77ff;border-top:12px solid #3a77ff;border-bottom:12px solid #3a77ff;border-left:36px solid #3a77ff;border-right:36px solid #3a77ff;display:inline-block">VIEW APPLICATION</a>
+                                </p>               
+                                <br> 
+                                Thanks <br>                                                                  
+                                S. THANGAPAZHAM COLLEGE OF NATUROPATHY AND YOGA SCIENCE
+                            </div>
+                            <p style="color:#888;padding:10px;text-align:center">Please do not reply this email. Replies to this message are routed to an unmonitored mailbox. For more information visit our help page or contact us here.</p>
+                        </div>','2020-07-31 06:39:12')
+[2020-07-31 06:39:12]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'stmcnys_database._tbl_logs_email' doesn't exist
+[2020-07-31 06:39:12]	update _tbl_logs_email set IsSuccess='1' where EmailLogID='0'
+[2020-07-31 06:39:12]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'stmcnys_database._tbl_logs_email' doesn't exist
+[2020-07-31 06:40:35]	insert into `_tbl_admissionform` (`ApplicantName`,`ApplicantEmail`,`ApplicantMobile`,`ApplicantAddress`,`ApplicantParentName`,`ApplicantParentMobile`,`DateofBirth`,`Age`,`Gender`,`Community`,`Nationality`,`Religion`,`Caste`,`ApplicantInstitution`,`SportsPlayer`,`SportsFile`,`CreatedOn`) values ('asdasd','subuswar@gmail.com','8686888888','asdasd','asdasdasd','9879798999','1990-10-10','29','','OC','asdasd','vbvnb','asdasd','asdasd','Yes','1596177635img-20170819-wa0058.jpg','2020-07-31 06:40:35')
+[2020-07-31 06:40:35]	insert into `_tbl_logs_email` (`EmailTo`,`EmaildFor`,`MemberID`,`EmailSubject`,`EmailContent`,`EmailRequestedOn`) values ('subuswar@gmail.com','','3','Applicant Registration Completed','<div style="padding:45px;background:#e5e5e5;margin:20px;border-radius:10px;padding-top:20px;padding-bottom:10px;">
+                            <div style="text-align:center;padding-bottom:20px;">
+                                <img src="https://stmcnys.com/assets/footerlogo.png">&nbsp;&nbsp;
+                            </div>
+                            <div style="border:0px solid black;text-align:left;padding:30px;background:white;border-radius:10px;">
+                                Hello,
+                                <br><br>
+                                Your Application Saved:
+                                <br><br>
+                                <p style="text-align:center">
+                                    <a href="https://stmcnys.com/viewapplication.php?id=3" style="font-size:16px;font-family:Poppins,sans-serif;font-weight:600;color:#ffffff;text-decoration:none;background-color:#3a77ff;border-top:12px solid #3a77ff;border-bottom:12px solid #3a77ff;border-left:36px solid #3a77ff;border-right:36px solid #3a77ff;display:inline-block">VIEW APPLICATION</a>
+                                </p>               
+                                <br> 
+                                Thanks <br>                                                                  
+                                S. THANGAPAZHAM COLLEGE OF NATUROPATHY AND YOGA SCIENCE
+                            </div>
+                            <p style="color:#888;padding:10px;text-align:center">Please do not reply this email. Replies to this message are routed to an unmonitored mailbox. For more information visit our help page or contact us here.</p>
+                        </div>','2020-07-31 06:40:35')
+[2020-07-31 06:40:35]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'stmcnys_database._tbl_logs_email' doesn't exist
+[2020-07-31 06:40:36]	update _tbl_logs_email set IsSuccess='1' where EmailLogID='0'
+[2020-07-31 06:40:36]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'stmcnys_database._tbl_logs_email' doesn't exist
+[2020-07-31 06:57:12]	insert into `_tbl_admissionform` (`ApplicantName`,`ApplicantEmail`,`ApplicantMobile`,`ApplicantAddress`,`ApplicantParentName`,`ApplicantParentMobile`,`DateofBirth`,`Age`,`Gender`,`Community`,`Nationality`,`Religion`,`Caste`,`ApplicantInstitution`,`SportsPlayer`,`SportsFile`,`CreatedOn`) values ('asdasd','subuswar@gmail.com','8686888888','asdasd','asdasdasd','9879798999','1990-10-10','29','','OC','asdasd','vbvnb','asdasd','asdasd','Yes','1596178632img-20170819-wa0058.jpg','2020-07-31 06:57:12')
+[2020-07-31 06:57:12]	insert into `_tbl_logs_email` (`EmailTo`,`EmaildFor`,`MemberID`,`EmailSubject`,`EmailContent`,`EmailRequestedOn`) values ('subuswar@gmail.com','','4','Applicant Registration Completed','<div style="padding:45px;background:#e5e5e5;margin:20px;border-radius:10px;padding-top:20px;padding-bottom:10px;">
+                            <div style="text-align:center;padding-bottom:20px;">
+                                <img src="https://stmcnys.com/assets/footerlogo.png">&nbsp;&nbsp;
+                            </div>
+                            <div style="border:0px solid black;text-align:left;padding:30px;background:white;border-radius:10px;">
+                                Hello,
+                                <br><br>
+                                Your Application Saved:
+                                <br><br>
+                                <p style="text-align:center">
+                                    <a href="https://stmcnys.com/viewapplication.php?id=4" style="font-size:16px;font-family:Poppins,sans-serif;font-weight:600;color:#ffffff;text-decoration:none;background-color:#3a77ff;border-top:12px solid #3a77ff;border-bottom:12px solid #3a77ff;border-left:36px solid #3a77ff;border-right:36px solid #3a77ff;display:inline-block">VIEW APPLICATION</a>
+                                </p>               
+                                <br> 
+                                Thanks <br>                                                                  
+                                S. THANGAPAZHAM COLLEGE OF NATUROPATHY AND YOGA SCIENCE
+                            </div>
+                            <p style="color:#888;padding:10px;text-align:center">Please do not reply this email. Replies to this message are routed to an unmonitored mailbox. For more information visit our help page or contact us here.</p>
+                        </div>','2020-07-31 06:57:12')
+[2020-07-31 06:57:12]	update _tbl_logs_email set IsSuccess='1' where EmailLogID='1'
+[2020-07-31 06:57:12]	insert into `_tbl_Log_MobileSMS` (`MemberID`,`SmsTo`,`Message`,`Url`,`MessagedOn`) values ('4','9944872965','Dear asdasd, You have received enquiry<br> Applicant Name : asdasd<br>Mobile Number : 8686888888',' ','2020-07-31 06:57:12')
+[2020-07-31 06:57:12]	update _tbl_Log_MobileSMS set Url='http://smssparkalerts.in/api/sendmsg.php?user=stmc&pass=123456&service=TRANS&sender=SMSSPK&phone=9944872965&text=Dear+asdasd%2C+You+have+received+enquiry%3Cbr%3E+Applicant+Name+%3A+asdasd%3Cbr%3EMobile+Number+%3A+8686888888&stype=normal&popup=true' where SMSID='1'
+[2020-07-31 06:57:12]	update _tbl_Log_MobileSMS set APIResponse='{"status":true,"message":"1 Message Send"}' where SMSID='1'
+[2020-07-31 10:03:33]	insert into `_tbl_admissionform` (`ApplicantName`,`ApplicantEmail`,`ApplicantMobile`,`ApplicantAddress`,`ApplicantParentName`,`ApplicantParentMobile`,`DateofBirth`,`Age`,`Gender`,`Community`,`Nationality`,`Religion`,`Caste`,`ApplicantInstitution`,`SportsPlayer`,`SportsFile`,`CreatedOn`) values ('Abinesh G','abiabilash338@gmail.com','6369756648','6/125 1st cross street Thimarajapuram, Tirunelveli district','P. Ganapati','9750112712','2002-10-14','17','Male','SC/ST','Indian','Hindu','Sc','Bell Matric Hr Sec School','Yes','','2020-07-31 10:03:33')
+[2020-07-31 10:03:33]	insert into `_tbl_logs_email` (`EmailTo`,`EmaildFor`,`MemberID`,`EmailSubject`,`EmailContent`,`EmailRequestedOn`) values ('abiabilash338@gmail.com','','5','Applicant Registration Completed','<div style="padding:45px;background:#e5e5e5;margin:20px;border-radius:10px;padding-top:20px;padding-bottom:10px;">
+                            <div style="text-align:center;padding-bottom:20px;">
+                                <img src="https://stmcnys.com/assets/footerlogo.png">&nbsp;&nbsp;
+                            </div>
+                            <div style="border:0px solid black;text-align:left;padding:30px;background:white;border-radius:10px;">
+                                Hello,
+                                <br><br>
+                                Your Application Saved:
+                                <br><br>
+                                <p style="text-align:center">
+                                    <a href="https://stmcnys.com/viewapplication.php?id=5" style="font-size:16px;font-family:Poppins,sans-serif;font-weight:600;color:#ffffff;text-decoration:none;background-color:#3a77ff;border-top:12px solid #3a77ff;border-bottom:12px solid #3a77ff;border-left:36px solid #3a77ff;border-right:36px solid #3a77ff;display:inline-block">VIEW APPLICATION</a>
+                                </p>               
+                                <br> 
+                                Thanks <br>                                                                  
+                                S. THANGAPAZHAM COLLEGE OF NATUROPATHY AND YOGA SCIENCE
+                            </div>
+                            <p style="color:#888;padding:10px;text-align:center">Please do not reply this email. Replies to this message are routed to an unmonitored mailbox. For more information visit our help page or contact us here.</p>
+                        </div>','2020-07-31 10:03:33')
+[2020-07-31 10:03:33]	update _tbl_logs_email set IsSuccess='1' where EmailLogID='2'
+[2020-07-31 10:03:33]	insert into `_tbl_Log_MobileSMS` (`MemberID`,`SmsTo`,`Message`,`Url`,`MessagedOn`) values ('5','9942852100','Dear Abinesh G, You have received enquiry Applicant Name : Abinesh GMobile Number : 6369756648',' ','2020-07-31 10:03:33')
+[2020-07-31 10:03:33]	update _tbl_Log_MobileSMS set Url='http://smssparkalerts.in/api/sendmsg.php?user=stmc&pass=123456&service=TRANS&sender=SMSSPK&phone=9942852100&text=Dear+Abinesh+G%2C+You+have+received+enquiry+Applicant+Name+%3A+Abinesh+GMobile+Number+%3A+6369756648&stype=normal&popup=true' where SMSID='2'
+[2020-07-31 10:03:34]	update _tbl_Log_MobileSMS set APIResponse='{"status":true,"message":"1 Message Send"}' where SMSID='2'

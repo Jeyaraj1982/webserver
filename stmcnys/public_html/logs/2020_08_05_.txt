@@ -1,0 +1,70 @@
+[2020-08-05 04:55:38]	insert into `contacts` (`contactname`,`emailid`,`mobile`,`comments`,`postedon`) values ('aaaaaaaaaaaa','aaaaa@gmail.com','9879788798797','hfhgfgfh','2020-08-05 04:55:38')
+[2020-08-05 04:59:40]	insert into `contacts` (`contactname`,`emailid`,`mobile`,`comments`,`postedon`) values ('sdasdas','asdasds@gmail.com','989879789','sdfsdfsdf','2020-08-05 04:59:40')
+[2020-08-05 05:27:40]	insert into `contacts` (`contactname`,`emailid`,`mobile`,`comments`,`postedon`) values ('assssssss','aaaaa@gmail.com','8977778888','gvfhhgfhff','2020-08-05 05:27:40')
+[2020-08-05 05:27:40]	Select * from admintable
+[2020-08-05 05:27:40]	insert into `_tbl_Log_MobileSMS` (`MemberID`,`SmsTo`,`Message`,`Url`,`MessagedOn`) values ('3','8531070201','Dear Admin, You have received contact enquiry Contact Name : assssssssMobile Number : 8977778888',' ','2020-08-05 05:27:40')
+[2020-08-05 05:27:40]	update _tbl_Log_MobileSMS set Url='http://smssparkalerts.in/api/sendmsg.php?user=stmc&pass=123456&service=TRANS&sender=SMSSPK&phone=8531070201&text=Dear+Admin%2C+You+have+received+contact+enquiry+Contact+Name+%3A+assssssssMobile+Number+%3A+8977778888&stype=normal&popup=true' where SMSID='5'
+[2020-08-05 05:27:40]	update _tbl_Log_MobileSMS set APIResponse='{"status":true,"message":"1 Message Send"}' where SMSID='5'
+[2020-08-05 05:34:35]	select * from admintable where UserName='admin@admin.com' and Password='123456' 
+[2020-08-05 05:35:13]	select * from admintable where UserName='admin@admin.com' and Password='123456' 
+[2020-08-05 05:35:14]	SELECT * FROM admission_firstyear order by AdmissionID DESC limit 0,5
+[2020-08-05 05:35:14]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'stmcnys_database.admission_firstyear' doesn't exist
+[2020-08-05 05:37:09]	SELECT * FROM admission_firstyear order by AdmissionID DESC limit 0,5
+[2020-08-05 05:37:09]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'stmcnys_database.admission_firstyear' doesn't exist
+[2020-08-05 05:37:26]	select * from admintable where UserName='admin@admin.com' and Password='123456' 
+[2020-08-05 05:37:26]	SELECT * FROM admission_firstyear order by AdmissionID DESC limit 0,5
+[2020-08-05 05:37:26]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'stmcnys_database.admission_firstyear' doesn't exist
+[2020-08-05 05:40:28]	select * from admintable where UserName='admin@admin.com' and Password='123456' 
+[2020-08-05 05:40:29]	SELECT * FROM admission_firstyear order by AdmissionID DESC limit 0,5
+[2020-08-05 05:40:29]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'stmcnys_database.admission_firstyear' doesn't exist
+[2020-08-05 11:12:38]	select * from admintable where UserName='admin@admin.com' and Password='123456' 
+[2020-08-05 11:12:38]	SELECT * FROM admission_firstyear order by AdmissionID DESC limit 0,5
+[2020-08-05 11:12:38]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'stmcnys_database.admission_firstyear' doesn't exist
+[2020-08-05 11:12:44]	select * from `admintable` where  `AdminID`=''
+[2020-08-05 11:19:45]	select * from _tbl_admissionform where Status='0'
+[2020-08-05 11:21:16]	select * from _tbl_admissionform where Status='0'
+[2020-08-05 11:21:22]	select * from admission_firstyear where AdmissionID='1'
+[2020-08-05 11:21:22]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'stmcnys_database.admission_firstyear' doesn't exist
+[2020-08-05 11:25:26]	select * from admission_firstyear where AdmissionID='1'
+[2020-08-05 11:25:26]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'stmcnys_database.admission_firstyear' doesn't exist
+[2020-08-05 11:26:05]	select * from _tbl_admissionform where AdmissionID='1'
+[2020-08-05 11:27:20]	select * from _tbl_admissionform where AdmissionID='1'
+[2020-08-05 11:29:45]	insert into `contacts` (`contactname`,`emailid`,`mobile`,`comments`,`postedon`) values ('Sam','adam.raines@businesspromoted.xyz','','Many of your competitors are sitting at home and doing nothing.
+
+Its perfect time to plan your marketing strategy. You have created good website but your site will not in Google until content and images are  optimized correctly. We need to optimize your website for search engines and make it search engine friendly.  
+
+I have analyzed your site in-depth and you can view your website audit report at
+
+https://businesspromoted.websiteauditserver.com/stmcnys.com
+
+Your website is the reflection of your business. Without optimizing your website for search engines, you will not get any traction from any digital marketing channels such as Facebook, Google, LinkedIn, etc.  
+ 
+We can fix all these issues and run successful backlink building campaign for a monthly fee of $500. 
+
+Please let me know a good time and phone number to reach out to you and we will discuss plan of action. I will also include discount coupon and show you how to replicate competitor's online marketing strategy. 
+
+Looking forward to working with you. 
+
+Adam P. 
+Business Development Manager
+Business Promoted
+','2020-08-05 11:29:45')
+[2020-08-05 11:29:45]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 's online marketing strategy. 
+
+Looking forward to working with you. 
+
+Adam P' at line 1
+[2020-08-05 11:29:59]	select * from _tbl_admissionform where AdmissionID='1'
+[2020-08-05 11:30:45]	select * from _tbl_admissionform where AdmissionID='1'
+[2020-08-05 11:35:18]	select * from _tbl_admissionform where AdmissionID='1'
+[2020-08-05 11:41:36]	SELECT * FROM admission_firstyear order by AdmissionID DESC limit 0,5
+[2020-08-05 11:41:36]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'stmcnys_database.admission_firstyear' doesn't exist
+[2020-08-05 11:41:43]	select * from contacts order by id desc
+[2020-08-05 11:42:42]	select * from _tbl_admissionform where Status='0'
+[2020-08-05 11:42:45]	SELECT * FROM admission_firstyear order by AdmissionID DESC limit 0,5
+[2020-08-05 11:42:45]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'stmcnys_database.admission_firstyear' doesn't exist
+[2020-08-05 11:45:08]	select * from _tbl_admissionform where Status='0'
+[2020-08-05 11:45:14]	select * from _tbl_admissionform where AdmissionID='7'
+[2020-08-05 11:45:50]	select * from _tbl_admissionform where AdmissionID='7'
+[2020-08-05 11:46:03]	select * from _tbl_admissionform where AdmissionID='3'
+[2020-08-05 11:46:34]	select * from _tbl_admissionform where AdmissionID='3'

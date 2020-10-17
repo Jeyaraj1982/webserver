@@ -1,0 +1,23 @@
+[2020-08-13 23:56:10]	insert into `_tbl_admissionform` (`ApplicantName`,`ApplicantEmail`,`ApplicantMobile`,`ApplicantAddress`,`ApplicantParentName`,`ApplicantParentMobile`,`DateofBirth`,`Age`,`Gender`,`Community`,`Nationality`,`Religion`,`Caste`,`ApplicantInstitution`,`SportsPlayer`,`SportsFile`,`CreatedOn`) values ('Aswin m','smuthulingam83@gmail.com','7010990664','34, south new street, kallidaikurichi, tirunelveli district,pin-627416','Mathavan','7010990664','2002-03-04','18','Male','SC/ST','Indian','Hindu','Paraiyan','Tilak vidyalaya hr sec school','No','','2020-08-13 23:56:10')
+[2020-08-13 23:56:10]	insert into `_tbl_logs_email` (`EmailTo`,`EmaildFor`,`MemberID`,`EmailSubject`,`EmailContent`,`EmailRequestedOn`) values ('smuthulingam83@gmail.com','','10','Applicant Registration Completed','<div style="padding:45px;background:#e5e5e5;margin:20px;border-radius:10px;padding-top:20px;padding-bottom:10px;">
+                            <div style="text-align:center;padding-bottom:20px;">
+                                <img src="https://stmcnys.com/assets/footerlogo.png">&nbsp;&nbsp;
+                            </div>
+                            <div style="border:0px solid black;text-align:left;padding:30px;background:white;border-radius:10px;">
+                                Hello,
+                                <br><br>
+                                Your Application Saved:
+                                <br><br>
+                                <p style="text-align:center">
+                                    <a href="https://stmcnys.com/viewapplication.php?id=10" style="font-size:16px;font-family:Poppins,sans-serif;font-weight:600;color:#ffffff;text-decoration:none;background-color:#3a77ff;border-top:12px solid #3a77ff;border-bottom:12px solid #3a77ff;border-left:36px solid #3a77ff;border-right:36px solid #3a77ff;display:inline-block">VIEW APPLICATION</a>
+                                </p>               
+                                <br> 
+                                Thanks <br>                                                                  
+                                S. THANGAPAZHAM COLLEGE OF NATUROPATHY AND YOGA SCIENCE
+                            </div>
+                            <p style="color:#888;padding:10px;text-align:center">Please do not reply this email. Replies to this message are routed to an unmonitored mailbox. For more information visit our help page or contact us here.</p>
+                        </div>','2020-08-13 23:56:10')
+[2020-08-13 23:56:10]	update _tbl_logs_email set IsSuccess='1' where EmailLogID='7'
+[2020-08-13 23:56:10]	insert into `_tbl_Log_MobileSMS` (`MemberID`,`SmsTo`,`Message`,`Url`,`MessagedOn`) values ('10','9942852100','Dear Aswin m, You have received enquiry Applicant Name : Aswin mMobile Number : 7010990664',' ','2020-08-13 23:56:10')
+[2020-08-13 23:56:10]	update _tbl_Log_MobileSMS set Url='http://smssparkalerts.in/api/sendmsg.php?user=stmc&pass=123456&service=TRANS&sender=SMSSPK&phone=9942852100&text=Dear+Aswin+m%2C+You+have+received+enquiry+Applicant+Name+%3A+Aswin+mMobile+Number+%3A+7010990664&stype=normal&popup=true' where SMSID='8'
+[2020-08-13 23:56:10]	update _tbl_Log_MobileSMS set APIResponse='{"status":true,"message":"1 Message Send"}' where SMSID='8'

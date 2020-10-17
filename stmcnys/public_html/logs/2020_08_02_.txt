@@ -1,0 +1,25 @@
+[2020-08-02 15:06:16]	insert into `_tbl_admissionform` (`ApplicantName`,`ApplicantEmail`,`ApplicantMobile`,`ApplicantAddress`,`ApplicantParentName`,`ApplicantParentMobile`,`DateofBirth`,`Age`,`Gender`,`Community`,`Nationality`,`Religion`,`Caste`,`ApplicantInstitution`,`SportsPlayer`,`SportsFile`,`CreatedOn`) values ('JAYASHREE A','janu.jayashree@rediffmail.com','8072647669','NO.3 S2 CHETHANA HOMES,IYYAPPAN STREET,
+ULLAGARAM,CHENNAI 600091
+','PREMA BHARATHI S','6381577532','2002-04-06','18','Female','SC/ST','INDIAN','HINDU','SC','Montfort Matriculation Hr.Sec School. 1/35, Butt Road, St Thomas Mount, Chennai 600 016. India. Tel.No : +91 44 4351 9114 / 4351 9113 montfortstm@gmail.com','No','','2020-08-02 15:06:16')
+[2020-08-02 15:06:16]	insert into `_tbl_logs_email` (`EmailTo`,`EmaildFor`,`MemberID`,`EmailSubject`,`EmailContent`,`EmailRequestedOn`) values ('janu.jayashree@rediffmail.com','','6','Applicant Registration Completed','<div style="padding:45px;background:#e5e5e5;margin:20px;border-radius:10px;padding-top:20px;padding-bottom:10px;">
+                            <div style="text-align:center;padding-bottom:20px;">
+                                <img src="https://stmcnys.com/assets/footerlogo.png">&nbsp;&nbsp;
+                            </div>
+                            <div style="border:0px solid black;text-align:left;padding:30px;background:white;border-radius:10px;">
+                                Hello,
+                                <br><br>
+                                Your Application Saved:
+                                <br><br>
+                                <p style="text-align:center">
+                                    <a href="https://stmcnys.com/viewapplication.php?id=6" style="font-size:16px;font-family:Poppins,sans-serif;font-weight:600;color:#ffffff;text-decoration:none;background-color:#3a77ff;border-top:12px solid #3a77ff;border-bottom:12px solid #3a77ff;border-left:36px solid #3a77ff;border-right:36px solid #3a77ff;display:inline-block">VIEW APPLICATION</a>
+                                </p>               
+                                <br> 
+                                Thanks <br>                                                                  
+                                S. THANGAPAZHAM COLLEGE OF NATUROPATHY AND YOGA SCIENCE
+                            </div>
+                            <p style="color:#888;padding:10px;text-align:center">Please do not reply this email. Replies to this message are routed to an unmonitored mailbox. For more information visit our help page or contact us here.</p>
+                        </div>','2020-08-02 15:06:16')
+[2020-08-02 15:06:17]	update _tbl_logs_email set IsSuccess='1' where EmailLogID='3'
+[2020-08-02 15:06:17]	insert into `_tbl_Log_MobileSMS` (`MemberID`,`SmsTo`,`Message`,`Url`,`MessagedOn`) values ('6','9942852100','Dear JAYASHREE A, You have received enquiry Applicant Name : JAYASHREE AMobile Number : 8072647669',' ','2020-08-02 15:06:17')
+[2020-08-02 15:06:17]	update _tbl_Log_MobileSMS set Url='http://smssparkalerts.in/api/sendmsg.php?user=stmc&pass=123456&service=TRANS&sender=SMSSPK&phone=9942852100&text=Dear+JAYASHREE+A%2C+You+have+received+enquiry+Applicant+Name+%3A+JAYASHREE+AMobile+Number+%3A+8072647669&stype=normal&popup=true' where SMSID='3'
+[2020-08-02 15:06:17]	update _tbl_Log_MobileSMS set APIResponse='{"status":true,"message":"1 Message Send"}' where SMSID='3'

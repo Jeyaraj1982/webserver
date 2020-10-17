@@ -1,0 +1,30 @@
+[2020-10-04 08:41:25]	insert into `contacts` (`contactname`,`emailid`,`mobile`,`comments`,`postedon`) values ('Gilda','info@stmcnys.com','(08) 9031 2800','Hey there
+
+Defrost frozen foods in minutes safely and naturally with our THAW KING™. 
+
+50% OFF for the next 24 Hours ONLY + FREE Worldwide Shipping for a LIMITED time
+
+Buy now: thawking.online
+
+Best regards,
+
+S. THANGAPAZHAM COLLEGE OF NATUROPATHY AND YOGA SCIENCE','2020-10-04 08:41:25')
+[2020-10-04 08:41:25]	Select * from admintable
+[2020-10-04 08:41:25]	insert into `_tbl_Log_MobileSMS` (`MemberID`,`SmsTo`,`Message`,`Url`,`MessagedOn`) values ('11','8531070201','Dear Admin, You have received contact enquiry Contact Name : GildaMobile Number : (08) 9031 2800',' ','2020-10-04 08:41:25')
+[2020-10-04 08:41:25]	update _tbl_Log_MobileSMS set Url='http://smssparkalerts.in/api/sendmsg.php?user=stmc&pass=123456&service=TRANS&sender=SMSSPK&phone=8531070201&text=Dear+Admin%2C+You+have+received+contact+enquiry+Contact+Name+%3A+GildaMobile+Number+%3A+%2808%29+9031+2800&stype=normal&popup=true' where SMSID='24'
+[2020-10-04 08:41:25]	update _tbl_Log_MobileSMS set APIResponse='{"status":true,"message":"1 Message Send"}' where SMSID='24'
+[2020-10-04 14:23:27]	insert into `contacts` (`contactname`,`emailid`,`mobile`,`comments`,`postedon`) values ('Ralph','info@stmcnys.com','05.33.26.69.47','Hey there 
+ 
+Wear with intent, live with purpose. Fairly priced sunglasses with high quality UV400 lenses protection only $19.99 for the next 24 Hours ONLY.
+
+
+
+Order here: kickshades.online
+ 
+To your success, 
+ 
+S. THANGAPAZHAM COLLEGE OF NATUROPATHY AND YOGA SCIENCE','2020-10-04 14:23:27')
+[2020-10-04 14:23:27]	Select * from admintable
+[2020-10-04 14:23:27]	insert into `_tbl_Log_MobileSMS` (`MemberID`,`SmsTo`,`Message`,`Url`,`MessagedOn`) values ('12','8531070201','Dear Admin, You have received contact enquiry Contact Name : RalphMobile Number : 05.33.26.69.47',' ','2020-10-04 14:23:27')
+[2020-10-04 14:23:27]	update _tbl_Log_MobileSMS set Url='http://smssparkalerts.in/api/sendmsg.php?user=stmc&pass=123456&service=TRANS&sender=SMSSPK&phone=8531070201&text=Dear+Admin%2C+You+have+received+contact+enquiry+Contact+Name+%3A+RalphMobile+Number+%3A+05.33.26.69.47&stype=normal&popup=true' where SMSID='25'
+[2020-10-04 14:23:28]	update _tbl_Log_MobileSMS set APIResponse='{"status":true,"message":"1 Message Send"}' where SMSID='25'

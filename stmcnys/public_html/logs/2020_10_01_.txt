@@ -1,0 +1,15 @@
+[2020-10-01 08:58:57]	insert into `contacts` (`contactname`,`emailid`,`mobile`,`comments`,`postedon`) values ('James Simpson
+','no-reply@hilkom-digital.de','87372166861','Hеllо! 
+I have just checked stmcnys.com for the ranking keywords and seen that your SEO metrics could use a boost. 
+ 
+We will improve your SEO metrics and ranks organically and safely, using only whitehat methods, while providing monthly reports and outstanding support. 
+ 
+Please check our pricelist here, we offer SEO at cheap rates. 
+https://www.hilkom-digital.de/cheap-seo-packages/ 
+ 
+Start increasing your sales and leads with us, today! 
+ 
+regards 
+Hilkom Digital Team 
+support@hilkom-digital.de','2020-10-01 08:58:57')
+[2020-10-01 08:58:57]	SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xD0\xB5ll\xD0\xBE...' for column 'comments' at row 1

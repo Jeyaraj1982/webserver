@@ -1,0 +1,106 @@
+[2020-09-30 12:58:27]	insert into `_tbl_admissionform` (`ApplicantName`,`ApplicantEmail`,`ApplicantMobile`,`ApplicantAddress`,`ApplicantParentName`,`ApplicantParentMobile`,`DateofBirth`,`Age`,`Gender`,`Community`,`Nationality`,`Religion`,`Caste`,`ApplicantInstitution`,`SportsPlayer`,`SportsFile`,`CreatedOn`) values ('ANISHA GOPIKA A','anishagopika.20@gmail.com','8903007405','9/124D,PLOT NO :31,SAROJA MAHAL CHRISTU NAGAR,DR. CHELLADURAI NAGAR,KRISHNAPURAM','ATHINARAYANAN R','9442386565','2002-06-28','18','Female','BC','INDIAN','HINDU','NADAR','PUSHPALATA VIDYA MANDIR, TIRUNELVELI','No','','2020-09-30 12:58:27')
+[2020-09-30 12:58:27]	insert into `_tbl_logs_email` (`EmailTo`,`EmaildFor`,`MemberID`,`EmailSubject`,`EmailContent`,`EmailRequestedOn`) values ('anishagopika.20@gmail.com','','15','Applicant Registration Completed','<div style="padding:45px;background:#e5e5e5;margin:20px;border-radius:10px;padding-top:20px;padding-bottom:10px;">
+                            <div style="text-align:center;padding-bottom:20px;">
+                                <img src="https://stmcnys.com/assets/footerlogo.png">&nbsp;&nbsp;
+                            </div>
+                            <div style="border:0px solid black;text-align:left;padding:30px;background:white;border-radius:10px;">
+                                Hello,
+                                <br><br>
+                                Your Application Saved:
+                                <br><br>
+                                <p style="text-align:center">
+                                    <a href="https://stmcnys.com/viewapplication.php?id=15" style="font-size:16px;font-family:Poppins,sans-serif;font-weight:600;color:#ffffff;text-decoration:none;background-color:#3a77ff;border-top:12px solid #3a77ff;border-bottom:12px solid #3a77ff;border-left:36px solid #3a77ff;border-right:36px solid #3a77ff;display:inline-block">VIEW APPLICATION</a>
+                                </p>               
+                                <br> 
+                                Thanks <br>                                                                  
+                                S. THANGAPAZHAM COLLEGE OF NATUROPATHY AND YOGA SCIENCE
+                            </div>
+                            <p style="color:#888;padding:10px;text-align:center">Please do not reply this email. Replies to this message are routed to an unmonitored mailbox. For more information visit our help page or contact us here.</p>
+                        </div>','2020-09-30 12:58:27')
+[2020-09-30 12:58:28]	update _tbl_logs_email set IsSuccess='1' where EmailLogID='12'
+[2020-09-30 12:58:28]	insert into `_tbl_Log_MobileSMS` (`MemberID`,`SmsTo`,`Message`,`Url`,`MessagedOn`) values ('15','9942852100','Dear ANISHA GOPIKA A, You have received enquiry Applicant Name : ANISHA GOPIKA AMobile Number : 8903007405',' ','2020-09-30 12:58:28')
+[2020-09-30 12:58:28]	update _tbl_Log_MobileSMS set Url='http://smssparkalerts.in/api/sendmsg.php?user=stmc&pass=123456&service=TRANS&sender=SMSSPK&phone=9942852100&text=Dear+ANISHA+GOPIKA+A%2C+You+have+received+enquiry+Applicant+Name+%3A+ANISHA+GOPIKA+AMobile+Number+%3A+8903007405&stype=normal&popup=true' where SMSID='18'
+[2020-09-30 12:58:28]	update _tbl_Log_MobileSMS set APIResponse='{"status":true,"message":"1 Message Send"}' where SMSID='18'
+[2020-09-30 13:05:44]	insert into `_tbl_admissionform` (`ApplicantName`,`ApplicantEmail`,`ApplicantMobile`,`ApplicantAddress`,`ApplicantParentName`,`ApplicantParentMobile`,`DateofBirth`,`Age`,`Gender`,`Community`,`Nationality`,`Religion`,`Caste`,`ApplicantInstitution`,`SportsPlayer`,`SportsFile`,`CreatedOn`) values ('ANISHA GOPIKA A','anishagopika.20@gmail.com','8903007405','9/124D,PLOT NO :31,SAROJA MAHAL
+
+CHRISTU NAGAR,DR. CHELLADURAI NAGAR,KRISHNAPURAM','ATHINARAYANAN R','9442386565','2002-06-28','18','Female','BC','INDIAN','HINDU','NADAR','PUSHPALATA VIDYA MANDIR, TIRUNELVELI','No','','2020-09-30 13:05:44')
+[2020-09-30 13:05:44]	insert into `_tbl_logs_email` (`EmailTo`,`EmaildFor`,`MemberID`,`EmailSubject`,`EmailContent`,`EmailRequestedOn`) values ('anishagopika.20@gmail.com','','16','Applicant Registration Completed','<div style="padding:45px;background:#e5e5e5;margin:20px;border-radius:10px;padding-top:20px;padding-bottom:10px;">
+                            <div style="text-align:center;padding-bottom:20px;">
+                                <img src="https://stmcnys.com/assets/footerlogo.png">&nbsp;&nbsp;
+                            </div>
+                            <div style="border:0px solid black;text-align:left;padding:30px;background:white;border-radius:10px;">
+                                Hello,
+                                <br><br>
+                                Your Application Saved:
+                                <br><br>
+                                <p style="text-align:center">
+                                    <a href="https://stmcnys.com/viewapplication.php?id=16" style="font-size:16px;font-family:Poppins,sans-serif;font-weight:600;color:#ffffff;text-decoration:none;background-color:#3a77ff;border-top:12px solid #3a77ff;border-bottom:12px solid #3a77ff;border-left:36px solid #3a77ff;border-right:36px solid #3a77ff;display:inline-block">VIEW APPLICATION</a>
+                                </p>               
+                                <br> 
+                                Thanks <br>                                                                  
+                                S. THANGAPAZHAM COLLEGE OF NATUROPATHY AND YOGA SCIENCE
+                            </div>
+                            <p style="color:#888;padding:10px;text-align:center">Please do not reply this email. Replies to this message are routed to an unmonitored mailbox. For more information visit our help page or contact us here.</p>
+                        </div>','2020-09-30 13:05:44')
+[2020-09-30 13:05:44]	update _tbl_logs_email set IsSuccess='1' where EmailLogID='13'
+[2020-09-30 13:05:44]	insert into `_tbl_Log_MobileSMS` (`MemberID`,`SmsTo`,`Message`,`Url`,`MessagedOn`) values ('16','9942852100','Dear ANISHA GOPIKA A, You have received enquiry Applicant Name : ANISHA GOPIKA AMobile Number : 8903007405',' ','2020-09-30 13:05:44')
+[2020-09-30 13:05:44]	update _tbl_Log_MobileSMS set Url='http://smssparkalerts.in/api/sendmsg.php?user=stmc&pass=123456&service=TRANS&sender=SMSSPK&phone=9942852100&text=Dear+ANISHA+GOPIKA+A%2C+You+have+received+enquiry+Applicant+Name+%3A+ANISHA+GOPIKA+AMobile+Number+%3A+8903007405&stype=normal&popup=true' where SMSID='19'
+[2020-09-30 13:05:44]	update _tbl_Log_MobileSMS set APIResponse='{"status":true,"message":"1 Message Send"}' where SMSID='19'
+[2020-09-30 13:08:41]	insert into `_tbl_admissionform` (`ApplicantName`,`ApplicantEmail`,`ApplicantMobile`,`ApplicantAddress`,`ApplicantParentName`,`ApplicantParentMobile`,`DateofBirth`,`Age`,`Gender`,`Community`,`Nationality`,`Religion`,`Caste`,`ApplicantInstitution`,`SportsPlayer`,`SportsFile`,`CreatedOn`) values ('SURYA  M','sparklestar110@gmail.com','8248409229','10, YADVAR WEST STREET, SOUTH BAZAR , PALAYAMKOTTAI,TIRUNELVELI','MUTHU KUMAR A','9498191556','2001-10-14','18','Female','BC','INDIAN','HINDU','yadav','rosemary matriculation higher secondary school palayam kottai','','','2020-09-30 13:08:41')
+[2020-09-30 13:08:41]	insert into `_tbl_logs_email` (`EmailTo`,`EmaildFor`,`MemberID`,`EmailSubject`,`EmailContent`,`EmailRequestedOn`) values ('sparklestar110@gmail.com','','17','Applicant Registration Completed','<div style="padding:45px;background:#e5e5e5;margin:20px;border-radius:10px;padding-top:20px;padding-bottom:10px;">
+                            <div style="text-align:center;padding-bottom:20px;">
+                                <img src="https://stmcnys.com/assets/footerlogo.png">&nbsp;&nbsp;
+                            </div>
+                            <div style="border:0px solid black;text-align:left;padding:30px;background:white;border-radius:10px;">
+                                Hello,
+                                <br><br>
+                                Your Application Saved:
+                                <br><br>
+                                <p style="text-align:center">
+                                    <a href="https://stmcnys.com/viewapplication.php?id=17" style="font-size:16px;font-family:Poppins,sans-serif;font-weight:600;color:#ffffff;text-decoration:none;background-color:#3a77ff;border-top:12px solid #3a77ff;border-bottom:12px solid #3a77ff;border-left:36px solid #3a77ff;border-right:36px solid #3a77ff;display:inline-block">VIEW APPLICATION</a>
+                                </p>               
+                                <br> 
+                                Thanks <br>                                                                  
+                                S. THANGAPAZHAM COLLEGE OF NATUROPATHY AND YOGA SCIENCE
+                            </div>
+                            <p style="color:#888;padding:10px;text-align:center">Please do not reply this email. Replies to this message are routed to an unmonitored mailbox. For more information visit our help page or contact us here.</p>
+                        </div>','2020-09-30 13:08:41')
+[2020-09-30 13:08:41]	update _tbl_logs_email set IsSuccess='1' where EmailLogID='14'
+[2020-09-30 13:08:41]	insert into `_tbl_Log_MobileSMS` (`MemberID`,`SmsTo`,`Message`,`Url`,`MessagedOn`) values ('17','9942852100','Dear SURYA  M, You have received enquiry Applicant Name : SURYA  MMobile Number : 8248409229',' ','2020-09-30 13:08:41')
+[2020-09-30 13:08:41]	update _tbl_Log_MobileSMS set Url='http://smssparkalerts.in/api/sendmsg.php?user=stmc&pass=123456&service=TRANS&sender=SMSSPK&phone=9942852100&text=Dear+SURYA++M%2C+You+have+received+enquiry+Applicant+Name+%3A+SURYA++MMobile+Number+%3A+8248409229&stype=normal&popup=true' where SMSID='20'
+[2020-09-30 13:08:41]	update _tbl_Log_MobileSMS set APIResponse='{"status":true,"message":"1 Message Send"}' where SMSID='20'
+[2020-09-30 13:20:11]	insert into `_tbl_admissionform` (`ApplicantName`,`ApplicantEmail`,`ApplicantMobile`,`ApplicantAddress`,`ApplicantParentName`,`ApplicantParentMobile`,`DateofBirth`,`Age`,`Gender`,`Community`,`Nationality`,`Religion`,`Caste`,`ApplicantInstitution`,`SportsPlayer`,`SportsFile`,`CreatedOn`) values ('SURYA  M','sparklestar1410@gmail.com','8248409229','10, YADVAR WEST STREET, SOUTH BAZAR , PALAYAMKOTTAI,TIRUNELVELI','MUTHU KUMAR A','9498191556','2001-10-14','18','Female','BC','INDIAN','HINDU','yadav','rosemary matriculation higher secondary school palayam kottai','No','','2020-09-30 13:20:11')
+[2020-09-30 13:20:11]	insert into `_tbl_logs_email` (`EmailTo`,`EmaildFor`,`MemberID`,`EmailSubject`,`EmailContent`,`EmailRequestedOn`) values ('sparklestar1410@gmail.com','','18','Applicant Registration Completed','<div style="padding:45px;background:#e5e5e5;margin:20px;border-radius:10px;padding-top:20px;padding-bottom:10px;">
+                            <div style="text-align:center;padding-bottom:20px;">
+                                <img src="https://stmcnys.com/assets/footerlogo.png">&nbsp;&nbsp;
+                            </div>
+                            <div style="border:0px solid black;text-align:left;padding:30px;background:white;border-radius:10px;">
+                                Hello,
+                                <br><br>
+                                Your Application Saved:
+                                <br><br>
+                                <p style="text-align:center">
+                                    <a href="https://stmcnys.com/viewapplication.php?id=18" style="font-size:16px;font-family:Poppins,sans-serif;font-weight:600;color:#ffffff;text-decoration:none;background-color:#3a77ff;border-top:12px solid #3a77ff;border-bottom:12px solid #3a77ff;border-left:36px solid #3a77ff;border-right:36px solid #3a77ff;display:inline-block">VIEW APPLICATION</a>
+                                </p>               
+                                <br> 
+                                Thanks <br>                                                                  
+                                S. THANGAPAZHAM COLLEGE OF NATUROPATHY AND YOGA SCIENCE
+                            </div>
+                            <p style="color:#888;padding:10px;text-align:center">Please do not reply this email. Replies to this message are routed to an unmonitored mailbox. For more information visit our help page or contact us here.</p>
+                        </div>','2020-09-30 13:20:11')
+[2020-09-30 13:20:12]	update _tbl_logs_email set IsSuccess='1' where EmailLogID='15'
+[2020-09-30 13:20:12]	insert into `_tbl_Log_MobileSMS` (`MemberID`,`SmsTo`,`Message`,`Url`,`MessagedOn`) values ('18','9942852100','Dear SURYA  M, You have received enquiry Applicant Name : SURYA  MMobile Number : 8248409229',' ','2020-09-30 13:20:12')
+[2020-09-30 13:20:12]	update _tbl_Log_MobileSMS set Url='http://smssparkalerts.in/api/sendmsg.php?user=stmc&pass=123456&service=TRANS&sender=SMSSPK&phone=9942852100&text=Dear+SURYA++M%2C+You+have+received+enquiry+Applicant+Name+%3A+SURYA++MMobile+Number+%3A+8248409229&stype=normal&popup=true' where SMSID='21'
+[2020-09-30 13:20:12]	update _tbl_Log_MobileSMS set APIResponse='{"status":true,"message":"1 Message Send"}' where SMSID='21'
+[2020-09-30 20:01:14]	insert into `_tbl_admissionform` (`ApplicantName`,`ApplicantEmail`,`ApplicantMobile`,`ApplicantAddress`,`ApplicantParentName`,`ApplicantParentMobile`,`DateofBirth`,`Age`,`Gender`,`Community`,`Nationality`,`Religion`,`Caste`,`ApplicantInstitution`,`SportsPlayer`,`SportsFile`,`CreatedOn`) values ('Sri Vishnu Bharahi L','osramlux@hotmail.com','9245192033','508/575 South vaithiya nathapuram street','Lakshmanan R','9245192033','2003-01-15','17','Female','BC','Indian','Hindu','Saliyar','P A C R Ammani Ammals Girl's Hr. sec.School,Rajapalayam.','No','','2020-09-30 20:01:14')
+[2020-09-30 20:01:14]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 's Hr. sec.School,Rajapalayam.','No','','2020-09-30 20:01:14')' at line 1
+[2020-09-30 20:37:09]	insert into `contacts` (`contactname`,`emailid`,`mobile`,`comments`,`postedon`) values ('Sri Vishnu Bharathi L','osramlux@hotmail.com','9245192033','I like to join BNYS in your college.Please send the Fees , Accomodation and other details to join the course in your college.','2020-09-30 20:37:09')
+[2020-09-30 20:37:09]	Select * from admintable
+[2020-09-30 20:37:09]	insert into `_tbl_Log_MobileSMS` (`MemberID`,`SmsTo`,`Message`,`Url`,`MessagedOn`) values ('9','8531070201','Dear Admin, You have received contact enquiry Contact Name : Sri Vishnu Bharathi LMobile Number : 9245192033',' ','2020-09-30 20:37:09')
+[2020-09-30 20:37:09]	update _tbl_Log_MobileSMS set Url='http://smssparkalerts.in/api/sendmsg.php?user=stmc&pass=123456&service=TRANS&sender=SMSSPK&phone=8531070201&text=Dear+Admin%2C+You+have+received+contact+enquiry+Contact+Name+%3A+Sri+Vishnu+Bharathi+LMobile+Number+%3A+9245192033&stype=normal&popup=true' where SMSID='22'
+[2020-09-30 20:37:09]	update _tbl_Log_MobileSMS set APIResponse='{"status":true,"message":"1 Message Send"}' where SMSID='22'
+[2020-09-30 20:46:41]	insert into `contacts` (`contactname`,`emailid`,`mobile`,`comments`,`postedon`) values ('Maike Reine-Berg','maikereine.mmr@gmail.com','81532617634','My name is Maike Reine-Berg, Customer Service Representative for AAA Structured Finance Ltd, thank you for your time, my company offers project financing and lending services, do you have any project that requires funding at the moment? You need a business or personal loan? We are ready to work with you on a more transparent approach. Contact Us for more information via email:  Reine.berg@outlook.com.','2020-09-30 20:46:41')
+[2020-09-30 20:46:41]	Select * from admintable
+[2020-09-30 20:46:41]	insert into `_tbl_Log_MobileSMS` (`MemberID`,`SmsTo`,`Message`,`Url`,`MessagedOn`) values ('10','8531070201','Dear Admin, You have received contact enquiry Contact Name : Maike Reine-BergMobile Number : 81532617634',' ','2020-09-30 20:46:41')
+[2020-09-30 20:46:41]	update _tbl_Log_MobileSMS set Url='http://smssparkalerts.in/api/sendmsg.php?user=stmc&pass=123456&service=TRANS&sender=SMSSPK&phone=8531070201&text=Dear+Admin%2C+You+have+received+contact+enquiry+Contact+Name+%3A+Maike+Reine-BergMobile+Number+%3A+81532617634&stype=normal&popup=true' where SMSID='23'
+[2020-09-30 20:46:41]	update _tbl_Log_MobileSMS set APIResponse='{"status":true,"message":"1 Message Send"}' where SMSID='23'

@@ -1,0 +1,26 @@
+[2020-09-28 16:15:22]	insert into `contacts` (`contactname`,`emailid`,`mobile`,`comments`,`postedon`) values ('Mike Marlow
+','no-replyArips@google.com','88941141739','Hi there 
+ 
+If you want to get ahead of your competition, have a higher Domain Authority score. Its just simple as that. 
+With our service you get Domain Authority above 50 points in just 30 days. 
+ 
+This service is guaranteed 
+ 
+For more information, check our service here 
+https://www.monkeydigital.co/Get-Guaranteed-Domain-Authority-50/ 
+ 
+N E W : 
+DA60 is now available here 
+https://www.monkeydigital.co/product/moz-da60-seo-plan/ 
+ 
+ 
+thank you 
+Mike Marlow
+ 
+Monkey Digital 
+support@monkeydigital.co','2020-09-28 16:15:22')
+[2020-09-28 16:15:22]	Select * from admintable
+[2020-09-28 16:15:22]	insert into `_tbl_Log_MobileSMS` (`MemberID`,`SmsTo`,`Message`,`Url`,`MessagedOn`) values ('6','8531070201','Dear Admin, You have received contact enquiry Contact Name : Mike Marlow
+Mobile Number : 88941141739',' ','2020-09-28 16:15:22')
+[2020-09-28 16:15:22]	update _tbl_Log_MobileSMS set Url='http://smssparkalerts.in/api/sendmsg.php?user=stmc&pass=123456&service=TRANS&sender=SMSSPK&phone=8531070201&text=Dear+Admin%2C+You+have+received+contact+enquiry+Contact+Name+%3A+Mike+Marlow%0D%0AMobile+Number+%3A+88941141739&stype=normal&popup=true' where SMSID='15'
+[2020-09-28 16:15:22]	update _tbl_Log_MobileSMS set APIResponse='{"status":true,"message":"1 Message Send"}' where SMSID='15'

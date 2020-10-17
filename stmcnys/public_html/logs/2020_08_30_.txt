@@ -1,0 +1,11 @@
+[2020-08-30 01:27:24]	insert into `contacts` (`contactname`,`emailid`,`mobile`,`comments`,`postedon`) values ('Claudia','claudiauclement@yahoo.com','0161 9496 0002','Hi, We are wondering if you would be interested in our service, where we can provide you with a dofollow link from Amazon (DA 96) back to stmcnys.com?
+
+The price is just $67 per link, via Paypal.
+
+To explain what DA is and the benefit for your website, along with a sample of an existing link, please read here: https://backlinkfaq.xyz/
+
+If you'd be interested in learning more, reply to this email but please make sure you include the word INTERESTED in the subject line field.
+
+Kind Regards,
+Claudia','2020-08-30 01:27:24')
+[2020-08-30 01:27:24]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'd be interested in learning more, reply to this email but please make sure you i' at line 1

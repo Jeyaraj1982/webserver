@@ -1,0 +1,23 @@
+[2020-10-09 17:40:41]	insert into `_tbl_admissionform` (`ApplicantName`,`ApplicantEmail`,`ApplicantMobile`,`ApplicantAddress`,`ApplicantParentName`,`ApplicantParentMobile`,`DateofBirth`,`Age`,`Gender`,`Community`,`Nationality`,`Religion`,`Caste`,`ApplicantInstitution`,`SportsPlayer`,`SportsFile`,`CreatedOn`) values ('PATHRA KALI','ssnp77@gmail.com','9003267626','No 66 Drivers Colony, Palayamkottai, Tirunelveli','S.SELVA NAYAGAM','9003267626','24/02/1978','NaN','Female','OC','Indian','Hindu','Saiva Vellalar','KCMH - Coimbatore','No','','2020-10-09 17:40:41')
+[2020-10-09 17:40:41]	insert into `_tbl_logs_email` (`EmailTo`,`EmaildFor`,`MemberID`,`EmailSubject`,`EmailContent`,`EmailRequestedOn`) values ('ssnp77@gmail.com','','19','Applicant Registration Completed','<div style="padding:45px;background:#e5e5e5;margin:20px;border-radius:10px;padding-top:20px;padding-bottom:10px;">
+                            <div style="text-align:center;padding-bottom:20px;">
+                                <img src="https://stmcnys.com/assets/footerlogo.png">&nbsp;&nbsp;
+                            </div>
+                            <div style="border:0px solid black;text-align:left;padding:30px;background:white;border-radius:10px;">
+                                Hello,
+                                <br><br>
+                                Your Application Saved:
+                                <br><br>
+                                <p style="text-align:center">
+                                    <a href="https://stmcnys.com/viewapplication.php?id=19" style="font-size:16px;font-family:Poppins,sans-serif;font-weight:600;color:#ffffff;text-decoration:none;background-color:#3a77ff;border-top:12px solid #3a77ff;border-bottom:12px solid #3a77ff;border-left:36px solid #3a77ff;border-right:36px solid #3a77ff;display:inline-block">VIEW APPLICATION</a>
+                                </p>               
+                                <br> 
+                                Thanks <br>                                                                  
+                                S. THANGAPAZHAM COLLEGE OF NATUROPATHY AND YOGA SCIENCE
+                            </div>
+                            <p style="color:#888;padding:10px;text-align:center">Please do not reply this email. Replies to this message are routed to an unmonitored mailbox. For more information visit our help page or contact us here.</p>
+                        </div>','2020-10-09 17:40:41')
+[2020-10-09 17:40:41]	update _tbl_logs_email set IsSuccess='1' where EmailLogID='16'
+[2020-10-09 17:40:41]	insert into `_tbl_Log_MobileSMS` (`MemberID`,`SmsTo`,`Message`,`Url`,`MessagedOn`) values ('19','9942852100','Dear PATHRA KALI, You have received enquiry Applicant Name : PATHRA KALIMobile Number : 9003267626',' ','2020-10-09 17:40:41')
+[2020-10-09 17:40:41]	update _tbl_Log_MobileSMS set Url='http://smssparkalerts.in/api/sendmsg.php?user=stmc&pass=123456&service=TRANS&sender=SMSSPK&phone=9942852100&text=Dear+PATHRA+KALI%2C+You+have+received+enquiry+Applicant+Name+%3A+PATHRA+KALIMobile+Number+%3A+9003267626&stype=normal&popup=true' where SMSID='26'
+[2020-10-09 17:40:42]	update _tbl_Log_MobileSMS set APIResponse='{"status":true,"message":"1 Message Send"}' where SMSID='26'

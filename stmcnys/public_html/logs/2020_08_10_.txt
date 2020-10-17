@@ -1,0 +1,23 @@
+[2020-08-10 18:28:24]	insert into `_tbl_admissionform` (`ApplicantName`,`ApplicantEmail`,`ApplicantMobile`,`ApplicantAddress`,`ApplicantParentName`,`ApplicantParentMobile`,`DateofBirth`,`Age`,`Gender`,`Community`,`Nationality`,`Religion`,`Caste`,`ApplicantInstitution`,`SportsPlayer`,`SportsFile`,`CreatedOn`) values ('ArunKumar','aparthasarathy.be@gmail.com','9385335808','No: 95, Oorchavadi Street,Meenakshipuram,Panpoli Post ,Sengottai Taluk, Tenkasi Dt','Thambiraj','7867923325','2002-11-05','17','Male','SC/ST','Indian','Hindu','Pallan','St Joseph Matriculation Higher Secondary School','No','','2020-08-10 18:28:24')
+[2020-08-10 18:28:24]	insert into `_tbl_logs_email` (`EmailTo`,`EmaildFor`,`MemberID`,`EmailSubject`,`EmailContent`,`EmailRequestedOn`) values ('aparthasarathy.be@gmail.com','','8','Applicant Registration Completed','<div style="padding:45px;background:#e5e5e5;margin:20px;border-radius:10px;padding-top:20px;padding-bottom:10px;">
+                            <div style="text-align:center;padding-bottom:20px;">
+                                <img src="https://stmcnys.com/assets/footerlogo.png">&nbsp;&nbsp;
+                            </div>
+                            <div style="border:0px solid black;text-align:left;padding:30px;background:white;border-radius:10px;">
+                                Hello,
+                                <br><br>
+                                Your Application Saved:
+                                <br><br>
+                                <p style="text-align:center">
+                                    <a href="https://stmcnys.com/viewapplication.php?id=8" style="font-size:16px;font-family:Poppins,sans-serif;font-weight:600;color:#ffffff;text-decoration:none;background-color:#3a77ff;border-top:12px solid #3a77ff;border-bottom:12px solid #3a77ff;border-left:36px solid #3a77ff;border-right:36px solid #3a77ff;display:inline-block">VIEW APPLICATION</a>
+                                </p>               
+                                <br> 
+                                Thanks <br>                                                                  
+                                S. THANGAPAZHAM COLLEGE OF NATUROPATHY AND YOGA SCIENCE
+                            </div>
+                            <p style="color:#888;padding:10px;text-align:center">Please do not reply this email. Replies to this message are routed to an unmonitored mailbox. For more information visit our help page or contact us here.</p>
+                        </div>','2020-08-10 18:28:24')
+[2020-08-10 18:28:24]	update _tbl_logs_email set IsSuccess='1' where EmailLogID='5'
+[2020-08-10 18:28:24]	insert into `_tbl_Log_MobileSMS` (`MemberID`,`SmsTo`,`Message`,`Url`,`MessagedOn`) values ('8','9942852100','Dear ArunKumar, You have received enquiry Applicant Name : ArunKumarMobile Number : 9385335808',' ','2020-08-10 18:28:24')
+[2020-08-10 18:28:24]	update _tbl_Log_MobileSMS set Url='http://smssparkalerts.in/api/sendmsg.php?user=stmc&pass=123456&service=TRANS&sender=SMSSPK&phone=9942852100&text=Dear+ArunKumar%2C+You+have+received+enquiry+Applicant+Name+%3A+ArunKumarMobile+Number+%3A+9385335808&stype=normal&popup=true' where SMSID='6'
+[2020-08-10 18:28:24]	update _tbl_Log_MobileSMS set APIResponse='{"status":true,"message":"1 Message Send"}' where SMSID='6'

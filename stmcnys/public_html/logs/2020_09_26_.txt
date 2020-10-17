@@ -1,0 +1,15 @@
+[2020-09-26 18:45:35]	insert into `contacts` (`contactname`,`emailid`,`mobile`,`comments`,`postedon`) values ('Bell','info@stmcnys.com','06-77184059','Hey there
+
+Be Buzz Free! The Original Mosquito Trap.
+
+60% OFF for the next 24 Hours ONLY + FREE Worldwide Shipping
+✔️LED Bionic Wave Technology
+✔️Eco-Friendly
+✔️15 Day Money-Back Guarantee
+
+Shop Now: mosquitotrap.online
+
+Thank You,
+
+S. THANGAPAZHAM COLLEGE OF NATUROPATHY AND YOGA SCIENCE','2020-09-26 18:45:35')
+[2020-09-26 18:45:35]	SQLSTATE[HY000]: General error: 1366 Incorrect string value: '\xE2\x9C\x94\xEF\xB8\x8F...' for column 'comments' at row 1

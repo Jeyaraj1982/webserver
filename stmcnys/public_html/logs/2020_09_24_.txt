@@ -1,0 +1,12 @@
+[2020-09-24 07:25:45]	insert into `contacts` (`contactname`,`emailid`,`mobile`,`comments`,`postedon`) values ('Skye','info@stmcnys.com','67 120 36 86','Good day 
+ 
+Buy all styles of Ray-Ban Sunglasses only 19.99 dollars.  If interested, please visit our site: framesoutlet.online
+ 
+ 
+To your success, 
+ 
+S. THANGAPAZHAM COLLEGE OF NATUROPATHY AND YOGA SCIENCE','2020-09-24 07:25:45')
+[2020-09-24 07:25:45]	Select * from admintable
+[2020-09-24 07:25:45]	insert into `_tbl_Log_MobileSMS` (`MemberID`,`SmsTo`,`Message`,`Url`,`MessagedOn`) values ('5','8531070201','Dear Admin, You have received contact enquiry Contact Name : SkyeMobile Number : 67 120 36 86',' ','2020-09-24 07:25:45')
+[2020-09-24 07:25:45]	update _tbl_Log_MobileSMS set Url='http://smssparkalerts.in/api/sendmsg.php?user=stmc&pass=123456&service=TRANS&sender=SMSSPK&phone=8531070201&text=Dear+Admin%2C+You+have+received+contact+enquiry+Contact+Name+%3A+SkyeMobile+Number+%3A+67+120+36+86&stype=normal&popup=true' where SMSID='14'
+[2020-09-24 07:25:45]	update _tbl_Log_MobileSMS set APIResponse='{"status":true,"message":"1 Message Send"}' where SMSID='14'
