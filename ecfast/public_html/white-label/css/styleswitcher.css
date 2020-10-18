@@ -1,0 +1,93 @@
+/* #Demo Styleswitcher
+================================================== */
+#styleswitcher_panel {
+	position:fixed;
+	z-index:3;
+	left:-114px;
+	top:203px;
+	width:114px;
+	background:#f7f7f7;
+	box-shadow:1px 1px 1px rgba(0, 0, 0, .1);
+	border-radius:0 0 5px 0;
+	}
+	#styleswitcher_panel .inner {
+		padding:15px 0 35px 10px;
+		}
+	#control_label {
+		display:block;
+		position:absolute;
+		right:-50px;
+		top:0;
+		width:50px;
+		height:50px;
+		background:#f7f7f7;
+		border-radius:0 5px 5px 0;
+		box-shadow:1px 1px 1px rgba(0, 0, 0, .1);
+		}
+	#control_label:before {
+		content:"";
+		display:block;
+		position:absolute;
+		width:13px;
+		height:18px;
+		left:50%;
+		top:50%;
+		margin:-9px 0 0 -7px;
+		background:url(../images/switch-arrow.gif) 0 0 no-repeat;
+		}
+	#styleswitcher_panel.visible #control_label:before {
+		background-position:0 -18px;
+		}
+	#styleswitcher_panel h6 {
+		font-size:11px;
+		text-transform:uppercase;
+		font-weight:normal;
+		padding:0;
+		margin:0 0 40px 0;
+		color:#363636;
+		font-family: 'MuseoSans500Regular', Arial, sans-serif;
+		}
+	#styleswitcher_panel ul {
+		list-style-type:none;
+		margin:0;
+		padding:0 0 0 12px;
+		}
+		#styleswitcher_panel ul li {
+			margin:28px 0 0 0;
+			padding:0;
+			border:none;
+			background:none;
+			font-size:11px;
+			line-height:22px;
+			overflow:hidden;
+			font-style:normal;
+			font-family: 'MuseoSans500Regular', Arial, sans-serif;
+			}
+		#styleswitcher_panel ul li:first-child {
+			margin-top:0;
+			}
+			#styleswitcher_panel ul li a {
+				color:#363636;
+				text-decoration:none;
+				}
+			#styleswitcher_panel ul li a:hover,
+			#styleswitcher_panel ul li.current a{
+				color:#115B87;
+				}
+			#styleswitcher_panel .style-ico {
+				display:inline-block;
+				width:22px;
+				height:22px;
+				margin-right:7px;
+				overflow:hidden;
+				float:left;
+				}
+			#styleswitcher_panel .style-ico.style-main {
+				background:url(../images/style-ico-main.png) 0 0 no-repeat;
+				}
+			#styleswitcher_panel .style-ico.style-fresh{
+				background:url(../images/style-ico-fresh.png) 0 0 no-repeat;
+				}
+			#styleswitcher_panel .style-ico.style-dark {
+				background:url(../images/style-ico-dark.png) 0 0 no-repeat;
+				}

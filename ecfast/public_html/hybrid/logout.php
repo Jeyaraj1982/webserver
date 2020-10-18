@@ -1,0 +1,9 @@
+<?php
+session_start();
+$_SESSION['USER']['userid']=-5;
+unset($_SESSION);
+sleep(3);
+?>
+<script>
+location.href='index.php';
+</script>

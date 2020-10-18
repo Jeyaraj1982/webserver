@@ -1,0 +1,60 @@
+[15-Jan-2020 01:52:03 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/ecfast/public_html/hybrid/index.php on line 3
+[15-Jan-2020 01:52:03 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/ecfast/public_html/hybrid/config.php on line 2
+[15-Jan-2020 07:22:03 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Class 'MySqldatabase' not found in /home/ecfast/public_html/hybrid/classes/mysql.php:67
+Stack trace:
+#0 /home/ecfast/public_html/hybrid/config.php(4): include_once()
+#1 /home/ecfast/public_html/hybrid/index.php(4): include_once('/home/ecfast/pu...')
+#2 {main}
+  thrown in /home/ecfast/public_html/hybrid/classes/mysql.php on line 67
+[15-Jan-2020 01:52:13 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/ecfast/public_html/hybrid/index.php on line 3
+[15-Jan-2020 01:52:13 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/ecfast/public_html/hybrid/config.php on line 2
+[15-Jan-2020 07:22:13 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Class 'MySqldatabase' not found in /home/ecfast/public_html/hybrid/classes/mysql.php:67
+Stack trace:
+#0 /home/ecfast/public_html/hybrid/config.php(4): include_once()
+#1 /home/ecfast/public_html/hybrid/index.php(4): include_once('/home/ecfast/pu...')
+#2 {main}
+  thrown in /home/ecfast/public_html/hybrid/classes/mysql.php on line 67
+[15-Jan-2020 01:52:22 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/ecfast/public_html/hybrid/index.php on line 3
+[15-Jan-2020 01:52:22 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/ecfast/public_html/hybrid/config.php on line 2
+[15-Jan-2020 07:22:22 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Class 'MySqldatabase' not found in /home/ecfast/public_html/hybrid/classes/mysql.php:67
+Stack trace:
+#0 /home/ecfast/public_html/hybrid/config.php(4): include_once()
+#1 /home/ecfast/public_html/hybrid/index.php(4): include_once('/home/ecfast/pu...')
+#2 {main}
+  thrown in /home/ecfast/public_html/hybrid/classes/mysql.php on line 67
+[15-Jan-2020 07:24:45 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Class 'MySqldatabase' not found in /home/ecfast/public_html/hybrid/classes/mysql.php:67
+Stack trace:
+#0 /home/ecfast/public_html/hybrid/config.php(4): include_once()
+#1 /home/ecfast/public_html/hybrid/index.php(2): include_once('/home/ecfast/pu...')
+#2 {main}
+  thrown in /home/ecfast/public_html/hybrid/classes/mysql.php on line 67
+[15-Jan-2020 07:25:02 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Class 'MySqldatabase' not found in /home/ecfast/public_html/hybrid/classes/mysql.php:67
+Stack trace:
+#0 /home/ecfast/public_html/hybrid/config.php(4): include_once()
+#1 /home/ecfast/public_html/hybrid/index.php(2): include_once('/home/ecfast/pu...')
+#2 {main}
+  thrown in /home/ecfast/public_html/hybrid/classes/mysql.php on line 67
+[15-Jan-2020 07:25:10 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Class 'MySqldatabase' not found in /home/ecfast/public_html/hybrid/classes/mysql.php:67
+Stack trace:
+#0 /home/ecfast/public_html/hybrid/config.php(5): include_once()
+#1 /home/ecfast/public_html/hybrid/index.php(2): include_once('/home/ecfast/pu...')
+#2 {main}
+  thrown in /home/ecfast/public_html/hybrid/classes/mysql.php on line 67
+[15-Jan-2020 07:25:34 Asia/Calcutta] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function MySql::__construct(), 0 passed in /home/ecfast/public_html/hybrid/config.php on line 6 and exactly 4 expected in /home/ecfast/public_html/hybrid/classes/mysql.php:7
+Stack trace:
+#0 /home/ecfast/public_html/hybrid/config.php(6): MySql->__construct()
+#1 /home/ecfast/public_html/hybrid/index.php(2): include_once('/home/ecfast/pu...')
+#2 {main}
+  thrown in /home/ecfast/public_html/hybrid/classes/mysql.php on line 7
+[15-Jan-2020 21:45:06 Asia/Calcutta] PHP Warning:  A non-numeric value encountered in /home/ecfast/public_html/hybrid/files/walletUpdate.php on line 88
+[15-Jan-2020 21:45:06 Asia/Calcutta] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/ecfast/public_html/hybrid/files/walletUpdate.php on line 96
+[15-Jan-2020 21:45:38 Asia/Calcutta] PHP Warning:  A non-numeric value encountered in /home/ecfast/public_html/hybrid/files/walletUpdate.php on line 88
+[15-Jan-2020 21:45:38 Asia/Calcutta] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/ecfast/public_html/hybrid/files/walletUpdate.php on line 96
+[15-Jan-2020 21:48:03 Asia/Calcutta] PHP Warning:  A non-numeric value encountered in /home/ecfast/public_html/hybrid/files/walletUpdate.php on line 88
+[15-Jan-2020 21:48:03 Asia/Calcutta] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/ecfast/public_html/hybrid/files/walletUpdate.php on line 96
+[15-Jan-2020 21:54:07 Asia/Calcutta] PHP Warning:  A non-numeric value encountered in /home/ecfast/public_html/hybrid/files/walletUpdate.php on line 88
+[15-Jan-2020 21:54:07 Asia/Calcutta] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/ecfast/public_html/hybrid/files/walletUpdate.php on line 96
+[15-Jan-2020 21:54:16 Asia/Calcutta] PHP Warning:  A non-numeric value encountered in /home/ecfast/public_html/hybrid/files/walletUpdate.php on line 88
+[15-Jan-2020 21:54:16 Asia/Calcutta] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/ecfast/public_html/hybrid/files/walletUpdate.php on line 96
+[15-Jan-2020 21:54:24 Asia/Calcutta] PHP Warning:  A non-numeric value encountered in /home/ecfast/public_html/hybrid/files/walletUpdate.php on line 88
+[15-Jan-2020 21:54:24 Asia/Calcutta] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/ecfast/public_html/hybrid/files/walletUpdate.php on line 96

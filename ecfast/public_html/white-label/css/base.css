@@ -1,0 +1,351 @@
+/* Table of Content
+==================================================
+	#Basic Styles
+	#Typography
+	#Links
+	#Lists
+	#Images
+	#Buttons and Pills
+	#Alert Boxes
+	#Tables
+	#Dropcaps
+	#Accordion (Toggle)
+	#Pricing Tables
+	#Pricing Lists
+	#Forms
+	#Misc */
+	
+
+/* #Basic Styles
+================================================== */
+html, body {height:100%;}
+
+
+
+/* #Typography
+================================================== */
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'MuseoSans500Regular', Arial, sans-serif;
+	font-weight: normal;
+	line-height:1.2em;
+	margin:0 0 1.5em 0;
+	text-shadow:0 1px 0 #fff;
+	color: #88A919;
+	}
+h1 {
+	
+	}
+h2 {
+	font-size:24px;
+	color:#88a919;
+	margin-bottom:.8em;
+	}
+h3 {
+	font-size:24px;
+	color:#88a919;
+	margin-bottom:.8em;
+	}
+h4 {
+	font-size:1em;
+	line-height:20px;
+	margin:0;
+	color:#88a919;
+	text-transform:uppercase;
+	}
+h5 {
+	font-size:1em;
+	line-height:20px;
+	margin:0;
+	}
+h6 {
+	font-family:'MuseoSans500Italic', Arial, sans-serif;
+	font-size:1em;
+	line-height:20px;
+	color:#88a919;
+	}
+.bordered {
+	background:url(../images/hr-double.gif) 0 100% repeat-x;
+	padding-bottom:.8em;
+	margin-bottom:1.7em;
+	}
+
+/* Image Holder */
+.img-holder.img-holder-respons {
+	
+	}
+	.img-holder.img-holder-respons img {
+		
+		}
+		
+
+.tipsy-arrow-color6 { 
+	position: absolute; 
+	z-index: 100001;
+	left: 50%;
+	margin-left: -7px;
+	bottom: 0;
+	width: 14px; 
+	height: 14px; 
+	-webkit-box-shadow: 1px 1px 0 0 #dad89b;
+	-moz-box-shadow: 1px 1px 0 0 #dad89b;
+	box-shadow: 1px 1px 0 0 #dad89b;
+	background: #fcfbdf; 
+	-webkit-transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
+	-o-transform:rotate(45deg);
+	transform:rotate(45deg); 
+}
+.ie8 .tipsy-arrow-color6 {
+	width: 14px;
+	height: 9px;
+	background: url(../images/tooltip6-arrow.png) 0 0 no-repeat;
+	bottom: -3px;
+}	
+	
+
+/* Popup
+---------------------------------------- */
+.reveal-modal {
+	background: #f7f7f7;
+	left: 50%;
+	margin-left: -285px;
+	position: absolute;
+	top: 170px;
+	visibility: hidden;
+	width: 570px;
+	z-index: 101;
+	box-shadow:0 0 5px rgba(0, 0, 0, .4);
+	border-radius:6px;
+	}
+
+.reveal-modal .close-reveal-modal {
+	width: 58px;
+	height: 72px;
+	background: url("../images/sprite.png") no-repeat 0 -387px;
+	position: absolute;
+	top: 0;
+	right: 16px;
+	text-indent: -999em;
+	cursor: pointer;
+}
+
+.reveal-modal .close-reveal-modal:hover {
+	background: url("../images/sprite.png") no-repeat -62px -387px;	
+}
+
+.reveal-modal-bg {
+	background: url("../images/overlay.png");
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	display: none;
+}
+
+/* Modal Header */
+.reveal-modal .reveal-modal-header {
+	padding:23px 20px;
+	text-transform: uppercase;
+	color: #323334;
+	font-size: 16px;
+	font-family: 'Oswald', sans-serif;
+	background: url("../images/dotted-window.png") repeat-x 0 100%;
+}
+
+/* Modal Body */
+.reveal-modal .cont {
+	padding: 25px 0;
+	width:350px;
+	margin:0 auto;
+	}
+
+.reveal-modal form input[type="submit"] {
+	width: 138px;
+	height: 48px;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+}
+
+.reveal-modal form input[type="text"] {
+	background: none;
+	border: 1px solid #d8d8d8;
+	width: 220px;
+	float: right;
+	border-radius:3px;
+	box-shadow:none;
+}
+.reveal-modal form input[type="text"]:focus {
+	border-color:#66b9e3;
+	box-shadow:inset 0 0 0 rgba(0, 0, 0, .1), 0 0 3px rgba(102, 185, 227, 1);
+	}
+
+.reveal-modal form p {
+	margin-bottom: 11px;
+}
+
+.reveal-modal form label {
+	float: left;
+	line-height: 27px;
+	color: #888;
+	width: 128px;
+	font-size: 14px;
+	font-weight:normal;
+}
+
+.reveal-modal form .checkboxes {
+	font-size: 12px;
+	font-family:'MuseoSans500Italic', Arial, sans-serif;
+	padding: 0;
+}
+
+.reveal-modal form.signup .checkboxes {
+	padding: 16px 0 12px;
+}
+
+.reveal-modal form.signup em {
+	font-size: 11px;
+}
+
+.reveal-modal form .checkboxes a {
+	color: #bdd236;
+	text-decoration: underline;
+	margin-left: 14px;
+}
+
+.reveal-modal form .checkboxes a:hover {
+	text-decoration: none;
+	color: #bdd236;	
+}
+.reveal-modal em {
+	font-size:12px;
+	color:#aaa;
+	font-family:'MuseoSans500Italic', Arial, sans-serif;
+	font-style:normal;
+	}
+.reveal-modal abbr {
+	color: #fe6666;
+}
+
+/* Signin Form */
+.reveal-modal form.signin label {
+	width: 77px;
+	padding-left: 25px;
+	font-size: 14px;
+	font-weight:normal;
+}
+
+.reveal-modal form.signin input[type="text"] {
+	margin-right: 27px;
+}
+
+.reveal-modal form p.without-label {
+	padding-left: 103px;
+}
+
+.reveal-modal form.signup p.without-label {
+	padding-left: 104px;
+}
+
+.reveal-modal form.signin {
+	margin-bottom: 50px;
+}
+
+.reveal-modal form.signin input[type="submit"] {
+	background: url("../images/sprite.png") no-repeat -2px -4px;
+}
+
+.reveal-modal form.signin input[type="submit"]:hover {
+	background: url("../images/sprite.png") no-repeat -2px -55px;	
+}
+
+.reveal-modal form.signup {
+	padding: 19px 0 28px;
+}
+
+.reveal-modal form.signup input[type="submit"] {
+	background: url("../images/sprite.png") no-repeat -2px -111px;
+}
+
+.reveal-modal form.signup input[type="submit"]:hover {
+	background: url("../images/sprite.png") no-repeat -2px -162px;	
+}
+
+.reveal-modal .captcha {
+	float: right;
+	width: 221px;
+	height: 88px;
+	padding-top: 8px;
+}
+
+.reveal-modal .indication {
+	background: url("../images/indication.jpg") no-repeat 50% 100%;
+	padding: 0 0 15px;
+	text-align: center;
+	color: #115b87;
+	margin-bottom: 18px;
+	text-transform: lowercase;
+	font-family:'MuseoSans500Italic', Arial, sans-serif;
+	font-size:14px;
+}
+
+ul.socials-login {
+	list-style: none;
+	margin: 0;
+}
+ul.socials-login li {
+	margin-top: 8px;
+	text-align: center;
+	padding:0;
+	background:none;
+}
+
+ul.socials-login li:first-child {
+	margin-top: 0;
+}
+
+ul.socials-login li a {
+	display: inline-block;
+	width: 219px;
+	height: 37px;
+}
+
+ul.socials-login li a.fb {
+	background: url("../images/sprite.png") no-repeat 0 -298px;
+}
+
+ul.socials-login li a.fb:hover {
+	background: url("../images/sprite.png") no-repeat 0 -337px;	
+}
+
+ul.socials-login li a.tw {
+	background: url("../images/sprite.png") no-repeat 0 -216px;	
+}
+
+ul.socials-login li a.tw:hover {
+	background: url("../images/sprite.png") no-repeat 0 -255px;	
+}
+
+.niceCheck {
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	cursor: pointer;
+	background: url("../images/checkbox.png") no-repeat;
+	margin-right: 5px;
+}
+.niceCheck input {
+	display: none;
+}
+/* END POPUP */
+
+
+/* Unnecessary styles for demo */
+.demo-pills .pill {
+	margin-bottom:32px;
+	}
+.demo-list-styles ul {
+	margin-bottom:0;
+	}

@@ -1,0 +1,2 @@
+http://aaranju.in/recharge/api.php?username=Z2djYXNoQGdtY&password=WlsLmNvbQ==&response=json&optr=RB&number=9442461549&amount=100&uid=30
+{"response":{"status":"SUCCESS","transid":"604","uid":"30","txnid":"604"}}

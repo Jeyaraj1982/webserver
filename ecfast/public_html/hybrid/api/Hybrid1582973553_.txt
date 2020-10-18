@@ -1,0 +1,2 @@
+http://aaranju.in/recharge/api.php?apiusername=Z2djYXNoQGdtY&apipassword=WlsLmNvbQ==&response=json&optr=RA&number=9944872965&amount=10&uid=12
+{"response":{"status":"FAILURE","error":"Invalid login"}}
