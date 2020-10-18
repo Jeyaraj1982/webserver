@@ -1,0 +1,106 @@
+<?php
+    $package=$mysql->select("SELECT * FROM `_tbl_Settings_Packages` where PackageID='".$_GET['Package']."'");                           
+if (isset($_GET['filter']) && $_GET['filter']=="all") {
+    $records=$mysql->select("
+    
+    select *,_tbl_Settings_Packages.FileName from (SELECT * FROM _tblEpins where PackageID='".$_GET['Package']."' and  CreatedByID='".$data[0]['MemberID']."' or OwnToID='".$data[0]['MemberID']."') as t1
+    left join  _tbl_Settings_Packages
+    on _tbl_Settings_Packages.PackageID=t1.PackageID
+     
+    
+     ");
+    $title = "All Epins";
+    $error = "No EPins found";
+} elseif (isset($_GET['filter']) && $_GET['filter']=="used") {
+    $records=$mysql->select("
+    select *,_tbl_Settings_Packages.FileName from (SELECT * FROM _tblEpins where PackageID='".$_GET['Package']."' and  (CreatedByID='".$data[0]['MemberID']."' or OwnToID='".$data[0]['MemberID']."' ) and `UsedForID`!='0' ) as t1 
+    
+    left join  _tbl_Settings_Packages
+    on _tbl_Settings_Packages.PackageID=t1.PackageID
+    
+    ");
+    $title = "Used Epins";
+    $error = "No Unused EPins found";
+}  elseif (isset($_GET['filter']) && $_GET['filter']=="unused") {
+    $records=$mysql->select("
+    
+    select *,_tbl_Settings_Packages.FileName from (SELECT * FROM _tblEpins where PackageID='".$_GET['Package']."' and  (CreatedByID='".$data[0]['MemberID']."' or OwnToID='".$data[0]['MemberID']."') and `UsedForID`='0' ) as t1 
+    left join  _tbl_Settings_Packages
+    on _tbl_Settings_Packages.PackageID=t1.PackageID
+    
+    ");
+    $title = "Unused E-Pins";
+    $error = "No Used EPins found";
+} else {
+    $records=$mysql->select("
+    
+    select *,_tbl_Settings_Packages.FileName from (SELECT * FROM _tblEpins where PackageID='".$_GET['Package']."' and  CreatedByID='".$data[0]['MemberID']."' or OwnToID='".$data[0]['MemberID']."' ) as t1 
+    
+    left join  _tbl_Settings_Packages
+    on _tbl_Settings_Packages.PackageID=t1.PackageID
+    
+    ");
+    
+    $title = "All Epins";
+    $error = "No EPins found";
+}                                                                                                         
+?>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Epin Summary</h4>
+                    <span><?php echo $title."   - ".$package[0]['PackageName'];?></span>
+                    <div class="row" style="margin-bottom:10px;">
+        <div class="col-md-12" style="text-align: right;">
+            <a href="dashboard.php?action=Members/ViewMember&cp=EPins/List&MCode=<?php echo $_GET['MCode'];?>&Package=<?php echo $_GET['Package'];?>&filter=all"><small>All</small></a>&nbsp;|&nbsp; 
+            <a href="dashboard.php?action=Members/ViewMember&cp=EPins/List&MCode=<?php echo $_GET['MCode'];?>&Package=<?php echo $_GET['Package'];?>&filter=unused" ><small>Unused</small></a>&nbsp;|&nbsp;
+            <a href="dashboard.php?action=Members/ViewMember&cp=EPins/List&MCode=<?php echo $_GET['MCode'];?>&Package=<?php echo $_GET['Package'];?>&filter=used"><small>Used</small></a>
+        </div>
+    </div>
+                </div>
+                
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table id="basic-datatables" class="display table table-striped table-hover" >
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th><label>Created date</label></th>
+                                    <th><label>E-Pin</label></th>
+                                    <th><label>Pin Password</label></th>
+                                    <th><label>Used Member</label></th>
+                                    <th><label>Used Member Name</label></th>
+                                    <th><label>Used On</label></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php if (sizeof($records)==0) { ?>
+                                <tr>
+                                    <td colspan="7" style="text-align:center;"><?php echo $error;?></td>
+                                </tr>
+                                <?php } ?>
+                                <?php foreach ($records as $Transaction){ ?>
+                                <tr>
+                                    <td><img src="assets/img/<?php echo $Transaction['FileName'];?>" style="width: 48px;"></td>
+                                    <td><?php echo $Transaction['CreatedOn'];?></td>
+                                    <td><?php echo $Transaction['EPIN'];?></td>
+                                    <td><?php echo $Transaction['PINPassword'];?></td>
+                                    <td><?php echo $Transaction['UserForCode'];?></td>
+                                    <td><?php echo $Transaction['UsedForName'];?></td>
+                                    <td><?php echo $Transaction['UsedOn'];?></td>
+                                </tr>
+                                <?php }?> 
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+<script>
+    $(document).ready(function() {
+        $('#basic-datatables').DataTable({});
+    });
+</script>
