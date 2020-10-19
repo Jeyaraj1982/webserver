@@ -1,0 +1,27 @@
+{
+    "name": "gift/basic",
+    "description": "Core PHP without database",
+    "require": {
+        "phpmailer/phpmailer": "*",
+        "symfony/http-foundation": "*",
+        "pedroborges/meta-tags": "*",
+        "matthiasmullie/minify": "*",
+        "symfony/dotenv": "*"
+    },
+    "config": {
+        "platform": {
+            "php": "5.6.33"
+        },
+        "preferred-install": {
+            "*": "dist"
+        },
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/",
+            "System\\": "system",
+            "Assets\\": "assets"
+        }
+    }
+}

@@ -1,0 +1,23 @@
+[2020-06-13 14:37:20]	select * from _tbl_Members where MemberID=''
+[2020-06-13 17:08:14]	select (sum(Credits)-sum(Debits)) as bal from  `_tbl_wallet_epin` where `MemberID`=''
+[2020-06-13 17:08:14]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID=''
+[2020-06-13 17:08:14]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_utility where MemberID=''
+[2020-06-13 17:08:14]	select * from _tbl_daily where MemberCode=''
+[2020-06-13 17:08:14]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`=''
+[2020-06-13 17:08:14]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`=''
+[2020-06-13 17:08:14]	SELECT *
+                        FROM _tbl_member_withdraw_request
+                        LEFT  JOIN _tbl_Members  
+                        ON _tbl_member_withdraw_request.MemberID=_tbl_Members.MemberID where _tbl_member_withdraw_request.MemberID=''
+[2020-06-13 17:08:14]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ggcash_database._tbl_member_withdraw_request' doesn't exist
+[2020-06-13 17:08:14]	select count(RequestID) as count FROM _tbl_member_withdraw_request where MemberID=''
+[2020-06-13 17:08:14]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ggcash_database._tbl_member_withdraw_request' doesn't exist
+[2020-06-13 17:08:14]	SELECT *
+                                                                            FROM _tbl_wallet_request
+                                                                            LEFT  JOIN _tbl_Members  
+                                                                            ON _tbl_wallet_request.MemberID=_tbl_Members.MemberID where _tbl_wallet_request.MemberID='' order by _tbl_wallet_request.RequestID DESC LIMIT 0,5
+[2020-06-13 17:08:14]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ggcash_database._tbl_wallet_request' doesn't exist
+[2020-06-13 17:08:14]	select count(RequestID) as count FROM _tbl_wallet_request where MemberID=''
+[2020-06-13 17:08:14]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ggcash_database._tbl_wallet_request' doesn't exist
+[2020-06-13 17:08:14]	SELECT * FROM _tbl_members_login_logs where MemberID='' order by LoginID DESC LIMIT 0,5
+[2020-06-13 17:08:14]	select count(LoginID) as count FROM _tbl_members_login_logs where MemberID=''

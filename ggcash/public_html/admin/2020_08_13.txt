@@ -1,0 +1,159 @@
+[2020-08-13 07:25:35]	select count(MemberID) as count FROM _tbl_Members
+[2020-08-13 07:25:35]	select count(RequestID) as count FROM _tbl_wallet_request_epin where IsApproved='0' and IsRejected='0'
+[2020-08-13 07:25:35]	select count(RequestID) as count FROM _tbl_wallet_request_utility where IsApproved='0' and IsRejected='0'
+[2020-08-13 07:25:35]	select count(OrderID) as count FROM PaymentStatus where OrderDeliveredon=null
+[2020-08-13 07:25:35]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ggcash_database.PaymentStatus' doesn't exist
+[2020-08-13 07:25:35]	select * from _VoucherRegistration where IsActivated='0' and md5(concat('JJ',CouponRegID))='3ce63435caa2833acb2daf010151bf2e'
+[2020-08-13 07:25:35]	select * from _VoucherRegistration where md5(concat('JJ',CouponRegID))='3ce63435caa2833acb2daf010151bf2e'
+[2020-08-13 07:27:00]	select count(MemberID) as count FROM _tbl_Members
+[2020-08-13 07:27:00]	select count(RequestID) as count FROM _tbl_wallet_request_epin where IsApproved='0' and IsRejected='0'
+[2020-08-13 07:27:00]	select count(RequestID) as count FROM _tbl_wallet_request_utility where IsApproved='0' and IsRejected='0'
+[2020-08-13 07:27:00]	select count(OrderID) as count FROM PaymentStatus where OrderDeliveredon=null
+[2020-08-13 07:27:00]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ggcash_database.PaymentStatus' doesn't exist
+[2020-08-13 07:27:00]	select * from _VoucherRegistration where IsActivated='0' and md5(concat('JJ',CouponRegID))='3ce63435caa2833acb2daf010151bf2e'
+[2020-08-13 07:27:00]	select * from _VoucherRegistration where md5(concat('JJ',CouponRegID))='3ce63435caa2833acb2daf010151bf2e'
+[2020-08-13 07:27:01]	select count(MemberID) as count FROM _tbl_Members
+[2020-08-13 07:27:01]	select count(RequestID) as count FROM _tbl_wallet_request_epin where IsApproved='0' and IsRejected='0'
+[2020-08-13 07:27:01]	select count(RequestID) as count FROM _tbl_wallet_request_utility where IsApproved='0' and IsRejected='0'
+[2020-08-13 07:27:01]	select count(OrderID) as count FROM PaymentStatus where OrderDeliveredon=null
+[2020-08-13 07:27:01]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ggcash_database.PaymentStatus' doesn't exist
+[2020-08-13 07:27:01]	select * from _VoucherRegistration where IsActivated='1'
+[2020-08-13 07:27:03]	select count(MemberID) as count FROM _tbl_Members
+[2020-08-13 07:27:03]	select count(RequestID) as count FROM _tbl_wallet_request_epin where IsApproved='0' and IsRejected='0'
+[2020-08-13 07:27:03]	select count(RequestID) as count FROM _tbl_wallet_request_utility where IsApproved='0' and IsRejected='0'
+[2020-08-13 07:27:03]	select count(OrderID) as count FROM PaymentStatus where OrderDeliveredon=null
+[2020-08-13 07:27:03]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ggcash_database.PaymentStatus' doesn't exist
+[2020-08-13 07:27:03]	SELECT SUM(Credits)-SUM(Debits) as bal FROM _tbl_wallet_epin
+[2020-08-13 07:27:03]	SELECT SUM(Credits)-SUM(Debits) as bal FROM _tbl_wallet_earnings
+[2020-08-13 07:27:03]	SELECT SUM(Credits)-SUM(Debits) as bal FROM _tbl_wallet_utility
+[2020-08-13 07:27:03]	select * from `_tbl_Settings_Params` where ParamCode in ('MobileSMSBalanceAPI')
+[2020-08-13 07:27:03]	select * from `_tbl_operators` 
+[2020-08-13 16:24:31]	select count(MemberID) as count FROM _tbl_Members
+[2020-08-13 16:24:31]	select count(RequestID) as count FROM _tbl_wallet_request_epin where IsApproved='0' and IsRejected='0'
+[2020-08-13 16:24:31]	select count(RequestID) as count FROM _tbl_wallet_request_utility where IsApproved='0' and IsRejected='0'
+[2020-08-13 16:24:31]	select count(OrderID) as count FROM PaymentStatus where OrderDeliveredon=null
+[2020-08-13 16:24:31]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ggcash_database.PaymentStatus' doesn't exist
+[2020-08-13 16:24:31]	SELECT SUM(Credits)-SUM(Debits) as bal FROM _tbl_wallet_epin
+[2020-08-13 16:24:31]	SELECT SUM(Credits)-SUM(Debits) as bal FROM _tbl_wallet_earnings
+[2020-08-13 16:24:31]	SELECT SUM(Credits)-SUM(Debits) as bal FROM _tbl_wallet_utility
+[2020-08-13 16:24:31]	select * from `_tbl_Settings_Params` where ParamCode in ('MobileSMSBalanceAPI')
+[2020-08-13 16:24:31]	select * from `_tbl_operators` 
+[2020-08-13 16:24:33]	select * from _tbl_daily where MemberLevel='1'
+[2020-08-13 16:24:33]	select * from _tbl_daily where MemberLevel='2'
+[2020-08-13 16:24:33]	select * from _tbl_daily where MemberLevel='3'
+[2020-08-13 16:24:33]	select * from _tbl_daily where MemberLevel='4'
+[2020-08-13 16:24:33]	select * from _tbl_daily where MemberLevel='5'
+[2020-08-13 16:24:33]	select * from _tbl_daily where MemberLevel='6'
+[2020-08-13 16:24:33]	select * from _VoucherRegistration where IsActivated='0'
+[2020-08-13 16:24:33]	select * from _VoucherRegistration where IsActivated='1'
+[2020-08-13 16:24:33]	select * from _VoucherRegistration where IsActivated='2'
+[2020-08-13 16:24:33]	SELECT * FROM _BonusCardRegistration WHERE DATE(DueDate)>=DATE('2020-08-13')
+[2020-08-13 16:24:33]	SELECT * FROM _BonusCardRegistration WHERE DATE(DueDate)<DATE('2020-08-13')
+[2020-08-13 16:24:33]	select * from _tbl_Members  order by MemberID DESC LIMIT 0,5
+[2020-08-13 16:24:33]	select (sum(Credits)-sum(Debits)) as bal from  `_tbl_wallet_epin` where `MemberID`='277'
+[2020-08-13 16:24:33]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID='277'
+[2020-08-13 16:24:33]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_utility where MemberID='277'
+[2020-08-13 16:24:33]	select (sum(Credits)-sum(Debits)) as bal from  `_tbl_wallet_epin` where `MemberID`='276'
+[2020-08-13 16:24:33]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID='276'
+[2020-08-13 16:24:33]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_utility where MemberID='276'
+[2020-08-13 16:24:33]	select (sum(Credits)-sum(Debits)) as bal from  `_tbl_wallet_epin` where `MemberID`='275'
+[2020-08-13 16:24:33]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID='275'
+[2020-08-13 16:24:33]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_utility where MemberID='275'
+[2020-08-13 16:24:33]	select (sum(Credits)-sum(Debits)) as bal from  `_tbl_wallet_epin` where `MemberID`='274'
+[2020-08-13 16:24:33]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID='274'
+[2020-08-13 16:24:33]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_utility where MemberID='274'
+[2020-08-13 16:24:33]	select (sum(Credits)-sum(Debits)) as bal from  `_tbl_wallet_epin` where `MemberID`='273'
+[2020-08-13 16:24:33]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID='273'
+[2020-08-13 16:24:33]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_utility where MemberID='273'
+[2020-08-13 16:24:33]	select count(MemberID) as count FROM _tbl_Members
+[2020-08-13 16:24:33]	SELECT *
+                                                                            FROM _tbl_wallet_request_epin
+                                                                            LEFT  JOIN _tbl_Members  
+                                                                            ON _tbl_wallet_request_epin.MemberID=_tbl_Members.MemberID
+[2020-08-13 16:24:36]	select count(MemberID) as count FROM _tbl_Members
+[2020-08-13 16:24:36]	select count(RequestID) as count FROM _tbl_wallet_request_epin where IsApproved='0' and IsRejected='0'
+[2020-08-13 16:24:36]	select count(RequestID) as count FROM _tbl_wallet_request_utility where IsApproved='0' and IsRejected='0'
+[2020-08-13 16:24:36]	select count(OrderID) as count FROM PaymentStatus where OrderDeliveredon=null
+[2020-08-13 16:24:36]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ggcash_database.PaymentStatus' doesn't exist
+[2020-08-13 16:24:37]	select * from _VoucherRegistration where IsActivated='0'
+[2020-08-13 16:24:41]	select count(MemberID) as count FROM _tbl_Members
+[2020-08-13 16:24:41]	select count(RequestID) as count FROM _tbl_wallet_request_epin where IsApproved='0' and IsRejected='0'
+[2020-08-13 16:24:41]	select count(RequestID) as count FROM _tbl_wallet_request_utility where IsApproved='0' and IsRejected='0'
+[2020-08-13 16:24:41]	select count(OrderID) as count FROM PaymentStatus where OrderDeliveredon=null
+[2020-08-13 16:24:41]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ggcash_database.PaymentStatus' doesn't exist
+[2020-08-13 16:24:41]	select * from _VoucherRegistration where IsActivated='0' and md5(concat('JJ',CouponRegID))='c1e3a9bcbc2bb9b2e8fbc3caf2433b21'
+[2020-08-13 16:24:41]	select * from _VoucherRegistration where md5(concat('JJ',CouponRegID))='c1e3a9bcbc2bb9b2e8fbc3caf2433b21'
+[2020-08-13 16:24:59]	select count(MemberID) as count FROM _tbl_Members
+[2020-08-13 16:24:59]	select count(RequestID) as count FROM _tbl_wallet_request_epin where IsApproved='0' and IsRejected='0'
+[2020-08-13 16:24:59]	select count(RequestID) as count FROM _tbl_wallet_request_utility where IsApproved='0' and IsRejected='0'
+[2020-08-13 16:24:59]	select count(OrderID) as count FROM PaymentStatus where OrderDeliveredon=null
+[2020-08-13 16:24:59]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ggcash_database.PaymentStatus' doesn't exist
+[2020-08-13 16:24:59]	select * from _VoucherRegistration where IsActivated='0'
+[2020-08-13 16:25:04]	select count(MemberID) as count FROM _tbl_Members
+[2020-08-13 16:25:04]	select count(RequestID) as count FROM _tbl_wallet_request_epin where IsApproved='0' and IsRejected='0'
+[2020-08-13 16:25:04]	select count(RequestID) as count FROM _tbl_wallet_request_utility where IsApproved='0' and IsRejected='0'
+[2020-08-13 16:25:04]	select count(OrderID) as count FROM PaymentStatus where OrderDeliveredon=null
+[2020-08-13 16:25:04]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ggcash_database.PaymentStatus' doesn't exist
+[2020-08-13 16:25:04]	select * from _VoucherRegistration where IsActivated='0' and md5(concat('JJ',CouponRegID))='129e77d7f51ad518045f5d238af15f52'
+[2020-08-13 16:25:04]	select * from _VoucherRegistration where md5(concat('JJ',CouponRegID))='129e77d7f51ad518045f5d238af15f52'
+[2020-08-13 16:25:57]	select count(MemberID) as count FROM _tbl_Members
+[2020-08-13 16:25:57]	select count(RequestID) as count FROM _tbl_wallet_request_epin where IsApproved='0' and IsRejected='0'
+[2020-08-13 16:25:57]	select count(RequestID) as count FROM _tbl_wallet_request_utility where IsApproved='0' and IsRejected='0'
+[2020-08-13 16:25:57]	select count(OrderID) as count FROM PaymentStatus where OrderDeliveredon=null
+[2020-08-13 16:25:57]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ggcash_database.PaymentStatus' doesn't exist
+[2020-08-13 16:25:57]	SELECT SUM(Credits)-SUM(Debits) as bal FROM _tbl_wallet_epin
+[2020-08-13 16:25:57]	SELECT SUM(Credits)-SUM(Debits) as bal FROM _tbl_wallet_earnings
+[2020-08-13 16:25:57]	SELECT SUM(Credits)-SUM(Debits) as bal FROM _tbl_wallet_utility
+[2020-08-13 16:25:57]	select * from `_tbl_Settings_Params` where ParamCode in ('MobileSMSBalanceAPI')
+[2020-08-13 16:25:57]	select * from `_tbl_operators` 
+[2020-08-13 16:25:59]	select * from _tbl_daily where MemberLevel='1'
+[2020-08-13 16:25:59]	select * from _tbl_daily where MemberLevel='2'
+[2020-08-13 16:25:59]	select * from _tbl_daily where MemberLevel='3'
+[2020-08-13 16:25:59]	select * from _tbl_daily where MemberLevel='4'
+[2020-08-13 16:25:59]	select * from _tbl_daily where MemberLevel='5'
+[2020-08-13 16:25:59]	select * from _tbl_daily where MemberLevel='6'
+[2020-08-13 16:25:59]	select * from _VoucherRegistration where IsActivated='0'
+[2020-08-13 16:25:59]	select * from _VoucherRegistration where IsActivated='1'
+[2020-08-13 16:25:59]	select * from _VoucherRegistration where IsActivated='2'
+[2020-08-13 16:25:59]	SELECT * FROM _BonusCardRegistration WHERE DATE(DueDate)>=DATE('2020-08-13')
+[2020-08-13 16:25:59]	SELECT * FROM _BonusCardRegistration WHERE DATE(DueDate)<DATE('2020-08-13')
+[2020-08-13 16:25:59]	select * from _tbl_Members  order by MemberID DESC LIMIT 0,5
+[2020-08-13 16:25:59]	select (sum(Credits)-sum(Debits)) as bal from  `_tbl_wallet_epin` where `MemberID`='277'
+[2020-08-13 16:25:59]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID='277'
+[2020-08-13 16:25:59]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_utility where MemberID='277'
+[2020-08-13 16:25:59]	select (sum(Credits)-sum(Debits)) as bal from  `_tbl_wallet_epin` where `MemberID`='276'
+[2020-08-13 16:25:59]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID='276'
+[2020-08-13 16:25:59]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_utility where MemberID='276'
+[2020-08-13 16:25:59]	select (sum(Credits)-sum(Debits)) as bal from  `_tbl_wallet_epin` where `MemberID`='275'
+[2020-08-13 16:25:59]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID='275'
+[2020-08-13 16:25:59]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_utility where MemberID='275'
+[2020-08-13 16:25:59]	select (sum(Credits)-sum(Debits)) as bal from  `_tbl_wallet_epin` where `MemberID`='274'
+[2020-08-13 16:25:59]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID='274'
+[2020-08-13 16:25:59]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_utility where MemberID='274'
+[2020-08-13 16:25:59]	select (sum(Credits)-sum(Debits)) as bal from  `_tbl_wallet_epin` where `MemberID`='273'
+[2020-08-13 16:25:59]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID='273'
+[2020-08-13 16:25:59]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_utility where MemberID='273'
+[2020-08-13 16:25:59]	select count(MemberID) as count FROM _tbl_Members
+[2020-08-13 16:25:59]	SELECT *
+                                                                            FROM _tbl_wallet_request_epin
+                                                                            LEFT  JOIN _tbl_Members  
+                                                                            ON _tbl_wallet_request_epin.MemberID=_tbl_Members.MemberID
+[2020-08-13 16:26:02]	select count(MemberID) as count FROM _tbl_Members
+[2020-08-13 16:26:02]	select count(RequestID) as count FROM _tbl_wallet_request_epin where IsApproved='0' and IsRejected='0'
+[2020-08-13 16:26:02]	select count(RequestID) as count FROM _tbl_wallet_request_utility where IsApproved='0' and IsRejected='0'
+[2020-08-13 16:26:02]	select count(OrderID) as count FROM PaymentStatus where OrderDeliveredon=null
+[2020-08-13 16:26:02]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ggcash_database.PaymentStatus' doesn't exist
+[2020-08-13 16:26:02]	select * from _VoucherRegistration where IsActivated='1'
+[2020-08-13 16:26:15]	select count(MemberID) as count FROM _tbl_Members
+[2020-08-13 16:26:15]	select count(RequestID) as count FROM _tbl_wallet_request_epin where IsApproved='0' and IsRejected='0'
+[2020-08-13 16:26:15]	select count(RequestID) as count FROM _tbl_wallet_request_utility where IsApproved='0' and IsRejected='0'
+[2020-08-13 16:26:15]	select count(OrderID) as count FROM PaymentStatus where OrderDeliveredon=null
+[2020-08-13 16:26:15]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ggcash_database.PaymentStatus' doesn't exist
+[2020-08-13 16:26:15]	select * from _VoucherRegistration where IsActivated='0' and md5(concat('JJ',CouponRegID))='3ce63435caa2833acb2daf010151bf2e'
+[2020-08-13 16:26:15]	select * from _VoucherRegistration where md5(concat('JJ',CouponRegID))='3ce63435caa2833acb2daf010151bf2e'
+[2020-08-13 16:32:39]	select count(MemberID) as count FROM _tbl_Members
+[2020-08-13 16:32:39]	select count(RequestID) as count FROM _tbl_wallet_request_epin where IsApproved='0' and IsRejected='0'
+[2020-08-13 16:32:39]	select count(RequestID) as count FROM _tbl_wallet_request_utility where IsApproved='0' and IsRejected='0'
+[2020-08-13 16:32:39]	select count(OrderID) as count FROM PaymentStatus where OrderDeliveredon=null
+[2020-08-13 16:32:39]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ggcash_database.PaymentStatus' doesn't exist
+[2020-08-13 16:32:39]	select * from _VoucherRegistration where IsActivated='1'
