@@ -1,0 +1,212 @@
+.demo{ background: #EAECED; }
+.modal-box{ font-family: 'Roboto', sans-serif; }
+.modal-box .show-modal{
+    color: #fff;
+    background: #ff790a;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 13px 20px;
+    margin: 30px auto;
+    border: none;
+    border-radius: 50px;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.modal-box .show-modal:hover,
+.modal-box .show-modal:focus{
+    color: #fff;
+    text-shadow: 0 0 5px #000;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
+}
+.modal-box .show-modal:before,
+.modal-box .show-modal:after{
+    content: "";
+    background: #778ca3;
+    width: 50%;
+    height: 100%;
+    opacity: 0;
+    transform: scaleX(0);
+    position: absolute;
+    top:0;
+    left: 0;
+    transition: 0.1s linear;
+    z-index: -1;
+}
+.modal-box .show-modal:after{
+    background: #4b6584;
+    width: 52%;
+    transform: scaleX(1) scaleY(0);
+    left: auto;
+    right: -2px;
+}
+.modal-box .show-modal:hover:before,
+.modal-box .show-modal:hover:after{
+    opacity: 1;
+    transform: scaleX(1) scaleY(1);
+}
+.modal-backdrop.in{ opacity: 0; }
+.modal-box .modal{ top: 70px !important; }
+.modal-box .modal-dialog{
+    width: 650px;
+    margin: 30px auto 10px;
+}
+.modal-box .modal-dialog .modal-content{
+    background: #fff;
+    text-align: left;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 5, 85, .2);
+}
+.modal-box .modal-dialog .modal-content .close{
+    color: #222;
+    font-size: 28px;
+    text-shadow: none;
+    line-height: 15px;
+    opacity: 1;
+    position: absolute;
+    left: auto;
+    right: 10px;
+    top: 10px;
+    z-index: 1;
+    transition: all 0.3s;
+}
+.modal-box .modal-dialog .modal-content .close:hover{ color: #888; }
+.modal-box .modal-dialog .modal-content .modal-body{ padding: 0 0 !important; }
+.modal-box .modal-dialog .modal-content .modal-body:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.modal-box .modal-dialog .modal-content .modal-body .modal-left-content{
+    color: #fff!important;
+    background-color: #d60d45;
+    background-image: repeating-linear-gradient(-45deg, transparent, transparent 20px, rgba(255,255,255,0.1) 20px, rgba(255,255,255,0.1) 40px );
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    width: 40%;
+    min-height: 450px;
+    padding: 80px 0;
+    display: inline-block;
+    float: left;
+}
+
+.modal-left-content ul li {
+    color: #fff !important;
+    position: relative;
+}
+.modal-box .modal-dialog .modal-content .modal-body .modal-left-content ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.modal-box .modal-dialog .modal-content .modal-body .modal-left-content ul li{
+    font-size: 40px;
+    display: inline-block;
+}
+.modal-box .modal-dialog .modal-content .modal-body .modal-left-content ul li:first-child,
+.modal-box .modal-dialog .modal-content .modal-body .modal-left-content ul li:last-child{
+    font-size: 20px;
+}
+.modal-box .modal-dialog .modal-content .modal-body .modal-left-content .title{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 35px;
+	color:#fff;
+}
+.modal-box .modal-dialog .modal-content .modal-body .modal-left-content .title span{
+    font-size: 40px;
+    font-weight: 900;
+}
+.modal-box .modal-dialog .modal-content .modal-body .modal-main-content{
+    width: 60%;
+    padding: 28px 20px;
+    display: inline-block;
+}
+.modal-box .modal-dialog .modal-content .modal-body .sub-title{
+    color: #ff790a;
+    font-size: 50px;
+    font-weight: 900;
+    text-transform: capitalize;
+    margin: 0 0 5px 0;
+}
+.modal-box .modal-dialog .modal-content .modal-body .description{
+    color: #A1A1A1;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 0 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.modal-box .modal-dialog .modal-content .modal-body .form-group{ margin: 0 0 15px; }
+.modal-box .modal-dialog .modal-content .modal-body .form-control{
+    color: #000;
+    background: #F2F2F2;
+    font-size: 16px;
+    letter-spacing: 1px;
+    height: 40px;
+    padding: 2px 15px 2px 15px;
+    margin: 0 auto;
+    box-shadow: none;
+    border: none;
+    display: inline-block;
+    transition: all 0.3s;
+}
+.modal-box .modal-dialog .modal-content .modal-body .form-control::placeholder{
+    color: #909090;
+    font-size: 14px;
+}
+.modal-box .modal-dialog .modal-content .modal-body .form-control:focus{
+    box-shadow: none;
+    border: none;
+}
+.modal-box .modal-dialog .modal-content .modal-body .subscribe{
+    color: #fff;
+    background-color: #ff790a;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 6px 30px;
+    margin: 0 auto;
+    border:0 solid transparent;
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+.modal-box .modal-dialog .modal-content .modal-body .subscribe:hover{
+    text-shadow: 3px 3px 0 #888;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4) inset;
+}
+@media only screen and (max-width: 576px){
+    .modal-dialog{ width: 98% !important; }
+    .modal-box .modal-dialog .modal-content .modal-body .modal-left-content,
+    .modal-box .modal-dialog .modal-content .modal-body .modal-main-content{
+        width: 100%;
+        display: block;
+        float: none;
+        padding: 40px 20px;
+        min-height: auto;
+    }
+    .modal-box .modal-dialog .modal-content .modal-body .modal-left-content .title span{
+        font-size: 30px;
+    }
+}
+
+ 
+ /****** Style Star Rating Widget *****/
+.rating{border:none;float:left;}
+.rating > input{display:none;}
+.rating > label:before{margin:5px;font-size:1.25em;font-family:'Font Awesome 5 Free';display:inline-block;content:"\f005";}
+.rating > .half:before{content:"\f089";position:absolute;}
+.rating > label{color:#000;float:right;}
+.rating > input:checked ~ label,
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label{color:#0aa049;}
+.rating > input:checked + label:hover,
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label,
+.rating > input:checked ~ label:hover ~ label{color:#0aa049;}
+ 

@@ -1,0 +1,61 @@
+[2020-08-31 20:40:41]	select * from _tbl_admin where UserName='admin@admin.com' and Password='123456789' 
+[2020-08-31 20:41:17]	select * from _tbl_tour
+[2020-08-31 20:41:17]	SELECT COUNT(SubTourTypeID) AS cnt FROM _tbl_sub_tour where TourTypeID='1'
+[2020-08-31 20:41:17]	SELECT COUNT(SubTourTypeID) AS cnt FROM _tbl_sub_tour where TourTypeID='2'
+[2020-08-31 20:41:17]	SELECT COUNT(SubTourTypeID) AS cnt FROM _tbl_sub_tour where TourTypeID='3'
+[2020-08-31 20:41:25]	select * from _tbl_sub_tour order by TourTypeID desc
+[2020-08-31 20:41:25]	select * from _tbl_tour where TourTypeID='3'
+[2020-08-31 20:41:25]	select * from _tbl_tour where TourTypeID='3'
+[2020-08-31 20:41:25]	select * from _tbl_tour where TourTypeID='3'
+[2020-08-31 20:41:25]	select * from _tbl_tour where TourTypeID='3'
+[2020-08-31 20:41:25]	select * from _tbl_tour where TourTypeID='2'
+[2020-08-31 20:41:25]	select * from _tbl_tour where TourTypeID='2'
+[2020-08-31 20:41:25]	select * from _tbl_tour where TourTypeID='2'
+[2020-08-31 20:41:25]	select * from _tbl_tour where TourTypeID='2'
+[2020-08-31 20:41:25]	select * from _tbl_tour where TourTypeID='1'
+[2020-08-31 20:41:25]	select * from _tbl_tour where TourTypeID='1'
+[2020-08-31 20:41:25]	select * from _tbl_tour where TourTypeID='1'
+[2020-08-31 20:41:25]	select * from _tbl_tour where TourTypeID='1'
+[2020-08-31 20:41:28]	select * from _tbl_tour
+[2020-08-31 20:41:40]	select * from _tbl_tours_package
+[2020-08-31 20:41:40]	select * from _tbl_tour where TourTypeID='1'
+[2020-08-31 20:41:40]	select * from _tbl_sub_tour where SubTourTypeID='1'
+[2020-08-31 20:41:40]	select * from _tbl_tour where TourTypeID='1'
+[2020-08-31 20:41:40]	select * from _tbl_sub_tour where SubTourTypeID='1'
+[2020-08-31 20:41:40]	select * from _tbl_tour where TourTypeID='1'
+[2020-08-31 20:41:40]	select * from _tbl_sub_tour where SubTourTypeID='1'
+[2020-08-31 20:41:42]	select * from _tbl_tour
+[2020-08-31 20:42:14]	select * from _tbl_tour
+[2020-08-31 20:42:14]	SELECT COUNT(SubTourTypeID) AS cnt FROM _tbl_sub_tour where TourTypeID='1'
+[2020-08-31 20:42:14]	SELECT COUNT(SubTourTypeID) AS cnt FROM _tbl_sub_tour where TourTypeID='2'
+[2020-08-31 20:42:14]	SELECT COUNT(SubTourTypeID) AS cnt FROM _tbl_sub_tour where TourTypeID='3'
+[2020-08-31 20:42:18]	select * from _tbl_tour where md5(TourTypeID)='c4ca4238a0b923820dcc509a6f75849b'
+[2020-08-31 20:42:25]	select * from _tbl_tours_package
+[2020-08-31 20:42:25]	select * from _tbl_tour where TourTypeID='1'
+[2020-08-31 20:42:25]	select * from _tbl_sub_tour where SubTourTypeID='1'
+[2020-08-31 20:42:25]	select * from _tbl_tour where TourTypeID='1'
+[2020-08-31 20:42:25]	select * from _tbl_sub_tour where SubTourTypeID='1'
+[2020-08-31 20:42:25]	select * from _tbl_tour where TourTypeID='1'
+[2020-08-31 20:42:25]	select * from _tbl_sub_tour where SubTourTypeID='1'
+[2020-08-31 20:42:29]	select * from _tbl_tours_package where md5(PackageID)='c4ca4238a0b923820dcc509a6f75849b'
+[2020-08-31 20:42:29]	select * from _tbl_tour where TourTypeID='1'
+[2020-08-31 20:42:29]	select * from _tbl_sub_tour where SubTourTypeID='1'
+[2020-08-31 20:42:29]	select * from _tbl_package_date_cost where PackageID='1'
+[2020-08-31 20:42:29]	select * from _tbl_tour_enquiry where PackageID='1'
+[2020-08-31 20:42:34]	select * from _tbl_tours_package where md5(PackageID)='c4ca4238a0b923820dcc509a6f75849b'
+[2020-08-31 20:42:37]	insert into `_tbl_package_date_cost` (`TourDate`,`PackagePrice`,`OfferPrice`,`SavePrice`,`PackageID`,`IsActive`,`AddedOn`) values ('','','',Null,'1','Yes','2020-08-31 20:42:37')
+[2020-08-31 20:42:37]	SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column 'TourDate' at row 1
+[2020-08-31 20:42:42]	select * from _tbl_tours_package where md5(PackageID)='c4ca4238a0b923820dcc509a6f75849b'
+[2020-08-31 20:42:42]	select * from _tbl_tour where TourTypeID='1'
+[2020-08-31 20:42:42]	select * from _tbl_sub_tour where SubTourTypeID='1'
+[2020-08-31 20:42:42]	select * from _tbl_package_date_cost where PackageID='1'
+[2020-08-31 20:42:42]	select * from _tbl_tour_enquiry where PackageID='1'
+[2020-08-31 20:52:41]	select * from _tbl_tour_enquiry where md5(PackageID)='c4ca4238a0b923820dcc509a6f75849b'
+[2020-08-31 20:52:41]	select * from _tbl_tours_package where md5(PackageID)='c4ca4238a0b923820dcc509a6f75849b'
+[2020-08-31 20:53:49]	insert into `_tbl_package_date_cost` (`TourDate`,`PackagePrice`,`OfferPrice`,`SavePrice`,`PackageID`,`IsActive`,`AddedOn`) values ('','','',Null,'','','2020-08-31 20:53:49')
+[2020-08-31 20:53:49]	SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column 'TourDate' at row 1
+[2020-08-31 20:54:05]	select * from _tbl_tours_package where md5(PackageID)='c4ca4238a0b923820dcc509a6f75849b'
+[2020-08-31 20:54:05]	select * from _tbl_tour where TourTypeID='1'
+[2020-08-31 20:54:05]	select * from _tbl_sub_tour where SubTourTypeID='1'
+[2020-08-31 20:54:05]	select * from _tbl_package_date_cost where PackageID='1'
+[2020-08-31 20:54:05]	select * from _tbl_tour_enquiry where PackageID='1'
