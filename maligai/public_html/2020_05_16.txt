@@ -1,0 +1,69 @@
+[2020-05-16 08:55:58]	SELECT * FROM `_tblEpins` where md5(concat(EPIN,PINPassword,EPINID))=''
+[2020-05-16 08:55:58]	select * from _tbl_Members where md5(concat(MemberCode,MemberName))='' 
+[2020-05-16 08:57:05]	SELECT * FROM `_tblEpins` where md5(concat(EPIN,PINPassword,EPINID))=''
+[2020-05-16 08:57:06]	select * from _tbl_Members where md5(concat(MemberCode,MemberName))='' 
+[2020-05-16 08:57:48]	select * from `_tbl_admin` where  `AdminEmail`='admin@admin.com'
+[2020-05-16 08:57:48]	insert into `_tbl_admin_login_logs` (`AdminID`,`LoginOn`,`IsSuccess`) values ('2','2020-05-16 08:57:48','1')
+[2020-05-16 08:57:48]	select * from _tbl_Settings_Params where ParamCode='AdminLoginEmailOTPRequired'
+[2020-05-16 08:57:48]	select * from _tbl_Settings_Params where ParamCode='AdminLoginMobileOTPRequired'
+[2020-05-16 09:00:52]	select * from `_tbl_Members` where  `MemberCode`='MLJEY00005'
+[2020-05-16 09:00:52]	select * from _tbl_Settings_Packages where PackageID='1'
+[2020-05-16 09:00:52]	insert into `_tbl_members_login_logs` (`MemberID`,`LoginOn`,`IsSuccess`) values ('16','2020-05-16 09:00:52','1')
+[2020-05-16 09:03:10]	select * from `_tbl_admin` where  `AdminEmail`='admin@admin.com'
+[2020-05-16 09:03:10]	insert into `_tbl_admin_login_logs` (`AdminID`,`LoginOn`,`IsSuccess`) values ('2','2020-05-16 09:03:10','1')
+[2020-05-16 09:03:10]	select * from _tbl_Settings_Params where ParamCode='AdminLoginEmailOTPRequired'
+[2020-05-16 09:03:10]	select * from _tbl_Settings_Params where ParamCode='AdminLoginMobileOTPRequired'
+[2020-05-16 09:06:31]	SELECT * FROM `_tblEpins` where md5(concat(EPIN,PINPassword,EPINID))=''
+[2020-05-16 09:06:31]	select * from _tbl_Members where md5(concat(MemberCode,MemberName))='' 
+[2020-05-16 11:45:55]	select * from `_tbl_Members` where  `MemberCode`='MLJEY00005'
+[2020-05-16 11:45:55]	select * from _tbl_Settings_Packages where PackageID='1'
+[2020-05-16 11:45:55]	insert into `_tbl_members_login_logs` (`MemberID`,`LoginOn`,`IsSuccess`) values ('16','2020-05-16 11:45:55','1')
+[2020-05-16 12:26:01]	select * from `_tbl_admin` where  `AdminEmail`='admin@admin.com'
+[2020-05-16 12:26:01]	insert into `_tbl_admin_login_logs` (`AdminID`,`LoginOn`,`IsSuccess`) values ('2','2020-05-16 12:26:01','1')
+[2020-05-16 12:26:01]	select * from _tbl_Settings_Params where ParamCode='AdminLoginEmailOTPRequired'
+[2020-05-16 12:26:01]	select * from _tbl_Settings_Params where ParamCode='AdminLoginMobileOTPRequired'
+[2020-05-16 13:02:39]	select * from `_tbl_Members` where  `MemberCode`='admin@admin.com'
+[2020-05-16 13:02:51]	select * from `_tbl_admin` where  `AdminEmail`='admin@admin.com'
+[2020-05-16 13:02:51]	insert into `_tbl_admin_login_logs` (`AdminID`,`LoginOn`,`IsSuccess`) values ('2','2020-05-16 13:02:51','1')
+[2020-05-16 13:02:51]	select * from _tbl_Settings_Params where ParamCode='AdminLoginEmailOTPRequired'
+[2020-05-16 13:02:51]	select * from _tbl_Settings_Params where ParamCode='AdminLoginMobileOTPRequired'
+[2020-05-16 13:14:51]	SELECT * FROM `_tblEpins` where md5(concat(EPIN,PINPassword,EPINID))=''
+[2020-05-16 13:14:51]	select * from _tbl_Members where md5(concat(MemberCode,MemberName))='' 
+[2020-05-16 13:15:38]	select * from `_tbl_admin` where  `AdminEmail`='admin@admin.com'
+[2020-05-16 13:15:38]	insert into `_tbl_admin_login_logs` (`AdminID`,`LoginOn`,`IsSuccess`) values ('2','2020-05-16 13:15:38','1')
+[2020-05-16 13:15:38]	select * from _tbl_Settings_Params where ParamCode='AdminLoginEmailOTPRequired'
+[2020-05-16 13:15:38]	select * from _tbl_Settings_Params where ParamCode='AdminLoginMobileOTPRequired'
+[2020-05-16 13:20:09]	SELECT * FROM `_tblEpins` where md5(concat(EPIN,PINPassword,EPINID))=''
+[2020-05-16 13:20:09]	select * from _tbl_Members where md5(concat(MemberCode,MemberName))='' 
+[2020-05-16 13:21:50]	SELECT * FROM `_tblEpins` where md5(concat(EPIN,PINPassword,EPINID))=''
+[2020-05-16 13:21:50]	select * from _tbl_Members where md5(concat(MemberCode,MemberName))='' 
+[2020-05-16 13:25:26]	select * from _tbl_Members where MobileNumber='8190807072' 
+[2020-05-16 13:25:26]	select * from `_tbl_Settings_Params` where ParamCode in ('IsMobileIsMandatory')
+[2020-05-16 13:25:26]	select * from `_tbl_Settings_Params` where ParamCode in ('AllowDuplicateMobile')
+[2020-05-16 13:25:26]	select * from _tbl_Members where MobileNumber='9677436060'
+[2020-05-16 13:25:26]	select * from `_tbl_Settings_Params` where ParamCode in ('IsEmailMandatory')
+[2020-05-16 13:25:26]	select * from `_tbl_Settings_Params` where ParamCode in ('AllowDuplicateEmail')
+[2020-05-16 13:25:26]	select * from `_tbl_Settings_Params` where ParamCode in ('IsPanCardIsMandatory')
+[2020-05-16 13:25:26]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`='MLADM0001'
+[2020-05-16 13:25:26]	select * from `_tbl_Settings_Params` where ParamCode in ('MemberCodePrefix')
+[2020-05-16 13:25:26]	select * from _tbl_Members
+[2020-05-16 13:25:26]	select * from `_tbl_Settings_Params` where ParamCode in ('MemberCodeLength')
+[2020-05-16 13:25:26]	select * from `_tbl_Members` where `MemberCode`='MLADM0001'
+[2020-05-16 13:25:26]	insert into `_tbl_Members` (`MemberCode`,`MemberName`,`Sex`,`DateofBirth`,`MobileNumber`,`MemberEmail`,`MemberPassword`,`PanCard`,`IsActive`,`CurrentPackageID`,`CurrentPackageName`,`CreatedOn`,`SponsorCode`,`SponsorID`,`SponsorName`,`UplineID`,`UplineCode`,`UplineName`,`FatherName`,`MaritalStatus`,`AddressLine1`,`AddressLine2`,`Town`,`PinCode`,`DistrictName`,`StateName`,`LandlineNumber`,`NomineeName`,`RelationshipWithTheApplicant`,`ReferralsCode`,`ReferralsName`,`AadhaarNumber`,`IDProof`,`ProfilePhoto`,`AdhaarCard`,`AdhaarCardBack`,`IDProofForAddress`) values ('MLJEY00002','JEYANTHAN.M','Male','1986-4-13','9677436060','jeyanthan.maya@gmail.com','8fed2abb1a73c4b79193aa9d95a64b77','','0','1','Basic','2020-05-16 13:25:26','MLADM0001','1','Admin','1','MLADM0001','Admin','MUKUNTHAN','Married','40/15,',' BOLDEN PURAM , 1ST STREET EXTENTION','TUTICORIN','628003','Tuticorin','Tamil Nadu','','UMAPRIYATHARSINI','SPOUSE','8190807072','SGMART','752006396772','0','1589615726PP.jpg','1589615726AD1.jpg','1589615726AD2.jpg','')
+[2020-05-16 13:25:26]	insert into `_tblPlacements` (`ParentID`,`ParentCode`,`ParentName`,`ChildID`,`ChildCode`,`ChildName`,`PlacedByID`,`PlacedByCode`,`PlacedByName`,`PlacedOn`,`UsedEPin`,`PV`,`PackageID`,`PlacedFrom`,`Position`) values ('1','MLADM0001','Admin','23','MLJEY00002','JEYANTHAN.M','1','MLADM0001','Admin','2020-05-16 13:25:26','0','0','1','website','L')
+[2020-05-16 13:25:26]	select * from _tbl_Members where MemberID='23'
+[2020-05-16 13:25:26]	select * from `_tbl_Settings_Params` where ParamCode in ('MobileSMSSendAPI')
+[2020-05-16 13:25:26]	insert into `_tbl_Log_MobileSMS` (`MemberID`,`MemberCode`,`SmsTo`,`Message`,`Url`,`MessagedOn`) values ('23','MLJEY00002','9677436060','Dear JEYANTHAN.M, Your account has been created. Your Member ID: MLJEY00002, To activate account please contact . Login Url: http://maligai.org/login',' ','2020-05-16 13:25:26')
+[2020-05-16 13:25:26]	update _tbl_Log_MobileSMS set Url='http://www.aaranju.in/sms/api.php?apiusername=bWFsaWdpMjAic&apipassword=yMGpleWFyYWoxMjM=&sender=MALGAI&&number=9677436060&message=Dear+JEYANTHAN.M%2C+Your+account+has+been+created.+Your+Member+ID%3A+MLJEY00002%2C+To+activate+account+please+contact+.+Login+Url%3A+http%3A%2F%2Fmaligai.org%2Flogin&uid=1' where SMSID='1'
+[2020-05-16 13:25:26]	update _tbl_Log_MobileSMS set APIResponse='{"response":{"status":"SUCCESS","transid":"S.120911  \r\n"}}' where SMSID='1'
+[2020-05-16 13:25:27]	select * from _tbl_Members where MemberID=''
+[2020-05-16 13:25:27]	SELECT * FROM `_tblEpins` where md5(concat(EPIN,PINPassword,EPINID))=''
+[2020-05-16 13:25:27]	select * from _tbl_Members where md5(concat(MemberCode,MemberName))='' 
+[2020-05-16 13:26:01]	select * from `_tbl_admin` where  `AdminEmail`='admin@admin.com'
+[2020-05-16 13:26:01]	insert into `_tbl_admin_login_logs` (`AdminID`,`LoginOn`,`IsSuccess`) values ('2','2020-05-16 13:26:01','1')
+[2020-05-16 13:26:01]	select * from _tbl_Settings_Params where ParamCode='AdminLoginEmailOTPRequired'
+[2020-05-16 13:26:01]	select * from _tbl_Settings_Params where ParamCode='AdminLoginMobileOTPRequired'
+[2020-05-16 15:28:13]	select * from `_tbl_admin` where  `AdminEmail`='admin@admin.com'
+[2020-05-16 15:28:13]	insert into `_tbl_admin_login_logs` (`AdminID`,`LoginOn`,`IsSuccess`) values ('2','2020-05-16 15:28:13','1')
+[2020-05-16 15:28:13]	select * from _tbl_Settings_Params where ParamCode='AdminLoginEmailOTPRequired'
+[2020-05-16 15:28:13]	select * from _tbl_Settings_Params where ParamCode='AdminLoginMobileOTPRequired'

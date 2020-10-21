@@ -1,0 +1,2 @@
+[2020-07-11 18:45:47]	SELECT * FROM `_tblEpins` where md5(concat(EPIN,PINPassword,EPINID))=''
+[2020-07-11 18:45:47]	select * from _tbl_Members where md5(concat(MemberCode,MemberName))='' 

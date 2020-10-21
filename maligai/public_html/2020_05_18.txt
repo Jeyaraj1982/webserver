@@ -1,0 +1,351 @@
+[2020-05-18 07:40:28]	SELECT * FROM `_tblEpins` where md5(concat(EPIN,PINPassword,EPINID))=''
+[2020-05-18 07:40:28]	select * from _tbl_Members where md5(concat(MemberCode,MemberName))='' 
+[2020-05-18 07:47:01]	select * from _tbl_Members where MobileNumber='8190807072' 
+[2020-05-18 07:47:01]	select * from `_tbl_Settings_Params` where ParamCode in ('IsMobileIsMandatory')
+[2020-05-18 07:47:01]	select * from `_tbl_Settings_Params` where ParamCode in ('AllowDuplicateMobile')
+[2020-05-18 07:47:01]	select * from _tbl_Members where MobileNumber='9003974774'
+[2020-05-18 07:47:01]	select * from `_tbl_Settings_Params` where ParamCode in ('IsEmailMandatory')
+[2020-05-18 07:47:01]	select * from `_tbl_Settings_Params` where ParamCode in ('IsPanCardIsMandatory')
+[2020-05-18 07:47:01]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`='MLADM0001'
+[2020-05-18 07:47:01]	select * from `_tblPlacements` where Position='L' and `ParentCode`='MLJEY00002'
+[2020-05-18 07:47:01]	select * from `_tbl_Settings_Params` where ParamCode in ('MemberCodePrefix')
+[2020-05-18 07:47:01]	select * from _tbl_Members
+[2020-05-18 07:47:01]	select * from `_tbl_Settings_Params` where ParamCode in ('MemberCodeLength')
+[2020-05-18 07:47:01]	select * from `_tbl_Members` where `MemberCode`='MLJEY00002'
+[2020-05-18 07:47:01]	insert into `_tbl_Members` (`MemberCode`,`MemberName`,`Sex`,`DateofBirth`,`MobileNumber`,`MemberEmail`,`MemberPassword`,`PanCard`,`IsActive`,`CurrentPackageID`,`CurrentPackageName`,`CreatedOn`,`SponsorCode`,`SponsorID`,`SponsorName`,`UplineID`,`UplineCode`,`UplineName`,`FatherName`,`MaritalStatus`,`AddressLine1`,`AddressLine2`,`Town`,`PinCode`,`DistrictName`,`StateName`,`LandlineNumber`,`NomineeName`,`RelationshipWithTheApplicant`,`ReferralsCode`,`ReferralsName`,`AadhaarNumber`,`IDProof`,`ProfilePhoto`,`AdhaarCard`,`AdhaarCardBack`,`IDProofForAddress`) values ('MLRAM00003','RAMACHANDRAN.V','Male','1979-6-1','9003974774','','d3ac2f8840ead98242d6205eeff29cb4','','0','1','Basic','2020-05-18 07:47:01','MLADM0001','1','Admin','1','MLADM0001','Admin','VEERASANGILI.R','Married','108/4','JEYARAJ NAGAR, MILLER PURAM, PALAI ROAD WEST','TUTICORIN','628008','Tuticorin','Tamil Nadu','','MUBARASHA','SPOUSE','8190807072','SGMART','983416076735','0','1589768221PP.jpg','1589768221AD1.jpg','1589768221AD2.jpg','')
+[2020-05-18 07:47:01]	insert into `_tblPlacements` (`ParentID`,`ParentCode`,`ParentName`,`ChildID`,`ChildCode`,`ChildName`,`PlacedByID`,`PlacedByCode`,`PlacedByName`,`PlacedOn`,`UsedEPin`,`PV`,`PackageID`,`PlacedFrom`,`Position`) values ('1','MLADM0001','Admin','24','MLRAM00003','RAMACHANDRAN.V','1','MLADM0001','Admin','2020-05-18 07:47:01','0','0','1','website','L')
+[2020-05-18 07:47:01]	select * from _tbl_Members where MemberID='24'
+[2020-05-18 07:47:01]	select * from `_tbl_Settings_Params` where ParamCode in ('MobileSMSSendAPI')
+[2020-05-18 07:47:01]	insert into `_tbl_Log_MobileSMS` (`MemberID`,`MemberCode`,`SmsTo`,`Message`,`Url`,`MessagedOn`) values ('24','MLRAM00003','9003974774','Dear RAMACHANDRAN.V, Your account has been created. Your Member ID: MLRAM00003, To activate account please contact . Login Url: http://maligai.org/login',' ','2020-05-18 07:47:01')
+[2020-05-18 07:47:01]	update _tbl_Log_MobileSMS set Url='http://www.aaranju.in/sms/api.php?apiusername=bWFsaWdpMjAic&apipassword=yMGpleWFyYWoxMjM=&sender=MALGAI&&number=9003974774&message=Dear+RAMACHANDRAN.V%2C+Your+account+has+been+created.+Your+Member+ID%3A+MLRAM00003%2C+To+activate+account+please+contact+.+Login+Url%3A+http%3A%2F%2Fmaligai.org%2Flogin&uid=2' where SMSID='2'
+[2020-05-18 07:47:02]	update _tbl_Log_MobileSMS set APIResponse='{"response":{"status":"SUCCESS","transid":"S.175080  \r\n"}}' where SMSID='2'
+[2020-05-18 07:47:02]	select * from _tbl_Members where MemberID=''
+[2020-05-18 07:47:02]	SELECT * FROM `_tblEpins` where md5(concat(EPIN,PINPassword,EPINID))=''
+[2020-05-18 07:47:02]	select * from _tbl_Members where md5(concat(MemberCode,MemberName))='' 
+[2020-05-18 07:48:50]	SELECT * FROM `_tblEpins` where md5(concat(EPIN,PINPassword,EPINID))=''
+[2020-05-18 07:48:50]	select * from _tbl_Members where md5(concat(MemberCode,MemberName))='' 
+[2020-05-18 07:52:31]	select * from _tbl_Members where MobileNumber='8190807072' 
+[2020-05-18 07:52:31]	select * from `_tbl_Settings_Params` where ParamCode in ('IsMobileIsMandatory')
+[2020-05-18 07:52:31]	select * from `_tbl_Settings_Params` where ParamCode in ('AllowDuplicateMobile')
+[2020-05-18 07:52:31]	select * from _tbl_Members where MobileNumber='9789762685'
+[2020-05-18 07:52:31]	select * from `_tbl_Settings_Params` where ParamCode in ('IsEmailMandatory')
+[2020-05-18 07:52:31]	select * from `_tbl_Settings_Params` where ParamCode in ('IsPanCardIsMandatory')
+[2020-05-18 07:52:31]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`='MLADM0001'
+[2020-05-18 07:52:31]	select * from `_tblPlacements` where Position='L' and `ParentCode`='MLJEY00002'
+[2020-05-18 07:52:31]	select * from `_tbl_Settings_Params` where ParamCode in ('MemberCodePrefix')
+[2020-05-18 07:52:31]	select * from _tbl_Members
+[2020-05-18 07:52:31]	select * from `_tbl_Settings_Params` where ParamCode in ('MemberCodeLength')
+[2020-05-18 07:52:31]	select * from `_tbl_Members` where `MemberCode`='MLJEY00002'
+[2020-05-18 07:52:31]	insert into `_tbl_Members` (`MemberCode`,`MemberName`,`Sex`,`DateofBirth`,`MobileNumber`,`MemberEmail`,`MemberPassword`,`PanCard`,`IsActive`,`CurrentPackageID`,`CurrentPackageName`,`CreatedOn`,`SponsorCode`,`SponsorID`,`SponsorName`,`UplineID`,`UplineCode`,`UplineName`,`FatherName`,`MaritalStatus`,`AddressLine1`,`AddressLine2`,`Town`,`PinCode`,`DistrictName`,`StateName`,`LandlineNumber`,`NomineeName`,`RelationshipWithTheApplicant`,`ReferralsCode`,`ReferralsName`,`AadhaarNumber`,`IDProof`,`ProfilePhoto`,`AdhaarCard`,`AdhaarCardBack`,`IDProofForAddress`) values ('MLMUB00004','MUBARASHA','Male','1952-1-1','9789762685','','e2561e23fb2d5dae50b0ce6c62959fed','','0','1','Basic','2020-05-18 07:52:31','MLADM0001','1','Admin','1','MLADM0001','Admin','M','Married','108/4','JEYARAJ NAGAR, MILLERPURAM , PALAI ROAD WEST,','TUTICORIN','628008','Tuticorin','Tamil Nadu','','VINISHYUVA','SON','8190807072','SGMART','12','0','1589768551apple1.jpg','1589768551apple.jpg','1589768551fruits.jpg','')
+[2020-05-18 07:52:31]	insert into `_tblPlacements` (`ParentID`,`ParentCode`,`ParentName`,`ChildID`,`ChildCode`,`ChildName`,`PlacedByID`,`PlacedByCode`,`PlacedByName`,`PlacedOn`,`UsedEPin`,`PV`,`PackageID`,`PlacedFrom`,`Position`) values ('1','MLADM0001','Admin','25','MLMUB00004','MUBARASHA','1','MLADM0001','Admin','2020-05-18 07:52:31','0','0','1','website','L')
+[2020-05-18 07:52:31]	select * from _tbl_Members where MemberID='25'
+[2020-05-18 07:52:31]	select * from `_tbl_Settings_Params` where ParamCode in ('MobileSMSSendAPI')
+[2020-05-18 07:52:31]	insert into `_tbl_Log_MobileSMS` (`MemberID`,`MemberCode`,`SmsTo`,`Message`,`Url`,`MessagedOn`) values ('25','MLMUB00004','9789762685','Dear MUBARASHA, Your account has been created. Your Member ID: MLMUB00004, To activate account please contact . Login Url: http://maligai.org/login',' ','2020-05-18 07:52:31')
+[2020-05-18 07:52:31]	update _tbl_Log_MobileSMS set Url='http://www.aaranju.in/sms/api.php?apiusername=bWFsaWdpMjAic&apipassword=yMGpleWFyYWoxMjM=&sender=MALGAI&&number=9789762685&message=Dear+MUBARASHA%2C+Your+account+has+been+created.+Your+Member+ID%3A+MLMUB00004%2C+To+activate+account+please+contact+.+Login+Url%3A+http%3A%2F%2Fmaligai.org%2Flogin&uid=3' where SMSID='3'
+[2020-05-18 07:52:31]	update _tbl_Log_MobileSMS set APIResponse='{"response":{"status":"SUCCESS","transid":"S.814362  \r\n"}}' where SMSID='3'
+[2020-05-18 07:52:31]	select * from _tbl_Members where MemberID=''
+[2020-05-18 07:52:31]	SELECT * FROM `_tblEpins` where md5(concat(EPIN,PINPassword,EPINID))=''
+[2020-05-18 07:52:31]	select * from _tbl_Members where md5(concat(MemberCode,MemberName))='' 
+[2020-05-18 07:52:40]	SELECT * FROM `_tblEpins` where md5(concat(EPIN,PINPassword,EPINID))=''
+[2020-05-18 07:52:40]	select * from _tbl_Members where md5(concat(MemberCode,MemberName))='' 
+[2020-05-18 08:03:00]	select * from _tbl_Members where MobileNumber='9677436060' 
+[2020-05-18 08:03:00]	select * from `_tbl_Settings_Params` where ParamCode in ('IsMobileIsMandatory')
+[2020-05-18 08:03:00]	select * from `_tbl_Settings_Params` where ParamCode in ('AllowDuplicateMobile')
+[2020-05-18 08:03:00]	select * from _tbl_Members where MobileNumber='7604860528'
+[2020-05-18 08:03:00]	select * from `_tbl_Settings_Params` where ParamCode in ('IsEmailMandatory')
+[2020-05-18 08:03:00]	select * from `_tbl_Settings_Params` where ParamCode in ('IsPanCardIsMandatory')
+[2020-05-18 08:03:00]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`='MLJEY00002'
+[2020-05-18 08:03:00]	select * from `_tbl_Settings_Params` where ParamCode in ('MemberCodePrefix')
+[2020-05-18 08:03:00]	select * from _tbl_Members
+[2020-05-18 08:03:00]	select * from `_tbl_Settings_Params` where ParamCode in ('MemberCodeLength')
+[2020-05-18 08:03:00]	select * from `_tbl_Members` where `MemberCode`='MLJEY00002'
+[2020-05-18 08:03:00]	insert into `_tbl_Members` (`MemberCode`,`MemberName`,`Sex`,`DateofBirth`,`MobileNumber`,`MemberEmail`,`MemberPassword`,`PanCard`,`IsActive`,`CurrentPackageID`,`CurrentPackageName`,`CreatedOn`,`SponsorCode`,`SponsorID`,`SponsorName`,`UplineID`,`UplineCode`,`UplineName`,`FatherName`,`MaritalStatus`,`AddressLine1`,`AddressLine2`,`Town`,`PinCode`,`DistrictName`,`StateName`,`LandlineNumber`,`NomineeName`,`RelationshipWithTheApplicant`,`ReferralsCode`,`ReferralsName`,`AadhaarNumber`,`IDProof`,`ProfilePhoto`,`AdhaarCard`,`AdhaarCardBack`,`IDProofForAddress`) values ('MLHAR00005','HARINATH PRAVEEN.M','Male','1989-6-6','7604860528','','f2219a7d1d1420aa24b7bed93275510e','','0','1','Basic','2020-05-18 08:03:00','MLJEY00002','23','JEYANTHAN.M','23','MLJEY00002','JEYANTHAN.M','MURUGAN','Married','NADAR PETTAI','SAYALGUDI','SAYALGUDI','623120','Ramanathapuram','Tamil Nadu','','BANUPRIYA','SPOUSE','9677436060','JEYANTHAN.M','400713779799','0','1589769180PP.jpg','1589769180watermelon.jpg','1589769180pomegranate.jpg','')
+[2020-05-18 08:03:00]	insert into `_tblPlacements` (`ParentID`,`ParentCode`,`ParentName`,`ChildID`,`ChildCode`,`ChildName`,`PlacedByID`,`PlacedByCode`,`PlacedByName`,`PlacedOn`,`UsedEPin`,`PV`,`PackageID`,`PlacedFrom`,`Position`) values ('23','MLJEY00002','JEYANTHAN.M','26','MLHAR00005','HARINATH PRAVEEN.M','23','MLJEY00002','JEYANTHAN.M','2020-05-18 08:03:00','0','0','1','website','L')
+[2020-05-18 08:03:00]	select * from _tbl_Members where MemberID='26'
+[2020-05-18 08:03:00]	select * from `_tbl_Settings_Params` where ParamCode in ('MobileSMSSendAPI')
+[2020-05-18 08:03:00]	insert into `_tbl_Log_MobileSMS` (`MemberID`,`MemberCode`,`SmsTo`,`Message`,`Url`,`MessagedOn`) values ('26','MLHAR00005','7604860528','Dear HARINATH PRAVEEN.M, Your account has been created. Your Member ID: MLHAR00005, To activate account please contact . Login Url: http://maligai.org/login',' ','2020-05-18 08:03:00')
+[2020-05-18 08:03:00]	update _tbl_Log_MobileSMS set Url='http://www.aaranju.in/sms/api.php?apiusername=bWFsaWdpMjAic&apipassword=yMGpleWFyYWoxMjM=&sender=MALGAI&&number=7604860528&message=Dear+HARINATH+PRAVEEN.M%2C+Your+account+has+been+created.+Your+Member+ID%3A+MLHAR00005%2C+To+activate+account+please+contact+.+Login+Url%3A+http%3A%2F%2Fmaligai.org%2Flogin&uid=4' where SMSID='4'
+[2020-05-18 08:03:01]	update _tbl_Log_MobileSMS set APIResponse='{"response":{"status":"SUCCESS","transid":"S.987214 S.654847  \r\n"}}' where SMSID='4'
+[2020-05-18 08:03:01]	select * from _tbl_Members where MemberID=''
+[2020-05-18 08:03:01]	SELECT * FROM `_tblEpins` where md5(concat(EPIN,PINPassword,EPINID))=''
+[2020-05-18 08:03:01]	select * from _tbl_Members where md5(concat(MemberCode,MemberName))='' 
+[2020-05-18 08:03:06]	SELECT * FROM `_tblEpins` where md5(concat(EPIN,PINPassword,EPINID))=''
+[2020-05-18 08:03:06]	select * from _tbl_Members where md5(concat(MemberCode,MemberName))='' 
+[2020-05-18 08:06:01]	select * from _tbl_Members where MobileNumber='9677436060' 
+[2020-05-18 08:06:01]	select * from `_tbl_Settings_Params` where ParamCode in ('IsMobileIsMandatory')
+[2020-05-18 08:06:01]	select * from `_tbl_Settings_Params` where ParamCode in ('AllowDuplicateMobile')
+[2020-05-18 08:06:01]	select * from _tbl_Members where MobileNumber='9789726778'
+[2020-05-18 08:06:01]	select * from `_tbl_Settings_Params` where ParamCode in ('IsEmailMandatory')
+[2020-05-18 08:06:01]	select * from `_tbl_Settings_Params` where ParamCode in ('IsPanCardIsMandatory')
+[2020-05-18 08:06:01]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`='MLJEY00002'
+[2020-05-18 08:06:01]	select * from `_tblPlacements` where Position='L' and `ParentCode`='MLHAR00005'
+[2020-05-18 08:06:01]	select * from `_tbl_Settings_Params` where ParamCode in ('MemberCodePrefix')
+[2020-05-18 08:06:01]	select * from _tbl_Members
+[2020-05-18 08:06:01]	select * from `_tbl_Settings_Params` where ParamCode in ('MemberCodeLength')
+[2020-05-18 08:06:01]	select * from `_tbl_Members` where `MemberCode`='MLHAR00005'
+[2020-05-18 08:06:01]	insert into `_tbl_Members` (`MemberCode`,`MemberName`,`Sex`,`DateofBirth`,`MobileNumber`,`MemberEmail`,`MemberPassword`,`PanCard`,`IsActive`,`CurrentPackageID`,`CurrentPackageName`,`CreatedOn`,`SponsorCode`,`SponsorID`,`SponsorName`,`UplineID`,`UplineCode`,`UplineName`,`FatherName`,`MaritalStatus`,`AddressLine1`,`AddressLine2`,`Town`,`PinCode`,`DistrictName`,`StateName`,`LandlineNumber`,`NomineeName`,`RelationshipWithTheApplicant`,`ReferralsCode`,`ReferralsName`,`AadhaarNumber`,`IDProof`,`ProfilePhoto`,`AdhaarCard`,`AdhaarCardBack`,`IDProofForAddress`) values ('MLSEN00006','SENTHILKUMAR.B','Male','1984-2-5','9789726778','','5596542fbe4b92a84e5ff41a01641eee','','0','1','Basic','2020-05-18 08:06:01','MLJEY00002','23','JEYANTHAN.M','23','MLJEY00002','JEYANTHAN.M','BALAKRISHNAN.C','Married','30B/24','ANNANAGAR 3RD STREET','TUTICORIN','628008','Tuticorin','Tamil Nadu','','AMUTHAVALLI','SPOUSE','9677436060','JEYANTHAN.M','482271989858','0','1589769361PP.jpg','1589769361AD1.jpg','1589769361AD1.jpg','')
+[2020-05-18 08:06:01]	insert into `_tblPlacements` (`ParentID`,`ParentCode`,`ParentName`,`ChildID`,`ChildCode`,`ChildName`,`PlacedByID`,`PlacedByCode`,`PlacedByName`,`PlacedOn`,`UsedEPin`,`PV`,`PackageID`,`PlacedFrom`,`Position`) values ('23','MLJEY00002','JEYANTHAN.M','27','MLSEN00006','SENTHILKUMAR.B','23','MLJEY00002','JEYANTHAN.M','2020-05-18 08:06:01','0','0','1','website','L')
+[2020-05-18 08:06:01]	select * from _tbl_Members where MemberID='27'
+[2020-05-18 08:06:01]	select * from `_tbl_Settings_Params` where ParamCode in ('MobileSMSSendAPI')
+[2020-05-18 08:06:01]	insert into `_tbl_Log_MobileSMS` (`MemberID`,`MemberCode`,`SmsTo`,`Message`,`Url`,`MessagedOn`) values ('27','MLSEN00006','9789726778','Dear SENTHILKUMAR.B, Your account has been created. Your Member ID: MLSEN00006, To activate account please contact . Login Url: http://maligai.org/login',' ','2020-05-18 08:06:01')
+[2020-05-18 08:06:01]	update _tbl_Log_MobileSMS set Url='http://www.aaranju.in/sms/api.php?apiusername=bWFsaWdpMjAic&apipassword=yMGpleWFyYWoxMjM=&sender=MALGAI&&number=9789726778&message=Dear+SENTHILKUMAR.B%2C+Your+account+has+been+created.+Your+Member+ID%3A+MLSEN00006%2C+To+activate+account+please+contact+.+Login+Url%3A+http%3A%2F%2Fmaligai.org%2Flogin&uid=5' where SMSID='5'
+[2020-05-18 08:06:02]	update _tbl_Log_MobileSMS set APIResponse='{"response":{"status":"SUCCESS","transid":"S.649415  \r\n"}}' where SMSID='5'
+[2020-05-18 08:06:02]	select * from _tbl_Members where MemberID=''
+[2020-05-18 08:06:02]	SELECT * FROM `_tblEpins` where md5(concat(EPIN,PINPassword,EPINID))=''
+[2020-05-18 08:06:02]	select * from _tbl_Members where md5(concat(MemberCode,MemberName))='' 
+[2020-05-18 08:06:13]	SELECT * FROM `_tblEpins` where md5(concat(EPIN,PINPassword,EPINID))=''
+[2020-05-18 08:06:13]	select * from _tbl_Members where md5(concat(MemberCode,MemberName))='' 
+[2020-05-18 08:09:06]	select * from _tbl_Members where MobileNumber='9677436060' 
+[2020-05-18 08:09:06]	select * from `_tbl_Settings_Params` where ParamCode in ('IsMobileIsMandatory')
+[2020-05-18 08:09:06]	select * from `_tbl_Settings_Params` where ParamCode in ('AllowDuplicateMobile')
+[2020-05-18 08:09:06]	select * from _tbl_Members where MobileNumber='9894214851'
+[2020-05-18 08:09:06]	select * from `_tbl_Settings_Params` where ParamCode in ('IsEmailMandatory')
+[2020-05-18 08:09:06]	select * from `_tbl_Settings_Params` where ParamCode in ('IsPanCardIsMandatory')
+[2020-05-18 08:09:06]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`='MLJEY00002'
+[2020-05-18 08:09:06]	select * from `_tblPlacements` where Position='L' and `ParentCode`='MLHAR00005'
+[2020-05-18 08:09:06]	select * from `_tbl_Settings_Params` where ParamCode in ('MemberCodePrefix')
+[2020-05-18 08:09:06]	select * from _tbl_Members
+[2020-05-18 08:09:06]	select * from `_tbl_Settings_Params` where ParamCode in ('MemberCodeLength')
+[2020-05-18 08:09:06]	select * from `_tbl_Members` where `MemberCode`='MLHAR00005'
+[2020-05-18 08:09:06]	insert into `_tbl_Members` (`MemberCode`,`MemberName`,`Sex`,`DateofBirth`,`MobileNumber`,`MemberEmail`,`MemberPassword`,`PanCard`,`IsActive`,`CurrentPackageID`,`CurrentPackageName`,`CreatedOn`,`SponsorCode`,`SponsorID`,`SponsorName`,`UplineID`,`UplineCode`,`UplineName`,`FatherName`,`MaritalStatus`,`AddressLine1`,`AddressLine2`,`Town`,`PinCode`,`DistrictName`,`StateName`,`LandlineNumber`,`NomineeName`,`RelationshipWithTheApplicant`,`ReferralsCode`,`ReferralsName`,`AadhaarNumber`,`IDProof`,`ProfilePhoto`,`AdhaarCard`,`AdhaarCardBack`,`IDProofForAddress`) values ('MLBAL00007','BALASUBRAMANIAN.A','Male','1989-5-8','9894214851','','bc16992efeb0a28255a9246aead5ba71','','0','1','Basic','2020-05-18 08:09:06','MLJEY00002','23','JEYANTHAN.M','23','MLJEY00002','JEYANTHAN.M','ARUNJUNAIMUTHU','Married','30B/3C','ANNA NAGAR, 3RD STREET, CHIDAMBARANAGAR','TUTICORIN','628008','Tuticorin','Tamil Nadu','','RAMALAKSHMI','SPOUSE','9677436060','JEYANTHAN.M','965347219112','0','1589769546PP.jpg','1589769546AD1.jpg','1589769546AD1.jpg','')
+[2020-05-18 08:09:06]	insert into `_tblPlacements` (`ParentID`,`ParentCode`,`ParentName`,`ChildID`,`ChildCode`,`ChildName`,`PlacedByID`,`PlacedByCode`,`PlacedByName`,`PlacedOn`,`UsedEPin`,`PV`,`PackageID`,`PlacedFrom`,`Position`) values ('23','MLJEY00002','JEYANTHAN.M','28','MLBAL00007','BALASUBRAMANIAN.A','23','MLJEY00002','JEYANTHAN.M','2020-05-18 08:09:06','0','0','1','website','L')
+[2020-05-18 08:09:06]	select * from _tbl_Members where MemberID='28'
+[2020-05-18 08:09:06]	select * from `_tbl_Settings_Params` where ParamCode in ('MobileSMSSendAPI')
+[2020-05-18 08:09:06]	insert into `_tbl_Log_MobileSMS` (`MemberID`,`MemberCode`,`SmsTo`,`Message`,`Url`,`MessagedOn`) values ('28','MLBAL00007','9894214851','Dear BALASUBRAMANIAN.A, Your account has been created. Your Member ID: MLBAL00007, To activate account please contact . Login Url: http://maligai.org/login',' ','2020-05-18 08:09:06')
+[2020-05-18 08:09:06]	update _tbl_Log_MobileSMS set Url='http://www.aaranju.in/sms/api.php?apiusername=bWFsaWdpMjAic&apipassword=yMGpleWFyYWoxMjM=&sender=MALGAI&&number=9894214851&message=Dear+BALASUBRAMANIAN.A%2C+Your+account+has+been+created.+Your+Member+ID%3A+MLBAL00007%2C+To+activate+account+please+contact+.+Login+Url%3A+http%3A%2F%2Fmaligai.org%2Flogin&uid=6' where SMSID='6'
+[2020-05-18 08:09:07]	update _tbl_Log_MobileSMS set APIResponse='{"response":{"status":"SUCCESS","transid":"S.861908 S.902833  \r\n"}}' where SMSID='6'
+[2020-05-18 08:09:07]	select * from _tbl_Members where MemberID=''
+[2020-05-18 08:09:07]	SELECT * FROM `_tblEpins` where md5(concat(EPIN,PINPassword,EPINID))=''
+[2020-05-18 08:09:07]	select * from _tbl_Members where md5(concat(MemberCode,MemberName))='' 
+[2020-05-18 08:09:30]	SELECT * FROM `_tblEpins` where md5(concat(EPIN,PINPassword,EPINID))=''
+[2020-05-18 08:09:30]	select * from _tbl_Members where md5(concat(MemberCode,MemberName))='' 
+[2020-05-18 08:13:13]	select * from _tbl_Members where MobileNumber='9003974774' 
+[2020-05-18 08:13:13]	select * from `_tbl_Settings_Params` where ParamCode in ('IsMobileIsMandatory')
+[2020-05-18 08:13:13]	select * from `_tbl_Settings_Params` where ParamCode in ('AllowDuplicateMobile')
+[2020-05-18 08:13:13]	select * from _tbl_Members where MobileNumber='9884720306'
+[2020-05-18 08:13:13]	select * from `_tbl_Settings_Params` where ParamCode in ('IsEmailMandatory')
+[2020-05-18 08:13:13]	select * from `_tbl_Settings_Params` where ParamCode in ('IsPanCardIsMandatory')
+[2020-05-18 08:13:13]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`='MLRAM00003'
+[2020-05-18 08:13:13]	select * from `_tbl_Settings_Params` where ParamCode in ('MemberCodePrefix')
+[2020-05-18 08:13:13]	select * from _tbl_Members
+[2020-05-18 08:13:13]	select * from `_tbl_Settings_Params` where ParamCode in ('MemberCodeLength')
+[2020-05-18 08:13:13]	select * from `_tbl_Members` where `MemberCode`='MLRAM00003'
+[2020-05-18 08:13:13]	insert into `_tbl_Members` (`MemberCode`,`MemberName`,`Sex`,`DateofBirth`,`MobileNumber`,`MemberEmail`,`MemberPassword`,`PanCard`,`IsActive`,`CurrentPackageID`,`CurrentPackageName`,`CreatedOn`,`SponsorCode`,`SponsorID`,`SponsorName`,`UplineID`,`UplineCode`,`UplineName`,`FatherName`,`MaritalStatus`,`AddressLine1`,`AddressLine2`,`Town`,`PinCode`,`DistrictName`,`StateName`,`LandlineNumber`,`NomineeName`,`RelationshipWithTheApplicant`,`ReferralsCode`,`ReferralsName`,`AadhaarNumber`,`IDProof`,`ProfilePhoto`,`AdhaarCard`,`AdhaarCardBack`,`IDProofForAddress`) values ('MLARU00008','ARULMANIPAUL','Male','1956-1-1','9884720306','','83e3e92994ac4d587ecdc05086982cb3','','0','1','Basic','2020-05-18 08:13:13','MLRAM00003','24','RAMACHANDRAN.V','24','MLRAM00003','RAMACHANDRAN.V','PAUL','Married','117J/1A','SANKAR COLONY, 3RD STREET, 3RD MILE,CHIDAMBARANAGAR','TUTICORIN','628008','Tuticorin','Tamil Nadu','','.','.','9003974774','RAMACHANDRAN','515729122253','0','1589769793PP.jpg','1589769793apple.jpg','1589769793orange.jpg','')
+[2020-05-18 08:13:13]	insert into `_tblPlacements` (`ParentID`,`ParentCode`,`ParentName`,`ChildID`,`ChildCode`,`ChildName`,`PlacedByID`,`PlacedByCode`,`PlacedByName`,`PlacedOn`,`UsedEPin`,`PV`,`PackageID`,`PlacedFrom`,`Position`) values ('24','MLRAM00003','RAMACHANDRAN.V','29','MLARU00008','ARULMANIPAUL','24','MLRAM00003','RAMACHANDRAN.V','2020-05-18 08:13:13','0','0','1','website','L')
+[2020-05-18 08:13:13]	select * from _tbl_Members where MemberID='29'
+[2020-05-18 08:13:13]	select * from `_tbl_Settings_Params` where ParamCode in ('MobileSMSSendAPI')
+[2020-05-18 08:13:13]	insert into `_tbl_Log_MobileSMS` (`MemberID`,`MemberCode`,`SmsTo`,`Message`,`Url`,`MessagedOn`) values ('29','MLARU00008','9884720306','Dear ARULMANIPAUL, Your account has been created. Your Member ID: MLARU00008, To activate account please contact . Login Url: http://maligai.org/login',' ','2020-05-18 08:13:13')
+[2020-05-18 08:13:13]	update _tbl_Log_MobileSMS set Url='http://www.aaranju.in/sms/api.php?apiusername=bWFsaWdpMjAic&apipassword=yMGpleWFyYWoxMjM=&sender=MALGAI&&number=9884720306&message=Dear+ARULMANIPAUL%2C+Your+account+has+been+created.+Your+Member+ID%3A+MLARU00008%2C+To+activate+account+please+contact+.+Login+Url%3A+http%3A%2F%2Fmaligai.org%2Flogin&uid=7' where SMSID='7'
+[2020-05-18 08:13:13]	update _tbl_Log_MobileSMS set APIResponse='{"response":{"status":"SUCCESS","transid":"S.857392  \r\n"}}' where SMSID='7'
+[2020-05-18 08:13:13]	select * from _tbl_Members where MemberID=''
+[2020-05-18 08:13:13]	SELECT * FROM `_tblEpins` where md5(concat(EPIN,PINPassword,EPINID))=''
+[2020-05-18 08:13:13]	select * from _tbl_Members where md5(concat(MemberCode,MemberName))='' 
+[2020-05-18 08:13:23]	SELECT * FROM `_tblEpins` where md5(concat(EPIN,PINPassword,EPINID))=''
+[2020-05-18 08:13:23]	select * from _tbl_Members where md5(concat(MemberCode,MemberName))='' 
+[2020-05-18 09:18:32]	select * from `_tbl_admin` where  `AdminEmail`='admin@admin.com'
+[2020-05-18 09:18:32]	insert into `_tbl_admin_login_logs` (`AdminID`,`LoginOn`,`IsSuccess`) values ('2','2020-05-18 09:18:32','1')
+[2020-05-18 09:18:32]	select * from _tbl_Settings_Params where ParamCode='AdminLoginEmailOTPRequired'
+[2020-05-18 09:18:32]	select * from _tbl_Settings_Params where ParamCode='AdminLoginMobileOTPRequired'
+[2020-05-18 09:38:06]	SELECT * FROM `_tblEpins` where md5(concat(EPIN,PINPassword,EPINID))=''
+[2020-05-18 09:38:06]	select * from _tbl_Members where md5(concat(MemberCode,MemberName))='' 
+[2020-05-18 09:42:09]	select * from _tbl_Members where MobileNumber='8190807072' 
+[2020-05-18 09:42:09]	select * from `_tbl_Settings_Params` where ParamCode in ('IsMobileIsMandatory')
+[2020-05-18 09:42:09]	select * from `_tbl_Settings_Params` where ParamCode in ('AllowDuplicateMobile')
+[2020-05-18 09:42:09]	select * from _tbl_Members where MobileNumber='9789762685'
+[2020-05-18 09:42:09]	select * from `_tbl_Settings_Params` where ParamCode in ('IsEmailMandatory')
+[2020-05-18 09:42:09]	select * from `_tbl_Settings_Params` where ParamCode in ('AllowDuplicateEmail')
+[2020-05-18 09:42:09]	select * from `_tbl_Settings_Params` where ParamCode in ('IsPanCardIsMandatory')
+[2020-05-18 09:42:09]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`='MLADM0001'
+[2020-05-18 09:42:09]	select * from `_tblPlacements` where Position='L' and `ParentCode`='MLJEY00002'
+[2020-05-18 09:42:09]	select * from `_tblPlacements` where Position='L' and `ParentCode`='MLHAR00005'
+[2020-05-18 09:42:09]	select * from `_tbl_Settings_Params` where ParamCode in ('MemberCodePrefix')
+[2020-05-18 09:42:09]	select * from _tbl_Members
+[2020-05-18 09:42:09]	select * from `_tbl_Settings_Params` where ParamCode in ('MemberCodeLength')
+[2020-05-18 09:42:09]	select * from `_tbl_Members` where `MemberCode`='MLHAR00005'
+[2020-05-18 09:42:09]	insert into `_tbl_Members` (`MemberCode`,`MemberName`,`Sex`,`DateofBirth`,`MobileNumber`,`MemberEmail`,`MemberPassword`,`PanCard`,`IsActive`,`CurrentPackageID`,`CurrentPackageName`,`CreatedOn`,`SponsorCode`,`SponsorID`,`SponsorName`,`UplineID`,`UplineCode`,`UplineName`,`FatherName`,`MaritalStatus`,`AddressLine1`,`AddressLine2`,`Town`,`PinCode`,`DistrictName`,`StateName`,`LandlineNumber`,`NomineeName`,`RelationshipWithTheApplicant`,`ReferralsCode`,`ReferralsName`,`AadhaarNumber`,`IDProof`,`ProfilePhoto`,`AdhaarCard`,`AdhaarCardBack`,`IDProofForAddress`) values ('MLMUB00004','MUBARASHA.A','Male','1985-5-9','9789762685','MUBA.CHAN@GMAIL.COM','2d5951d1e3b31dfb7fd2dcc172df17fd','','0','1','Basic','2020-05-18 09:42:09','MLADM0001','1','Admin','1','MLADM0001','Admin','ABDUL WAHAB.M','Married','108/4','JEYARAJ NAGAR,P.C.ROAD, MILLERPURAM','TUTICORIN','628002','Tuticorin','Tamil Nadu','','VINISH YUVA.R','SON','8190807072','SGMART','837423095409','0','1589775129PP.jpg','1589775129AD1.jpg','1589775129AD2.jpg','')
+[2020-05-18 09:42:09]	insert into `_tblPlacements` (`ParentID`,`ParentCode`,`ParentName`,`ChildID`,`ChildCode`,`ChildName`,`PlacedByID`,`PlacedByCode`,`PlacedByName`,`PlacedOn`,`UsedEPin`,`PV`,`PackageID`,`PlacedFrom`,`Position`) values ('1','MLADM0001','Admin','30','MLMUB00004','MUBARASHA.A','1','MLADM0001','Admin','2020-05-18 09:42:09','0','0','1','website','L')
+[2020-05-18 09:42:09]	select * from _tbl_Members where MemberID='30'
+[2020-05-18 09:42:09]	select * from `_tbl_Settings_Params` where ParamCode in ('MobileSMSSendAPI')
+[2020-05-18 09:42:09]	insert into `_tbl_Log_MobileSMS` (`MemberID`,`MemberCode`,`SmsTo`,`Message`,`Url`,`MessagedOn`) values ('30','MLMUB00004','9789762685','Dear MUBARASHA.A, Your account has been created. Your Member ID: MLMUB00004, To activate account please contact . Login Url: http://maligai.org/login',' ','2020-05-18 09:42:09')
+[2020-05-18 09:42:09]	update _tbl_Log_MobileSMS set Url='http://www.aaranju.in/sms/api.php?apiusername=bWFsaWdpMjAic&apipassword=yMGpleWFyYWoxMjM=&sender=MALGAI&&number=9789762685&message=Dear+MUBARASHA.A%2C+Your+account+has+been+created.+Your+Member+ID%3A+MLMUB00004%2C+To+activate+account+please+contact+.+Login+Url%3A+http%3A%2F%2Fmaligai.org%2Flogin&uid=8' where SMSID='8'
+[2020-05-18 09:42:11]	update _tbl_Log_MobileSMS set APIResponse='{"response":{"status":"SUCCESS","transid":"S.520875  \r\n"}}' where SMSID='8'
+[2020-05-18 09:42:11]	select * from _tbl_Members where MemberID=''
+[2020-05-18 09:42:11]	SELECT * FROM `_tblEpins` where md5(concat(EPIN,PINPassword,EPINID))=''
+[2020-05-18 09:42:11]	select * from _tbl_Members where md5(concat(MemberCode,MemberName))='' 
+[2020-05-18 09:43:24]	SELECT * FROM `_tblEpins` where md5(concat(EPIN,PINPassword,EPINID))=''
+[2020-05-18 09:43:24]	select * from _tbl_Members where md5(concat(MemberCode,MemberName))='' 
+[2020-05-18 09:47:45]	select * from _tbl_Members where MobileNumber='9677436060' 
+[2020-05-18 09:47:45]	select * from `_tbl_Settings_Params` where ParamCode in ('IsMobileIsMandatory')
+[2020-05-18 09:47:45]	select * from `_tbl_Settings_Params` where ParamCode in ('AllowDuplicateMobile')
+[2020-05-18 09:47:45]	select * from _tbl_Members where MobileNumber='9789726778'
+[2020-05-18 09:47:45]	select * from `_tbl_Settings_Params` where ParamCode in ('IsEmailMandatory')
+[2020-05-18 09:47:45]	select * from `_tbl_Settings_Params` where ParamCode in ('IsPanCardIsMandatory')
+[2020-05-18 09:47:45]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`='MLJEY00002'
+[2020-05-18 09:47:45]	select * from `_tblPlacements` where Position='L' and `ParentCode`='MLHAR00005'
+[2020-05-18 09:47:45]	select * from `_tbl_Settings_Params` where ParamCode in ('MemberCodePrefix')
+[2020-05-18 09:47:45]	select * from _tbl_Members
+[2020-05-18 09:47:45]	select * from `_tbl_Settings_Params` where ParamCode in ('MemberCodeLength')
+[2020-05-18 09:47:45]	select * from `_tbl_Members` where `MemberCode`='MLHAR00005'
+[2020-05-18 09:47:45]	insert into `_tbl_Members` (`MemberCode`,`MemberName`,`Sex`,`DateofBirth`,`MobileNumber`,`MemberEmail`,`MemberPassword`,`PanCard`,`IsActive`,`CurrentPackageID`,`CurrentPackageName`,`CreatedOn`,`SponsorCode`,`SponsorID`,`SponsorName`,`UplineID`,`UplineCode`,`UplineName`,`FatherName`,`MaritalStatus`,`AddressLine1`,`AddressLine2`,`Town`,`PinCode`,`DistrictName`,`StateName`,`LandlineNumber`,`NomineeName`,`RelationshipWithTheApplicant`,`ReferralsCode`,`ReferralsName`,`AadhaarNumber`,`IDProof`,`ProfilePhoto`,`AdhaarCard`,`AdhaarCardBack`,`IDProofForAddress`) values ('MLSEN00005','SENTHILKUMAR.B','Male','1984-2-5','9789726778','','7b6ad2297d3beb569ddf3ee1ce22ffa8','','0','1','Basic','2020-05-18 09:47:45','MLJEY00002','23','JEYANTHAN.M','23','MLJEY00002','JEYANTHAN.M','BALAKRISHNAN.C','Married','30B/24','ANNA NAGAR 3RD STREET,','TUTICORIN','628008','Tuticorin','Tamil Nadu','','AMUTHAVALLI.S','SPOUSE','9677436060','JEYANTHAN.M','482271989858','0','1589775465PP.jpg','1589775465AD1.jpg','1589775465AD2.jpg','')
+[2020-05-18 09:47:45]	insert into `_tblPlacements` (`ParentID`,`ParentCode`,`ParentName`,`ChildID`,`ChildCode`,`ChildName`,`PlacedByID`,`PlacedByCode`,`PlacedByName`,`PlacedOn`,`UsedEPin`,`PV`,`PackageID`,`PlacedFrom`,`Position`) values ('23','MLJEY00002','JEYANTHAN.M','31','MLSEN00005','SENTHILKUMAR.B','23','MLJEY00002','JEYANTHAN.M','2020-05-18 09:47:45','0','0','1','website','L')
+[2020-05-18 09:47:45]	select * from _tbl_Members where MemberID='31'
+[2020-05-18 09:47:45]	select * from `_tbl_Settings_Params` where ParamCode in ('MobileSMSSendAPI')
+[2020-05-18 09:47:45]	insert into `_tbl_Log_MobileSMS` (`MemberID`,`MemberCode`,`SmsTo`,`Message`,`Url`,`MessagedOn`) values ('31','MLSEN00005','9789726778','Dear SENTHILKUMAR.B, Your account has been created. Your Member ID: MLSEN00005, To activate account please contact . Login Url: http://maligai.org/login',' ','2020-05-18 09:47:45')
+[2020-05-18 09:47:45]	update _tbl_Log_MobileSMS set Url='http://www.aaranju.in/sms/api.php?apiusername=bWFsaWdpMjAic&apipassword=yMGpleWFyYWoxMjM=&sender=MALGAI&&number=9789726778&message=Dear+SENTHILKUMAR.B%2C+Your+account+has+been+created.+Your+Member+ID%3A+MLSEN00005%2C+To+activate+account+please+contact+.+Login+Url%3A+http%3A%2F%2Fmaligai.org%2Flogin&uid=9' where SMSID='9'
+[2020-05-18 09:47:45]	update _tbl_Log_MobileSMS set APIResponse='{"response":{"status":"SUCCESS","transid":"S.120636  \r\n"}}' where SMSID='9'
+[2020-05-18 09:47:45]	select * from _tbl_Members where MemberID=''
+[2020-05-18 09:47:45]	SELECT * FROM `_tblEpins` where md5(concat(EPIN,PINPassword,EPINID))=''
+[2020-05-18 09:47:45]	select * from _tbl_Members where md5(concat(MemberCode,MemberName))='' 
+[2020-05-18 09:48:35]	SELECT * FROM `_tblEpins` where md5(concat(EPIN,PINPassword,EPINID))=''
+[2020-05-18 09:48:35]	select * from _tbl_Members where md5(concat(MemberCode,MemberName))='' 
+[2020-05-18 09:56:10]	select * from _tbl_Members where MobileNumber='9677436060' 
+[2020-05-18 09:56:10]	select * from `_tbl_Settings_Params` where ParamCode in ('IsMobileIsMandatory')
+[2020-05-18 09:56:10]	select * from `_tbl_Settings_Params` where ParamCode in ('AllowDuplicateMobile')
+[2020-05-18 09:56:10]	select * from _tbl_Members where MobileNumber='9894214851'
+[2020-05-18 09:56:10]	select * from `_tbl_Settings_Params` where ParamCode in ('IsEmailMandatory')
+[2020-05-18 09:56:10]	select * from `_tbl_Settings_Params` where ParamCode in ('IsPanCardIsMandatory')
+[2020-05-18 09:56:10]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`='MLJEY00002'
+[2020-05-18 09:56:10]	select * from `_tblPlacements` where Position='L' and `ParentCode`='MLHAR00005'
+[2020-05-18 09:56:10]	select * from `_tbl_Settings_Params` where ParamCode in ('MemberCodePrefix')
+[2020-05-18 09:56:10]	select * from _tbl_Members
+[2020-05-18 09:56:10]	select * from `_tbl_Settings_Params` where ParamCode in ('MemberCodeLength')
+[2020-05-18 09:56:10]	select * from `_tbl_Members` where `MemberCode`='MLHAR00005'
+[2020-05-18 09:56:10]	insert into `_tbl_Members` (`MemberCode`,`MemberName`,`Sex`,`DateofBirth`,`MobileNumber`,`MemberEmail`,`MemberPassword`,`PanCard`,`IsActive`,`CurrentPackageID`,`CurrentPackageName`,`CreatedOn`,`SponsorCode`,`SponsorID`,`SponsorName`,`UplineID`,`UplineCode`,`UplineName`,`FatherName`,`MaritalStatus`,`AddressLine1`,`AddressLine2`,`Town`,`PinCode`,`DistrictName`,`StateName`,`LandlineNumber`,`NomineeName`,`RelationshipWithTheApplicant`,`ReferralsCode`,`ReferralsName`,`AadhaarNumber`,`IDProof`,`ProfilePhoto`,`AdhaarCard`,`AdhaarCardBack`,`IDProofForAddress`) values ('MLBAL00006','BALASUBRAMANIAN.A','Male','1989-5-8','9894214851','','b93f11867481fc6d77908aea58ba6198','','0','1','Basic','2020-05-18 09:56:10','MLJEY00002','23','JEYANTHAN.M','23','MLJEY00002','JEYANTHAN.M','ARUNJUNAIMUTHU','Married','30B/3C','ANNANAGAR 3RD  STREET,CHIDAMBARA NAGAR','TUTICORIN','628008','Tuticorin','Tamil Nadu','','RAMALAKSHMI','SPOUSE','9677436060','JEYANTHAN.M','965347219112','0','1589775970PP.jpg','1589775970AD1.jpg','1589775970AD2.jpg','')
+[2020-05-18 09:56:10]	insert into `_tblPlacements` (`ParentID`,`ParentCode`,`ParentName`,`ChildID`,`ChildCode`,`ChildName`,`PlacedByID`,`PlacedByCode`,`PlacedByName`,`PlacedOn`,`UsedEPin`,`PV`,`PackageID`,`PlacedFrom`,`Position`) values ('23','MLJEY00002','JEYANTHAN.M','32','MLBAL00006','BALASUBRAMANIAN.A','23','MLJEY00002','JEYANTHAN.M','2020-05-18 09:56:10','0','0','1','website','L')
+[2020-05-18 09:56:10]	select * from _tbl_Members where MemberID='32'
+[2020-05-18 09:56:10]	select * from `_tbl_Settings_Params` where ParamCode in ('MobileSMSSendAPI')
+[2020-05-18 09:56:10]	insert into `_tbl_Log_MobileSMS` (`MemberID`,`MemberCode`,`SmsTo`,`Message`,`Url`,`MessagedOn`) values ('32','MLBAL00006','9894214851','Dear BALASUBRAMANIAN.A, Your account has been created. Your Member ID: MLBAL00006, To activate account please contact . Login Url: http://maligai.org/login',' ','2020-05-18 09:56:10')
+[2020-05-18 09:56:10]	update _tbl_Log_MobileSMS set Url='http://www.aaranju.in/sms/api.php?apiusername=bWFsaWdpMjAic&apipassword=yMGpleWFyYWoxMjM=&sender=MALGAI&&number=9894214851&message=Dear+BALASUBRAMANIAN.A%2C+Your+account+has+been+created.+Your+Member+ID%3A+MLBAL00006%2C+To+activate+account+please+contact+.+Login+Url%3A+http%3A%2F%2Fmaligai.org%2Flogin&uid=10' where SMSID='10'
+[2020-05-18 09:56:14]	update _tbl_Log_MobileSMS set APIResponse='{"response":{"status":"SUCCESS","transid":"S.620209 S.307618  \r\n"}}' where SMSID='10'
+[2020-05-18 09:56:14]	select * from _tbl_Members where MemberID=''
+[2020-05-18 09:56:14]	SELECT * FROM `_tblEpins` where md5(concat(EPIN,PINPassword,EPINID))=''
+[2020-05-18 09:56:14]	select * from _tbl_Members where md5(concat(MemberCode,MemberName))='' 
+[2020-05-18 09:56:38]	SELECT * FROM `_tblEpins` where md5(concat(EPIN,PINPassword,EPINID))=''
+[2020-05-18 09:56:38]	select * from _tbl_Members where md5(concat(MemberCode,MemberName))='' 
+[2020-05-18 10:07:18]	select * from _tbl_Members where MobileNumber='9789762685' 
+[2020-05-18 10:07:18]	select * from `_tbl_Settings_Params` where ParamCode in ('IsMobileIsMandatory')
+[2020-05-18 10:07:18]	select * from `_tbl_Settings_Params` where ParamCode in ('AllowDuplicateMobile')
+[2020-05-18 10:07:18]	select * from _tbl_Members where MobileNumber='9944346500'
+[2020-05-18 10:07:18]	select * from `_tbl_Settings_Params` where ParamCode in ('IsEmailMandatory')
+[2020-05-18 10:07:18]	select * from `_tbl_Settings_Params` where ParamCode in ('IsPanCardIsMandatory')
+[2020-05-18 10:07:18]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`='MLMUB00004'
+[2020-05-18 10:07:18]	select * from `_tbl_Settings_Params` where ParamCode in ('MemberCodePrefix')
+[2020-05-18 10:07:18]	select * from _tbl_Members
+[2020-05-18 10:07:18]	select * from `_tbl_Settings_Params` where ParamCode in ('MemberCodeLength')
+[2020-05-18 10:07:18]	select * from `_tbl_Members` where `MemberCode`='MLMUB00004'
+[2020-05-18 10:07:18]	insert into `_tbl_Members` (`MemberCode`,`MemberName`,`Sex`,`DateofBirth`,`MobileNumber`,`MemberEmail`,`MemberPassword`,`PanCard`,`IsActive`,`CurrentPackageID`,`CurrentPackageName`,`CreatedOn`,`SponsorCode`,`SponsorID`,`SponsorName`,`UplineID`,`UplineCode`,`UplineName`,`FatherName`,`MaritalStatus`,`AddressLine1`,`AddressLine2`,`Town`,`PinCode`,`DistrictName`,`StateName`,`LandlineNumber`,`NomineeName`,`RelationshipWithTheApplicant`,`ReferralsCode`,`ReferralsName`,`AadhaarNumber`,`IDProof`,`ProfilePhoto`,`AdhaarCard`,`AdhaarCardBack`,`IDProofForAddress`) values ('MLJEB00007','JEBASTIN.G','Male','1982-3-4','9944346500','','f3d762ddb300f822bf898368edeb7729','','0','1','Basic','2020-05-18 10:07:18','MLMUB00004','30','MUBARASHA.A','30','MLMUB00004','MUBARASHA.A','GNAKKAN D DHAVIDHU','Married','30','WEST STREET, MULLANVILLAI,NALLATHAI','SAWYERPURAM','628251','Tuticorin','Tamil Nadu','','CHANDRA.G','SPOUSE','9789762685','MUBHARASHA.A','992107130108','0','1589776638PP.jpg','1589776638AD1.jpg','1589776638AD2.jpg','')
+[2020-05-18 10:07:18]	insert into `_tblPlacements` (`ParentID`,`ParentCode`,`ParentName`,`ChildID`,`ChildCode`,`ChildName`,`PlacedByID`,`PlacedByCode`,`PlacedByName`,`PlacedOn`,`UsedEPin`,`PV`,`PackageID`,`PlacedFrom`,`Position`) values ('30','MLMUB00004','MUBARASHA.A','33','MLJEB00007','JEBASTIN.G','30','MLMUB00004','MUBARASHA.A','2020-05-18 10:07:18','0','0','1','website','L')
+[2020-05-18 10:07:18]	select * from _tbl_Members where MemberID='33'
+[2020-05-18 10:07:18]	select * from `_tbl_Settings_Params` where ParamCode in ('MobileSMSSendAPI')
+[2020-05-18 10:07:18]	insert into `_tbl_Log_MobileSMS` (`MemberID`,`MemberCode`,`SmsTo`,`Message`,`Url`,`MessagedOn`) values ('33','MLJEB00007','9944346500','Dear JEBASTIN.G, Your account has been created. Your Member ID: MLJEB00007, To activate account please contact . Login Url: http://maligai.org/login',' ','2020-05-18 10:07:18')
+[2020-05-18 10:07:18]	update _tbl_Log_MobileSMS set Url='http://www.aaranju.in/sms/api.php?apiusername=bWFsaWdpMjAic&apipassword=yMGpleWFyYWoxMjM=&sender=MALGAI&&number=9944346500&message=Dear+JEBASTIN.G%2C+Your+account+has+been+created.+Your+Member+ID%3A+MLJEB00007%2C+To+activate+account+please+contact+.+Login+Url%3A+http%3A%2F%2Fmaligai.org%2Flogin&uid=11' where SMSID='11'
+[2020-05-18 10:07:19]	update _tbl_Log_MobileSMS set APIResponse='{"response":{"status":"SUCCESS","transid":"S.949555  \r\n"}}' where SMSID='11'
+[2020-05-18 10:07:19]	select * from _tbl_Members where MemberID=''
+[2020-05-18 10:07:19]	SELECT * FROM `_tblEpins` where md5(concat(EPIN,PINPassword,EPINID))=''
+[2020-05-18 10:07:19]	select * from _tbl_Members where md5(concat(MemberCode,MemberName))='' 
+[2020-05-18 10:07:28]	SELECT * FROM `_tblEpins` where md5(concat(EPIN,PINPassword,EPINID))=''
+[2020-05-18 10:07:28]	select * from _tbl_Members where md5(concat(MemberCode,MemberName))='' 
+[2020-05-18 10:10:00]	select * from _tbl_Members where MobileNumber='9677436060' 
+[2020-05-18 10:10:00]	select * from `_tbl_Settings_Params` where ParamCode in ('IsMobileIsMandatory')
+[2020-05-18 10:10:00]	select * from `_tbl_Settings_Params` where ParamCode in ('AllowDuplicateMobile')
+[2020-05-18 10:10:00]	select * from _tbl_Members where MobileNumber='7604860528'
+[2020-05-18 10:10:00]	select * from `_tbl_Settings_Params` where ParamCode in ('IsEmailMandatory')
+[2020-05-18 10:10:00]	select * from `_tbl_Settings_Params` where ParamCode in ('AllowDuplicateEmail')
+[2020-05-18 10:10:00]	select * from `_tbl_Settings_Params` where ParamCode in ('IsPanCardIsMandatory')
+[2020-05-18 10:10:00]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`='MLJEY00002'
+[2020-05-18 10:10:00]	select * from `_tblPlacements` where Position='L' and `ParentCode`='MLHAR00005'
+[2020-05-18 10:10:00]	select * from `_tbl_Settings_Params` where ParamCode in ('MemberCodePrefix')
+[2020-05-18 10:10:00]	select * from _tbl_Members
+[2020-05-18 10:10:00]	select * from `_tbl_Settings_Params` where ParamCode in ('MemberCodeLength')
+[2020-05-18 10:10:00]	select * from `_tbl_Members` where `MemberCode`='MLHAR00005'
+[2020-05-18 10:10:00]	insert into `_tbl_Members` (`MemberCode`,`MemberName`,`Sex`,`DateofBirth`,`MobileNumber`,`MemberEmail`,`MemberPassword`,`PanCard`,`IsActive`,`CurrentPackageID`,`CurrentPackageName`,`CreatedOn`,`SponsorCode`,`SponsorID`,`SponsorName`,`UplineID`,`UplineCode`,`UplineName`,`FatherName`,`MaritalStatus`,`AddressLine1`,`AddressLine2`,`Town`,`PinCode`,`DistrictName`,`StateName`,`LandlineNumber`,`NomineeName`,`RelationshipWithTheApplicant`,`ReferralsCode`,`ReferralsName`,`AadhaarNumber`,`IDProof`,`ProfilePhoto`,`AdhaarCard`,`AdhaarCardBack`,`IDProofForAddress`) values ('MLHAR00008','HARINATHPRAVEEN.M','Male','1989-6-6','7604860528','HPRAVEEN89@GMAIL.COM','0722eb7aab91617c651ced198759f1d4','','0','1','Basic','2020-05-18 10:10:00','MLJEY00002','23','JEYANTHAN.M','23','MLJEY00002','JEYANTHAN.M','MURUGAN.A','Married','NADAR PETTAI','SAYALGUDI','SAYALGUDI','623120','Ramanathapuram','Tamil Nadu','','BANUPRIYA.L','SPOUSE','9677436060','JEYANTHAN.M','400713779799','0','1589776800PP.jpg','1589776800AD1.jpg','1589776800AD2.jpg','')
+[2020-05-18 10:10:00]	insert into `_tblPlacements` (`ParentID`,`ParentCode`,`ParentName`,`ChildID`,`ChildCode`,`ChildName`,`PlacedByID`,`PlacedByCode`,`PlacedByName`,`PlacedOn`,`UsedEPin`,`PV`,`PackageID`,`PlacedFrom`,`Position`) values ('23','MLJEY00002','JEYANTHAN.M','34','MLHAR00008','HARINATHPRAVEEN.M','23','MLJEY00002','JEYANTHAN.M','2020-05-18 10:10:00','0','0','1','website','L')
+[2020-05-18 10:10:00]	select * from _tbl_Members where MemberID='34'
+[2020-05-18 10:10:00]	select * from `_tbl_Settings_Params` where ParamCode in ('MobileSMSSendAPI')
+[2020-05-18 10:10:00]	insert into `_tbl_Log_MobileSMS` (`MemberID`,`MemberCode`,`SmsTo`,`Message`,`Url`,`MessagedOn`) values ('34','MLHAR00008','7604860528','Dear HARINATHPRAVEEN.M, Your account has been created. Your Member ID: MLHAR00008, To activate account please contact . Login Url: http://maligai.org/login',' ','2020-05-18 10:10:00')
+[2020-05-18 10:10:00]	update _tbl_Log_MobileSMS set Url='http://www.aaranju.in/sms/api.php?apiusername=bWFsaWdpMjAic&apipassword=yMGpleWFyYWoxMjM=&sender=MALGAI&&number=7604860528&message=Dear+HARINATHPRAVEEN.M%2C+Your+account+has+been+created.+Your+Member+ID%3A+MLHAR00008%2C+To+activate+account+please+contact+.+Login+Url%3A+http%3A%2F%2Fmaligai.org%2Flogin&uid=12' where SMSID='12'
+[2020-05-18 10:10:01]	update _tbl_Log_MobileSMS set APIResponse='{"response":{"status":"SUCCESS","transid":"S.311036 S.29572  \r\n"}}' where SMSID='12'
+[2020-05-18 10:10:01]	select * from _tbl_Members where MemberID=''
+[2020-05-18 10:10:01]	SELECT * FROM `_tblEpins` where md5(concat(EPIN,PINPassword,EPINID))=''
+[2020-05-18 10:10:01]	select * from _tbl_Members where md5(concat(MemberCode,MemberName))='' 
+[2020-05-18 10:23:52]	SELECT * FROM `_tblEpins` where md5(concat(EPIN,PINPassword,EPINID))=''
+[2020-05-18 10:23:52]	select * from _tbl_Members where md5(concat(MemberCode,MemberName))='' 
+[2020-05-18 10:34:25]	select * from _tbl_Members where MobileNumber='9003974774' 
+[2020-05-18 10:34:25]	select * from `_tbl_Settings_Params` where ParamCode in ('IsMobileIsMandatory')
+[2020-05-18 10:34:25]	select * from `_tbl_Settings_Params` where ParamCode in ('AllowDuplicateMobile')
+[2020-05-18 10:34:25]	select * from _tbl_Members where MobileNumber='9003819555'
+[2020-05-18 10:34:25]	select * from `_tbl_Settings_Params` where ParamCode in ('IsEmailMandatory')
+[2020-05-18 10:34:25]	select * from `_tbl_Settings_Params` where ParamCode in ('AllowDuplicateEmail')
+[2020-05-18 10:34:25]	select * from `_tbl_Settings_Params` where ParamCode in ('IsPanCardIsMandatory')
+[2020-05-18 10:34:25]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`='MLRAM00003'
+[2020-05-18 10:34:25]	select * from `_tblPlacements` where Position='L' and `ParentCode`='MLARU00008'
+[2020-05-18 10:34:25]	select * from `_tbl_Settings_Params` where ParamCode in ('MemberCodePrefix')
+[2020-05-18 10:34:25]	select * from _tbl_Members
+[2020-05-18 10:34:25]	select * from `_tbl_Settings_Params` where ParamCode in ('MemberCodeLength')
+[2020-05-18 10:34:25]	select * from `_tbl_Members` where `MemberCode`='MLARU00008'
+[2020-05-18 10:34:25]	insert into `_tbl_Members` (`MemberCode`,`MemberName`,`Sex`,`DateofBirth`,`MobileNumber`,`MemberEmail`,`MemberPassword`,`PanCard`,`IsActive`,`CurrentPackageID`,`CurrentPackageName`,`CreatedOn`,`SponsorCode`,`SponsorID`,`SponsorName`,`UplineID`,`UplineCode`,`UplineName`,`FatherName`,`MaritalStatus`,`AddressLine1`,`AddressLine2`,`Town`,`PinCode`,`DistrictName`,`StateName`,`LandlineNumber`,`NomineeName`,`RelationshipWithTheApplicant`,`ReferralsCode`,`ReferralsName`,`AadhaarNumber`,`IDProof`,`ProfilePhoto`,`AdhaarCard`,`AdhaarCardBack`,`IDProofForAddress`) values ('MLNEL00009','NELSON PAUL JAISON DURAI','Male','1983-7-9','9003819555','NELSONPAUL09@GMAIL.COM','6784ac07a6aeb1433c961ace509971d0','','0','1','Basic','2020-05-18 10:34:25','MLRAM00003','24','RAMACHANDRAN.V','24','MLRAM00003','RAMACHANDRAN.V','VICTOR','Married','107/19','P.C.ROAD WEST, MILLER PURAM','TUTICORIN','628008','Tuticorin','Tamil Nadu','','VANITHA JASMINE','SPOUSE','9003974774','RAMACHANDRAN.V','922282364647','0','1589778265PP.jpg','1589778265AD1.jpg','1589778265AD2.jpg','')
+[2020-05-18 10:34:25]	insert into `_tblPlacements` (`ParentID`,`ParentCode`,`ParentName`,`ChildID`,`ChildCode`,`ChildName`,`PlacedByID`,`PlacedByCode`,`PlacedByName`,`PlacedOn`,`UsedEPin`,`PV`,`PackageID`,`PlacedFrom`,`Position`) values ('24','MLRAM00003','RAMACHANDRAN.V','35','MLNEL00009','NELSON PAUL JAISON DURAI','24','MLRAM00003','RAMACHANDRAN.V','2020-05-18 10:34:25','0','0','1','website','L')
+[2020-05-18 10:34:25]	select * from _tbl_Members where MemberID='35'
+[2020-05-18 10:34:25]	select * from `_tbl_Settings_Params` where ParamCode in ('MobileSMSSendAPI')
+[2020-05-18 10:34:25]	insert into `_tbl_Log_MobileSMS` (`MemberID`,`MemberCode`,`SmsTo`,`Message`,`Url`,`MessagedOn`) values ('35','MLNEL00009','9003819555','Dear NELSON PAUL JAISON DURAI, Your account has been created. Your Member ID: MLNEL00009, To activate account please contact . Login Url: http://maligai.org/login',' ','2020-05-18 10:34:25')
+[2020-05-18 10:34:25]	update _tbl_Log_MobileSMS set Url='http://www.aaranju.in/sms/api.php?apiusername=bWFsaWdpMjAic&apipassword=yMGpleWFyYWoxMjM=&sender=MALGAI&&number=9003819555&message=Dear+NELSON+PAUL+JAISON+DURAI%2C+Your+account+has+been+created.+Your+Member+ID%3A+MLNEL00009%2C+To+activate+account+please+contact+.+Login+Url%3A+http%3A%2F%2Fmaligai.org%2Flogin&uid=13' where SMSID='13'
+[2020-05-18 10:34:25]	update _tbl_Log_MobileSMS set APIResponse='{"response":{"status":"SUCCESS","transid":"S.5494 S.662995  \r\n"}}' where SMSID='13'
+[2020-05-18 10:34:25]	select * from _tbl_Members where MemberID=''
+[2020-05-18 10:34:25]	SELECT * FROM `_tblEpins` where md5(concat(EPIN,PINPassword,EPINID))=''
+[2020-05-18 10:34:25]	select * from _tbl_Members where md5(concat(MemberCode,MemberName))='' 
+[2020-05-18 10:34:48]	SELECT * FROM `_tblEpins` where md5(concat(EPIN,PINPassword,EPINID))=''
+[2020-05-18 10:34:48]	select * from _tbl_Members where md5(concat(MemberCode,MemberName))='' 
+[2020-05-18 10:42:23]	select * from _tbl_Members where MobileNumber='9003819555' 
+[2020-05-18 10:42:23]	select * from `_tbl_Settings_Params` where ParamCode in ('IsMobileIsMandatory')
+[2020-05-18 10:42:23]	select * from `_tbl_Settings_Params` where ParamCode in ('AllowDuplicateMobile')
+[2020-05-18 10:42:23]	select * from _tbl_Members where MobileNumber='9003809555'
+[2020-05-18 10:42:23]	select * from `_tbl_Settings_Params` where ParamCode in ('IsEmailMandatory')
+[2020-05-18 10:42:23]	select * from `_tbl_Settings_Params` where ParamCode in ('IsPanCardIsMandatory')
+[2020-05-18 10:42:23]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`='MLNEL00009'
+[2020-05-18 10:42:23]	select * from `_tbl_Settings_Params` where ParamCode in ('MemberCodePrefix')
+[2020-05-18 10:42:23]	select * from _tbl_Members
+[2020-05-18 10:42:23]	select * from `_tbl_Settings_Params` where ParamCode in ('MemberCodeLength')
+[2020-05-18 10:42:23]	select * from `_tbl_Members` where `MemberCode`='MLNEL00009'
+[2020-05-18 10:42:23]	insert into `_tbl_Members` (`MemberCode`,`MemberName`,`Sex`,`DateofBirth`,`MobileNumber`,`MemberEmail`,`MemberPassword`,`PanCard`,`IsActive`,`CurrentPackageID`,`CurrentPackageName`,`CreatedOn`,`SponsorCode`,`SponsorID`,`SponsorName`,`UplineID`,`UplineCode`,`UplineName`,`FatherName`,`MaritalStatus`,`AddressLine1`,`AddressLine2`,`Town`,`PinCode`,`DistrictName`,`StateName`,`LandlineNumber`,`NomineeName`,`RelationshipWithTheApplicant`,`ReferralsCode`,`ReferralsName`,`AadhaarNumber`,`IDProof`,`ProfilePhoto`,`AdhaarCard`,`AdhaarCardBack`,`IDProofForAddress`) values ('MLVAN00010','VANITHA JASMINE','Male','1987-12-11','9003809555','','fb2f2ebb72324f511a325e283674fb3d','','0','1','Basic','2020-05-18 10:42:23','MLNEL00009','35','NELSON PAUL JAISON DURAI','35','MLNEL00009','NELSON PAUL JAISON DURAI','KULANTHAIVELU','Married','107/19','P.C.ROAD WEST, MILLERPURAM','TUTICORIN','628008','Tuticorin','Tamil Nadu','','NELSON PAUL JAISON DURAI','SPOUSE','9003819555','NELSON PAUL JAISON DURAI','666729986450','0','1589778743PP.jpg','1589778743AD1.jpg','1589778743AD2.jpg','')
+[2020-05-18 10:42:24]	insert into `_tblPlacements` (`ParentID`,`ParentCode`,`ParentName`,`ChildID`,`ChildCode`,`ChildName`,`PlacedByID`,`PlacedByCode`,`PlacedByName`,`PlacedOn`,`UsedEPin`,`PV`,`PackageID`,`PlacedFrom`,`Position`) values ('35','MLNEL00009','NELSON PAUL JAISON DURAI','36','MLVAN00010','VANITHA JASMINE','35','MLNEL00009','NELSON PAUL JAISON DURAI','2020-05-18 10:42:24','0','0','1','website','L')
+[2020-05-18 10:42:24]	select * from _tbl_Members where MemberID='36'
+[2020-05-18 10:42:24]	select * from `_tbl_Settings_Params` where ParamCode in ('MobileSMSSendAPI')
+[2020-05-18 10:42:24]	insert into `_tbl_Log_MobileSMS` (`MemberID`,`MemberCode`,`SmsTo`,`Message`,`Url`,`MessagedOn`) values ('36','MLVAN00010','9003809555','Dear VANITHA JASMINE, Your account has been created. Your Member ID: MLVAN00010, To activate account please contact . Login Url: http://maligai.org/login',' ','2020-05-18 10:42:24')
+[2020-05-18 10:42:24]	update _tbl_Log_MobileSMS set Url='http://www.aaranju.in/sms/api.php?apiusername=bWFsaWdpMjAic&apipassword=yMGpleWFyYWoxMjM=&sender=MALGAI&&number=9003809555&message=Dear+VANITHA+JASMINE%2C+Your+account+has+been+created.+Your+Member+ID%3A+MLVAN00010%2C+To+activate+account+please+contact+.+Login+Url%3A+http%3A%2F%2Fmaligai.org%2Flogin&uid=14' where SMSID='14'
+[2020-05-18 10:42:24]	update _tbl_Log_MobileSMS set APIResponse='{"response":{"status":"SUCCESS","transid":"S.626801 S.651124  \r\n"}}' where SMSID='14'
+[2020-05-18 10:42:24]	select * from _tbl_Members where MemberID=''
+[2020-05-18 10:42:24]	SELECT * FROM `_tblEpins` where md5(concat(EPIN,PINPassword,EPINID))=''
+[2020-05-18 10:42:24]	select * from _tbl_Members where md5(concat(MemberCode,MemberName))='' 
+[2020-05-18 11:00:56]	select * from `_tbl_admin` where  `AdminEmail`='admin@admin.com'
+[2020-05-18 11:00:56]	insert into `_tbl_admin_login_logs` (`AdminID`,`LoginOn`,`IsSuccess`) values ('2','2020-05-18 11:00:56','1')
+[2020-05-18 11:00:56]	select * from _tbl_Settings_Params where ParamCode='AdminLoginEmailOTPRequired'
+[2020-05-18 11:00:56]	select * from _tbl_Settings_Params where ParamCode='AdminLoginMobileOTPRequired'
+[2020-05-18 12:06:11]	select * from `_tbl_admin` where  `AdminEmail`='admin@admin.com'
+[2020-05-18 12:06:11]	insert into `_tbl_admin_login_logs` (`AdminID`,`LoginOn`,`IsSuccess`) values ('2','2020-05-18 12:06:11','1')
+[2020-05-18 12:06:11]	select * from _tbl_Settings_Params where ParamCode='AdminLoginEmailOTPRequired'
+[2020-05-18 12:06:11]	select * from _tbl_Settings_Params where ParamCode='AdminLoginMobileOTPRequired'
+[2020-05-18 12:52:02]	select * from `_tbl_Members` where  `MemberCode`='admin@admin.com'
+[2020-05-18 12:52:04]	select * from `_tbl_Members` where  `MemberCode`='admin@admin.com'
+[2020-05-18 12:52:13]	select * from `_tbl_Members` where  `MemberCode`='admin@admin.com'
+[2020-05-18 12:52:20]	select * from `_tbl_Members` where  `MemberCode`='admin@admin.com'
+[2020-05-18 12:53:11]	select * from `_tbl_admin` where  `AdminEmail`='admin@admin.com'
+[2020-05-18 12:53:11]	insert into `_tbl_admin_login_logs` (`AdminID`,`LoginOn`,`IsSuccess`) values ('2','2020-05-18 12:53:11','1')
+[2020-05-18 12:53:11]	select * from _tbl_Settings_Params where ParamCode='AdminLoginEmailOTPRequired'
+[2020-05-18 12:53:11]	select * from _tbl_Settings_Params where ParamCode='AdminLoginMobileOTPRequired'
+[2020-05-18 15:13:52]	SELECT * FROM `_tblEpins` where md5(concat(EPIN,PINPassword,EPINID))=''
+[2020-05-18 15:13:52]	select * from _tbl_Members where md5(concat(MemberCode,MemberName))='' 
+[2020-05-18 15:17:11]	SELECT * FROM `_tblEpins` where md5(concat(EPIN,PINPassword,EPINID))=''
+[2020-05-18 15:17:11]	select * from _tbl_Members where md5(concat(MemberCode,MemberName))='' 
+[2020-05-18 15:26:29]	select * from `_tbl_Members` where  `MemberCode`='admin@admin.com'
+[2020-05-18 15:26:36]	select * from `_tbl_admin` where  `AdminEmail`='admin@admin.com'
+[2020-05-18 15:26:36]	insert into `_tbl_admin_login_logs` (`AdminID`,`LoginOn`,`IsSuccess`) values ('2','2020-05-18 15:26:36','1')
+[2020-05-18 15:26:36]	select * from _tbl_Settings_Params where ParamCode='AdminLoginEmailOTPRequired'
+[2020-05-18 15:26:36]	select * from _tbl_Settings_Params where ParamCode='AdminLoginMobileOTPRequired'
+[2020-05-18 17:09:04]	select * from `_tbl_admin` where  `AdminEmail`='admin@admin.com'
+[2020-05-18 17:09:04]	insert into `_tbl_admin_login_logs` (`AdminID`,`LoginOn`,`IsSuccess`) values ('2','2020-05-18 17:09:04','1')
+[2020-05-18 17:09:04]	select * from _tbl_Settings_Params where ParamCode='AdminLoginEmailOTPRequired'
+[2020-05-18 17:09:04]	select * from _tbl_Settings_Params where ParamCode='AdminLoginMobileOTPRequired'
+[2020-05-18 17:58:18]	select * from `_tbl_admin` where  `AdminEmail`='admin@admin.com'
+[2020-05-18 17:58:18]	insert into `_tbl_admin_login_logs` (`AdminID`,`LoginOn`,`IsSuccess`) values ('2','2020-05-18 17:58:18','1')
+[2020-05-18 17:58:18]	select * from _tbl_Settings_Params where ParamCode='AdminLoginEmailOTPRequired'
+[2020-05-18 17:58:18]	select * from _tbl_Settings_Params where ParamCode='AdminLoginMobileOTPRequired'

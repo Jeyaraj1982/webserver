@@ -1,0 +1,8 @@
+[2020-05-26 16:27:31]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`=''
+[2020-05-26 16:27:31]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`=''
+[2020-05-26 16:27:31]	select * from _tbl_Members where IsActive='1'
+[2020-05-26 16:27:31]	select * from _tbl_Members where IsActive='0'
+[2020-05-26 16:27:31]	select * from `_tbl_Members` where `IsBinaryEligible`='1'
+[2020-05-26 16:27:31]	select * from `_tbl_Members` where `IsPayoutEligible`='1'
+[2020-05-26 16:27:31]	select sum(Debits) as d from _tbl_wallet_earnings where Ledger='1'
+[2020-05-26 16:27:31]	select sum(Credits) as d from _tbl_wallet_earnings where Ledger='0'
