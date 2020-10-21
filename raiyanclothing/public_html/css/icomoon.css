@@ -1,0 +1,112 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?l0905k');
+	src:url('../fonts/icomoon.eot?#iefixl0905k') format('embedded-opentype'),
+		url('../fonts/icomoon.ttf?l0905k') format('truetype'),
+		url('../fonts/icomoon.woff?l0905k') format('woff'),
+		url('../fonts/icomoon.svg?l0905k#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-view-large:before {
+	content: "\e61c";
+}
+.icon-close:before {
+	content: "\e61b";
+}
+.icon-location-icon:before {
+	content: "\e600";
+}
+.icon-mail-icon:before {
+	content: "\e601";
+}
+.icon-phone-icon:before {
+	content: "\e602";
+}
+.icon-testimonial-icon:before {
+	content: "\e603";
+}
+.icon-arrow-down:before {
+	content: "\e604";
+}
+.icon-arrow-top:before {
+	content: "\e605";
+}
+.icon-arrow-left:before {
+	content: "\e606";
+}
+.icon-arrow-right:before {
+	content: "\e607";
+}
+.icon-arrow-right-latest-races:before {
+	content: "\e608";
+}
+.icon-athlete:before {
+	content: "\e609";
+}
+.icon-care-01-icon:before {
+	content: "\e60a";
+}
+.icon-care-02-icon:before {
+	content: "\e60b";
+}
+.icon-care-03-icon:before {
+	content: "\e60c";
+}
+.icon-care-04-icon:before {
+	content: "\e60d";
+}
+.icon-care-05-icon:before {
+	content: "\e60e";
+}
+.icon-care-06-icon:before {
+	content: "\e60f";
+}
+.icon-hotel:before {
+	content: "\e610";
+}
+.icon-photography:before {
+	content: "\e611";
+}
+.icon-product-01-icon:before {
+	content: "\e612";
+}
+.icon-product-02-icon:before {
+	content: "\e613";
+}
+.icon-product-03-icon:before {
+	content: "\e614";
+}
+.icon-product-04-icon:before {
+	content: "\e615";
+}
+.icon-product-05-icon:before {
+	content: "\e616";
+}
+.icon-product-06-icon:before {
+	content: "\e617";
+}
+.icon-product-07-icon:before {
+	content: "\e618";
+}
+.icon-product-08-icon:before {
+	content: "\e619";
+}
+.icon-Search-icon:before {
+	content: "\e61a";
+}

@@ -1,0 +1,14 @@
+.bg-video {
+    background-color: transparent !important;
+}
+
+.tubular-mute {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #434343;
+}
+
+.tubular-mute.striked {
+    text-decoration: line-through !important;
+}

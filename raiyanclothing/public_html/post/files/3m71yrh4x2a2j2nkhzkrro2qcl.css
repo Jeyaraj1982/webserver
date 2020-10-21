@@ -1,0 +1,8 @@
+﻿.dialog-overlay {position:absolute;left:0;top:0;bottom:0;right:0;background-color:#ffffff; z-index:999;}
+.dialog-main {position:absolute; top:0; left:0; padding:0; margin:0; background-color:#ffffff; z-index:1000; border:solid 1px #5D7EA5; }
+.dialog-main .dialog-header {width:100%; height:25px; background-color:#5D7EA5; background:url(182he4uxuazsa2avt8yivg8seq.gif) repeat-x; color:#ffffff; cursor:move; border-bottom:solid 1px #cccccc; }
+.dialog-main .dialog-header .dialog-title {float:left; font-family:arial; font-weight:bold; color:#ffffff; margin:4px 0 0 5px; }
+.dialog-main .dialog-header .dialog-close {float:right; cursor:pointer; margin:5px 5px 0 0; width:12px; height:12px; background:url(1q32eheqirtv33138f6zcugjk3.gif) no-repeat; }
+.dialog-main .dialog-content {height:50px; background-color:#ffffff; margin:10px 10px 10px 10px;}
+.dialog-main .dialog-footer {height:34px; background-color:#eeeeee; border-top:1px solid #cccccc; padding:6px 10px 0 0; text-align:right; }
+.dialog-main .dialog-footer input {height:22px; min-width:40px; border:1px solid #cccccc; background:url(310cove3qw9tr7aq09fjygix0.gif) repeat-x; font-family:arial; font-size:12px; color:#333333; cursor:pointer; padding:3px 10px; text-align:center; }

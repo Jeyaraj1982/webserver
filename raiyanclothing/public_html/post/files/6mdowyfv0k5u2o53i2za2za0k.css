@@ -1,0 +1,38 @@
+html, body {margin:0; padding:0; width:100%; height:100%;
+	font-family:Arial,sans-serif,Tahoma; font-size:12px; color:#333333; line-height:150%; background-color:#FFFFFF;
+	scrollbar-face-color:#e2e2e2; scrollbar-3dlight-color:#e2e2e2; scrollbar-arrow-color:#333333; 
+	scrollbar-track-color:#e2e2e2;  scrollbar-darkshadow-color:#e2e2e2; scrollbar-base-color:#e2e2e2;
+}
+td, input, textarea, select {font-family:Arial,sans-serif,Tahoma; font-size:12px; color:#333333;}
+form {margin:0;padding:0}
+img {border:0;}
+
+a:link, a:visited {color:#666666; text-decoration:none;}
+a:hover {color:#666666; text-decoration:underline;}
+
+.textbox {height:22px;line-height:22px; width:145px; padding-left:2px; font-size:13px; font-weight:bold; border:1px solid #bbbbbb; background-color:#ffffff;}
+.button {border:1px solid #333333; padding:2px 0 0 0; background-color:#fefff5;}
+select {height:25px;width:150px; font-size:13px; }
+
+a.gray:link, a.gray:visited {color:#999999; text-decoration:none;}
+a.gray:hover {color:#999999; text-decoration:underline;}
+
+a.blue:link, a.blue:visited {color:#005590; text-decoration:none;}
+a.blue:hover {background-color:#005590; color:#FFFFFF; text-decoration:none;}
+
+.black {font-size:12px; color:#333333;}
+.blackb {font-size:12px; font-weight:bold; color:#333333;}
+
+.bluebtn {width:100px; height:35px; color:#FFFFFF; font-weight:bold; background-image:url(ixd481lrtotq10keebomtjfld.gif); cursor:pointer; cursor:hand;
+	-moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius:2px;}
+
+.indextip {color: #999999; font-size: 10px; line-height:100%; text-align: left}
+
+.tablebg{border:1px solid #C3D9FF;}
+.tb_header{height:25px; color:#FFFFFF; background-color:#A0BAD7;}
+.tb_value{height:120px; background-color:#FFFFFF;}
+
+input:-moz-placeholder {color:#999999;font-weight:normal;}
+::-webkit-input-placeholder {color:#999999;font-weight:normal;}
+:-ms-input-placeholder{color:#999999;font-weight:normal;}
+.placeholder {color: #999999;font-weight:normal;}

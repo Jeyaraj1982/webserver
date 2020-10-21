@@ -1,0 +1,220 @@
+/* =============================================
+			All Border Colors
+============================================= */
+.dropdown-menu.cartitems .btn-area .theme-btn-sm.btn-viewall,
+.dropdown-menu.cartitems .btn-area .theme-btn-sm.btn-checkout,
+.social-icon li a,
+.btn-delete-item{ border-color:#7a7a7a;}
+#sync1 .item .product,
+#products-thumb .item,
+.post.post-list figure,
+.post .video,
+.post .audio,
+.products .product,
+.product-banner,
+.review-pic,
+#sync2 .item{ border-color:#ebebeb;}
+.social-icon li a:hover,
+.dropdown-menu.cartitems .btn-area .theme-btn-sm.btn-viewall:hover,
+.dropdown-menu.cartitems .btn-area .theme-btn-sm.btn-checkout:hover,
+.btn-delete-item:hover,
+.border-left,
+.post:hover .img-hover,
+.theme-btn-sm:hover{border-color:#ec0b33;}
+.theme-btn-sm{ border-color:#000;}
+.top-arrow:after{ border-bottom-color:#313131;}
+.dropdown-menu.cartitems .cart-list li{ border-bottom-color:#535353;}
+.img-hover-border{ border-color:rgba(0,0,0,0.30);}
+.img-hover-border .holder{ border-color:#7b797c;}
+.event-meta li{ border-color:#b3b3b3;}
+.post:hover .img-hover{}
+.form-search fieldset .theme-style{ border-color:#3c3c3c !important;}
+.post .post-head p span,
+.post-icons li{ border-left-color:#313131;}
+.tags a{ border-color:#ccc;}
+.product-perpage .jcf-select{ border-color:#dadada;}
+.products.list-type .product figure{ border-right-color:#ebebeb;}
+.products.list-type .product figure{ border-bottom-color:#ebebeb;}
+.instructions-icons i {
+	border: 2px solid #bdbdc0;
+	color: #d7d7d7;
+	background:#fff;
+}
+.theme-nav-tabs li a{
+	border-color:#fff;
+	background:#dddbdb;
+}
+.theme-nav-tabs li a:hover,
+.theme-nav-tabs li.active a{border-color:#f7f7f7;}
+.product-reviews ul li + li{ border-top-color:#ebebeb;}
+.product-size ul li a{
+	border:2px solid #d3d3d3;
+	color:#d3d3d3;
+}
+.product-size ul li.xxl a{border-color:#484848;}
+.product-color ul li a{background:#5c9acd;}
+.product-color ul li:nth-child(2) a{background:#c249a6;}
+.product-color ul li:nth-child(3) a{background:#9db543;}
+.product-size ul li.l a,
+#gallery-cats li.select a,
+#gallery-cats li a:hover,
+.product-size ul li.xl a{border-color:#f44029;}
+.product-slider{border-color:#e1e1e1;}
+/* =============================================
+			All Text Colors
+============================================= */
+.social-icon li a,
+.email,
+.phone,
+.btn-dropdown em,
+.btn-dropdown span,
+.dropdown-menu.cartitems strong.title,
+.btn-dropdown i{color:#dddcdc;}
+.theme-btn-sm,
+#nav ul li a,
+.home-slider figcaption .description,
+.service .description,
+.service .description a,
+.event-meta li a,
+.info-area li em a,
+.skill-name,
+.form-search fieldset .theme-style,
+.post.with-border .img-hover a,
+.post.with-border .img-hover,
+.post.with-border .post-meta li:nth-child(odd) a,
+.post.with-border .post-meta li:nth-child(even) a,
+.post-icons li a,
+.post .post-head h3 a,
+.post.post-list:hover .post-head h3 a,
+.post .post-head p span a,
+.btn-reply,
+.filter-form .widget ul li label,
+.shop-head ul li a,
+.product-quantity strong.label,
+.product-color strong.label,
+.product-size strong.label,
+.theme-nav-tabs li a,
+.size-guide a,
+.quantity-sapn em,
+.social-icon li a:hover i{ color:#313131;}
+.icon,
+.sale-tag-sm,
+.sale-tag-lg,
+.theme-btn,
+.dropdown .dropdown-menu,
+.dropdown-menu.cartitems .btn-area .theme-btn-sm.btn-viewall,
+.dropdown-menu.cartitems .btn-area .theme-btn-sm.btn-checkout,
+.btn-delete-item a,
+.btn-delete-item:hover,
+.btn-delete-item:hover a,
+#nav ul li.active a,
+#nav ul li:hover a,
+#nav ul li a:hover,
+.theme-btn:hover,
+.service .heading-icon .icon .fa-star-o,
+.product-icons li a:hover,
+.post .img-hover,
+.post .img-hover a,
+.footer-bar,
+.skill.active .skill-name span,
+.skill:hover .skill-name span,
+.accordion-heading h4 a,
+.post.with-border:hover .img-hover,
+.post.with-border .post-meta li:nth-child(odd) a,
+.post.with-border:hover h3 a,
+.btn-reply:hover,
+.quantity-sapn em,
+#gallery-cats li.select a,
+#gallery-cats li a:hover,
+.theme-btn-sm:hover{color:#fff;}
+.fa-star-o,
+.fa-star-half-empty,
+.fa-star,
+.email em a:hover,
+a:hover, a:focus, a:active,
+.home-slider figcaption h1 span,
+.service:hover h3,
+.service .description a:hover,
+.product-note em,
+.event-meta li a:hover,
+.info-area li em a:hover,
+.post-icons li a:hover,
+.post .post-head h3 a:hover,
+.post.post-list:hover .post-head h3 a:hover,
+.post .post-head p span a:hover,
+.single blockquote .author a,
+.page-viewtype li.active a,
+.size-guide a:hover,
+.review-reference .review:hover,
+.heading-icon:hover{ color:#ec0b33;}
+/* =============================================
+			All Background Colors
+============================================= */
+.post .img-hover .heading-leftborder:after,
+.post.with-border .post-meta li a,
+.theme-btn-sm{ background:#fff;}
+.dropdown .dropdown-menu,
+.heading-twopx-border:after,
+.post .img-hover,
+.accordion-heading,
+#view-product-slider .owl-controls .owl-page span,
+.top-bar{background:#f32847;}
+.post.with-border:hover .img-hover,
+.post:hover .img-hover{ background:rgba(49, 49, 49, 0.50);}
+.post.with-border .img-hover{ background:rgba(255,255,255,0.90);}
+.theme-btn-sm:hover,
+.dropdown-menu.cartitems .btn-area .theme-btn-sm.btn-viewall:hover,
+.btn-delete-item:hover,
+.dropdown-menu.cartitems .btn-area .theme-btn-sm.btn-checkout:hover,
+#nav ul li a:after,
+.theme-btn:hover,
+.service:hover .heading-icon .icon,
+.sale-tag-sm,
+.sale-tag-lg,
+#gallery-cats li a:hover,
+.product-icons li:after,
+.footer-bar,
+.skill.active .skill-name span,
+.skill:hover .skill-name span,
+.skill.active .skill-bar,
+.skill:hover .skill-bar,
+.accordion-heading:hover,
+.post.with-border .post-meta li a:hover,
+.post.with-border .post-meta li:nth-child(odd) a:hover,
+.btn-reply:hover,
+#view-product-slider .owl-controls .owl-page span:hover,
+#view-product-slider .owl-controls .owl-page.active span,
+.quantity-sapn em:hover,
+#gallery-cats li.select a,
+#gallery-cats li a:hover,
+.social-icon li a:hover{background:#f32847;}
+.icon,
+.theme-btn,
+.breadcrumbs,
+.post.with-border .post-meta li:nth-child(odd) a,
+.quantity-sapn em,
+.social-icon li a{background:#f3b628;}
+.brands,
+.bg-light,
+.team,
+.skill-holder,
+.theme-accordion .panel-body,
+.btn-reply,
+.view-products,
+.theme-tab-content,
+.theme-nav-tabs li a:hover,
+.theme-nav-tabs li.active a,
+.our-gallery .gallery-textbox{ background:#fff;
+}
+#add-comment{ background-color:#f7f7f7;}
+.post figure{ background:#000;}
+.skill-name span,
+.skill-bar{ background:#cfcfcf;}
+.sorry{ background:#cdd3de;}
+/* =============================================
+			All Background Transparent
+============================================= */
+#nav ul li a,
+.dropdown-menu.cartitems .btn-area .theme-btn-sm.btn-viewall,
+.dropdown-menu.cartitems .btn-area .theme-btn-sm.btn-checkout,
+.dropdown, .btn-dropdown {background: none;}

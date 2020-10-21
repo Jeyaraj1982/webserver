@@ -1,0 +1,79 @@
+.slider-wrapper{
+	position:relative;
+	overflow:hidden;
+}
+#slider3 img {
+	display: block;
+	float: left;
+	width:1400px;
+	height:auto;
+}
+#slider3-prev,
+#slider3-next {
+	background: rgba(0, 0, 0, 0.5);
+	display: block;
+	height: 100%;
+	width: 132px;
+	top: 0;
+	position: absolute;
+	z-index:2;
+}
+#slider3-prev:hover,
+#slider3-next:hover {background: rgba(0, 0, 0, 0.8);}
+#slider3-prev {left: 0;}
+#slider3-next {right: 0;}
+#slider3-pager {
+	position: absolute;
+	left: 50%;
+	bottom: 10px;
+	z-index:2;
+}
+#slider3-pager a {
+	border: 1px solid #000;
+	border-radius: 15px;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	margin: 0 2px;
+}
+#slider3-pager a:hover {background: rgba(0, 0, 0, 0.5);}
+#slider3-pager a span {display: none;}
+#slider3-pager a.selected {background: #000;}
+#slider3-pager{ display:none !important;}
+@media (max-width:1920px){#slider3 img {width:1656px;}}
+@media (max-width:1680px){#slider3 img {width:1400px;}}
+@media (max-width:1400px){
+	#slider3 img {width:1085px;}
+/*	#slider3-prev,
+	#slider3-next { width:100px}*/
+}
+@media (max-width:1280px){#slider3 img {width:780px;}}
+@media (max-width:1024px){#slider3 img {width:824px;}}
+@media (max-width:980px){#slider3 img {width:780px;}}
+@media (max-width:800px){#slider3 img {width:600px;}}
+@media (max-width:768px){#slider3 img {width:568px;}}
+/*  iPhone 6 Plus */
+@media (max-width:736px){
+	#slider3-prev,
+	#slider3-next { width:84px}
+}
+/*  iPhone 6 */
+@media (max-width:667px){
+	#slider3 img {width:567px;}
+	#slider3-prev,
+	#slider3-next { width:50px}
+}
+@media (max-width:640px){#slider3 img {width:540px;}}
+/* iPhone 5 */
+@media (max-width:568px){#slider3 img {width:468px;}}
+@media (max-width:480px){#slider3 img {width:380px;}}
+@media (max-width:360px){
+	#slider3 img {width:300px;}
+	#slider3-prev,
+	#slider3-next { width:30px}
+}
+@media (max-width:320px){
+	#slider3 img {width:260px;}
+	#slider3-prev,
+	#slider3-next { width:30px}
+}

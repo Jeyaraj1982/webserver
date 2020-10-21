@@ -1,0 +1,6 @@
+[04-Apr-2020 13:57:14 UTC] PHP Warning:  unlink(.txt): No such file or directory in /home/raiyanclothing/public_html/banner/whmauto.PHP on line 129
+[04-Apr-2020 13:57:40 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/raiyanclothing/public_html/banner/symlink.php on line 11
+[04-Apr-2020 13:57:49 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/raiyanclothing/public_html/banner/symlink.php on line 11
+[04-Apr-2020 13:57:52 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/raiyanclothing/public_html/banner/symlink.php on line 11
+[04-Apr-2020 13:57:57 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/raiyanclothing/public_html/banner/symlink.php on line 11
+[04-Apr-2020 13:58:21 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; DbClass has a deprecated constructor in /home/raiyanclothing/public_html/banner/Fshell.php(15) : eval()'d code(15) : eval()'d code on line 1112
