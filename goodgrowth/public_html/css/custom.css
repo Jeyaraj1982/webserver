@@ -1,0 +1,110 @@
+/*==== Download App Section =====*/
+.blue-bg .sec-heading h2 {
+	color: #fff;
+}
+.blue-bg .sec-heading h2::before {
+	background-color: #fff;
+}
+.download-app-sec p {
+	color: #fff;
+	width: 40%;
+	margin: 0 auto;
+}
+.download-app-sec {
+    text-align: center;
+}
+.download-app-sec .banner-btns .play-store {
+	background-color: #fff;
+}
+.download-app-sec .banner-btns .apple-store {
+	color: #fff;
+}
+.download-app-sec .banner-btns {
+    margin-top: 55px;
+}
+
+
+.banner-btns a {
+	height: 80px;
+	width: 220px;
+	display: inline-block;
+	border-radius: 11px;
+	color: #fff;
+	font-size: 18px;
+	padding: 16px 40px;
+	margin-right: 28px;
+}
+.banner-btns .small-text {
+	font-size: 14px;
+	display: block;
+}
+.banner-btns i {
+	font-size: 40px;
+	margin-right: 15px;
+	float: left;
+	line-height: 44px;
+}
+.banner-btns .apple-store {
+	background-color: #222222;
+}
+.banner-btns .apple-store:hover {
+	background-color:#4caf50;
+}
+.banner-btns .play-store:hover {
+    background-color: #000;
+}
+
+.download-app-sec .banner-btns a{color: #348c4b}
+
+.sec-heading h2 {
+    font-size: 36px;
+    line-height: 1.4em;
+    position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+    text-transform: capitalize;
+	color:#fff;
+}
+
+
+ .sec-heading h2::before {
+    background-color: #fff;
+}
+
+.sec-heading h2::before {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+
+.sec-heading.style1 {
+    text-align: center;
+}
+
+.sec-heading {
+    margin-bottom: 30px;
+}
+
+.btn-style-three {
+    position: relative;
+    padding: 4px 15px 4px;
+    line-height: 24px;
+    color: #1d1d1d;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 50px;
+    background: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 1px solid #CDDC39;
+}
+
+
+
