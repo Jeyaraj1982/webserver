@@ -1,0 +1,1 @@
+[2020-09-09 13:34:03]	select * from _tbl_sales_admin where UserName='admin@sales.com' and Password='123456' 

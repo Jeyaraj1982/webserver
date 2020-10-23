@@ -1,0 +1,31 @@
+[06-Jul-2020 07:25:43 UTC] PHP Fatal error:  Uncaught Error: Call to a member function select() on null in /home/tksdonlineservic/public_html/admin/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/tksdonlineservic/public_html/admin/index.php on line 6
+[06-Jul-2020 07:25:46 UTC] PHP Fatal error:  Uncaught Error: Call to a member function select() on null in /home/tksdonlineservic/public_html/admin/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/tksdonlineservic/public_html/admin/index.php on line 6
+[06-Jul-2020 07:25:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function select() on null in /home/tksdonlineservic/public_html/admin/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/tksdonlineservic/public_html/admin/index.php on line 6
+[06-Jul-2020 07:26:03 UTC] PHP Fatal error:  Uncaught Error: Call to a member function select() on null in /home/tksdonlineservic/public_html/admin/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/tksdonlineservic/public_html/admin/index.php on line 6
+[24-Jul-2020 16:37:16 Asia/Calcutta] PHP Warning:  include_once(/home/tksdonlineservic/public_html/admin/app/controller/class.TelegramMessageController): failed to open stream: No such file or directory in /home/tksdonlineservic/public_html/admin/config.php on line 22
+[24-Jul-2020 16:37:16 Asia/Calcutta] PHP Warning:  include_once(): Failed opening '/home/tksdonlineservic/public_html/admin/app/controller/class.TelegramMessageController' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/tksdonlineservic/public_html/admin/config.php on line 22
+[24-Jul-2020 16:37:32 Asia/Calcutta] PHP Warning:  include_once(/home/tksdonlineservic/public_html/admin/app/controller/class.TelegramMessageController): failed to open stream: No such file or directory in /home/tksdonlineservic/public_html/admin/config.php on line 22
+[24-Jul-2020 16:37:32 Asia/Calcutta] PHP Warning:  include_once(): Failed opening '/home/tksdonlineservic/public_html/admin/app/controller/class.TelegramMessageController' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/tksdonlineservic/public_html/admin/config.php on line 22
+[24-Jul-2020 16:42:35 Asia/Calcutta] PHP Warning:  include_once(/home/tksdonlineservic/public_html/admin/app/controller/class.TelegramMessageController): failed to open stream: No such file or directory in /home/tksdonlineservic/public_html/admin/config.php on line 22
+[24-Jul-2020 16:42:35 Asia/Calcutta] PHP Warning:  include_once(): Failed opening '/home/tksdonlineservic/public_html/admin/app/controller/class.TelegramMessageController' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/tksdonlineservic/public_html/admin/config.php on line 22
+[24-Jul-2020 16:42:49 Asia/Calcutta] PHP Warning:  include_once(/home/tksdonlineservic/public_html/admin/app/controller/class.TelegramMessageController): failed to open stream: No such file or directory in /home/tksdonlineservic/public_html/admin/config.php on line 22
+[24-Jul-2020 16:42:49 Asia/Calcutta] PHP Warning:  include_once(): Failed opening '/home/tksdonlineservic/public_html/admin/app/controller/class.TelegramMessageController' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/tksdonlineservic/public_html/admin/config.php on line 22
+[11-Aug-2020 19:36:33 Asia/Calcutta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] No such file or directory in /home/tksdonlineservic/public_html/admin/app/controller/class.DatabaseController.php:10
+Stack trace:
+#0 /home/tksdonlineservic/public_html/admin/app/controller/class.DatabaseController.php(10): PDO->__construct('mysql:host=loca...', 'tksdonli_user', 'mysqluser@123', Array)
+#1 /home/tksdonlineservic/public_html/admin/config.php(39): MySqldatabase->__construct('localhost', 'tksdonli_user', 'mysqluser@123', 'tksdonli_databa...')
+#2 /home/tksdonlineservic/public_html/admin/index.php(2): include_once('/home/tksdonlin...')
+#3 {main}
+  thrown in /home/tksdonlineservic/public_html/admin/app/controller/class.DatabaseController.php on line 10

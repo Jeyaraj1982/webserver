@@ -1,0 +1,7 @@
+[2020-09-08 10:22:59]	select * from _tbl_sales_admin where UserName='admin@sales.com' and Password='123456' 
+[2020-09-08 10:25:50]	select * from _tbl_sales_admin where UserName='boomi' and Password='boomi12' 
+[2020-09-08 10:26:28]	select * from _tbl_sales_admin where UserName='boomi' and Password='boomi' 
+[2020-09-08 10:26:56]	select * from _tbl_sales_admin where UserName='admin@sales.com' and Password='123456' 
+[2020-09-08 10:27:32]	select * from _tbl_sales_admin where UserName='boomi' and Password='boomi' 
+[2020-09-08 10:27:40]	select * from _tbl_sales_admin where UserName='admin@sales.com' and Password='123456' 
+[2020-09-08 10:28:00]	select * from _tbl_sales_admin where UserName='boomi' and Password='boomi' 

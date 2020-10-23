@@ -1,0 +1,2013 @@
+[2020-09-11 08:32:34]	select * from _tbl_sales_customers
+[2020-09-11 08:32:34]	select (sum(order_total_after_tax)) as bal from invoice_order
+[2020-09-11 08:32:34]	select (sum(receipt_amount)) as bal from receipt
+[2020-09-11 08:32:34]	select (sum(order_total_amount_due)) as bal from invoice_order
+[2020-09-11 08:32:34]	select (sum(order_total_after_tax)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 08:32:34]	select (sum(TotalCashReceived)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 08:32:34]	select (sum(order_amount_paid)) as bal from invoice_order where TransactionMode='Net Banking' and date(order_date)='2020-09-11'
+[2020-09-11 08:32:34]	select (sum(order_total_amount_due)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 08:32:34]	SELECT * FROM _tbl_sales_products WHERE ProductID IN (SELECT order_id FROM invoice_order_item)  order by ProductID Desc
+[2020-09-11 08:32:44]	SELECT * FROM invoice_order where (date(order_date)>=date('2020-09-11') and date(order_date)<=date('2020-09-11') ) order by order_id desc
+[2020-09-11 08:32:48]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 08:32:48]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 08:32:48]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 08:32:48]	select * from _tbl_sales_products
+[2020-09-11 08:32:48]	select * from _tbl_units
+[2020-09-11 08:36:17]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 08:36:17]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 08:36:17]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 08:36:17]	select * from _tbl_sales_products
+[2020-09-11 08:36:17]	select * from _tbl_units
+[2020-09-11 08:38:04]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 08:38:04]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 08:38:04]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 08:38:04]	select * from _tbl_sales_products
+[2020-09-11 08:38:04]	select * from _tbl_units
+[2020-09-11 08:41:48]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 08:41:48]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 08:41:48]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 08:41:48]	select * from _tbl_sales_products
+[2020-09-11 08:41:48]	select * from _tbl_units
+[2020-09-11 08:49:32]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 08:49:32]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 08:49:32]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 08:49:32]	select * from _tbl_sales_products
+[2020-09-11 08:49:32]	select * from _tbl_units
+[2020-09-11 08:49:45]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 08:49:50]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 08:52:21]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 08:52:25]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 08:52:28]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 08:52:37]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 08:52:39]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 08:52:44]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 08:52:46]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 08:52:49]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 08:52:56]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 08:53:02]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 08:54:50]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 08:54:50]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 08:54:50]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 08:54:50]	select * from _tbl_sales_products
+[2020-09-11 08:54:50]	select * from _tbl_units
+[2020-09-11 08:54:56]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 08:55:02]	select * from _tbl_sales_products where ProductName Like 'e%' order by ProductName
+[2020-09-11 08:55:02]	select * from _tbl_sales_products where ProductName Like 'e\%' order by ProductName
+[2020-09-11 08:55:03]	select * from _tbl_sales_products where ProductName Like 'e%' order by ProductName
+[2020-09-11 08:55:04]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 08:56:37]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 08:56:37]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 08:56:37]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 08:56:37]	select * from _tbl_sales_products
+[2020-09-11 08:56:37]	select * from _tbl_units
+[2020-09-11 08:56:46]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 08:56:50]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 08:59:05]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 08:59:05]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 08:59:05]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 08:59:05]	select * from _tbl_sales_products
+[2020-09-11 08:59:05]	select * from _tbl_units
+[2020-09-11 08:59:21]	select * from _tbl_sales_customers where CustomerName Like 'r%' order by CustomerName
+[2020-09-11 08:59:31]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 08:59:33]	select * from _tbl_sales_customers where CustomerName Like 'c %' order by CustomerName
+[2020-09-11 08:59:34]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 08:59:34]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 08:59:34]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 08:59:34]	select * from _tbl_sales_products
+[2020-09-11 08:59:34]	select * from _tbl_units
+[2020-09-11 08:59:41]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 08:59:46]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 08:59:50]	select * from _tbl_sales_products where ProductName Like 'r %' order by ProductName
+[2020-09-11 08:59:51]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 08:59:53]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 09:01:16]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 09:01:16]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 09:01:16]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 09:01:16]	select * from _tbl_sales_products
+[2020-09-11 09:01:16]	select * from _tbl_units
+[2020-09-11 09:01:23]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 09:01:27]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 09:05:34]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 09:05:34]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 09:05:34]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 09:05:34]	select * from _tbl_sales_products
+[2020-09-11 09:05:34]	select * from _tbl_units
+[2020-09-11 09:05:40]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 09:05:45]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 09:13:35]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 09:13:35]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 09:13:35]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 09:13:35]	select * from _tbl_sales_products
+[2020-09-11 09:13:35]	select * from _tbl_units
+[2020-09-11 09:14:14]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 09:14:14]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 09:14:14]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 09:14:14]	select * from _tbl_sales_products
+[2020-09-11 09:14:14]	select * from _tbl_units
+[2020-09-11 09:14:25]	select * from _tbl_sales_customers where CustomerName Like 'r%' order by CustomerName
+[2020-09-11 09:14:27]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 09:14:32]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 09:22:09]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 09:22:09]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 09:22:09]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 09:22:09]	select * from _tbl_sales_products
+[2020-09-11 09:22:09]	select * from _tbl_units
+[2020-09-11 09:22:16]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 09:22:21]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 09:22:34]	select * from invoice_order
+[2020-09-11 09:22:34]	select * from _tbl_sales_customers where CustomerID='1'
+[2020-09-11 09:22:34]	insert into `invoice_order` (`user_id`,`order_code`,`order_receiver_name`,`order_receiver_address`,`order_total_after_tax`,`order_amount_paid`,`order_total_amount_due`,`TransactionMode`,`note`) values ('1','IN005','Cash','Karikudi,,','100','0.00','100','Cash','')
+[2020-09-11 09:22:34]	insert into `invoice_order_item` (`order_id`,`item_code`,`item_name`,`order_item_quantity`,`order_item_price`,`order_item_final_amount`) values ('5','7','ரோஜா பூ','1','100','100')
+[2020-09-11 09:22:34]	insert into `receipt` (`receipt_code`,`order_id`,`order_date`,`user_id`,`receipt_amount`,`invoice_due_amount`,`receipt_date`) values ('RT005','5','2020-09-11 09:22:34','1','5','95.00','2020-09-11 09:22:34')
+[2020-09-11 09:22:34]	update invoice_order set `order_amount_paid`      ='5',
+                                                             `order_total_amount_due` ='95',                    
+                                                             `receipt_id`             ='5',
+                                                             `receipt_date`             ='2020-09-11 09:22:34'
+                                                              where `order_id`='5'
+[2020-09-11 09:22:54]	SELECT * FROM invoice_order WHERE md5(order_id) = 'e4da3b7fbbce2345d7772b0674a318d5'
+[2020-09-11 09:22:54]	SELECT * FROM invoice_order_item WHERE order_id = '5'
+[2020-09-11 09:22:54]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1' and order_id<>'5'
+[2020-09-11 09:23:15]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 09:23:15]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 09:23:15]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 09:23:15]	select * from _tbl_sales_products
+[2020-09-11 09:23:15]	select * from _tbl_units
+[2020-09-11 09:34:21]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 09:34:21]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 09:34:21]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 09:34:21]	select * from _tbl_sales_products
+[2020-09-11 09:34:21]	select * from _tbl_units
+[2020-09-11 09:34:29]	select * from _tbl_sales_customers where CustomerName Like 'v%' order by CustomerName
+[2020-09-11 09:34:30]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 09:34:33]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 09:44:39]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 09:44:39]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 09:44:39]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 09:44:39]	select * from _tbl_sales_products
+[2020-09-11 09:44:39]	select * from _tbl_units
+[2020-09-11 09:44:46]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 09:44:50]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 09:47:29]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 09:47:29]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 09:47:29]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 09:47:29]	select * from _tbl_sales_products
+[2020-09-11 09:47:29]	select * from _tbl_units
+[2020-09-11 09:47:36]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 09:47:42]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 09:50:36]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 09:50:36]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 09:50:36]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 09:50:36]	select * from _tbl_sales_products
+[2020-09-11 09:50:36]	select * from _tbl_units
+[2020-09-11 09:50:43]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 09:50:48]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 09:51:44]	select * from invoice_order
+[2020-09-11 09:51:44]	select * from _tbl_sales_customers where CustomerID='1'
+[2020-09-11 09:51:44]	insert into `invoice_order` (`user_id`,`order_code`,`order_receiver_name`,`order_receiver_address`,`order_total_after_tax`,`order_amount_paid`,`order_total_amount_due`,`TransactionMode`,`note`) values ('1','IN006','Cash','Karikudi,,','100','0.00','100','Cash','')
+[2020-09-11 09:51:44]	insert into `invoice_order_item` (`order_id`,`item_code`,`item_name`,`order_item_quantity`,`order_item_price`,`order_item_final_amount`) values ('6','7','ரோஜா பூ','1','100','100')
+[2020-09-11 09:51:44]	insert into `receipt` (`receipt_code`,`order_id`,`order_date`,`user_id`,`receipt_amount`,`invoice_due_amount`,`receipt_date`) values ('RT006','6','2020-09-11 09:51:44','1','100','0.00','2020-09-11 09:51:44')
+[2020-09-11 09:51:45]	update invoice_order set `order_amount_paid`      ='100',
+                                                             `order_total_amount_due` ='0',                    
+                                                             `receipt_id`             ='6',
+                                                             `receipt_date`             ='2020-09-11 09:51:45'
+                                                              where `order_id`='6'
+[2020-09-11 09:56:49]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 09:56:49]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 09:56:49]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 09:56:49]	select * from _tbl_sales_products
+[2020-09-11 09:56:49]	select * from _tbl_units
+[2020-09-11 09:56:55]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 09:57:01]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 09:57:19]	select * from invoice_order
+[2020-09-11 09:57:19]	select * from _tbl_sales_customers where CustomerID='1'
+[2020-09-11 09:57:19]	insert into `invoice_order` (`user_id`,`order_code`,`order_receiver_name`,`order_receiver_address`,`order_total_after_tax`,`order_amount_paid`,`order_total_amount_due`,`TransactionMode`,`note`) values ('1','IN007','Cash','Karikudi,,','100','0.00','100','Cash','')
+[2020-09-11 09:57:19]	insert into `invoice_order_item` (`order_id`,`item_code`,`item_name`,`order_item_quantity`,`order_item_price`,`order_item_final_amount`) values ('7','7','ரோஜா பூ','1','100','100')
+[2020-09-11 09:57:19]	insert into `receipt` (`receipt_code`,`order_id`,`order_date`,`user_id`,`receipt_amount`,`invoice_due_amount`,`receipt_date`) values ('RT007','7','2020-09-11 09:57:19','1','100','0.00','2020-09-11 09:57:19')
+[2020-09-11 09:57:19]	update invoice_order set `order_amount_paid`      ='100',
+                                                             `order_total_amount_due` ='0',                    
+                                                             `receipt_id`             ='7',
+                                                             `receipt_date`             ='2020-09-11 09:57:19'
+                                                              where `order_id`='7'
+[2020-09-11 09:57:24]	SELECT * FROM invoice_order WHERE md5(order_id) = '8f14e45fceea167a5a36dedd4bea2543'
+[2020-09-11 09:57:24]	SELECT * FROM invoice_order_item WHERE order_id = '7'
+[2020-09-11 09:57:24]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1' and order_id<>'7'
+[2020-09-11 09:58:04]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 09:58:04]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 09:58:04]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 09:58:04]	select * from _tbl_sales_products
+[2020-09-11 09:58:04]	select * from _tbl_units
+[2020-09-11 09:58:12]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 09:58:17]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 09:58:28]	select * from invoice_order
+[2020-09-11 09:58:28]	select * from _tbl_sales_customers where CustomerID='8'
+[2020-09-11 09:58:28]	insert into `invoice_order` (`user_id`,`order_code`,`order_receiver_name`,`order_receiver_address`,`order_total_after_tax`,`order_amount_paid`,`order_total_amount_due`,`TransactionMode`,`note`) values ('8','IN008','Chithu','zcxzc,address2,','100','0.00','100','Cash','')
+[2020-09-11 09:58:28]	insert into `invoice_order_item` (`order_id`,`item_code`,`item_name`,`order_item_quantity`,`order_item_price`,`order_item_final_amount`) values ('8','7','ரோஜா பூ','1','100','100')
+[2020-09-11 09:58:28]	insert into `receipt` (`receipt_code`,`order_id`,`order_date`,`user_id`,`receipt_amount`,`invoice_due_amount`,`receipt_date`) values ('RT008','8','2020-09-11 09:58:28','8','100','0.00','2020-09-11 09:58:28')
+[2020-09-11 09:58:28]	update invoice_order set `order_amount_paid`      ='100',
+                                                             `order_total_amount_due` ='0',                    
+                                                             `receipt_id`             ='8',
+                                                             `receipt_date`             ='2020-09-11 09:58:28'
+                                                              where `order_id`='8'
+[2020-09-11 09:59:23]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 09:59:23]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 09:59:23]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 09:59:23]	select * from _tbl_sales_products
+[2020-09-11 09:59:23]	select * from _tbl_units
+[2020-09-11 09:59:31]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 09:59:33]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 10:00:33]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 10:00:33]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 10:00:33]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 10:00:33]	select * from _tbl_sales_products
+[2020-09-11 10:00:33]	select * from _tbl_units
+[2020-09-11 10:00:43]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 10:00:50]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 10:01:20]	select * from invoice_order
+[2020-09-11 10:01:20]	select * from _tbl_sales_customers where CustomerID='1'
+[2020-09-11 10:01:20]	insert into `invoice_order` (`user_id`,`order_code`,`order_receiver_name`,`order_receiver_address`,`order_total_after_tax`,`order_amount_paid`,`order_total_amount_due`,`TransactionMode`,`note`) values ('1','IN009','Cash','Karikudi,,','100','0.00','100','Cash','')
+[2020-09-11 10:01:20]	insert into `invoice_order_item` (`order_id`,`item_code`,`item_name`,`order_item_quantity`,`order_item_price`,`order_item_final_amount`) values ('9','7','ரோஜா பூ','1','100','100')
+[2020-09-11 10:01:20]	insert into `receipt` (`receipt_code`,`order_id`,`order_date`,`user_id`,`receipt_amount`,`invoice_due_amount`,`receipt_date`) values ('RT009','9','2020-09-11 10:01:20','1','100','0.00','2020-09-11 10:01:20')
+[2020-09-11 10:01:20]	update invoice_order set `order_amount_paid`      ='100',
+                                                             `order_total_amount_due` ='0',                    
+                                                             `receipt_id`             ='9',
+                                                             `receipt_date`             ='2020-09-11 10:01:20'
+                                                              where `order_id`='9'
+[2020-09-11 10:01:21]	SELECT * FROM invoice_order WHERE md5(order_id) = '45c48cce2e2d7fbdea1afc51c7c6ad26'
+[2020-09-11 10:01:21]	SELECT * FROM invoice_order_item WHERE order_id = '9'
+[2020-09-11 10:01:21]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1' and order_id<>'9'
+[2020-09-11 10:01:32]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 10:01:32]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 10:01:32]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 10:01:32]	select * from _tbl_sales_products
+[2020-09-11 10:01:32]	select * from _tbl_units
+[2020-09-11 10:01:42]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 10:01:47]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 10:04:03]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 10:04:03]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 10:04:03]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 10:04:03]	select * from _tbl_sales_products
+[2020-09-11 10:04:03]	select * from _tbl_units
+[2020-09-11 10:04:11]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 10:04:16]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 10:04:35]	select * from invoice_order
+[2020-09-11 10:04:35]	select * from _tbl_sales_customers where CustomerID='8'
+[2020-09-11 10:04:35]	insert into `invoice_order` (`user_id`,`order_code`,`order_receiver_name`,`order_receiver_address`,`order_total_after_tax`,`order_amount_paid`,`order_total_amount_due`,`TransactionMode`,`TotalCashReceived`,`ReturnCashToCustomer`,`note`) values ('8','IN0010','Chithu','zcxzc,address2,','100','0.00','100','Cash','150','-50','')
+[2020-09-11 10:04:35]	insert into `invoice_order_item` (`order_id`,`item_code`,`item_name`,`order_item_quantity`,`order_item_price`,`order_item_final_amount`) values ('10','7','ரோஜா பூ','1','100','100')
+[2020-09-11 10:04:35]	insert into `receipt` (`receipt_code`,`order_id`,`order_date`,`user_id`,`receipt_amount`,`invoice_due_amount`,`receipt_date`) values ('RT0010','10','2020-09-11 10:04:35','8','100','0.00','2020-09-11 10:04:35')
+[2020-09-11 10:04:35]	update invoice_order set `order_amount_paid`      ='100',
+                                                             `order_total_amount_due` ='0',                    
+                                                             `receipt_id`             ='10',
+                                                             `receipt_date`             ='2020-09-11 10:04:35'
+                                                              where `order_id`='10'
+[2020-09-11 10:04:36]	SELECT * FROM invoice_order WHERE md5(order_id) = 'd3d9446802a44259755d38e6d163e820'
+[2020-09-11 10:04:36]	SELECT * FROM invoice_order_item WHERE order_id = '10'
+[2020-09-11 10:04:36]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='8' and order_id<>'10'
+[2020-09-11 10:05:22]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 10:05:22]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 10:05:22]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 10:05:22]	select * from _tbl_sales_products
+[2020-09-11 10:05:22]	select * from _tbl_units
+[2020-09-11 10:05:30]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 10:05:30]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 10:05:30]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 10:05:30]	select * from _tbl_sales_products
+[2020-09-11 10:05:30]	select * from _tbl_units
+[2020-09-11 10:05:37]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 10:05:42]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 10:06:02]	select * from invoice_order
+[2020-09-11 10:06:02]	select * from _tbl_sales_customers where CustomerID='1'
+[2020-09-11 10:06:02]	insert into `invoice_order` (`user_id`,`order_code`,`order_receiver_name`,`order_receiver_address`,`order_total_after_tax`,`order_amount_paid`,`order_total_amount_due`,`TransactionMode`,`TotalCashReceived`,`ReturnCashToCustomer`,`note`) values ('1','IN0011','Cash','Karikudi,,','100','0.00','100','Cash','150','50','')
+[2020-09-11 10:06:02]	insert into `invoice_order_item` (`order_id`,`item_code`,`item_name`,`order_item_quantity`,`order_item_price`,`order_item_final_amount`) values ('11','7','ரோஜா பூ','1','100','100')
+[2020-09-11 10:06:02]	insert into `receipt` (`receipt_code`,`order_id`,`order_date`,`user_id`,`receipt_amount`,`invoice_due_amount`,`receipt_date`) values ('RT0011','11','2020-09-11 10:06:02','1','100','0.00','2020-09-11 10:06:02')
+[2020-09-11 10:06:02]	update invoice_order set `order_amount_paid`      ='100',
+                                                             `order_total_amount_due` ='0',                    
+                                                             `receipt_id`             ='11',
+                                                             `receipt_date`             ='2020-09-11 10:06:02'
+                                                              where `order_id`='11'
+[2020-09-11 10:06:04]	SELECT * FROM invoice_order WHERE md5(order_id) = '6512bd43d9caa6e02c990b0a82652dca'
+[2020-09-11 10:06:04]	SELECT * FROM invoice_order_item WHERE order_id = '11'
+[2020-09-11 10:06:04]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1' and order_id<>'11'
+[2020-09-11 10:06:32]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 10:06:32]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 10:06:32]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 10:06:32]	select * from _tbl_sales_products
+[2020-09-11 10:06:32]	select * from _tbl_units
+[2020-09-11 10:15:10]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 10:15:10]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 10:15:10]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 10:15:10]	select * from _tbl_sales_products
+[2020-09-11 10:15:10]	select * from _tbl_units
+[2020-09-11 10:15:18]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 10:15:22]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 10:15:59]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 10:15:59]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 10:15:59]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 10:15:59]	select * from _tbl_sales_products
+[2020-09-11 10:15:59]	select * from _tbl_units
+[2020-09-11 10:16:11]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 10:16:15]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 10:17:35]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 10:17:35]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 10:17:35]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 10:17:35]	select * from _tbl_sales_products
+[2020-09-11 10:17:35]	select * from _tbl_units
+[2020-09-11 10:17:44]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 10:17:49]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 10:18:58]	select * from invoice_order
+[2020-09-11 10:18:58]	select * from _tbl_sales_customers where CustomerID='1'
+[2020-09-11 10:18:58]	insert into `invoice_order` (`user_id`,`order_code`,`order_receiver_name`,`order_receiver_address`,`order_total_after_tax`,`order_amount_paid`,`order_total_amount_due`,`TransactionMode`,`TotalCashReceived`,`ReturnCashToCustomer`,`note`) values ('1','IN0012','Cash','Karikudi,,','100','0.00','100','Cash','','','')
+[2020-09-11 10:18:58]	insert into `invoice_order_item` (`order_id`,`item_code`,`item_name`,`order_item_quantity`,`order_item_price`,`order_item_final_amount`) values ('12','7','ரோஜா பூ','1','100','100')
+[2020-09-11 10:18:58]	insert into `receipt` (`receipt_code`,`order_id`,`order_date`,`user_id`,`receipt_amount`,`invoice_due_amount`,`receipt_date`) values ('RT0012','12','2020-09-11 10:18:58','1','100','0.00','2020-09-11 10:18:58')
+[2020-09-11 10:18:58]	update invoice_order set `order_amount_paid`      ='100',
+                                                             `order_total_amount_due` ='0',                    
+                                                             `receipt_id`             ='12',
+                                                             `receipt_date`             ='2020-09-11 10:18:58'
+                                                              where `order_id`='12'
+[2020-09-11 10:19:05]	SELECT * FROM invoice_order WHERE md5(order_id) = 'c20ad4d76fe97759aa27a0c99bff6710'
+[2020-09-11 10:19:05]	SELECT * FROM invoice_order_item WHERE order_id = '12'
+[2020-09-11 10:19:05]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1' and order_id<>'12'
+[2020-09-11 10:23:30]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 10:23:30]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 10:23:30]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 10:23:30]	select * from _tbl_sales_products
+[2020-09-11 10:23:30]	select * from _tbl_units
+[2020-09-11 10:23:41]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 10:23:45]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 10:24:12]	select * from invoice_order
+[2020-09-11 10:24:12]	select * from _tbl_sales_customers where CustomerID='1'
+[2020-09-11 10:24:12]	insert into `invoice_order` (`user_id`,`order_code`,`order_receiver_name`,`order_receiver_address`,`order_total_after_tax`,`order_amount_paid`,`order_total_amount_due`,`TransactionMode`,`TotalCashReceived`,`ReturnCashToCustomer`,`note`) values ('1','IN0013','Cash','Karikudi,,','100','0.00','100','Cash','110','10','')
+[2020-09-11 10:24:12]	insert into `invoice_order_item` (`order_id`,`item_code`,`item_name`,`order_item_quantity`,`order_item_price`,`order_item_final_amount`) values ('13','7','ரோஜா பூ','1','100','100')
+[2020-09-11 10:24:12]	insert into `receipt` (`receipt_code`,`order_id`,`order_date`,`user_id`,`receipt_amount`,`invoice_due_amount`,`receipt_date`) values ('RT0013','13','2020-09-11 10:24:12','1','100','0.00','2020-09-11 10:24:12')
+[2020-09-11 10:24:12]	update invoice_order set `order_amount_paid`      ='100',
+                                                             `order_total_amount_due` ='0',                    
+                                                             `receipt_id`             ='13',
+                                                             `receipt_date`             ='2020-09-11 10:24:12'
+                                                              where `order_id`='13'
+[2020-09-11 10:24:13]	SELECT * FROM invoice_order WHERE md5(order_id) = 'c51ce410c124a10e0db5e4b97fc2af39'
+[2020-09-11 10:24:13]	SELECT * FROM invoice_order_item WHERE order_id = '13'
+[2020-09-11 10:24:13]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1' and order_id<>'13'
+[2020-09-11 10:25:21]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 10:25:21]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 10:25:21]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 10:25:21]	select * from _tbl_sales_products
+[2020-09-11 10:25:21]	select * from _tbl_units
+[2020-09-11 10:26:19]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 10:26:19]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 10:26:19]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 10:26:19]	select * from _tbl_sales_products
+[2020-09-11 10:26:19]	select * from _tbl_units
+[2020-09-11 10:26:27]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 10:26:32]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 10:27:40]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 10:27:40]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 10:27:40]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 10:27:40]	select * from _tbl_sales_products
+[2020-09-11 10:27:40]	select * from _tbl_units
+[2020-09-11 10:27:55]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 10:27:55]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 10:27:55]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 10:27:55]	select * from _tbl_sales_products
+[2020-09-11 10:27:55]	select * from _tbl_units
+[2020-09-11 10:28:46]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 10:28:46]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 10:28:46]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 10:28:46]	select * from _tbl_sales_products
+[2020-09-11 10:28:46]	select * from _tbl_units
+[2020-09-11 10:28:58]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 10:28:58]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 10:28:58]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 10:28:58]	select * from _tbl_sales_products
+[2020-09-11 10:28:58]	select * from _tbl_units
+[2020-09-11 10:29:23]	select * from _tbl_sales_customers where CustomerName Like 'cas%' order by CustomerName
+[2020-09-11 10:29:26]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 10:29:32]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 10:31:34]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 10:31:34]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 10:31:34]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 10:31:34]	select * from _tbl_sales_products
+[2020-09-11 10:31:34]	select * from _tbl_units
+[2020-09-11 10:31:45]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 10:31:48]	select * from _tbl_sales_products where ProductName Like 'p%' order by ProductName
+[2020-09-11 10:33:35]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 10:33:35]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 10:33:35]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 10:33:35]	select * from _tbl_sales_products
+[2020-09-11 10:33:35]	select * from _tbl_units
+[2020-09-11 10:33:49]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 10:33:54]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 10:34:07]	select * from invoice_order
+[2020-09-11 10:34:07]	select * from _tbl_sales_customers where CustomerID='1'
+[2020-09-11 10:34:07]	insert into `invoice_order` (`user_id`,`order_code`,`order_receiver_name`,`order_receiver_address`,`order_total_after_tax`,`order_amount_paid`,`order_total_amount_due`,`TransactionMode`,`TotalCashReceived`,`ReturnCashToCustomer`,`note`) values ('1','IN001','Cash','Karikudi,,','100','0.00','100','Cash','150','50','')
+[2020-09-11 10:34:07]	insert into `invoice_order_item` (`order_id`,`item_code`,`item_name`,`order_item_quantity`,`order_item_price`,`order_item_final_amount`) values ('1','7','ரோஜா பூ','1','100','100')
+[2020-09-11 10:34:07]	insert into `receipt` (`receipt_code`,`order_id`,`order_date`,`user_id`,`receipt_amount`,`invoice_due_amount`,`receipt_date`) values ('RT001','1','2020-09-11 10:34:07','1','100','0.00','2020-09-11 10:34:07')
+[2020-09-11 10:34:07]	update invoice_order set `order_amount_paid`      ='100',
+                                                             `order_total_amount_due` ='0',                    
+                                                             `receipt_id`             ='1',
+                                                             `receipt_date`             ='2020-09-11 10:34:07'
+                                                              where `order_id`='1'
+[2020-09-11 10:34:09]	SELECT * FROM invoice_order WHERE md5(order_id) = 'c4ca4238a0b923820dcc509a6f75849b'
+[2020-09-11 10:34:09]	SELECT * FROM invoice_order_item WHERE order_id = '1'
+[2020-09-11 10:34:09]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1' and order_id<>'1'
+[2020-09-11 10:34:40]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 10:34:40]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 10:34:40]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 10:34:40]	select * from _tbl_sales_products
+[2020-09-11 10:34:40]	select * from _tbl_units
+[2020-09-11 10:34:47]	select * from _tbl_sales_customers where CustomerName Like 'cas%' order by CustomerName
+[2020-09-11 10:34:54]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 10:35:05]	select * from invoice_order
+[2020-09-11 10:35:05]	select * from _tbl_sales_customers where CustomerID='1'
+[2020-09-11 10:35:05]	insert into `invoice_order` (`user_id`,`order_code`,`order_receiver_name`,`order_receiver_address`,`order_total_after_tax`,`order_amount_paid`,`order_total_amount_due`,`TransactionMode`,`TotalCashReceived`,`ReturnCashToCustomer`,`note`) values ('1','IN002','Cash','Karikudi,,','100','0.00','100','Credit','0','0','')
+[2020-09-11 10:35:05]	insert into `invoice_order_item` (`order_id`,`item_code`,`item_name`,`order_item_quantity`,`order_item_price`,`order_item_final_amount`) values ('2','7','ரோஜா பூ','1','100','100')
+[2020-09-11 10:35:05]	insert into `receipt` (`receipt_code`,`order_id`,`order_date`,`user_id`,`receipt_amount`,`invoice_due_amount`,`receipt_date`) values ('RT002','2','2020-09-11 10:35:05','1','100','0.00','2020-09-11 10:35:05')
+[2020-09-11 10:35:05]	update invoice_order set `order_amount_paid`      ='100',
+                                                             `order_total_amount_due` ='0',                    
+                                                             `receipt_id`             ='2',
+                                                             `receipt_date`             ='2020-09-11 10:35:05'
+                                                              where `order_id`='2'
+[2020-09-11 10:35:06]	SELECT * FROM invoice_order WHERE md5(order_id) = 'c81e728d9d4c2f636f067f89cc14862c'
+[2020-09-11 10:35:06]	SELECT * FROM invoice_order_item WHERE order_id = '2'
+[2020-09-11 10:35:06]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1' and order_id<>'2'
+[2020-09-11 10:35:46]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 10:35:46]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 10:35:46]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 10:35:46]	select * from _tbl_sales_products
+[2020-09-11 10:35:46]	select * from _tbl_units
+[2020-09-11 10:36:03]	select * from _tbl_sales_customers where CustomerName Like 'ca%' order by CustomerName
+[2020-09-11 10:36:11]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 10:36:17]	select * from _tbl_sales_products where ProductName Like 'p%' order by ProductName
+[2020-09-11 10:36:57]	select * from invoice_order
+[2020-09-11 10:36:57]	select * from _tbl_sales_customers where CustomerID='8'
+[2020-09-11 10:36:57]	insert into `invoice_order` (`user_id`,`order_code`,`order_receiver_name`,`order_receiver_address`,`order_total_after_tax`,`order_amount_paid`,`order_total_amount_due`,`TransactionMode`,`TotalCashReceived`,`ReturnCashToCustomer`,`note`) values ('8','IN003','Chithu','zcxzc,address2,','100','0.00','100','Credit','0','0','')
+[2020-09-11 10:36:57]	insert into `invoice_order_item` (`order_id`,`item_code`,`item_name`,`order_item_quantity`,`order_item_price`,`order_item_final_amount`) values ('3','26','பச்சை முடி','1','100','100')
+[2020-09-11 10:36:57]	insert into `receipt` (`receipt_code`,`order_id`,`order_date`,`user_id`,`receipt_amount`,`invoice_due_amount`,`receipt_date`) values ('RT003','3','2020-09-11 10:36:57','8','10','90.00','2020-09-11 10:36:57')
+[2020-09-11 10:36:57]	update invoice_order set `order_amount_paid`      ='10',
+                                                             `order_total_amount_due` ='90',                    
+                                                             `receipt_id`             ='3',
+                                                             `receipt_date`             ='2020-09-11 10:36:57'
+                                                              where `order_id`='3'
+[2020-09-11 10:37:01]	SELECT * FROM invoice_order WHERE md5(order_id) = 'eccbc87e4b5ce2fe28308fd9f2a7baf3'
+[2020-09-11 10:37:01]	SELECT * FROM invoice_order_item WHERE order_id = '3'
+[2020-09-11 10:37:01]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='8' and order_id<>'3'
+[2020-09-11 10:44:44]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 10:44:44]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 10:44:44]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 10:44:44]	select * from _tbl_sales_products
+[2020-09-11 10:44:44]	select * from _tbl_units
+[2020-09-11 10:44:59]	select * from _tbl_sales_customers
+[2020-09-11 10:44:59]	select (sum(order_total_after_tax)) as bal from invoice_order
+[2020-09-11 10:44:59]	select (sum(receipt_amount)) as bal from receipt
+[2020-09-11 10:44:59]	select (sum(order_total_amount_due)) as bal from invoice_order
+[2020-09-11 10:44:59]	select (sum(order_total_after_tax)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 10:44:59]	select (sum(TotalCashReceived)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 10:44:59]	select (sum(order_amount_paid)) as bal from invoice_order where TransactionMode='Net Banking' and date(order_date)='2020-09-11'
+[2020-09-11 10:44:59]	select (sum(order_total_amount_due)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 10:44:59]	SELECT * FROM _tbl_sales_products WHERE ProductID IN (SELECT order_id FROM invoice_order_item)  order by ProductID Desc
+[2020-09-11 10:45:04]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 10:45:04]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 10:45:04]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 10:45:04]	select * from _tbl_sales_products
+[2020-09-11 10:45:04]	select * from _tbl_units
+[2020-09-11 10:45:08]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 10:45:13]	select * from _tbl_sales_products where ProductName Like 'p%' order by ProductName
+[2020-09-11 10:45:31]	select * from invoice_order
+[2020-09-11 10:45:31]	select * from _tbl_sales_customers where CustomerID='8'
+[2020-09-11 10:45:31]	insert into `invoice_order` (`user_id`,`order_code`,`order_receiver_name`,`order_receiver_address`,`order_total_after_tax`,`order_amount_paid`,`order_total_amount_due`,`TransactionMode`,`TotalCashReceived`,`ReturnCashToCustomer`,`note`) values ('8','IN004','Chithu','zcxzc,address2,','100','0.00','100','Credit','0','0','')
+[2020-09-11 10:45:31]	insert into `invoice_order_item` (`order_id`,`item_code`,`item_name`,`order_item_quantity`,`order_item_price`,`order_item_final_amount`) values ('4','26','பச்சை முடி','1','100','100')
+[2020-09-11 10:45:31]	insert into `receipt` (`receipt_code`,`order_id`,`order_date`,`user_id`,`receipt_amount`,`invoice_due_amount`,`receipt_date`) values ('RT004','4','2020-09-11 10:45:31','8','10','90.00','2020-09-11 10:45:31')
+[2020-09-11 10:45:31]	update invoice_order set `order_amount_paid`      ='10',
+                                                             `order_total_amount_due` ='90',                    
+                                                             `receipt_id`             ='4',
+                                                             `receipt_date`             ='2020-09-11 10:45:31'
+                                                              where `order_id`='4'
+[2020-09-11 10:45:34]	SELECT * FROM invoice_order WHERE md5(order_id) = 'a87ff679a2f3e71d9181a67b7542122c'
+[2020-09-11 10:45:34]	SELECT * FROM invoice_order_item WHERE order_id = '4'
+[2020-09-11 10:45:34]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='8' and order_id<>'4'
+[2020-09-11 10:45:45]	SELECT * FROM invoice_order WHERE md5(order_id) = 'a87ff679a2f3e71d9181a67b7542122c'
+[2020-09-11 10:45:45]	SELECT * FROM invoice_order_item WHERE order_id = '4'
+[2020-09-11 10:45:45]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='8' and order_id<>'4'
+[2020-09-11 10:45:50]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 10:45:50]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 10:45:50]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 10:45:50]	select * from _tbl_sales_products
+[2020-09-11 10:45:50]	select * from _tbl_units
+[2020-09-11 10:46:12]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 10:46:17]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 10:46:28]	select * from invoice_order
+[2020-09-11 10:46:28]	select * from _tbl_sales_customers where CustomerID='1'
+[2020-09-11 10:46:28]	insert into `invoice_order` (`user_id`,`order_code`,`order_receiver_name`,`order_receiver_address`,`order_total_after_tax`,`order_amount_paid`,`order_total_amount_due`,`TransactionMode`,`TotalCashReceived`,`ReturnCashToCustomer`,`note`) values ('1','IN005','Cash','Karikudi,,','100','0.00','100','Cash','50','-50','')
+[2020-09-11 10:46:28]	insert into `invoice_order_item` (`order_id`,`item_code`,`item_name`,`order_item_quantity`,`order_item_price`,`order_item_final_amount`) values ('5','7','ரோஜா பூ','1','100','100')
+[2020-09-11 10:46:28]	insert into `receipt` (`receipt_code`,`order_id`,`order_date`,`user_id`,`receipt_amount`,`invoice_due_amount`,`receipt_date`) values ('RT005','5','2020-09-11 10:46:28','1','100','0.00','2020-09-11 10:46:28')
+[2020-09-11 10:46:28]	update invoice_order set `order_amount_paid`      ='100',
+                                                             `order_total_amount_due` ='0',                    
+                                                             `receipt_id`             ='5',
+                                                             `receipt_date`             ='2020-09-11 10:46:28'
+                                                              where `order_id`='5'
+[2020-09-11 10:46:33]	SELECT * FROM invoice_order WHERE md5(order_id) = 'e4da3b7fbbce2345d7772b0674a318d5'
+[2020-09-11 10:46:33]	SELECT * FROM invoice_order_item WHERE order_id = '5'
+[2020-09-11 10:46:33]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1' and order_id<>'5'
+[2020-09-11 10:47:52]	SELECT * FROM invoice_order where (date(order_date)>=date('2020-09-11') and date(order_date)<=date('2020-09-11') ) order by order_id desc
+[2020-09-11 10:47:54]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 10:47:54]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 10:47:54]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 10:47:54]	select * from _tbl_sales_products
+[2020-09-11 10:47:54]	select * from _tbl_units
+[2020-09-11 10:48:00]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 10:48:04]	select * from _tbl_sales_products where ProductName Like 'c%' order by ProductName
+[2020-09-11 10:48:05]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 10:48:32]	select * from invoice_order
+[2020-09-11 10:48:32]	select * from _tbl_sales_customers where CustomerID='1'
+[2020-09-11 10:48:32]	insert into `invoice_order` (`user_id`,`order_code`,`order_receiver_name`,`order_receiver_address`,`order_total_after_tax`,`order_amount_paid`,`order_total_amount_due`,`TransactionMode`,`TotalCashReceived`,`ReturnCashToCustomer`,`note`) values ('1','IN006','Cash','Karikudi,,','100','0.00','100','Cash','50','-50','')
+[2020-09-11 10:48:32]	insert into `invoice_order_item` (`order_id`,`item_code`,`item_name`,`order_item_quantity`,`order_item_price`,`order_item_final_amount`) values ('6','7','ரோஜா பூ','1','100','100')
+[2020-09-11 10:48:32]	insert into `receipt` (`receipt_code`,`order_id`,`order_date`,`user_id`,`receipt_amount`,`invoice_due_amount`,`receipt_date`) values ('RT006','6','2020-09-11 10:48:32','1','100','0.00','2020-09-11 10:48:32')
+[2020-09-11 10:48:32]	update invoice_order set `order_amount_paid`      ='100',
+                                                             `order_total_amount_due` ='0',                    
+                                                             `receipt_id`             ='6',
+                                                             `receipt_date`             ='2020-09-11 10:48:32'
+                                                              where `order_id`='6'
+[2020-09-11 10:48:43]	SELECT * FROM invoice_order WHERE md5(order_id) = '1679091c5a880faf6fb5e6087eb1b2dc'
+[2020-09-11 10:48:43]	SELECT * FROM invoice_order_item WHERE order_id = '6'
+[2020-09-11 10:48:43]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1' and order_id<>'6'
+[2020-09-11 10:48:57]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 10:48:57]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 10:48:57]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 10:48:57]	select * from _tbl_sales_products
+[2020-09-11 10:48:57]	select * from _tbl_units
+[2020-09-11 10:49:53]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 10:49:53]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 10:49:53]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 10:49:53]	select * from _tbl_sales_products
+[2020-09-11 10:49:53]	select * from _tbl_units
+[2020-09-11 10:49:56]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 10:50:01]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 10:50:29]	select * from invoice_order
+[2020-09-11 10:50:29]	select * from _tbl_sales_customers where CustomerID='1'
+[2020-09-11 10:50:29]	insert into `invoice_order` (`user_id`,`order_code`,`order_receiver_name`,`order_receiver_address`,`order_total_after_tax`,`order_amount_paid`,`order_total_amount_due`,`TransactionMode`,`TotalCashReceived`,`ReturnCashToCustomer`,`note`) values ('1','IN007','Cash','Karikudi,,','100','0.00','100','Cash','5','-95','')
+[2020-09-11 10:50:29]	insert into `invoice_order_item` (`order_id`,`item_code`,`item_name`,`order_item_quantity`,`order_item_price`,`order_item_final_amount`) values ('7','7','ரோஜா பூ','1','100','100')
+[2020-09-11 10:50:29]	insert into `receipt` (`receipt_code`,`order_id`,`order_date`,`user_id`,`receipt_amount`,`invoice_due_amount`,`receipt_date`) values ('RT007','7','2020-09-11 10:50:29','1','100','0.00','2020-09-11 10:50:29')
+[2020-09-11 10:50:29]	update invoice_order set `order_amount_paid`      ='100',
+                                                             `order_total_amount_due` ='0',                    
+                                                             `receipt_id`             ='7',
+                                                             `receipt_date`             ='2020-09-11 10:50:29'
+                                                              where `order_id`='7'
+[2020-09-11 10:50:32]	SELECT * FROM invoice_order WHERE md5(order_id) = '8f14e45fceea167a5a36dedd4bea2543'
+[2020-09-11 10:50:32]	SELECT * FROM invoice_order_item WHERE order_id = '7'
+[2020-09-11 10:50:32]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1' and order_id<>'7'
+[2020-09-11 10:51:49]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 10:51:49]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 10:51:49]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 10:51:49]	select * from _tbl_sales_products
+[2020-09-11 10:51:49]	select * from _tbl_units
+[2020-09-11 10:51:59]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 10:52:05]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 10:52:49]	select * from invoice_order
+[2020-09-11 10:52:49]	select * from _tbl_sales_customers where CustomerID='8'
+[2020-09-11 10:52:49]	insert into `invoice_order` (`user_id`,`order_code`,`order_receiver_name`,`order_receiver_address`,`order_total_after_tax`,`order_amount_paid`,`order_total_amount_due`,`TransactionMode`,`TotalCashReceived`,`ReturnCashToCustomer`,`note`) values ('8','IN008','Chithu','zcxzc,address2,','100','0.00','100','Cash','30','-70','')
+[2020-09-11 10:52:49]	insert into `invoice_order_item` (`order_id`,`item_code`,`item_name`,`order_item_quantity`,`order_item_price`,`order_item_final_amount`) values ('8','7','ரோஜா பூ','1','100','100')
+[2020-09-11 10:52:49]	insert into `receipt` (`receipt_code`,`order_id`,`order_date`,`user_id`,`receipt_amount`,`invoice_due_amount`,`receipt_date`) values ('RT008','8','2020-09-11 10:52:49','8','100','0.00','2020-09-11 10:52:49')
+[2020-09-11 10:52:49]	update invoice_order set `order_amount_paid`      ='100',
+                                                             `order_total_amount_due` ='0',                    
+                                                             `receipt_id`             ='8',
+                                                             `receipt_date`             ='2020-09-11 10:52:49'
+                                                              where `order_id`='8'
+[2020-09-11 10:52:54]	SELECT * FROM invoice_order WHERE md5(order_id) = 'c9f0f895fb98ab9159f51fd0297e236d'
+[2020-09-11 10:52:54]	SELECT * FROM invoice_order_item WHERE order_id = '8'
+[2020-09-11 10:52:54]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='8' and order_id<>'8'
+[2020-09-11 10:53:35]	SELECT * FROM invoice_order WHERE md5(order_id) = 'c9f0f895fb98ab9159f51fd0297e236d'
+[2020-09-11 10:53:35]	SELECT * FROM invoice_order_item WHERE order_id = '8'
+[2020-09-11 10:53:35]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='8' and order_id<>'8'
+[2020-09-11 10:53:45]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 10:53:45]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 10:53:45]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 10:53:45]	select * from _tbl_sales_products
+[2020-09-11 10:53:45]	select * from _tbl_units
+[2020-09-11 10:53:54]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 10:53:58]	select * from _tbl_sales_products where ProductName Like 'ro%' order by ProductName
+[2020-09-11 10:54:15]	select * from invoice_order
+[2020-09-11 10:54:15]	select * from _tbl_sales_customers where CustomerID='8'
+[2020-09-11 10:54:15]	insert into `invoice_order` (`user_id`,`order_code`,`order_receiver_name`,`order_receiver_address`,`order_total_after_tax`,`order_amount_paid`,`order_total_amount_due`,`TransactionMode`,`TotalCashReceived`,`ReturnCashToCustomer`,`note`) values ('8','IN009','Chithu','zcxzc,address2,','100','0.00','100','Cash','50','-50','')
+[2020-09-11 10:54:15]	insert into `invoice_order_item` (`order_id`,`item_code`,`item_name`,`order_item_quantity`,`order_item_price`,`order_item_final_amount`) values ('9','7','ரோஜா பூ','1','100','100')
+[2020-09-11 10:54:15]	insert into `receipt` (`receipt_code`,`order_id`,`order_date`,`user_id`,`receipt_amount`,`invoice_due_amount`,`receipt_date`) values ('RT009','9','2020-09-11 10:54:15','8','100','0.00','2020-09-11 10:54:15')
+[2020-09-11 10:54:15]	update invoice_order set `order_amount_paid`      ='100',
+                                                             `order_total_amount_due` ='0',                    
+                                                             `receipt_id`             ='9',
+                                                             `receipt_date`             ='2020-09-11 10:54:15'
+                                                              where `order_id`='9'
+[2020-09-11 10:54:47]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 10:54:47]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 10:54:47]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 10:54:47]	select * from _tbl_sales_products
+[2020-09-11 10:54:47]	select * from _tbl_units
+[2020-09-11 10:54:51]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 10:54:55]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 10:55:34]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 10:55:34]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 10:55:34]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 10:55:34]	select * from _tbl_sales_products
+[2020-09-11 10:55:34]	select * from _tbl_units
+[2020-09-11 10:55:39]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 10:55:42]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 10:56:03]	select * from invoice_order
+[2020-09-11 10:56:03]	select * from _tbl_sales_customers where CustomerID='1'
+[2020-09-11 10:56:03]	insert into `invoice_order` (`user_id`,`order_code`,`order_receiver_name`,`order_receiver_address`,`order_total_after_tax`,`order_amount_paid`,`order_total_amount_due`,`TransactionMode`,`TotalCashReceived`,`ReturnCashToCustomer`,`note`) values ('1','IN0010','Cash','Karikudi,,','100','0.00','100','Cash','50','-50','')
+[2020-09-11 10:56:03]	insert into `invoice_order_item` (`order_id`,`item_code`,`item_name`,`order_item_quantity`,`order_item_price`,`order_item_final_amount`) values ('10','7','ரோஜா பூ','1','100','100')
+[2020-09-11 10:56:03]	insert into `receipt` (`receipt_code`,`order_id`,`order_date`,`user_id`,`receipt_amount`,`invoice_due_amount`,`receipt_date`) values ('RT0010','10','2020-09-11 10:56:03','1','100','0.00','2020-09-11 10:56:03')
+[2020-09-11 10:56:03]	update invoice_order set `order_amount_paid`      ='100',
+                                                             `order_total_amount_due` ='0',                    
+                                                             `receipt_id`             ='10',
+                                                             `receipt_date`             ='2020-09-11 10:56:03'
+                                                              where `order_id`='10'
+[2020-09-11 10:56:07]	SELECT * FROM invoice_order WHERE md5(order_id) = 'd3d9446802a44259755d38e6d163e820'
+[2020-09-11 10:56:07]	SELECT * FROM invoice_order_item WHERE order_id = '10'
+[2020-09-11 10:56:07]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1' and order_id<>'10'
+[2020-09-11 10:57:24]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 10:57:24]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 10:57:24]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 10:57:24]	select * from _tbl_sales_products
+[2020-09-11 10:57:24]	select * from _tbl_units
+[2020-09-11 10:57:29]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 10:57:33]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 10:57:51]	select * from invoice_order
+[2020-09-11 10:57:51]	select * from _tbl_sales_customers where CustomerID='1'
+[2020-09-11 10:57:51]	insert into `invoice_order` (`user_id`,`order_code`,`order_receiver_name`,`order_receiver_address`,`order_total_after_tax`,`order_amount_paid`,`order_total_amount_due`,`TransactionMode`,`TotalCashReceived`,`ReturnCashToCustomer`,`note`) values ('1','IN0011','Cash','Karikudi,,','100','0.00','100','Cash','50','-50','')
+[2020-09-11 10:57:51]	insert into `invoice_order_item` (`order_id`,`item_code`,`item_name`,`order_item_quantity`,`order_item_price`,`order_item_final_amount`) values ('11','7','ரோஜா பூ','1','100','100')
+[2020-09-11 10:57:51]	insert into `receipt` (`receipt_code`,`order_id`,`order_date`,`user_id`,`receipt_amount`,`invoice_due_amount`,`receipt_date`) values ('RT0011','11','2020-09-11 10:57:51','1','100','0.00','2020-09-11 10:57:51')
+[2020-09-11 10:57:51]	update invoice_order set `order_amount_paid`      ='100',
+                                                             `order_total_amount_due` ='0',                    
+                                                             `receipt_id`             ='11',
+                                                             `receipt_date`             ='2020-09-11 10:57:51'
+                                                              where `order_id`='11'
+[2020-09-11 10:59:29]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 10:59:29]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 10:59:29]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 10:59:29]	select * from _tbl_sales_products
+[2020-09-11 10:59:29]	select * from _tbl_units
+[2020-09-11 10:59:35]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 10:59:39]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 10:59:57]	select * from invoice_order
+[2020-09-11 10:59:57]	select * from _tbl_sales_customers where CustomerID='1'
+[2020-09-11 10:59:57]	insert into `invoice_order` (`user_id`,`order_code`,`order_receiver_name`,`order_receiver_address`,`order_total_after_tax`,`order_amount_paid`,`order_total_amount_due`,`TransactionMode`,`TotalCashReceived`,`ReturnCashToCustomer`,`note`) values ('1','IN001','Cash','Karikudi,,','100','0.00','100','Cash','40','-60','')
+[2020-09-11 10:59:57]	insert into `invoice_order_item` (`order_id`,`item_code`,`item_name`,`order_item_quantity`,`order_item_price`,`order_item_final_amount`) values ('1','7','ரோஜா பூ','1','100','100')
+[2020-09-11 10:59:57]	insert into `receipt` (`receipt_code`,`order_id`,`order_date`,`user_id`,`receipt_amount`,`invoice_due_amount`,`receipt_date`) values ('RT001','1','2020-09-11 10:59:57','1','100','0.00','2020-09-11 10:59:57')
+[2020-09-11 10:59:57]	update invoice_order set `order_amount_paid`      ='100',
+                                                             `order_total_amount_due` ='0',                    
+                                                             `receipt_id`             ='1',
+                                                             `receipt_date`             ='2020-09-11 10:59:57'
+                                                              where `order_id`='1'
+[2020-09-11 11:00:29]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 11:00:29]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 11:00:29]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 11:00:29]	select * from _tbl_sales_products
+[2020-09-11 11:00:29]	select * from _tbl_units
+[2020-09-11 11:00:32]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 11:00:36]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 11:00:58]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 11:00:58]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 11:00:58]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 11:00:58]	select * from _tbl_sales_products
+[2020-09-11 11:00:58]	select * from _tbl_units
+[2020-09-11 11:01:02]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 11:01:06]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 11:01:18]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 11:01:34]	select * from invoice_order
+[2020-09-11 11:01:34]	select * from _tbl_sales_customers where CustomerID='1'
+[2020-09-11 11:01:34]	insert into `invoice_order` (`user_id`,`order_code`,`order_receiver_name`,`order_receiver_address`,`order_total_after_tax`,`order_amount_paid`,`order_total_amount_due`,`TransactionMode`,`TotalCashReceived`,`ReturnCashToCustomer`,`note`) values ('1','IN002','Cash','Karikudi,,','100','0.00','100','Cash','20','-80','')
+[2020-09-11 11:01:34]	insert into `invoice_order_item` (`order_id`,`item_code`,`item_name`,`order_item_quantity`,`order_item_price`,`order_item_final_amount`) values ('2','7','ரோஜா பூ','1','100','100')
+[2020-09-11 11:01:34]	insert into `receipt` (`receipt_code`,`order_id`,`order_date`,`user_id`,`receipt_amount`,`invoice_due_amount`,`receipt_date`) values ('RT002','2','2020-09-11 11:01:34','1','100','0.00','2020-09-11 11:01:34')
+[2020-09-11 11:01:34]	update invoice_order set `order_amount_paid`      ='100',
+                                                             `order_total_amount_due` ='0',                    
+                                                             `receipt_id`             ='2',
+                                                             `receipt_date`             ='2020-09-11 11:01:34'
+                                                              where `order_id`='2'
+[2020-09-11 11:01:49]	SELECT * FROM invoice_order WHERE md5(order_id) = 'c81e728d9d4c2f636f067f89cc14862c'
+[2020-09-11 11:01:49]	SELECT * FROM invoice_order_item WHERE order_id = '2'
+[2020-09-11 11:01:49]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1' and order_id<>'2'
+[2020-09-11 11:02:29]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 11:02:29]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 11:02:29]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 11:02:29]	select * from _tbl_sales_products
+[2020-09-11 11:02:29]	select * from _tbl_units
+[2020-09-11 11:02:37]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 11:02:42]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 11:02:54]	select * from invoice_order
+[2020-09-11 11:02:54]	select * from _tbl_sales_customers where CustomerID='1'
+[2020-09-11 11:02:54]	insert into `invoice_order` (`user_id`,`order_code`,`order_receiver_name`,`order_receiver_address`,`order_total_after_tax`,`order_amount_paid`,`order_total_amount_due`,`TransactionMode`,`TotalCashReceived`,`ReturnCashToCustomer`,`note`) values ('1','IN001','Cash','Karikudi,,','100','0.00','100','Cash','200','100','')
+[2020-09-11 11:02:54]	insert into `invoice_order_item` (`order_id`,`item_code`,`item_name`,`order_item_quantity`,`order_item_price`,`order_item_final_amount`) values ('1','7','ரோஜா பூ','1','100','100')
+[2020-09-11 11:02:54]	insert into `receipt` (`receipt_code`,`order_id`,`order_date`,`user_id`,`receipt_amount`,`invoice_due_amount`,`receipt_date`) values ('RT001','1','2020-09-11 11:02:54','1','100','0.00','2020-09-11 11:02:54')
+[2020-09-11 11:02:54]	update invoice_order set `order_amount_paid`      ='100',
+                                                             `order_total_amount_due` ='0',                    
+                                                             `receipt_id`             ='1',
+                                                             `receipt_date`             ='2020-09-11 11:02:54'
+                                                              where `order_id`='1'
+[2020-09-11 11:02:56]	SELECT * FROM invoice_order WHERE md5(order_id) = 'c4ca4238a0b923820dcc509a6f75849b'
+[2020-09-11 11:02:56]	SELECT * FROM invoice_order_item WHERE order_id = '1'
+[2020-09-11 11:02:56]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1' and order_id<>'1'
+[2020-09-11 11:03:17]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 11:03:17]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 11:03:17]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 11:03:17]	select * from _tbl_sales_products
+[2020-09-11 11:03:17]	select * from _tbl_units
+[2020-09-11 11:03:26]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 11:03:30]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 11:05:12]	select * from invoice_order
+[2020-09-11 11:05:12]	select * from _tbl_sales_customers where CustomerID='8'
+[2020-09-11 11:05:12]	insert into `invoice_order` (`user_id`,`order_code`,`order_receiver_name`,`order_receiver_address`,`order_total_after_tax`,`order_amount_paid`,`order_total_amount_due`,`TransactionMode`,`TotalCashReceived`,`ReturnCashToCustomer`,`note`) values ('8','IN002','Chithu','zcxzc,address2,','100','0.00','100','Credit','0','0','')
+[2020-09-11 11:05:12]	insert into `invoice_order_item` (`order_id`,`item_code`,`item_name`,`order_item_quantity`,`order_item_price`,`order_item_final_amount`) values ('2','7','ரோஜா பூ','1','100','100')
+[2020-09-11 11:05:12]	insert into `receipt` (`receipt_code`,`order_id`,`order_date`,`user_id`,`receipt_amount`,`invoice_due_amount`,`receipt_date`) values ('RT002','2','2020-09-11 11:05:12','8','10','90.00','2020-09-11 11:05:12')
+[2020-09-11 11:05:12]	update invoice_order set `order_amount_paid`      ='10',
+                                                             `order_total_amount_due` ='90',                    
+                                                             `receipt_id`             ='2',
+                                                             `receipt_date`             ='2020-09-11 11:05:12'
+                                                              where `order_id`='2'
+[2020-09-11 11:05:17]	SELECT * FROM invoice_order WHERE md5(order_id) = 'c81e728d9d4c2f636f067f89cc14862c'
+[2020-09-11 11:05:17]	SELECT * FROM invoice_order_item WHERE order_id = '2'
+[2020-09-11 11:05:17]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='8' and order_id<>'2'
+[2020-09-11 11:05:35]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 11:05:35]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 11:05:35]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 11:05:35]	select * from _tbl_sales_products
+[2020-09-11 11:05:35]	select * from _tbl_units
+[2020-09-11 11:05:40]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 11:05:44]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 11:05:49]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 11:06:01]	select * from invoice_order
+[2020-09-11 11:06:01]	select * from _tbl_sales_customers where CustomerID='1'
+[2020-09-11 11:06:01]	insert into `invoice_order` (`user_id`,`order_code`,`order_receiver_name`,`order_receiver_address`,`order_total_after_tax`,`order_amount_paid`,`order_total_amount_due`,`TransactionMode`,`TotalCashReceived`,`ReturnCashToCustomer`,`note`) values ('1','IN003','Cash','Karikudi,,','100','0.00','100','Credit','0','0','')
+[2020-09-11 11:06:01]	insert into `invoice_order_item` (`order_id`,`item_code`,`item_name`,`order_item_quantity`,`order_item_price`,`order_item_final_amount`) values ('3','7','ரோஜா பூ','1','100','100')
+[2020-09-11 11:06:01]	insert into `receipt` (`receipt_code`,`order_id`,`order_date`,`user_id`,`receipt_amount`,`invoice_due_amount`,`receipt_date`) values ('RT003','3','2020-09-11 11:06:01','1','10','90.00','2020-09-11 11:06:01')
+[2020-09-11 11:06:01]	update invoice_order set `order_amount_paid`      ='10',
+                                                             `order_total_amount_due` ='90',                    
+                                                             `receipt_id`             ='3',
+                                                             `receipt_date`             ='2020-09-11 11:06:01'
+                                                              where `order_id`='3'
+[2020-09-11 11:06:03]	SELECT * FROM invoice_order WHERE md5(order_id) = 'eccbc87e4b5ce2fe28308fd9f2a7baf3'
+[2020-09-11 11:06:03]	SELECT * FROM invoice_order_item WHERE order_id = '3'
+[2020-09-11 11:06:03]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1' and order_id<>'3'
+[2020-09-11 11:06:25]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 11:06:25]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 11:06:25]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 11:06:25]	select * from _tbl_sales_products
+[2020-09-11 11:06:25]	select * from _tbl_units
+[2020-09-11 11:06:31]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 11:06:35]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 11:06:58]	select * from invoice_order
+[2020-09-11 11:06:58]	select * from _tbl_sales_customers where CustomerID='1'
+[2020-09-11 11:06:58]	insert into `invoice_order` (`user_id`,`order_code`,`order_receiver_name`,`order_receiver_address`,`order_total_after_tax`,`order_amount_paid`,`order_total_amount_due`,`TransactionMode`,`TotalCashReceived`,`ReturnCashToCustomer`,`note`) values ('1','IN004','Cash','Karikudi,,','100','0.00','100','Credit','0','0','')
+[2020-09-11 11:06:58]	insert into `invoice_order_item` (`order_id`,`item_code`,`item_name`,`order_item_quantity`,`order_item_price`,`order_item_final_amount`) values ('4','7','ரோஜா பூ','1','100','100')
+[2020-09-11 11:06:58]	insert into `receipt` (`receipt_code`,`order_id`,`order_date`,`user_id`,`receipt_amount`,`invoice_due_amount`,`receipt_date`) values ('RT004','4','2020-09-11 11:06:58','1','10','90.00','2020-09-11 11:06:58')
+[2020-09-11 11:06:58]	update invoice_order set `order_amount_paid`      ='10',
+                                                             `order_total_amount_due` ='90',                    
+                                                             `receipt_id`             ='4',
+                                                             `receipt_date`             ='2020-09-11 11:06:58'
+                                                              where `order_id`='4'
+[2020-09-11 11:07:19]	SELECT * FROM invoice_order WHERE md5(order_id) = 'a87ff679a2f3e71d9181a67b7542122c'
+[2020-09-11 11:07:19]	SELECT * FROM invoice_order_item WHERE order_id = '4'
+[2020-09-11 11:07:19]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1' and order_id<>'4'
+[2020-09-11 11:08:49]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 11:08:49]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 11:08:49]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 11:08:49]	select * from _tbl_sales_products
+[2020-09-11 11:08:49]	select * from _tbl_units
+[2020-09-11 11:09:41]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 11:09:41]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 11:09:41]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 11:09:41]	select * from _tbl_sales_products
+[2020-09-11 11:09:41]	select * from _tbl_units
+[2020-09-11 11:09:54]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 11:09:54]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 11:09:54]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 11:09:54]	select * from _tbl_sales_products
+[2020-09-11 11:09:54]	select * from _tbl_units
+[2020-09-11 11:10:19]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 11:10:19]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 11:10:19]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 11:10:19]	select * from _tbl_sales_products
+[2020-09-11 11:10:19]	select * from _tbl_units
+[2020-09-11 11:10:26]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 11:10:30]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 11:10:38]	select * from _tbl_sales_products where ProductName Like 'r0%' order by ProductName
+[2020-09-11 11:10:39]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 11:10:40]	select * from _tbl_sales_products where ProductName Like 'ro%' order by ProductName
+[2020-09-11 11:13:39]	select * from invoice_order
+[2020-09-11 11:13:39]	select * from _tbl_sales_customers where CustomerID='8'
+[2020-09-11 11:13:39]	insert into `invoice_order` (`user_id`,`order_code`,`order_receiver_name`,`order_receiver_address`,`order_total_after_tax`,`order_amount_paid`,`order_total_amount_due`,`TransactionMode`,`TotalCashReceived`,`ReturnCashToCustomer`,`note`) values ('8','IN001','Chithu','zcxzc,address2,','100','0.00','100','Credit','0','0','')
+[2020-09-11 11:13:39]	insert into `invoice_order_item` (`order_id`,`item_code`,`item_name`,`order_item_quantity`,`order_item_price`,`order_item_final_amount`) values ('1','7','ரோஜா பூ','1','100','100')
+[2020-09-11 11:13:39]	insert into `receipt` (`receipt_code`,`order_id`,`order_date`,`user_id`,`receipt_amount`,`invoice_due_amount`,`receipt_date`) values ('RT001','1','2020-09-11 11:13:39','8','100','0.00','2020-09-11 11:13:39')
+[2020-09-11 11:13:39]	update invoice_order set `order_amount_paid`      ='100',
+                                                             `order_total_amount_due` ='0',                    
+                                                             `receipt_id`             ='1',
+                                                             `receipt_date`             ='2020-09-11 11:13:39'
+                                                              where `order_id`='1'
+[2020-09-11 11:13:41]	SELECT * FROM invoice_order WHERE md5(order_id) = 'c4ca4238a0b923820dcc509a6f75849b'
+[2020-09-11 11:13:41]	SELECT * FROM invoice_order_item WHERE order_id = '1'
+[2020-09-11 11:13:41]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='8' and order_id<>'1'
+[2020-09-11 11:13:54]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 11:13:54]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 11:13:54]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 11:13:54]	select * from _tbl_sales_products
+[2020-09-11 11:13:54]	select * from _tbl_units
+[2020-09-11 11:14:03]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 11:14:08]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 11:14:23]	select * from invoice_order
+[2020-09-11 11:14:23]	select * from _tbl_sales_customers where CustomerID='8'
+[2020-09-11 11:14:23]	insert into `invoice_order` (`user_id`,`order_code`,`order_receiver_name`,`order_receiver_address`,`order_total_after_tax`,`order_amount_paid`,`order_total_amount_due`,`TransactionMode`,`TotalCashReceived`,`ReturnCashToCustomer`,`note`) values ('8','IN002','Chithu','zcxzc,address2,','100','0.00','100','Cash','40','-60','')
+[2020-09-11 11:14:23]	insert into `invoice_order_item` (`order_id`,`item_code`,`item_name`,`order_item_quantity`,`order_item_price`,`order_item_final_amount`) values ('2','7','ரோஜா பூ','1','100','100')
+[2020-09-11 11:14:23]	insert into `receipt` (`receipt_code`,`order_id`,`order_date`,`user_id`,`receipt_amount`,`invoice_due_amount`,`receipt_date`) values ('RT002','2','2020-09-11 11:14:23','8','100','0.00','2020-09-11 11:14:23')
+[2020-09-11 11:14:23]	update invoice_order set `order_amount_paid`      ='100',
+                                                             `order_total_amount_due` ='0',                    
+                                                             `receipt_id`             ='2',
+                                                             `receipt_date`             ='2020-09-11 11:14:23'
+                                                              where `order_id`='2'
+[2020-09-11 11:15:39]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 11:15:39]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 11:15:39]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 11:15:39]	select * from _tbl_sales_products
+[2020-09-11 11:15:39]	select * from _tbl_units
+[2020-09-11 11:16:04]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 11:16:04]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 11:16:04]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 11:16:04]	select * from _tbl_sales_products
+[2020-09-11 11:16:04]	select * from _tbl_units
+[2020-09-11 11:16:51]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 11:16:51]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 11:16:51]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 11:16:51]	select * from _tbl_sales_products
+[2020-09-11 11:16:51]	select * from _tbl_units
+[2020-09-11 11:17:30]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 11:17:30]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 11:17:30]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 11:17:30]	select * from _tbl_sales_products
+[2020-09-11 11:17:30]	select * from _tbl_units
+[2020-09-11 11:17:40]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 11:17:46]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 11:18:01]	select * from invoice_order
+[2020-09-11 11:18:01]	select * from _tbl_sales_customers where CustomerID='1'
+[2020-09-11 11:18:01]	insert into `invoice_order` (`user_id`,`order_code`,`order_receiver_name`,`order_receiver_address`,`order_total_after_tax`,`order_amount_paid`,`order_total_amount_due`,`TransactionMode`,`TotalCashReceived`,`ReturnCashToCustomer`,`note`) values ('1','IN003','Cash','Karikudi,,','100','0.00','100','Cash','50','-50','')
+[2020-09-11 11:18:01]	insert into `invoice_order_item` (`order_id`,`item_code`,`item_name`,`order_item_quantity`,`order_item_price`,`order_item_final_amount`) values ('3','7','ரோஜா பூ','1','100','100')
+[2020-09-11 11:18:01]	insert into `receipt` (`receipt_code`,`order_id`,`order_date`,`user_id`,`receipt_amount`,`invoice_due_amount`,`receipt_date`) values ('RT003','3','2020-09-11 11:18:01','1','100','0.00','2020-09-11 11:18:01')
+[2020-09-11 11:18:01]	update invoice_order set `order_amount_paid`      ='100',
+                                                             `order_total_amount_due` ='0',                    
+                                                             `receipt_id`             ='3',
+                                                             `receipt_date`             ='2020-09-11 11:18:01'
+                                                              where `order_id`='3'
+[2020-09-11 11:18:05]	SELECT * FROM invoice_order WHERE md5(order_id) = 'eccbc87e4b5ce2fe28308fd9f2a7baf3'
+[2020-09-11 11:18:05]	SELECT * FROM invoice_order_item WHERE order_id = '3'
+[2020-09-11 11:18:05]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1' and order_id<>'3'
+[2020-09-11 11:22:19]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 11:22:19]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 11:22:19]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 11:22:19]	select * from _tbl_sales_products
+[2020-09-11 11:22:19]	select * from _tbl_units
+[2020-09-11 11:22:43]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 11:22:43]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 11:22:43]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 11:22:43]	select * from _tbl_sales_products
+[2020-09-11 11:22:43]	select * from _tbl_units
+[2020-09-11 11:25:58]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 11:25:58]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 11:25:58]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 11:25:58]	select * from _tbl_sales_products
+[2020-09-11 11:25:58]	select * from _tbl_units
+[2020-09-11 11:26:44]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 11:26:44]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 11:26:44]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 11:26:44]	select * from _tbl_sales_products
+[2020-09-11 11:26:44]	select * from _tbl_units
+[2020-09-11 11:27:02]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 11:28:02]	select * from _tbl_sales_customers where CustomerName Like 'ca%' order by CustomerName
+[2020-09-11 11:31:21]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 11:35:16]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 11:35:16]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 11:35:16]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 11:35:16]	select * from _tbl_sales_products
+[2020-09-11 11:35:16]	select * from _tbl_units
+[2020-09-11 11:35:23]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 11:35:34]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 11:36:14]	select * from invoice_order
+[2020-09-11 11:36:14]	select * from _tbl_sales_customers where CustomerID='1'
+[2020-09-11 11:36:14]	insert into `invoice_order` (`user_id`,`order_code`,`order_receiver_name`,`order_receiver_address`,`order_total_after_tax`,`order_amount_paid`,`order_total_amount_due`,`TransactionMode`,`TotalCashReceived`,`ReturnCashToCustomer`,`note`) values ('1','IN001','Cash','Karikudi,,','100','0.00','100','Cash','110','10','')
+[2020-09-11 11:36:14]	insert into `invoice_order_item` (`order_id`,`item_code`,`item_name`,`order_item_quantity`,`order_item_price`,`order_item_final_amount`) values ('1','7','ரோஜா பூ','1','100','100')
+[2020-09-11 11:36:14]	insert into `receipt` (`receipt_code`,`order_id`,`order_date`,`user_id`,`receipt_amount`,`invoice_due_amount`,`receipt_date`) values ('RT001','1','2020-09-11 11:36:14','1','100','0.00','2020-09-11 11:36:14')
+[2020-09-11 11:36:14]	update invoice_order set `order_amount_paid`      ='100',
+                                                             `order_total_amount_due` ='0',                    
+                                                             `receipt_id`             ='1',
+                                                             `receipt_date`             ='2020-09-11 11:36:14'
+                                                              where `order_id`='1'
+[2020-09-11 11:36:16]	SELECT * FROM invoice_order WHERE md5(order_id) = 'c4ca4238a0b923820dcc509a6f75849b'
+[2020-09-11 11:36:16]	SELECT * FROM invoice_order_item WHERE order_id = '1'
+[2020-09-11 11:36:16]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1' and order_id<>'1'
+[2020-09-11 11:37:02]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 11:37:02]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 11:37:02]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 11:37:02]	select * from _tbl_sales_products
+[2020-09-11 11:37:02]	select * from _tbl_units
+[2020-09-11 11:37:19]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 11:37:24]	select * from _tbl_sales_products where ProductName Like 'ro%' order by ProductName
+[2020-09-11 11:41:14]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 11:41:14]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 11:41:14]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 11:41:14]	select * from _tbl_sales_products
+[2020-09-11 11:41:14]	select * from _tbl_units
+[2020-09-11 11:41:40]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 11:41:44]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 11:42:48]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 11:42:48]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 11:42:48]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 11:42:48]	select * from _tbl_sales_products
+[2020-09-11 11:42:48]	select * from _tbl_units
+[2020-09-11 11:43:29]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 11:43:29]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 11:43:29]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 11:43:29]	select * from _tbl_sales_products
+[2020-09-11 11:43:29]	select * from _tbl_units
+[2020-09-11 11:43:39]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 11:43:43]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 11:45:32]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 11:45:32]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 11:45:32]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 11:45:32]	select * from _tbl_sales_products
+[2020-09-11 11:45:32]	select * from _tbl_units
+[2020-09-11 11:45:57]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 11:45:57]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 11:45:57]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 11:45:57]	select * from _tbl_sales_products
+[2020-09-11 11:45:57]	select * from _tbl_units
+[2020-09-11 11:46:29]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 11:46:29]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 11:46:29]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 11:46:29]	select * from _tbl_sales_products
+[2020-09-11 11:46:29]	select * from _tbl_units
+[2020-09-11 11:46:37]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 11:46:45]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 11:47:35]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 11:47:35]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 11:47:35]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 11:47:35]	select * from _tbl_sales_products
+[2020-09-11 11:47:35]	select * from _tbl_units
+[2020-09-11 11:48:30]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 11:48:30]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 11:48:30]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 11:48:30]	select * from _tbl_sales_products
+[2020-09-11 11:48:30]	select * from _tbl_units
+[2020-09-11 11:48:44]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 11:49:02]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 11:49:10]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 11:51:24]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 11:51:24]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 11:51:24]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 11:51:24]	select * from _tbl_sales_products
+[2020-09-11 11:51:24]	select * from _tbl_units
+[2020-09-11 11:51:43]	select * from _tbl_sales_customers where CustomerName Like 'm%' order by CustomerName
+[2020-09-11 11:51:45]	select * from _tbl_sales_customers where CustomerName Like 'm%' order by CustomerName
+[2020-09-11 11:51:48]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 11:51:52]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 11:52:35]	select * from invoice_order
+[2020-09-11 11:52:35]	select * from _tbl_sales_customers where CustomerID='1'
+[2020-09-11 11:52:35]	insert into `invoice_order` (`user_id`,`order_code`,`order_receiver_name`,`order_receiver_address`,`order_total_after_tax`,`order_amount_paid`,`order_total_amount_due`,`TransactionMode`,`TotalCashReceived`,`ReturnCashToCustomer`,`note`) values ('1','IN002','Cash','Karikudi,,','100','0.00','100','Credit','0','0','')
+[2020-09-11 11:52:35]	insert into `invoice_order_item` (`order_id`,`item_code`,`item_name`,`order_item_quantity`,`order_item_price`,`order_item_final_amount`) values ('2','7','ரோஜா பூ','1','100','100')
+[2020-09-11 11:52:35]	insert into `receipt` (`receipt_code`,`order_id`,`order_date`,`user_id`,`receipt_amount`,`invoice_due_amount`,`receipt_date`) values ('RT002','2','2020-09-11 11:52:35','1','150','-50.00','2020-09-11 11:52:35')
+[2020-09-11 11:52:35]	update invoice_order set `order_amount_paid`      ='150',
+                                                             `order_total_amount_due` ='-50',                    
+                                                             `receipt_id`             ='2',
+                                                             `receipt_date`             ='2020-09-11 11:52:35'
+                                                              where `order_id`='2'
+[2020-09-11 11:52:56]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 11:52:56]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 11:52:56]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 11:52:56]	select * from _tbl_sales_products
+[2020-09-11 11:52:56]	select * from _tbl_units
+[2020-09-11 11:53:12]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 11:53:19]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 11:54:15]	select * from invoice_order
+[2020-09-11 11:54:15]	select * from _tbl_sales_customers where CustomerID='1'
+[2020-09-11 11:54:15]	insert into `invoice_order` (`user_id`,`order_code`,`order_receiver_name`,`order_receiver_address`,`order_total_after_tax`,`order_amount_paid`,`order_total_amount_due`,`TransactionMode`,`TotalCashReceived`,`ReturnCashToCustomer`,`note`) values ('1','IN003','Cash','Karikudi,,','100','0.00','100','Credit','0','0','')
+[2020-09-11 11:54:15]	insert into `invoice_order_item` (`order_id`,`item_code`,`item_name`,`order_item_quantity`,`order_item_price`,`order_item_final_amount`) values ('3','7','ரோஜா பூ','1','100','100')
+[2020-09-11 11:54:15]	insert into `receipt` (`receipt_code`,`order_id`,`order_date`,`user_id`,`receipt_amount`,`invoice_due_amount`,`receipt_date`) values ('RT003','3','2020-09-11 11:54:15','1','20','80.00','2020-09-11 11:54:15')
+[2020-09-11 11:54:15]	update invoice_order set `order_amount_paid`      ='20',
+                                                             `order_total_amount_due` ='80',                    
+                                                             `receipt_id`             ='3',
+                                                             `receipt_date`             ='2020-09-11 11:54:15'
+                                                              where `order_id`='3'
+[2020-09-11 11:54:17]	SELECT * FROM invoice_order WHERE md5(order_id) = 'eccbc87e4b5ce2fe28308fd9f2a7baf3'
+[2020-09-11 11:54:17]	SELECT * FROM invoice_order_item WHERE order_id = '3'
+[2020-09-11 11:54:17]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1' and order_id<>'3'
+[2020-09-11 11:54:38]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 11:54:38]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 11:54:38]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 11:54:38]	select * from _tbl_sales_products
+[2020-09-11 11:54:38]	select * from _tbl_units
+[2020-09-11 11:54:59]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 11:55:03]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 11:55:21]	select * from invoice_order
+[2020-09-11 11:55:21]	select * from _tbl_sales_customers where CustomerID='1'
+[2020-09-11 11:55:21]	insert into `invoice_order` (`user_id`,`order_code`,`order_receiver_name`,`order_receiver_address`,`order_total_after_tax`,`order_amount_paid`,`order_total_amount_due`,`TransactionMode`,`TotalCashReceived`,`ReturnCashToCustomer`,`note`) values ('1','IN004','Cash','Karikudi,,','100','0.00','100','Cash','100','0','')
+[2020-09-11 11:55:21]	insert into `invoice_order_item` (`order_id`,`item_code`,`item_name`,`order_item_quantity`,`order_item_price`,`order_item_final_amount`) values ('4','7','ரோஜா பூ','1','100','100')
+[2020-09-11 11:55:21]	insert into `receipt` (`receipt_code`,`order_id`,`order_date`,`user_id`,`receipt_amount`,`invoice_due_amount`,`receipt_date`) values ('RT004','4','2020-09-11 11:55:21','1','100','0.00','2020-09-11 11:55:21')
+[2020-09-11 11:55:21]	update invoice_order set `order_amount_paid`      ='100',
+                                                             `order_total_amount_due` ='0',                    
+                                                             `receipt_id`             ='4',
+                                                             `receipt_date`             ='2020-09-11 11:55:21'
+                                                              where `order_id`='4'
+[2020-09-11 11:55:23]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 11:55:23]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 11:55:23]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 11:55:23]	select * from _tbl_sales_products
+[2020-09-11 11:55:23]	select * from _tbl_units
+[2020-09-11 11:56:53]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 11:56:53]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 11:56:53]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 11:56:53]	select * from _tbl_sales_products
+[2020-09-11 11:56:53]	select * from _tbl_units
+[2020-09-11 11:57:27]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 11:57:27]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 11:57:27]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 11:57:27]	select * from _tbl_sales_products
+[2020-09-11 11:57:27]	select * from _tbl_units
+[2020-09-11 11:57:34]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 11:57:39]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 12:00:16]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 12:00:16]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 12:00:16]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 12:00:16]	select * from _tbl_sales_products
+[2020-09-11 12:00:16]	select * from _tbl_units
+[2020-09-11 12:00:43]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 12:00:47]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 12:01:11]	select * from invoice_order
+[2020-09-11 12:01:11]	select * from _tbl_sales_customers where CustomerID='8'
+[2020-09-11 12:01:11]	insert into `invoice_order` (`user_id`,`order_code`,`order_receiver_name`,`order_receiver_address`,`order_total_after_tax`,`order_amount_paid`,`order_total_amount_due`,`TransactionMode`,`TotalCashReceived`,`ReturnCashToCustomer`,`note`) values ('8','IN005','Chithu','zcxzc,address2,','100','0.00','100','Credit','0','0','')
+[2020-09-11 12:01:11]	insert into `invoice_order_item` (`order_id`,`item_code`,`item_name`,`order_item_quantity`,`order_item_price`,`order_item_final_amount`) values ('5','7','ரோஜா பூ','1','100','100')
+[2020-09-11 12:01:11]	insert into `receipt` (`receipt_code`,`order_id`,`order_date`,`user_id`,`receipt_amount`,`invoice_due_amount`,`receipt_date`) values ('RT005','5','2020-09-11 12:01:11','8','50','50.00','2020-09-11 12:01:11')
+[2020-09-11 12:01:11]	update invoice_order set `order_amount_paid`      ='50',
+                                                             `order_total_amount_due` ='50',                    
+                                                             `receipt_id`             ='5',
+                                                             `receipt_date`             ='2020-09-11 12:01:11'
+                                                              where `order_id`='5'
+[2020-09-11 12:01:17]	SELECT * FROM invoice_order WHERE md5(order_id) = 'e4da3b7fbbce2345d7772b0674a318d5'
+[2020-09-11 12:01:17]	SELECT * FROM invoice_order_item WHERE order_id = '5'
+[2020-09-11 12:01:17]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='8' and order_id<>'5'
+[2020-09-11 12:01:50]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 12:01:50]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 12:01:50]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 12:01:50]	select * from _tbl_sales_products
+[2020-09-11 12:01:50]	select * from _tbl_units
+[2020-09-11 12:01:58]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 12:02:02]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 12:10:54]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 12:10:54]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 12:10:54]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 12:10:54]	select * from _tbl_sales_products
+[2020-09-11 12:10:54]	select * from _tbl_units
+[2020-09-11 12:13:59]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 12:13:59]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 12:13:59]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 12:13:59]	select * from _tbl_sales_products
+[2020-09-11 12:13:59]	select * from _tbl_units
+[2020-09-11 12:14:04]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 12:14:04]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1'
+[2020-09-11 12:14:13]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 12:14:13]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1'
+[2020-09-11 12:17:02]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 12:17:02]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 12:17:02]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 12:17:02]	select * from _tbl_sales_products
+[2020-09-11 12:17:02]	select * from _tbl_units
+[2020-09-11 12:17:08]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 12:17:08]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1'
+[2020-09-11 12:18:32]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 12:18:32]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 12:18:32]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 12:18:32]	select * from _tbl_sales_products
+[2020-09-11 12:18:32]	select * from _tbl_units
+[2020-09-11 12:18:52]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 12:18:52]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1'
+[2020-09-11 12:18:59]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 12:19:41]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 12:19:41]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 12:19:41]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 12:19:41]	select * from _tbl_sales_products
+[2020-09-11 12:19:41]	select * from _tbl_units
+[2020-09-11 12:19:45]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 12:19:45]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1'
+[2020-09-11 12:21:14]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 12:21:30]	select * from invoice_order
+[2020-09-11 12:21:30]	select * from _tbl_sales_customers where CustomerID='8'
+[2020-09-11 12:21:30]	insert into `invoice_order` (`user_id`,`order_code`,`order_receiver_name`,`order_receiver_address`,`order_total_after_tax`,`order_amount_paid`,`order_total_amount_due`,`TransactionMode`,`TotalCashReceived`,`ReturnCashToCustomer`,`note`) values ('8','IN001','Chithu','zcxzc,address2,','100','0.00','100','Credit','0','0','')
+[2020-09-11 12:21:30]	insert into `invoice_order_item` (`order_id`,`item_code`,`item_name`,`order_item_quantity`,`order_item_price`,`order_item_final_amount`) values ('1','7','ரோஜா பூ','1','100','100')
+[2020-09-11 12:21:30]	insert into `receipt` (`receipt_code`,`order_id`,`order_date`,`user_id`,`receipt_amount`,`invoice_due_amount`,`receipt_date`) values ('RT001','1','2020-09-11 12:21:30','8','50','50.00','2020-09-11 12:21:30')
+[2020-09-11 12:21:30]	update invoice_order set `order_amount_paid`      ='50',
+                                                             `order_total_amount_due` ='50',                    
+                                                             `receipt_id`             ='1',
+                                                             `receipt_date`             ='2020-09-11 12:21:30'
+                                                              where `order_id`='1'
+[2020-09-11 12:21:31]	SELECT * FROM invoice_order WHERE md5(order_id) = 'c4ca4238a0b923820dcc509a6f75849b'
+[2020-09-11 12:21:31]	SELECT * FROM invoice_order_item WHERE order_id = '1'
+[2020-09-11 12:21:31]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='8' and order_id<>'1'
+[2020-09-11 12:21:40]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 12:21:40]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 12:21:40]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 12:21:40]	select * from _tbl_sales_products
+[2020-09-11 12:21:40]	select * from _tbl_units
+[2020-09-11 12:21:44]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 12:21:44]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1'
+[2020-09-11 12:23:39]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 12:23:39]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 12:23:39]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 12:23:39]	select * from _tbl_sales_products
+[2020-09-11 12:23:39]	select * from _tbl_units
+[2020-09-11 12:23:44]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 12:23:44]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1'
+[2020-09-11 12:24:50]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 12:24:50]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 12:24:50]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 12:24:50]	select * from _tbl_sales_products
+[2020-09-11 12:24:50]	select * from _tbl_units
+[2020-09-11 12:24:55]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 12:24:55]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1'
+[2020-09-11 12:24:55]	select * from _tbl_sales_customers where CustomerName Like 'ch%' order by CustomerName
+[2020-09-11 12:24:55]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='8'
+[2020-09-11 12:24:56]	select * from _tbl_sales_customers where CustomerName Like 'chi%' order by CustomerName
+[2020-09-11 12:24:56]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='8'
+[2020-09-11 12:25:02]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 12:25:02]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 12:25:02]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 12:25:02]	select * from _tbl_sales_products
+[2020-09-11 12:25:02]	select * from _tbl_units
+[2020-09-11 12:25:08]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 12:25:08]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1'
+[2020-09-11 12:25:08]	select * from _tbl_sales_customers where CustomerName Like 'cas%' order by CustomerName
+[2020-09-11 12:25:08]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1'
+[2020-09-11 12:25:08]	select * from _tbl_sales_customers where CustomerName Like 'cash%' order by CustomerName
+[2020-09-11 12:25:08]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1'
+[2020-09-11 12:25:54]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 12:25:54]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 12:25:54]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 12:25:54]	select * from _tbl_sales_products
+[2020-09-11 12:25:54]	select * from _tbl_units
+[2020-09-11 12:25:58]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 12:25:58]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1'
+[2020-09-11 12:26:11]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 12:26:11]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 12:26:11]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 12:26:11]	select * from _tbl_sales_products
+[2020-09-11 12:26:11]	select * from _tbl_units
+[2020-09-11 12:26:22]	select * from _tbl_sales_customers where CustomerName Like 'cas%' order by CustomerName
+[2020-09-11 12:26:22]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1'
+[2020-09-11 12:26:26]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 12:26:26]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 12:26:26]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 12:26:26]	select * from _tbl_sales_products
+[2020-09-11 12:26:26]	select * from _tbl_units
+[2020-09-11 12:26:34]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 12:26:34]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1'
+[2020-09-11 12:26:34]	select * from _tbl_sales_customers where CustomerName Like 'ch%' order by CustomerName
+[2020-09-11 12:26:34]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='8'
+[2020-09-11 12:26:35]	select * from _tbl_sales_customers where CustomerName Like 'chith%' order by CustomerName
+[2020-09-11 12:26:35]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='8'
+[2020-09-11 12:26:38]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 12:26:38]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 12:26:38]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 12:26:38]	select * from _tbl_sales_products
+[2020-09-11 12:26:38]	select * from _tbl_units
+[2020-09-11 12:26:42]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 12:26:42]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1'
+[2020-09-11 12:31:35]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 12:31:35]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 12:31:35]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 12:31:35]	select * from _tbl_sales_products
+[2020-09-11 12:31:35]	select * from _tbl_units
+[2020-09-11 12:31:59]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 12:31:59]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 12:31:59]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 12:31:59]	select * from _tbl_sales_products
+[2020-09-11 12:31:59]	select * from _tbl_units
+[2020-09-11 12:36:04]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 12:36:04]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 12:36:04]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 12:36:04]	select * from _tbl_sales_products
+[2020-09-11 12:36:04]	select * from _tbl_units
+[2020-09-11 12:38:07]	SELECT * FROM invoice_order where (date(order_date)>=date('2020-09-11') and date(order_date)<=date('2020-09-11') ) order by order_id desc
+[2020-09-11 12:38:29]	SELECT * FROM invoice_order where (date(order_date)>=date('2020-09-11') and date(order_date)<=date('2020-09-11') ) order by order_id desc
+[2020-09-11 12:38:54]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 12:38:54]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 12:38:54]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 12:38:54]	select * from _tbl_sales_products
+[2020-09-11 12:38:54]	select * from _tbl_units
+[2020-09-11 12:39:00]	SELECT * FROM invoice_order where (date(order_date)>=date('2020-09-11') and date(order_date)<=date('2020-09-11') ) order by order_id desc
+[2020-09-11 12:39:25]	SELECT * FROM invoice_order where (date(order_date)>=date('2020-09-11') and date(order_date)<=date('2020-09-11') ) order by order_id desc
+[2020-09-11 12:39:32]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 12:39:32]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 12:39:32]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 12:39:32]	select * from _tbl_sales_products
+[2020-09-11 12:39:32]	select * from _tbl_units
+[2020-09-11 12:39:45]	SELECT * FROM invoice_order where (date(order_date)>=date('2020-09-11') and date(order_date)<=date('2020-09-11') ) order by order_id desc
+[2020-09-11 12:40:22]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 12:40:22]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 12:40:22]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 12:40:22]	select * from _tbl_sales_products
+[2020-09-11 12:40:22]	select * from _tbl_units
+[2020-09-11 16:31:20]	select * from _tbl_sales_customers
+[2020-09-11 16:31:20]	select (sum(order_total_after_tax)) as bal from invoice_order
+[2020-09-11 16:31:20]	select (sum(receipt_amount)) as bal from receipt
+[2020-09-11 16:31:20]	select (sum(order_total_amount_due)) as bal from invoice_order
+[2020-09-11 16:31:20]	select (sum(order_total_after_tax)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 16:31:20]	select (sum(TotalCashReceived)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 16:31:20]	select (sum(order_amount_paid)) as bal from invoice_order where TransactionMode='Net Banking' and date(order_date)='2020-09-11'
+[2020-09-11 16:31:20]	select (sum(order_total_amount_due)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 16:31:20]	SELECT * FROM _tbl_sales_products WHERE ProductID IN (SELECT order_id FROM invoice_order_item)  order by ProductID Desc
+[2020-09-11 16:31:27]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 16:31:27]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 16:31:27]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 16:31:27]	select * from _tbl_sales_products
+[2020-09-11 16:31:27]	select * from _tbl_units
+[2020-09-11 16:31:31]	select * from _tbl_sales_products where ProductName Like 's%' order by ProductName
+[2020-09-11 16:31:31]	select * from _tbl_sales_products where ProductName Like 'sa%' order by ProductName
+[2020-09-11 16:31:41]	select * from _tbl_sales_products where ProductName Like 's%' order by ProductName
+[2020-09-11 16:31:41]	select * from _tbl_sales_products where ProductName Like 'sa%' order by ProductName
+[2020-09-11 16:31:43]	select * from _tbl_sales_products where ProductName Like 's%' order by ProductName
+[2020-09-11 16:33:11]	select * from _tbl_sales_products where ProductName Like 'sa%' order by ProductName
+[2020-09-11 16:33:25]	select * from _tbl_sales_customers where CustomerName Like 'cas%' order by CustomerName
+[2020-09-11 16:33:25]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1'
+[2020-09-11 16:33:52]	select * from _tbl_sales_customers where CustomerName Like 'cash%' order by CustomerName
+[2020-09-11 16:33:52]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1'
+[2020-09-11 16:37:35]	select * from invoice_order
+[2020-09-11 16:37:35]	select * from _tbl_sales_customers where CustomerID='1'
+[2020-09-11 16:37:35]	insert into `invoice_order` (`user_id`,`order_code`,`order_receiver_name`,`order_receiver_address`,`order_total_after_tax`,`order_amount_paid`,`order_total_amount_due`,`TransactionMode`,`TotalCashReceived`,`ReturnCashToCustomer`,`note`) values ('1','IN002','Cash','Karikudi,,','100','0.00','100','Cash','200','100','')
+[2020-09-11 16:37:35]	insert into `invoice_order_item` (`order_id`,`item_code`,`item_name`,`order_item_quantity`,`order_item_price`,`order_item_final_amount`) values ('2','1','சாமங்கி  பூ','1','100','100')
+[2020-09-11 16:37:35]	insert into `receipt` (`receipt_code`,`order_id`,`order_date`,`user_id`,`receipt_amount`,`invoice_due_amount`,`receipt_date`) values ('RT002','2','2020-09-11 16:37:35','1','100','0.00','2020-09-11 16:37:35')
+[2020-09-11 16:37:35]	update invoice_order set `order_amount_paid`      ='100',
+                                                             `order_total_amount_due` ='0',                    
+                                                             `receipt_id`             ='2',
+                                                             `receipt_date`             ='2020-09-11 16:37:35'
+                                                              where `order_id`='2'
+[2020-09-11 16:37:38]	SELECT * FROM invoice_order WHERE md5(order_id) = 'c81e728d9d4c2f636f067f89cc14862c'
+[2020-09-11 16:37:38]	SELECT * FROM invoice_order_item WHERE order_id = '2'
+[2020-09-11 16:37:38]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1' and order_id<>'2'
+[2020-09-11 16:54:00]	select * from _tbl_sales_customers
+[2020-09-11 16:54:00]	select (sum(order_total_after_tax)) as bal from invoice_order
+[2020-09-11 16:54:00]	select (sum(receipt_amount)) as bal from receipt
+[2020-09-11 16:54:00]	select (sum(order_total_amount_due)) as bal from invoice_order
+[2020-09-11 16:54:00]	select (sum(order_total_after_tax)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 16:54:00]	select (sum(TotalCashReceived)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 16:54:00]	select (sum(order_amount_paid)) as bal from invoice_order where TransactionMode='Net Banking' and date(order_date)='2020-09-11'
+[2020-09-11 16:54:00]	select (sum(order_total_amount_due)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 16:54:00]	SELECT * FROM _tbl_sales_products WHERE ProductID IN (SELECT order_id FROM invoice_order_item)  order by ProductID Desc
+[2020-09-11 16:54:09]	SELECT * FROM invoice_order where (date(order_date)>=date('2020-09-11') and date(order_date)<=date('2020-09-11') ) order by order_id desc
+[2020-09-11 16:54:12]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 16:54:12]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 16:54:12]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 16:54:12]	select * from _tbl_sales_products
+[2020-09-11 16:54:12]	select * from _tbl_units
+[2020-09-11 16:54:52]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 16:54:52]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 16:54:52]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 16:54:52]	select * from _tbl_sales_products
+[2020-09-11 16:54:52]	select * from _tbl_units
+[2020-09-11 16:55:06]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 16:55:06]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1'
+[2020-09-11 16:55:52]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 16:55:52]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 16:55:52]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 16:55:52]	select * from _tbl_sales_products
+[2020-09-11 16:55:52]	select * from _tbl_units
+[2020-09-11 16:55:56]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 16:55:56]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1'
+[2020-09-11 16:56:03]	select * from _tbl_sales_customers where CustomerName Like 'ca%' order by CustomerName
+[2020-09-11 16:56:03]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1'
+[2020-09-11 16:56:07]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 16:56:07]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1'
+[2020-09-11 16:57:10]	select * from _tbl_sales_customers where CustomerName Like 'ca%' order by CustomerName
+[2020-09-11 16:57:10]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1'
+[2020-09-11 16:57:27]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 16:57:27]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1'
+[2020-09-11 16:58:00]	select * from _tbl_sales_customers where CustomerName Like 'ca%' order by CustomerName
+[2020-09-11 16:58:00]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1'
+[2020-09-11 16:58:35]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 16:58:35]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1'
+[2020-09-11 16:58:45]	select * from _tbl_sales_customers where CustomerName Like 'ca%' order by CustomerName
+[2020-09-11 16:58:45]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1'
+[2020-09-11 16:58:46]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 16:58:46]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1'
+[2020-09-11 16:58:48]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 16:58:48]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1'
+[2020-09-11 16:59:54]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 16:59:54]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 16:59:54]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 16:59:54]	select * from _tbl_sales_products
+[2020-09-11 16:59:54]	select * from _tbl_units
+[2020-09-11 16:59:56]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 16:59:56]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 16:59:56]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 16:59:56]	select * from _tbl_sales_products
+[2020-09-11 16:59:56]	select * from _tbl_units
+[2020-09-11 17:00:04]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 17:00:04]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 17:00:04]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 17:00:04]	select * from _tbl_sales_products
+[2020-09-11 17:00:04]	select * from _tbl_units
+[2020-09-11 17:00:23]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 17:00:23]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1'
+[2020-09-11 17:00:52]	select * from _tbl_sales_customers where CustomerName Like 'ca%' order by CustomerName
+[2020-09-11 17:00:52]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1'
+[2020-09-11 17:01:22]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 17:01:22]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 17:01:22]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 17:01:22]	select * from _tbl_sales_products
+[2020-09-11 17:01:22]	select * from _tbl_units
+[2020-09-11 17:01:34]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 17:01:34]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1'
+[2020-09-11 17:01:42]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 17:01:46]	select * from _tbl_sales_products where ProductName Like 'ro%' order by ProductName
+[2020-09-11 17:01:52]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 17:03:26]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 17:03:26]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 17:03:26]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 17:03:26]	select * from _tbl_sales_products
+[2020-09-11 17:03:26]	select * from _tbl_units
+[2020-09-11 17:03:32]	select * from _tbl_sales_products where ProductName Like 'ro%' order by ProductName
+[2020-09-11 17:03:33]	select * from _tbl_sales_products where ProductName Like 'roj%' order by ProductName
+[2020-09-11 17:03:33]	select * from _tbl_sales_products where ProductName Like 'roja%' order by ProductName
+[2020-09-11 17:03:41]	select * from _tbl_sales_customers where CustomerName Like 'c%' order by CustomerName
+[2020-09-11 17:03:41]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1'
+[2020-09-11 17:05:44]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 17:05:44]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 17:05:44]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 17:05:44]	select * from _tbl_sales_products
+[2020-09-11 17:05:44]	select * from _tbl_units
+[2020-09-11 17:06:03]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 17:06:03]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 17:06:03]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 17:06:03]	select * from _tbl_sales_products
+[2020-09-11 17:06:03]	select * from _tbl_units
+[2020-09-11 17:10:01]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 17:10:01]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 17:10:01]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 17:10:01]	select * from _tbl_sales_products
+[2020-09-11 17:10:01]	select * from _tbl_units
+[2020-09-11 17:12:11]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 17:12:11]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 17:12:11]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 17:12:11]	select * from _tbl_sales_products
+[2020-09-11 17:12:11]	select * from _tbl_units
+[2020-09-11 17:16:11]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 17:16:11]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 17:16:11]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 17:16:11]	select * from _tbl_sales_products
+[2020-09-11 17:16:11]	select * from _tbl_units
+[2020-09-11 17:16:52]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 17:16:52]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 17:16:52]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 17:16:52]	select * from _tbl_sales_products
+[2020-09-11 17:16:52]	select * from _tbl_units
+[2020-09-11 17:17:51]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 17:17:51]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 17:17:51]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 17:17:51]	select * from _tbl_sales_products
+[2020-09-11 17:17:51]	select * from _tbl_units
+[2020-09-11 17:19:35]	SELECT * FROM invoice_order WHERE md5(order_id) = ''
+[2020-09-11 17:19:35]	SELECT * FROM invoice_order_item WHERE order_id = ''
+[2020-09-11 17:19:35]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='' and order_id<>''
+[2020-09-11 17:24:11]	SELECT * FROM invoice_order WHERE md5(order_id) = ''
+[2020-09-11 17:24:11]	SELECT * FROM invoice_order_item WHERE order_id = ''
+[2020-09-11 17:24:11]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='' and order_id<>''
+[2020-09-11 17:24:46]	SELECT * FROM invoice_order WHERE md5(order_id) = ''
+[2020-09-11 17:24:46]	SELECT * FROM invoice_order_item WHERE order_id = ''
+[2020-09-11 17:24:46]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='' and order_id<>''
+[2020-09-11 17:25:17]	SELECT * FROM invoice_order WHERE md5(order_id) = ''
+[2020-09-11 17:25:17]	SELECT * FROM invoice_order_item WHERE order_id = ''
+[2020-09-11 17:25:17]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='' and order_id<>''
+[2020-09-11 17:25:57]	SELECT * FROM invoice_order WHERE md5(order_id) = ''
+[2020-09-11 17:25:57]	SELECT * FROM invoice_order_item WHERE order_id = ''
+[2020-09-11 17:25:57]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='' and order_id<>''
+[2020-09-11 17:26:55]	SELECT * FROM invoice_order WHERE md5(order_id) = ''
+[2020-09-11 17:26:55]	SELECT * FROM invoice_order_item WHERE order_id = ''
+[2020-09-11 17:26:55]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='' and order_id<>''
+[2020-09-11 17:29:32]	SELECT * FROM invoice_order WHERE md5(order_id) = 'c9f0f895fb98ab9159f51fd0297e236d'
+[2020-09-11 17:29:32]	SELECT * FROM invoice_order_item WHERE order_id = ''
+[2020-09-11 17:29:32]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='' and order_id<>''
+[2020-09-11 17:29:43]	SELECT * FROM invoice_order WHERE md5(order_id) = ''
+[2020-09-11 17:29:43]	SELECT * FROM invoice_order_item WHERE order_id = ''
+[2020-09-11 17:29:43]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='' and order_id<>''
+[2020-09-11 17:30:01]	SELECT * FROM invoice_order WHERE md5(order_id) = ''
+[2020-09-11 17:30:01]	SELECT * FROM invoice_order_item WHERE order_id = ''
+[2020-09-11 17:30:01]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='' and order_id<>''
+[2020-09-11 17:30:03]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 17:30:03]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 17:30:03]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 17:30:03]	select * from _tbl_sales_products
+[2020-09-11 17:30:03]	select * from _tbl_units
+[2020-09-11 17:30:07]	SELECT * FROM invoice_order WHERE md5(order_id) = ''
+[2020-09-11 17:30:07]	SELECT * FROM invoice_order_item WHERE order_id = ''
+[2020-09-11 17:30:07]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='' and order_id<>''
+[2020-09-11 17:42:10]	SELECT * FROM invoice_order WHERE md5(order_id) = ''
+[2020-09-11 17:42:10]	SELECT * FROM invoice_order_item WHERE order_id = ''
+[2020-09-11 17:42:10]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='' and order_id<>''
+[2020-09-11 17:42:12]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 17:42:12]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 17:42:12]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 17:42:12]	select * from _tbl_sales_products
+[2020-09-11 17:42:12]	select * from _tbl_units
+[2020-09-11 17:52:16]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 17:52:16]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 17:52:16]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 17:52:16]	select * from _tbl_sales_products
+[2020-09-11 17:52:16]	select * from _tbl_units
+[2020-09-11 18:39:17]	select * from _tbl_sales_customers
+[2020-09-11 18:39:17]	select (sum(order_total_after_tax)) as bal from invoice_order
+[2020-09-11 18:39:17]	select (sum(receipt_amount)) as bal from receipt
+[2020-09-11 18:39:17]	select (sum(order_total_amount_due)) as bal from invoice_order
+[2020-09-11 18:39:17]	select (sum(order_total_after_tax)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 18:39:17]	select (sum(TotalCashReceived)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 18:39:17]	select (sum(order_amount_paid)) as bal from invoice_order where TransactionMode='Net Banking' and date(order_date)='2020-09-11'
+[2020-09-11 18:39:17]	select (sum(order_total_amount_due)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 18:39:17]	SELECT * FROM _tbl_sales_products WHERE ProductID IN (SELECT order_id FROM invoice_order_item)  order by ProductID Desc
+[2020-09-11 18:39:31]	SELECT * FROM invoice_order where (date(order_date)>=date('2020-09-11') and date(order_date)<=date('2020-09-11') ) order by order_id desc
+[2020-09-11 18:39:33]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 18:39:33]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 18:39:33]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 18:39:33]	select * from _tbl_sales_products
+[2020-09-11 18:39:33]	select * from _tbl_units
+[2020-09-11 18:39:37]	select * from _tbl_sales_customers
+[2020-09-11 18:39:37]	select (sum(order_total_after_tax)) as bal from invoice_order
+[2020-09-11 18:39:37]	select (sum(receipt_amount)) as bal from receipt
+[2020-09-11 18:39:37]	select (sum(order_total_amount_due)) as bal from invoice_order
+[2020-09-11 18:39:37]	select (sum(order_total_after_tax)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 18:39:37]	select (sum(TotalCashReceived)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 18:39:37]	select (sum(order_amount_paid)) as bal from invoice_order where TransactionMode='Net Banking' and date(order_date)='2020-09-11'
+[2020-09-11 18:39:37]	select (sum(order_total_amount_due)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 18:39:37]	SELECT * FROM _tbl_sales_products WHERE ProductID IN (SELECT order_id FROM invoice_order_item)  order by ProductID Desc
+[2020-09-11 18:39:41]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 18:39:41]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 18:39:41]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 18:39:41]	select * from _tbl_sales_products
+[2020-09-11 18:39:41]	select * from _tbl_units
+[2020-09-11 18:39:59]	select * from _tbl_sales_customers where CustomerName Like 't%' order by CustomerName
+[2020-09-11 18:39:59]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='2'
+[2020-09-11 18:40:04]	select * from _tbl_sales_products where ProductName Like 'm%' order by ProductName
+[2020-09-11 18:40:05]	select * from _tbl_sales_products where ProductName Like 'ma%' order by ProductName
+[2020-09-11 18:40:11]	select * from _tbl_sales_products where ProductName Like 'sa%' order by ProductName
+[2020-09-11 18:40:16]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 18:43:09]	select * from invoice_order
+[2020-09-11 18:43:09]	select * from _tbl_sales_customers where CustomerID='2'
+[2020-09-11 18:43:09]	insert into `invoice_order` (`user_id`,`order_code`,`order_receiver_name`,`order_receiver_address`,`order_total_after_tax`,`order_amount_paid`,`order_total_amount_due`,`TransactionMode`,`TotalCashReceived`,`ReturnCashToCustomer`,`note`) values ('2','IN003','Thaj','Karaikudi ,,','300','0.00','300','Credit','0','0','')
+[2020-09-11 18:43:09]	insert into `invoice_order_item` (`order_id`,`item_code`,`item_name`,`order_item_quantity`,`order_item_price`,`order_item_final_amount`) values ('3','6','மல்லிகை பூ ','1','100','100')
+[2020-09-11 18:43:09]	insert into `invoice_order_item` (`order_id`,`item_code`,`item_name`,`order_item_quantity`,`order_item_price`,`order_item_final_amount`) values ('3','1','சாமங்கி  பூ','1','100','100')
+[2020-09-11 18:43:09]	insert into `invoice_order_item` (`order_id`,`item_code`,`item_name`,`order_item_quantity`,`order_item_price`,`order_item_final_amount`) values ('3','7','ரோஜா பூ','1','100','100')
+[2020-09-11 18:43:09]	insert into `receipt` (`receipt_code`,`order_id`,`order_date`,`user_id`,`receipt_amount`,`invoice_due_amount`,`receipt_date`) values ('RT003','3','2020-09-11 18:43:09','2','0','300.00','2020-09-11 18:43:09')
+[2020-09-11 18:43:09]	update invoice_order set `order_amount_paid`      ='0',
+                                                             `order_total_amount_due` ='300',                    
+                                                             `receipt_id`             ='3',
+                                                             `receipt_date`             ='2020-09-11 18:43:09'
+                                                              where `order_id`='3'
+[2020-09-11 18:43:10]	SELECT * FROM invoice_order WHERE md5(order_id) = 'eccbc87e4b5ce2fe28308fd9f2a7baf3'
+[2020-09-11 18:43:10]	SELECT * FROM invoice_order_item WHERE order_id = '3'
+[2020-09-11 18:43:10]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='2' and order_id<>'3'
+[2020-09-11 18:43:50]	select * from _tbl_units
+[2020-09-11 18:44:00]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 18:44:00]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 18:44:00]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 18:44:00]	select * from _tbl_sales_products
+[2020-09-11 18:44:00]	select * from _tbl_units
+[2020-09-11 18:44:13]	select * from _tbl_sales_products where ProductName Like 'sa%' order by ProductName
+[2020-09-11 18:45:44]	select * from _tbl_sales_customers where CustomerName Like 'C%' order by CustomerName
+[2020-09-11 18:45:44]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1'
+[2020-09-11 18:45:44]	select * from _tbl_sales_customers where CustomerName Like 'Cas%' order by CustomerName
+[2020-09-11 18:45:44]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1'
+[2020-09-11 18:47:56]	SELECT * FROM invoice_order WHERE md5(order_id) = 'eccbc87e4b5ce2fe28308fd9f2a7baf3'
+[2020-09-11 18:47:56]	SELECT * FROM invoice_order_item WHERE order_id = '3'
+[2020-09-11 18:47:56]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='2' and order_id<>'3'
+[2020-09-11 18:48:31]	select * from _tbl_sales_customers order by CustomerID Desc
+[2020-09-11 18:48:31]	select (sum(order_total_after_tax)) as bal from invoice_order where user_id='14'
+[2020-09-11 18:48:31]	select (sum(order_amount_paid)) as bal from invoice_order where user_id='14'
+[2020-09-11 18:48:31]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='14'
+[2020-09-11 18:48:31]	select (sum(order_total_after_tax)) as bal from invoice_order where user_id='13'
+[2020-09-11 18:48:31]	select (sum(order_amount_paid)) as bal from invoice_order where user_id='13'
+[2020-09-11 18:48:31]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='13'
+[2020-09-11 18:48:31]	select (sum(order_total_after_tax)) as bal from invoice_order where user_id='12'
+[2020-09-11 18:48:31]	select (sum(order_amount_paid)) as bal from invoice_order where user_id='12'
+[2020-09-11 18:48:31]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='12'
+[2020-09-11 18:48:31]	select (sum(order_total_after_tax)) as bal from invoice_order where user_id='8'
+[2020-09-11 18:48:31]	select (sum(order_amount_paid)) as bal from invoice_order where user_id='8'
+[2020-09-11 18:48:31]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='8'
+[2020-09-11 18:48:31]	select (sum(order_total_after_tax)) as bal from invoice_order where user_id='2'
+[2020-09-11 18:48:31]	select (sum(order_amount_paid)) as bal from invoice_order where user_id='2'
+[2020-09-11 18:48:31]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='2'
+[2020-09-11 18:48:31]	select (sum(order_total_after_tax)) as bal from invoice_order where user_id='1'
+[2020-09-11 18:48:31]	select (sum(order_amount_paid)) as bal from invoice_order where user_id='1'
+[2020-09-11 18:48:31]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1'
+[2020-09-11 18:48:40]	select * from _tbl_sales_customers where md5(CustomerID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-09-11 18:48:51]	select * from _tbl_sales_customers where md5(CustomerID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-09-11 18:48:51]	select * from _tbl_sales_customers where MobileNumber='9003638869' and CustomerID<>'2'
+[2020-09-11 18:48:51]	update _tbl_sales_customers set `CustomerName`      ='Thaj',
+                                                                `CustomerNameTamil` ='தாஜ் ',
+                                                                `ShopName`          ='Maajid',
+                                                                `ShopNameTamil`     ='Maajif',
+                                                                `MobileNumber`      ='9003638869',
+                                                                `EmailID`           ='',
+                                                                `MaximumCreditLimit`='100000',
+                                                                `AddressLine1`      ='Karaikudi ',
+                                                                `AddressLine2`      ='',
+                                                          `AddressLine3`            ='',
+                                                          `IsActive`                ='1' where CustomerID='2'
+[2020-09-11 18:48:52]	select * from _tbl_sales_customers
+[2020-09-11 18:48:52]	select (sum(order_total_after_tax)) as bal from invoice_order
+[2020-09-11 18:48:52]	select (sum(receipt_amount)) as bal from receipt
+[2020-09-11 18:48:52]	select (sum(order_total_amount_due)) as bal from invoice_order
+[2020-09-11 18:48:52]	select (sum(order_total_after_tax)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 18:48:52]	select (sum(TotalCashReceived)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 18:48:52]	select (sum(order_amount_paid)) as bal from invoice_order where TransactionMode='Net Banking' and date(order_date)='2020-09-11'
+[2020-09-11 18:48:52]	select (sum(order_total_amount_due)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 18:48:52]	SELECT * FROM _tbl_sales_products WHERE ProductID IN (SELECT order_id FROM invoice_order_item)  order by ProductID Desc
+[2020-09-11 18:49:19]	SELECT * FROM receipt order by ReceiptID desc
+[2020-09-11 18:49:19]	SELECT * FROM invoice_order WHERE order_id = '3'
+[2020-09-11 18:49:19]	SELECT * FROM invoice_order WHERE order_id = '2'
+[2020-09-11 18:49:19]	SELECT * FROM invoice_order WHERE order_id = '1'
+[2020-09-11 18:49:22]	SELECT * FROM receipt WHERE md5(ReceiptID) = 'eccbc87e4b5ce2fe28308fd9f2a7baf3'
+[2020-09-11 18:49:22]	SELECT * FROM invoice_order WHERE order_id = '3'
+[2020-09-11 18:49:22]	SELECT * FROM invoice_order_item WHERE order_id = '3'
+[2020-09-11 18:49:36]	select * from invoice_order
+[2020-09-11 18:49:36]	select * from _tbl_sales_customers where CustomerID='1'
+[2020-09-11 18:49:36]	insert into `invoice_order` (`user_id`,`order_code`,`order_receiver_name`,`order_receiver_address`,`order_total_after_tax`,`order_amount_paid`,`order_total_amount_due`,`TransactionMode`,`TotalCashReceived`,`ReturnCashToCustomer`,`note`) values ('1','IN004','Cash','Karikudi,,','100','0.00','100','Cash','100','0','')
+[2020-09-11 18:49:36]	insert into `invoice_order_item` (`order_id`,`item_code`,`item_name`,`order_item_quantity`,`order_item_price`,`order_item_final_amount`) values ('4','1','சாமங்கி  பூ','1','100','100')
+[2020-09-11 18:49:36]	insert into `receipt` (`receipt_code`,`order_id`,`order_date`,`user_id`,`receipt_amount`,`invoice_due_amount`,`receipt_date`) values ('RT004','4','2020-09-11 18:49:36','1','100','0.00','2020-09-11 18:49:36')
+[2020-09-11 18:49:36]	update invoice_order set `order_amount_paid`      ='100',
+                                                             `order_total_amount_due` ='0',                    
+                                                             `receipt_id`             ='4',
+                                                             `receipt_date`             ='2020-09-11 18:49:36'
+                                                              where `order_id`='4'
+[2020-09-11 18:49:37]	SELECT * FROM invoice_order WHERE md5(order_id) = 'a87ff679a2f3e71d9181a67b7542122c'
+[2020-09-11 18:49:37]	SELECT * FROM invoice_order_item WHERE order_id = '4'
+[2020-09-11 18:49:37]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1' and order_id<>'4'
+[2020-09-11 18:49:40]	select * from _tbl_sales_customers
+[2020-09-11 18:49:40]	select (sum(order_total_after_tax)) as bal from invoice_order
+[2020-09-11 18:49:40]	select (sum(receipt_amount)) as bal from receipt
+[2020-09-11 18:49:40]	select (sum(order_total_amount_due)) as bal from invoice_order
+[2020-09-11 18:49:40]	select (sum(order_total_after_tax)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 18:49:40]	select (sum(TotalCashReceived)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 18:49:40]	select (sum(order_amount_paid)) as bal from invoice_order where TransactionMode='Net Banking' and date(order_date)='2020-09-11'
+[2020-09-11 18:49:40]	select (sum(order_total_amount_due)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 18:49:40]	SELECT * FROM _tbl_sales_products WHERE ProductID IN (SELECT order_id FROM invoice_order_item)  order by ProductID Desc
+[2020-09-11 18:49:43]	SELECT * FROM receipt order by ReceiptID desc
+[2020-09-11 18:49:43]	SELECT * FROM invoice_order WHERE order_id = '4'
+[2020-09-11 18:49:43]	SELECT * FROM invoice_order WHERE order_id = '3'
+[2020-09-11 18:49:43]	SELECT * FROM invoice_order WHERE order_id = '2'
+[2020-09-11 18:49:43]	SELECT * FROM invoice_order WHERE order_id = '1'
+[2020-09-11 18:49:47]	SELECT * FROM receipt WHERE md5(ReceiptID) = 'eccbc87e4b5ce2fe28308fd9f2a7baf3'
+[2020-09-11 18:49:47]	SELECT * FROM invoice_order WHERE order_id = '3'
+[2020-09-11 18:49:47]	SELECT * FROM invoice_order_item WHERE order_id = '3'
+[2020-09-11 18:50:06]	SELECT * FROM invoice_order where order_total_amount_due<>'0.00' and (date(receipt_date)>=date('2020-09-11') and date(receipt_date)<=date('2020-09-11') ) order by order_id desc
+[2020-09-11 18:50:12]	select * from _tbl_sales_customers where IsActive='1' order by CustomerID Desc
+[2020-09-11 18:50:12]	select (sum(order_total_after_tax)) as bal from invoice_order where user_id='14'
+[2020-09-11 18:50:12]	select (sum(order_amount_paid)) as bal from invoice_order where user_id='14'
+[2020-09-11 18:50:12]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='14'
+[2020-09-11 18:50:12]	select (sum(order_total_after_tax)) as bal from invoice_order where user_id='13'
+[2020-09-11 18:50:12]	select (sum(order_amount_paid)) as bal from invoice_order where user_id='13'
+[2020-09-11 18:50:12]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='13'
+[2020-09-11 18:50:12]	select (sum(order_total_after_tax)) as bal from invoice_order where user_id='12'
+[2020-09-11 18:50:12]	select (sum(order_amount_paid)) as bal from invoice_order where user_id='12'
+[2020-09-11 18:50:12]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='12'
+[2020-09-11 18:50:12]	select (sum(order_total_after_tax)) as bal from invoice_order where user_id='8'
+[2020-09-11 18:50:12]	select (sum(order_amount_paid)) as bal from invoice_order where user_id='8'
+[2020-09-11 18:50:12]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='8'
+[2020-09-11 18:50:12]	select (sum(order_total_after_tax)) as bal from invoice_order where user_id='2'
+[2020-09-11 18:50:12]	select (sum(order_amount_paid)) as bal from invoice_order where user_id='2'
+[2020-09-11 18:50:12]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='2'
+[2020-09-11 18:50:12]	select (sum(order_total_after_tax)) as bal from invoice_order where user_id='1'
+[2020-09-11 18:50:12]	select (sum(order_amount_paid)) as bal from invoice_order where user_id='1'
+[2020-09-11 18:50:12]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1'
+[2020-09-11 18:51:59]	SELECT * FROM invoice_order where (date(order_date)>=date('2020-09-11') and date(order_date)<=date('2020-09-11') ) order by order_id desc
+[2020-09-11 18:52:08]	SELECT * FROM invoice_order WHERE md5(order_id) = 'eccbc87e4b5ce2fe28308fd9f2a7baf3'
+[2020-09-11 18:52:08]	SELECT * FROM invoice_order_item WHERE order_id = '3'
+[2020-09-11 18:52:08]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='2' and order_id<>'3'
+[2020-09-11 18:52:18]	SELECT * FROM invoice_order WHERE md5(order_id) = 'eccbc87e4b5ce2fe28308fd9f2a7baf3'
+[2020-09-11 18:52:18]	SELECT * FROM invoice_order_item WHERE order_id = '3'
+[2020-09-11 18:52:18]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='2' and order_id<>'3'
+[2020-09-11 18:52:24]	select * from _tbl_sales_customers
+[2020-09-11 18:52:24]	select (sum(order_total_after_tax)) as bal from invoice_order
+[2020-09-11 18:52:24]	select (sum(receipt_amount)) as bal from receipt
+[2020-09-11 18:52:24]	select (sum(order_total_amount_due)) as bal from invoice_order
+[2020-09-11 18:52:24]	select (sum(order_total_after_tax)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 18:52:24]	select (sum(TotalCashReceived)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 18:52:24]	select (sum(order_amount_paid)) as bal from invoice_order where TransactionMode='Net Banking' and date(order_date)='2020-09-11'
+[2020-09-11 18:52:24]	select (sum(order_total_amount_due)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 18:52:24]	SELECT * FROM _tbl_sales_products WHERE ProductID IN (SELECT order_id FROM invoice_order_item)  order by ProductID Desc
+[2020-09-11 18:52:26]	SELECT * FROM receipt order by ReceiptID desc
+[2020-09-11 18:52:26]	SELECT * FROM invoice_order WHERE order_id = '4'
+[2020-09-11 18:52:26]	SELECT * FROM invoice_order WHERE order_id = '3'
+[2020-09-11 18:52:26]	SELECT * FROM invoice_order WHERE order_id = '2'
+[2020-09-11 18:52:26]	SELECT * FROM invoice_order WHERE order_id = '1'
+[2020-09-11 18:52:29]	SELECT * FROM invoice_order WHERE md5(order_id) = 'a87ff679a2f3e71d9181a67b7542122c'
+[2020-09-11 18:52:29]	SELECT * FROM invoice_order_item WHERE order_id = '4'
+[2020-09-11 18:52:29]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1' and order_id<>'4'
+[2020-09-11 18:52:32]	SELECT * FROM invoice_order where (date(order_date)>=date('2020-09-11') and date(order_date)<=date('2020-09-11') ) order by order_id desc
+[2020-09-11 18:52:36]	SELECT * FROM invoice_order WHERE md5(order_id) = 'eccbc87e4b5ce2fe28308fd9f2a7baf3'
+[2020-09-11 18:52:36]	SELECT * FROM invoice_order_item WHERE order_id = '3'
+[2020-09-11 18:52:36]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='2' and order_id<>'3'
+[2020-09-11 18:53:10]	SELECT * FROM invoice_order WHERE md5(order_id) = 'a87ff679a2f3e71d9181a67b7542122c'
+[2020-09-11 18:53:10]	SELECT * FROM invoice_order_item WHERE order_id = '4'
+[2020-09-11 18:53:10]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1' and order_id<>'4'
+[2020-09-11 18:53:31]	select * from _tbl_sales_customers
+[2020-09-11 18:53:31]	select (sum(order_total_after_tax)) as bal from invoice_order
+[2020-09-11 18:53:31]	select (sum(receipt_amount)) as bal from receipt
+[2020-09-11 18:53:31]	select (sum(order_total_amount_due)) as bal from invoice_order
+[2020-09-11 18:53:31]	select (sum(order_total_after_tax)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 18:53:31]	select (sum(TotalCashReceived)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 18:53:31]	select (sum(order_amount_paid)) as bal from invoice_order where TransactionMode='Net Banking' and date(order_date)='2020-09-11'
+[2020-09-11 18:53:31]	select (sum(order_total_amount_due)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 18:53:31]	SELECT * FROM _tbl_sales_products WHERE ProductID IN (SELECT order_id FROM invoice_order_item)  order by ProductID Desc
+[2020-09-11 18:55:07]	SELECT * FROM invoice_order WHERE md5(order_id) = 'eccbc87e4b5ce2fe28308fd9f2a7baf3'
+[2020-09-11 18:55:07]	SELECT * FROM invoice_order_item WHERE order_id = '3'
+[2020-09-11 18:55:07]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='2' and order_id<>'3'
+[2020-09-11 18:55:09]	select * from _tbl_sales_customers
+[2020-09-11 18:55:09]	select (sum(order_total_after_tax)) as bal from invoice_order
+[2020-09-11 18:55:09]	select (sum(receipt_amount)) as bal from receipt
+[2020-09-11 18:55:09]	select (sum(order_total_amount_due)) as bal from invoice_order
+[2020-09-11 18:55:09]	select (sum(order_total_after_tax)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 18:55:09]	select (sum(TotalCashReceived)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 18:55:09]	select (sum(order_amount_paid)) as bal from invoice_order where TransactionMode='Net Banking' and date(order_date)='2020-09-11'
+[2020-09-11 18:55:09]	select (sum(order_total_amount_due)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 18:55:09]	SELECT * FROM _tbl_sales_products WHERE ProductID IN (SELECT order_id FROM invoice_order_item)  order by ProductID Desc
+[2020-09-11 18:56:06]	select * from _tbl_sales_customers
+[2020-09-11 18:56:06]	select (sum(order_total_after_tax)) as bal from invoice_order
+[2020-09-11 18:56:06]	select (sum(receipt_amount)) as bal from receipt
+[2020-09-11 18:56:06]	select (sum(order_total_amount_due)) as bal from invoice_order
+[2020-09-11 18:56:06]	select (sum(order_total_after_tax)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 18:56:06]	select (sum(TotalCashReceived)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 18:56:06]	select (sum(order_amount_paid)) as bal from invoice_order where TransactionMode='Net Banking' and date(order_date)='2020-09-11'
+[2020-09-11 18:56:06]	select (sum(order_total_amount_due)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 18:56:06]	SELECT * FROM _tbl_sales_products WHERE ProductID IN (SELECT order_id FROM invoice_order_item)  order by ProductID Desc
+[2020-09-11 18:56:08]	select * from _tbl_sales_products order by ProductID Desc
+[2020-09-11 18:56:20]	SELECT * FROM invoice_order where (date(order_date)>=date('2020-09-11') and date(order_date)<=date('2020-09-11') ) order by order_id desc
+[2020-09-11 18:56:23]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 18:56:23]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 18:56:23]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 18:56:23]	select * from _tbl_sales_products
+[2020-09-11 18:56:23]	select * from _tbl_units
+[2020-09-11 18:56:27]	select * from _tbl_sales_customers where CustomerName Like 'th%' order by CustomerName
+[2020-09-11 18:56:27]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='2'
+[2020-09-11 18:56:34]	select * from _tbl_sales_products where ProductName Like 'm%' order by ProductName
+[2020-09-11 18:56:38]	select * from _tbl_sales_products order by ProductID Desc
+[2020-09-11 18:56:40]	SELECT * FROM receipt order by ReceiptID desc
+[2020-09-11 18:56:40]	SELECT * FROM invoice_order WHERE order_id = '4'
+[2020-09-11 18:56:40]	SELECT * FROM invoice_order WHERE order_id = '3'
+[2020-09-11 18:56:40]	SELECT * FROM invoice_order WHERE order_id = '2'
+[2020-09-11 18:56:40]	SELECT * FROM invoice_order WHERE order_id = '1'
+[2020-09-11 18:56:42]	SELECT * FROM invoice_order where order_total_amount_due<>'0.00' and (date(receipt_date)>=date('2020-09-11') and date(receipt_date)<=date('2020-09-11') ) order by order_id desc
+[2020-09-11 18:56:43]	select * from _tbl_sales_customers
+[2020-09-11 18:56:43]	select (sum(order_total_after_tax)) as bal from invoice_order
+[2020-09-11 18:56:43]	select (sum(receipt_amount)) as bal from receipt
+[2020-09-11 18:56:43]	select (sum(order_total_amount_due)) as bal from invoice_order
+[2020-09-11 18:56:43]	select (sum(order_total_after_tax)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 18:56:43]	select (sum(TotalCashReceived)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 18:56:43]	select (sum(order_amount_paid)) as bal from invoice_order where TransactionMode='Net Banking' and date(order_date)='2020-09-11'
+[2020-09-11 18:56:43]	select (sum(order_total_amount_due)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 18:56:43]	SELECT * FROM _tbl_sales_products WHERE ProductID IN (SELECT order_id FROM invoice_order_item)  order by ProductID Desc
+[2020-09-11 18:56:44]	select * from _tbl_sales_products order by ProductID Desc
+[2020-09-11 18:57:20]	select * from _tbl_sales_customers
+[2020-09-11 18:57:20]	select (sum(order_total_after_tax)) as bal from invoice_order
+[2020-09-11 18:57:20]	select (sum(receipt_amount)) as bal from receipt
+[2020-09-11 18:57:20]	select (sum(order_total_amount_due)) as bal from invoice_order
+[2020-09-11 18:57:20]	select (sum(order_total_after_tax)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 18:57:20]	select (sum(TotalCashReceived)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 18:57:20]	select (sum(order_amount_paid)) as bal from invoice_order where TransactionMode='Net Banking' and date(order_date)='2020-09-11'
+[2020-09-11 18:57:20]	select (sum(order_total_amount_due)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 18:57:20]	SELECT * FROM _tbl_sales_products WHERE ProductID IN (SELECT order_id FROM invoice_order_item)  order by ProductID Desc
+[2020-09-11 18:57:24]	select * from _tbl_sales_customers order by CustomerID Desc
+[2020-09-11 18:57:24]	select (sum(order_total_after_tax)) as bal from invoice_order where user_id='14'
+[2020-09-11 18:57:24]	select (sum(order_amount_paid)) as bal from invoice_order where user_id='14'
+[2020-09-11 18:57:24]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='14'
+[2020-09-11 18:57:24]	select (sum(order_total_after_tax)) as bal from invoice_order where user_id='13'
+[2020-09-11 18:57:24]	select (sum(order_amount_paid)) as bal from invoice_order where user_id='13'
+[2020-09-11 18:57:24]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='13'
+[2020-09-11 18:57:24]	select (sum(order_total_after_tax)) as bal from invoice_order where user_id='12'
+[2020-09-11 18:57:24]	select (sum(order_amount_paid)) as bal from invoice_order where user_id='12'
+[2020-09-11 18:57:24]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='12'
+[2020-09-11 18:57:24]	select (sum(order_total_after_tax)) as bal from invoice_order where user_id='8'
+[2020-09-11 18:57:24]	select (sum(order_amount_paid)) as bal from invoice_order where user_id='8'
+[2020-09-11 18:57:24]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='8'
+[2020-09-11 18:57:24]	select (sum(order_total_after_tax)) as bal from invoice_order where user_id='2'
+[2020-09-11 18:57:24]	select (sum(order_amount_paid)) as bal from invoice_order where user_id='2'
+[2020-09-11 18:57:24]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='2'
+[2020-09-11 18:57:24]	select (sum(order_total_after_tax)) as bal from invoice_order where user_id='1'
+[2020-09-11 18:57:24]	select (sum(order_amount_paid)) as bal from invoice_order where user_id='1'
+[2020-09-11 18:57:24]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1'
+[2020-09-11 18:57:34]	select * from _tbl_sales_customers order by CustomerID Desc
+[2020-09-11 18:57:34]	select (sum(order_total_after_tax)) as bal from invoice_order where user_id='14'
+[2020-09-11 18:57:34]	select (sum(order_amount_paid)) as bal from invoice_order where user_id='14'
+[2020-09-11 18:57:34]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='14'
+[2020-09-11 18:57:34]	select (sum(order_total_after_tax)) as bal from invoice_order where user_id='13'
+[2020-09-11 18:57:34]	select (sum(order_amount_paid)) as bal from invoice_order where user_id='13'
+[2020-09-11 18:57:34]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='13'
+[2020-09-11 18:57:34]	select (sum(order_total_after_tax)) as bal from invoice_order where user_id='12'
+[2020-09-11 18:57:34]	select (sum(order_amount_paid)) as bal from invoice_order where user_id='12'
+[2020-09-11 18:57:34]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='12'
+[2020-09-11 18:57:34]	select (sum(order_total_after_tax)) as bal from invoice_order where user_id='8'
+[2020-09-11 18:57:34]	select (sum(order_amount_paid)) as bal from invoice_order where user_id='8'
+[2020-09-11 18:57:34]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='8'
+[2020-09-11 18:57:34]	select (sum(order_total_after_tax)) as bal from invoice_order where user_id='2'
+[2020-09-11 18:57:34]	select (sum(order_amount_paid)) as bal from invoice_order where user_id='2'
+[2020-09-11 18:57:34]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='2'
+[2020-09-11 18:57:34]	select (sum(order_total_after_tax)) as bal from invoice_order where user_id='1'
+[2020-09-11 18:57:34]	select (sum(order_amount_paid)) as bal from invoice_order where user_id='1'
+[2020-09-11 18:57:34]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1'
+[2020-09-11 18:57:42]	select * from _tbl_sales_customers where md5(CustomerID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-09-11 18:57:53]	select * from _tbl_sales_customers where md5(CustomerID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-09-11 18:57:53]	select * from _tbl_sales_customers where MobileNumber='9003638869' and CustomerID<>'2'
+[2020-09-11 18:57:53]	update _tbl_sales_customers set `CustomerName`      ='Thaj',
+                                                                `CustomerNameTamil` ='தாஜ் ',
+                                                                `ShopName`          ='Maajid',
+                                                                `ShopNameTamil`     ='மாஜித் ',
+                                                                `MobileNumber`      ='9003638869',
+                                                                `EmailID`           ='',
+                                                                `MaximumCreditLimit`='100000',
+                                                                `AddressLine1`      ='Karaikudi ',
+                                                                `AddressLine2`      ='',
+                                                          `AddressLine3`            ='',
+                                                          `IsActive`                ='1' where CustomerID='2'
+[2020-09-11 18:57:54]	select * from _tbl_sales_customers
+[2020-09-11 18:57:54]	select (sum(order_total_after_tax)) as bal from invoice_order
+[2020-09-11 18:57:54]	select (sum(receipt_amount)) as bal from receipt
+[2020-09-11 18:57:54]	select (sum(order_total_amount_due)) as bal from invoice_order
+[2020-09-11 18:57:54]	select (sum(order_total_after_tax)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 18:57:54]	select (sum(TotalCashReceived)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 18:57:54]	select (sum(order_amount_paid)) as bal from invoice_order where TransactionMode='Net Banking' and date(order_date)='2020-09-11'
+[2020-09-11 18:57:54]	select (sum(order_total_amount_due)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 18:57:54]	SELECT * FROM _tbl_sales_products WHERE ProductID IN (SELECT order_id FROM invoice_order_item)  order by ProductID Desc
+[2020-09-11 18:57:56]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 18:57:56]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 18:57:56]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 18:57:56]	select * from _tbl_sales_products
+[2020-09-11 18:57:56]	select * from _tbl_units
+[2020-09-11 18:58:15]	select * from _tbl_sales_customers where CustomerName Like 'maa%' order by CustomerName
+[2020-09-11 18:58:15]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id=''
+[2020-09-11 18:58:16]	select * from _tbl_sales_customers where CustomerName Like 'm%' order by CustomerName
+[2020-09-11 18:58:16]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='13'
+[2020-09-11 18:58:18]	select * from _tbl_sales_customers where CustomerName Like 'tha%' order by CustomerName
+[2020-09-11 18:58:18]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='2'
+[2020-09-11 18:58:20]	select * from _tbl_sales_customers
+[2020-09-11 18:58:20]	select (sum(order_total_after_tax)) as bal from invoice_order
+[2020-09-11 18:58:20]	select (sum(receipt_amount)) as bal from receipt
+[2020-09-11 18:58:20]	select (sum(order_total_amount_due)) as bal from invoice_order
+[2020-09-11 18:58:20]	select (sum(order_total_after_tax)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 18:58:20]	select (sum(TotalCashReceived)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 18:58:20]	select (sum(order_amount_paid)) as bal from invoice_order where TransactionMode='Net Banking' and date(order_date)='2020-09-11'
+[2020-09-11 18:58:20]	select (sum(order_total_amount_due)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 18:58:20]	SELECT * FROM _tbl_sales_products WHERE ProductID IN (SELECT order_id FROM invoice_order_item)  order by ProductID Desc
+[2020-09-11 18:58:21]	select * from _tbl_sales_customers
+[2020-09-11 18:58:21]	select (sum(order_total_after_tax)) as bal from invoice_order
+[2020-09-11 18:58:21]	select (sum(receipt_amount)) as bal from receipt
+[2020-09-11 18:58:21]	select (sum(order_total_amount_due)) as bal from invoice_order
+[2020-09-11 18:58:21]	select (sum(order_total_after_tax)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 18:58:21]	select (sum(TotalCashReceived)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 18:58:21]	select (sum(order_amount_paid)) as bal from invoice_order where TransactionMode='Net Banking' and date(order_date)='2020-09-11'
+[2020-09-11 18:58:21]	select (sum(order_total_amount_due)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 18:58:21]	SELECT * FROM _tbl_sales_products WHERE ProductID IN (SELECT order_id FROM invoice_order_item)  order by ProductID Desc
+[2020-09-11 19:02:45]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 19:02:45]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 19:02:45]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 19:02:45]	select * from _tbl_sales_products
+[2020-09-11 19:02:45]	select * from _tbl_units
+[2020-09-11 19:02:53]	SELECT * FROM invoice_order where (date(order_date)>=date('2020-09-11') and date(order_date)<=date('2020-09-11') ) order by order_id desc
+[2020-09-11 19:02:56]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 19:02:56]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 19:02:56]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 19:02:56]	select * from _tbl_sales_products
+[2020-09-11 19:02:56]	select * from _tbl_units
+[2020-09-11 19:05:32]	select * from _tbl_sales_products where ProductName Like 'sa%' order by ProductName
+[2020-09-11 19:05:37]	select * from _tbl_sales_products where ProductName Like 'R%' order by ProductName
+[2020-09-11 19:05:38]	select * from _tbl_sales_products where ProductName Like 'Ro%' order by ProductName
+[2020-09-11 19:05:38]	select * from _tbl_sales_products where ProductName Like 'Rose%' order by ProductName
+[2020-09-11 19:05:38]	select * from _tbl_sales_products where ProductName Like 'Rose%' order by ProductName
+[2020-09-11 19:05:40]	select * from _tbl_sales_products where ProductName Like 'Ros%' order by ProductName
+[2020-09-11 19:05:43]	select * from _tbl_sales_products where ProductName Like 'Ro%' order by ProductName
+[2020-09-11 19:05:44]	select * from _tbl_sales_products where ProductName Like 'R%' order by ProductName
+[2020-09-11 19:05:52]	select * from _tbl_sales_customers where CustomerName Like 'ca%' order by CustomerName
+[2020-09-11 19:05:52]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1'
+[2020-09-11 19:05:53]	select * from _tbl_sales_customers where CustomerName Like 'cash%' order by CustomerName
+[2020-09-11 19:05:53]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1'
+[2020-09-11 19:06:18]	select * from invoice_order
+[2020-09-11 19:06:18]	select * from _tbl_sales_customers where CustomerID='1'
+[2020-09-11 19:06:18]	insert into `invoice_order` (`user_id`,`order_code`,`order_receiver_name`,`order_receiver_address`,`order_total_after_tax`,`order_amount_paid`,`order_total_amount_due`,`TransactionMode`,`TotalCashReceived`,`ReturnCashToCustomer`,`note`) values ('1','IN005','Cash','Karikudi,,','200','0.00','200','Cash','500','300','')
+[2020-09-11 19:06:18]	insert into `invoice_order_item` (`order_id`,`item_code`,`item_name`,`order_item_quantity`,`order_item_price`,`order_item_final_amount`) values ('5','1','சாமங்கி  பூ','1','100','100')
+[2020-09-11 19:06:18]	insert into `invoice_order_item` (`order_id`,`item_code`,`item_name`,`order_item_quantity`,`order_item_price`,`order_item_final_amount`) values ('5','7','ரோஜா பூ','1','100','100')
+[2020-09-11 19:06:18]	insert into `receipt` (`receipt_code`,`order_id`,`order_date`,`user_id`,`receipt_amount`,`invoice_due_amount`,`receipt_date`) values ('RT005','5','2020-09-11 19:06:18','1','200','0.00','2020-09-11 19:06:18')
+[2020-09-11 19:06:18]	update invoice_order set `order_amount_paid`      ='200',
+                                                             `order_total_amount_due` ='0',                    
+                                                             `receipt_id`             ='5',
+                                                             `receipt_date`             ='2020-09-11 19:06:18'
+                                                              where `order_id`='5'
+[2020-09-11 19:06:19]	SELECT * FROM invoice_order WHERE md5(order_id) = 'e4da3b7fbbce2345d7772b0674a318d5'
+[2020-09-11 19:06:19]	SELECT * FROM invoice_order_item WHERE order_id = '5'
+[2020-09-11 19:06:19]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1' and order_id<>'5'
+[2020-09-11 19:14:26]	SELECT * FROM invoice_order WHERE md5(order_id) = 'e4da3b7fbbce2345d7772b0674a318d5'
+[2020-09-11 19:14:26]	SELECT * FROM invoice_order_item WHERE order_id = '5'
+[2020-09-11 19:14:26]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1' and order_id<>'5'
+[2020-09-11 19:15:53]	SELECT * FROM invoice_order WHERE md5(order_id) = 'e4da3b7fbbce2345d7772b0674a318d5'
+[2020-09-11 19:15:53]	SELECT * FROM invoice_order_item WHERE order_id = '5'
+[2020-09-11 19:15:53]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1' and order_id<>'5'
+[2020-09-11 19:19:46]	select * from _tbl_sales_customers
+[2020-09-11 19:19:46]	select (sum(order_total_after_tax)) as bal from invoice_order
+[2020-09-11 19:19:46]	select (sum(receipt_amount)) as bal from receipt
+[2020-09-11 19:19:46]	select (sum(order_total_amount_due)) as bal from invoice_order
+[2020-09-11 19:19:46]	select (sum(order_total_after_tax)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 19:19:46]	select (sum(TotalCashReceived)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 19:19:46]	select (sum(order_amount_paid)) as bal from invoice_order where TransactionMode='Net Banking' and date(order_date)='2020-09-11'
+[2020-09-11 19:19:46]	select (sum(order_total_amount_due)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 19:19:46]	SELECT * FROM _tbl_sales_products WHERE ProductID IN (SELECT order_id FROM invoice_order_item)  order by ProductID Desc
+[2020-09-11 19:19:47]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 19:19:47]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 19:19:47]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 19:19:47]	select * from _tbl_sales_products
+[2020-09-11 19:19:47]	select * from _tbl_units
+[2020-09-11 19:19:51]	select * from _tbl_sales_customers where CustomerName Like 'thaj%' order by CustomerName
+[2020-09-11 19:19:51]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='2'
+[2020-09-11 19:19:52]	select * from _tbl_sales_customers where CustomerName Like 'thaa%' order by CustomerName
+[2020-09-11 19:19:52]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id=''
+[2020-09-11 19:19:53]	select * from _tbl_sales_customers where CustomerName Like 'tha%' order by CustomerName
+[2020-09-11 19:19:53]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='2'
+[2020-09-11 19:19:56]	select * from _tbl_sales_customers where CustomerName Like 'mani%' order by CustomerName
+[2020-09-11 19:19:56]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='13'
+[2020-09-11 19:20:26]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 19:20:29]	select * from _tbl_sales_products where ProductName Like 'bu%' order by ProductName
+[2020-09-11 19:20:33]	select * from _tbl_sales_products where ProductName Like 'm%' order by ProductName
+[2020-09-11 19:20:34]	select * from _tbl_sales_products where ProductName Like 'ma%' order by ProductName
+[2020-09-11 19:20:36]	select * from _tbl_sales_products where ProductName Like 's%' order by ProductName
+[2020-09-11 19:20:36]	select * from _tbl_sales_products where ProductName Like 'si%' order by ProductName
+[2020-09-11 19:20:37]	select * from _tbl_sales_products where ProductName Like 'siva%' order by ProductName
+[2020-09-11 19:20:39]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 19:20:40]	select * from _tbl_sales_products where ProductName Like 'ro%' order by ProductName
+[2020-09-11 19:20:40]	select * from _tbl_sales_products where ProductName Like 'ros%' order by ProductName
+[2020-09-11 19:20:42]	select * from _tbl_sales_products where ProductName Like 'rose%' order by ProductName
+[2020-09-11 19:20:44]	select * from _tbl_sales_products where ProductName Like 'ro%' order by ProductName
+[2020-09-11 19:20:48]	select * from _tbl_sales_products where ProductName Like 'sa%' order by ProductName
+[2020-09-11 19:20:48]	select * from _tbl_sales_products where ProductName Like 'sam%' order by ProductName
+[2020-09-11 19:20:50]	select * from _tbl_sales_products where ProductName Like 'sa%' order by ProductName
+[2020-09-11 19:20:53]	select * from _tbl_sales_products where ProductName Like 's%' order by ProductName
+[2020-09-11 19:20:53]	select * from _tbl_sales_products where ProductName Like 'se%' order by ProductName
+[2020-09-11 19:20:53]	SELECT * FROM invoice_order WHERE md5(order_id) = 'c81e728d9d4c2f636f067f89cc14862c'
+[2020-09-11 19:20:53]	SELECT * FROM invoice_order_item WHERE order_id = '2'
+[2020-09-11 19:20:53]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1' and order_id<>'2'
+[2020-09-11 19:20:56]	select * from _tbl_sales_products where ProductName Like 's%' order by ProductName
+[2020-09-11 19:20:57]	select * from _tbl_sales_products where ProductName Like 'sev%' order by ProductName
+[2020-09-11 19:20:58]	SELECT * FROM invoice_order where (date(order_date)>=date('2020-09-11') and date(order_date)<=date('2020-09-11') ) order by order_id desc
+[2020-09-11 19:21:00]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 19:21:00]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 19:21:00]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 19:21:00]	select * from _tbl_sales_products
+[2020-09-11 19:21:00]	select * from _tbl_units
+[2020-09-11 19:21:03]	select * from _tbl_sales_products where ProductName Like 'r%' order by ProductName
+[2020-09-11 19:21:05]	select * from _tbl_sales_customers where CustomerName Like '99%' order by CustomerName
+[2020-09-11 19:21:05]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id=''
+[2020-09-11 19:21:05]	select * from _tbl_sales_products where ProductName Like 'mar%' order by ProductName
+[2020-09-11 19:21:09]	select * from _tbl_sales_products where ProductName Like 'k%' order by ProductName
+[2020-09-11 19:21:09]	select * from _tbl_sales_products where ProductName Like 'ka%' order by ProductName
+[2020-09-11 19:21:10]	select * from _tbl_sales_products where ProductName Like 'kan%' order by ProductName
+[2020-09-11 19:21:10]	select * from _tbl_sales_products where ProductName Like 'kana%' order by ProductName
+[2020-09-11 19:21:11]	select * from _tbl_sales_products where ProductName Like 'ka%' order by ProductName
+[2020-09-11 19:21:12]	select * from _tbl_sales_products where ProductName Like 'k%' order by ProductName
+[2020-09-11 19:21:13]	select * from _tbl_sales_products where ProductName Like 'm%' order by ProductName
+[2020-09-11 19:21:14]	select * from _tbl_sales_products where ProductName Like 'ma%' order by ProductName
+[2020-09-11 19:21:14]	select * from _tbl_sales_customers order by CustomerID Desc
+[2020-09-11 19:21:14]	select (sum(order_total_after_tax)) as bal from invoice_order where user_id='14'
+[2020-09-11 19:21:14]	select (sum(order_amount_paid)) as bal from invoice_order where user_id='14'
+[2020-09-11 19:21:14]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='14'
+[2020-09-11 19:21:14]	select (sum(order_total_after_tax)) as bal from invoice_order where user_id='13'
+[2020-09-11 19:21:14]	select (sum(order_amount_paid)) as bal from invoice_order where user_id='13'
+[2020-09-11 19:21:14]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='13'
+[2020-09-11 19:21:14]	select (sum(order_total_after_tax)) as bal from invoice_order where user_id='12'
+[2020-09-11 19:21:14]	select (sum(order_amount_paid)) as bal from invoice_order where user_id='12'
+[2020-09-11 19:21:14]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='12'
+[2020-09-11 19:21:14]	select (sum(order_total_after_tax)) as bal from invoice_order where user_id='8'
+[2020-09-11 19:21:14]	select (sum(order_amount_paid)) as bal from invoice_order where user_id='8'
+[2020-09-11 19:21:14]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='8'
+[2020-09-11 19:21:14]	select (sum(order_total_after_tax)) as bal from invoice_order where user_id='2'
+[2020-09-11 19:21:14]	select (sum(order_amount_paid)) as bal from invoice_order where user_id='2'
+[2020-09-11 19:21:14]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='2'
+[2020-09-11 19:21:14]	select (sum(order_total_after_tax)) as bal from invoice_order where user_id='1'
+[2020-09-11 19:21:14]	select (sum(order_amount_paid)) as bal from invoice_order where user_id='1'
+[2020-09-11 19:21:14]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1'
+[2020-09-11 19:21:14]	select * from _tbl_sales_products where ProductName Like 'mac%' order by ProductName
+[2020-09-11 19:21:16]	select * from _tbl_sales_products where ProductName Like 'ma%' order by ProductName
+[2020-09-11 19:21:20]	select * from _tbl_sales_customers
+[2020-09-11 19:21:20]	select (sum(order_total_after_tax)) as bal from invoice_order
+[2020-09-11 19:21:20]	select (sum(receipt_amount)) as bal from receipt
+[2020-09-11 19:21:20]	select (sum(order_total_amount_due)) as bal from invoice_order
+[2020-09-11 19:21:20]	select (sum(order_total_after_tax)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 19:21:20]	select (sum(TotalCashReceived)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 19:21:20]	select (sum(order_amount_paid)) as bal from invoice_order where TransactionMode='Net Banking' and date(order_date)='2020-09-11'
+[2020-09-11 19:21:20]	select (sum(order_total_amount_due)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 19:21:20]	SELECT * FROM _tbl_sales_products WHERE ProductID IN (SELECT order_id FROM invoice_order_item)  order by ProductID Desc
+[2020-09-11 19:21:20]	select * from _tbl_sales_products where ProductName Like 'pac%' order by ProductName
+[2020-09-11 19:21:20]	select * from _tbl_sales_products where ProductName Like 'pach%' order by ProductName
+[2020-09-11 19:21:21]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 19:21:21]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 19:21:21]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 19:21:21]	select * from _tbl_sales_products
+[2020-09-11 19:21:21]	select * from _tbl_units
+[2020-09-11 19:21:24]	select * from _tbl_sales_products where ProductName Like 'pach%' order by ProductName
+[2020-09-11 19:21:26]	select * from _tbl_sales_customers where CustomerName Like 'man%' order by CustomerName
+[2020-09-11 19:21:26]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='13'
+[2020-09-11 19:21:28]	select * from _tbl_sales_products where ProductName Like 'rose%' order by ProductName
+[2020-09-11 19:21:29]	select * from _tbl_sales_products where ProductName Like 'ro%' order by ProductName
+[2020-09-11 19:21:34]	select * from _tbl_sales_products where ProductName Like 'mali%' order by ProductName
+[2020-09-11 19:21:36]	select * from _tbl_sales_products where ProductName Like 'mal%' order by ProductName
+[2020-09-11 19:21:47]	select * from _tbl_sales_products where ProductName Like 'mall%' order by ProductName
+[2020-09-11 19:21:58]	select * from _tbl_sales_products where ProductName Like 'manj%' order by ProductName
+[2020-09-11 19:22:02]	select * from _tbl_sales_products where ProductName Like 's%' order by ProductName
+[2020-09-11 19:22:03]	select * from _tbl_sales_products where ProductName Like 'sivappu%' order by ProductName
+[2020-09-11 19:23:37]	select * from _tbl_sales_products where ProductName Like 'p%' order by ProductName
+[2020-09-11 19:23:46]	select * from _tbl_sales_products where ProductName Like 'rose%' order by ProductName
+[2020-09-11 19:23:47]	select * from _tbl_sales_products where ProductName Like 'ros%' order by ProductName
+[2020-09-11 19:23:49]	select * from _tbl_sales_products where ProductName Like 'os%' order by ProductName
+[2020-09-11 19:23:49]	select * from _tbl_sales_products where ProductName Like 'Ros%' order by ProductName
+[2020-09-11 19:23:50]	select * from _tbl_sales_products where ProductName Like 'Ros%' order by ProductName
+[2020-09-11 19:23:51]	select * from _tbl_sales_products where ProductName Like 'Ro%' order by ProductName
+[2020-09-11 19:23:52]	select * from _tbl_sales_products where ProductName Like 'R%' order by ProductName
+[2020-09-11 19:23:59]	select * from _tbl_sales_products where ProductName Like 'sa%' order by ProductName
+[2020-09-11 19:24:02]	select * from _tbl_sales_products where ProductName Like 'sa%' order by ProductName
+[2020-09-11 19:24:05]	select * from _tbl_sales_products where ProductName Like 'sam%' order by ProductName
+[2020-09-11 19:24:07]	select * from _tbl_sales_products where ProductName Like 'sa%' order by ProductName
+[2020-09-11 19:24:15]	select * from _tbl_sales_products where ProductName Like 'roj%' order by ProductName
+[2020-09-11 19:24:24]	select * from _tbl_sales_products where ProductName Like 'k%' order by ProductName
+[2020-09-11 19:24:24]	select * from _tbl_sales_products where ProductName Like 'ka%' order by ProductName
+[2020-09-11 19:24:25]	select * from _tbl_sales_products where ProductName Like 'kan%' order by ProductName
+[2020-09-11 19:24:29]	select * from _tbl_sales_products where ProductName Like 'ma%' order by ProductName
+[2020-09-11 19:24:33]	select * from _tbl_sales_products where ProductName Like 'man%' order by ProductName
+[2020-09-11 19:24:43]	select * from _tbl_sales_products where ProductName Like 'ma%' order by ProductName
+[2020-09-11 19:24:46]	select * from _tbl_sales_products where ProductName Like 'm%' order by ProductName
+[2020-09-11 19:24:46]	select * from _tbl_sales_products where ProductName Like 'ma%' order by ProductName
+[2020-09-11 19:24:50]	select * from _tbl_sales_products where ProductName Like 'mal%' order by ProductName
+[2020-09-11 19:27:38]	select * from _tbl_sales_products where ProductName='Kanakaparam'
+[2020-09-11 19:27:46]	select * from _tbl_sales_products where ProductNameTamil='Kanakaparam'
+[2020-09-11 19:27:47]	select * from _tbl_sales_customers
+[2020-09-11 19:27:47]	select (sum(order_total_after_tax)) as bal from invoice_order
+[2020-09-11 19:27:47]	select (sum(receipt_amount)) as bal from receipt
+[2020-09-11 19:27:47]	select (sum(order_total_amount_due)) as bal from invoice_order
+[2020-09-11 19:27:47]	select (sum(order_total_after_tax)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 19:27:47]	select (sum(TotalCashReceived)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 19:27:47]	select (sum(order_amount_paid)) as bal from invoice_order where TransactionMode='Net Banking' and date(order_date)='2020-09-11'
+[2020-09-11 19:27:47]	select (sum(order_total_amount_due)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 19:27:47]	SELECT * FROM _tbl_sales_products WHERE ProductID IN (SELECT order_id FROM invoice_order_item)  order by ProductID Desc
+[2020-09-11 19:27:49]	select * from _tbl_sales_products order by ProductID Desc
+[2020-09-11 19:27:51]	select * from _tbl_units
+[2020-09-11 19:28:07]	select * from _tbl_sales_products where ProductName='Kanakaamparam'
+[2020-09-11 19:28:07]	select * from _tbl_sales_products
+[2020-09-11 19:28:07]	select * from _tbl_units where id='1'
+[2020-09-11 19:28:07]	insert into `_tbl_sales_products` (`ProductCode`,`BarCode`,`ProductName`,`ProductNameTamil`,`ProductUnitID`,`ProductUnitName`,`ProductUnitFullName`,`ProductPrice`,`Description`,`AddedOn`) values ('MAS000011','','Kanakaamparam','கனகாம்பரம் ','1','KG','Kilogram','100','','2020-09-11 19:28:07')
+[2020-09-11 19:28:07]	select * from _tbl_units
+[2020-09-11 19:28:09]	select * from _tbl_sales_products order by ProductID Desc
+[2020-09-11 19:30:29]	select * from _tbl_sales_customers order by CustomerID Desc
+[2020-09-11 19:30:29]	select (sum(order_total_after_tax)) as bal from invoice_order where user_id='14'
+[2020-09-11 19:30:29]	select (sum(order_amount_paid)) as bal from invoice_order where user_id='14'
+[2020-09-11 19:30:29]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='14'
+[2020-09-11 19:30:29]	select (sum(order_total_after_tax)) as bal from invoice_order where user_id='13'
+[2020-09-11 19:30:29]	select (sum(order_amount_paid)) as bal from invoice_order where user_id='13'
+[2020-09-11 19:30:29]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='13'
+[2020-09-11 19:30:29]	select (sum(order_total_after_tax)) as bal from invoice_order where user_id='12'
+[2020-09-11 19:30:29]	select (sum(order_amount_paid)) as bal from invoice_order where user_id='12'
+[2020-09-11 19:30:29]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='12'
+[2020-09-11 19:30:29]	select (sum(order_total_after_tax)) as bal from invoice_order where user_id='8'
+[2020-09-11 19:30:29]	select (sum(order_amount_paid)) as bal from invoice_order where user_id='8'
+[2020-09-11 19:30:29]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='8'
+[2020-09-11 19:30:29]	select (sum(order_total_after_tax)) as bal from invoice_order where user_id='2'
+[2020-09-11 19:30:29]	select (sum(order_amount_paid)) as bal from invoice_order where user_id='2'
+[2020-09-11 19:30:29]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='2'
+[2020-09-11 19:30:29]	select (sum(order_total_after_tax)) as bal from invoice_order where user_id='1'
+[2020-09-11 19:30:29]	select (sum(order_amount_paid)) as bal from invoice_order where user_id='1'
+[2020-09-11 19:30:29]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1'
+[2020-09-11 19:30:37]	select * from _tbl_sales_customers where md5(CustomerID)='c4ca4238a0b923820dcc509a6f75849b'
+[2020-09-11 19:30:48]	select * from _tbl_sales_customers where md5(CustomerID)='c4ca4238a0b923820dcc509a6f75849b'
+[2020-09-11 19:30:48]	select * from _tbl_sales_customers where MobileNumber='9000000000' and CustomerID<>'1'
+[2020-09-11 19:30:48]	update _tbl_sales_customers set `CustomerName`      ='Cash',
+                                                                `CustomerNameTamil` ='கேஷ் ',
+                                                                `ShopName`          ='Cash',
+                                                                `ShopNameTamil`     ='கேஷ் ',
+                                                                `MobileNumber`      ='9000000000',
+                                                                `EmailID`           ='',
+                                                                `MaximumCreditLimit`='0',
+                                                                `AddressLine1`      ='Karikudi',
+                                                                `AddressLine2`      ='',
+                                                          `AddressLine3`            ='',
+                                                          `IsActive`                ='1' where CustomerID='1'
+[2020-09-11 19:30:50]	select * from _tbl_sales_customers
+[2020-09-11 19:30:50]	select (sum(order_total_after_tax)) as bal from invoice_order
+[2020-09-11 19:30:50]	select (sum(receipt_amount)) as bal from receipt
+[2020-09-11 19:30:50]	select (sum(order_total_amount_due)) as bal from invoice_order
+[2020-09-11 19:30:50]	select (sum(order_total_after_tax)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 19:30:50]	select (sum(TotalCashReceived)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 19:30:50]	select (sum(order_amount_paid)) as bal from invoice_order where TransactionMode='Net Banking' and date(order_date)='2020-09-11'
+[2020-09-11 19:30:50]	select (sum(order_total_amount_due)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 19:30:50]	SELECT * FROM _tbl_sales_products WHERE ProductID IN (SELECT order_id FROM invoice_order_item)  order by ProductID Desc
+[2020-09-11 21:41:10]	select * from _tbl_sales_customers where IsActive='1'
+[2020-09-11 21:41:10]	select * from _tbl_sales_products where IsPublish='1'
+[2020-09-11 21:41:10]	select * from _tbl_sales_customers where md5(CustomerID)=''
+[2020-09-11 21:41:10]	select * from _tbl_sales_products
+[2020-09-11 21:41:10]	select * from _tbl_units
+[2020-09-11 21:41:27]	select * from _tbl_sales_customers
+[2020-09-11 21:41:27]	select (sum(order_total_after_tax)) as bal from invoice_order
+[2020-09-11 21:41:27]	select (sum(receipt_amount)) as bal from receipt
+[2020-09-11 21:41:27]	select (sum(order_total_amount_due)) as bal from invoice_order
+[2020-09-11 21:41:27]	select (sum(order_total_after_tax)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 21:41:27]	select (sum(TotalCashReceived)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 21:41:27]	select (sum(order_amount_paid)) as bal from invoice_order where TransactionMode='Net Banking' and date(order_date)='2020-09-11'
+[2020-09-11 21:41:27]	select (sum(order_total_amount_due)) as bal from invoice_order where date(order_date)='2020-09-11'
+[2020-09-11 21:41:27]	SELECT * FROM _tbl_sales_products WHERE ProductID IN (SELECT order_id FROM invoice_order_item)  order by ProductID Desc

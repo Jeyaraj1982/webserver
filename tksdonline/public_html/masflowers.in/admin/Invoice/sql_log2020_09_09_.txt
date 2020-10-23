@@ -1,0 +1,3 @@
+[2020-09-09 10:07:21]	SELECT * FROM invoice_order WHERE md5(order_id) = 'a87ff679a2f3e71d9181a67b7542122c'
+[2020-09-09 10:07:21]	SELECT * FROM invoice_order_item WHERE order_id = '4'
+[2020-09-09 10:07:21]	select (sum(order_total_amount_due)) as bal from invoice_order where user_id='1' and order_id<>'4'
