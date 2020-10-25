@@ -1,0 +1,77 @@
+[23-Dec-2019 14:40:08 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[23-Dec-2019 14:40:30 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[23-Dec-2019 14:40:57 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[23-Dec-2019 14:42:10 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[23-Dec-2019 14:42:14 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[23-Dec-2019 14:42:20 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[23-Dec-2019 14:42:30 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[23-Dec-2019 14:42:45 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[23-Dec-2019 14:46:21 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[23-Dec-2019 15:00:14 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[23-Dec-2019 15:00:59 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[23-Dec-2019 15:01:35 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[23-Dec-2019 15:01:51 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[23-Dec-2019 15:02:23 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[23-Dec-2019 15:02:44 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[23-Dec-2019 15:03:32 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[24-Dec-2019 10:19:48 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[26-Dec-2019 06:51:27 UTC] PHP Fatal error:  Cannot redeclare blockTicket() (previously declared in /home/aaranju/public_html/busticket/api.php:81) in /home/aaranju/public_html/busticket/seatseller/SSAPICaller.php on line 101
+[26-Dec-2019 06:53:02 UTC] PHP Fatal error:  Cannot redeclare blockTicket() (previously declared in /home/aaranju/public_html/busticket/api.php:81) in /home/aaranju/public_html/busticket/seatseller/SSAPICaller.php on line 101
+[26-Dec-2019 06:53:02 UTC] PHP Fatal error:  Cannot redeclare blockTicket() (previously declared in /home/aaranju/public_html/busticket/api.php:81) in /home/aaranju/public_html/busticket/seatseller/SSAPICaller.php on line 101
+[26-Dec-2019 06:53:13 UTC] PHP Fatal error:  Cannot redeclare blockTicket() (previously declared in /home/aaranju/public_html/busticket/api.php:81) in /home/aaranju/public_html/busticket/seatseller/SSAPICaller.php on line 101
+[26-Dec-2019 06:53:13 UTC] PHP Fatal error:  Cannot redeclare blockTicket() (previously declared in /home/aaranju/public_html/busticket/api.php:81) in /home/aaranju/public_html/busticket/seatseller/SSAPICaller.php on line 101
+[26-Dec-2019 06:53:21 UTC] PHP Fatal error:  Cannot redeclare blockTicket() (previously declared in /home/aaranju/public_html/busticket/api.php:81) in /home/aaranju/public_html/busticket/seatseller/SSAPICaller.php on line 101
+[26-Dec-2019 06:54:06 UTC] PHP Fatal error:  Cannot redeclare blockTicket() (previously declared in /home/aaranju/public_html/busticket/api.php:81) in /home/aaranju/public_html/busticket/seatseller/SSAPICaller.php on line 101
+[26-Dec-2019 06:54:38 UTC] PHP Fatal error:  Cannot redeclare blockTicket() (previously declared in /home/aaranju/public_html/busticket/api.php:81) in /home/aaranju/public_html/busticket/seatseller/SSAPICaller.php on line 101
+[26-Dec-2019 06:54:42 UTC] PHP Fatal error:  Cannot redeclare blockTicket() (previously declared in /home/aaranju/public_html/busticket/api.php:81) in /home/aaranju/public_html/busticket/seatseller/SSAPICaller.php on line 101
+[26-Dec-2019 08:48:46 UTC] PHP Fatal error:  Cannot redeclare blockTicket() (previously declared in /home/aaranju/public_html/busticket/api.php:81) in /home/aaranju/public_html/busticket/seatseller/SSAPICaller.php on line 101
+[26-Dec-2019 08:49:03 UTC] PHP Fatal error:  Cannot redeclare blockTicket() (previously declared in /home/aaranju/public_html/busticket/api.php:81) in /home/aaranju/public_html/busticket/seatseller/SSAPICaller.php on line 101
+[04-Feb-2020 14:40:40 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[04-Feb-2020 17:54:26 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[04-Feb-2020 18:00:38 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[11-Feb-2020 21:56:17 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[11-Feb-2020 21:56:20 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[12-Feb-2020 09:08:07 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[18-Feb-2020 18:20:11 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[27-Feb-2020 18:05:00 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[27-Feb-2020 18:05:03 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[29-Feb-2020 16:58:46 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[02-Mar-2020 20:36:54 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[17-Mar-2020 10:32:51 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[22-May-2020 06:13:00 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[24-May-2020 21:03:43 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[24-May-2020 21:04:00 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[24-May-2020 21:04:05 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[24-May-2020 21:04:07 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[25-May-2020 17:19:34 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[25-May-2020 17:19:38 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[25-May-2020 17:19:40 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[25-May-2020 17:28:32 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[25-May-2020 17:28:42 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[25-May-2020 17:32:21 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[25-May-2020 17:33:06 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[25-May-2020 17:33:09 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[25-May-2020 17:33:22 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[25-May-2020 17:33:28 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[25-May-2020 17:33:47 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[26-May-2020 21:32:24 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[26-May-2020 21:33:07 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[26-May-2020 21:33:32 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[27-May-2020 13:43:04 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
+[14-Jun-2020 04:27:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function *() in /home/aaranju/public_html/busticket/api.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/aaranju/public_html/busticket/api.php on line 8
+[14-Jun-2020 04:27:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function *() in /home/aaranju/public_html/busticket/api.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/aaranju/public_html/busticket/api.php on line 8
+[14-Jun-2020 04:27:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function *() in /home/aaranju/public_html/busticket/api.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/aaranju/public_html/busticket/api.php on line 8
+[15-Jun-2020 03:54:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function *() in /home/aaranju/public_html/busticket/api.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/aaranju/public_html/busticket/api.php on line 8
+[24-Jun-2020 14:57:16 Asia/Calcutta] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; MySql has a deprecated constructor in /home/aaranju/public_html/class.Mysql.php on line 3
