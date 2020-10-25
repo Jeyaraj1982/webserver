@@ -1,1 +1,0 @@
-[21-Aug-2020 04:47:38 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/form16/public_html/config.php on line 2
