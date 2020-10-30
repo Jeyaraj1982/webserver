@@ -1,0 +1,4 @@
+[18-Aug-2020 23:47:33 UTC] PHP Fatal error:  Uncaught Error: Class 'JFrame' not found in /home/nammamarriage/public_html/website/index.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/nammamarriage/public_html/website/index.php on line 3
