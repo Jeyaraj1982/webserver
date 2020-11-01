@@ -97,6 +97,8 @@ function billerrorDialog() {
      if (isset($_POST['txnupdateBtn'])) {
         //$return = $application->reverseBillPay($_POST['txnid'],$_POST['Remarks'],$errormsg);
         $t = $mysql->select("select * from  _tbl_transactions where txnid='".$_POST['txnid']."'");
+        if (sizeof($t)>0) {
+            
             $mysql->execute("update _tbl_transactions set 
                             OperatorNumber='".$_POST['OperatorNumber']."',
                             OperatorDate='".$_POST['OperatorDate']."', 
@@ -105,10 +107,25 @@ function billerrorDialog() {
                             BillString='".$_POST['BillString']."', 
                             BillDate='".date("Y-m-d H:i:s")."', 
                             TxnStatus='success' where txnid='".$_POST['txnid']."'");
-            $mem = $mysql->select("select * from _tbl_member where MemberID='".$t[0]['memberid']."'");
             $optr = $mysql->select("select * from _tbl_operators where  operatorcode='".$t[0]['memberid']."'");
-        MobileSMS::sendSMS($t[0]['CustomerMobileNumber'],"Dear Customer, You requested ".$optr[0]['OperatorName']." bill payment of ".$t[0]['rcnumber'].",  Rs.".$t[0]['rcamount']." has paid. Receipt/Provider/Bill number: ".$_POST['OperatorNumber']." Agent: ".$mem[0]['MemberName'],$mem[0]['MemberID']);                     
-        $return = true;
+            
+            //Telegram
+            $member_info = $mysql->select("select * from _tbl_member where MemberID='".$t[0]['memberid']."'");
+            if (strlen($member_info[0]['TelegramID'])>2) {
+                $message = "Dear Agent, You requested ".$optr[0]['OperatorName']." bill payment of ".$t[0]['rcnumber'].",  Rs.".$t[0]['rcamount']." has paid. Receipt/Provider/Bill number: ".$_POST['OperatorNumber'];
+                TelegramMessageController::sendSMS($member_info[0]['TelegramID'],$message,0,0);  
+            }
+            $message = "Dear Customer, You requested ".$optr[0]['OperatorName']." bill payment of ".$t[0]['rcnumber'].",  Rs.".$t[0]['rcamount']." has paid. Receipt/Provider/Bill number: ".$_POST['OperatorNumber']." Agent: ".$member_info[0]['MemberName'];
+            $subscribed_customer = $mysql->select("select * from telegram_recevied_records where Lower(reciviedmessage)='".strtolower(trim($t[0]['CustomerMobileNumber']))."'");
+            if (sizeof($subscribed_customer)) {
+                TelegramMessageController::sendSMS($subscribed_customer[0]['client_id'],$message,0,0);  
+            }
+            MobileSMS::sendSMS($t[0]['CustomerMobileNumber'],$member_info[0]['MemberID']);                                                             
+                                      
+            $return = true;
+        } else {                          
+            $return = false;  
+        }
         if ($return) {
             echo "<script>setTimeout('billsuccessDialog()',1000);</script>";
         } else {

@@ -472,7 +472,7 @@ function GetUsers() {
                                                 <a href="dashboard.php?action=mrc_bsnl&mobilenumber=<?php echo $u['MobileNumber'];?>" class="btn btn-primary btn-xs" style="float: right;padding:3px 10px;font-size:11px;">Select</a>
                                             <?php } ?>
                                             <?php if($u['MobileOperator']=="RV"){?>
-                                                <a href="dashboard.php?action=mrc_vodafone&mobilenumber=<?php echo $u['MobileNumber'];?>" class="btn btn-primary btn-xs" style="float: right;padding:3px 10px;font-size:11px;">Select</a>
+                                                <a href="dashboard.php?action=mrc_vodaidea&mobilenumber=<?php echo $u['MobileNumber'];?>" class="btn btn-primary btn-xs" style="float: right;padding:3px 10px;font-size:11px;">Select</a>
                                             <?php } ?>
                                             <?php if($u['MobileOperator']=="RI"){?>
                                                 <a href="dashboard.php?action=mrc_idea&mobilenumber=<?php echo $u['MobileNumber'];?>" class="btn btn-primary btn-xs" style="float: right;padding:3px 10px;font-size:11px;">Select</a>

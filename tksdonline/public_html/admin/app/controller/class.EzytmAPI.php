@@ -6,7 +6,7 @@
             global $mysql;
             
           //  $api_url = "https://www.ezytm.net/Roboticsapi/webservice/GetMobileRecharge?Apimember_id=8881&Api_password=Mmm@786786&Circle=10&Member_request_txnid=web".$param['txnid']."&Mobile_no=".$param['number']."&Amount=".$param['amount']."&";
-            $api_url = "https://www.ezytm.net/Roboticsapi/webservice/GetMobileRecharge?Apimember_id=8881&Api_password=Mmm@786786&Circle=20&Member_request_txnid=web".$param['txnid']."&Mobile_no=".$param['number']."&Amount=".$param['amount']."&";
+            $api_url = "https://ezytm.net/Roboticsapi/webservice/GetMobileRecharge?Apimember_id=8881&Api_password=Mmm@786786&Circle=20&Member_request_txnid=web".$param['txnid']."&Mobile_no=".$param['number']."&Amount=".$param['amount']."&";
 
             if ($param['operator']=="RA") {
                $api_url .= "Operator_code=AT";

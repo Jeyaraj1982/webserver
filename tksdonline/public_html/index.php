@@ -100,12 +100,21 @@ if (isset($_POST['submitBtn'])) {
                                     </div>
                                     <button type="submit" name="submitBtn" class="btn btn-success  glow w-100 position-relative">Login<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></button>
                                 </form>
-                                <br><br>
-                              <form action="" method="post">
+                                <br>
+								<button type="button" onclick="location.href='joinnow.php'" class="btn btn-info  glow w-100 position-relative">Join Now<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></button><br><br>
+                            <!--  <form action="" method="post">
                                     <input type="hidden" value="9876543210" name="MobileNumber" id="MobileNumber">
                                     <input type="hidden" value="9876543210" name="MemberPassword" id="MemberPassword">
                                     <button type="submit" name="submitBtn" class="btn btn-info  glow w-100 position-relative">Demo Login<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></button>
-                                </form>  
+                                </form>  -->
+                                
+                                <div class="form-group">
+                                <br><B>Maajid Multi Mart</b><br>
+                                147, Pallivasal complex, CMC Road, <br>
+                                Senjai, Karaikudi - 630 001.<br><Br>
+                                Email: tksdhelpdesk@gmail.com<br>
+                                Whatsapp Chat +91 90036 38869
+                                </div>
                                 
                                 
                             </div>

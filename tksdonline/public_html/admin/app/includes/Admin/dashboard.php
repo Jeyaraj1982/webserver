@@ -52,9 +52,16 @@
                                         <div class="col-12">
                                             <div class="icon-big text-center">
                                            <span style="font-size:12px;"> Subscribed in telegram : 
+                                           <br>TKSD:
                                             <?php
-                                                 echo sizeof($mysql->select("SELECT * FROM _tbl_member WHERE IsMember=1 AND TelegramID>0"));
+                                                 echo sizeof($mysql->select("SELECT * FROM _tbl_member WHERE IsMember=1 and MapedTo<>'3' AND TelegramID>0"));
                                              ?>
+                                             
+                                             <br>ABJ:
+                                            <?php
+                                                 echo sizeof($mysql->select("SELECT * FROM _tbl_member WHERE IsMember=1 and MapedTo='3' AND TelegramID>0"));
+                                             ?>
+                                             
                                              </span>
                                             </div>
                                         </div>
@@ -423,8 +430,8 @@
                 </div> 
                 
                 
-                
-                        <div class="col-md-12">
+                   <div class="row">
+                        <div class="col-md-6">
                             <div class="card">
                                 <div class="card-header">
                                     <div class="card-head-row card-tools-still-right">
@@ -440,7 +447,7 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="row">
-                                        <div class="col-md-6">
+                                        <div class="col-md-12">
                                             <div class="table-responsive table-hover table-sales">
                                              <?php $dreport = $mysql->select("SELECT operatorcode, SUM(rcamount) AS amt FROM _tbl_transactions WHERE DATE(txndate)=DATE('".date("Y-m-d")."') AND TxnStatus='success' group by operatorcode"); ?>    
                                              <table class="table">
@@ -469,6 +476,79 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="card-head-row card-tools-still-right">
+                                        <h4 class="card-title">Telegram </h4>
+                                         
+                                    </div>
+                                    
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="table-responsive table-hover table-sales">
+                                             <table class="table">
+                                                <thead>
+                                                   <tr>
+                                                        <th>Route</th>
+                                                        <th>Agents</th>
+                                                        <th>Distributors</th>
+                                                        <th>Customers</th>
+                                                        <th>Incoming<br>SMS</th>
+                                                        <th>outgoing<br>SMS</th>
+                                                   </tr>
+                                                </thead>
+                                           
+                                                <tbody>
+                                                    <tr>
+                                                        <td>TKSD</td>
+                                                        <td>
+                                                            <?php
+                                                                echo sizeof($mysql->select("SELECT * FROM _tbl_member WHERE IsMember=1 and MapedTo<>'3' AND TelegramID>0"));
+                                                            ?>
+                                                        </td> 
+                                                        <td>
+                                                            <?php
+                                                                echo sizeof($mysql->select("SELECT * FROM _tbl_member WHERE IsDistributor=1   AND TelegramID>0"));
+                                                            ?>
+                                                        </td>
+                                                        <td>
+                                                           <?php
+                                                                echo sizeof($mysql->select("SELECT * FROM telegram_subscribers WHERE telegram_route='tksd' and is_customer='1'"));
+                                                           ?> 
+                                                        </td>
+                                                    </tr>
+                                                                                                        <tr>
+                                                        <td>ABJ</td>
+                                                        <td>
+                                                            <?php
+                                                                echo sizeof($mysql->select("SELECT * FROM _tbl_member WHERE IsMember=1 and MapedTo='3' AND TelegramID>0"));
+                                                            ?>
+                                                        </td> 
+                                                        <td>
+                                                            0
+                                                        </td>
+                                                        <td>
+                                                           <?php
+                                                                echo sizeof($mysql->select("SELECT * FROM telegram_subscribers WHERE telegram_route='abj' and is_customer='1'"));
+                                                           ?> 
+                                                        </td>
+                                                    </tr> 
+                                                </tbody>
+                                             </table>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         </div>
                     
                 <script>
