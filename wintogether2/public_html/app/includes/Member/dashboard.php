@@ -40,7 +40,7 @@
                             <h6>PV: <?php echo $memberTree->todayLeftPV." / ".$memberTree->leftPV;?></h6>
                             <h6>Direct Left: <?php echo $Check_Eligibility[0]['DirectLeft'];?></h6> 
                             <h6 style="color:#666;margin:10px;padding:10px;background:#f1f1f1;border:1px dashed #ccc;border-radius:10px">Carryforward Left: <?php echo $memberTree->availableLeftCarryForward;?></h6> 
-                        
+                               
                         </div>
                         <div class="px-2 pb-2 pb-md-0 text-center">
                             <div id="circles-2"></div>
@@ -85,7 +85,7 @@
                                         echo "<span style='color:red;font-weight:normal'>Not Eligible</span><br><span style='color:#ccc;font-size:11px'>Requires one direct referal for Left and Right ";
                                     }
                                 }
-                            ?>
+                            ?>                                           
                             </h6>                                                                              
                             <h6 class="fw-bold mt-3 mb-1">Payout Eligibility:
                             <?php
@@ -99,7 +99,7 @@
                                         $mysql->execute("update `_tbl_Members` set `IsPayoutEligible`='1'  where `MemberCode`='".$_SESSION['User']['MemberCode']."'");
                                         echo "<span style='color:green;font-weight:normal'>Eligible</span>";
                                     } else {
-                                         echo "<span style='color:red;font-weight:normal'>Not Eligible</span><br><span style='color:#ccc;font-size:11px'>Requires direct referal 1:2 or 2:1";
+                                         echo "<span style='color:red;font-weight:normal'>Not Eligible</span><br><span style='color:#ccc;font-size:11px'>Requires direct referal 1:1";
                                     }
                               // }                  
                             ?>

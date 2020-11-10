@@ -127,9 +127,11 @@
             </div>
         </div>
 </div>
-    <?php if (isset($_POST['viewTransaction'])) {
+    <?php // if (isset($_POST['viewTransaction'])) 
+    
+    {
       
-        
+             $records=$mysql->select("SELECT * FROM `_tbl_payout_banktransfer` where MemberID='".$_SESSION['User']['MemberID']."' order by BankTransferID Desc");
         ?>     
 <div style="padding:25px">
     <div class="row">
@@ -137,36 +139,56 @@
             <div class="card">    
                 <div class="card-body">
                     <div class="table-responsive">
-                        <table id="basic-datatables" class="display table table-striped table-hover" >
-                            <thead>
-                                <tr>
-                                    <th>Report Date</th>
-                                    <th>Particulars</th>
-                                    <th style="text-align: right">Amount ($)</th>
-                                    <th style="text-align: right">Status</th>
-                                    <th style="text-align: right">Trasnfer On</th>
-                                    <th style="text-align: right">Bank Txn ID</th>
-                                    <th style="text-align: right">Amount (INR)</th>
-                                </tr>
+                         <table id="basic-datatables" class="display table table-striped table-hover" >
+                            <thead>        
+                                                          
+                                <tr>                         
+                                                 
+                                                <th class="border-top-0"><b>Date</b></th>
+                                                <th class="border-top-0"><b>Amount</b></th>
+                                                <th class="border-top-0"><b>AccountName</b></th>
+                                                <th class="border-top-0"><b>AccountNumber</b></th>
+                                                <th class="border-top-0"><b>AccountIFSCode</b></th>
+                                                <th class="border-top-0"><b>ModeOfPayment</b></th>
+                                                <th class="border-top-0"><b>PaymentRemarks</b></th>
+                                                <th class="border-top-0"><b>BankTransactionID</b></th>
+                                                <th class="border-top-0"><b>PaymentTransferOn</b></th>
+                                                <th class="border-top-0"><b>IsProcessed</b></th>
+                                                <th class="border-top-0"><b>ProcessedOn</b></th>
+                                            </tr>
+                               
                             </thead>
                             <tbody>
-                            <?php 
-                              //  $Transactions=$mysql->select("xselect * from `_tbl_wallet_earnings` where Date(`TxnDate`)>=Date('".$_POST['From']."') and Date(`TxnDate`)<=Date('".$_POST['To']."') and MemberID='".$_SESSION['User']['MemberID']."' and (Ledger='2' or Ledger='20001') order by EarningID DESC"); 
-                                ?>
-                               
-                                <?php if(sizeof($Transactions)=="0"){?>
+                                <?php if (sizeof($records)==0) { ?>                                    
                                 <tr>
-                                    <td colspan="7" style="text-align: center;">No records found</td>
-                                </tr>
-                                <?php }?> 
-                                <?php foreach ($Transactions as $Transaction){ ?>
-                                <tr>
-                                    <td><?php echo date("M d, Y",strtotime($Transaction['TxnDate']));?></td>
-                                    <td><?php echo $Transaction['Particulars'];?></td>
-                                    <td style="text-align: right"><?php echo number_format($Transaction['Credits'],2);?></td>
-                                    <td style="text-align: right"><?php echo number_format($Transaction['Debits'],2);?></td>
+                                    <td colspan="8" style="text-align:center;"><?php echo $error;?></td>
                                 </tr>
                                 <?php } ?>
+                                <?php foreach ($records as $record){ ?>
+                                <tr>
+                                    
+ 
+                                                <td><?php echo $record['TxnDate'];?></td>
+                                                <td style="text-align: right"><?php echo number_format($record['Amount'],2);?></td>
+                                                <td><?php echo $record['AccountName'];?></td>
+                                                <td><?php echo $record['AccountNumber'];?></td>
+                                                <td><?php echo $record['AccountIFSCode'];?></td>
+                                                <td><?php echo $record['ModeOfPayment'];?></td>
+                                                <td><?php echo $record['PaymentRemarks'];?></td>
+                                                <td><?php echo $record['BankTransactionID'];?></td>
+                                                <td><?php echo $record['PaymentTransferOn'];?></td>
+                                                <td><?php 
+                                                          if($record['IsProcessed']=="1"){ 
+                                                            echo "Paid";
+                                                          }if($record['IsProcessed']=="2"){ 
+                                                            echo "Reversed";
+                                                          }if($record['IsProcessed']=="0") { 
+                                                            echo  "Unpaid";
+                                                          } ?></td>
+                                                <td><?php echo $record['ProcessedOn'];?></td>
+                                                <!--<td><a href="dashboard.php?action=Payout/Transaction&date=<?php echo $record['PayoutDate'];?>">View Details</a></td>-->
+                                           </tr>
+                                <?php }?> 
                             </tbody>
                         </table>
                     </div>

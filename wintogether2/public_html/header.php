@@ -44,10 +44,22 @@
  
  
  
+  <style>
+   .mobilemenu {display: none;}
+   @media all and (max-width: 768px){
+                                                          
+        .mobilemenu {display: block;}
+        .adImage {height:100px;margin:0px auto;width:auto;max-width:100%;}
+        /*.adbox{border:2px solid #fff;height:300px !important;cursor:pointer;width:150px}*/
+        .description_level1 {font-size:12px;line-height:14px;}
+         .postedon{float:left;font-size:11px;}
+         .col-lg-3 {padding-left:5px;padding-right:5px;}
+    }                     
+ 
+  </style>
  
  
- 
- 
+                 
  
  
 

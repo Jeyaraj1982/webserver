@@ -368,7 +368,8 @@ $mysql   = new MySqldatabase(DbHost,DbUser,DbPassword,DbName);
    
         function IsBinaryEligible($MemberCode,&$left_ids,&$right_ids) {
             global $mysql;
-            
+            $left_ids = array();
+            $right_ids = array();
             $d = $mysql->select("select * from _tbl_Members where MemberCode='".$MemberCode."'");
             if ($d[0]['DirectLeft']>=1 && $d[0]['DirectRight']>=1) {
                 return true;
@@ -409,6 +410,8 @@ $mysql   = new MySqldatabase(DbHost,DbUser,DbPassword,DbName);
        
         function IsPayoutEligible($MemberCode,&$left_ids,&$right_ids) {
             global $mysql;
+            $left_ids=array();
+            $right_ids=array();
             $d = $mysql->select("select * from _tbl_Members where MemberCode='".$MemberCode."'");
             if ($d[0]['DirectLeft']>=1 && $d[0]['DirectRight']>=1) {
                 return true;

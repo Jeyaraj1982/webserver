@@ -66,6 +66,7 @@
         <div class="collapse" id="payouts">
             <ul class="nav nav-collapse">
                 <li><a href="dashboard.php?action=Payout/Transactions"><span class="sub-item">Transaction Log</span></a></li>
+                <li><a href="dashboard.php?action=Payout/BankTransfer"><span class="sub-item">Bank Transfer</span></a></li>
             </ul>
         </div>
     </li>

@@ -101,9 +101,16 @@
     $('.slider-item').css({'height':this.height});
   }
 </script>
+<div class="row mobilemenu">
+    <div class="col-sm-12">
+        <div style="padding:25px;padding-left:15px">
+        <a href="https://www.wintogether2.com/login.php" class="btn btn-success btn-sm">&nbsp;&nbsp;Login&nbsp;&nbsp;</a>
+        </div>
+    </div>
+</div>
 </div>
  
-  <br><br><br><br><br><br>
+   
           </main>
 
 <?php include_once("footer.php");?>        

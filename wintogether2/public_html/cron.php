@@ -26,7 +26,7 @@
         fwrite($myfile, "\n[".date("Y-m-d H:i:s")."]\t".$text);
         fclose($myfile);
     }
-
+                                         
     writelog("=== Binary Eligible Starts ===");
     $IsBinaryEligible = $mysql->select("select * from `_tbl_Members` Where `IsBinaryEligible`=0 and Date(CreatedOn)<=Date('".$date."')");
     foreach($IsBinaryEligible as $m) {
@@ -342,6 +342,11 @@
            
            if (isset($firstPayout[$dr['PlacedByCode']]) && $firstPayout[$dr['PlacedByCode']]==1) {
                    $total_earning = $total_earning - (2*$plan[0]['DirectReferalCommission']);
+           } else {
+               $m = $mysql->select("select * from _tbl_Members where MemberCode='".$dr['PlacedByCode']."' and DirectLeft>0 and DirectRight>0"); 
+               if (sizeof($m)==0) {
+                   $total_earning=0;
+               }                                                        
            }
            
            if ($total_earning>0) {
