@@ -1,0 +1,109 @@
+[2020-11-04 09:46:22]	select * from _queen_admin where UserName='queenadmin@gmail.com' and Password='12345' 
+[2020-11-04 09:47:10]	select * from _queen_agent where IsAgent='1' order by AgentID desc
+[2020-11-04 09:47:14]	select * from _queen_agent where IsAgent='0' order by AgentID desc
+[2020-11-04 09:47:17]	select * from _queen_expensetype order by ExpenseTypeID desc
+[2020-11-04 09:47:22]	select * from _queen_services order by ServiceID desc
+[2020-11-04 09:47:27]	select * from _queen_staffs order by StaffID desc
+[2020-11-04 09:47:36]	select * from _queen_expenses order by ExpenseID desc
+[2020-11-04 09:47:36]	select * from _queen_staffs where StaffID='3'
+[2020-11-04 09:47:36]	select * from _queen_staffs where StaffID='3'
+[2020-11-04 09:48:08]	SELECT * FROM _queen_expenses where StaffID='3' and (date(CreatedOn)>=date('2020-11-1') and date(CreatedOn)<=date('2020-11-4') ) order by ExpenseID asc
+[2020-11-04 09:48:08]	select * from _queen_staffs where StaffID='3'
+[2020-11-04 09:48:25]	SELECT * FROM _queen_expenses where StaffID='3' and (date(CreatedOn)>=date('2020-10-1') and date(CreatedOn)<=date('2020-11-4') ) order by ExpenseID asc
+[2020-11-04 09:48:25]	select * from _queen_staffs where StaffID='3'
+[2020-11-04 09:48:44]	select * from _queen_expenses where md5(ExpenseID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-11-04 09:48:44]	select * from _queen_expenses where md5(ExpenseID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-11-04 09:48:44]	select * from _queen_expensetype where IsActive='1'
+[2020-11-04 09:48:51]	select * from _queen_expenses order by ExpenseID desc
+[2020-11-04 09:48:51]	select * from _queen_staffs where StaffID='3'
+[2020-11-04 09:48:51]	select * from _queen_staffs where StaffID='3'
+[2020-11-04 09:49:26]	SELECT * FROM _queen_expenses where StaffID='3' and (date(CreatedOn)>=date('2020-10-1') and date(CreatedOn)<=date('2020-11-4') ) order by ExpenseID asc
+[2020-11-04 09:49:26]	select * from _queen_staffs where StaffID='3'
+[2020-11-04 09:50:03]	select * from _queen_expenses where md5(ExpenseID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-11-04 09:50:03]	select * from _queen_expenses where md5(ExpenseID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-11-04 09:50:03]	select * from _queen_expensetype where IsActive='1'
+[2020-11-04 09:50:15]	SELECT * FROM _queen_expenses where StaffID='' and (date(CreatedOn)>=date('2020-11-04') and date(CreatedOn)<=date('2020-11-04') ) order by ExpenseID asc
+[2020-11-04 09:50:15]	select * from _queen_staffs where StaffID=''
+[2020-11-04 09:50:39]	select * from _queen_agent
+[2020-11-04 09:50:39]	select (sum(Credits)-sum(Debits)) as bal from _queen_wallet where AgentID='1'
+[2020-11-04 09:50:39]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='1' and (date(OrderOn)>=date('') and date(OrderOn)<=date('') )
+[2020-11-04 09:50:39]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='1' and (date(OrderOn)>=date('') and date(OrderOn)<=date('') ) and IsPaid='1'
+[2020-11-04 09:50:39]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='1' and (date(OrderOn)>=date('') and date(OrderOn)<=date('') ) and IsPaid='0'
+[2020-11-04 09:50:39]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='1' and IsPaid='0'
+[2020-11-04 09:50:39]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='1' and IsPaid='1'
+[2020-11-04 09:50:39]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='1'
+[2020-11-04 09:50:39]	select (sum(Credits)-sum(Debits)) as bal from _queen_wallet where AgentID='3'
+[2020-11-04 09:50:39]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='3' and (date(OrderOn)>=date('') and date(OrderOn)<=date('') )
+[2020-11-04 09:50:39]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='3' and (date(OrderOn)>=date('') and date(OrderOn)<=date('') ) and IsPaid='1'
+[2020-11-04 09:50:39]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='3' and (date(OrderOn)>=date('') and date(OrderOn)<=date('') ) and IsPaid='0'
+[2020-11-04 09:50:39]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='3' and IsPaid='0'
+[2020-11-04 09:50:39]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='3' and IsPaid='1'
+[2020-11-04 09:50:39]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='3'
+[2020-11-04 09:50:39]	select (sum(Credits)-sum(Debits)) as bal from _queen_wallet where AgentID='4'
+[2020-11-04 09:50:39]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='4' and (date(OrderOn)>=date('') and date(OrderOn)<=date('') )
+[2020-11-04 09:50:39]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='4' and (date(OrderOn)>=date('') and date(OrderOn)<=date('') ) and IsPaid='1'
+[2020-11-04 09:50:39]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='4' and (date(OrderOn)>=date('') and date(OrderOn)<=date('') ) and IsPaid='0'
+[2020-11-04 09:50:39]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='4' and IsPaid='0'
+[2020-11-04 09:50:39]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='4' and IsPaid='1'
+[2020-11-04 09:50:39]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='4'
+[2020-11-04 09:50:39]	select (sum(Credits)-sum(Debits)) as bal from _queen_wallet where AgentID='5'
+[2020-11-04 09:50:39]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='5' and (date(OrderOn)>=date('') and date(OrderOn)<=date('') )
+[2020-11-04 09:50:39]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='5' and (date(OrderOn)>=date('') and date(OrderOn)<=date('') ) and IsPaid='1'
+[2020-11-04 09:50:39]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='5' and (date(OrderOn)>=date('') and date(OrderOn)<=date('') ) and IsPaid='0'
+[2020-11-04 09:50:39]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='5' and IsPaid='0'
+[2020-11-04 09:50:39]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='5' and IsPaid='1'
+[2020-11-04 09:50:39]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='5'
+[2020-11-04 09:50:49]	SELECT * FROM _queen_orders where (date(OrderOn)>=date('2020-10-1') and date(OrderOn)<=date('2020-11-4') ) order by OrderID asc
+[2020-11-04 09:50:49]	select * from _queen_services
+[2020-11-04 09:50:49]	select (sum(Credits)-sum(Debits)) as bal from _queen_wallet where AgentID=''
+[2020-11-04 09:50:49]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='' and (date(OrderOn)>=date('2020-10-1') and date(OrderOn)<=date('2020-11-4') )
+[2020-11-04 09:50:49]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='' and (date(OrderOn)>=date('2020-10-1') and date(OrderOn)<=date('2020-11-4') ) and IsPaid='1'
+[2020-11-04 09:50:49]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='' and (date(OrderOn)>=date('2020-10-1') and date(OrderOn)<=date('2020-11-4') ) and IsPaid='0'
+[2020-11-04 09:50:49]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='' and IsPaid='0'
+[2020-11-04 09:50:49]	select (sum(Credits)-sum(Debits)) as bal from _queen_wallet where AgentID=''
+[2020-11-04 09:50:49]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='' and (date(OrderOn)>=date('2020-10-1') and date(OrderOn)<=date('2020-11-4') )
+[2020-11-04 09:50:49]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='' and (date(OrderOn)>=date('2020-10-1') and date(OrderOn)<=date('2020-11-4') ) and IsPaid='1'
+[2020-11-04 09:50:49]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='' and (date(OrderOn)>=date('2020-10-1') and date(OrderOn)<=date('2020-11-4') ) and IsPaid='0'
+[2020-11-04 09:50:49]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='' and IsPaid='0'
+[2020-11-04 09:50:49]	select (sum(Credits)-sum(Debits)) as bal from _queen_wallet where AgentID=''
+[2020-11-04 09:50:49]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='' and (date(OrderOn)>=date('2020-10-1') and date(OrderOn)<=date('2020-11-4') )
+[2020-11-04 09:50:49]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='' and (date(OrderOn)>=date('2020-10-1') and date(OrderOn)<=date('2020-11-4') ) and IsPaid='1'
+[2020-11-04 09:50:49]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='' and (date(OrderOn)>=date('2020-10-1') and date(OrderOn)<=date('2020-11-4') ) and IsPaid='0'
+[2020-11-04 09:50:49]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='' and IsPaid='0'
+[2020-11-04 09:50:49]	select (sum(Credits)-sum(Debits)) as bal from _queen_wallet where AgentID=''
+[2020-11-04 09:50:49]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='' and (date(OrderOn)>=date('2020-10-1') and date(OrderOn)<=date('2020-11-4') )
+[2020-11-04 09:50:49]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='' and (date(OrderOn)>=date('2020-10-1') and date(OrderOn)<=date('2020-11-4') ) and IsPaid='1'
+[2020-11-04 09:50:49]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='' and (date(OrderOn)>=date('2020-10-1') and date(OrderOn)<=date('2020-11-4') ) and IsPaid='0'
+[2020-11-04 09:50:49]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='' and IsPaid='0'
+[2020-11-04 09:50:49]	select * from _queen_agent
+[2020-11-04 09:50:49]	select (sum(Credits)-sum(Debits)) as bal from _queen_wallet where AgentID='1'
+[2020-11-04 09:50:49]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='1' and (date(OrderOn)>=date('2020-10-1') and date(OrderOn)<=date('2020-11-4') )
+[2020-11-04 09:50:49]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='1' and (date(OrderOn)>=date('2020-10-1') and date(OrderOn)<=date('2020-11-4') ) and IsPaid='1'
+[2020-11-04 09:50:49]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='1' and (date(OrderOn)>=date('2020-10-1') and date(OrderOn)<=date('2020-11-4') ) and IsPaid='0'
+[2020-11-04 09:50:49]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='1' and IsPaid='0'
+[2020-11-04 09:50:49]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='1' and IsPaid='1'
+[2020-11-04 09:50:49]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='1'
+[2020-11-04 09:50:49]	select (sum(Credits)-sum(Debits)) as bal from _queen_wallet where AgentID='3'
+[2020-11-04 09:50:49]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='3' and (date(OrderOn)>=date('2020-10-1') and date(OrderOn)<=date('2020-11-4') )
+[2020-11-04 09:50:49]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='3' and (date(OrderOn)>=date('2020-10-1') and date(OrderOn)<=date('2020-11-4') ) and IsPaid='1'
+[2020-11-04 09:50:49]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='3' and (date(OrderOn)>=date('2020-10-1') and date(OrderOn)<=date('2020-11-4') ) and IsPaid='0'
+[2020-11-04 09:50:49]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='3' and IsPaid='0'
+[2020-11-04 09:50:49]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='3' and IsPaid='1'
+[2020-11-04 09:50:49]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='3'
+[2020-11-04 09:50:49]	select (sum(Credits)-sum(Debits)) as bal from _queen_wallet where AgentID='4'
+[2020-11-04 09:50:49]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='4' and (date(OrderOn)>=date('2020-10-1') and date(OrderOn)<=date('2020-11-4') )
+[2020-11-04 09:50:49]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='4' and (date(OrderOn)>=date('2020-10-1') and date(OrderOn)<=date('2020-11-4') ) and IsPaid='1'
+[2020-11-04 09:50:49]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='4' and (date(OrderOn)>=date('2020-10-1') and date(OrderOn)<=date('2020-11-4') ) and IsPaid='0'
+[2020-11-04 09:50:49]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='4' and IsPaid='0'
+[2020-11-04 09:50:49]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='4' and IsPaid='1'
+[2020-11-04 09:50:49]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='4'
+[2020-11-04 09:50:49]	select (sum(Credits)-sum(Debits)) as bal from _queen_wallet where AgentID='5'
+[2020-11-04 09:50:49]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='5' and (date(OrderOn)>=date('2020-10-1') and date(OrderOn)<=date('2020-11-4') )
+[2020-11-04 09:50:49]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='5' and (date(OrderOn)>=date('2020-10-1') and date(OrderOn)<=date('2020-11-4') ) and IsPaid='1'
+[2020-11-04 09:50:49]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='5' and (date(OrderOn)>=date('2020-10-1') and date(OrderOn)<=date('2020-11-4') ) and IsPaid='0'
+[2020-11-04 09:50:49]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='5' and IsPaid='0'
+[2020-11-04 09:50:49]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='5' and IsPaid='1'
+[2020-11-04 09:50:49]	select sum(OrderTotal) as OrderTotal from _queen_orders where AgentID='5'
+[2020-11-04 09:52:08]	SELECT * FROM _queen_expenses where StaffID='3' and ExpenseTypeID='3' and (date(CreatedOn)>=date('2020-10-1') and date(CreatedOn)<=date('2020-11-4') ) order by ExpenseID asc
+[2020-11-04 09:52:08]	select * from _queen_staffs where StaffID='3'
+[2020-11-04 09:52:08]	select * from _queen_expensetype where ExpenseTypeID='3'

@@ -1,0 +1,570 @@
+[2020-10-27 10:54:45]	select * from _queen_admin where UserName='queenadmin@gmail.com' and Password='12345' 
+[2020-10-27 10:54:49]	select * from _queen_services order by ServiceID desc
+[2020-10-27 10:55:00]	select * from _queen_sequence where SequenceFor='Service'
+[2020-10-27 11:16:15]	select * from _queen_services where ServiceCode='SRVC1'
+[2020-10-27 11:16:15]	select * from _queen_services where ServiceName='service one'
+[2020-10-27 11:16:15]	insert into `_queen_services` (`ServiceCode`,`ServiceName`,`FeeAmount`,`ServiceCharge`,`CreatedOn`) values ('SRVC1','service one','500','100','2020-10-27 11:16:15')
+[2020-10-27 11:16:16]	select * from _queen_services order by ServiceID desc
+[2020-10-27 11:16:26]	select * from _queen_services where ServiceCode='SRVC1'
+[2020-10-27 11:16:26]	select * from _queen_services where ServiceName='service two'
+[2020-10-27 11:16:33]	select * from _queen_services where ServiceCode='SRVC2'
+[2020-10-27 11:16:33]	select * from _queen_services where ServiceName='service two'
+[2020-10-27 11:16:33]	insert into `_queen_services` (`ServiceCode`,`ServiceName`,`FeeAmount`,`ServiceCharge`,`CreatedOn`) values ('SRVC2','service two','600','100','2020-10-27 11:16:33')
+[2020-10-27 11:16:34]	select * from _queen_services order by ServiceID desc
+[2020-10-27 11:20:59]	select * from _queen_services order by ServiceID desc
+[2020-10-27 11:21:02]	select * from _queen_services where md5(ServiceID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 11:21:02]	select * from _queen_services where md5(ServiceID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 11:21:35]	select * from _queen_services where md5(ServiceID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 11:21:35]	select * from _queen_services where md5(ServiceID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 11:21:41]	select * from _queen_services where md5(ServiceID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 11:21:41]	select * from _queen_services where ServiceCode='SRVC1' and ServiceID<>'2'
+[2020-10-27 11:21:41]	select * from _queen_services where ServiceName='service two' and ServiceID<>'2'
+[2020-10-27 11:21:41]	select * from _queen_services where md5(ServiceID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 11:21:48]	select * from _queen_services where md5(ServiceID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 11:21:48]	select * from _queen_services where ServiceCode='SRVC2' and ServiceID<>'2'
+[2020-10-27 11:21:48]	select * from _queen_services where ServiceName='service two' and ServiceID<>'2'
+[2020-10-27 11:21:48]	update _queen_services set `ServiceName` 	='service two',
+																`FeeAmount` 	='600',
+                                                                `ServiceCharge` ='100',
+																`Description`   ='aaa',
+																`IsActive` 		='1' where ServiceID='2'
+[2020-10-27 11:21:48]	select * from _queen_services where md5(ServiceID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 11:21:50]	select * from _queen_services order by ServiceID desc
+[2020-10-27 11:24:18]	select * from _queen_services order by ServiceID desc
+[2020-10-27 11:24:21]	select * from _queen_services where md5(ServiceID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 11:24:21]	select * from _queen_services where md5(ServiceID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 11:25:00]	select * from _queen_services order by ServiceID desc
+[2020-10-27 11:26:37]	select * from _queen_services order by ServiceID desc
+[2020-10-27 11:26:39]	select * from _queen_services where md5(ServiceID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 11:26:39]	select * from _queen_services where md5(ServiceID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 11:26:42]	select * from _queen_services order by ServiceID desc
+[2020-10-27 11:26:45]	select * from _queen_services where MD5(ServiceID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 11:26:47]	select * from _queen_services order by ServiceID desc
+[2020-10-27 11:37:17]	select * from _queen_services order by ServiceID desc
+[2020-10-27 11:37:32]	select * from _queen_services where IsActive='1' order by ServiceID desc
+[2020-10-27 11:37:34]	select * from _queen_services where IsActive='0' order by ServiceID desc
+[2020-10-27 11:37:36]	select * from _queen_services order by ServiceID desc
+[2020-10-27 11:37:47]	select * from _queen_services where IsActive='1' order by ServiceID desc
+[2020-10-27 11:37:52]	select * from _queen_services where IsActive='0' order by ServiceID desc
+[2020-10-27 11:37:56]	select * from _queen_services where IsActive='1' order by ServiceID desc
+[2020-10-27 11:37:59]	select * from _queen_services where md5(ServiceID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 11:37:59]	select * from _queen_services where md5(ServiceID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 11:38:20]	select * from _queen_services order by ServiceID desc
+[2020-10-27 11:38:26]	select * from _queen_services where MD5(ServiceID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 11:38:39]	select * from _queen_services order by ServiceID desc
+[2020-10-27 11:39:33]	select * from _queen_staffs order by StaffID desc
+[2020-10-27 11:40:06]	select * from _queen_staffs order by StaffID desc
+[2020-10-27 11:40:08]	select * from _queen_staffs where md5(StaffID)='eccbc87e4b5ce2fe28308fd9f2a7baf3'
+[2020-10-27 11:40:23]	select * from _queen_staffs order by StaffID desc
+[2020-10-27 11:40:27]	select * from _queen_staffs where md5(StaffID)='eccbc87e4b5ce2fe28308fd9f2a7baf3'
+[2020-10-27 11:40:27]	select * from _queen_staffs where md5(StaffID)='eccbc87e4b5ce2fe28308fd9f2a7baf3'
+[2020-10-27 11:40:39]	select * from _queen_staffs order by StaffID desc
+[2020-10-27 11:41:06]	select * from _queen_services order by ServiceID desc
+[2020-10-27 11:43:23]	select * from _queen_services order by ServiceID desc
+[2020-10-27 11:47:05]	select * from _queen_services order by ServiceID desc
+[2020-10-27 11:47:22]	select * from _queen_services order by ServiceID desc
+[2020-10-27 11:47:41]	select * from _queen_services order by ServiceID desc
+[2020-10-27 11:47:46]	select * from _queen_services where md5(ServiceID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 11:47:46]	select * from _queen_services where md5(ServiceID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 11:48:27]	select * from _queen_services where md5(ServiceID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 11:48:27]	select * from _queen_services where md5(ServiceID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 11:48:34]	select * from _queen_services order by ServiceID desc
+[2020-10-27 11:48:36]	select * from _queen_services where MD5(ServiceID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 11:49:21]	select * from _queen_services where MD5(ServiceID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 11:49:51]	select * from _queen_services where MD5(ServiceID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 11:50:06]	select * from _queen_services where MD5(ServiceID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 11:50:09]	select * from _queen_services order by ServiceID desc
+[2020-10-27 11:50:13]	select * from _queen_staffs order by StaffID desc
+[2020-10-27 11:53:15]	select * from _queen_staffs where StaffCode='Angel1'
+[2020-10-27 11:53:15]	select * from _queen_staffs where SurName='Angelin'
+[2020-10-27 11:53:15]	select * from _queen_staffs where LoginName='angel@gmail.com'
+[2020-10-27 11:53:15]	insert into `_queen_staffs` (`StaffCode`,`StaffName`,`SurName`,`LoginName`,`LoginPassword`,`CreatedOn`) values ('Angel1','Angel','Angelin','angel@gmail.com','123456789','2020-10-27 11:53:15')
+[2020-10-27 11:53:17]	select * from _queen_staffs order by StaffID desc
+[2020-10-27 11:53:50]	select * from _queen_staffs where StaffCode='Angel1'
+[2020-10-27 11:53:50]	select * from _queen_staffs where SurName='Ajayn'
+[2020-10-27 11:53:50]	select * from _queen_staffs where LoginName='ajay@gmail.com'
+[2020-10-27 11:54:00]	select * from _queen_staffs where StaffCode='Ajay001'
+[2020-10-27 11:54:00]	select * from _queen_staffs where SurName='Ajayn'
+[2020-10-27 11:54:00]	select * from _queen_staffs where LoginName='ajay@gmail.com'
+[2020-10-27 11:54:00]	insert into `_queen_staffs` (`StaffCode`,`StaffName`,`SurName`,`LoginName`,`LoginPassword`,`CreatedOn`) values ('Ajay001','Ajay','Ajayn','ajay@gmail.com','123456','2020-10-27 11:54:00')
+[2020-10-27 11:54:02]	select * from _queen_staffs order by StaffID desc
+[2020-10-27 11:54:09]	select * from _queen_staffs where md5(StaffID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 11:54:09]	select * from _queen_staffs where md5(StaffID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 11:55:22]	select * from _queen_staffs where md5(StaffID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 11:55:22]	select * from _queen_staffs where md5(StaffID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 11:55:35]	select * from _queen_staffs where md5(StaffID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 11:55:35]	select * from _queen_staffs where md5(StaffID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 11:55:41]	select * from _queen_staffs where md5(StaffID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 11:55:41]	select * from _queen_staffs where StaffCode='Angel1' and StaffID<>'2'
+[2020-10-27 11:55:41]	select * from _queen_staffs where SurName='Ajayn' and StaffID<>'2'
+[2020-10-27 11:55:41]	select * from _queen_staffs where LoginName='ajay@gmail.com' and StaffID<>'2'
+[2020-10-27 11:55:41]	select * from _queen_staffs where md5(StaffID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 11:55:50]	select * from _queen_staffs where md5(StaffID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 11:55:50]	select * from _queen_staffs where StaffCode='Ajay01' and StaffID<>'2'
+[2020-10-27 11:55:50]	select * from _queen_staffs where SurName='Ajayn' and StaffID<>'2'
+[2020-10-27 11:55:50]	select * from _queen_staffs where LoginName='ajay@gmail.com' and StaffID<>'2'
+[2020-10-27 11:55:50]	update _queen_staffs set `StaffName`  	='Ajay',
+																`SurName`  		='Ajayn',
+																`LoginName`  	='ajay@gmail.com',
+																`LoginPassword` ='123456',
+ 																`IsActive` 		='1'
+ 																 where StaffID='2'
+[2020-10-27 11:55:50]	select * from _queen_staffs where md5(StaffID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 11:55:54]	select * from _queen_staffs order by StaffID desc
+[2020-10-27 11:58:37]	select * from _queen_staffs order by StaffID desc
+[2020-10-27 11:58:41]	select * from _queen_staffs where md5(StaffID)='c4ca4238a0b923820dcc509a6f75849b'
+[2020-10-27 11:58:41]	select * from _queen_staffs where md5(StaffID)='c4ca4238a0b923820dcc509a6f75849b'
+[2020-10-27 11:58:45]	select * from _queen_staffs where md5(StaffID)='c4ca4238a0b923820dcc509a6f75849b'
+[2020-10-27 11:58:45]	select * from _queen_staffs where StaffCode='Angel1' and StaffID<>'1'
+[2020-10-27 11:58:45]	select * from _queen_staffs where SurName='Angelin' and StaffID<>'1'
+[2020-10-27 11:58:45]	select * from _queen_staffs where LoginName='angel@gmail.com' and StaffID<>'1'
+[2020-10-27 11:58:45]	update _queen_staffs set `StaffName`  	='Angel',
+																`SurName`  		='Angelin',
+																`LoginName`  	='angel@gmail.com',
+																`LoginPassword` ='123456789',
+ 																`IsActive` 		='0'
+ 																 where StaffID='1'
+[2020-10-27 11:58:45]	select * from _queen_staffs where md5(StaffID)='c4ca4238a0b923820dcc509a6f75849b'
+[2020-10-27 11:58:48]	select * from _queen_staffs order by StaffID desc
+[2020-10-27 11:58:50]	select * from _queen_staffs where md5(StaffID)='c4ca4238a0b923820dcc509a6f75849b'
+[2020-10-27 11:58:54]	select * from _queen_staffs order by StaffID desc
+[2020-10-27 11:59:11]	select * from _queen_staffs where IsActive='1' order by StaffID desc
+[2020-10-27 11:59:15]	select * from _queen_staffs where IsActive='0' order by StaffID desc
+[2020-10-27 11:59:19]	select * from _queen_services order by ServiceID desc
+[2020-10-27 11:59:26]	select * from _queen_services where md5(ServiceID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 11:59:26]	select * from _queen_services where md5(ServiceID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 11:59:35]	select * from _queen_services order by ServiceID desc
+[2020-10-27 11:59:39]	select * from _queen_expenses order by ExpenseID desc
+[2020-10-27 12:06:43]	select * from _queen_expenses order by ExpenseID desc
+[2020-10-27 12:06:46]	select * from _queen_expensetype order by ExpenseTypeID desc
+[2020-10-27 12:06:49]	select * from _queen_expensetype where IsActive='1' order by ExpenseTypeID desc
+[2020-10-27 12:06:50]	select * from _queen_expensetype where IsActive='0' order by ExpenseTypeID desc
+[2020-10-27 12:06:52]	select * from _queen_expensetype order by ExpenseTypeID desc
+[2020-10-27 12:13:15]	select * from _queen_expenses order by ExpenseID desc
+[2020-10-27 12:13:54]	select * from _queen_expenses order by ExpenseID desc
+[2020-10-27 12:13:57]	select * from _queen_expensetype order by ExpenseTypeID desc
+[2020-10-27 12:14:21]	select * from _queen_expensetype where ExpenseTypeCode='WT001'
+[2020-10-27 12:14:21]	select * from _queen_expensetype where ExpenseType='Water '
+[2020-10-27 12:14:21]	insert into `_queen__queen_expensetype` (`ExpenseTypeCode`,`ExpenseType`,`CreatedOn`) values ('WT001','Water ','2020-10-27 12:14:21')
+[2020-10-27 12:14:21]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._queen__queen_expensetype' doesn't exist
+[2020-10-27 12:14:23]	select * from _queen_expensetype order by ExpenseTypeID desc
+[2020-10-27 12:14:55]	select * from _queen_expensetype where ExpenseTypeCode='WT001'
+[2020-10-27 12:14:55]	select * from _queen_expensetype where ExpenseType='Water'
+[2020-10-27 12:14:55]	insert into `_queen_expensetype` (`ExpenseTypeCode`,`ExpenseType`,`CreatedOn`) values ('WT001','Water','2020-10-27 12:14:55')
+[2020-10-27 12:14:56]	select * from _queen_expensetype order by ExpenseTypeID desc
+[2020-10-27 12:15:48]	select * from _queen_expensetype order by ExpenseTypeID desc
+[2020-10-27 12:15:54]	select * from _queen_expensetype where IsActive='1' order by ExpenseTypeID desc
+[2020-10-27 12:15:55]	select * from _queen_expensetype where IsActive='0' order by ExpenseTypeID desc
+[2020-10-27 12:15:57]	select * from _queen_expensetype order by ExpenseTypeID desc
+[2020-10-27 12:20:41]	select * from _queen_expensetype where md5(ExpenseTypeID)='c4ca4238a0b923820dcc509a6f75849b'
+[2020-10-27 12:20:41]	select * from _queen_expensetype where md5(ExpenseTypeID)='c4ca4238a0b923820dcc509a6f75849b'
+[2020-10-27 12:20:44]	select * from _queen_expensetype order by ExpenseTypeID desc
+[2020-10-27 12:20:49]	select * from _queen_expensetype where ExpenseTypeCode='WT001'
+[2020-10-27 12:20:49]	select * from _queen_expensetype where ExpenseType='Water'
+[2020-10-27 12:21:05]	select * from _queen_expensetype where ExpenseTypeCode='E001'
+[2020-10-27 12:21:05]	select * from _queen_expensetype where ExpenseType='Electricity'
+[2020-10-27 12:21:05]	insert into `_queen_expensetype` (`ExpenseTypeCode`,`ExpenseType`,`CreatedOn`) values ('E001','Electricity','2020-10-27 12:21:05')
+[2020-10-27 12:21:06]	select * from _queen_expensetype order by ExpenseTypeID desc
+[2020-10-27 12:21:10]	select * from _queen_expensetype where md5(ExpenseTypeID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 12:21:10]	select * from _queen_expensetype where md5(ExpenseTypeID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 12:21:18]	select * from _queen_expensetype where md5(ExpenseTypeID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 12:21:18]	select * from _queen_expensetype where ExpenseTypeCode='WT001' and ExpenseTypeID<>'2'
+[2020-10-27 12:21:18]	select * from _queen_expensetype where ExpenseType='Water' and ExpenseTypeID<>'2'
+[2020-10-27 12:21:18]	select * from _queen_expensetype where md5(ExpenseTypeID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 12:21:33]	select * from _queen_expensetype where md5(ExpenseTypeID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 12:21:33]	select * from _queen_expensetype where ExpenseTypeCode='E01' and ExpenseTypeID<>'2'
+[2020-10-27 12:21:33]	select * from _queen_expensetype where ExpenseType='Electricity   vb' and ExpenseTypeID<>'2'
+[2020-10-27 12:21:33]	update _queen_expensetype set `ExpenseTypeCode` ='E01',
+                                                                          `ExpenseType`     ='Electricity   vb',
+                                                                          `IsActive`        ='0'
+                                                                           where ExpenseTypeID='2'
+[2020-10-27 12:21:33]	select * from _queen_expensetype where md5(ExpenseTypeID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 12:21:34]	select * from _queen_expensetype order by ExpenseTypeID desc
+[2020-10-27 12:21:37]	select * from _queen_expensetype where IsActive='0' order by ExpenseTypeID desc
+[2020-10-27 12:21:57]	select * from _queen_expensetype order by ExpenseTypeID desc
+[2020-10-27 12:22:00]	select * from _queen_expensetype where md5(ExpenseTypeID)='c4ca4238a0b923820dcc509a6f75849b'
+[2020-10-27 12:22:00]	select * from _queen_expensetype where md5(ExpenseTypeID)='c4ca4238a0b923820dcc509a6f75849b'
+[2020-10-27 12:22:02]	select * from _queen_expensetype order by ExpenseTypeID desc
+[2020-10-27 12:22:04]	select * from _queen_expensetype where md5(ExpenseTypeID)='c4ca4238a0b923820dcc509a6f75849b'
+[2020-10-27 12:22:04]	select * from _queen_expensetype where md5(ExpenseTypeID)='c4ca4238a0b923820dcc509a6f75849b'
+[2020-10-27 12:22:05]	select * from _queen_expensetype order by ExpenseTypeID desc
+[2020-10-27 12:22:07]	select * from _queen_expensetype where md5(ExpenseTypeID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 12:22:07]	select * from _queen_expensetype where md5(ExpenseTypeID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 12:28:03]	select * from _queen_expensetype order by ExpenseTypeID desc
+[2020-10-27 12:29:32]	select * from _queen_expensetype order by ExpenseTypeID desc
+[2020-10-27 12:29:34]	select * from _queen_expensetype where IsActive='1' order by ExpenseTypeID desc
+[2020-10-27 12:29:34]	select * from _queen_expensetype where IsActive='0' order by ExpenseTypeID desc
+[2020-10-27 12:29:35]	select * from _queen_expensetype order by ExpenseTypeID desc
+[2020-10-27 12:29:41]	select * from _queen_expensetype order by ExpenseTypeID desc
+[2020-10-27 12:32:07]	select * from _queen_expensetype order by ExpenseTypeID desc
+[2020-10-27 12:32:53]	select * from _queen_expensetype order by ExpenseTypeID desc
+[2020-10-27 12:32:58]	select * from _queen_expensetype order by ExpenseTypeID desc
+[2020-10-27 12:33:04]	select * from _queen_expensetype where ExpenseTypeCode='WT001'
+[2020-10-27 12:33:04]	select * from _queen_expensetype where ExpenseType='Water'
+[2020-10-27 12:33:04]	insert into `_queen_expensetype` (`ExpenseTypeCode`,`ExpenseType`,`CreatedOn`) values ('WT001','Water','2020-10-27 12:33:04')
+[2020-10-27 12:33:05]	select * from _queen_expensetype order by ExpenseTypeID desc
+[2020-10-27 12:33:09]	select * from _queen_staffs order by StaffID desc
+[2020-10-27 12:33:11]	select * from _queen_services order by ServiceID desc
+[2020-10-27 12:33:16]	select * from _queen_services order by ServiceID desc
+[2020-10-27 12:33:20]	select * from _queen_services order by ServiceID desc
+[2020-10-27 12:33:25]	select * from _queen_expensetype order by ExpenseTypeID desc
+[2020-10-27 13:38:20]	select * from _queen_staffs order by StaffID desc
+[2020-10-27 13:38:48]	select * from _queen_admin where UserName='queenadmin@gmail.com' and Password='12345' 
+[2020-10-27 13:38:54]	select * from _queen_staffs order by StaffID desc
+[2020-10-27 13:39:01]	select * from _queen_services order by ServiceID desc
+[2020-10-27 13:39:04]	select * from _queen_expensetype order by ExpenseTypeID desc
+[2020-10-27 13:39:08]	select * from _queen_expensetype where IsActive='1' order by ExpenseTypeID desc
+[2020-10-27 13:39:09]	select * from _queen_expensetype where IsActive='0' order by ExpenseTypeID desc
+[2020-10-27 13:39:12]	select * from _queen_expensetype order by ExpenseTypeID desc
+[2020-10-27 13:39:15]	select * from _queen_expensetype where md5(ExpenseTypeID)='eccbc87e4b5ce2fe28308fd9f2a7baf3'
+[2020-10-27 13:39:15]	select * from _queen_expensetype where md5(ExpenseTypeID)='eccbc87e4b5ce2fe28308fd9f2a7baf3'
+[2020-10-27 13:39:20]	select * from _queen_expensetype order by ExpenseTypeID desc
+[2020-10-27 13:39:52]	select * from _queen_expensetype order by ExpenseTypeID desc
+[2020-10-27 13:39:54]	select * from _queen_expensetype where md5(ExpenseTypeID)='eccbc87e4b5ce2fe28308fd9f2a7baf3'
+[2020-10-27 13:39:54]	select * from _queen_expensetype where md5(ExpenseTypeID)='eccbc87e4b5ce2fe28308fd9f2a7baf3'
+[2020-10-27 13:40:01]	select * from _queen_expensetype order by ExpenseTypeID desc
+[2020-10-27 13:40:44]	select * from _queen_expensetype where ExpenseTypeCode='E001'
+[2020-10-27 13:40:44]	select * from _queen_expensetype where ExpenseType='Travel Allowance'
+[2020-10-27 13:40:44]	insert into `_queen_expensetype` (`ExpenseTypeCode`,`ExpenseType`,`CreatedOn`) values ('E001','Travel Allowance','2020-10-27 13:40:44')
+[2020-10-27 13:40:46]	select * from _queen_expensetype order by ExpenseTypeID desc
+[2020-10-27 13:40:54]	select * from _queen_expensetype where md5(ExpenseTypeID)='a87ff679a2f3e71d9181a67b7542122c'
+[2020-10-27 13:40:54]	select * from _queen_expensetype where md5(ExpenseTypeID)='a87ff679a2f3e71d9181a67b7542122c'
+[2020-10-27 13:41:00]	select * from _queen_expensetype order by ExpenseTypeID desc
+[2020-10-27 13:44:48]	select * from _queen_expensetype order by ExpenseTypeID desc
+[2020-10-27 13:44:58]	select * from _queen_expensetype where ExpenseTypeCode='E001'
+[2020-10-27 13:44:58]	select * from _queen_expensetype where ExpenseType='Electricity'
+[2020-10-27 13:45:10]	select * from _queen_expensetype where ExpenseTypeCode='E002'
+[2020-10-27 13:45:10]	select * from _queen_expensetype where ExpenseType='Electricity'
+[2020-10-27 13:45:10]	insert into `_queen_expensetype` (`ExpenseTypeCode`,`ExpenseType`,`Description`,`CreatedOn`) values ('E002','Electricity','sadasdasdasd','2020-10-27 13:45:10')
+[2020-10-27 13:45:12]	select * from _queen_expensetype order by ExpenseTypeID desc
+[2020-10-27 13:45:16]	select * from _queen_expensetype where md5(ExpenseTypeID)='e4da3b7fbbce2345d7772b0674a318d5'
+[2020-10-27 13:45:16]	select * from _queen_expensetype where md5(ExpenseTypeID)='e4da3b7fbbce2345d7772b0674a318d5'
+[2020-10-27 13:45:23]	select * from _queen_expensetype where md5(ExpenseTypeID)='e4da3b7fbbce2345d7772b0674a318d5'
+[2020-10-27 13:45:23]	select * from _queen_expensetype where ExpenseTypeCode='E002' and ExpenseTypeID<>'5'
+[2020-10-27 13:45:23]	select * from _queen_expensetype where ExpenseType='Electricity' and ExpenseTypeID<>'5'
+[2020-10-27 13:45:23]	update _queen_expensetype set `ExpenseTypeCode` ='E002',
+                                                                          `ExpenseType`     ='Electricity',
+                                                                          `IsActive`        ='1',
+                                                                          `Description`     ='sadasdasdasdfsdfsfsdf'
+                                                                           where ExpenseTypeID='5'
+[2020-10-27 13:45:23]	select * from _queen_expensetype where md5(ExpenseTypeID)='e4da3b7fbbce2345d7772b0674a318d5'
+[2020-10-27 13:45:24]	select * from _queen_expensetype order by ExpenseTypeID desc
+[2020-10-27 13:45:28]	select * from _queen_expensetype where md5(ExpenseTypeID)='e4da3b7fbbce2345d7772b0674a318d5'
+[2020-10-27 13:45:28]	select * from _queen_expensetype where md5(ExpenseTypeID)='e4da3b7fbbce2345d7772b0674a318d5'
+[2020-10-27 13:45:50]	select * from _queen_expensetype where md5(ExpenseTypeID)='e4da3b7fbbce2345d7772b0674a318d5'
+[2020-10-27 13:45:50]	select * from _queen_expensetype where md5(ExpenseTypeID)='e4da3b7fbbce2345d7772b0674a318d5'
+[2020-10-27 13:45:55]	select * from _queen_expensetype where md5(ExpenseTypeID)='e4da3b7fbbce2345d7772b0674a318d5'
+[2020-10-27 13:45:55]	select * from _queen_expensetype where ExpenseTypeCode='E002' and ExpenseTypeID<>'5'
+[2020-10-27 13:45:55]	select * from _queen_expensetype where ExpenseType='Electricity' and ExpenseTypeID<>'5'
+[2020-10-27 13:45:55]	update _queen_expensetype set `ExpenseTypeCode` ='E002',
+                                                                          `ExpenseType`     ='Electricity',
+                                                                          `IsActive`        ='1',
+                                                                          `Description`     ='aaaaaaaaaa'
+                                                                           where ExpenseTypeID='5'
+[2020-10-27 13:45:55]	select * from _queen_expensetype where md5(ExpenseTypeID)='e4da3b7fbbce2345d7772b0674a318d5'
+[2020-10-27 13:45:59]	select * from _queen_expensetype where md5(ExpenseTypeID)='e4da3b7fbbce2345d7772b0674a318d5'
+[2020-10-27 13:45:59]	select * from _queen_expensetype where md5(ExpenseTypeID)='e4da3b7fbbce2345d7772b0674a318d5'
+[2020-10-27 13:46:01]	select * from _queen_expensetype order by ExpenseTypeID desc
+[2020-10-27 13:46:15]	select * from _queen_expensetype order by ExpenseTypeID desc
+[2020-10-27 13:46:19]	select * from _queen_expensetype where md5(ExpenseTypeID)='e4da3b7fbbce2345d7772b0674a318d5'
+[2020-10-27 13:46:19]	select * from _queen_expensetype where md5(ExpenseTypeID)='e4da3b7fbbce2345d7772b0674a318d5'
+[2020-10-27 13:46:43]	select * from _queen_expensetype where md5(ExpenseTypeID)='e4da3b7fbbce2345d7772b0674a318d5'
+[2020-10-27 13:46:43]	select * from _queen_expensetype where md5(ExpenseTypeID)='e4da3b7fbbce2345d7772b0674a318d5'
+[2020-10-27 13:46:47]	select * from _queen_expensetype order by ExpenseTypeID desc
+[2020-10-27 13:47:13]	select * from _queen_expensetype where IsActive='1' order by ExpenseTypeID desc
+[2020-10-27 13:47:14]	select * from _queen_expensetype where IsActive='0' order by ExpenseTypeID desc
+[2020-10-27 13:47:15]	select * from _queen_expensetype order by ExpenseTypeID desc
+[2020-10-27 13:47:24]	select * from _queen_expensetype order by ExpenseTypeID desc
+[2020-10-27 13:47:26]	select * from _queen_expensetype where md5(ExpenseTypeID)='e4da3b7fbbce2345d7772b0674a318d5'
+[2020-10-27 13:47:26]	select * from _queen_expensetype where md5(ExpenseTypeID)='e4da3b7fbbce2345d7772b0674a318d5'
+[2020-10-27 13:47:30]	select * from _queen_expensetype order by ExpenseTypeID desc
+[2020-10-27 13:47:42]	select * from _queen_agent order by AgentID desc
+[2020-10-27 14:06:29]	select * from _queen_agent where AgentCode='Agnt2'
+[2020-10-27 14:06:29]	select * from _queen_agent where MobileNumber='9888888888'
+[2020-10-27 14:06:41]	select * from _queen_agent where AgentCode='AGNT00002'
+[2020-10-27 14:06:41]	select * from _queen_agent where MobileNumber='9987978978'
+[2020-10-27 14:06:47]	select * from _queen_agent where AgentCode='AGNT1'
+[2020-10-27 14:06:47]	select * from _queen_agent where MobileNumber='9987978978'
+[2020-10-27 14:06:47]	insert into `_queen_agent` (`AgentCode`,`AgentName`,`SurName`,`MobileNumber`,`CreatedOn`) values ('AGNT1','Agent two','agenttwoo','9987978978','2020-10-27 14:06:47')
+[2020-10-27 14:06:47]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'SurName' in 'field list'
+[2020-10-27 14:06:49]	select * from _queen_agent order by AgentID desc
+[2020-10-27 14:07:00]	select * from _queen_agent where md5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:07:00]	select * from _queen_agent where md5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:10:05]	select * from _queen_agent where md5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:10:05]	select * from _queen_agent where md5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:10:24]	select * from _queen_agent where md5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:10:24]	select * from _queen_agent where md5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:10:29]	select * from _queen_agent where md5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:10:29]	select * from _queen_agent where md5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:10:41]	select * from _queen_agent where md5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:10:41]	select * from _queen_agent where md5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:10:57]	select * from _queen_agent where md5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:10:57]	select * from _queen_agent where md5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:11:13]	select * from _queen_agent where md5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:11:13]	select * from _queen_agent where md5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:11:20]	select * from _queen_agent order by AgentID desc
+[2020-10-27 14:13:55]	select * from _queen_agent where AgentCode='AGNT1'
+[2020-10-27 14:13:55]	select * from _queen_agent where MobileNumber='9888888888'
+[2020-10-27 14:13:55]	insert into `_queen_agent` (`AgentCode`,`AgentName`,`SurName`,`MobileNumber`,`Description`,`CreatedOn`) values ('AGNT1','Agent two','Agentwto','9888888888','aaaaaaaaaaaaaaaaaaa','2020-10-27 14:13:55')
+[2020-10-27 14:13:58]	select * from _queen_agent order by AgentID desc
+[2020-10-27 14:14:18]	select * from _queen_agent where AgentCode='AGNT1'
+[2020-10-27 14:14:18]	select * from _queen_agent where MobileNumber='9888888888'
+[2020-10-27 14:15:31]	select * from _queen_agent where AgentCode='AGNT2'
+[2020-10-27 14:15:31]	select * from _queen_agent where SurName='agenttwoo'
+[2020-10-27 14:15:31]	select * from _queen_agent where MobileNumber='9777777777'
+[2020-10-27 14:15:31]	insert into `_queen_agent` (`AgentCode`,`AgentName`,`SurName`,`MobileNumber`,`Description`,`CreatedOn`) values ('AGNT2','Agent two','agenttwoo','9777777777','bbbbbbbbbbbb','2020-10-27 14:15:31')
+[2020-10-27 14:15:33]	select * from _queen_agent order by AgentID desc
+[2020-10-27 14:15:38]	select * from _queen_agent where md5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:15:38]	select * from _queen_agent where md5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:15:41]	select * from _queen_agent where md5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:15:41]	select * from _queen_agent where AgentCode='AGNT2' and AgentID<>'2'
+[2020-10-27 14:15:41]	select * from _queen_agent where SurName='agenttwoo' and AgentID<>'2'
+[2020-10-27 14:15:41]	select * from _queen_agent where MobileNumber='9777777777' and AgentID<>'2'
+[2020-10-27 14:15:41]	update _queen_agent set `AgentCode`     ='AGNT2',
+                                                                `AgentName`     ='Agent two',
+                                                                `SurName` 	    ='agenttwoo',
+																`MobileNumber` 	='9777777777',
+																`IsActive` 		='1' where AgentID='2'
+[2020-10-27 14:15:41]	select * from _queen_agent where md5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:16:13]	select * from _queen_agent where md5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:16:13]	select * from _queen_agent where AgentCode='AGNT2' and AgentID<>'2'
+[2020-10-27 14:16:13]	select * from _queen_agent where SurName='Agentwto' and AgentID<>'2'
+[2020-10-27 14:16:13]	select * from _queen_agent where MobileNumber='9777777777' and AgentID<>'2'
+[2020-10-27 14:16:13]	select * from _queen_agent where md5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:16:24]	select * from _queen_agent where md5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:16:24]	select * from _queen_agent where AgentCode='AGNT2' and AgentID<>'2'
+[2020-10-27 14:16:24]	select * from _queen_agent where SurName='Agen two' and AgentID<>'2'
+[2020-10-27 14:16:24]	select * from _queen_agent where MobileNumber='9777777777' and AgentID<>'2'
+[2020-10-27 14:16:24]	update _queen_agent set `AgentCode`     ='AGNT2',
+                                                                `AgentName`     ='Agent two',
+                                                                `SurName` 	    ='Agen two',
+																`MobileNumber` 	='9777777777',
+																`IsActive` 		='1' where AgentID='2'
+[2020-10-27 14:16:24]	select * from _queen_agent where md5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:16:31]	select * from _queen_agent where md5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:16:31]	select * from _queen_agent where AgentCode='AGNT2' and AgentID<>'2'
+[2020-10-27 14:16:31]	select * from _queen_agent where SurName='Agen two' and AgentID<>'2'
+[2020-10-27 14:16:31]	select * from _queen_agent where MobileNumber='9777777777' and AgentID<>'2'
+[2020-10-27 14:16:31]	update _queen_agent set `AgentCode`     ='AGNT2',
+                                                                `AgentName`     ='Agent two',
+                                                                `SurName` 	    ='Agen two',
+																`MobileNumber` 	='9777777777',
+																`IsActive` 		='1' where AgentID='2'
+[2020-10-27 14:16:31]	select * from _queen_agent where md5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:16:34]	select * from _queen_agent order by AgentID desc
+[2020-10-27 14:16:38]	select * from _queen_agent where md5(AgentID)='c4ca4238a0b923820dcc509a6f75849b'
+[2020-10-27 14:16:38]	select * from _queen_agent where md5(AgentID)='c4ca4238a0b923820dcc509a6f75849b'
+[2020-10-27 14:16:49]	select * from _queen_agent where md5(AgentID)='c4ca4238a0b923820dcc509a6f75849b'
+[2020-10-27 14:16:49]	select * from _queen_agent where AgentCode='AGNT1' and AgentID<>'1'
+[2020-10-27 14:16:49]	select * from _queen_agent where SurName='Agentone' and AgentID<>'1'
+[2020-10-27 14:16:49]	select * from _queen_agent where MobileNumber='9888888888' and AgentID<>'1'
+[2020-10-27 14:16:49]	update _queen_agent set `AgentCode`     ='AGNT1',
+                                                                `AgentName`     ='Agent one',
+                                                                `SurName` 	    ='Agentone',
+																`MobileNumber` 	='9888888888',
+																`IsActive` 		='1' where AgentID='1'
+[2020-10-27 14:16:49]	select * from _queen_agent where md5(AgentID)='c4ca4238a0b923820dcc509a6f75849b'
+[2020-10-27 14:16:52]	select * from _queen_agent order by AgentID desc
+[2020-10-27 14:16:54]	select * from _queen_agent where md5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:16:54]	select * from _queen_agent where md5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:16:58]	select * from _queen_agent where md5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:16:58]	select * from _queen_agent where AgentCode='AGNT2' and AgentID<>'2'
+[2020-10-27 14:16:58]	select * from _queen_agent where SurName='Agen two' and AgentID<>'2'
+[2020-10-27 14:16:58]	select * from _queen_agent where MobileNumber='9777777777' and AgentID<>'2'
+[2020-10-27 14:16:58]	update _queen_agent set `AgentCode`     ='AGNT2',
+                                                                `AgentName`     ='Agent two',
+                                                                `SurName` 	    ='Agen two',
+																`MobileNumber` 	='9777777777',
+																`IsActive` 		='0' where AgentID='2'
+[2020-10-27 14:16:58]	select * from _queen_agent where md5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:17:02]	select * from _queen_agent order by AgentID desc
+[2020-10-27 14:17:04]	select * from _queen_agent where IsActive='0' order by AgentID desc
+[2020-10-27 14:17:05]	select * from _queen_agent where IsActive='1' order by AgentID desc
+[2020-10-27 14:17:07]	select * from _queen_agent order by AgentID desc
+[2020-10-27 14:17:14]	select * from _queen_agent where md5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:17:14]	select * from _queen_agent where md5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:17:16]	select * from _queen_agent order by AgentID desc
+[2020-10-27 14:17:19]	select * from _queen_agent where MD5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:17:47]	select * from _queen_agent where MD5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:17:55]	select * from _queen_agent order by AgentID desc
+[2020-10-27 14:17:57]	select * from _queen_agent where IsActive='1' order by AgentID desc
+[2020-10-27 14:17:58]	select * from _queen_agent where IsActive='0' order by AgentID desc
+[2020-10-27 14:18:36]	select * from _queen_agent order by AgentID desc
+[2020-10-27 14:19:16]	select * from _queen_agent where md5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:19:16]	select * from _queen_agent where md5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:19:23]	select * from _queen_agent order by AgentID desc
+[2020-10-27 14:19:26]	select * from _queen_agent order by AgentID desc
+[2020-10-27 14:19:29]	select * from _queen_agent where MD5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:19:31]	select * from _queen_agent order by AgentID desc
+[2020-10-27 14:20:24]	select * from _queen_agent order by AgentID desc
+[2020-10-27 14:20:26]	select * from _queen_agent where md5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:20:26]	select * from _queen_agent where md5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:20:31]	select * from _queen_agent where md5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:20:31]	select * from _queen_agent where AgentCode='AGNT2' and AgentID<>'2'
+[2020-10-27 14:20:31]	select * from _queen_agent where SurName='Agen two' and AgentID<>'2'
+[2020-10-27 14:20:31]	select * from _queen_agent where MobileNumber='9777777777' and AgentID<>'2'
+[2020-10-27 14:20:31]	update _queen_agent set `AgentCode`     ='AGNT2',
+                                                                `AgentName`     ='Agent two',
+                                                                `SurName` 	    ='Agen two',
+                                                                `MobileNumber`  ='9777777777',
+																`Description` 	='bbbbbbbbbbbbxxxxxxxxxxxxxx',
+																`IsActive` 		='0' where AgentID='2'
+[2020-10-27 14:20:31]	select * from _queen_agent where md5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:20:38]	select * from _queen_agent where md5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:20:38]	select * from _queen_agent where AgentCode='AGNT2' and AgentID<>'2'
+[2020-10-27 14:20:38]	select * from _queen_agent where SurName='Agen two' and AgentID<>'2'
+[2020-10-27 14:20:38]	select * from _queen_agent where MobileNumber='9777777777' and AgentID<>'2'
+[2020-10-27 14:20:38]	update _queen_agent set `AgentCode`     ='AGNT2',
+                                                                `AgentName`     ='Agent two',
+                                                                `SurName` 	    ='Agen two',
+                                                                `MobileNumber`  ='9777777777',
+																`Description` 	='bbbbbbbbbbbcccccccc',
+																`IsActive` 		='0' where AgentID='2'
+[2020-10-27 14:20:38]	select * from _queen_agent where md5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:20:42]	select * from _queen_agent where md5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:20:42]	select * from _queen_agent where md5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:20:51]	select * from _queen_agent order by AgentID desc
+[2020-10-27 14:20:54]	select * from _queen_agent where MD5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:21:21]	select * from _queen_agent where MD5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:21:25]	select * from _queen_agent order by AgentID desc
+[2020-10-27 14:22:21]	select * from _queen_agent order by AgentID desc
+[2020-10-27 14:22:28]	select * from _queen_agent where IsActive='0' order by AgentID desc
+[2020-10-27 14:22:31]	select * from _queen_agent order by AgentID desc
+[2020-10-27 14:22:37]	select * from _queen_agent order by AgentID desc
+[2020-10-27 14:22:55]	select * from _queen_agent order by AgentID desc
+[2020-10-27 14:23:00]	select * from _queen_agent where md5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:23:00]	select * from _queen_agent where md5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:23:02]	select * from _queen_agent order by AgentID desc
+[2020-10-27 14:23:05]	select * from _queen_agent where MD5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:23:07]	select * from _queen_agent order by AgentID desc
+[2020-10-27 14:23:12]	select * from _queen_agent where md5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:23:12]	select * from _queen_agent where md5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:23:28]	select * from _queen_agent where md5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:23:28]	select * from _queen_agent where md5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:23:30]	select * from _queen_agent order by AgentID desc
+[2020-10-27 14:23:33]	select * from _queen_agent where IsActive='0' order by AgentID desc
+[2020-10-27 14:40:37]	select * from _queen_agent where md5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:40:37]	select * from _queen_agent where md5(AgentID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-27 14:40:49]	select * from _queen_admin where UserName='queenadmin@gmail.com' and Password='12345' 
+[2020-10-27 14:40:51]	select * from _queen_agent order by AgentID desc
+[2020-10-27 14:40:56]	select * from _queen_agent order by AgentID desc
+[2020-10-27 14:40:57]	select * from _queen_agent where IsActive='0' order by AgentID desc
+[2020-10-27 14:40:58]	select * from _queen_agent where IsActive='1' order by AgentID desc
+[2020-10-27 14:40:59]	select * from _queen_agent where IsActive='0' order by AgentID desc
+[2020-10-27 14:41:21]	select * from _queen_agent where IsActive='0' order by AgentID desc
+[2020-10-27 14:46:24]	select * from _queen_agent order by AgentID desc
+[2020-10-27 14:46:27]	select * from _queen_agent where md5(AgentID)='c4ca4238a0b923820dcc509a6f75849b'
+[2020-10-27 14:46:27]	select * from _queen_agent where md5(AgentID)='c4ca4238a0b923820dcc509a6f75849b'
+[2020-10-27 14:46:29]	select * from _queen_agent order by AgentID desc
+[2020-10-27 14:47:22]	select * from _queen_agent order by AgentID desc
+[2020-10-27 14:47:35]	select * from _queen_agent order by AgentID desc
+[2020-10-27 14:49:04]	select * from _queen_agent order by AgentID desc
+[2020-10-27 14:49:10]	select * from _queen_agent where IsActive='1' order by AgentID desc
+[2020-10-27 14:58:57]	select * from _queen_admin where UserName='queenadmin@gmail.com' and Password='12345' 
+[2020-10-27 15:02:49]	SELECT * FROM _queen_orders where (date(OrderOn)>=date('2020-10-27') and date(OrderOn)<=date('2020-10-27') ) order by OrderID desc
+[2020-10-27 15:03:02]	SELECT * FROM _queen_orders where (date(OrderOn)>=date('2020-10-01') and date(OrderOn)<=date('2020-10-27') ) order by OrderID desc
+[2020-10-27 15:04:09]	select * from _queen_orders where md5(OrderID)='c4ca4238a0b923820dcc509a6f75849b'
+[2020-10-27 15:04:09]	select * from _queen_order_item where OrderID='1'
+[2020-10-27 15:04:41]	select * from _queen_orders where md5(OrderID)='c4ca4238a0b923820dcc509a6f75849b'
+[2020-10-27 15:04:41]	select * from _queen_order_item where OrderID='1'
+[2020-10-27 15:05:42]	select * from _queen_orders where md5(OrderID)='c4ca4238a0b923820dcc509a6f75849b'
+[2020-10-27 15:05:42]	select * from _queen_order_item where OrderID='1'
+[2020-10-27 15:06:25]	select * from _queen_orders where md5(OrderID)='c4ca4238a0b923820dcc509a6f75849b'
+[2020-10-27 15:06:25]	select * from _queen_order_item where OrderID='1'
+[2020-10-27 15:06:40]	select * from _queen_orders where md5(OrderID)='c4ca4238a0b923820dcc509a6f75849b'
+[2020-10-27 15:06:40]	select * from _queen_order_item where OrderID='1'
+[2020-10-27 15:07:10]	SELECT * FROM _queen_orders where (date(OrderOn)>=date('2020-10-27') and date(OrderOn)<=date('2020-10-27') ) order by OrderID desc
+[2020-10-27 15:07:20]	select * from _queen_orders where md5(OrderID)='c4ca4238a0b923820dcc509a6f75849b'
+[2020-10-27 15:07:20]	select * from _queen_order_item where OrderID='1'
+[2020-10-27 15:09:30]	select * from _queen_orders where md5(OrderID)='c4ca4238a0b923820dcc509a6f75849b'
+[2020-10-27 15:09:30]	select * from _queen_order_item where OrderID='1'
+[2020-10-27 15:10:03]	select * from _queen_orders where md5(OrderID)='c4ca4238a0b923820dcc509a6f75849b'
+[2020-10-27 15:10:03]	select * from _queen_order_item where OrderID='1'
+[2020-10-27 15:10:53]	SELECT * FROM _queen_orders where (date(OrderOn)>=date('2020-10-27') and date(OrderOn)<=date('2020-10-27') ) order by OrderID desc
+[2020-10-27 15:12:41]	SELECT * FROM _queen_orders where (date(OrderOn)>=date('2020-10-02') and date(OrderOn)<=date('2020-10-27') ) order by OrderID desc
+[2020-10-27 15:12:44]	SELECT * FROM _queen_orders where (date(OrderOn)>=date('2020-10-02') and date(OrderOn)<=date('2020-10-01') ) order by OrderID desc
+[2020-10-27 15:16:00]	SELECT * FROM _queen_orders where (date(OrderOn)>=date('2020-10-27') and date(OrderOn)<=date('2020-10-27') ) order by OrderID desc
+[2020-10-27 15:16:56]	SELECT * FROM _queen_orders order by OrderID desc
+[2020-10-27 15:17:03]	SELECT * FROM _queen_orders where (date(OrderOn)>=date('2020-10-8') and date(OrderOn)<=date('2020-10-8') ) order by OrderID desc
+[2020-10-27 15:17:10]	SELECT * FROM _queen_orders where (date(OrderOn)>=date('2020-10-8') and date(OrderOn)<=date('2020-10-27') ) order by OrderID desc
+[2020-10-27 15:17:36]	SELECT * FROM _queen_orders order by OrderID desc
+[2020-10-27 15:18:45]	SELECT * FROM _queen_orders order by OrderID desc
+[2020-10-27 15:19:35]	SELECT * FROM _queen_orders order by OrderID desc
+[2020-10-27 15:19:54]	SELECT * FROM _queen_orders order by OrderID desc
+[2020-10-27 15:21:07]	SELECT * FROM _queen_orders order by OrderID desc
+[2020-10-27 15:22:46]	SELECT * FROM _queen_orders order by OrderID desc
+[2020-10-27 15:23:10]	SELECT * FROM _queen_orders order by OrderID desc
+[2020-10-27 15:23:26]	SELECT * FROM _queen_orders order by OrderID desc
+[2020-10-27 15:23:30]	select * from _queen_orders where md5(OrderID)='c4ca4238a0b923820dcc509a6f75849b'
+[2020-10-27 15:23:30]	select * from _queen_order_item where OrderID='1'
+[2020-10-27 15:23:33]	SELECT * FROM _queen_orders order by OrderID desc
+[2020-10-27 15:23:44]	select * from _queen_orders where md5(OrderID)='c4ca4238a0b923820dcc509a6f75849b'
+[2020-10-27 15:23:44]	select * from _queen_order_item where OrderID='1'
+[2020-10-27 15:25:07]	select * from _queen_orders where md5(OrderID)='c4ca4238a0b923820dcc509a6f75849b'
+[2020-10-27 15:25:07]	select * from _queen_order_item where OrderID='1'
+[2020-10-27 15:25:32]	select * from _queen_orders where md5(OrderID)='c4ca4238a0b923820dcc509a6f75849b'
+[2020-10-27 15:25:32]	select * from _queen_order_item where OrderID='1'
+[2020-10-27 15:26:01]	select * from _queen_orders where md5(OrderID)='c4ca4238a0b923820dcc509a6f75849b'
+[2020-10-27 15:26:01]	select * from _queen_order_item where OrderID='1'
+[2020-10-27 15:26:35]	SELECT * FROM _queen_orders order by OrderID desc
+[2020-10-27 15:28:00]	SELECT * FROM _queen_orders order by OrderID desc
+[2020-10-27 15:28:11]	SELECT * FROM _queen_orders order by OrderID desc
+[2020-10-27 15:33:40]	SELECT * FROM _queen_orders order by OrderID desc
+[2020-10-27 15:33:42]	SELECT * FROM _queen_orders order by OrderID desc
+[2020-10-27 15:34:03]	SELECT * FROM _queen_orders order by OrderID desc
+[2020-10-27 15:34:11]	SELECT * FROM _queen_orders order by OrderID desc
+[2020-10-27 15:34:38]	SELECT * FROM _queen_orders order by OrderID desc
+[2020-10-27 15:34:39]	SELECT * FROM _queen_orders order by OrderID desc
+[2020-10-27 15:34:41]	SELECT * FROM _queen_orders order by OrderID desc
+[2020-10-27 15:34:43]	SELECT * FROM _queen_orders order by OrderID desc
+[2020-10-27 15:35:57]	SELECT * FROM _queen_orders order by OrderID desc
+[2020-10-27 15:36:07]	SELECT * FROM _queen_orders where (date(OrderOn)>=date('2020-10-27') and date(OrderOn)<=date('2020-10-27') ) order by OrderID desc
+[2020-10-27 15:50:24]	SELECT * FROM _queen_orders order by OrderID desc
+[2020-10-27 15:57:10]	SELECT * FROM _queen_orders order by OrderID desc
+[2020-10-27 15:57:15]	SELECT * FROM _queen_orders where (date(OrderOn)>=date('2020-10-8') and date(OrderOn)<=date('2020-10-27') ) order by OrderID desc
+[2020-10-27 15:57:19]	SELECT * FROM _queen_orders where (date(OrderOn)>=date('2020-10-8') and date(OrderOn)<=date('2020-10-8') ) order by OrderID desc
+[2020-10-27 15:57:21]	SELECT * FROM _queen_orders order by OrderID desc
+[2020-10-27 15:57:22]	SELECT * FROM _queen_orders order by OrderID desc
+[2020-10-27 15:57:52]	SELECT * FROM _queen_orders where (date(OrderOn)>=date('2020-10-27') and date(OrderOn)<=date('2020-10-27') ) order by OrderID desc
+[2020-10-27 16:03:54]	SELECT * FROM _queen_orders where (date(OrderOn)>=date('2020-10-27') and date(OrderOn)<=date('2020-10-27') ) order by OrderID desc
+[2020-10-27 16:04:01]	SELECT * FROM _queen_orders where (date(OrderOn)>=date('2020-10-27') and date(OrderOn)<=date('2020-10-27') ) order by OrderID desc
+[2020-10-27 17:08:30]	SELECT * FROM _queen_orders where (date(OrderOn)>=date('2020-10-27') and date(OrderOn)<=date('2020-10-27') ) order by OrderID desc
+[2020-10-27 17:13:44]	SELECT * FROM _queen_orders where (date(OrderOn)>=date('2020-10-27') and date(OrderOn)<=date('2020-10-27') ) order by OrderID desc
+[2020-10-27 17:15:05]	SELECT * FROM _queen_orders where (date(OrderOn)>=date('2020-10-27') and date(OrderOn)<=date('2020-10-27') ) order by OrderID desc
+[2020-10-27 17:15:11]	SELECT * FROM _queen_orders where (date(OrderOn)>=date('2020-10-8') and date(OrderOn)<=date('2020-10-8') ) order by OrderID desc
+[2020-10-27 17:15:14]	SELECT * FROM _queen_orders where (date(OrderOn)>=date('2020-10-27') and date(OrderOn)<=date('2020-10-27') ) order by OrderID desc
+[2020-10-27 17:15:18]	SELECT * FROM _queen_orders where (date(OrderOn)>=date('2020-10-27') and date(OrderOn)<=date('2020-10-27') ) order by OrderID desc
+[2020-10-27 17:16:04]	SELECT * FROM _queen_orders where (date(OrderOn)>=date('2020-10-27') and date(OrderOn)<=date('2020-10-27') ) order by OrderID desc
+[2020-10-27 17:16:08]	SELECT * FROM _queen_orders where IsPaid='1' and (date(OrderOn)>=date('2020-10-27') and date(OrderOn)<=date('2020-10-27') ) order by OrderID desc
+[2020-10-27 17:16:11]	SELECT * FROM _queen_orders where IsPaid='0' and (date(OrderOn)>=date('2020-10-27') and date(OrderOn)<=date('2020-10-27') ) order by OrderID desc
+[2020-10-27 17:16:14]	SELECT * FROM _queen_orders where (date(OrderOn)>=date('2020-10-27') and date(OrderOn)<=date('2020-10-27') ) order by OrderID desc
+[2020-10-27 17:16:17]	select * from _queen_orders where md5(OrderID)='c4ca4238a0b923820dcc509a6f75849b'
+[2020-10-27 17:16:17]	select * from _queen_order_item where OrderID='1'
+[2020-10-27 17:20:47]	SELECT * FROM _queen_orders where (date(OrderOn)>=date('2020-10-27') and date(OrderOn)<=date('2020-10-27') ) order by OrderID desc
+[2020-10-27 17:21:00]	SELECT * FROM _queen_orders where IsPaid='1' and (date(OrderOn)>=date('2020-10-27') and date(OrderOn)<=date('2020-10-27') ) order by OrderID desc
+[2020-10-27 17:21:01]	SELECT * FROM _queen_orders where IsPaid='0' and (date(OrderOn)>=date('2020-10-27') and date(OrderOn)<=date('2020-10-27') ) order by OrderID desc
+[2020-10-27 17:21:30]	SELECT * FROM _queen_agent where date(CreatedOn)>=date('2020-10-27') and date(CreatedOn)<=date('2020-10-27') order by AgentID desc
+[2020-10-27 17:22:58]	SELECT * FROM _queen_agent where date(CreatedOn)>=date('2020-10-27') and date(CreatedOn)<=date('2020-10-27') order by AgentID desc
+[2020-10-27 17:27:53]	select * from _queen_agent where IsActive=1'
+[2020-10-27 17:27:53]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' at line 1
+[2020-10-27 17:28:20]	select * from _queen_agent where IsActive='1'
+[2020-10-27 17:29:22]	SELECT * FROM _queen_orders where AgentID='' and (date(OrderOn)>=date('2020-10-27') and date(OrderOn)<=date('2020-10-27') ) order by OrderID desc
+[2020-10-27 17:29:22]	select * from _queen_agent where IsActive='1'
+[2020-10-27 17:29:42]	SELECT * FROM _queen_orders where AgentID='' and (date(OrderOn)>=date('2020-10-27') and date(OrderOn)<=date('2020-10-27') ) order by OrderID desc
+[2020-10-27 17:29:42]	select * from _queen_agent where IsActive='1'
+[2020-10-27 17:30:04]	SELECT * FROM _queen_orders where AgentID='' and (date(OrderOn)>=date('2020-10-27') and date(OrderOn)<=date('2020-10-27') ) order by OrderID desc
+[2020-10-27 17:30:04]	select * from _queen_agent where IsActive='1'
+[2020-10-27 17:30:35]	SELECT * FROM _queen_orders where AgentID='' and (date(OrderOn)>=date('2020-10-27') and date(OrderOn)<=date('2020-10-27') ) order by OrderID desc
+[2020-10-27 17:30:35]	select * from _queen_agent where IsActive='1'
+[2020-10-27 17:30:39]	SELECT * FROM _queen_orders where AgentID='1' and (date(OrderOn)>=date('2020-10-27') and date(OrderOn)<=date('2020-10-27') ) order by OrderID desc
+[2020-10-27 17:30:39]	select * from _queen_agent where IsActive='1'
+[2020-10-27 17:30:51]	SELECT * FROM _queen_orders where AgentID='' and (date(OrderOn)>=date('2020-10-27') and date(OrderOn)<=date('2020-10-27') ) order by OrderID desc
+[2020-10-27 17:30:51]	select * from _queen_agent where IsActive='1'
+[2020-10-27 17:30:54]	SELECT * FROM _queen_orders where AgentID='1' and (date(OrderOn)>=date('2020-10-27') and date(OrderOn)<=date('2020-10-27') ) order by OrderID desc
+[2020-10-27 17:30:54]	select * from _queen_agent where IsActive='1'
+[2020-10-27 17:31:01]	SELECT * FROM _queen_orders where AgentID='' and (date(OrderOn)>=date('2020-10-27') and date(OrderOn)<=date('2020-10-27') ) order by OrderID desc
+[2020-10-27 17:31:01]	select * from _queen_agent where IsActive='1'
+[2020-10-27 17:31:04]	SELECT * FROM _queen_orders where AgentID='1' and (date(OrderOn)>=date('2020-10-27') and date(OrderOn)<=date('2020-10-27') ) order by OrderID desc
+[2020-10-27 17:31:04]	select * from _queen_agent where IsActive='1'
+[2020-10-27 17:31:42]	SELECT * FROM _queen_orders where AgentID='' and (date(OrderOn)>=date('2020-10-27') and date(OrderOn)<=date('2020-10-27') ) order by OrderID desc
+[2020-10-27 17:31:42]	select * from _queen_agent where IsActive='1'

@@ -1,0 +1,20 @@
+[2020-10-26 10:26:08]	select * from _queen_staffs where LoginName='angel@gmail.com' and LoginPassword='123456789' 
+[2020-10-26 10:26:17]	SELECT * FROM _queen_orders where (date(OrderOn)>=date('2020-10-26') and date(OrderOn)<=date('2020-10-26') ) order by OrderID desc
+[2020-10-26 10:26:21]	select * from _queen_agent where IsActive='1'
+[2020-10-26 10:26:21]	select * from _queen_services where IsActive='1'
+[2020-10-26 10:26:21]	select * from _queen_agent where IsActive='1'
+[2020-10-26 10:26:21]	select * from _queen_services where IsActive='1'
+[2020-10-26 10:27:05]	select * from _queen_agent where IsActive='1'
+[2020-10-26 10:27:05]	select * from _queen_services where IsActive='1'
+[2020-10-26 10:27:05]	select * from _queen_orders
+[2020-10-26 10:27:05]	select * from _queen_agent where AgentID='2'
+[2020-10-26 10:27:05]	insert into `_queen_orders` (`AgentID`,`AgentCode`,`AgentName`,`AgentMobileNumber`,`StaffID`,`StaffCode`,`StaffName`,`OrderCode`,`OrderTotal`,`OrderOn`) values ('2','AGNT00002','Agent one','9888888888','1','STF00001','Angel','ORD00003','1802','2020-10-26 10:27:05')
+[2020-10-26 10:27:05]	insert into `_queen_order_item` (`OrderID`,`ServiceCode`,`ServiceName`,`Charge`,`FeeAmount`,`TotalAmount`) values ('3','SRVC00001','service one','501','1001','1502')
+[2020-10-26 10:27:05]	insert into `_queen_order_item` (`OrderID`,`ServiceCode`,`ServiceName`,`Charge`,`FeeAmount`,`TotalAmount`) values ('3','SRVC00002','service two','100','200','300')
+[2020-10-26 10:27:05]	select * from _queen_agent where IsActive='1'
+[2020-10-26 10:27:05]	select * from _queen_services where IsActive='1'
+[2020-10-26 10:27:36]	SELECT * FROM _queen_orders where (date(OrderOn)>=date('2020-10-26') and date(OrderOn)<=date('2020-10-26') ) order by OrderID desc
+[2020-10-26 10:27:38]	select * from _queen_agent where IsActive='1'
+[2020-10-26 10:27:38]	select * from _queen_services where IsActive='1'
+[2020-10-26 10:27:38]	select * from _queen_agent where IsActive='1'
+[2020-10-26 10:27:38]	select * from _queen_services where IsActive='1'

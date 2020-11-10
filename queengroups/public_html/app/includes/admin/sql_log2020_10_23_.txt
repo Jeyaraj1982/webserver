@@ -1,0 +1,104 @@
+[2020-10-23 16:34:40]	select * from _queen_admin where UserName='queenadmin@gmail.com' and Password='123456' 
+[2020-10-23 16:34:40]	select * from _tbl_tour where IsPublish='1'
+[2020-10-23 16:34:40]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_tour' doesn't exist
+[2020-10-23 16:34:54]	select * from _tbl_tour where IsPublish='1'
+[2020-10-23 16:34:54]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_tour' doesn't exist
+[2020-10-23 16:35:36]	select * from _tbl_tour where IsPublish='1'
+[2020-10-23 16:35:36]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_tour' doesn't exist
+[2020-10-23 16:37:32]	select * from _tbl_tour where IsPublish='1'
+[2020-10-23 16:37:32]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_tour' doesn't exist
+[2020-10-23 16:40:25]	select * from _tbl_tour where IsPublish='1'
+[2020-10-23 16:40:25]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_tour' doesn't exist
+[2020-10-23 16:40:54]	select * from _tbl_tour where IsPublish='1'
+[2020-10-23 16:40:54]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_tour' doesn't exist
+[2020-10-23 16:42:43]	select * from `_queen_admin` where `AdminID`='1'
+[2020-10-23 16:42:43]	update `_queen_admin` set `Password`='12345' where `AdminID`='1'
+[2020-10-23 16:44:17]	select * from _queen_admin where UserName='queenadmin@gmail.com' and Password='12345' 
+[2020-10-23 16:44:18]	select * from _tbl_tour where IsPublish='1'
+[2020-10-23 16:44:18]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_tour' doesn't exist
+[2020-10-23 16:53:25]	select * from _queen_staffs order by StaffID desc
+[2020-10-23 16:53:25]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._queen_staffs' doesn't exist
+[2020-10-23 17:11:26]	select * from _queen_staffs order by StaffID desc
+[2020-10-23 17:11:26]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._queen_staffs' doesn't exist
+[2020-10-23 17:12:14]	select * from _queen_staffs order by StaffID desc
+[2020-10-23 17:12:14]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._queen_staffs' doesn't exist
+[2020-10-23 17:15:46]	select * from _queen_staffs where LoginName='staffdemo'
+[2020-10-23 17:15:46]	select * from_queen_staffs_tbl_brands
+[2020-10-23 17:15:46]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from_queen_staffs_tbl_brands' at line 1
+[2020-10-23 17:15:46]	insert into `_queen_staffs` (`StaffCode`,`StaffName`,`SurName`,`LoginName`,`LoginPassword`,`CreatedOn`) values ('BRND00001','Demo Staff','aaaa','staffdemo','123456','2020-10-23 17:15:46')
+[2020-10-23 17:15:49]	select * from _queen_staffs order by StaffID desc
+[2020-10-23 17:17:06]	select * from _queen_staffs where LoginName='staffdemo'
+[2020-10-23 17:17:28]	select * from _queen_staffs where LoginName='staff two'
+[2020-10-23 17:17:28]	select * from_queen_staffs_tbl_brands
+[2020-10-23 17:17:28]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from_queen_staffs_tbl_brands' at line 1
+[2020-10-23 17:17:28]	insert into `_queen_staffs` (`StaffCode`,`StaffName`,`SurName`,`LoginName`,`LoginPassword`,`CreatedOn`) values ('STF00001','Demo Staff','aaaa','staff two','123456','2020-10-23 17:17:28')
+[2020-10-23 17:17:30]	select * from _queen_staffs order by StaffID desc
+[2020-10-23 17:18:23]	select * from _queen_staffs order by StaffID desc
+[2020-10-23 17:20:34]	select * from _queen_staffs where LoginName='angel@gmail.com'
+[2020-10-23 17:20:34]	select * from _queen_staffs
+[2020-10-23 17:20:34]	insert into `_queen_staffs` (`StaffCode`,`StaffName`,`SurName`,`LoginName`,`LoginPassword`,`CreatedOn`) values ('STF00001','Angel','Angel','angel@gmail.com','123456','2020-10-23 17:20:34')
+[2020-10-23 17:20:37]	select * from _queen_staffs order by StaffID desc
+[2020-10-23 17:21:05]	select * from _queen_staffs where LoginName='akshay@gmail.com'
+[2020-10-23 17:21:05]	select * from _queen_staffs
+[2020-10-23 17:21:05]	insert into `_queen_staffs` (`StaffCode`,`StaffName`,`SurName`,`LoginName`,`LoginPassword`,`CreatedOn`) values ('STF00002','Akshay','Akshay','akshay@gmail.com','123456','2020-10-23 17:21:05')
+[2020-10-23 17:21:07]	select * from _queen_staffs order by StaffID desc
+[2020-10-23 17:21:10]	select * from _queen_staffs where IsActive='1' order by StaffID desc
+[2020-10-23 17:21:10]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'IsActive' in 'where clause'
+[2020-10-23 17:21:13]	select * from _queen_staffs where IsActive='0' order by StaffID desc
+[2020-10-23 17:21:13]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'IsActive' in 'where clause'
+[2020-10-23 17:28:03]	select * from _queen_staffs order by StaffID desc
+[2020-10-23 17:28:07]	select * from _queen_staffs where md5(StaffID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-23 17:28:07]	select * from _queen_staffs where md5(StaffID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-23 17:28:24]	select * from _queen_staffs where md5(StaffID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-23 17:28:24]	select * from _queen_staffs where md5(StaffID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-23 17:28:40]	select * from _queen_staffs where md5(StaffID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-23 17:28:40]	select * from _queen_staffs where md5(StaffID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-23 17:28:55]	select * from _queen_staffs where md5(StaffID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-23 17:28:55]	select * from _queen_staffs where LoginName='akshaya@gmail.com' and StaffID<>'2'
+[2020-10-23 17:28:55]	update _queen_staffs set `StaffName`  	='Akshaya',
+																`SurName`  		='Akshaya',
+																`LoginName`  	='akshaya@gmail.com',
+																`LoginPassword` ='123456' where StaffID='2'
+[2020-10-23 17:28:55]	select * from _queen_staffs where md5(StaffID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-23 17:29:00]	select * from _queen_staffs where md5(StaffID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-23 17:29:00]	select * from _queen_staffs where md5(StaffID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-23 17:29:29]	select * from _queen_staffs where md5(StaffID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-23 17:29:29]	select * from _queen_staffs where LoginName='akshaya@gmail.com' and StaffID<>'2'
+[2020-10-23 17:29:29]	update _queen_staffs set `StaffName`  	='Akshaya',
+																`SurName`  		='Akshaya',
+																`LoginName`  	='akshaya@gmail.com',
+																`LoginPassword` ='123456789' where StaffID='2'
+[2020-10-23 17:29:29]	select * from _queen_staffs where md5(StaffID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-23 17:29:35]	select * from _queen_staffs order by StaffID desc
+[2020-10-23 17:29:39]	select * from _queen_staffs where md5(StaffID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-23 17:29:39]	select * from _queen_staffs where md5(StaffID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-23 17:29:54]	select * from _queen_staffs order by StaffID desc
+[2020-10-23 17:33:23]	select * from _queen_staffs where md5(StaffID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-23 17:33:28]	select * from _queen_staffs order by StaffID desc
+[2020-10-23 17:35:10]	select * from _queen_staffs where md5(StaffID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-23 17:35:10]	select * from _queen_staffs where md5(StaffID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-23 17:35:17]	select * from _queen_staffs where md5(StaffID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-23 17:35:17]	select * from _queen_staffs where LoginName='akshaya@gmail.com' and StaffID<>'2'
+[2020-10-23 17:35:17]	update _queen_staffs set `StaffName`  	='Akshaya',
+																`SurName`  		='Akshaya',
+																`LoginName`  	='akshaya@gmail.com',
+																`LoginPassword` ='123456789',
+ 																`IsActive` 		='0'
+ 																 where StaffID='2'
+[2020-10-23 17:35:17]	select * from _queen_staffs where md5(StaffID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-23 17:35:23]	select * from _queen_staffs order by StaffID desc
+[2020-10-23 17:35:25]	select * from _queen_staffs where IsActive='0' order by StaffID desc
+[2020-10-23 17:57:20]	select * from _queen_admin where UserName='queenadmin@gmail.com' and Password='12345' 
+[2020-10-23 17:57:25]	select * from _queen_staffs order by StaffID desc
+[2020-10-23 17:57:27]	select * from _queen_staffs where md5(StaffID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-23 17:57:27]	select * from _queen_staffs where md5(StaffID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-23 17:57:33]	select * from _queen_staffs order by StaffID desc
+[2020-10-23 17:57:36]	select * from _queen_staffs where md5(StaffID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-23 17:58:00]	select * from _queen_staffs where md5(StaffID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-23 18:00:04]	select * from _queen_staffs order by StaffID desc
+[2020-10-23 18:00:07]	select * from _queen_staffs where IsActive='0' order by StaffID desc
+[2020-10-23 18:00:11]	select * from _queen_staffs where md5(StaffID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-23 18:00:14]	select * from _queen_staffs order by StaffID desc
+[2020-10-23 18:00:18]	select * from _queen_staffs where md5(StaffID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-23 18:00:18]	select * from _queen_staffs where md5(StaffID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-23 18:00:21]	select * from _queen_staffs order by StaffID desc

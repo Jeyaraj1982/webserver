@@ -1,0 +1,19 @@
+[2020-10-27 14:50:04]	select * from _queen_staffs where LoginName='angel@gmail.com' and LoginPassword='123456789' 
+[2020-10-27 14:50:21]	select * from _queen_staffs where LoginName='ajay@gmail.com' and LoginPassword='123456789' 
+[2020-10-27 14:50:29]	select * from _queen_staffs where LoginName='ajay@gmail.com' and LoginPassword='123456' 
+[2020-10-27 14:50:34]	SELECT * FROM _queen_orders where (date(OrderOn)>=date('2020-10-27') and date(OrderOn)<=date('2020-10-27') ) order by OrderID desc
+[2020-10-27 14:51:02]	select * from _queen_agent where IsActive='1'
+[2020-10-27 14:51:02]	select * from _queen_services where IsActive='1'
+[2020-10-27 14:51:02]	select * from _queen_agent where IsActive='1'
+[2020-10-27 14:51:02]	select * from _queen_services where IsActive='1'
+[2020-10-27 14:52:43]	select * from _queen_agent where IsActive='1'
+[2020-10-27 14:52:43]	select * from _queen_services where IsActive='1'
+[2020-10-27 14:52:43]	select * from _queen_orders
+[2020-10-27 14:52:43]	select * from _queen_agent where AgentID='1'
+[2020-10-27 14:52:43]	insert into `_queen_orders` (`AgentID`,`AgentCode`,`AgentName`,`AgentMobileNumber`,`StaffID`,`StaffCode`,`StaffName`,`OrderCode`,`OrderTotal`,`OrderOn`) values ('1','AGNT1','Agent one','9888888888','2','Ajay001','Ajay','ORD00001','1800','2020-10-27 14:52:43')
+[2020-10-27 14:52:43]	insert into `_queen_order_item` (`OrderID`,`ServiceCode`,`ServiceName`,`Charge`,`FeeAmount`,`TotalAmount`) values ('1','SRVC1','service one','100','500','600')
+[2020-10-27 14:52:43]	select * from _queen_agent where IsActive='1'
+[2020-10-27 14:52:43]	select * from _queen_services where IsActive='1'
+[2020-10-27 14:52:52]	SELECT * FROM _queen_orders where (date(OrderOn)>=date('2020-10-27') and date(OrderOn)<=date('2020-10-27') ) order by OrderID desc
+[2020-10-27 14:52:54]	select * from _queen_orders where md5(OrderID)='c4ca4238a0b923820dcc509a6f75849b'
+[2020-10-27 14:52:54]	select * from _queen_order_item where OrderID='1'

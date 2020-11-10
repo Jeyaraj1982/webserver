@@ -1,0 +1,55 @@
+[2020-10-31 15:05:24]	select * from _queen_staffs where LoginName='ajay@gmail.com' and LoginPassword='123456' 
+[2020-10-31 15:05:31]	select * from _queen_staffs where LoginName='ajay@gmail.com' and LoginPassword='123456789' 
+[2020-10-31 15:05:40]	SELECT * FROM _queen_orders where (date(OrderOn)>=date('2020-10-31') and date(OrderOn)<=date('2020-10-31') ) order by OrderID desc
+[2020-10-31 15:05:44]	select * from _queen_agent where IsActive='1'
+[2020-10-31 15:05:44]	select * from _queen_services where IsActive='1'
+[2020-10-31 15:05:44]	select * from _queen_agent where IsActive='1'
+[2020-10-31 15:05:44]	select * from _queen_services where IsActive='1'
+[2020-10-31 15:06:33]	select * from _queen_agent where IsActive='1'
+[2020-10-31 15:06:33]	select * from _queen_services where IsActive='1'
+[2020-10-31 15:06:33]	select * from _queen_orders
+[2020-10-31 15:06:33]	select * from _queen_agent where AgentID='1'
+[2020-10-31 15:06:33]	insert into `_queen_orders` (`AgentID`,`AgentCode`,`AgentName`,`AgentMobileNumber`,`StaffID`,`StaffCode`,`StaffName`,`OrderCode`,`OrderTotal`,`OrderOn`) values ('1','AGNT1','Agent one','9888888888','3','Ajay001','Ajay','ORD000010','2200','2020-10-31 15:06:33')
+[2020-10-31 15:06:33]	insert into `_queen_order_item` (`OrderID`,`ServiceID`,`ServiceCode`,`ServiceName`,`Charge`,`FeeAmount`,`TotalAmount`) values ('10','4','SRVC4','service four','200','400','600')
+[2020-10-31 15:06:33]	insert into `_queen_order_item` (`OrderID`,`ServiceID`,`ServiceCode`,`ServiceName`,`Charge`,`FeeAmount`,`TotalAmount`) values ('10','1','SRVC1','service one','100','500','600')
+[2020-10-31 15:06:33]	insert into `_queen_order_item` (`OrderID`,`ServiceID`,`ServiceCode`,`ServiceName`,`Charge`,`FeeAmount`,`TotalAmount`) values ('10','3','SRVC3','service three','300','700','1000')
+[2020-10-31 15:06:33]	select * from _queen_agent where IsActive='1'
+[2020-10-31 15:06:33]	select * from _queen_services where IsActive='1'
+[2020-10-31 15:06:39]	select * from _queen_orders where md5(OrderID)='d41d8cd98f00b204e9800998ecf8427e'
+[2020-10-31 15:06:39]	select * from _queen_order_item where OrderID=''
+[2020-10-31 15:19:43]	select * from _queen_staffs where LoginName='ajay@gmail.com' and LoginPassword='123456789' 
+[2020-10-31 15:19:46]	SELECT * FROM _queen_orders where (date(OrderOn)>=date('2020-10-31') and date(OrderOn)<=date('2020-10-31') ) order by OrderID desc
+[2020-10-31 15:19:50]	select * from _queen_agent where IsActive='1'
+[2020-10-31 15:19:50]	select * from _queen_services where IsActive='1'
+[2020-10-31 15:19:50]	select * from _queen_agent where IsActive='1'
+[2020-10-31 15:19:50]	select * from _queen_services where IsActive='1'
+[2020-10-31 15:20:44]	select * from _queen_agent where IsActive='1'
+[2020-10-31 15:20:44]	select * from _queen_services where IsActive='1'
+[2020-10-31 15:20:44]	select * from _queen_orders
+[2020-10-31 15:20:44]	select * from _queen_agent where AgentID='1'
+[2020-10-31 15:20:44]	insert into `_queen_orders` (`AgentID`,`AgentCode`,`AgentName`,`AgentMobileNumber`,`StaffID`,`StaffCode`,`StaffName`,`OrderCode`,`OrderTotal`,`OrderOn`) values ('1','AGNT1','Agent one','9888888888','3','Ajay001','Ajay','ORD000011','2800','2020-10-31 15:20:44')
+[2020-10-31 15:20:44]	insert into `_queen_order_item` (`OrderID`,`ServiceID`,`ServiceCode`,`ServiceName`,`Charge`,`FeeAmount`,`TotalAmount`) values ('11','4','SRVC4','service four','200','400','600')
+[2020-10-31 15:20:44]	insert into `_queen_order_item` (`OrderID`,`ServiceID`,`ServiceCode`,`ServiceName`,`Charge`,`FeeAmount`,`TotalAmount`) values ('11','1','SRVC1','service one','100','500','600')
+[2020-10-31 15:20:44]	insert into `_queen_order_item` (`OrderID`,`ServiceID`,`ServiceCode`,`ServiceName`,`Charge`,`FeeAmount`,`TotalAmount`) values ('11','3','SRVC3','service three','300','700','1000')
+[2020-10-31 15:20:44]	insert into `_queen_order_item` (`OrderID`,`ServiceID`,`ServiceCode`,`ServiceName`,`Charge`,`FeeAmount`,`TotalAmount`) values ('11','1','SRVC1','service one','100','500','600')
+[2020-10-31 15:20:44]	select * from _queen_agent where IsActive='1'
+[2020-10-31 15:20:44]	select * from _queen_services where IsActive='1'
+[2020-10-31 15:20:51]	select * from _queen_orders where md5(OrderID)='d41d8cd98f00b204e9800998ecf8427e'
+[2020-10-31 15:20:51]	select * from _queen_order_item where OrderID=''
+[2020-10-31 15:59:59]	select * from _queen_staffs where LoginName='ajay@gmail.com' and LoginPassword='123456789' 
+[2020-10-31 16:00:04]	select * from _queen_expenses where StaffID='3' order by ExpenseID desc
+[2020-10-31 16:00:06]	select * from _queen_expensetype where IsActive='1'
+[2020-10-31 16:00:22]	select * from _queen_expensetype where ExpenseTypeID='5'
+[2020-10-31 16:00:22]	insert into `_queen_expenses` (`ExpenseTypeID`,`ExpenseTypeCode`,`ExpenseType`,`ShortDescription`,`ExpenseAmount`,`PaymentMode`,`ExpenseDetails`,`StaffID`,`CreatedOn`) values ('5','E002','Electricity','electricity','200','Bank Transfer','qaaaa','3','2020-10-31 16:00:22')
+[2020-10-31 16:00:22]	select * from _queen_expensetype where IsActive='1'
+[2020-10-31 16:00:24]	select * from _queen_expenses where StaffID='3' order by ExpenseID desc
+[2020-10-31 16:00:27]	select * from _queen_expensetype where IsActive='1'
+[2020-10-31 16:00:43]	select * from _queen_expensetype where ExpenseTypeID='3'
+[2020-10-31 16:00:43]	insert into `_queen_expenses` (`ExpenseTypeID`,`ExpenseTypeCode`,`ExpenseType`,`ShortDescription`,`ExpenseAmount`,`PaymentMode`,`ExpenseDetails`,`StaffID`,`CreatedOn`) values ('3','WT001','Water','waterrrr bill','500','Cheque','bbbbbbbbbb','3','2020-10-31 16:00:43')
+[2020-10-31 16:00:43]	select * from _queen_expensetype where IsActive='1'
+[2020-10-31 16:00:45]	select * from _queen_expenses where StaffID='3' order by ExpenseID desc
+[2020-10-31 16:00:47]	select * from _queen_expensetype where IsActive='1'
+[2020-10-31 16:01:09]	select * from _queen_expensetype where ExpenseTypeID='4'
+[2020-10-31 16:01:09]	insert into `_queen_expenses` (`ExpenseTypeID`,`ExpenseTypeCode`,`ExpenseType`,`ShortDescription`,`ExpenseAmount`,`PaymentMode`,`ExpenseDetails`,`StaffID`,`CreatedOn`) values ('4','E001','Travel Allowance','travel','5000','DD','cccccccccc','3','2020-10-31 16:01:09')
+[2020-10-31 16:01:09]	select * from _queen_expensetype where IsActive='1'
+[2020-10-31 16:01:11]	select * from _queen_expenses where StaffID='3' order by ExpenseID desc

@@ -1,0 +1,580 @@
+[2020-10-24 14:14:13]	select * from _queen_staffs where LoginName='angel@gmail.com' and LoginPassword='123456789' 
+[2020-10-24 14:14:18]	select * from _queen_staffs where StaffID='1'
+[2020-10-24 14:33:15]	select * from _queen_staffs where LoginName='angel@gmail.com' and LoginPassword='123456789' 
+[2020-10-24 14:44:19]	select * from _queen_staffs where LoginName='angel@gmail.com' and LoginPassword='123456789' 
+[2020-10-24 14:44:32]	select * from _tbl_sales_customers where IsActive='1'
+[2020-10-24 14:44:32]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_sales_customers' doesn't exist
+[2020-10-24 14:44:32]	select * from _tbl_sales_products where IsPublish='1'
+[2020-10-24 14:44:32]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_sales_products' doesn't exist
+[2020-10-24 14:48:47]	select * from _queen_agent where IsActive='1'
+[2020-10-24 14:48:47]	select * from _queen_services where IsActive='1'
+[2020-10-24 14:48:47]	select * from _tbl_sales_products
+[2020-10-24 14:48:47]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_sales_products' doesn't exist
+[2020-10-24 14:48:47]	select * from _tbl_units
+[2020-10-24 14:48:47]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_units' doesn't exist
+[2020-10-24 14:56:22]	select * from _queen_agent where IsActive='1'
+[2020-10-24 14:56:22]	select * from _queen_services where IsActive='1'
+[2020-10-24 14:56:22]	select * from _queen_agent where IsActive='1'
+[2020-10-24 14:56:22]	select * from _tbl_sales_products
+[2020-10-24 14:56:22]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_sales_products' doesn't exist
+[2020-10-24 14:56:22]	select * from _tbl_units
+[2020-10-24 14:56:22]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_units' doesn't exist
+[2020-10-24 14:56:45]	select * from _queen_agent where IsActive='1'
+[2020-10-24 14:56:45]	select * from _queen_services where IsActive='1'
+[2020-10-24 14:56:45]	select * from _queen_agent where IsActive='1'
+[2020-10-24 14:56:45]	select * from _tbl_sales_products
+[2020-10-24 14:56:45]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_sales_products' doesn't exist
+[2020-10-24 14:56:45]	select * from _tbl_units
+[2020-10-24 14:56:45]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_units' doesn't exist
+[2020-10-24 14:57:03]	select * from _queen_agent where IsActive='1'
+[2020-10-24 14:57:03]	select * from _queen_services where IsActive='1'
+[2020-10-24 14:57:03]	select * from _queen_agent where IsActive='1'
+[2020-10-24 14:57:03]	select * from _tbl_sales_products
+[2020-10-24 14:57:03]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_sales_products' doesn't exist
+[2020-10-24 14:57:03]	select * from _tbl_units
+[2020-10-24 14:57:03]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_units' doesn't exist
+[2020-10-24 15:05:31]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:05:31]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:05:31]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:05:31]	select * from _tbl_sales_products
+[2020-10-24 15:05:31]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_sales_products' doesn't exist
+[2020-10-24 15:05:31]	select * from _tbl_units
+[2020-10-24 15:05:31]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_units' doesn't exist
+[2020-10-24 15:07:00]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:07:00]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:07:00]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:07:00]	select * from _tbl_sales_products
+[2020-10-24 15:07:00]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_sales_products' doesn't exist
+[2020-10-24 15:07:00]	select * from _tbl_units
+[2020-10-24 15:07:00]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_units' doesn't exist
+[2020-10-24 15:08:55]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:08:55]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:08:55]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:08:55]	select * from _tbl_sales_products
+[2020-10-24 15:08:55]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_sales_products' doesn't exist
+[2020-10-24 15:08:55]	select * from _tbl_units
+[2020-10-24 15:08:55]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_units' doesn't exist
+[2020-10-24 15:18:48]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:18:48]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:18:48]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:18:48]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:18:48]	select * from _tbl_sales_products
+[2020-10-24 15:18:48]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_sales_products' doesn't exist
+[2020-10-24 15:18:48]	select * from _tbl_units
+[2020-10-24 15:18:48]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_units' doesn't exist
+[2020-10-24 15:20:02]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:20:02]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:20:02]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:20:02]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:20:02]	select * from _tbl_sales_products
+[2020-10-24 15:20:02]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_sales_products' doesn't exist
+[2020-10-24 15:20:02]	select * from _tbl_units
+[2020-10-24 15:20:02]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_units' doesn't exist
+[2020-10-24 15:20:31]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:20:31]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:20:31]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:20:31]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:20:31]	select * from _tbl_sales_products
+[2020-10-24 15:20:31]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_sales_products' doesn't exist
+[2020-10-24 15:20:31]	select * from _tbl_units
+[2020-10-24 15:20:31]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_units' doesn't exist
+[2020-10-24 15:22:29]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:22:29]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:22:29]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:22:29]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:22:29]	select * from _tbl_sales_products
+[2020-10-24 15:22:29]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_sales_products' doesn't exist
+[2020-10-24 15:22:29]	select * from _tbl_units
+[2020-10-24 15:22:29]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_units' doesn't exist
+[2020-10-24 15:23:04]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:23:04]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:23:04]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:23:04]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:23:04]	select * from _tbl_sales_products
+[2020-10-24 15:23:04]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_sales_products' doesn't exist
+[2020-10-24 15:23:04]	select * from _tbl_units
+[2020-10-24 15:23:04]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_units' doesn't exist
+[2020-10-24 15:24:50]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:24:50]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:24:50]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:24:50]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:24:50]	select * from _tbl_sales_products
+[2020-10-24 15:24:50]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_sales_products' doesn't exist
+[2020-10-24 15:24:50]	select * from _tbl_units
+[2020-10-24 15:24:50]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_units' doesn't exist
+[2020-10-24 15:26:02]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:26:02]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:26:02]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:26:02]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:26:02]	select * from _tbl_sales_products
+[2020-10-24 15:26:02]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_sales_products' doesn't exist
+[2020-10-24 15:26:02]	select * from _tbl_units
+[2020-10-24 15:26:02]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_units' doesn't exist
+[2020-10-24 15:26:26]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:26:26]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:26:26]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:26:26]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:26:26]	select * from _tbl_sales_products
+[2020-10-24 15:26:26]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_sales_products' doesn't exist
+[2020-10-24 15:26:26]	select * from _tbl_units
+[2020-10-24 15:26:26]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_units' doesn't exist
+[2020-10-24 15:26:47]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:26:47]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:26:47]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:26:47]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:26:47]	select * from _tbl_sales_products
+[2020-10-24 15:26:47]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_sales_products' doesn't exist
+[2020-10-24 15:26:47]	select * from _tbl_units
+[2020-10-24 15:26:47]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_units' doesn't exist
+[2020-10-24 15:27:10]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:27:10]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:27:10]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:27:10]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:27:10]	select * from _tbl_sales_products
+[2020-10-24 15:27:10]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_sales_products' doesn't exist
+[2020-10-24 15:27:10]	select * from _tbl_units
+[2020-10-24 15:27:10]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_units' doesn't exist
+[2020-10-24 15:30:10]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:30:10]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:30:10]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:30:10]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:30:10]	select * from _tbl_sales_products
+[2020-10-24 15:30:10]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_sales_products' doesn't exist
+[2020-10-24 15:30:10]	select * from _tbl_units
+[2020-10-24 15:30:10]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_units' doesn't exist
+[2020-10-24 15:31:29]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:31:29]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:31:29]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:31:29]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:31:29]	select * from _tbl_sales_products
+[2020-10-24 15:31:29]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_sales_products' doesn't exist
+[2020-10-24 15:31:29]	select * from _tbl_units
+[2020-10-24 15:31:29]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_units' doesn't exist
+[2020-10-24 15:32:18]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:32:18]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:32:18]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:32:18]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:32:18]	select * from _tbl_sales_products
+[2020-10-24 15:32:18]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_sales_products' doesn't exist
+[2020-10-24 15:32:18]	select * from _tbl_units
+[2020-10-24 15:32:18]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_units' doesn't exist
+[2020-10-24 15:33:14]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:33:14]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:33:14]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:33:14]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:33:14]	select * from _tbl_sales_products
+[2020-10-24 15:33:14]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_sales_products' doesn't exist
+[2020-10-24 15:33:14]	select * from _tbl_units
+[2020-10-24 15:33:14]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_units' doesn't exist
+[2020-10-24 15:33:46]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:33:46]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:33:46]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:33:46]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:33:46]	select * from _tbl_sales_products
+[2020-10-24 15:33:46]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_sales_products' doesn't exist
+[2020-10-24 15:33:46]	select * from _tbl_units
+[2020-10-24 15:33:46]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_units' doesn't exist
+[2020-10-24 15:35:59]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:35:59]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:35:59]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:35:59]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:35:59]	select * from _tbl_sales_products
+[2020-10-24 15:35:59]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_sales_products' doesn't exist
+[2020-10-24 15:35:59]	select * from _tbl_units
+[2020-10-24 15:35:59]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_units' doesn't exist
+[2020-10-24 15:36:40]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:36:40]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:36:40]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:36:40]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:36:40]	select * from _tbl_sales_products
+[2020-10-24 15:36:40]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_sales_products' doesn't exist
+[2020-10-24 15:36:40]	select * from _tbl_units
+[2020-10-24 15:36:40]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_units' doesn't exist
+[2020-10-24 15:37:51]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:37:51]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:37:51]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:37:51]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:37:51]	select * from _tbl_sales_products
+[2020-10-24 15:37:51]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_sales_products' doesn't exist
+[2020-10-24 15:37:51]	select * from _tbl_units
+[2020-10-24 15:37:51]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_units' doesn't exist
+[2020-10-24 15:38:16]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:38:16]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:38:16]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:38:16]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:38:16]	select * from _tbl_sales_products
+[2020-10-24 15:38:16]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_sales_products' doesn't exist
+[2020-10-24 15:38:16]	select * from _tbl_units
+[2020-10-24 15:38:16]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_units' doesn't exist
+[2020-10-24 15:39:14]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:39:14]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:39:14]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:39:14]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:39:14]	select * from _tbl_sales_products
+[2020-10-24 15:39:14]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_sales_products' doesn't exist
+[2020-10-24 15:39:14]	select * from _tbl_units
+[2020-10-24 15:39:14]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_units' doesn't exist
+[2020-10-24 15:43:13]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:43:13]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:43:13]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:43:13]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:47:57]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:47:57]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:47:57]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:47:57]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:48:43]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:48:43]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:48:43]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:48:43]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:51:03]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:51:03]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:51:03]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:51:03]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:51:48]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:51:48]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:51:48]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:51:48]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:52:47]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:52:47]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:52:47]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:52:47]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:55:48]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:55:48]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:55:48]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:55:48]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:57:22]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:57:22]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:57:22]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:57:22]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:58:45]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:58:45]	select * from _queen_services where IsActive='1'
+[2020-10-24 15:58:45]	select * from _queen_agent where IsActive='1'
+[2020-10-24 15:58:45]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:00:00]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:00:00]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:00:00]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:00:00]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:01:02]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:01:02]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:01:02]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:01:02]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:04:12]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:04:12]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:04:12]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:04:12]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:07:40]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:07:40]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:07:40]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:07:40]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:08:57]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:08:57]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:08:57]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:08:57]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:09:48]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:09:48]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:09:48]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:09:48]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:10:29]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:10:29]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:10:29]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:10:29]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:10:51]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:10:51]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:10:51]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:10:51]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:11:18]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:11:18]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:11:18]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:11:18]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:11:37]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:11:37]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:11:37]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:11:37]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:12:12]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:12:12]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:12:12]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:12:12]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:12:39]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:12:39]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:12:39]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:12:39]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:13:09]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:13:09]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:13:09]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:13:09]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:13:28]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:13:28]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:13:28]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:13:28]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:13:31]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:13:31]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:13:31]	select * from _tbl_sales_customers where CustomerID=''
+[2020-10-24 16:13:31]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._tbl_sales_customers' doesn't exist
+[2020-10-24 16:13:31]	insert into `invoice_order` (`user_id`,`order_code`,`order_receiver_name`,`order_receiver_address`,`order_total_after_tax`,`order_amount_paid`,`order_total_amount_due`,`TransactionMode`,`CashTwoThousand`,`CashFiveHundred`,`CashTwoHundred`,`CashOneHundred`,`CashFiftyRupees`,`CashTwentyRupees`,`CashTenRupees`,`Coins`,`TotalCashReceived`,`ReturnCashToCustomer`,`note`) values ('','IN00919','',',,','','0.00','','','','','','','','','','','','','')
+[2020-10-24 16:13:31]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_id' in 'field list'
+[2020-10-24 16:13:31]	insert into `receipt` (`receipt_code`,`order_id`,`order_date`,`user_id`,`receipt_amount`,`invoice_due_amount`,`receipt_date`) values ('RT00919',Null,'2020-10-24 16:13:31','','','0.00','2020-10-24 16:13:31')
+[2020-10-24 16:13:31]	SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'user_id' at row 1
+[2020-10-24 16:13:31]	update invoice_order set `order_amount_paid`      ='',
+                                                             `order_total_amount_due` ='0',                    
+                                                             `receipt_id`             ='0',
+                                                             `receipt_date`             ='2020-10-24 16:13:31'
+                                                              where `order_id`='0'
+[2020-10-24 16:13:31]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'order_amount_paid' in 'field list'
+[2020-10-24 16:13:31]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:13:31]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:13:42]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:13:42]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:13:42]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:13:42]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:17:57]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:17:57]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:17:57]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:17:57]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:19:19]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:19:19]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:19:19]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:19:19]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:19:59]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:19:59]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:19:59]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:19:59]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:20:46]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:20:46]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:20:46]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:20:46]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:21:16]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:21:16]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:21:16]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:21:16]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:24:30]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:24:30]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:24:30]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:24:30]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:25:17]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:25:17]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:25:17]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:25:17]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:26:09]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:26:09]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:26:09]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:26:09]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:26:22]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:26:22]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:26:22]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:26:22]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:26:33]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:26:33]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:26:33]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:26:33]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:35:37]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:35:37]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:35:37]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:35:37]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:36:15]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:36:15]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:36:15]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:36:15]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:38:18]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:38:18]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:38:18]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:38:18]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:38:54]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:38:54]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:38:54]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:38:54]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:39:32]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:39:32]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:39:32]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:39:32]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:42:52]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:42:52]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:42:52]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:42:52]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:45:55]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:45:55]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:45:55]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:45:55]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:47:24]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:47:24]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:47:24]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:47:24]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:49:57]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:49:57]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:49:57]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:49:57]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:50:24]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:50:24]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:50:24]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:50:24]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:50:37]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:50:37]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:50:37]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:50:37]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:52:00]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:52:00]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:52:00]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:52:00]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:52:50]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:52:50]	select * from _queen_services where IsActive='1'
+[2020-10-24 16:52:50]	select * from _queen_agent where IsActive='1'
+[2020-10-24 16:52:50]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:13:14]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:13:14]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:13:14]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:13:14]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:21:56]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:21:56]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:21:56]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:21:56]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:23:07]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:23:07]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:23:07]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:23:07]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:23:14]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:23:14]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:23:14]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:23:14]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:25:18]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:25:18]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:25:18]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:25:18]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:25:32]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:25:32]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:25:32]	select * from _queen_orders
+[2020-10-24 17:25:32]	select * from _queen_agent where AgentID='2'
+[2020-10-24 17:25:32]	insert into `_queen_orders` (`AgentID`,`AgentCode`,`AgentName`,`AgentMobileNumber`,`StaffID`,`StaffName`,`StaffMobileNumber`,`OrderCode`,`OrderTotal`,`OrderOn`) values ('2','AGNT00002','Agent one','9888888888','1','Angel','','ORD1','1502','2020-10-24 17:25:32')
+[2020-10-24 17:25:32]	insert into `_queen_order_item` (`OrderID`,`ServiceCode`,`ServiceName`,`Charge`,`FeeAmount`,`TotalAmount`) values ('1','SRVC00001','service one','','1001','1502')
+[2020-10-24 17:25:32]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._queen_order_item' doesn't exist
+[2020-10-24 17:25:32]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:25:32]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:32:01]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:32:01]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:32:01]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:32:01]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:32:35]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:32:35]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:32:35]	select * from _queen_orders
+[2020-10-24 17:32:35]	select * from _queen_agent where AgentID='2'
+[2020-10-24 17:32:35]	insert into `_queen_orders` (`AgentID`,`AgentCode`,`AgentName`,`AgentMobileNumber`,`StaffID`,`StaffCode`,`StaffName`,`StaffMobileNumber`,`OrderCode`,`OrderTotal`,`OrderOn`) values ('2','AGNT00002','Agent one','9888888888','1','STF00001','Angel','','ORD2','300','2020-10-24 17:32:35')
+[2020-10-24 17:32:35]	insert into `_queen_order_item` (`OrderID`,`ServiceCode`,`ServiceName`,`Charge`,`FeeAmount`,`TotalAmount`) values ('2','SRVC00002','service two','','200','300')
+[2020-10-24 17:32:35]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._queen_order_item' doesn't exist
+[2020-10-24 17:32:35]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:32:35]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:33:25]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:33:25]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:33:25]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:33:25]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:35:00]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:35:00]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:35:00]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:35:00]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:35:11]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:35:11]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:35:11]	select * from _queen_orders
+[2020-10-24 17:35:11]	select * from _queen_agent where AgentID='2'
+[2020-10-24 17:35:11]	insert into `_queen_orders` (`AgentID`,`AgentCode`,`AgentName`,`AgentMobileNumber`,`StaffID`,`StaffCode`,`StaffName`,`StaffMobileNumber`,`OrderCode`,`OrderTotal`,`OrderOn`) values ('2','AGNT00002','Agent one','9888888888','1','STF00001','Angel','','ORD1','1502','2020-10-24 17:35:11')
+[2020-10-24 17:35:11]	insert into `_queen_order_item` (`OrderID`,`ServiceCode`,`ServiceName`,`Charge`,`FeeAmount`,`TotalAmount`) values ('1','SRVC00001','service one','','1001','1502')
+[2020-10-24 17:35:11]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:35:11]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:36:22]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:36:22]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:36:22]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:36:22]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:36:32]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:36:32]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:36:32]	select * from _queen_orders
+[2020-10-24 17:36:32]	select * from _queen_agent where AgentID='2'
+[2020-10-24 17:36:32]	insert into `_queen_orders` (`AgentID`,`AgentCode`,`AgentName`,`AgentMobileNumber`,`StaffID`,`StaffCode`,`StaffName`,`OrderCode`,`OrderTotal`,`OrderOn`) values ('2','AGNT00002','Agent one','9888888888','1','STF00001','Angel','ORD1','1502','2020-10-24 17:36:32')
+[2020-10-24 17:36:32]	insert into `_queen_order_item` (`OrderID`,`ServiceCode`,`ServiceName`,`Charge`,`FeeAmount`,`TotalAmount`) values ('1','SRVC00001','service one','501','1001','1502')
+[2020-10-24 17:36:32]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:36:32]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:36:53]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:36:53]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:36:53]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:36:53]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:37:06]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:37:06]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:37:06]	select * from _queen_orders
+[2020-10-24 17:37:06]	select * from _queen_agent where AgentID='2'
+[2020-10-24 17:37:06]	insert into `_queen_orders` (`AgentID`,`AgentCode`,`AgentName`,`AgentMobileNumber`,`StaffID`,`StaffCode`,`StaffName`,`OrderCode`,`OrderTotal`,`OrderOn`) values ('2','AGNT00002','Agent one','9888888888','1','STF00001','Angel','ORD2','1802','2020-10-24 17:37:06')
+[2020-10-24 17:37:06]	insert into `_queen_order_item` (`OrderID`,`ServiceCode`,`ServiceName`,`Charge`,`FeeAmount`,`TotalAmount`) values ('2','SRVC00001','service one','501','1001','1502')
+[2020-10-24 17:37:06]	insert into `_queen_order_item` (`OrderID`,`ServiceCode`,`ServiceName`,`Charge`,`FeeAmount`,`TotalAmount`) values ('2','SRVC00002','service two','100','200','300')
+[2020-10-24 17:37:06]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:37:06]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:38:06]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:38:06]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:38:06]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:38:06]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:38:17]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:38:17]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:38:17]	select * from _queen_orders
+[2020-10-24 17:38:17]	select * from _queen_agent where AgentID='2'
+[2020-10-24 17:38:17]	insert into `_queen_orders` (`AgentID`,`AgentCode`,`AgentName`,`AgentMobileNumber`,`StaffID`,`StaffCode`,`StaffName`,`OrderCode`,`OrderTotal`,`OrderOn`) values ('2','AGNT00002','Agent one','9888888888','1','STF00001','Angel','ORD3','1502','2020-10-24 17:38:17')
+[2020-10-24 17:38:17]	insert into `_queen_order_item` (`OrderID`,`ServiceCode`,`ServiceName`,`Charge`,`FeeAmount`,`TotalAmount`) values ('3','SRVC00001','service one','501','1001','1502')
+[2020-10-24 17:38:17]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:38:17]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:39:12]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:39:12]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:39:12]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:39:12]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:39:24]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:39:24]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:39:24]	select * from _queen_orders
+[2020-10-24 17:39:24]	select * from _queen_agent where AgentID='2'
+[2020-10-24 17:39:24]	insert into `_queen_orders` (`AgentID`,`AgentCode`,`AgentName`,`AgentMobileNumber`,`StaffID`,`StaffCode`,`StaffName`,`OrderCode`,`OrderTotal`,`OrderOn`) values ('2','AGNT00002','Agent one','9888888888','1','STF00001','Angel','ORD0001','1802','2020-10-24 17:39:24')
+[2020-10-24 17:39:24]	insert into `_queen_order_item` (`OrderID`,`ServiceCode`,`ServiceName`,`Charge`,`FeeAmount`,`TotalAmount`) values ('1','SRVC00001','service one','501','1001','1502')
+[2020-10-24 17:39:24]	insert into `_queen_order_item` (`OrderID`,`ServiceCode`,`ServiceName`,`Charge`,`FeeAmount`,`TotalAmount`) values ('1','SRVC00002','service two','100','200','300')
+[2020-10-24 17:39:24]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:39:24]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:40:08]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:40:08]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:40:08]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:40:08]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:40:17]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:40:17]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:40:17]	select * from _queen_orders
+[2020-10-24 17:40:17]	select * from _queen_agent where AgentID='2'
+[2020-10-24 17:40:17]	insert into `_queen_orders` (`AgentID`,`AgentCode`,`AgentName`,`AgentMobileNumber`,`StaffID`,`StaffCode`,`StaffName`,`OrderCode`,`OrderTotal`,`OrderOn`) values ('2','AGNT00002','Agent one','9888888888','1','STF00001','Angel','ORD00002','300','2020-10-24 17:40:17')
+[2020-10-24 17:40:17]	insert into `_queen_order_item` (`OrderID`,`ServiceCode`,`ServiceName`,`Charge`,`FeeAmount`,`TotalAmount`) values ('2','SRVC00002','service two','100','200','300')
+[2020-10-24 17:40:17]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:40:17]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:47:52]	SELECT * FROM _queen_orders order by OrderID desc
+[2020-10-24 17:48:25]	SELECT * FROM _queen_orders order by OrderID desc
+[2020-10-24 17:48:53]	SELECT * FROM _queen_orders order by OrderID desc
+[2020-10-24 17:49:00]	SELECT * FROM _queen_orders where (date(OrderOn)>=date('2020-10-23') and date(OrderOn)<=date('2020-10-14') ) order by OrderID desc
+[2020-10-24 17:49:37]	SELECT * FROM _queen_orders where (date(OrderOn)>=date('2020-10-24') and date(OrderOn)<=date('2020-10-24') ) order by OrderID desc
+[2020-10-24 17:49:40]	SELECT * FROM _queen_orders where (date(OrderOn)>=date('2020-10-24') and date(OrderOn)<=date('2020-10-24') ) order by OrderID desc
+[2020-10-24 17:49:44]	SELECT * FROM _queen_orders where (date(OrderOn)>=date('2020-10-01') and date(OrderOn)<=date('2020-10-24') ) order by OrderID desc
+[2020-10-24 17:49:50]	SELECT * FROM _queen_orders where (date(OrderOn)>=date('2020-10-01') and date(OrderOn)<=date('2020-10-01') ) order by OrderID desc
+[2020-10-24 17:49:53]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:49:53]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:49:53]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:49:53]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:50:25]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:50:25]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:50:25]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:50:25]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:52:07]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:52:07]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:52:07]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:52:07]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:52:09]	SELECT * FROM _queen_orders where (date(OrderOn)>=date('2020-10-24') and date(OrderOn)<=date('2020-10-24') ) order by OrderID desc
+[2020-10-24 17:52:21]	SELECT * FROM _queen_orders where (date(OrderOn)>=date('2020-10-24') and date(OrderOn)<=date('2020-10-24') ) order by OrderID desc
+[2020-10-24 17:52:24]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:52:24]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:52:24]	select * from _queen_agent where IsActive='1'
+[2020-10-24 17:52:24]	select * from _queen_services where IsActive='1'
+[2020-10-24 17:52:26]	SELECT * FROM _queen_orders where (date(OrderOn)>=date('2020-10-24') and date(OrderOn)<=date('2020-10-24') ) order by OrderID desc
+[2020-10-24 18:00:54]	select * from _queen_orders where md5(OrderID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-24 18:00:54]	select * from _queen_order_item where OrderID='2'
+[2020-10-24 18:02:17]	select * from _queen_orders where md5(OrderID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-24 18:02:17]	select * from _queen_order_item where OrderID='2'
+[2020-10-24 18:02:41]	select * from _queen_orders where md5(OrderID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-24 18:02:41]	select * from _queen_order_item where OrderID='2'
+[2020-10-24 18:03:37]	select * from _queen_orders where md5(OrderID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-24 18:03:37]	select * from _queen_order_item where OrderID='2'
+[2020-10-24 18:04:19]	SELECT * FROM _queen_orders where (date(OrderOn)>=date('2020-10-24') and date(OrderOn)<=date('2020-10-24') ) order by OrderID desc
+[2020-10-24 18:04:23]	select * from _queen_orders where md5(OrderID)='c4ca4238a0b923820dcc509a6f75849b'
+[2020-10-24 18:04:23]	select * from _queen_order_item where OrderID='1'
+[2020-10-24 18:04:30]	SELECT * FROM _queen_orders where (date(OrderOn)>=date('2020-10-24') and date(OrderOn)<=date('2020-10-24') ) order by OrderID desc
+[2020-10-24 18:04:47]	SELECT * FROM _queen_orders where (date(OrderOn)>=date('2020-10-24') and date(OrderOn)<=date('2020-10-24') ) order by OrderID desc

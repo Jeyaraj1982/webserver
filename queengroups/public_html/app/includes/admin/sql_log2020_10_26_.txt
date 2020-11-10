@@ -1,0 +1,88 @@
+[2020-10-26 10:19:20]	select * from _queen_admin where UserName='queenadmin@gmail.com' and Password='123456' 
+[2020-10-26 10:19:27]	select * from _queen_admin where UserName='queenadmin@gmail.com' and Password='123456789' 
+[2020-10-26 10:19:33]	select * from _queen_admin where UserName='queenadmin@gmail.com' and Password='12345' 
+[2020-10-26 10:19:43]	select * from _queen_staffs order by StaffID desc
+[2020-10-26 10:19:53]	select * from _queen_staffs where md5(StaffID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-26 10:20:08]	select * from _queen_staffs order by StaffID desc
+[2020-10-26 10:20:15]	select * from _queen_staffs where md5(StaffID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-26 10:20:15]	select * from _queen_staffs where md5(StaffID)='c81e728d9d4c2f636f067f89cc14862c'
+[2020-10-26 10:21:22]	select * from _queen_staffs order by StaffID desc
+[2020-10-26 10:21:48]	select * from _queen_services order by ServiceID desc
+[2020-10-26 10:22:45]	select * from _queen_services order by ServiceID desc
+[2020-10-26 10:22:48]	select * from _queen_services where md5(ServiceID)='eccbc87e4b5ce2fe28308fd9f2a7baf3'
+[2020-10-26 10:22:48]	select * from _queen_services where md5(ServiceID)='eccbc87e4b5ce2fe28308fd9f2a7baf3'
+[2020-10-26 10:23:03]	select * from _queen_services order by ServiceID desc
+[2020-10-26 10:23:10]	select * from _queen_expenses order by ExpenseID desc
+[2020-10-26 10:24:43]	select * from _queen_agent order by AgentID desc
+[2020-10-26 10:25:14]	select * from _queen_customer order by CustomerID desc
+[2020-10-26 10:25:20]	SELECT * FROM _queen_agent where date(CreatedOn)>=date('2020-10-26') and date(CreatedOn)<=date('2020-10-26') order by AgentID desc
+[2020-10-26 10:25:29]	SELECT * FROM _queen_agent where date(CreatedOn)>=date('2020-10-01') and date(CreatedOn)<=date('2020-10-26') order by AgentID desc
+[2020-10-26 10:25:37]	select * from _queen_services order by ServiceID desc
+[2020-10-26 10:53:18]	select * from _queen_admin where UserName='queenadmin@gmail.com' and Password='12345' 
+[2020-10-26 10:53:21]	select * from _queen_staffs order by StaffID desc
+[2020-10-26 10:53:25]	select * from _queen_services order by ServiceID desc
+[2020-10-26 10:53:28]	select * from _queen_expenses order by ExpenseID desc
+[2020-10-26 10:53:32]	select * from _queen_agent order by AgentID desc
+[2020-10-26 10:53:35]	select * from _queen_customer order by CustomerID desc
+[2020-10-26 12:13:16]	select * from _queen_customer order by CustomerID desc
+[2020-10-26 13:54:49]	select * from _queen_admin where UserName='queenadmin@gmail.com' and Password='12345' 
+[2020-10-26 13:54:53]	select * from _queen_staffs order by StaffID desc
+[2020-10-26 16:32:02]	select * from _queen_admin where UserName='queenadmin@gmail.com' and Password='12345' 
+[2020-10-26 16:32:05]	select * from _queen_staffs order by StaffID desc
+[2020-10-26 16:34:10]	select * from _queen_staffs where SurName='Angel'
+[2020-10-26 16:34:10]	select * from _queen_staffs where LoginName='dfgdfg'
+[2020-10-26 16:34:15]	select * from _queen_staffs where SurName='Angelsasd'
+[2020-10-26 16:34:15]	select * from _queen_staffs where LoginName='dfgdfg'
+[2020-10-26 16:34:15]	select * from _queen_staffs
+[2020-10-26 16:34:15]	insert into `_queen_staffs` (`StaffCode`,`StaffName`,`SurName`,`LoginName`,`LoginPassword`,`CreatedOn`) values ('STF00003','dfgg','Angelsasd','dfgdfg','dfgdfg','2020-10-26 16:34:15')
+[2020-10-26 16:34:16]	select * from _queen_staffs order by StaffID desc
+[2020-10-26 16:34:19]	select * from _queen_staffs where md5(StaffID)='eccbc87e4b5ce2fe28308fd9f2a7baf3'
+[2020-10-26 16:34:19]	select * from _queen_staffs where md5(StaffID)='eccbc87e4b5ce2fe28308fd9f2a7baf3'
+[2020-10-26 16:35:10]	select * from _queen_staffs where md5(StaffID)='eccbc87e4b5ce2fe28308fd9f2a7baf3'
+[2020-10-26 16:35:10]	select * from _queen_staffs where md5(StaffID)='eccbc87e4b5ce2fe28308fd9f2a7baf3'
+[2020-10-26 16:35:55]	select * from _queen_staffs where md5(StaffID)='eccbc87e4b5ce2fe28308fd9f2a7baf3'
+[2020-10-26 16:35:55]	select * from _queen_staffs where md5(StaffID)='eccbc87e4b5ce2fe28308fd9f2a7baf3'
+[2020-10-26 16:36:05]	select * from _queen_staffs where md5(StaffID)='eccbc87e4b5ce2fe28308fd9f2a7baf3'
+[2020-10-26 16:36:05]	select * from _queen_staffs where SurName='Angel' and StaffID<>'3'
+[2020-10-26 16:36:05]	select * from _queen_staffs where LoginName='dfgdfg' and StaffID<>'3'
+[2020-10-26 16:36:05]	select * from _queen_staffs where md5(StaffID)='eccbc87e4b5ce2fe28308fd9f2a7baf3'
+[2020-10-26 16:36:11]	select * from _queen_staffs where md5(StaffID)='eccbc87e4b5ce2fe28308fd9f2a7baf3'
+[2020-10-26 16:36:11]	select * from _queen_staffs where SurName='Angeldfsdfsdf' and StaffID<>'3'
+[2020-10-26 16:36:11]	select * from _queen_staffs where LoginName='dfgdfg' and StaffID<>'3'
+[2020-10-26 16:36:11]	update _queen_staffs set `StaffName`  	='dfgg',
+																`SurName`  		='Angeldfsdfsdf',
+																`LoginName`  	='dfgdfg',
+																`LoginPassword` ='dfgdfg',
+ 																`IsActive` 		='1'
+ 																 where StaffID='3'
+[2020-10-26 16:36:11]	select * from _queen_staffs where md5(StaffID)='eccbc87e4b5ce2fe28308fd9f2a7baf3'
+[2020-10-26 16:36:14]	select * from _queen_staffs order by StaffID desc
+[2020-10-26 16:47:43]	select * from _queen_services order by ServiceID desc
+[2020-10-26 16:47:45]	select * from _queen_sequence where SequenceFor='Service'
+[2020-10-26 16:47:45]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._queen_sequence' doesn't exist
+[2020-10-26 16:48:36]	select * from _queen_sequence where SequenceFor='Service'
+[2020-10-26 16:48:36]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._queen_sequence' doesn't exist
+[2020-10-26 16:49:45]	select * from _queen_services where ServiceName='service one'
+[2020-10-26 16:49:45]	select * from _queen_services
+[2020-10-26 16:49:45]	insert into `_queen_services` (`ServiceCode`,`ServiceName`,`FeeAmount`,`ServiceCharge`,`CreatedOn`) values ('SRVC00001','service one','500','100','2020-10-26 16:49:45')
+[2020-10-26 16:49:45]	update _queen_sequence set LastNumber=LastNumber+1 where SequenceFor='Service'
+[2020-10-26 16:49:45]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._queen_sequence' doesn't exist
+[2020-10-26 16:49:45]	select * from _queen_sequence where SequenceFor='Service'
+[2020-10-26 16:49:45]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'japps_ecommerce._queen_sequence' doesn't exist
+[2020-10-26 16:49:46]	select * from _queen_services order by ServiceID desc
+[2020-10-26 16:50:21]	select * from _queen_sequence where SequenceFor='Service'
+[2020-10-26 16:50:28]	select * from _queen_services where ServiceName='service one'
+[2020-10-26 16:50:28]	select * from _queen_services
+[2020-10-26 16:50:28]	insert into `_queen_services` (`ServiceCode`,`ServiceName`,`FeeAmount`,`ServiceCharge`,`CreatedOn`) values ('SRVC00001','service one','500','100','2020-10-26 16:50:28')
+[2020-10-26 16:50:28]	update _queen_sequence set LastNumber=LastNumber+1 where SequenceFor='Service'
+[2020-10-26 16:50:28]	select * from _queen_sequence where SequenceFor='Service'
+[2020-10-26 16:50:30]	select * from _queen_services order by ServiceID desc
+[2020-10-26 16:50:55]	select * from _queen_sequence where SequenceFor='Service'
+[2020-10-26 16:51:10]	select * from _queen_services where ServiceName='service two'
+[2020-10-26 16:51:10]	select * from _queen_services
+[2020-10-26 16:51:10]	insert into `_queen_services` (`ServiceCode`,`ServiceName`,`FeeAmount`,`ServiceCharge`,`CreatedOn`) values ('SRVC00002','service two','600','200','2020-10-26 16:51:10')
+[2020-10-26 16:51:10]	update _queen_sequence set LastNumber=LastNumber+1 where SequenceFor='Service'
+[2020-10-26 16:51:10]	select * from _queen_sequence where SequenceFor='Service'
+[2020-10-26 16:51:11]	select * from _queen_services order by ServiceID desc
+[2020-10-26 16:51:58]	select * from _queen_sequence where SequenceFor='Service'
+[2020-10-26 16:52:27]	select * from _queen_sequence where SequenceFor='Service'

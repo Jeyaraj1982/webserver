@@ -1,0 +1,63 @@
+[2020-10-28 11:51:48]	select * from _queen_staffs where LoginName='ajay@gmail.com' and LoginPassword='123456' 
+[2020-10-28 11:51:51]	SELECT * FROM _queen_orders where (date(OrderOn)>=date('2020-10-28') and date(OrderOn)<=date('2020-10-28') ) order by OrderID desc
+[2020-10-28 11:51:52]	select * from _queen_agent where IsActive='1'
+[2020-10-28 11:51:52]	select * from _queen_services where IsActive='1'
+[2020-10-28 11:51:52]	select * from _queen_agent where IsActive='1'
+[2020-10-28 11:51:52]	select * from _queen_services where IsActive='1'
+[2020-10-28 11:52:15]	select * from _queen_agent where IsActive='1'
+[2020-10-28 11:52:15]	select * from _queen_services where IsActive='1'
+[2020-10-28 11:52:15]	select * from _queen_orders
+[2020-10-28 11:52:15]	select * from _queen_agent where AgentID='1'
+[2020-10-28 11:52:15]	insert into `_queen_orders` (`AgentID`,`AgentCode`,`AgentName`,`AgentMobileNumber`,`StaffID`,`StaffCode`,`StaffName`,`OrderCode`,`OrderTotal`,`OrderOn`) values ('1','AGNT1','Agent one','9888888888','2','Ajay001','Ajay','ORD00002','600','2020-10-28 11:52:15')
+[2020-10-28 11:52:15]	insert into `_queen_order_item` (`OrderID`,`ServiceCode`,`ServiceName`,`Charge`,`FeeAmount`,`TotalAmount`) values ('2','SRVC1','service one','100','500','600')
+[2020-10-28 11:52:15]	select * from _queen_agent where IsActive='1'
+[2020-10-28 11:52:15]	select * from _queen_services where IsActive='1'
+[2020-10-28 11:52:16]	select * from _queen_orders where md5(OrderID)='d41d8cd98f00b204e9800998ecf8427e'
+[2020-10-28 11:52:16]	select * from _queen_order_item where OrderID=''
+[2020-10-28 11:52:20]	SELECT * FROM _queen_orders where (date(OrderOn)>=date('2020-10-28') and date(OrderOn)<=date('2020-10-28') ) order by OrderID desc
+[2020-10-28 11:52:22]	select * from _queen_agent where IsActive='1'
+[2020-10-28 11:52:22]	select * from _queen_services where IsActive='1'
+[2020-10-28 11:52:22]	select * from _queen_agent where IsActive='1'
+[2020-10-28 11:52:22]	select * from _queen_services where IsActive='1'
+[2020-10-28 11:52:39]	select * from _queen_agent where IsActive='1'
+[2020-10-28 11:52:39]	select * from _queen_services where IsActive='1'
+[2020-10-28 11:52:39]	select * from _queen_orders
+[2020-10-28 11:52:39]	select * from _queen_agent where AgentID='1'
+[2020-10-28 11:52:39]	insert into `_queen_orders` (`AgentID`,`AgentCode`,`AgentName`,`AgentMobileNumber`,`StaffID`,`StaffCode`,`StaffName`,`OrderCode`,`OrderTotal`,`OrderOn`) values ('1','AGNT1','Agent one','9888888888','2','Ajay001','Ajay','ORD00003','1800','2020-10-28 11:52:39')
+[2020-10-28 11:52:39]	insert into `_queen_order_item` (`OrderID`,`ServiceCode`,`ServiceName`,`Charge`,`FeeAmount`,`TotalAmount`) values ('3','SRVC2','service two','200','600','800')
+[2020-10-28 11:52:39]	select * from _queen_agent where IsActive='1'
+[2020-10-28 11:52:39]	select * from _queen_services where IsActive='1'
+[2020-10-28 11:52:40]	select * from _queen_orders where md5(OrderID)='d41d8cd98f00b204e9800998ecf8427e'
+[2020-10-28 11:52:40]	select * from _queen_order_item where OrderID=''
+[2020-10-28 11:54:08]	select * from _queen_staffs where LoginName='ajay@gmail.com' and LoginPassword='123456' 
+[2020-10-28 11:54:10]	SELECT * FROM _queen_orders where (date(OrderOn)>=date('2020-10-28') and date(OrderOn)<=date('2020-10-28') ) order by OrderID desc
+[2020-10-28 11:54:12]	select * from _queen_agent where IsActive='1'
+[2020-10-28 11:54:12]	select * from _queen_services where IsActive='1'
+[2020-10-28 11:54:12]	select * from _queen_agent where IsActive='1'
+[2020-10-28 11:54:12]	select * from _queen_services where IsActive='1'
+[2020-10-28 11:54:23]	select * from _queen_agent where IsActive='1'
+[2020-10-28 11:54:23]	select * from _queen_services where IsActive='1'
+[2020-10-28 11:54:23]	select * from _queen_orders
+[2020-10-28 11:54:23]	select * from _queen_agent where AgentID='1'
+[2020-10-28 11:54:23]	insert into `_queen_orders` (`AgentID`,`AgentCode`,`AgentName`,`AgentMobileNumber`,`StaffID`,`StaffCode`,`StaffName`,`OrderCode`,`OrderTotal`,`OrderOn`) values ('1','AGNT1','Agent one','9888888888','2','Ajay001','Ajay','ORD00004','1800','2020-10-28 11:54:23')
+[2020-10-28 11:54:23]	insert into `_queen_order_item` (`OrderID`,`ServiceCode`,`ServiceName`,`Charge`,`FeeAmount`,`TotalAmount`) values ('4','SRVC3','service three','300','700','1000')
+[2020-10-28 11:54:23]	insert into `_queen_order_item` (`OrderID`,`ServiceCode`,`ServiceName`,`Charge`,`FeeAmount`,`TotalAmount`) values ('4','SRVC2','service two','200','600','800')
+[2020-10-28 11:54:23]	select * from _queen_agent where IsActive='1'
+[2020-10-28 11:54:23]	select * from _queen_services where IsActive='1'
+[2020-10-28 11:54:25]	select * from _queen_orders where md5(OrderID)='d41d8cd98f00b204e9800998ecf8427e'
+[2020-10-28 11:54:25]	select * from _queen_order_item where OrderID=''
+[2020-10-28 11:54:27]	SELECT * FROM _queen_orders where (date(OrderOn)>=date('2020-10-28') and date(OrderOn)<=date('2020-10-28') ) order by OrderID desc
+[2020-10-28 11:54:31]	select * from _queen_agent where IsActive='1'
+[2020-10-28 11:54:31]	select * from _queen_services where IsActive='1'
+[2020-10-28 11:54:31]	select * from _queen_agent where IsActive='1'
+[2020-10-28 11:54:31]	select * from _queen_services where IsActive='1'
+[2020-10-28 11:54:38]	select * from _queen_agent where IsActive='1'
+[2020-10-28 11:54:38]	select * from _queen_services where IsActive='1'
+[2020-10-28 11:54:38]	select * from _queen_orders
+[2020-10-28 11:54:38]	select * from _queen_agent where AgentID='1'
+[2020-10-28 11:54:38]	insert into `_queen_orders` (`AgentID`,`AgentCode`,`AgentName`,`AgentMobileNumber`,`StaffID`,`StaffCode`,`StaffName`,`OrderCode`,`OrderTotal`,`OrderOn`) values ('1','AGNT1','Agent one','9888888888','2','Ajay001','Ajay','ORD00005','1000','2020-10-28 11:54:38')
+[2020-10-28 11:54:38]	insert into `_queen_order_item` (`OrderID`,`ServiceCode`,`ServiceName`,`Charge`,`FeeAmount`,`TotalAmount`) values ('5','SRVC3','service three','300','700','1000')
+[2020-10-28 11:54:38]	select * from _queen_agent where IsActive='1'
+[2020-10-28 11:54:38]	select * from _queen_services where IsActive='1'
+[2020-10-28 11:54:40]	select * from _queen_orders where md5(OrderID)='d41d8cd98f00b204e9800998ecf8427e'
+[2020-10-28 11:54:40]	select * from _queen_order_item where OrderID=''
