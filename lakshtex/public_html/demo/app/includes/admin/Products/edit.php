@@ -27,6 +27,8 @@ $data=$mysql->select("select * from _tbl_products where md5(ProductID)='".$_GET[
                                                         `StockAvailable`    ='".$_POST['StockAvailable']."',
                                                         `AgeGroup`          ='".$AgeGroup."',
                                                         `BrandSize`         ='".$BrandSize."',
+                                                        `Ratings`           ='".$_POST['Rating']."',
+                                                        `IsNew`             ='".$_POST['IsNew']."',
                                                         `IsActive`          ='".$_POST['IsActive']."',
                                                         `ShortDescription`  ='".str_replace("'","\\'",$_POST['ShortDescription'])."',
                                                         `DetailDescription` ='".str_replace("'","\\'",$_POST['DetailDescription'])."' where ProductID='".$data[0]['ProductID']."'");
@@ -204,6 +206,24 @@ $(document).ready(function () {
                                                             <option value="0" <?php echo (isset($_POST[ 'IsActive'])) ? (($_POST[ 'IsActive']=="0") ? " selected='selected' " : "") : (($data[0]['IsActive']=="0") ? " selected='selected' " : "");?>>No</option>
                                                         </select>
                                                         <span class="errorstring" id="ErrIsActive"><?php echo isset($ErrIsActive)? $ErrIsActive : "";?></span>
+                                                    </div>  
+                                               </div>
+                                               <div class="form-group form-show-validation row">
+                                                    <div class="col-sm-6" style="padding-left: 0px;">
+                                                        <label for="name">Rattings<span style="color:red">*</span></label>
+                                                        <select class="form-control" name="Rating" id="Rating">
+                                                            <?php for($i=0;$i<=5;$i++){ ?>
+                                                                <option value="<?php echo $i;?>" <?php echo (isset($_POST[ 'Rating'])) ? (($_POST[ 'Rating']==$i) ? " selected='selected' " : "") : (($data[0]['Ratings']==$i) ? " selected='selected' " : "");?>><?php echo $i;?></option>
+                                                            <?php } ?>
+                                                        </select>
+                                                        <span class="errorstring" id="ErrRating"><?php echo isset($ErrRating)? $ErrRating : "";?></span>
+                                                    </div>
+                                                    <div class="col-sm-6" style="padding-left: 0px;">
+                                                        <label for="name">Is New<span style="color:red">*</span></label>
+                                                        <select class="form-control" name="IsNew" id="IsNew">
+                                                            <option value="1" <?php echo (isset($_POST[ 'IsNew'])) ? (($_POST[ 'IsNew']=="1") ? " selected='selected' " : "") : (($data[0]['IsNew']=="1") ? " selected='selected' " : "");?>>Yes</option>
+                                                            <option value="0" <?php echo (isset($_POST[ 'IsNew'])) ? (($_POST[ 'IsNew']=="0") ? " selected='selected' " : "") : (($data[0]['IsNew']=="0") ? " selected='selected' " : "");?>>No</option>
+                                                        </select>
                                                     </div>  
                                                </div>  
                                             </div>

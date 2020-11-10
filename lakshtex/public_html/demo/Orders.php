@@ -19,7 +19,7 @@
                     <tr>
                       <th>Order ID</th>
                       <th>Order Date</th>
-                      <th style="text-align:right">Order Value</th>
+                      <th style="text-align:right">Order Value (&#8377;)</th>
                       <th>Status</th>
                       <th></th>
                     </tr>
@@ -40,12 +40,14 @@
 						<?php 	if($order['OrderStatus']=="1"){
 									echo "Order Placed";
 								}if($order['OrderStatus']=="2"){
-									echo "Cancel";
+									echo "Confirmed";
 								}if($order['OrderStatus']=="3"){
-									echo "Processing";
+									echo "Cancel";
 								}if($order['OrderStatus']=="4"){
-									echo "Dispatched";
+									echo "Processing";
 								}if($order['OrderStatus']=="5"){
+                                    echo "Dispatched";
+                                }if($order['OrderStatus']=="6"){
 									echo "Delivered";
 								} 
 						 ?>	

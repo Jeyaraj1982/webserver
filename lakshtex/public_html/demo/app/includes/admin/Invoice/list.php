@@ -2,9 +2,9 @@
      $fromDate = isset($_POST['fdate']) ? $_POST['fdate'] : date("Y-m-d");
      $toDate = isset($_POST['tdate']) ? $_POST['tdate'] : date("Y-m-d");
      if($fromDate!="" && $toDate!=""){
-        $invoiceList = $mysql->select("SELECT * FROM invoice_order where (date(order_date)>=date('".$fromDate."') and date(order_date)<=date('".$toDate."') ) order by order_id desc");
+        $invoiceList = $mysql->select("SELECT * FROM tbl_invoice where (date(InvoiceDate)>=date('".$fromDate."') and date(InvoiceDate)<=date('".$toDate."') ) order by InvoiceID desc");
      }else {
-        $invoiceList = $mysql->select("SELECT * FROM invoice_order order by order_id desc"); 
+        $invoiceList = $mysql->select("SELECT * FROM tbl_invoice order by InvoiceID desc"); 
      }
 ?>
 <div class="main-panel">
@@ -49,32 +49,31 @@
                                         <thead>
                                             <tr>
                                                 <th>Invoice No.</th>
+                                                <th>Invoice Date</th>
                                                 <th>Order No.</th>
-                                                <th>Create Date</th>
                                                 <th>Customer Name</th>
                                                 <th>Invoice Total</th>
                                                 <th></th>
-                                            </tr>
+                                            </tr>                                  
                                         </thead>
                                         <tbody>
                                         
                                         <?php foreach($invoiceList as $invoiceDetails){
-                                        $invoiceDate = date("d/M/Y, H:i:s", strtotime($invoiceDetails["order_date"]));
+                                        $invoiceDate = date("d M,Y, H:i", strtotime($invoiceDetails["InvoiceDate"]));
                                          ?>
                                             <tr>
-                                                <td><?php echo $invoiceDetails["order_code"];?></td>
-                                                <td><?php echo $invoiceDetails["order_code"];?></td>
+                                                <td><?php echo $invoiceDetails["InvoiceCode"];?></td>
                                                 <td><?php echo $invoiceDate;?></td>
-                                                <td><?php echo $invoiceDetails["order_receiver_name"];?></td>
-                                                <td><?php echo $invoiceDetails["order_total_after_tax"];?></td>
+                                                <td><?php echo $invoiceDetails["OrderCode"];?></td>
+                                                <td><?php echo $invoiceDetails["CustomerName"];?></td>
+                                                <td><?php echo $invoiceDetails["InvoiceTotal"];?></td>
                                                 <td style="text-align: right">                                                   
                                                     <div class="dropdown dropdown-kanban" style="float: right;">
                                                         <button class="" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border:none;font-size:14px;background:none !important;padding-right:0px;margin-right:0px;cursor:pointer">
                                                             <i class="icon-options-vertical"></i>
                                                         </button>
                                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                            <a class="dropdown-item" href="dashboard.php?action=Invoice/view&invoice_id=<?php echo md5($invoiceDetails["order_id"]);?>" draggable="false">View</a>
-                                                            <a class="dropdown-item" draggable="false"><span onclick='CallConfirmation(<?php echo $invoiceDetails["order_id"];?>)' class='btn btn-danger btn-sm' style='padding: 0px 10px;font-size: 10px;'>Delete</span></a>
+                                                            <a class="dropdown-item" href="dashboard.php?action=Invoice/view&id=<?php echo md5($invoiceDetails["InvoiceID"]);?>" draggable="false">View</a>
                                                             <?php if($invoiceDetails["order_total_after_tax"]!=$invoiceDetails["order_amount_paid"]){ ?><a class="dropdown-item" href="dashboard.php?action=Invoice/CreateReceipt&invoice_id=<?php echo md5($invoiceDetails["order_id"]);?>" draggable="false">Create Receipts</a><?php }?>
                                                         </div>
                                                     </div>

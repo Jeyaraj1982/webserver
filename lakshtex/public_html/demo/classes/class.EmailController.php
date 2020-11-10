@@ -13,14 +13,14 @@
                                                             "EmailRequestedOn" => date("Y-m-d H:i:s")));
             $mail->isSMTP(); 
             $mail->SMTPDebug = 0;
-            $mail->Host = "mail.japps.online";
+            $mail->Host = Mail_Host; //"mail.japps.online";
             $mail->Port = 465;
             $mail->SMTPSecure = "ssl";
             $mail->SMTPAuth   = true;
-            $mail->Username   = "testmail@japps.online";
-            $mail->Password   = "Welcome@82";
+            $mail->Username   = SMTP_UserName; //"testmail@japps.online";
+            $mail->Password   = SMTP_Password; //"Welcome@82";
             $mail->Subject    = $param['Subject']; 
-            $mail->setFrom("support".".testmail@japps.online","Jappps");
+            $mail->setFrom("support".".".SMTP_UserName,SMTP_Sender);
             $mail->addAddress($param['MailTo'],"");
             $mail->msgHTML($param['Message']);
             if ($param['attachment']!="") {

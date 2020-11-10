@@ -16,35 +16,73 @@
 <section class="main-container col2-right-layout">
     <div class="main container">
 		<div class="row">
-			<div class="col-main col-sm-9 col-xs-12">
+		    <div class="col-main col-sm-9 col-xs-12">
 				<div class="page-title">
-				<h2>My Profile</h2>
+				    <h2>My Profile</h2>
+                </div>
+			    <div class="page-content checkout-page">
+				    <br>
+				    <div class="box-border">
+					    <div id="SessionDetails">
+						    <div class="form-group row" style="margin-bottom: 0px;">
+							    <label class="col-sm-3">Name</label>
+							    <label class="col-sm-9">:&nbsp;<?php echo $_SESSION['User']['CustomerName'];?></label>
+						    </div>
+						    <div class="form-group row" style="margin-bottom: 0px;">
+							    <label class="col-sm-3">Email ID</label>
+							    <label class="col-sm-9">:&nbsp;<?php echo $_SESSION['User']['EmailID'];?></label>
+						    </div>
+						    <div class="form-group row" style="margin-bottom: 0px;">
+                                <label class="col-sm-3">Mobile Number</label>
+                                <label class="col-sm-9">:&nbsp;<?php echo $_SESSION['User']['MobileNumber'];?></label>
+                            </div>   <br><br>
+                            <div>
+                                <h4 class="checkout-sep"> Billing / Shipping Infomations</h4>
+                                <div id="BillingInfo" class="box-border" style="">
+                                    <form method="post" action="" id="Frm_BillingInfo">
+                                        <ul>
+                                            <li class="row">
+                                                <div class="col-sm-6">
+                                                    <label for="company_name">Address Line1<span class="required" style="color:red">*</span></label>
+                                                    <input type="text" name="AddressLine1" class="input form-control" id="AddressLine1" value="<?php echo (isset($_POST['AddressLine1']) ? $_POST['AddressLine1'] : $_SESSION['User']['AddressLine1']);?>">
+                                                    <span class="errorstring" id="ErrAddressLine1"></span>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <label for="email_address" class="required">Address Line2</label>
+                                                    <input type="text" class="input form-control" name="AddressLine2" id="AddressLine2" value="<?php echo (isset($_POST['AddressLine2']) ? $_POST['AddressLine2'] : $_SESSION['User']['AddressLine2']);?>">
+                                                </div>
+                                            </li>
+                                            <li class="row">
+                                                <div class="col-sm-6">
+                                                    <label for="postal_code" class="required">Address Line3</label>
+                                                    <input class="input form-control" type="text" id="AddressLine3" name="AddressLine3" value="<?php echo (isset($_POST['AddressLine3']) ? $_POST['AddressLine3'] : $_SESSION['User']['AddressLine3']);?>">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <label for="last_name" class="required">Zip/Postal Code<span class="required" style="color:red">*</span></label>
+                                                    <input type="text" name="PostalCode" class="input form-control" id="PostalCode" value="<?php echo (isset($_POST['PostalCode']) ? $_POST['PostalCode'] : $_SESSION['User']['PostalCode']);?>">
+                                                    <span class="errorstring" id="ErrPostalCode"></span>
+                                                </div>
+                                            </li>
+                                            <li class="row">
+                                                <div class="col-sm-6">
+                                                    <label for="first_name" class="required">Land Mark</label>
+                                                    <input type="text" class="input form-control" name="LandMark" id="LandMark" value="<?php echo (isset($_POST['LandMark']) ? $_POST['LandMark'] : $_SESSION['User']['LandMark']);?>">
+                                                </div>
+                                            </li> 
+                                            <li>
+                                                <button class="button" type="button" onclick="SaveBillingInfo()"><i class="fa fa-angle-double-right"></i>&nbsp; <span>Continue</span></button>
+                                            </li>
+                                        </ul>
+                                    </form>
+                                </div>
+                            </div>
+					    </div>
+				    </div> 
+                </div>
             </div>
-			<div class="page-content checkout-page">
-				<br>
-				<div class="box-border">
-					<div id="SessionDetails">
-						<div class="form-group row">
-							<label class="col-sm-2">Name</label>
-							<label class="col-sm-10">:&nbsp;<?php echo $_SESSION['User']['CustomerName'];?></label>
-						</div>
-						<div class="form-group row">
-							<label class="col-sm-2">Email ID</label>
-							<label class="col-sm-10">:&nbsp;<?php echo $_SESSION['User']['EmailID'];?></label>
-						</div>
-						<div class="form-group row">
-							<label class="col-sm-2">Mobile Number</label>
-							<label class="col-sm-10">:&nbsp;<?php echo $_SESSION['User']['MobileNumber'];?></label>
-						</div>
-						<div class="cart_navigation"> <a class="continue-btn" href="index.php"><i class="fa fa-arrow-left"> </i>&nbsp; Continue shopping</a></div>
-					</div>
-				</div> 
-         </div>
         </div>
-         
-      </div>
     </div>
-  </section>
+</section>
 
 <div class="jtv-service-area">
     <div class="container">
@@ -106,92 +144,11 @@
 </div>
 <script>
 var loading = "<div style='padding:80px;text-align:center;color:#aaa'><img src='assets/loading.gif'  style='width:80px'><br>Processing ...</div>";
-$(document).ready(function() {
-   $(".onlynumeric").keydown(function (e) {
-       // Allow: backspace, delete, tab, escape, enter and .
-       if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
-            // Allow: Ctrl+A, Command+A
-           (e.keyCode === 65 && (e.ctrlKey === true || e.metaKey === true)) || 
-            // Allow: home, end, left, right, down, up
-           (e.keyCode >= 35 && e.keyCode <= 40)) {
-                // let it happen, don't do anything
-                return;
-       }
-       // Ensure that it is a number and stop the keypress
-       if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
-           e.preventDefault();
-       }
-   });
-});
+
 </script>
 
 <script>
- function CallRegister(){
-         
-     $('#ErrName').html("");            
-         $('#ErrEmailID').html("");            
-         $('#ErrMobileNumber').html("");            
-         $('#ErrPassword').html("");
-         
-     ErrorCount=0;   
-        if(IsNonEmpty("Name","ErrName","Please Enter Name<br>")){
-           IsAlphaNumeric("Name","ErrName","Please Enter Alpha Numerics Characters Only<br>");
-        }
-        if(IsNonEmpty("EmailID","ErrEmailID","Please Enter Email address<br>")){
-            IsEmail("EmailID","ErrEmailID","Please Enter Valid Email address<br>");
-        }
-        if(IsNonEmpty("MobileNumber","ErrMobileNumber","Please Enter Mobile Number<br>")){
-            IsMobileNumber("MobileNumber","ErrMobileNumber","Please Enter Valid Mobile Number<br>");
-        }
-       IsNonEmpty("Password","ErrPassword","Please Enter Password<br>");
-       
-     if(ErrorCount==0) {
-        var param = $("#Frm_Register").serialize();
-        $.post("webservice.php?action=Register", param,function( data ) {
-            var obj = JSON.parse(data); 
-            var html = "";                                                                              
-            if (obj.status=="failure") {
-                $("#message").html("<span style='color:red'>"+obj.message+"</span>");
-            }
-            if (obj.status=="Success") {
-                $("#SessionDetails").html("<h4 class='checkout-sep'>1. Customer Details</h4>"+obj.Name+"<br>"+obj.Email+"<br>"+obj.Mobile);
-                $("#Reg-Log").hide();
-                $("#BillingInfo").show();
-            }
-        });
-     } else{
-        return false;
-     }
- }
- function CallLogin(){
-         
-         $('#Errlogin_EmailID').html("");            
-         $('#Errlogin_Password').html("");
-         
-     ErrorCount=0;   
-       if(IsNonEmpty("login_EmailID","Errlogin_EmailID","Please Enter Email address<br>")){
-            IsEmail("login_EmailID","Errlogin_EmailID","Please Enter Valid Email address<br>");
-        }
-       IsNonEmpty("login_Password","Errlogin_Password","Please Enter Password<br>");
-       
-     if(ErrorCount==0) {
-        var param = $("#Frm_Login").serialize();
-        $.post("webservice.php?action=Login", param,function( data ) {
-            var obj = JSON.parse(data); 
-            var html = "";                                                                              
-            if (obj.status=="failure") {
-                $("#messageLogin").html("<span style='color:red'>"+obj.message+"</span>");
-            }
-            if (obj.status=="Success") {
-                $("#SessionDetails").html("<h4 class='checkout-sep'>1. Customer Details</h4>"+obj.Name+"<br>"+obj.Email+"<br>"+obj.Mobile);
-                $("#Reg-Log").hide();
-                $("#BillingInfo").show();
-            }
-        });
-     } else{
-        return false;
-     }
- }
+
  function SaveBillingInfo(){
          
      $('#ErrAddressLine1').html("");            
@@ -204,64 +161,34 @@ $(document).ready(function() {
        
      if(ErrorCount==0) {
         var param = $("#Frm_BillingInfo").serialize();
-        $.post("webservice.php?action=SaveBillingInfo", param,function( data ) {
-            var obj = JSON.parse(data);
-            obj=obj.Billing;
-            var  text=""+obj.AddressLine1+"<br>"+obj.AddressLine2+"<br>"+obj.AddressLine3+"<br>Zip/PinCode: "+obj.PostalCode+"<br>Land-Mark: "+obj.LandMark+"<br><br><a onclick='ChangeBillingInfo()' style='cursor: pointer;color:red'>[Change]</a> <br><br>";
-            $('#SessionBillingDetails').html(text);    
-            $("#Reg-Log").hide();
-            $("#BillingInfo").hide();
-            $("#PaymentInfo").show();
-            $("#SessionBillingDetails").show();
+        $.post("webservice.php?action=UpdateBillingInfo", param,function( data ) {
+            var obj = JSON.parse(data); 
+            var html = "";                                                                               
+            if (obj.status=="failure") {
+                    html = "<div class='modal-body'>";
+                        html += "<div class='form-group row'>";
+                            html += "<div class='col-sm-12' style='text-align:center'><img src='accessdenied.png' style='width:128px'><br><br>"+obj.message+"<br></div>";
+                        html += "</div>";
+                    html += "</div>";
+                    html += "<div class='modal-footer' style='border-top: none;padding-top: 0px;'>";
+                        html += "<div class='col-sm-12' style='text-align:center'><button type='button' class='button pro' data-dismiss='modal'>Continue</button></div>";
+                    html += "</div>";
+                $("#xconfrimation_text").html(html);
+                $('#ConfirmationPopup').modal("show");
+            }if (obj.status=="success") {
+                html = "<div class='modal-body'>";
+                    html += "<div class='form-group row'>";
+                        html += "<div class='col-sm-12' style='text-align:center'><img src='assets/tick.jpg' style='width:128px'><br><br>"+obj.message+"<br></div>";
+                    html += "</div>";
+                html += "</div>";
+                html += "<div class='modal-footer' style='border-top: none;padding-top: 0px;'>";
+                    html += "<div class='col-sm-12' style='text-align:center'><a href='' class='button pro'>Continue</a></div>";
+                html += "</div>";
+            }
+        
         });
      } else{
         return false;
      }
  }
-function ChangeBillingInfo(){
-    $.ajax({url:'webservice.php?action=ChangeBillingInfo=',success:function(data){
-        $("#BillingInfo").show();
-        $("#SessionBillingDetails").hide();      
-        }});    
- }
- function ConfirmOrder(){
-    $('#ConfirmationPopup').modal("show"); 
-    $("#xconfrimation_text").html(loading); 
-    $.ajax({url:'webservice.php?action=PlaceOrder',success:function(data){
-        var obj = JSON.parse(data); 
-        var html = "";        
-        if(obj.Status=="Success"){
-            html = "<div class='form-group row'><div class='col-sm-12' style='text-align:center'><img src='assets/tick.jpg' style='width:128px'><br>"+obj.message+"<br>Order ID&nbsp : &nbsp;"+obj.OrderID+"</div></div>";
-            html += "<div style='padding:20px;text-align:center'>" + "<a class='continue-btn' href='index.php'  style='border: 1px solid;padding: 5px 10px;'>Continue shopping&nbsp;<i class='fa fa-arrow-right'> </i></a></div>";     
-        }
-        $("#xconfrimation_text").html(html);
-        }});    
- }
- function CancelOrder(){
-     $('#ConfirmationPopup').modal("show"); 
-    $("#xconfrimation_text").html(loading); 
-    $.ajax({url:'webservice.php?action=CancelOrder',success:function(data){
-        var obj = JSON.parse(data); 
-        var html = "";        
-        if(obj.Status=="Success"){
-            html = "<div class='form-group row'><div class='col-sm-12' style='text-align:center'><img src='assets/tick.jpg' style='width:128px'><br>"+obj.message+"</div></div>";
-            html += "<div style='padding:20px;text-align:center'>" + "<a class='continue-btn' href='index.php' style='border: 1px solid;padding: 5px 10px;'>Continue shopping&nbsp;<i class='fa fa-arrow-right'> </i></a></div>";     
-        }
-        $("#xconfrimation_text").html(html);
-        }});        
- }
- 
- <?php if(isset($_SESSION['User']['CustomerID'])){ ?>
-     $(document).ready(function () {
-        $("#Reg-Log").hide();   
-        var isBilling = "<?php echo isset($_SESSION['Billing']['AddressLine1']) ? 1 : 0;?>";
-        if (isBilling=="0")  {
-        $("#BillingInfo").show();        
-        } else {
-            $("#BillingInfo").hide();    
-            $("#PaymentInfo").show(); 
-        }
-        
-     });
- <?php } ?>
 </script>

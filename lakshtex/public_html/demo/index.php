@@ -123,7 +123,9 @@ img :hover{
                   <div class="product-item">
                     <div class="item-inner">
                       <div class="product-thumbnail">
+                      <?php if($Product['IsNew']=="1"){ ?>
                         <div class="icon-new-label new-left">New</div>
+                      <?php } ?>
                         <div class="pr-img-area"> <a title="Product title here" href="viewproduct.php?id=<?php echo md5($Product['ProductID']);?>" style="text-align: center;padding:10px">
                            <img class="first-img" src="<?php echo "uploads/".$Product['ProductImage'];?>" alt="HTML template" style="height: 200px;width:auto;margin:0px auto;"> <!--<img class="hover-img" src="<?php echo "uploads/".$Product['ProductImage'];?>" alt="HTML template" style="height: 200px;width:auto;margin:0px auto;">-->
                           </a> </div>
@@ -139,7 +141,8 @@ img :hover{
                         <div class="info-inner">
                           <div class="item-title"> <a title="Product title here" href="viewproduct.php?id=<?php echo md5($Product['ProductID']);?>"><?php echo $Product['ProductName'];?> </a> </div>
                           <div class="item-content">
-                            <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> </div>
+                            <div class="rating" style="float: left;"><?php echo PrintStar($Product['Ratings']);?></div>
+                            
                             <div class="item-price">
                               <div class="price-box">
                                 <p class="special-price"> <span class="price"> &#8377; <?php echo number_format($Product['SellingPrice'],2);?> </span> </p><br>
@@ -202,7 +205,7 @@ img :hover{
         <!-- Best Sale -->
         <div class="col-sm-12 col-md-12 jtv-best-sale special-pro">
           <div class="jtv-best-sale-list">
-            <div class="wpb_wrapper">
+            <div class="wpb_wrapper">                                                          
               <div class="best-title text-left">
                 <h2>Special Offers</h2>
               </div>
@@ -215,7 +218,9 @@ img :hover{
                   <div class="product-item">
                     <div class="item-inner">
                       <div class="product-thumbnail">
+                        <?php if($Product['IsNew']=="1"){ ?>
                         <div class="icon-new-label new-left">New</div>
+                      <?php } ?>
                         <div class="pr-img-area"> <a title="Product title here" href="viewproduct.php?id=<?php echo md5($Product['ProductID']);?>" style="text-align: center;padding:10px">
                            <img class="first-img" src="<?php echo "uploads/".$Product['ProductImage'];?>" alt="HTML template" style="height: 200px;width:auto;margin:0px auto;"><!-- <img class="hover-img" src="<?php echo "uploads/".$Product['ProductImage'];?>" alt="HTML template" style="height: 200px;width:auto;margin:0px auto;">-->
                           </a> </div>
@@ -231,7 +236,15 @@ img :hover{
                         <div class="info-inner">
                           <div class="item-title"> <a title="Product title here" href="viewproduct.php?id=<?php echo md5($Product['ProductID']);?>"><?php echo $Product['ProductName'];?> </a> </div>
                           <div class="item-content">
-                            <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> </div>
+                            <div class="rating" style="float: left;"><?php echo PrintStar($Product['Ratings']);?></div>
+                            <div style="text-align:right">
+                            <?php $whishlist = $mysql->select("select * from _tbl_whishlist where CustomerID='".$_SESSION['User']['CustomerID']."' and WhislistedProductID='".$Product['ProductID']."'");?>
+                            <?php if(sizeof($whishlist)==0){ ?>
+                                <span id="wishlist<?php echo $Product['ProductID'];?>"><a  style="cursor:pointer" onclick="addtowishlistindex('<?php echo $Product['ProductID'];?>')"><i class="fa fa-heart-o"></i></span>
+                            <?php } else { ?>
+                                <span id="wishlist<?php echo $Product['ProductID'];?>"><a  style="cursor:pointer" onclick="removewishlistindex('<?php echo $Product['ProductID'];?>')"><i class="fa fa-heart" style="color:#e83f33;vertical-align: 0px !important;"></i></a></span>
+                            <?php } ?>   
+                            </div>                                                                                                
                             <div class="item-price">
                               <div class="price-box">
                                 <p class="special-price"> <span class="price"> &#8377; <?php echo number_format($Product['SellingPrice'],2);?> </span> </p><br>

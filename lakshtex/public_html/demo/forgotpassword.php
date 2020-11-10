@@ -69,7 +69,7 @@
           <form method="post" action="" onsubmit="return SubmitLogin();">
             <h4 style="text-align: center;">Forgot Your Password?</h4><br>
             <p class="before-login-text" style="text-align: center;">
-Please provide your Login Name or Registered Email Address, we'll send an security code to your email address for reset your password.
+Please provide your Registered Email Address, we'll send an security code to your email address for reset your password.
 
 </p>
             <br>

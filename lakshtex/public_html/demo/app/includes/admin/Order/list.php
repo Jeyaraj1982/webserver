@@ -2,43 +2,58 @@
      $fromDate = isset($_POST['fdate']) ? $_POST['fdate'] : date("Y-m-d");
      $toDate = isset($_POST['tdate']) ? $_POST['tdate'] : date("Y-m-d");
 		if($_GET['status']=="new") {
-			$invoiceList = $mysql->select("SELECT * FROM invoice_order where OrderStatus='1' and (date(OrderDate)>=date('".$fromDate."') and date(OrderDate)<=date('".$toDate."') ) order by order_id desc");
-			$title="New Order";
-		}if($_GET['status']=="cancel") {
+            $invoiceList = $mysql->select("SELECT * FROM invoice_order where OrderStatus='1' and (date(OrderDate)>=date('".$fromDate."') and date(OrderDate)<=date('".$toDate."') ) order by order_id desc");
+            $title="New Order";
+        }if($_GET['status']=="confirm") {
 			$invoiceList = $mysql->select("SELECT * FROM invoice_order where OrderStatus='2' and (date(OrderDate)>=date('".$fromDate."') and date(OrderDate)<=date('".$toDate."') ) order by order_id desc");
+			$title="Confirm Order";
+		}if($_GET['status']=="cancel") {
+			$invoiceList = $mysql->select("SELECT * FROM invoice_order where OrderStatus='3' and (date(OrderDate)>=date('".$fromDate."') and date(OrderDate)<=date('".$toDate."') ) order by order_id desc");
 			$title="Cancel Order";
 		}if($_GET['status']=="processing") {
-			$invoiceList = $mysql->select("SELECT * FROM invoice_order where OrderStatus='3' and (date(OrderDate)>=date('".$fromDate."') and date(OrderDate)<=date('".$toDate."') ) order by order_id desc");
+			$invoiceList = $mysql->select("SELECT * FROM invoice_order where OrderStatus='4' and (date(OrderDate)>=date('".$fromDate."') and date(OrderDate)<=date('".$toDate."') ) order by order_id desc");
 			$title="Processing Order";
 		}if($_GET['status']=="dispatched") {
-			$invoiceList = $mysql->select("SELECT * FROM invoice_order where OrderStatus='4' and (date(OrderDate)>=date('".$fromDate."') and date(OrderDate)<=date('".$toDate."') ) order by order_id desc");
+			$invoiceList = $mysql->select("SELECT * FROM invoice_order where OrderStatus='5' and (date(OrderDate)>=date('".$fromDate."') and date(OrderDate)<=date('".$toDate."') ) order by order_id desc");
 			$title="Dispatched Order";
 		}if($_GET['status']=="delivered") {
-			$invoiceList = $mysql->select("SELECT * FROM invoice_order where OrderStatus='4' and (date(OrderDate)>=date('".$fromDate."') and date(OrderDate)<=date('".$toDate."') ) order by order_id desc");
-			$title="Delivered Order";
+            $invoiceList = $mysql->select("SELECT * FROM invoice_order where OrderStatus='6' and (date(OrderDate)>=date('".$fromDate."') and date(OrderDate)<=date('".$toDate."') ) order by order_id desc");
+            $title="Delivered Order";
+        }if($_GET['status']=="undelivered") {
+            $invoiceList = $mysql->select("SELECT * FROM invoice_order where OrderStatus='7' and (date(OrderDate)>=date('".$fromDate."') and date(OrderDate)<=date('".$toDate."') ) order by order_id desc");
+            $title="Delivered Failed Order";
+        }
+        if($_GET['status']=="paid") {
+			$invoiceList = $mysql->select("SELECT * FROM invoice_order where OrderStatus='6' and IsPaid='1' and (date(OrderDate)>=date('".$fromDate."') and date(OrderDate)<=date('".$toDate."') ) order by order_id desc");
+			$title="Paid Order";
 		}
 ?>
 <div class="main-panel">
     <div class="container">
         <div class="page-inner">
+            <div class="row" style="margin-bottom: 10px;"> 
+                <div class="col-md-12" style="text-align:right;">
+                    <a href="dashboard.php?action=Order/list&status=new" <?php if($_GET['status']=="new") { ?> style="text-decoration:underline;font-weight:bold" <?php } ?>>New</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="dashboard.php?action=Order/list&status=confirm" <?php if($_GET['status']=="confirm") { ?> style="text-decoration:underline;font-weight:bold" <?php } ?>>Confirm</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="dashboard.php?action=Order/list&status=cancel" <?php if($_GET['status']=="cancel") { ?> style="text-decoration:underline;font-weight:bold" <?php } ?>>Cancel</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="dashboard.php?action=Order/list&status=processing" <?php if($_GET['status']=="processing") { ?> style="text-decoration:underline;font-weight:bold" <?php } ?>>Processing</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="dashboard.php?action=Order/list&status=dispatched" <?php if($_GET['status']=="dispatched") { ?> style="text-decoration:underline;font-weight:bold" <?php } ?>>Dispatched</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="dashboard.php?action=Order/list&status=delivered" <?php if($_GET['status']=="delivered") { ?> style="text-decoration:underline;font-weight:bold" <?php } ?>>Delivered</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="dashboard.php?action=Order/list&status=undelivered" <?php if($_GET['status']=="undelivered") { ?> style="text-decoration:underline;font-weight:bold" <?php } ?>>Delivered Failed</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="dashboard.php?action=Order/list&status=paid" <?php if($_GET['status']=="paid") { ?> style="text-decoration:underline;font-weight:bold" <?php } ?>>Paid</a>
+                </div>
+            </div>
             <div class="row"> 
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-header" style="padding-top:10px;padding-bottom:10px">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-3">
                                     <div class="card-title">
                                         Manage Orders<br>
 										<span style="font-size:15px"><?php echo $title;?></span> 
                                     </div>
                                 </div> 
-                                <div class="col-md-6" style="text-align:right;">
-									<a href="dashboard.php?action=Order/list&status=new" <?php if($_GET['status']=="new") { ?> style="text-decoration:underline;font-weight:bold" <?php } ?>>New</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-									<a href="dashboard.php?action=Order/list&status=cancel" <?php if($_GET['status']=="cancel") { ?> style="text-decoration:underline;font-weight:bold" <?php } ?>>Cancel</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-									<a href="dashboard.php?action=Order/list&status=processing" <?php if($_GET['status']=="processing") { ?> style="text-decoration:underline;font-weight:bold" <?php } ?>>Processing</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-									<a href="dashboard.php?action=Order/list&status=dispatched" <?php if($_GET['status']=="dispatched") { ?> style="text-decoration:underline;font-weight:bold" <?php } ?>>Dispatched</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-									<a href="dashboard.php?action=Order/list&status=delivered" <?php if($_GET['status']=="delivered") { ?> style="text-decoration:underline;font-weight:bold" <?php } ?>>Delivered</a>
-                                </div>
                             </div>
                         </div>
                         <div class="card-body">
@@ -68,14 +83,14 @@
                                                 <th>Order No.</th>
                                                 <th>Create Date</th>
                                                 <th>Customer Name</th>
-                                                <th style="text-align:right">Order Total</th>
+                                                <th style="text-align:right">Order Total ( <i class="fas fa-rupee-sign"></i> )</th>
                                                 <th></th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                         
                                         <?php foreach($invoiceList as $invoiceDetails){
-                                        $invoiceDate = date("d/M/Y, H:i:s", strtotime($invoiceDetails["OrderDate"]));
+                                        $invoiceDate = date("d M, Y, H:i", strtotime($invoiceDetails["OrderDate"]));
                                          ?>
                                             <tr>
                                                 <td><?php echo $invoiceDetails["OrderCode"];?></td>
@@ -88,8 +103,7 @@
                                                             <i class="icon-options-vertical"></i>
                                                         </button>
                                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                            <a class="dropdown-item" href="dashboard.php?action=Order/view&id<?php echo md5($invoiceDetails["order_id"]);?>" draggable="false">View</a>
-                                                            <a class="dropdown-item" draggable="false"><span onclick='CallConfirmation(<?php echo $invoiceDetails["order_id"];?>)' class='btn btn-danger btn-sm' style='padding: 0px 10px;font-size: 10px;'>Delete</span></a>
+                                                            <a class="dropdown-item" href="dashboard.php?action=Order/view&id=<?php echo $invoiceDetails["OrderCode"];?>" draggable="false">View</a>
                                                         </div>
                                                     </div>
                                                 </td>                                                                                                                                                                           
