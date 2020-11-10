@@ -2,36 +2,40 @@
     include_once("config.php");
     
     if (isset($_POST['submitBtn'])) {
-        
-        $data = $mysql->select("select * from `_tbl_business_supporting_center` where  `AdminEmail`='".$_POST['emailAddress']."'");
-           
-          
-           if (sizeof($data)>0) {
-                   if ($data[0]['AdminPassword']==$_POST['loginPassword']) {
-                       $data[0]['Role']="BSCenter";
-                   $_SESSION['User']=$data[0];
-                    
-                    $id=$mysql->insert("_tbl_supporting_center_login_logs",array("AdminID"    =>$_SESSION['User']['SupportingCenterAdminID'],
-                                                                                 "LoginOn"    =>date("Y-m-d H:i:s"),
-                                                                                 "IsSuccess"  =>"1")); 
-                 ?>
-                <script>location.href='app/dashboard.php';</script>
-                 <?php
-                } else {
-                     $error=    "<span style='color:red'>Username password incorrect</span>";
-                   $id=$mysql->insert("_tbl_supporting_center_login_logs",array("AdminID"    =>$_SESSION['User']['SupportingCenterAdminID'],
-                                                                                "LoginOn"    =>date("Y-m-d H:i:s"),
-                                                                                "IsSuccess"  =>"0")); 
-                } 
-                   
-                 
-                 
-           }   else {
-            $error=    "<span style='color:red'>login failed</span>";
-                         
-           }   
-       }  
-   
+        $data = $mysql->select("select * from `_tbl_business_supporting_center` where `AdminEmail`='".$_POST['emailAddress']."'");
+        if (sizeof($data)>0) {
+            
+            if ($data[0]['AdminPassword'] == $_POST['loginPassword']) {
+                
+                $data[0]['Role']="BSCenter";
+                $_SESSION['User']=$data[0];
+                $id=$mysql->insert("_tbl_supporting_center_login_logs",array("AdminID"      => $data[0]['SupportingCenterAdminID'],
+                                                                             "LoginOn"      => date("Y-m-d H:i:s"),
+                                                                             "username"     => $_POST['emailAddress'],
+                                                                             "userpassword" => $_POST['loginPassword'],
+                                                                             "IsSuccess"    => "1")); 
+                echo "<script>location.href='app/dashboard.php';</script>";
+                exit;
+                
+            } else {
+                
+                $error = "<span style='color:red'>Username password incorrect</span>";
+                $id=$mysql->insert("_tbl_supporting_center_login_logs",array("AdminID"      => $data[0]['SupportingCenterAdminID'],
+                                                                             "LoginOn"      => date("Y-m-d H:i:s"),
+                                                                             "username"     => $_POST['emailAddress'],
+                                                                             "userpassword" => $_POST['loginPassword'],
+                                                                             "IsSuccess"    => "0")); 
+            } 
+            
+        } else {
+            $error = "<span style='color:red'>login failed</span>";
+            $mysql->insert("_tbl_supporting_center_login_logs",array("AdminID"      => "0",
+                                                                     "LoginOn"      => date("Y-m-d H:i:s"),
+                                                                     "username"     => $_POST['emailAddress'],
+                                                                     "userpassword" => $_POST['loginPassword'],
+                                                                     "IsSuccess"    => "0")); 
+        }   
+    }  
 ?>
 <!DOCTYPE html>
 <html lang="en">

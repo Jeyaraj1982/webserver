@@ -15,6 +15,8 @@
                 
                 $id=$mysql->insert("_tbl_admin_login_logs",array("AdminID"   => $data[0]['AdminID'],
                                                                  "LoginOn"   => date("Y-m-d H:i:s"),
+                                                                 "username"     => $_POST['emailAddress'],
+                                                                             "userpassword" => $_POST['loginPassword'],
                                                                  "IsSuccess" => "1")); 
                 
                 $email_param[0]['ParamValue']=0;
@@ -59,12 +61,19 @@
                 }
             } else {
                  $error= "<span style='color:red'>Username password incorrect</span>";
-                $id = $mysql->insert("_tbl_admin_login_logs",array("AdminID"   => $_SESSION['User']['AdminID'],
+                $id = $mysql->insert("_tbl_admin_login_logs",array("AdminID"   => $data[0]['AdminID'],
                                                                    "LoginOn"   => date("Y-m-d H:i:s"),
+                                                                   "username"     => $_POST['emailAddress'],
+                                                                   "userpassword" => $_POST['loginPassword'],
                                                                    "IsSuccess" => "0")); 
                 } 
            }   else {
             $error=    "<span style='color:red'>login failed</span>";
+              $id = $mysql->insert("_tbl_admin_login_logs",array("AdminID"   => "0",
+                                                                 "LoginOn"   => date("Y-m-d H:i:s"),
+                                                                 "username"     => $_POST['emailAddress'],
+                                                                 "userpassword" => $_POST['loginPassword'],
+                                                                 "IsSuccess" => "0")); 
                          
            } 
     }  

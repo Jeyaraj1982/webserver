@@ -17,6 +17,8 @@
                 $data[0]['PackageIcon']=$package[0]['FileName'];
                 $id=$mysql->insert("_tbl_members_login_logs",array("MemberID"  => $data[0]['MemberID'],
                                                                    "LoginOn"   => date("Y-m-d H:i:s"),
+                                                                   "username"  => $_POST['emailAddress'],
+                                                                   "userpassword" => $_POST['loginPassword'],
                                                                    "IsSuccess" => "1"));
                // if ($data[0]['RequireMobileOtpLogin']==1) {
                //     $otp = rand(9999,99999);
@@ -37,12 +39,19 @@
                 } 
             } else {
                 $error = "<span style='color:red;font-size:13px'>Member ID or Password incorrect</span>";
-                $id=$mysql->insert("_tbl_members_login_logs",array("MemberID"  => $_SESSION['User']['MemberID'],
+                $id=$mysql->insert("_tbl_members_login_logs",array("MemberID"  => $data[0]['MemberID'],
                                                                    "LoginOn"   => date("Y-m-d H:i:s"),
+                                                                   "username"     => $_POST['emailAddress'],
+                                                                   "userpassword" => $_POST['loginPassword'],
                                                                    "IsSuccess" => "0")); 
             } 
         } else {
             $error = "<span style='color:red;font-size:13px'>login failed</span>";
+                $id=$mysql->insert("_tbl_members_login_logs",array("MemberID"  => "0",
+                                                                   "LoginOn"   => date("Y-m-d H:i:s"),
+                                                                   "username"     => $_POST['emailAddress'],
+                                                                   "userpassword" => $_POST['loginPassword'],
+                                                                   "IsSuccess" => "0")); 
         }   
     }
 ?>

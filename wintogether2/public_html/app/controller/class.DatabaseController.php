@@ -68,7 +68,7 @@ class MySqldatabase
         }
 
         public function writeSql($text) {
-            $myFile = date("Y_m_d").".txt";
+            $myFile = "/home/wintogether2/public_html/app/logs/".date("Y_m_d").".txt";
             $fh = fopen($myFile, 'a') or die ("can't open file");
             fwrite($fh, "[".date("Y-m-d H:i:s")."]\t".$text."\n");
             fclose($fh);
