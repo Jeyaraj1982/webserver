@@ -1,0 +1,7 @@
+[08-Aug-2020 09:46:31 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/nmskamaraj/public_html/webadmin/mysql.php on line 2
+[08-Aug-2020 09:46:37 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/nmskamaraj/public_html/webadmin/mysql.php on line 2
+[08-Aug-2020 09:47:29 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/nmskamaraj/public_html/webadmin/mysql.php on line 2
+[08-Aug-2020 09:48:42 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/nmskamaraj/public_html/webadmin/mysql.php on line 2
+[08-Aug-2020 09:53:38 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/nmskamaraj/public_html/webadmin/mysql.php on line 2
+[08-Aug-2020 09:53:46 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/nmskamaraj/public_html/webadmin/mysql.php on line 2
+[08-Aug-2020 09:53:53 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/nmskamaraj/public_html/Staff/logout.php on line 2
