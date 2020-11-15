@@ -6,8 +6,15 @@
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-header" style="padding-top:10px;padding-bottom:10px">
-                            <div class="card-title">
-                                List of Franchisee
+                             <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card-title">
+                                        Manage Franchisee
+                                    </div>
+                                </div>
+                                <div class="col-md-6" style="text-align: right;">
+                                    <a href="dashboard.php?action=franchisee/add" class="btn btn-primary btn-xs">Add Franchisee</a>
+                                </div>
                             </div>
                         </div>
                         <div class="card-body">
@@ -16,14 +23,16 @@
                                     <thead>
                                         <tr>
                                             <td class="mytdhead" style="width:50px;">Franchisee ID</td>
-                                            <td class="mytdhead" style="width:50px;">Franchisee Name</td>
-                                            <td class="mytdhead" style="width:40px;">Email ID</td>
+                                            <td class="mytdhead" >Franchisee Name</td>
+                                            <td class="mytdhead" >Email ID</td>
                                             <td class="mytdhead" style="width:110px;">Created On</td>
                                             <td class="mytdhead">&nbsp;</td>  
                                         </tr>
                                     </thead>  
                                     <tbody>
-                                        <?php foreach(JFranchiseetable::getFranchisee() as $r){     ?>
+                                        <?php foreach(JFranchiseetable::getFranchisee() as $r){   
+                                        if ($r['CountryID']!=-1) {
+                                          ?>
                                         <tr>
                                            <td class="mytd"><?php echo $r["userid"];?></td>
                                            <td class="mytd"><?php echo $r["FranchiseeName"];?></td>
@@ -45,7 +54,7 @@
                                                     </div>
                                                 </div>  
                                         </tr>
-                                        <?php } ?>
+                                        <?php } } ?>
                                     </tbody> 
                                  </table>
                             </div>

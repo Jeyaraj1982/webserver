@@ -12,6 +12,7 @@
                         <p>Dashboard</p>
                     </a>
                 </li>
+                <?php if ($_SESSION['FRANCHISEE']['CountryID']!=-1) {?>
                 <li class="nav-item">   
                     <a data-toggle="collapse" href="#NewAdd">
                         <i class="fas fa-users"></i>
@@ -54,7 +55,7 @@
                         <i class="fas fa-users"></i>
                         <p>Ads Packages</p>
                         <span class="caret"></span>
-                    </a>                                                                         
+                    </a>                                                                          
                     <div class="collapse" id="Packages">
                         <ul class="nav nav-collapse">
                             <li><a href="dashboard.php?action=upgradepackage/list&f=a"><span class="sub-item">Active Packages</span></a></li>
@@ -76,9 +77,38 @@
                         </ul>
                     </div>
                 </li>
+                <?php } else  { ?>
+                <li class="nav-item">   
+                    <a data-toggle="collapse" href="#DigitalWorks">
+                        <i class="fas fa-users"></i>
+                        <p>Digital Works</p>
+                        <span class="caret"></span>
+                    </a>
+                    <div class="collapse" id="DigitalWorks">
+                        <ul class="nav nav-collapse">
+                            <li>
+                                <a href="dashboard.php?action=Cards/list">      
+                                    <span class="sub-item">Manage Cards</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dashboard.php?action=Resumes/list">      
+                                    <span class="sub-item">Manage Resumes</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dashboard.php?action=Accounts/AccountSummary">      
+                                    <span class="sub-item">Manage Credits</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <?php } ?>
+                
                
             </ul>
-        </div>
+        </div>                                                
     </div>
 </div> 
-    
+     

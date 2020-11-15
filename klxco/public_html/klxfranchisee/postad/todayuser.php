@@ -29,14 +29,13 @@
                                         <td class="mytdhead" style="width:110px;">Created On</td>
                                         <td class="mytdhead">Person Name</td>
                                         <td class="mytdhead">Email ID</td>
-                                        <td class="mytdhead">Mobile Number</td>
                                     </tr>
                                     <?php foreach($data as $r){ ?> 
                                     <tr class="<?php echo (($count%2)==0) ? "trodd" : "treven";?> >">
                                         <td class="mytd"><?php echo $r["createdon"];?></td>
                                         <td class="mytd"><?php echo $r["personname"];?></td>
                                         <td class="mytd"><?php echo $r["email"];?></td>
-                                        <td class="mytd"><?php if($r['countryid']==1){ echo "+91-"; } ?><?php echo $r["mobile"];?></td>
+                                        <?php /*<td class="mytd"><?php if($r['countryid']==1){ echo "+91-"; } ?><?php echo $r["mobile"];?></td>*/ ?>
                                     </tr>
                                     <?php } ?>
                                 </table>

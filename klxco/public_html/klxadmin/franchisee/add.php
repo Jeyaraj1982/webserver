@@ -1,51 +1,4 @@
-<?php
-     $obj = new CommonController();
-     
-          if(isset($_POST{"save"})) {
-            
-            $ErrorCount =0;
-            
-            $dupemail = $mysql->select("select * from _tbl_franchisee where EmailID='".$_POST['emailid']."'");
-            if(sizeof($dupemail)>0){
-                $Erremailid ="EmailID Already Exist";
-                $ErrorCount++;
-            }
-            
-            if($ErrorCount==0){
-              $c = $mysql->select("select * from _jcountrynames where countryid='".$_POST['country']."'");
-              
-              $sn = $mysql->select("select * from _jstatenames where stateid='".$_POST['state']."'");
-              
-              $dn = $mysql->select("select * from _jdistrictnames where distcid='".$_POST['district']."'");  
-              
-         /*     if(JFranchiseetable::addFranchisee($_POST['franchiseename'],$_POST['emailid'],$_POST['password'],$_POST['country'],$c[0]['countryname'],$_POST['state'],$sn[0]['statenames'],$_POST['district'],$dn[0]['districtname'],date("Y-m-d H:i:s"))>0){
-                        echo  CommonController::printSuccess("Franchisee added successfully");        
-                } else {
-                        echo CommonController::printError("Error Adding Franchisee"); 
-                }  */   
-                
-              
-                  
-                  $param=array("FranchiseeName" => $_POST['franchiseename'],
-                               "EmailID"        => $_POST['emailid'],
-                               "Password"       => $_POST['password'],
-                               "CountryID"      => $_POST['country'],                  
-                               "CountryName"    => $c[0]['countryname'],                  
-                               "StateID"        => $_POST['state'],
-                               "StateName"      => $sn[0]['statenames'],
-                               "DistrictID"     => $_POST['district'],
-                               "DistrictName"   => $dn[0]['districtname'],
-                               "CreatedOn"      => date("Y-m-d H:i:s"));
-               $id = $mysql->insert("_tbl_franchisee",$param);
-               if(sizeof($id)>0){
-                   unset($_POST);
-                  echo $obj->printSuccess("New Franchisees added successfully");
-              }  else {
-                  echo $obj->printError("Error adding Franchisees");
-              }  
-            }
-      }                             
-?>
+
 <script>
  
      function getState(CountryID) {
@@ -212,14 +165,71 @@
                             <div class="card-title">
                                 Add Franchisee
                             </div>
-                        </div>
+                        </div>           
                         <form action="" method="post" enctype="multipart/form-data" onsubmit="return checkInputs();">
-                            <div class="card-body">
+                            <div class="card-body">  
+                            <?php
+     $obj = new CommonController();
+     
+          if(isset($_POST{"save"})) {
+            
+            $ErrorCount =0;
+            
+            $dupemail = $mysql->select("select * from _tbl_franchisee where EmailID='".$_POST['emailid']."'");
+            if(sizeof($dupemail)>0){
+                $Erremailid ="EmailID Already Exist";
+                $ErrorCount++;
+            }
+            
+            if($ErrorCount==0){
+              $c = $mysql->select("select * from _jcountrynames where countryid='".$_POST['country']."'");
+              
+              $sn = $mysql->select("select * from _jstatenames where stateid='".$_POST['state']."'");
+              
+              $dn = $mysql->select("select * from _jdistrictnames where distcid='".$_POST['district']."'");  
+              
+         /*     if(JFranchiseetable::addFranchisee($_POST['franchiseename'],$_POST['emailid'],$_POST['password'],$_POST['country'],$c[0]['countryname'],$_POST['state'],$sn[0]['statenames'],$_POST['district'],$dn[0]['districtname'],date("Y-m-d H:i:s"))>0){
+                        echo  CommonController::printSuccess("Franchisee added successfully");        
+                } else {
+                        echo CommonController::printError("Error Adding Franchisee"); 
+                }  */   
+                
+              
+                  
+                  $param=array("FranchiseeName" => $_POST['franchiseename'],
+                               "EmailID"        => $_POST['emailid'],
+                               "Password"       => $_POST['password'],
+                               "MobileNumber"   => $_POST['MobileNumber'],
+                               "CountryID"      => $_POST['country'],                  
+                               "CountryName"    => $c[0]['countryname'],                  
+                               "StateID"        => $_POST['state'],
+                               "StateName"      => $sn[0]['statenames'],
+                               "DistrictID"     => $_POST['district'],
+                               "DistrictName"   => $dn[0]['districtname'],
+                               "CreatedOn"      => date("Y-m-d H:i:s"));
+               $id = $mysql->insert("_tbl_franchisee",$param);
+               $mysql->select("update _tbl_franchisee set FranchiseeID='".$id."' where userid='".$id."'");
+               if(sizeof($id)>0){
+                   unset($_POST);
+                  echo $obj->printSuccess("New Franchisees added successfully");
+              }  else {
+                  echo $obj->printError("Error adding Franchisees");
+              }  
+            }
+      }                             
+?>
                                 <div class="form-group row">
                                     <label for="Name" class="col-md-3 text-right">Franchisee Name</label>
                                     <div class="col-md-3">
                                         <input type="text" name="franchiseename" id="franchiseename" class="form-control" value="<?php echo isset($_POST['franchiseename']) ? $_POST['franchiseename'] : ""; ?>">
                                         <span class="errorstring" id="Errfranchiseename"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="Name" class="col-md-3 text-right">Mobile Number</label>
+                                    <div class="col-md-3">
+                                        <input type="text" name="MobileNumber" required=required id="MobileNumber" class="form-control" value="<?php echo isset($_POST['MobileNumber']) ? $_POST['MobileNumber'] : ""; ?>">
+                                        <span class="errorstring" id="ErrMobileNumber"><?php echo $ErrMobileNumber;?></span>
                                     </div>
                                 </div>
                                 <div class="form-group row">

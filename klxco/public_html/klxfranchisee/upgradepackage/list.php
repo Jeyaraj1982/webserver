@@ -56,7 +56,7 @@
         <tr>
             <td class="mytdhead" style="width:50px;">User ID</td>
             <td class="mytdhead" style="width:120px;">Name</td>
-            <td class="mytdhead" style="width:120px;">Mobile Number</td>
+            <!--<td class="mytdhead" style="width:120px;">Mobile Number</td>-->
             <td class="mytdhead" style="width:120px;">Email ID</td>
             
             <td class="mytdhead" style="width:120px;">Category</td>
@@ -80,7 +80,7 @@
                <td class="mytd"><?php echo $r["UserID"];?></td>
                <td class="mytd"><?php echo $userinfo[0]["personname"];?></td>
                <td class="mytd"><?php echo $userinfo[0]["email"];?></td>
-               <td class="mytd"><?php echo $userinfo[0]["mobile"];?></td>
+               <?php /*<td class="mytd"><?php echo $userinfo[0]["mobile"];?></td> */ ?>
                <td class="mytd"><?php echo $category[0]["categname"];?></td>
                
                <td class="mytd"><?php echo $uPackages[0]["PackageTitle"];?></td>

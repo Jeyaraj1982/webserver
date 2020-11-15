@@ -14,15 +14,15 @@ $data=$mysql->select("select * from _tbl_resume_general_info where ResumeID='".$
                     } else {
                            $file = $data[0]['ProfilePhoto'];
                     }
-                     $dob = $_POST['year']."-".$_POST['month']."-".$_POST['date'];
-                     //`Community`     ='".$_POST['Community']."',
-                     //`Description`   ='".$_POST['Description']."',
-                     //ersonalInfo`  ='".$_POST['PersonalInfo']."',
-                     $mysql->execute("update _tbl_resume_general_info set `ResumeName`    ='".$_POST['Name']."',
+                       $dob = $_POST['year']."-".$_POST['month']."-".$_POST['date'];
+                       
+                       //`Community`     ='".$_POST['Community']."',
+                       //`Description`   ='".$_POST['Description']."',
+                       //`PersonalInfo`  ='".$_POST['PersonalInfo']."',
+                     $mysql->execute("update _tbl_resume_general_info set  
                                                                           `Gender`        ='".$_POST['Gender']."',
                                                                           `DateofBirth`   ='".$dob."',
                                                                           `FathersName`   ='".$_POST['FathersName']."',
-                                                                          
                                                                           `Religion`      ='".$_POST['Religion']."',
                                                                           `Nationality`   ='".$_POST['Nationality']."',
                                                                           `MaritalStatus` ='".$_POST['MaritalStatus']."',
@@ -35,33 +35,29 @@ $data=$mysql->select("select * from _tbl_resume_general_info where ResumeID='".$
                                                                           `AddressLine1`  ='".$_POST['AddressLine1']."',
                                                                           `AddressLine2`  ='".$_POST['AddressLine2']."',
                                                                           `AddressLine3`  ='".$_POST['AddressLine3']."',
-                                                                          
                                                                           `CareerObjectives`  ='".$_POST['CareerObjectives']."',
                                                                           `Declaration`  ='".$_POST['Declaration']."',
                                                                           `ProfilePhoto`  ='".$file."' where ResumeID='".$data[0]['ResumeID']."'");
            
         ?>
-                
-                <script>
-                    $(document).ready(function() {
-                        swal("updated successfully", {
-                            icon : "success" 
-                        });
-                    });  
-                </script>
-    
-      <?php }else {
+        <script>
+            $(document).ready(function() {
+                swal("updated successfully", {
+                    icon : "success" 
+                });
+            });  
+        </script>
+        <?php }else {
              $successmessage ="Error updating ";
         }
     }
     $data=$mysql->select("select * from _tbl_resume_general_info where ResumeID='".$_GET['id']."'");
+    $dob = explode("-",$data[0]['DateofBirth']);
 ?>
 <script>
 $(document).ready(function () {
     $("#Name").blur(function () {
-        if(IsNonEmpty("Name","ErrName","Please Enter Name")){
-           IsAlphaNumeric("Name","ErrName","Please Enter Alpha Numerics Character"); 
-        }
+        IsNonEmpty("Name","ErrName","Please Enter Name");
     });
     $("#MobileNumber").blur(function () {
         IsNonEmpty("MobileNumber","ErrMobileNumber","Please Enter Mobile Number");
@@ -77,6 +73,7 @@ $(document).ready(function () {
     $("#AddressLine1").blur(function () {
         IsNonEmpty("AddressLine1","ErrAddressLine1","Please Enter Address Line1");
     });
+   
     $("#Proffession").blur(function () {
         if(IsNonEmpty("Proffession","ErrProffession","Please Enter Proffession")){
                IsAlphaNumeric("Proffession","ErrProffession","Please Enter Alpha Numerics Character"); 
@@ -92,9 +89,7 @@ function SubmitProduct() {
         $('#ErrProffession').html("");
         $('#ErrAddressLine1').html("");
         
-            if(IsNonEmpty("Name","ErrName","Please Enter Name")){
-               IsAlphaNumeric("Name","ErrName","Please Enter Alpha Numerics Character"); 
-            }
+            IsNonEmpty("Name","ErrName","Please Enter Name");
             IsNonEmpty("MobileNumber","ErrMobileNumber","Please Enter Mobile Number");
             IsNonEmpty("WhatsappNumber","ErrWhatsappNumber","Please Enter Whatsapp Number");
             if(IsNonEmpty("EmailID","ErrEmailID","Please Enter Email ID")){
@@ -124,7 +119,7 @@ function SubmitProduct() {
                                         <div class="form-group form-show-validation row">
                                             <label for="name" class="col-sm-3 text-left">Name<span class="required-label">*</span></label>
                                             <div class="col-sm-9">
-                                                <input type="text" class="form-control" id="Name" name="Name" placeholder="Enter Your Name" value="<?php echo (isset($_POST['Name']) ? $_POST['Name'] :$data[0]['ResumeName']);?>">
+                                                <input type="text" class="form-control" disabled="disabled"  placeholder="Enter Your Name" value="<?php echo (isset($_POST['Name']) ? $_POST['Name'] :$data[0]['ResumeName']);?>">
                                                 <span class="errorstring" id="ErrName"><?php echo isset($ErrName)? $ErrName : "";?></span>
                                             </div>
                                         </div>
@@ -135,12 +130,12 @@ function SubmitProduct() {
                                                 <span class="errorstring" id="ErrProffession"><?php echo isset($ErrProffession)? $ErrProffession : "";?></span>
                                             </div>
                                         </div>
-                                        <!--<div class="form-group form-show-validation row">
+                                       <!-- <div class="form-group form-show-validation row">
                                             <label for="name" class="col-sm-3 text-left">Proffession Description<span class="required-label">*</span></label>
                                             <div class="col-sm-9">
                                                 <textarea class="form-control" id="Description" name="Description" placeholder="Enter Description"><?php echo (isset($_POST['Description']) ? $_POST['Description'] :$data[0]['Description']);?></textarea>
                                             </div>
-                                        </div>-->
+                                        </div>  -->
                                         <div class="form-group form-show-validation row">
                                             <label for="name" class="col-sm-3 text-left">Career Objectives</label>
                                             <div class="col-sm-9">
@@ -148,13 +143,14 @@ function SubmitProduct() {
                                                 <span class="errorstring" id="ErrCareerObjectives"><?php echo isset($ErrCareerObjectives)? $ErrCareerObjectives : "";?></span>
                                             </div>
                                         </div>
-                                        <!--<div class="form-group form-show-validation row">
+                                       <!-- <div class="form-group form-show-validation row">
                                             <label for="name" class="col-sm-3 text-left">Personal Information</label>
                                             <div class="col-sm-9">
                                                 <textarea class="form-control" id="PersonalInfo" name="PersonalInfo" placeholder="Enter Personal Info"><?php echo (isset($_POST['PersonalInfo']) ? $_POST['PersonalInfo'] : $data[0]['PersonalInfo']);?></textarea>
                                                 <span class="errorstring" id="ErrPersonalInfo"><?php echo isset($ErrPersonalInfo)? $ErrPersonalInfo : "";?></span>
                                             </div>
-                                        </div>-->
+                                        </div>
+                                        -->
                                         <div class="form-group form-show-validation row">
                                             <label for="name" class="col-sm-3 text-left">Gender<span class="required-label">*</span></label>
                                             <div class="col-sm-9">
@@ -162,7 +158,7 @@ function SubmitProduct() {
                                                      <option value="Male" <?php echo (isset($_POST[ 'Gender'])) ? (($_POST[ 'Gender']=="Male") ? " selected='selected' " : "") : (($data[0]['Gender']=="Male") ? " selected='selected' " : "");?>><?php echo "Male" ;?></option>
                                                      <option value="Female" <?php echo (isset($_POST[ 'Gender'])) ? (($_POST[ 'Gender']=="Female") ? " selected='selected' " : "") : (($data[0]['Gender']=="Female") ? " selected='selected' " : "");?>><?php echo "Female" ;?></option>
                                                 </select>
-                                                <span class="errorstring" id="ErrFemale"><?php echo isset($ErrFemale)? $ErrFemale : "";?></span>
+                                                <span class="errorstring" id="ErrFemale"><?php echo isset($ErrFemale)? $ErrPersonalInfo : "";?></span>
                                             </div>
                                         </div>
                                         <div class="form-group form-show-validation row">
@@ -299,7 +295,7 @@ function SubmitProduct() {
                                             <label for="name" class="col-sm-3 text-left">Profile Photo<span class="required-label">*</span></label>
                                             <div class="col-sm-9">
                                                 <?php if(strlen($data[0]['ProfilePhoto'])>1) { ?>
-                                                        <img src="<?php echo "../share/uploads/".$data[0]['ProfilePhoto'];?>" style='width: 64px;height:64px;margin-top: 5px;'>
+                                                        <img src="../share<?php echo "/uploads/".$data[0]['ProfilePhoto'];?>" style='width: 64px;height:64px;margin-top: 5px;'>
                                                     <?php } ?>
                                                 <input type="file" name="uploadimage1" class="form-control" id="uploadimage1" accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.ppt,.pptx,.odt,.avi,.ogg,.m4a,.mov,.mp3,.mp4,.mpg,.wav,.wmv" >
                                                 <div class="errorstring" id="Errimage1"><?php echo isset($Errimage1)? $Errimage1 : "";?></div>
@@ -320,7 +316,7 @@ function SubmitProduct() {
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <input class="btn btn-warning" type="submit" name="btnsubmit" value="Update">&nbsp;
-                                                <a href="dashboard.php?action=digitalresume/ResumeList" class="btn btn-warning btn-border">Back</a>
+                                                <a href="dashboard.php?action=Resumes/list" class="btn btn-warning btn-border">Back</a>
                                             </div>                                        
                                         </div>
                                     </div>
@@ -515,7 +511,7 @@ function SubmitProduct() {
 <script>
 var loading = "<div style='padding:80px;text-align:center;color:#aaa'><img src='assets/loading.gif'  style='width:80px'><br>Processing ...</div>";
 function AddEducationDetails(ResumeID) {   
-        $.ajax({url:'../../digital_webservice.php?action=AddEducationDetails&ResumeID='+ResumeID,success:function(data){
+        $.ajax({url:'../digital_webservice.php?action=AddEducationDetails&ResumeID='+ResumeID,success:function(data){
             $("#xconfrimation_text").html(data);
             $('#ConfirmationPopup').modal("show");
         }});
@@ -536,7 +532,7 @@ function AddEducation(ResumeID) {
     
      var param = $( "#ResumeIDFrm"+ResumeID).serialize();
     $("#confrimation_text").html(loading);                                                                
-    $.post( "../../digital_webservice.php?action=AddEducation",param,function(data) {
+    $.post( "../digital_webservice.php?action=AddEducation",param,function(data) {
         var obj = JSON.parse(data); 
         var html = "";                                                                                         
         if (obj.status=="failure") {
@@ -544,7 +540,7 @@ function AddEducation(ResumeID) {
             html += "<div style='padding:20px;text-align:center'>" + "<button type='button' class='btn btn-outline-success' data-dismiss='modal'>Cancel</button></div>"; 
         }if (obj.status=="Success") {
             html = "<div class='form-group row'><div class='col-sm-12' style='text-align:center'><img src='assets/tick.jpg' style='width:128px'><br><br>"+obj.message+"<br></div></div>";
-            html += "<div style='padding:20px;text-align:center'>" + "<a href='dashboard.php?action=digitalresume/updateresume&id="+obj.ResumeID+"' class='btn btn-outline-success'>Continue</a></div>"; 
+            html += "<div style='padding:20px;text-align:center'>" + "<a href='dashboard.php?action=Resumes/edit&id="+obj.ResumeID+"' class='btn btn-outline-success'>Continue</a></div>"; 
         }
         $('#ConfirmationPopup').modal("show");
         $("#xconfrimation_text").html(html);
@@ -555,7 +551,7 @@ function AddEducation(ResumeID) {
    }
 }
 function EditEducationDetails(EducationID) {   
-        $.ajax({url:'../../digital_webservice.php?action=EditEducationDetails&EducationID='+EducationID,success:function(data){
+        $.ajax({url:'../digital_webservice.php?action=EditEducationDetails&EducationID='+EducationID,success:function(data){
             $("#xconfrimation_text").html(data);
             $('#ConfirmationPopup').modal("show");
         }});
@@ -579,7 +575,7 @@ function UpdateEducation(EducationID) {
     
      var param = $( "#EducationFrm"+EducationID).serialize();
     $("#confrimation_text").html(loading);                                                                
-    $.post( "../../digital_webservice.php?action=UpdateEducation",param,function(data) {
+    $.post( "../digital_webservice.php?action=UpdateEducation",param,function(data) {
         var obj = JSON.parse(data); 
         var html = "";                                                                                         
         if (obj.status=="failure") {
@@ -587,7 +583,7 @@ function UpdateEducation(EducationID) {
             html += "<div style='padding:20px;text-align:center'>" + "<button type='button' class='btn btn-outline-success' data-dismiss='modal'>Cancel</button></div>"; 
         }if (obj.status=="Success") {
             html = "<div class='form-group row'><div class='col-sm-12' style='text-align:center'><img src='assets/tick.jpg' style='width:128px'><br><br>"+obj.message+"<br></div></div>";
-            html += "<div style='padding:20px;text-align:center'>" + "<a href='dashboard.php?action=digitalresume/updateresume&id="+obj.ResumeID+"' class='btn btn-outline-success'>Continue</a></div>"; 
+            html += "<div style='padding:20px;text-align:center'>" + "<a href='dashboard.php?action=Resumes/edit&id="+obj.ResumeID+"' class='btn btn-outline-success'>Continue</a></div>"; 
         }
         $('#ConfirmationPopup').modal("show");
         $("#xconfrimation_text").html(html);
@@ -642,7 +638,7 @@ function DeleteEducation(EducationID) {
    
      var param = $( "#DeleteEducationFrm"+EducationID).serialize();
    // $("#confrimation_text").html(loading);                                                                
-    $.post( "../../digital_webservice.php?action=DeleteEducation",param,function(data) {
+    $.post( "../digital_webservice.php?action=DeleteEducation",param,function(data) {
         var obj = JSON.parse(data); 
         var html = "";                                                                                         
         if (obj.status=="failure") {
@@ -650,7 +646,7 @@ function DeleteEducation(EducationID) {
             html += "<div style='padding:20px;text-align:center'>" + "<button type='button' class='btn btn-outline-success' data-dismiss='modal'>Cancel</button></div>"; 
         }if (obj.status=="Success") {
             html = "<div class='form-group row'><div class='col-sm-12' style='text-align:center'><img src='assets/tick.jpg' style='width:128px'><br><br>"+obj.message+"<br></div></div>";
-            html += "<div style='padding:20px;text-align:center'>" + "<a href='dashboard.php?action=digitalresume/updateresume&id="+obj.ResumeID+"' class='btn btn-outline-success'>Continue</a></div>"; 
+            html += "<div style='padding:20px;text-align:center'>" + "<a href='dashboard.php?action=Resumes/edit&id="+obj.ResumeID+"' class='btn btn-outline-success'>Continue</a></div>"; 
         }
         $('#ConfirmationPopup').modal("show");
         $("#xconfrimation_text").html(html);
@@ -660,7 +656,7 @@ function DeleteEducation(EducationID) {
    
    
 function AddExperienceDetails(ResumeID) {   
-        $.ajax({url:'../../digital_webservice.php?action=AddExperienceDetails&ResumeID='+ResumeID,success:function(data){
+        $.ajax({url:'../digital_webservice.php?action=AddExperienceDetails&ResumeID='+ResumeID,success:function(data){
             $("#xconfrimation_text").html(data);
             $('#ConfirmationPopup').modal("show");
         }});
@@ -685,7 +681,7 @@ function AddExperience(ResumeID) {
     
      var param = $( "#ResumeExperienceFrm"+ResumeID).serialize();
    // $("#confrimation_text").html(loading);                                                                
-    $.post( "../../digital_webservice.php?action=AddExperience",param,function(data) {
+    $.post( "../digital_webservice.php?action=AddExperience",param,function(data) {
         var obj = JSON.parse(data); 
         var html = "";                                                                                         
         if (obj.status=="failure") {
@@ -693,7 +689,7 @@ function AddExperience(ResumeID) {
             html += "<div style='padding:20px;text-align:center'>" + "<button type='button' class='btn btn-outline-success' data-dismiss='modal'>Cancel</button></div>"; 
         }if (obj.status=="Success") {
             html = "<div class='form-group row'><div class='col-sm-12' style='text-align:center'><img src='assets/tick.jpg' style='width:128px'><br><br>"+obj.message+"<br></div></div>";
-            html += "<div style='padding:20px;text-align:center'>" + "<a href='dashboard.php?action=digitalresume/updateresume&id="+obj.ResumeID+"' class='btn btn-outline-success'>Continue</a></div>"; 
+            html += "<div style='padding:20px;text-align:center'>" + "<a href='dashboard.php?action=Resumes/edit&id="+obj.ResumeID+"' class='btn btn-outline-success'>Continue</a></div>"; 
         }
         $('#ConfirmationPopup').modal("show");
         $("#xconfrimation_text").html(html);
@@ -704,7 +700,7 @@ function AddExperience(ResumeID) {
    }
 }
 function EditExperienceDetails(ExperienceID) {   
-        $.ajax({url:'../../digital_webservice.php?action=EditExperienceDetails&ExperienceID='+ExperienceID,success:function(data){
+        $.ajax({url:'../digital_webservice.php?action=EditExperienceDetails&ExperienceID='+ExperienceID,success:function(data){
             $("#xconfrimation_text").html(data);
             $('#ConfirmationPopup').modal("show");
         }});
@@ -712,10 +708,7 @@ function EditExperienceDetails(ExperienceID) {
 function UpdateExperience(ExperienceID) {
     
     var Error=0;
-    if($("#Year").val()==""){
-       $("#ErrorYear").html("Please Enter Year");
-       Error++;
-    }
+    
     if($("#Designation").val()==""){
        $("#ErrorDesignation").html("Please Enter Designation");
        Error++;
@@ -728,7 +721,7 @@ function UpdateExperience(ExperienceID) {
     
      var param = $( "#ExperienceFrm"+ExperienceID).serialize();
    // $("#confrimation_text").html(loading);                                                                
-    $.post( "../../digital_webservice.php?action=UpdateExperience",param,function(data) {
+    $.post( "../digital_webservice.php?action=UpdateExperience",param,function(data) {
         var obj = JSON.parse(data); 
         var html = "";                                                                                         
         if (obj.status=="failure") {
@@ -736,7 +729,7 @@ function UpdateExperience(ExperienceID) {
             html += "<div style='padding:20px;text-align:center'>" + "<button type='button' class='btn btn-outline-success' data-dismiss='modal'>Cancel</button></div>"; 
         }if (obj.status=="Success") {
             html = "<div class='form-group row'><div class='col-sm-12' style='text-align:center'><img src='assets/tick.jpg' style='width:128px'><br><br>"+obj.message+"<br></div></div>";
-            html += "<div style='padding:20px;text-align:center'>" + "<a href='dashboard.php?action=digitalresume/updateresume&id="+obj.ResumeID+"' class='btn btn-outline-success'>Continue</a></div>"; 
+            html += "<div style='padding:20px;text-align:center'>" + "<a href='dashboard.php?action=Resumes/edit&id="+obj.ResumeID+"' class='btn btn-outline-success'>Continue</a></div>"; 
         }
         $('#ConfirmationPopup').modal("show");
         $("#xconfrimation_text").html(html);
@@ -793,7 +786,7 @@ function DeleteExperience(ExperienceID) {
    
      var param = $( "#DeleteExperienceFrm"+ExperienceID).serialize();
    // $("#confrimation_text").html(loading);                                                                
-    $.post( "../../digital_webservice.php?action=DeleteExperience",param,function(data) {
+    $.post( "../digital_webservice.php?action=DeleteExperience",param,function(data) {
         var obj = JSON.parse(data); 
         var html = "";                                                                                         
         if (obj.status=="failure") {
@@ -801,7 +794,7 @@ function DeleteExperience(ExperienceID) {
             html += "<div style='padding:20px;text-align:center'>" + "<button type='button' class='btn btn-outline-success' data-dismiss='modal'>Cancel</button></div>"; 
         }if (obj.status=="Success") {
             html = "<div class='form-group row'><div class='col-sm-12' style='text-align:center'><img src='assets/tick.jpg' style='width:128px'><br><br>"+obj.message+"<br></div></div>";
-            html += "<div style='padding:20px;text-align:center'>" + "<a href='dashboard.php?action=digitalresume/updateresume&id="+obj.ResumeID+"' class='btn btn-outline-success'>Continue</a></div>"; 
+            html += "<div style='padding:20px;text-align:center'>" + "<a href='dashboard.php?action=Resumes/edit&id="+obj.ResumeID+"' class='btn btn-outline-success'>Continue</a></div>"; 
         }
         $('#ConfirmationPopup').modal("show");
         $("#xconfrimation_text").html(html);
@@ -810,7 +803,7 @@ function DeleteExperience(ExperienceID) {
    }
 
 function AddSkillsDetails(ResumeID) {   
-        $.ajax({url:'../../digital_webservice.php?action=AddSkillsDetails&ResumeID='+ResumeID,success:function(data){
+        $.ajax({url:'../digital_webservice.php?action=AddSkillsDetails&ResumeID='+ResumeID,success:function(data){
             $("#xconfrimation_text").html(data);
             $('#ConfirmationPopup').modal("show");
         }});
@@ -828,7 +821,7 @@ function AddSkills(ResumeID) {
     
      var param = $( "#ResumeSkillsFrm"+ResumeID).serialize();
    // $("#confrimation_text").html(loading);                                                                
-    $.post( "../../digital_webservice.php?action=AddSkills",param,function(data) {
+    $.post( "../digital_webservice.php?action=AddSkills",param,function(data) {
         var obj = JSON.parse(data); 
         var html = "";                                                                                         
         if (obj.status=="failure") {
@@ -836,7 +829,7 @@ function AddSkills(ResumeID) {
             html += "<div style='padding:20px;text-align:center'>" + "<button type='button' class='btn btn-outline-success' data-dismiss='modal'>Cancel</button></div>"; 
         }if (obj.status=="Success") {
             html = "<div class='form-group row'><div class='col-sm-12' style='text-align:center'><img src='assets/tick.jpg' style='width:128px'><br><br>"+obj.message+"<br></div></div>";
-            html += "<div style='padding:20px;text-align:center'>" + "<a href='dashboard.php?action=digitalresume/updateresume&id="+obj.ResumeID+"' class='btn btn-outline-success'>Continue</a></div>"; 
+            html += "<div style='padding:20px;text-align:center'>" + "<a href='dashboard.php?action=Resumes/edit&id="+obj.ResumeID+"' class='btn btn-outline-success'>Continue</a></div>"; 
         }
         $('#ConfirmationPopup').modal("show");
         $("#xconfrimation_text").html(html);
@@ -847,7 +840,7 @@ function AddSkills(ResumeID) {
    }
 }
 function EditSkillsDetails(SkillsID) {   
-        $.ajax({url:'../../digital_webservice.php?action=EditSkillsDetails&SkillsID='+SkillsID,success:function(data){
+        $.ajax({url:'../digital_webservice.php?action=EditSkillsDetails&SkillsID='+SkillsID,success:function(data){
             $("#xconfrimation_text").html(data);
             $('#ConfirmationPopup').modal("show");
         }});
@@ -865,7 +858,7 @@ function UpdateSkills(SkillsID) {
     
      var param = $( "#SkillsFrm"+SkillsID).serialize();
    // $("#confrimation_text").html(loading);                                                                
-    $.post( "../../digital_webservice.php?action=UpdateSkills",param,function(data) {
+    $.post( "../digital_webservice.php?action=UpdateSkills",param,function(data) {
         var obj = JSON.parse(data); 
         var html = "";                                                                                         
         if (obj.status=="failure") {
@@ -873,7 +866,7 @@ function UpdateSkills(SkillsID) {
             html += "<div style='padding:20px;text-align:center'>" + "<button type='button' class='btn btn-outline-success' data-dismiss='modal'>Cancel</button></div>"; 
         }if (obj.status=="Success") {
             html = "<div class='form-group row'><div class='col-sm-12' style='text-align:center'><img src='assets/tick.jpg' style='width:128px'><br><br>"+obj.message+"<br></div></div>";
-            html += "<div style='padding:20px;text-align:center'>" + "<a href='dashboard.php?action=digitalresume/updateresume&id="+obj.ResumeID+"' class='btn btn-outline-success'>Continue</a></div>"; 
+            html += "<div style='padding:20px;text-align:center'>" + "<a href='dashboard.php?action=Resumes/edit&id="+obj.ResumeID+"' class='btn btn-outline-success'>Continue</a></div>"; 
         }
         $('#ConfirmationPopup').modal("show");
         $("#xconfrimation_text").html(html);
@@ -928,7 +921,7 @@ function DeleteSkills(SkillsID) {
    
      var param = $( "#DeleteSkillsFrm"+SkillsID).serialize();
    // $("#confrimation_text").html(loading);                                                                
-    $.post( "../../digital_webservice.php?action=DeleteSkills",param,function(data) {
+    $.post( "../digital_webservice.php?action=DeleteSkills",param,function(data) {
         var obj = JSON.parse(data); 
         var html = "";                                                                                         
         if (obj.status=="failure") {
@@ -936,7 +929,7 @@ function DeleteSkills(SkillsID) {
             html += "<div style='padding:20px;text-align:center'>" + "<button type='button' class='btn btn-outline-success' data-dismiss='modal'>Cancel</button></div>"; 
         }if (obj.status=="Success") {
             html = "<div class='form-group row'><div class='col-sm-12' style='text-align:center'><img src='assets/tick.jpg' style='width:128px'><br><br>"+obj.message+"<br></div></div>";
-            html += "<div style='padding:20px;text-align:center'>" + "<a href='dashboard.php?action=digitalresume/updateresume&id="+obj.ResumeID+"' class='btn btn-outline-success'>Continue</a></div>"; 
+            html += "<div style='padding:20px;text-align:center'>" + "<a href='dashboard.php?action=Resumes/edit&id="+obj.ResumeID+"' class='btn btn-outline-success'>Continue</a></div>"; 
         }
         $('#ConfirmationPopup').modal("show");                                                               
         $("#xconfrimation_text").html(html);                                                                  
@@ -966,7 +959,7 @@ function AddHobbies(ResumeID) {
             html += "<div style='padding:20px;text-align:center'>" + "<button type='button' class='btn btn-outline-success' data-dismiss='modal'>Cancel</button></div>"; 
         }if (obj.status=="Success") {
             html = "<div class='form-group row'><div class='col-sm-12' style='text-align:center'><img src='assets/tick.jpg' style='width:128px'><br><br>"+obj.message+"<br></div></div>";
-            html += "<div style='padding:20px;text-align:center'>" + "<a href='dashboard.php?action=digitalresume/updateresume&id="+obj.ResumeID+"' class='btn btn-outline-success'>Continue</a></div>"; 
+            html += "<div style='padding:20px;text-align:center'>" + "<a href='dashboard.php?action=Resumes/edit&id="+obj.ResumeID+"' class='btn btn-outline-success'>Continue</a></div>"; 
         }
         $('#ConfirmationPopup').modal("show");
         $("#xconfrimation_text").html(html);                                                              
@@ -1014,7 +1007,7 @@ function UpdateHobbies(AdditionalInfoID) {
             html += "<div style='padding:20px;text-align:center'>" + "<button type='button' class='btn btn-outline-success' data-dismiss='modal'>Cancel</button></div>"; 
         }if (obj.status=="Success") {
             html = "<div class='form-group row'><div class='col-sm-12' style='text-align:center'><img src='assets/tick.jpg' style='width:128px'><br><br>"+obj.message+"<br></div></div>";
-            html += "<div style='padding:20px;text-align:center'>" + "<a href='dashboard.php?action=digitalresume/updateresume&id="+obj.ResumeID+"' class='btn btn-outline-success'>Continue</a></div>"; 
+            html += "<div style='padding:20px;text-align:center'>" + "<a href='dashboard.php?action=Resumes/edit&id="+obj.ResumeID+"' class='btn btn-outline-success'>Continue</a></div>"; 
         }
         $('#ConfirmationPopup').modal("show");
         $("#xconfrimation_text").html(html);
@@ -1077,14 +1070,13 @@ function DeleteHobbies(AdditionalInfoID) {
             html += "<div style='padding:20px;text-align:center'>" + "<button type='button' class='btn btn-outline-success' data-dismiss='modal'>Cancel</button></div>"; 
         }if (obj.status=="Success") {
             html = "<div class='form-group row'><div class='col-sm-12' style='text-align:center'><img src='assets/tick.jpg' style='width:128px'><br><br>"+obj.message+"<br></div></div>";
-            html += "<div style='padding:20px;text-align:center'>" + "<a href='dashboard.php?action=digitalresume/updateresume&id="+obj.ResumeID+"' class='btn btn-outline-success'>Continue</a></div>"; 
+            html += "<div style='padding:20px;text-align:center'>" + "<a href='dashboard.php?action=Resumes/edit&id="+obj.ResumeID+"' class='btn btn-outline-success'>Continue</a></div>"; 
         }
         $('#ConfirmationPopup').modal("show");                                                               
         $("#xconfrimation_text").html(html);                                                                  
                                                                                                              
     });
    } 
-   
    
    
 </script>

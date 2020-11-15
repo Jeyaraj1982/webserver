@@ -1,6 +1,4 @@
 <?php
-include_once("header.php");
-include_once("LeftMenu.php"); 
 $data=$mysql->select("select * from _tbl_resume_general_info where ResumeID='".$_GET['id']."'");
 ?>
 <script>
@@ -21,7 +19,6 @@ function CoppyResumeUrl() {
                             <div class="card">
                                 <div class="card-header">
                                     <div class="card-title">General Information</div>    <br>
-                                        
                                         <div class="form-group form-show-validation row" style="padding: 0px;">
                                              <div class="col-lg-6 col-md-6 col-sm-6">
                                              <label>Resume Url</label>
@@ -61,8 +58,7 @@ function CoppyResumeUrl() {
                                         <!--<div class="form-group form-show-validation row">
                                             <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-left">Personal Information</label>
                                             <div class="col-lg-4 col-md-9 col-sm-8"><?php echo $data[0]['PersonalInfo'];?></div>
-                                        </div>
-                                        -->
+                                        </div>-->
                                         <div class="form-group form-show-validation row">
                                             <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-left">Gender</label>
                                             <div class="col-lg-4 col-md-9 col-sm-8"><?php echo $data[0]['Gender'];?></div>
@@ -87,12 +83,10 @@ function CoppyResumeUrl() {
                                             <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-left">Email ID</label>
                                             <div class="col-lg-4 col-md-9 col-sm-8"><?php echo $data[0]['EmailID'];?></div>
                                         </div>
-                                        <!--
-                                        <div class="form-group form-show-validation row">
+                                        <!--<div class="form-group form-show-validation row">
                                             <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-left">Community</label>
                                             <div class="col-lg-4 col-md-9 col-sm-8"><?php echo $data[0]['Community'];?></div>
-                                        </div>
-                                        -->
+                                        </div>-->
                                         <div class="form-group form-show-validation row">
                                             <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-left">Religion</label>
                                             <div class="col-lg-4 col-md-9 col-sm-8"><?php echo $data[0]['Religion'];?></div>
@@ -133,7 +127,7 @@ function CoppyResumeUrl() {
                                         <div class="form-group form-show-validation row">
                                             <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-left">Profile Photo</label>
                                             <div class="col-lg-4 col-md-9 col-sm-8">
-                                                        <img src="<?php echo "../share/uploads/".$data[0]['ProfilePhoto'];?>" style='width: 64px;height:64px;margin-top: 5px;'>
+                                                        <img src="../<?php echo "share/uploads/".$data[0]['ProfilePhoto'];?>" style='width: 64px;height:64px;margin-top: 5px;'>
                                             </div>
                                         </div>
                                         <div class="form-group form-show-validation row">
@@ -144,11 +138,7 @@ function CoppyResumeUrl() {
                                     <div class="card-action">
                                         <div class="row">
                                             <div class="col-md-12">
-                                                <?php if($_GET['fr']=="frlist"){ ?>
-                                                    <a href="dashboard.php?action=Franchisee/Resumes&id=<?php echo $data[0]['CreatedByID'];?>"  class="btn btn-warning btn-border">Back</a>
-                                                <?php }else { ?>
-                                                    <a href="dashboard.php?action=digitalresume/ResumeList" class="btn btn-warning btn-border">Back</a>
-                                                <?php } ?>
+                                                <a href="dashboard.php?action=Resumes/list" class="btn btn-warning btn-border">Back</a>
                                             </div>                                        
                                         </div>
                                     </div>

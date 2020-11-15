@@ -1,7 +1,29 @@
 <?php
+   if(getTotalBalanceCredits($_SESSION['FRANCHISEE']['FranchiseeID'])==0){  ?>
+        <div class="main-panel">
+            <div class="container">
+                <div class="page-inner">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card"> 
+                                <div class="card-body" style="text-align: center;color:red">
+                                    Couldn't Create Resume<br>
+                                    Insufficient Credits <br><br>
+                                    <button type="button" class="btn btn-primary" onclick="location.href='dashboard.php?action=Resumes/list'">Continue</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>    
+ <?php } else {
     if (isset($_POST['btnsubmit'])) {
         $ErrorCount =0;
-           
+            if(getTotalBalanceCredits($_SESSION['FRANCHISEE']['FranchiseeID'])=="0"){
+                $successmessage ="<span style='color: red;'>Couldn't Save Resume. Insufficient Credits.</span>";
+                $ErrorCount++;
+            } 
             if($ErrorCount==0){
                 
                     $target_dir = "../share/uploads/";
@@ -10,35 +32,46 @@
                    
                   if (move_uploaded_file($_FILES["uploadimage1"]["tmp_name"], $target_file)) {
                      // echo "<script>alert('a');</script>";
-                     $id = $mysql->insert("_tbl_resume_general_info",array("ResumeName"    => $_POST['Name'],
-                                                                           "Gender"        => $_POST['Gender'],
-                                                                           "DateofBirth"   => $_POST['DateofBirth'],
-                                                                           "FathersName"   => $_POST['FathersName'],
-                                                                           "Community"     => $_POST['Community'],
-                                                                           "Religion"      => $_POST['Religion'],
-                                                                           "Nationality"   => $_POST['Nationality'],
-                                                                           "MaritalStatus" => $_POST['MaritalStatus'],
-                                                                           "Language"      => $_POST['Language'],
-                                                                           "MobileNumber"  => $_POST['MobileNumber'],
-                                                                           "WhatsappNumber"=> $_POST['WhatsappNumber'],
-                                                                           "EmailID"       => $_POST['EmailID'],
-                                                                           "Website"       => $_POST['WebsiteName'],
-                                                                           "Proffession"   => $_POST['Proffession'],
-                                                                           "AddressLine1"  => $_POST['AddressLine1'],
-                                                                           "AddressLine2"  => $_POST['AddressLine2'],
-                                                                           "AddressLine3"  => $_POST['AddressLine3'],
-                                                                           "AddressLine3"  => $_POST['AddressLine3'],
-                                                                           "ProfilePhoto"  => $file,
-                                                                           "Description"   => $_POST['Description'],
-                                                                           "PersonalInfo"   => $_POST['PersonalInfo'],
-                                                                           "CareerObjectives"   => $_POST['CareerObjectives'],
-                                                                           "CreatedBy"     => "Admin",
-                                                                           "CreatedByID"   => $_SESSION['User']['AdminID'],
-                                                                           "Url"           =>"",
-                                                                           "CreatedOn"     => date("Y-m-d H:i:s")));
+                     //"Description"   => $_POST['Description'],
+                     // "Community"     => $_POST['Community'],
+                     //"PersonalInfo"   => $_POST['PersonalInfo'],
+                     $id = $mysql->insert("_tbl_resume_general_info",array("ResumeName"        => $_POST['Name'],
+                                                                           "Gender"            => $_POST['Gender'],
+                                                                           "DateofBirth"       => $_POST['year']."-".$_POST['month']."-".$_POST['date'],
+                                                                           "FathersName"       => $_POST['FathersName'],
+                                                                           "Description"       => "",
+                                                                           "Religion"          => $_POST['Religion'],
+                                                                           "Nationality"       => $_POST['Nationality'],
+                                                                           "MaritalStatus"     => $_POST['MaritalStatus'],
+                                                                           "Language"          => $_POST['Language'],
+                                                                           "MobileNumber"      => $_POST['MobileNumber'],
+                                                                           "WhatsappNumber"    => $_POST['WhatsappNumber'],
+                                                                           "EmailID"           => $_POST['EmailID'],
+                                                                           "Website"           => $_POST['WebsiteName'],
+                                                                           "Proffession"       => $_POST['Proffession'],
+                                                                           "AddressLine1"      => $_POST['AddressLine1'],
+                                                                           "AddressLine2"      => $_POST['AddressLine2'],
+                                                                           "AddressLine3"      => $_POST['AddressLine3'],
+                                                                           "AddressLine3"      => $_POST['AddressLine3'],
+                                                                           "ProfilePhoto"      => $file,
+                                                                           "Description"       => "",
+                                                                           "PersonalInfo"      => "",
+                                                                           "CareerObjectives"  => $_POST['CareerObjectives'],
+                                                                           "Declaration"       => $_POST['Declaration'],
+                                                                           "CreatedBy"         => "Franchisee",
+                                                                           "CreatedByID"       => $_SESSION['FRANCHISEE']['FranchiseeID'],
+                                                                           "Url"               => "",
+                                                                           "CreatedOn"         => date("Y-m-d H:i:s")));
                      if($id>0){
                           $Url = ParseName($_POST['Name'])."-".$id ;
                         $mysql->execute("update _tbl_resume_general_info set Url='".$Url."' where ResumeID='".$id."'");
+                        $crid = $mysql->insert("_tbl_franchisee_credits",array("FranchiseeID"  => $_SESSION['FRANCHISEE']['FranchiseeID'],
+                                                                               "Particulars"   => "Resume Creation / ".$id,
+                                                                               "Credits"       => "0",
+                                                                               "Debits"        => "1",
+                                                                               "ProfileID"     => $id,
+                                                                               "RequestOn"     => date("Y-m-d H:i:s")));
+                              $mysql->execute("update _tbl_franchisee_credits set Balance='".getTotalBalanceCredits($_SESSION['FRANCHISEE']['FranchiseeID'])."' where CreditsID  ='".$crid."' and FranchiseeID='".$_SESSION['FRANCHISEE']['FranchiseeID']."'");
                       ?>
                      <script>
                      $(document).ready(function () {
@@ -61,9 +94,7 @@
 <script>
 $(document).ready(function () {
     $("#Name").blur(function () {
-        if(IsNonEmpty("Name","ErrName","Please Enter Name")){
-           IsAlphaNumeric("Name","ErrName","Please Enter Alpha Numerics Character"); 
-        }
+        IsNonEmpty("Name","ErrName","Please Enter Name");
     });
     $("#MobileNumber").blur(function () {
         IsNonEmpty("MobileNumber","ErrMobileNumber","Please Enter Mobile Number");
@@ -79,7 +110,7 @@ $(document).ready(function () {
     $("#AddressLine1").blur(function () {
         IsNonEmpty("AddressLine1","ErrAddressLine1","Please Enter Address Line1");
     });
-   
+    
     $("#Proffession").blur(function () {
         if(IsNonEmpty("Proffession","ErrProffession","Please Enter Proffession")){
                IsAlphaNumeric("Proffession","ErrProffession","Please Enter Alpha Numerics Character"); 
@@ -95,9 +126,7 @@ function SubmitProduct() {
         $('#ErrProffession').html("");
         $('#ErrAddressLine1').html("");
         
-            if(IsNonEmpty("Name","ErrName","Please Enter Name")){
-               IsAlphaNumeric("Name","ErrName","Please Enter Alpha Numerics Character"); 
-            }
+            IsNonEmpty("Name","ErrName","Please Enter Name");
             IsNonEmpty("MobileNumber","ErrMobileNumber","Please Enter Mobile Number");
             IsNonEmpty("WhatsappNumber","ErrWhatsappNumber","Please Enter Whatsapp Number");
             if(IsNonEmpty("EmailID","ErrEmailID","Please Enter Email ID")){
@@ -136,12 +165,12 @@ function SubmitProduct() {
                                                 <span class="errorstring" id="ErrProffession"><?php echo isset($ErrProffession)? $ErrProffession : "";?></span>
                                             </div>
                                         </div>
-                                        <div class="form-group form-show-validation row">
+                                        <!--<div class="form-group form-show-validation row">
                                             <label for="name" class="col-sm-3 text-left">Proffession Description<span class="required-label">*</span></label>
                                             <div class="col-sm-9">
                                                 <textarea class="form-control" id="Description" name="Description" placeholder="Enter Description"><?php echo (isset($_POST['Description']) ? $_POST['Description'] :"");?></textarea>
                                             </div>
-                                        </div>
+                                        </div>-->
                                         <div class="form-group form-show-validation row">
                                             <label for="name" class="col-sm-3 text-left">Career Objectives</label>
                                             <div class="col-sm-9">
@@ -149,13 +178,13 @@ function SubmitProduct() {
                                                 <span class="errorstring" id="ErrCareerObjectives"><?php echo isset($ErrCareerObjectives)? $ErrCareerObjectives : "";?></span>
                                             </div>
                                         </div>
-                                        <div class="form-group form-show-validation row">
+                                        <!--<div class="form-group form-show-validation row">
                                             <label for="name" class="col-sm-3 text-left">Personal Information</label>
                                             <div class="col-sm-9">
                                                 <textarea class="form-control" id="PersonalInfo" name="PersonalInfo" placeholder="Enter Personal Info"><?php echo (isset($_POST['PersonalInfo']) ? $_POST['PersonalInfo'] :"");?></textarea>
                                                 <span class="errorstring" id="ErrPersonalInfo"><?php echo isset($ErrPersonalInfo)? $ErrPersonalInfo : "";?></span>
                                             </div>
-                                        </div>
+                                        </div>-->
                                         <div class="form-group form-show-validation row">
                                             <label for="name" class="col-sm-3 text-left">Gender<span class="required-label">*</span></label>
                                             <div class="col-sm-9">
@@ -168,8 +197,30 @@ function SubmitProduct() {
                                         </div>
                                         <div class="form-group form-show-validation row">
                                             <label for="name" class="col-sm-3 text-left">Date of Birth<span class="required-label">*</span></label>
-                                            <div class="col-sm-9">
-                                                <input type="date" class="form-control" id="DateofBirth" name="DateofBirth" value="<?php echo (isset($_POST['DateofBirth']) ? $_POST['DateofBirth'] :"");?>">
+                                            <div class="col-sm-6">
+                                                <div class="form-group row" style="padding: 0px;">
+                                                    <div class="col-sm-3" style="margin-right:-30px">
+                                                        <select required="" name="date" id="date" class="form-control" style="width: 100%;">
+                                                            <?php for($i=1;$i<=31;$i++) {?>
+                                                            <option value="<?php echo $i;?>" <?php echo ($i==$_POST['date']) ? " selected='selected' ": "";?> ><?php echo $i;?></option>
+                                                            <?php } ?>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-sm-5" style="margin-right:-30px">
+                                                        <select required="" style="width: 100%;" class="form-control" name="month" id="month" aria-invalid="true" data-validation-required-message="Please select birth month">
+                                                            <?php for($i=1;$i<sizeof($month);$i++){ ?>
+                                                                <option value="<?php echo $i;?>" <?php (($_POST[ 'month']==$month[$i]) ? " selected='selected' " : "");?>><?php echo $month[$i];?></option>
+                                                            <?php } ?>
+                                                        </select> 
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <select required="" style="width: 100%;" class="form-control" name="year" id="year" aria-invalid="true" data-validation-required-message="Please select birth year">
+                                                            <?php for($i=date("Y")-68;$i<=date("Y")-18;$i++) {?>
+                                                            <option value="<?php echo $i;?>" <?php echo ($i==$_POST['year']) ? " selected='selected' ": "";?> ><?php echo $i;?></option>
+                                                            <?php } ?>
+                                                        </select>
+                                                    </div>
+                                                </div>
                                                 <span class="errorstring" id="ErrDateofBirth"><?php echo isset($ErrDateofBirth)? $ErrDateofBirth : "";?></span>
                                             </div>
                                         </div>
@@ -213,13 +264,13 @@ function SubmitProduct() {
                                                 <span class="errorstring" id="ErrWebsiteName"><?php echo isset($ErrWebsiteName)? $ErrWebsiteName : "";?></span>
                                             </div>
                                         </div>
-                                        <div class="form-group form-show-validation row">
+                                        <!--<div class="form-group form-show-validation row">
                                             <label for="name" class="col-sm-3 text-left">Community</label>
                                             <div class="col-sm-9">
                                                 <input type="text" class="form-control" id="Community" name="Community" placeholder="Enter Community" value="<?php echo (isset($_POST['Community']) ? $_POST['Community'] :"");?>">
                                                 <span class="errorstring" id="ErrCommunity"><?php echo isset($ErrCommunity)? $ErrCommunity : "";?></span>
                                             </div>
-                                        </div>
+                                        </div>-->
                                         <div class="form-group form-show-validation row">
                                             <label for="name" class="col-sm-3 text-left">Religion</label>
                                             <div class="col-sm-9">
@@ -276,6 +327,13 @@ function SubmitProduct() {
                                                 <div class="errorstring" id="Errimage1"><?php echo isset($Errimage1)? $Errimage1 : "";?></div>
                                             </div>
                                         </div>
+                                        <div class="form-group form-show-validation row">
+                                            <label for="name" class="col-sm-3 text-left">Declaration</label>
+                                            <div class="col-sm-9">
+                                                <textarea class="form-control" id="Declaration" name="Declaration" placeholder="Enter Declaration"><?php echo (isset($_POST['Declaration']) ? $_POST['Declaration'] :"I hereby declare that all the above given details are true to the best of my knowledge.");?></textarea>
+                                                <span class="errorstring" id="ErrDeclaration"><?php echo isset($ErrDeclaration)? $ErrDeclaration : "";?></span>
+                                            </div>
+                                        </div>
                                         <div class="form-group">
                                         <div class="col-sm-9" style="text-align:center;"><?php echo $successmessage;?> </div>
                                     </div>
@@ -284,7 +342,7 @@ function SubmitProduct() {
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <input class="btn btn-warning" type="submit" name="btnsubmit" value="Save">&nbsp;
-                                                <a href="dashboard.php?action=ResumesList" class="btn btn-warning btn-border">Back</a>
+                                                <a href="dashboard.php?action=Resumes/list" class="btn btn-warning btn-border">Back</a>
                                             </div>                                        
                                         </div>
                                     </div>
@@ -304,10 +362,11 @@ function SubmitProduct() {
 <script>
     function SuccessPopup(ResumeID){
         html = "<div class='form-group row'><div class='col-sm-12' style='text-align:center'><img src='assets/tick.jpg' style='width:128px'><br><br>Resume Created<br></div></div>";
-            html += "<div style='padding:20px;text-align:center'>" + "<a href='dashboard.php?action=ResumesList' class='btn btn-outline-success'>Continue</a></div>"; 
+            html += "<div style='padding:20px;text-align:center'>" + "<a href='dashboard.php?action=Resumes/list' class='btn btn-outline-success'>Continue</a></div>"; 
         
         $("#xconfrimation_text").html(html);
         $('#ConfirmationPopup').modal("show");
         
     }
 </script>
+<?php } ?>

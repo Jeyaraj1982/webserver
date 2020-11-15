@@ -210,8 +210,13 @@
                                     <label for="Name" class="col-md-3 text-right">Country Name</label>
                                     <div class="col-md-3">
                                         <select name="country" id="country" onchange="getState($(this).val())" class="form-control" >
-                                            <option value="0" selected="selected">Select Country</option> 
-                                                <?php foreach(JPostads::getCountryNames() as $countryname) {?>
+                                              
+                                              
+                                             <?php 
+                                                $countrynames = JPostads::getCountryNames(); 
+                                               $countrynames[sizeof($countrynames)+1]=array("countryid"=>"-1","countryname"=>"For Digital Service");
+                                             ?>
+                                                <?php foreach($countrynames as $countryname) {?>
                                                 <option value="<?php echo $countryname['countryid'];?>" <?php echo (isset($_POST[ 'country'])) ? (($_POST[ 'country']== $countryname['countryid']) ? " selected='selected' " : "") : (($data[0][ 'CountryID']== $countryname['countryid']) ? " selected='selected' " : "");?>><?php echo $countryname['countryname'];?></option>
                                                 <?php } ?>
                                          </select> 

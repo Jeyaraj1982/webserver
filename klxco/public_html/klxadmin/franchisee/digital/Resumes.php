@@ -1,7 +1,39 @@
-
+<?php $data= $mysql->select("select * from _tbl_franchisee where FranchiseeID='".$_GET['id']."'");?>
 <div class="main-panel">
     <div class="container">
         <div class="page-inner">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">Franchisee Information</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group form-show-validation row" style="padding:0px">
+                                <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-left">Name</label>
+                                <div class="col-lg-4 col-md-9 col-sm-8"><?php echo $data[0]['FranchiseeName'];?></div>
+                            </div>
+                            <div class="form-group form-show-validation row" style="padding:0px">
+                                <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-left">Mobile Number</label>
+                                <div class="col-lg-4 col-md-9 col-sm-8"><?php echo $data[0]['MobileNumber'];?></div>
+                            </div>
+                            <div class="form-group form-show-validation row" style="padding:0px">
+                                <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-left">IsActive</label>
+                                <div class="col-lg-4 col-md-9 col-sm-8">
+                                    <?php if($data[0]['IsActive']=="1") { echo "Yes"; } else { echo "No"; } ?>
+                                </div>
+                            </div>
+                        </div>                                                                        
+                        <div class="card-action">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <a href="dashboard.php?action=franchisee/digital/List&filter=all" class="btn btn-warning btn-border">Back</a>
+                                </div>                                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-md-12">
                     <div class="card">
@@ -12,9 +44,6 @@
                                         Manage Resumes
                                     </div>
                                 </div>
-                                <!--<div class="col-md-6" style="text-align: right;">
-                                    <a href="dashboard.php?action=CreateResume" class="btn btn-primary btn-xs">Add Resume</a>
-                                </div>-->
                             </div>
                         </div>
                         <div class="card-body">
@@ -24,7 +53,6 @@
                                             <tr>
                                                 <th scope="col"></th>
                                                 <th scope="col" style="padding-left:0px !important">Name</th>
-                                                <th scope="col" style="padding-left:0px !important">Franchisee ID</th>
                                                 <th scope="col">Created On</th>
                                                 <th scope="col" style="text-align: right;padding-right:0px !important">Viewed</th>
                                             </tr>
@@ -32,11 +60,9 @@
                                         <tbody>
                                         <?php $resumes = $mysql->select("select * from _tbl_resume_general_info where IsDelete='0' order by ResumeID desc limit 0,5");?>
                                         <?php foreach($resumes as $resume){ ?>
-                                        <?php $franchisee = $mysql->select("select * from _tbl_franchisee where FranchiseeID='".$resume['CreatedByID']."'");?>
                                             <tr>
                                                 <td style="padding-right:0px !important;padding-left:0px !important"><img src="<?php echo "../share/uploads/".$resume['ProfilePhoto'];?>" style='width: 50px;height:50px;margin-top: 5px;'></td>
                                                 <td style="padding-right:0px !important;padding-left:0px !important"><?php echo $resume['ResumeName'];?></td>
-                                                <td style="padding-right:0px !important;padding-left:0px !important;"><?php echo $franchisee[0]['MobileNumber'];?></td>
                                                 <td style="padding-right:0px !important;padding-left:0px !important"><?php echo date("M-d-Y H:i",strtotime($resume['CreatedOn']));?></td>
                                                 <td  style="padding-right:0px !important;padding-left:0px !important;text-align:right">
                                                     <?php echo sizeof($mysql->select("select * from resume_visitor_log where ResumeID='".$resume['ResumeID']."'"));?>
@@ -48,7 +74,7 @@
                                                     </button>
                                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                                         <a class="dropdown-item" href="dashboard.php?action=digitalresume/updateresume&id=<?php echo $resume['ResumeID'];?>" draggable="false">Edit</a>
-                                                        <a class="dropdown-item" href="dashboard.php?action=digitalresume/viewresume&id=<?php echo $resume['ResumeID'];?>" draggable="false">View</a>
+                                                        <a class="dropdown-item" href="dashboard.php?action=digitalresume/viewresume&id=<?php echo $resume['ResumeID'];?>&fr=frlist" draggable="false">View</a>
                                                         <a class="dropdown-item" draggable="false"><span onclick='CallConfirmation(<?php echo $resume['ResumeID'];?>)' class='btn btn-danger btn-sm' style='padding: 0px 10px;font-size: 10px;'>Delete</span></a>
                                                     </div>
                                                 </div>     
@@ -108,7 +134,7 @@
  function DeleteResume(ResumeID) {
      var param = $( "#DeleteResumeFrm"+ResumeID).serialize();
     $("#confrimation_text").html(loading);
-    $.post( "../digital_webservice.php?action=DeleteResume",param,function(data) {                 
+    $.post( "../webservice.php?action=DeleteResume",param,function(data) {                 
         var obj = JSON.parse(data); 
         var html = "";                                                                              
         if (obj.status=="failure") {

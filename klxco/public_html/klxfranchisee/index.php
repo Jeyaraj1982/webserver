@@ -9,12 +9,16 @@ include_once("header.php");
  $msg = "";
     if (isset($_POST['loginbtn'])) {
  
-          $record = $mysql->select("select * from _tbl_franchisee where EmailID='".trim($_POST['email'])."' and Password='".trim($_POST['upass'])."'");
+          $record = $mysql->select("select * from _tbl_franchisee where (EmailID='".trim($_POST['email'])."' or MobileNumber='".trim($_POST['email'])."') and Password='".trim($_POST['upass'])."'");
           if (sizeof($record)>0) {
             $bank = $mysql->select("select * from _tbl_franchisee_bank_details where FranchiseeID='".$record[0]['userid']."'");  
             $_SESSION['FRANCHISEE'] = $record[0];
             if(sizeof($bank)=="0"){
+                if ($record[0]['CountryID']!=-1) {
                 echo "<script>location.href='dashboard.php?action=AddBankAccount';</script>";    
+                } else {
+                    echo "<script>location.href='dashboard.php';</script>";
+                }
             } else{
                 echo "<script>location.href='dashboard.php';</script>";
             } 
@@ -49,7 +53,7 @@ $("#upass").blur(function () {
                 <div class="login-form">
                 <div class="form-group form-floating-label">
                     <input id="email" name="email" type="text" class="form-control input-border-bottom" value="<?php echo (isset($_POST['email']) ? $_POST['email'] :"");?>">
-                    <label for="email" class="placeholder">User Name</label>
+                    <label for="email" class="placeholder">User Name/Mobile Number</label>
                     <span class="errorstring" id="Erremail"><?php echo isset($Erremail)? $Erremail : "";?></span>
                 </div>
                 <div class="form-group form-floating-label">
