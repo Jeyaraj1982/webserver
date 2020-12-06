@@ -24,20 +24,17 @@
            
            $user_balance = MoneyTransfer::get_balance($param['userid']);
            
-       //    if ($param['userid']==9) {
-      //$user_balance = MoneyTransfer::get_balance($param['userid'])-10000;   
-//} else {                                 
-     $user_balance = MoneyTransfer::get_balance($param['userid']);
-//}
-
+           //if ($param['userid']==9) {
+           //$user_balance = MoneyTransfer::get_balance($param['userid'])-10000;   
+           //} else {                                 
+           $user_balance = MoneyTransfer::get_balance($param['userid']);
+           //}
            
            $qdata = $mysql->select("select * from _moneytransfer_incoming_bankaccount where accountnumber='".$param['BankAccountNumber']."'");
-if (sizeof($qdata)>0) {
-     return array("response"=>array("status"=>"FAILURE","error"=>"Not allow to transfer. This account number has set to auto wallet update"));    
-     
-}
-
-
+           if (sizeof($qdata)>0) {
+               return array("response"=>array("status"=>"FAILURE","error"=>"Not allow to transfer. This account number has set to auto wallet update"));    
+           }
+           
            if (!($param['Amount']<$user_balance)) {
                return array("response"=>array("status"=>"FAILURE","error"=>"insufficant balance"));
            }
@@ -63,100 +60,118 @@ if (sizeof($qdata)>0) {
                                                                "RequestedFrom"      => $param['txn_from']));
            $apiToken = "f16f19b5-16fc-4fe0-bbb3-3adafa0301e8";       
            $api_url  = "https://partners.hypto.in"     ;
-           $data = array("amount"=>$param['Amount'],     
-               "payment_type"=>"IMPS",
-               "ifsc"=>$param['IFSCode'],
-               "number"=>$param['BankAccountNumber'],
-               "note"=>$param['Remarks'],
-               "udf1"=>"UDF Test 1",
-               "udf2"=>"UDF Test 2",
-               "udf3"=>"UDF Test 3",
-               "beneficiary_name"=>$param['BeneficiaryName'],
-               "reference_number"=>"aaranju".$txnid);
- 
-
-$ch = curl_init( $api_url."/api/transfers/initiate" );
-curl_setopt($ch, CURLOPT_HTTPHEADER, array('Authorization: f16f19b5-16fc-4fe0-bbb3-3adafa0301e8',
-                                           'Content-Type: application/json'));
-$payload = json_encode( $data );
-curl_setopt( $ch, CURLOPT_POSTFIELDS, $payload );
-curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true );
-$res = curl_exec($ch);
-curl_close($ch);
-$mysql->execute("update `_tbl_money_transfer` set `APIResponse_1`='".$res."'   where `MoneyTransferID`='".$txnid."'");
-$res = json_decode($res,true);
-                                          
-                 if ($res['success']==0) {
-                     $mysql->execute("update `_tbl_money_transfer` set `TransactionStatus`='FAILURE',`Debit`='0',`Balance`='".$user_balance."'   where `MoneyTransferID`='".$txnid."'");
-                     return array("response"=>array("status"=>"FAILURE","error"=>$res['reason'],"txnid"=>$txnid)); 
-                 } else {
-                     
-                  sleep(10);
-                  $ch = curl_init( $api_url."/api/transfers/status/".$res['data']['reference_number']);
-                  curl_setopt($ch, CURLOPT_HTTPHEADER, array('Authorization: f16f19b5-16fc-4fe0-bbb3-3adafa0301e8','Content-Type: application/json'));
-                  curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true );
-                  $res2 = curl_exec($ch);
-                  curl_close($ch);
-                  $mysql->execute("update `_tbl_money_transfer` set `APIResponse_2`='".$res2."'   where `MoneyTransferID`='".$txnid."'");
-                  $res2 = json_decode($res2,true);
-                  if (strlen(trim($res2))<5) {
-                      sleep(10);
-                      $ch = curl_init( $api_url."/api/transfers/status/".$res['data']['reference_number']);
-                      curl_setopt($ch, CURLOPT_HTTPHEADER, array('Authorization: f16f19b5-16fc-4fe0-bbb3-3adafa0301e8','Content-Type: application/json'));
-                      curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true );
-                      $res2 = curl_exec($ch);
-                      curl_close($ch);
-                      $mysql->execute("update `_tbl_money_transfer` set `APIResponse_2`='".$res2."'   where `MoneyTransferID`='".$txnid."'");
-                      $res2 = json_decode($res2,true);
-                  }
-                  
-                  //COMPLETED                                               
-                  if ($res2['data']['status']=="FAILED") {
-                      $mysql->execute("update `_tbl_money_transfer` set `TransactionStatus`='FAILURE',`Debit`='0',`Balance`='".$user_balance."'   where `MoneyTransferID`='".$txnid."'");
-                      return array("response"=>array("status"=>"FAILURE","error"=>"Failed","txnid"=>$txnid)); 
-                  } else {
-                      $mysql->execute("update `_tbl_money_transfer` set `TransactionStatus`='SUCCESS',`ReferenceNumber`='".$res2['data']['bank_ref_num']."'  where `MoneyTransferID`='".$txnid."'");
-                      $charges = 0;
-                      
-                      if ($param['Amount']>=10 && $param['Amount']<1000) {
-                          $charges = 5;
-                      }
-                     
-                      if ($param['Amount']>=1001 && $param['Amount']<=3000) {
-                          $charges = 7;
-                      }
-                     
-                      if ($param['Amount']>=3001 && $param['Amount']<=7000) {
-                          $charges = 10;
-                      }
-                     
-                      if ($param['Amount']>=7001 && $param['Amount']<=10000) {
-                          $charges = 15;
-                      }
-                      
-                      $mysql->insert("_tbl_money_transfer",array("UserID"             => $param['userid'],
-                                                                 "TxnDate"            => date("Y-m-d H:i:s"),
-                                                                 "Particulars"        => "Charges/".$txnid,
-                                                                 "IsWalletUpdate"     => "3",
-                                                                 "Credit"             => "0",
-                                                                 "Debit"              => $charges,
-                                                                 "Balance"            => $user_balance-$param['Amount']-$charges,
-                                                                 "BankAccountNumber"  => "",
-                                                                 "IFSCode"            => "",
-                                                                 "PaymentType"        => "",
-                                                                 "Remarks"            => "",
-                                                                 "BeneficiaryName"    => "",
-                                                                 "ReferenceNumber"    => "",
-                                                                 "APIResponse_1"        => "",
-                                                                 "TransactionStatus"  => "SUCCESS",
-                                                                 "BankReferenceID"    => "0",
-                                                                 "RequestedFrom"      => $param['txn_from']));
-                                                                 
-                     return array("response"=>array("status"=>"SUCCESS","transid"=>$res2['data']['bank_ref_num'],"uid"=>$param['uid'],"txnid"=>$txnid));  
-                 }           
-                 }
-              
-        
+           $data = array("amount"           => $param['Amount'],     
+                         "payment_type"     => "IMPS",
+                         "ifsc"             => $param['IFSCode'],
+                         "number"           => $param['BankAccountNumber'],
+                         "note"             => $param['Remarks'],
+                         "udf1"             => "tksd",
+                         "udf2"             => $txnid,
+                         "udf3"             => "UDF Test 3",
+                         "beneficiary_name" => $param['BeneficiaryName'],
+                         "reference_number" => "aaranju".$txnid);
+           $ch = curl_init( $api_url."/api/transfers/initiate" );
+           curl_setopt($ch, CURLOPT_HTTPHEADER, array('Authorization: f16f19b5-16fc-4fe0-bbb3-3adafa0301e8',
+                                                      'Content-Type: application/json'));
+           $payload = json_encode( $data );
+           curl_setopt( $ch, CURLOPT_POSTFIELDS, $payload );
+           curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true );
+           $res = curl_exec($ch);
+           curl_close($ch);
+           $mysql->execute("update `_tbl_money_transfer` set `APIResponse_1`='".$res."'   where `MoneyTransferID`='".$txnid."'");
+           $res = json_decode($res,true);
+           
+           if ($res['success']==0) {
+               $mysql->execute("update `_tbl_money_transfer` set `TransactionStatus`='FAILURE',`Debit`='0',`Balance`='".$user_balance."'   where `MoneyTransferID`='".$txnid."'");
+               
+               $td=$mysql->select("select * from _users where userid='".$param['userid']."'");
+               if (strlen(trim($td[0]['moneytransfer_callback']))>5) {
+                   $ch = curl_init($td[0]['moneytransfer_callback'].urlencode("Transaction failure. Number: ". $param['BankAccountNumber'].", IFSCode: ".$param['IFSCode'].", Amount: ".$param['Amount']." Balance: ".$user_balance));
+                   curl_exec($ch);
+                   curl_close($ch);
+               }
+               return array("response"=>array("status"=>"FAILURE","error"=>"failed to initiate","txnid"=>$txnid)); 
+               //return array("response"=>array("status"=>"FAILURE","error"=>$res['reason'],"txnid"=>$txnid)); 
+           } else {
+               sleep(10);
+               $ch = curl_init( $api_url."/api/transfers/status/".$res['data']['reference_number']);
+               curl_setopt($ch, CURLOPT_HTTPHEADER, array('Authorization: f16f19b5-16fc-4fe0-bbb3-3adafa0301e8','Content-Type: application/json'));
+               curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true );
+               $res2 = curl_exec($ch);
+               curl_close($ch);
+               
+               $mysql->execute("update `_tbl_money_transfer` set `APIResponse_2`='".$res2."'   where `MoneyTransferID`='".$txnid."'");
+               $res2 = json_decode($res2,true);
+               if (strlen(trim($res2))<5) {
+                   sleep(10);
+                   $ch = curl_init( $api_url."/api/transfers/status/".$res['data']['reference_number']);
+                   curl_setopt($ch, CURLOPT_HTTPHEADER, array('Authorization: f16f19b5-16fc-4fe0-bbb3-3adafa0301e8','Content-Type: application/json'));
+                   curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true );
+                   $res2 = curl_exec($ch);
+                   curl_close($ch);
+                   $mysql->execute("update `_tbl_money_transfer` set `APIResponse_2`='".$res2."'   where `MoneyTransferID`='".$txnid."'");
+                   $res2 = json_decode($res2,true);
+               }
+               
+               //COMPLETED                                               
+               if ($res2['data']['status']=="FAILED") {
+                   $mysql->execute("update `_tbl_money_transfer` set `TransactionStatus`='FAILURE',`Debit`='0',`Balance`='".$user_balance."'   where `MoneyTransferID`='".$txnid."'");
+                   
+                   $td=$mysql->select("select * from _users where userid='".$param['userid']."'");
+                   if (strlen(trim($td[0]['moneytransfer_callback']))>5) {
+                       $ch = curl_init( $td[0]['moneytransfer_callback'].urlencode("Transaction failure. Number: ". $param['BankAccountNumber'].", IFSCode: ".$param['IFSCode'].", Amount: ".$param['Amount']." Balance: ".$user_balance));
+                       curl_exec($ch);
+                       curl_close($ch);
+                   }
+                   return array("response"=>array("status"=>"FAILURE","error"=>"Failed","txnid"=>$txnid)); 
+               } else {
+                   $mysql->execute("update `_tbl_money_transfer` set `TransactionStatus`='SUCCESS',`ReferenceNumber`='".$res2['data']['bank_ref_num']."'  where `MoneyTransferID`='".$txnid."'");
+                   $charges = 0;
+                   
+                   if ($param['Amount']>=10 && $param['Amount']<1000) {
+                       $charges = 5;
+                   }
+                   
+                   if ($param['Amount']>=1001 && $param['Amount']<=3000) {
+                       $charges = 7;
+                   }
+                   
+                   if ($param['Amount']>=3001 && $param['Amount']<=7000) {
+                       $charges = 10;
+                   }
+                   
+                   if ($param['Amount']>=7001 && $param['Amount']<=10000) {
+                       $charges = 15;
+                   }
+                   
+                   $mysql->insert("_tbl_money_transfer",array("UserID"             => $param['userid'],
+                                                              "TxnDate"            => date("Y-m-d H:i:s"),
+                                                              "Particulars"        => "Charges/".$txnid,
+                                                              "IsWalletUpdate"     => "3",
+                                                              "Credit"             => "0",
+                                                              "Debit"              => $charges,
+                                                              "Balance"            => $user_balance-$param['Amount']-$charges,
+                                                              "BankAccountNumber"  => "",
+                                                              "IFSCode"            => "",
+                                                              "PaymentType"        => "",
+                                                              "Remarks"            => "",
+                                                              "BeneficiaryName"    => "",
+                                                              "ReferenceNumber"    => "",
+                                                              "APIResponse_1"        => "",
+                                                              "TransactionStatus"  => "SUCCESS",
+                                                              "BankReferenceID"    => "0",
+                                                              "RequestedFrom"      => $param['txn_from']));
+                         
+                   $td=$mysql->select("select * from _users where userid='".$param['userid']."'");
+                   if (strlen(trim($td[0]['moneytransfer_callback']))>5) {
+                       $url =  $td[0]['moneytransfer_callback'].urlencode("Transaction Success. Number: ". $param['BankAccountNumber'].", IFSCode: ".$param['IFSCode'].", Amount: ".$param['Amount'].", Balance: ".$user_balance-($param['Amount']+$charges));
+                       $ch = curl_init($url);
+                       curl_exec($ch);
+                       curl_close($ch);
+                   }                                        
+                   return array("response"=>array("status"=>"SUCCESS","transid"=>$res2['data']['bank_ref_num'],"uid"=>$param['uid'],"txnid"=>$txnid));  
+               }           
+           }
         }
     }
 
@@ -359,6 +374,7 @@ $res = json_decode($res,true);
         
         function getBalance($userid) {
             global $mysql;
+            return 1;
             $bal= $mysql->select("select (sum(credits)-sum(debits)) as bal from telegram_outgoing where userid='".$userid."'");
             return isset($bal[0]['bal']) ? $bal[0]['bal'] : 0;
         }
@@ -368,7 +384,8 @@ $res = json_decode($res,true);
             global $mysql;
             if ($type=="text") {
                 $data = Telegram::sendTextMessage($bot,$chatID,$Text);
-                $charge ="0.25";
+                $charge ="0.25";              
+                $charge ="0.00";
             }  
             $Text = str_replace("'","\'",$Text);
             $id=$mysql->insert("telegram_outgoing",array("txndate"          => date("Y-m-d H:i:s"),
@@ -446,5 +463,13 @@ $res = json_decode($res,true);
         } else {
             return json_encode($array);     
         }
+    }
+    
+    
+     function _writeTxt($text) {
+        $file = "xtelegram".date("Y_m_d").".txt";
+        $myfile = fopen($file, "a") or die("Unable to open file!");
+        fwrite($myfile,"\n".date('Y-m-d H:i:s')."\t".$text);
+        fclose($myfile);
     }
 ?>

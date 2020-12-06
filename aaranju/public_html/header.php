@@ -356,7 +356,12 @@ if (!($_SESSION['user']['userid']>0)) {
                   <p>Outgoing Messages</p>
                 </a>
               </li>
-            
+             <li class="nav-item">
+                <a href="<?php echo url;?>/telegram/subscriptions.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Subscriptions</p>
+                </a>
+              </li>
               </li>
             </ul>
           </li>

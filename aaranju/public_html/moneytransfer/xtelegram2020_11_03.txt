@@ -1,0 +1,8 @@
+
+2020-11-03 10:42:02	F0
+2020-11-03 10:42:02	select * from _users where userid='9'
+2020-11-03 10:53:58	F0
+2020-11-03 10:53:58	select * from _users where userid='9'
+2020-11-03 10:54:18	F2
+2020-11-03 10:54:18	9,maajidmultimart,welcome@123,,TKSD Online Service,10000,2020-02-04 00:00:00,1,1,0,0,,0,,d2VsY29tZUA,jM0NTY3ODk,1,1,2020-05-23 10:00:00,1,0,,0,,0,,0,,0,,0,,1,2020-07-24 13:00:00,https://www.tksdonlineservice.in/callback_telegram.php?action=sendMessage&Message=
+2020-11-03 10:54:18	https://www.tksdonlineservice.in/callback_telegram.php?action=sendMessage&Message=Transaction+failure.+Number%3A+1233115000111442%2C+IFSCode%3A+Fdrl0002295%2C+Amount%3A+100+Balance%3A+20693

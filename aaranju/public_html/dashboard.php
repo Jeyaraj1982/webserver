@@ -414,13 +414,19 @@ $service_enabled =  ($_SESSION['user']['service_whatsapp']==1) ? ture : false;
 <?php } ?>
 
 <?php function service_telegram() {
+    global $mysql;
     $service_enabled =  ($_SESSION['user']['service_telegram']==1) ? ture : false;
     ?>
     <div class="col-lg-3 col-6">
         <div class="small-box <?php echo $service_enabled  ? 'bg-success' : 'bg-secondary'; ?>">
             <div class="inner">
-                <h3>Rs. <?php echo Telegram::getBalance($_SESSION['user']['userid']);  ?></h3>
-                <p>Telegram Service</p>
+                <h3>&nbsp;<!--Rs. <?php echo Telegram::getBalance($_SESSION['user']['userid']);  ?>--></h3>
+                <p style="margin-bottom:0px">Telegram Service</p>
+                 <?php $txndata = $mysql->select("Select * from telegram_montlysubscriptions where userid='".$_SESSION['user']['userid']."' order by subscriptionid desc ");?>
+                 <span style="font-size:12px;">
+                 Expire on:  <?php echo date("d M, Y", strtotime($txndata[0]['DateTo']));?>
+                 </span>
+                 
             </div>
             <div class="icon">
                 <i class="ion ion-bag"></i>
@@ -430,7 +436,7 @@ $service_enabled =  ($_SESSION['user']['service_whatsapp']==1) ? ture : false;
             <?php } else { ?>
             <a href="javascript:void(0)" class="small-box-footer">To enable contact admin</a>
             <?php } ?>
-        </div>
+        </div>                                  
     </div>
 <?php } ?>
 
