@@ -1,0 +1,28 @@
+[2020-11-19 05:29:47]	select * from _jusertable order by userid desc
+[2020-11-19 05:29:47]	select * from _jusertable where userid=''
+[2020-11-19 05:29:47]	select * from _jusertable where userid=''
+[2020-11-19 05:29:47]	select * from _jusertable where userid=''
+[2020-11-19 07:17:38]	select * from _jusertable where email='admin@rhole.in' and pwd='9514239096'
+[2020-11-19 07:17:40]	select userid from _jusertable where isadmin='0'
+[2020-11-19 07:17:40]	select userid from _jusertable where isadmin='0' and DATE(createdon)=DATE('2020-11-19')
+[2020-11-19 07:17:40]	select SUM(TxnAmount) as amount FROM _tblPayments where TxnStatus='Success'
+[2020-11-19 07:17:40]	select userid from _tbl_franchisee where IsActive='1'
+[2020-11-19 07:17:40]	select RequestID from _tbl_withdrawal_request where Status='0'
+[2020-11-19 07:17:40]	select featureadid from _tbl_featured where ispublish='1'
+[2020-11-19 07:17:40]	select * from `_jusertable` order by `userid` desc limit 0,5
+[2020-11-19 07:17:40]	select * from _jpostads  order by `postadid` desc limit 0,5 
+[2020-11-19 07:17:40]	select * from _jcategory where  categid='8'
+[2020-11-19 07:17:40]	select * from _jsubcategory where  subcateid='126'
+[2020-11-19 07:17:40]	select * from _jcountrynames where  countryid='1'
+[2020-11-19 07:17:40]	select * from _jdistrictnames where  distcid='55'
+[2020-11-19 07:17:40]	select * from _jstatenames where  stateid='31'
+[2020-11-19 07:17:40]	select * from _jcitynames where  citynameid='6'
+[2020-11-19 07:17:40]	select * from _jusertable where  userid='3'
+[2020-11-19 07:17:44]	select * from _jusertable order by userid desc
+[2020-11-19 07:17:44]	select * from _jusertable where userid=''
+[2020-11-19 07:17:44]	select * from _jusertable where userid=''
+[2020-11-19 07:17:44]	select * from _jusertable where userid=''
+[2020-11-19 07:18:16]	select * from _jsitesettings
+[2020-11-19 07:18:16]	select * from _jfonts
+[2020-11-19 07:18:16]	select * from _jfonts
+[2020-11-19 07:18:16]	select * from _jpages where pagetype='P' 

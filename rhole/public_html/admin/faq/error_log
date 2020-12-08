@@ -1,0 +1,4 @@
+[31-Jul-2020 09:55:16 UTC] PHP Fatal error:  Uncaught Error: Class 'CommonController' not found in /home/klxco/public_html/klxadmin/faq/addfaq.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/klxco/public_html/klxadmin/faq/addfaq.php on line 2

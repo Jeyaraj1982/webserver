@@ -1,0 +1,4 @@
+[2020-03-27 22:58:42]	select * from _jpostads  order by postadid desc limit 0,50 
+[2020-03-27 22:58:50]	select * from _jpostads  order by postadid desc limit 0,50 
+[2020-03-27 22:59:03]	select * from _jpostads  where date(postedon)=date('2020-03-27')  
+[2020-03-27 22:59:03]	select * from _jpostads  where date(postedon)=date('2020-03-27')  order by postadid desc limit 0, 20 

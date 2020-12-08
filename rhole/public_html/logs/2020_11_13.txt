@@ -1,0 +1,365 @@
+[2020-11-13 06:27:53]	select * from _jdistrictnames order by districtname
+[2020-11-13 06:27:53]	select * from _jstatenames order by statenames
+[2020-11-13 06:27:53]	SELECT *, 0 AS featured FROM _jpostads left join _jcategory on  _jpostads.categid=_jcategory.categid  where 
+                 _jpostads.countryid='1' and
+              
+                 _jpostads.isdeleted='0'   
+             
+             order by _jpostads.postadid desc  limit 0,24
+[2020-11-13 06:27:53]	select * from _jfeatures_likedcontact where userid='' and adid='1'
+[2020-11-13 06:27:53]	select * from _jcitynames where citynameid=6
+[2020-11-13 06:27:53]	select * from _jdistrictnames where distcid=55
+[2020-11-13 06:45:26]	select * from _jdistrictnames order by districtname
+[2020-11-13 06:45:26]	select * from _jstatenames order by statenames
+[2020-11-13 06:45:26]	SELECT *, 0 AS featured FROM _jpostads left join _jcategory on  _jpostads.categid=_jcategory.categid  where 
+                 _jpostads.countryid='1' and
+              
+                 _jpostads.isdeleted='0'   
+             
+             order by _jpostads.postadid desc  limit 0,24
+[2020-11-13 06:45:26]	select * from _jfeatures_likedcontact where userid='' and adid='1'
+[2020-11-13 06:45:26]	select * from _jcitynames where citynameid=6
+[2020-11-13 06:45:26]	select * from _jdistrictnames where distcid=55
+[2020-11-13 06:46:52]	select * from _jdistrictnames order by districtname
+[2020-11-13 06:46:52]	select * from _jstatenames order by statenames
+[2020-11-13 06:46:52]	SELECT *, 0 AS featured FROM _jpostads left join _jcategory on  _jpostads.categid=_jcategory.categid  where 
+                 _jpostads.countryid='1' and
+              
+                 _jpostads.isdeleted='0'   
+             
+             order by _jpostads.postadid desc  limit 0,24
+[2020-11-13 06:46:52]	select * from _jfeatures_likedcontact where userid='' and adid='1'
+[2020-11-13 06:46:52]	select * from _jcitynames where citynameid=6
+[2020-11-13 06:46:52]	select * from _jdistrictnames where distcid=55
+[2020-11-13 06:47:17]	select * from _jusertable where email='admin@rhole.in' and pwd='12345678'
+[2020-11-13 06:47:18]	select userid from _jusertable where isadmin='0'
+[2020-11-13 06:47:18]	select userid from _jusertable where isadmin='0' and DATE(createdon)=DATE('2020-11-13')
+[2020-11-13 06:47:18]	select SUM(TxnAmount) as amount FROM _tblPayments where TxnStatus='Success'
+[2020-11-13 06:47:18]	select userid from _tbl_franchisee where IsActive='1'
+[2020-11-13 06:47:18]	select RequestID from _tbl_withdrawal_request where Status='0'
+[2020-11-13 06:47:18]	select featureadid from _tbl_featured where ispublish='1'
+[2020-11-13 06:47:18]	select * from `_jusertable` order by `userid` desc limit 0,5
+[2020-11-13 06:47:18]	select * from _jpostads  order by `postadid` desc limit 0,5 
+[2020-11-13 06:47:18]	select * from _jcategory where  categid='8'
+[2020-11-13 06:47:18]	select * from _jsubcategory where  subcateid='126'
+[2020-11-13 06:47:18]	select * from _jcountrynames where  countryid='1'
+[2020-11-13 06:47:18]	select * from _jdistrictnames where  distcid='55'
+[2020-11-13 06:47:18]	select * from _jstatenames where  stateid='31'
+[2020-11-13 06:47:18]	select * from _jcitynames where  citynameid='6'
+[2020-11-13 06:47:18]	select * from _jusertable where  userid='3'
+[2020-11-13 06:49:37]	insert into `_jcontactus` (`contmob`,`contemail`,`personname`,`subject`,`content`,`convtime`,`postedon`) values ('9843448795','rholeadpost@gmail.com','rhole','Regarding package upgrade','To mail or contact this details','8 to 6','2020-11-13 06:49:37')
+[2020-11-13 06:49:43]	insert into `_jcontactus` (`contmob`,`contemail`,`personname`,`subject`,`content`,`convtime`,`postedon`) values ('9843448795','rholeadpost@gmail.com','rhole','Regarding package upgrade','To mail or contact this details','8 to 6','2020-11-13 06:49:43')
+[2020-11-13 06:49:53]	insert into `_jcontactus` (`contmob`,`contemail`,`personname`,`subject`,`content`,`convtime`,`postedon`) values ('9843448795','rholeadpost@gmail.com','rhole','Regarding package upgrade','To mail or contact this details','8 to 6','2020-11-13 06:49:53')
+[2020-11-13 06:51:04]	insert into `_jcontactus` (`contmob`,`contemail`,`personname`,`subject`,`content`,`convtime`,`postedon`) values ('9843448795','rholeadpost@gmail.com','rhole','Regarding package upgrade','To mail or contact this details','8 to 6','2020-11-13 06:51:04')
+[2020-11-13 06:51:10]	insert into `_jcontactus` (`contmob`,`contemail`,`personname`,`subject`,`content`,`convtime`,`postedon`) values ('9843448795','rholeadpost@gmail.com','rhole','Regarding package upgrade','To mail or contact this details','8 to 6','2020-11-13 06:51:10')
+[2020-11-13 06:58:25]	insert into `_jcontactus` (`contmob`,`contemail`,`personname`,`subject`,`content`,`convtime`,`postedon`) values ('9843448795','rholeadpost@gmail.com','rhole','Regarding package upgrade','To mail or contact this details','8 to 6','2020-11-13 06:58:25')
+[2020-11-13 06:58:49]	insert into `_jcontactus` (`contmob`,`contemail`,`personname`,`subject`,`content`,`convtime`,`postedon`) values ('9843448795','rholeadpost@gmail.com','rhole','Regarding package upgrade','To mail or contact this details','8 to 6','2020-11-13 06:58:49')
+[2020-11-13 06:58:54]	insert into `_jcontactus` (`contmob`,`contemail`,`personname`,`subject`,`content`,`convtime`,`postedon`) values ('9843448795','rholeadpost@gmail.com','rhole','Regarding package upgrade','To mail or contact this details','8 to 6','2020-11-13 06:58:54')
+[2020-11-13 06:59:01]	insert into `_jcontactus` (`contmob`,`contemail`,`personname`,`subject`,`content`,`convtime`,`postedon`) values ('9843448795','rholeadpost@gmail.com','rhole','Regarding package upgrade','To mail or contact this details','8 to 6','2020-11-13 06:59:01')
+[2020-11-13 06:59:20]	select * from `_jusertable` where  `userid`='1'
+[2020-11-13 07:02:39]	select * from _jdistrictnames order by districtname
+[2020-11-13 07:02:39]	select * from _jstatenames order by statenames
+[2020-11-13 07:02:39]	SELECT *, 0 AS featured FROM _jpostads left join _jcategory on  _jpostads.categid=_jcategory.categid  where 
+                 _jpostads.countryid='1' and
+              
+                 _jpostads.isdeleted='0'   
+             
+             order by _jpostads.postadid desc  limit 0,24
+[2020-11-13 07:02:39]	select * from _jfeatures_likedcontact where userid='' and adid='1'
+[2020-11-13 07:02:39]	select * from _jcitynames where citynameid=6
+[2020-11-13 07:02:39]	select * from _jdistrictnames where distcid=55
+[2020-11-13 07:03:22]	select * from _jdistrictnames order by districtname
+[2020-11-13 07:03:22]	select * from _jstatenames order by statenames
+[2020-11-13 07:03:22]	SELECT *, 0 AS featured FROM _jpostads left join _jcategory on  _jpostads.categid=_jcategory.categid  where 
+                 _jpostads.countryid='1' and
+              
+                 _jpostads.isdeleted='0'   
+             
+             order by _jpostads.postadid desc  limit 0,24
+[2020-11-13 07:03:22]	select * from _jfeatures_likedcontact where userid='' and adid='1'
+[2020-11-13 07:03:22]	select * from _jcitynames where citynameid=6
+[2020-11-13 07:03:22]	select * from _jdistrictnames where distcid=55
+[2020-11-13 07:04:48]	select * from _jusertable where email='admin@rhole.in' and pwd='12345678'
+[2020-11-13 07:04:48]	select userid from _jusertable where isadmin='0'
+[2020-11-13 07:04:48]	select userid from _jusertable where isadmin='0' and DATE(createdon)=DATE('2020-11-13')
+[2020-11-13 07:04:48]	select SUM(TxnAmount) as amount FROM _tblPayments where TxnStatus='Success'
+[2020-11-13 07:04:48]	select userid from _tbl_franchisee where IsActive='1'
+[2020-11-13 07:04:48]	select RequestID from _tbl_withdrawal_request where Status='0'
+[2020-11-13 07:04:48]	select featureadid from _tbl_featured where ispublish='1'
+[2020-11-13 07:04:48]	select * from `_jusertable` order by `userid` desc limit 0,5
+[2020-11-13 07:04:48]	select * from _jpostads  order by `postadid` desc limit 0,5 
+[2020-11-13 07:04:48]	select * from _jcategory where  categid='8'
+[2020-11-13 07:04:48]	select * from _jsubcategory where  subcateid='126'
+[2020-11-13 07:04:48]	select * from _jcountrynames where  countryid='1'
+[2020-11-13 07:04:48]	select * from _jdistrictnames where  distcid='55'
+[2020-11-13 07:04:48]	select * from _jstatenames where  stateid='31'
+[2020-11-13 07:04:48]	select * from _jcitynames where  citynameid='6'
+[2020-11-13 07:04:48]	select * from _jusertable where  userid='3'
+[2020-11-13 07:06:05]	select userid from _jusertable where isadmin='0'
+[2020-11-13 07:06:05]	select userid from _jusertable where isadmin='0' and DATE(createdon)=DATE('2020-11-13')
+[2020-11-13 07:06:05]	select SUM(TxnAmount) as amount FROM _tblPayments where TxnStatus='Success'
+[2020-11-13 07:06:05]	select userid from _tbl_franchisee where IsActive='1'
+[2020-11-13 07:06:05]	select RequestID from _tbl_withdrawal_request where Status='0'
+[2020-11-13 07:06:05]	select featureadid from _tbl_featured where ispublish='1'
+[2020-11-13 07:06:05]	select * from `_jusertable` order by `userid` desc limit 0,5
+[2020-11-13 07:06:05]	select * from _jpostads  order by `postadid` desc limit 0,5 
+[2020-11-13 07:06:05]	select * from _jcategory where  categid='8'
+[2020-11-13 07:06:05]	select * from _jsubcategory where  subcateid='126'
+[2020-11-13 07:06:05]	select * from _jcountrynames where  countryid='1'
+[2020-11-13 07:06:05]	select * from _jdistrictnames where  distcid='55'
+[2020-11-13 07:06:05]	select * from _jstatenames where  stateid='31'
+[2020-11-13 07:06:05]	select * from _jcitynames where  citynameid='6'
+[2020-11-13 07:06:05]	select * from _jusertable where  userid='3'
+[2020-11-13 07:06:14]	select * from _tbl_withdrawal_request where (date(TxnOn)>=date('2020-11-13') and date(TxnOn)<=date('2020-11-13') ) and Status='0' order by RequestID desc
+[2020-11-13 07:06:47]	select * from _jsitesettings
+[2020-11-13 07:06:47]	select * from _jfonts
+[2020-11-13 07:06:47]	select * from _jfonts
+[2020-11-13 07:06:47]	select * from _jpages where pagetype='P' 
+[2020-11-13 07:07:28]	select * from _jcountrynames order by countryname
+[2020-11-13 07:07:28]	select count(*) as cnt from _jstatenames where countryid='1'
+[2020-11-13 07:07:28]	select count(*) as cnt from _jdistrictnames where countryid='1'
+[2020-11-13 07:07:28]	select count(*) as cnt from _jcitynames where countryid='1'
+[2020-11-13 07:07:33]	select userid from _jusertable where isadmin='0'
+[2020-11-13 07:07:33]	select userid from _jusertable where isadmin='0' and DATE(createdon)=DATE('2020-11-13')
+[2020-11-13 07:07:33]	select SUM(TxnAmount) as amount FROM _tblPayments where TxnStatus='Success'
+[2020-11-13 07:07:33]	select userid from _tbl_franchisee where IsActive='1'
+[2020-11-13 07:07:33]	select RequestID from _tbl_withdrawal_request where Status='0'
+[2020-11-13 07:07:33]	select featureadid from _tbl_featured where ispublish='1'
+[2020-11-13 07:07:33]	select * from `_jusertable` order by `userid` desc limit 0,5
+[2020-11-13 07:07:33]	select * from _jpostads  order by `postadid` desc limit 0,5 
+[2020-11-13 07:07:33]	select * from _jcategory where  categid='8'
+[2020-11-13 07:07:33]	select * from _jsubcategory where  subcateid='126'
+[2020-11-13 07:07:33]	select * from _jcountrynames where  countryid='1'
+[2020-11-13 07:07:33]	select * from _jdistrictnames where  distcid='55'
+[2020-11-13 07:07:33]	select * from _jstatenames where  stateid='31'
+[2020-11-13 07:07:33]	select * from _jcitynames where  citynameid='6'
+[2020-11-13 07:07:33]	select * from _jusertable where  userid='3'
+[2020-11-13 07:07:39]	select * from _jusertable where email='admin@rhole.in' and pwd='12345678'
+[2020-11-13 07:07:40]	select userid from _jusertable where isadmin='0'
+[2020-11-13 07:07:40]	select userid from _jusertable where isadmin='0' and DATE(createdon)=DATE('2020-11-13')
+[2020-11-13 07:07:40]	select SUM(TxnAmount) as amount FROM _tblPayments where TxnStatus='Success'
+[2020-11-13 07:07:40]	select userid from _tbl_franchisee where IsActive='1'
+[2020-11-13 07:07:40]	select RequestID from _tbl_withdrawal_request where Status='0'
+[2020-11-13 07:07:40]	select featureadid from _tbl_featured where ispublish='1'
+[2020-11-13 07:07:40]	select * from `_jusertable` order by `userid` desc limit 0,5
+[2020-11-13 07:07:40]	select * from _jpostads  order by `postadid` desc limit 0,5 
+[2020-11-13 07:07:40]	select * from _jcategory where  categid='8'
+[2020-11-13 07:07:40]	select * from _jsubcategory where  subcateid='126'
+[2020-11-13 07:07:40]	select * from _jcountrynames where  countryid='1'
+[2020-11-13 07:07:40]	select * from _jdistrictnames where  distcid='55'
+[2020-11-13 07:07:40]	select * from _jstatenames where  stateid='31'
+[2020-11-13 07:07:40]	select * from _jcitynames where  citynameid='6'
+[2020-11-13 07:07:40]	select * from _jusertable where  userid='3'
+[2020-11-13 07:07:47]	select * from _jcategory order by categname
+[2020-11-13 07:07:47]	select * from _jsubcategory where categid='1'
+[2020-11-13 07:07:47]	select * from _jsubcategory where categid='3'
+[2020-11-13 07:07:47]	select * from _jsubcategory where categid='12'
+[2020-11-13 07:07:47]	select * from _jsubcategory where categid='6'
+[2020-11-13 07:07:47]	select * from _jsubcategory where categid='7'
+[2020-11-13 07:07:47]	select * from _jsubcategory where categid='14'
+[2020-11-13 07:07:47]	select * from _jsubcategory where categid='5'
+[2020-11-13 07:07:47]	select * from _jsubcategory where categid='2'
+[2020-11-13 07:07:47]	select * from _jsubcategory where categid='15'
+[2020-11-13 07:07:47]	select * from _jsubcategory where categid='13'
+[2020-11-13 07:07:47]	select * from _jsubcategory where categid='4'
+[2020-11-13 07:07:47]	select * from _jsubcategory where categid='8'
+[2020-11-13 07:07:56]	select * from _jcontactus
+[2020-11-13 07:19:43]	select * from _jdistrictnames order by districtname
+[2020-11-13 07:19:43]	select * from _jstatenames order by statenames
+[2020-11-13 07:19:43]	SELECT *, 0 AS featured FROM _jpostads left join _jcategory on  _jpostads.categid=_jcategory.categid  where 
+                 _jpostads.countryid='1' and
+              
+                 _jpostads.isdeleted='0'   
+             
+             order by _jpostads.postadid desc  limit 0,24
+[2020-11-13 07:19:43]	select * from _jfeatures_likedcontact where userid='' and adid='1'
+[2020-11-13 07:19:43]	select * from _jcitynames where citynameid=6
+[2020-11-13 07:19:43]	select * from _jdistrictnames where distcid=55
+[2020-11-13 07:19:44]	select * from _jdistrictnames order by districtname
+[2020-11-13 07:19:44]	select * from _jstatenames order by statenames
+[2020-11-13 07:19:44]	SELECT *, 0 AS featured FROM _jpostads left join _jcategory on  _jpostads.categid=_jcategory.categid  where 
+                 _jpostads.countryid='1' and
+              
+                 _jpostads.isdeleted='0'   
+             
+             order by _jpostads.postadid desc  limit 0,24
+[2020-11-13 07:19:44]	select * from _jfeatures_likedcontact where userid='' and adid='1'
+[2020-11-13 07:19:44]	select * from _jcitynames where citynameid=6
+[2020-11-13 07:19:44]	select * from _jdistrictnames where distcid=55
+[2020-11-13 07:20:46]	select * from _jdistrictnames order by districtname
+[2020-11-13 07:20:46]	select * from _jstatenames order by statenames
+[2020-11-13 07:20:46]	SELECT *, 0 AS featured FROM _jpostads left join _jcategory on  _jpostads.categid=_jcategory.categid  where 
+                 _jpostads.countryid='1' and
+              
+                 _jpostads.isdeleted='0'   
+             
+             order by _jpostads.postadid desc  limit 0,24
+[2020-11-13 07:20:46]	select * from _jfeatures_likedcontact where userid='' and adid='1'
+[2020-11-13 07:20:46]	select * from _jcitynames where citynameid=6
+[2020-11-13 07:20:46]	select * from _jdistrictnames where distcid=55
+[2020-11-13 07:21:34]	select * from _jusertable where email='admin@rhole.in' and pwd='12345678'
+[2020-11-13 07:21:35]	select userid from _jusertable where isadmin='0'
+[2020-11-13 07:21:35]	select userid from _jusertable where isadmin='0' and DATE(createdon)=DATE('2020-11-13')
+[2020-11-13 07:21:35]	select SUM(TxnAmount) as amount FROM _tblPayments where TxnStatus='Success'
+[2020-11-13 07:21:35]	select userid from _tbl_franchisee where IsActive='1'
+[2020-11-13 07:21:35]	select RequestID from _tbl_withdrawal_request where Status='0'
+[2020-11-13 07:21:35]	select featureadid from _tbl_featured where ispublish='1'
+[2020-11-13 07:21:35]	select * from `_jusertable` order by `userid` desc limit 0,5
+[2020-11-13 07:21:35]	select * from _jpostads  order by `postadid` desc limit 0,5 
+[2020-11-13 07:21:35]	select * from _jcategory where  categid='8'
+[2020-11-13 07:21:35]	select * from _jsubcategory where  subcateid='126'
+[2020-11-13 07:21:35]	select * from _jcountrynames where  countryid='1'
+[2020-11-13 07:21:35]	select * from _jdistrictnames where  distcid='55'
+[2020-11-13 07:21:35]	select * from _jstatenames where  stateid='31'
+[2020-11-13 07:21:35]	select * from _jcitynames where  citynameid='6'
+[2020-11-13 07:21:35]	select * from _jusertable where  userid='3'
+[2020-11-13 07:21:36]	select * from _jusertable order by userid desc
+[2020-11-13 07:21:36]	select * from _jusertable where userid=''
+[2020-11-13 07:21:36]	select * from _jusertable where userid=''
+[2020-11-13 07:21:36]	select * from _jusertable where userid=''
+[2020-11-13 07:22:28]	select * from _jusertable order by userid desc
+[2020-11-13 07:22:52]	select * from _jusertable where (email='jkmagi8@gmail.com' or  mobile='jkmagi8@gmail.com') and pwd='987654321'
+[2020-11-13 07:22:52]	SELECT * FROM _jpostads  WHERE  _jpostads.postedby='3' or _jpostads.pposted='3' order by postadid desc  
+[2020-11-13 07:22:52]	SELECT * FROM _jpostads  WHERE  isdeleted='0' and ( _jpostads.postedby='3' or _jpostads.pposted='3' )  order by postadid desc  
+[2020-11-13 07:22:52]	select (sum(Credits)-sum(Debits)) as bal from _tbl_share_products_earning where UserID='3'
+[2020-11-13 07:22:52]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'rhole_database._tbl_share_products_earning' doesn't exist
+[2020-11-13 07:22:52]	select * from  _jpostads where postadid in (select adid from _jrecentlyviewed where userid='3' group by adid) and isdelete='0' and (postedby<>'3' or pposted<>'3' )   order by postadid desc
+[2020-11-13 07:22:52]	select * from  _jpostads where postadid in (select adid from _jfeatures_likedcontact where userid='3' group by adid) and isdelete='0' and (postedby<>'3' or pposted<>'3' ) order by postedby desc
+[2020-11-13 07:22:52]	SELECT count(*) as cnt FROM _tblmessages WHERE (touserid='3' or fromuserid='3') group by toadid
+[2020-11-13 07:22:56]	select * from _jcategory
+[2020-11-13 07:22:56]	select * from _jcategory
+[2020-11-13 07:22:56]	select * from _jsubcategory where categid='1' order by subcatename
+[2020-11-13 07:22:56]	select * from _jsubcategory where categid='2' order by subcatename
+[2020-11-13 07:22:56]	select * from _jsubcategory where categid='3' order by subcatename
+[2020-11-13 07:22:56]	select * from _jsubcategory where categid='4' order by subcatename
+[2020-11-13 07:22:56]	select * from _jsubcategory where categid='5' order by subcatename
+[2020-11-13 07:22:56]	select * from _jsubcategory where categid='6' order by subcatename
+[2020-11-13 07:22:56]	select * from _jsubcategory where categid='7' order by subcatename
+[2020-11-13 07:22:56]	select * from _jsubcategory where categid='8' order by subcatename
+[2020-11-13 07:22:56]	select * from _jsubcategory where categid='12' order by subcatename
+[2020-11-13 07:22:56]	select * from _jsubcategory where categid='13' order by subcatename
+[2020-11-13 07:22:56]	select * from _jsubcategory where categid='14' order by subcatename
+[2020-11-13 07:22:56]	select * from _jsubcategory where categid='15' order by subcatename
+[2020-11-13 07:23:00]	select * from _jsubcategory where subcateid='73'
+[2020-11-13 07:23:00]	select * from _jcategory where categid='5'
+[2020-11-13 07:23:00]	select * from _jcountrynames
+[2020-11-13 07:23:07]	select * from _jstatenames where countryid=1
+[2020-11-13 07:23:07]	select * from _jdistrictnames where stateid='0' order by districtname
+[2020-11-13 07:23:07]	select * from _jstatenames where stateid='0'
+[2020-11-13 07:23:08]	select * from _jdistrictnames where stateid='31' order by districtname
+[2020-11-13 07:24:51]	select * from _jdistrictnames order by districtname
+[2020-11-13 07:24:51]	select * from _jstatenames order by statenames
+[2020-11-13 07:24:51]	SELECT *, 0 AS featured FROM _jpostads left join _jcategory on  _jpostads.categid=_jcategory.categid  where 
+                 _jpostads.countryid='1' and
+              
+                 _jpostads.isdeleted='0'   
+             
+             order by _jpostads.postadid desc  limit 0,24
+[2020-11-13 07:24:51]	select * from _jfeatures_likedcontact where userid='' and adid='1'
+[2020-11-13 07:24:51]	select * from _jcitynames where citynameid=6
+[2020-11-13 07:24:51]	select * from _jdistrictnames where distcid=55
+[2020-11-13 07:24:52]	select * from _jdistrictnames order by districtname
+[2020-11-13 07:24:52]	select * from _jstatenames order by statenames
+[2020-11-13 07:24:52]	SELECT *, 0 AS featured FROM _jpostads left join _jcategory on  _jpostads.categid=_jcategory.categid  where 
+                 _jpostads.countryid='1' and
+              
+                 _jpostads.isdeleted='0'   
+             
+             order by _jpostads.postadid desc  limit 0,24
+[2020-11-13 07:24:52]	select * from _jfeatures_likedcontact where userid='' and adid='1'
+[2020-11-13 07:24:52]	select * from _jcitynames where citynameid=6
+[2020-11-13 07:24:52]	select * from _jdistrictnames where distcid=55
+[2020-11-13 07:27:02]	select * from _jdistrictnames order by districtname
+[2020-11-13 07:27:02]	select * from _jstatenames order by statenames
+[2020-11-13 07:27:02]	SELECT *, 0 AS featured FROM _jpostads left join _jcategory on  _jpostads.categid=_jcategory.categid  where 
+                 _jpostads.countryid='1' and
+              
+                 _jpostads.isdeleted='0'   
+             
+             order by _jpostads.postadid desc  limit 0,24
+[2020-11-13 07:27:02]	select * from _jfeatures_likedcontact where userid='' and adid='1'
+[2020-11-13 07:27:02]	select * from _jcitynames where citynameid=6
+[2020-11-13 07:27:02]	select * from _jdistrictnames where distcid=55
+[2020-11-13 07:27:20]	select * from _jusertable where (email='9843448795' or  mobile='9843448795') and pwd='qwerty123'
+[2020-11-13 07:27:21]	SELECT * FROM _jpostads  WHERE  _jpostads.postedby='2' or _jpostads.pposted='2' order by postadid desc  
+[2020-11-13 07:27:21]	SELECT * FROM _jpostads  WHERE  isdeleted='0' and ( _jpostads.postedby='2' or _jpostads.pposted='2' )  order by postadid desc  
+[2020-11-13 07:27:21]	select (sum(Credits)-sum(Debits)) as bal from _tbl_share_products_earning where UserID='2'
+[2020-11-13 07:27:21]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'rhole_database._tbl_share_products_earning' doesn't exist
+[2020-11-13 07:27:21]	select * from  _jpostads where postadid in (select adid from _jrecentlyviewed where userid='2' group by adid) and isdelete='0' and (postedby<>'2' or pposted<>'2' )   order by postadid desc
+[2020-11-13 07:27:21]	select * from  _jpostads where postadid in (select adid from _jfeatures_likedcontact where userid='2' group by adid) and isdelete='0' and (postedby<>'2' or pposted<>'2' ) order by postedby desc
+[2020-11-13 07:27:21]	SELECT count(*) as cnt FROM _tblmessages WHERE (touserid='2' or fromuserid='2') group by toadid
+[2020-11-13 07:27:24]	select * from _jcategory
+[2020-11-13 07:27:24]	select * from _jcategory
+[2020-11-13 07:27:24]	select * from _jsubcategory where categid='1' order by subcatename
+[2020-11-13 07:27:24]	select * from _jsubcategory where categid='2' order by subcatename
+[2020-11-13 07:27:24]	select * from _jsubcategory where categid='3' order by subcatename
+[2020-11-13 07:27:24]	select * from _jsubcategory where categid='4' order by subcatename
+[2020-11-13 07:27:24]	select * from _jsubcategory where categid='5' order by subcatename
+[2020-11-13 07:27:24]	select * from _jsubcategory where categid='6' order by subcatename
+[2020-11-13 07:27:24]	select * from _jsubcategory where categid='7' order by subcatename
+[2020-11-13 07:27:24]	select * from _jsubcategory where categid='8' order by subcatename
+[2020-11-13 07:27:24]	select * from _jsubcategory where categid='12' order by subcatename
+[2020-11-13 07:27:24]	select * from _jsubcategory where categid='13' order by subcatename
+[2020-11-13 07:27:24]	select * from _jsubcategory where categid='14' order by subcatename
+[2020-11-13 07:27:24]	select * from _jsubcategory where categid='15' order by subcatename
+[2020-11-13 07:27:29]	select * from _jsubcategory where subcateid='14'
+[2020-11-13 07:27:29]	select * from _jcategory where categid='2'
+[2020-11-13 07:27:29]	select * from _jcountrynames
+[2020-11-13 07:27:36]	select * from _jstatenames where countryid=1
+[2020-11-13 07:27:36]	select * from _jdistrictnames where stateid='0' order by districtname
+[2020-11-13 07:27:36]	select * from _jstatenames where stateid='0'
+[2020-11-13 07:30:11]	select * from _jdistrictnames order by districtname
+[2020-11-13 07:30:11]	select * from _jstatenames order by statenames
+[2020-11-13 07:30:11]	SELECT *, 0 AS featured FROM _jpostads left join _jcategory on  _jpostads.categid=_jcategory.categid  where 
+                 _jpostads.countryid='1' and
+              
+                 _jpostads.isdeleted='0'   
+             
+             order by _jpostads.postadid desc  limit 0,24
+[2020-11-13 07:30:11]	select * from _jfeatures_likedcontact where userid='' and adid='1'
+[2020-11-13 07:30:11]	select * from _jcitynames where citynameid=6
+[2020-11-13 07:30:11]	select * from _jdistrictnames where distcid=55
+[2020-11-13 13:59:40]	select * from _jdistrictnames order by districtname
+[2020-11-13 13:59:40]	select * from _jstatenames order by statenames
+[2020-11-13 13:59:40]	SELECT *, 0 AS featured FROM _jpostads left join _jcategory on  _jpostads.categid=_jcategory.categid  where 
+                 _jpostads.countryid='1' and
+              
+                 _jpostads.isdeleted='0'   
+             
+             order by _jpostads.postadid desc  limit 0,24
+[2020-11-13 13:59:40]	select * from _jfeatures_likedcontact where userid='' and adid='1'
+[2020-11-13 13:59:40]	select * from _jcitynames where citynameid=6
+[2020-11-13 13:59:40]	select * from _jdistrictnames where distcid=55
+[2020-11-13 18:45:15]	select * from _jdistrictnames order by districtname
+[2020-11-13 18:45:15]	select * from _jstatenames order by statenames
+[2020-11-13 18:45:15]	SELECT *, 0 AS featured FROM _jpostads left join _jcategory on  _jpostads.categid=_jcategory.categid  where 
+                 _jpostads.countryid='1' and
+              
+                 _jpostads.isdeleted='0'   
+             
+             order by _jpostads.postadid desc  limit 0,24
+[2020-11-13 18:45:15]	select * from _jfeatures_likedcontact where userid='' and adid='1'
+[2020-11-13 18:45:15]	select * from _jcitynames where citynameid=6
+[2020-11-13 18:45:15]	select * from _jdistrictnames where distcid=55
+[2020-11-13 18:45:25]	insert into `_jrecentlyviewed` (`userid`,`adid`,`viewedon`,`ip`) values (Null,'1','2020-11-13 18:45:25','106.217.15.240')
+[2020-11-13 18:45:25]	SELECT * FROM _jpostads where _jpostads.postadid='1'
+[2020-11-13 18:45:25]	select * from _jcategory where categid='8'
+[2020-11-13 18:45:25]	select * from _jsubcategory where subcateid='126'
+[2020-11-13 18:45:25]	select count(*) as cnt from _jrecentlyviewed where adid='1' group by ip
+[2020-11-13 18:45:25]	select * from _jviewedcontact where userid='' and adid='1'
+[2020-11-13 18:45:25]	insert into `_tbl_view_add_logs` (`AddID`,`AddByUserID`,`ViewedOn`,`ViewedByUserID`) values ('1','3','2020-11-13 18:45:25','0')
+[2020-11-13 18:45:25]	select * from _jusertable where userid='3'
+[2020-11-13 18:45:25]	select * from _tbl_view_add_logs where AddID='1' and ViewedByUserID='0'
+[2020-11-13 18:45:25]	select * from _jfeatures_likedcontact where userid='' and adid='1'
+[2020-11-13 18:45:25]	select * from _chat_initiate where adID='1'  and adPosted='3'  and adViewed='' 
+[2020-11-13 18:45:54]	select * from _jdistrictnames order by districtname
+[2020-11-13 18:45:54]	select * from _jstatenames order by statenames
+[2020-11-13 18:45:54]	SELECT *, 0 AS featured FROM _jpostads left join _jcategory on  _jpostads.categid=_jcategory.categid  where 
+                 _jpostads.countryid='1' and
+              
+                 _jpostads.isdeleted='0'   
+             
+             order by _jpostads.postadid desc  limit 0,24
+[2020-11-13 18:45:54]	select * from _jfeatures_likedcontact where userid='' and adid='1'
+[2020-11-13 18:45:54]	select * from _jcitynames where citynameid=6
+[2020-11-13 18:45:54]	select * from _jdistrictnames where distcid=55

@@ -1,0 +1,9 @@
+[31-Jul-2020 09:59:28 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/klxco/public_html/config.php on line 2
+[31-Jul-2020 15:29:28 Asia/kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/klxco/public_html/jadmin/faq/viewfaq.php:1) in /home/klxco/public_html/config.php on line 4
+[31-Jul-2020 15:29:28 Asia/kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/klxco/public_html/jadmin/faq/viewfaq.php:1) in /home/klxco/public_html/config.php on line 5
+[31-Jul-2020 09:59:59 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/klxco/public_html/config.php on line 2
+[31-Jul-2020 15:29:59 Asia/kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/klxco/public_html/jadmin/faq/viewfaq.php:1) in /home/klxco/public_html/config.php on line 4
+[31-Jul-2020 15:29:59 Asia/kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/klxco/public_html/jadmin/faq/viewfaq.php:1) in /home/klxco/public_html/config.php on line 5
+[31-Jul-2020 10:14:42 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/klxco/public_html/config.php on line 2
+[31-Jul-2020 15:44:42 Asia/kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/klxco/public_html/jadmin/faq/viewfaq.php:1) in /home/klxco/public_html/config.php on line 4
+[31-Jul-2020 15:44:42 Asia/kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/klxco/public_html/jadmin/faq/viewfaq.php:1) in /home/klxco/public_html/config.php on line 5

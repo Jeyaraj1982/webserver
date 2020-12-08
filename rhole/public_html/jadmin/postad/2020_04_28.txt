@@ -1,0 +1,4 @@
+[2020-04-28 10:20:07]	select * from _jpostads  order by postadid desc limit 0,50 
+[2020-04-28 10:20:17]	select * from _jpostads  where date(postedon)=date('2020-04-28')  
+[2020-04-28 10:20:17]	select * from _jpostads  where date(postedon)=date('2020-04-28')  order by postadid desc limit 0, 20 
+[2020-04-28 19:05:36]	select * from _jusertable order by userid desc

@@ -1,0 +1,105 @@
+[2020-06-12 08:34:38]	select * from _jpostads  where (date(postedon)>=date('2020-06-12') and date(postedon)<=date('2020-06-12') )  order by postadid desc  
+[2020-06-12 08:34:50]	select * from _jpostads  where (date(postedon)>=date('2020-1-1') and date(postedon)<=date('2020-6-12') )  order by postadid desc  
+[2020-06-12 08:45:21]	select * from _jpostads  where (date(postedon)>=date('2020-06-12') and date(postedon)<=date('2020-06-12') )  order by postadid desc  
+[2020-06-12 08:45:34]	select * from _jpostads  where (date(postedon)>=date('2020-1-1') and date(postedon)<=date('2020-6-12') )  order by postadid desc  
+[2020-06-12 08:46:13]	select * from _jpostads  where postadid='4026'
+[2020-06-12 08:46:13]	insert into `_jpostads_deleted` (`postadid`,`categid`,`subcateid`,`title`,`content`,`postedon`,`visitors`,`isactive`,`isdelete`,`postedby`,`adtype`,`stateid`,`countryid`,`distcid`,`ispublish`,`expiredon`,`filepath1`,`filepath2`,`ispaid`,`location`,`amount`,`isdeleted`,`deletedon`,`pposted`) values ('4026','12','94','Latest PC Games with low price','Latest PC Games with low price','2020-06-10 11:37:35','0','1','0','410','0','31','1','52','1','2020-06-10 11:37:35','_1591769255_a.jpg','','0','Chennai','100','1','2020-06-12 08:46:13','410')
+[2020-06-12 08:46:13]	delete from _jpostads  where postadid='4026'
+[2020-06-12 08:46:13]	select * from _jpostads  where (date(postedon)>=date('2020-01-01') and date(postedon)<=date('2020-06-12') )  order by postadid desc  
+[2020-06-12 08:46:13]	select * from _jpostads  where postadid='4026'
+[2020-06-12 08:46:13]	select * from _jpostads  where (date(postedon)>=date('2020-01-01') and date(postedon)<=date('2020-06-12') )  order by postadid desc  
+[2020-06-12 08:46:14]	select * from _jpostads  where postadid='4026'
+[2020-06-12 08:46:14]	select * from _jpostads  where (date(postedon)>=date('2020-01-01') and date(postedon)<=date('2020-06-12') )  order by postadid desc  
+[2020-06-12 08:46:14]	select * from _jpostads  where postadid='4026'
+[2020-06-12 08:46:14]	select * from _jpostads  where (date(postedon)>=date('2020-01-01') and date(postedon)<=date('2020-06-12') )  order by postadid desc  
+[2020-06-12 08:46:14]	select * from _jpostads  where postadid='4026'
+[2020-06-12 08:46:14]	select * from _jpostads  where (date(postedon)>=date('2020-01-01') and date(postedon)<=date('2020-06-12') )  order by postadid desc  
+[2020-06-12 08:46:15]	select * from _jpostads  where postadid='4026'
+[2020-06-12 08:46:15]	select * from _jpostads  where (date(postedon)>=date('2020-01-01') and date(postedon)<=date('2020-06-12') )  order by postadid desc  
+[2020-06-12 08:46:15]	select * from _jpostads  where postadid='4026'
+[2020-06-12 08:46:15]	select * from _jpostads  where (date(postedon)>=date('2020-01-01') and date(postedon)<=date('2020-06-12') )  order by postadid desc  
+[2020-06-12 08:46:16]	select * from _jpostads  where postadid='4026'
+[2020-06-12 08:46:16]	select * from _jpostads  where (date(postedon)>=date('2020-01-01') and date(postedon)<=date('2020-06-12') )  order by postadid desc  
+[2020-06-12 08:46:17]	select * from _jpostads  where postadid='4026'
+[2020-06-12 08:46:17]	select * from _jpostads  where (date(postedon)>=date('2020-01-01') and date(postedon)<=date('2020-06-12') )  order by postadid desc  
+[2020-06-12 08:46:17]	select * from _jpostads  where postadid='4026'
+[2020-06-12 08:46:17]	select * from _jpostads  where (date(postedon)>=date('2020-01-01') and date(postedon)<=date('2020-06-12') )  order by postadid desc  
+[2020-06-12 08:52:12]	select * from _jpostads  where postadid='2922'
+[2020-06-12 08:52:12]	insert into `_jpostads_deleted` (`postadid`,`categid`,`subcateid`,`title`,`content`,`postedon`,`visitors`,`isactive`,`isdelete`,`postedby`,`adtype`,`stateid`,`countryid`,`distcid`,`ispublish`,`expiredon`,`filepath1`,`filepath2`,`ispaid`,`location`,`amount`,`isdeleted`,`deletedon`,`pposted`) values ('2922','5','79','online part time job with free data connection','
+Home
+/
+Jobs
+/
+Data entry & Back office
+/
+Data entry & Back office in Andaman & Nicobar Islands
+/
+Data entry & Back office in Port Blair
+/
+Data entry & Back office in Nayagaon
+online part time job with free data connection
+Nayagaon, Port Blair, Andaman & Nicobar Islands
+Yesterday
+
+Details
+Salary period
+Weekly
+Position type
+Part-time
+Salary from
+45000
+Salary to
+55000
+Description
+Dear candidates,
+
+We r looking of friendly candidates for online operators work from home,
+
+*U need a computer and Laptop
+
+Interested can call us,
+
+*Should have basic knowladge computer,
+
+*It&rsquo;s offline data typing Work,
+
+*Should have own laptop or desktop
+
+*Basic Knowladge of computer
+
+*Get paid daily for typing work done from mobile or PC call or WhatsApp me','2020-04-30 12:37:49','0','1','0','2733','0','1','1','90','1','2020-04-30 12:37:49','_1588230469_images_-_2020-04-22t103117.956.jpeg','','0','Nayagaon, Port Blair, Andaman & Nicobar Islands','45,000','1','2020-06-12 08:52:12','477')
+[2020-06-12 08:52:12]	delete from _jpostads  where postadid='2922'
+[2020-06-12 08:52:12]	select * from _jpostads  where (date(postedon)>=date('2020-01-01') and date(postedon)<=date('2020-06-12') )  order by postadid desc  
+[2020-06-12 08:52:13]	select * from _jpostads  where postadid='2922'
+[2020-06-12 08:52:13]	select * from _jpostads  where (date(postedon)>=date('2020-01-01') and date(postedon)<=date('2020-06-12') )  order by postadid desc  
+[2020-06-12 08:52:13]	select * from _jpostads  where postadid='2922'
+[2020-06-12 08:52:13]	select * from _jpostads  where (date(postedon)>=date('2020-01-01') and date(postedon)<=date('2020-06-12') )  order by postadid desc  
+[2020-06-12 08:52:13]	select * from _jpostads  where postadid='2922'
+[2020-06-12 08:52:13]	select * from _jpostads  where (date(postedon)>=date('2020-01-01') and date(postedon)<=date('2020-06-12') )  order by postadid desc  
+[2020-06-12 08:52:13]	select * from _jpostads  where postadid='2922'
+[2020-06-12 08:52:13]	select * from _jpostads  where (date(postedon)>=date('2020-01-01') and date(postedon)<=date('2020-06-12') )  order by postadid desc  
+[2020-06-12 09:06:53]	select * from _jpostads  where postadid='2923'
+[2020-06-12 09:06:53]	insert into `_jpostads_deleted` (`postadid`,`categid`,`subcateid`,`title`,`content`,`postedon`,`visitors`,`isactive`,`isdelete`,`postedby`,`adtype`,`stateid`,`countryid`,`distcid`,`ispublish`,`expiredon`,`filepath1`,`filepath2`,`ispaid`,`location`,`amount`,`isdeleted`,`deletedon`,`pposted`) values ('2923','5','79','FILM LINE JOB DIRECT WORK','Details
+Salary period
+Monthly
+Position type
+Full-time
+Salary from
+30000
+Salary to
+70000
+Description
+REQUIREMENT
+
+MALE, FEMALE AND KIDS
+
+NO AGE LIMIT
+
+FRESHERS CAN ALSO APPLY
+
+DIRECT WORK
+
+MORE DETAILS PLZ CALL OR WHAT&rsquo;S APP','2020-04-30 12:40:33','0','1','0','2734','0','1','1','90','1','2020-04-30 12:40:33','_1588230633_img_20200430_124017.jpg','','0','Diglipur, Andaman & Nicobar Islands, India','30000','1','2020-06-12 09:06:53','477')
+[2020-06-12 09:06:53]	delete from _jpostads  where postadid='2923'
+[2020-06-12 09:06:53]	select * from _jpostads  where postadid='2922'
+[2020-06-12 09:06:53]	select * from _jpostads  where (date(postedon)>=date('2020-01-01') and date(postedon)<=date('2020-06-12') )  order by postadid desc  

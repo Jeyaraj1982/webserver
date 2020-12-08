@@ -1,0 +1,11 @@
+[2020-11-15 06:31:01]	select * from _jdistrictnames order by districtname
+[2020-11-15 06:31:01]	select * from _jstatenames order by statenames
+[2020-11-15 06:31:01]	SELECT *, 0 AS featured FROM _jpostads left join _jcategory on  _jpostads.categid=_jcategory.categid  where 
+                 _jpostads.countryid='1' and
+              
+                 _jpostads.isdeleted='0'   
+             
+             order by _jpostads.postadid desc  limit 0,24
+[2020-11-15 06:31:01]	select * from _jfeatures_likedcontact where userid='' and adid='1'
+[2020-11-15 06:31:01]	select * from _jcitynames where citynameid=6
+[2020-11-15 06:31:01]	select * from _jdistrictnames where distcid=55

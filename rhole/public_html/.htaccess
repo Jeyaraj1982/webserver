@@ -1,0 +1,126 @@
+#RewriteRule ^in/loc/(.*)$ index.php?country=in&location=$1
+
+RewriteRule ^Terms Terms.php?country=in 
+RewriteRule ^logout index.php?action=logout 
+RewriteRule ^SafetyTips SafetyTips.php?country=in 
+RewriteRule ^Privacy Privacy.php?country=in 
+RewriteRule ^ContactUs ContactUs.php?country=in 
+
+RewriteRule ^in/login login.php?country=in 
+RewriteRule ^in/register register.php?country=in 
+RewriteRule ^in/forgetpassword forgetpassword.php?country=in 
+RewriteRule ^in/FpwdOTP FpwdOTP.php?country=in 
+RewriteRule ^in/FpwdNewPassword FpwdNewPassword.php?country=in
+RewriteRule ^in/PasswordSaved PasswordSaved.php?country=in
+
+
+RewriteRule ^in/freeadpost freeadpost.php?country=in 
+RewriteRule ^in/postad/(.*)$ postad.php?country=in&subc=$1 
+RewriteRule ^in/postadnew/(.*)$ postadnew.php?country=in&subc=$1
+
+RewriteRule ^in/freeadpost1 freeadpost1.php?country=in 
+RewriteRule ^in/sc(.*)$ subcategory.php?country=in&a=$1 
+RewriteRule ^in/viewads/sc(.*)$ viewads.php?country=in&s=$1 
+RewriteRule ^in/viewads/ac(.*)$ viewads.php?country=in&a=$1 
+
+             
+RewriteRule ^in/accountcreated accountcreated.php?country=in 
+RewriteRule ^in/updatelocation updatelocation.php?country=in 
+
+RewriteRule ^in/mypage mypage.php?country=in
+RewriteRule ^in/recentlyviewed recentlyviewed.php?country=in
+RewriteRule ^in/myfavorites myfavorites.php?country=in
+RewriteRule ^in/messaged messaged.php?country=in
+RewriteRule ^in/myprofile myprofile.php?country=in                             
+RewriteRule ^in/myearnings myearnings.php?country=in                             
+RewriteRule ^in/editprofile editprofile.php?country=in                             
+RewriteRule ^in/mydeletedads mydeletedads.php?country=in 
+RewriteRule ^in/myads myads.php?country=in
+RewriteRule ^in/mypackages mypackages.php?country=in
+RewriteRule ^in/myactiveads myactiveads.php?country=in
+RewriteRule ^in/updatemobile updatemobile.php?country=in
+RewriteRule ^in/mobileverification mobileverification.php?country=in
+RewriteRule ^in/emailverification emailverification.php?country=in
+RewriteRule ^in/changepassword changepassword.php?country=in
+RewriteRule ^in/edit/e(.*)$ myadedit.php?country=in&ad=$1
+RewriteRule ^in/editadd/edit(.*)$ editadd.php?country=in&ad=$1
+RewriteRule ^in/view/m(.*)$ viewmyad.php?country=in&ad=$1 
+RewriteRule ^in/adview/m(.*)$ adview.php?country=in&ad=$1
+
+RewriteRule ^in/addproduct addproduct.php?country=in
+RewriteRule ^in/products products.php?country=in
+RewriteRule ^in/edit/pe(.*)$ editproduct.php?country=in&ad=$1
+RewriteRule ^in/view/pv(.*)$ viewuserproduct.php?country=in&ad=$1 
+RewriteRule ^in/viewproductsummary viewproductsummary.php?country=in
+
+
+RewriteRule ^in/moreresponse/a(.*)$ moreresponse.php?country=in&ad=$1
+RewriteRule ^in/moreresponse/payu(.*)$ payment.php?country=in&ad=$1  [QSA,L]
+RewriteRule ^in/moreresponse/error(.*)$ payment.php?country=in&ad=$1 [QSA,L]
+
+RewriteRule ^in/upgrade/c(.*)$ upgrade.php?country=in&ad=$1
+RewriteRule ^in/upgrade/payu(.*)$ upgrade_payment.php?country=in&ad=$1  [QSA,L]
+RewriteRule ^in/upgrade/error(.*)$ upgrade_payment.php?country=in&ad=$1 [QSA,L]
+
+
+RewriteRule ^in/chats chats.php?country=in&ad=$1&chat=1
+RewriteRule ^in/chat/room/(.*)$ chat.php?country=in&ad=$1&chat=1
+RewriteRule ^in/chat/create/(.*)$ chat.php?country=in&ad=$1&chat=1&create=1
+
+
+RewriteRule ^in$ index.php?country=in
+RewriteRule ^in/$ index.php?country=in
+
+RewriteRule ^in/d(.*)/v(.*)$ viewad.php?country=in&a=$2&location=$1 [QSA,L]
+RewriteRule ^in/d(.*)/q_(.*)$ search.php?country=in&searchkey=$2&location=$1 [QSA,L]
+RewriteRule ^in/d(.*)$ index.php?country=in&location=$1
+
+
+RewriteRule ^in/s(.*)/v(.*)$ viewad.php?country=in&a=$2&location=$1&statefilter=1 [QSA,L]
+RewriteRule ^in/s(.*)/q_(.*)$ search.php?country=in&searchkey=$2&location=$1&statefilter=1 [QSA,L]
+RewriteRule ^in/s(.*)$ index.php?country=in&location=$1&statefilter=1
+
+
+RewriteRule ^in/q_(.*)$ search.php?country=in&searchkey=$1 [QSA,L]
+RewriteRule ^in/v(.*)$ viewad.php?country=in&a=$1  
+
+RewriteRule ^p(.*)_(.*)$ viewproduct.php?country=in&a=$1&link=$2 
+
+#RewriteRule ^(.*)(.*)(viewad)(.*)$ index.php?p=$1&t=$2&pn=$3 [L]
+
+# BEGIN cPanel-generated php ini directives, do not edit
+# Manual editing of this file may result in unexpected behavior.
+# To make changes to this file, use the cPanel MultiPHP INI Editor (Home >> Software >> MultiPHP INI Editor)
+# For more information, read our documentation (https://go.cpanel.net/EA4ModifyINI)
+<IfModule php7_module>
+   php_flag display_errors Off
+   php_value max_execution_time 30
+   php_value max_input_time 60
+   php_value max_input_vars 1000
+   php_value memory_limit 32M
+   php_value post_max_size 8M
+   php_value session.gc_maxlifetime 1440
+   php_value session.save_path "/var/cpanel/php/sessions/ea-php72"
+   php_value upload_max_filesize 10M
+   php_flag zlib.output_compression Off
+</IfModule>
+<IfModule lsapi_module>
+   php_flag display_errors Off
+   php_value max_execution_time 30
+   php_value max_input_time 60
+   php_value max_input_vars 1000
+   php_value memory_limit 32M
+   php_value post_max_size 8M
+   php_value session.gc_maxlifetime 1440
+   php_value session.save_path "/var/cpanel/php/sessions/ea-php72"
+   php_value upload_max_filesize 10M
+   php_flag zlib.output_compression Off
+</IfModule>
+# END cPanel-generated php ini directives, do not edit
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php72” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php72 .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
