@@ -1,0 +1,52 @@
+[2020-10-13 08:11:00]	select * from _tbl_news where IsPublish='1'
+[2020-10-13 08:11:00]	select * from _tbl_news where IsPublish='1'
+[2020-10-13 08:11:01]	select * from _tbl_news where IsPublish='1'
+[2020-10-13 08:11:01]	select * from _tbl_news where IsPublish='1'
+[2020-10-13 09:26:08]	select * from _tbl_news where IsPublish='1' and NewsID='1'
+[2020-10-13 21:39:38]	select * from _tbl_news where IsPublish='1'
+[2020-10-13 21:39:38]	select * from _tbl_news where IsPublish='1'
+[2020-10-13 23:30:01]	insert into `_tbl_payout_log` (`PayoutDate`,`CreatedOn`,`EndedOn`,`FileName`,`CompanyCollectedPV`,`TotalPayoutAmount`) values ('2020-10-13','2020-10-13 23:30:01','2020-10-13 23:30:01','temp_payout_2020_10_13_23_30_01.txt','0','0')
+[2020-10-13 23:30:01]	select * from `_tbl_Members` 
+                                            left Join  `_tbl_Settings_Packages`
+                                            On 
+                                            `_tbl_Members`.`ActivePackageID`= `_tbl_Settings_Packages`.`PackageID`
+                                            where date(`_tbl_Members`.`CreatedOn`)<=date('2020-10-13')
+[2020-10-13 23:30:01]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`='AstraFx00001'
+[2020-10-13 23:30:01]	select * from `_tblPlacements` where `ParentCode`='AFAST00002'
+[2020-10-13 23:30:01]	select * from `_tblPlacements` where `ParentCode`='AFAST00004'
+[2020-10-13 23:30:01]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`='AstraFx00001'
+[2020-10-13 23:30:01]	select * from `_tblPlacements` where `ParentCode`='AFAST00003'
+[2020-10-13 23:30:01]	select sum(DebitLeft) as DebitLeft, sum(DebitRight) as DebitRight  from _tbl_payoutsummary where MemberCode='AstraFx00001'
+[2020-10-13 23:30:01]	insert into `_tbl_payoutsummary` (`PayoutProcessDate`,`MemberID`,`MemberCode`,`TotalLeft`,`TodayLeft`,`TotalRight`,`TodayRight`,`DebitLeft`,`DebitRight`,`AvailableLeft`,`AvailableRight`,`RemainingLeft`,`RemainingRight`,`TodayPayoutPV`,`PackageName`,`PackageID`,`EligibleMinimumPayoutPV`,`EligibleMaximumPayoutPV`,`PayablePV`,`PayableAmount`,`CompanyLeft`,`CompanyRight`,`IsPayoutEligible`,`Charges`,`ChargeAmount`,`PayableAmountDebitCharge`,`processedon`) values ('2020-10-13','1','AstraFx00001','300','0','350','0','0','0','300','0','300','350','0','Forex 35','1','1','35','0','0','0','0','0','10%','0','0','2020-10-13 23:30:01')
+[2020-10-13 23:30:01]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`='AFAST00002'
+[2020-10-13 23:30:01]	select * from `_tblPlacements` where `ParentCode`='AFAST00004'
+[2020-10-13 23:30:01]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`='AFAST00002'
+[2020-10-13 23:30:01]	select sum(DebitLeft) as DebitLeft, sum(DebitRight) as DebitRight  from _tbl_payoutsummary where MemberCode='AFAST00002'
+[2020-10-13 23:30:01]	insert into `_tbl_payoutsummary` (`PayoutProcessDate`,`MemberID`,`MemberCode`,`TotalLeft`,`TodayLeft`,`TotalRight`,`TodayRight`,`DebitLeft`,`DebitRight`,`AvailableLeft`,`AvailableRight`,`RemainingLeft`,`RemainingRight`,`TodayPayoutPV`,`PackageName`,`PackageID`,`EligibleMinimumPayoutPV`,`EligibleMaximumPayoutPV`,`PayablePV`,`PayableAmount`,`CompanyLeft`,`CompanyRight`,`IsPayoutEligible`,`Charges`,`ChargeAmount`,`PayableAmountDebitCharge`,`processedon`) values ('2020-10-13','17','AFAST00002','150','0','0','0','0','0','150','0','150','0','0','Forex 150','16','1','100','0','0','0','0','0','10%','0','0','2020-10-13 23:30:01')
+[2020-10-13 23:30:01]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`='AFAST00003'
+[2020-10-13 23:30:01]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`='AFAST00003'
+[2020-10-13 23:30:01]	select sum(DebitLeft) as DebitLeft, sum(DebitRight) as DebitRight  from _tbl_payoutsummary where MemberCode='AFAST00003'
+[2020-10-13 23:30:01]	insert into `_tbl_payoutsummary` (`PayoutProcessDate`,`MemberID`,`MemberCode`,`TotalLeft`,`TodayLeft`,`TotalRight`,`TodayRight`,`DebitLeft`,`DebitRight`,`AvailableLeft`,`AvailableRight`,`RemainingLeft`,`RemainingRight`,`TodayPayoutPV`,`PackageName`,`PackageID`,`EligibleMinimumPayoutPV`,`EligibleMaximumPayoutPV`,`PayablePV`,`PayableAmount`,`CompanyLeft`,`CompanyRight`,`IsPayoutEligible`,`Charges`,`ChargeAmount`,`PayableAmountDebitCharge`,`processedon`) values ('2020-10-13','18','AFAST00003','0','0','0','0','0','0','0','0','0','0','0','Crypto 350','14','1','100','0','0','0','0','0','10%','0','0','2020-10-13 23:30:01')
+[2020-10-13 23:30:01]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`='AFAST00004'
+[2020-10-13 23:30:01]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`='AFAST00004'
+[2020-10-13 23:30:01]	select sum(DebitLeft) as DebitLeft, sum(DebitRight) as DebitRight  from _tbl_payoutsummary where MemberCode='AFAST00004'
+[2020-10-13 23:30:01]	insert into `_tbl_payoutsummary` (`PayoutProcessDate`,`MemberID`,`MemberCode`,`TotalLeft`,`TodayLeft`,`TotalRight`,`TodayRight`,`DebitLeft`,`DebitRight`,`AvailableLeft`,`AvailableRight`,`RemainingLeft`,`RemainingRight`,`TodayPayoutPV`,`PackageName`,`PackageID`,`EligibleMinimumPayoutPV`,`EligibleMaximumPayoutPV`,`PayablePV`,`PayableAmount`,`CompanyLeft`,`CompanyRight`,`IsPayoutEligible`,`Charges`,`ChargeAmount`,`PayableAmountDebitCharge`,`processedon`) values ('2020-10-13','19','AFAST00004','0','0','0','0','0','0','0','0','0','0','0','Forex 150','16','1','100','0','0','0','0','0','10%','0','0','2020-10-13 23:30:01')
+[2020-10-13 23:30:01]	select * from _roi_payments where date(ROI_DATE)=Date('2020-10-13') and ROI_TYPE='1'
+[2020-10-13 23:30:01]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID='17'
+[2020-10-13 23:30:01]	insert into `_tbl_wallet_earnings` (`MemberID`,`MemberCode`,`Particulars`,`TxnDate`,`Credits`,`Debits`,`AvailableBalance`,`Ledger`,`details`) values ('17','AFAST00002','Package ROI  On2020-10-13','2020-10-13 23:30:01','3.00','0','165','2','')
+[2020-10-13 23:30:01]	insert into `_tbl_wallet_earnings` (`MemberID`,`MemberCode`,`Particulars`,`TxnDate`,`Credits`,`Debits`,`AvailableBalance`,`Ledger`,`details`) values ('17','AFAST00002','Charge 10% Package ROI on 2020-10-13','2020-10-13 23:30:01','0','0.3','164.7','20001','')
+[2020-10-13 23:30:01]	update _roi_payments set IsSettled='1',SettledOn='2020-10-13 23:30:01', AccountTxnID='694', ChargesPercentage='10', ChargeAmount='0.3',CreditToWallet='2.7' where ROIID='756'
+[2020-10-13 23:30:01]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID='19'
+[2020-10-13 23:30:01]	insert into `_tbl_wallet_earnings` (`MemberID`,`MemberCode`,`Particulars`,`TxnDate`,`Credits`,`Debits`,`AvailableBalance`,`Ledger`,`details`) values ('19','AFAST00004','Package ROI  On2020-10-13','2020-10-13 23:30:01','3.00','0','156.9','2','')
+[2020-10-13 23:30:01]	insert into `_tbl_wallet_earnings` (`MemberID`,`MemberCode`,`Particulars`,`TxnDate`,`Credits`,`Debits`,`AvailableBalance`,`Ledger`,`details`) values ('19','AFAST00004','Charge 10% Package ROI on 2020-10-13','2020-10-13 23:30:01','0','0.3','156.6','20001','')
+[2020-10-13 23:30:01]	update _roi_payments set IsSettled='1',SettledOn='2020-10-13 23:30:01', AccountTxnID='696', ChargesPercentage='10', ChargeAmount='0.3',CreditToWallet='2.7' where ROIID='1017'
+[2020-10-13 23:30:01]	select * from _roi_payments where date(ROI_DATE)=Date('2020-10-13') and ROI_TYPE='2'
+[2020-10-13 23:30:01]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID='1'
+[2020-10-13 23:30:01]	insert into `_tbl_wallet_earnings` (`MemberID`,`MemberCode`,`Particulars`,`TxnDate`,`Credits`,`Debits`,`AvailableBalance`,`Ledger`,`details`) values ('1','AstraFx00001','Referral ROI  On 2020-10-13','2020-10-13 23:30:01','0.75','0','767.1','4','')
+[2020-10-13 23:30:01]	insert into `_tbl_wallet_earnings` (`MemberID`,`MemberCode`,`Particulars`,`TxnDate`,`Credits`,`Debits`,`AvailableBalance`,`Ledger`,`details`) values ('1','AstraFx00001','Charge 10% Referral ROI on 2020-10-13','2020-10-13 23:30:01','0','0.075','767.025','40001','')
+[2020-10-13 23:30:01]	update _roi_payments set IsSettled='1',SettledOn='2020-10-13 23:30:01', AccountTxnID='698', ChargesPercentage='10', ChargeAmount='0.075',CreditToWallet='0.675' where ROIID='849'
+[2020-10-13 23:30:01]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID='1'
+[2020-10-13 23:30:01]	insert into `_tbl_wallet_earnings` (`MemberID`,`MemberCode`,`Particulars`,`TxnDate`,`Credits`,`Debits`,`AvailableBalance`,`Ledger`,`details`) values ('1','AstraFx00001','Referral ROI  On 2020-10-13','2020-10-13 23:30:01','0.75','0','767.775','4','')
+[2020-10-13 23:30:01]	insert into `_tbl_wallet_earnings` (`MemberID`,`MemberCode`,`Particulars`,`TxnDate`,`Credits`,`Debits`,`AvailableBalance`,`Ledger`,`details`) values ('1','AstraFx00001','Charge 10% Referral ROI on 2020-10-13','2020-10-13 23:30:01','0','0.075','767.7','40001','')
+[2020-10-13 23:30:01]	update _roi_payments set IsSettled='1',SettledOn='2020-10-13 23:30:01', AccountTxnID='700', ChargesPercentage='10', ChargeAmount='0.075',CreditToWallet='0.675' where ROIID='1110'
+[2020-10-13 23:30:01]	update _tbl_payout_log set EndedOn='2020-10-13 23:30:01' where PayoutLogID='114'

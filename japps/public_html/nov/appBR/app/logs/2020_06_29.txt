@@ -1,0 +1,613 @@
+[2020-06-29 07:58:20]	select * from _tbl_news where IsPublish='1'
+[2020-06-29 07:58:20]	select * from _tbl_news where IsPublish='1'
+[2020-06-29 09:40:11]	select * from _tbl_news where IsPublish='1'
+[2020-06-29 09:40:11]	select * from _tbl_news where IsPublish='1'
+[2020-06-29 11:50:04]	select * from _tbl_news where IsPublish='1' and NewsID='1'
+[2020-06-29 12:21:09]	select * from _tbl_news where IsPublish='1'
+[2020-06-29 12:21:09]	select * from _tbl_news where IsPublish='1'
+[2020-06-29 12:38:39]	select * from `_tbl_admin` where  `AdminEmail`='admin@admin.com'
+[2020-06-29 12:38:39]	insert into `_tbl_admin_login_logs` (`AdminID`,`LoginOn`,`IsSuccess`) values ('2','2020-06-29 12:38:39','1')
+[2020-06-29 12:38:39]	select * from _tbl_Settings_Params where ParamCode='AdminLoginEmailOTPRequired'
+[2020-06-29 12:38:39]	select * from _tbl_Settings_Params where ParamCode='AdminLoginMobileOTPRequired'
+[2020-06-29 12:38:40]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`=''
+[2020-06-29 12:38:40]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`=''
+[2020-06-29 12:38:40]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID=''
+[2020-06-29 12:38:40]	select * from _tbl_Members
+[2020-06-29 12:38:40]	select sum(Debits) as d from _tbl_wallet_earnings where Ledger='1'
+[2020-06-29 12:38:40]	SELECT COUNT(RequestID) AS Count FROM _tbl_wallet_request_utility
+[2020-06-29 12:38:50]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`=''
+[2020-06-29 12:38:50]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`=''
+[2020-06-29 12:38:50]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID=''
+[2020-06-29 12:38:54]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`=''
+[2020-06-29 12:38:54]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`=''
+[2020-06-29 12:38:54]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID=''
+[2020-06-29 12:38:54]	select * from `_tbl_Members` where Date(`CreatedOn`)>=Date('2020-06-29') and Date(`CreatedOn`)<=Date('2020-06-29') order by MemberID Desc
+[2020-06-29 12:39:09]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`=''
+[2020-06-29 12:39:09]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`=''
+[2020-06-29 12:39:09]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID=''
+[2020-06-29 12:39:09]	select * from `_tbl_Members` where Date(`CreatedOn`)>=Date('2020-06-01') and Date(`CreatedOn`)<=Date('2020-06-29') order by MemberID Desc
+[2020-06-29 12:39:09]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID='19'
+[2020-06-29 12:39:09]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID='18'
+[2020-06-29 12:39:09]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID='17'
+[2020-06-29 12:39:09]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID='1'
+[2020-06-29 12:39:19]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`=''
+[2020-06-29 12:39:19]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`=''
+[2020-06-29 12:39:19]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID=''
+[2020-06-29 12:39:19]	select * from `_tbl_Members` where  `MemberCode`='AFAST00004'
+[2020-06-29 12:39:19]	select * from `_tbl_bank_info` where  `MemberCode`='AFAST00004'
+[2020-06-29 12:39:19]	SELECT * FROM `_tbl_Settings_Packages` where PackageID='16'
+[2020-06-29 12:39:28]	select * from _tbl_news where IsPublish='1'
+[2020-06-29 12:39:28]	select * from _tbl_news where IsPublish='1'
+[2020-06-29 12:39:58]	select * from `_tbl_Members` where  `MemberCode`='AFAST00004'
+[2020-06-29 12:39:58]	insert into `_tbl_members_login_logs` (`MemberID`,`LoginOn`,`IsSuccess`) values ('19','2020-06-29 12:39:58','1')
+[2020-06-29 12:39:59]	select * from _tbl_Members where MemberID='19'
+[2020-06-29 12:39:59]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`='AFAST00004'
+[2020-06-29 12:39:59]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`='AFAST00004'
+[2020-06-29 12:39:59]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID='19'
+[2020-06-29 12:39:59]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`='AFAST00004'
+[2020-06-29 12:39:59]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`='AFAST00004'
+[2020-06-29 12:39:59]	select * from _tbl_payoutsummary where MemberCode='AFAST00004'
+[2020-06-29 12:39:59]	select (sum(DebitLeft)) as DebitLeft, (sum(DebitRight)) as DebitRight from _tbl_payoutsummary where MemberCode='AFAST00004'
+[2020-06-29 12:39:59]	select * from _tbl_Members where MemberID='19'
+[2020-06-29 12:39:59]	SELECT * FROM _tbl_Members_Packages where Date('2020-06-29')<=Date(BooserExpireOn) and MemberPackageID='18'
+[2020-06-29 12:39:59]	SELECT * FROM _tbl_Members_Packages where   MemberPackageID='18'
+[2020-06-29 12:39:59]	SELECT * FROM _tbl_Members where MemberID='19'
+[2020-06-29 12:39:59]	select * from _tbl_Settings_Packages where PackageID='16'
+[2020-06-29 12:39:59]	select * from _tbl_roi_dates where date(TDate)>=date('2020-06-27') limit 0,7
+[2020-06-29 12:39:59]	select sum(Credits*1) as amt from `_tbl_wallet_earnings` where MemberID='19' and (Ledger='3')
+[2020-06-29 12:39:59]	select sum(Debits*1) as amt from `_tbl_wallet_earnings` where MemberID='19' and (Ledger='30001')
+[2020-06-29 12:39:59]	select sum(Credits) as amt from `_tbl_wallet_earnings` where MemberID='19' and (Ledger='4')
+[2020-06-29 12:39:59]	select sum(Debits) as amt from `_tbl_wallet_earnings` where MemberID='19' and (Ledger='40001')
+[2020-06-29 12:39:59]	select sum(Credits) as amt from `_tbl_wallet_earnings` where MemberID='19' and (Ledger='2')
+[2020-06-29 12:39:59]	select sum(Debits) as amt from `_tbl_wallet_earnings` where MemberID='19' and (Ledger='20001')
+[2020-06-29 12:39:59]	SELECT * FROM _tbl_Members 
+                                               LEFT JOIN _tbl_Settings_Packages 
+                                               ON _tbl_Members.CurrentPackageID=_tbl_Settings_Packages.PackageID where 
+                                               `_tbl_Members`.`MemberCode` in (SELECT `ChildCode` FROM  `_tblPlacements` WHERE `PlacedByCode`='AFAST00004'  ORDER BY `PlacementID` DESC) 
+                                                order by `_tbl_Members`.`MemberID` Desc 
+[2020-06-29 12:40:13]	select * from _tbl_news where IsPublish='1'
+[2020-06-29 12:40:13]	select * from _tbl_news where IsPublish='1'
+[2020-06-29 12:40:25]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`=''
+[2020-06-29 12:40:25]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`=''
+[2020-06-29 12:40:25]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID=''
+[2020-06-29 12:40:25]	select * from `_tbl_Settings_Params` where ParamCode in ('MemberCodePrefix')
+[2020-06-29 12:40:25]	select * from `_tbl_Settings_Params` where ParamCode in ('MemberCodeLength')
+[2020-06-29 12:40:25]	select * from `_tbl_Settings_Params` where ParamCode in ('EpinPrefix')
+[2020-06-29 12:40:25]	select * from `_tbl_Settings_Params` where ParamCode in ('EpinLength')
+[2020-06-29 12:40:25]	select * from `_tbl_Settings_Params` where ParamCode in ('EpinPwdLength')
+[2020-06-29 12:40:25]	select * from `_tbl_Settings_Params` where ParamCode in ('IsMobileIsMandatory')
+[2020-06-29 12:40:25]	select * from `_tbl_Settings_Params` where ParamCode in ('AllowDuplicateMobile')
+[2020-06-29 12:40:25]	select * from `_tbl_Settings_Params` where ParamCode in ('AllowDuplicateEmail')
+[2020-06-29 12:40:25]	select * from `_tbl_Settings_Params` where ParamCode in ('IsEmailMandatory')
+[2020-06-29 12:40:25]	select * from `_tbl_Settings_Params` where ParamCode in ('AllowDuplicatePanCard')
+[2020-06-29 12:40:25]	select * from `_tbl_Settings_Params` where ParamCode in ('IsPanCardIsMandatory')
+[2020-06-29 12:40:29]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`=''
+[2020-06-29 12:40:29]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`=''
+[2020-06-29 12:40:29]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID=''
+[2020-06-29 12:40:29]	select * from `_tbl_Settings_Packages` order by PackageAmount*1 
+[2020-06-29 12:40:29]	select * from _tbl_Members where CurrentPackageID='1'
+[2020-06-29 12:40:29]	select * from _tbl_Members where CurrentPackageID='2'
+[2020-06-29 12:40:29]	select * from _tbl_Members where CurrentPackageID='20'
+[2020-06-29 12:40:29]	select * from _tbl_Members where CurrentPackageID='17'
+[2020-06-29 12:40:29]	select * from _tbl_Members where CurrentPackageID='16'
+[2020-06-29 12:40:29]	select * from _tbl_Members where CurrentPackageID='18'
+[2020-06-29 12:40:29]	select * from _tbl_Members where CurrentPackageID='4'
+[2020-06-29 12:40:29]	select * from _tbl_Members where CurrentPackageID='14'
+[2020-06-29 12:40:29]	select * from _tbl_Members where CurrentPackageID='5'
+[2020-06-29 12:40:29]	select * from _tbl_Members where CurrentPackageID='19'
+[2020-06-29 12:40:29]	select * from _tbl_Members where CurrentPackageID='15'
+[2020-06-29 12:40:29]	select * from _tbl_Members where CurrentPackageID='6'
+[2020-06-29 12:40:29]	select * from _tbl_Members where CurrentPackageID='13'
+[2020-06-29 12:40:29]	select * from _tbl_Members where CurrentPackageID='21'
+[2020-06-29 12:40:29]	select * from _tbl_Members where CurrentPackageID='7'
+[2020-06-29 12:40:29]	select * from _tbl_Members where CurrentPackageID='9'
+[2020-06-29 12:40:29]	select * from _tbl_Members where CurrentPackageID='8'
+[2020-06-29 12:41:13]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`=''
+[2020-06-29 12:41:13]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`=''
+[2020-06-29 12:41:13]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID=''
+[2020-06-29 12:41:13]	select * from _tbl_Settings_Packages where md5(concat('J2J',PackageID))='26b3bcfeb09b8260b7cdf2e02650ad39'
+[2020-06-29 12:41:13]	select * from _tbl_Members where CurrentPackageID='5'
+[2020-06-29 12:41:18]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`=''
+[2020-06-29 12:41:18]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`=''
+[2020-06-29 12:41:18]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID=''
+[2020-06-29 12:41:18]	update _tbl_Settings_Packages set PackageName              ='Crypto 700',
+                                                                                       PackageAmount            ='700',
+                                                                                       PV                       ='700',
+                                                                                       CutOffPV                 ='100',
+                                                                                       Prefix                   ='Crypto 700',
+                                                                                       DirectReferalCommission  ='0.5',
+                                                                                       DirectReferal_Days       ='40',
+                                                                                       BinaryCommission         ='10',
+                                                                                       BinaryCommission_Days    ='1',
+                                                                                       IsActive                 ='0',
+                                                                                       ROI                      ='4',  
+                                                                                       ROI_Days                 ='40',
+                                                                                       ROI_Booster_Commission   ='10',
+                                                                                       ROI_Booster_Days         ='16',
+                                                                                       ROI_Booster_Apply_Before ='2',
+                                                                                       ROI_StartDay             ='4'
+                                                                                            where md5(concat('J2J',PackageID))='26b3bcfeb09b8260b7cdf2e02650ad39' 
+[2020-06-29 12:41:18]	select * from _tbl_Settings_Packages where md5(concat('J2J',PackageID))='26b3bcfeb09b8260b7cdf2e02650ad39'
+[2020-06-29 12:41:18]	select * from _tbl_Members where CurrentPackageID='5'
+[2020-06-29 12:41:20]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`=''
+[2020-06-29 12:41:20]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`=''
+[2020-06-29 12:41:20]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID=''
+[2020-06-29 12:41:20]	select * from `_tbl_Settings_Packages` order by PackageAmount*1 
+[2020-06-29 12:41:20]	select * from _tbl_Members where CurrentPackageID='1'
+[2020-06-29 12:41:20]	select * from _tbl_Members where CurrentPackageID='2'
+[2020-06-29 12:41:20]	select * from _tbl_Members where CurrentPackageID='20'
+[2020-06-29 12:41:20]	select * from _tbl_Members where CurrentPackageID='17'
+[2020-06-29 12:41:20]	select * from _tbl_Members where CurrentPackageID='16'
+[2020-06-29 12:41:20]	select * from _tbl_Members where CurrentPackageID='18'
+[2020-06-29 12:41:20]	select * from _tbl_Members where CurrentPackageID='4'
+[2020-06-29 12:41:20]	select * from _tbl_Members where CurrentPackageID='14'
+[2020-06-29 12:41:20]	select * from _tbl_Members where CurrentPackageID='5'
+[2020-06-29 12:41:20]	select * from _tbl_Members where CurrentPackageID='19'
+[2020-06-29 12:41:20]	select * from _tbl_Members where CurrentPackageID='15'
+[2020-06-29 12:41:20]	select * from _tbl_Members where CurrentPackageID='6'
+[2020-06-29 12:41:20]	select * from _tbl_Members where CurrentPackageID='13'
+[2020-06-29 12:41:20]	select * from _tbl_Members where CurrentPackageID='21'
+[2020-06-29 12:41:20]	select * from _tbl_Members where CurrentPackageID='7'
+[2020-06-29 12:41:20]	select * from _tbl_Members where CurrentPackageID='9'
+[2020-06-29 12:41:20]	select * from _tbl_Members where CurrentPackageID='8'
+[2020-06-29 12:41:25]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`=''
+[2020-06-29 12:41:25]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`=''
+[2020-06-29 12:41:25]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID=''
+[2020-06-29 12:41:25]	select * from _tbl_Settings_Packages where md5(concat('J2J',PackageID))='17af2a8768adbf8370d5f27788fbcf56'
+[2020-06-29 12:41:25]	select * from _tbl_Members where CurrentPackageID='6'
+[2020-06-29 12:41:29]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`=''
+[2020-06-29 12:41:29]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`=''
+[2020-06-29 12:41:29]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID=''
+[2020-06-29 12:41:29]	update _tbl_Settings_Packages set PackageName              ='Crypto 1500',
+                                                                                       PackageAmount            ='1500',
+                                                                                       PV                       ='1500',
+                                                                                       CutOffPV                 ='100',
+                                                                                       Prefix                   ='Crypto 1500',
+                                                                                       DirectReferalCommission  ='0.5',
+                                                                                       DirectReferal_Days       ='40',
+                                                                                       BinaryCommission         ='10',
+                                                                                       BinaryCommission_Days    ='1',
+                                                                                       IsActive                 ='0',
+                                                                                       ROI                      ='4',  
+                                                                                       ROI_Days                 ='40',
+                                                                                       ROI_Booster_Commission   ='10',
+                                                                                       ROI_Booster_Days         ='16',
+                                                                                       ROI_Booster_Apply_Before ='2',
+                                                                                       ROI_StartDay             ='4'
+                                                                                            where md5(concat('J2J',PackageID))='17af2a8768adbf8370d5f27788fbcf56' 
+[2020-06-29 12:41:29]	select * from _tbl_Settings_Packages where md5(concat('J2J',PackageID))='17af2a8768adbf8370d5f27788fbcf56'
+[2020-06-29 12:41:29]	select * from _tbl_Members where CurrentPackageID='6'
+[2020-06-29 12:41:33]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`=''
+[2020-06-29 12:41:33]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`=''
+[2020-06-29 12:41:33]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID=''
+[2020-06-29 12:41:33]	select * from `_tbl_Settings_Packages` order by PackageAmount*1 
+[2020-06-29 12:41:33]	select * from _tbl_Members where CurrentPackageID='1'
+[2020-06-29 12:41:33]	select * from _tbl_Members where CurrentPackageID='2'
+[2020-06-29 12:41:33]	select * from _tbl_Members where CurrentPackageID='20'
+[2020-06-29 12:41:33]	select * from _tbl_Members where CurrentPackageID='17'
+[2020-06-29 12:41:33]	select * from _tbl_Members where CurrentPackageID='16'
+[2020-06-29 12:41:33]	select * from _tbl_Members where CurrentPackageID='18'
+[2020-06-29 12:41:33]	select * from _tbl_Members where CurrentPackageID='4'
+[2020-06-29 12:41:33]	select * from _tbl_Members where CurrentPackageID='14'
+[2020-06-29 12:41:33]	select * from _tbl_Members where CurrentPackageID='5'
+[2020-06-29 12:41:33]	select * from _tbl_Members where CurrentPackageID='19'
+[2020-06-29 12:41:33]	select * from _tbl_Members where CurrentPackageID='15'
+[2020-06-29 12:41:33]	select * from _tbl_Members where CurrentPackageID='6'
+[2020-06-29 12:41:33]	select * from _tbl_Members where CurrentPackageID='13'
+[2020-06-29 12:41:33]	select * from _tbl_Members where CurrentPackageID='21'
+[2020-06-29 12:41:33]	select * from _tbl_Members where CurrentPackageID='7'
+[2020-06-29 12:41:33]	select * from _tbl_Members where CurrentPackageID='9'
+[2020-06-29 12:41:33]	select * from _tbl_Members where CurrentPackageID='8'
+[2020-06-29 12:41:51]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`=''
+[2020-06-29 12:41:51]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`=''
+[2020-06-29 12:41:51]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID=''
+[2020-06-29 12:41:51]	select * from _tbl_Settings_Packages where md5(concat('J2J',PackageID))='91471dbdb292b37585e4f5561e23a873'
+[2020-06-29 12:41:51]	select * from _tbl_Members where CurrentPackageID='20'
+[2020-06-29 12:44:35]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`=''
+[2020-06-29 12:44:35]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`=''
+[2020-06-29 12:44:35]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID=''
+[2020-06-29 12:44:35]	update _tbl_Settings_Packages set PackageName              ='Fx 143',
+                                                                                       PackageAmount            ='143',
+                                                                                       PV                       ='143',
+                                                                                       CutOffPV                 ='50',
+                                                                                       Prefix                   ='Fx 143',
+                                                                                       DirectReferalCommission  ='5',
+                                                                                       DirectReferal_Days       ='1',
+                                                                                       BinaryCommission         ='10',
+                                                                                       BinaryCommission_Days    ='1',
+                                                                                       IsActive                 ='1',
+                                                                                       ROI                      ='6',  
+                                                                                       ROI_Days                 ='30',
+                                                                                       ROI_Booster_Commission   ='6',
+                                                                                       ROI_Booster_Days         ='30',
+                                                                                       ROI_Booster_Apply_Before ='3',
+                                                                                       ROI_StartDay             ='4'
+                                                                                            where md5(concat('J2J',PackageID))='91471dbdb292b37585e4f5561e23a873' 
+[2020-06-29 12:44:35]	select * from _tbl_Settings_Packages where md5(concat('J2J',PackageID))='91471dbdb292b37585e4f5561e23a873'
+[2020-06-29 12:44:35]	select * from _tbl_Members where CurrentPackageID='20'
+[2020-06-29 12:44:45]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`=''
+[2020-06-29 12:44:45]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`=''
+[2020-06-29 12:44:45]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID=''
+[2020-06-29 12:44:45]	update _tbl_Settings_Packages set PackageName              ='Fx 143',
+                                                                                       PackageAmount            ='143',
+                                                                                       PV                       ='143',
+                                                                                       CutOffPV                 ='50',
+                                                                                       Prefix                   ='Fx 143',
+                                                                                       DirectReferalCommission  ='5',
+                                                                                       DirectReferal_Days       ='1',
+                                                                                       BinaryCommission         ='10',
+                                                                                       BinaryCommission_Days    ='1',
+                                                                                       IsActive                 ='1',
+                                                                                       ROI                      ='6',  
+                                                                                       ROI_Days                 ='30',
+                                                                                       ROI_Booster_Commission   ='6',
+                                                                                       ROI_Booster_Days         ='30',
+                                                                                       ROI_Booster_Apply_Before ='1',
+                                                                                       ROI_StartDay             ='4'
+                                                                                            where md5(concat('J2J',PackageID))='91471dbdb292b37585e4f5561e23a873' 
+[2020-06-29 12:44:45]	select * from _tbl_Settings_Packages where md5(concat('J2J',PackageID))='91471dbdb292b37585e4f5561e23a873'
+[2020-06-29 12:44:45]	select * from _tbl_Members where CurrentPackageID='20'
+[2020-06-29 12:45:02]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`=''
+[2020-06-29 12:45:02]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`=''
+[2020-06-29 12:45:02]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID=''
+[2020-06-29 12:45:02]	update _tbl_Settings_Packages set PackageName              ='Fx 143',
+                                                                                       PackageAmount            ='143',
+                                                                                       PV                       ='143',
+                                                                                       CutOffPV                 ='50',
+                                                                                       Prefix                   ='Fx 143',
+                                                                                       DirectReferalCommission  ='5',
+                                                                                       DirectReferal_Days       ='1',
+                                                                                       BinaryCommission         ='10',
+                                                                                       BinaryCommission_Days    ='1',
+                                                                                       IsActive                 ='1',
+                                                                                       ROI                      ='6',  
+                                                                                       ROI_Days                 ='30',
+                                                                                       ROI_Booster_Commission   ='6',
+                                                                                       ROI_Booster_Days         ='30',
+                                                                                       ROI_Booster_Apply_Before ='3',
+                                                                                       ROI_StartDay             ='4'
+                                                                                            where md5(concat('J2J',PackageID))='91471dbdb292b37585e4f5561e23a873' 
+[2020-06-29 12:45:02]	select * from _tbl_Settings_Packages where md5(concat('J2J',PackageID))='91471dbdb292b37585e4f5561e23a873'
+[2020-06-29 12:45:02]	select * from _tbl_Members where CurrentPackageID='20'
+[2020-06-29 12:45:05]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`=''
+[2020-06-29 12:45:05]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`=''
+[2020-06-29 12:45:05]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID=''
+[2020-06-29 12:45:05]	select * from `_tbl_Settings_Packages` order by PackageAmount*1 
+[2020-06-29 12:45:05]	select * from _tbl_Members where CurrentPackageID='1'
+[2020-06-29 12:45:05]	select * from _tbl_Members where CurrentPackageID='2'
+[2020-06-29 12:45:05]	select * from _tbl_Members where CurrentPackageID='17'
+[2020-06-29 12:45:05]	select * from _tbl_Members where CurrentPackageID='20'
+[2020-06-29 12:45:05]	select * from _tbl_Members where CurrentPackageID='16'
+[2020-06-29 12:45:05]	select * from _tbl_Members where CurrentPackageID='18'
+[2020-06-29 12:45:05]	select * from _tbl_Members where CurrentPackageID='4'
+[2020-06-29 12:45:05]	select * from _tbl_Members where CurrentPackageID='14'
+[2020-06-29 12:45:05]	select * from _tbl_Members where CurrentPackageID='5'
+[2020-06-29 12:45:05]	select * from _tbl_Members where CurrentPackageID='19'
+[2020-06-29 12:45:05]	select * from _tbl_Members where CurrentPackageID='15'
+[2020-06-29 12:45:05]	select * from _tbl_Members where CurrentPackageID='6'
+[2020-06-29 12:45:05]	select * from _tbl_Members where CurrentPackageID='13'
+[2020-06-29 12:45:05]	select * from _tbl_Members where CurrentPackageID='21'
+[2020-06-29 12:45:05]	select * from _tbl_Members where CurrentPackageID='7'
+[2020-06-29 12:45:05]	select * from _tbl_Members where CurrentPackageID='9'
+[2020-06-29 12:45:05]	select * from _tbl_Members where CurrentPackageID='8'
+[2020-06-29 12:45:09]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`=''
+[2020-06-29 12:45:09]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`=''
+[2020-06-29 12:45:09]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID=''
+[2020-06-29 12:45:09]	select * from _tbl_Settings_Packages where md5(concat('J2J',PackageID))='5b4c6c70e73db2290fdae7898c938914'
+[2020-06-29 12:45:09]	select * from _tbl_Members where CurrentPackageID='21'
+[2020-06-29 12:46:29]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`=''
+[2020-06-29 12:46:29]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`=''
+[2020-06-29 12:46:29]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID=''
+[2020-06-29 12:46:29]	update _tbl_Settings_Packages set PackageName              ='Fx 300',
+                                                                                       PackageAmount            ='300',
+                                                                                       PV                       ='300',
+                                                                                       CutOffPV                 ='100',
+                                                                                       Prefix                   ='Fx 300',
+                                                                                       DirectReferalCommission  ='5',
+                                                                                       DirectReferal_Days       ='1',
+                                                                                       BinaryCommission         ='10',
+                                                                                       BinaryCommission_Days    ='1',
+                                                                                       IsActive                 ='1',
+                                                                                       ROI                      ='6',  
+                                                                                       ROI_Days                 ='30',
+                                                                                       ROI_Booster_Commission   ='6',
+                                                                                       ROI_Booster_Days         ='30',
+                                                                                       ROI_Booster_Apply_Before ='3',
+                                                                                       ROI_StartDay             ='4'
+                                                                                            where md5(concat('J2J',PackageID))='5b4c6c70e73db2290fdae7898c938914' 
+[2020-06-29 12:46:29]	select * from _tbl_Settings_Packages where md5(concat('J2J',PackageID))='5b4c6c70e73db2290fdae7898c938914'
+[2020-06-29 12:46:29]	select * from _tbl_Members where CurrentPackageID='21'
+[2020-06-29 12:46:32]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`=''
+[2020-06-29 12:46:32]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`=''
+[2020-06-29 12:46:32]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID=''
+[2020-06-29 12:46:32]	select * from `_tbl_Settings_Packages` order by PackageAmount*1 
+[2020-06-29 12:46:32]	select * from _tbl_Members where CurrentPackageID='1'
+[2020-06-29 12:46:32]	select * from _tbl_Members where CurrentPackageID='2'
+[2020-06-29 12:46:32]	select * from _tbl_Members where CurrentPackageID='17'
+[2020-06-29 12:46:32]	select * from _tbl_Members where CurrentPackageID='20'
+[2020-06-29 12:46:32]	select * from _tbl_Members where CurrentPackageID='16'
+[2020-06-29 12:46:32]	select * from _tbl_Members where CurrentPackageID='18'
+[2020-06-29 12:46:32]	select * from _tbl_Members where CurrentPackageID='21'
+[2020-06-29 12:46:32]	select * from _tbl_Members where CurrentPackageID='4'
+[2020-06-29 12:46:32]	select * from _tbl_Members where CurrentPackageID='14'
+[2020-06-29 12:46:32]	select * from _tbl_Members where CurrentPackageID='5'
+[2020-06-29 12:46:32]	select * from _tbl_Members where CurrentPackageID='19'
+[2020-06-29 12:46:32]	select * from _tbl_Members where CurrentPackageID='15'
+[2020-06-29 12:46:32]	select * from _tbl_Members where CurrentPackageID='6'
+[2020-06-29 12:46:32]	select * from _tbl_Members where CurrentPackageID='13'
+[2020-06-29 12:46:32]	select * from _tbl_Members where CurrentPackageID='7'
+[2020-06-29 12:46:32]	select * from _tbl_Members where CurrentPackageID='9'
+[2020-06-29 12:46:32]	select * from _tbl_Members where CurrentPackageID='8'
+[2020-06-29 12:47:45]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`=''
+[2020-06-29 12:47:45]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`=''
+[2020-06-29 12:47:45]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID=''
+[2020-06-29 12:47:45]	select * from _tbl_Settings_Packages where md5(concat('J2J',PackageID))='91471dbdb292b37585e4f5561e23a873'
+[2020-06-29 12:47:45]	select * from _tbl_Members where CurrentPackageID='20'
+[2020-06-29 12:48:07]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`=''
+[2020-06-29 12:48:07]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`=''
+[2020-06-29 12:48:07]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID=''
+[2020-06-29 12:48:07]	update _tbl_Settings_Packages set PackageName              ='STAR 143',
+                                                                                       PackageAmount            ='143',
+                                                                                       PV                       ='143',
+                                                                                       CutOffPV                 ='50',
+                                                                                       Prefix                   ='STAR 143',
+                                                                                       DirectReferalCommission  ='5',
+                                                                                       DirectReferal_Days       ='1',
+                                                                                       BinaryCommission         ='10',
+                                                                                       BinaryCommission_Days    ='1',
+                                                                                       IsActive                 ='1',
+                                                                                       ROI                      ='6',  
+                                                                                       ROI_Days                 ='30',
+                                                                                       ROI_Booster_Commission   ='6',
+                                                                                       ROI_Booster_Days         ='30',
+                                                                                       ROI_Booster_Apply_Before ='3',
+                                                                                       ROI_StartDay             ='4'
+                                                                                            where md5(concat('J2J',PackageID))='91471dbdb292b37585e4f5561e23a873' 
+[2020-06-29 12:48:07]	select * from _tbl_Settings_Packages where md5(concat('J2J',PackageID))='91471dbdb292b37585e4f5561e23a873'
+[2020-06-29 12:48:07]	select * from _tbl_Members where CurrentPackageID='20'
+[2020-06-29 12:48:09]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`=''
+[2020-06-29 12:48:09]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`=''
+[2020-06-29 12:48:09]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID=''
+[2020-06-29 12:48:09]	select * from `_tbl_Settings_Packages` order by PackageAmount*1 
+[2020-06-29 12:48:09]	select * from _tbl_Members where CurrentPackageID='1'
+[2020-06-29 12:48:09]	select * from _tbl_Members where CurrentPackageID='2'
+[2020-06-29 12:48:09]	select * from _tbl_Members where CurrentPackageID='17'
+[2020-06-29 12:48:09]	select * from _tbl_Members where CurrentPackageID='20'
+[2020-06-29 12:48:09]	select * from _tbl_Members where CurrentPackageID='16'
+[2020-06-29 12:48:09]	select * from _tbl_Members where CurrentPackageID='18'
+[2020-06-29 12:48:09]	select * from _tbl_Members where CurrentPackageID='21'
+[2020-06-29 12:48:09]	select * from _tbl_Members where CurrentPackageID='4'
+[2020-06-29 12:48:09]	select * from _tbl_Members where CurrentPackageID='14'
+[2020-06-29 12:48:09]	select * from _tbl_Members where CurrentPackageID='5'
+[2020-06-29 12:48:09]	select * from _tbl_Members where CurrentPackageID='19'
+[2020-06-29 12:48:09]	select * from _tbl_Members where CurrentPackageID='15'
+[2020-06-29 12:48:09]	select * from _tbl_Members where CurrentPackageID='6'
+[2020-06-29 12:48:09]	select * from _tbl_Members where CurrentPackageID='13'
+[2020-06-29 12:48:09]	select * from _tbl_Members where CurrentPackageID='7'
+[2020-06-29 12:48:09]	select * from _tbl_Members where CurrentPackageID='9'
+[2020-06-29 12:48:09]	select * from _tbl_Members where CurrentPackageID='8'
+[2020-06-29 12:48:15]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`=''
+[2020-06-29 12:48:15]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`=''
+[2020-06-29 12:48:15]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID=''
+[2020-06-29 12:48:15]	select * from _tbl_Settings_Packages where md5(concat('J2J',PackageID))='5b4c6c70e73db2290fdae7898c938914'
+[2020-06-29 12:48:15]	select * from _tbl_Members where CurrentPackageID='21'
+[2020-06-29 12:48:26]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`=''
+[2020-06-29 12:48:26]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`=''
+[2020-06-29 12:48:26]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID=''
+[2020-06-29 12:48:26]	update _tbl_Settings_Packages set PackageName              ='STAR 300',
+                                                                                       PackageAmount            ='300',
+                                                                                       PV                       ='300',
+                                                                                       CutOffPV                 ='100',
+                                                                                       Prefix                   ='STAR 300',
+                                                                                       DirectReferalCommission  ='5',
+                                                                                       DirectReferal_Days       ='1',
+                                                                                       BinaryCommission         ='10',
+                                                                                       BinaryCommission_Days    ='1',
+                                                                                       IsActive                 ='1',
+                                                                                       ROI                      ='6',  
+                                                                                       ROI_Days                 ='30',
+                                                                                       ROI_Booster_Commission   ='6',
+                                                                                       ROI_Booster_Days         ='30',
+                                                                                       ROI_Booster_Apply_Before ='3',
+                                                                                       ROI_StartDay             ='4'
+                                                                                            where md5(concat('J2J',PackageID))='5b4c6c70e73db2290fdae7898c938914' 
+[2020-06-29 12:48:26]	select * from _tbl_Settings_Packages where md5(concat('J2J',PackageID))='5b4c6c70e73db2290fdae7898c938914'
+[2020-06-29 12:48:26]	select * from _tbl_Members where CurrentPackageID='21'
+[2020-06-29 12:48:46]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`=''
+[2020-06-29 12:48:46]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`=''
+[2020-06-29 12:48:46]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID=''
+[2020-06-29 12:48:46]	select * from `_tbl_Settings_Packages` order by PackageAmount*1 
+[2020-06-29 12:48:46]	select * from _tbl_Members where CurrentPackageID='1'
+[2020-06-29 12:48:46]	select * from _tbl_Members where CurrentPackageID='2'
+[2020-06-29 12:48:46]	select * from _tbl_Members where CurrentPackageID='17'
+[2020-06-29 12:48:46]	select * from _tbl_Members where CurrentPackageID='20'
+[2020-06-29 12:48:46]	select * from _tbl_Members where CurrentPackageID='16'
+[2020-06-29 12:48:46]	select * from _tbl_Members where CurrentPackageID='18'
+[2020-06-29 12:48:46]	select * from _tbl_Members where CurrentPackageID='21'
+[2020-06-29 12:48:46]	select * from _tbl_Members where CurrentPackageID='4'
+[2020-06-29 12:48:46]	select * from _tbl_Members where CurrentPackageID='14'
+[2020-06-29 12:48:46]	select * from _tbl_Members where CurrentPackageID='5'
+[2020-06-29 12:48:46]	select * from _tbl_Members where CurrentPackageID='19'
+[2020-06-29 12:48:46]	select * from _tbl_Members where CurrentPackageID='15'
+[2020-06-29 12:48:46]	select * from _tbl_Members where CurrentPackageID='6'
+[2020-06-29 12:48:46]	select * from _tbl_Members where CurrentPackageID='13'
+[2020-06-29 12:48:46]	select * from _tbl_Members where CurrentPackageID='7'
+[2020-06-29 12:48:46]	select * from _tbl_Members where CurrentPackageID='9'
+[2020-06-29 12:48:46]	select * from _tbl_Members where CurrentPackageID='8'
+[2020-06-29 13:02:41]	select * from _tbl_news where IsPublish='1'
+[2020-06-29 13:02:41]	select * from _tbl_news where IsPublish='1'
+[2020-06-29 14:57:02]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`=''
+[2020-06-29 14:57:02]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`=''
+[2020-06-29 14:57:02]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID=''
+[2020-06-29 14:57:03]	select * from _tbl_news where IsPublish='1'
+[2020-06-29 14:57:03]	select * from _tbl_news where IsPublish='1'
+[2020-06-29 18:39:09]	select * from `_tbl_admin` where  `AdminEmail`='admin@admin.com'
+[2020-06-29 18:39:09]	insert into `_tbl_admin_login_logs` (`AdminID`,`LoginOn`,`IsSuccess`) values ('2','2020-06-29 18:39:09','1')
+[2020-06-29 18:39:09]	select * from _tbl_Settings_Params where ParamCode='AdminLoginEmailOTPRequired'
+[2020-06-29 18:39:09]	select * from _tbl_Settings_Params where ParamCode='AdminLoginMobileOTPRequired'
+[2020-06-29 18:39:09]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`=''
+[2020-06-29 18:39:09]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`=''
+[2020-06-29 18:39:09]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID=''
+[2020-06-29 18:39:09]	select * from _tbl_Members
+[2020-06-29 18:39:09]	select sum(Debits) as d from _tbl_wallet_earnings where Ledger='1'
+[2020-06-29 18:39:09]	SELECT COUNT(RequestID) AS Count FROM _tbl_wallet_request_utility
+[2020-06-29 18:39:15]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`=''
+[2020-06-29 18:39:15]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`=''
+[2020-06-29 18:39:15]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID=''
+[2020-06-29 18:39:15]	select * from `_tbl_Settings_Params` where ParamCode in ('MemberCodePrefix')
+[2020-06-29 18:39:15]	select * from `_tbl_Settings_Params` where ParamCode in ('MemberCodeLength')
+[2020-06-29 18:39:15]	select * from `_tbl_Settings_Params` where ParamCode in ('EpinPrefix')
+[2020-06-29 18:39:15]	select * from `_tbl_Settings_Params` where ParamCode in ('EpinLength')
+[2020-06-29 18:39:15]	select * from `_tbl_Settings_Params` where ParamCode in ('EpinPwdLength')
+[2020-06-29 18:39:15]	select * from `_tbl_Settings_Params` where ParamCode in ('IsMobileIsMandatory')
+[2020-06-29 18:39:15]	select * from `_tbl_Settings_Params` where ParamCode in ('AllowDuplicateMobile')
+[2020-06-29 18:39:15]	select * from `_tbl_Settings_Params` where ParamCode in ('AllowDuplicateEmail')
+[2020-06-29 18:39:15]	select * from `_tbl_Settings_Params` where ParamCode in ('IsEmailMandatory')
+[2020-06-29 18:39:15]	select * from `_tbl_Settings_Params` where ParamCode in ('AllowDuplicatePanCard')
+[2020-06-29 18:39:15]	select * from `_tbl_Settings_Params` where ParamCode in ('IsPanCardIsMandatory')
+[2020-06-29 18:39:17]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`=''
+[2020-06-29 18:39:17]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`=''
+[2020-06-29 18:39:17]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID=''
+[2020-06-29 18:39:17]	select * from `_tbl_Settings_Packages` order by PackageAmount*1 
+[2020-06-29 18:39:17]	select * from _tbl_Members where CurrentPackageID='1'
+[2020-06-29 18:39:17]	select * from _tbl_Members where CurrentPackageID='2'
+[2020-06-29 18:39:17]	select * from _tbl_Members where CurrentPackageID='17'
+[2020-06-29 18:39:17]	select * from _tbl_Members where CurrentPackageID='20'
+[2020-06-29 18:39:17]	select * from _tbl_Members where CurrentPackageID='16'
+[2020-06-29 18:39:17]	select * from _tbl_Members where CurrentPackageID='18'
+[2020-06-29 18:39:17]	select * from _tbl_Members where CurrentPackageID='21'
+[2020-06-29 18:39:17]	select * from _tbl_Members where CurrentPackageID='4'
+[2020-06-29 18:39:17]	select * from _tbl_Members where CurrentPackageID='14'
+[2020-06-29 18:39:17]	select * from _tbl_Members where CurrentPackageID='5'
+[2020-06-29 18:39:17]	select * from _tbl_Members where CurrentPackageID='19'
+[2020-06-29 18:39:17]	select * from _tbl_Members where CurrentPackageID='15'
+[2020-06-29 18:39:17]	select * from _tbl_Members where CurrentPackageID='6'
+[2020-06-29 18:39:17]	select * from _tbl_Members where CurrentPackageID='13'
+[2020-06-29 18:39:17]	select * from _tbl_Members where CurrentPackageID='7'
+[2020-06-29 18:39:17]	select * from _tbl_Members where CurrentPackageID='9'
+[2020-06-29 18:39:17]	select * from _tbl_Members where CurrentPackageID='8'
+[2020-06-29 18:39:23]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`=''
+[2020-06-29 18:39:23]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`=''
+[2020-06-29 18:39:23]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID=''
+[2020-06-29 18:39:23]	select * from _tbl_Settings_Packages where md5(concat('J2J',PackageID))='91471dbdb292b37585e4f5561e23a873'
+[2020-06-29 18:39:23]	select * from _tbl_Members where CurrentPackageID='20'
+[2020-06-29 18:39:27]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`=''
+[2020-06-29 18:39:27]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`=''
+[2020-06-29 18:39:27]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID=''
+[2020-06-29 18:39:27]	select * from _tbl_Settings_Packages where md5(concat('J2J',PackageID))='91471dbdb292b37585e4f5561e23a873'
+[2020-06-29 18:39:27]	select * from _tbl_Members where CurrentPackageID='20'
+[2020-06-29 18:39:39]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`=''
+[2020-06-29 18:39:39]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`=''
+[2020-06-29 18:39:39]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID=''
+[2020-06-29 18:39:39]	update _tbl_Settings_Packages set PackageName              ='STAR 143',
+                                                                                       PackageAmount            ='143',
+                                                                                       PV                       ='143',
+                                                                                       CutOffPV                 ='50',
+                                                                                       Prefix                   ='STAR 143',
+                                                                                       DirectReferalCommission  ='5',
+                                                                                       DirectReferal_Days       ='1',
+                                                                                       BinaryCommission         ='10',
+                                                                                       BinaryCommission_Days    ='1',
+                                                                                       IsActive                 ='0',
+                                                                                       ROI                      ='6',  
+                                                                                       ROI_Days                 ='30',
+                                                                                       ROI_Booster_Commission   ='6',
+                                                                                       ROI_Booster_Days         ='30',
+                                                                                       ROI_Booster_Apply_Before ='3',
+                                                                                       ROI_StartDay             ='4'
+                                                                                            where md5(concat('J2J',PackageID))='91471dbdb292b37585e4f5561e23a873' 
+[2020-06-29 18:39:39]	select * from _tbl_Settings_Packages where md5(concat('J2J',PackageID))='91471dbdb292b37585e4f5561e23a873'
+[2020-06-29 18:39:39]	select * from _tbl_Members where CurrentPackageID='20'
+[2020-06-29 18:40:25]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`=''
+[2020-06-29 18:40:25]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`=''
+[2020-06-29 18:40:25]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID=''
+[2020-06-29 18:40:25]	update _tbl_Settings_Packages set PackageName              ='STAR 143',
+                                                                                       PackageAmount            ='143',
+                                                                                       PV                       ='143',
+                                                                                       CutOffPV                 ='50',
+                                                                                       Prefix                   ='STAR 143',
+                                                                                       DirectReferalCommission  ='5',
+                                                                                       DirectReferal_Days       ='1',
+                                                                                       BinaryCommission         ='10',
+                                                                                       BinaryCommission_Days    ='1',
+                                                                                       IsActive                 ='0',
+                                                                                       ROI                      ='6',  
+                                                                                       ROI_Days                 ='30',
+                                                                                       ROI_Booster_Commission   ='6',
+                                                                                       ROI_Booster_Days         ='30',
+                                                                                       ROI_Booster_Apply_Before ='3',
+                                                                                       ROI_StartDay             ='4'
+                                                                                            where md5(concat('J2J',PackageID))='91471dbdb292b37585e4f5561e23a873' 
+[2020-06-29 18:40:25]	select * from _tbl_Settings_Packages where md5(concat('J2J',PackageID))='91471dbdb292b37585e4f5561e23a873'
+[2020-06-29 18:40:25]	select * from _tbl_Members where CurrentPackageID='20'
+[2020-06-29 18:40:28]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`=''
+[2020-06-29 18:40:28]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`=''
+[2020-06-29 18:40:28]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID=''
+[2020-06-29 18:40:28]	select * from `_tbl_Settings_Packages` order by PackageAmount*1 
+[2020-06-29 18:40:28]	select * from _tbl_Members where CurrentPackageID='1'
+[2020-06-29 18:40:28]	select * from _tbl_Members where CurrentPackageID='2'
+[2020-06-29 18:40:28]	select * from _tbl_Members where CurrentPackageID='17'
+[2020-06-29 18:40:28]	select * from _tbl_Members where CurrentPackageID='20'
+[2020-06-29 18:40:28]	select * from _tbl_Members where CurrentPackageID='16'
+[2020-06-29 18:40:28]	select * from _tbl_Members where CurrentPackageID='18'
+[2020-06-29 18:40:28]	select * from _tbl_Members where CurrentPackageID='21'
+[2020-06-29 18:40:28]	select * from _tbl_Members where CurrentPackageID='4'
+[2020-06-29 18:40:28]	select * from _tbl_Members where CurrentPackageID='14'
+[2020-06-29 18:40:28]	select * from _tbl_Members where CurrentPackageID='5'
+[2020-06-29 18:40:28]	select * from _tbl_Members where CurrentPackageID='19'
+[2020-06-29 18:40:28]	select * from _tbl_Members where CurrentPackageID='15'
+[2020-06-29 18:40:28]	select * from _tbl_Members where CurrentPackageID='6'
+[2020-06-29 18:40:28]	select * from _tbl_Members where CurrentPackageID='13'
+[2020-06-29 18:40:28]	select * from _tbl_Members where CurrentPackageID='7'
+[2020-06-29 18:40:28]	select * from _tbl_Members where CurrentPackageID='9'
+[2020-06-29 18:40:28]	select * from _tbl_Members where CurrentPackageID='8'
+[2020-06-29 18:40:54]	select * from _tbl_news where IsPublish='1'
+[2020-06-29 18:40:54]	select * from _tbl_news where IsPublish='1'
+[2020-06-29 20:42:12]	select * from _tbl_news where IsPublish='1'
+[2020-06-29 20:42:12]	select * from _tbl_news where IsPublish='1'
+[2020-06-29 21:26:18]	select * from _tbl_news where IsPublish='1'
+[2020-06-29 21:26:18]	select * from _tbl_news where IsPublish='1'
+[2020-06-29 21:50:47]	select * from _tbl_news where IsPublish='1'
+[2020-06-29 21:50:47]	select * from _tbl_news where IsPublish='1'
+[2020-06-29 22:20:43]	select * from _tbl_news where IsPublish='1'
+[2020-06-29 22:20:43]	select * from _tbl_news where IsPublish='1'
+[2020-06-29 23:30:02]	insert into `_tbl_payout_log` (`PayoutDate`,`CreatedOn`,`EndedOn`,`FileName`,`CompanyCollectedPV`,`TotalPayoutAmount`) values ('2020-06-29','2020-06-29 23:30:02','2020-06-29 23:30:02','temp_payout_2020_06_29_23_30_02.txt','0','0')
+[2020-06-29 23:30:02]	select * from `_tbl_Members` 
+                                            left Join  `_tbl_Settings_Packages`
+                                            On 
+                                            `_tbl_Members`.`ActivePackageID`= `_tbl_Settings_Packages`.`PackageID`
+                                            where date(`_tbl_Members`.`CreatedOn`)<=date('2020-06-29')
+[2020-06-29 23:30:02]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`='AstraFx00001'
+[2020-06-29 23:30:02]	select * from `_tblPlacements` where `ParentCode`='AFAST00002'
+[2020-06-29 23:30:02]	select * from `_tblPlacements` where `ParentCode`='AFAST00004'
+[2020-06-29 23:30:02]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`='AstraFx00001'
+[2020-06-29 23:30:02]	select * from `_tblPlacements` where `ParentCode`='AFAST00003'
+[2020-06-29 23:30:02]	select sum(DebitLeft) as DebitLeft, sum(DebitRight) as DebitRight  from _tbl_payoutsummary where MemberCode='AstraFx00001'
+[2020-06-29 23:30:02]	insert into `_tbl_payoutsummary` (`PayoutProcessDate`,`MemberID`,`MemberCode`,`TotalLeft`,`TodayLeft`,`TotalRight`,`TodayRight`,`DebitLeft`,`DebitRight`,`AvailableLeft`,`AvailableRight`,`RemainingLeft`,`RemainingRight`,`TodayPayoutPV`,`PackageName`,`PackageID`,`EligibleMinimumPayoutPV`,`EligibleMaximumPayoutPV`,`PayablePV`,`PayableAmount`,`CompanyLeft`,`CompanyRight`,`IsPayoutEligible`,`Charges`,`ChargeAmount`,`PayableAmountDebitCharge`,`processedon`) values ('2020-06-29','1','AstraFx00001','300','0','350','0','35','35','80','130','45','95','35','Forex 35','1','1','35','35','1.75','0','0','0','10%','0.175','1.575','2020-06-29 23:30:02')
+[2020-06-29 23:30:02]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID='1'
+[2020-06-29 23:30:02]	insert into `_tbl_wallet_earnings` (`MemberID`,`MemberCode`,`Particulars`,`TxnDate`,`Credits`,`Debits`,`AvailableBalance`,`Ledger`,`details`) values ('1','AstraFx00001','Binary Income on 2020-06-29, Txn ID: 22','2020-06-29 23:30:02','1.75','0','460.975','3','')
+[2020-06-29 23:30:02]	insert into `_tbl_wallet_earnings` (`MemberID`,`MemberCode`,`Particulars`,`TxnDate`,`Credits`,`Debits`,`AvailableBalance`,`Ledger`,`details`) values ('1','AstraFx00001','Charges 10% Binary Income on 2020-06-29, Txn ID: 22','2020-06-29 23:30:02','0','0.175','460.8','30001','')
+[2020-06-29 23:30:02]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`='AFAST00002'
+[2020-06-29 23:30:02]	select * from `_tblPlacements` where `ParentCode`='AFAST00004'
+[2020-06-29 23:30:02]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`='AFAST00002'
+[2020-06-29 23:30:02]	select sum(DebitLeft) as DebitLeft, sum(DebitRight) as DebitRight  from _tbl_payoutsummary where MemberCode='AFAST00002'
+[2020-06-29 23:30:02]	insert into `_tbl_payoutsummary` (`PayoutProcessDate`,`MemberID`,`MemberCode`,`TotalLeft`,`TodayLeft`,`TotalRight`,`TodayRight`,`DebitLeft`,`DebitRight`,`AvailableLeft`,`AvailableRight`,`RemainingLeft`,`RemainingRight`,`TodayPayoutPV`,`PackageName`,`PackageID`,`EligibleMinimumPayoutPV`,`EligibleMaximumPayoutPV`,`PayablePV`,`PayableAmount`,`CompanyLeft`,`CompanyRight`,`IsPayoutEligible`,`Charges`,`ChargeAmount`,`PayableAmountDebitCharge`,`processedon`) values ('2020-06-29','17','AFAST00002','150','0','0','0','0','0','150','0','150','0','0','Forex 150','16','1','100','0','0','0','0','0','10%','0','0','2020-06-29 23:30:02')
+[2020-06-29 23:30:02]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`='AFAST00003'
+[2020-06-29 23:30:02]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`='AFAST00003'
+[2020-06-29 23:30:02]	select sum(DebitLeft) as DebitLeft, sum(DebitRight) as DebitRight  from _tbl_payoutsummary where MemberCode='AFAST00003'
+[2020-06-29 23:30:02]	insert into `_tbl_payoutsummary` (`PayoutProcessDate`,`MemberID`,`MemberCode`,`TotalLeft`,`TodayLeft`,`TotalRight`,`TodayRight`,`DebitLeft`,`DebitRight`,`AvailableLeft`,`AvailableRight`,`RemainingLeft`,`RemainingRight`,`TodayPayoutPV`,`PackageName`,`PackageID`,`EligibleMinimumPayoutPV`,`EligibleMaximumPayoutPV`,`PayablePV`,`PayableAmount`,`CompanyLeft`,`CompanyRight`,`IsPayoutEligible`,`Charges`,`ChargeAmount`,`PayableAmountDebitCharge`,`processedon`) values ('2020-06-29','18','AFAST00003','0','0','0','0','0','0','0','0','0','0','0','Crypto 350','14','1','100','0','0','0','0','0','10%','0','0','2020-06-29 23:30:02')
+[2020-06-29 23:30:02]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`='AFAST00004'
+[2020-06-29 23:30:02]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`='AFAST00004'
+[2020-06-29 23:30:02]	select sum(DebitLeft) as DebitLeft, sum(DebitRight) as DebitRight  from _tbl_payoutsummary where MemberCode='AFAST00004'
+[2020-06-29 23:30:02]	insert into `_tbl_payoutsummary` (`PayoutProcessDate`,`MemberID`,`MemberCode`,`TotalLeft`,`TodayLeft`,`TotalRight`,`TodayRight`,`DebitLeft`,`DebitRight`,`AvailableLeft`,`AvailableRight`,`RemainingLeft`,`RemainingRight`,`TodayPayoutPV`,`PackageName`,`PackageID`,`EligibleMinimumPayoutPV`,`EligibleMaximumPayoutPV`,`PayablePV`,`PayableAmount`,`CompanyLeft`,`CompanyRight`,`IsPayoutEligible`,`Charges`,`ChargeAmount`,`PayableAmountDebitCharge`,`processedon`) values ('2020-06-29','19','AFAST00004','0','0','0','0','0','0','0','0','0','0','0','Forex 150','16','1','100','0','0','0','0','0','10%','0','0','2020-06-29 23:30:02')
+[2020-06-29 23:30:02]	select * from _roi_payments where date(ROI_DATE)=Date('2020-06-29') and ROI_TYPE='1'
+[2020-06-29 23:30:02]	select * from _roi_payments where date(ROI_DATE)=Date('2020-06-29') and ROI_TYPE='2'
+[2020-06-29 23:30:02]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID='1'
+[2020-06-29 23:30:02]	insert into `_tbl_wallet_earnings` (`MemberID`,`MemberCode`,`Particulars`,`TxnDate`,`Credits`,`Debits`,`AvailableBalance`,`Ledger`,`details`) values ('1','AstraFx00001','Referral ROI  On 2020-06-29','2020-06-29 23:30:02','0.75','0','461.55','4','')
+[2020-06-29 23:30:02]	insert into `_tbl_wallet_earnings` (`MemberID`,`MemberCode`,`Particulars`,`TxnDate`,`Credits`,`Debits`,`AvailableBalance`,`Ledger`,`details`) values ('1','AstraFx00001','Charge 10% Referral ROI on 2020-06-29','2020-06-29 23:30:02','0','0.075','461.475','40001','')
+[2020-06-29 23:30:02]	update _roi_payments set IsSettled='1',SettledOn='2020-06-29 23:30:02', AccountTxnID='22', ChargesPercentage='10', ChargeAmount='0.075',CreditToWallet='0.675' where ROIID='788'
+[2020-06-29 23:30:02]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID='1'
+[2020-06-29 23:30:02]	insert into `_tbl_wallet_earnings` (`MemberID`,`MemberCode`,`Particulars`,`TxnDate`,`Credits`,`Debits`,`AvailableBalance`,`Ledger`,`details`) values ('1','AstraFx00001','Referral ROI  On 2020-06-29','2020-06-29 23:30:02','1.75','0','463.225','4','')
+[2020-06-29 23:30:02]	insert into `_tbl_wallet_earnings` (`MemberID`,`MemberCode`,`Particulars`,`TxnDate`,`Credits`,`Debits`,`AvailableBalance`,`Ledger`,`details`) values ('1','AstraFx00001','Charge 10% Referral ROI on 2020-06-29','2020-06-29 23:30:02','0','0.175','463.05','40001','')
+[2020-06-29 23:30:02]	update _roi_payments set IsSettled='1',SettledOn='2020-06-29 23:30:02', AccountTxnID='24', ChargesPercentage='10', ChargeAmount='0.175',CreditToWallet='1.575' where ROIID='918'
+[2020-06-29 23:30:02]	update _tbl_payout_log set EndedOn='2020-06-29 23:30:02' where PayoutLogID='8'

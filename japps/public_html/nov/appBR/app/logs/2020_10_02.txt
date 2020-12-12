@@ -1,0 +1,52 @@
+[2020-10-02 07:41:11]	select * from _tbl_news where IsPublish='1'
+[2020-10-02 07:41:11]	select * from _tbl_news where IsPublish='1'
+[2020-10-02 07:41:12]	select * from _tbl_news where IsPublish='1'
+[2020-10-02 07:41:12]	select * from _tbl_news where IsPublish='1'
+[2020-10-02 08:00:14]	select * from _tbl_news where IsPublish='1'
+[2020-10-02 08:00:14]	select * from _tbl_news where IsPublish='1'
+[2020-10-02 08:00:20]	insert into `_tbl_contact_us` (`ContactName`,`EmailID`,`Subject`,`YourQuestions`,`CreatedOn`) values ('MarquisSnaky','info@deoleodigitalpublishing.com','ARE YOU WINING IN THIS  COVID-19 NEW ECONOMY?','HAVE YOU EVER WANTED TO LEARN HOW TO CLOSE 100% OF YOUR CONSULTATIONS & HELP YOUR COMPANY  WIN IN OUR NEW  COVID-19  ECONOMY? 
+ 
+SEE THE OFFICIAL TRAILER:@ 
+The Author site https://www.tonydeoleo.com 
+ 
+ 
+Download your E-book Copy Now @ The Author official site: 
+https://www.tonydeoleo.com 
+Amazon : https://www.amazon.com/dp/195226359X 
+Barns&Nobles : https://m.barnesandnoble.com/w/closing-100-of-your-fitness-consultations-tony-deoleo/1137240205','2020-10-02 08:00:20')
+[2020-10-02 08:00:20]	SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'YourQuestions' at row 1
+[2020-10-02 10:00:53]	select * from _tbl_news where IsPublish='1'
+[2020-10-02 10:00:53]	select * from _tbl_news where IsPublish='1'
+[2020-10-02 15:06:28]	select * from _tbl_news where IsPublish='1'
+[2020-10-02 15:06:28]	select * from _tbl_news where IsPublish='1'
+[2020-10-02 20:23:57]	select * from _tbl_news where IsPublish='1'
+[2020-10-02 20:23:57]	select * from _tbl_news where IsPublish='1'
+[2020-10-02 23:30:01]	insert into `_tbl_payout_log` (`PayoutDate`,`CreatedOn`,`EndedOn`,`FileName`,`CompanyCollectedPV`,`TotalPayoutAmount`) values ('2020-10-02','2020-10-02 23:30:01','2020-10-02 23:30:01','temp_payout_2020_10_02_23_30_01.txt','0','0')
+[2020-10-02 23:30:01]	select * from `_tbl_Members` 
+                                            left Join  `_tbl_Settings_Packages`
+                                            On 
+                                            `_tbl_Members`.`ActivePackageID`= `_tbl_Settings_Packages`.`PackageID`
+                                            where date(`_tbl_Members`.`CreatedOn`)<=date('2020-10-02')
+[2020-10-02 23:30:01]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`='AstraFx00001'
+[2020-10-02 23:30:01]	select * from `_tblPlacements` where `ParentCode`='AFAST00002'
+[2020-10-02 23:30:01]	select * from `_tblPlacements` where `ParentCode`='AFAST00004'
+[2020-10-02 23:30:01]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`='AstraFx00001'
+[2020-10-02 23:30:01]	select * from `_tblPlacements` where `ParentCode`='AFAST00003'
+[2020-10-02 23:30:01]	select sum(DebitLeft) as DebitLeft, sum(DebitRight) as DebitRight  from _tbl_payoutsummary where MemberCode='AstraFx00001'
+[2020-10-02 23:30:01]	insert into `_tbl_payoutsummary` (`PayoutProcessDate`,`MemberID`,`MemberCode`,`TotalLeft`,`TodayLeft`,`TotalRight`,`TodayRight`,`DebitLeft`,`DebitRight`,`AvailableLeft`,`AvailableRight`,`RemainingLeft`,`RemainingRight`,`TodayPayoutPV`,`PackageName`,`PackageID`,`EligibleMinimumPayoutPV`,`EligibleMaximumPayoutPV`,`PayablePV`,`PayableAmount`,`CompanyLeft`,`CompanyRight`,`IsPayoutEligible`,`Charges`,`ChargeAmount`,`PayableAmountDebitCharge`,`processedon`) values ('2020-10-02','1','AstraFx00001','300','0','350','0','0','0','300','0','300','350','0','Forex 35','1','1','35','0','0','0','0','0','10%','0','0','2020-10-02 23:30:01')
+[2020-10-02 23:30:01]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`='AFAST00002'
+[2020-10-02 23:30:01]	select * from `_tblPlacements` where `ParentCode`='AFAST00004'
+[2020-10-02 23:30:01]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`='AFAST00002'
+[2020-10-02 23:30:01]	select sum(DebitLeft) as DebitLeft, sum(DebitRight) as DebitRight  from _tbl_payoutsummary where MemberCode='AFAST00002'
+[2020-10-02 23:30:01]	insert into `_tbl_payoutsummary` (`PayoutProcessDate`,`MemberID`,`MemberCode`,`TotalLeft`,`TodayLeft`,`TotalRight`,`TodayRight`,`DebitLeft`,`DebitRight`,`AvailableLeft`,`AvailableRight`,`RemainingLeft`,`RemainingRight`,`TodayPayoutPV`,`PackageName`,`PackageID`,`EligibleMinimumPayoutPV`,`EligibleMaximumPayoutPV`,`PayablePV`,`PayableAmount`,`CompanyLeft`,`CompanyRight`,`IsPayoutEligible`,`Charges`,`ChargeAmount`,`PayableAmountDebitCharge`,`processedon`) values ('2020-10-02','17','AFAST00002','150','0','0','0','0','0','150','0','150','0','0','Forex 150','16','1','100','0','0','0','0','0','10%','0','0','2020-10-02 23:30:01')
+[2020-10-02 23:30:01]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`='AFAST00003'
+[2020-10-02 23:30:01]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`='AFAST00003'
+[2020-10-02 23:30:01]	select sum(DebitLeft) as DebitLeft, sum(DebitRight) as DebitRight  from _tbl_payoutsummary where MemberCode='AFAST00003'
+[2020-10-02 23:30:01]	insert into `_tbl_payoutsummary` (`PayoutProcessDate`,`MemberID`,`MemberCode`,`TotalLeft`,`TodayLeft`,`TotalRight`,`TodayRight`,`DebitLeft`,`DebitRight`,`AvailableLeft`,`AvailableRight`,`RemainingLeft`,`RemainingRight`,`TodayPayoutPV`,`PackageName`,`PackageID`,`EligibleMinimumPayoutPV`,`EligibleMaximumPayoutPV`,`PayablePV`,`PayableAmount`,`CompanyLeft`,`CompanyRight`,`IsPayoutEligible`,`Charges`,`ChargeAmount`,`PayableAmountDebitCharge`,`processedon`) values ('2020-10-02','18','AFAST00003','0','0','0','0','0','0','0','0','0','0','0','Crypto 350','14','1','100','0','0','0','0','0','10%','0','0','2020-10-02 23:30:01')
+[2020-10-02 23:30:01]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`='AFAST00004'
+[2020-10-02 23:30:01]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`='AFAST00004'
+[2020-10-02 23:30:01]	select sum(DebitLeft) as DebitLeft, sum(DebitRight) as DebitRight  from _tbl_payoutsummary where MemberCode='AFAST00004'
+[2020-10-02 23:30:01]	insert into `_tbl_payoutsummary` (`PayoutProcessDate`,`MemberID`,`MemberCode`,`TotalLeft`,`TodayLeft`,`TotalRight`,`TodayRight`,`DebitLeft`,`DebitRight`,`AvailableLeft`,`AvailableRight`,`RemainingLeft`,`RemainingRight`,`TodayPayoutPV`,`PackageName`,`PackageID`,`EligibleMinimumPayoutPV`,`EligibleMaximumPayoutPV`,`PayablePV`,`PayableAmount`,`CompanyLeft`,`CompanyRight`,`IsPayoutEligible`,`Charges`,`ChargeAmount`,`PayableAmountDebitCharge`,`processedon`) values ('2020-10-02','19','AFAST00004','0','0','0','0','0','0','0','0','0','0','0','Forex 150','16','1','100','0','0','0','0','0','10%','0','0','2020-10-02 23:30:01')
+[2020-10-02 23:30:01]	select * from _roi_payments where date(ROI_DATE)=Date('2020-10-02') and ROI_TYPE='1'
+[2020-10-02 23:30:01]	select * from _roi_payments where date(ROI_DATE)=Date('2020-10-02') and ROI_TYPE='2'
+[2020-10-02 23:30:01]	update _tbl_payout_log set EndedOn='2020-10-02 23:30:01' where PayoutLogID='103'

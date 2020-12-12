@@ -1,0 +1,90 @@
+[2020-10-08 01:10:11]	select * from _tbl_news where IsPublish='1'
+[2020-10-08 01:10:11]	select * from _tbl_news where IsPublish='1'
+[2020-10-08 03:39:43]	select * from _tbl_news where IsPublish='1'
+[2020-10-08 03:39:43]	select * from _tbl_news where IsPublish='1'
+[2020-10-08 03:51:15]	select * from _tbl_news where IsPublish='1'
+[2020-10-08 03:51:15]	select * from _tbl_news where IsPublish='1'
+[2020-10-08 03:51:17]	insert into `_tbl_contact_us` (`ContactName`,`EmailID`,`Subject`,`YourQuestions`,`CreatedOn`) values ('Benard Anderson','benarda205@gmail.com','Assisting companies with loans','Good Day, 
+ 
+We are global trade finance experts who specialize in providing high-end, custom financial instruments from world banks! 
+ 
+You will have unlimited access to our network of world banks for all of your trade finance needs. 
+ 
+ESSEX TRADE & CAPITAL LLC will successfully fulfil your commercial real estate funding needs through 2 main advantages. We bring in decades of business and financing experience and we have the capacity to fund any operation, transaction or project, regardless of size or location. 
+ 
+We are much more flexible in our financing solutions and are committed to helping you reduce risk while increasing your cash flow at the same time. 
+ 
+Simple approval process 
+Fast business loans funded in just 3-5 business days 
+Low Interest rate of 2% 
+Prior bankruptcies accepted 
+Zero credit checks required 
+Flexible repayment schedules 
+CIS & KYC required for all loan applicant irrespective of location/country 
+Grace period of 4 months for large business loans/working capital 
+Loan Funding/Financing is not limited to any geographical location or country whatsoever. 
+ 
+We look forward to serving you while we grow our businesses together. 
+For more enquiries please call +16072611008 
+ 
+Sign: 
+Benard Anderson(Finance Broker/Consultant) 
+ESSEX TRADE & CAPITALS LLC 
+TRADE FINANCE / TRADE INSURANCE','2020-10-08 03:51:17')
+[2020-10-08 03:51:17]	SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'YourQuestions' at row 1
+[2020-10-08 08:03:19]	select * from _tbl_news where IsPublish='1'
+[2020-10-08 08:03:19]	select * from _tbl_news where IsPublish='1'
+[2020-10-08 08:07:00]	select * from _tbl_news where IsPublish='1'
+[2020-10-08 08:07:00]	select * from _tbl_news where IsPublish='1'
+[2020-10-08 08:07:03]	select * from _tbl_news where IsPublish='1'
+[2020-10-08 08:07:03]	select * from _tbl_news where IsPublish='1'
+[2020-10-08 14:38:04]	select * from _tbl_news where IsPublish='1' and NewsID='1'
+[2020-10-08 14:38:05]	select * from _tbl_news where IsPublish='1' and NewsID='1'[0]'
+[2020-10-08 14:38:05]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[0]'' at line 1
+[2020-10-08 22:43:12]	select * from _tbl_news where IsPublish='1'
+[2020-10-08 22:43:12]	select * from _tbl_news where IsPublish='1'
+[2020-10-08 23:30:02]	insert into `_tbl_payout_log` (`PayoutDate`,`CreatedOn`,`EndedOn`,`FileName`,`CompanyCollectedPV`,`TotalPayoutAmount`) values ('2020-10-08','2020-10-08 23:30:02','2020-10-08 23:30:02','temp_payout_2020_10_08_23_30_02.txt','0','0')
+[2020-10-08 23:30:02]	select * from `_tbl_Members` 
+                                            left Join  `_tbl_Settings_Packages`
+                                            On 
+                                            `_tbl_Members`.`ActivePackageID`= `_tbl_Settings_Packages`.`PackageID`
+                                            where date(`_tbl_Members`.`CreatedOn`)<=date('2020-10-08')
+[2020-10-08 23:30:02]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`='AstraFx00001'
+[2020-10-08 23:30:02]	select * from `_tblPlacements` where `ParentCode`='AFAST00002'
+[2020-10-08 23:30:02]	select * from `_tblPlacements` where `ParentCode`='AFAST00004'
+[2020-10-08 23:30:02]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`='AstraFx00001'
+[2020-10-08 23:30:02]	select * from `_tblPlacements` where `ParentCode`='AFAST00003'
+[2020-10-08 23:30:02]	select sum(DebitLeft) as DebitLeft, sum(DebitRight) as DebitRight  from _tbl_payoutsummary where MemberCode='AstraFx00001'
+[2020-10-08 23:30:02]	insert into `_tbl_payoutsummary` (`PayoutProcessDate`,`MemberID`,`MemberCode`,`TotalLeft`,`TodayLeft`,`TotalRight`,`TodayRight`,`DebitLeft`,`DebitRight`,`AvailableLeft`,`AvailableRight`,`RemainingLeft`,`RemainingRight`,`TodayPayoutPV`,`PackageName`,`PackageID`,`EligibleMinimumPayoutPV`,`EligibleMaximumPayoutPV`,`PayablePV`,`PayableAmount`,`CompanyLeft`,`CompanyRight`,`IsPayoutEligible`,`Charges`,`ChargeAmount`,`PayableAmountDebitCharge`,`processedon`) values ('2020-10-08','1','AstraFx00001','300','0','350','0','0','0','300','0','300','350','0','Forex 35','1','1','35','0','0','0','0','0','10%','0','0','2020-10-08 23:30:02')
+[2020-10-08 23:30:02]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`='AFAST00002'
+[2020-10-08 23:30:02]	select * from `_tblPlacements` where `ParentCode`='AFAST00004'
+[2020-10-08 23:30:02]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`='AFAST00002'
+[2020-10-08 23:30:02]	select sum(DebitLeft) as DebitLeft, sum(DebitRight) as DebitRight  from _tbl_payoutsummary where MemberCode='AFAST00002'
+[2020-10-08 23:30:02]	insert into `_tbl_payoutsummary` (`PayoutProcessDate`,`MemberID`,`MemberCode`,`TotalLeft`,`TodayLeft`,`TotalRight`,`TodayRight`,`DebitLeft`,`DebitRight`,`AvailableLeft`,`AvailableRight`,`RemainingLeft`,`RemainingRight`,`TodayPayoutPV`,`PackageName`,`PackageID`,`EligibleMinimumPayoutPV`,`EligibleMaximumPayoutPV`,`PayablePV`,`PayableAmount`,`CompanyLeft`,`CompanyRight`,`IsPayoutEligible`,`Charges`,`ChargeAmount`,`PayableAmountDebitCharge`,`processedon`) values ('2020-10-08','17','AFAST00002','150','0','0','0','0','0','150','0','150','0','0','Forex 150','16','1','100','0','0','0','0','0','10%','0','0','2020-10-08 23:30:02')
+[2020-10-08 23:30:02]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`='AFAST00003'
+[2020-10-08 23:30:02]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`='AFAST00003'
+[2020-10-08 23:30:02]	select sum(DebitLeft) as DebitLeft, sum(DebitRight) as DebitRight  from _tbl_payoutsummary where MemberCode='AFAST00003'
+[2020-10-08 23:30:02]	insert into `_tbl_payoutsummary` (`PayoutProcessDate`,`MemberID`,`MemberCode`,`TotalLeft`,`TodayLeft`,`TotalRight`,`TodayRight`,`DebitLeft`,`DebitRight`,`AvailableLeft`,`AvailableRight`,`RemainingLeft`,`RemainingRight`,`TodayPayoutPV`,`PackageName`,`PackageID`,`EligibleMinimumPayoutPV`,`EligibleMaximumPayoutPV`,`PayablePV`,`PayableAmount`,`CompanyLeft`,`CompanyRight`,`IsPayoutEligible`,`Charges`,`ChargeAmount`,`PayableAmountDebitCharge`,`processedon`) values ('2020-10-08','18','AFAST00003','0','0','0','0','0','0','0','0','0','0','0','Crypto 350','14','1','100','0','0','0','0','0','10%','0','0','2020-10-08 23:30:02')
+[2020-10-08 23:30:02]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`='AFAST00004'
+[2020-10-08 23:30:02]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`='AFAST00004'
+[2020-10-08 23:30:02]	select sum(DebitLeft) as DebitLeft, sum(DebitRight) as DebitRight  from _tbl_payoutsummary where MemberCode='AFAST00004'
+[2020-10-08 23:30:02]	insert into `_tbl_payoutsummary` (`PayoutProcessDate`,`MemberID`,`MemberCode`,`TotalLeft`,`TodayLeft`,`TotalRight`,`TodayRight`,`DebitLeft`,`DebitRight`,`AvailableLeft`,`AvailableRight`,`RemainingLeft`,`RemainingRight`,`TodayPayoutPV`,`PackageName`,`PackageID`,`EligibleMinimumPayoutPV`,`EligibleMaximumPayoutPV`,`PayablePV`,`PayableAmount`,`CompanyLeft`,`CompanyRight`,`IsPayoutEligible`,`Charges`,`ChargeAmount`,`PayableAmountDebitCharge`,`processedon`) values ('2020-10-08','19','AFAST00004','0','0','0','0','0','0','0','0','0','0','0','Forex 150','16','1','100','0','0','0','0','0','10%','0','0','2020-10-08 23:30:02')
+[2020-10-08 23:30:02]	select * from _roi_payments where date(ROI_DATE)=Date('2020-10-08') and ROI_TYPE='1'
+[2020-10-08 23:30:02]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID='17'
+[2020-10-08 23:30:02]	insert into `_tbl_wallet_earnings` (`MemberID`,`MemberCode`,`Particulars`,`TxnDate`,`Credits`,`Debits`,`AvailableBalance`,`Ledger`,`details`) values ('17','AFAST00002','Package ROI  On2020-10-08','2020-10-08 23:30:02','3.00','0','159.6','2','')
+[2020-10-08 23:30:02]	insert into `_tbl_wallet_earnings` (`MemberID`,`MemberCode`,`Particulars`,`TxnDate`,`Credits`,`Debits`,`AvailableBalance`,`Ledger`,`details`) values ('17','AFAST00002','Charge 10% Package ROI on 2020-10-08','2020-10-08 23:30:02','0','0.3','159.3','20001','')
+[2020-10-08 23:30:02]	update _roi_payments set IsSettled='1',SettledOn='2020-10-08 23:30:02', AccountTxnID='678', ChargesPercentage='10', ChargeAmount='0.3',CreditToWallet='2.7' where ROIID='754'
+[2020-10-08 23:30:02]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID='19'
+[2020-10-08 23:30:02]	insert into `_tbl_wallet_earnings` (`MemberID`,`MemberCode`,`Particulars`,`TxnDate`,`Credits`,`Debits`,`AvailableBalance`,`Ledger`,`details`) values ('19','AFAST00004','Package ROI  On2020-10-08','2020-10-08 23:30:02','3.00','0','151.5','2','')
+[2020-10-08 23:30:02]	insert into `_tbl_wallet_earnings` (`MemberID`,`MemberCode`,`Particulars`,`TxnDate`,`Credits`,`Debits`,`AvailableBalance`,`Ledger`,`details`) values ('19','AFAST00004','Charge 10% Package ROI on 2020-10-08','2020-10-08 23:30:02','0','0.3','151.2','20001','')
+[2020-10-08 23:30:02]	update _roi_payments set IsSettled='1',SettledOn='2020-10-08 23:30:02', AccountTxnID='680', ChargesPercentage='10', ChargeAmount='0.3',CreditToWallet='2.7' where ROIID='1015'
+[2020-10-08 23:30:02]	select * from _roi_payments where date(ROI_DATE)=Date('2020-10-08') and ROI_TYPE='2'
+[2020-10-08 23:30:02]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID='1'
+[2020-10-08 23:30:02]	insert into `_tbl_wallet_earnings` (`MemberID`,`MemberCode`,`Particulars`,`TxnDate`,`Credits`,`Debits`,`AvailableBalance`,`Ledger`,`details`) values ('1','AstraFx00001','Referral ROI  On 2020-10-08','2020-10-08 23:30:02','0.75','0','764.4','4','')
+[2020-10-08 23:30:02]	insert into `_tbl_wallet_earnings` (`MemberID`,`MemberCode`,`Particulars`,`TxnDate`,`Credits`,`Debits`,`AvailableBalance`,`Ledger`,`details`) values ('1','AstraFx00001','Charge 10% Referral ROI on 2020-10-08','2020-10-08 23:30:02','0','0.075','764.325','40001','')
+[2020-10-08 23:30:02]	update _roi_payments set IsSettled='1',SettledOn='2020-10-08 23:30:02', AccountTxnID='682', ChargesPercentage='10', ChargeAmount='0.075',CreditToWallet='0.675' where ROIID='847'
+[2020-10-08 23:30:02]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID='1'
+[2020-10-08 23:30:02]	insert into `_tbl_wallet_earnings` (`MemberID`,`MemberCode`,`Particulars`,`TxnDate`,`Credits`,`Debits`,`AvailableBalance`,`Ledger`,`details`) values ('1','AstraFx00001','Referral ROI  On 2020-10-08','2020-10-08 23:30:02','0.75','0','765.075','4','')
+[2020-10-08 23:30:02]	insert into `_tbl_wallet_earnings` (`MemberID`,`MemberCode`,`Particulars`,`TxnDate`,`Credits`,`Debits`,`AvailableBalance`,`Ledger`,`details`) values ('1','AstraFx00001','Charge 10% Referral ROI on 2020-10-08','2020-10-08 23:30:02','0','0.075','765','40001','')
+[2020-10-08 23:30:02]	update _roi_payments set IsSettled='1',SettledOn='2020-10-08 23:30:02', AccountTxnID='684', ChargesPercentage='10', ChargeAmount='0.075',CreditToWallet='0.675' where ROIID='1108'
+[2020-10-08 23:30:02]	update _tbl_payout_log set EndedOn='2020-10-08 23:30:02' where PayoutLogID='109'
