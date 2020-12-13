@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteRule ^([a-zA-Z0-9_-]+)$ index.php?wpage=$1
+RewriteRule ^product/([^/.]+)/?$ index.php?product=$1 
+RewriteRule ^list/([^/.]+)/?$ index.php?list=$1 
+RewriteRule ^p/([^/.]+)/?$ index.php?page=$1 
+RewriteRule ^tba/([^/.]+)/?$ index.php?tba=$1 
+RewriteRule ^bba/([^/.]+)/?$ index.php?bba=$1 
+RewriteRule ^buynow/([^/.]+)/?$ index.php?buynow=$1 
+ 
+                                                                               

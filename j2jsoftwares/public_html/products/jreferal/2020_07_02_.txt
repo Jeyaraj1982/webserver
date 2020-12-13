@@ -1,0 +1,1 @@
+[2020-07-02 17:19:33]	select * from _clients where isactive=1 and isblock=0 order by activatedon desc limit 0,12

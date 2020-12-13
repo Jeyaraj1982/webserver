@@ -1,0 +1,14 @@
+[06-Nov-2016 00:47:43 Etc/GMT] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/abcaduac/public_html/domains/wincashdeal.com/classes/mysql.php on line 19
+[06-Nov-2016 00:47:43 Etc/GMT] PHP Notice:  Undefined variable: post in /home/abcaduac/public_html/domains/wincashdeal.com/dm-admin/shopping_new.php on line 108
+[06-Nov-2016 00:48:01 Etc/GMT] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/abcaduac/public_html/domains/wincashdeal.com/classes/mysql.php on line 19
+[06-Nov-2016 00:48:05 Etc/GMT] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/abcaduac/public_html/domains/wincashdeal.com/classes/mysql.php on line 19
+[06-Nov-2016 00:48:05 Etc/GMT] PHP Notice:  Undefined variable: c in /home/abcaduac/public_html/domains/wincashdeal.com/dm-admin/viewInvoice.php on line 68
+[06-Nov-2016 00:48:06 Etc/GMT] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/abcaduac/public_html/domains/wincashdeal.com/classes/mysql.php on line 19
+[06-Nov-2016 00:48:06 Etc/GMT] PHP Notice:  Undefined variable: c in /home/abcaduac/public_html/domains/wincashdeal.com/dm-admin/viewInvoice.php on line 68
+[06-Nov-2016 00:49:14 Etc/GMT] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/abcaduac/public_html/domains/wincashdeal.com/classes/mysql.php on line 19
+[06-Nov-2016 00:49:14 Etc/GMT] PHP Notice:  Undefined variable: post in /home/abcaduac/public_html/domains/wincashdeal.com/dm-admin/shopping_new.php on line 108
+[06-Nov-2016 00:49:21 Etc/GMT] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/abcaduac/public_html/domains/wincashdeal.com/classes/mysql.php on line 19
+[06-Nov-2016 07:33:25 Etc/GMT] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/abcaduac/public_html/domains/wincashdeal.com/classes/mysql.php on line 19
+[06-Nov-2016 07:33:25 Etc/GMT] PHP Notice:  Undefined variable: post in /home/abcaduac/public_html/domains/wincashdeal.com/dm-admin/shopping_new.php on line 108
+[19-Nov-2016 13:09:35 Etc/GMT] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/abcaduac/public_html/domains/wincashdeal.com/classes/mysql.php on line 19
+[19-Nov-2016 13:09:35 Etc/GMT] PHP Notice:  Undefined variable: post in /home/abcaduac/public_html/domains/wincashdeal.com/dm-admin/shopping_new.php on line 108

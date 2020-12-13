@@ -1,0 +1,4 @@
+[2020-07-06 06:55:53]	select * from _clients where isactive=1 and isblock=0 order by activatedon desc limit 0,12
+[2020-07-06 06:55:55]	select * from _clients where isactive=1 and isblock=0 order by activatedon desc limit 0,12
+[2020-07-06 06:55:56]	select * from _clients where isactive=1 and isblock=0 order by activatedon desc limit 0,12
+[2020-07-06 06:55:57]	select * from _clients where isactive=1 and isblock=0 order by activatedon desc limit 0,12

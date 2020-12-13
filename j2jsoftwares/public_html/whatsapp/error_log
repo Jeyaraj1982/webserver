@@ -1,0 +1,79 @@
+[27-May-2020 15:52:53 UTC] PHP Warning:  require_once(src/autoload.php): failed to open stream: No such file or directory in /home/j2jsoftware/public_html/whatsapp/index.php on line 5
+[27-May-2020 15:52:53 UTC] PHP Fatal error:  require_once(): Failed opening required 'src/autoload.php' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/j2jsoftware/public_html/whatsapp/index.php on line 5
+[27-May-2020 15:53:34 UTC] PHP Fatal error:  Uncaught Twilio\Exceptions\RestException: [HTTP 400] Unable to create record: Twilio could not find a Channel with the specified From address in /home/j2jsoftware/public_html/whatsapp/Twilio/Version.php:85
+Stack trace:
+#0 /home/j2jsoftware/public_html/whatsapp/Twilio/Version.php(219): Twilio\Version->exception(Object(Twilio\Http\Response), 'Unable to creat...')
+#1 /home/j2jsoftware/public_html/whatsapp/Twilio/Rest/Api/V2010/Account/MessageList.php(67): Twilio\Version->create('POST', '/Accounts/AC0c6...', Array, Array)
+#2 /home/j2jsoftware/public_html/whatsapp/index.php(19): Twilio\Rest\Api\V2010\Account\MessageList->create('whatsapp:+91994...', Object(Twilio\Values))
+#3 {main}
+  thrown in /home/j2jsoftware/public_html/whatsapp/Twilio/Version.php on line 85
+[27-May-2020 15:54:13 UTC] PHP Fatal error:  Uncaught Twilio\Exceptions\RestException: [HTTP 400] Unable to create record: Twilio could not find a Channel with the specified From address in /home/j2jsoftware/public_html/whatsapp/Twilio/Version.php:85
+Stack trace:
+#0 /home/j2jsoftware/public_html/whatsapp/Twilio/Version.php(219): Twilio\Version->exception(Object(Twilio\Http\Response), 'Unable to creat...')
+#1 /home/j2jsoftware/public_html/whatsapp/Twilio/Rest/Api/V2010/Account/MessageList.php(67): Twilio\Version->create('POST', '/Accounts/AC0c6...', Array, Array)
+#2 /home/j2jsoftware/public_html/whatsapp/index.php(21): Twilio\Rest\Api\V2010\Account\MessageList->create('whatsapp:+91994...', Object(Twilio\Values))
+#3 {main}
+  thrown in /home/j2jsoftware/public_html/whatsapp/Twilio/Version.php on line 85
+[27-May-2020 15:54:28 UTC] PHP Fatal error:  Uncaught Twilio\Exceptions\RestException: [HTTP 400] Unable to create record: Twilio could not find a Channel with the specified From address in /home/j2jsoftware/public_html/whatsapp/Twilio/Version.php:85
+Stack trace:
+#0 /home/j2jsoftware/public_html/whatsapp/Twilio/Version.php(219): Twilio\Version->exception(Object(Twilio\Http\Response), 'Unable to creat...')
+#1 /home/j2jsoftware/public_html/whatsapp/Twilio/Rest/Api/V2010/Account/MessageList.php(67): Twilio\Version->create('POST', '/Accounts/AC0c6...', Array, Array)
+#2 /home/j2jsoftware/public_html/whatsapp/index.php(21): Twilio\Rest\Api\V2010\Account\MessageList->create('whatsapp:+91994...', Object(Twilio\Values))
+#3 {main}
+  thrown in /home/j2jsoftware/public_html/whatsapp/Twilio/Version.php on line 85
+[27-May-2020 15:55:36 UTC] PHP Fatal error:  Uncaught Twilio\Exceptions\RestException: [HTTP 400] Unable to create record: AccountSid SKc7e6a5b86390ef73495ec96f7818e764 is invalid in /home/j2jsoftware/public_html/whatsapp/Twilio/Version.php:85
+Stack trace:
+#0 /home/j2jsoftware/public_html/whatsapp/Twilio/Version.php(219): Twilio\Version->exception(Object(Twilio\Http\Response), 'Unable to creat...')
+#1 /home/j2jsoftware/public_html/whatsapp/Twilio/Rest/Api/V2010/Account/MessageList.php(67): Twilio\Version->create('POST', '/Accounts/SKc7e...', Array, Array)
+#2 /home/j2jsoftware/public_html/whatsapp/index.php(23): Twilio\Rest\Api\V2010\Account\MessageList->create('whatsapp:+91994...', Object(Twilio\Values))
+#3 {main}
+  thrown in /home/j2jsoftware/public_html/whatsapp/Twilio/Version.php on line 85
+[27-May-2020 16:02:33 UTC] PHP Fatal error:  Uncaught Twilio\Exceptions\RestException: [HTTP 400] Unable to create record: Twilio could not find a Channel with the specified From address in /home/j2jsoftware/public_html/whatsapp/Twilio/Version.php:85
+Stack trace:
+#0 /home/j2jsoftware/public_html/whatsapp/Twilio/Version.php(219): Twilio\Version->exception(Object(Twilio\Http\Response), 'Unable to creat...')
+#1 /home/j2jsoftware/public_html/whatsapp/Twilio/Rest/Api/V2010/Account/MessageList.php(67): Twilio\Version->create('POST', '/Accounts/AC0c6...', Array, Array)
+#2 /home/j2jsoftware/public_html/whatsapp/index.php(21): Twilio\Rest\Api\V2010\Account\MessageList->create('whatsapp:+91994...', Object(Twilio\Values))
+#3 {main}
+  thrown in /home/j2jsoftware/public_html/whatsapp/Twilio/Version.php on line 85
+[27-May-2020 16:03:30 UTC] PHP Fatal error:  Uncaught Twilio\Exceptions\RestException: [HTTP 400] Unable to create record: Twilio could not find a Channel with the specified From address in /home/j2jsoftware/public_html/whatsapp/Twilio/Version.php:85
+Stack trace:
+#0 /home/j2jsoftware/public_html/whatsapp/Twilio/Version.php(219): Twilio\Version->exception(Object(Twilio\Http\Response), 'Unable to creat...')
+#1 /home/j2jsoftware/public_html/whatsapp/Twilio/Rest/Api/V2010/Account/MessageList.php(67): Twilio\Version->create('POST', '/Accounts/AC0c6...', Array, Array)
+#2 /home/j2jsoftware/public_html/whatsapp/index.php(21): Twilio\Rest\Api\V2010\Account\MessageList->create('whatsapp:+91994...', Object(Twilio\Values))
+#3 {main}
+  thrown in /home/j2jsoftware/public_html/whatsapp/Twilio/Version.php on line 85
+[27-May-2020 16:07:43 UTC] PHP Fatal error:  Uncaught Twilio\Exceptions\RestException: [HTTP 400] Unable to create record: Twilio could not find a Channel with the specified From address in /home/j2jsoftware/public_html/whatsapp/Twilio/Version.php:85
+Stack trace:
+#0 /home/j2jsoftware/public_html/whatsapp/Twilio/Version.php(219): Twilio\Version->exception(Object(Twilio\Http\Response), 'Unable to creat...')
+#1 /home/j2jsoftware/public_html/whatsapp/Twilio/Rest/Api/V2010/Account/MessageList.php(67): Twilio\Version->create('POST', '/Accounts/AC0c6...', Array, Array)
+#2 /home/j2jsoftware/public_html/whatsapp/index.php(21): Twilio\Rest\Api\V2010\Account\MessageList->create('whatsapp:+91994...', Object(Twilio\Values))
+#3 {main}
+  thrown in /home/j2jsoftware/public_html/whatsapp/Twilio/Version.php on line 85
+[27-May-2020 16:07:54 UTC] PHP Fatal error:  Uncaught Twilio\Exceptions\RestException: [HTTP 400] Unable to create record: Twilio could not find a Channel with the specified From address in /home/j2jsoftware/public_html/whatsapp/Twilio/Version.php:85
+Stack trace:
+#0 /home/j2jsoftware/public_html/whatsapp/Twilio/Version.php(219): Twilio\Version->exception(Object(Twilio\Http\Response), 'Unable to creat...')
+#1 /home/j2jsoftware/public_html/whatsapp/Twilio/Rest/Api/V2010/Account/MessageList.php(67): Twilio\Version->create('POST', '/Accounts/AC0c6...', Array, Array)
+#2 /home/j2jsoftware/public_html/whatsapp/index.php(21): Twilio\Rest\Api\V2010\Account\MessageList->create('whatsapp:+91994...', Object(Twilio\Values))
+#3 {main}
+  thrown in /home/j2jsoftware/public_html/whatsapp/Twilio/Version.php on line 85
+[27-May-2020 16:10:52 UTC] PHP Fatal error:  Uncaught Twilio\Exceptions\RestException: [HTTP 400] Unable to create record: The From phone number +14155238886 is not a valid, SMS-capable inbound phone number or short code for your account. in /home/j2jsoftware/public_html/whatsapp/Twilio/Version.php:85
+Stack trace:
+#0 /home/j2jsoftware/public_html/whatsapp/Twilio/Version.php(219): Twilio\Version->exception(Object(Twilio\Http\Response), 'Unable to creat...')
+#1 /home/j2jsoftware/public_html/whatsapp/Twilio/Rest/Api/V2010/Account/MessageList.php(67): Twilio\Version->create('POST', '/Accounts/AC0c6...', Array, Array)
+#2 /home/j2jsoftware/public_html/whatsapp/index.php(23): Twilio\Rest\Api\V2010\Account\MessageList->create('+919944872965', Object(Twilio\Values))
+#3 {main}
+  thrown in /home/j2jsoftware/public_html/whatsapp/Twilio/Version.php on line 85
+[27-May-2020 16:11:09 UTC] PHP Fatal error:  Uncaught Twilio\Exceptions\RestException: [HTTP 400] Unable to create record: Twilio could not find a Channel with the specified From address in /home/j2jsoftware/public_html/whatsapp/Twilio/Version.php:85
+Stack trace:
+#0 /home/j2jsoftware/public_html/whatsapp/Twilio/Version.php(219): Twilio\Version->exception(Object(Twilio\Http\Response), 'Unable to creat...')
+#1 /home/j2jsoftware/public_html/whatsapp/Twilio/Rest/Api/V2010/Account/MessageList.php(67): Twilio\Version->create('POST', '/Accounts/AC0c6...', Array, Array)
+#2 /home/j2jsoftware/public_html/whatsapp/index.php(23): Twilio\Rest\Api\V2010\Account\MessageList->create('whatsapp:+91994...', Object(Twilio\Values))
+#3 {main}
+  thrown in /home/j2jsoftware/public_html/whatsapp/Twilio/Version.php on line 85
+[27-May-2020 16:38:45 UTC] PHP Fatal error:  Uncaught Twilio\Exceptions\RestException: [HTTP 400] Unable to create record: Twilio could not find a Channel with the specified From address in /home/j2jsoftware/public_html/whatsapp/Twilio/Version.php:85
+Stack trace:
+#0 /home/j2jsoftware/public_html/whatsapp/Twilio/Version.php(219): Twilio\Version->exception(Object(Twilio\Http\Response), 'Unable to creat...')
+#1 /home/j2jsoftware/public_html/whatsapp/Twilio/Rest/Api/V2010/Account/MessageList.php(67): Twilio\Version->create('POST', '/Accounts/ACac9...', Array, Array)
+#2 /home/j2jsoftware/public_html/whatsapp/index.php(25): Twilio\Rest\Api\V2010\Account\MessageList->create('whatsapp:+91994...', Object(Twilio\Values))
+#3 {main}
+  thrown in /home/j2jsoftware/public_html/whatsapp/Twilio/Version.php on line 85

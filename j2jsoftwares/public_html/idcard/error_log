@@ -1,0 +1,54 @@
+[23-May-2020 05:03:26 UTC] PHP Warning:  imagecreatefrompng(): 'img/id.png' is not a valid PNG file in /home/j2jsoftware/public_html/idcard/idgen.php on line 49
+[23-May-2020 05:03:26 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/j2jsoftware/public_html/idcard/idgen.php on line 61
+[23-May-2020 05:03:26 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/j2jsoftware/public_html/idcard/idgen.php on line 62
+[23-May-2020 05:03:26 UTC] PHP Warning:  imagecopymerge() expects parameter 1 to be resource, boolean given in /home/j2jsoftware/public_html/idcard/idgen.php on line 65
+[23-May-2020 05:03:26 UTC] PHP Warning:  imagepng() expects parameter 1 to be resource, boolean given in /home/j2jsoftware/public_html/idcard/idgen.php on line 68
+[23-May-2020 05:03:26 UTC] PHP Warning:  imagedestroy() expects parameter 1 to be resource, boolean given in /home/j2jsoftware/public_html/idcard/idgen.php on line 69
+[26-May-2020 00:55:32 UTC] PHP Warning:  imagecreatefrompng(img/id.png): failed to open stream: No such file or directory in /home/j2jsoftware/public_html/idcard/idgen.php on line 55
+[26-May-2020 00:55:32 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/j2jsoftware/public_html/idcard/idgen.php on line 67
+[26-May-2020 00:55:32 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/j2jsoftware/public_html/idcard/idgen.php on line 68
+[26-May-2020 00:55:32 UTC] PHP Warning:  imagecopymerge() expects parameter 1 to be resource, boolean given in /home/j2jsoftware/public_html/idcard/idgen.php on line 71
+[26-May-2020 00:55:32 UTC] PHP Warning:  imagepng() expects parameter 1 to be resource, boolean given in /home/j2jsoftware/public_html/idcard/idgen.php on line 74
+[26-May-2020 00:55:32 UTC] PHP Warning:  imagedestroy() expects parameter 1 to be resource, boolean given in /home/j2jsoftware/public_html/idcard/idgen.php on line 75
+[26-May-2020 02:11:09 UTC] PHP Warning:  imagepng(phpqrcode/temp/test7138a179234e8f9529e83521edcfe217.png): failed to open stream: Permission denied in /home/j2jsoftware/public_html/idcard/phpqrcode/qrimage.php on line 43
+[26-May-2020 02:11:09 UTC] PHP Warning:  imagecreatefromjpeg(phpqrcode/temp/test7138a179234e8f9529e83521edcfe217.png): failed to open stream: No such file or directory in /home/j2jsoftware/public_html/idcard/idgen.php on line 81
+[26-May-2020 02:11:09 UTC] PHP Warning:  getimagesize(phpqrcode/temp/test7138a179234e8f9529e83521edcfe217.png): failed to open stream: No such file or directory in /home/j2jsoftware/public_html/idcard/idgen.php on line 83
+[26-May-2020 02:11:09 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/j2jsoftware/public_html/idcard/idgen.php on line 88
+[26-May-2020 02:12:35 UTC] PHP Warning:  imagepng(phpqrcode/temp/test00cd5e8799ef2cb8f132e0cfee766167.png): failed to open stream: Permission denied in /home/j2jsoftware/public_html/idcard/phpqrcode/qrimage.php on line 43
+[26-May-2020 02:12:35 UTC] PHP Warning:  imagecreatefromjpeg(phpqrcode/temp/test00cd5e8799ef2cb8f132e0cfee766167.png): failed to open stream: No such file or directory in /home/j2jsoftware/public_html/idcard/idgen.php on line 78
+[26-May-2020 02:12:35 UTC] PHP Warning:  getimagesize(phpqrcode/temp/test00cd5e8799ef2cb8f132e0cfee766167.png): failed to open stream: No such file or directory in /home/j2jsoftware/public_html/idcard/idgen.php on line 80
+[26-May-2020 02:12:35 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/j2jsoftware/public_html/idcard/idgen.php on line 85
+[26-May-2020 02:13:29 UTC] PHP Warning:  imagepng(/home/j2jsoftware/public_html/idcard/phpqrcode/temp/test00cd5e8799ef2cb8f132e0cfee766167.png): failed to open stream: Permission denied in /home/j2jsoftware/public_html/idcard/phpqrcode/qrimage.php on line 43
+[26-May-2020 02:13:29 UTC] PHP Warning:  imagecreatefromjpeg(/home/j2jsoftware/public_html/idcard/phpqrcode/temp/test00cd5e8799ef2cb8f132e0cfee766167.png): failed to open stream: No such file or directory in /home/j2jsoftware/public_html/idcard/idgen.php on line 78
+[26-May-2020 02:13:29 UTC] PHP Warning:  getimagesize(/home/j2jsoftware/public_html/idcard/phpqrcode/temp/test00cd5e8799ef2cb8f132e0cfee766167.png): failed to open stream: No such file or directory in /home/j2jsoftware/public_html/idcard/idgen.php on line 80
+[26-May-2020 02:13:29 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/j2jsoftware/public_html/idcard/idgen.php on line 85
+[26-May-2020 02:17:27 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error: Not a JPEG file: starts with 0x89 0x50 in /home/j2jsoftware/public_html/idcard/idgen.php on line 78
+[26-May-2020 02:17:27 UTC] PHP Warning:  imagecreatefromjpeg(): 'phpqrcode/temp/test00cd5e8799ef2cb8f132e0cfee766167.png' is not a valid JPEG file in /home/j2jsoftware/public_html/idcard/idgen.php on line 78
+[26-May-2020 02:17:27 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/j2jsoftware/public_html/idcard/idgen.php on line 85
+[26-May-2020 02:19:44 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error: Not a JPEG file: starts with 0x89 0x50 in /home/j2jsoftware/public_html/idcard/idgen.php on line 78
+[26-May-2020 02:19:44 UTC] PHP Warning:  imagecreatefromjpeg(): 'phpqrcode/temp/test00cd5e8799ef2cb8f132e0cfee766167.png' is not a valid JPEG file in /home/j2jsoftware/public_html/idcard/idgen.php on line 78
+[26-May-2020 02:19:44 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/j2jsoftware/public_html/idcard/idgen.php on line 85
+[26-May-2020 02:20:57 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error: Not a JPEG file: starts with 0x89 0x50 in /home/j2jsoftware/public_html/idcard/idgen.php on line 79
+[26-May-2020 02:20:57 UTC] PHP Warning:  imagecreatefromjpeg(): 'phpqrcode/temp/test00cd5e8799ef2cb8f132e0cfee766167.png' is not a valid JPEG file in /home/j2jsoftware/public_html/idcard/idgen.php on line 79
+[26-May-2020 02:20:57 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/j2jsoftware/public_html/idcard/idgen.php on line 86
+[26-May-2020 02:21:40 UTC] PHP Warning:  include(/home/j2jsoftware/public_html/idcard/phpqrcode/phpqrcode/qrlib.php): failed to open stream: No such file or directory in /home/j2jsoftware/public_html/idcard/idgen.php on line 45
+[26-May-2020 02:21:40 UTC] PHP Warning:  include(): Failed opening '/home/j2jsoftware/public_html/idcard/phpqrcode/phpqrcode/qrlib.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/j2jsoftware/public_html/idcard/idgen.php on line 45
+[26-May-2020 02:21:40 UTC] PHP Fatal error:  Uncaught Error: Class 'QRcode' not found in /home/j2jsoftware/public_html/idcard/idgen.php:51
+Stack trace:
+#0 /home/j2jsoftware/public_html/idcard/index.php(3): include_once()
+#1 {main}
+  thrown in /home/j2jsoftware/public_html/idcard/idgen.php on line 51
+[26-May-2020 02:22:03 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error: Not a JPEG file: starts with 0x89 0x50 in /home/j2jsoftware/public_html/idcard/idgen.php on line 80
+[26-May-2020 02:22:03 UTC] PHP Warning:  imagecreatefromjpeg(): '/home/j2jsoftware/public_html/idcard/phpqrcode/temp/test00cd5e8799ef2cb8f132e0cfee766167.png' is not a valid JPEG file in /home/j2jsoftware/public_html/idcard/idgen.php on line 80
+[26-May-2020 02:22:03 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/j2jsoftware/public_html/idcard/idgen.php on line 87
+[26-May-2020 02:22:14 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error: Not a JPEG file: starts with 0x89 0x50 in /home/j2jsoftware/public_html/idcard/idgen.php on line 80
+[26-May-2020 02:22:14 UTC] PHP Warning:  imagecreatefromjpeg(): '/home/j2jsoftware/public_html/idcard/phpqrcode/temp/test00cd5e8799ef2cb8f132e0cfee766167.png' is not a valid JPEG file in /home/j2jsoftware/public_html/idcard/idgen.php on line 80
+[26-May-2020 02:22:14 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/j2jsoftware/public_html/idcard/idgen.php on line 87
+[26-May-2020 02:24:44 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error: Not a JPEG file: starts with 0x89 0x50 in /home/j2jsoftware/public_html/idcard/idgen.php on line 81
+[26-May-2020 02:24:44 UTC] PHP Warning:  imagecreatefromjpeg(): 'phpqrcode/temp/abcdefghijkl_b50a24dc1f6e5166286e247b1ed71014.png' is not a valid JPEG file in /home/j2jsoftware/public_html/idcard/idgen.php on line 81
+[26-May-2020 02:24:44 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/j2jsoftware/public_html/idcard/idgen.php on line 88
+[26-May-2020 06:24:19 UTC] PHP Warning:  imagecopymerge() expects parameter 2 to be resource, string given in /home/j2jsoftware/public_html/idcard/idgen2.php on line 125
+[26-May-2020 06:27:02 UTC] PHP Warning:  imagecopymerge() expects parameter 2 to be resource, string given in /home/j2jsoftware/public_html/idcard/idgen2.php on line 125
+[26-May-2020 06:27:59 UTC] PHP Warning:  imagecopymerge() expects parameter 2 to be resource, string given in /home/j2jsoftware/public_html/idcard/idgen2.php on line 125
+[26-May-2020 06:29:53 UTC] PHP Warning:  imagecopymerge() expects exactly 9 parameters, 10 given in /home/j2jsoftware/public_html/idcard/idgen2.php on line 125
+[26-May-2020 08:43:53 UTC] PHP Warning:  imagepng(barcode/temp/): failed to open stream: Is a directory in /home/j2jsoftware/public_html/idcard/barcode/barcode.php on line 462

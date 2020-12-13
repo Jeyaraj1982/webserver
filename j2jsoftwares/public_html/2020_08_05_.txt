@@ -1,0 +1,2 @@
+[2020-08-05 14:09:55]	select * from _customers where CusEmail='filmdirectorjk37@gmail.com' and CusPassword='123456'
+[2020-08-05 14:09:55]	insert into `_customers_login_logs` (`CustomerID`,`LoggedOn`,`SessionUpdate`,`LoginReference`) values ('10','2020-08-05 14:09:55','0','09aef040e23227f433663f4f3c662f6c')

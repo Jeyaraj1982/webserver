@@ -1,0 +1,49 @@
+/*Add Css Custom Here*/
+.yt-content-slider.arrow-default .owl2-nav .owl2-next {
+    right: 40px!important;
+
+}
+.yt-content-slider.arrow-default .owl2-nav .owl2-prev {
+    left: 40px!important;
+}
+
+header.typeheader-5 .header-bottom{
+margin-bottom : 0 !important;
+}
+
+#so_popup_countdown .list-cates ul {
+    width: 60%!important;
+
+}
+
+#so_popup_countdown .modal-header {
+    background-color: #2d50a4!important}
+    
+.so-homeslider .owl2-controls .owl2-nav .owl2-prev{
+    margin-left: 50px;
+}
+
+.so-homeslider .owl2-controls .owl2-nav .owl2-next{
+    margin-right: 50px;
+}
+
+
+header.typeheader-5 .shopping_cart #cart .dropdown-menu{
+overflow:scroll!important;
+max-height: 250px!important;
+}
+
+.container .top-mar {line-height:16px; font-size:14px;}
+.container .top-mar marquee {line-height:16px; font-size:14px;padding-top:10px;}
+
+
+.price-old:before {
+content: "MRP:  ";
+color : #9a9a9a;
+}
+
+.product-price:before{
+  content: "MRP:  ";
+color : #ea3a3c;  
+font-size: 14px;
+}

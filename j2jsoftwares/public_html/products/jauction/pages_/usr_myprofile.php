@@ -1,0 +1,1 @@
+<script>getMenuItems('mypage');</script>  
