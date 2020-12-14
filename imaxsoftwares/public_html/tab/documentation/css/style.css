@@ -1,0 +1,370 @@
+/*
+Template Name: FlipBox
+Template URL: http://themeforest.net/user/pixelzeesh/portfolio
+Version: 1.0
+Author: PixelZeesh
+Author URL: http://themeforest.net/user/pixelzeesh/portfolio
+
+1.	Template Basics
+2.	Typography Setup
+3. 	Shortcodes Setup
+4.  Page Setup
+
+*/
+
+
+/*==========================================================================================================================================
+/*==========================================================================================================================================
+	1.Template Basics
+============================================================================================================================================
+============================================================================================================================================*/
+
+.section-boxed {
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0px 0px;
+	max-width: 1200px;
+}
+.wrapper {
+
+}
+section {
+	padding: 0px 0px;
+	position: relative;
+}
+.clear {
+	clear: both;
+	margin: 0px;
+	padding: 0px;
+	display: block;
+}
+.clearfix:before, .clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after {
+    clear:both;
+}
+
+
+/*==========================================================================================================================================
+/*==========================================================================================================================================
+	2.Typography Setup
+============================================================================================================================================
+============================================================================================================================================*/
+
+@font-face {
+    font-family: 'opensans_regular';
+    src: url('../inc/font/opensans_regular/OpenSans-Regular-webfont.eot');
+    src: url('../inc/font/opensans_regular/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../inc/font/opensans_regular/OpenSans-Regular-webfont.woff') format('woff'),
+         url('../inc/font/opensans_regular/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('../inc/font/opensans_regular/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+}
+@font-face {
+    font-family: 'opensans_light';
+    src: url('../inc/font/opensans_light/OpenSans-Light-webfont.eot');
+    src: url('../inc/font/opensans_light/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../inc/font/opensans_light/OpenSans-Light-webfont.woff') format('woff'),
+         url('../inc/font/opensans_light/OpenSans-Light-webfont.ttf') format('truetype'),
+         url('../inc/font/opensans_light/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
+}
+@font-face {
+    font-family: 'opensans_semibold';
+    src: url('../inc/font/opensans_semibold/OpenSans-Semibold-webfont.eot');
+    src: url('../inc/font/opensans_semibold/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../inc/font/opensans_semibold/OpenSans-Semibold-webfont.woff') format('woff'),
+         url('../inc/font/opensans_semibold/OpenSans-Semibold-webfont.ttf') format('truetype'),
+         url('../inc/font/opensans_semibold/OpenSans-Semibold-webfont.svg#open_sanssemibold') format('svg');
+}
+@font-face {
+    font-family: 'opensans_bold';
+    src: url('../inc/font/opensans_bold/OpenSans-Bold-webfont.eot');
+    src: url('../inc/font/opensans_bold/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../inc/font/opensans_bold/OpenSans-Bold-webfont.woff') format('woff'),
+         url('../inc/font/opensans_bold/OpenSans-Bold-webfont.ttf') format('truetype'),
+         url('../inc/font/opensans_bold/OpenSans-Bold-webfont.svg#open_sansbold') format('svg');
+}
+body {
+	z-index: 0;
+	color: #000000;
+	font-size: 13px;
+	overflow-y: auto;
+	overflow-x: auto;
+	line-height: 22px;
+	background-color: #ffffff;
+	font-family: opensans_regular, arial;
+}
+p {
+	color: #000000;
+	font-size: 13px;
+	line-height: 22px;
+	margin-bottom: 20px;
+	font-family: opensans_regular, arial;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: #000000;
+	position: relative;
+	font-family: opensans_semibold;
+	margin-bottom: 10px;
+	font-weight: normal;
+}
+h1.light, h2.light, h3.light, h4.light, h5.light, h6.light {
+	font-family: opensans_regular;
+}
+h1 {
+	font-size: 32px;
+	line-height: 44px;
+}
+h2 {
+	font-size: 28px;
+	line-height: 38px;
+}
+h3 {
+	font-size: 24px;
+	line-height: 35px;
+}
+h4 {
+	font-size: 16px;
+	line-height: 24px;
+}
+h5 {
+	font-size: 14px;
+	line-height: 22px;
+}
+h6 {
+	font-size: 12px;
+	line-height: 20px;
+}
+
+
+/*==========================================================================================================================================
+/*==========================================================================================================================================
+	3.Shortcodes Setup
+============================================================================================================================================
+============================================================================================================================================*/
+
+
+/*Columns*/
+.one-half, .one-third, .one-fourth, .two-third, .two-fifth, .three-fourth, .three-fifth {
+    float: left;
+    margin-right: 2.5%;
+    margin-bottom: 30px;
+    position: relative;
+}
+.one-half {
+    width: 48.75%;
+}
+.one-third {
+    width: 31.6666%;
+}
+.one-fourth {
+    width: 23.125%;
+}
+.two-third {
+    width: 65.8333%;
+}
+.two-fifth {
+    width: 39%;
+}
+.three-fourth {
+    width: 74.375%;
+}
+.three-fifth {
+    width: 58.5%;
+}
+.last-col {
+    margin-right: 0px !important;
+}
+.last-col-padding {
+    padding-right: 0px !important;
+}
+
+
+/*Dividers*/
+.divider {
+	display: block;
+	float: none;
+	width: 100%;
+	height: 20px;
+}
+
+
+
+/*Buttons*/
+.button {
+    color: #FFFFFF;
+    font-family: opensans_bold;
+    font-size: 12px;
+    letter-spacing: 2px;
+    padding: 13px 18px;
+    position: relative;
+    top: -3px;
+    margin-bottom: 10px;
+    line-height: 20px;
+    display: inline-block;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -o-border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 -3px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 -3px rgba(0, 0, 0, 0.1) inset;
+    -webkit-box-shadow: 0 -3px rgba(0, 0, 0, 0.1) inset;
+    -o-box-shadow: 0 -3px rgba(0, 0, 0, 0.1) inset;
+    transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+}
+.button.small {
+    border-radius: 2px 2px 2px 2px;
+    font-size: 9px;
+    padding: 5px 8px;
+    letter-spacing: 1.3px;
+    color: #FFFFFF;
+    box-shadow: 0 -1px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 -1px rgba(0, 0, 0, 0.1) inset;
+    -webkit-box-shadow: 0 -1px rgba(0, 0, 0, 0.1) inset;
+    -o-box-shadow: 0 -1px rgba(0, 0, 0, 0.1) inset;
+}
+.button.medium {
+    border-radius: 3px 3px 3px 3px;
+    padding: 10px 15px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    box-shadow: 0 -2px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 -2px rgba(0, 0, 0, 0.1) inset;
+    -webkit-box-shadow: 0 -2px rgba(0, 0, 0, 0.1) inset;
+    -o-box-shadow: 0 -2px rgba(0, 0, 0, 0.1) inset;
+}
+.button.large {
+    font-size: 13px;
+    padding: 15px 22px;
+    box-shadow: 0 -3px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 -3px rgba(0, 0, 0, 0.1) inset;
+    -webkit-box-shadow: 0 -3px rgba(0, 0, 0, 0.1) inset;
+    -o-box-shadow: 0 -3px rgba(0, 0, 0, 0.1) inset;
+}
+.button:hover {
+	background-color: #000000;
+}
+
+
+
+/*Lists*/
+ol {
+	list-style: initial;
+	margin-bottom: 20px;
+}
+ol li {
+	list-style-type: decimal;
+	margin-left: 18px;
+}
+ul {
+	list-style: initial;
+	margin-bottom: 20px;
+}
+ul li {
+	list-style: inherit;
+	margin-left: 18px;
+}
+ul ul, ol ul, ul ol, ol ol {
+	margin-bottom: 0px;
+}
+
+
+
+
+/*==========================================================================================================================================
+/*==========================================================================================================================================
+	4.Page Setup
+============================================================================================================================================
+============================================================================================================================================*/
+
+
+header {
+	text-align: center;
+	padding: 30px 0px;
+}
+header h4 {
+	margin-bottom: 40px;
+}
+header table {
+	text-align: left;
+	color: #666666;
+}
+footer {
+	padding: 15px 0px;
+	background-color: #F3F3F3;
+	text-align: center;
+}
+footer p {
+	margin-bottom: 10px;
+}
+footer .copyrights {
+	margin-bottom: 0px;
+	font-size: 11px;
+	color: #777;
+}
+.wrapper {
+	padding: 30px 0px;
+	border-top: 1px solid #f1f1f1;
+	border-bottom: 1px solid #f1f1f1;
+}
+.wrapper .tabs-nav {
+	width: 20%;
+	padding-left: 30px;
+	float: left;
+}
+.wrapper .tabs-nav h5 {
+	margin-bottom: 0px;
+	padding: 5px 20px;
+	background-color: #ffffff;
+	border: 1px solid #f1f1f1;
+	font-size: 13px;
+	font-family: opensans_regular;
+	font-weight: bold;
+}
+.wrapper .tabs-nav a {
+	display: block;
+	border-top: 0px;
+	padding: 5px 20px;
+	background-color: #ffffff;
+	border: 1px solid #f1f1f1;
+	color: #000000 !important;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-ms-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+.wrapper .tabs-nav a.selected {
+	color: #ffffff !important;
+}
+.wrapper .tabs-nav a:first-child {
+	border-top: 1px solid #f1f1f1;
+}
+.wrapper .tabs-data {
+	width: 80%;
+	padding: 0px 30px;
+	float: right;
+}
+.wrapper .tabs-data .tab-panel {
+
+}
+.wrapper .tabs-data .tab-panel:not(.selected) {
+	display: none;
+}
+.wrapper .tabs-data .tab-panel h2 {
+	margin-bottom: 40px;
+	border-bottom: 1px solid #eeeeee;
+	padding-bottom: 10px;
+	margin-top: -1px;
+}
+.wrapper .tabs-data .tab-panel h4 {
+	margin: 20px 0px;
+}
+
