@@ -1,0 +1,508 @@
+<!DOCTYPE HTML>
+<html>
+
+<!-- Begin Head -->
+<head>
+
+    <meta charset="utf-8">
+    <title>FlipBox Documentation</title>
+
+    <!-- Begin Meta Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="FlipBox is a multi purpose template that will support you in creating your new website."/>
+    <!-- End Meta Tags -->
+
+    <link rel="icon" href="images/favicon.png" />
+    
+    <!-- Begin Stylesheets -->
+    <link type="text/css" rel="stylesheet" href="css/reset.css">
+
+    <link id="main-style" type="text/css" rel="stylesheet" href="css/style.css">
+    <!-- End Stylesheets -->
+
+    <!-- Begin JavaScript ( rest of Javascript after footer area) -->
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/modernizr-respond.js"></script>
+    <!-- End JavaScript -->
+
+</head>
+<!-- End Head -->
+
+<!-- Begin Page Body -->
+<body>
+
+
+    <!-- Begin Header -->
+
+    <!-- End Header -->
+
+
+    <!-- Begin Wrapper -->
+    <div class="wrapper clearfix">
+
+        <div class="tabs-nav">
+
+            <a href="#introduction" class="selected">Introduction</a>
+
+            <div class="divider" style="height:20px;"></div>
+
+            <h5>Basic Structures</h5>
+            <a href="#files-structure">Files Structure</a>
+            <a href="#html-structure">HTML Structure</a>
+            <a href="#css-structure">CSS Structure</a>
+            <a href="#js-structure">JavaScript Structure</a>
+
+            <div class="divider" style="height:20px;"></div>
+
+            <h5>Elements In Detail</h5>
+            <a href="#sliders">Sliders</a>
+            <a href="#contact-form">Contact Form</a>
+            <a href="#animated-elements">Animated Elements</a>
+            <a href="#columns">Columns</a>
+            <a href="#buttons">Buttons</a>
+            <a href="#counters">Counters</a>
+            <a href="#font-icons">Font Icons</a>
+
+            <div class="divider" style="height:20px;"></div>
+
+            <a href="#credits">Credits</a>
+
+            <div class="divider" style="height:20px;"></div>
+        </div>
+
+        <div class="tabs-data">
+
+            <div class="tab-panel selected" id="introduction">
+
+                <h2>Introduction</h2>
+                <p>Thank you for purchasing our theme. We've covered almost everything needed to start using our theme, we tried to keep it as simple as possible. If you have any questions that are beyond the scope of this help file, please feel free to email us from our 
+                    <a href="http://themeforest.net/user/pixelzeesh">Profile Page</a>
+                </p>
+                <p>We would happily welcome feedback from you on how, if anywhere, you would like this documentation improved. If you would find anything a little bit easier and more helpful if we went into more detail, or explained something a little better - we'd be happy to hear it.</p>
+
+            </div>
+
+            <div class="tab-panel" id="files-structure">
+
+                <h2>Files Structure</h2>
+
+                <p>Below are all the files included with the template:</p>
+
+                <ol>
+                    <li>
+                        <strong>css</strong>
+                        <ul>
+                            <li>animated.min.css -> used for animating certain elements.</li>
+                            <li>color-cyan.css</li>
+                            <li>color-red.css</li>
+                            <li>color-blue.css</li>
+                            <li>color-yellow.css</li>
+                            <li>color-green.css</li>
+                            <li>color-orange.css</li>
+                            <li>color-purple.css</li>
+                            <li>colors.css -> used for fonts, backgrounds &amp; borders colors setup</li>
+                            <li>reset.css -> used for reseting default browser styles</li>
+                            <li>style.css -> the main template styles.</li>
+                        </ul>
+                    </li>
+                    <li><strong>images</strong> -> contains all the images used in the template.</li>
+                    <li>
+                        <strong>includes</strong>
+                        <ul>
+                            <li>entypo -> "Entypo" font icon files.</li>
+                            <li>font_aweomse -> "FontAwesome" font icon files.</li>
+                            <li>icomoon -> "Icoomoon" font icon files.</li>
+                            <li>font -> "Raleway" the font used in template.</li>
+                            <li>contact_form.php -> contains scripts used for contact forms sending mails.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>js</strong>
+                        <ul>
+                            <li>scripts.js -> main template javascript file</li>
+                            <li>easy-pie-chart</li>
+                            <li>fancybox</li>
+                            <li>flexslider</li>
+                            <li>isotope</li>
+                            <li>jquery-ui</li>
+                            <li>owl-carousel</li>
+                            <li>rs-plugin</li>
+                            <li>tooltipster</li>
+                            <li>appear.js</li>
+                            <li>countdown.js</li>
+                            <li>countTo.js</li>
+                            <li>easing.1.3.js</li>
+                            <li>gmap.min.js</li>
+                            <li>imagesloaded.pkgd.min.js</li>
+                            <li>jflickrfeed.min.js</li>
+                            <li>jquery.fitvids.js</li>
+                            <li>migrate-1.2.1.min.js</li>
+                            <li>modernizr-respond.js</li>
+                            <li>parallax-1.1.3.js</li>
+                            <li>scrollTo-min.js</li>
+                            <li>SmoothScroll.js</li>
+                            <li>timeago.js</li>
+                            <li>tweetable.jquery.js</li>
+                        </ul>
+                    </li>
+                </ol>
+
+            </div>
+
+            <div class="tab-panel" id="html-structure">
+
+                <h2>HTML Structure</h2>
+
+                <p>Template grid system is based on a <strong>1170px</strong> width. Below <strong>1230px</strong> wide, the grid system will become fluid and stack vertically.</p>
+
+                <p>For responsiveness the grid will support a tablet layout and a mobile layout
+                    <br/>
+                    <ul>
+                        <li>Between 1230px and 690px wide, the tablet layout will be enabled.</li>
+                        <li>Below 690px wide, the mobile layout will be enabled.</li>
+                    </ul>
+                </p>
+
+                <p>Down below is the default structure for data inserting. First example is for presenting the data in a full width container and the second in a 1170px container</p>
+
+                <div class="divider" style="height:30px;"></div>
+
+                <p>Data presented in a full width container.</p>
+                <script type="syntaxhighlighter" class="brush: html">
+                    <![CDATA[ 
+                        <div class="grid-row">
+
+                            // Insert your data Here
+
+                        </div>
+                    ]]>
+                </script>
+
+                <div class="divider" style="height:50px;"></div>
+
+                <p>Data presented in a 1170px wide container.</p>
+                <script type="syntaxhighlighter" class="brush: html">
+                    <![CDATA[ 
+                        <div class="grid-row">
+                            <div class="content-inner">
+
+                                // Insert your data Here
+
+                            </div>
+                        </div>
+                    ]]>
+                </script>
+
+            </div>
+
+            <div class="tab-panel" id="css-structure">
+
+                <h2>CSS Structure</h2>
+
+                <p>CSS styles are divided into 2 categories:</p>
+
+                <ul>
+                    <li>Colors: files containing colors setup like color-cyan.css, colors.css</li>
+                    <li>Styles: the template styles is presented in only 1 file "style.css" </li>
+                </ul>
+
+                <p>Template styles is divided into sections for better handling and understanding. Down below is the basic css structure:</p>
+
+                <ol>
+                    <li>Typography Setup</li>
+                    <li>Template Basics</li>
+                    <li>Transitions Setup</li>
+                    <li>Main Menu Setup</li>
+                    <li>Pages Setup</li>
+                    <li>Footer Setup</li>
+                    <li>Widgets Setup</li>
+                    <li>Blog Setup</li>
+                    <li>Shop Setup</li>
+                    <li>Shortcodes Setup</li>
+                    <li>
+                        Responsive Media Queries
+                        <ol>
+                            <li>Desktop Version</li>
+                            <li>Tablet Version</li>
+                            <li>Mobile Version</li>
+                        </ol>
+                    </li>
+                </ol>
+
+            </div>
+
+            <div class="tab-panel" id="js-structure">
+
+                <h2>JavaScript Structure</h2>
+
+                <p>All the plugins needed in this template have been listed in files sturcture. The main template javascript file is "scripts.js", down below is the structure of the file.</p>
+
+                <ul>
+                    <li>Global section -> contains common functions used globally all over the template pages.</li>
+                    <li>Animation Section -> for applying animation effects to elements.</li>
+                    <li>Menu Section -> contains all the functions used in template menu.</li>
+                    <li>Sliders Section -> contains all the sliders functions used in template.</li>
+                    <li>Shortcodes Section -> contains all the shortcodes functions used in template.</li>
+                </ul>
+                
+            </div>
+
+            <div class="tab-panel" id="sliders">
+
+                <h2>Sliders</h2>
+
+                <p>We have used 4 types of sliders. Each slider was used to implement a specific animation.</p>
+
+                <p>Down below is the list of sliders.</p>
+
+                <ol>
+                    <li>
+                        Revolution Slider
+                        <ul>
+                            <li>This slider is used for home page main slideshow.</li>
+                            <li><a href="http://codesymbol.com/plugins/revslider/doc/" target="_blank">Documentation</a></li>
+                            <li><a href="http://codesymbol.com/plugins/revslider/examples/01.Sample-Boxed.html" target="_blank">Examples</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Flex Slider
+                        <ul>
+                            <li>This slider is used for Home layout 4 main slideshow, Shop Product Detail slideshow, Testimonials Slider 1-2-3, Blog Gallery Post, Projects Slider 1 "Full Width - One project per slide".</li>
+                            <li><a href="http://www.woothemes.com/flexslider/#tabs-flexslider-info-tabber" target="_blank">Documentation</a></li>
+                            <li><a href="http://flexslider.woothemes.com/" target="_blank">Examples</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Owl Carousel
+                        <ul>
+                            <li>This slider is used for Blog Posts Slider.</li>
+                            <li><a href="https://github.com/OwlFonk/OwlCarousel" target="_blank">Documentation</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Isotope Slider
+                        <ul>
+                            <li>This slider is used for Projects Slider 2 "Carousel &amp; Masonry Slider".</li>
+                            <li><a href="http://isotope.metafizzy.co/" target="_blank">Documentation</a></li>
+                        </ul>
+                    </li>
+                </ol>
+                
+            </div>
+
+            <div class="tab-panel" id="contact-form">
+
+                <h2>Contact Form</h2>
+
+                <p>Contact form is working on ajax (actions happen without page reloading). You will find the main scripts in "includes/contact_form.php"</p>
+
+                <p>To configure contact form fields for your needs you will just need to change the following line to your email address. Just change the email address between the quotes.</p>
+
+                
+                <script type="syntaxhighlighter" class="brush: html">
+                    <![CDATA[ 
+                        $to = 'codesymbol@gmail.com';
+                    ]]>
+                </script>
+
+            </div>
+
+            <div class="tab-panel" id="animated-elements">
+
+                <h2>Animated Elements</h2>
+
+                <p>To apply animation to an element, it must have the following:</p>
+
+                <ol>
+                    <li>Class: "animated"</li>
+                    <li>'data-animation' attribute and giving it a specific animation. You will find the full list of animations <a href="http://daneden.github.io/animate.css/" target="_blank">here</a></li>
+                    <li>'data-delay' attribute and giving it a specific integer number.</li>
+                </ol>
+
+                <p>Here is an example</p>
+
+                <script type="syntaxhighlighter" class="brush: html">
+                    <![CDATA[ 
+                        <div class="one-half animated" data-animation="fadeInRight" data-animation-delay="100">
+
+                            <p>Your content here....</p>
+
+                        </div>
+                    ]]>
+                </script>
+
+            </div>
+
+            <div class="tab-panel" id="columns">
+
+                <h2>Columns</h2>
+
+                <p>There are 8 different columns available for usage. <strong>Note:</strong> giving a specific column a "last-col" class means that this column will be the last one on the right side of the container.</p>
+
+                <ul>
+                    <li>One Half</li>
+                    <li>One Third</li>
+                    <li>One Fourth</li>
+                    <li>One Fifth</li>
+                    <li>Two Third</li>
+                    <li>Two Fifth</li>
+                    <li>Three Fourth</li>
+                    <li>Three Fifth</li>
+                </ul>
+
+            </div>
+
+            <div class="tab-panel" id="buttons">
+
+                <h2>Buttons</h2>
+
+                <p>There are 4 types of buttons: Small, Regular, Large and outline. Each button can have unlimited background, font and border colors for basic style and hover style</p>
+
+                <p>Down below is a list of meaning of certain class prefixes:</p>
+
+                <ul>
+                    <li>color-* -> This class syntax is configured for font color styles.</li>
+                    <li>bg-* -> This class syntax is configured for background color styles.</li>
+                    <li>border-* -> This class syntax is configured for border color styles.</li>
+                    <li>hover-color-* -> This class syntax is configured for font color styles on hover.</li>
+                    <li>hover-bg-* -> This class syntax is configured for background color styles on hover.</li>
+                    <li>hover-border-* -> This class syntax is configured for border color styles on hover.</li>
+                </ul>
+
+                <p><strong>Note:</strong> All the colors used in the template is written in css/colors.css file.</p>
+
+            </div>
+
+            <div class="tab-panel" id="counters">
+
+                <h2>Counters</h2>
+
+                <p>There are 4 types of counters available in this template: Charts, Progress Bars, Numbers, Countdowns</p>
+
+                <p><strong>- Charts</strong>: To add the percentage you want, just change the "data-animate-percent" attribute value to your needs</p>
+
+                <script type="syntaxhighlighter" class="brush: html">
+                    <![CDATA[ 
+                        <div class="counter-chart">
+                            <div class="counter" data-percent="0" data-animate-percent="90">
+                                <span>0</span>%
+                            </div>
+                            <h5>Javascript</h5>
+                        </div>
+                    ]]>
+                </script>
+
+                <div class="divider" style="height: 50px;"></div>
+
+                <p><strong>- Progress bars</strong>: To add the percentage you want, just change the element with "percentage" class text and the element with "bar" class "data-percentage" attribute value to your needs</p>
+
+                <script type="syntaxhighlighter" class="brush: html">
+                    <![CDATA[ 
+                        <div class="counter-bar">
+                            <h6>Websites</h6>
+                            <span class="percentage">55%</span>
+                            <div class="bar" data-percentage="55">
+                                <span></span>
+                            </div>
+                        </div>
+                    ]]>
+                </script>
+
+                <div class="divider" style="height: 50px;"></div>
+
+                <p><strong>- Numbers</strong>: To add the percentage you want, just change the element with "number" class value to your needs</p>
+
+                <script type="syntaxhighlighter" class="brush: html">
+                    <![CDATA[ 
+                        <div class="counter-number">
+
+                            <div class="counter-media">
+                                <img src="images/dummy10.png" alt="">
+                            </div>
+
+                            <div class="counter-data">
+                                <h2 class="number light">150</h2>
+                                <p class="info">TRIPS</p>
+                            </div>
+
+                        </div>
+                    ]]>
+                </script>
+
+                <div class="divider" style="height: 50px;"></div>
+
+                <p><strong>- Countdowns</strong>: To add the date you want, just change the data attributes to your needs.</p>
+
+                <script type="syntaxhighlighter" class="brush: html">
+                    <![CDATA[ 
+                        <div class="countdown-counter clearfix" data-year="2014" data-month="12" data-day="24" data-hour="15" data-minute="55" data-second="22"></div>
+                    ]]>
+                </script>
+
+            </div>
+
+            <div class="tab-panel" id="font-icons">
+
+                <h2>Font Icons</h2>
+
+                <p>There are 3 font icons sets available in this template. Check them <a href="http://www.pixelzeesh.com/themes/flipbox/html/shortcodes-fonticons.html" target="_blank">here</a></p>
+
+                <ul>
+                    <li><a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">FontAweomse</a></li>
+                    <li><a href="http://icomoon.io/" target="_blank">Icomoon</a></li>
+                    <li><a href="http://www.entypo.com/" target="_blank">Entypo</a></li>
+                </ul>
+
+            </div>
+
+            <div class="tab-panel" id="credits">
+
+                <h2>Credits</h2>
+
+                <ul>
+                    <li><a href="http://jquery.com/">JQuery</a></li>
+                    <li><a href="https://github.com/jquery/jquery-migrate/">Migrate</a></li>
+                    <li><a href="http://modernizr.com/">Modernizr - Respond</a></li>
+                    <li><a href="http://jqueryui.com/">JQuery UI</a></li>
+                    <li><a href="http://gsgd.co.uk/sandbox/jquery/easing/">Easing</a></li>
+                    <li><a href="http://codecanyon.net/item/slider-revolution-responsive-jquery-plugin/2580848">Revolution Slider</a></li>
+                    <li><a href="http://files.gethifi.com/posts/jflickrfeed/example.html">jFlickrFeed</a></li>
+                    <li><a href="https://github.com/marioestrada/jQuery-gMap">gMap</a></li>
+                    <li><a href="https://github.com/rendro/countdown">Countdown</a></li>
+                    <li><a href="https://github.com/philipbeel/Tweetable">Tweetable</a></li>
+                    <li><a href="https://github.com/rendro/easy-pie-chart">Easy Pie Chart</a></li>
+                    <li><a href="http://fancyapps.com/fancybox/">Fancybox</a></li>
+                    <li><a href="http://www.woothemes.com/flexslider/">FlexSlider</a></li>
+                    <li><a href="http://isotope.metafizzy.co/">Isotope</a></li>
+                    <li><a href="http://owlgraphic.com/owlcarousel/">OWL Carousel</a></li>
+                    <li><a href="http://calebjacob.com/tooltipster/">Tooltipster</a></li>
+                    <li><a href="http://desandro.github.io/imagesloaded/">imagesLoaded</a></li>
+                    <li><a href="https://github.com/morr/jquery.appear">Appear</a></li>
+                    <li><a href="https://github.com/mhuggins/jquery-countTo">countTo</a></li>
+                    <li><a href="http://fitvidsjs.com/">FitVids</a></li>
+                    <li><a href="http://flesler.com/jquery/scrollTo/">ScrollTo</a></li>
+                    <li><a href="http://ianlunn.co.uk/plugins/jquery-parallax/">Parallax</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- End Wrapper -->
+
+
+
+
+    <script type="text/javascript" src="js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+ 
+    <!-- End JavaScript -->
+
+
+
+</body>
+<!-- End Page Body -->
+
+</html>

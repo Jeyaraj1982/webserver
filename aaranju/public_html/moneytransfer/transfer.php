@@ -1,42 +1,33 @@
 <?php include_once("../header.php");?>
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
+<div class="content-wrapper">
     <div class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Money Transfer</h1>
-          </div><!-- /.col -->
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="<?php echo url;?>/dashboard.php">Dashboard</a></li>
-              <li class="breadcrumb-item active">Money Transfer</li>
-            </ol>
-          </div><!-- /.col -->
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">Money Transfer</h1>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="<?php echo url;?>/dashboard.php">Dashboard</a></li>
+                        <li class="breadcrumb-item active">Money Transfer</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- /.content-header -->
-
-    <!-- Main content -->
-     <section class="content">
-      <div class="container-fluid">
-        <div class="row">
-           
-          <!-- right column -->
-          <div class="col-md-6">
-            <!-- general form elements disabled -->
-            <div class="card card-info">
-              <div class="card-header">
-                <h3 class="card-title">Money Transfer To Bank</h3>
-              </div>
-              <!-- /.card-header -->
-              <div class="card-body">
-              <?php if ($_SESSION['user']['moneytransfer']==0)  {?>
-              To enable this service please contact administrator
-              <?php } else { ?>
-                   <?php
+    <section class="content">   
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card card-info">
+                        <div class="card-header">
+                            <h3 class="card-title">Money Transfer To Bank</h3>
+                        </div>
+                        <div class="card-body">
+                            <?php if ($_SESSION['user']['moneytransfer']==0)  {?>
+                            To enable this service please contact administrator
+                            <?php } else { ?>
+                            <?php
                    
 
                    if (isset($_POST['rechargeBtn'])) {
@@ -255,16 +246,13 @@
                 <tr role="row">
                     <th class="sorting_asc">Txn Date</th>
                     <th class="sorting">Particulars</th>
+                    <th class="sorting">Txn Amount</th>
                     <th class="sorting">Credit</th>
                     <th class="sorting">Debit</th>
                     <th class="sorting">Balance</th>
-                    <th class="sorting">Account Number</th>
-                    <th class="sorting">IFS Code</th>
-                    <th class="sorting">Amount</th>
                     <th class="sorting">Bank Referance</th>
                     <th class="sorting">Txn Status</th>
-                    <th class="sorting">Txn Form</th>
-                    <th class="sorting">API UID</th>
+                    <th class="sorting">Txn</th>
                     </tr>
                 </thead>           
                 <tbody>
@@ -272,25 +260,30 @@
                 <?php $txndata = $mysql->select("Select * from _tbl_money_transfer where   userid='".$_SESSION['user']['userid']."'  order by  MoneyTransferID desc ");?>
                 <?php foreach($txndata as $t) {?>
                 <tr role="row" class="<?php echo ($i%2)==0 ? 'even' : 'odd';?>">
-                  <td class="sorting_1" style="font-size:12px"><?php echo $t['TxnDate'];?></td>
-                  <td style="font-size:12px"><?php echo $t['Particulars'];?></td>
+                  <td class="sorting_1" style="font-size:12px">
+                    <?php echo date("Y-m-d",strtotime($t['TxnDate']));?><br>
+                    <?php echo date("H:i:s",strtotime($t['TxnDate']));?>
+                    </td>
+                  <td style="font-size:12px">
+                  
+                  <?php echo $t['Particulars'];?><br>
+                  <?php if ($t['IsWalletUpdate']==1) {?>
+                        <?php
+                            $r = json_decode($t['APIResponse_1'],true);
+                            echo $r['rmtr_full_name']."/".$r['rmtr_account_no']."/".$r['payment_type'];
+                        ?>
+                  <?php } else { ?>
+                  <?php if (strlen($t['BankAccountNumber'])>0) {?>
+                  <?php echo $t['BankAccountNumber'];?>/<?php echo strtoupper($t['IFSCode']);?>
+                  <?php } ?>
+                  <?php } ?>
+                  
+                  </td>
+                  <td style="text-align:right;font-size:12px;"><?php echo number_format($t['TxnAmount'],2);?></td>
                   <td style="text-align:right;font-size:12px;"><?php echo number_format($t['Credit'],2);?></td>
                   <td style="text-align:right;font-size:12px;"><?php echo number_format($t['Debit'],2);?></td>
                   <td style="text-align:right;font-size:12px;"><?php echo number_format($t['Balance'],2);?></td>
-                  <td style="font-size:12px"><?php echo $t['BankAccountNumber'];?></td>
-                  <td style="font-size:12px"><?php echo strtoupper($t['IFSCode']);?></td>
-                  <td style="font-size:12px;text-align:right"><?php 
-                  if ($t['Debit']==0) {
-                      
-                  } else {
-                    if ($t['IsWalletUpdate']==3) {
-                    } else {
-                        echo number_format($t['Debit'],2);      
-                    }
-                  }
                   
-                  
-                  ?></td>
                   <td style="font-size:12px"><?php echo $t['ReferenceNumber'];?></td>
                   <td style="font-size:12px"><?php 
                    if ($t['IsWalletUpdate']==2) {
@@ -299,13 +292,8 @@
                   ?></td>
                   <td style="font-size:12px"><?php 
                   if ($t['IsWalletUpdate']=='2') {
-                  echo $t['RequestedFrom'];
-                  }?></td>
-                  <td style="font-size:12px"><?php
-                   if ($t['IsWalletUpdate']=='2') {
-                  echo $t['uid'];
-                  }
-                   ?></td>
+                  echo $t['RequestedFrom']."/".$t['uid'];
+                  }?> </td>
                 </tr>
                 <?php } ?>
               </tbody>

@@ -9,6 +9,43 @@ function writeTxt($text) {
 }
 
 writeTxt(json_encode($_GET));
+if (isset($_GET['txnInfo'])) {
+    $data = $mysql->select("select TxnAmount,InCommingAccountName,InCommingAccountNumber from _tbl_money_transfer where md5(concat('Jeyaraj',MoneyTransferID))='".$_GET['txnInfo']."'");
+    if (sizeof($data)>0) {
+        echo return_result(array("status"=>"SUCCESS","data"=>$data[0]));
+    } else {
+        echo return_result(array("response"=>array("status"=>"FAILURE","error"=>"Data not found")));        
+    }
+    exit;
+}
+
+if (isset($_GET['AddIncommingBankAccount'])) {
+
+    $user = $mysql->select("select * from _users where apiusername='".$_GET['apiusername']."' and apipassword='".$_GET['apipassword']."'");
+
+    if (sizeof($user)==0){
+        echo return_result(array("response"=>array("status"=>"FAILURE","error"=>"Invalid login")));    
+        exit;
+    }
+    
+    $duplicate = $mysql->select("select * from _moneytransfer_incoming_bankaccount='".trim($_GET['accountnumber'])."'");
+    if (sizeof($duplicate)>0) {
+        echo return_result(array("response"=>array("status"=>"FAILURE","error"=>"This account number already exists.")));    
+        exit; 
+    }
+    
+    $txnid = $mysql->insert("_moneytransfer_incoming_bankaccount",array("userid"        => $user[0]['userid'],
+                                                                        "accountnumber" => trim($_GET['accountnumber']),
+                                                                        "accountname"   => trim($_GET['accountname']),
+                                                                        "ifscode"       => $_GET['ifscode'],
+                                                                        "addedon"       => date("Y-m-d H:i:s")));
+    
+    echo return_result(array("status"=>"SUCCESS","txnid"=>$txnid));                                                            
+    exit;
+}
+
+
+
  
 if (!(isset($_GET['account_name']))) {
     echo return_result(array("response"=>array("status"=>"FAILURE","error"=>"param:account_name missing")));        

@@ -43,8 +43,9 @@ if ($_GET['msgtype']=="text") {
     $res  = Telegram::sendsms(trim($data[0]['telegram_authkey']),$_GET['clientid'],$_GET['message'],"text",$_GET['uid'],$user[0]['userid'],"API");
     echo json_encode(array("response"=>array("status"=>"SUCCESS","transid"=>$res)));    
 }
-exit;
+exit;                                 
 ?>
+parse_mode=html,markdown  _italic_,*bold*
 need check valid clientid
 http://www.aaranju.in/sms/api.php?username=kumarm149@gmail.com&password=password&number=9944872965&sender=GOLDLS&message=test message api&uid=
 {"response":{"status":"FAILURE","error":"Your IP not activated","statuscode":"099"}}

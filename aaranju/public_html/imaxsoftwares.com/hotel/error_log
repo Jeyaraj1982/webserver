@@ -1,0 +1,10 @@
+[18-Mar-2017 03:46:30 Etc/GMT] PHP Notice:  Undefined variable: mysql in /home/j2jsoftware/public_html/domains/imaxsoftwares.com/hotel/listproducts.php on line 4
+[18-Mar-2017 03:46:30 Etc/GMT] PHP Fatal error:  Call to a member function select() on a non-object in /home/j2jsoftware/public_html/domains/imaxsoftwares.com/hotel/listproducts.php on line 4
+[18-Mar-2017 03:46:31 Etc/GMT] PHP Notice:  Undefined variable: mysql in /home/j2jsoftware/public_html/domains/imaxsoftwares.com/hotel/listproducts.php on line 4
+[18-Mar-2017 03:46:31 Etc/GMT] PHP Fatal error:  Call to a member function select() on a non-object in /home/j2jsoftware/public_html/domains/imaxsoftwares.com/hotel/listproducts.php on line 4
+[22-Aug-2017 10:22:50 Asia/Calcutta] PHP Fatal error:  Unsupported operand types in /home/nicus79q/public_html/domains/imaxsoftwares.com/hotel/api.php on line 6
+[22-Aug-2017 10:23:07 Asia/Calcutta] PHP Fatal error:  Unsupported operand types in /home/nicus79q/public_html/domains/imaxsoftwares.com/hotel/api.php on line 6
+[22-Aug-2017 10:23:34 Asia/Calcutta] PHP Fatal error:  Unsupported operand types in /home/nicus79q/public_html/domains/imaxsoftwares.com/hotel/api.php on line 6
+[22-Aug-2017 10:23:45 Asia/Calcutta] PHP Fatal error:  Unsupported operand types in /home/nicus79q/public_html/domains/imaxsoftwares.com/hotel/api.php on line 6
+[22-Aug-2017 10:24:03 Asia/Calcutta] PHP Fatal error:  Unsupported operand types in /home/nicus79q/public_html/domains/imaxsoftwares.com/hotel/api.php on line 8
+[22-Aug-2017 10:25:05 Asia/Calcutta] PHP Fatal error:  Unsupported operand types in /home/nicus79q/public_html/domains/imaxsoftwares.com/hotel/api.php on line 10

@@ -9,7 +9,7 @@
     writeTxt(json_encode($_GET));
     writeTxt(json_encode($_POST));
     
-    $data = $mysql->select("select * from _moneytransfer_incoming_bankaccount where accountnumber='".$_POST['rmtr_account_no']."'");
+    $data = $mysql->select("select * from _moneytransfer_incoming_bankaccount where accountnumber='".ltrim($_POST['rmtr_account_no'], '0')."'");
     
     if (sizeof($data)>0) {
         
@@ -31,9 +31,27 @@
                                                             "ReferenceNumber"    => $_POST['bank_ref_num'],
                                                             "APIResponse_1"        => json_encode($_POST),
                                                             "TransactionStatus"  => "Success",
+                                                            
+                                                            "InCommingAccountName"      => $_POST['rmtr_full_name'],
+                                                            "InCommingAccountNumber"    => $_POST['rmtr_account_no'],
+                                                            "InCommingPaymentIFSCode"   => $_POST['rmtr_account_ifsc'],
+                                                            "InCommingPaymentMode"      => $_POST['payment_type'],
+                                                            "InCommingPaymentRefNumber" => $_POST['bank_ref_num'],
+                                                            "InCommingPaymentRemarks"   => $_POST['rmtr_to_bene_note'],
+
                                                             "uid"  => "0",
                                                             "BankReferenceID"    => $_POST['bank_ref_num'],
                                                             "RequestedFrom"      => "API"));
+        
+                                                            
+        $user = $mysql->select("select * from _users where userid='".$data[0]['userid']."'");
+        if (strlen(trim($user[0]['moneytransfer_callback']))>5) {
+            $url =  $user[0]['moneytransfer_callback']."&txnid=".md5("Jeyaraj".$txnid);
+            $ch = curl_init($url);
+            curl_exec($ch);
+            curl_close($ch);
+        }    
+                   
            
            if ($data[0]['userid']==9) { 
                $charges=5;

@@ -35,6 +35,10 @@
                return array("response"=>array("status"=>"FAILURE","error"=>"Not allow to transfer. This account number has set to auto wallet update"));    
            }
            
+           if (trim($param['BankAccountNumber'])=="70809070809073244") {
+                return array("response"=>array("status"=>"FAILURE","error"=>"Not allow to transfer. This account number"));  
+           }
+                                                                 
            if (!($param['Amount']<$user_balance)) {
                return array("response"=>array("status"=>"FAILURE","error"=>"insufficant balance"));
            }
@@ -86,7 +90,7 @@
                
                $td=$mysql->select("select * from _users where userid='".$param['userid']."'");
                if (strlen(trim($td[0]['moneytransfer_callback']))>5) {
-                   $ch = curl_init($td[0]['moneytransfer_callback'].urlencode("Transaction failure. Number: ". $param['BankAccountNumber'].", IFSCode: ".$param['IFSCode'].", Amount: ".$param['Amount']." Balance: ".$user_balance));
+                   $ch = curl_init($td[0]['moneytransfer_callback']."&action=sendMessage&Message=".urlencode("Transaction failure. Number: ". $param['BankAccountNumber'].", IFSCode: ".$param['IFSCode'].", Amount: ".$param['Amount']." Balance: ".$user_balance));
                    curl_exec($ch);
                    curl_close($ch);
                }
@@ -119,7 +123,7 @@
                    
                    $td=$mysql->select("select * from _users where userid='".$param['userid']."'");
                    if (strlen(trim($td[0]['moneytransfer_callback']))>5) {
-                       $ch = curl_init( $td[0]['moneytransfer_callback'].urlencode("Transaction failure. Number: ". $param['BankAccountNumber'].", IFSCode: ".$param['IFSCode'].", Amount: ".$param['Amount']." Balance: ".$user_balance));
+                       $ch = curl_init( $td[0]['moneytransfer_callback']."&action=sendMessage&Message=".urlencode("Transaction failure. Number: ". $param['BankAccountNumber'].", IFSCode: ".$param['IFSCode'].", Amount: ".$param['Amount']." Balance: ".$user_balance));
                        curl_exec($ch);
                        curl_close($ch);
                    }
@@ -164,7 +168,8 @@
                          
                    $td=$mysql->select("select * from _users where userid='".$param['userid']."'");
                    if (strlen(trim($td[0]['moneytransfer_callback']))>5) {
-                       $url =  $td[0]['moneytransfer_callback'].urlencode("Transaction Success. Number: ". $param['BankAccountNumber'].", IFSCode: ".$param['IFSCode'].", Amount: ".$param['Amount'].", Balance: ".$user_balance-($param['Amount']+$charges));
+                        $user_balance = MoneyTransfer::get_balance($param['userid']);
+                       $url =  $td[0]['moneytransfer_callback']."&action=sendMessage&Message=".urlencode("Transaction Success. Number: ". $param['BankAccountNumber'].", IFSCode: ".$param['IFSCode'].", Amount: ".$param['Amount'].", Balance: ".$user_balance);
                        $ch = curl_init($url);
                        curl_exec($ch);
                        curl_close($ch);
@@ -409,8 +414,8 @@
         }
 
         function sendTextMessage($bot,$chatID,$message) {
-            
-            $data = ['chat_id' => $chatID,'text' => $message];
+                              //markdown / html
+            $data = ['chat_id' => $chatID,'text' => $message,'parse_mode'=>'markdown'];
             $ch = curl_init();
             curl_setopt($ch, CURLOPT_URL, "https://api.telegram.org/bot".$bot."/sendMessage?".http_build_query($data));
             curl_setopt($ch, CURLOPT_HEADER, 0);

@@ -1,0 +1,424 @@
+
+
+<!DOCTYPE html><!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]--><html><head><meta charset="utf8"><meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"><title>Mail Marketer</title><meta name="description" content="We are not your typical farm management software. Forecast and measure farm profits, track farming expenses, manage risk, and stay informed all from one place. Try for Free. No credit card required."><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+
+<link type="text/css" rel="stylesheet" href="main.css"/>
+<script type="text/rocketscript" data-rocketsrc="scripts/vendor/jquery.js"></script>
+<script type="text/rocketscript" data-rocketsrc="scripts/vendor/jquery.cookie.js"></script>
+
+<script type="text/rocketscript" data-rocketsrc="scripts/vendor/jquery.placeholder.js"></script>
+
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300' rel='stylesheet' type='text/css'>
+
+     <link type="text/css" rel="stylesheet" href="includes/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="screen">	
+
+    <!-- REVOLUTION BANNER CSS SETTINGS -->
+    <link rel="stylesheet" type="text/css" href="css/fullwidth.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/settings.css" media="screen" />
+
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-1.3.4.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css" media="screen">
+<link rel="stylesheet" type="text/css" href="css/custom.css" media="screen">
+
+
+<style type="text/css">
+<!--
+.style1 {
+	font-size: 10px;
+	color: #999999;
+}
+-->
+</style>
+</head>
+
+<body>
+
+
+
+
+<div class="top-bar"> <div class="container">
+
+<div class="col-lg-2 col-md-2 col-sm-2"><button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+<a id="logo" href="/"><img src="images/logo-2x.png" alt="#"></a></div>
+
+<div class="collapse navbar-collapse">
+<div class="col-lg-7 col-md-7 hidden-sm">
+<div class="nav left">
+<ul> <li ><a href="index.html">HOME</a></li><li class="active"><a href="features.html">FEATURES</a>
+</li><li><a href="pricing.html">PRICING</a></li><li><a href="about.html">ABOUT US</a></li><li><a href="contact.html">CONTACT US</a></li>
+</div>
+</div>
+
+
+<div class="col-lg-3 col-md-3 col-sm-4 hidden-sm hidden-lg">
+<div class="nav1 right "><a href="#">Client Login</a><a href="#" class="special">Trial Signup</a></div></div>
+<div class="col-lg-3 col-md-3 col-sm-4 visible-lg">
+<div class="navr right "><a href="#">Client Login</a><a href="#" class="special">Trial Signup</a></div></div>
+
+</div>
+</div> </div>
+
+<div class="home">
+<div class="smallbanner-fea">
+<div class="container">
+  <div >Features<br>
+  <h6>Mail Marketer is Being Developed by Marketers, for Marketers!.</h6>
+</div> </div></div>
+<div class="features-widget widget clearfix">
+
+	
+
+			<div class="divider30"></div>
+				<div class="container">	
+
+											<div class="content">
+											<div class="col-lg-5 col-md-6 col-sm-6 col-xs-12 ">
+							<h2 class="post-title">Personalize</h2>
+
+							<h5>Personalize your customer relations.</h5>
+
+							<div class="aboutcnt">
+								<p>
+Personalize your customer relations. Studies have shown that people respond better to emails that actually address them via their first name. oyr Mail Email Marketer allows you to capture your subscribers first name, last name, age, salary -- even their shoe size -- when they signup to your mailing list. You can then use these fields in your email to deliver personalized content.</p>
+</div>
+							</div>
+													</div>
+					<div class="col-lg-7 col-md-6 col-sm-6 col-xs-12 ">
+					<div class="post-imagex fitvidx"><a href="#" ><img width="587" height="330" src="images/features/create-beautiful1.png" class="attachment-4-3-medium wp-post-image" alt="create-beautiful" /></a></div></div >
+				</div >
+<div class="divider60"></div><div style="border-bottom:1px solid #ccc; width:1124px;margin:0px 100px 0px 100px; "></div>	<div class="divider60"></div>
+					<div class="container">					
+					<div class="col-lg-7 col-md-6 col-sm-6 col-xs-12 ">
+					<div class="post-image fitvid"><a href="#" ><img width="587" height="330" src="images/features/design1.png" class="attachment-4-3-medium wp-post-image" alt="design" /></a></div></div>
+					
+					
+						<div class="content">
+                        
+                     				
+					<div class="col-lg-5 col-md-6 col-sm-6 col-xs-12 ">
+										
+							<h2 class="post-title">Design</h2>
+
+							<h5>Create beautiful email newsletters.</h5>
+
+							<div class="aboutcnt">
+								<p>Bring your brand to life through email with our built-in, ready-made templates &amp; easy-to-use WYSIWYG editor.</p>
+							</div>
+</div>
+													</div>
+													</div>
+													
+			<div class="divider60"></div><div style="border-bottom:1px solid #ccc; width:1124px;margin:0px 100px 0px 100px; "></div>	<div class="divider60"></div>
+			
+			
+	<div class="container">
+											<div class="content">
+                                            	<div class="col-lg-5 col-md-6 col-sm-6 col-xs-12 ">
+							<h2 class="post-title">Track</h2>
+
+							<h5>Track your Email Send.</h5>
+
+							<div class="aboutcnt">
+								<p>
+								Track your eMail by Statics with split testing. Send a few variations of your email to a sample of your list and have the best performing one sent to the rest automatically. Powerful newsletter and email campaigns build relationships Make sales. Promote your goods. Gather data. KVN Mail delivers powerful, user-friendly and affordable tools to create, send and track high-performance email and newsletter campaigns</p>
+							</div>
+													</div></div>
+					<div class="col-lg-5 col-md-6 col-sm-6 col-xs-12 ">
+					<div class="post-image fitvid"><a href="#" ><img width="587" height="330" src="images/features/send.png" class="attachment-4-3-medium wp-post-image" alt="send" /></a></div></div></div>
+				
+		<div class="divider60"></div><div style="border-bottom:1px solid #ccc; width:1124px;margin:0px 100px 0px 100px; "></div>	<div class="divider60"></div>
+				
+<div class="container">
+
+ <div class="col-lg-7 col-md-6 col-sm-6 col-xs-12 ">
+					<div class="post-image fitvid"><a href="#" ><img width="587" height="330" src="images/features/track1.png" class="attachment-4-3-medium wp-post-image" alt="track" /></a></div></div>
+											<div class="content">
+                                            <div class="col-lg-5 col-md-6 col-sm-6 col-xs-12 ">
+							<h2 class="post-title">Statistics</h2>
+
+							<h5>Know what works.</h5>
+
+							<div class="aboutcnt">
+								<p>See the complete activity of a lead with event logging. Every time a lead opens your email, clicks a link or performs any other activity, it's logged against their history making it easy for you sales team to qualify their desire to purchase.</p>
+							</div>
+													</div></div>
+					</div>
+			
+			
+	<div class="divider60"></div><div style="border-bottom:1px solid #ccc; width:1124px;margin:0px 100px 0px 100px; "></div>	<div class="divider30"></div>
+				
+	<div class="container">
+											
+							<h2 class="post-titlex" style="text-align:center;">More Standard Features</h2></div>
+
+					<div class="grey-bg">
+    <div class="contentfe center">
+	  
+      
+        <div class="feature-gridx grid-12x">
+		<div class="container">
+        <div class="divider40"></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
+            <div class="grid-4-12 iconx largex">
+                <i class="fa fa-line-chart fa-4x"></i>
+                <h4>Better Deliverabilty.</h4>
+                <p>Build reputation across ISP,Intelligent email delivery engine, Multiple dedicated IPs, Automated IP reputation monitoring.</p>
+            </div></div>
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
+            <div class="grid-4-12 icon large">
+                 <i class="fa fa-bullseye fa-4x"></i>
+                <h4>Built-In Spam Checker.</h4>
+                <p>Your email is analyzed for known spam keywords and report, ensuring your email is delivered to subscriber's inboxes.</p>
+            </div>  </div>
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
+            <div class="grid-4-12 icon large last">
+                <i class="fa fa-refresh fa-4x"></i>
+                <h4>Automatic Bounce Handling.</h4>
+                <p>Bounced emails (both soft and hard) are processed and removed from your list for you automatically, meaning your list is always clean.</p>
+            </div> </div>
+			</div>
+			<div class="divider20"></div>
+			<div class="container">
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
+            <div class="grid-4-12 icon large">
+                <i class="fa fa-random fa-4x"></i>
+                <h4>Double Opt-In Confirmation.</h4>
+                <p>Keep list clean and follow best practices by requiring new subscribers to click a link in an email to verify want to join your list. 
+.</p>
+            </div> </div>
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
+            <div class="grid-4-12 icon large">
+                 <i class="fa fa-unlock fa-4x"></i>
+                <h4>Easy, Automatic Unsubscribes.</h4>
+                <p>All unsubscribe requests are processed for you automatically giving you and your subscribers peace of mind.</p>
+            </div></div>
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
+            <div class="grid-4-12 icon large last">
+                 <i class="fa fa-arrows-alt fa-4x"></i>
+                <h4>Split Testing.</h4>
+                <p>Find out which of your email campaigns performs the best based on open rates and click-thru rates with split testing. .</p>
+            </div></div>
+        </div>
+			<div class="divider20"></div>
+			<div class="container">
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
+            <div class="grid-4-12 icon large">
+                <i class="fa fa-cogs fa-4x"></i>
+                <h4>Automatic Inbox Preview.</h4>
+                <p>Maximum impact and click throughs is important that your email looks the same in all of the popular email clients, which isn't always easy. 
+ 
+.</p>
+            </div> </div>
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
+            <div class="grid-4-12 icon large">
+                 <i class="fa fa-ioxhost fa-4x"></i>
+                <h4>Create Multiple Contact Lists.</h4>
+                <p>Create as many contact lists as you need, group contacts based on type or lead source, such as "newsletter subscribers" and "sales leads".</p>
+            </div></div>
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
+            <div class="grid-4-12 icon large last">
+                 <i class="fa fa-sign-in fa-4x"></i>
+                <h4>Website Signup Forms.</h4>
+                <p>Easily create customized signup forms with your company's color scheme to add to your website.</p>
+            </div></div>
+        </div>
+      <div class="divider20"></div>
+    </div></div>
+</div>
+	</div>
+		</div><!--End Content Container -->
+	
+		
+
+
+        </div>
+
+    </div>
+	<!-- Container -->
+
+		<!-- Header
+		    ================================================== -->
+
+		<!-- End Header -->
+
+		<!-- slider 
+			================================================== -->
+
+								<div class="footer">
+			<div class="container">
+              <div class="col-lg-3 col-md-3 col-sm-6">
+                <p class="regions-map"> <img src="images/globe-image.jpg" alt="Regions &amp; Languages"> </p>
+              
+    <div class="footlinksa">             
+
+
+<a href="#" target="_self">Write to us sales [AT] address.com </a><br>
+<a href="#" target="_self">US (Toll Free): 1-800-467-MAIL</a><br>
+<a href="#" target="_self">India/ Others: +91-4652266343</a><br>
+<a href="#" target="_self"> Mon - Sat 10AM - 6PM IST</a><br>
+</div></div><!-- </div> -->
+			
+          
+            
+
+<!-- <div class="custom"  > -->
+	<div class="secondblock span3 hidden-phone col-lg-3 col-md-3 col-sm-6">
+  
+    <div class="footlinksa">
+        <h2>
+          Our Services        </h2><a href="#">Indias No.1 Email Marketing Service</a> 
+       
+         <a href="#">Newsletter Marketing Service</a> <br>
+         <a href="#">Bulk Email Marketing Software</a><br>
+		 <a href="#">Email Newsletter Templates</a><br>
+		 <a href="#">Mass Email Service</a><br>
+		   </div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-6">
+      <div class="footlinksa">
+        <h2>
+           Quick Links        </h2>
+      
+       <a href="#">Free Trial Signup</a> <br>
+      <a href="pricing.html">  Pricing Plans</a><br>
+		 <a href="#">Payment Options</a><br>		
+		 <a href="terms.html">Terms</a> <br>
+		 
+ <a href="contact.html">Contact </a> 		</div>
+</div>
+<!-- </div> -->
+ 
+           
+              <div class="thirdblock span3 hidden-phone col-lg-3 col-md-3 col-sm-6">
+ <div id="SubscribeNewsletter">
+<!-- <div class="custom"  > -->
+	   <div>
+               <div class="divider20">  </div>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="images/all-payment-icon.png" width="193" height="28" />                            </a>                        </li>
+						
+						<div id="thawteseal" style="text-align:left;" title="Click to Verify - This site chose Thawte SSL for secure e-commerce and confidential communications.">
+<div><script type="text/javascript" src="https://seal.thawte.com/getthawteseal?host_name=postyman.com&amp;size=M&amp;lang=en"></script></div>
+</div>
+                        <li class="litext"> 2003-2012 Virtua Technologies</li>
+                    </ul>
+                </div>
+</div>  </div>  </div>
+</div>
+<script type="text/rocketscript" data-rocketsrc="scripts/vendor/mobile-nav.js"></script>
+<script type="text/rocketscript" data-rocketsrc="scripts/vendor/jquery.validate.js"></script>
+<script type="text/rocketscript" data-rocketsrc="scripts/vendor/jquery.fancybox.js?v=2.1.4"></script>
+<script type="text/rocketscript" data-rocketsrc="scripts/main.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+ <!-- jQuery KenBurn Slider  -->
+    <script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
+	<script type="text/javascript" src="js/jquery.countTo.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+<!--
+	##############################
+	 - ACTIVATE THE BANNER HERE -
+	##############################
+	-->
+	<script type="text/javascript">
+
+		var tpj=jQuery;
+		tpj.noConflict();
+
+		tpj(document).ready(function() {
+
+		if (tpj.fn.cssOriginal!=undefined)
+			tpj.fn.css = tpj.fn.cssOriginal;
+
+			var api = tpj('.fullwidthbanner').revolution(
+				{
+					delay:8000,
+					startwidth:1170,
+					startheight:500,
+
+					onHoverStop:"off",						// Stop Banner Timet at Hover on Slide on/off
+
+					thumbWidth:100,							// Thumb With and Height and Amount (only if navigation Tyope set to thumb !)
+					thumbHeight:50,
+					thumbAmount:3,
+
+					hideThumbs:0,
+					navigationType:"bullet",				// bullet, thumb, none
+					navigationArrows:"solo",				// nexttobullets, solo (old name verticalcentered), none
+
+					navigationStyle:"round",				// round,square,navbar,round-old,square-old,navbar-old, or any from the list in the docu (choose between 50+ different item), custom
+
+
+					navigationHAlign:"center",				// Vertical Align top,center,bottom
+					navigationVAlign:"bottom",					// Horizontal Align left,center,right
+					navigationHOffset:30,
+					navigationVOffset: 40,
+
+					soloArrowLeftHalign:"left",
+					soloArrowLeftValign:"center",
+					soloArrowLeftHOffset:40,
+					soloArrowLeftVOffset:0,
+
+					soloArrowRightHalign:"right",
+					soloArrowRightValign:"center",
+					soloArrowRightHOffset:40,
+					soloArrowRightVOffset:0,
+
+					touchenabled:"on",						// Enable Swipe Function : on/off
+
+
+					stopAtSlide:-1,							// Stop Timer if Slide "x" has been Reached. If stopAfterLoops set to 0, then it stops already in the first Loop at slide X which defined. -1 means do not stop at any slide. stopAfterLoops has no sinn in this case.
+					stopAfterLoops:-1,						// Stop Timer if All slides has been played "x" times. IT will stop at THe slide which is defined via stopAtSlide:x, if set to -1 slide never stop automatic
+
+					hideCaptionAtLimit:0,					// It Defines if a caption should be shown under a Screen Resolution ( Basod on The Width of Browser)
+					hideAllCaptionAtLilmit:0,				// Hide all The Captions if Width of Browser is less then this value
+					hideSliderAtLimit:0,					// Hide the whole slider, and stop also functions if Width of Browser is less than this value
+
+
+					fullWidth:"on",
+
+					shadow:1								//0 = no Shadow, 1,2,3 = 3 Different Art of Shadows -  (No Shadow in Fullwidth Version !)
+
+				});
+
+
+				// TO HIDE THE ARROWS SEPERATLY FROM THE BULLETS, SOME TRICK HERE:
+				// YOU CAN REMOVE IT FROM HERE TILL THE END OF THIS SECTION IF YOU DONT NEED THIS !
+					api.bind("revolution.slide.onloaded",function (e) {
+
+
+						jQuery('.tparrows').each(function() {
+							var arrows=jQuery(this);
+
+							var timer = setInterval(function() {
+
+								if (arrows.css('opacity') == 1 && !jQuery('.tp-simpleresponsive').hasClass("mouseisover"))
+								  arrows.fadeOut(300);
+							},3000);
+						})
+
+						jQuery('.tp-simpleresponsive, .tparrows').hover(function() {
+							jQuery('.tp-simpleresponsive').addClass("mouseisover");
+							jQuery('body').find('.tparrows').each(function() {
+								jQuery(this).fadeIn(300);
+							});
+						}, function() {
+							if (!jQuery(this).hasClass("tparrows"))
+								jQuery('.tp-simpleresponsive').removeClass("mouseisover");
+						})
+					});
+				// END OF THE SECTION, HIDE MY ARROWS SEPERATLY FROM THE BULLETS
+			});
+	</script>
+ </body></html>

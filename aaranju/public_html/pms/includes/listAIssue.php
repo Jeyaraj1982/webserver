@@ -1,6 +1,10 @@
 <?php $projcts=$mysql->select("select p.* from _tblProjectAssign as pa, _tblProjects p where pa.ProjectID=p.ProjectID  and pa.UserID='".$_SESSION['User']['UserID']."'  group by pa.ProjectID"); ?>
 <?php $users=$mysql->select("select * from _tblUser"); ?>
 <?php
+
+if (isset($_POST['verifyBtn'])) {
+    
+}
  $style = "";
         if (isset($_POST['Projectwisebtn'])) {
           $issues = $mysql->select("select * from _tblIssues where ProjectID='".$_POST['ProjectID']."' order by IssueID desc");  
@@ -161,8 +165,21 @@
              <td><?php echo $issue['DeveloperName'];?></td>
              <td><?php echo $issue['IssueStatus']>1 ? date("M d, Y",strtotime($issue['ClosedOn'])) : "";?></td>
              
+             <?php
+                 if ($issue['IssueStatus']==2 && $issue['VerifiedA']==0) {
+                  ?>
+                  <td colspan="2" style="text-align: center;vertical-align: center;">
+                  <form action="" method="post">
+                    <input type="hidden" value="<?php echo $issue['IssueID'];?>" name="IssueID" >
+                    <input type="submit" value="Verified" name="verifyBtn" >
+                  </form>
+                  </td>
+                  <?php   
+                 }  else {
+             ?>
              <td><?php echo $issue['VerifiedA'];?></td>
              <td><?php echo is_null($issue['VerifiedAOn']) ? "" : date("M d, Y",strtotime($issue['VerifiedAOn']));?></td>
+             <?php } ?>
              <td><?php echo $issue['VerifiedB'];?></td>
              <td><?php echo is_null($issue['VerifiedBOn']) ? "" : date("M d, Y",strtotime($issue['VerifiedBOn']));?></td>
              

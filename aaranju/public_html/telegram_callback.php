@@ -1,4 +1,4 @@
-<?php
+1<?php
     date_default_timezone_set("Asia/Calcutta");
     include_once("class.Mysql.php");
     $d = file_get_contents('php://input');
@@ -23,7 +23,7 @@
   }
   
   function writeTxt($text) {
-      $file = "telegram".date("Y_m_d").".txt";
+      $file = "telegram.txt";
       $myfile = fopen($file, "a") or die("Unable to open file!");
       fwrite($myfile,"\n".date('Y-m-d H:i:s')."\t".$text);
       fclose($myfile);
