@@ -1,5 +1,6 @@
 <?php
     $_SESSION['param']=array();
+    $data = $mysql->select("select * from _tbl_Members where md5(concat('j2j',MemberCode))='".$_GET['Mem']."'");
 ?>
 <div class="container-fluid" style="padding:25px;">
                 <div class="row">
@@ -13,15 +14,19 @@
                                     <table align="center">
                                         <tr>
                                             <td style="text-align: right;">Your Member ID</td>
-                                            <td  style="text-align: left">:&nbsp;<?php echo $_GET['MemID'];?></td>
+                                            <td  style="text-align: left">:&nbsp;<?php echo $data[0]['MemberCode'];?></td>
+                                        </tr>
+                                         <tr>
+                                            <td style="text-align: right;">Your Password</td>
+                                            <td  style="text-align: left">:&nbsp;<?php echo $data[0]['MemberPassword'];?></td>
                                         </tr>
                                         <tr>
                                             <td style="text-align: right;">Your Sponsor ID</td>
-                                            <td style="text-align: left">:&nbsp;<?php echo trim($_GET['SpnID']);?></td>
+                                            <td style="text-align: left">:&nbsp;<?php echo trim($data[0]['SponsorCode']);?></td>
                                         </tr>
                                           <tr>
                                             <td style="text-align: right;">Your Upline ID</td>
-                                            <td  style="text-align: left">:&nbsp;<?php echo $_GET['UpnCode'];?></td>
+                                            <td  style="text-align: left">:&nbsp;<?php echo $data[0]['UplineCode'];?></td>
                                         </tr>
                                     </table>
                                 </div>

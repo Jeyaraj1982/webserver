@@ -19,19 +19,21 @@ if (isset($_SESSION['User']) && $_SESSION['User']['Role']=="Stockiest") {
 }
 
 define("DbHost","localhost");
-define("DbName","happylif_application");
-define("DbUser","happylif_user");
-define("DbPassword","mysqluser@123");
+define("DbName","astrafx_database");
+define("DbUser","astrafx_user");
+define("DbPassword","mysqlPwd@123");
+define("BaseUrl","https://www.astrafx.uk");
 
 include_once(__DIR__."/app/controller/class.DatabaseController.php");
-include_once(__DIR__."/app/controller/class.MobileSMSController.php");
-include_once(__DIR__."/app/controller/class.EmailController.php");
+//include_once(__DIR__."/app/controller/class.MobileSMSController.php");
+//include_once(__DIR__."/app/controller/class.EmailController.php");
 
-define("SiteTitle","Happylife2020");
-define("SITE_TITLE","Happylife2020");
+define("SiteTitle","Astrafx");
+define("SITE_TITLE","Astrafx Trading");
+define("FooterLicence","Astrafx.uk");
 define("EPINS","Vouchers");
 define("EPIN","Voucher");
-define("loginUrl","http://happylife2020.in/login");
+define("loginUrl","http://Astrafx.uk/login");
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -74,11 +76,17 @@ $mysql   = new MySqldatabase(DbHost,DbUser,DbPassword,DbName);
     
      class MemberTree {
        
+       var $member_code="";  
        var $member_count=0;
        var $error=0;
        var $LeftCount = 0;
        var $RightCount = 0;
        var $PV=0;
+       
+       var $LeftCarryForwarded = 0;
+       var $RightCarryForwarded = 0;
+       var $availableLeftCarryForward = 0;
+       var $availableRightCarryForward = 0;
        
        var $leftIDs=array();
        var $rightIDs=array();
@@ -93,7 +101,7 @@ $mysql   = new MySqldatabase(DbHost,DbUser,DbPassword,DbName);
            $children = $mysql->select("select * from `_tblPlacements` where `ParentCode`='".$MemberCode."'");
            $count = sizeof($children);
            
-           if ($count<=2) {
+           if ($count<=2) {                                       
                foreach($children as $userId) {
                    $this->PV+=$userId['PV'];
                    $count += $this->countChildren($userId['ChildCode']);
@@ -288,7 +296,7 @@ $mysql   = new MySqldatabase(DbHost,DbUser,DbPassword,DbName);
                $count .= ",". $this->countChildrenCodees($userId['ChildCode'],$idpos);
            }
            return $count;
-       }  
+       }                        
        
        function GetNodeIDs($MemberCode,$pos) {
            global $mysql;
@@ -301,7 +309,7 @@ $mysql   = new MySqldatabase(DbHost,DbUser,DbPassword,DbName);
                
                $fL = $mysql->select("select * from `_tblPlacements` where `Position`='L' and `ParentCode`='".$MemberCode."'");
                if (sizeof($fL)==0) {
-                   $this->leftIDs[]=$MemberCode; 
+                   //$this->leftIDs[]=$MemberCode;  /* jun 14, 2020 */
                    return $MemberCode;
                } 
                if (sizeof($fL)==1) {
@@ -314,6 +322,7 @@ $mysql   = new MySqldatabase(DbHost,DbUser,DbPassword,DbName);
                    
                    if (strtotime($date)==strtotime(date("Y-m-d",strtotime($fL[0]['PlacedOn'])))) {
                        $this->todayLeftPV += $fL[0]['PV'];
+                      //  $this->todayLeftPV += (($this->todayLeftPV==0) ?  $fL[0]['PV'] : 0);
                    }
                    
                    
@@ -327,7 +336,7 @@ $mysql   = new MySqldatabase(DbHost,DbUser,DbPassword,DbName);
                $this->todayRightPV=0;
                $fR = $mysql->select("select * from `_tblPlacements` where `Position`='R' and `ParentCode`='".$MemberCode."'");
                if (sizeof($fR)==0) {
-                   $this->rightIDs[]=$MemberCode;
+                   //$this->rightIDs[]=$MemberCode;   /* jun 14, 2020 */
                    return $MemberCode;
                } 
                if (sizeof($fR)==1) {
@@ -341,7 +350,7 @@ $mysql   = new MySqldatabase(DbHost,DbUser,DbPassword,DbName);
                    }
                    
                    if (strtotime($date)==strtotime(date("Y-m-d",strtotime($fR[0]['PlacedOn'])))) {
-                       $this->todayRightPV += $fR[0]['PV'];
+                      // $this->todayRightPV += (($this->todayRightPV==0) ?  $fR[0]['PV'] : 0);
                    }
                    
                    return $this->countChildrenCodees($fR[0]['ChildCode'],"R");
@@ -415,7 +424,7 @@ $mysql   = new MySqldatabase(DbHost,DbUser,DbPassword,DbName);
                     $sqlids[]=  "'".$id."'";
                 }
                 if ($id!=$MemberCode) {
-                    $n_rightids[] = $id;
+                    $n_rightidsp[] = $id;
                 }
             }        
             if (sizeof($sqlids)>0) {
@@ -425,7 +434,7 @@ $mysql   = new MySqldatabase(DbHost,DbUser,DbPassword,DbName);
             }  
                   
 $left_ids= $n_leftids;
-$right_ids= $n_rightids;
+$right_ids= $n_rightidsp;
 
             //if ( (sizeof($ldata)>=1 && sizeof($rdata)>=2) || (sizeof($ldata)>=2 && sizeof($rdata)>=1) ) {
             if ( (sizeof($left_ids)>=1 && sizeof($right_ids)>=2) || (sizeof($left_ids)>=2 && sizeof($right_ids)>=1) ) {
@@ -435,6 +444,22 @@ $right_ids= $n_rightids;
                 return false;
             }
         }       
+        
+        function Carryforward() {          
+            global $mysql;
+            $xcarryforward =  $mysql->select("select * from _tbl_payoutsummary where MemberCode='".$this->member_code."'");
+            $carryforward =  $mysql->select("select (sum(DebitLeft)) as DebitLeft, (sum(DebitRight)) as DebitRight from _tbl_payoutsummary where MemberCode='".$this->member_code."'");
+            $this->LeftCarryForwarded         = (isset($carryforward[0]['DebitLeft'])) ? $carryforward[0]['DebitLeft'] : "0";
+            $this->RightCarryForwarded        = (isset($carryforward[0]['DebitRight'])) ? $carryforward[0]['DebitRight'] : "0";
+            if (sizeof($xcarryforward)==0) {
+                $this->availableLeftCarryForward  = $this->leftPV;
+                $this->availableRightCarryForward = $this->rightPV;
+            } else {
+                $this->availableLeftCarryForward  =  $this->leftPV -  $this->LeftCarryForwarded ;//    + $this->todayLeftPV;
+                $this->availableRightCarryForward =  $this->rightPV  - $this->RightCarryForwarded ;//  + $this->todayRightPV;
+            }
+        }
+        
    }   
    
      function getMemberCode($memberName) {
@@ -573,6 +598,7 @@ $right_ids= $n_rightids;
     
    $memberTree = new MemberTree();
    
+   
     function getImage($thumb,$gender) {
                 
                  if ((strlen(trim($thumb))<6) || ($thumb == null)) { 
@@ -598,16 +624,16 @@ $right_ids= $n_rightids;
                 
                  if ((strlen(trim($thumb))<6) || ($thumb == null)) { 
                      if ($gender=="Female") {
-                         return 'assets/images/smart_logo.png';
+                         return 'assets/logo.png';
                          return 'assets/images/female_default.png';
                      } 
                      
                      if ($gender=="Male") {
-                         return "assets/images/smart_logo.png";
+                         return "assets/logo.png";
                          return "assets/images/male_default.png";
                      } 
                      
-                     return "assets/images/smart_logo.png";
+                     return "assets/smart_logo.png";
                      return "assets/images/male_default.png";
                      
                  } else { 

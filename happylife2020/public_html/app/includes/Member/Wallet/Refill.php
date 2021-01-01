@@ -1,13 +1,18 @@
 <?php
     if (isset($_POST['btnAddFund'])) {
         $error=0;
-        if ($_POST['Amount']<1000) {
+        if ($_POST['Amount']<10) {
             $error++;
-            $errormsg = "Amount must have Rs. 1000 and above";  
+            $errormsg = "Amount must have Rs. 10 and above";  
         }
         if (strlen(trim($_POST['TransactionNumber']))<3) {
             $error++;
             $errormsg = "You must provide transaction number";  
+        }
+        
+        if ($_POST['txnPassword']!=$_SESSION['User']['MemberTxnPassword']) {
+            $error++;
+            $errormsg = "Invalid Transaction Password";  
         }
         if ($error==0) {
             
@@ -20,6 +25,7 @@
                                                                    "TransferDate"   => $_POST['yy']."-".$_POST['mm']."-".$_POST['dd']." 00:00:00",
                                                                    "IFSCode"        => $BankDetails[0]['IFSCode'],
                                                                    "Mode"           => $_POST['Mode'],
+                                                                   "Remarks"           => $_POST['remarks'],
                                                                    "TransactionNumber" => $_POST['TransactionNumber'])); 
             unset($_POST);
 ?>
@@ -50,48 +56,49 @@
             <li class="separator"><i class="flaticon-right-arrow"></i></li>
             <li class="nav-item"><a href="dashboard.php?action=Wallet/Refill">Wallet</a></li>
             <li class="separator"><i class="flaticon-right-arrow"></i></li>
-            <li class="nav-item"><a href="dashboard.php?action=Wallet/Refill">Refill</a></li>
+            <li class="nav-item"><a href="dashboard.php?action=Wallet/Refill">Wallet Request</a></li>
         </ul>
     </div>
     <div class="row">
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    <div class="card-title">Refill Wallet</div>
+                    <div class="card-title">Wallet Request</div>
                 </div>
                 <div class="card-body">
                     <form action="" method="post">
                         <div class="row"> 
                             <div class="col-md-9">
                                 <div class="form-group">
-                                    <label for="email2">Refill Amount</label>
-                                    <input class="form-control" id="Amount" name="Amount" value="<?php echo (isset($_POST['Amount']) ? $_POST['Amount'] : "");?>"  placeholder="Amount" type="text">
+                                    <label for="email2">Amount ($)<span style="color:red">*</span></label>
+                                    <input class="form-control" id="Amount" name="Amount" value="<?php echo (isset($_POST['Amount']) ? $_POST['Amount'] : "");?>"  placeholder="Amount" required type="text">
                                 </div>
                                  <div class="form-group">
-                                    <label for="email2">Transfer To</label>
+                                    <label for="email2">Transfer To<span style="color:red">*</span></label>
                                     <div class="select2-input">
                                     <?php $BankDetails =$mysql->select("select * from _tbl_admin_bank_details order by BankName");   ;?>
                                         <select id="basic"  name="TransferTo" class="form-control">
                                            <?php foreach($BankDetails as $BankDetail) {?>
-                                            <option value="<?php echo $BankDetail['BankID'];?>" <?php echo $_POST[ 'BankName'] ? " selected='selected' " : "";?>><?php echo $BankDetail['BankName'];?>&nbsp;-&nbsp;<?php  echo $BankDetail['AccountNumber']; ?>&nbsp;-&nbsp;<?php echo $BankDetail['IFSCode']; ?></option>
+                                            <option value="<?php echo $BankDetail['BankID'];?>" <?php echo $_POST[ 'BankName'] ? " selected='selected' " : "";?>><?php echo $BankDetail['BankName'];?></option>
                                            <?php } ?>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="email2">Transaction ID</label>
+                                    <label for="email2">Transaction ID<span style="color:red">*</span></label>
                                     <input class="form-control" name="TransactionNumber" placeholder="Transaction Reference Number" id="TransactionNumber" value="<?php echo (isset($_POST['TransactionNumber']) ? $_POST['TransactionNumber'] : "");?>" type="text">
                                 </div>
                                 <div class="form-group">
-                                    <label for="password">Transaction Mode</label>
+                                    <label for="password">Transaction Mode<span style="color:red">*</span></label>
                                     <select name="Mode" id="Mode" class="form-control">
-                                        <option value="NEFT" <?php echo $_POST[ 'Mode'] ? " selected='selected' " : "";?>>NEFT</option>
+                                        <option value="Cash" <?php echo $_POST[ 'Mode'] ? " selected='selected' " : "";?>>Cash</option>
+                                        <!--<option value="NEFT" <?php echo $_POST[ 'Mode'] ? " selected='selected' " : "";?>>NEFT</option>
                                         <option value="IMPS" <?php echo $_POST[ 'Mode'] ? " selected='selected' " : "";?>>IMPS</option>
-                                        <option value="FT" <?php echo $_POST[ 'Mode'] ? " selected='selected' " : "";?>>Same Bank To Same Bank</option>
+                                        <option value="FT" <?php echo $_POST[ 'Mode'] ? " selected='selected' " : "";?>>Same Bank To Same Bank</option>-->
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label for="password">Transaction Date</label>
+                                    <label for="password">Transaction Date<span style="color:red">*</span></label>
                                     <div class="input-group">
                                        <table>
                                         <tr>                     
@@ -156,8 +163,12 @@
                                     </div>
                                 </div> 
                                 <div class="form-group">
-                                    <label for="password">Remarks</label>
-                                    <input class="form-control" id="remarks" name="remarks" placeholder="Remarks" type="text">
+                                    <label for="password">Remarks<span style="color:red">*</span></label>
+                                    <input class="form-control" id="remarks" name="remarks" placeholder="Remarks" required type="text">
+                                </div>
+                                  <div class="form-group">
+                                    <label for="password">Transaction Password<span style="color:red">*</span></label>
+                                    <input class="form-control" id="txnPassword" name="txnPassword" placeholder="Transaction Password" required type="password">
                                 </div>
                                 <div class="form-group">
                                     <input class="btn btn-primary" id="password" name="btnAddFund" value="Send Request" placeholder="Password" type="submit">
@@ -176,11 +187,13 @@
 $('#datepicker').datetimepicker({
             format: 'MM/DD/YYYY',
         });
-        $('#basic').select2({
+        /*$('#basic').select2({
             theme: "bootstrap"
         });  $('#Mode').select2({
             theme: "bootstrap"
-        });
+        });  */
 
         });
 </script>
+
+

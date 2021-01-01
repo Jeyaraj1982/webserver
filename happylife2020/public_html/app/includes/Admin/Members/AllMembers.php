@@ -65,8 +65,4 @@
         </div>
     </div>
 </div>
-<script>
-    $(document).ready(function() {
-        $('#basic-datatables').DataTable({});
-    });
-</script>
+ 

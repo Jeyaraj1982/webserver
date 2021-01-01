@@ -37,5 +37,4 @@
     <div class="col-md-12 col-xs-12 b-r">
         <a href="dashboard.php?action=Settings/DoubleAuthentication">Double Authentication Settings</a>
     </div>
-</div>
- 
+</div> 

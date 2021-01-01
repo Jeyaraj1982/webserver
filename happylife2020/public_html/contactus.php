@@ -1,91 +1,110 @@
-<?php
-    include_once("config.php");
-    include_once("includes/header.php");
-?>
-   <main role="main">
-      <!-- Content -->
-      <article>
-        <header class="section background-primary background-transparent text-center background-parallax-container" data-image-src="assets/img/parallax-02.jpg" style="padding:50px !important">
-            <h1 class="text-white margin-bottom-0 text-size-50 text-thin text-line-height-1">Contact US</h1>
-            <div class="background-parallax" style="background-image:url(assets/img/parallax-06.jpg)"></div>
-        </header>
-        <div class="section background-white"> 
-          <div class="line">
-            <div class="margin">
-              
-              <!-- Company Information -->
-              <div class="s-12 m-12 l-6">
-                <h2 class="text-uppercase text-strong">Company Information</h2>
-                <hr class="break break-small background-primary">
-                <div class="float-left">
-                  <i class="icon-placepin background-primary icon-circle-small text-size-20"></i>
-                </div>
-                <div class="margin-left-80 margin-bottom">
-                  <h4 class="text-strong margin-bottom-0">Company Address</h4>
-                  <p>
-                     Tamilnadu, India. <br><br>
-                  </p>               
-                </div>
-                <div class="float-left">
-                  <i class="icon-paperplane_ico background-primary icon-circle-small text-size-20"></i>
-                </div>
-                <div class="margin-left-80 margin-bottom">
-                  <h4 class="text-strong margin-bottom-0">E-mail</h4>
-                  <p>happylife20.20@yahoo.com<br><br>
-                  
-                  </p>              
-                </div>
-                <div class="float-left">
-                  <i class="icon-smartphone background-primary icon-circle-small text-size-20"></i>
-                </div>
-                <div class="margin-left-80">
-                  <h4 class="text-strong margin-bottom-0">Phone Numbers</h4>
-                  <p>+91 877 861 6561</p>             
-                </div>
-              </div>
-              
-              <!-- Contact Form -->
-              <div class="s-12 m-12 l-6">
-                <h2 class="text-uppercase text-strong margin-m-top-50">Contact Us</h2>
-                <hr class="break break-small background-primary">
-                <!-- If you want to make a field required, add the "required" class to the input. -->
-                <!-- The form e-mail address you can change on file resp-email.php on line 4. -->
-                <form name="contactForm" class="customform ajax-form" method="post" enctype="multipart/form-data">
-                  <div class="line">
-                    <div class="margin">
-                      <div class="s-12 m-12 l-6">
-                        <input name="email" class="required email" placeholder="Your e-mail" title="Your e-mail" type="text">
-                        <p class="email-error form-error">Please enter your e-mail.</p>
-                      </div>
-                      <div class="s-12 m-12 l-6">
-                        <input name="name" class="name" placeholder="Your name" title="Your name" type="text">
-                        <p class="name-error form-error">Please enter your name.</p>
-                      </div>
-                    </div>
-                  </div>
-                         
-                  <div class="s-12">
-                    <input name="subject" class="required subject" placeholder="Subject" title="Subject" type="text">
-                    <p class="subject-error form-error">Please enter your subject.</p>
-                  </div>
-                  <div class="s-12">
-                    <textarea name="message" class="required message" placeholder="Your message" rows="3"></textarea>
-                    <p class="message-error form-error">Please enter your message.</p>
-                  </div>
-                  <!-- full-name-field is hidden antirobot field -->
-                  <input name="full-name-field" id="full-name-field" class="full-name-field" type="text">
-                  <div class="s-12"><a class="captcha-button text-white background-dark margin-bottom"><span class="not-a-robot-icon"><i class="icon-check text-green"></i></span> <span class="not-a-robot-text">I'm not a robot</span></a></div> 
-                  <!-- The submit button text you can edit in the file validation.sj on the line 8. -->
-                  <div class="s-12 button-parent"></div>
-                  <div class="line">
-                    <p class="mail-success form-success">Your message has been sent successfully.</p>
-                    <p class="mail-fail form-error">Sorry, error occured this time sending your message.</p>
-                  </div>  
-                </form>
-              </div>  
-            </div>  
-          </div> 
-        </div> 
-      </article>
-    </main>
-<?php include_once("includes/footer.php"); ?>    
+<?php include_once("includes/header.php");?>
+ <?php
+    if (isset($_POST['SubmitBtn'])) {
+            $id=$mysql->insert("_tbl_contact_us",array("ContactName"    => $_POST['Name'],                    
+                                                       "EmailID"        => $_POST['EmailID'],
+                                                       "Subject"        => $_POST['Subject'],
+                                                       "YourQuestions"        => $_POST['YourQuestions'],
+                                                       "CreatedOn"      => date("Y-m-d H:i:s")));
+     unset($_POST); ?>
+     <script>
+     setTimeout(
+     function(){swal("Your request has been submitted!", "Team will follow you shortly!"); },1500);
+           
+            </script>
+
+<?php    }    ?>
+<div class="breadcrumb-option set-bg" data-setbg="https://www.astrafx.uk/assets/img/banner_002.png" style="padding:300px 0 60px">
+<div class="container">
+<div class="row">
+<div class="col-lg-12 text-center">
+<div class="breadcrumb__text">
+<h2>Contact Us</h2>
+<div class="breadcrumb__links">
+<a href="<?php echo BaseUrl;?>"><i class="fa fa-home"></i> Home</a>
+<span>Contact Us</span>
+</div>
+</div>
+</div>
+</div>
+</div>                                                               
+</div>
+
+
+<section class="contact spad">
+<div class="container">
+<div class="row">
+<div class="col-lg-6 col-md-6">
+<div class="contact__text">
+<div class="section-title">
+<!--<h2>Let's Work Together</h2>
+<p>To make requests for further information, contact us via our social channels.</p>-->
+<Br>
+<b style="font-size:25px">Astrafx Traders</b><br>
+Chaucer House/Stone St,<br>
+Canterbury CT4 5PW,<br>
+United Kingdom<br><br>
+<i class="fa fa-envelope" style="color:#012068;"></i>:&nbsp;support@astrafx.uk<br> 
+<i class="fa fa-globe" style="color:#012068"></i>:&nbsp;https://www.astrafx.uk
+
+</div>
+<ul>
+<li><span>Weekday</span> 08:00 am to 18:00 pm</li>
+<li><span>Saturday:</span> 10:00 am to 16:00 pm</li>
+<li><span>Sunday:</span> Closed</li>
+</ul>
+</div>
+</div>
+<div class="col-lg-6 col-md-6">
+<div class="contact__form">
+<form method="post" action="">
+<div class="row">
+<div class="col-lg-6">
+<input type="text" name="Name" id="Name" value="<?php echo isset($_POST['Name']) ? $_POST['Name'] : "";?>" placeholder="Name" required>
+</div>
+<div class="col-lg-6">
+<input type="text" name="EmailID" id="EmailID" value="<?php echo isset($_POST['EmailID']) ? $_POST['EmailID'] : "";?>" placeholder="Email" required>
+</div>
+</div>
+<input type="text" name="Subject" id="Subject" value="<?php echo isset($_POST['Subject']) ? $_POST['Subject'] : "";?>" placeholder="Subject" required>
+<textarea placeholder="Your Question" name="YourQuestions" id="YourQuestions"><?php echo isset($_POST['YourQuestions']) ? $_POST['YourQuestions'] : "";?></textarea>
+<button type="submit" class="site-btn" name="SubmitBtn" id="SubmitBtn" style="background:#012068">Submit Now</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+ <!--
+<div class="contact-address">
+<div class="container">
+<div class="contact__address__text">
+<div class="row">
+<div class="col-lg-4 col-md-6 col-sm-6">
+<div class="contact__address__item">
+<h4>California Showroom</h4>
+<p>625 Gloria Union, California, United Stated <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="cc8fa3a0a3bea0a5aee2afada0a5aaa3bea2a5ad8caba1ada5a0e2afa3a1">[email&#160;protected]</a></p>
+<span>(+12) 456 678 9100</span>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-6">
+<div class="contact__address__item">
+<h4>New York Showroom</h4>
+<p>8235 South Ave. Jamestown, NewYork <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="397a5655564b55505b17775c4e40564b52795e54585055175a5654">[email&#160;protected]</a></p>
+<span>(+12) 456 678 9100</span>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-6">
+ <div class="contact__address__item">
+<h4>Florida Showroom</h4>
+<p>497 Beaver Ridge St. Daytona Beach, Florida <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e1a28e8d8e938d8883cf82808d88878e938f8880a1868c80888dcf828e8c">[email&#160;protected]</a></p>
+<span>(+12) 456 678 9100</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+-->
+<?php include_once("includes/footer.php");?>

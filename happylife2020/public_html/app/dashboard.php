@@ -8,11 +8,21 @@
         <?php
     }
 ?>
+<?php 
+if(UserRole=="Member"){
+  $getpassword =$mysql->select("select * from _tbl_Members where MemberID='".$_SESSION['User']['MemberID']."'");
+  if (strlen(trim($getpassword[0]['MemberTxnPassword']))==0) { 
+  if ($_GET['action']!="Settings/CreateTxnPassword") {
+        ?>
+    <script>
+        location.href="dashboard.php?action=Settings/CreateTxnPassword"
+    </script>
+<?php   }  }  } ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<title>HappyLife2020</title>
+	<title><?php echo SITE_TITLE; ?></title>
 	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
 	<link rel="icon" href="assets/img/icon.ico" type="image/x-icon"/>
 
@@ -28,7 +38,7 @@
 		});
 	</script>
 
-	<!-- CSS Files -->
+	<!-- CSS Files -->                                                              
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/atlantis.css">
 
@@ -70,6 +80,7 @@
     </style>
 </head>
 <?php
+    $memberTree->process_date=date("Y-m-d");
     $leftCount = $memberTree->getTotalLeftCount($_SESSION['User']['MemberCode']);
     $leftPV=$memberTree->PV;
     $rightCount = $memberTree->getTotalRightCount($_SESSION['User']['MemberCode']);
@@ -82,7 +93,7 @@
 			<div class="logo-header" data-background-color="blue" style="background:#000 !important;">
 				
 				<a href="dashboard.php" class="logo">
-					<img src="../app/assets/img/slogo.png?rand=<?php echo rand(33,333);?>" alt="navbar brand" class="navbar-brand" style="height:36px">
+					<img src="https://www.astrafx.uk/assets/trans_logo.png" alt="navbar brand" class="navbar-brand" style="height:42px">
                    
 				</a>
 				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -307,7 +318,7 @@
                            <div id="MyClockDisplay" class="clock" onload="showTime()">  </div>
                            <div style="font-size:14px;color:white;">
                            <?php echo $_SESSION['User']['MemberName'];?><br>
-                           $ <?php echo getEarningWalletBalance($_SESSION['User']['MemberID']);?>
+                           $ <?php echo number_format(getEarningWalletBalance($_SESSION['User']['MemberID']),3);?>
                            </div>
                         </li> 
 						<li class="nav-item dropdown hidden-caret">
@@ -347,7 +358,7 @@
 			<!-- End Navbar -->
 		</div>
 		<!-- Sidebar -->
-		<div class="sidebar sidebar-style-2">			
+		<div class="sidebar sidebar-style-2" data-background-color="dark2">			
 			<div class="sidebar-wrapper scrollbar scrollbar-inner">
 				<div class="sidebar-content">
 					<?php include_once("includes/".UserRole."/leftmenu.php"); ?>
@@ -384,7 +395,7 @@
 						</ul>
 					</nav>
 					<div class="copyright ml-auto">
-						Copyright &copy; 2020-2021, happylife2020.in<!-- <i class="fa fa-heart heart text-danger"></i> by <a href="#">ThemeKita</a>-->
+						Copyright &copy; 2020-2021, <?php echo FooterLicence;?>
 					</div>				
 				</div>
 			</footer>
@@ -895,109 +906,18 @@ $( document ).ready(function() {
         
         
 
-        /*Circles.create({
-            id:'circles-3',
-            radius:45,
-            value:40,
-            maxValue:100,
-            width:7,
-            text: 12,
-            colors:['#f1f1f1', '#F25961'],
-            duration:400,
-            wrpClass:'circles-wrp',
-            textClass:'circles-text',
-            styleWrapper:true,
-            styleText:true
-        }) */
+         
 
-        var totalIncomeChart = document.getElementById('totalIncomeChart').getContext('2d');
+   
 
-        var mytotalIncomeChart = new Chart(totalIncomeChart, {
-            type: 'bar',
-            data: {
-                labels: ["S", "M", "T", "W", "T", "F", "S", "S", "M", "T"],
-                datasets : [{
-                    label: "Total Income",
-                    backgroundColor: '#00ff00',
-                    borderColor: 'rgb(23, 125, 255)',
-                    data: [6, 4, 9, 5, 4, 6, 4, 3, 8, 10],
-                }],
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                legend: {
-                    display: false,
-                },
-                scales: {
-                    yAxes: [{
-                        ticks: {
-                            display: false //this will remove only the label
-                        },
-                        gridLines : {
-                            drawBorder: false,
-                            display : false
-                        }
-                    }],
-                    xAxes : [ {
-                        gridLines : {
-                            drawBorder: false,
-                            display : false
-                        }
-                    }]
-                },
-            }
-        });
+     
         
         
-        var totalSpentChart = document.getElementById('totalSpentChart').getContext('2d');
+        
 
-        var mytotalSpentChart = new Chart(totalSpentChart, {
-            type: 'bar',
-            data: {
-                labels: ["S", "M", "T", "W", "T", "F", "S", "S", "M", "T"],
-                datasets : [{
-                    label: "Total Spent",
-                    backgroundColor: '#ff9e27',
-                    borderColor: 'rgb(23, 125, 255)',
-                    data: [6, 4, 9, 5, 4, 6, 4, 3, 8, 10],
-                }],
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                legend: {
-                    display: false,
-                },
-                scales: {
-                    yAxes: [{
-                        ticks: {
-                            display: false //this will remove only the label
-                        },
-                        gridLines : {
-                            drawBorder: false,
-                            display : false
-                        }
-                    }],
-                    xAxes : [ {
-                        gridLines : {
-                            drawBorder: false,
-                            display : false
-                        }
-                    }]
-                },
-            }
-        });
+        
 
-
-        $('#lineChart').sparkline([105,103,123,100,95,105,115], {
-            type: 'line',
-            height: '70',
-            width: '100%',
-            lineWidth: '2',
-            lineColor: '#ffa534',
-            fillColor: 'rgba(255, 165, 52, .14)'
-        });
+        
       $('#circles-1 .circles-wrp .circles-text').html('0');
         $('#circles-2 .circles-wrp .circles-text').html('0');     
     setTimeout(function() {

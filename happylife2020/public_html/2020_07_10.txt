@@ -1,3 +1,0 @@
-[2020-07-10 15:32:30]	select * from `_tbl_Members` where  `MemberCode`='HLADM00001'
-[2020-07-10 15:32:30]	select * from _tbl_Settings_Packages where PackageID='3'
-[2020-07-10 15:32:30]	insert into `_tbl_members_login_logs` (`MemberID`,`LoginOn`,`IsSuccess`) values ('1','2020-07-10 15:32:30','1')

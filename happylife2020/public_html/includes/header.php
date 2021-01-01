@@ -1,81 +1,96 @@
+<?php
+include_once("config.php");
+?>
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>happylife2020</title>
-    <link rel="stylesheet" href="assets/css/components.css">  
-    <link rel="stylesheet" href="assets/css/icons.css">  
-    <link rel="stylesheet" href="assets/css/responsee.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.css">
-    <link rel="stylesheet" href="assets/css/owl.theme.css">
-    <link rel="stylesheet" href="assets/css/lightcase.css">
-    <!-- CUSTOM STYLE -->
-    <link rel="stylesheet" href="assets/css/template-style.css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="assets/js/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>    
-    <!--<script type="text/javascript" src="assets/js/validation.js"></script> -->
-  </head>
-  
-  <!--
-  You can change the color scheme of the page. Just change the class of the <body> tag. 
-  You can use this class: "primary-color-white", "primary-color-yellow", "primary-color-red", "primary-color-orange", "primary-color-pink", "primary-color-purple", "primary-color-blue", "primary-color-light-blue", "primary-color-aqua", "primary-color-green", "primary-color-dark" 
-  -->
-  
-  <!--
-  Each element is able to have its own background or text color. Just change the class of the element.  
-  You can use this class: 
-  "background-white", "background-yellow", "background-red", "background-orange", "background-pink", "background-purple", "background-blue", "background-light-blue", "background-aqua", "background-green", "background-grey", "background-sand",  "background-primary" 
-  "text-white", "text-yellow", "text-red", "text-orange", "text-pink", "text-purple", "text-blue", "text-light-blue", "text-aqua", "text-green", "text-primary"
-  -->
-  
-  <!-- 
-  If you want animated elements after scroll, add class "animated-element" or "animated-element slow" (for slower animation) to the elements.
-  -->
-  <body class="size-1140 primary-color-aqua">
-  
-    <!-- HEADER -->
-    <header role="banner">    
-      
-       
-      
-    
-      <nav class="background-white background-primary-hightlight sticky" style="background:#000 !important;">
-        <div class="line">
-          <div class="s-12 l-2">
-            <a href="index.php" class="logo"><img src="app/assets/img/slogo.png?rand=<?php echo rand(33,333);?>" alt=""></a>
-          </div>
-          <div class="top-nav s-12 l-10">
-            
-            <ul class="right chevron">
-              <li class="active-item">
-                <a href="index.php">Home</a>
-              </li>
-              <li>
-                <a href="products.php" style="color:#fff">Products</a>
-                <!-- <ul>
-                    <li>
-                       <a href="products.php?c=2">Health Care Products</a>
-                    </li>
-                 </ul>-->
-              </li>
-              <li>
-                <a href="plan.php" style="color:#fff">Business Plan</a>
-              </li>
-              <li>
-                <a href="joinnow.php" style="color:#fff" >Join Now</a>
-                 
-              </li>
-              <li>
-                <a href="login.php" style="color:#fff">Member Login</a>
-                 
-              </li>
-              <li><a href="contactus.php" style="color:#fff">Contact</a></li>
-            </ul>
-          </div>
+<html lang="zxx">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="HVAC Template">
+<meta name="keywords" content="HVAC, unica, creative, html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>AstraFX</title>
+<base href="https://colorlib.com/preview/theme/hvac/">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+<link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+<link rel="stylesheet" href="css/nice-select.css" type="text/css">
+<link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+<link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+<link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+<link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+<link rel="stylesheet" href="<?php echo BaseUrl;?>/assets/css/style.css" type="text/css">
+<link rel="stylesheet" href="<?php echo BaseUrl;?>/assets/css/sweetalert.css" type="text/css">
+<script src="js/jquery-3.3.1.min.js" type="194b4c4ebcf722a69f5f0ce5-text/javascript"></script>
+</head>
+<body>
+
+<div id="preloder">
+<div class="loader"></div>
+</div>
+
+<div class="offcanvas-menu-overlay"></div>
+<div class="offcanvas-menu-wrapper">
+<div class="offcanvas__widget">
+<a href="<?php echo BaseUrl;?>/login.php" class="primary-btn"  style="background:#012068">Login</a>
+</div>
+<div class="offcanvas__logo">
+<a href="<?php echo BaseUrl;?>"><img src="<?php echo BaseUrl;?>/assets/astrafx_newlogo.png" alt=""></a>
+</div>
+<div id="mobile-menu-wrap"></div>
+ 
+                         
+ 
+</div>
+
+
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2">
+                <div class="header__logo">
+                    <a href="<?php echo BaseUrl;?>"><img src="<?php echo BaseUrl;?>/assets/astrafx_newlogo.png" alt=""></a>
+                </div>
+            </div>
+            <div class="col-lg-10">
+                <div class="header__nav">
+                    <?php
+                        $rurl = explode("/",$_SERVER['REQUEST_URI']);
+                        $home = "";
+                        $aboutus = "";
+                        $plans = "";
+                        $register = "";
+                        $contactus = "";
+                        $login = "";
+                     
+                        switch(strtolower($rurl[sizeof($rurl)-1])) {
+                            case 'aboutus.php'   : $aboutus = ' class="active" ';break;
+                            case 'plans.php'     : $plans = ' class="active" ';break;
+                            case 'register.php'  : $register = ' class="active" ';break;
+                            case 'contactus.php' : $contactus = ' class="active" ';break;
+                            case 'login.php'     : $login = ' class="active" ';break;
+                            default              : $home = ' class="active" ';break;
+                        }
+                    ?>
+                    <nav class="header__menu">
+                        <ul>
+                            <li <?php echo $home;?>><a href="<?php echo BaseUrl;?>">Home</a></li>
+                            <!--<li <?php echo $aboutus;?>><a href="<?php echo BaseUrl;?>/aboutus.php">About Us</a></li>-->
+                            <li <?php echo $plans;?>><a href="<?php echo BaseUrl;?>/plans.php">Business Plan</a></li>
+                            <!--<li <?php echo $register;?>><a href="<?php echo BaseUrl;?>/register.php">Register</a></li>-->
+                            <li <?php echo $contactus;?>><a href="<?php echo BaseUrl;?>/contactus.php">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__nav__widget">
+                        <a href="<?php echo BaseUrl;?>/login.php" class="primary-btn"  style="background:#012068">Login</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </nav>
-    </header>
-    
-    <!-- MAIN -->
+        <div class="canvas__open">
+            <span class="fa fa-bars"></span>
+        </div>
+    </div>
+</header>

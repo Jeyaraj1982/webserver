@@ -25,25 +25,29 @@
                         <?php 
                             if (isset($_POST['Approve'])) {
                                 $isProcess = $mysql->select("Select * from _tbl_wallet_request_utility where `IsApproved`='0' and `IsRejected`='0' and `RequestID`='".$_GET['code']."'");
+                                $OldBalance = getEarningWalletBalance($Requests[0]['MemberID']);
                                  echo $mysql->error;
                                 if (sizeof($isProcess)==1) {
-                                    $balance = getUtilityhWalletBalance($Requests[0]['MemberID'])+$Requests[0]['Amount'];
-                                    $id=$mysql->insert("_tbl_wallet_utility",array("MemberID"         => $Requests[0]['MemberID'],
-                                                                                   "Particulars"      => 'Add To Wallet/MemberRequest: '.$Requests[0]['RequestID'],                    
+                                    $balance = getEarningWalletBalance($Requests[0]['MemberID'])+$Requests[0]['Amount'];
+                                     
+                                    $id=$mysql->insert("_tbl_wallet_earnings",array("MemberID"         => $Requests[0]['MemberID'],
+                                                                                   "MemberCode"         => $Requests[0]['MemberCode'],
+                                                                                   "Particulars"      => 'Approved Wallet Request: '.$Requests[0]['RequestID'],                    
                                                                                    "Credits"          => $Requests[0]['Amount'],                    
                                                                                    "Debits"           => "0", 
                                                                                    "AvailableBalance" => $balance,                   
-                                                                                   "RequestID"        => $Requests[0]['RequestID'],                    
-                                                                                   "TxnDate"          => date("Y-m-d H:i:s")));  
+                                                                                   "TxnDate"          => date("Y-m-d H:i:s"))); 
                                    
                                     $mysql->execute("update _tbl_wallet_request_utility set `WalletTransactionID`='".$id."', 
                                                                                             `TransactionOn`='".date('Y-m-d H:i:s')."',
                                                                                             `IsApproved`='1',
-                                                                                            `IsApprovedOn`='".date('Y-m-d H:i:s')."' 
+                                                                                            `IsApprovedOn`='".date('Y-m-d H:i:s')."',
+                                                                                            `OldBalance`='".$OldBalance."',  
+                                                                                            `NewBalance`='".number_format("",2)."'  
                                                                                             where 
                                                                                             `RequestID`='".$_GET['code']."'");                                     
                                     $member = $mysql->select("select * from `_tbl_Members` where `MemberID`='".$Requests[0]['MemberID']."'");
-                                    $d = MobileSMS::sendSMS($member[0]['MobileNumber'],"Your Utility Wallet has been updated. Available Utility Wallet Balance Rs.".number_format($balance,2),$Requests[0]['MemberID']);
+                                 //   $d = MobileSMS::sendSMS($member[0]['MobileNumber'],"Your Utility Wallet has been updated. Available Utility Wallet Balance Rs.".number_format($balance,2),$Requests[0]['MemberID']);
                                     ?>
                                     <script>location.href='dashboard.php?action=Wallets/UtilityViewWalletRequest&&s=1&code=<?php echo $Requests[0]['RequestID'];?>';</script>
                                     <?php 
@@ -52,19 +56,23 @@
                                 }
                             }
                             if (isset($_POST['Reject'])) {
-                                $isProcess = $mysql->select("Select * from _tbl_wallet_utility where `IsApproved`='0' and IsRejected`='0' where `RequestID`='".$_GET['code']."'");
+                                $isProcess = $mysql->select("Select * from _tbl_wallet_request_utility where `IsApproved`='0' and `IsRejected`='0' and `RequestID`='".$_GET['code']."'");
+                                $OldBalance = getEarningWalletBalance($Requests[0]['MemberID']);
                                 if (sizeof($isProcess)==1) {
+                                     $balance = getEarningWalletBalance($Requests[0]['MemberID'])+$Requests[0]['Amount'];
                                     $mysql->execute("update _tbl_wallet_request_utility set `IsRejected`='1', 
-                                                                                            `IsRejectedOn`='".date('Y-m-d H:i:s')."' 
+                                                                                            `IsRejectedOn`='".date('Y-m-d H:i:s')."',
+                                                                                            `OldBalance`='".$OldBalance."',  
+                                                                                            `NewBalance`='0000' 
                                                                                             where 
                                                                                             `RequestID`='".$_GET['code']."'");
                                     $member = $mysql->select("select * from `_tbl_Members` where `MemberID`='".$Requests[0]['MemberID']."'");
-                                    $d = MobileSMS::sendSMS($member[0]['MobileNumber'],"Your Utility Wallet update request (Req.ID: ".$_GET['code'].") amount Rs.".$Requests[0]['Amount']." as been rejected",$Requests[0]['MemberID']);
+                                   // $d = MobileSMS::sendSMS($member[0]['MobileNumber'],"Your Utility Wallet update request (Req.ID: ".$_GET['code'].") amount Rs.".$Requests[0]['Amount']." as been rejected",$Requests[0]['MemberID']);
                                     ?>
                                     <script>location.href='dashboard.php?action=Wallets/UtilityViewWalletRequest&&s=0&code=<?php echo $Requests[0]['RequestID'];?>';</script>
                                     <?php
                                 } else {
-                                   echo "Already Processed"; 
+                                   echo "Already Processed";                                                  
                                 }
                             }
                             $Requests  = $mysql->select("SELECT * FROM `_tbl_wallet_request_utility`
@@ -136,9 +144,9 @@
                                     <br>
                                     <p class="text-muted"><?php echo date("Y-m-d",strtotime($Requests[0]['TransferDate']));?></p>
                                 </div>
-                                <div class="col-md-4 col-xs-6 b-r"> <strong> </strong>
+                                <div class="col-md-4 col-xs-6 b-r"> <strong>Remarks</strong>
                                     <br>
-                                    <p class="text-muted"></p>
+                                    <p class="text-muted"><?php echo $Requests[0]['Remarks'];?></p>
                                 </div>
                             </div>
                             <hr>

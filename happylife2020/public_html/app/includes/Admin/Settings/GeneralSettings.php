@@ -2,9 +2,9 @@
     if (isset($_POST['updateBtn'])) {
         $mysql->execute("update `_tbl_Settings_Params` set `ParamValue`='".$_POST['MemberCodePrefix']."' where ParamCode='MemberCodePrefix'");  
         $mysql->execute("update `_tbl_Settings_Params` set `ParamValue`='".$_POST['MemberCodeLength']."' where ParamCode='MemberCodeLength'");  
-        //$mysql->execute("update `_tbl_Settings_Params` set `ParamValue`='".$_POST['EpinPrefix']."' where ParamCode='EpinPrefix'");  
-        $mysql->execute("update `_tbl_Settings_Params` set `ParamValue`='".$_POST['EpinLength']."' where ParamCode='EpinLength'");  
-        $mysql->execute("update `_tbl_Settings_Params` set `ParamValue`='".$_POST['EpinPwdLength']."' where ParamCode='EpinPwdLength'");  
+        
+        //$mysql->execute("update `_tbl_Settings_Params` set `ParamValue`='".$_POST['EpinLength']."' where ParamCode='EpinLength'");  
+        //$mysql->execute("update `_tbl_Settings_Params` set `ParamValue`='".$_POST['EpinPwdLength']."' where ParamCode='EpinPwdLength'");  
         
         $mysql->execute("update `_tbl_Settings_Params` set `ParamValue`='".$_POST['IsMobileIsMandatory']."' where ParamCode='IsMobileIsMandatory'");  
         $mysql->execute("update `_tbl_Settings_Params` set `ParamValue`='".$_POST['AllowDuplicateMobile']."' where ParamCode='AllowDuplicateMobile'");  
@@ -76,7 +76,7 @@
                             </div>
                         </div>   -->
                         
-                        <?php $settings = $mysql->select("select * from `_tbl_Settings_Params` where ParamCode in ('EpinLength')"); ?>     
+                        <!--<?php $settings = $mysql->select("select * from `_tbl_Settings_Params` where ParamCode in ('EpinLength')"); ?>     
                         <div class="row mb15"> 
                             <div class="col-md-12 col-xs-6 b-r">
                                 <strong><?php echo $settings[0]['ParamLabel'];?></strong>
@@ -92,7 +92,7 @@
                                 <input type="text" name="EpinPwdLength" id="EpinPwdLength" class="form-control" value="<?php echo $settings[0]['ParamValue'];?>">
                             </div>
                         </div> 
-                        
+                         -->
                         <?php $settings = $mysql->select("select * from `_tbl_Settings_Params` where ParamCode in ('IsMobileIsMandatory')"); ?>  
                         <div class="row mb15"> 
                             <div class="col-md-12 col-xs-6 b-r">
@@ -196,4 +196,3 @@
         </div>
     </div>
 </div>
-<?php include_once("footer.php"); ?>

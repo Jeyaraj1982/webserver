@@ -1,2 +1,0 @@
-[2020-05-19 04:31:22]	SELECT * FROM _tbl_shopping_subcategories where IsActive='1'
-[2020-05-19 04:31:22]	SELECT * FROM _tbl_shopping_subcategories where IsActive='1'

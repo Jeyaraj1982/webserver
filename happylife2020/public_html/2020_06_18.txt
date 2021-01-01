@@ -1,7 +1,0 @@
-[2020-06-18 17:08:38]	select * from `_tbl_Members` where  `MemberCode`='HLADM00001'
-[2020-06-18 17:08:38]	select * from _tbl_Settings_Packages where PackageID='3'
-[2020-06-18 17:08:38]	insert into `_tbl_members_login_logs` (`MemberID`,`LoginOn`,`IsSuccess`) values ('1','2020-06-18 17:08:38','1')
-[2020-06-18 17:11:39]	select * from `_tbl_Members` where  `MemberCode`='8778616561'
-[2020-06-18 17:11:51]	select * from `_tbl_Members` where  `MemberCode`='HLADM00001'
-[2020-06-18 17:11:51]	select * from _tbl_Settings_Packages where PackageID='3'
-[2020-06-18 17:11:51]	insert into `_tbl_members_login_logs` (`MemberID`,`LoginOn`,`IsSuccess`) values ('1','2020-06-18 17:11:51','1')

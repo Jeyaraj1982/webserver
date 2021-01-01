@@ -58,13 +58,13 @@ function DoNext() {
                                             </label>
                                             <div class="check"></div>
                                         </li>
-                                        <li>
+                                       <!-- <li>
                                             <input type="radio" id="f-option1" value="2" name="selector">
                                             <label for="f-option1" style="font-size: 20px !important;line-height: 22px;padding-top: 18px;">Using SponsorID<br>
                                             <span style="color:#666;font-size:14px;font-weight:normal">I want to create member to under specified Sponsor ID</span>
                                             </label>
                                             <div class="check"></div>
-                                        </li>
+                                        </li>-->
                                     </ul>
                                 </div>
                                 <br><br>
