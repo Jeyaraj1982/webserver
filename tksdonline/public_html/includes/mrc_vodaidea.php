@@ -1,6 +1,18 @@
 <?php
     $_OPERATOR = "RV";
-    $data = $mysql->select("select * from _tbl_operators where OperatorCode='".$_OPERATOR."' and isActive='1'");
+    $data = $mysql->select("select * from _tbl_operators where OperatorCode='".$_OPERATOR."'");
+    if ($data[0]['IsActive']==0) {
+        ?>
+        <div class="row" style="padding-bottom:30px;padding-top:100px;">
+    <img src="assets/img/<?php echo $data[0]['IconFile'];?>" style="width:25%;border:1px solid #ccc;border-radius:10px;margin:0px auto">    
+</div>
+        <div class="row">
+    <div style="padding:20px;color:red;text-align:center;width:100%;"><?php echo $data[0]['InactiveMessage'];?></div>
+    <a href="dashboard.php?action=mobilerc" class="btn btn-success  glow w-100 position-relative">Continue<i id="icon-arrow" class="bx bx-right-arrow-alt" style="clear:both"></i></a>
+    <a href="dashboard.php?action=mobilerc" class="btn btn-outline-success  glow w-100 position-relative" style="margin-top:15px"><i id="icon-arrow" class="bx bx-left-arrow-alt" style="clear:both">Back</i></a>
+</div>
+        <?php
+    } else {
         $plans  = $mysql->select("SELECT * FROM _tbl_operator_plans  where IsActive='1'  and OperatorCode='".$_OPERATOR."' order by Amount Desc" );
 ?>
 <div style="padding:0px;text-align:center;margin-bottom:20px;">
@@ -14,6 +26,7 @@
 $enable = true;
 $enable_error = "";
 $t = $mysql->select("select * from _tbl_member_operator where MemberID='".$_SESSION['User']['MemberID']."' and OperatorCode='".$_OPERATOR."'");
+        
 if (sizeof($t)>0) {
     $enable = false;
      $enable_error = "In your account, Operator was disabled. to enable please contact support team";
@@ -23,6 +36,9 @@ if (sizeof($t)>0) {
         $enable_error = $data[0]['InactiveMessage'];
     } 
 }
+
+ 
+
 ?>
 <?php if ($enable) { ?>
     <?php if (isset($_POST['submitRequest'])) { ?>
@@ -210,3 +226,4 @@ var IsConfirm=0;
      $('#submitRequest').trigger("click");
 }
 </script>
+<?php } ?>

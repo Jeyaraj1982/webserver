@@ -64,7 +64,7 @@ $opt = $mysql->select("select * from _tbl_operators where OperatorCode='".$summa
     </tr>
      <tr>
         <td  style="text-align:right">Order No</td>
-        <td>:&nbsp;<?php echo "TKSD_".$summary[0]['txnid'];?></td>
+        <td>:&nbsp;<?php echo $summary[0]['txnid'];?></td>
     </tr>
     </table>
         
@@ -117,6 +117,6 @@ $opt = $mysql->select("select * from _tbl_operators where OperatorCode='".$summa
  
  </table>
  <br><br><br>
- <span style="font-size:12px;color:#555">Service Provider : TKSD Online Services</span>
+ <span style="font-size:12px;color:#555">Service Provider : ABJEService</span>
  </div>
   

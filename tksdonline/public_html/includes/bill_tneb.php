@@ -32,6 +32,7 @@ if (sizeof($t)>0) {
         <script>$('#myModal').modal("show");</script>
         <?php
         $number = $_POST['region']."-".$_POST['number'];
+        
         $result = $application->doBillPay(array("MemberID"             => $_SESSION['User']['MemberID'],
                                                 "operator"             => $data[0]['OperatorLAPUCode'],
                                                 "CustomerMobileNumber" => $_POST['CustomerMobileNumber'],

@@ -1,35 +1,33 @@
 <?php
 include_once("admin/config.php");
 if (isset($_COOKIE['username']) && isset($_COOKIE['password'])) {
-    
-    $d = $mysql->select("select * from _tbl_member where md5(concat('J2J',MobileNumber))='".$_COOKIE['username']."' and md5(concat('J2J',MemberPassword))='".$_COOKIE['password']."' and IsActive='1'");
+ 
+    $d = $mysql->select("select * from _tbl_member where   md5(concat('J2J',MobileNumber))='".$_COOKIE['username']."' and md5(concat('J2J',MemberPassword))='".$_COOKIE['password']."' and IsActive='1'");
     if (sizeof($d)>0) {
+     
          $_SESSION['User']=$d[0]; 
+           
          echo "<script>location.href='dashboard.php';</script>";
-         exit;
+       
     }  
 }       
 if (isset($_POST['submitBtn'])) {
-    if ($_POST['MobileNumber'] == 7860 && $_POST['MemberPassword'] == "admin") {
-         echo "<script>location.href='https://tksdonlineservice.in/admin/index.php';</script>";
-         exit;
-    }
-    $d = $mysql->select("select * from _tbl_member where    MapedTo<>'3' and MobileNumber='".$_POST['MobileNumber']."' and MemberPassword='".$_POST['MemberPassword']."' and IsActive='1'");
-    $d = $mysql->select("select * from _tbl_member where      MobileNumber='".$_POST['MobileNumber']."' and MemberPassword='".$_POST['MemberPassword']."' and IsActive='1'");
+    
+    $d = $mysql->select("select * from _tbl_member  where MobileNumber='".$_POST['MobileNumber']."' and MemberPassword='".$_POST['MemberPassword']."' and IsActive='1'");
     if (sizeof($d)>0) {
         if (isset($_POST['RememberMe']) && $_POST['RememberMe']=="on") {
             setcookie("username",md5("J2J".$_POST['MobileNumber']),time() + (86400 * 30));
             setcookie("password",md5("J2J".$_POST['MemberPassword']),time() + (86400 * 30));
         }
         $_SESSION['User']=$d[0];
-    
+          
         echo "<script>location.href='dashboard.php';</script>";
         exit;
     } else {
         $error = "login falied";
     }
-}                                                           
-?> 
+}
+?>                                                                            
                                                             
 <!DOCTYPE html>
 <html class="loading" lang="en" data-textdirection="ltr">
@@ -37,7 +35,7 @@ if (isset($_POST['submitBtn'])) {
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <title>TKSD Online Service</title>
+    <title>ABJ ESERVICE</title>
     <link rel="apple-touch-icon" href="../../../app-assets/images/ico/apple-icon-120.png">
     <link rel="shortcut icon" type="image/x-icon" href="../../../app-assets/images/ico/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,600%7CIBM+Plex+Sans:300,400,500,600,700" rel="stylesheet">
@@ -58,20 +56,20 @@ if (isset($_POST['submitBtn'])) {
 }
     </style>
   </head>
-  <body class="vertical-layout vertical-menu-modern 1-column  navbar-sticky footer-static bg-full-screen-image  blank-page blank-page" data-open="click" data-menu="vertical-menu-modern" data-col="1-column" style="background-image:none;background:#006134 !important;">
+  <body class="vertical-layout vertical-menu-modern 1-column  navbar-sticky footer-static bg-full-screen-image  blank-page blank-page" data-open="click" data-menu="vertical-menu-modern" data-col="1-column" style="background-image:none;background:#87c9ff !important;">
     <div class="app-content content">
       <div class="content-overlay"></div>
       <div class="content-wrapper">         
         <div class="content-header row">
         </div>
-        <div class="content-body"> 
-<section id="auth-login" class="row flexbox-container">
-    <div class="col-xl-8 col-11">
-        <div class="card bg-authentication mb-0">
-            <div class="row m-0">
-                <div class="col-md-12 col-12 px-0">
-                    <div class="card disable-rounded-right mb-0 p-2 h-100 d-flex justify-content-center">
-                        <div class="card-header pb-1">
+        <div class="content-body" style="background:none;"> 
+<section id="auth-login" class="row flexbox-container" style="background:none;">
+    <div class="col-xl-8 col-11" style="background:none;">
+        <div class="card bg-authentication mb-0" style="background:none;box-shadow:none">
+            <div class="row m-0" style="background:none;">
+                <div class="col-md-12 col-12 px-0" style="background:none;">
+                    <div class="card disable-rounded-right mb-0 p-2 h-100 d-flex justify-content-center" style="background:none;box-shadow:none;">
+                        <div class="card-header pb-1" style="background:none;">
                             <div class="card-title text-center">
                                 <div class="text-center" style="margin-bottom:10px;"><img src="assets/img/logo.png" style="width: 150px;"></div>
                                 <label class="text-bold-600 text-center" style="font-size:16px">Login</label>
@@ -98,25 +96,18 @@ if (isset($_POST['submitBtn'])) {
                                             <label class="custom-control-label" for="customCheck">Remember me</label>
                                         </div>
                                     </div>
-                                    <button type="submit" name="submitBtn" class="btn btn-success  glow w-100 position-relative">Login<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></button>
+                                    <button type="submit" name="submitBtn" class="btn btn-primary  glow w-100 position-relative">Login<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></button>
                                 </form>
-                                <br>
-								<button type="button" onclick="location.href='joinnow.php'" class="btn btn-info  glow w-100 position-relative">Join Now<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></button><br><br>
-                            <!--  <form action="" method="post">
-                                    <input type="hidden" value="9876543210" name="MobileNumber" id="MobileNumber">
-                                    <input type="hidden" value="9876543210" name="MemberPassword" id="MemberPassword">
-                                    <button type="submit" name="submitBtn" class="btn btn-info  glow w-100 position-relative">Demo Login<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></button>
-                                </form>  -->
-                                
-                                <div class="form-group">
-                                <br><B>Maajid Multi Mart</b><br>
-                                147, Pallivasal complex, CMC Road, <br>
-                                Senjai, Karaikudi - 630 001.<br><Br>
-                                Email: tksdhelpdesk@gmail.com<br>
-                                Whatsapp Chat +91 90036 38869
+                              
+                                 <div class="form-group" style="color:#333">
+                                 <br>
+                                <br><B>ABJE-SERVICE</b><br>
+                                SARUKANI 630411.<br><Br>
+                                Email:<br>
+                                <span style="font-size:13px">abjoyamalagency2013@gmail.com</span><br><br>
+                                Whatsapp Chat:<br>
+                                <span style="font-size:13px">+91 9943708856  8489265640</span>
                                 </div>
-                                
-                                
                             </div>
                         </div>
                     </div>

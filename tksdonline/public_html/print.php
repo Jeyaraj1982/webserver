@@ -9,7 +9,7 @@ $memberdetails = $mysql->select("select * from _tbl_member where MemberID='".$su
 if (!(file_exists("assets/qrcodes/".md5($summary[0]['txnid'].'mmm_j2j').".png"))) {
 $PNG_TEMP_DIR = dirname(__FILE__).DIRECTORY_SEPARATOR.'assets'.DIRECTORY_SEPARATOR.'qrcodes'.DIRECTORY_SEPARATOR;
 include dirname(__FILE__)."/phpqrcode/qrlib.php"; 
-QRcode::png("https://www.tksdonlineservice.in/bill_verification.php?r=".md5($summary[0]['txnid'].'mmm_j2j'), $PNG_TEMP_DIR. md5($summary[0]['txnid'].'mmm_j2j').".png", "L", 4, 2); 
+QRcode::png("https://www.abjeservice.in/bill_verification.php?r=".md5($summary[0]['txnid'].'mmm_j2j'), $PNG_TEMP_DIR. md5($summary[0]['txnid'].'mmm_j2j').".png", "L", 4, 2); 
 }
 ?> 
 <style>
@@ -65,7 +65,7 @@ table,body,span,div,b,tr,td {font-family:arial;color:#222;font-size:15px;}
             </tr>
             <tr>
                 <td  style="text-align:right">Order No</td>
-                <td>:&nbsp;<?php echo "TKSD_".$summary[0]['txnid'];?></td>
+                <td>:&nbsp;<?php echo $summary[0]['txnid'];?></td>
             </tr>
           </table>
         </td>
@@ -106,6 +106,6 @@ table,body,span,div,b,tr,td {font-family:arial;color:#222;font-size:15px;}
     </tr>
 </table>
 <br><br><br>
-<span style="font-size:12px;color:#555">Service Provider : TKSD Online Services</span>
+<span style="font-size:12px;color:#555">Service Provider : ABJ E-Service</span>
 </div>
 <script> window.print();</script>

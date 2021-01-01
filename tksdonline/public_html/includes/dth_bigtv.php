@@ -220,7 +220,7 @@ var IsConfirm=0;
       function doConfrim() {
     IsConfirm=1;
      $('#ConfirmationPopup').modal("hide");
-       $('#overlay_body').show();
+     $('#overlay_body').show(); 
      $('#submitRequest').trigger("click");
 }
 </script>

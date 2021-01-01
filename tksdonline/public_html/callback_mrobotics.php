@@ -1,4 +1,6 @@
+welcome 
 <?php
+exit;
 include_once("admin/config.php");
 $param = array();
 $param = $_POST;

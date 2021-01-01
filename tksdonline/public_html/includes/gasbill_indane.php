@@ -10,7 +10,7 @@
     <h6 style="color:#999">Balance: Rs. <?php echo number_format($application->getBalance($_SESSION['User']['MemberID']),2);?></h6>
 </div> 
 <div class="row" style="padding-bottom:30px">
-    <img src="https://tksdonlineservice.in/assets/img/<?php echo $data[0]['IconFile'];?>" style="width:25%;border:1px solid #ccc;border-radius:10px;margin:0px auto">    
+    <img src="https://abjeservice.in/assets/img/<?php echo $data[0]['IconFile'];?>" style="width:25%;border:1px solid #ccc;border-radius:10px;margin:0px auto">    
 </div>
 <?php
 $enable = true;
@@ -58,7 +58,7 @@ if (sizeof($t)>0) {
                     <a href="dashboard.php?action=creditsales_addtxnt&back=txnhistory&txn=<?php echo $result['txnid'];?>" ><i id="icon-arrow" class="bx bxs-pin"></i><br>credit<br>sale</a>     <br>
                     <?php } ?>              
                 </div>
-                <a href="dashboard.php?action=gasbill_hbgas" class="btn btn-success  glow w-100 position-relative">Continue<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></a>
+                <a href="dashboard.php?action=gasbill_hbgas" class="btn btn-primary  glow w-100 position-relative">Continue<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></a>
             </div>
         <?php } else {?>
             <div class="row">
@@ -70,8 +70,8 @@ if (sizeof($t)>0) {
                     Transaction failed<br>
                     <?php echo $result['message']; ?>
                 </div>
-                <a href="dashboard.php?action=gasbill_hbgas" class="btn btn-success  glow w-100 position-relative">Continue<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></a><br><br>
-                <a href="dashboard.php?action=gasbill" class="btn btn-outline-success glow w-100 position-relative">Back<i id="icon-arrow" class="bx bx-left-arrow-alt" style="float: left;"></i></a>
+                <a href="dashboard.php?action=gasbill_hbgas" class="btn btn-primary  glow w-100 position-relative">Continue<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></a><br><br>
+                <a href="dashboard.php?action=gasbill" class="btn btn-outline-primary glow w-100 position-relative">Back<i id="icon-arrow" class="bx bx-left-arrow-alt" style="float: left;"></i></a>
             </div>
         <?php } ?>
     <?php } else { ?>
@@ -91,20 +91,20 @@ if (sizeof($t)>0) {
                     <div class="errorstring" id="ErrCustomerMobileNumber"></div>
                 </div>
                 <!--<div class="form-group" >
-                    <div class="checkbox checkbox-success checkbox-inline">
+                    <div class="checkbox checkbox-primary checkbox-inline">
                         <input type="checkbox" class="checkbox-danger" name="whatsappRequired" id="whatsappRequired">
                         <label for="whatsappRequired" style="font-weight:normal;font-size: 12px;color: #767d84;">Require Whatsapp Receipt</label>
                     </div>
                 </div> -->
                 <div class="form-group">
-                    <div class="checkbox checkbox-success checkbox-inline">
+                    <div class="checkbox checkbox-primary checkbox-inline">
                         <input type="checkbox" class="checkbox-danger" onchange="searchsubscriber()" readonly  name="telegramRequired" id="telegramRequired">
                         <label for="telegramRequired" style="font-weight:normal;font-size: 12px;color: #767d84;">Require Telegram Receipt</label>
                         <span id="errtelegram" style="font-size: 12px;color:red"></span>
                     </div>
                 </div>
                 <div class="form-group">
-                  <div class="checkbox checkbox-success checkbox-inline">
+                  <div class="checkbox checkbox-primary checkbox-inline">
                     <input type="checkbox" class="checkbox-primary" onclick="do_markascredit()" name="markascredit" id="markascredit">
                     <label for="markascredit" style="font-weight:normal;font-size: 12px;color: #767d84;">Mark as credit</label>
                   </div>
@@ -114,8 +114,8 @@ if (sizeof($t)>0) {
                 <div class="form-group">
                     <p align="center" style="color:red" id="error_msg">&nbsp;<?php echo $error;?></p>
                 </div>
-                <button type="submit" name="submitRequest" id="submitRequest" class="btn btn-success  glow w-100 position-relative">Pay now<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></button><br><br>
-                <a href="dashboard.php?action=gasbill" class="btn btn-outline-success glow w-100 position-relative">Back<i id="icon-arrow" class="bx bx-left-arrow-alt" style="float: left;"></i></a>
+                <button type="submit" name="submitRequest" id="submitRequest" class="btn btn-primary  glow w-100 position-relative">Pay now<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></button><br><br>
+                <a href="dashboard.php?action=gasbill" class="btn btn-outline-primary glow w-100 position-relative">Back<i id="icon-arrow" class="bx bx-left-arrow-alt" style="float: left;"></i></a>
                 <br><br>
                 <div style="text-align: center;">
                     <a href="dashboard.php?action=txnhistory&operator=<?php echo $_OPERATOR;?>" style="color:#555">Transaction History</a>
@@ -126,8 +126,8 @@ if (sizeof($t)>0) {
 <?php } else { ?>
 <div class="row">
     <div style="padding:20px;color:red;text-align:center;width:100%;"><?php echo $enable_error;?></div>
-    <a href="dashboard.php?action=gasbill" class="btn btn-success  glow w-100 position-relative">Continue<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></a>
-    <a href="dashboard.php?action=gasbill" class="btn btn-success  glow w-100 position-relative"><i id="icon-arrow" class="bx bx-left-arrow-alt" style="float: left;">Back</i></a>
+    <a href="dashboard.php?action=gasbill" class="btn btn-primary  glow w-100 position-relative">Continue<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></a>
+    <a href="dashboard.php?action=gasbill" class="btn btn-primary  glow w-100 position-relative"><i id="icon-arrow" class="bx bx-left-arrow-alt" style="float: left;">Back</i></a>
 </div>
 <?php } ?>
 
@@ -143,8 +143,8 @@ if (sizeof($t)>0) {
                 <div class="modal-body" id="confrimation_text">
             <div id="xconfrimation_text" style="text-align: center;font-size:15px;"></div>
                 
-                <button type="button" onclick="doConfrim()" class="btn btn-success  glow w-100 position-relative">Pay now<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></button><br><br>
-                <a href="javascript:void(0)" data-dismiss="modal" class="btn btn-outline-success glow w-100 position-relative">Back<i id="icon-arrow" class="bx bx-left-arrow-alt" style="float: left;"></i></a><br><br>
+                <button type="button" onclick="doConfrim()" class="btn btn-primary  glow w-100 position-relative">Pay now<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></button><br><br>
+                <a href="javascript:void(0)" data-dismiss="modal" class="btn btn-outline-primary glow w-100 position-relative">Back<i id="icon-arrow" class="bx bx-left-arrow-alt" style="float: left;"></i></a><br><br>
       </div>
     </div>
   </div>
@@ -248,7 +248,7 @@ var IsConfirm=0;
        function doConfrim() {
     IsConfirm=1;
      $('#ConfirmationPopup').modal("hide");
-       $('#overlay_body').show();
+     $('#overlay_body').show(); 
      $('#submitRequest').trigger("click");
 }
 function searchsubscriber(){

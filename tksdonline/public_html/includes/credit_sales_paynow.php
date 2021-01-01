@@ -17,7 +17,7 @@ if (true) { ?>
             }
             if ($error==0) {
                 
-                $balance = $mysql->select("select count(PaidAmount) as pa where _tbl_credit_txn where CreditID='".$_GET['paynow']."'");
+                $balance = $mysql->select("select count(PaidAmount) as pa from _tbl_credit_txn where CreditID='".$_GET['paynow']."'");
                 $abalance = isset($balance[0]['pa']) ? $balance[0]['pa'] : 0;
                 $credit= $mysql->select("select * from  _tbl_user_credits where CreditID='".$_GET['paynow']."'");
                 $BalanceAmount = $credit[0]['PayableAmount']-($abalance + $_POST['Amount']);

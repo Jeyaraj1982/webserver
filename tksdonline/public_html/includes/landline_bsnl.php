@@ -232,8 +232,7 @@ function checkInputs() {
 } 
      function doConfrim() {
     IsConfirm=1;
-     $('#ConfirmationPopup').modal("hide");
-       $('#overlay_body').show();
+     $('#ConfirmationPopup').modal("hide");  $('#overlay_body').show(); 
      $('#submitRequest').trigger("click");
 }
  function searchsubscriber(){

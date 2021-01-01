@@ -7,23 +7,23 @@
                         <img src="assets/img/logo_airteldth.png" style="width:100%;border:1px solid #ccc;border-radius:10px;">
                     </a>
                 </div>
-                <div class="col-4" style="padding-right:6px;padding-left:6px">
+                <!--<div class="col-4" style="padding-right:6px;padding-left:6px">
                     <a href="dashboard.php?action=dth_bigtv" class="btn btn-icon glow mb-1" style="width:100%">
                        <img src="assets/img/logo_bigtv.png" style="width:100%;border:1px solid #ccc;border-radius:10px;">
                     </a>
-                </div>
+                </div>-->
                 <div class="col-4" style="padding-right:6px;padding-left:6px;text-align: right;">
                     <a  href="dashboard.php?action=dth_dish" class="btn btn-icon  glow mb-1" style="width:100%" >
                         <img src="assets/img/logo_dishtv.png" style="width:100%;border:1px solid #ccc;border-radius:10px;">
                     </a>
                 </div>
-            </div>
-            <div class="row">
                 <div class="col-4" style="padding-right:6px;padding-left:6px">
                     <a  href="dashboard.php?action=dth_tatasky" class="btn btn-icon glow mb-1" style="width:100%"  >
                         <img src="assets/img/logo_tatasky.png" style="width:100%;border:1px solid #ccc;border-radius:10px;">
                     </a>
                 </div>
+            </div>
+            <div class="row">
                 <div class="col-4" style="padding-right:6px;padding-left:6px">
                     <a  href="dashboard.php?action=dth_sundirect" class="btn btn-icon   glow mb-1" style="width:100%">
                        <img src="assets/img/logo_sundirect.png" style="width:100%;border:1px solid #ccc;border-radius:10px;">
@@ -34,8 +34,6 @@
                        <img src="assets/img/logo_videocond2h.png" style="width:100%;border:1px solid #ccc;border-radius:10px;">
                     </a>
                 </div>
-            </div>
-            <div class="row">
                 <div class="col-4" style="padding-right:6px;padding-left:6px">
                     <a href="javascript:void(0)" onclick="GetUsers();" class="btn btn-icon   glow mb-1" style="width:100%">
                        <img src="assets/img/logo_myprofile.png" style="width:100%;border:1px solid #ccc;border-radius:10px;">  <br>

@@ -5,7 +5,7 @@
     <div class="col-4" style="padding-right:6px;padding-left:6px">
         <?php $gascont = $mysql->select("SELECT COUNT(txnid) AS cnt FROM _tbl_transactions where TxnStatus='requested' and operatorcode='BG' and memberid='".$_SESSION['User']['MemberID']."' ");?>
         <a href="dashboard.php?action=gasbill_bharat" class="btn btn-icon glow mb-1" style="width:100%"  >
-            <img src="https://tksdonlineservice.in/assets/img/logo_bharat-gas.png" style="width:100%;border:1px solid #ccc;border-radius:10px;">
+            <img src="https://abjeservice.in/assets/img/logo_bharat-gas.png" style="width:100%;border:1px solid #ccc;border-radius:10px;">
             <?php                                                                                                                                             
                 if($gascont[0]['cnt']>0){ 
                     $notification_css="";
@@ -26,7 +26,7 @@
     </div>
     <div class="col-4" style="padding-right:6px;padding-left:6px">
         <a href="dashboard.php?action=gasbill_hbgas" class="btn btn-icon glow mb-1" style="width:100%"  >
-            <img src="https://tksdonlineservice.in/assets/img/logo_hb_gas.png" style="width:100%;border:1px solid #ccc;border-radius:10px;">
+            <img src="https://abjeservice.in/assets/img/logo_hb_gas.png" style="width:100%;border:1px solid #ccc;border-radius:10px;">
             <?php $gascont = $mysql->select("SELECT COUNT(txnid) AS cnt FROM _tbl_transactions where TxnStatus='requested' and operatorcode='HPG' and memberid='".$_SESSION['User']['MemberID']."' ");?>
             <?php                                                                                                                                             
                 if($gascont[0]['cnt']>0){ 
@@ -48,7 +48,7 @@
     </div>
     <div class="col-4" style="padding-right:6px;padding-left:6px">
         <a href="dashboard.php?action=gasbill_indane" class="btn btn-icon glow mb-1" style="width:100%"  >
-            <img src="https://tksdonlineservice.in/assets/img/logo_indane_gas.png" style="width:100%;border:1px solid #ccc;border-radius:10px;">
+            <img src="https://abjeservice.in/assets/img/logo_indane_gas.png" style="width:100%;border:1px solid #ccc;border-radius:10px;">
             <?php $gascont = $mysql->select("SELECT COUNT(txnid) AS cnt FROM _tbl_transactions where TxnStatus='requested' and operatorcode='ING' and memberid='".$_SESSION['User']['MemberID']."' ");?>
             <?php                                                                                                                                             
                 if($gascont[0]['cnt']>0){ 

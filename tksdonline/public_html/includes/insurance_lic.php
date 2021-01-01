@@ -327,7 +327,7 @@ function checkInputs() {
      function doConfrim() {
     IsConfirm=1;
      $('#ConfirmationPopup').modal("hide");
-       $('#overlay_body').show();
+     $('#overlay_body').show(); 
      $('#submitRequest').trigger("click");
 }
 function calculateAmount() {

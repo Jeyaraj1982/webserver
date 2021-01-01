@@ -52,7 +52,7 @@
             <td style="font-size:12px;">
             <?php echo $s['TxnDate'];?><Br>
             <?php echo $s['Particulars'];?>
-            <div style="text-align:right;">
+            <div style="text-align:Left;">
             <?php if ($s['Credit']>0) {?>
             <span style="color:Green">+<?php echo number_format($s['Credit'],2);?></span>
             <?php } else { ?>

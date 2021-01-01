@@ -30,7 +30,7 @@ if (isset($_POST['submitRequest'])) {
     </tr>
      <tr>
         <td>Transaction Ref.Number</td>
-        <td>:&nbsp;#<?php echo "TKSD_".$summary[0]['txnid'];?></td>
+        <td>:&nbsp;#<?php echo $summary[0]['txnid'];?></td>
     </tr>
     
      <tr>
@@ -98,7 +98,7 @@ if (isset($_POST['submitRequest'])) {
     </tr>
      <tr>
         <td>Transaction Ref.Number</td>
-        <td>:&nbsp;#<?php echo "TKSD_".$summary[0]['txnid'];?></td>
+        <td>:&nbsp;#<?php echo $summary[0]['txnid'];?></td>
     </tr>
     
     

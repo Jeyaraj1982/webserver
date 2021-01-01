@@ -28,15 +28,24 @@ if (sizeof($t)>0) {
     <?php if (isset($_POST['submitRequest'])) { ?>
         <script>$('#myModal').modal("show");</script>
         <?php
-        $result = $application->doRecharge(array("MemberID"        => $_SESSION['User']['MemberID'],
-                                                 "operator"        => $data[0]['OperatorLAPUCode'],
-                                                 "particulars"     => $data[0]['OperatorType']." Recharge ".$_POST['number'],
-                                                 "number"          => $_POST['MobileNumber'],
-                                                 "markascredit"    => $_POST['markascredit'],
-                                                 "CrAmount"        => $_POST['CrAmount'],
-                                                 "credit_nickname" => $_POST['credit_nickname'],
-                                                 "amount"          => $_POST['Amount']));
-        echo "<script>$('#myModal').modal('hide');</script>";
+        if ( $_SESSION['rand']==$_POST['rand']) {
+            $result = $application->doRecharge(array("MemberID"        => $_SESSION['User']['MemberID'],
+                                                     "operator"        => $data[0]['OperatorLAPUCode'],
+                                                     "particulars"     => $data[0]['OperatorType']." Recharge ".$_POST['number'],
+                                                     "number"          => $_POST['MobileNumber'],
+                                                     "markascredit"    => $_POST['markascredit'],
+                                                     "CrAmount"        => $_POST['CrAmount'],
+                                                     "credit_nickname" => $_POST['credit_nickname'],
+                                                     "amount"          => $_POST['Amount']));
+            $_SESSION['rand']=array();
+            echo "<script>$('#myModal').modal('hide');</script>";
+        } else {
+            $result['status']="failure";
+            $result['number']=$_POST['MobileNumber'];
+            $result['amount']=$_POST['Amount'];
+            $result['message']="Couldn't allowed. Process already in-process";
+        }
+        
         if ($result['status']=="success" || $result['status']=="pending") {
         ?>
             <div class="row">
@@ -54,8 +63,8 @@ if (sizeof($t)>0) {
                     <a href="dashboard.php?action=creditsales_addtxnt&back=txnhistory&txn=<?php echo $result['txnid'];?>" ><i id="icon-arrow" class="bx bxs-pin"></i><br>credit<br>sale</a>     <br>
                     <?php } ?>              
                 </div>
-                <a href="dashboard.php?action=mrc_jio" class="btn btn-success  glow w-100 position-relative">Continue<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></a><br>
-                <a href="dashboard.php?action=add_contacts_prepaid&id=<?php echo $result['txnid'];?>" class="btn btn-success  glow w-100 position-relative">Add Contact<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></a>
+                <a href="dashboard.php?action=mrc_jio" class="btn btn-primary  glow w-100 position-relative">Continue<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></a><br>
+                <a href="dashboard.php?action=add_contacts_prepaid&id=<?php echo $result['txnid'];?>" class="btn btn-primary  glow w-100 position-relative">Add Contact<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></a>
             </div>
         <?php } else {?>
             <div class="row">
@@ -67,13 +76,17 @@ if (sizeof($t)>0) {
                     Transaction failed<br>
                     <?php echo $result['message']; ?>
                 </div>
-                <a href="dashboard.php?action=mrc_jio" class="btn btn-success  glow w-100 position-relative">Continue<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></a><br><br>
-                <a href="dashboard.php?action=mobilerc" class="btn btn-outline-success glow w-100 position-relative">Back<i id="icon-arrow" class="bx bx-left-arrow-alt" style="float: left;"></i></a>
+                <a href="dashboard.php?action=mrc_jio" class="btn btn-primary  glow w-100 position-relative">Continue<i id="icon-arrow" class="bx bx-right-arrow-alt"></i></a><br><br>
+                <a href="dashboard.php?action=mobilerc" class="btn btn-outline-primary glow w-100 position-relative">Back<i id="icon-arrow" class="bx bx-left-arrow-alt"></i></a>
             </div>
         <?php } ?>
-    <?php } else { ?>
+    <?php } else { 
+        $rand = rand(99,time());
+        $_SESSION['rand']=$rand;
+        ?>
         <div class="row">
             <form action="" method="post" style="width: 80%;margin: 0px auto;" onsubmit="return checkInputs()">
+                <input type="hidden" name="rand" value="<?php echo $rand;?>">        
                 <div class="form-group">
                     <label class="text-bold-600" for="exampleInputEmail1">Mobile Number</label>
                     <?php 
@@ -103,8 +116,8 @@ if (sizeof($t)>0) {
                 <div class="form-group">
                     <p align="center" style="color:red" id="error_msg">&nbsp;<?php echo $error;?></p>
                 </div>
-                <button type="submit" name="submitRequest" id="submitRequest" class="btn btn-success  glow w-100 position-relative">Recharge now<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></button><br><br>
-                <a href="dashboard.php?action=mobilerc" class="btn btn-outline-success glow w-100 position-relative">Back<i id="icon-arrow" class="bx bx-left-arrow-alt" style="float: left;"></i></a>
+                <button type="submit" name="submitRequest" id="submitRequest" class="btn btn-primary  glow w-100 position-relative">Recharge now<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></button><br><br>
+                <a href="dashboard.php?action=mobilerc" class="btn btn-outline-primary glow w-100 position-relative">Back<i id="icon-arrow" class="bx bx-left-arrow-alt" style="float: left;"></i></a>
                 <br><br>
                 <div style="text-align: center;">
                     <a href="dashboard.php?action=txnhistory&operator=<?php echo $_OPERATOR;?>" style="color:#555">Transaction History</a>
@@ -115,8 +128,8 @@ if (sizeof($t)>0) {
 <?php } else { ?>
 <div class="row">
     <div style="padding:20px;color:red;text-align:center;width:100%;"><?php echo $enable_error;?></div>
-    <a href="dashboard.php?action=mobilerc" class="btn btn-success  glow w-100 position-relative">Continue<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></a>
-    <a href="dashboard.php?action=mobilerc" class="btn btn-success  glow w-100 position-relative"><i id="icon-arrow" class="bx bx-left-arrow-alt" style="float: left;">Back</i></a>
+    <a href="dashboard.php?action=mobilerc" class="btn btn-primary  glow w-100 position-relative">Continue<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></a>
+    <a href="dashboard.php?action=mobilerc" class="btn btn-primary  glow w-100 position-relative"><i id="icon-arrow" class="bx bx-left-arrow-alt" style="float: left;">Back</i></a>
 </div>
 <?php } ?>
 
@@ -145,8 +158,8 @@ if (sizeof($t)>0) {
                     <input type="text" value="" name="_Amount" id="_Amount" class="form-control" disabled="disabled">
                 </div>
                 
-                <button type="button" onclick="doConfrim()" class="btn btn-success  glow w-100 position-relative">Recharge now<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></button><br><br>
-                <a href="javascript:void(0)" data-dismiss="modal" class="btn btn-outline-success glow w-100 position-relative">Back<i id="icon-arrow" class="bx bx-left-arrow-alt" style="float: left;"></i></a><br><br>
+                <button type="button" onclick="doConfrim()" class="btn btn-primary  glow w-100 position-relative">Recharge now<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></button><br><br>
+                <a href="javascript:void(0)" data-dismiss="modal" class="btn btn-outline-primary glow w-100 position-relative">Back<i id="icon-arrow" class="bx bx-left-arrow-alt" style="float: left;"></i></a><br><br>
       </div>
     </div>
   </div>
@@ -209,7 +222,7 @@ var IsConfirm=0;
       function doConfrim() {
     IsConfirm=1;
      $('#ConfirmationPopup').modal("hide");
-       $('#overlay_body').show();
+     $('#overlay_body').show(); 
      $('#submitRequest').trigger("click");
 }
 </script>

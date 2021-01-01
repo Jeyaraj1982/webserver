@@ -8,7 +8,7 @@
                         <br>IMPS
                     </a>
                 </div>
-                 <div class="col-4" style="padding-right:6px;padding-left:6px">
+                <div class="col-4" style="padding-right:6px;padding-left:6px">
                     <a href="dashboard.php?action=moneytranser_tobank_neft" class="btn btn-icon glow mb-1" style="width:100%"  >
                         <img src="assets/img/logo_moneytransfer.png" style="width:100%;border:1px solid #ccc;border-radius:10px;">
                         <br>NEFT

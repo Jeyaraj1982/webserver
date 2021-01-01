@@ -12,24 +12,24 @@
                        <img src="assets/img/logo_bsnl.png" style="width:100%;border:1px solid #ccc;border-radius:10px;">
                     </a>
                 </div>
-                <!--<div class="col-4" style="padding-right:6px;padding-left:6px;text-align: right;">
+               <!-- <div class="col-4" style="padding-right:6px;padding-left:6px;text-align: right;">
                     <a href="dashboard.php?action=mrc_idea"  class="btn btn-icon  glow mb-1" style="width:100%" >
                         <img src="assets/img/logo_idea.png" style="width:100%;border:1px solid #ccc;border-radius:10px;">
                     </a>
-                </div>  -->
-                <div class="col-4" style="padding-right:6px;padding-left:6px">
-                    <a href="dashboard.php?action=mrc_jio" class="btn btn-icon glow mb-1" style="width:100%"  >
-                        <img src="assets/img/logo_jio.png" style="width:100%;border:1px solid #ccc;border-radius:10px;">
+                </div> -->
+                 <div class="col-4" style="padding-right:6px;padding-left:6px">
+                    <a href="dashboard.php?action=mrc_vodaidea" class="btn btn-icon   glow mb-1" style="width:100%">
+                       <img src="assets/img/logo_vodaidea.png" style="width:100%;border:1px solid #ccc;border-radius:10px;">
                     </a>
                 </div>
             </div>
             <div class="row">
                 <div class="col-4" style="padding-right:6px;padding-left:6px">
-                    <a href="dashboard.php?action=mrc_vodaidea" class="btn btn-icon   glow mb-1" style="width:100%">
-                       <!--<img src="assets/img/logo_vodafone.png" style="width:100%;border:1px solid #ccc;border-radius:10px;">-->
-                       <img src="assets/img/logo_vodaidea.png" style="width:100%;border:1px solid #ccc;border-radius:10px;">
+                    <a href="dashboard.php?action=mrc_jio" class="btn btn-icon glow mb-1" style="width:100%"  >
+                        <img src="assets/img/logo_jio.png" style="width:100%;border:1px solid #ccc;border-radius:10px;">
                     </a>
                 </div>
+               
                 <div class="col-4" style="padding-right:6px;padding-left:6px">
                     <a href="javascript:void(0)" onclick="GetUsers();" class="btn btn-icon   glow mb-1" style="width:100%">
                        <img src="assets/img/logo_myprofile.png" style="width:100%;border:1px solid #ccc;border-radius:10px;">  <br>

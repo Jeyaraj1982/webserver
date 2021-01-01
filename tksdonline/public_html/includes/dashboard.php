@@ -1,14 +1,3 @@
-<div class="row" style="display: none;">
-    <div class="col-12">
-        <div style="padding:20px;margin:10px;border:1px solid #ccc;background:#cefca9;text-align:center;color:#555;border-radius:10px">
-    <b>Independence Day Offer</b><br><br>
-    Purchase Rs.1947 get Rs.2020<br><br>
-    Profit Rs. 73 + Rs. 50<br>
-    Only 15 August 2020<br>
-    00:19:47 to 20:20:20<br>
-    </div>
-    </div>
-</div>
 <div style="padding:0px;text-align:center;margin-bottom:20px;"></div> 
 <div class="row">
     <div class="col-4" style="padding-right:6px;padding-left:6px">
@@ -198,6 +187,8 @@
             <br>Credit<br>Sales
         </a>
     </div>
+    
+     
 </div> 
          
           
