@@ -1,79 +1,82 @@
-<!--<footer class="footer set-bg" style="background:#030A24"  data-setbg="<?php echo BaseUrl;?>/assets/img/footer_banner2.png">-->
-<footer class="footer set-bg" style="background:#030A24" >
-<div class="container">
- 
-<div class="row">
-<div class="col-lg-4 col-md-4">                                                                       
-<div class="footer__about">
-<div class="footer__logo">
-<a href="<?php echo BaseUrl;?>"><img src="<?php echo BaseUrl;?>/assets/astrafx_newlogo.png" alt="" style="background: #fff;padding:10px 20px;padding-right:27px;border-radius:5px;;"></a>
-</div>
- 
-<div class="footer__social">
-<a href="https://facebook.com" class="facebook"><i class="fa fa-facebook"></i></a>
-<a href="https://twitter.com" class="twitter"><i class="fa fa-twitter"></i></a>
-<a href="https://google.com" class="google"><i class="fa fa-google"></i></a>
-<a href="https://skype.com" class="skype"><i class="fa fa-skype"></i></a>
-</div>
-</div>
-</div>
-<div class="col-lg-2 offset-lg-1 col-md-3">
-<div class="footer__widget">
-<!--
-<h5>Links</h5>
-<ul>
-<li><a href="<?php echo BaseUrl;?>/aboutus.php" style="color:#ccc"><i class="fa fa-angle-right"></i> About Us</a></li>
-<li><a href="<?php echo BaseUrl;?>/plans.php" style="color:#ccc"><i class="fa fa-angle-right"></i> Business Plan</a></li>
-<li><a href="<?php echo BaseUrl;?>/contactus.php" style="color:#ccc"><i class="fa fa-angle-right"></i> Contact us</a></li>
-</ul>-->                                            
-</div>
-</div>
-<div class="col-lg-2 col-md-3">
-<div class="footer__widget">
-<!--<h5>Links</h5>
-<ul>
-<li><a href="<?php echo BaseUrl;?>/register.php" style="color:#ccc"><i class="fa fa-angle-right"></i> Register</a></li>
-<li><a href="<?php echo BaseUrl;?>/login.php" style="color:#ccc"><i class="fa fa-angle-right"></i> Login</a></li>
-</ul>-->
-</div>
-</div>
-<div class="col-lg-3 col-md-6">
-<div class="footer__brand">
-<div style="color:#FFF;text-align:right;color:#ccc">
-<b style="font-size:25px;color:#fff">Astrafx Traders&nbsp;</b><br>
-Chaucer House/Stone St,<br>
-Canterbury CT4 5PW,<br>
-United Kingdom.<br><br><Br>
-</div>
-
-    <div class="footer__contact__option">
-        <div class="option__item" style="font-weight:normal"><i class="fa fa-envelope"></i> support@astrafx.uk</div>
-    </div>
-   <!-- <br>
-    <div class="footer__contact__option">
-        <div class="option__item email"><i class="fa fa-envelope-o"></i> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="084b6764677a64616a486f65696164266b6765">support@astrafx.uk</a></div>
-    </div>
-    -->
- 
- 
-</div>
-</div>
-</div>
-<div class="footer__copyright__text">
-<p>Copyright &copy;2020 All rights reserved </p>
-</div>
-
-</div>
+<footer>
+    <div class="background-primary padding text-center" >&nbsp;</div>
+    <section class="section background-dark" style="background:#000 !important;padding:0px;padding-top:15px !important;padding-bottom:10px">
+        <div class="line">
+            <div class="margin">
+                <div class="s-12 m-12 l-4 margin-m-bottom-30">
+                    <img src="assets/img/footer_logo.jpeg" alt="" style="max-width:60%">
+                </div>
+                <div class="s-12 m-12 l-4 margin-m-bottom-30">
+                    <h4 class="text-uppercase text-strong">&nbsp;</h4>
+                    <div class="line">
+                        <div class="s-11 m-11 l-11 margin-bottom-10">
+                            <p><a href="aboutus.php" class="text-primary-hover" style="color:#ccc">About us</a></p>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <div class="s-11 m-11 l-11 margin-bottom-10">
+                            <p><a href="terms.php" class="text-primary-hover" style="color:#ccc">Terms & Conditions</a></p>
+                        </div>
+                    </div>  
+                    <div class="line">
+                        <div class="s-11 m-11 l-11 margin-bottom-10">
+                            <p><a href="cancellation.php" class="text-primary-hover" style="color:#ccc">Cancellations & Returns</a></p>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <div class="s-11 m-11 l-11 margin-bottom-10">
+                            <p><a href="privacy.php" class="text-primary-hover" style="color:#ccc">Privacy Policy</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="s-12 m-12 l-4 margin-m-bottom-30">
+                    <h4 class="text-uppercase text-strong">&nbsp;</h4>
+                    <div class="line">
+                        <div class="s-1 m-1 l-1 text-center"  style="color:#ccc ">
+                            <i class="icon-placepin text-primary text-size-12"  style="color:#ccc  !important"></i>
+                        </div>
+                        <div class="s-11 m-11 l-11 margin-bottom-10"  style="color:#ccc">
+                            <p style="color:#ccc ">Tamilnadu, India</p>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <div class="s-1 m-1 l-1 text-center"  style="color:#ccc">
+                            <i class="icon-mail text-primary text-size-12"  style="color:#ccc  !important"></i>
+                        </div>
+                        <div class="s-11 m-11 l-11 margin-bottom-10">
+                            <p style="color:#ccc"><a href="/" class="text-primary-hover" style="color:#ccc">happylife20.20@yahoo.com</a></p>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <div class="s-1 m-1 l-1 text-center">
+                            <i class="icon-smartphone text-primary text-size-12"  style="color:#ccc  !important"></i>
+                        </div>
+                        <div class="s-11 m-11 l-11 margin-bottom-10"  style="color:#ccc ">
+                            <p style="color:#ccc">+91 8778616561</p>
+                        </div>
+                    </div>
+                </div>
+          </div>
+        </div>
+      </section>
+    <hr class="break margin-top-bottom-0" style="border-color: rgba(0, 38, 51, 0.80);">
+    <section class="padding background-dark" style="background:#000 !important;padding:0.5rem !important">
+        <div class="line">
+            <div class="s-12 l-6">
+                <p class="text-size-12" style="color:#ccc">Copyright 2019, happylife2020.in</p>
+                <p class="text-size-12" style="color:#ccc">Tamilnadu, India</p>
+            </div>
+            <div class="s-12 l-6">
+                <a class="right text-size-12" href="" title="Responsee - lightweight responsive framework"><br></a>
+            </div>
+        </div>
+    </section>
 </footer>
-<script src="<?php echo BaseUrl;?>/assets/js/sweetalert.js" type="text/javascript"></script>
-
-<script src="js/bootstrap.min.js" type="194b4c4ebcf722a69f5f0ce5-text/javascript"></script>
-<script src="js/jquery.nice-select.min.js" type="194b4c4ebcf722a69f5f0ce5-text/javascript"></script>
-<script src="js/jquery-ui.min.js" type="194b4c4ebcf722a69f5f0ce5-text/javascript"></script>
-<script src="js/jquery.magnific-popup.min.js" type="194b4c4ebcf722a69f5f0ce5-text/javascript"></script>
-<script src="js/mixitup.min.js" type="194b4c4ebcf722a69f5f0ce5-text/javascript"></script>
-<script src="js/jquery.slicknav.js" type="194b4c4ebcf722a69f5f0ce5-text/javascript"></script>
-<script src="js/owl.carousel.min.js" type="194b4c4ebcf722a69f5f0ce5-text/javascript"></script>
-<script src="js/main.js" type="194b4c4ebcf722a69f5f0ce5-text/javascript"></script>
-<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="194b4c4ebcf722a69f5f0ce5-|49" defer=""></script></body>
+<script type="text/javascript" src="assets/js/responsee.js"></script>
+<script type="text/javascript" src="assets/js/plugins.min.js"></script>
+<script type="text/javascript" src="assets/js/owl.carousel.js"></script>
+<script type="text/javascript" src="assets/js/template-scripts.js"></script> 
+<!--<link rel="stylesheet" href="assets/css/leaflet.css" crossorigin=""/>
+<script src="assets/js/leaflet.js" crossorigin=""></script>  -->
+</body>
 </html>

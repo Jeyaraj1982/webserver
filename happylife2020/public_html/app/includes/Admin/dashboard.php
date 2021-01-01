@@ -6,12 +6,12 @@
                             <div class="card card-stats card-primary card-round">
                                 <div class="card-body">
                                     <div class="row">
-                                        <div class="col-4">
+                                        <div class="col-5">
                                             <div class="icon-big text-center">
                                                 <i class="flaticon-users"></i>
                                             </div>
                                         </div>
-                                        <div class="col-8 col-stats">
+                                        <div class="col-7 col-stats">
                                             <div class="numbers">
                                                 <p class="card-category">Members</p>
                                                 <h4 class="card-title">
@@ -27,15 +27,15 @@
                             <div class="card card-stats card-info card-round">
                                 <div class="card-body">
                                     <div class="row">
-                                        <div class="col-4">
+                                        <div class="col-5">
                                             <div class="icon-big text-center">
                                                 <i class="flaticon-interface-6"></i>
                                             </div>
                                         </div>
-                                        <div class="col-8 col-stats">
+                                        <div class="col-7 col-stats">
                                             <div class="numbers">
-                                                <p class="card-category">Packages Sold ($)</p>
-                                                <h4 class="card-title"> 0</h4>
+                                                <p class="card-category">Stockiest</p>
+                                                <h4 class="card-title"><?php echo (sizeof($mysql->select("select * from _tbl_stock_admin")));?></h4>
                                             </div>
                                         </div>
                                     </div>
@@ -46,15 +46,15 @@
                             <div class="card card-stats card-success card-round">
                                 <div class="card-body ">
                                     <div class="row">
-                                        <div class="col-3">
+                                        <div class="col-5">
                                             <div class="icon-big text-center">
                                                 <i class="flaticon-analytics"></i>
                                             </div>
                                         </div>
-                                        <div class="col-9 col-stats">
+                                        <div class="col-7 col-stats">
                                             <div class="numbers">
-                                                <p class="card-category">Completed Members</p>
-                                                <h4 class="card-title">0</h4>
+                                                <p class="card-category">Sales</p>
+                                                <h4 class="card-title">0.00</h4>
                                             </div>
                                         </div>
                                     </div>
@@ -65,14 +65,14 @@
                             <div class="card card-stats card-secondary card-round">
                                 <div class="card-body ">
                                     <div class="row">
-                                        <div class="col-3">
+                                        <div class="col-5">
                                             <div class="icon-big text-center">
                                                 <i class="flaticon-success"></i>
                                             </div>
                                         </div>
-                                        <div class="col-9 col-stats">
+                                        <div class="col-7 col-stats">
                                             <div class="numbers">
-                                                <p class="card-category">Boosted Members</p>
+                                                <p class="card-category">Order</p>
                                                 <h4 class="card-title">0</h4>
                                             </div>
                                         </div>
@@ -82,7 +82,97 @@
                         </div>
                     </div>
                     <!-- Card With Icon States Color -->
-                     
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3">
+                            <div class="card card-stats card-round">
+                                <div class="card-body ">
+                                    <div class="row">
+                                        <div class="col-5">
+                                            <div class="icon-big text-center">
+                                                <i class="flaticon-chart-pie text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-7 col-stats">
+                                            <div class="numbers">
+                                                <p class="card-category">EPins</p>
+                                                <h4 class="card-title"><?php echo (sizeof($mysql->select("select * from _tblEpins")));?></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="card card-stats card-round">
+                                <div class="card-body ">
+                                    <div class="row">
+                                        <div class="col-5">
+                                            <div class="icon-big text-center">
+                                                <i class="flaticon-coins text-success"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-7 col-stats">
+                                            <div class="numbers">
+                                                <p class="card-category">Sliver</p>
+                                                <h4 class="card-title">
+                                                    <?php echo (sizeof($mysql->select("select * from _tblEpins where `IsUsed`>'0' and PackageID='1'")));?> / 
+                                                    <?php echo (sizeof($mysql->select("select * from _tblEpins where PackageID='1'")));?>
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="card card-stats card-round">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-5">
+                                            <div class="icon-big text-center">
+                                                <i class="flaticon-error text-danger"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-7 col-stats">
+                                            <div class="numbers">
+                                                <p class="card-category">Gold</p>
+                                                <h4 class="card-title">
+                                                <?php echo (sizeof($mysql->select("select * from _tblEpins where `IsUsed`>'0' and PackageID='2'")));?>
+                                                /
+                                                <?php echo (sizeof($mysql->select("select * from _tblEpins where PackageID='2'")));?>
+                                                
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="card card-stats card-round">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-5">
+                                            <div class="icon-big text-center">
+                                                <i class="flaticon-twitter text-primary"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-7 col-stats">
+                                            <div class="numbers">
+                                                <p class="card-category">Diamond</p>
+                                                <h4 class="card-title">
+                                                
+                                                <?php echo (sizeof($mysql->select("select * from _tblEpins where `IsUsed`>'0' and PackageID='3'")));?>
+                                                /
+                                                <?php echo (sizeof($mysql->select("select * from _tblEpins where PackageID='3'")));?>
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <!-- Card With Icon States Background -->
                     <div class="row">
                         <div class="col-sm-6 col-md-3">
@@ -96,8 +186,8 @@
                                         </div>
                                         <div class="col col-stats ml-3 ml-sm-0">
                                             <div class="numbers">
-                                                <p class="card-category"> </p>
-                                                <h4 class="card-title"> </h4>
+                                                <p class="card-category">Binary Eligible</p>
+                                                <h4 class="card-title"><?php echo sizeof($mysql->select("select * from `_tbl_Members` where `IsBinaryEligible`='1'"));?></h4>
                                             </div>
                                         </div>
                                     </div>
@@ -115,8 +205,8 @@
                                         </div>
                                         <div class="col col-stats ml-3 ml-sm-0">
                                             <div class="numbers">
-                                                <p class="card-category"> </p>
-                                                <h4 class="card-title"> </h4>
+                                                <p class="card-category">Payout Eligible</p>
+                                                <h4 class="card-title"><?php echo sizeof($mysql->select("select * from `_tbl_Members` where `IsPayoutEligible`='1'"));?></h4>
                                             </div>
                                         </div>
                                     </div>
@@ -138,7 +228,7 @@
                                                 <h4 class="card-title">
                                                 <?php
                                                     $val = $mysql->select("select sum(Debits) as d from _tbl_wallet_earnings where Ledger='1'");
-                                                    echo ($val[0]['d']==0 ? "0.00" : $val[0]['d']);
+                                                    echo "Rs. ".$val[0]['d'];
                                                 ?>
                                                 </h4>
                                             </div>
@@ -160,7 +250,10 @@
                                             <div class="numbers">
                                                 <p class="card-category">Payout</p>
                                                 <h4 class="card-title">
-                                                 0.00
+                                                <?php
+                                                    $val = $mysql->select("select sum(Credits) as d from _tbl_wallet_earnings where Ledger='0'");
+                                                    echo "Rs. ".$val[0]['d'];
+                                                ?>
                                                 </h4>
                                             </div>
                                         </div>
@@ -1148,120 +1241,4 @@
                         </div>
                        
                     </div> -->
-                    
-                    <div class="row">
-                        <div class="col-sm-6 col-md-3">
-                            <div class="card card-stats card-round">
-                                <div class="card-body ">
-                                    <div class="row align-items-center">
-                                         
-                                        <div class="col col-stats ml-3 ml-sm-0">
-                                            <div class="numbers">
-                                                <p class="card-category">Unused Wallet Amount</p>
-                                                <h4 class="card-title">0</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-3">
-                            <div class="card card-stats card-round">
-                                <div class="card-body">
-                                    <div class="row align-items-center">
-                                        <div class="col col-stats ml-3 ml-sm-0">
-                                            <div class="numbers">
-                                                <p class="card-category">Payable Payout</p>
-                                                <h4 class="card-title">0</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-3">
-                            <div class="card card-stats card-round">
-                                <div class="card-body">
-                                    <div class="row align-items-center">
-                                       
-                                        <div class="col col-stats ml-3 ml-sm-0">
-                                            <div class="numbers">
-                                                <p class="card-category">Paid Payout</p>
-                                                <h4 class="card-title">
-                                                0
-                                                </h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-3">
-                            <div class="card card-stats card-round">
-                                <div class="card-body">
-                                    <div class="row align-items-center">
-                                     
-                                        <div class="col col-stats ml-3 ml-sm-0">
-                                            <div class="numbers">
-                                                <p class="card-category">ROI Payable</p>
-                                                <h4 class="card-title">
-                                               0
-                                                </h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                    <div class="row">
-                        <div class="col-sm-6 col-md-4">
-                            <div class="card card-stats card-round">
-                                <div class="card-body ">
-                                    <div class="row align-items-center">
-                                         
-                                        <div class="col col-stats ml-3 ml-sm-0">
-                                            <div class="numbers">
-                                                <p class="card-category">Today ROI Payments</p>
-                                                <h4 class="card-title">0</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4">
-                            <div class="card card-stats card-round">
-                                <div class="card-body">
-                                    <div class="row align-items-center">
-                                        <div class="col col-stats ml-3 ml-sm-0">
-                                            <div class="numbers">
-                                                <p class="card-category">Today Referal Payments</p>
-                                                <h4 class="card-title">0</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4">
-                            <div class="card card-stats card-round">
-                                <div class="card-body">
-                                    <div class="row align-items-center">
-                                        <div class="col col-stats ml-3 ml-sm-0">
-                                            <div class="numbers">
-                                                <p class="card-category">Refill Requests</p>
-                                                <?php $refillrequest = $mysql->select("SELECT COUNT(RequestID) AS Count FROM _tbl_wallet_request_utility");?>
-                                                <h4 class="card-title"><?php echo $refillrequest[0]['Count'];?></h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                         
-                         
-                    </div>
                 </div> 

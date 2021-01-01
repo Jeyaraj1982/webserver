@@ -28,7 +28,7 @@ if (isset($_GET['filter']) && $_GET['filter']=="all") {
             <li class="separator"><i class="flaticon-right-arrow"></i></li>
             <li class="nav-item"><a href="dashboard.php?action=Wallet/Requests">Wallet</a></li>
             <li class="separator"><i class="flaticon-right-arrow"></i></li>
-            <li class="nav-item"><a href="dashboard.php?action=Wallet/Requests">Wallet Requests</a></li>
+            <li class="nav-item"><a href="dashboard.php?action=Wallet/Requests">Refill Requests</a></li>
         </ul>
     </div>
     <div class="row" style="margin-bottom:10px;">
@@ -43,7 +43,7 @@ if (isset($_GET['filter']) && $_GET['filter']=="all") {
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title">Wallet Requests</h4>
+                    <h4 class="card-title">Wallet Refill Requests</h4>
                     <span><?php echo $title;?></span>
                 </div>
                 <div class="card-body">
@@ -51,11 +51,11 @@ if (isset($_GET['filter']) && $_GET['filter']=="all") {
                         <table id="basic-datatables" class="display table table-striped table-hover" >
                             <thead>
                                 <tr>
-                                    <th>Requested Date</th>
-                                    <th>Transfered Date</th>
+                                    <th>Txn Date</th>
+                                    <th>Txn ID</th>
                                     <th>Bank To</th>
                                     <th>Bank Ref#</th>
-                                    <th>Amount ($)</th>
+                                    <th>Amount</th>
                                     <th>Status</th>
                                     <th></th>
                                 </tr>
@@ -68,8 +68,8 @@ if (isset($_GET['filter']) && $_GET['filter']=="all") {
                                 <?php } ?>
                                 <?php foreach($records as $r) {?>
                                 <tr>
-                                    <td><?php echo date("M d, Y H:i",strtotime($r['RequestedOn']));?></td>
-                                    <td><?php echo date("M d, Y",strtotime($r['TransferDate']));?></td>
+                                    <td><?php echo $r['RequestedOn'];?></td>
+                                    <td><?php echo $r['RequestID'];?></td>
                                     <td>
                                         <?php echo $r['BankName'];?><bR>
                                         <?php echo $r['AccountNumber'];?>,<?php echo $r['Mode'];?> 
@@ -81,10 +81,10 @@ if (isset($_GET['filter']) && $_GET['filter']=="all") {
                                         <?php echo "Pending";?>
                                     <?php }?>
                                     <?php if($r['IsApproved']=="1" && $r['IsRejected']=="0"){ ?>
-                                        <?php echo "Approved";?><br><?php echo date("M d, Y",strtotime($r['IsApprovedOn']));?>
+                                        <?php echo "Approved";?><br><?php echo $r['IsApprovedOn'];?>
                                     <?php }?>
                                     <?php if($r['IsApproved']=="0" && $r['IsRejected']=="1"){ ?>
-                                        <?php echo "Rejected";?><br><?php echo date("M d, Y",strtotime($r['IsRejectedOn']));?>
+                                        <?php echo "Rejected";?><br><?php echo $r['IsRejectedOn'];?>
                                     <?php }?>
                                     </td>
                                     <td>
@@ -100,3 +100,8 @@ if (isset($_GET['filter']) && $_GET['filter']=="all") {
         </div>
     </div>
 </div>
+<script>
+    $(document).ready(function() {
+        $('#basic-datatables').DataTable({});
+    });
+</script>

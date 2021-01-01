@@ -1,203 +1,274 @@
-<?php include_once("includes/header.php");?>
- 
-<section class="hero spad set-bg" data-setbg="<?php echo BaseUrl;?>/assets/img/banner_02.png">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-7">
-                <div class="hero__text">
-                    <div class="hero__text__title">
-                        <span>&nbsp;</span>
-                        <h2>ASTRAFX</h2>
-                         <span>Perfect Platfrom For Your Investment</span>
-                    </div>                      
-                   <!-- <div class="hero__text__price">
-                        <div class="car-model">Perfect Platfrom For Your Investment</div>
-                        <h2>$399<span>/Month</span></h2>
-                    </div>  -->
-                    
-                     <!-- <div class="hero__text__price">
-                        <div class="car-model">Model 2019</div>
-                        <h2>$399<span>/Month</span></h2>
-                    </div>  -->
-                    <a href="<?php echo BaseUrl;?>/plans.php" class="primary-btn">Business Plans</a>
-                    <!--<a href="#" class="primary-btn more-btn">Learn More</a> -->
+<?php
+    include_once("config.php");
+    include_once("includes/header.php");
+?>
+    <main role="main">    
+      <!-- Main Carousel -->
+      <div class="carousel-fade-transition owl-carousel carousel-main carousel-nav-white">
+        <div class="item">
+          <div class="s-12 center">
+            <img src="assets/img/01.jpg" alt="">
+            <div class="carousel-content">
+              <div class="content-center-vertical line">
+                <div class="s-12 m-12 l-8">
+                  <p class="animated-carousel-element text-white text-s-size-30 text-m-size-40 text-size-60 margin-bottom-40 margin-m-bottom-20 text-extra-strong text-uppercase">Happylife</p>
+                  <p class="animated-carousel-element slow text-white text-size-16 text-m-size-14 margin-bottom-40">Happy life introduces best genuine income for every one</p>
+                  <div class="margin">
+                    <div class="s-12 m-6 l-4 margin-bottom">
+                      <a class="animated-carousel-element button border-radius background-orange s-12 center text-white" href="/">Get Started Now</a> 
+                    </div>
+                    <div class="s-12 m-6 l-4">
+                      <a class="animated-carousel-element button border-radius background-aqua s-12 center text-white" href="features.html">Or Discover More</a>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div> 
-    
-    
-</section>
- <div>
-        <?php include_once("includes/marquee.php");?>
-    </div>
- 
-
-        <section class="services spad">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="section-title">
-                    <span>Our Services</span>
-                    <h2>What We Offers</h2>
-                     
+        <div class="item">
+          <div class="s-12 center">
+            <img src="assets/img/02.jpg" alt="">
+            <div class="carousel-content">
+              <div class="content-center-vertical line">                                                                       
+                <div class="s-12 m-12 l-8">
+                  <p class="animated-carousel-element text-dark text-s-size-30 text-m-size-40 text-size-60 margin-bottom-40 margin-m-bottom-20 text-thin text-uppercase">Member Panel</p>
+                  <p class="animated-carousel-element slow text-dark text-size-16 text-m-size-14 margin-bottom-30">Powerful member panel provides, secure transactions with user friendly interfaces</p>
+                  <i class="animated-carousel-element icon-star_empty icon2x text-orange"></i> <i class="animated-carousel-element slow icon-star_empty icon2x text-orange"></i> <i class="animated-carousel-element icon-star_empty icon2x text-orange"></i> <i class="animated-carousel-element slow icon-star_empty icon2x text-orange"></i> <i class="animated-carousel-element icon-star_empty icon2x text-orange"></i>    
                 </div>
-</div>
-</div>
-    <div class="row">
-        <div class="col-lg-12">
-        
-        
-    <div class="row">
-       <!-- <div class="col-lg-4 col-md-4 col-sm-4">
-        <div class="services__item">
-        <img src="<?php echo BaseUrl;?>/assets/img/11.jpg" alt="">
-        <h5>Financial planning</h5>
-        <p style="text-align: left;">We offer customised solution to investments in equity and debt offered by experienced and professional Fund Managers. .</p>
+              </div>
+            </div>
+          </div>
         </div>
-        </div> -->
-        <div class="col-lg-4 col-md-4 col-sm-4">
-        <div class="services__item">
-        <img src="<?php echo BaseUrl;?>/assets/img/33.jpg" alt="">
-        <h5>Investment banking</h5>
-        <p style="text-align: left;">We will take a holistic approach and try to understand in detail each servicethat an investment bank provides.</p>
+        <div class="item">
+          <div class="s-12 center">
+            <img src="assets/img/03.jpg" alt="">
+            <div class="carousel-content">
+              <div class="content-center-vertical line">
+                <div class="s-12 m-12 l-8">
+                  <p class="animated-carousel-element text-white text-s-size-30 text-m-size-40 text-size-60 margin-bottom-40 margin-m-bottom-20 text-thin text-uppercase">...Tons of <span class="text-extra-strong">Reusable Elements</span> and Many More Great Features</p>
+                  <a class="animated-carousel-element slow button border-radius background-red text-white" href="features.html">Get All Features</a>   
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      
+      <!-- Section 1 -->
+      <section class="section-small-padding background-dark">
+        <div class="line">
+          <div class="margin">
+            <div class="s-12 m-12 l-9 margin-m-bottom">
+              <h1 class="margin-bottom-0 text-thin">Earn money using our business plans</h1>
+            </div>
+            <div class="s-12 m-12 l-3">
+              <a class="button border-radius background-orange s-12 m-12 l-10 text-dark right" href="plan.php"><strong>GET MORE INFO</strong></a>
+            </div>
+          </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-4">
-        <div class="services__item">
-        <img src="<?php echo BaseUrl;?>/assets/img/44.jpg" alt="">
-        <h5>Market Research</h5>
-        <p style="text-align: left;">We provide a wide range of custom market research, analysis and information gathering services<!--in Poland and Central and London-->.</p>
+      </section>
+      
+      <!-- Section 2 -->
+      <section class="section background-white">
+        <div class="line">
+          <div class="margin">
+            <div class="s-12 m-6 l-4 margin-bottom-60">
+              <div class="float-left">
+                <i class="icon-brush background-primary icon-circle-small"></i>
+              </div>
+              <div class="margin-left-80">
+                <h4 class="text-uppercase text-strong"><span class="text-primary">Daily</span> Payout</h4>
+                <p>Daily payout increase your earning and use your earning.</p>
+                <!--<a class="text-more-info text-aqua-hover" href="/">Read more</a>-->
+              </div>
+            </div>
+            <div class="s-12 m-6 l-4 margin-bottom-60">
+              <div class="float-left">
+                <i class="icon-random background-primary icon-circle-small"></i>
+              </div>
+              <div class="margin-left-80">
+                <h4 class="text-uppercase text-strong"><span class="text-primary">Buy</span> Products</h4>
+                <p>You can earn from your each downline, when your downlines will buy product</p>
+                <!--<a class="text-more-info text-aqua-hover" href="/">Read more</a>-->
+              </div>
+            </div>
+            <div class="s-12 m-6 l-4 margin-bottom-60">
+              <div class="float-left">
+                <i class="icon-star_empty background-primary icon-circle-small"></i>
+              </div>
+              <div class="margin-left-80">
+                <h4 class="text-uppercase text-strong"><span class="text-primary">Pair</span> Match</h4>
+                <p>Pair match based on PV. 1:2, or 2:1 on first level then 1:1</p>
+                <!--<a class="text-more-info text-aqua-hover" href="/">Read more</a>-->
+              </div>
+            </div>
+            <div class="s-12 m-6 l-4 margin-m-bottom-60">
+              <div class="float-left">
+                <i class="icon-paperplane_ico background-primary icon-circle-small"></i>
+              </div>
+              <div class="margin-left-80">
+                <h4 class="text-uppercase text-strong"><span class="text-primary">Earnings</span> To Your Bank</h4>
+                <p>You can withdraw your earning to your bank acoount.</p>
+                <!--<a class="text-more-info text-aqua-hover" href="/">Read more</a>-->
+              </div>
+            </div>
+            <div class="s-12 m-6 l-4 margin-m-bottom-60">
+              <div class="float-left">
+                <i class="icon-tablet background-primary icon-circle-small"></i>
+              </div>
+              <div class="margin-left-80">
+                <h4 class="text-uppercase text-strong"><span class="text-primary">Dedicated</span> support team</h4>
+                <p>We have dedicated support team to provide best service to all our members.</p>
+                <!--<a class="text-more-info text-aqua-hover" href="/">Read more</a>-->
+              </div>
+            </div>
+            <div class="s-12 m-6 l-4 margin-m-bottom-60">
+              <div class="float-left">
+                <i class="icon-list background-primary icon-circle-small"></i>
+              </div>
+              <div class="margin-left-80">
+                <h4 class="text-uppercase text-strong"><span class="text-primary">And</span> many more...</h4>
+                <p>many more feature </p>
+                <!--<a class="text-more-info text-aqua-hover" href="/">Read more</a>-->
+              </div>
+            </div>
+          </div>
         </div>
-        </div>                                      
-         <div class="col-lg-4 col-md-4 col-sm-4">
-        <div class="services__item">
-        <img src="<?php echo BaseUrl;?>/assets/img/66.jpg" alt="">
-        <h5>Forex & Currencies</h5>
-        <p style="text-align: left;">Astrafx offers the best currency exchange rates in Calgary, transfer money within minutes to over 130 countries.</p>
+      </section>
+      
+      <!-- Section 3 -->
+      <section class="section background-primary background-transparent text-center" data-image-src="assets/img/parallax-01.jpg" style="display:none">
+        <div class="line">
+          <div class="s-12 m-10 l-8 center">
+            <h2 class="headline text-thin text-s-size-30">Responsive Parallax Background</h2>
+            <p class="text-size-20">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis</p>
+          </div>
         </div>
+      </section>
+      
+      <!-- Section 4 -->
+      <section class="section background-white">
+        <div class="full-width text-center">
+          <img class="center margin-bottom-30" style="margin-top: -130px; position:relative;" src="assets/img/responsive2.png" alt="">
+          <div class="line">
+            <h2 class="headline text-thin text-s-size-30">Fully <span class="text-primary">Automatted </span> Process</h2>
+            <p class="text-size-20 text-s-size-16 text-thin">Daily payouts fully automatted, every day you will get your earning via sms</p>
+            <!--<i class="icon-more_node_links icon2x text-primary margin-top-bottom-10"></i>
+            <p class="text-size-20 text-s-size-16 text-thin text-primary">Try resize your browser window</p>-->
+          </div>
         </div>
-    </div>
+      </section>
+      
+      <!-- Section 5 -->
+      <!-- Section 6 -->
+      <section class="full-width background-primary">
+        <div class="s-12 m-12 l-6">  
+          <img src="assets/img/img-04.jpg" alt="">
+        </div>
+        <div class="s-12 m-12 l-6">
+          <div class="padding-2x">
+            <div class="line">
+              <h2 class="text-thin headline text-s-size-30 text-line-height-1">Perfect business partner</h2>
+              <p>you are in correct place, you will access our service any time any where using mobile or desktop/laptop with internet connection.</p>
+              <div class="margin-top-30 margin-m-top-20 s-12 m-12 l-12">
+                <div class="margin">
+                  <div class="s-12 m-12 l-4">
+                    <div class="block">
+                      <div class="count-to">
+                        <span class="timer h1 text-size-50 text-strong" data-from="0" data-to="500" data-speed="2000"></span>
+                        <p class="h1 text-size-20 margin-top-10 text-white text-thin">Products</p> 
+                      </div>
+                    </div>
+                  </div>
+                  <div class="s-12 m-12 l-4">
+                    <div class="block">
+                      <div class="count-to">
+                        <span class="timer h1 text-size-50 text-strong" data-from="0" data-to="16" data-speed="2000"></span><!--<span class="h1 text-size-50 text-strong">%</span>-->
+                        <p class="h1 text-size-20 margin-top-10 text-white text-thin">Covered Districts</p> 
+                      </div>
+                    </div>
+                  </div>
+                  <div class="s-12 m-12 l-4">
+                    <div class="block">
+                      <div class="count-to">
+                        <span class="timer h1 text-size-50 text-strong" data-from="0" data-to="100" data-speed="2000"></span>
+                        <p class="h1 text-size-20 margin-top-10 text-white text-thin">Leaders</p> 
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Section 7 -->
+      <section class="section background-white text-center">
+        <div class="line">
+          <h4 class="headline text-extra-strong text-uppercase">Our achievers</h4>
+          <hr class="break-small background-orange break-center">
+          <div class="margin">
+            <div class="s-12 m-4 l-five">
+              <div class="block-bordered padding">  
+                <img src="assets/img/google.png" alt="">
+              </div>
+            </div>
+            <div class="s-12 m-4 l-five">
+              <div class="block-bordered padding"> 
+                <img src="assets/img/jaguar.png" alt=""> 
+              </div>
+            </div>
+            <div class="s-12 m-4 l-five">
+              <div class="block-bordered padding">
+                <img src="assets/img/twitter.png" alt=""> 
+              </div>
+            </div>
+            <div class="s-12 m-4 l-five">
+              <div class="block-bordered padding"> 
+                <img src="assets/img/sony.png" alt="">
+              </div>
+            </div>
+            <div class="s-12 m-4 l-five">
+              <div class="block-bordered padding">
+                <img src="assets/img/youtube.png" alt=""> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="break margin-top-bottom-80">
+        <div class="line">
+          <div class="carousel-default owl-carousel carousel-wide-arrows">
+            <div class="item">
+              <div class="s-12 m-12 l-7 center text-center">
+                <div class="text-orange margin-bottom"><i class="icon-star_empty"></i> <i class="icon-star_empty"></i> <i class="icon-star_empty"></i> <i class="icon-star_empty"></i> <i class="icon-star_half_empty"></i></div>
+                <p class="margin-bottom"><span class="text-size-25 text-thin"><em>"Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis"</em></span></p>
+                <p class="text-primary text-thin text-size-16"><strong>Scott Star</strong> / CEO / Company</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="s-12 m-12 l-7 center text-center">
+                <div class="text-orange margin-bottom"><i class="icon-star_empty"></i> <i class="icon-star_empty"></i> <i class="icon-star_empty"></i> <i class="icon-star_empty"></i> <i class="icon-star_empty"></i></div>
+                <p class="margin-bottom"><span class="text-size-25 text-thin"><em>"Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis"</em></span></p>
+                <p class="text-primary text-thin text-size-16"><strong>Mark Stoner</strong> / Web Developer / Company</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="s-12 m-12 l-7 center text-center">
+                <div class="text-orange margin-bottom"><i class="icon-star_empty"></i> <i class="icon-star_empty"></i> <i class="icon-star_empty"></i> <i class="icon-star_empty"></i> <i class="icon-star_half_empty"></i></div>
+                <p class="margin-bottom"><span class="text-size-25 text-thin"><em>"Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis"</em></span></p>
+                <p class="text-primary text-thin text-size-16"><strong>Jane Naismith</strong> / Web Designer / Company</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- MAP -->
+      
+    </main>
     
-    </div>
-    
-    
-    </div>
-</div>
-</section>
-
-
-<section class="feature spad" style="padding-top:65px">
-<div class="container">
-<div class="row">
-<div class="col-lg-7">
-<div class="feature__text">
-<div class="section-title">
-<span>Our Feature</span>
-<h2>We Are a Trusted  </h2>
-</div>
-<div class="feature__text__desc">
-<p>Astrafx Trade is committed to empowering people to invest and trade, with confidence, in an innovative and reliable environment; supported by best-in-class personal service and uncompromising integrity.</p>
-</div>
-<div class="feature__text__btn">
-<a href="<?php echo BaseUrl;?>/aboutus.php" class="primary-btn" style="background: #012068;">About Us</a>
-<!--<a href="#" class="primary-btn partner-btn">Our Partners</a>-->
-</div>
-<br><br>
-<div>
- <?php include_once("includes/vmarquee.php");?>
-</div>
-</div>
-</div>
-<div class="col-lg-5">
-<iframe scrolling="no" allowtransparency="true" style="box-sizing: border-box; height: 660px; width: 100%;" src="https://s.tradingview.com/embed-widget/market-overview/?locale=en#%7B%22colorTheme%22%3A%22dark%22%2C%22dateRange%22%3A%221d%22%2C%22showChart%22%3Atrue%2C%22largeChartUrl%22%3A%22%22%2C%22isTransparent%22%3Atrue%2C%22width%22%3A%22400%22%2C%22height%22%3A%22660%22%2C%22plotLineColorGrowing%22%3A%22rgba(25%2C%20118%2C%20210%2C%201)%22%2C%22plotLineColorFalling%22%3A%22rgba(25%2C%20118%2C%20210%2C%201)%22%2C%22gridLineColor%22%3A%22rgba(42%2C%2046%2C%2057%2C%201)%22%2C%22scaleFontColor%22%3A%22rgba(120%2C%20123%2C%20134%2C%201)%22%2C%22belowLineFillColorGrowing%22%3A%22rgba(33%2C%20150%2C%20243%2C%200.12)%22%2C%22belowLineFillColorFalling%22%3A%22rgba(33%2C%20150%2C%20243%2C%200.12)%22%2C%22symbolActiveColor%22%3A%22rgba(33%2C%20150%2C%20243%2C%200.12)%22%2C%22tabs%22%3A%5B%7B%22title%22%3A%22Indices%22%2C%22symbols%22%3A%5B%7B%22s%22%3A%22OANDA%3ASPX500USD%22%2C%22d%22%3A%22S%26P%20500%22%7D%2C%7B%22s%22%3A%22OANDA%3ANAS100USD%22%2C%22d%22%3A%22Nasdaq%20100%22%7D%2C%7B%22s%22%3A%22FOREXCOM%3ADJI%22%2C%22d%22%3A%22Dow%2030%22%7D%2C%7B%22s%22%3A%22INDEX%3ANKY%22%2C%22d%22%3A%22Nikkei%20225%22%7D%2C%7B%22s%22%3A%22INDEX%3ADEU30%22%2C%22d%22%3A%22DAX%20Index%22%7D%2C%7B%22s%22%3A%22OANDA%3AUK100GBP%22%2C%22d%22%3A%22FTSE%20100%22%7D%5D%2C%22originalTitle%22%3A%22Indices%22%7D%2C%7B%22title%22%3A%22Commodities%22%2C%22symbols%22%3A%5B%7B%22s%22%3A%22CME_MINI%3AES1!%22%2C%22d%22%3A%22E-Mini%20S%26P%22%7D%2C%7B%22s%22%3A%22CME%3A6E1!%22%2C%22d%22%3A%22Euro%22%7D%2C%7B%22s%22%3A%22COMEX%3AGC1!%22%2C%22d%22%3A%22Gold%22%7D%2C%7B%22s%22%3A%22NYMEX%3ACL1!%22%2C%22d%22%3A%22Crude%20Oil%22%7D%2C%7B%22s%22%3A%22NYMEX%3ANG1!%22%2C%22d%22%3A%22Natural%20Gas%22%7D%2C%7B%22s%22%3A%22CBOT%3AZC1!%22%2C%22d%22%3A%22Corn%22%7D%5D%2C%22originalTitle%22%3A%22Commodities%22%7D%2C%7B%22title%22%3A%22Bonds%22%2C%22symbols%22%3A%5B%7B%22s%22%3A%22CME%3AGE1!%22%2C%22d%22%3A%22Eurodollar%22%7D%2C%7B%22s%22%3A%22CBOT%3AZB1!%22%2C%22d%22%3A%22T-Bond%22%7D%2C%7B%22s%22%3A%22CBOT%3AUB1!%22%2C%22d%22%3A%22Ultra%20T-Bond%22%7D%2C%7B%22s%22%3A%22EUREX%3AFGBL1!%22%2C%22d%22%3A%22Euro%20Bund%22%7D%2C%7B%22s%22%3A%22EUREX%3AFBTP1!%22%2C%22d%22%3A%22Euro%20BTP%22%7D%2C%7B%22s%22%3A%22EUREX%3AFGBM1!%22%2C%22d%22%3A%22Euro%20BOBL%22%7D%5D%2C%22originalTitle%22%3A%22Bonds%22%7D%2C%7B%22title%22%3A%22Forex%22%2C%22symbols%22%3A%5B%7B%22s%22%3A%22FX%3AEURUSD%22%7D%2C%7B%22s%22%3A%22FX%3AGBPUSD%22%7D%2C%7B%22s%22%3A%22FX%3AUSDJPY%22%7D%2C%7B%22s%22%3A%22FX%3AUSDCHF%22%7D%2C%7B%22s%22%3A%22FX%3AAUDUSD%22%7D%2C%7B%22s%22%3A%22FX%3AUSDCAD%22%7D%5D%2C%22originalTitle%22%3A%22Forex%22%7D%5D%2C%22utm_source%22%3A%22www.7thtrade.com%22%2C%22utm_medium%22%3A%22widget%22%2C%22utm_campaign%22%3A%22market-overview%22%7D" frameborder="0"></iframe>
-<!--
-<img src='<?php echo BaseUrl;?>/assets/3.png'>
--->
-</div>
-
- 
-</div>                                                             
-</div>
-</section>
-
-  <section class="latest spad">
-<div class="container">
-<div class="row">
-<div class="col-lg-12">
- 
-</div>                                   
-</div>
- 
-</div>
-</section>
- 
-
-
-<section class="chooseus spad" style="padding-top:50px;padding-bottom:40px">
-<div class="container">
-<div class="row">
-<div class="col-lg-5">
-<div class="chooseus__text">
-<div class="section-title">
-<h2>Why People Choose Us</h2>
-</div>
-<ul>
-
-
-
-<li><i class="fa fa-check-circle" style="color:#012068"></i>&nbsp; Financial Management and Consulting
-elit.</li>
-<li><i class="fa fa-check-circle" style="color:#012068"></i>&nbsp; Market Research and Analysis.
-</li>
-<li><i class="fa fa-check-circle" style="color:#012068"></i>&nbsp; Easy To Access App Development.
-</li>
-
-</ul>
-<br><br> 
-<a href="<?php echo BaseUrl;?>/aboutus.php" class="primary-btn" style="background: #012068;">About Us</a>
-</div>
-</div>
-</div>
-</div>
-<div class="chooseus__video set-bg" style="height:auto">
-<img src="<?php echo BaseUrl;?>/assets/chooseus-video.png" alt="">
-<!--<a href="https://www.youtube.com/watch?v=Xd0Ok-MkqoE" class="play-btn video-popup"><i class="fa fa-play"></i></a>-->
-</div>
-</section>
-
-
-<section class="latest spad">
-<div class="container">
-<div class="row">
-
-
- 
-<div class="col-lg-3">
-<img src="https://www.astrafx.uk/assets/index.jpeg" style="height:200px;border-radius:10px;">
-</div>
-<div class="col-lg-3">
-<img src="https://www.astrafx.uk/assets/oil.jpeg" style="height:200px;border-radius:10px;">
-</div>
-
-<div class="col-lg-3">
-<img src="https://www.astrafx.uk/assets/images.jpeg" style="height:200px;border-radius:10px;border:1px solid #ccc;padding:10px;">
-</div>
-
-<div class="col-lg-3">
-<img src="https://www.astrafx.uk/assets/hqdefault.jpg" style="height:200px;border-radius:10px;">
-</div>
-
-
-
-                                  
-</div>
- 
-</div>
-</section>
-
-
- 
-
-
-<?php include_once("includes/footer.php");?>
+<?php
+        include_once("includes/footer.php");
+    ?>    

@@ -1,7 +1,8 @@
 <?php
+     
           
 class MySqldatabase
-{
+   {
         public $link   = "";
         public $qry    = "";
           public $error = "";
@@ -67,10 +68,10 @@ class MySqldatabase
         }
 
         public function writeSql($text) {
-            $myFile = "/home/astrafx/public_html/app/logs/".date("Y_m_d").".txt";
+            $myFile = date("Y_m_d").".txt";
             $fh = fopen($myFile, 'a') or die ("can't open file");
             fwrite($fh, "[".date("Y-m-d H:i:s")."]\t".$text."\n");
             fclose($fh);
         }
 }
-?> 
+ ?> 

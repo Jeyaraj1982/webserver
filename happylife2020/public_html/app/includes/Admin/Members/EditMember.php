@@ -1,58 +1,64 @@
 <?php
-
 if (isset($_POST['PancardBtn'])) {
-        $target_path = "assets/uploads/";
-        $filename = strtolower(time()."_".$_FILES['Pancard']['name']);
-        
-        if(move_uploaded_file($_FILES['Pancard']['tmp_name'], $target_path.$filename)) {  
-            $mysql->execute("update `_tbl_Members` set `PanCardFile`='".$filename."' where `MemberCode`='".$_GET['MCode']."'");  ?>
-            <script>
+    $target_path = "assets/uploads/";
+    $filename = strtolower(time()."_".$_FILES['Pancard']['name']);
+    
+    if(move_uploaded_file($_FILES['Pancard']['tmp_name'], $target_path.$filename)) {  
+        $mysql->execute("update `_tbl_Members` set `PanCardFile`='".$filename."' where `MemberCode`='".$_GET['MCode']."'");
+        ?>
+          <script>
               $(document).ready(function() {
-                swal("Pancard Image Updated Successfully", {
-                    icon : "success" 
-                });
-            });
+            
+                    swal("Pancard Image updated successfully", {
+                        icon : "success" 
+                    });
+                 });
             </script>
-            <?php  }  else{ ?>
-             <script>
-                  $(document).ready(function() {
-                        swal("Pancard Image upload failed", {
-                            icon : "error" 
-                        });
-                     });
-                </script>
-           <?php  }                                                                                                           
-    }
- if (isset($_POST['BankFileBtn'])) {
-        $target_path = "assets/uploads/";
-        $filename = strtolower(time()."_".$_FILES['BankFile']['name']);
-        
-        if(move_uploaded_file($_FILES['BankFile']['tmp_name'], $target_path.$filename)) {  
-            $data = $mysql->select("select * from `_tbl_bank_info` where  `MemberCode`='".$_GET['MCode']."'");
-            if(sizeof($data)!=0){
-                   $mysql->execute("update `_tbl_bank_info` set BankFile ='".$filename."' where MemberCode='".$_GET['MCode']."'"); 
-            }else {
-                $mysql->insert("_tbl_bank_info",array("BankFile"      => $filename,
-                                                      "MemberCode"    =>  $_GET['MCode']));
-            }
-            ?>
-              <script>
-                 $(document).ready(function() {
-                swal("Bank File Updated Successfully", {
-                    icon : "success" 
-                });
-            });
-                </script>
-            <?php  } else{   ?>
-             <script>
-                  $(document).ready(function() {
-                        swal("Bank File Image upload failed", {
-                            icon : "error" 
-                        });
-                     });
-                </script>
-           <?php }  
-    }   
+        <?php
+    } else{  
+       // echo "Sorry, file not uploaded, please try again!";  
+       ?>
+         <script>
+              $(document).ready(function() {
+            
+                    swal("Pancard Image upload failed", {
+                        icon : "error" 
+                    });
+                 });
+            </script>
+       <?php
+    }  
+}
+
+if (isset($_POST['PhotoBtn'])) {
+    $target_path = "assets/uploads/";
+    $filename = strtolower(time()."_".$_FILES['profile']['name']);
+    if(move_uploaded_file($_FILES['profile']['tmp_name'], $target_path.$filename)) {  
+        $mysql->execute("update `_tbl_Members` set `Thumb`='".$filename."' where `MemberCode`='".$_GET['MCode']."'");
+        ?>
+         <script>
+              $(document).ready(function() {
+            
+                    swal("Profile Image updated successfully", {
+                        icon : "success" 
+                    });
+                 });
+            </script>
+        <?php
+    } else{  
+      //  echo "Sorry, file not uploaded, please try again!";  
+      ?>
+       <script>
+              $(document).ready(function() {
+            
+                    swal("Profile Image upload failed", {
+                        icon : "error" 
+                    });
+                 });
+            </script>
+      <?php
+    }  
+}
 
 if (isset($_POST['updateBtn'])) {
     
@@ -100,18 +106,37 @@ if (isset($_POST['updateBtn'])) {
                 }
             }
         }
-         
+        
+
+        $pancard_mandatory  = $mysql->select("select * from `_tbl_Settings_Params` where ParamCode in ('IsPanCardIsMandatory')");    
+        if ($pancard_mandatory[0]['ParamValue']==1 || strlen(trim($_POST['PanCard']))>0)  {
+            if (!(strlen(trim($_POST['PanCard']))>5)) {
+                $error++;
+                $errorMsg = "Please enter valid Pancard Number.";
+                $errorPanCard ="Please enter valid Pancard Number.";
+            }
+            
+            $pancard_allowduplicate  = $mysql->select("select * from `_tbl_Settings_Params` where ParamCode in ('AllowDuplicatePanCard')");    
+            if ($pancard_allowduplicate[0]['ParamValue']==0) {
+                $dupPancard = $mysql->select("select * from _tbl_Members where MemberID<>'".$_SESSION['User']['MemberID']."' and PanCard='".trim($_POST['PanCard'])."'");
+                if (sizeof($dupPancard)>0) {
+                    $error++;
+                    $errorMsg = "Please enter valid Pancard Number.";
+                    $errorPanCard ="Pancard already used.";
+                }
+            } 
+        } 
         if ($error==0) {
             $dob = $_POST['year']."-".$_POST['month']."-".$_POST['date'];
-            $mysql->execute("update _tbl_Members set MemberEmail    = '".$_POST['MemberEmail']."',
+            $mysql->execute("update _tbl_Members set PanCard        = '".$_POST['PanCard']."',
+                                                     MemberEmail    = '".$_POST['MemberEmail']."',
                                                      MobileNumber   = '".$_POST['MobileNumber']."',
                                                      MemberName     = '".$_POST['MemberName']."',
                                                      Sex            = '".$_POST['Sex']."',
-                                                     CityName       = '".$_POST['City']."',
+                                                     AdhaarCard     = '".$_POST['AdhaarCard']."',
                                                      AddressLine1   = '".$_POST['AddressLine1']."',
                                                      AddressLine2   = '".$_POST['AddressLine2']."',
-                                                     DateofBirth    = '".$_POST['DateofBirth']."',
-                                                     MemberTxnPassword    = '".$_POST['TransactionPassword']."',
+                                                     DateofBirth    = '".$dob."',
                                                      PinCode        = '".$_POST['PinCode']."' where MemberCode='".$_GET['MCode']."'");
             ?>
             <script>
@@ -135,126 +160,22 @@ if (isset($_POST['updateBtn'])) {
             <?php
         }
 }
-if(isset($_POST['SubmitKycDetailsBtn'])) {
-        $error=0;
-       if ($_POST['PanCardNumber']=="") {
-            $error++;
-            $errormsg = "Please Enter Pancard Number";  
-        }
-        $pancard_mandatory  = $mysql->select("select * from `_tbl_Settings_Params` where ParamCode in ('IsPanCardIsMandatory')");    
-        if ($pancard_mandatory[0]['ParamValue']==1 || strlen(trim($_POST['PanCardNumber']))>0)  {
-            if (!(strlen(trim($_POST['PanCardNumber']))>5)) {
-                $error++;
-                $errorMsg = "Please enter valid Pancard Number.";
-                $errorPanCardNumber ="Please enter valid Pancard Number.";
-            }
-            
-            $pancard_allowduplicate  = $mysql->select("select * from `_tbl_Settings_Params` where ParamCode in ('AllowDuplicatePanCard')");    
-            if ($pancard_allowduplicate[0]['ParamValue']==0) {
-                $dupPancard = $mysql->select("select * from _tbl_Members where MemberID<>'".$_GET['MCode']."' and PanCard='".trim($_POST['PanCardNumber'])."'");
-                if (sizeof($dupPancard)>0) {
-                    $error++;
-                    $errorMsg = "Please enter valid Pancard Number.";
-                    $errorPanCardNumber ="Pancard already used.";
-                }
-            } 
-        }
-        if ($error==0) {
-           $data = $mysql->select("select * from `_tbl_Members` where  `MemberCode`='".$_GET['MCode']."'");   
-           if(sizeof($data)!=0){
-                $mysql->execute("update `_tbl_Members` set `PanCard`='".$_POST['PanCardNumber']."' where `MemberCode`='".$_GET['MCode']."'"); 
-           }else{
-                $mysql->insert("_tbl_bank_info",array("PanCard" => $_POST['PanCardNumber'],
-                                                      "MemberCode"        =>  $_GET['MCode']));     
-           }  ?>
-           <script>
-                   $(document).ready(function() {
-                        swal("Kyc Information Updated Successfully", {
-                            icon : "success" 
-                        });
-                    });
-           </script>
-           <?php   }  else {   ?>
-           <script>
-                  $(document).ready(function() {
-                        swal("<?php echo $errormsg;?>", {
-                            icon : "error" 
-                        });
-                     });
-           </script>
-           <?php   }   
-    }
-    
-if(isset($_POST['SubmitBankDetailsBtn'])) {
-        $error=0;
-       if ($_POST['AccountHolderName']=="") {
-            $error++;
-            $errormsg = "Please Enter Account Holder Name";  
-        }
-        if ($_POST['AccountNumber']=="") {
-            $error++;
-            $errormsg = "Please Enter Account Number";  
-        } 
-        if ($_POST['IFSCode']=="") {
-            $error++;
-            $errormsg = "Please Enter IFSCode";  
-        }
-        if ($error==0) {
-           $data = $mysql->select("select * from `_tbl_bank_info` where  `MemberCode`='".$_GET['MCode']."'");   
-           if(sizeof($data)!=0){
-                $mysql->execute("update `_tbl_bank_info` set `AccountHolderName`='".$_POST['AccountHolderName']."',
-                                                             `AccountNumber`='".$_POST['AccountNumber']."',
-                                                             `IFSCode`='".$_POST['IFSCode']."'
-                                                             where `MemberCode`='".$_GET['MCode']."'");
-                
-           }else{
-                $mysql->insert("_tbl_bank_info",array("AccountHolderName" => $_POST['AccountHolderName'],
-                                                      "AccountNumber"     => $_POST['AccountNumber'],
-                                                      "IFSCode"           => $_POST['IFSCode'],
-                                                      "MemberCode"        =>  $_GET['MCode']));  
-           }  ?>
-           <script>
-                  $(document).ready(function() {
-                    swal("Bank Information Updated Successfully", {
-                        icon : "success" 
-                    });
-                  });
-           </script>
-           <?php   }  else {   ?>
-           <script>
-                  $(document).ready(function() {
-                        swal("<?php echo $errormsg;?>", {
-                            icon : "error" 
-                        });
-                     });
-           </script>
-           <?php   }   
-    }
   //  $data = $mysql->select("select * from `_tbl_Members` where  `MemberCode`='".$_SESSION['User']['MemberCode']."'");
 ?>
 <?php
     $data = $mysql->select("select * from `_tbl_Members` where  `MemberCode`='".$_GET['MCode']."'");
     $package=$mysql->select("SELECT * FROM `_tbl_Settings_Packages` where PackageID='".$data[0]['CurrentPackageID']."'"); 
-    $bank = $mysql->select("select * from `_tbl_bank_info` where  `MemberCode`='".$_GET['MCode']."'");
+    
     $url_array['']="MInfo";
-    $url_array['Members/MemberInfo']="MemInfo";
-    $url_array['Wallet/Transactions']="Wallet";
-    $url_array['Wallet/Requests']="Wallet";
-    $url_array['Team/DirectReferrals']="Team";
-    $url_array['Team/Downlines']="Team";
-    $url_array['Team/TreeView']="Team";
+    $url_array['EPins/MyPins']="EPins";
+    $url_array['EPins/List']="EPins";
+    $url_array['Earnings/PayoutTransactions']="Payout";
+    $url_array['Earnings/Summary']="AC_Summary";
     $url_array['Members/GenealogyTree']="GTree";
-    $url_array['Packages/Package']="Packages";
-    $url_array['Packages/PackageDetails']="Packages";
-    $url_array['Reports/BinaryPayout']="Reports";
-    $url_array['Reports/BinaryIncome']="Reports";
-    $url_array['Reports/ReferralIncome']="Reports";
-    $url_array['Reports/RoiIncome']="Reports";
-    $url_array['Reports/BankTransfer']="Reports";
-    $url_array['Reports/Ledger']="Reports";
-    $url_array['Logs/MemberLogin']="Logs";
-    $url_array['Logs/MobileSMS']="Logs";
-    $url_array['Logs/Email']="Logs";
+    $url_array['Members/MyMembers']="DMembers";
+    $url_array['Logs/MemberLogin']="Loglogin";
+    $url_array['Logs/MobileSMS']="LogSMS";
+    $url_array['Logs/Email']="LogEmail";
 ?>
 <div style="padding:25px">
     <div class="page-header">
@@ -272,8 +193,14 @@ if(isset($_POST['SubmitBankDetailsBtn'])) {
         <div class="col-md-12">
             <div class="card">
                 <ul class="nav nav-pills nav-secondary" id="pills-tab" role="tablist" style="margin:0px auto;background:#fff">
-                   <!-- <li class="nav-item submenu">
+                    <li class="nav-item submenu">
                         <a class="nav-link <?php echo $url_array[$_GET['cp']]=="MInfo" ? 'active show ' : '';?>" id="pills-home-tab" href="dashboard.php?action=Members/ViewMember&MCode=<?php echo $_GET['MCode'];?>" role="tab" >Member Info</a>
+                    </li>
+                    <li class="nav-item submenu">
+                        <a class="nav-link <?php echo $url_array[$_GET['cp']]=="EPins" ? 'active show ' : '';?>" id="pills-profile-tab"  href="dashboard.php?action=Members/ViewMember&cp=EPins/MyPins&MCode=<?php echo $_GET['MCode'];?>" role="tab">EPins</a>
+                    </li>
+                    <li class="nav-item submenu">
+                        <a class="nav-link <?php echo $url_array[$_GET['cp']]=="Payout" ? 'active show ' : '';?>" id="pills-contact-tab"   href="dashboard.php?action=Members/ViewMember&cp=Earnings/PayoutTransactions&MCode=<?php echo $_GET['MCode'];?>">Payout</a>
                     </li>
                     <li class="nav-item submenu">
                         <a class="nav-link <?php echo $url_array[$_GET['cp']]=="AC_Summary" ? 'active show ' : '';?>" id="pills-contact-tab"   href="dashboard.php?action=Members/ViewMember&cp=Earnings/Summary&MCode=<?php echo $_GET['MCode'];?>">A/C Summary</a>
@@ -285,9 +212,6 @@ if(isset($_POST['SubmitBankDetailsBtn'])) {
                         <a class="nav-link <?php echo $url_array[$_GET['cp']]=="DMembers" ? 'active show ' : '';?>" id="pills-contact-tab" href="dashboard.php?action=Members/ViewMember&cp=Members/MyMembers&MCode=<?php echo $_GET['MCode'];?>">Members</a>
                     </li>
                     <li class="nav-item submenu">
-                        <a class="nav-link <?php echo $url_array[$_GET['cp']]=="Reports" ? 'active show ' : '';?>" id="pills-contact-tab"   href="dashboard.php?action=Members/ViewMember&cp=Reports/BinaryPayout&MCode=<?php echo $_GET['MCode'];?>">Reports</a>
-                    </li>
-                    <li class="nav-item submenu">
                         <a class="nav-link <?php echo $url_array[$_GET['cp']]=="Loglogin" ? 'active show ' : '';?>" id="pills-contact-tab" href="dashboard.php?action=Members/ViewMember&cp=Logs/MemberLogin&MCode=<?php echo $_GET['MCode'];?>" >Login Logs</a>
                     </li>
                     <li class="nav-item submenu">
@@ -296,31 +220,7 @@ if(isset($_POST['SubmitBankDetailsBtn'])) {
                     
                     <li class="nav-item submenu">
             <a class="nav-link <?php echo $url_array[$_GET['cp']]=="LogEmail" ? 'active show ' : '';?>" id="pills-contact-tab" href="dashboard.php?action=Members/ViewMember&cp=Logs/Email&MCode=<?php echo $_GET['MCode'];?>">Email Logs</a>
-        </li>          -->
-                    <li class="nav-item submenu">
-                        <a class="nav-link <?php echo $url_array[$_GET['cp']]=="MemInfo" ? 'active show ' : '';?>" id="pills-home-tab" href="dashboard.php?action=Members/ViewMember&cp=Members/MemberInfo&MCode=<?php echo $_GET['MCode'];?>" role="tab" >Member Info</a>
-                    </li>
-                    <li class="nav-item submenu">
-                        <a class="nav-link <?php echo $url_array[$_GET['cp']]=="MInfo" ? 'active show ' : '';?>" id="pills-home-tab" href="dashboard.php?action=Members/ViewMember&MCode=<?php echo $_GET['MCode'];?>" role="tab" >Profile Info</a>
-                    </li>
-                    <li class="nav-item submenu">
-                        <a class="nav-link <?php echo $url_array[$_GET['cp']]=="Wallet" ? 'active show ' : '';?>" id="pills-contact-tab"   href="dashboard.php?action=Members/ViewMember&cp=Wallet/Transactions&MCode=<?php echo $_GET['MCode'];?>">Wallet</a>
-                    </li>
-                    <li class="nav-item submenu">
-                        <a class="nav-link <?php echo $url_array[$_GET['cp']]=="Team" ? 'active show ' : '';?>" id="pills-contact-tab"   href="dashboard.php?action=Members/ViewMember&cp=Team/DirectReferrals&MCode=<?php echo $_GET['MCode'];?>">Team</a>
-                    </li>
-                    <li class="nav-item submenu">
-                        <a class="nav-link <?php echo $url_array[$_GET['cp']]=="GTree" ? 'active show ' : '';?>" id="pills-contact-tab"  href="dashboard.php?action=Members/ViewMember&cp=Members/GenealogyTree&MCode=<?php echo $_GET['MCode'];?>">GTree</a>
-                    </li>
-                    <li class="nav-item submenu">
-                        <a class="nav-link <?php echo $url_array[$_GET['cp']]=="Packages" ? 'active show ' : '';?>" id="pills-contact-tab"  href="dashboard.php?action=Members/ViewMember&cp=Packages/Package&MCode=<?php echo $_GET['MCode'];?>">Packages</a>
-                    </li
-                    <li class="nav-item submenu">
-                        <a class="nav-link <?php echo $url_array[$_GET['cp']]=="Reports" ? 'active show ' : '';?>" id="pills-contact-tab"   href="dashboard.php?action=Members/ViewMember&cp=Reports/BinaryPayout&MCode=<?php echo $_GET['MCode'];?>">Reports</a>
-                    </li>
-                    <li class="nav-item submenu">
-                        <a class="nav-link <?php echo $url_array[$_GET['cp']]=="Logs" ? 'active show ' : '';?>" id="pills-contact-tab" href="dashboard.php?action=Members/ViewMember&cp=Logs/MemberLogin&MCode=<?php echo $_GET['MCode'];?>" >Logs</a>
-                    </li>
+        </li>
     </ul> 
     </div>
     </div>
@@ -349,19 +249,17 @@ if(isset($_POST['SubmitBankDetailsBtn'])) {
                         <div class="row"> 
                             <div class="col-md-6">
                                 <div class="form-group form-show-validation row">
-                                    <label for="email" class="col-lg-4 col-md-3 col-sm-4 mt-sm-2 text-right">Member ID</label>
+                                    <label for="email" class="col-lg-4 col-md-3 col-sm-4 mt-sm-2 text-right">Member Code</label>
                                     <div class="col-lg-8 col-md-9 col-sm-8  mt-sm-2 ">
                                         <small id="emailHelp" class="form-text text-muted">:&nbsp;<?php echo $data[0]['MemberCode'];?></small>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="form-group form-show-validation row">
+                                <div class="form-group form-show-validation row" style="text-align: right;">
                                    <label for="email" class="col-lg-4 col-md-3 col-sm-4 mt-sm-2 text-right">Package</label> 
-                                   <div class="col-lg-8 col-md-9 col-sm-8  mt-sm-2 "> 
-                                        <!--<img src="assets/img/<?php echo $package[0]['FileName'];?>" style="height:48px;">-->
-                                        <small id="emailHelp" class="form-text text-muted">:&nbsp;<?php echo $package[0]['PackageName'];?></small>
-                                   </div>
+                                    <img src="assets/img/<?php echo $package[0]['FileName'];?>" style="height:48px;">
+                                    <?php echo $package[0]['PackageName'];?>
                                 </div>
                             </div>
                         </div>
@@ -378,7 +276,7 @@ if(isset($_POST['SubmitBankDetailsBtn'])) {
                                 <div class="form-group form-show-validation row">
                                     <label for="email" class="col-lg-4 col-md-3 col-sm-4 mt-sm-2 text-right">Joined</label>
                                     <div class="col-lg-8 col-md-9 col-sm-8  mt-sm-2 ">
-                                        <small id="emailHelp" class="form-text text-muted">:&nbsp;<?php echo date("M d, Y",strtotime($data[0]['CreatedOn']));?></small>
+                                        <small id="emailHelp" class="form-text text-muted">:&nbsp;<?php echo $data[0]['CreatedOn'];?></small>
                                     </div>
                                 </div>  
                             </div>
@@ -400,18 +298,10 @@ if(isset($_POST['SubmitBankDetailsBtn'])) {
                                 <div class="form-group form-show-validation row">
                                     <label for="email" class="col-lg-4 col-md-3 col-sm-4 mt-sm-2 text-right">Date of Birth</label>
                                     <div class="col-lg-8 col-md-9 col-sm-8  mt-sm-2 ">
-                                        <div class="input-group">
-                                            <input type="text" class="form-control success" id="DateofBirth" name="DateofBirth" value="<?php echo isset($_POST['DateofBirth']) ? $_POST['DateofBirth'] : $data[0]['DateofBirth'];?>">
-                                            <div class="input-group-append">
-                                                <span class="input-group-text">
-                                                    <i class="fa fa-calendar-check"></i>
-                                                </span>
-                                            </div>
-                                        </div> 
-                                        <!--<small id="emailHelp" class="form-text text-muted">:&nbsp;<?php echo $data[0]['DateofBirth'];?></small>
+                                        <!--<small id="emailHelp" class="form-text text-muted">:&nbsp;<?php echo $data[0]['DateofBirth'];?></small>-->
                                         <div class="row">
                                         <?php
-                                          /*  $d = date("d",strtotime($data[0]['DateofBirth']));
+                                            $d = date("d",strtotime($data[0]['DateofBirth']));
                                             $m = date("m",strtotime($data[0]['DateofBirth']));
                                             $y = date("Y",strtotime($data[0]['DateofBirth']));
                                         ?>
@@ -434,10 +324,10 @@ if(isset($_POST['SubmitBankDetailsBtn'])) {
                                         <select name="year"  class="form-control" style="padding-left:5px;text-align:center">
                                             <?php for($i=date("Y")-70;$i<=date("Y")-18;$i++) { ?>
                                             <option value="<?php echo $i;?>" <?php echo ($y==$i) ? " selected='selected' " : "";?> ><?php echo $i;?></option>
-                                            <?php } */?>
+                                            <?php } ?>
                                         </select>
                                         </div>
-                                        </div>  -->
+                                        </div>
                                     </div>
                                 </div>  
                             </div>
@@ -448,12 +338,7 @@ if(isset($_POST['SubmitBankDetailsBtn'])) {
                                     <label for="email" class="col-lg-4 col-md-3 col-sm-4 mt-sm-2 text-right">Mobile No</label>
                                     <div class="col-lg-8 col-md-9 col-sm-8  mt-sm-2 ">
                                         <!--<small id="emailHelp" class="form-text text-muted">:&nbsp;<?php echo $data[0]['MobileNumber'];?></small>-->
-                                        <div class="input-group mb-3">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text" id="basic-addon1">+91</span>
-                                            </div>
-                                            <input type="text" class="form-control success" id="MobileNumber" name="MobileNumber" value="<?php echo isset($_POST['MobileNumber']) ? $_POST['MobileNumber'] : $data[0]['MobileNumber'];?>">    
-                                        </div>
+                                        <input type="text" name="MobileNumber" value="<?php echo $data[0]['MobileNumber'];?>" class="form-control">
                                     </div>
                                 </div>
                             </div> 
@@ -487,23 +372,62 @@ if(isset($_POST['SubmitBankDetailsBtn'])) {
                                 </div>  
                             </div>
                         </div>
-                        
                         <div class="row"> 
                             <div class="col-md-6">
                                 <div class="form-group form-show-validation row">
-                                    <label for="email" class="col-lg-4 col-md-3 col-sm-4 mt-sm-2 text-right">City</label>
+                                    <label for="email" class="col-lg-4 col-md-3 col-sm-4 mt-sm-2 text-right">Country</label>
                                     <div class="col-lg-8 col-md-9 col-sm-8  mt-sm-2 ">
-                                        <input type="text" name="City" value="<?php echo $data[0]['CityName'];?>" class="form-control">
+                                        <small id="emailHelp" class="form-text text-muted">:&nbsp;<?php echo $data[0]['CountryName'];?></small>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group form-show-validation row">
-                                    <label for="email" class="col-lg-4 col-md-3 col-sm-4 mt-sm-2 text-right">Pin/Zip Code</label>
+                                    <label for="email" class="col-lg-4 col-md-3 col-sm-4 mt-sm-2 text-right">State Name</label>
+                                    <div class="col-lg-8 col-md-9 col-sm-8  mt-sm-2 ">
+                                        <small id="emailHelp" class="form-text text-muted">:&nbsp;<?php echo $data[0]['StateName'];?></small>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="row"> 
+                            <div class="col-md-6">
+                                <div class="form-group form-show-validation row">
+                                    <label for="email" class="col-lg-4 col-md-3 col-sm-4 mt-sm-2 text-right">District</label>
+                                    <div class="col-lg-8 col-md-9 col-sm-8  mt-sm-2 ">
+                                        <small id="emailHelp" class="form-text text-muted">:&nbsp;<?php echo $data[0]['DistrictName'];?></small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group form-show-validation row">
+                                    <label for="email" class="col-lg-4 col-md-3 col-sm-4 mt-sm-2 text-right">Pincode</label>
                                     <div class="col-lg-8 col-md-9 col-sm-8  mt-sm-2 ">
                                         <!--<small id="emailHelp" class="form-text text-muted">:&nbsp;<?php echo $data[0]['PinCode'];?></small>-->
                                         <input type="text" name="PinCode" value="<?php echo $data[0]['PinCode'];?>" class="form-control">
                                         <div class="help-block" style="color:red"><?php echo $errorPinCode;?></div>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="row"> 
+                            <div class="col-md-6">
+                                <div class="form-group form-show-validation row">
+                                    <label for="email" class="col-lg-4 col-md-3 col-sm-4 mt-sm-2 text-right">PanCard</label>
+                                    <div class="col-lg-8 col-md-9 col-sm-8  mt-sm-2 ">
+                                        <!--<small id="emailHelp" class="form-text text-muted">:&nbsp;<?php echo $data[0]['PanCard'];?></small>-->
+                                        <input type="text" name="PanCard" value="<?php echo $data[0]['PanCard'];?>" class="form-control">
+                                        <div class="help-block" style="color:red"><?php echo $errorPanCard;?></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group form-show-validation row">
+                                    <label for="email" class="col-lg-4 col-md-3 col-sm-4 mt-sm-2 text-right">Aadhaar Card</label>
+                                     <div class="col-lg-8 col-md-9 col-sm-8  mt-sm-2 ">
+                                        <!--<small id="emailHelp" class="form-text text-muted">:&nbsp;<?php echo $data[0]['AdhaarCard'];?></small>-->
+                                        <input type="text" name="AdhaarCard" value="<?php echo $data[0]['AdhaarCard'];?>" class="form-control">
+                                        <div class="help-block" style="color:red"><?php echo $errorAdhaarCard;?></div>
                                     </div>
                                 </div>  
                             </div>
@@ -518,15 +442,6 @@ if(isset($_POST['SubmitBankDetailsBtn'])) {
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-group form-show-validation row">
-                                    <label for="email" class="col-lg-4 col-md-3 col-sm-4 mt-sm-2 text-right">Txn Password</label>
-                                    <div class="col-lg-8 col-md-9 col-sm-8  mt-sm-2 ">
-                                        <!--<small id="emailHelp" class="form-text text-muted">:&nbsp;<?php echo $data[0]['MemberPassword'];?></small>-->
-                                        <input type="text" name="TransactionPassword" value="<?php echo isset($_POST['TransactionPassword']) ? $_POST['TransactionPassword'] : $data[0]['MemberTxnPassword'];?>" class="form-control">
-                                    </div>
-                                </div>
-                            </div>
                            
                         </div>
                           <div class="row"> 
@@ -537,111 +452,56 @@ if(isset($_POST['SubmitBankDetailsBtn'])) {
                             </div>
                              
                         </div>
-                    </form>                       
+                                           
                 </div>
             </div>
         </div>
     </div>
-     <div class="row">
+      <div class="row">
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    <div class="card-title">KYC Information</div>
+                    <div class="card-title">Additional Information</div>
                 </div>
                 <div class="card-body">
-                <form action="" method="post" enctype="multipart/form-data">
+                    
                         <div class="row"> 
-                            <div class="col-md-6">
-                                <div class="form-group form-show-validation row">
-                                    <label for="email" class="col-lg-4 col-md-3 col-sm-4 mt-sm-2 text-right">PanCard</label>
-                                    <div class="col-lg-8 col-md-9 col-sm-8  mt-sm-2 ">
-                                        <!--<small id="emailHelp" class="form-text text-muted">:&nbsp;<?php echo $data[0]['PanCard'];?></small>-->
-                                        <input type="text" name="PanCardNumber" value="<?php echo $data[0]['PanCard'];?>" class="form-control">
-                                        <div class="help-block" style="color:red"><?php echo $errorPanCardNumber;?></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                             <div class="col-md-6">
-                               <div class="row">
-                                    <div class="col-md-12">     
-                                        <?php if (strlen(trim($data[0]['PanCardFile'])>5)) { ?>
-                                        <img src="assets/uploads/<?php echo $data[0]['PanCardFile'];?>" style="height:200px;"><br>
-                                        <?php }  ?>
-                                        <input type="file" name="Pancard">
-                                            <input type="submit" value="Update" name="PancardBtn">
-                                    </div>
-                                </div>
-                            </div>
-                        </div> 
-                        <br>
-                        <div class="row"> 
-                            <div class="col-md-12 text-right">
-                                <a href="dashboard.php?action=Members/ViewMember&MCode=<?php echo $_GET['MCode'];?>"  class="btn btn-outline-primary waves-effect waves-light">Cancel</a>
-                                 <input type="submit" value="Update Information" name="SubmitKycDetailsBtn" class="btn btn-primary waves-effect waves-light">
-                            </div>
-                        </div>
-                    </form>  
-                </div>
-            </div>
-        </div>
-     </div>
-     <div class="row">
-        <div class="col-md-12">
-            <div class="card">
-                <div class="card-header">
-                    <div class="card-title">Bank Information</div>
-                </div>
-                <div class="card-body">
-                    <form action="" method="post" enctype="multipart/form-data">
-                        <div class="row"> 
-                            <div class="col-md-6">
-                                <div class="form-group form-show-validation row">
-                                    <label for="email" class="col-md-5 text-right">Account Name</label>
-                                    <div class="col-md-7">
-                                            <input type="text" class="form-control input-full" name="AccountHolderName" value="<?php echo $bank[0]['AccountHolderName'];?>" Placceholder="Account Holder Name">
-                                            <div class="help-block" style="color:red"><?php echo $errorAccountHolderName;?></div>
-                                    </div>
-                                </div>
-                                <div class="form-group form-show-validation row">
-                                    <label for="email" class="col-md-5 text-right">Account Number</label>
-                                    <div class="col-md-7 ">
-                                            <input type="text" class="form-control input-full" name="AccountNumber" value="<?php echo $bank[0]['AccountNumber'];?>" Placceholder="Account Number">
-                                            <div class="help-block" style="color:red"><?php echo $errorAccountHolderName;?></div>
-                                    </div>
-                                </div>
-                                <div class="form-group form-show-validation row">
-                                    <label for="email" class="col-md-5 text-right">IFSCode</label>
-                                    <div class="col-md-7">
-                                            <input type="text" class="form-control input-full" name="IFSCode" value="<?php echo $bank[0]['IFSCode'];?>" Placceholder="IFS Code">
-                                            <div class="help-block" style="color:red"><?php echo $errorAccountHolderName;?></div>
-                                    </div>
-                                </div>
-                            </div>     
                             <div class="col-md-6">
                                 <div class="row">
                                     <div class="col-md-12">
-                                    <label for="email" class="text-left">Scan Copy of Passbook / Cheque Slip</label>
+                                    <label for="email" class="col-lg-4 col-md-3 col-sm-4 mt-sm-2 text-right">Pan Card</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <?php if (strlen(trim($data[0]['PanCardFile'])>5)) { ?>
+                                            <img src="assets/uploads/<?php echo $data[0]['PanCardFile'];?>" style="height:200px;"><br>
+                                            Verified : <?php echo $data[0]['KYCVerified']==1 ? " verified on ".$data[0]['KYCVerifiedOn'] : " verification pending"; ?>
+                                        <?php } else { ?>
+                                            <input type="file" name="Pancard">
+                                            <input type="submit" value="Update"  class="btn btn-primary waves-effect waves-light" ame="PancardBtn">
+                                        <?php } ?>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                    <label for="email" class="col-lg-4 col-md-3 col-sm-4 mt-sm-2 text-right">Profile Photo</label>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12">     
-                                        <?php if (strlen(trim($bank[0]['BankFile'])>5)) { ?>
-                                        <img src="assets/uploads/<?php echo $bank[0]['BankFile'];?>" style="height:200px;"><br>
+                                        <?php  if (strlen($data[0]['Thumb'])>5) { ?>
+                                            <img src="assets/uploads/<?php echo $data[0]['Thumb'];?>" style="height:200px;"><br>
+                                        <?php } else { ?>
+                                            <input type="file" name="profile">
+                                            <input type="submit" value="Update"  class="btn btn-primary waves-effect waves-light"name="PhotoBtn">
                                         <?php } ?>
-                                            <input type="file" name="BankFile">
-                                            <input type="submit" value="Update" name="BankFileBtn">      
                                     </div>
                                 </div>
                             </div>
-                        </div> <br>
-                        <div class="row"> 
-                                <div class="col-md-12 text-right">
-                                    <a href="dashboard.php?action=Members/ViewMember&MCode=<?php echo $_GET['MCode'];?>"  class="btn btn-outline-primary waves-effect waves-light">Cancel</a>
-                                     <input type="submit" value="Update Information" name="SubmitBankDetailsBtn" class="btn btn-primary waves-effect waves-light">
-                                </div>
-                            </div>
+                        </div>
                     </form>
                 </div>
             </div>

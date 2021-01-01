@@ -1,3 +1,22 @@
+<?php
+    if (isset($_POST['updateBtn'])) {
+        $mysql->execute("update `_tbl_Settings_Params` set `ParamValue`='".$_POST['PayoutMode']."' where ParamCode='PayoutMode'");  
+        $mysql->execute("update `_tbl_Settings_Params` set `ParamValue`='".$_POST['MinPayout']."' where ParamCode='MinPayout'");  
+        $mysql->execute("update `_tbl_Settings_Params` set `ParamValue`='".$_POST['MaxPayout']."' where ParamCode='MaxPayout'");  
+        $mysql->execute("update `_tbl_Settings_Params` set `ParamValue`='".$_POST['PayoutCharges']."' where ParamCode='PayoutCharges'");  
+        $mysql->execute("update `_tbl_Settings_Params` set `ParamValue`='".$_POST['PayoutCutOff']."' where ParamCode='PayoutCutOff'");  
+        ?>
+        <script>
+            $(document).ready(function() {
+                swal("Payout Settings updated", {
+                    icon : "success" 
+                });
+            });
+        </script>
+        <?php
+    }
+?>
+
 <div style="padding:25px">
     <div class="page-header">
         <ul class="breadcrumbs" style="border: none;padding-left: 0px;margin-left: 0px;">
@@ -19,44 +38,69 @@
         <div class="col-lg-8 col-xlg-9 col-md-7">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title text-orange"><i class="ti-user"></i>Payout Configurations</h4>
-                    <div class="row mb15">
-                        <div class="col-md-12 col-xs-12 b-r">
-                            <span style="color:green;">&nbsp;</span>
+                    <form method="post" action="">
+                        <h4 class="card-title text-orange"><i class="ti-user"></i>Payout Configurations</h4>
+                         <div class="row mb15">
+                            <div class="col-md-12 col-xs-12 b-r">
+                                <span style="color:green;">&nbsp;</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row mb15"> 
-                        <div class="col-md-8 col-xs-6 b-r"> 
-                            <strong>Package ROI Settlement Days (Every Week)</strong><br>
-                            <input type="text" name="PayoutCharges"  readonly="readonly" id="PayoutCharges" class="form-control" value="Mon, Tue, Wed, Thu">
+                        <?php $settings = $mysql->select("select * from `_tbl_Settings_Params` where ParamCode in ('PayoutMode')"); ?>
+                        <div class="row mb15"> 
+                            <div class="col-md-12 col-xs-6 b-r">
+                                <strong><?php echo $settings[0]['ParamLabel'];?></strong>
+                                <br>
+                                <select name="PayoutMode" class="form-control">
+                                    <option value="1" <?php echo $settings[0]['ParamValue']==1 ? " selected='selected' " : "";?> >Instant</option>
+                                    <option value="2" <?php echo $settings[0]['ParamValue']==2 ? " selected='selected' " : "";?>>Daily</option>
+                                    <option value="3" <?php echo $settings[0]['ParamValue']==3 ? " selected='selected' " : "";?>>Weekly</option>
+                                    <option value="4" <?php echo $settings[0]['ParamValue']==4 ? " selected='selected' " : "";?>>Monthly</option>
+                                    <option value="5" <?php echo $settings[0]['ParamValue']==5 ? " selected='selected' " : "";?>>Yearly</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="col-md-4 col-xs-6 b-r"> 
-                            <strong>Report Day</strong><br>
-                            <input type="text" name="PayoutCharges"  readonly="readonly" id="PayoutCharges" class="form-control" value="Ist, 16th">
+                        <?php $settings = $mysql->select("select * from `_tbl_Settings_Params` where ParamCode in ('PayoutCutOff')"); ?>
+                        <div class="row mb15"> 
+                            <div class="col-md-12 col-xs-6 b-r">
+                                <strong><?php echo $settings[0]['ParamLabel'];?></strong>
+                                <br>
+                                <input type="text" name="PayoutCutOff" id="PayoutCutOff" class="form-control" value="<?php echo $settings[0]['ParamValue'];?>">
+                            </div>                                                                                                              
                         </div>
-                    </div>
-                    <div class="row mb15">
-                        <div class="col-md-8 col-xs-6 b-r">
-                            <strong>Referal ROI Settlement Days (Every Week)</strong><br>
-                            <input type="text" name="PayoutCharges"  readonly="readonly" id="PayoutCharges" class="form-control" value="Mon, Tue, Wed, Thu">
+                        <?php $settings = $mysql->select("select * from `_tbl_Settings_Params` where ParamCode in ('MinPayout')"); ?>
+                        <div class="row mb15"> 
+                            <div class="col-md-12 col-xs-6 b-r">
+                                <strong><?php echo $settings[0]['ParamLabel'];?></strong>
+                                <br>
+                                <input type="text" name="MinPayout" id="MinPayout" class="form-control" value="<?php echo $settings[0]['ParamValue'];?>">
+                            </div>
                         </div>
-                        <div class="col-md-4 col-xs-6 b-r"> 
-                            <strong>Report Day</strong><br>
-                            <input type="text" name="PayoutCharges"  readonly="readonly" id="PayoutCharges" class="form-control" value="Sat">
+                        <?php $settings = $mysql->select("select * from `_tbl_Settings_Params` where ParamCode in ('MaxPayout')"); ?>
+                        <div class="row mb15"> 
+                            <div class="col-md-12 col-xs-6 b-r">
+                                <strong><?php echo $settings[0]['ParamLabel'];?></strong>
+                                <br>
+                                <input type="text" name="MaxPayout" id="MaxPayout" class="form-control" value="<?php echo $settings[0]['ParamValue'];?>">
+                            </div>
                         </div>
-                    </div>
-                    <div class="row mb15"> 
-                        <div class="col-md-8 col-xs-6 b-r"> 
-                            <strong>Binary Settlement Days (Every Week)</strong><br>
-                            <input type="text" name="PayoutCharges" readonly="readonly" id="PayoutCharges" class="form-control" value="Sun, Mon, Tue, Wed, Thu, Fri, Sat">
+                        <?php $settings = $mysql->select("select * from `_tbl_Settings_Params` where ParamCode in ('PayoutCharges')"); ?>
+                        <div class="row mb15"> 
+                            <div class="col-md-12 col-xs-6 b-r"> 
+                                <strong><?php echo $settings[0]['ParamLabel'];?></strong>
+                                <br>
+                                <input type="text" name="PayoutCharges" id="PayoutCharges" class="form-control" value="<?php echo $settings[0]['ParamValue'];?>">
+                            </div>
                         </div>
-                        <div class="col-md-4 col-xs-6 b-r"> 
-                            <strong>Report Day</strong><br>
-                            <input type="text" name="PayoutCharges"  readonly="readonly" id="PayoutCharges" class="form-control" value="Sat">
+                        <div class="row mb15">
+                            <div class="col-md-12 col-xs-6 b-r">
+                                <button type="submit" name="updateBtn" id="updateBtn" class="btn btn-primary" >Update</button>
+                            </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
     </div> 
 </div>           
+
+<?php include_once("footer.php"); ?>

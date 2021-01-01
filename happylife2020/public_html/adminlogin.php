@@ -3,7 +3,7 @@
     
     if (isset($_POST['submitBtn'])) {
         
-        $data = $mysql->select("select * from `_tbl_admin` where  `AdminEmail`='x1".$_POST['emailAddress']."'");
+        $data = $mysql->select("select * from `_tbl_admin` where  `AdminEmail`='".$_POST['emailAddress']."'");
         
         if (sizeof($data)>0) {
             if ($data[0]['AdminPassword']==$_POST['loginPassword']) {
@@ -15,7 +15,6 @@
                                                                  "IsSuccess" => "1")); 
                 
                 $email_param = $mysql->select("select * from _tbl_Settings_Params where ParamCode='AdminLoginEmailOTPRequired'");
-                $email_param[0]['ParamValue']=0;
                 if ($email_param[0]['ParamValue']==1) {
                     
                     $data[0]['otp']=rand(9999,99999);
@@ -35,7 +34,6 @@
                 }
                 
                 $sms_param = $mysql->select("select * from _tbl_Settings_Params where ParamCode='AdminLoginMobileOTPRequired'");
-                $sms_param[0]['ParamValue']=0;
                 if ($sms_param[0]['ParamValue']==1) {
                     $data[0]['otp']=rand(9999,99999);
                     $data[0]['IsMobile']="1";

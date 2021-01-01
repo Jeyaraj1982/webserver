@@ -8,14 +8,14 @@
             <li class="separator"><i class="flaticon-right-arrow"></i></li>
             <li class="nav-item"><a href="dashboard.php?action=Wallet/Requests">Wallet</a></li>
             <li class="separator"><i class="flaticon-right-arrow"></i></li>
-            <li class="nav-item"><a href="dashboard.php?action=Wallet/Requests">Wallet Request Information</a></li>
+            <li class="nav-item"><a href="dashboard.php?action=Wallet/Requests">Update Request Information</a></li>
         </ul>
     </div>
     <div class="row">
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    <div class="card-title">Wallet Request Information</div>
+                    <div class="card-title">Wallet Update Request Information</div>
                 </div>
                 <div class="card-body">
                     <form action="" method="post">
@@ -24,7 +24,7 @@
                                 <div class="form-group form-show-validation row">
                                     <label for="email" class="col-lg-4 col-md-3 col-sm-4 mt-sm-2 text-right">Amount</label>
                                     <div class="col-lg-8 col-md-9 col-sm-8  mt-sm-2 ">
-                                        <small id="emailHelp" class="form-text text-muted">:&nbsp;$ <?php echo number_format($Requests[0]['Amount'],2);?></small>
+                                        <small id="emailHelp" class="form-text text-muted">:&nbsp;<?php echo number_format($Requests[0]['Amount'],2);?></small>
                                     </div>
                                 </div>
                             </div>
@@ -32,7 +32,7 @@
                                 <div class="form-group form-show-validation row">
                                     <label for="email" class="col-lg-4 col-md-3 col-sm-4 mt-sm-2 text-right">Requested</label>
                                     <div class="col-lg-8 col-md-9 col-sm-8  mt-sm-2 ">
-                                        <small id="emailHelp" class="form-text text-muted">:&nbsp;<?php echo date("M d, Y H:i",strtotime($Requests[0]['RequestedOn']));?></small>
+                                        <small id="emailHelp" class="form-text text-muted">:&nbsp;<?php echo $Requests[0]['RequestedOn'];?></small>
                                     </div>
                                 </div>  
                             </div>
@@ -42,11 +42,17 @@
                                 <div class="form-group form-show-validation row">
                                     <label for="email" class="col-lg-4 col-md-3 col-sm-4 mt-sm-2 text-right">Transfered Date</label>
                                     <div class="col-lg-8 col-md-9 col-sm-8  mt-sm-2 ">
-                                        <small id="emailHelp" class="form-text text-muted">:&nbsp;<?php echo date("M d,Y",strtotime($Requests[0]['TransferDate']));?></small>
+                                        <small id="emailHelp" class="form-text text-muted">:&nbsp;<?php echo date("Y-m-d",strtotime($Requests[0]['TransferDate']));?></small>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6">
+                                <div class="form-group form-show-validation row">
+                                    <label for="email" class="col-lg-4 col-md-3 col-sm-4 mt-sm-2 text-right">Bank Ref No</label>
+                                    <div class="col-lg-8 col-md-9 col-sm-8  mt-sm-2 ">
+                                        <small id="emailHelp" class="form-text text-muted">:&nbsp;<?php echo $Requests[0]['TransactionNumber'];?></small>
+                                    </div>
+                                </div>  
                             </div>
                         </div>
                         
@@ -59,14 +65,22 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-md-6">
+                                     <div class="form-group form-show-validation row">
+                                    <label for="email" class="col-lg-4 col-md-3 col-sm-4 mt-sm-2 text-right">IFS Code</label>
+                                    <div class="col-lg-8 col-md-9 col-sm-8  mt-sm-2 ">
+                                        <small id="emailHelp" class="form-text text-muted">:&nbsp;<?php echo $Requests[0]['IFSCode'];?></small>
+                                    </div>
+                                </div>  
+                            </div>
                         </div>
                         
                         <div class="row"> 
                             <div class="col-md-6">
-                                     <div class="form-group form-show-validation row">
-                                    <label for="email" class="col-lg-4 col-md-3 col-sm-4 mt-sm-2 text-right">Bank Ref No</label>
+                                <div class="form-group form-show-validation row">
+                                    <label for="email" class="col-lg-4 col-md-3 col-sm-4 mt-sm-2 text-right">Account Number</label>
                                     <div class="col-lg-8 col-md-9 col-sm-8  mt-sm-2 ">
-                                        <small id="emailHelp" class="form-text text-muted">:&nbsp;<?php echo $Requests[0]['TransactionNumber'];?></small>
+                                        <small id="emailHelp" class="form-text text-muted">:&nbsp;<?php echo $Requests[0]['AccountNumber'];?></small>
                                     </div>
                                 </div>
                             </div>
@@ -81,16 +95,6 @@
                         </div>
                         <div class="row"> 
                             <div class="col-md-6">
-                                     <div class="form-group form-show-validation row">
-                                    <label for="email" class="col-lg-4 col-md-3 col-sm-4 mt-sm-2 text-right">User Remarks</label>
-                                    <div class="col-lg-8 col-md-9 col-sm-8  mt-sm-2 ">
-                                        <small id="emailHelp" class="form-text text-muted">:&nbsp;<?php echo $Requests[0]['Remarks'];?></small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row"> 
-                            <div class="col-md-6">
                                 <div class="form-group form-show-validation row">
                                     <label for="email" class="col-lg-4 col-md-3 col-sm-4 mt-sm-2 text-right">Status</label>
                                     <div class="col-lg-8 col-md-9 col-sm-8  mt-sm-2 ">
@@ -99,10 +103,10 @@
                                             <?php echo "Pending";?>
                                         <?php }?>
                                         <?php if($Requests[0]['IsApproved']=="1" && $Requests[0]['IsRejected']=="0"){ ?>
-                                            <?php echo "Approved";?>, <?php echo date("M d, Y",strtotime($Requests[0]['IsApprovedOn']));?>
+                                            <?php echo "Approved";?>, <?php echo $Requests[0]['IsApprovedOn'];?>
                                         <?php }?>
                                         <?php if($Requests[0]['IsApproved']=="0" && $Requests[0]['IsRejected']=="1"){ ?>
-                                            <?php echo "Rejected";?>, <?php echo date("M d, Y",strtotime($Requests[0]['IsRejectedOn']));?>
+                                            <?php echo "Rejected";?>, <?php echo $Requests[0]['IsRejectedOn'];?>
                                         <?php }?>
                                         </small>
                                     </div>
@@ -120,7 +124,7 @@
                                 <div class="form-group form-show-validation row">
                                     <label for="email" class="col-lg-4 col-md-3 col-sm-4 mt-sm-2 text-right">Old Balnace</label>
                                     <div class="col-lg-8 col-md-9 col-sm-8  mt-sm-2 ">
-                                        <small id="emailHelp" class="form-text text-muted">:&nbsp;$ <?php echo number_format($Requests[0]['OldBalance'],2);?></small>
+                                        <small id="emailHelp" class="form-text text-muted">:&nbsp;<?php echo number_format($Requests[0]['OldBalance'],2);?></small>
                                     </div>
                                 </div>
                             </div>
@@ -128,7 +132,7 @@
                                 <div class="form-group form-show-validation row">
                                     <label for="email" class="col-lg-4 col-md-3 col-sm-4 mt-sm-2 text-right">New Balance</label>
                                     <div class="col-lg-8 col-md-9 col-sm-8  mt-sm-2 ">
-                                        <small id="emailHelp" class="form-text text-muted">:&nbsp;$ <?php echo number_format($Requests[0]['NewBalance'],2);?></small>
+                                        <small id="emailHelp" class="form-text text-muted">:&nbsp;<?php echo number_format($Requests[0]['NewBalance'],2);?></small>
                                     </div>
                                 </div>  
                             </div>

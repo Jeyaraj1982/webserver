@@ -2,12 +2,12 @@
  
       $package=$mysql->select("SELECT * FROM `_tbl_Settings_Packages` where PackageID='".$_GET['Package']."'");
 
-  //  $title = "All Downline Members";
+    $title = "All Downline Members";
     $error = "No downline members found";
     $Members = $mysql->select("
     SELECT * FROM _tbl_Members LEFT JOIN
         _tbl_Settings_Packages ON _tbl_Members.CurrentPackageID=_tbl_Settings_Packages.PackageID where _tbl_Settings_Packages.PackageID='".$_GET['Package']."'");
-  //  $title = "All Epins";
+    $title = "All Epins";
     $error = "No EPins found";
                                                                                                         
 ?>
@@ -33,7 +33,7 @@
             <div class="card">
                 <div class="card-header">
                     <h4 class="card-title">Manage Members</h4>
-                    <span><?php echo $package[0]['PackageName'];?></span>
+                    <span><?php echo $title."   - ".$package[0]['PackageName'];?></span>
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
