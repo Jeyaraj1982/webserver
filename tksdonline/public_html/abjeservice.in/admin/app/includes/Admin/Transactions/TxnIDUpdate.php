@@ -11,7 +11,7 @@
         
         
         if ($error==0) {
-            $mysql->execute("update `_tbl_transactions` set `OperatorNumber`='".$_POST['OptrID']."' where txnid='".$_POST['TxnID']."'");  
+            $mysql->execute("update `_tbl_transactions` set `OperatorNumber`='".$_POST['OptrID']."', `TxnStatus`='success' where txnid='".$_POST['TxnID']."'");  
             unset($_POST);
             ?>
             <script>

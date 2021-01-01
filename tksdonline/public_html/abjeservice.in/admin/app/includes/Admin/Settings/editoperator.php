@@ -145,9 +145,10 @@
                                 <div class="form-group" id="email-exists">
                                      <label>API<span style="color:red">*</span></label>
                                     <select class="form-control" name="APIID" id="APIID">
-                                        <option value="1" <?php echo ($data[0]['APIID']==1) ? " selected='selected' " : "";?> >Lapu</option> 
+                                        <!--<option value="1" <?php echo ($data[0]['APIID']==1) ? " selected='selected' " : "";?> >Lapu</option> -->
                                         <option value="2" <?php echo ($data[0]['APIID']==2) ? " selected='selected' " : "";?> >Mrobotics</option> 
-                                        <option value="3" <?php echo ($data[0]['APIID']==3) ? " selected='selected' " : "";?> >Ezytm</option> 
+                                        <!--<option value="3" <?php echo ($data[0]['APIID']==3) ? " selected='selected' " : "";?> >Ezytm</option> -->
+                                        <option value="4" <?php echo ($data[0]['APIID']==4) ? " selected='selected' " : "";?> >Aaranju Lapu</option> 
                                     </select>
                                 </div>         
                             </div>                                

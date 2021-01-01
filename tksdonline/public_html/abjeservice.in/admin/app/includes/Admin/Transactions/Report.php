@@ -1,9 +1,10 @@
 <?php
 if (isset($_POST['Reverse'])) {
     $param['status']="FAILURE";
-    $param['yourref']=$_POST['txnid'];
+    $param['yourref']=$_POST['txnid']; 
     $param['reason']="admin did reverse";
-        $application->reverseRecharge($param)    ;
+    
+      echo   $application->reverseRecharge($param)    ;
     ?>
     <script>
               $(document).ready(function() {
@@ -33,7 +34,7 @@ if (isset($_GET['s'])) {
 }
 
 $optr_sql .=  $status_sql;
-
+                                                        
 if ($_GET['mem']!="all") {
     $optr_sql .= " and txn.memberid='".$_GET['mem']."' ";
 }
@@ -154,6 +155,7 @@ txn.memberid=mem.MemberID where date(txn.txndate)=date('".$reportDate."') ".$opt
                 </form>
                 
                                     <div class="table-responsive">
+                                    
                          <table onmousemove="updateid()" onmouseout="clearid()" onmousedown="updateid()" onmouseover="updateid()" onmouseup="updateid()" id="basic-datatables" class="display table table-striped table-hover" >
                             <thead>        
                                 <tr>
@@ -185,11 +187,12 @@ txn.memberid=mem.MemberID where date(txn.txndate)=date('".$reportDate."') ".$opt
                                         case 'accepted' : $color = "blue"; break;
                                         default: $color = "#222"; break;
                                     }
-                                ?>
+                                ?>                    
                                 <tr>
                                     <td class="list_td"><?php echo $request['txnid'];?></td>
-                                    <td class="list_td"><?php echo $request['MemberName'];?></td>
+                                    
                                     <td class="list_td"><?php echo $request['txndate'];?></td>
+                                    <td class="list_td"><?php echo $request['MemberName'];?></td>
                                     <td class="list_td"><?php echo $request['operatorcode'];?></td>
                                     <td class="list_td"><?php echo $request['rcnumber'];?></td>
                                     <td class="list_td"><?php echo $request['rcamount'];?></td>
@@ -199,7 +202,7 @@ txn.memberid=mem.MemberID where date(txn.txndate)=date('".$reportDate."') ".$opt
                                             if ($request['TxnStatus']=="accepted") {
                                                 ?>
                                                 <form action="" method="post" onsubmit="return getConfirm()" >
-                                                <input type="hidden" value="web_x<?php echo $request['txnid'];?>" name="txnid">
+                                                <input type="hidden" value="<?php echo $request['txnid'];?>" name="txnid">
                                                 <input type="submit" name="Reverse" class="btn btn-danger btn-xs" value="Reverse">
                                                 </form>
                                                 <?php
@@ -211,19 +214,25 @@ txn.memberid=mem.MemberID where date(txn.txndate)=date('".$reportDate."') ".$opt
                                     <td class="list_td"><?php echo $request['MobileNumber'];?></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="7">
-                                       Lapu response: &nbsp;<span style="color:#888;font-size:11px"><?php echo $request['urlresponse'];?></span>
+                                    <td colspan="9">
+                                     <div style="width:800px;height:100px;overflow:auto;border:1px solid #ccc;background:#fff9e5;padding:5px;">
+                                     <code>
+                                       Lapu response: &nbsp;<span style="color:#888;font-size:11px">
+                                       <?php echo htmlspecialchars($request['urlresponse']);?></span>
                                        <?php if (strlen($request['reverseResponse'])>150) {?>
                                        <br>
                                        Lapu callback response:
                                        <br>
-                                       <span style="color:#888;font-size:11px"><?php echo str_replace("br","hr style='padding:2px;margin:0px' ",$request['reverseResponse']);?></span>
+                                       <span style="color:#888;font-size:11px">
+                                       
+                                       <?php echo str_replace("br","hr style='padding:2px;margin:0px' ",$request['reverseResponse']);?></span>
                                        <?php } elseif (strlen($request['reverseResponse'])>1) {?>
                                        <br>
                                        Lapu callback response:
                                        <span style="color:#888;font-size:11px"><?php echo $request['reverseResponse'];?></span>
                                        <?php } ?>
-                                       
+                                       </code>
+                                      </div> 
                                        
                                     </td>
                                 </tr>

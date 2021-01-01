@@ -12,7 +12,7 @@
                                                           "Url"=>" ",
                                                           "MessagedOn"=>date("Y-m-d H:i:s")));
             
-            $url = "http://www.aaranju.in/sms/api.php?apiusername=d2VsY29tZUA&apipassword=jM0NTY3ODk&sender=TKSDEC"."&number=".$mobileNumber."&message=".urlencode($text)."&uid=tksd_".$id;                                               
+            $url = "https://www.aaranju.in/sms/api.php?apiusername=d2VsY29tZUA&apipassword=jM0NTY3ODk&sender=TKSDEC"."&number=".$mobileNumber."&message=".urlencode($text)."&uid=tksd_".$id;                                               
             $mysql->execute("update _tbl_Log_MobileSMS set Url='".$url."' where SMSID='".$id."'");
             
             $ch = curl_init();
@@ -27,7 +27,7 @@
             
             global $mysql;
             $mobileapi =  $mysql->select("select * from `_tbl_Settings_Params` where ParamCode in ('MobileSMSBalanceAPI')"); 
-            $url = "http://www.aaranju.in/sms/api_balance.php?apiusername=d2VsY29tZUA&apipassword=jM0NTY3ODk";
+            $url = "https://www.aaranju.in/sms/api_balance.php?apiusername=d2VsY29tZUA&apipassword=jM0NTY3ODk";
             $ch = curl_init();
             curl_setopt($ch, CURLOPT_URL,$url);
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);

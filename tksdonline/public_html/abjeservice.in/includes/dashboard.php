@@ -1,4 +1,3 @@
-
 <div style="padding:0px;text-align:center;margin-bottom:20px;"></div> 
 <div class="row">
     <div class="col-4" style="padding-right:6px;padding-left:6px">
@@ -84,12 +83,13 @@
             <br>Landline<br>Bill
         </a>
     </div>
-    <div class="col-4" style="padding-right:6px;padding-left:6px">
+    <div class="col-4" style="padding-right:6px;padding-left:6px">                                                                        
         <a href="dashboard.php?action=mobilepostpaid"  class="btn btn-icon glow mb-1" style="width:100%"  >
              <img src="assets/img/logo_postpaid.png" style="width:100%;border:1px solid #ccc;border-radius:10px;">
             <br>Postpaid<br>Bill 
         </a>
     </div>
+    
     <div class="col-4" style="padding-right:6px;padding-left:6px">
         <a href="dashboard.php?action=insurance" class="btn btn-icon glow mb-1" style="width:100%">
             <img src="assets/img/logo_insurance.png" style="width:100%;border:1px solid #ccc;border-radius:10px;">
@@ -157,43 +157,57 @@
             <br>Pending<br>Txn  
         </a>
     </div> -->
-    
 </div>
              
 <div class="row">
-    <div class="col-4" style="padding-right:6px;padding-left:6px;text-align: right;">
-        <a href="dashboard.php?action=creditsales" class="btn btn-icon  glow mb-1" style="width:100%" >
-            <img src="assets/img/logo_creditsale.png" style="width:100%;border:1px solid #ccc;border-radius:10px;">
-            <br>Credit<br>Sales
-        </a>
-    </div>
+    
     <div class="col-4" style="padding-right:6px;padding-left:6px">
-        <a href="dashboard.php?action=getCredits"  class="btn btn-icon glow mb-1" style="width:100%"  >
-             <img src="assets/img/icon_getwalletcredit.png" style="width:100%;border:1px solid #ccc;border-radius:10px;padding:15px">
-             <br>Get<br>Credits
+        <a href="dashboard.php?action=agents_manage"  class="btn btn-icon glow mb-1" style="width:100%"  >
+             <img src="assets/img/logo_distributors.png" style="width:100%;border:1px solid #ccc;border-radius:10px;">
+             <br>Manage<br>Agents
         </a>
     </div>
     <div class="col-4" style="padding-right:6px;padding-left:6px">
         <a href="dashboard.php?action=settings" class="btn btn-icon glow mb-1" style="width:100%">
             <img src="assets/img/logo_settings.png" style="width:100%;border:1px solid #ccc;border-radius:10px;">
             <br>Profile<br>Settings  
+          <!-- <img src="assets/img/logo_walletcredit.png" style="width:100%;border:1px solid #ccc;border-radius:10px;">
+           <br>Wallet<br>Credits   -->
         </a>
     </div>
-</div> 
-<div class="row">
     <div class="col-4" style="padding-right:6px;padding-left:6px;text-align: right;">
         <a href="dashboard.php?action=settings_manage_mycontacts"  class="btn btn-icon  glow mb-1" style="width:100%" >
             <img src="assets/img/logo_myprofile.png" style="width:100%;border:1px solid #ccc;border-radius:10px;">
             <br>My<br>Contacts
         </a>     
     </div>
-</div>
-
-             
- 
+    <div class="col-4" style="padding-right:6px;padding-left:6px;text-align: right;">
+        <a href="dashboard.php?action=creditsales" class="btn btn-icon  glow mb-1" style="width:100%" >
+            <img src="assets/img/logo_creditsale.png" style="width:100%;border:1px solid #ccc;border-radius:10px;">
+            <br>Credit<br>Sales
+        </a>
+    </div>
+    
+     
+</div> 
          
           
            
               
        
-     
+     <!--       
+            <div class="row">
+                <div class="col-4" style="padding-right:6px;padding-left:6px">
+                    <a href="dashboard.php?action=cashback" class="btn btn-icon btn-success glow  mb-1" style="min-width:100%">Cashback<br>
+                    <?php echo number_format($application->getCashback($_SESSION['User']['MemberID']),2);?>
+                    </a>
+                </div>
+                <div class="col-4" style="padding-right:6px;padding-left:6px">
+                    <a href="dashboard.php?action=charges" class="btn btn-icon btn-success glow  mb-1" style="width:100%;font-size:0.9rem !important">Charges<br>
+                    <?php echo number_format($application->getCharges($_SESSION['User']['MemberID']),2);?>
+                    </a>
+                </div>
+                <div class="col-4" style="padding-right:6px;padding-left:6px;text-align: right;">
+                    <a href="dashboard.php?action=pendingbills" class="btn btn-icon btn-success glow mb-1" style="width:100%">Pending<br>Bills</a>
+                </div>
+            </div> -->

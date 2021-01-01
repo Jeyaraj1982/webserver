@@ -126,7 +126,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
     
 <?php
-    $summary = $mysql->select("select * from `_tbl_member` where `MapedTo`='".$_SESSION['User']['MemberID']."' and `IsMember`='1' and `IsActive`='1' order by MemberID desc");
+    $summary = $mysql->select("select * from `_tbl_member` where `MapedTo`='".$_SESSION['User']['MemberID']."' and `IsMember`='1' and `IsActive`='1' order by MemberName ");
 ?>
 <h3 style="text-align: center;padding:10px;"><?php echo $optttitle;?>My Agents</h3>
 <?php if ($_SESSION['User']['IsDistributor']=="1") { ?>
@@ -156,19 +156,20 @@
                             <strong>Super Agent / Agent Mobile Number</strong>
                             <br>
                             <!--<input type="text" name="MemberCode" id="MemberCode" class="form-control" value="<?php echo isset($_POST['MemberCode']) ? $_POST['MemberCode'] : "";?>">-->
-                             <select name="MemberCode" id="MemberCode" class="form-control selectpicker" style="border:1px solid #555" data-live-search="true">
+                             <select name="MemberCode" id="MemberCode" class="form-control  " style="border:1px solid #555" data-live-search="true">
                              <option value="0">Slect Agent</option>
      
                                                                                                
     <?php  
     foreach($summary as $a) {
         $MemNameMob = $a['MemberName']." (".$a['MobileNumber'].") ";
+         
         ?>
              <option value="<?php echo $a['MemberID'];?>"><?php echo substr($MemNameMob,0,30).(strlen($MemNameMob)>30 ? "..." : "");?>
-            <!--  Balance: <?php //echo number_format($application->getBalance($a['MemberID']),2);?>    -->
-             </option>
+            
+             </option>           
         <?php
-    }
+    }                                                         
     ?>
     
   </select>

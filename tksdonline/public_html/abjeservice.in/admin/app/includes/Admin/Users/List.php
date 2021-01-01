@@ -77,6 +77,7 @@ if (isset($_GET['filter']) && $_GET['filter']=="all") {
                                                         <a class="dropdown-item" href="dashboard.php?action=Users/AccountSumary&d=<?php echo md5("j!j".$Request['MemberID']);?>" draggable="false">Account Summary</a>
                                                         <a class="dropdown-item" href="dashboard.php?action=Users/TransactionSummary&d=<?php echo md5("j!j".$Request['MemberID']);?>" draggable="false">Transaction Report</a>
                                                         <a class="dropdown-item" href="dashboard.php?action=Users/TNPoliceTransaction&filter=all&d=<?php echo md5("j!j".$Request['MemberID']);?>" draggable="false">TN Police  Transaction</a>
+                                                        <a class="dropdown-item" href="dashboard.php?action=Users/MoveTo&d=<?php echo md5("j!j".$Request['MemberID']);?>" draggable="false">Move To</a>
                                                     </div>
                                                 </div>
                                             </td>                                                                                                            

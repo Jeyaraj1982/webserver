@@ -1,5 +1,4 @@
  <?php
- print_r($_SESSION);
     if (isset($_POST['submitBtn'])) {
     
         $error =0;
@@ -35,15 +34,15 @@
                                                             "IsAPI"           => "0",
                                                             "BillCharge"         => $_POST['BillCharge'],
                                                             "MAB_Enabled"         => $_POST['MAB_Enabled'],
-                                                            "MapedTo"         => "1",
-                                                            "MapedToName"     => "ABJ E SERVICE",
+                                                            "MapedTo"         => $_POST['MapedTo'],
+                                                            "MapedToName"     => $mapto[0]['MemberName'],
                                                             "Gender"          => $_POST['Gender'],
                                                             "PanCard"         => $_POST['PanCard'],
                                                             "AdhaarCard"      => $_POST['AdhaarCard'],
                                                             "Address1"        => $_POST['AddressLine1'],
                                                             "Address2"        => $_POST['AddressLine2'],
-                                                            "MoneyTransferLimit" => $_POST['MoneyTransferLimit'],
-                                                            "MoneyTransfer"      => $_POST['MoneyTransfer'],
+                                                              "MoneyTransferLimit" => $_POST['MoneyTransferLimit'],
+                                                               "MoneyTransfer"      => $_POST['MoneyTransfer'],
                                                             "CreatedOn"       => date("Y-m-d H:i:s")));
             
             $d = MobileSMS::sendSMS($_POST['MobileNumber'],"Dear Agent,  your account created. Your login Name: ".$_POST['MobileNumber']." and Password: ".$_POST['MemberPassword'],$MemberID);

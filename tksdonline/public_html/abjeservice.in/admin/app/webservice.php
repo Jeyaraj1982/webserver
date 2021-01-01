@@ -48,13 +48,23 @@ function getTNEBTxn() {
     global $mysql;
     $data = $mysql->select("select txn.*,mem.MobileNumber,mem.MemberName from _tbl_transactions as txn left join _tbl_member as mem on mem.MemberID=txn.memberid  where txnid='".$_GET['txn']."'");
      $account =$mysql->select("select _tbl_accounts where AccountID='".$data[0]['Actxnid']."'");
-     
+     $region=array("","01-Chennai South","02-Chennai North","03-Coimbatore","04-Erode","05-Madurai","06-Trichy","07-Tirunelveli","08-Vellore","09-Villupuram");
+              $d = explode("-",$data[0]['rcnumber']);
+              if (sizeof($d)>1) {
+                  $region_name = $region[$d[0]*1];
+                  $eb_number = $d[1];
+               } else {
+                      $region_name = "";
+                  $eb_number = $data[0]['rcnumber'];
+               }
+               //"Mobile Number"          =>$data[0]['MobileNumber'],
      $result=array("Transaction ID"         =>$data[0]['txnid'],
                    "Transaction Date"       =>$data[0]['txndate'],
                    "Agent Name"             =>$data[0]['MemberName'],
                    "Operator"               =>$data[0]['operatorcode'],
-                   "Mobile Number"          =>$data[0]['MobileNumber'],
-                   "TNEB Number"            =>$data[0]['rcnumber'],
+                   
+                   "TNEB Number"            =>$eb_number,
+                   "TNEB Region"            =>$region_name,
                    "Amount"                 =>$data[0]['rcamount'],
                    "Status"                 =>$data[0]['TxnStatus'],
                    "Bill Number"            =>$data[0]['OperatorNumber'],
@@ -115,6 +125,28 @@ function getPostPaidTxn() {
                    "Transaction Date"       =>$data[0]['txndate'],
                    "Agent Name"             =>$data[0]['MemberName'],
                    "Mobile Number"          =>$data[0]['MobileNumber'],
+                   "Number"                 =>$data[0]['rcnumber'],
+                   "Amount"                 =>$data[0]['rcamount'],
+                   "Status"                 =>$data[0]['TxnStatus'],
+                   "Bill Number"            =>$data[0]['OperatorNumber'],
+                   "Customer Mobile Number" =>$data[0]['CustomerMobileNumber'],
+                   "Charge"                 =>$data[0]['charge'],
+                   "Called Url"             =>$data[0]['calledurl'],
+                   "Url Response"           =>$data[0]['urlresponse']);
+    
+    return json_encode($result);
+}
+function getGasBillTxn() {
+    global $mysql;
+    $data = $mysql->select("select txn.*,mem.MobileNumber,mem.MemberName from _tbl_transactions as txn left join _tbl_member as mem on mem.MemberID=txn.memberid  where txnid='".$_GET['txn']."'");
+     $operator = $mysql->select("select * from _tbl_operators where OperatorCode='".$data[0]['operatorcode']."'");
+     
+     $result=array("Transaction ID"         =>$data[0]['txnid'],
+                   "Transaction Date"       =>$data[0]['txndate'],
+                   "Agent Name"             =>$data[0]['MemberName'],
+                   "Mobile Number"          =>$data[0]['MobileNumber'],
+                   "Operator Code"          =>$data[0]['operatorcode'],
+                   "Operator Type"          =>$operator[0]['OperatorName'],                        
                    "Number"                 =>$data[0]['rcnumber'],
                    "Amount"                 =>$data[0]['rcamount'],
                    "Status"                 =>$data[0]['TxnStatus'],

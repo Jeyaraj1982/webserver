@@ -83,7 +83,7 @@ if (sizeof($t)>0) {
                             $dthnum ="";
                         }
                     ?>
-                    <input type="number" onKeyDown="return doValidate(event)" value="<?php echo isset($_POST['MobileNumber']) ? $_POST['MobileNumber'] : $dthnum;?>" maxlength="15" name="MobileNumber" id="MobileNumber" class="form-control" id="exampleInputEmail1" placeholder="DTH Number" required="">
+                    <input type="number"  value="<?php echo isset($_POST['MobileNumber']) ? $_POST['MobileNumber'] : $dthnum;?>" maxlength="15" name="MobileNumber" id="MobileNumber" class="form-control" id="exampleInputEmail1" placeholder="DTH Number" required="">
                 </div>
                 <div class="form-group">
                     <label class="text-bold-600" for="exampleInputEmail1">Amount</label>

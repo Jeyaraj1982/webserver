@@ -1,15 +1,15 @@
 <?php 
 if (isset($_GET['filter']) && $_GET['filter']=="all") {
- $Requests  = $mysql->select("SELECT * FROM _tbl_member where IsDistributor='1'" );
+ $Requests  = $mysql->select("SELECT * FROM _tbl_member where IsDistributor='1' order by MemberName" );
  $title="All Distributors";
 } elseif (isset($_GET['filter']) && $_GET['filter']=="active") {
- $Requests  = $mysql->select("SELECT * FROM _tbl_member where IsDistributor='1' and IsActive='1' " );
+ $Requests  = $mysql->select("SELECT * FROM _tbl_member where IsDistributor='1' and IsActive='1' order by MemberName " );
  $title="Active  Distributors";
 } elseif (isset($_GET['filter']) && $_GET['filter']=="deactive") {
- $Requests  = $mysql->select("SELECT * FROM _tbl_member where IsDistributor='1' and IsActive='0'" );
+ $Requests  = $mysql->select("SELECT * FROM _tbl_member where IsDistributor='1' and IsActive='0' order by MemberName" );
  $title="Deactive Distributors";
 } else {
- $Requests  = $mysql->select("SELECT * FROM _tbl_member  where IsDistributor='1'" );
+ $Requests  = $mysql->select("SELECT * FROM _tbl_member  where IsDistributor='1' order by MemberName" );
  $title="All  Distributors";
 }
   ?>
@@ -44,36 +44,34 @@ if (isset($_GET['filter']) && $_GET['filter']=="all") {
                             <table id="basic-datatables" class="display table table-striped table-hover" >
                                 <thead>
                                     <tr>
+                                     <th></th>
                                         <th><b>Shop Name</b></th>
-                                        <th><b>Mobile Number</b></th>
                                         <th><b>No of agents</b></th>
                                         <th><b>Balance</b></th>
+                                        <th><b>Sub Agent Balance</b></th>
                                         <th><b>Status</b></th>
                                          <th><b>Bill</b></th>
                                         <th><b>MAB</b></th>
                                         <th><b>IMPS</b></th>
-                                        <th></th>
+                                       
                                     </tr>
                                 </thead>                    
                                 <tbody>
-                                    <?php foreach ($Requests as $Request){ ?>
-                                    <tr>
-                                        <td>
-                                        <?php echo $Request['MemberName'];?>
-                                         
-                                        </td>
-                                        <td style="text-align: center"><?php echo $Request['MobileNumber'];?></td>
-                                        <td>
-                                        <?php
-                                            echo sizeof($mysql->select("select MemberID from _tbl_member where MapedTo='".$Request['MemberID']."'"));
+                                    <?php
+                                    $atotal =0;
+                                    $satotal = 0;
+                                     foreach ($Requests as $Request){ 
+                                        $mem = $mysql->select("select MemberID from _tbl_member where MapedTo='".$Request['MemberID']."'");
+                                        $bal =   $application->getBalance($Request['MemberID']);
+                                        $atotal+= $bal;
+                                        $t = 0;
+                                        foreach($mem as $m) {
+                                               $t+=$application->getBalance($m['MemberID']);
+                                        }
+                                        $satotal+=$t;
                                         ?>
-                                        </td>
-                                        <td style="text-align: right"><?php echo number_format($application->getBalance($Request['MemberID']),2);?></td>
-                                        <td style="text-align: center"><?php echo $Request['IsActive']==1 ? "Active" : "Deactive";?></td>
-                                          <td style="text-align: center"><?php echo $Request['BillCharge']==1 ? '<i class="la flaticon-check"></i>' : '<i class="la flaticon-cross-1"></i>'; ?></td>
-                                        <td style="text-align: center"><?php echo $Request['MAB_Enabled']==1 ? '<i class="la flaticon-check"></i>' : '<i class="la flaticon-cross-1"></i>'; ?></td>
-                                        <td style="text-align: center"><?php echo $Request['MoneyTransfer']==1 ? '<i class="la flaticon-check"></i>' : '<i class="la flaticon-cross-1"></i>'; ?></td>
-                                        <td style="text-align: right;">
+                                    <tr>
+                                    <td style="text-align: right;">
                                         
                                         <div class="dropdown">
                                                 <button class="btn-dropdown" data-toggle="dropdown" style="border:none;background:none">
@@ -96,13 +94,32 @@ if (isset($_GET['filter']) && $_GET['filter']=="all") {
                                                 
                                          
                                         </td>
+                                        <td>
+                                            <b><?php echo $Request['MemberName'];?></b><br>
+                                         <?php echo $Request['MobileNumber'];?>
+                                        </td>
+                                        <td style="text-align: right;"><?php echo sizeof($mem); ?></td>
+                                        <td style="text-align: right"><?php echo number_format($bal,2);?></td>
+                                        <td style="text-align: right"><?php echo number_format($t,2);?></td>
+                                        <td style="text-align: center"><?php echo $Request['IsActive']==1 ? "Active" : "Deactive";?></td>
+                                          <td style="text-align: center"><?php echo $Request['BillCharge']==1 ? '<i class="la flaticon-check"></i>' : '<i class="la flaticon-cross-1"></i>'; ?></td>
+                                        <td style="text-align: center"><?php echo $Request['MAB_Enabled']==1 ? '<i class="la flaticon-check"></i>' : '<i class="la flaticon-cross-1"></i>'; ?></td>
+                                        <td style="text-align: center"><?php echo $Request['MoneyTransfer']==1 ? '<i class="la flaticon-check"></i>' : '<i class="la flaticon-cross-1"></i>'; ?></td>
+                                        
                                     </tr>
                                     <?php }?>  
                                     <?php if(sizeof($Requests)=="0"){?>
                                     <tr>
-                                        <td colspan="6" style="text-align: center;">No Datas Found</td>
+                                        <td colspan="9" style="text-align: center;">No Datas Found</td>
                                     </tr>
-                             <?php }?>  
+                             <?php } else {  ?>  
+                             <tr style="font-weight:bold;">
+                                <td colspan="3"></td>
+                                        <td style="text-align: right" ><?php echo number_format($atotal,2);?></td>
+                                        <td style="text-align: right"><?php echo number_format($satotal,2);?></td>
+                                  <td colspan="4"></td>
+                                    </tr>
+                             <?php }?>
                             </tbody>
                         </table>
                     </div>
@@ -113,7 +130,7 @@ if (isset($_GET['filter']) && $_GET['filter']=="all") {
     </div>
 </div>
 <script>
-    $(document).ready(function() {
-        $('#basic-datatables').DataTable({});
-    });
+    //$(document).ready(function() {
+      //  $('#basic-datatables').DataTable({});
+    //});
 </script> 

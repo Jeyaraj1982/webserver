@@ -1,6 +1,18 @@
 <?php
     $_OPERATOR = "RV";
-    $data = $mysql->select("select * from _tbl_operators where OperatorCode='".$_OPERATOR."' and isActive='1'");
+    $data = $mysql->select("select * from _tbl_operators where OperatorCode='".$_OPERATOR."'");
+    if ($data[0]['IsActive']==0) {
+        ?>
+        <div class="row" style="padding-bottom:30px;padding-top:100px;">
+    <img src="assets/img/<?php echo $data[0]['IconFile'];?>" style="width:25%;border:1px solid #ccc;border-radius:10px;margin:0px auto">    
+</div>
+        <div class="row">
+    <div style="padding:20px;color:red;text-align:center;width:100%;"><?php echo $data[0]['InactiveMessage'];?></div>
+    <a href="dashboard.php?action=mobilerc" class="btn btn-success  glow w-100 position-relative">Continue<i id="icon-arrow" class="bx bx-right-arrow-alt" style="clear:both"></i></a>
+    <a href="dashboard.php?action=mobilerc" class="btn btn-outline-success  glow w-100 position-relative" style="margin-top:15px"><i id="icon-arrow" class="bx bx-left-arrow-alt" style="clear:both">Back</i></a>
+</div>
+        <?php
+    } else {
         $plans  = $mysql->select("SELECT * FROM _tbl_operator_plans  where IsActive='1'  and OperatorCode='".$_OPERATOR."' order by Amount Desc" );
 ?>
 <div style="padding:0px;text-align:center;margin-bottom:20px;">
@@ -14,6 +26,7 @@
 $enable = true;
 $enable_error = "";
 $t = $mysql->select("select * from _tbl_member_operator where MemberID='".$_SESSION['User']['MemberID']."' and OperatorCode='".$_OPERATOR."'");
+        
 if (sizeof($t)>0) {
     $enable = false;
      $enable_error = "In your account, Operator was disabled. to enable please contact support team";
@@ -23,6 +36,9 @@ if (sizeof($t)>0) {
         $enable_error = $data[0]['InactiveMessage'];
     } 
 }
+
+ 
+
 ?>
 <?php if ($enable) { ?>
     <?php if (isset($_POST['submitRequest'])) { ?>
@@ -54,8 +70,8 @@ if (sizeof($t)>0) {
                     <a href="dashboard.php?action=creditsales_addtxnt&back=txnhistory&txn=<?php echo $result['txnid'];?>" ><i id="icon-arrow" class="bx bxs-pin"></i><br>credit<br>sale</a>     <br>
                     <?php } ?>              
                 </div>
-                <a href="dashboard.php?action=mrc_vodafone" class="btn btn-primary  glow w-100 position-relative">Continue<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></a><br>
-                <a href="dashboard.php?action=add_contacts_prepaid&id=<?php echo $result['txnid'];?>" class="btn btn-primary  glow w-100 position-relative">Add Contact<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></a>
+                <a href="dashboard.php?action=mrc_vodafone" class="btn btn-success  glow w-100 position-relative">Continue<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></a><br>
+                <a href="dashboard.php?action=add_contacts_prepaid&id=<?php echo $result['txnid'];?>" class="btn btn-success  glow w-100 position-relative">Add Contact<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></a>
             </div>
         <?php } else {?>
             <div class="row">
@@ -67,8 +83,8 @@ if (sizeof($t)>0) {
                     Transaction failed<br>
                     <?php echo $result['message']; ?>
                 </div>
-                <a href="dashboard.php?action=mrc_vodafone" class="btn btn-primary  glow w-100 position-relative">Continue<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></a><br><br>
-                <a href="dashboard.php?action=mobilerc" class="btn btn-outline-primary glow w-100 position-relative">Back<i id="icon-arrow" class="bx bx-left-arrow-alt" style="float: left;"></i></a>
+                <a href="dashboard.php?action=mrc_vodafone" class="btn btn-success  glow w-100 position-relative">Continue<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></a><br><br>
+                <a href="dashboard.php?action=mobilerc" class="btn btn-outline-success glow w-100 position-relative">Back<i id="icon-arrow" class="bx bx-left-arrow-alt" style="float: left;"></i></a>
             </div>
         <?php } ?>
     <?php } else { ?>
@@ -93,7 +109,7 @@ if (sizeof($t)>0) {
                     <?php } ?>
                 </div>
                 <div class="form-group">
-                  <div class="checkbox checkbox-primary checkbox-inline">
+                  <div class="checkbox checkbox-success checkbox-inline">
                     <input type="checkbox" class="checkbox-primary" onclick="do_markascredit()" name="markascredit" id="markascredit">
                     <label for="markascredit">Mark as credit</label>
                   </div>
@@ -103,8 +119,8 @@ if (sizeof($t)>0) {
                 <div class="form-group">
                     <p align="center" style="color:red" id="error_msg">&nbsp;<?php echo $error;?></p>
                 </div>
-                <button type="submit" name="submitRequest" id="submitRequest" class="btn btn-primary  glow w-100 position-relative">Recharge now<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></button><br><br>
-                <a href="dashboard.php?action=mobilerc" class="btn btn-outline-primary glow w-100 position-relative">Back<i id="icon-arrow" class="bx bx-left-arrow-alt" style="float: left;"></i></a>
+                <button type="submit" name="submitRequest" id="submitRequest" class="btn btn-success  glow w-100 position-relative">Recharge now<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></button><br><br>
+                <a href="dashboard.php?action=mobilerc" class="btn btn-outline-success glow w-100 position-relative">Back<i id="icon-arrow" class="bx bx-left-arrow-alt" style="float: left;"></i></a>
                 <br><br>
                 <div style="text-align: center;">
                     <a href="dashboard.php?action=txnhistory&operator=<?php echo $_OPERATOR;?>" style="color:#555">Transaction History</a>
@@ -115,8 +131,8 @@ if (sizeof($t)>0) {
 <?php } else { ?>
 <div class="row">
     <div style="padding:20px;color:red;text-align:center;width:100%;"><?php echo $enable_error;?></div>
-    <a href="dashboard.php?action=mobilerc" class="btn btn-primary  glow w-100 position-relative">Continue<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></a>
-    <a href="dashboard.php?action=mobilerc" class="btn btn-primary  glow w-100 position-relative"><i id="icon-arrow" class="bx bx-left-arrow-alt" style="float: left;">Back</i></a>
+    <a href="dashboard.php?action=mobilerc" class="btn btn-success  glow w-100 position-relative">Continue<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></a>
+    <a href="dashboard.php?action=mobilerc" class="btn btn-success  glow w-100 position-relative"><i id="icon-arrow" class="bx bx-left-arrow-alt" style="float: left;">Back</i></a>
 </div>
 <?php } ?>
 
@@ -144,8 +160,8 @@ if (sizeof($t)>0) {
                     <input type="text" value="" name="_Amount" id="_Amount" class="form-control" disabled="disabled">
                 </div>
                 
-                <button type="button" onclick="doConfrim()" class="btn btn-primary  glow w-100 position-relative">Recharge now<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></button><br><br>
-                <a href="javascript:void(0)" data-dismiss="modal" class="btn btn-outline-primary glow w-100 position-relative">Back<i id="icon-arrow" class="bx bx-left-arrow-alt" style="float: left;"></i></a><br><br>
+                <button type="button" onclick="doConfrim()" class="btn btn-success  glow w-100 position-relative">Recharge now<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></button><br><br>
+                <a href="javascript:void(0)" data-dismiss="modal" class="btn btn-outline-success glow w-100 position-relative">Back<i id="icon-arrow" class="bx bx-left-arrow-alt" style="float: left;"></i></a><br><br>
       </div>
     </div>
   </div>
@@ -210,3 +226,4 @@ var IsConfirm=0;
      $('#submitRequest').trigger("click");
 }
 </script>
+<?php } ?>

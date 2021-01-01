@@ -6,12 +6,13 @@
             global $mysql,$userData;
             
             $id=$mysql->insert("_tbl_Log_TelegramMessage",array("MemberID"=>$memberID,
-                                                          "SmsTo"=>$mobileNumber,
-                                                          "Message"=>$text,
-                                                          "Url"=>" ",
-                                                          "MessagedOn"=>date("Y-m-d H:i:s")));
+                                                                "SmsTo"=>$mobileNumber,
+                                                                "Message"=>$text,
+                                                                "telegram_route"=>"abj",
+                                                                "Url"=>" ",       
+                                                                "MessagedOn"=>date("Y-m-d H:i:s")));
             
-            $url = "http://www.aaranju.in/telegram/api.php?apiusername=d2VsY29tZUA&apipassword=jM0NTY3ODk&msgtype=text&clientid=".$mobileNumber."&message=".urlencode($text)."&uid=tksd_".$id;                                               
+            $url = "https://www.aaranju.in/telegram/api.php?apiusername=ikXtsaLo3EWca&apipassword=lzwjdughDqd=&msgtype=text&clientid=".$mobileNumber."&message=".urlencode($text)."&uid=tksd_".$id;                                               
             $mysql->execute("update _tbl_Log_TelegramMessage set Url='".$url."' where SMSID='".$id."'");
             
             $ch = curl_init();
@@ -26,7 +27,7 @@
             
             global $mysql;
             $mobileapi =  $mysql->select("select * from `_tbl_Settings_Params` where ParamCode in ('MobileSMSBalanceAPI')"); 
-            $url = "http://www.aaranju.in/sms/api_balance.php?apiusername=d2VsY29tZUA&apipassword=jM0NTY3ODk";
+            $url = "https://www.aaranju.in/sms/api_balance.php?apiusername=ikXtsaLo3EWca&apipassword=lzwjdughDqd=";
             $ch = curl_init();
             curl_setopt($ch, CURLOPT_URL,$url);
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);

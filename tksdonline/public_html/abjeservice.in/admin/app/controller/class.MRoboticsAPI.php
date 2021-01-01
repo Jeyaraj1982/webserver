@@ -5,7 +5,7 @@
             
             global $mysql;
             
-            $api_url ="https://mrobotics.in/api/recharge_get?api_token=b69225ac-2102-4b65-be75-7394d477f32f&mobile_no=".$param['number']."&amount=".$param['amount']."&order_id=webx".$param['txnid']."&";
+            $api_url ="https://mrobotics.in/api/recharge_get?api_token=6250d327-34a3-4152-a30f-0148b667b21d&mobile_no=".$param['number']."&amount=".$param['amount']."&order_id=webx".$param['txnid']."&";
             
             if ($param['operator']=="RA") {
                 $api_url .= "company_id=2&is_stv=false";
@@ -17,8 +17,15 @@
                 $api_url .= "company_id=4&is_stv=".((($param['amount']%10)==0) ? "false":"true");        
             }
             if ($param['operator']=="RJ") {
-                $api_url .= "company_id=5&is_stv=false";
-               // $api_url .= "company_id=17&is_stv=false";
+                  $d = $mysql->select("select * from _temp_settings where param='jpos' ");
+                if ($d[0]['paramvalue']==1) {
+                $api_url .= "company_id=5&is_stv=false"; 
+                } else {
+                    $api_url .= "company_id=17&is_stv=false";            
+                
+                }
+               // $api_url .= "company_id=5&is_stv=false";
+                //$api_url .= "company_id=17&is_stv=false";
             }
             if ($param['operator']=="RV") {
                 $api_url .= "company_id=1&is_stv=false";
@@ -26,7 +33,7 @@
             if ($param['operator']=="RI") {
                 $api_url .= "company_id=1&is_stv=false";
             }
-            if ($param['operator']=="DA") {
+            if ($param['operator']=="DA"||$param['operator']=="TA") {
                 $api_url .= "company_id=9&is_stv=false";
             }
             if ($param['operator']=="DD") {

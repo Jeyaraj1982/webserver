@@ -1,1 +1,0 @@
-lsof -ti:7860 | xargs kill -9  &> 1234.log 

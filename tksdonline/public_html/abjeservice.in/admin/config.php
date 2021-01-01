@@ -5,15 +5,17 @@ date_default_timezone_set('Asia/Calcutta');
 //ini_set('display_startup_errors', 1);
 //error_reporting(E_ALL);
 
-//if (isset($_SESSION['User']) && $_SESSION['User']['Role']=="Member") {
+if (isset($_SESSION['User']) && $_SESSION['User']['Role']=="Member") {
     define("UserRole","Member");
-//}
-//if (isset($_SESSION['User']) && $_SESSION['User']['Role']=="Admin") {
-  //  define("UserRole","Admin");
-//}            
+}
+if (isset($_SESSION['User']) && $_SESSION['User']['Role']=="Admin") {
+    define("UserRole","Admin");
+}          
+                  
+                 
                                          
 define("DbHost","localhost");
-define("DbName","tksdonli_database");
+define("DbName","tksdonli_abjeservice");
 define("DbUser","tksdonli_user");
 define("DbPassword","mysqluser@123");
 
@@ -22,10 +24,11 @@ include_once(__DIR__."/app/controller/class.MobileSMSController.php");
 include_once(__DIR__."/app/controller/class.TelegramMessageController.php");
 include_once(__DIR__."/app/controller/class.EzytmAPI.php");
 include_once(__DIR__."/app/controller/class.MRoboticsAPI.php");
+include_once(__DIR__."/app/controller/class.AaranjuLapu.php");
 
-define("SITE_TITLE","tksdonlineservice.in");
-define("SiteTitle","tksdonlineservice.in");
-define("loginUrl","http://tksdonlineservice.in/index");
+define("SITE_TITLE","abjeservice.in");
+define("SiteTitle","abjeservice.in");
+define("loginUrl","https://www.abjeservice.in/index");
 
 if (isset($_GET['action']) && $_GET['action']=="logout") {
     session_destroy();
@@ -36,7 +39,9 @@ if (isset($_GET['action']) && $_GET['action']=="logout") {
     exit;
 }
 
+
 $mysql   = new MySqldatabase(DbHost,DbUser,DbPassword,DbName);
+
 define("PORT","7860");
 class JApplication {
     
@@ -68,8 +73,17 @@ class JApplication {
         $txnid = str_replace("web_x","",$param['yourref']);
         $txnid = str_replace("web","",$param['yourref']);
         $txnid = str_replace("webx","",$param['yourref']);
+        
+        
+        $txnid = str_replace("w","",$param['yourref']);
+        $txnid = str_replace("e","",$txnid);
+        $txnid = str_replace("b","",$txnid);
+        $txnid = str_replace("_","",$txnid);
+        $txnid = str_replace("x","",$txnid);
+        
+        
         if ($param['status']=="FAILURE" ) {
-            $mysql->execute("update _tbl_transactions set `TxnStatus`='reversed',`reverseResponse` = concat(`reverseResponse`,'<br>".implode(",",$param)."'), `revDate`='".date("Y-m-d H:i:s")."' where `txnid`='".$txnid."'");
+            $mysql->execute("update _tbl_transactions set `TxnStatus`='reversed', `urlresponse` = concat(`urlresponse`,'<br>".json_encode($param)."'), `reverseResponse` = concat(`reverseResponse`,'<br>".implode(",",$param)."'), `revDate`='".date("Y-m-d H:i:s")."' where `txnid`='".$txnid."'");
             $t = $mysql->select("select * from _tbl_transactions where `txnid`='".$txnid."'");
 
             $ac = $mysql->select("select * from _tbl_accounts where AccountID='".$t[0]['ACtxnid']."'");
@@ -98,8 +112,8 @@ class JApplication {
             return true;
         }
         
-        if ($param['status']=="SUCCESS") {
-            $mysql->execute("update _tbl_transactions set `TxnStatus`='success',OperatorNumber='".$param['transid']."',`reverseResponse`='".implode(",",$param)."', `revDate`='".date("Y-m-d H:i:s")."' where `txnid`='".$txnid."'");
+        if ($param['status']=="SUCCESS") {                                                                                    
+            $mysql->execute("update _tbl_transactions set `TxnStatus`='success',OperatorNumber='".$param['transid']."', `urlresponse` = concat(`urlresponse`,'<br>".json_encode($param)."'), `revDate`='".date("Y-m-d H:i:s")."' where `txnid`='".$txnid."'");
             return true;
         }
 
@@ -224,11 +238,55 @@ class JApplication {
             
             if ($api[0]['APIID']==1) {
                 $response = Mars::sendRequest($param);
-            } elseif ($api[0]['APIID']==2) {
+            } elseif ($api[0]['APIID']==2) {                           
                 $response = MRoboticsAPI::sendRequest($param);
+                
+                if ($response['status']=="failure") {
+                    if ((strtolower(trim($response['message']))==strtolower("no lapu is ON or Low Balance in Lapu")) || ($response['message']=="no lapu is ON or Low Balance in Lapu") ) {
+                        
+                        if ($param['operator']=="RB" || $param['operator']=="TB") {
+                            $mysql->execute("update _tbl_operators set APIID='4' where OperatorCode='RB'");
+                            TelegramMessageController::sendSMS(316574188,"Dear Admin: BSNL Topup/Recharge API has been auot-switched to ArranjuLapu",0,0);
+                            $response = AaranjuLapu::sendRequest($param);
+                        }
+                          
+                        if ($param['operator']=="RV") {
+                            $mysql->execute("update _tbl_operators set APIID='4' where OperatorCode='RV'");
+                            TelegramMessageController::sendSMS(316574188,"Dear Admin: Vodafone API has been auot-switched to ArranjuLapu",0,0);
+                            $response = AaranjuLapu::sendRequest($param);
+                        }
+                        
+                        if ($param['operator']=="DS") {
+                            $mysql->execute("update _tbl_operators set APIID='4' where OperatorCode='DS'");
+                            TelegramMessageController::sendSMS(316574188,"Dear Admin: SunDirect API has been auot-switched to ArranjuLapu",0,0);
+                            $response = AaranjuLapu::sendRequest($param);
+                        } 
+                        
+                        if ($param['operator']=="TA") {
+                            $mysql->execute("update _tbl_operators set APIID='4' where OperatorCode='TA'");
+                            TelegramMessageController::sendSMS(316574188,"Dear Admin: AirtelDigitalTV API has been auot-switched to ArranjuLapu",0,0);
+                            $response = AaranjuLapu::sendRequest($param);
+                        }
+                        
+                        if ($param['operator']=="DD") {
+                            $mysql->execute("update _tbl_operators set APIID='4' where OperatorCode='DD'");
+                            TelegramMessageController::sendSMS(316574188,"Dear Admin: DishTV API has been auot-switched to ArranjuLapu",0,0);
+                            $response = AaranjuLapu::sendRequest($param);
+                        }
+                        
+                        if ($param['operator']=="DV") {
+                            $mysql->execute("update _tbl_operators set APIID='4' where OperatorCode='DV'");
+                            TelegramMessageController::sendSMS(316574188,"Dear Admin: Videoond2h API has been auot-switched to ArranjuLapu",0,0);
+                            $response = AaranjuLapu::sendRequest($param);
+                        }
+                    }
+                }
+                
             } elseif ($api[0]['APIID']==3) {
                 $response = EzytmAPI::sendRequest($param);
-            } 
+            } elseif ($api[0]['APIID']==4) {
+                $response = AaranjuLapu::sendRequest($param);
+            }  
 
              if ($response['status']=="failure") {
                $result['status']="failure";
@@ -486,17 +544,6 @@ class JApplication {
                                       "rcnumber"       => $param['number'],
                                       "rcamount"       => $param['amount'],
                                       "OperatorNumber" => "0")); 
-                                              
-        $upper_lmit =getUpperLimit($param['MemberID']);
-        
-        $today_transfer  = getTodayTransfered($param['MemberID']);
-        
-       if (!( $param['amount']<=($upper_lmit-$today_transfer)))  {
-              // $result['status']="failure";
-            //$result['message']="You may be recahed your today's limit.";
-         
-        //return $result;
-       }
         
         $balance = $this->getBalance($param['MemberID']);
         
@@ -530,52 +577,54 @@ class JApplication {
                // }
             
               $charge=0;
-    if ($param['amount']<=3000) {
-        $charge=10;
-    } else if ($param['amount']>3000 && $param['amount']<=7000) {
-        $charge=15;
-    } else if ($param['amount']>7000 && $param['amount']<=10000) {
-        $charge=20;
-    }
-           $charge_count =  intval($param['amount']/5000);
-                  $charge_prefix = $param['amount']%5000;
-                  if ($charge_prefix>0) {
-                    $charge_count++;
-                  }
-                  $charge = $charge_count * 15;
-                  
-                $Cashback_ACtxnid = $mysql->insert("_tbl_accounts",array("TxnDate"     => date("Y-m-d H:i:s"),
-                                                                         "memberid"    => $param['MemberID'],
-                                                                         "Particulars" => "Charge/MoneyTansfer/".$param['number']."/".$param['IFSCode'],
-                                                                         "TxnValue"    => $param['amount'],
-                                                                         "credit"      => "0",
-                                                                         "debit"       => $charge,
-                                                                         "balance"     => $balance-$param['amount']-$charge,
-                                                                         "Voucher"     => "32"));        
-           //}
-            
-           $txnid = $mysql->insert("_tbl_transactions",array("txndate"          => date("Y-m-d H:i:s"),  
-                                                              "memberid"         => $param['MemberID'],
-                                                              "operatorcode"     => $param['operator'],
-                                                              "rcnumber"         => $param['number'],
-                                                              "rcamount"         => $param['amount'],
-                                                              "cashback"         => "0",
-                                                              "charge"           => "0",
-                                                              "CustomerMobileNumber" => isset($param['CustomerMobileNumber']) ? $param['CustomerMobileNumber'] : "",
-                                                              "dob"              => isset($param['dob']) ? $param['dob'] : "",
-                                                              "Remarks"          => isset($param['Remarks']) ? $param['Remarks'] : "",
-                                                              "AccountName"      => isset($param['AccountName']) ? $param['AccountName'] : "",
-                                                              "IFSCode"          => isset($param['IFSCode']) ? $param['IFSCode'] : "",
-                                                              "OperatorNumber"   => "0",                   
-                                                              "TxnStatus"        => "requested",
-                                                              "ACtxnid"          => $ACtxnid,
-                                                              "Cashback_ACtxnid" => $Cashback_ACtxnid,
-                                                              "calledurl"        => "",
-                                                              "urlresponse"      => ""));
-            
+              if ($param['amount']<=3000) {
+                  $charge=10;
+              } else if ($param['amount']>3000 && $param['amount']<=7000) {
+                  $charge=15;
+              } else if ($param['amount']>7000 && $param['amount']<=10000) {
+                  $charge=20;
+              }
+              $charge_count =  intval($param['amount']/5000);
+              $charge_prefix = $param['amount']%5000;
+              if ($charge_prefix>0) {
+                  $charge_count++;
+              }
+              $charge = $charge_count * 15;
+              if($param['api']) {
+                $Particulars = "Charge/MoneyTansfer_IMPS/".$param['number']."/".$param['IFSCode'];    
+              } else {
+                $Particulars = "Charge/MoneyTansfer_NEFT/".$param['number']."/".$param['IFSCode'];
+              }  
+              $Cashback_ACtxnid = $mysql->insert("_tbl_accounts",array("TxnDate"     => date("Y-m-d H:i:s"),
+                                                                        "memberid"    => $param['MemberID'],
+                                                                        "Particulars" => $Particulars,
+                                                                        "TxnValue"    => $param['amount'],
+                                                                        "credit"      => "0",
+                                                                        "debit"       => $charge,
+                                                                        "balance"     => $balance-$param['amount']-$charge,
+                                                                        "Voucher"     => "32"));
+              $txnid = $mysql->insert("_tbl_transactions",array("txndate"          => date("Y-m-d H:i:s"),  
+                                                                "memberid"         => $param['MemberID'],
+                                                                "operatorcode"     => $param['operator'],
+                                                                "rcnumber"         => $param['number'],
+                                                                "rcamount"         => $param['amount'],
+                                                                "cashback"         => "0",
+                                                                "charge"           => "0",
+                                                                "CustomerMobileNumber" => isset($param['CustomerMobileNumber']) ? $param['CustomerMobileNumber'] : "",
+                                                                "dob"              => isset($param['dob']) ? $param['dob'] : "",
+                                                                "Remarks"          => isset($param['Remarks']) ? $param['Remarks'] : "",
+                                                                "AccountName"      => isset($param['AccountName']) ? $param['AccountName'] : "",
+                                                                "IFSCode"          => isset($param['IFSCode']) ? $param['IFSCode'] : "",
+                                                                "OperatorNumber"   => "0",                   
+                                                                "TxnStatus"        => "requested",
+                                                                "ACtxnid"          => $ACtxnid,
+                                                                "Cashback_ACtxnid" => $Cashback_ACtxnid,
+                                                                "calledurl"        => "",
+                                                                "urlresponse"      => ""));
+                                                                                         
             if ($param['api']==true) {                             
              // &number=<mobilenumber>&sender=<sendername>&message=<textmessage>&uid=<yourtxnid> 
-              $url = "https://www.aaranju.in/moneytransfer/api.php?username=d2VsY29tZUA&password=jM0NTY3ODk&uid=".$txnid;
+              $url = "https://www.aaranju.in/moneytransfer/api.php?username=ikXtsaLo3EWca&password=lzwjdughDqd=&uid=".$txnid;
               $url .= "&account_name=".urlencode($param['AccountName']);
               $url .= "&account_number=".$param['number'];   
               $url .= "&ifsc_code=".$param['IFSCode'];
@@ -744,4 +793,5 @@ function getTodayTransfered($MemberID) {
     $today_transfered  = $mysql->select("select sum(rcamount) as rcamount from _tbl_transactions where TxnStatus='success' and memberid='".$_SESSION['User']['MemberID']."' and date(txndate)=date('".date("Y-m-d")."') and operatorcode='MTB' ");
     return isset($today_transfered[0]['rcamount']) ? $today_transfered[0]['rcamount'] : 0;
 }
+
 ?>

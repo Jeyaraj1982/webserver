@@ -38,10 +38,10 @@
         $limit = $mysql->select("select sum(TransferAmount) as TransferAmount from _tbl_member_credit_walletupdate where month(TxnDate)=month('".date("Y-m-d")."') and MemberID='".$_SESSION['User']['MemberID']."'");
         $today_limit = isset($limit[0]['TransferAmount']) ? $limit[0]['TransferAmount'] : 0;
 
-        if ( !(($_POST['Amount']+$today_limit)<=5000) ) {    
+        if ( !(($_POST['Amount']+$today_limit)<=1000) ) {    
             $error++;
             $result['status']="failure";
-            $result['message']="amount not execeed this month's limit Rs. 5000";
+            $result['message']="amount not execeed this month's limit Rs. 1000";
         }
         
         //_tbl_member_credit_walletupdate
@@ -101,7 +101,7 @@
                 <div style="padding:20px;text-align:center;width:100%;">
                     Rs. <?php echo $_POST['Amount'];?> updated in your wallet.
                 </div> 
-                <a href="dashboard.php?action=getCredits" class="btn btn-success  glow w-100 position-relative">Continue<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></a>
+                <a href="dashboard.php?action=getCredits" class="btn btn-primary  glow w-100 position-relative">Continue<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></a>
             </div>
         <?php } else {?>
             <div class="row">
@@ -112,8 +112,8 @@
                     Transfer failed<br>
                     <?php echo $result['message']; ?>
                 </div>
-                <a href="dashboard.php?action=getCredits" class="btn btn-success  glow w-100 position-relative">Continue<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></a><br><br>
-                <a href="dashboard.php?action=getCredits" class="btn btn-outline-success glow w-100 position-relative">Back<i id="icon-arrow" class="bx bx-left-arrow-alt" style="float: left;"></i></a>
+                <a href="dashboard.php?action=getCredits" class="btn btn-primary  glow w-100 position-relative">Continue<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></a><br><br>
+                <a href="dashboard.php?action=getCredits" class="btn btn-outline-primary glow w-100 position-relative">Back<i id="icon-arrow" class="bx bx-left-arrow-alt" style="float: left;"></i></a>
             </div>
         <?php } ?>
     <?php } else { ?>                     

@@ -2,7 +2,7 @@
 include_once("admin/config.php");
 if (isset($_COOKIE['username']) && isset($_COOKIE['password'])) {
  
-    $d = $mysql->select("select * from _tbl_member where  MapedTo='3' and md5(concat('J2J',MobileNumber))='".$_COOKIE['username']."' and md5(concat('J2J',MemberPassword))='".$_COOKIE['password']."' and IsActive='1'");
+    $d = $mysql->select("select * from _tbl_member where   md5(concat('J2J',MobileNumber))='".$_COOKIE['username']."' and md5(concat('J2J',MemberPassword))='".$_COOKIE['password']."' and IsActive='1'");
     if (sizeof($d)>0) {
      
          $_SESSION['User']=$d[0]; 
@@ -13,7 +13,7 @@ if (isset($_COOKIE['username']) && isset($_COOKIE['password'])) {
 }       
 if (isset($_POST['submitBtn'])) {
     
-    $d = $mysql->select("select * from _tbl_member  where MapedTo='3' and MobileNumber='".$_POST['MobileNumber']."' and MemberPassword='".$_POST['MemberPassword']."' and IsActive='1'");
+    $d = $mysql->select("select * from _tbl_member  where MobileNumber='".$_POST['MobileNumber']."' and MemberPassword='".$_POST['MemberPassword']."' and IsActive='1'");
     if (sizeof($d)>0) {
         if (isset($_POST['RememberMe']) && $_POST['RememberMe']=="on") {
             setcookie("username",md5("J2J".$_POST['MobileNumber']),time() + (86400 * 30));
@@ -27,7 +27,7 @@ if (isset($_POST['submitBtn'])) {
         $error = "login falied";
     }
 }
-?> 
+?>                                                                            
                                                             
 <!DOCTYPE html>
 <html class="loading" lang="en" data-textdirection="ltr">
@@ -98,14 +98,16 @@ if (isset($_POST['submitBtn'])) {
                                     </div>
                                     <button type="submit" name="submitBtn" class="btn btn-primary  glow w-100 position-relative">Login<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></button>
                                 </form>
-                             <!--   <br><br>
-                              <form action="" method="post">
-                                    <input type="hidden" value="9876543210" name="MobileNumber" id="MobileNumber">
-                                    <input type="hidden" value="9876543210" name="MemberPassword" id="MemberPassword">
-                                    <button type="submit" name="submitBtn" class="btn btn-info  glow w-100 position-relative">Demo Login<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></button>
-                                </form>  -->
-                                
-                                
+                              
+                                 <div class="form-group" style="color:#333">
+                                 <br>
+                                <br><B>ABJE-SERVICE</b><br>
+                                SARUKANI 630411.<br><Br>
+                                Email:<br>
+                                <span style="font-size:13px">abjoyamalagency2013@gmail.com</span><br><br>
+                                Whatsapp Chat:<br>
+                                <span style="font-size:13px">+91 9943708856  8489265640</span>
+                                </div>
                             </div>
                         </div>
                     </div>
