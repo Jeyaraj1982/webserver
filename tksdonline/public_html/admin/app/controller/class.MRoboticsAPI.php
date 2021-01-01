@@ -17,8 +17,14 @@
                 $api_url .= "company_id=4&is_stv=".((($param['amount']%10)==0) ? "false":"true");        
             }
             if ($param['operator']=="RJ") {
-                $api_url .= "company_id=5&is_stv=false";
-              //  $api_url .= "company_id=17&is_stv=false";      
+                $d = $mysql->select("select * from _temp_settings where param='jpos' ");
+                if ($d[0]['paramvalue']==1) {
+                $api_url .= "company_id=5&is_stv=false"; 
+                } else {
+                    $api_url .= "company_id=17&is_stv=false";            
+                
+                }
+              
             }
             if ($param['operator']=="RV") {
                 $api_url .= "company_id=1&is_stv=false";
@@ -26,7 +32,7 @@
             if ($param['operator']=="RI") {
                 $api_url .= "company_id=1&is_stv=false";
             }
-            if ($param['operator']=="DA") {
+            if ($param['operator']=="DA" || $param['operator']=="TA") {
                 $api_url .= "company_id=9&is_stv=false";
             }
             if ($param['operator']=="DD") {
@@ -41,6 +47,7 @@
             if ($param['operator']=="DV") {
                 $api_url .= "company_id=11&is_stv=false";
             }
+            
             
             //update api url
             $mysql->execute("update `_tbl_transactions` set `APIID`='2', `APIName`='mrobotics', `calledurl`='".$api_url."'  where `txnid`='".$param['txnid']."'");

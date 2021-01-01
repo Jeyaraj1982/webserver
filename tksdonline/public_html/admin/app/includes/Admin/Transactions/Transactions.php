@@ -16,7 +16,7 @@ if (isset($_POST['Reverse'])) {
     <?php
 }
 $requests=$mysql->select("select * from _tbl_transactions as txn left join _tbl_member as mem on
-txn.memberid=mem.MemberID where date(txn.txndate)=date('".date("Y-m-d")."') order by txn.txnid desc");
+txn.memberid=mem.MemberID where date(txn.txndate)=date('".date("Y-m-d")."') order by txn.txnid desc limit 0,25");
 ?>
 <div style="padding:25px">
     <div class="page-header">
@@ -44,7 +44,7 @@ txn.memberid=mem.MemberID where date(txn.txndate)=date('".date("Y-m-d")."') orde
                 <div class="card-header">
                     <h4 class="card-title">Transactions</h4>
                 </div>
-                <div class="card-body">
+                <div class="card-body">       
                     <div class="table-responsive">
                          <table onmousemove="updateid()" onmouseout="clearid()" onmousedown="updateid()" onmouseover="updateid()" onmouseup="updateid()" id="basic-datatables" class="display table table-striped table-hover" >
                             <thead>        

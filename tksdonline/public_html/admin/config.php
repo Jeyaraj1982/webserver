@@ -22,6 +22,7 @@ include_once(__DIR__."/app/controller/class.MobileSMSController.php");
 include_once(__DIR__."/app/controller/class.TelegramMessageController.php");
 include_once(__DIR__."/app/controller/class.EzytmAPI.php");
 include_once(__DIR__."/app/controller/class.MRoboticsAPI.php");
+include_once(__DIR__."/app/controller/class.AaranjuLapu.php");
 
 define("SITE_TITLE","tksdonlineservice.in");
 define("SiteTitle","tksdonlineservice.in");
@@ -66,13 +67,23 @@ class JApplication {
     function reverseRecharge($param) {
         global $mysql;
         
-        if ($param['yourref']>0) {
-            $txnid = $param['yourref'];
-        } else {
-        $txnid = str_replace("web_x","",$param['yourref']);
-        $txnid = str_replace("web","",$param['yourref']);
-        $txnid = str_replace("webx","",$param['yourref']);
-        }
+       // if ($param['yourref']>0) {
+          //  $txnid = $param['yourref'];
+      //  } else {
+          //  $txnid = str_replace("web_x","",$param['yourref']);
+         //   $txnid = str_replace("web_x","",$param['yourref']);
+          //  $txnid = str_replace("web","",$param['yourref']);
+         //   $txnid = str_replace("webx","",$param['yourref']);
+            
+            $txnid = str_replace("w","",$param['yourref']);
+            $txnid = str_replace("e","",$txnid);
+            $txnid = str_replace("b","",$txnid);
+            $txnid = str_replace("x","",$txnid);
+            $txnid = str_replace("_","",$txnid);
+            
+            //$txnid = str_replace("webx","",$param['yourref']);
+          //  $txnid = (int)$param['yourref'];
+       // }
         //$txnid = str_replace("web_x","",$param['yourref']);
         //return $txnid;
         if ($param['status']=="FAILURE" ) {
@@ -102,7 +113,13 @@ class JApplication {
                                                                      "balance"     => $balance-$ac_cashback[0]['Credit'],
                                                                      "Voucher"     => "22"));   
              $mysql->execute("update _tbl_transactions set Cashback_ACtxnid_Reverse='".$Cashback_ACtxnid."' where `txnid`='".$txnid."'" );                                                       
-            return true;
+             
+             $member_info = $mysql->select("select * from _tbl_member where MemberID='".$t[0]['memberid']."'");
+             if (strlen($member_info[0]['TelegramID'])>2) {
+                 $message = "Dear ".$member_info[0]['MemberName'].", Your recharge transaction ".$ac[0]['Particulars']." with INR.".$ac[0]['TxnValue']." has been reversed. Your available balance. INR.".number_format($this->getBalance($t[0]['memberid']),2);
+                 TelegramMessageController::sendSMS($member_info[0]['TelegramID'],$message,0,0);  
+             }
+            return true;                               
         }
         
         if ($param['status']=="SUCCESS") {
@@ -110,7 +127,7 @@ class JApplication {
             return true;
         }
 
-        if ($param['status']=="RESPWAIT" || $param['status']=="SUSPENSE") {
+        if ($param['status']=="RESPWAIT" || $param['status']=="SUSPENSE"  || $param['status']=="PENDING") {
             $mysql->execute("update _tbl_transactions set `TxnStatus`='pending',`reverseResponse`='".implode(",",$param)."', `revDate`='".date("Y-m-d H:i:s")."' where `txnid`='".$txnid."'");
             return true;
         }
@@ -123,14 +140,14 @@ class JApplication {
         $error = 0;
         $result['number'] = $param['number'];
         $result['amount'] = $param['amount'];
-        $result['creditnote'] =0;
+        $result['creditnote'] =0;              
         
            $mysql->insert("reqTbl",array("txndate"        => date("Y-m-d H:i:s"),  
-                                          "memberid"       => $param['MemberID'],
-                                          "operatorcode"   => $param['operator'],
-                                          "rcnumber"       => $param['number'],
-                                          "rcamount"       => $param['amount'],
-                                          "OperatorNumber" => "0")); 
+                                         "memberid"       => $param['MemberID'],
+                                         "operatorcode"   => $param['operator'],
+                                         "rcnumber"       => $param['number'],
+                                         "rcamount"       => $param['amount'],
+                                         "OperatorNumber" => "0")); 
                                           
         $balance = $this->getBalance($param['MemberID']);
         
@@ -188,19 +205,19 @@ class JApplication {
                                                                      "balance"     => $balance-$param['amount']+($param['amount']*($cashback_commission[0]['IsCashback']/100)),
                                                                      "Voucher"     => "12"));        
          
-            $txnid = $mysql->insert("_tbl_transactions",array("txndate"        => date("Y-m-d H:i:s"),  
-                                                              "memberid"       => $param['MemberID'],
-                                                              "operatorcode"   => $param['operator'],
-                                                              "rcnumber"       => $param['number'],
-                                                              "rcamount"       => $param['amount'],
-                                                              "cashback"       => "0",
-                                                              "charge"         => "0",
-                                                              "OperatorNumber" => "0",                   
-                                                              "TxnStatus"      => "accepted",
-                                                              "ACtxnid"        => $ACtxnid,
+            $txnid = $mysql->insert("_tbl_transactions",array("txndate"          => date("Y-m-d H:i:s"),  
+                                                              "memberid"         => $param['MemberID'],
+                                                              "operatorcode"     => $param['operator'],
+                                                              "rcnumber"         => $param['number'],
+                                                              "rcamount"         => $param['amount'],
+                                                              "cashback"         => "0",
+                                                              "charge"           => "0",
+                                                              "OperatorNumber"   => "0",                   
+                                                              "TxnStatus"        => "accepted",
+                                                              "ACtxnid"          => $ACtxnid,
                                                               "Cashback_ACtxnid" => $Cashback_ACtxnid,
-                                                              "calledurl"      => "",
-                                                              "urlresponse"    => ""));
+                                                              "calledurl"        => "",
+                                                              "urlresponse"      => ""));
                                                               
            if (isset($param['markascredit']) && $param['markascredit']=="on") {
             $credit_note =    $mysql->insert("_tbl_user_credits",array("MemberID"=>$param['MemberID'],
@@ -228,9 +245,54 @@ class JApplication {
                 $response = Mars::sendRequest($param);
             } elseif ($api[0]['APIID']==2) {
                 $response = MRoboticsAPI::sendRequest($param);
+                
+                if ($response['status']=="failure") {
+                    
+                    if ((strtolower(trim($response['message']))==strtolower("no lapu is ON or Low Balance in Lapu")) || ($response['message']=="no lapu is ON or Low Balance in Lapu") ) {
+                        
+                        if ($param['operator']=="RB" || $param['operator']=="TB") {
+                            $mysql->execute("update _tbl_operators set APIID='4' where OperatorCode='RB'");
+                            TelegramMessageController::sendSMS(316574188,"Dear Admin: BSNL Topup/Recharge API has been auot-switched to ArranjuLapu",0,0);
+                            $response = AaranjuLapu::sendRequest($param);
+                        }
+                          
+                        if ($param['operator']=="RV") {
+                            $mysql->execute("update _tbl_operators set APIID='4' where OperatorCode='RV'");
+                            TelegramMessageController::sendSMS(316574188,"Dear Admin: Vodafone API has been auot-switched to ArranjuLapu",0,0);
+                            $response = AaranjuLapu::sendRequest($param);
+                        }
+                        
+                        if ($param['operator']=="DS") {
+                            $mysql->execute("update _tbl_operators set APIID='4' where OperatorCode='DS'");
+                            TelegramMessageController::sendSMS(316574188,"Dear Admin: SunDirect API has been auot-switched to ArranjuLapu",0,0);
+                            $response = AaranjuLapu::sendRequest($param);
+                        } 
+                        
+                        if ($param['operator']=="TA") {
+                            $mysql->execute("update _tbl_operators set APIID='4' where OperatorCode='TA'");
+                            TelegramMessageController::sendSMS(316574188,"Dear Admin: Airtel DigitalTV API has been auot-switched to ArranjuLapu",0,0);
+                            $response = AaranjuLapu::sendRequest($param);
+                        }
+                        
+                        if ($param['operator']=="DD") {
+                            $mysql->execute("update _tbl_operators set APIID='4' where OperatorCode='DD'");
+                            TelegramMessageController::sendSMS(316574188,"Dear Admin: DishTV API has been auot-switched to ArranjuLapu",0,0);
+                            $response = AaranjuLapu::sendRequest($param);
+                        }
+                        
+                        if ($param['operator']=="DV") {
+                            $mysql->execute("update _tbl_operators set APIID='4' where OperatorCode='DV'");
+                            TelegramMessageController::sendSMS(316574188,"Dear Admin: Videoond2h API has been auot-switched to ArranjuLapu",0,0);
+                            $response = AaranjuLapu::sendRequest($param);
+                        }
+                    }
+                }
+                
             } elseif ($api[0]['APIID']==3) {
                 $response = EzytmAPI::sendRequest($param);
-            } 
+            } elseif ($api[0]['APIID']==4) {
+                $response = AaranjuLapu::sendRequest($param);
+            }  
 
              if ($response['status']=="failure") {
                $result['status']="failure";
@@ -327,6 +389,13 @@ class JApplication {
                                                                      "Voucher"     => "42"));       
              $mysql->execute("update _tbl_transactions set Cashback_ACtxnid_Reverse='".$Cashback_ACtxnid."' where `txnid`='".$txnid."'" );
             }
+            
+            $member_info = $mysql->select("select * from _tbl_member where MemberID='".$t[0]['memberid']."'");
+             if (strlen($member_info[0]['TelegramID'])>2) {
+                 $message = "Dear ".$member_info[0]['MemberName'].", Your billpayment transaction ".$ac[0]['Particulars']." with INR.".$ac[0]['Debit']." has been reversed. Your available balance. INR.".number_format($this->getBalance($t[0]['memberid']),2);
+                 TelegramMessageController::sendSMS($member_info[0]['TelegramID'],$message,0,0);  
+             }
+             
             $error = "";
             return true;
         } else {
@@ -548,11 +617,14 @@ class JApplication {
                   }
                   $charge = $charge_count * 15;
                   //$wp="";
-                  
-    
+                  if($param['api']){
+                    $Particulars = "Charge/MoneyTansfer_IMPS/".$param['number']."/".$param['IFSCode'];    
+                  }else {
+                    $Particulars = "Charge/MoneyTansfer_NEFT/".$param['number']."/".$param['IFSCode'];
+                  }
                 $Cashback_ACtxnid = $mysql->insert("_tbl_accounts",array("TxnDate"     => date("Y-m-d H:i:s"),
                                                                          "memberid"    => $param['MemberID'],
-                                                                         "Particulars" => "Charge/MoneyTansfer/".$param['number']."/".$param['IFSCode'],
+                                                                         "Particulars" => $Particulars,
                                                                          "TxnValue"    => $param['amount'],
                                                                          "credit"      => "0",
                                                                          "debit"       => $charge,

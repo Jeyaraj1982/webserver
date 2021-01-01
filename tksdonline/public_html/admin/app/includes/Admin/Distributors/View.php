@@ -194,3 +194,42 @@
     </div>    
   
     
+    
+    <div class="row">
+        <div class="col-md-12 ">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="m-b-0 text-orange "><i class="mdi mdi-account-multiple-plus  p-r-10"></i>Wallet Auto update bank accounts </h4>
+                </div>
+                <div class="card-body">
+                           
+                          <div class="table-responsive">
+                            <table id="basic-datatables" class="display table table-striped table-hover" >
+                                                  
+                                <tbody>
+                                
+                                <?php $memberAccounts = $mysql->select("select * from _tbl_member_bankaccounts where MemberID='".$_GET['Distributor']."'");  ?>
+                                    <?php foreach ($memberAccounts as $b){ ?>
+                                    <tr>
+                                        
+                                        <td> <?php echo $b['AccountName'];?></td>
+                <td><?php echo $b['AccountNumber'];?></td>
+               <td> <?php echo $b['IFSCode'];?></td>
+                                    </tr>
+                                    <?php }?>  
+                            </tbody>
+                        </table>
+                      
+                     
+                   
+                    </div>
+                     
+                     
+                     
+                     
+                     
+                     
+                </div>
+            </div>
+        </div>
+    </div>

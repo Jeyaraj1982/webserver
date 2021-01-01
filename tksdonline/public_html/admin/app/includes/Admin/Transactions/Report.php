@@ -3,7 +3,7 @@ if (isset($_POST['Reverse'])) {
     $param['status']="FAILURE";
     $param['yourref']=$_POST['txnid']; 
     $param['reason']="admin did reverse";
-    print_r($param);
+    
       echo   $application->reverseRecharge($param)    ;
     ?>
     <script>
@@ -155,6 +155,7 @@ txn.memberid=mem.MemberID where date(txn.txndate)=date('".$reportDate."') ".$opt
                 </form>
                 
                                     <div class="table-responsive">
+                                    
                          <table onmousemove="updateid()" onmouseout="clearid()" onmousedown="updateid()" onmouseover="updateid()" onmouseup="updateid()" id="basic-datatables" class="display table table-striped table-hover" >
                             <thead>        
                                 <tr>
@@ -215,17 +216,22 @@ txn.memberid=mem.MemberID where date(txn.txndate)=date('".$reportDate."') ".$opt
                                 <tr>
                                     <td colspan="9">
                                      <div style="width:800px;height:100px;overflow:auto;border:1px solid #ccc;background:#fff9e5;padding:5px;">
-                                       Lapu response: &nbsp;<span style="color:#888;font-size:11px"><?php echo $request['urlresponse'];?></span>
+                                     <code>
+                                       Lapu response: &nbsp;<span style="color:#888;font-size:11px">
+                                       <?php echo htmlspecialchars($request['urlresponse']);?></span>
                                        <?php if (strlen($request['reverseResponse'])>150) {?>
                                        <br>
                                        Lapu callback response:
                                        <br>
-                                       <span style="color:#888;font-size:11px"><?php echo str_replace("br","hr style='padding:2px;margin:0px' ",$request['reverseResponse']);?></span>
+                                       <span style="color:#888;font-size:11px">
+                                       
+                                       <?php echo str_replace("br","hr style='padding:2px;margin:0px' ",$request['reverseResponse']);?></span>
                                        <?php } elseif (strlen($request['reverseResponse'])>1) {?>
                                        <br>
                                        Lapu callback response:
                                        <span style="color:#888;font-size:11px"><?php echo $request['reverseResponse'];?></span>
                                        <?php } ?>
+                                       </code>
                                       </div> 
                                        
                                     </td>

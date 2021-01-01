@@ -1,4 +1,4 @@
-<div class="page-inner">
+ <div class="page-inner">
                     <!-- Card -->
                     <h4 class="page-title">Dashboard</h4>
                   
@@ -155,7 +155,7 @@
                                     <div class="row">
                                         <div class="col-12 col-stats">
                                             <div class="numbers">
-                                                <p class="card-category">Today Recharge Sales</p>
+                                                <p class="card-category">Today Overall Sales</p>
                                                 <h4 class="card-title">
                                                 <?php
                                                 
@@ -169,6 +169,8 @@
                                 </div>
                             </div>
                         </div>
+                        
+                         
                     </div>
                 
                     
@@ -447,6 +449,14 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="row">
+                                    <?php
+                                        $apicode[0]="";
+                                        $apicode[1]="Mars";
+                                        $apicode[2]="MRoboticsAPI";
+                                        $apicode[3]="EzytmAPI";
+                                        $apicode[4]="AaranjuLapu";
+                                        
+                                    ?>
                                         <div class="col-md-12">
                                             <div class="table-responsive table-hover table-sales">
                                              <?php $dreport = $mysql->select("SELECT operatorcode, SUM(rcamount) AS amt FROM _tbl_transactions WHERE DATE(txndate)=DATE('".date("Y-m-d")."') AND TxnStatus='success' group by operatorcode"); ?>    
@@ -462,8 +472,22 @@
                                                         $o = $mysql->select("select * from _tbl_operators where OperatorCode='".$d['operatorcode']."'");
                                                         ?>
                                                     <tr>
-                                                        <td style="height:auto;padding:8px;"><?php echo $o[0]['OperatorName']." (".$d['operatorcode'].")";?></td>
-                                                        <td style="height:auto;padding:8px;text-align:right"><?php echo number_format($d['amt'],2);?></td>
+                                                        <td style="height:auto;padding:8px;vertical-align:top !important;font-weight:bold;"><?php echo $o[0]['OperatorName']." (".$d['operatorcode'].")";?><br>
+                                                        
+                                                       <?php $api_report = $mysql->select("SELECT  APIID, SUM(rcamount) AS amt FROM _tbl_transactions WHERE  operatorcode= '".$d['operatorcode']."' and DATE(txndate)=DATE('".date("Y-m-d")."') AND TxnStatus='success' group by APIID"); ?>    
+                                                       <div style="font-size:12px;font-weight:normal">
+                                                       <?php
+                                                        foreach($api_report as $ar) {
+                                                            if ($ar['APIID']>=1) {
+                                                            echo $apicode[$ar['APIID']]."-".$ar['amt']."<br>";
+                                                            }
+                                                        }
+                                                       ?>
+                                                       </div>
+                                                        
+                                                        
+                                                        </td>
+                                                        <td style="height:auto;padding:8px;text-align:right;vertical-align:top !important"><?php echo number_format($d['amt'],2);?></td>
                                                     </tr>
                                                     <?php } ?>
                                                 </tbody>
@@ -477,6 +501,161 @@
                                 </div>
                             </div>
                         </div>
+                        
+                        
+                        
+                        
+                        
+                  <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="card-head-row card-tools-still-right">
+                                        <h4 class="card-title">Distributors Summary</h4>
+                                        <!--<div class="card-tools">
+                                            <button class="btn btn-icon btn-link btn-primary btn-xs"><span class="fa fa-angle-down"></span></button>
+                                            <button class="btn btn-icon btn-link btn-primary btn-xs btn-refresh-card"><span class="fa fa-sync-alt"></span></button>
+                                            <button class="btn btn-icon btn-link btn-primary btn-xs"><span class="fa fa-times"></span></button>
+                                        </div>-->
+                                    </div>
+                                    <p class="card-category">
+                                    <?php echo date("M d, Y");?>
+                                     </p>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="table-responsive table-hover table-sales">
+                                             <?php  $Requests  = $mysql->select("SELECT * FROM _tbl_member where IsDistributor='1'" );  ?>
+                                              <table   class="table" >
+                                <thead>
+                                    <tr>
+                                        <th><b>Shop Name</b></th>
+                                        <th style="text-align: right;"><b>Balance</b></th>
+                                        <th style="text-align: right;"><b>Recharges</b></th>
+                                        <th style="text-align: right;"><b>Bill Payments</b></th>
+                                        <th style="text-align: right;"><b>IMPS</b></th>
+                                        <th style="text-align: right;"><b>Tickets</b></th>
+                                        <?php
+                                            $optrs = $mysql->select("select * from _tbl_operators");
+                                            foreach($optrs as $opt) {
+                                                /*
+                                                ?>
+                                                <th><?php echo $opt['OperatorCode'];?></th>
+                                                <?php
+                                                */
+                                            }
+                                        ?>
+                                    </tr>
+                                </thead>                    
+                                <tbody>
+                                    <?php
+                                    $TRSale=0;
+                                     foreach ($Requests as $Request){
+                                    
+                                     ?>
+                                    <tr>
+                                        <td style="height:auto;padding:8px;border:1px solid #ccc;">
+                                        <?php echo $Request['MemberName'];?>
+                                        </td>
+                                         
+                                        <td style="border:1px solid #ccc;text-align: right;height:auto;padding:8px;">
+                                        <?php
+                                             $mem = $mysql->select("select MemberID from _tbl_member where MapedTo='".$Request['MemberID']."'");
+                                        $bal =   $application->getBalance($Request['MemberID']);
+                                        
+                                        $t = 0;
+                                        foreach($mem as $m) {
+                                               $t+=$application->getBalance($m['MemberID']);
+                                        }
+                                        echo number_format($t+$application->getBalance($Request['MemberID']),2);                                                               
+                                        ?>
+                                        </td>
+                                        <td style="border:1px solid #ccc;text-align: right;height:auto;padding:8px;">
+                                            <?php
+                                                 $details =  $mysql->select("SELECT  SUM(rcamount) as rcamount FROM _tbl_transactions WHERE operatorcode in ('RA','RB','RVX','RI','RJ','RV','TA','DB','DD','DS','DT','DV') and  memberid='".$Request['MemberID']."' and  TxnStatus='success' and date(txndate)=date('".date("Y-m-d")."') ");
+                                                 $sdetails = $mysql->select("SELECT  SUM(rcamount) as rcamount FROM _tbl_transactions WHERE operatorcode in ('RA','RB','RVX','RI','RJ','RV','TA','DB','DD','DS','DT','DV') and  memberid in (select MemberID from _tbl_member where MapedTo='".$Request['MemberID']."') and  TxnStatus='success' and date(txndate)=date('".date("Y-m-d")."') ");
+                                                 $RSale =  ((isset($sdetails[0]['rcamount']) ? $sdetails[0]['rcamount']: "0.00" ) + (isset($details[0]['rcamount']) ? $details[0]['rcamount']: "0.00")) ;
+                                                 echo number_format($RSale,2)     ;
+                                                 $TRSale+=$RSale;
+                                            ?> 
+                                        </td>
+                                        
+                                           <td style="border:1px solid #ccc;text-align: right;height:auto;padding:8px;">
+                                            <?php
+                                                 $details = $mysql->select("SELECT  SUM(rcamount) as rcamount FROM _tbl_transactions WHERE operatorcode in ('BG','HPG','ING','LA','LB','ET','PA','PV','PJ','PB','IL','UTNP') and  memberid='".$Request['MemberID']."' and  TxnStatus='success' and date(txndate)=date('".date("Y-m-d")."') ");
+                                                 $sdetails = $mysql->select("SELECT  SUM(rcamount) as rcamount FROM _tbl_transactions WHERE operatorcode in ('BG','HPG','ING','LA','LB','ET','PA','PV','PJ','PB','IL','UTNP') and  memberid in (select MemberID from _tbl_member where MapedTo='".$Request['MemberID']."') and  TxnStatus='success' and date(txndate)=date('".date("Y-m-d")."') ");
+                                            ?>
+                                          <?php // echo isset($details[0]['rcamount']) ? number_format($details[0]['rcamount'],2): "0.00";?>
+                                            <?php // echo isset($sdetails[0]['rcamount']) ? number_format($sdetails[0]['rcamount'],2): "0.00";?> 
+                                            <?php echo number_format( ((isset($sdetails[0]['rcamount']) ? $sdetails[0]['rcamount']: "0.00" ) + (isset($details[0]['rcamount']) ? $details[0]['rcamount']: "0.00")) ,2) ;?> 
+                                        </td>
+                                        
+                                           <td style="border:1px solid #ccc;text-align: right;height:auto;padding:8px;">
+                                            <?php
+                                                 $details = $mysql->select("SELECT  SUM(rcamount) as rcamount FROM _tbl_transactions WHERE operatorcode in ('MTB') and  memberid='".$Request['MemberID']."' and  TxnStatus='success' and date(txndate)=date('".date("Y-m-d")."') ");
+                                                 $sdetails = $mysql->select("SELECT  SUM(rcamount) as rcamount FROM _tbl_transactions WHERE operatorcode in ('MTB') and  memberid in (select MemberID from _tbl_member where MapedTo='".$Request['MemberID']."') and  TxnStatus='success' and date(txndate)=date('".date("Y-m-d")."') ");
+                                            ?>
+                                           <?php // echo isset($details[0]['rcamount']) ? number_format($details[0]['rcamount'],2): "0.00";?>
+                                            <?php // echo isset($sdetails[0]['rcamount']) ? number_format($sdetails[0]['rcamount'],2): "0.00";?> 
+                                            <?php echo number_format( ((isset($sdetails[0]['rcamount']) ? $sdetails[0]['rcamount']: "0.00" ) + (isset($details[0]['rcamount']) ? $details[0]['rcamount']: "0.00")) ,2) ;?> 
+                                        </td>
+                                        
+                                          <td style="border:1px solid #ccc;text-align: right;height:auto;padding:8px;">
+                                            <?php
+                                                 $details = $mysql->select("SELECT  SUM(rcamount) as rcamount FROM _tbl_transactions WHERE operatorcode in ('BP') and  memberid='".$Request['MemberID']."' and  TxnStatus='success' and date(txndate)=date('".date("Y-m-d")."') ");
+                                                 $sdetails = $mysql->select("SELECT  SUM(rcamount) as rcamount FROM _tbl_transactions WHERE operatorcode in ('BP') and  memberid in (select MemberID from _tbl_member where MapedTo='".$Request['MemberID']."') and  TxnStatus='success' and date(txndate)=date('".date("Y-m-d")."') ");
+                                            ?>
+                                            <?php // echo isset($details[0]['rcamount']) ? number_format($details[0]['rcamount'],2): "0.00";?>
+                                            <?php //echo isset($sdetails[0]['rcamount']) ? number_format($sdetails[0]['rcamount'],2): "0.00";?> 
+                                            <?php echo number_format( ((isset($sdetails[0]['rcamount']) ? $sdetails[0]['rcamount']: "0.00" ) + (isset($details[0]['rcamount']) ? $details[0]['rcamount']: "0.00")) ,2) ;?> 
+                                            
+                                        </td>
+                                      
+ 
+                                             <?php
+                                             foreach($optrs as $opt) { /*
+                                                 $details = $mysql->select("SELECT  SUM(rcamount) as rcamount FROM _tbl_transactions WHERE operatorcode='".$opt['OperatorCode']."' and  memberid='".$Request['MemberID']."' and  TxnStatus='success' ");
+                                                 ?>
+                                                   <td style="border:1px solid #ccc;text-align: right;height:auto;padding:8px;">
+                                                   <?php echo $details[0]['rcamount'];?>
+                                                  </td>
+                                                 <?php
+                                                 */
+                                             }
+                                             ?>
+                                       
+                                         
+                                            
+                                                
+                                         
+                                        </td>
+                                    </tr>
+                                    <?php }?>  
+                                    <?php if(sizeof($Requests)=="0"){?>
+                                    <tr>
+                                        <td colspan="6" style="text-align: center;">No Datas Found</td>
+                                    </tr>
+                             <?php } else {?>  
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td style="text-align: right"><?php echo number_format($TRSale,2);?></td>
+                                </tr>
+                             <?php } ?>
+                            </tbody>
+                        </table>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>      
+                        
+                        
+                        
                         
                         <div class="col-md-12">
                             <div class="card">
@@ -543,7 +722,20 @@
                                             </div>
                                         </div>
                                         <div class="col-md-3">
-                                            
+                                            Jio POS Update
+                                            <?php
+                                                if (isset($_POST['jioposupdate'])) {
+                                                     $mysql->execute("update _temp_settings set paramvalue='".$_POST['jpos']."' where param='jpos'");
+                                                }
+                                                $d = $mysql->select("select * from _temp_settings where param='jpos' ");
+                                            ?>
+                                            <form action="" method="post">
+                                                <select name="jpos">
+                                                    <option value="1" <?php echo $d[0]['paramvalue']==1 ? ' selected="selected" ' : "";?>>>on</option>
+                                                    <option value="0" <?php echo $d[0]['paramvalue']==0 ? ' selected="selected" ' : "";?>>off</option>
+                                                </select>
+                                                <input type="submit" value="update" name="jioposupdate">
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
