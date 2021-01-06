@@ -94,7 +94,17 @@ class PageController extends BaseController
         $this->tags->og('description', $this->params['activities']['description']);
         $this->render('activities');
     }
-
+    
+  public function actionGalleryaicte()            
+    {
+        $this->tags->title($this->params['activities']['title']);
+        $this->tags->meta('keywords', $this->params['activities']['keywords']);
+        $this->tags->meta('description', $this->params['activities']['description']);
+        $this->tags->og('title', $this->params['activities']['title']);
+        $this->tags->og('description', $this->params['activities']['description']);
+        $this->render('galleryaicte');
+    } 
+ 
     public function actionOthers()
     {
         $this->tags->title($this->params['others']['title']);

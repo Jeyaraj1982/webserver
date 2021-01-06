@@ -125,9 +125,12 @@ class BaseController {
     }
 
     public function import($file, $data = null) {
+//         echo $file;
         $file = dirname(__DIR__) . DS . $file;
         if (file_exists($file)) {
             require_once $file;
+            //echo $file;
+            //echo "AS";
         } else {
             return ($_SERVER['APP_ENV'] == 'dev') ? 'File not found' . $file : '';
         }
@@ -139,6 +142,7 @@ class BaseController {
     }
 
     public function render($file, $data = null) {
+         
         $this->getHeader();
         $this->import($this->getTemplatePath() . $file . '.php', $data);
         $this->getFooter();

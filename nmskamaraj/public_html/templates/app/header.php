@@ -138,7 +138,13 @@
                                         <li><a href="<?= $_SERVER['BASE_URL']; ?>special-events-celebrations">Special Events And Celebrations</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="<?= $_SERVER['BASE_URL']; ?>gallery">Gallery</a> </li>
+                                <li><a href="#">GALLERY</a>
+                                    <ul class="dropdown">
+                                        <li><a href="<?= $_SERVER['BASE_URL']; ?>galleryaicte">AICTE</a></li>
+                                        <li><a href="<?= $_SERVER['BASE_URL']; ?>Gallery">CAMPUS</a> </li>
+                                    </ul>
+                                </li>
+                                <!--<li><a href="<?= $_SERVER['BASE_URL']; ?>gallery">Gallery</a> </li>-->
                                 <li><a href="<?= $_SERVER['BASE_URL']; ?>">Alumni</a> </li>
                                 <li><a href="<?= $_SERVER['BASE_URL']; ?>contact">Contact Us</a> </li>
 

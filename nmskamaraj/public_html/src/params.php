@@ -162,4 +162,14 @@ return [
         'keywords' => 'editsecondyear, Polytechnic College Terms',
         'description' => 'NMS Kamaraj Polytechnic College have Standard Terms of educational institution in Kanyakumari District',
     ],
+    'galleryaicte' => [
+        'title' => 'editsecondyear - NMS Kamaraj Polytechnic College | nmskamarajpolytechnic.com ',
+        'keywords' => 'editsecondyear, Polytechnic College Terms',       
+        'description' => 'NMS Kamaraj Polytechnic College have Standard Terms of educational institution in Kanyakumari District',
+    ],
+     'gallery' => [
+        'title' => 'editsecondyear - NMS Kamaraj Polytechnic College | nmskamarajpolytechnic.com ',
+        'keywords' => 'editsecondyear, Polytechnic College Terms',       
+        'description' => 'NMS Kamaraj Polytechnic College have Standard Terms of educational institution in Kanyakumari District',
+    ],
 ];
