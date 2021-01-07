@@ -47,6 +47,7 @@ if($_SESSION['USER']['isstaff']==0){
      
     <script src="<?php echo base_url;?>assets/js/webfont.min.js"></script>
     <script src="<?php echo base_url;?>assets/js/jquery.3.2.1.min.js"></script>
+    <script src="<?php echo base_url;?>assets/js/app.js"></script>
     <script src="<?php echo base_url;?>assets/js/validationkmdriven.js?rand=<?php echo rand(30,3000);?>"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script>
@@ -62,6 +63,7 @@ if($_SESSION['USER']['isstaff']==0){
     .cursor-hand{cursor:pointer;}
     .cursor-hand p{color:#333}
     .cursor-hand:hover {background:#f1f1f1}
+     .errorstring{width:100%;font-size:12px;color:red}  
 </style>
 <script>
     function goUrl(url) {

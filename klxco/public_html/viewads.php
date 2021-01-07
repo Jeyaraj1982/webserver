@@ -55,23 +55,25 @@
                     $filename = ((strlen(trim($ad['filepath1']))>4) && file_exists("assets/".$config['thumb'].$ad['filepath1'])) ? "./../../../assets/".$config['thumb'].$ad['filepath1'] : "../../assets/cms/".Jca::getAppSetting('noimage');
                    
                     
-                ?>
+                ?> 
+                
                  <div class="col-sm-6 col-lg-3" onclick="viewad('<?php echo $ad['postadid'];?>')">
                     <div class="card">
-               
                         <div class="p-2">
                             <img class="card-img-top rounded" src="<?php echo $filename;?>">
-                                 
-                            
-                                    
                         </div>
                        <div class="card-body pt-2">
                             <h3 class="mb-0 fw-bold">₹ <?php echo $ad['amount'];?></h3>
                             <p class="text-muted small mb-3"><?php echo $ad['title'];?></p>
-                            <p class="text-muted small m-0" style="font-size:11px;">
-                                <?php echo $ad['location'];?>
-                                <span style="float: right;"><?php echo date("M d",strtotime($ad['postedon']));?></span>
-                            </p>
+                              <p class="text-muted small m-0" style="font-size:11px;">
+                                    <?php
+                                    $city = JPostads::getCity($ad['cityid']);
+                                    $districtname = JPostads::getDistrict($ad['distcid']);
+                                     echo $districtname[0]['districtname']. " / ".$city[0]['cityname'];
+                                     ?>
+                                    <p class="postedon"><?php echo date("M d",strtotime($ad['postedon']));?></p>
+                                </p>
+                             
                         </div> 
                     </div>
                 </div>

@@ -67,6 +67,16 @@ function is_Numeric(acname) {
         }
         return false;
     }
+    function IsEmail(email) {
+        if (email.length==0) {
+            return false;
+        }
+        var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,8})$/
+        if (email.match(reg)) {
+            return true
+        }
+        return false;
+    }
 $(document).ready(function(){
         
         $("#title").blur(function() {
@@ -208,6 +218,29 @@ $(document).ready(function(){
                 } 
             });     
         <?php } ?>
+        <?php if($_SESSION['USER']['isstaff']==1){ ?>
+              $("#CustomerMobileNumber").blur(function() {
+                $('#ErrCustomerMobileNumber').html("");   
+                var CustomerMobileNumber = $('#CustomerMobileNumber').val().trim();
+                if (CustomerMobileNumber.length==0) {
+                    $('#ErrCustomerMobileNumber').html("Please Enter Customer Mobile Number"); 
+                }  
+            });    
+            
+            $("#CustomerEmailID").blur(function(){
+                var Email = $('#CustomerEmailID').val().trim();
+                 if(!(Email.length==0)) {
+                        if (!(IsEmail(Email))) {                                                            
+                            $('#ErrCustomerEmailID').html("Please Enter valid Email ID");
+                        }else {
+                            $('#ErrCustomerEmailID').html(""); 
+                        }
+                 }else{
+                      $('#ErrCustomerEmailID').html(""); 
+                 }
+            });
+             
+        <?php } ?>
 });
 function dovalidation() {
        $('#Errtitle').html("");   
@@ -222,6 +255,8 @@ function dovalidation() {
        $('#ErrModel').html("");
        $('#ErrVariant').html("");
        $('#ErrKMDriven').html("");
+        $('#ErrCustomerMobileNumber').html("");
+       $('#ErrCustomerEmailID').html("");
        
        error=0;
        
@@ -333,7 +368,25 @@ function dovalidation() {
                     }
                 } 
         <?php } ?>
-       
+        <?php if($_SESSION['USER']['isstaff']==1){ ?>
+                var CustomerMobileNumber = $('#CustomerMobileNumber').val().trim();
+                if (CustomerMobileNumber.length==0) {
+                    $('#ErrCustomerMobileNumber').html("Please Enter Customer Mobile Number"); 
+                    error++;
+                }
+                var Email = $('#CustomerEmailID').val().trim();
+                if(!(Email.length==0)) {
+                        if (!(IsEmail(Email))) {                                                            
+                            $('#ErrCustomerEmailID').html("Please Enter valid Email ID");
+                            error++;
+                        }else {
+                            $('#ErrCustomerEmailID').html(""); 
+                        }
+                 }else{
+                      $('#ErrCustomerEmailID').html(""); 
+                 }
+                
+        <?php } ?>
        if (error>0) {
             return false;
         }
@@ -374,10 +427,16 @@ function dovalidation() {
              }else {
                  $brandid= "0";
              }
+             $CustomerName= isset($_POST['CustomerName'])? $_POST['CustomerName'] : "0";
+             $CustomerMobileNumber= isset($_POST['CustomerMobileNumber'])? $_POST['CustomerMobileNumber'] : "0";
+             $CustomerEmailID= isset($_POST['CustomerEmailID'])? $_POST['CustomerEmailID'] : "0";
             if($pageContent[0]['subcateid']=="96"){                   
-                $postedadid = $mysql->execute("update _jpostads set `title`     ='".$_POST['title']."', 
-                                                                    `content`   ='".str_replace("'","\\'",$_POST['content'])."',
-                                                                    `amount`    ='".$_POST['amount']."',
+                $postedadid = $mysql->execute("update _jpostads set `title`                 ='".$_POST['title']."', 
+                                                                    `content`               ='".str_replace("'","\\'",$_POST['content'])."',
+                                                                    `amount`                ='".$_POST['amount']."',
+                                                                    `CustomerName`          ='".$CustomerName."',
+                                                                    `CustomerMobileNumber`  ='".$CustomerMobileNumber."',
+                                                                    `CustomerEmailID`       ='".$CustomerEmailID."',
                                                                     `filepath1` ='".trim($_POST['uploadimage1'])."',
                                                                     `filepath2` ='".trim($_POST['uploadimage2'])."',
                                                                     `filepath3` ='".trim($_POST['uploadimage3'])."',
@@ -397,6 +456,9 @@ function dovalidation() {
                                                                     `title`       ='".$_POST['title']."', 
                                                                     `content`     ='".str_replace("'","\\'",$_POST['content'])."',
                                                                     `amount`      ='".$_POST['amount']."',
+                                                                    `CustomerName`          ='".$CustomerName."',
+                                                                    `CustomerMobileNumber`  ='".$CustomerMobileNumber."',
+                                                                    `CustomerEmailID`       ='".$CustomerEmailID."',
                                                                     `filepath1`   ='".trim($_POST['uploadimage1'])."',
                                                                     `filepath2`   ='".trim($_POST['uploadimage2'])."',
                                                                     `filepath3`   ='".trim($_POST['uploadimage3'])."',
@@ -412,6 +474,9 @@ function dovalidation() {
                                                                     `title`       ='".$_POST['title']."', 
                                                                     `content`     ='".str_replace("'","\\'",$_POST['content'])."',
                                                                     `amount`      ='".$_POST['amount']."',
+                                                                    `CustomerName`          ='".$CustomerName."',
+                                                                    `CustomerMobileNumber`  ='".$CustomerMobileNumber."',
+                                                                    `CustomerEmailID`       ='".$CustomerEmailID."',
                                                                     `filepath1`   ='".trim($_POST['uploadimage1'])."',
                                                                     `filepath2`   ='".trim($_POST['uploadimage2'])."',
                                                                     `filepath3`   ='".trim($_POST['uploadimage3'])."',
@@ -426,6 +491,9 @@ function dovalidation() {
                                                                     `title`       ='".$_POST['title']."',
                                                                     `content`     ='".str_replace("'","\\'",$_POST['content'])."',
                                                                     `amount`      ='".$_POST['amount']."',
+                                                                    `CustomerName`          ='".$CustomerName."',
+                                                                    `CustomerMobileNumber`  ='".$CustomerMobileNumber."',
+                                                                    `CustomerEmailID`       ='".$CustomerEmailID."',
                                                                     `filepath1`   ='".trim($_POST['uploadimage1'])."',
                                                                     `filepath2`   ='".trim($_POST['uploadimage2'])."',
                                                                     `filepath3`   ='".trim($_POST['uploadimage3'])."',
@@ -437,6 +505,9 @@ function dovalidation() {
                                                                     `title`       ='".$_POST['title']."',
                                                                     `content`     ='".str_replace("'","\\'",$_POST['content'])."',
                                                                     `amount`      ='".$_POST['amount']."',
+                                                                    `CustomerName`          ='".$CustomerName."',
+                                                                    `CustomerMobileNumber`  ='".$CustomerMobileNumber."',
+                                                                    `CustomerEmailID`       ='".$CustomerEmailID."',
                                                                     `filepath1`   ='".trim($_POST['uploadimage1'])."',
                                                                     `filepath2`   ='".trim($_POST['uploadimage2'])."',
                                                                     `filepath3`   ='".trim($_POST['uploadimage3'])."',
@@ -450,6 +521,9 @@ function dovalidation() {
                                                                     `title`       ='".$_POST['title']."',
                                                                     `content`     ='".str_replace("'","\\'",$_POST['content'])."',
                                                                     `amount`      ='".$_POST['amount']."',
+                                                                    `CustomerName`          ='".$CustomerName."',
+                                                                    `CustomerMobileNumber`  ='".$CustomerMobileNumber."',
+                                                                    `CustomerEmailID`       ='".$CustomerEmailID."',
                                                                     `filepath1`   ='".trim($_POST['uploadimage1'])."',
                                                                     `filepath2`   ='".trim($_POST['uploadimage2'])."',
                                                                     `filepath3`   ='".trim($_POST['uploadimage3'])."',
@@ -473,6 +547,9 @@ function dovalidation() {
                 $postedadid = $mysql->execute("update _jpostads set `title`       ='".$_POST['title']."',
                                                                     `content`     ='".str_replace("'","\\'",$_POST['content'])."',
                                                                     `amount`      ='".$_POST['amount']."',
+                                                                    `CustomerName`          ='".$CustomerName."',
+                                                                    `CustomerMobileNumber`  ='".$CustomerMobileNumber."',
+                                                                    `CustomerEmailID`       ='".$CustomerEmailID."',
                                                                     `filepath1`   ='".trim($_POST['uploadimage1'])."',               
                                                                     `filepath2`   ='".trim($_POST['uploadimage2'])."',
                                                                     `filepath3`   ='".trim($_POST['uploadimage3'])."',
@@ -500,6 +577,9 @@ function dovalidation() {
                                                                     `title`             ='".$_POST['title']."',
                                                                     `content`           ='".str_replace("'","\\'",$_POST['content'])."',
                                                                     `amount`            ='".$_POST['amount']."',
+                                                                    `CustomerName`          ='".$CustomerName."',
+                                                                    `CustomerMobileNumber`  ='".$CustomerMobileNumber."',
+                                                                    `CustomerEmailID`       ='".$CustomerEmailID."',
                                                                     `filepath1`         ='".trim($_POST['uploadimage1'])."',
                                                                     `filepath2`         ='".trim($_POST['uploadimage2'])."',
                                                                     `filepath3`         ='".trim($_POST['uploadimage3'])."',
@@ -517,6 +597,9 @@ function dovalidation() {
                                                                     `title`             ='".$_POST['title']."',
                                                                     `content`           ='".str_replace("'","\\'",$_POST['content'])."',
                                                                     `amount`            ='".$_POST['amount']."',
+                                                                    `CustomerName`          ='".$CustomerName."',
+                                                                    `CustomerMobileNumber`  ='".$CustomerMobileNumber."',
+                                                                    `CustomerEmailID`       ='".$CustomerEmailID."',
                                                                     `filepath1`         ='".trim($_POST['uploadimage1'])."',
                                                                     `filepath2`         ='".trim($_POST['uploadimage2'])."',
                                                                     `filepath3`         ='".trim($_POST['uploadimage3'])."',
@@ -541,6 +624,9 @@ function dovalidation() {
                                                                     `title`             ='".$_POST['title']."',
                                                                     `content`           ='".str_replace("'","\\'",$_POST['content'])."',
                                                                     `amount`            ='".$_POST['amount']."',
+                                                                    `CustomerName`          ='".$CustomerName."',
+                                                                    `CustomerMobileNumber`  ='".$CustomerMobileNumber."',
+                                                                    `CustomerEmailID`       ='".$CustomerEmailID."',
                                                                     `filepath1`         ='".trim($_POST['uploadimage1'])."',
                                                                     `filepath2`         ='".trim($_POST['uploadimage2'])."',
                                                                     `filepath3`         ='".trim($_POST['uploadimage3'])."',
@@ -559,6 +645,9 @@ function dovalidation() {
                                                                     `title`             ='".$_POST['title']."',
                                                                     `content`           ='".str_replace("'","\\'",$_POST['content'])."',
                                                                     `amount`            ='".$_POST['amount']."',
+                                                                    `CustomerName`          ='".$CustomerName."',
+                                                                    `CustomerMobileNumber`  ='".$CustomerMobileNumber."',
+                                                                    `CustomerEmailID`       ='".$CustomerEmailID."',
                                                                     `filepath1`         ='".trim($_POST['uploadimage1'])."',
                                                                     `filepath2`         ='".trim($_POST['uploadimage2'])."',
                                                                     `filepath3`         ='".trim($_POST['uploadimage3'])."',
@@ -573,6 +662,9 @@ function dovalidation() {
                                                                     `title`             ='".$_POST['title']."',
                                                                     `content`           ='".str_replace("'","\\'",$_POST['content'])."',
                                                                     `amount`            ='".$_POST['amount']."',
+                                                                    `CustomerName`          ='".$CustomerName."',
+                                                                    `CustomerMobileNumber`  ='".$CustomerMobileNumber."',
+                                                                    `CustomerEmailID`       ='".$CustomerEmailID."',
                                                                     `filepath1`         ='".trim($_POST['uploadimage1'])."',
                                                                     `filepath2`         ='".trim($_POST['uploadimage2'])."',
                                                                     `filepath3`         ='".trim($_POST['uploadimage3'])."',
@@ -588,6 +680,9 @@ function dovalidation() {
                                                                     `title`             ='".$_POST['title']."',
                                                                     `content`           ='".str_replace("'","\\'",$_POST['content'])."',
                                                                     `amount`            ='".$_POST['amount']."',
+                                                                    `CustomerName`          ='".$CustomerName."',
+                                                                    `CustomerMobileNumber`  ='".$CustomerMobileNumber."',
+                                                                    `CustomerEmailID`       ='".$CustomerEmailID."',
                                                                     `filepath1`         ='".trim($_POST['uploadimage1'])."',
                                                                     `filepath2`         ='".trim($_POST['uploadimage2'])."',
                                                                     `filepath3`         ='".trim($_POST['uploadimage3'])."',
@@ -602,6 +697,9 @@ function dovalidation() {
                                                                     `title`             ='".$_POST['title']."',
                                                                     `content`           ='".str_replace("'","\\'",$_POST['content'])."',
                                                                     `amount`            ='".$_POST['amount']."',
+                                                                    `CustomerName`          ='".$CustomerName."',
+                                                                    `CustomerMobileNumber`  ='".$CustomerMobileNumber."',
+                                                                    `CustomerEmailID`       ='".$CustomerEmailID."',
                                                                     `filepath1`         ='".trim($_POST['uploadimage1'])."',
                                                                     `filepath2`         ='".trim($_POST['uploadimage2'])."',
                                                                     `filepath3`         ='".trim($_POST['uploadimage3'])."',                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
@@ -781,6 +879,33 @@ function dovalidation() {
                         </div>
                     </div>
                 </div>
+                <?php if($_SESSION['USER']['isstaff']==1){ ?>       
+                <div class="card" style="box-shadow:none;border: 1px solid #e5e5e5;margin-bottom:15px ;">
+                    <div class="card-body d">
+                        <div class="row mb-2">
+                            <div class="col-sm-12">
+                                <label>Customer Name</label>
+                                <input type="text" class="form-control" name="CustomerName" id="CustomerName"  value="<?php echo isset($_POST['CustomerName']) ? $_POST['CustomerName'] : $pageContent[0]['CustomerName']; ?>">
+                                <div class="errorstring" id="ErrCustomerName"><?php echo isset($ErrCustomerName)? $ErrCustomerName : "";?></div>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-sm-12">
+                                <label>Customer Mobile Number<span style="color: red;">*</span></label>
+                                <input type="text" class="form-control" name="CustomerMobileNumber" id="CustomerMobileNumber" value="<?php echo isset($_POST['CustomerMobileNumber']) ? $_POST['CustomerMobileNumber'] : $pageContent[0]['CustomerMobileNumber']; ?>">
+                                <div class="errorstring" id="ErrCustomerMobileNumber"><?php echo isset($ErrCustomerMobileNumber)? $ErrCustomerMobileNumber : "";?></div>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-sm-12">
+                                <label>Customer Email ID</label>
+                                <input type="text" class="form-control" name="CustomerEmailID" id="CustomerEmailID"  value="<?php echo isset($_POST['CustomerEmailID']) ? $_POST['CustomerEmailID'] :  $pageContent[0]['CustomerEmailID']; ?>">
+                                <div class="errorstring" id="ErrCustomerEmailID"><?php echo isset($ErrCustomerEmailID)? $ErrCustomerEmailID : "";?></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <?php } ?>
                 <div class="">
                     <div class="">
                         <div class="row mb-2">

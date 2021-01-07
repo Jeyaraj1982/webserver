@@ -108,11 +108,11 @@
                                     <!--<p style="text-align: center;;font-size:11px;">Photo Ads</p>-->
                                     <p style="text-align: center;;font-size:11px;">Digital Jobs</p>
                                 </div>
-                                <div class="col-4 cursor-hand" onclick="location.href='https://www.klx.co.in/businessads.php'"  style="padding-right:0px">
+                                <div class="col-4 cursor-hand" onclick="location.href='https://www.klx.co.in/businessoffers.php'"  style="padding-right:0px">
                                     <div style="border:none;background:#bfa8ff;border-radius:50%;padding:16px;height: 64px;width: 64px;margin:0px auto;">
                                         <img src="<?php echo base_url;?>assets/icons/ads.png" style=""> 
                                     </div>
-                                    <p style="text-align: center;;font-size:11px;">Business Ads</p>
+                                    <p style="text-align: center;;font-size:11px;">Business Offer</p>
                                 </div>
                             </div>
                         </div>
@@ -177,7 +177,15 @@
                         <div>
                         <?php echo $p; ?>
                         <div class="p-2" style="text-align: center" onclick="viewad('<?php echo $ad['postadid']."-".parseTextToURL($ad['title']);?>')">
-                            <img class="card-img-top rounded adImage" src="<?php echo base_url;?><?php echo ((strlen(trim($ad['filepath1']))>4) && file_exists("assets/".$config['thumb'].$ad['filepath1'])) ? "assets/".$config['thumb'].$ad['filepath1'] : "assets/cms/".Jca::getAppSetting('noimage');?>" alt="Product 7" >
+                        <?php
+                        $path =  ((strlen(trim($ad['filepath1']))>4) && file_exists("assets/".$config['thumb'].$ad['filepath1'])) ? "assets/".$config['thumb'].$ad['filepath1'] : "assets/cms/".Jca::getAppSetting('noimage');
+                         //   $path = 'myfolder/myimage.png';
+//$type = pathinfo($path, PATHINFO_EXTENSION);
+//$data = file_get_contents($path);
+//$base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
+                        ?>
+                            <img class="card-img-top rounded adImage" src="<?php echo base_url;?><?php echo $path;?>" alt="Product 7" >
+                            <!--<img class="card-img-top rounded adImage" src="<?php echo base_url;?><?php echo ((strlen(trim($ad['filepath1']))>4) && file_exists("assets/".$config['thumb'].$ad['filepath1'])) ? "assets/".$config['thumb'].$ad['filepath1'] : "assets/cms/".Jca::getAppSetting('noimage');?>" alt="Product 7" >-->
                         </div>
                         <div class="card-body pt-2">
                         <?php if ($ad['categid']==5) { ?>

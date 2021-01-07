@@ -16,6 +16,7 @@ RewriteRule ^in/PasswordSaved PasswordSaved.php?country=in
 
 RewriteRule ^in/freeadpost freeadpost.php?country=in 
 RewriteRule ^in/postad/(.*)$ postad.php?country=in&subc=$1 
+RewriteRule ^in/postadnew/(.*)$ postadnew.php?country=in&subc=$1
 
 RewriteRule ^in/freeadpost1 freeadpost1.php?country=in 
 RewriteRule ^in/sc(.*)$ subcategory.php?country=in&a=$1 
@@ -40,12 +41,18 @@ RewriteRule ^in/myactiveads myactiveads.php?country=in
 RewriteRule ^in/updatemobile updatemobile.php?country=in
 RewriteRule ^in/mobileverification mobileverification.php?country=in
 RewriteRule ^in/emailverification emailverification.php?country=in
- 
 RewriteRule ^in/changepassword changepassword.php?country=in
 RewriteRule ^in/edit/e(.*)$ myadedit.php?country=in&ad=$1
 RewriteRule ^in/editadd/edit(.*)$ editadd.php?country=in&ad=$1
 RewriteRule ^in/view/m(.*)$ viewmyad.php?country=in&ad=$1 
 RewriteRule ^in/adview/m(.*)$ adview.php?country=in&ad=$1
+
+RewriteRule ^in/addproduct addproduct.php?country=in
+RewriteRule ^in/products products.php?country=in
+RewriteRule ^in/edit/pe(.*)$ editproduct.php?country=in&ad=$1
+RewriteRule ^in/view/pv(.*)$ viewuserproduct.php?country=in&ad=$1 
+RewriteRule ^in/viewproductsummary viewproductsummary.php?country=in
+
 
 RewriteRule ^in/moreresponse/a(.*)$ moreresponse.php?country=in&ad=$1
 RewriteRule ^in/moreresponse/payu(.*)$ payment.php?country=in&ad=$1  [QSA,L]

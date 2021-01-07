@@ -1,5 +1,5 @@
 RewriteRule ^c(.*)-(.*)$ card.php?id=$2
-RewriteRule ^r-(.*)$ resume.php?id=$1
+RewriteRule ^r(.*)-(.*)$ resume.php?id=$2
 
 <IfModule php7_module>
    php_flag display_errors Off

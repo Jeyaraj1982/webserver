@@ -5,7 +5,7 @@
         if(isset($_POST{"save"})) {
   
             
-        $param=array("mobile"=>$_POST['mobile'],"email"=>$_POST['email'],"personname"=>$_POST['personname'],"pwd"=>$_POST['pwd']);
+        $param=array("countryid"=>$_POST['countryid'],"mobile"=>$_POST['mobile'],"email"=>$_POST['email'],"personname"=>$_POST['personname'],"pwd"=>$_POST['pwd']);
         
     
              
@@ -13,9 +13,9 @@
             echo $obj->printError("Email is already Exists") ;
             
         }
-        //if (sizeof($mysql->select("select * from _jusertable where upper(mobile)='".strtoupper(trim($_POST['mobile']))."'"))>0) {
-          //  echo $obj->printError("Phone No. is already Exists") ;
-        //}
+        if (sizeof($mysql->select("select * from _jusertable where upper(mobile)='".strtoupper(trim($_POST['mobile']))."'"))>0) {
+            echo $obj->printError("Phone No. is already Exists") ;
+        }
         
         if (strlen(trim($_POST['pwd']))>=8) {
                        
@@ -51,10 +51,14 @@
             //echo $obj->printError("District Name Shouldn't be blank");
             } 
             
+            if(!($_POST['mobile']<9999999999 && $_POST['mobile']>6000000000))   {
+                echo $obj->printError("Invalid mobile number");    
+            }
+            
            if ($obj->err==0) {    
            if (JUsertable::addUser($param)>0) {
                
-               $record = $mysql->select("select * from _jusertable where (email='".trim($_POST['email'])."' or  mobile='".trim($_POST['email'])."') and pwd='".trim($_POST['pwd'])."'");
+               $record = $mysql->select("select * from _jusertable where (email='".trim($_POST['email'])."' or  mobile='".trim($_POST['mobile'])."') and pwd='".trim($_POST['pwd'])."'");
           
                 $_SESSION['USER'] = $record[0];
                
@@ -141,7 +145,18 @@ function showHidePwd(pwd,btn) {
                 <div class="form-group form-floating-label">
                     <input  id="email" name="email" type="email"  value="<?php echo $_POST['email'];?>" class="form-control input-border-bottom" required>
                     <label for="email" class="placeholder">Email</label>
-                </div>   
+                </div>
+                <div class="form-group row form-floating-label" style="padding-right:0px">
+                    <div class="col-4">
+                        <select name="countryid" class="form-control input-border-bottom" style="-webkit-appearance:none;padding-left:0px;padding-right: 0px;border:none;border-bottom: 1px solid #ebedf2;"> 
+                            <option value="1">India (+91)</option>
+                        </select>    
+                     </div>
+                    <div class="col-8">
+                        <input id="mobile" name="mobile" value="<?php echo $_POST['mobile'];?>" style="padding-left:0px" maxlength="10" type="text" class="form-control input-border-bottom onlynumeric" required>
+                        <label for="mobile" class="placeholder">Mobile Number</label>
+                    </div>
+                </div>
                 <div class="form-group form-floating-label">
                     <input  id="passwordsignin" name="pwd" type="password" value="<?php echo $_POST['pwd'];?>" class="form-control input-border-bottom" required>
                     <label for="passwordsignin" class="placeholder">Password</label>
@@ -149,7 +164,6 @@ function showHidePwd(pwd,btn) {
                         <a href="javascript:void(0);" onclick="showHidePwd('passwordsignin',$(this))" style="text-decoration:none;"><i class="icon-eye"></i></a>
                     </div>
                 </div>
-                 
                 <div class="row form-sub m-0">
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" name="agree" <?php echo ($_POST['agree']=="on") ? "checked='checked'" : "";?> id="agree" required>
@@ -171,6 +185,24 @@ function showHidePwd(pwd,btn) {
       <script src="<?php echo base_url;?>assets/js/jquery.3.2.1.min.js"></script>
     
     <script src="<?php echo base_url;?>assets/js/bootstrap.min.js"></script>
-   
+  <script>
+  $(document).ready(function() {
+   $(".onlynumeric").keydown(function (e) {
+       // Allow: backspace, delete, tab, escape, enter and .
+       if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
+            // Allow: Ctrl+A, Command+A
+           (e.keyCode === 65 && (e.ctrlKey === true || e.metaKey === true)) || 
+            // Allow: home, end, left, right, down, up
+           (e.keyCode >= 35 && e.keyCode <= 40)) {
+                // let it happen, don't do anything
+                return;
+       }
+       // Ensure that it is a number and stop the keypress
+       if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+           e.preventDefault();
+       }
+   });
+});
+  </script> 
 </body>
 </html>

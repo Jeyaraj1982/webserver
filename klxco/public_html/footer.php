@@ -125,7 +125,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
 	<!--<script src="assets/js/demo.js"></script>-->
      
-    
+     
     <div id="tmp"></div>
     <!--<p id = "status"></p>
     <a id = "map-link" target="_blank"></a>-->

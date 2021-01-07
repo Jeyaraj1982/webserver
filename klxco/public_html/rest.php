@@ -18,7 +18,17 @@ echo $_GET['action']();
         } 
     
         $u = $mysql->select("select * from _jusertable where userid='".$adid[0]['postedby']."'");
-        $returnData = "<div>email: ".$u[0]['email']."<br>mobile: ".$u[0]['mobile']."</div>";
+        if($adid[0]['CustomerEmailID']==""){
+            $email = $u[0]['email'];
+        }else{
+            $email = $adid[0]['CustomerEmailID'];
+        } 
+        if($adid[0]['CustomerMobileNumber']==""){
+            $mobile = $u[0]['mobile'];
+        }else{
+            $mobile = $adid[0]['CustomerMobileNumber']; 
+        }
+        $returnData = "<div>email: ".$email."<br>mobile: ".$mobile."</div>";
         return "<script>$('#contactinfo').html('".$returnData."');</script>";
     }
     function addToFavourite() {

@@ -414,12 +414,9 @@ include_once("config.php");
     function moreads() {
             global $config,$mysql;
             
-            if (isset($_GET['s'])) {
-                $ads = JPostads::getAds(1,0,$_GET['cnt']*24,24,$_GET['s']);
-            } else {
-            $ads = JPostads::getAds(1,$_GET['d'],$_GET['cnt']*24,24,0);    
-            }
-            
+            $d = isset($_GET['d']) ? $_GET['d'] : 0;
+            $s = isset($_GET['s']) ? $_GET['s'] : 0;
+            $ads = JPostads::getAds(1,$d,$_GET['cnt']*24,24,$s);    
             
             if (true) 
             {
@@ -460,7 +457,11 @@ include_once("config.php");
                             <div  onclick="viewad('<?php echo $ad['postadid'];?>')">
                                 <p class="text-muted small mb-3 description_level1" style="height:60px !important"><?php echo  substr($ad['title'],0,60);?> <?php echo strlen($ad['title'])>60 ? "..." : "";?></p>
                                 <p class="text-muted small m-0" style="font-size:11px;">
-                                    <?php echo $ad['location'];?>
+                                     <?php
+                                    $city = JPostads::getCity($ad['cityid']);
+                                    $districtname = JPostads::getDistrict($ad['distcid']);
+                                     echo $districtname[0]['districtname']. " / ".$city[0]['cityname'];
+                                     ?>
                                     <p class="postedon"><?php echo date("M d",strtotime($ad['postedon']));?></p>
                                 </p>
                             </div>
@@ -468,30 +469,9 @@ include_once("config.php");
                         </div>
                         </a>
                     </div>
-                    <!--
-                  
-                  <a href="<?php echo path_url."v".$ad['postadid']."-".parseTextToURL($ad['title']);?>">
-                    <div class="card adbox">                                      
-                        <div class="p-2" style="text-align: center" onclick="viewad('<?php echo $ad['postadid']."-".parseTextToURL($ad['title']);?>')">
-                            <img class="card-img-top rounded adImage" src="<?php echo base_url;?><?php echo ((strlen(trim($ad['filepath1']))>4) && file_exists("assets/".$config['thumb'].$ad['filepath1'])) ? "assets/".$config['thumb'].$ad['filepath1'] : "assets/cms/".Jca::getAppSetting('noimage');?>" alt="Product 7" >
-                        </div>
-                        <div class="card-body pt-2">
-                            <h3 class="mb-0 fw-bold">₹ <?php echo $ad['amount'];?>
-                            <span style="float:right"  onclick="likead('<?php echo md5($ad['postadid']."jEyArAj[at]DeVeLoPeR");?>')"><i class="flaticon-like"></i></span>
-                            </h3>
-                            <div  onclick="viewad('<?php echo $ad['postadid'];?>')">
-                                <p class="text-muted small mb-3 description_level1" style="height:60px !important"><?php echo  substr($ad['title'],0,60);?> <?php echo strlen($ad['title'])>60 ? "..." : "";?></p>
-                                <p class="text-muted small m-0" style="font-size:11px;">
-                                    <?php echo $ad['location'];?>
-                                    <p class="postedon"><?php echo date("M d",strtotime($ad['postedon']));?></p>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    </a>  -->
                   </div>
                 <?php } ?>
-                <script>cnt=2;</script>
+                
     <?php } else {?>
         <script>$('#loadmore').hide();</script>
     <?php } ?>
@@ -851,6 +831,9 @@ function deleteModelName() {
             $errorMessage1= "";
             $packagetxt = "";
             $total_free_ads_incurrent_category = $mysql->select("Select * from _jpostads where AdPackageID='0' and UserPackageID='0' and postedby='".$_SESSION['USER']['userid']."' and categid='".$slsubcategory[0]['categid']."'");                 
+            $adType="free";
+            if(!($_SESSION['USER']['isstaff'])==1){
+            
             if (sizeof($total_free_ads_incurrent_category)<4) {
                 $adType="free";
             } else {
@@ -860,6 +843,7 @@ function deleteModelName() {
                 } else {
                     return json_encode(array("status"=>"failure","message"=>'Your free limit has completed, Upgrade package and continue to post ads.<a href="https://www.klx.co.in/in/upgrade/c0" class="btn btn-primary btn-sm">View Packages</a>'));
                 }
+            }
             }
             $param=array("categid"      => $slcategory[0]['categid'],
                          "subcategory"  => $slsubcategory[0]['subcateid'],
@@ -905,6 +889,19 @@ function deleteModelName() {
             $Varient            = isset($_POST['Varient'])? $_POST['Varient'] : "0";
             $Model              = isset($_POST['Model'])? $_POST['Model'] : "0";
             $brandid            = ($_GET['subc']=="2" || $_GET['subc']=="96" || $_GET['subc']=="61" ) ? $_POST['Brand'] : "0";
+            
+            if($_SESSION['USER']['isstaff']==1){
+                $CustomerName= isset($_POST['CustomerName'])? $_POST['CustomerName'] : "0";
+                $CustomerMobileNumber= isset($_POST['CustomerMobileNumber'])? $_POST['CustomerMobileNumber'] : "0";
+                $CustomerEmailID= isset($_POST['CustomerEmailID'])? $_POST['CustomerEmailID'] : "0";    
+                
+            }else {
+                $CustomerName=$_SESSION['USER']['personname'];
+                $CustomerMobileNumber= $_SESSION['USER']['mobile'];
+                $CustomerEmailID= $_SESSION['USER']['email'];  
+            }
+            
+             
             
             if (isset($_POST['Model'])) {
                 if (intval($_POST['Model'])>0) {
@@ -973,8 +970,17 @@ function deleteModelName() {
                                                                "MealsIncluded"       => $MealsIncluded,
                                                                "Model"               => $Model,
                                                                "Variant"             => $Varient,
+                                                               "CustomerName"          => $CustomerName,
+                                                               "CustomerMobileNumber"  => $CustomerMobileNumber,
+                                                               "CustomerEmailID"       => $CustomerEmailID,
                                                                "postedon"            => date("Y-m-d H:i:s"),
                                                                "postedby"            => $param['postedby']));  
+                                                               
+                if($_SESSION['USER']['isstaff']==1){  
+                    $adType="free";
+                    MobileSMS::sendSMS($_POST['CustomerMobileNumber'],"Your Ad Posted on Klx.co.in Your klx ad link ".path_url."v".$postedadid."-".$title." You can post more your ads this website, its totally free",$_SESSION['USER']['userid']); 
+                }
+                 
                if ($adType!="free") {
                 $availableads = $mysql->select("select * from _tbl_user_packages where UserID='".$_SESSION['USER']['userid']."' and CategoryID='".$slsubcategory[0]['categid']."' and PostedAds<=NumberOfAds and date('".date("Y-m-d")."')<=date(PackageTo)");
                 if (sizeof($availableads)>0) {
@@ -1141,4 +1147,28 @@ function FranchiseeWithdrawalRequest() {
     }
     return json_encode($result); 
 } 
+function DeleteProduct() {
+    
+    global $mysql;
+    
+      $id=$mysql->execute("DELETE FROM _tbl_products where ProductID='".$_POST['ProductID']."'");
+     
+        $result = array();
+        $result['status']="Success";
+        $result['message']="Product Deleted.";  
+        return json_encode($result);
+    
+    }
+function DeleteUserProduct() {
+    
+    global $mysql;
+    
+      $id= $mysql->execute("update _tbl_products set IsDeleted='1' where ProductID='".$_POST['ProductID']."'");
+     
+        $result = array();
+        $result['status']="Success";
+        $result['message']="Product Deleted.";  
+        return json_encode($result);
+    
+    }    
 ?>

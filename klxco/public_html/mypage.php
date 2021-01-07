@@ -125,27 +125,73 @@
                                 </div>
                             </div>
                         </div>
-                      <!--  <div class="col-sm-6 col-md-3" onclick="goUrl('mydeletedads')">
+                       <div class="col-sm-6 col-md-3" onclick="goUrl('myearnings')">
                             <div class="card card-stats card-round cursor-hand">
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col-5">
                                             <div class="icon-big text-center">
-                                                <i class="flaticon-error text-danger"></i>
+                                                <i class="flaticon-coins text-danger"></i>
                                             </div>
                                         </div>
                                         <div class="col-7 col-stats">
                                             <div class="numbers">
-                                                <p class="card-category">Deleted Ads</p>
+                                                <p class="card-category">My Earnings</p>
                                                 <h4 class="card-title">
-                                                <?php echo sizeof(JPostads::getMyDeletedAds($_SESSION['USER']['userid']));?>
+                                               <?php
+                                                     $bal = $mysql->select("select (sum(Credits)-sum(Debits)) as bal from _tbl_share_products_earning where UserID='".$_SESSION['USER']['userid']."'");
+                        $balance = isset($bal[0]['bal']) ?  $bal[0]['bal'] : 0;
+                        echo $balance;
+                                               ?>
                                                 </h4>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div> -->        
+                        </div>
+                        <?php if($_SESSION['USER']['AllowtoSellProduct']=="1"){ ?>
+                        <div class="col-sm-6 col-md-4" onclick="goUrl('products')">
+                            <div class="card card-stats card-round cursor-hand">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12 col-stats">
+                                            <div class="numbers">
+                                                <p class="card-category">My Products</p>
+                                                <h4 class="card-title">
+                                               <?php
+                                                     $product = $mysql->select("select * from _tbl_products where UserID='".$_SESSION['USER']['userid']."' and IsAdmin='0'");
+                                                     echo sizeof($product);
+                                               ?>
+                                                </h4>
+                                                <span>Avaliable Credits : <?php echo $app::getTotalBalanceUserCredits($_SESSION['USER']['userid']);?></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                        <?php }else { ?>    
+                        <div class="col-sm-6 col-md-4" onclick="PermissionDeniedAddProduct()">
+                            <div class="card card-stats card-round cursor-hand">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12 col-stats">
+                                            <div class="numbers">
+                                                <p class="card-category">My Products</p>
+                                                <h4 class="card-title">
+                                               <?php
+                                                     $product = $mysql->select("select * from _tbl_products where UserID='".$_SESSION['USER']['userid']."' and IsAdmin='0'");
+                                                     echo sizeof($product);
+                                               ?>
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <?php } ?> 
                     </div> 
                     <div class="row row-card-no-pd">
                         <div class="col-sm-6 col-md-4"  onclick="goUrl('recentlyviewed')">
@@ -295,3 +341,25 @@
 </div>
 <?php } ?>
 <?php include_once("footer.php"); ?>
+<div class="modal fade right" id="ConfirmationPopup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-keyboard="false" data-backdrop="static" style="top: 0px !important;">
+    <div class="modal-dialog modal-side modal-bottom-right modal-notify modal-danger" role="document" >
+        <div class="modal-content" >
+            <div id="xconfrimation_text">
+                <div class="modal-body">
+                    <div class="form-group row">
+                        <div class="col-sm-12" style="text-align: center;">
+                            <img src="https://www.klx.co.in/assets/accessdenied.png" style="width:125px"><br><br>
+                            Not Allow To Add Product. please Contact Admin <br><br>
+                            <button type="button" class="btn btn-outline-success" data-dismiss="modal" >Continue</button>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+function PermissionDeniedAddProduct() {
+    $( "#ConfirmationPopup" ).modal( "show" );
+}
+</script>

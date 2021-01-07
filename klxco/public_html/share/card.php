@@ -1,11 +1,14 @@
 <?php include_once("config.php");?>
-<?php $data = $mysql->select("select * from _tbl_resume_general_info where ResumeID='".$_GET['id']."'");?>
-<?php $Educations = $mysql->select("select * from _tbl_resume_education where ResumeID='".$data[0]['ResumeID']."'");?>
-<?php $Experinces = $mysql->select("select * from _tbl_resume_experience where ResumeID='".$data[0]['ResumeID']."'");?>
+<?php $data = $mysql->select("select * from _tbl_card_general_info where ResumeID='".$_GET['id']."'");?>
 <?php 
+$dup = $mysql->select("select * from resume_card_visitor_log where ResumeID='".$data[0]['ResumeID']."' and ipaddress='".$_SERVER['REMOTE_ADDR']."'");
+$count = $mysql->select("select * from resume_card_visitor_log where ResumeID='".$data[0]['ResumeID']."'  ");
+if (sizeof($dup)==0) {
         $id = $mysql->insert("resume_card_visitor_log",array("ResumeID"    => $data[0]['ResumeID'],
                                                         "viewed"      => 1,
+                                                           "ipaddress"      => $_SERVER['REMOTE_ADDR'],
                                                         "ViewedOn"    => date("Y-m-d H:i:s")));
+}
 ?>
 <html lang="en">
 <head>
@@ -15,7 +18,11 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&family=Roboto+Condensed&display=swap" rel="stylesheet"> 
+ 
 </head>
+
 <body>
 <style>
 body {font-family: 'Roboto', sans-serif;margin: 0 auto;color: #555555;text-decoration: none;max-width: 450px;text-align: center;font-weight: 400;line-height: 1.5;background:#fff9ef;}
@@ -28,24 +35,33 @@ body {font-family: 'Roboto', sans-serif;margin: 0 auto;color: #555555;text-decor
 .text-white {color: #fff !important;}
 .name {text-transform: capitalize;font-size: 16px;font-weight: 500;color: #FF8F00;letter-spacing: 0.6px;margin-bottom: 7px;text-align: center;}
 .contact-buttons {margin: 0 -20px;margin-top: 0px;padding: 10px 20px;text-align: center;}
-.contact-button {padding: 6px 10px;border-radius: 10px;min-width: 70px;display: inline-block;font-size: 13px;text-align: center;background-color: #FF8F00;color: #fff;margin-right: 5px;margin-bottom: 10px;padding: 5px 15px;}
-.contact-button:hover {box-shadow: 1px 2px 5px #fff;background-color: #fff;color: #FF8F00 !important;background:#fff;}
+.contact-button {padding: 6px 10px;border-radius: 10px;min-width: 70px;display: inline-block;font-size: 13px;text-align: center;background-color: #0E47A1;color: #fff;margin-right: 5px;margin-bottom: 10px;padding: 5px 15px;}
+.contact-button:hover {box-shadow: 1px 2px 5px #fff;background-color: #fff;color: #0E47A1 !important;background:#fff;}
 a {text-decoration: none;}
 .contact-button i {margin-right: 5px;}
 .fa-flip-horizontal {transform: scale(-1, 1);}
 .fas {font-weight: 900;display: inline-block;font-style: normal;font-variant: normal;text-rendering: auto;line-height: 1;}
 .row {display: -ms-flexbox;display: flex;-ms-flex-wrap: wrap;flex-wrap: wrap;margin-right: -15px;margin-left: -15px;}
 table {border-collapse: collapse;}
-.contact-action-container-icon {display: inline-block;vertical-align: middle;width: 30px;height: 30px;text-align: center;border-radius: 30px;line-height: 30px;color: white;background-color: #FF8F00;font-size: 13px;}
+.contact-action-container-icon {display: inline-block;vertical-align: middle;width: 30px;height: 30px;text-align: center;border-radius: 30px;line-height: 30px;color: white;background-color: #0E47A1;font-size: 13px;}
 table td {padding-left: 10px;padding-top: 20px;}
 .p-30 {padding-top: 30px;}
 .share-buttons.inprofile {padding: 0;justify-content: flex-end;margin: -4px;}
 .share-buttons {list-style: none;display: flex;flex-wrap: wrap;}
 a:hover {text-decoration: none;}
-#phonebookbutton {color: #fff;background-color: #ff8f00;border-color: #ff8f00;width:100%;font-size:13px;}
-#phonebookbutton:hover {color: #ff8f00;background-color: #fff;border-color: #ff8f00;width:100%;}
-.shadow {box-shadow: inset 0 30px 30px #d38a15;-moz-box-shadow: inset 0 30px 30px #d38a15;-webkit-box-shadow: inset inset 0 30px 30px #d38a15;border:1px solid #e5ae57; border-radius:10px !important;}
-.outershadow {border-radius:15px !important;box-shadow: 3px 3px 13px #666;-moz-box-shadow: 3px 3px 13px #666;-webkit-box-shadow: 3px 3px 13px #666;}
+#phonebookbutton {color: #fff;background-color: #0E47A1;border-color: #0E47A1;width:100%;font-size:13px;}
+#phonebookbutton:hover {color: #0E47A1;background-color: #fff;border-color: #0E47A1;width:100%;}
+.shadow {box-shadow: inset 0 30px 30px #ff0000;-moz-box-shadow: inset 0 30px 30px #ff0000;-webkit-box-shadow: inset inset 0 30px 30px #ff0000;border:1px solid #ff0000; border-radius:10px !important;}
+
+.outershadow {background:#971919;border-radius:15px !important;box-shadow: 3px 3px 13px #666;-moz-box-shadow: 3px 3px 13px #666;-webkit-box-shadow: 3px 3px 13px #666;}
+div,tr,td,span,a {font-family:'Lato'}
+.views-label{border: 1px solid #fff !important;
+background: #fff;
+width: -moz-fit-content;
+padding: 5px 10px;
+border-radius: 50px;
+font-weight: normal;
+font-size: 14px;}
 </style>
 <?php
     $filenmae=time().rand(100,30000);
@@ -56,51 +72,70 @@ a:hover {text-decoration: none;}
         <div class="page-details shadow" >
             <div class="page-content">
                 <div>
-                    <!--<div class="views-label"><i class="fas fa-eye"></i> Views: <b>456</b></div>-->
+                    <div class="views-label"><i class="fas fa-eye"></i> Views: <b><?php echo sizeof($count);?></b></div>
                     <div class="profile-pic" >
                     <img src="uploads/<?php echo $data[0]['ProfilePhoto'];?>" class="profile-pic-img">
                     </div>
-                    <h1 class="firmname" style="font-weight: 600;color:#db8300;font-size:27px"><i><?php echo $data[0]['ResumeName'];?></i></h1>
-                    <h1 class="name" style="margin-top:0px !important;color:#444"><b><?php echo $data[0]['Profession'];?></b></h1>
+                    <h1 class="firmname" style="font-weight: 600;color:#fff;font-size:27px"><i><?php echo $data[0]['ResumeName'];?></i></h1>
+                    <h1 class="name" style="margin-top:0px !important;color:orange"><b><i><?php echo $data[0]['Proffession'];?></i></b></h1>
                 </div>
                 <div>
                 <div class="contact-buttons">
                     <a class="contact-button" href="tel:+91<?php echo $data[0]['MobileNumber'];?>">&nbsp;<i class="fas fa-phone fa-flip-horizontal" aria-hidden="true"></i>Call</a>
-                    <a class="contact-button" href="https://api.whatsapp.com/send?phone=91<?php echo $data[0]['MobileNumber'];?>"><i class="fa fa-whatsapp" aria-hidden="true"></i>&nbsp;Whatsapp</a>
+                    <a class="contact-button" href="https://api.whatsapp.com/send?phone=91<?php echo $data[0]['WhatsappNumber'];?>"><i class="fa fa-whatsapp" aria-hidden="true"></i>&nbsp;Whatsapp</a>
                     <a class="contact-button" href="mailto:<?php echo $data[0]['EmailID'];?>"><i class="fas fa-envelope fa-flip-horizontal" aria-hidden="true"></i>&nbsp;Mail</a>
                 </div>
                 <div class="row" style="margin-top:30px">
                     <table class="contact-action-table">
                         <tbody>
                             <tr>
-                                <td style="padding-top:0px;font-size:13px;font-family:arial;vertical-align: top;"><i class="fas fa-map-marker-alt contact-action-container-icon"></i></td>
-                                <td style="padding-top:0px;font-size:14px;font-family:arial;">
+                                <td style="padding-top:0px;font-size:13px;vertical-align: top;"><i class="fas fa-map-marker-alt contact-action-container-icon"></i></td>
+                                <td style="padding-top:0px;font-size:14px;color:#fff">
                                     <?php echo $data[0]['AddressLine1'];?><br>
                                     <?php echo $data[0]['AddressLine2'];?><br>
-                                    <?php echo $data[0]['AddressLine3'];?>.
+                                    <?php echo $data[0]['AddressLine3'];?>
                                 </td>
                             </tr>
                             <tr style="">
                                 <td><i class="fas fa-envelope contact-action-container-icon"></i></td>
-                                <td style="font-size:14px;font-family:arial;"><?php echo $data[0]['EmailID'];?></td>
+                                <td style="font-size:14px;color:#fff"><?php echo $data[0]['EmailID'];?></td>
                             </tr>
+                            <?php if($data[0]['Website']!=""){ ?>
                             <tr style="margin-top:20px">
                                 <td><i class="fas fa-globe fa-flip-horizontal contact-action-container-icon"></i></td>
-                                <td class="text-white" style="font-size:14px;font-family:arial;"><a href="<?php echo $data[0]['Website'];?>" target="_blank"><?php echo $data[0]['Website'];?></a></td>
+                                <td class="text-white" style="font-size:14px;color:#fff;"><a href="https://<?php echo $data[0]['Website'];?>" target="_blank" style="font-size:14px;color:#fff"><?php echo $data[0]['Website'];?></a></td>
                             </tr>
+                            <?php } ?>
                             <tr>
                                 <td><i class="fas fa-phone fa-flip-horizontal contact-action-container-icon"></i></td>
-                                <td style="font-size:14px;font-family:arial;"><?php echo $data[0]['MobileNumber'];?></td>
+                                <td style="font-size:14px;color:#fff;"><?php echo $data[0]['MobileNumber'];?></td>
                             </tr>
+                            
+                            <?php if($data[0]['LandlineNumber']!="") { ?>
+                               <tr>
+                                <td><i class="fas fa-phone fa-flip-horizontal contact-action-container-icon"></i></td>
+                                <td style="font-size:14px;color:#fff"><?php echo $data[0]['LandlineNumber'];?></td>
+                            </tr>
+                            <?php } ?>
                         </tbody>
                     </table>
                 </div>
                 <div class="p-30"></div>
                     <div class="row">
-                        <div class="Col-sm-3" style="text-align: center;"></div>
-                        <div class="Col-sm-6" style="text-align: center;">
-                            <a href="download.php?vcf=<?php echo $filenmae; ?>" class="btn btn-primary" id="phonebookbutton"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;Add to Phone Book</a></div>
-                        <div class="Col-sm-3" style="text-align: center;"></div>
+                        <div class="Col-sm-12" style="text-align: center;"> 
+                            <?php if($data[0]['Twitter']!=""){ ?><a target="_blank" href="https://twitter.com/<?php echo $data[0]['Twitter'];?>">&nbsp;<i class="fa fa-twitter fa-flip-horizontal contact-action-container-icon" aria-hidden="true"></i></a><?php }?>
+                            <?php if($data[0]['FaceBook']!=""){ ?><a target="_blank" href="https://facebook.com/<?php echo $data[0]['FaceBook'];?>">&nbsp;<i class="fa fa-facebook contact-action-container-icon" aria-hidden="true"></i></a><?php }?>
+                            <?php if($data[0]['Instagram']!=""){ ?><a target="_blank" href="https://instagram.com/<?php echo $data[0]['Instagram'];?>">&nbsp;<i class="fa fa-instagram contact-action-container-icon" aria-hidden="true"></i></a><?php }?>
+                            <?php if($data[0]['LinkedIn']!=""){ ?><a target="_blank" href="https://linkedin.com/<?php echo $data[0]['LinkedIn'];?>">&nbsp;<i class="fa fa-linkedin contact-action-container-icon" aria-hidden="true"></i></a><?php }?>
+                            
+                        </div>
+                    </div>
+                    <div class="p-30"></div>
+                    <div class="row">                                                                                                                                                         
+                        <div class="col-sm-3" style="text-align: center;"></div>
+                        <div class="col-sm-6" style="text-align: center;">
+                            <a href="download.php?vcf=<?php echo $filenmae; ?>" class="btn btn-primary" id="phonebookbutton"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp;Add to Phone Book</a></div>
+                        <div class="col-sm-3" style="text-align: center;"></div>
                     </div>
                 </div>                    
                 <div class="p-30"></div>
@@ -109,7 +144,7 @@ a:hover {text-decoration: none;}
                 </div>
             </div>
         </div>
-    </div>
+  
 </body>
 <?php
     

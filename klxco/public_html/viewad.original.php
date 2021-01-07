@@ -228,11 +228,11 @@ include_once("header.php");
                                             ?>
                                             <div style="padding-bottom:10px">
                                             <br><Br>
-                                            <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo   (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://".$_SERVER[HTTP_HOST].$_SERVER[REQUEST_URI];?>" ><img src="https://www.klx.co.in/assets/facebook.png" style="width:32px"></a>
+                                            <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo   (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://".$_SERVER[HTTP_HOST].$_SERVER[REQUEST_URI];?>" target="_blank"><img src="https://www.klx.co.in/assets/facebook.png" style="width:32px"></a>
                                             &nbsp;&nbsp;&nbsp;
-                                            <a href="https://www.twitter.com/share?text=<?php echo $d[0]['title'];?>&url=<?php echo  (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://".$_SERVER[HTTP_HOST].$_SERVER[REQUEST_URI];?>" > <img src="https://www.klx.co.in/assets/twitter.png"  style="width:32px"></a>
+                                            <a href="https://www.twitter.com/share?text=<?php echo $d[0]['title'];?>&url=<?php echo  (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://".$_SERVER[HTTP_HOST].$_SERVER[REQUEST_URI];?>" target="_blank"> <img src="https://www.klx.co.in/assets/twitter.png"  style="width:32px"></a>
                                             &nbsp;&nbsp;&nbsp;
-                                            <a href="https://api.whatsapp.com/send?text=<?php echo  (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://".$_SERVER[HTTP_HOST].$_SERVER[REQUEST_URI];?>" > <img src="https://www.klx.co.in/assets/whatsapp.png"  style="width:32px"></a> 
+                                            <a href="https://api.whatsapp.com/send?text=<?php echo  (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://".$_SERVER[HTTP_HOST].$_SERVER[REQUEST_URI];?>" target="_blank"> <img src="https://www.klx.co.in/assets/whatsapp.png"  style="width:32px"></a> 
                                             &nbsp;&nbsp;
                                             
                                             </div>
@@ -284,7 +284,6 @@ include_once("header.php");
                                                <?php
                                                   $posted_user_info = $mysql->select("select * from _jusertable where userid='".$d[0]['postedby']."'");
                                                   echo "<span style='font-size:17px;'>".ucwords($posted_user_info[0]['personname'])."<br></span>";
-                                                  //echo "<span style='font-size:17px;'>".ucwords($posted_user_info[0]['CustomerName'])."<br></span>";
                                                   echo "<span style='color:#999;font-size:12px;' >Member since ".date("M Y",strtotime($posted_user_info[0]['createdon']))."</span>";
                                                   
                                                   //print_r($posted_user_info);
@@ -302,18 +301,13 @@ include_once("header.php");
         ?>
          <input type="button" class="btn btn-outline-primary" onclick="Chat('<?php echo md5($adID."jEyArAj[at]DeVeLoPeR");?>')"  style="width:100%;margin-bottom:10px;font-weight:bold;padding:5px;margin-top:10px;"  value="CHAT WITH SELLER">
         <?php
-            }                                                                      
+            }
          ?>
                                          <div id="contactinfo">
                                         <?php
-                                       
-                                 
                                               if (sizeof($d[0]['viewedContact'])>0) {
                                                  // ."<br>viewed: ".$days_between
-                                            echo  "<div style='border:1px solid #ccc;padding:20px;background:#fcfce5;border-radius:5px'>
-                                            
-                                            Name: ".$d[0]['CustomerName']."<br>
-                                            email: ".$d[0]['viewedContact']['email']
+                                            echo  "<div style='border:1px solid #ccc;padding:20px;background:#fcfce5;border-radius:5px'>email: ".$d[0]['viewedContact']['email']
                                                     ."<br>mobile: ".$d[0]['viewedContact']['mobile']
                                                    
                                                     ."</div>";

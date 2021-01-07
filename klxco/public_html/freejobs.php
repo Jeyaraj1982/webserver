@@ -8,43 +8,54 @@ $data = $mysql->select("select * from _tbl_products where IsDeleted='0' and IsAc
             <a class="btn btn-outline-primary btn-sm" style="width:50px;" href="<?php echo country_url;?>">Back</a><br><br>          
             <div class="row">                                                     
                 <div class="col-md-6">
-                    <div class="card"> 
-                                                    
-                    
-                                                        
-                        <div class="card-header">
-                            <h4>Free Job</h4>
-                        </div>
-                    </div>
+                <div style="background:yellow;text-align;center;padding:15px;font-size:27px;text-align: center;font-weight: bold;"> Become a klx  Supplier</div><br><br>
+                
+                Register klx website,  after mail to us "klxadpost@gmail.com".  we will get in touch with you soon!,<Br><br>
+                More than 100 Suppliers Sell on klx,  then Our 1500+ Resellers can boost your business through 2500+ customers    
+                <br><br>
+                <div style="background:yellow;text-align;center;padding:15px;font-size:27px;text-align: center;font-weight: bold;">Free Jobs</div><br><br>   
                     
                     <div class="container row ">
         <div class="col-6">
-            <div class="stats-card">
-                <h2 id="digitalCards" style="color: red;font-size: 40px;font-weight: bold;">0</h2>
-                <p>Workers</p>
+            <div class="stats-card" style="text-align:center">
+                <img src="https://www.klx.co.in/assets/workers.jpg" style="height:100px;width:100px;border-radius:50%;box-shadow: 0px 5px 9px #888;border: 1px solid #888;">
+                <h2 id="digitalCards" style="color: red;font-size: 40px;font-weight: bold;text-align:center">0</h2>
+                <p style="text-align:center">Workers</p>
             </div>
         </div>
         <div class="col-6">
-            <div class="stats-card">
-                <h2 id="digitalResume" style="color: red;font-size: 40px;font-weight: bold;">0</h2>
-                <p>distributors</p>
+            <div class="stats-card" style="text-align:center">
+            <img src="https://www.klx.co.in/assets/suppliers.jpg" style="height:100px;width:100px;border-radius:50%;box-shadow: 0px 5px 9px #888;border: 1px solid #888;">
+            
+                <h2 id="digitalResume" style="color: red;font-size: 40px;font-weight: bold;text-align:center">0</h2>
+                <p style="text-align:center">Suppliers</p>
             </div>
         </div>
         <div class="col-6">
-            <div class="stats-card">
-                <h2 id="happyCustomers" style="color: red;font-size: 40px;font-weight: bold;">0</h2>
-                <p>Customers</p>
+            <div class="stats-card"  style="text-align:center">
+            <img src="https://www.allbusiness.com/asset/2017/03/GettyImages-Customer-300x235.jpg" style="height:100px;width:100px;border-radius:50%;box-shadow: 0px 5px 9px #888;border: 1px solid #888;">
+            
+                <h2 id="happyCustomers" style="color: red;font-size: 40px;font-weight: bold;text-align:center">0</h2>
+                <p  style="text-align:center">Customers</p>
             </div>
         </div>
         <div class="col-6">
-            <div class="stats-card">
-                <h2 id="franchisee" style="color: red;font-size: 40px;font-weight: bold;">0</h2>
-                <p>Delivered Items</p>
+            <div class="stats-card"  style="text-align:center">
+            <img src="https://1-800courier.com/blog/wp-content/uploads/same-day-courier-624x416.jpeg" style="height:100px;width:100px;border-radius:50%;box-shadow: 0px 5px 9px #888;border: 1px solid #888;">
+                <h2 id="franchisee" style="color: red;font-size: 40px;font-weight: bold;text-align:center">0</h2>
+                <p  style="text-align:center">Sold Items</p>
             </div>
         </div>
     </div>
+    <div class="row">
+        <div class="col-sm-12" style="text-align: center;">
+         <div style="font-weight:bold;text-align: center;padding:20px 0px;font-size:15px">Start your work from home with zero investment and Earn Monthly  20000 more</div>
+        <div style="font-weight:bold;background:yellow;padding:10px">Sell this product and start earning in 2 minutes.</div>
+       
+        </div>
+    </div>
               
-                            <div class="row">
+                            <div class="row" style="display:none">
                                 <div class="col-sm-12" style="font-size:16px;background:#e5fffe;padding:10px;">
                     A good opportunity to earn daily. below the link to copy  and share whatsapp groups, facebook, twitter, instagram, link your number will be given. So you can earn up to 50000 per month
                     </div>
@@ -66,7 +77,7 @@ $data = $mysql->select("select * from _tbl_products where IsDeleted='0' and IsAc
                                     <br>
                                     <?php if (sizeof($q)==0) {?>
                                     <button type="button" class="btn btn-primary " data-toggle="modal" onclick="showReferal('<?php echo $P['ProductID'];?>','<?php echo str_replace(" ","-",$P['ProductName']);?>')">
-  &nbsp;&nbsp;&nbsp;Refer & Earn INR <?php echo $P['ReferalIncome'];?>&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;Share & Earn INR <?php echo $P['ReferalIncome'];?>&nbsp;&nbsp;&nbsp;
 </button><br>
 <?php } else {
         $link = "https://www.klx.co.in/pp_".$q[0]['Link'];
@@ -159,7 +170,7 @@ $count = $mysql->select("select userid from _jusertable where date(createdon)>da
 
 
  
-$d = $mysql->select("select * from _counter where date(web_date)=date('".date("Y-m-d")."')");
+$d = $mysql->select("select * from _counter where date(web_date)=date('".date("Y-m-d")."') order by dayid desc");
 if (sizeof($d)==1) {
     $i=$d[0]['count_5'];
     $j=$d[0]['count_6'];

@@ -773,22 +773,22 @@ function dovalidation() {
                                 </div>
                                 <div class="row mb-2">
                                 <div id="div_1">
-                                    <img id="src_image1" onclick="fupload()" src="https://www.klx.co.in/assets/add-image.png" style="width: 64px;margin-top: 20px;opacity: 0.3;cursor: pointer;">
+                                    <img id="src_image1" onclick="fupload('1')" src="https://www.klx.co.in/assets/add-image.png" style="width: 64px;margin-top: 20px;opacity: 0.3;cursor: pointer;">
                                 </div> 
                                 <div  id="div_2">
-                                    <img id="src_image2" onclick="fupload()" src="https://www.klx.co.in/assets/add-image.png" style="width: 64px;margin-top: 20px;opacity: 0.3;cursor: pointer;">
+                                    <img id="src_image2" onclick="fupload('2')" src="https://www.klx.co.in/assets/add-image.png" style="width: 64px;margin-top: 20px;opacity: 0.3;cursor: pointer;">
                                 </div>
                                 <div  id="div_3">
-                                    <img id="src_image3" onclick="fupload()" src="https://www.klx.co.in/assets/add-image.png" style="width: 64px;margin-top: 20px;opacity: 0.3;cursor: pointer;">
+                                    <img id="src_image3" onclick="fupload('3')" src="https://www.klx.co.in/assets/add-image.png" style="width: 64px;margin-top: 20px;opacity: 0.3;cursor: pointer;">
                                 </div>
                                 <div  id="div_4">
-                                    <img id="src_image4" onclick="fupload()" src="https://www.klx.co.in/assets/add-image.png" style="width: 64px;margin-top: 20px;opacity: 0.3;cursor: pointer;">
+                                    <img id="src_image4" onclick="fupload('4')" src="https://www.klx.co.in/assets/add-image.png" style="width: 64px;margin-top: 20px;opacity: 0.3;cursor: pointer;">
                                 </div>
                                 <div  id="div_5">
-                                    <img id="src_image5" onclick="fupload()" src="https://www.klx.co.in/assets/add-image.png" style="width: 64px;margin-top: 20px;opacity: 0.3;cursor: pointer;">
+                                    <img id="src_image5" onclick="fupload('5')" src="https://www.klx.co.in/assets/add-image.png" style="width: 64px;margin-top: 20px;opacity: 0.3;cursor: pointer;">
                                 </div>
                                 <div  id="div_6">
-                                    <img id="src_image6" onclick="fupload()" src="https://www.klx.co.in/assets/add-image.png" style="width: 64px;margin-top: 20px;opacity: 0.3;cursor: pointer;">
+                                    <img id="src_image6" onclick="fupload('6')" src="https://www.klx.co.in/assets/add-image.png" style="width: 64px;margin-top: 20px;opacity: 0.3;cursor: pointer;">
                                 </div> 
                                   
                             </div>
@@ -928,7 +928,9 @@ function dovalidation() {
 </div>
 <script>  
 var loading = "<div style='padding:80px;text-align:center;color:#aaa'><img src='https://klx.co.in/klxadmin/assets/loading.gif'  style='width:80px'><br>Processing ...</div>";
-function fupload() {
+var current_div =-1;
+function fupload(id) {   
+    current_div=id; 
     $('#files').trigger('click');
 }
 
@@ -984,7 +986,10 @@ function CallConfirmation(){
    
    $(document).ready(function(){
        
-       $('#files').change(function() {
+       $('#files').change(function() {      
+           
+           
+   
            $('#file_upload_progress').html();
            $('#file_upload_error').html();
            var form_data = new FormData();
@@ -1046,13 +1051,20 @@ function CallConfirmation(){
                    $('#files').val("");
                    
                        
-                   for(var index = 0; index < response.length; index++) {
+                   for(var index = 0; index < response.length; index++) { 
                        if (response[index]['error']==0) {
                         var src = response[index]['filename'];
-                            //$('#preview').append('<img src="https://klx.co.in/testupload/'+src+'" width="200px;" height="200px">');
-                            $('#uploadimage'+(uploaded_count+1)).val(src);
-                            $('#img'+uploaded_count).html("<img src='https://www.klx.co.in/"+img_path+"/"+src+"' width='100px;' height='100px'><br><span onclick='image_close("+(uploaded_count+1)+")' class='btn btn-danger btn-sm' style='padding: 0px 10px;font-size: 10px;'>Delete</span>");
+						    //$('#preview').append('<img src="https://klx.co.in/testupload/'+src+'" width="200px;" height="200px">');
+                            
+                                $('#uploadimage'+(uploaded_count+1)).val(src);
+                            alert(current_div);
+                             if(index==0){         
+                                $('#img'+current_div).html("<img src='https://www.klx.co.in/"+img_path+"/"+src+"' width='100px;' height='100px'><br><span onclick='image_close("+(parseInt(current_div))+")' class='btn btn-danger btn-sm' style='padding: 0px 10px;font-size: 10px;'>Delete</span>");    
+                            }else{
+                                $('#img'+uploaded_count).html("<img src='https://www.klx.co.in/"+img_path+"/"+src+"' width='100px;' height='100px'><br><span onclick='image_close("+(uploaded_count+1)+")' class='btn btn-danger btn-sm' style='padding: 0px 10px;font-size: 10px;'>Delete</span>");        
+                            }
                             //$('#img'+uploaded_count).html("<img src='https://www.klx.co.in/"+img_path+"/"+src+"' width='100px;' height='100px'>");
+                            alert(uploaded_count+":"+index);
                             uploaded_count++;       
                        } else {
                             $('#uploadimage'+(uploaded_count+1)).val("");
@@ -1106,9 +1118,13 @@ function CallConfirmation(){
     
        function image_close(id) {
         $('#uploadimage'+id).val("");
+		alert('#div_'+id);
         $('#div_'+id).html('<img onclick="fupload()" id="src_image'+id+'" src="https://www.klx.co.in/assets/add-image.png" style="width: 64px;margin-top: 20px;opacity: 0.3;cursor: pointer;">');  
         $('#div_'+id).css({"border":"1px solid #ccc"});
         //$('#Errimage1').html("Please Upload Image");
+		img_count=img_count-1;
+        uploaded_count--;
+		
     }
        
     </script>

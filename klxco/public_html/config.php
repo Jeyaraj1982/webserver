@@ -42,7 +42,7 @@
     include_once("classes/class.jpage.php");
     include_once("classes/class.jslider.php");
     include_once("classes/class.jsuccessstory.php");
-    include_once("classes/class.jfaq.php");
+    include_once("classes/class.jfaq.php");                                          
     include_once("classes/class.postad.php");
     include_once("classes/class.MobileSMSController.php");    
     include_once("classes/class.EmailController.php");    
@@ -88,6 +88,11 @@
     function getBalance($MemberID) {
         global $mysql;
         $res = $mysql->select("select (sum(Credits)-sum(Debits)) as bal from _tbl_franchisee_wallet where FranchiseeID='".$MemberID."'");
+        return isset($res[0]['bal']) ? $res[0]['bal'] : "0";
+    }
+    function getTotalBalanceUserCredits($MemberID) {
+        global $mysql;
+        $res = $mysql->select("select (sum(Credits)-sum(Debits)) as bal from _tbl_product_credits where UserID='".$MemberID."'");
         return isset($res[0]['bal']) ? $res[0]['bal'] : "0";
     }
     

@@ -61,6 +61,7 @@ var TotalUser=0;
     <div class="main-panel" style="width:100% !important;height:auto !important;">
         <div class="container">
             <div class="page-inner">
+            <a class="btn btn-outline-primary btn-sm" style="width:50px;" href="<?php echo country_url;?>">Back</a><br><br>
                 <div class="page-header">
                     <ul class="breadcrumbs" style="border:none;margin-left:0px;padding-left:0px;">
                             <li class="nav-home">
