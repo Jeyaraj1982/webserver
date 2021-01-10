@@ -32,11 +32,11 @@
                           $dob = $_POST['year']."-".$_POST['month']."-".$_POST['date'];
                           $id=$mysql->insert("_tbl_upload_certificates",array("Name"            => $_POST['Name'],
                                                                               "RegisterNumber"  => $_POST['RegisterNumber'],
-                                                                              "DateOfBirth"     => $dob,
+                                                                              "DateOfBirth"     => date("Y-m-d",strtotime($dob)),
                                                                               "FileName"        => $Certificate,   
                                                                               "AddedOn"         => date("Y-m-d H:i:s")));
                                                                    
-                               unset($_POST);
+                               unset($_POST);                     
                                echo $sql."success";
                     } 
                 } 
