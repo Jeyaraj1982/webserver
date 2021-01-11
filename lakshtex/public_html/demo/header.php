@@ -101,7 +101,7 @@
           <div class="row">
             <div class="col-sm-3 col-md-3 col-xs-12 jtv-logo-block"> 
               <!-- Header Logo -->
-              <div class="logo"><a title="e-commerce" href="index.php"><img alt="Famous" title="Famous logo" src="<?php echo $Logo;?>"></a> </div>
+              <div class="logo"><a title="e-commerce" href="index.php"><img alt="Famous" title="Famous logo" src="assets/images/logo.png"></a> </div>
             </div>
             <!--<div class="col-xs-12 col-sm-3 col-md-3 jtv-top-search"> 
               

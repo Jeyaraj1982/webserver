@@ -56,7 +56,7 @@
                                                         </button>
                                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                                             <a class="dropdown-item" href="dashboard.php?action=Customer/view&id=<?php echo md5($Customer['CustomerID']);?>" draggable="false">View</a>
-                                                            <a class="dropdown-item" href="dashboard.php?action=Customer/Orders&id=<?php echo md5($Customer['CustomerID']);?>" draggable="false">Orders</a>
+                                                            <a class="dropdown-item" href="dashboard.php?action=Customer/Orders&id=<?php echo md5($Customer['CustomerID']);?>&status=new" draggable="false">Orders</a>
                                                             <a class="dropdown-item" href="dashboard.php?action=Customer/Invoice&id=<?php echo md5($Customer['CustomerID']);?>" draggable="false">Invoice</a>
                                                         </div>
                                                     </div>

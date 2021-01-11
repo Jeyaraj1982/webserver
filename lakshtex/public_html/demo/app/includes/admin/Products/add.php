@@ -90,6 +90,12 @@ include_once("LeftMenu.php");
 ?>
 <script>
 <?php if($_GET['fr']=="sc" || $_GET['fr']=="c" ){ ?>
+function getMainCategory(CategoryID) {
+        $.ajax({url:'../webservice.php?action=getMainCategory&CategoryID='+CategoryID+'&fr=category',success:function(data){
+            $('#div_category').html(data);
+            $('#ErrCategory').html('');
+        }});
+    }
 function getSubCategory(CategoryID,SubCategoryID) {
         $.ajax({url:'../webservice.php?action=getSubCategory&CategoryID='+CategoryID+'&SubCategoryID='+SubCategoryID+'&fr=category',success:function(data){
             $('#div_subcategory').html(data);
@@ -105,7 +111,7 @@ function getSubCategory(CategoryID) {
     }
 <?php } ?>
 $(document).ready(function () {
-    getSubCategory(<?php echo $_POST['Category'];?>);
+    
     $("#Category").blur(function () {
         $('#ErrCategory').html("");
         if($('#Category').val()=="0"){
@@ -184,13 +190,18 @@ $(document).ready(function () {
                                                <div class="form-group form-show-validation row">
                                                     <label for="name">Category Name<span style="color:red">*</span></label>
                                                     <?php if($_GET['fr']=="sc" || $_GET['fr']=="c"){ ?>
-                                                        <select readonly="readonly" class="form-control" name="Category" id="Category">
-                                                            <option value="0" <?php echo ($_POST['CategoryName']=="0") ? " selected='selected' " : "";?>>Select Category Name</option>
+                                                        <!--<select readonly="readonly" class="form-control" name="Category" id="Category">
+                                                            <option value="0" <?php echo ($_POST['Category']=="0") ? " selected='selected' " : "";?>>Select Category Name</option>
                                                             <?php $CategoryNames = $mysql->select("select * from _tbl_category");?>
                                                             <?php foreach($CategoryNames as $CategoryName) { ?>
                                                                   <option value="<?php echo $CategoryName['CategoryID'];?>" <?php echo (isset($_POST[ 'Category'])) ? (($_POST[ 'Category']==$CategoryName['CategoryID']) ? " selected='selected' " : "") : (($_GET['id']==md5($CategoryName['CategoryID'])) ? " selected='selected' " : "");?>><?php echo $CategoryName['CategoryName'];?></option>
                                                             <?php } ?>
-                                                        </select>
+                                                        </select>  -->
+                                                        <div class="col-sm-12" id="div_category" style="padding-left: 0px;padding-right:0px;">
+                                                            <select class="form-control" name="Category" id="Category">
+                                                                <option value="0" <?php echo ($_POST['Category']=="0") ? " selected='selected' " : "";?>>Select Sub Category Name</option>
+                                                            </select>
+                                                        </div>
                                                     <?php }else{ ?>
                                                         <select class="form-control" name="Category" id="Category" onchange="getSubCategory($(this).val())">
                                                             <option value="0" <?php echo ($_POST['Category']=="0") ? " selected='selected' " : "";?>>Select Category Name</option>
@@ -442,8 +453,11 @@ function AddProduct() {
     }
 <?php if($_GET['fr']=="sc" || $_GET['fr']=="c"){ ?>
   $(document).ready(function () {
+        getMainCategory(<?php echo $SubCategorys[0]['CategoryID'];?>);
         getSubCategory('<?php echo $SubCategorys[0]['CategoryID'];?>','<?php echo $SubCategorys[0]['SubCategoryID'];?>');
 });  
+<?php } else { ?>
+        getSubCategory(<?php echo $_POST['Category'];?>);
 <?php } ?>
     </script>  
         

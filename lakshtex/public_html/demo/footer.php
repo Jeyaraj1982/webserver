@@ -6,8 +6,8 @@
           <p>Lorem Ipsum is simply dummy text of the print and typesetting industry. Ut pharetra augue nec augue. Nam elit agna, endrerit sit amet.</p>
           <div class="social">
             <ul class="inline-mode">
-              <li class="social-network fb"><a title="Connect us on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo   (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://".$_SERVER[HTTP_HOST].$_SERVER[REQUEST_URI];?>"><i class="fa fa-facebook"></i></a></li>
-              <li class="social-network tw"><a title="Connect us on Twitter" href="https://www.twitter.com/share?text=<?php echo $d[0]['title'];?>&url=<?php echo  (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://".$_SERVER[HTTP_HOST].$_SERVER[REQUEST_URI];?>"><i class="fa fa-twitter"></i></a></li>
+              <li class="social-network fb"><a title="Connect us on Facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li class="social-network tw"><a title="Connect us on Twitter" href="#"><i class="fa fa-twitter"></i></a></li>
             </ul>
           </div>
         </div>
@@ -25,7 +25,7 @@
         </div>
         <div class="col-sm-3 col-md-2 col-xs-12 collapsed-block">
           <div class="footer-links">
-            <h5 class="links-title">Insider<a class="expander visible-xs" href="#TabBlock-3">+</a></h5>                                                                                                                              
+            <h5 class="links-title">Insider<a class="expander visible-xs" href="#TabBlock-3">+</a></h5>
             <div class="tabBlock" id="TabBlock-3">
               <ul class="list-links list-unstyled">
                 <li><a href="about_us.php">About Us</a></li>
@@ -318,70 +318,8 @@ function Cart_RemoveItem(ProductID){
 		
         }});  
 }  
- function addtowishlist(ProductID){                                   
-    $.ajax({url:'webservice.php?action=addtowishlist&ProductID='+ProductID,success:function(data){
-        var obj = JSON.parse(data); 
-        var html = "";                                                                              
-        if (obj.status=="failure") {
-                html = "<div class='modal-body'>";
-                    html += "<div class='form-group row'>";
-                        html += "<div class='col-sm-12' style='text-align:center'><img src='accessdenied.png' style='width:128px'><br><br>"+obj.message+"<br></div>";
-                    html += "</div>";
-                html += "</div>";
-                html += "<div class='modal-footer' style='border-top: none;padding-top: 0px;'>";
-                    html += "<div class='col-sm-12' style='text-align:center'><button type='button' class='button pro' data-dismiss='modal'>Continue</button></div>";
-                html += "</div>";
-            $("#xconfrimation_text").html(html);
-            $('#ConfirmationPopup').modal("show");
-        }if (obj.status=="success") {
-            $("#wishlist").html("<a style='cursor:pointer' onclick='removewishlist("+ProductID+")'><i class='fa fa-heart'  style='color:#e83f33;vertical-align: 0px !important;'></i><span>Remove Wishlisht</span></a>");
-        }
-        
-    }});
- } 
- function addtowishlistindex(ProductID){
-    $.ajax({url:'webservice.php?action=addtowishlist&ProductID='+ProductID,success:function(data){
-        var obj = JSON.parse(data); 
-        var html = "";                                                                              
-        if (obj.status=="failure") {
-                html = "<div class='modal-body'>";
-                    html += "<div class='form-group row'>";
-                        html += "<div class='col-sm-12' style='text-align:center'><img src='accessdenied.png' style='width:128px'><br><br>"+obj.message+"<br></div>";
-                    html += "</div>";
-                html += "</div>";
-                html += "<div class='modal-footer' style='border-top: none;padding-top: 0px;'>";
-                    html += "<div class='col-sm-12' style='text-align:center'><button type='button' class='button pro' data-dismiss='modal'>Continue</button></div>";
-                html += "</div>";
-            $("#xconfrimation_text").html(html);
-            $('#ConfirmationPopup').modal("show");
-        }if (obj.status=="success") {
-            $("#wishlist"+ProductID).html("<a style='cursor:pointer' onclick='removewishlistindex("+ProductID+")'><i class='fa fa-heart' style='color:#e83f33;vertical-align: 0px !important;'></i></a>");
-        }
-        
-    }});
- }     
- function removewishlistindex(ProductID){
-    $.ajax({url:'webservice.php?action=removewishlist&ProductID='+ProductID,success:function(data){
-        var obj = JSON.parse(data); 
-        var html = "";                                                                              
-        if (obj.status=="failure") {
-                html = "<div class='modal-body'>";
-                    html += "<div class='form-group row'>";
-                        html += "<div class='col-sm-12' style='text-align:center'><img src='accessdenied.png' style='width:128px'><br><br>"+obj.message+"<br></div>";
-                    html += "</div>";
-                html += "</div>";
-                html += "<div class='modal-footer' style='border-top: none;padding-top: 0px;'>";
-                    html += "<div class='col-sm-12' style='text-align:center'><button type='button' class='button pro' data-dismiss='modal'>Continue</button></div>";
-                html += "</div>";
-            $("#xconfrimation_text").html(html);
-            $('#ConfirmationPopup').modal("show");
-        }if (obj.status=="success") {
-            $("#wishlist"+ProductID).html("<a style='cursor:pointer' onclick='addtowishlistindex("+ProductID+")'><i class='fa fa-heart-o' style='color:#e83f33;vertical-align: 0px !important;'></i></a>");
-        }
-    }});
- }
- function removewishlist(ProductID){
-	$.ajax({url:'webservice.php?action=removewishlist&ProductID='+ProductID,success:function(data){
+ function addtowishlist(ProductID){
+	$.ajax({url:'webservice.php?action=addtowishlist&ProductID='+ProductID,success:function(data){
         var obj = JSON.parse(data); 
         var html = "";                                                                              
         if (obj.status=="failure") {
@@ -396,9 +334,9 @@ function Cart_RemoveItem(ProductID){
 			$("#xconfrimation_text").html(html);
 			$('#ConfirmationPopup').modal("show");
 		}if (obj.status=="success") {
-            location.href='';
-            $("#wishlist"+ProductID).html("<a style='cursor:pointer' onclick='addtowishlist("+ProductID+")'><i class='fa fa-heart-o' style='color:#e83f33;vertical-align: 0px !important;'></i></a>");
+            $("#wishlist").html("<a style='cursor:pointer'><i class='fa fa-heart' style='color:#e83f33;vertical-align: 0px !important;'></i><span>Added to whishlist</span></a>");
         }
+        
     }});
  }	 
 </script>

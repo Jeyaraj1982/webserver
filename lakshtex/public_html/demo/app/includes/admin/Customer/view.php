@@ -1,7 +1,15 @@
 <?php
 $data= $mysql->Select("select * from _tbl_customer where md5(CustomerID)='".$_GET['id']."'");
 ?>
-
+  <style>
+.form-group{
+    padding:0px !important;
+}
+.form-text {
+    display: block;
+    margin-top: 0px;
+}
+</style>
 <div class="main-panel">
     <div class="container">
         <div class="page-inner">
@@ -10,28 +18,49 @@ $data= $mysql->Select("select * from _tbl_customer where md5(CustomerID)='".$_GE
                     <div class="card">
                         <div class="card-header">
                             <div class="card-title">View Customer</div>
+                            <span style="font-size:12px">Created <?php echo date("M d, Y",strtotime($data[0]['CreatedOn']));?></span>
                         </div>
                             <div class="card-body">
-                                <div class="form-group form-show-validation row">
-                                    <label for="name">Customer Name</label>
-                                    <div class="col-sm-12"><?php echo $data[0]['CustomerName'];?></div> 
+                                <div class="row"> 
+                                <div class="col-md-12">
+                                    <div class="form-group form-show-validation row"> 
+                                        <label for="email" class="col-md-2 mt-sm-2 text-right">Customer Name</label>
+                                        <label class="col-md-10 mt-sm-2 ">
+                                            <small id="emailHelp" class="form-text text-muted">:&nbsp;<?php echo $data[0]['CustomerName'];?></small>
+                                        </label>
+                                    </div>
                                 </div>
-                                <div class="form-group form-show-validation row">
-                                    <label for="name">Email ID</label>
-                                    <div class="col-sm-12"><?php echo $data[0]['EmailID'];?></div>
+                            </div>
+                            <div class="row"> 
+                                <div class="col-md-6">
+                                    <div class="form-group form-show-validation row">
+                                        <label for="email" class="col-lg-4 col-md-3 col-sm-4 mt-sm-2 text-right">Mobile No</label>
+                                        <label class="col-lg-8 col-md-9 col-sm-8  mt-sm-2 ">
+                                            <small id="emailHelp" class="form-text text-muted">:&nbsp;<?php echo $data[0]['MobileNumber'];?></small>
+                                        </label>
+                                    </div>
                                 </div>
-                                <div class="form-group form-show-validation row">
-                                    <label for="name">Mobile Number</label>
-                                    <div class="col-sm-12"><?php echo $data[0]['MobileNumber'];?></div>
-                                </div>  
-                                <div class="form-group form-show-validation row">
-                                    <label for="name">Is Active</label>
-                                    <div class="col-sm-12"><?php if($data[0]['IsActive']=="1") { echo "Yes"; } else { echo "No";}?></div> 
+                            </div>
+                            <div class="row">   
+                                <div class="col-md-6">
+                                    <div class="form-group form-show-validation row">
+                                        <label for="email" class="col-lg-4 col-md-3 col-sm-4 mt-sm-2 text-right">Email ID</label>
+                                        <label class="col-lg-8 col-md-9 col-sm-8  mt-sm-2 ">
+                                            <small id="emailHelp" class="form-text text-muted">:&nbsp;<?php echo $data[0]['EmailID'];?></small>
+                                        </label>
+                                    </div>  
                                 </div>
-                                <div class="form-group form-show-validation row">
-                                    <label for="name">Created On</label>
-                                    <div class="col-sm-12"><?php echo date("d M Y, H:i", strtotime($data[0]['CreatedOn']));?></div> 
-                                </div>  
+                            </div>
+                            <div class="row"> 
+                                <div class="col-md-12">
+                                    <div class="form-group form-show-validation row"> 
+                                        <label for="email" class="col-md-2 mt-sm-2 text-right">Is Active</label>
+                                        <label class="col-md-10 mt-sm-2 ">
+                                            <small id="emailHelp" class="form-text text-muted">:&nbsp;<?php if($data[0]['IsActive']=="1") { echo "Yes"; } else { echo "No";}?></small>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div> 
                             </div>
                             <div class="card-action">
                                 <div class="row">

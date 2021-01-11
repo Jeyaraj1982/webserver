@@ -50,9 +50,9 @@
                     echo ceil($Percentage)."% off";?> </span> </p>
               </div>
               <div class="ratings">
-                <div class="rating"><?php echo PrintStar($Product[0]['Ratings']);?></div>
+                <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> </div>
                 <!--<p class="rating-links"><a href="#">1 Review(s)</a> <span class="separator">|</span><a href="#">Add Your Review</a> </p>-->
-                <p class="availability in-stock pull-right">Availability: <span><?php if($Product[0]['StockAvailable']=="Yes"){ echo "In Stock"; } else { echo "Out of Stock"; }?></span></p>
+                <p class="availability in-stock pull-right">Availability: <span>In Stock</span></p>
               </div>
               <div class="short-description">
                 <h2>Quick Overview</h2>
@@ -95,7 +95,7 @@
                        }
                     
                      ?> 
-                    </ul>                                               
+                    </ul>
                     <input type="hidden" name="BrandSize" id="BrandSize">
                     <span style="color: red;" id="ErrBrandSize"></span>
                   </div>
@@ -103,12 +103,12 @@
               </div>
               <div class="product-variation">
                   <div class="cart-plus-minus">
-                    <label for="qty">Quantity:</label>                            
+                    <label for="qty">Quantity:</label>
                     <div class="numbers-row">
                       <div onClick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty ) &amp;&amp; qty &gt; 1 ) result.value--;return false;" class="dec qtybutton"><i class="fa fa-minus">&nbsp;</i></div>
                       <input type="text" class="qty" title="Qty" value="1" maxlength="12" id="qty" name="qty">
                       <div onClick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty )) result.value++;return false;" class="inc qtybutton"><i class="fa fa-plus">&nbsp;</i></div>
-                    </div>                                                                                                                                                                                                                              
+                    </div>
                   </div>
                   <div id="addcart">
                     <button class="button pro-add-to-cart" title="Add to Cart" type="button" onclick="addtocart('<?php echo $Product[0]['ProductID'];?>')"><span><i class="fa fa-shopping-basket"></i> Add to Cart</span></button>
@@ -122,12 +122,11 @@
                   <li>
                     <?php $whishlist = $mysql->select("select * from _tbl_whishlist where CustomerID='".$_SESSION['User']['CustomerID']."' and WhislistedProductID='".$Product[0]['ProductID']."'");?>
                     <?php if(sizeof($whishlist)==0){ ?>
-                        <span id="wishlist"><a style="cursor:pointer" onclick="addtowishlist('<?php echo $Product[0]['ProductID'];?>')"><i class="fa fa-heart-o"></i><span>Add to Wishlist</span></a></span>
+                        <a  style="cursor:pointer" id="wishlist" onclick="addtowishlist('<?php echo $Product[0]['ProductID'];?>')"><i class="fa fa-heart-o"></i><span>Add to Wishlist</span></a></li>
                     <?php } else { ?>
-                        <span id="wishlist"><a style="cursor:pointer" onclick="removewishlist('<?php echo $Product[0]['ProductID'];?>')"><i class="fa fa-heart" style="color:#e83f33;vertical-align: 0px !important;"></i><span>Remove Wishlisht</span></a></span>
+                        <a  style="cursor:pointer"><i class="fa fa-heart" style="color:#e83f33;vertical-align: 0px !important;"></i><span>Added to whishlist</span></a></li>
                     <?php } ?>
-                    </li>
-                  <!--<li><a href="#"><i class="fa fa-envelope"></i><span>Email to a Friend</span></a></li>-->                                        
+                  <!--<li><a href="#"><i class="fa fa-envelope"></i><span>Email to a Friend</span></a></li>-->
                 </ul>
               </div>
               <!--<div class="pro-tags">
@@ -135,7 +134,7 @@
                <a href="#">bootstrap</a>,<a href="#">shopping</a>,<a href="#">fashion</a>,<a href="#">responsive</a> </div>-->
               <div class="share-box">
                 <div class="title">Share in social media</div>
-                <div class="socials-box"><a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo   (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://".$_SERVER[HTTP_HOST].$_SERVER[REQUEST_URI];?>"><i class="fa fa-facebook"></i></a><a href="https://www.twitter.com/share?text=<?php echo $d[0]['title'];?>&url=<?php echo  (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://".$_SERVER[HTTP_HOST].$_SERVER[REQUEST_URI];?>"><i class="fa fa-twitter"></i></a></div>
+                <div class="socials-box"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a></div>
               </div>
             </div>
           </div>
@@ -155,8 +154,8 @@
           <p>Lorem Ipsum is simply dummy text of the print and typesetting industry. Ut pharetra augue nec augue. Nam elit agna, endrerit sit amet.</p>
           <div class="social">
             <ul class="inline-mode">
-              <li class="social-network fb"><a title="Connect us on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo   (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://".$_SERVER[HTTP_HOST].$_SERVER[REQUEST_URI];?>"><i class="fa fa-facebook"></i></a></li>
-              <li class="social-network tw"><a title="Connect us on Twitter" href="https://www.twitter.com/share?text=<?php echo $d[0]['title'];?>&url=<?php echo  (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://".$_SERVER[HTTP_HOST].$_SERVER[REQUEST_URI];?>"><i class="fa fa-twitter"></i></a></li>
+              <li class="social-network fb"><a title="Connect us on Facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li class="social-network tw"><a title="Connect us on Twitter" href="#"><i class="fa fa-twitter"></i></a></li>
             </ul>
           </div>
         </div>
@@ -392,7 +391,7 @@ function Cart_RemoveItem(ProductID){
         
         }});  
 }  
- function addtowishlist(ProductID){                                   
+ function addtowishlist(ProductID){
     $.ajax({url:'webservice.php?action=addtowishlist&ProductID='+ProductID,success:function(data){
         var obj = JSON.parse(data); 
         var html = "";                                                                              
@@ -408,31 +407,11 @@ function Cart_RemoveItem(ProductID){
             $("#xconfrimation_text").html(html);
             $('#ConfirmationPopup').modal("show");
         }if (obj.status=="success") {
-            $("#wishlist").html("<a style='cursor:pointer' onclick='removewishlist("+ProductID+")'><i class='fa fa-heart'  style='color:#e83f33;vertical-align: 0px !important;'></i><span>Remove Wishlisht</span></a>");
+            $("#wishlist").html("<a style='cursor:pointer'><i class='fa fa-heart' style='color:#e83f33;vertical-align: 0px !important;'></i><span>Added to whishlist</span></a>");
         }
         
     }});
- } 
-  function removewishlist(ProductID){
-    $.ajax({url:'webservice.php?action=removewishlist&ProductID='+ProductID,success:function(data){
-        var obj = JSON.parse(data); 
-        var html = "";                                                                              
-        if (obj.status=="failure") {
-                html = "<div class='modal-body'>";
-                    html += "<div class='form-group row'>";
-                        html += "<div class='col-sm-12' style='text-align:center'><img src='accessdenied.png' style='width:128px'><br><br>"+obj.message+"<br></div>";
-                    html += "</div>";
-                html += "</div>";
-                html += "<div class='modal-footer' style='border-top: none;padding-top: 0px;'>";
-                    html += "<div class='col-sm-12' style='text-align:center'><button type='button' class='button pro' data-dismiss='modal'>Continue</button></div>";
-                html += "</div>";
-            $("#xconfrimation_text").html(html);
-            $('#ConfirmationPopup').modal("show");
-        }if (obj.status=="success") {
-            $("#wishlist").html("<a style='cursor:pointer' onclick='addtowishlist("+ProductID+")'><i class='fa fa-heart-o' style='color:#e83f33;vertical-align: 0px !important;'></i><span>Add To Wishlist</span></a>");
-        }
-    }});
- }        
+ }     
 </script>
 <script type="text/javascript" src="//themera.net/embed/themera.js?id=65867"></script>
 <div class="modal fade right" id="ConfirmationPopup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-keyboard="false" data-backdrop="static" style="top: 0px !important;">

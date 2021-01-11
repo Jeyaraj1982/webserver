@@ -61,16 +61,6 @@ $data= $mysql->Select("select * from _tbl_products where md5(ProductID)='".$_GET
                                                         <label for="name">Is Active</label>
                                                         <div><?php if($data[0]['IsActive']=="1") { echo "Yes"; } else { echo "No";}?></div> 
                                                     </div>  
-                                               </div>
-                                               <div class="form-group form-show-validation row">
-                                                    <div class="col-sm-6" style="padding-left: 0px;">
-                                                        <label for="name">Ratings</label>
-                                                        <div><?php echo PrintStar($data[0]['Ratings']);?></div> 
-                                                    </div>  
-                                                    <div class="col-sm-6" style="padding-left: 0px;">
-                                                        <label for="name">Is New</label>
-                                                        <div><?php if($data[0]['IsNew']=="1") { echo "Yes"; } else { echo "No";}?></div> 
-                                                    </div>  
                                                </div>  
                                             </div>
                                        </div> 

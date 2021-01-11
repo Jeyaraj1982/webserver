@@ -1,37 +1,22 @@
 <?php include_once("header.php");?>
-<?php $Orders = $mysql->select("select * from invoice_order where OrderCode='".$_GET['id']."' and CustomerID='".$_SESSION['User']['CustomerID']."'"); ?>
-   
+<?php $Orders = $mysql->select("select * from invoice_order where OrderCode='".$_GET['id']."'");
+$items = $mysql->select("select * from invoice_order_item where order_id='".$Orders[0]['order_id']."'");
+?>	
+<?php $Stts = $mysql->select("select * from _tbl_order_status where OrderID='".$Orders[0]['order_id']."' order by StatusID Desc");?>   
 <div class=" " style="">
 <section class="main-container col2-right-layout">
     <div class="main container">
         <div class="row">
             <div class="col-main col-sm-9 col-xs-12">
-                <?php if(sizeof($Orders)==0){ ?>
-                    <div style="text-align: center;">
-                        <div class="cart-icon" style="text-align: center;width:100%"><i class="icon-basket-loaded icons" style="font-size: 200px"></i></div>    <br>
-                        No Orders Found<br>
-                        <div class="cart_navigation"> <a class="continue-btn" href="index.php"> Continue shopping&nbsp; <i class="fa fa-arrow-right"> </i></a></div>             
-                    </div> 
-                <?php } else { ?>
-                <?php 
-                    $items = $mysql->select("select * from invoice_order_item where order_id='".$Orders[0]['order_id']."'");
-                    $Stts = $mysql->select("select * from _tbl_order_status where OrderID='".$Orders[0]['order_id']."' order by StatusID Desc");
-                ?>   
+                    
                 <div class="page-content checkout-page">
-                    <div class="row" style="margin-bottom: 15px;">
-                        <div class="col-sm-12" style="text-align: right;">
-                            <img src="<?php echo $Logo;?>"><br>
-                            <?php echo Address1;?><br>
-                            <?php echo Address2;?>   
-                        </div>
-                    </div>
                     <div class="row">
                         <div class="col-sm-6">
                             <h4 class='checkout-sep' style="border:none;margin-bottom:0px">Customer Details</h4>
                             <b><?php echo $Orders[0]['CustomerName'];?></b><br>
                             <?php echo $Orders[0]['BillingAddress1'];?><br>
                             <?php if($Orders[0]['BillingAddress2']!=""){ echo $Orders[0]['BillingAddress2']."<br>"; }?>
-                            <?php if($Orders[0]['BillingAddress3']!=""){ echo $Orders[0]['BillingAddress3']."<br>"; }?>
+                            <?php if($Orders[0]['BillingAddress3']!=""){ echo $Orders[0]['BillingAddress2']."<br>"; }?>
                             Zip/PinCode: <?php echo $Orders[0]['BillingPincode'];?><br>
                             <?php if($Orders[0]['BillingLandMark']!=""){ ?>Land-Mark: <?php echo $Orders[0]['BillingLandMark']."<br>";?><?php } ?><br>    
                             <?php echo $Orders[0]['CustomerEmailID'];?><br>
@@ -41,7 +26,8 @@
                             <h4 class='checkout-sep' style="border:none;margin-bottom:0px">Order Details</h4>
                             <?php echo "Order Number: ".$Orders[0]['OrderCode'];?><br>
                             <?php echo date("M d, Y H:i",strtotime($Orders[0]['OrderDate']));?><br>
-                            <span style="font-weight: bold;color:red"><?php echo $Stts[0]['Status'];?></span>
+                            <span style="font-weight: bold;color:red"><?php echo $Stts[0]['Status'];?></span><br><br><br><br><br><br>
+                            <a href="printorder.php?id=<?php echo md5($Orders[0]['order_id']);?>" target="blank" class="btn btn-primary btn-sm">Print</a>
                         </div>
                     </div>
                     <hr>
@@ -112,7 +98,6 @@
                         </table>
                     </div>
                 </div>
-                <?php } ?>
             </div>
         </div>
     </section>
@@ -167,4 +152,3 @@
       </div>
     </div>
   </div>
-  <?php include_once("footer.php");?>

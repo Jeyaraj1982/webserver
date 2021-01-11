@@ -56,7 +56,7 @@
 	<div class="wrapper">
 <div class="main-header">
             <!-- Logo Header -->
-            <div class="logo-header">
+            <div class="logo-header" data-background-color="dark">
                 
                 <a href="dashboard.php" class="logo" style="color:#fff;text-align:center;line-height:15px;text-align:left;height:30px !important">
                     <img src="<?php echo $Logo;?>" style="height:38px;"><br>

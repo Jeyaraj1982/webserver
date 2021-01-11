@@ -7,6 +7,7 @@ define("website","https://www.lakshtex.com/");
 include_once("app/controller/DatabaseController.php");
 
 $mysql   = new MySqldatabase("localhost","japps_user","mysql@Pwd","japps_ecommerce");
+//$mysql   = new MySqldatabase("localhost","japps_user","mysql@Pwd","japps_ecommerce");
 $Logo = "http://japps.online/demo/admin/assets/Logoo.jpg";
  
 if(isset($_SESSION['User']) && $_SESSION['User']['Role']=="User") {

@@ -77,37 +77,83 @@ function DeleteSubCategory() {
         return json_encode($result);
     
     } 
-   function getSubCategory() {
+   
+   function getMainCategory() {
+       
+       global $mysql;
+       
+       $categories = $mysql->select("select * from _tbl_category order by CategoryName");
+       if (sizeof($categories)==0) {
+           return "";
+       }
+       
+       $html = '<select class="form-control" name="Category" id="Category" style="width:100%">';
+       
+       if($_REQUEST['fr']!="category"){
+           $html.='<option value="0" selected="selected">Category Name</option>';
+       }
+       
+        if ($_REQUEST['fr']=="category"){
             
-            global $mysql;
-            $subcategories = $mysql->select("select * from _tbl_sub_category where CategoryID='".$_REQUEST['CategoryID']."' order by SubCategoryName");
-            if($_REQUEST['fr']=="category"){
-                $html = '<select class="form-control" name="SubCategory" readonly="readonly" id="SubCategory" style="width:100%">';
-            }else {
-                 $html = '<select class="form-control" name="SubCategory" id="SubCategory" style="width:100%">';
+            foreach($categories as $r) {
+                if ($_REQUEST['CategoryID'] == $r['CategoryID']){   
+                    $html .= '<option value="'.$r['CategoryID'].'" '.(($_REQUEST['CategoryID']== $r['CategoryID']) ? "selected='selected'" : "").'>'.$r['CategoryName'].'</option>';
+                }  
             }
-            $html.='<option value="0" selected="selected">Select Sub Category Name</option>';
+        
+        } else {
             
-            if (sizeof($subcategories)>0) {
-                foreach($subcategories as $r) {
-                  
-                    if(isset($_REQUEST['SubCategoryID'])){
-                       $html .= '<option value="'.$r['SubCategoryID'].'" '.(($_REQUEST['SubCategoryID']== $r['SubCategoryID']) ? "selected='selected'" : "").'>'.$r['SubCategoryName'].'</option>';
-                    
-                    }else {
-                    $html .= '<option value="'.$r['SubCategoryID'].'">'.$r['SubCategoryName'].'</option>'; 
-                    
-                    }
+            foreach($categories as $r) {
+                if(isset($_REQUEST['CategoryID'])){   
+                    $html .= '<option value="'.$r['CategoryID'].'" '.(($_REQUEST['CategoryID']== $r['CategoryID']) ? "selected='selected'" : "").'>'.$r['CategoryName'].'</option>';
+                } else {
+                    $html .= '<option value="'.$r['CategoryID'].'">'.$r['CategoryName'].'</option>'; 
                 }
-            } else {
-                $html .= '<option value="0" selected="selected">Select Sub Category Name</option>'; 
             }
-            $html .= '</select>';
+       }
+       
+       $html .= '</select>';
+       return $html;
+   }
+   function getSubCategory() {
+       
+       global $mysql;
+       
+       $subcategories = $mysql->select("select * from _tbl_sub_category where CategoryID='".$_REQUEST['CategoryID']."' order by SubCategoryName");
+       if (sizeof($subcategories)==0) {
+           return "";
+       }
+       
+       $html = '<select class="form-control" name="SubCategory" id="SubCategory" style="width:100%">';
+       
+       if($_REQUEST['fr']!="category"){
+           $html.='<option value="0" selected="selected">Select Sub Category Name</option>';
+       }
+       
+        if ($_REQUEST['fr']=="category"){
             
-            return $html;
+            foreach($subcategories as $r) {
+                if ($_REQUEST['SubCategoryID'] == $r['SubCategoryID']){   
+                    $html .= '<option value="'.$r['SubCategoryID'].'" '.(($_REQUEST['SubCategoryID']== $r['SubCategoryID']) ? "selected='selected'" : "").'>'.$r['SubCategoryName'].'</option>';
+                }  
+            }
+        
+        } else {
             
-        } 
-       function DeleteSlider() {
+            foreach($subcategories as $r) {
+                if(isset($_REQUEST['SubCategoryID'])){   
+                    $html .= '<option value="'.$r['SubCategoryID'].'" '.(($_REQUEST['SubCategoryID']== $r['SubCategoryID']) ? "selected='selected'" : "").'>'.$r['SubCategoryName'].'</option>';
+                } else {
+                    $html .= '<option value="'.$r['SubCategoryID'].'">'.$r['SubCategoryName'].'</option>'; 
+                }
+            }
+       }
+       
+       $html .= '</select>';
+       return $html;
+   } 
+   
+   function DeleteSlider() {
     
     global $mysql;
     
@@ -126,7 +172,7 @@ function DeleteSubCategory() {
              foreach($_SESSION['items'] as $item) {
                  $subtotal += $item['Price']*$item['Qty'];
                  if ($item['ProductID']==$_POST['ProductID']) {
-                     
+                                                                                          
                      $e++;
                  }
              }
@@ -138,7 +184,7 @@ function DeleteSubCategory() {
                                                  "ProductIDen"  => md5($Products[0]['ProductID']),
                                                  "ProductName"  => $Products[0]['ProductName'],
                                                  "ProductImage" => $Products[0]['ProductImage'],
-                                                 "Price"        => number_format($Products[0]['SellingPrice'],2),
+                                                 "Price"        => $Products[0]['SellingPrice'],
                                                  "Qty"          => $_POST['qty'],
                                                  "Size"         => $_POST['BrandSize']
                                                  );    
@@ -212,12 +258,12 @@ function DeleteSubCategory() {
                                                          "MobileNumber" => $_POST['MobileNumber'],
                                                          "Password"     => $_POST['Password'],
                                                          "CreatedOn"    => date("Y-m-d H:i:s")));
-			
+            
               
             if($id>0){
                 $user = $mysql->select("select * from _tbl_customer where CustomerID='".$id."'");
                 $_SESSION['User'] = $user[0];
-				$message = '
+                $message = '
                     <div style="padding:45px;background:#e5e5e5;margin:20px;border-radius:10px;padding-top:20px;">
                         <div style="text-align:center;padding-bottom:20px;">
                             <img src="" style="height:30px;">&nbsp;&nbsp;
@@ -253,10 +299,6 @@ function DeleteSubCategory() {
         global $mysql;
         $userdata = $mysql->select("select * from _tbl_customer where EmailID='".$_POST['EmailID']."' and Password='".$_POST['Password']."' ");
             if (sizeof($userdata)>0) {
-                if($userdata[0]['AddressLine2']!=""){ $address2=$userdata[0]['AddressLine2']; } else { $address2=""; }
-                if($userdata[0]['AddressLine3']!=""){ $address3=$userdata[0]['AddressLine3']; } else { $address3=""; }
-                if($userdata[0]['LandMark']!=""){ $LandMark=$userdata[0]['LandMark']; } else { $LandMark=""; }
-                
                 $_SESSION['User']=$userdata[0];
                 $_SESSION['User']['Role']="User";
                 $result = array();
@@ -264,11 +306,6 @@ function DeleteSubCategory() {
                 $result['Name']=$userdata[0]['CustomerName'];
                 $result['Mobile']=$userdata[0]['MobileNumber'];
                 $result['Email']=$userdata[0]['EmailID'];
-                $result['AddressLine1']=$userdata[0]['AddressLine1'];
-                $result['AddressLine2']=$address2;
-                $result['AddressLine3']=$address3;
-                $result['PostalCode']=$userdata[0]['PostalCode'];
-                $result['LandMark']=$LandMark;
                 $result['message']="Login Successfully<br>";  
                 return json_encode($result);
             }  else {
@@ -280,41 +317,13 @@ function DeleteSubCategory() {
     } 
     function SaveBillingInfo(){
         global $mysql;
-        $mysql->execute("update _tbl_customer set AddressLine1 ='".$_POST['AddressLine1']."',
-                                                   AddressLine2 ='".$_POST['AddressLine2']."',
-                                                   AddressLine3 ='".$_POST['AddressLine3']."',
-                                                   PostalCode   ='".$_POST['PostalCode']."',
-                                                   LandMark     ='".$_POST['LandMark']."' where CustomerID='".$_SESSION['User']['CustomerID']."'"); 
+        
         $_SESSION['Billing'] = array("AddressLine1"    => $_POST['AddressLine1'],
                                      "AddressLine2"    => $_POST['AddressLine2'],
                                      "AddressLine3"    => $_POST['AddressLine3'],
                                      "PostalCode"      => $_POST['PostalCode'],
-                                     "LandMark"        => $_POST['LandMark']);   
-         $_SESSION['User']['AddressLine1']=$_POST['AddressLine1']; 
-        $_SESSION['User']['AddressLine2']=$_POST['AddressLine2']; 
-        $_SESSION['User']['AddressLine3']=$_POST['AddressLine3']; 
-        $_SESSION['User']['PostalCode']=$_POST['PostalCode']; 
-        $_SESSION['User']['LandMark']=$_POST['LandMark'];   
+                                     "LandMark"        => $_POST['LandMark']);     
         $result=array("Billing"=>$_SESSION['Billing']);
-        return json_encode($result);
-    }
-    function UpdateBillingInfo(){
-        global $mysql;
-        
-         $mysql->execute("update _tbl_customer set AddressLine1 ='".$_POST['AddressLine1']."',
-                                                   AddressLine2 ='".$_POST['AddressLine2']."',
-                                                   AddressLine3 ='".$_POST['AddressLine3']."',
-                                                   PostalCode   ='".$_POST['PostalCode']."',
-                                                   LandMark     ='".$_POST['LandMark']."' where CustomerID='".$_SESSION['User']['CustomerID']."'"); 
-         
-        $_SESSION['User']['AddressLine1']=$_POST['AddressLine1']; 
-        $_SESSION['User']['AddressLine2']=$_POST['AddressLine2']; 
-        $_SESSION['User']['AddressLine3']=$_POST['AddressLine3']; 
-        $_SESSION['User']['PostalCode']=$_POST['PostalCode']; 
-        $_SESSION['User']['LandMark']=$_POST['LandMark']; 
-         $result = array();
-         $result['status']="success";
-         $result['message']="Billing / Shipping Infomations Updated Successfully";
         return json_encode($result);
     } 
     function ChangeBillingInfo(){
@@ -323,7 +332,7 @@ function DeleteSubCategory() {
         return json_encode($result);    
     }
     function PlaceOrder(){
-        global $mysql,$Logo;
+        global $mysql;
         $random = sizeof($mysql->select("select * from invoice_order")) + 1;
         $OrderCode ="ORD0000".$random;
         $id = $mysql->insert("invoice_order",array("OrderCode"             => $OrderCode,
@@ -348,141 +357,136 @@ function DeleteSubCategory() {
                                                         "order_item_quantity"    => $item['Qty'],
                                                         "order_item_price"       => $item['Price'],
                                                         "order_item_final_amount"=> $subtotal));
+              $qry = $mysql->qry;
              }
-			 $mysql->execute("update invoice_order set OrderTotal='".$subtotal."' where order_id='".$id."'"); 
+             $mysql->execute("update invoice_order set OrderTotal='".$subtotal."' where order_id='".$id."'"); 
                $q=$mysql->qry;
-			  $Sid = $mysql->insert("_tbl_order_status",array("OrderID"   => $id,
+              $Sid = $mysql->insert("_tbl_order_status",array("OrderID"   => $id,
                                                              "OrderCode" => $OrderCode,
                                                              "Status"    => "Order Placed",
                                                              "StatusOn"  => date("Y-m-d H:i:s")));  
               $statuses = $mysql->select("select * from _tbl_order_status where OrderID='".$id."' order by StatusID desc");
-			$inmessage = '<div class="card card-invoice" style="border-radius: 5px;background-color: #ffffff;margin-bottom: 30px;box-shadow: 2px 6px 15px 0px rgba(69, 65, 78, 0.1);border: 0px;position: relative;flex-direction: column;min-width: 0;word-wrap: break-word;background-clip: border-box;">
-    <div class="card-header" style="border-radius: 0px;padding: 50px 0px 20px;border: 0px !important;width: 75%;margin: auto;background-color: transparent;">
-        <div class="row" style="margin-right:0px;margin-left:0px;display: flex;flex-wrap: wrap;">
-            <div class="col-md-12" style="padding-right:0px;padding-left:0px;flex: 0 0 100%;max-width: 100%;position: relative;width: 100%;min-height: 1px;">
-                <div class="col-md-6" style="padding-right:0px;padding-left:0px;float: left;max-width: 50%;position: relative;width: 100%;min-height: 1px;">
-                    <h3 class="invoice-title" style="font-size: 27px;font-weight: 400;line-height: 1.4;margin-bottom: .5rem;color: inherit;margin-top: 0;">
-                        Order
-                    </h3>  
-                </div>
-                <div class="col-md-6" style="padding-right:0px;padding-left:0px;float: left;text-align: right;max-width: 50%;position: relative;width: 100%;min-height: 1px;">
-                    <img src="'.$Logo.'"><br>
-                    '.Address1.'<br>
-                    '.Address2.'
-                </div>
-            </div>
-        </div>
-        <div class="row" style="margin-right:0px;margin-left:0px;display: flex;flex-wrap: wrap;">
-            <div class="col-md-12" style="padding-right:0px;padding-left:0px;flex: 0 0 100%;max-width: 100%;position: relative;width: 100%;min-height: 1px;">
-                <div class="col-md-6" style="padding-right:0px;padding-left:0px;float: left;max-width: 50%;position: relative;width: 100%;min-height: 1px;">
-                    <h5 style="margin-bottom:0px;font-weight: bold;">Customer Details</h5>
-                    <b>'.$_SESSION['User']['CustomerName'].'</b><br>
-                    '.$_SESSION['Billing']['AddressLine1'].'<br>';
-                    if($_SESSION['Billing']['AddressLine2']!=""){ $inmessage .= ''.$_SESSION['Billing']['AddressLine2'].'<br>'; }
-                    if($_SESSION['Billing']['AddressLine3']!=""){ $inmessage .= ''.$_SESSION['Billing']['AddressLine3'].'<br>'; }
-                    $inmessage .= 'Zip/PinCode: '.$_SESSION['Billing']['PostalCode'].'<br>
-                    Land-Mark: '.$_SESSION['Billing']['LandMark'].'<br><br>
-                    '.$_SESSION['User']['EmailID'].'<br>
-                    '.$_SESSION['User']['MobileNumber'].'<br>    
-                </div>
-                <div class="col-md-6" style="padding-right:0px;padding-left:0px;float: left;text-align: right;max-width: 50%;position: relative;width: 100%;min-height: 1px;">
-                    <h5 style="margin-bottom:0px;font-weight: bold;">Order Details</h5>
-                    Order Number: '.$OrderCode.'<br>
-                    Order Date: '.date("M d, Y H:i").'<br>
-                    <span style="font-weight: bold;color:red">'.$statuses[0]['Status'].'</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="card-body" style="padding: 0;border: 0px !important;width: 75%;margin: auto;flex: 1 1 auto;">
-    <div class="separator-solid" style="border-top: 1px solid #ebecec;margin: 15px 0;"></div>
-        <div class="row" style="display: flex;flex-wrap: wrap;margin-right: -15px;margin-left: -15px;">
-            <div class="col-md-12" style="flex: 0 0 100%;max-width: 100%;position: relative;width: 100%;min-height: 1px;padding-right: 15px;padding-left: 15px;">
-                <div class="invoice-detail" style="width: 100%;display: block;">
-                    <div class="invoice-top">
-                        <h3 class="title" style="font-size: 20px;line-height: 1.4;margin-bottom: .5rem;font-weight: 500;color: inherit;margin-top: 0;"><strong style="font-weight: 600;">Invoice summary</strong></h3>
+            $inmessage = '
+                    <div class="card card-invoice" style="border-radius: 5px;background-color: #ffffff;margin-bottom: 30px;box-shadow: 2px 6px 15px 0px rgba(69, 65, 78, 0.1);border: 0px;position: relative;flex-direction: column;min-width: 0;word-wrap: break-word;background-clip: border-box;">
+                        <div class="card-header" style="border-radius: 0px;padding: 50px 0px 20px;border: 0px !important;width: 75%;margin: auto;background-color: transparent;">
+                            <div class="invoice-header" style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;margin-bottom: 15px;">
+                                <h3 class="invoice-title" style="font-size: 27px;font-weight: 400;line-height: 1.4;margin-bottom: .5rem;color: inherit;margin-top: 0;">
+                                    Order
+                                </h3>
+                            </div>
+                            <div class="row" style="margin-right:0px;margin-left:0px;display: flex;flex-wrap: wrap;">
+                                <div class="col-md-12" style="padding-right:0px;padding-left:0px;flex: 0 0 100%;max-width: 100%;position: relative;width: 100%;min-height: 1px;">
+                                    <div class="col-md-6" style="padding-right:0px;padding-left:0px;float: left;max-width: 50%;position: relative;width: 100%;min-height: 1px;">
+                                        <h5 style="margin-bottom:0px;font-weight: bold;">Customer Details</h5>
+                                        <b>'.$_SESSION['User']['CustomerName'].'</b><br>
+                                        '.$_SESSION['User']['EmailID'].'<br>
+                                        '.$_SESSION['User']['MobileNumber'].'<br>
+                                        '.$_SESSION['User']['BillingAddress1'].'<br>';
+                                            if($_SESSION['User']['BillingAddress2']!=""){ $inmessage .= ''.$_SESSION['User']['BillingAddress2'].'<br>'; }
+                                            if($_SESSION['User']['BillingAddress3']!=""){ $inmessage .= ''.$_SESSION['User']['BillingAddress3'].'<br>'; }
+                                        $message .= 'Zip/PinCode: '.$order[0]['BillingPincode'].'<br>
+                                        Land-Mark: '.$_SESSION['Billing']['LandMark'].'<br><br>    
+                                    </div>
+                                    <div class="col-md-6" style="padding-right:0px;padding-left:0px;float: left;text-align: right;max-width: 50%;position: relative;width: 100%;min-height: 1px;">
+                                        <h5 style="margin-bottom:0px;font-weight: bold;">Order Details</h5>
+                                        '."Order Number: ".$OrderCode.'<br>
+                                        '.date("M d, Y H:i").'<br>
+                                        <span style="font-weight: bold;color:red">'.$statuses[0]['Status'].'</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class="card-body" style="padding: 0;border: 0px !important;width: 75%;margin: auto;flex: 1 1 auto;">
+                        <div class="separator-solid" style="border-top: 1px solid #ebecec;margin: 15px 0;"></div>
+                        <div class="row" style="display: flex;flex-wrap: wrap;margin-right: -15px;margin-left: -15px;">
+                            <div class="col-md-12" style="flex: 0 0 100%;max-width: 100%;position: relative;width: 100%;min-height: 1px;padding-right: 15px;padding-left: 15px;">
+                                <div class="invoice-detail" style="width: 100%;display: block;">
+                                    <div class="invoice-top">
+                                        <h3 class="title" style="font-size: 20px;line-height: 1.4;margin-bottom: .5rem;font-weight: 500;color: inherit;margin-top: 0;"><strong style="font-weight: 600;">Order summary</strong></h3>
+                                    </div>
+                                    <div class="invoice-item">
+                                        <div class="table-responsive" style="width: 100% !important;overflow-x: auto;display: block;width: 100%;margin-bottom: 1rem;background-color: transparent;border-collapse: collapse;">
+                                            <table class="table table-striped">
+                                                <thead>                                                                   
+                                                    <tr>
+                                                        <th style="font-weight: 600;border-top: 0 !important;border-bottom: 0 !important;font-size: 14px;border-color: #ebedf2 !important;padding: 0 25px !important;height: 60px;vertical-align: middle !important;text-align: inherit;">Item Code<br>&nbsp;</th>
+                                                        <th style="font-weight: 600;border-top: 0 !important;border-bottom: 0 !important;font-size: 14px;border-color: #ebedf2 !important;padding: 0 25px !important;height: 60px;vertical-align: middle !important;text-align: inherit;">Item Name<br>&nbsp;</th>
+                                                        <th style="font-weight: 600;border-top: 0 !important;border-bottom: 0 !important;font-size: 14px;border-color: #ebedf2 !important;padding: 0 25px !important;height: 60px;vertical-align: middle !important;text-align:right">Price<br><span style="font-size:11px"> ( INR ) </span></th>
+                                                        <th style="text-align:right;font-weight: 600;border-top: 0 !important;border-bottom: 0 !important;font-size: 14px;border-color: #ebedf2 !important;padding: 0 25px !important;height: 60px;vertical-align: middle !important;text-align: inherit;">Quantity<br>&nbsp;</th>
+                                                        <th style="text-align:right;font-weight: 600;border-top: 0 !important;border-bottom: 0 !important;font-size: 14px;border-color: #ebedf2 !important;padding: 0 25px !important;height: 60px;vertical-align: middle !important;text-align: inherit;">Total<br><span style="font-size:11px"> ( INR ) </span></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>';
+                                                $subtotal=0;
+                                                    foreach($_SESSION['items'] as $item){ 
+                                                    $product=$mysql->select("select * from _tbl_products where ProductID='".$item['ProductID']."'");
+                                                    $subtotal+=$item['Qty']*$item['Price'];
+                                                    
+                                                        $inmessage .= '<tr>
+                                                            <td style="border-top: 0 !important;border-bottom: 0 !important;font-size: 14px;border-color: #ebedf2 !important;padding: 0 25px !important;height: 60px;vertical-align: middle !important;">'.$product[0]['ProductCode'].'</td>
+                                                            <td style="border-top: 0 !important;border-bottom: 0 !important;font-size: 14px;border-color: #ebedf2 !important;padding: 0 25px !important;height: 60px;vertical-align: middle !important;">'.$item['ProductName'].'<br><span style="font-weight:normal">Ize: '.$item['Size'].'</span></td>
+                                                            <td style="text-align:right">'.number_format($item['Price'],2).'</td>
+                                                            <td style="border-top: 0 !important;border-bottom: 0 !important;font-size: 14px;border-color: #ebedf2 !important;padding: 0 25px !important;height: 60px;vertical-align: middle !important;text-align:right">'.$item['Qty'].'</td>
+                                                            <td style="border-top: 0 !important;border-bottom: 0 !important;font-size: 14px;border-color: #ebedf2 !important;padding: 0 25px !important;height: 60px;vertical-align: middle !important;text-align:right">'.number_format($item['Qty']*$item['Price'],2).'</td>
+                                                        </tr>';
+                                                     }
+                                                      $inmessage .= '<tr>
+                                                            <td colspan="4" style="border-top: 0 !important;border-bottom: 0 !important;font-size: 14px;border-color: #ebedf2 !important;padding: 0 25px !important;height: 60px;vertical-align: middle !important;text-align:right">Sub Total ( INR )</td>
+                                                            <td style="border-top: 0 !important;border-bottom: 0 !important;font-size: 14px;border-color: #ebedf2 !important;padding: 0 25px !important;height: 60px;vertical-align: middle !important;text-align:right"> '.number_format($subtotal,2).'</td> 
+                                                        </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>    
+                                <div class="separator-solid  mb-3" style="border-top: 1px solid #ebecec;margin: 15px 0;margin-bottom: 1rem !important;"></div>
+                            </div>    
+                        </div>
                     </div>
-                    <div class="invoice-item">
-                        <div class="table-responsive" style="width: 100% !important;overflow-x: auto;display: block;width: 100%;margin-bottom: 1rem;background-color: transparent;border-collapse: collapse;">
-                            <table class="table table-striped">
-                                <thead>
-                                    <tr>
-                                        <th style="font-weight: 600;border-top: 0 !important;border-bottom: 0 !important;font-size: 14px;border-color: #ebedf2 !important;padding: 0 25px !important;height: 60px;vertical-align: middle !important;text-align: inherit;">Item Code<br>&nbsp;</th>
-                                        <th style="font-weight: 600;border-top: 0 !important;border-bottom: 0 !important;font-size: 14px;border-color: #ebedf2 !important;padding: 0 25px !important;height: 60px;vertical-align: middle !important;text-align: inherit;">Item Name<br>&nbsp;</th>
-                                        <th style="font-weight: 600;border-top: 0 !important;border-bottom: 0 !important;font-size: 14px;border-color: #ebedf2 !important;padding: 0 25px !important;height: 60px;vertical-align: middle !important;text-align:right">Price<br><span style="font-size:11px"> ( INR ) </span></th>
-                                        <th style="text-align:right;font-weight: 600;border-top: 0 !important;border-bottom: 0 !important;font-size: 14px;border-color: #ebedf2 !important;padding: 0 25px !important;height: 60px;vertical-align: middle !important;text-align: inherit;">Quantity<br>&nbsp;</th>
-                                        <th style="text-align:right;font-weight: 600;border-top: 0 !important;border-bottom: 0 !important;font-size: 14px;border-color: #ebedf2 !important;padding: 0 25px !important;height: 60px;vertical-align: middle !important;text-align: inherit;">Total<br><span style="font-size:11px"> ( INR ) </span></th>
-                                    </tr>
-                                </thead>
-                                <tbody>';
-                                    $subtotal=0;
-                                    foreach($_SESSION['items'] as $item){ 
-                                    $product=$mysql->select("select * from _tbl_products where ProductID='".$item['ProductID']."'");
-                                    $subtotal+=$item['Qty']*$item['Price'];
+                        <div class="card-footer" style="padding: 5px 0 50px;border: 0px !important;width: 75%;margin: auto;background-color: transparent;line-height: 30px;font-size: 13px;border-radius: 0 0 calc(.25rem - 1px) calc(.25rem - 1px);">
+                            <div class="row" style="display: flex;    flex-wrap: wrap;    margin-right: -15px;    margin-left: -15px;">
+                                <div class="col-sm-7 col-md-5 mb-3 mb-md-0 transfer-to" style="margin-bottom: 0 !important;flex: 0 0 41.666667%;max-width: 41.666667%;position: relative;width: 100%;min-height: 1px;padding-right: 15px;padding-left: 15px;">
                                     
-                                    $inmessage .= '<tr>
-                                                        <td style="border-top: 0 !important;border-bottom: 0 !important;font-size: 14px;border-color: #ebedf2 !important;padding: 0 25px !important;height: 60px;vertical-align: middle !important;">'.$product[0]['ProductCode'].'</td>
-                                                        <td style="border-top: 0 !important;border-bottom: 0 !important;font-size: 14px;border-color: #ebedf2 !important;padding: 0 25px !important;height: 60px;vertical-align: middle !important;">'.$item['ProductName'].'<br><span style="font-weight:normal">Ize: '.$item['Size'].'</span></td>
-                                                        <td style="text-align:right">'.number_format($item['Price'],2).'</td>
-                                                        <td style="border-top: 0 !important;border-bottom: 0 !important;font-size: 14px;border-color: #ebedf2 !important;padding: 0 25px !important;height: 60px;vertical-align: middle !important;text-align:right">'.$item['Qty'].'</td>
-                                                        <td style="border-top: 0 !important;border-bottom: 0 !important;font-size: 14px;border-color: #ebedf2 !important;padding: 0 25px !important;height: 60px;vertical-align: middle !important;text-align:right">'.number_format($item['Qty']*$item['Price'],2).'</td>
+                                </div>
+                                <div class="col-sm-5 col-md-7 transfer-total" style="text-align: right;position: relative;width: 100%;min-height: 1px;padding-right: 15px;padding-left: 15px;">
+                                    <h5 class="sub" style="font-size: 14px;margin-bottom: 8px;font-weight: 600;line-height: 1.4;">Total Amount</h5>
+                                    <div class="price" style="font-size: 28px;color: #1572E8;padding: 7px 0;font-weight: 600;"><span style="font-size: 14px;">INR&nbsp;</span>'.number_format($subtotal,2).'</div>
+                                </div>
+                            </div>
+                            <div class="separator-solid" style="border-top: 1px solid #ebecec;margin: 15px 0;"></div>
+                                <div class="col-sm-12" style="max-width: 100%;position: relative;width: 100%;min-height: 1px;padding-right: 15px;padding-left: 15px;">
+                                    <h5 class="sub" style="margin-bottom:0px;font-size: 14px;font-weight: 600;line-height: 1.4;">Order Staus</h5>
+                                    <div class="table-responsive" style="width: 100% !important;overflow-x: auto;display: block;width: 100%;margin-bottom: 1rem;background-color: transparent;border-collapse: collapse;">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th style="font-weight: 600;border-top: 0 !important;border-bottom: 0 !important;font-size: 14px;border-color: #ebedf2 !important;padding: 0 25px !important;height: 60px;vertical-align: middle !important;text-align: inherit;">Status</th>
+                                                    <th style="font-weight: 600;border-top: 0 !important;border-bottom: 0 !important;font-size: 14px;border-color: #ebedf2 !important;padding: 0 25px !important;height: 60px;vertical-align: middle !important;text-align: inherit;">Status On</th>
+                                                    <th style="font-weight: 600;border-top: 0 !important;border-bottom: 0 !important;font-size: 14px;border-color: #ebedf2 !important;padding: 0 25px !important;height: 60px;vertical-align: middle !important;text-align: inherit;">Reason</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>';
+                                                $statuses = $mysql->select("select * from _tbl_order_status where OrderID='".$id."' order by StatusID desc");
+                                                 foreach($statuses as $status){ 
+                                                    $inmessage .= '<tr>
+                                                        <td style="height: auto !important;border-top: 0 !important;border-bottom: 0 !important;font-size: 14px;border-color: #ebedf2 !important;padding: 0 25px !important;vertical-align: middle !important;">'.$status['Status'].'</td>
+                                                        <td style="height: auto !important;border-top: 0 !important;border-bottom: 0 !important;font-size: 14px;border-color: #ebedf2 !important;padding: 0 25px !important;vertical-align: middle !important;">'.date("M d, Y H:i",strtotime($status['StatusOn'])).'</td>
+                                                        <td style="height: auto !important;border-top: 0 !important;border-bottom: 0 !important;font-size: 14px;border-color: #ebedf2 !important;padding: 0 25px !important;vertical-align: middle !important;">'.$status['Remarks'].'</td>
                                                     </tr>';
-                                    }
-                                   $inmessage .= '<tr>
-                                        <td colspan="4" style="border-top: 0 !important;border-bottom: 0 !important;font-size: 14px;border-color: #ebedf2 !important;padding: 0 25px !important;height: 60px;vertical-align: middle !important;text-align:right">Sub Total ( INR )</td>
-                                        <td style="border-top: 0 !important;border-bottom: 0 !important;font-size: 14px;border-color: #ebedf2 !important;padding: 0 25px !important;height: 60px;vertical-align: middle !important;text-align:right"> '.number_format($subtotal,2).'</td> 
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>                                    
-                    </div>
-                </div>    
-                <div class="separator-solid  mb-3" style="border-top: 1px solid #ebecec;margin: 15px 0;margin-bottom: 1rem !important;"></div>
-            </div>    
-        </div>
-    </div>
-    <div class="card-footer" style="padding: 5px 0 50px;border: 0px !important;width: 75%;margin: auto;background-color: transparent;line-height: 30px;font-size: 13px;border-radius: 0 0 calc(.25rem - 1px) calc(.25rem - 1px);">
-        <div class="row" style="display: flex;    flex-wrap: wrap;    margin-right: -15px;    margin-left: -15px;">
-            <div class="col-sm-7 col-md-5 mb-3 mb-md-0 transfer-to" style="margin-bottom: 0 !important;flex: 0 0 41.666667%;max-width: 41.666667%;position: relative;width: 100%;min-height: 1px;padding-right: 15px;padding-left: 15px;">
-            </div>
-            <div class="col-sm-5 col-md-7 transfer-total" style="text-align: right;position: relative;width: 100%;min-height: 1px;padding-right: 15px;padding-left: 15px;">
-                <h5 class="sub" style="font-size: 14px;margin-bottom: 8px;font-weight: 600;line-height: 1.4;">Total Amount</h5>
-                <div class="price" style="font-size: 28px;color: #1572E8;padding: 7px 0;font-weight: 600;"><span style="font-size: 14px;">INR&nbsp;</span>'.number_format($subtotal,2).'</div>
-            </div>
-        </div>
-        <div class="separator-solid" style="border-top: 1px solid #ebecec;margin: 15px 0;"></div>
-        <div class="col-sm-12" style="max-width: 100%;position: relative;width: 100%;min-height: 1px;padding-right: 15px;padding-left: 15px;">
-            <h5 class="sub" style="margin-bottom:0px;font-size: 14px;font-weight: 600;line-height: 1.4;">Order Staus</h5>
-            <div class="table-responsive" style="width: 100% !important;overflow-x: auto;display: block;width: 100%;margin-bottom: 1rem;background-color: transparent;border-collapse: collapse;">
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th style="font-weight: 600;border-top: 0 !important;border-bottom: 0 !important;font-size: 14px;border-color: #ebedf2 !important;padding: 0 25px !important;height: 60px;vertical-align: middle !important;text-align: inherit;">Status</th>
-                            <th style="font-weight: 600;border-top: 0 !important;border-bottom: 0 !important;font-size: 14px;border-color: #ebedf2 !important;padding: 0 25px !important;height: 60px;vertical-align: middle !important;text-align: inherit;">Status On</th>
-                            <th style="font-weight: 600;border-top: 0 !important;border-bottom: 0 !important;font-size: 14px;border-color: #ebedf2 !important;padding: 0 25px !important;height: 60px;vertical-align: middle !important;text-align: inherit;">Reason</th>
-                        </tr>
-                    </thead>
-                    <tbody>';
-                        $statuses = $mysql->select("select * from _tbl_order_status where OrderID='".$id."' order by StatusID desc");
-                         foreach($statuses as $status){ 
-                            $inmessage .= '<tr>
-                                <td style="height: auto !important;border-top: 0 !important;border-bottom: 0 !important;font-size: 14px;border-color: #ebedf2 !important;padding: 0 25px !important;vertical-align: middle !important;">'.$status['Status'].'</td>
-                                <td style="height: auto !important;border-top: 0 !important;border-bottom: 0 !important;font-size: 14px;border-color: #ebedf2 !important;padding: 0 25px !important;vertical-align: middle !important;">'.date("M d, Y H:i",strtotime($status['StatusOn'])).'</td>
-                                <td style="height: auto !important;border-top: 0 !important;border-bottom: 0 !important;font-size: 14px;border-color: #ebedf2 !important;padding: 0 25px !important;vertical-align: middle !important;">'.$status['Remarks'].'</td>
-                            </tr>';
-                        }
-                    $inmessage .= '</tbody>
-                </table>
-            </div>                                                                                                                                               
-        </div>    
-    </div>
-</div>';
+                                                }
+                                            $inmessage .= '</tbody>
+                                        </table>
+                                    </div>                                                                                                                                               
+                                </div>
+                        </div>
+                    </div>';
 
                     $mparam['MailTo']=$_SESSION['User']['EmailID'];
                     $mparam['CustomerID']=$_SESSION['User']['CustomerID'];
                     $mparam['Subject']="Order Placed";
                     $mparam['Message']=$inmessage;
-                    MailController::Send($mparam,$mailError); 	
+                    MailController::Send($mparam,$mailError);     
                 $result=array("Status"=>"Success","OrderID"=>$OrderCode,"message"=>"Order Placed Successfully");     
                 sleep(5);
                 unset($_SESSION['items']);
@@ -499,7 +503,7 @@ function DeleteSubCategory() {
             return json_encode($result);  
          
     }
-	function addtowishlist(){
+    function addtowishlist(){
         global $mysql;
             if(!(isset($_SESSION['User']['CustomerID']))){
                 $result = array();
@@ -516,15 +520,6 @@ function DeleteSubCategory() {
                 return json_encode($result);
             }
     }
-    function removewishlist(){
-		global $mysql;
-			$mysql->execute("DELETE FROM _tbl_whishlist  where CustomerID  ='".$_SESSION['User']['CustomerID']."' and WhislistedProductID='".$_REQUEST['ProductID']."'");
-				
-				$result = array();
-				$result['status']="success";
-				$result['message']="Whishlist removed successfully";
-				return json_encode($result);
-			}
     function CancelOrderfrAdmin(){
         global $mysql;
         $order = $mysql->select("select * from invoice_order where order_id='".$_POST['OrderID']."'");
@@ -760,7 +755,7 @@ function DeleteSubCategory() {
                 return json_encode($result);                                        
             }
     }function PaidOrderfrAdmin(){
-        global $mysql,$Logo;
+        global $mysql;
         $order = $mysql->select("select * from invoice_order where order_id='".$_POST['OrderID']."'");
         
               $id = $mysql->insert("_tbl_order_status",array("OrderID"   => $order[0]['order_id'],
@@ -841,19 +836,10 @@ function DeleteSubCategory() {
                 $inmessage = '
                         <div class="card card-invoice" style="border-radius: 5px;background-color: #ffffff;margin-bottom: 30px;box-shadow: 2px 6px 15px 0px rgba(69, 65, 78, 0.1);border: 0px;position: relative;flex-direction: column;min-width: 0;word-wrap: break-word;background-clip: border-box;">
                             <div class="card-header" style="border-radius: 0px;padding: 50px 0px 20px;border: 0px !important;width: 75%;margin: auto;background-color: transparent;">
-                                <div class="row" style="margin-right:0px;margin-left:0px;display: flex;flex-wrap: wrap;">
-                                    <div class="col-md-12" style="padding-right:0px;padding-left:0px;flex: 0 0 100%;max-width: 100%;position: relative;width: 100%;min-height: 1px;">
-                                        <div class="col-md-6" style="padding-right:0px;padding-left:0px;float: left;max-width: 50%;position: relative;width: 100%;min-height: 1px;">
-                                            <h3 class="invoice-title" style="font-size: 27px;font-weight: 400;line-height: 1.4;margin-bottom: .5rem;color: inherit;margin-top: 0;">
-                                                Invoice
-                                            </h3>  
-                                        </div>
-                                        <div class="col-md-6" style="padding-right:0px;padding-left:0px;float: left;text-align: right;max-width: 50%;position: relative;width: 100%;min-height: 1px;">
-                                            <img src="'.$Logo.'"><br>
-                                            '.Address1.'<br>
-                                            '.Address2.'
-                                        </div>
-                                    </div>
+                                <div class="invoice-header" style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;margin-bottom: 15px;">
+                                    <h3 class="invoice-title" style="font-size: 27px;font-weight: 400;line-height: 1.4;margin-bottom: .5rem;color: inherit;margin-top: 0;">
+                                        Invoice
+                                    </h3>
                                 </div>
                                 <div class="row" style="margin-right:0px;margin-left:0px;display: flex;flex-wrap: wrap;">
                                     <div class="col-md-12" style="padding-right:0px;padding-left:0px;flex: 0 0 100%;max-width: 100%;position: relative;width: 100%;min-height: 1px;">
@@ -916,7 +902,7 @@ function DeleteSubCategory() {
                                                                 </tr>';
                                                              }
                                                               $inmessage .= '<tr>
-                                                                    <td colspan="4" style="border-top: 0 !important;border-bottom: 0 !important;font-size: 14px;border-color: #ebedf2 !important;padding: 0 25px !important;height: 60px;vertical-align: middle !important;text-align:right">Sub Total ( INR )</td>
+                                                                    <td colspan="4" style="border-top: 0 !important;border-bottom: 0 !important;font-size: 14px;border-color: #ebedf2 !important;padding: 0 25px !important;height: 60px;vertical-align: middle !important;text-align:right">Sub Total ( <i class="fas fa-rupee-sign"></i> )</td>
                                                                     <td style="border-top: 0 !important;border-bottom: 0 !important;font-size: 14px;border-color: #ebedf2 !important;padding: 0 25px !important;height: 60px;vertical-align: middle !important;text-align:right"> '.number_format($subtotal,2).'</td> 
                                                                 </tr>
                                                         </tbody>

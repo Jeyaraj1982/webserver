@@ -112,29 +112,29 @@
                 <li class="row">
                   <div class="col-sm-6">
                     <label for="company_name">Address Line1<span class="required" style="color:red">*</span></label>
-                    <input type="text" name="AddressLine1" class="input form-control" id="AddressLine1" value="<?php echo (isset($_POST['AddressLine1']) ? $_POST['AddressLine1'] :$_SESSION['User']['AddressLine1']);?>">
+                    <input type="text" name="AddressLine1" class="input form-control" id="AddressLine1" value="<?php echo (isset($_POST['AddressLine1']) ? $_POST['AddressLine1'] :$_SESSION['Billing']['AddressLine1']);?>">
                     <span class="errorstring" id="ErrAddressLine1"><?php echo isset($ErrAddressLine1)? $ErrAddressLine1 : "";?></span>
                   </div>
                   <div class="col-sm-6">
                     <label for="email_address" class="required">Address Line2</label>
-                    <input type="text" class="input form-control" name="AddressLine2" id="AddressLine2" value="<?php echo (isset($_POST['AddressLine2']) ? $_POST['AddressLine2'] :$_SESSION['User']['AddressLine2']);?>">
+                    <input type="text" class="input form-control" name="AddressLine2" id="AddressLine2" value="<?php echo (isset($_POST['AddressLine2']) ? $_POST['AddressLine2'] :$_SESSION['Billing']['AddressLine2']);?>">
                   </div>
                 </li>
                 <li class="row">
                   <div class="col-sm-6">
                     <label for="postal_code" class="required">Address Line3</label>
-                    <input class="input form-control" type="text" id="AddressLine3" name="AddressLine3" value="<?php echo (isset($_POST['AddressLine3']) ? $_POST['AddressLine3'] :$_SESSION['User']['AddressLine3']);?>">
+                    <input class="input form-control" type="text" id="AddressLine3" name="AddressLine3" value="<?php echo (isset($_POST['AddressLine3']) ? $_POST['AddressLine3'] :$_SESSION['Billing']['AddressLine3']);?>">
                   </div>
                    <div class="col-sm-6">
                     <label for="last_name" class="required">Zip/Postal Code<span class="required" style="color:red">*</span></label>
-                    <input type="text" name="PostalCode" class="input form-control" id="PostalCode" value="<?php echo (isset($_POST['PostalCode']) ? $_POST['PostalCode'] :$_SESSION['User']['PostalCode']);?>">
+                    <input type="text" name="PostalCode" class="input form-control" id="PostalCode" value="<?php echo (isset($_POST['PostalCode']) ? $_POST['PostalCode'] :$_SESSION['Billing']['PostalCode']);?>">
                     <span class="errorstring" id="ErrPostalCode"><?php echo isset($ErrPostalCode)? $ErrPostalCode : "";?></span>
                   </div>
                 </li>
                 <li class="row">
                   <div class="col-sm-6">
                     <label for="first_name" class="required">Land Mark</label>
-                    <input type="text" class="input form-control" name="LandMark" id="LandMark" value="<?php echo (isset($_POST['LandMark']) ? $_POST['LandMark'] :$_SESSION['User']['LandMark']);?>">
+                    <input type="text" class="input form-control" name="LandMark" id="LandMark" value="<?php echo (isset($_POST['LandMark']) ? $_POST['LandMark'] :$_SESSION['Billing']['LandMark']);?>">
                   </div>
                 </li> 
                 <li>
@@ -330,11 +330,6 @@ $(document).ready(function() {
             }
             if (obj.status=="Success") {
                 $("#SessionDetails").html("<h4 class='checkout-sep'>1. Customer Details</h4>"+obj.Name+"<br>"+obj.Email+"<br>"+obj.Mobile);
-                $("#AddressLine1").val(obj.AddressLine1);
-                $("#AddressLine2").val(obj.AddressLine2);
-                $("#AddressLine3").val(obj.AddressLine3);
-                $("#PostalCode").val(obj.PostalCode);
-                $("#LandMark").val(obj.LandMark);
                 $("#Reg-Log").hide();
                 $("#BillingInfo").show();
             }
