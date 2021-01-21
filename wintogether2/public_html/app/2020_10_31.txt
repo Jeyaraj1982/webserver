@@ -1,0 +1,16 @@
+[2020-10-31 20:14:02]	select * from `_tblPlacements` where `Position`='L' and `ParentCode`=''
+[2020-10-31 20:14:02]	select * from `_tblPlacements` where `Position`='R' and `ParentCode`=''
+[2020-10-31 20:14:02]	select (sum(Credits)-sum(Debits)) as bal from  _tbl_wallet_earnings where MemberID='2'
+[2020-10-31 20:14:02]	select * from _tbl_Members
+[2020-10-31 20:14:02]	select * from _tbl_stock_admin
+[2020-10-31 20:14:02]	select * from _tbl_business_supporting_center
+[2020-10-31 20:14:02]	select * from _tbl_orders
+[2020-10-31 20:14:02]	select * from _tblEpins
+[2020-10-31 20:14:02]	select * from _tblEpins where `IsUsed`>'0' and PackageID='1'
+[2020-10-31 20:14:02]	select * from _tblEpins where PackageID='1'
+[2020-10-31 20:14:02]	select * from _tbl_Members_Package_Elegible where `PayoutType`='0'
+[2020-10-31 20:14:02]	select * from _tbl_Members_Package_Elegible
+[2020-10-31 20:14:02]	select * from `_tbl_Members` where `IsBinaryEligible`='1'
+[2020-10-31 20:14:02]	select * from `_tbl_Members` where `IsPayoutEligible`='1'
+[2020-10-31 20:14:02]	select sum(Debits) as d from _tbl_wallet_earnings where Ledger in ('30001','20001')
+[2020-10-31 20:14:02]	select sum(Credits) as d from _tbl_wallet_earnings where Ledger in ('3','2')

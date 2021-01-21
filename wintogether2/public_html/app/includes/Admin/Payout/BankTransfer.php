@@ -32,6 +32,7 @@
                                 
                                 <tr>
                                                 <th class="border-top-0"></th>
+                                                <th class="border-top-0"><b>TxnMonth</b></th>
                                                 <th class="border-top-0"><b>MemberID</b></th>
                                                 <th class="border-top-0"><b>MemberName</b></th>
                                                 <th class="border-top-0"><b>Amount</b></th>
@@ -66,6 +67,7 @@
                                                         </div>
                                                     </div>     
                                                 </td>
+                                                <td><?php echo $record['TxnMonth'].", ".$record['TxnYear'];?></td>
                                                 <td><?php echo $record['MemberCode'];?></td>
                                                 <td><?php echo $record['MemberName'];?></td>
                                                 <td><?php echo $record['Amount'];?></td>
