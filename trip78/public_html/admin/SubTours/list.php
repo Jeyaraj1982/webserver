@@ -6,7 +6,7 @@
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-header" style="padding-top:10px;padding-bottom:10px">
-                            <div class="row">
+                            <div class="row"> 
                                 <div class="col-md-6">
                                     <div class="card-title">
                                         Manage Sub Tour Type
@@ -108,13 +108,13 @@
     $("#confrimation_text").html(loading);
     $.post( "webservice.php?action=DeleteSubTourType",param,function(data) {
         var obj = JSON.parse(data); 
-        var html = "";                                                                              
+        var html = "";                                                                               
         if (obj.status=="failure") {
             html = "<div class='form-group row'><div class='col-sm-12' style='text-align:center'><img src='assets/accessdenied.png' style='width:128px'><br><br>"+obj.message+"<br></div></div>";
             html += "<div style='padding:20px;text-align:center'>" + "<button type='button' class='btn btn-outline-danger' data-dismiss='modal'>Cancel</button></div>"; 
         } else {
             html = "<div class='form-group row'><div class='col-sm-12' style='text-align:center'><img src='assets/tick.jpg' style='width:128px'><br><br>"+obj.message+"<br></div></div>";
-            html += "<div style='padding:20px;text-align:center'>" + "<a href='dashboard.php?action=SubTours/list' class='btn btn-outline-danger'>Continue</a></div>"; 
+            html += "<div style='padding:20px;text-align:center'>" + "<a href='' class='btn btn-outline-danger'>Continue</a></div>"; 
             $('#ConfirmationPopup').modal("show");
         }
         $("#confrimation_text").html(html);

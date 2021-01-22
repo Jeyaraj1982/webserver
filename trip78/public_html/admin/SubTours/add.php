@@ -94,12 +94,23 @@ function SubmitProduct() {
                                         <div class="form-group form-show-validation row">
                                             <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-left">Tour Type<span class="required-label">*</span></label>
                                             <div class="col-lg-4 col-md-9 col-sm-8">
-                                                <select class="form-control" id="TourType" name="TourType">   
+                                                <select class="form-control" id="TourType" name="TourType">  
+                                       <?php        if (isset($_GET['id'])) {
+                                                    $t= $mysql->Select("select * from _tbl_tour where md5(TourTypeID)='".$_GET['id']."'");
+                                                    ?>
+                                                          <option value="<?php echo  $t[0]['TourTypeID'];?>"  > <?php echo $t[0]['TourTypeName'];?></option>
+                                                    <?php
+                                       } else {
+                                                ?>         
+                                                 
                                                     <option value="0" <?php echo ($_POST['TourType']=="0") ? " selected='selected' " : "";?>>Select Tour Type</option>                                                                                     
                                                 <?php $TourTypes = $mysql->select("select * from _tbl_tour");?>
                                                 <?php foreach($TourTypes as $TourType){ ?>
                                                     <option value="<?php echo $TourType['TourTypeID'];?>" <?php echo ($_POST['TourType']==$TourType['TourTypeID']) ? " selected='selected' " : "";?>> <?php echo $TourType['TourTypeName'];?></option>
                                                 <?php }?>
+                                                
+                                        <?php } ?>        
+                                                
                                                 </select>
                                                 <span class="errorstring" id="ErrTourType"><?php echo isset($ErrTourType)? $ErrTourType : "";?></span>
                                             </div>
@@ -132,7 +143,7 @@ function SubmitProduct() {
                                         <div class="row">                                       
                                             <div class="col-md-12">
                                                 <input class="btn btn-warning" type="submit" name="btnsubmit" value="Add Sub Tour">&nbsp;
-                                                <a href="dashboard.php?action=SubTours/list" class="btn btn-warning btn-border">Back</a>
+                                                <a href="dashboard.php?action=Tours/viewsubtours&id=<?php echo $_GET['id'];?>" class="btn btn-warning btn-border">Back</a>
                                             </div>                                        
                                         </div>
                                     </div>

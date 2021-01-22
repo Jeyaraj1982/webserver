@@ -118,10 +118,10 @@ function showHidePwd(pwd,btn) {
   var x = document.getElementById(pwd);
   if (x.type === "password") {
     x.type = "text";
-    btn.html('<i class="icon-eye"></i>');
+    btn.html('<i class="fas fa-eye"></i>');
   } else {
     x.type = "password";
-    btn.html('<i class="icon-eye"></i>');
+    btn.html('<i class="fas fa-eye-slash"></i>');
   }
 }
 </script>

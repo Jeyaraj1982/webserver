@@ -1,5 +1,5 @@
 <?php 
-    $tours = $mysql->select("select * from _tbl_sub_tour where md5(TourTypeID)='".$_GET['id']."' order by SubTourTypeName");
+    $tours = $mysql->select("select * from _tbl_sub_tour where md5(TourTypeID)='".$_GET['id']."' order by SubTourTypeID desc");
     $t= $mysql->Select("select * from _tbl_tour where md5(TourTypeID)='".$_GET['id']."'");
 ?>
 <div class="main-panel">
@@ -9,11 +9,10 @@
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-header" style="padding-top:10px;padding-bottom:10px">
-                            <div class="row">         
+                            <div class="row">
                                 <div class="col-md-6">
-                                    <div class="card-title" style="line-height: 22px;">
-                                        Manage Sub-Tours ( <?php echo $t[0]['TourTypeName'];?> )<br>
-                                        <span style="color:#555;font-weight:normal;font-size:13px">Available: <?php echo sizeof($tours);?> Sub-tours </span>
+                                    <div class="card-title">
+                                        Manage Sub Tour Type ( <?php echo $t[0]['TourTypeName'];?> )
                                     </div>
                                 </div>
                                 <div class="col-md-6" style="text-align: right;">
@@ -21,9 +20,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card-body" style="padding-top:0px;">
+                        <div class="card-body">
                             <div class="table-responsive">
-                                 <table class="table table-striped">
+                                 <table class="table table-striped mt-3">
                                     <thead>
                                         <tr>
                                             <th scope="col"></th>

@@ -1,42 +1,43 @@
 <?php
-include_once("header.php");
-include_once("LeftMenu.php"); 
-$data= $mysql->Select("select * from _tbl_sub_tour where md5(SubTourTypeID)='".$_GET['id']."'");
+    include_once("header.php");
+    include_once("LeftMenu.php"); 
+    
+    $data= $mysql->Select("select * from _tbl_sub_tour where md5(SubTourTypeID)='".$_GET['id']."'");
     if (isset($_POST['btnsubmit'])) {
         $ErrorCount =0;
+        
+        $duplicateSubTourName = $mysql->select("select * from _tbl_sub_tour where SubTourTypeName='".$_POST['SubTourTypeName']."' and TourTypeID='".$_POST['TourType']."' and SubTourTypeID<>'".$data[0]['SubTourTypeID']."'");
+        if(sizeof($duplicateSubTourName)>0){
+            $ErrSubTourTypeName ="Sub Tour Type Name Already Exist in this Tour Type";
+            $ErrorCount++;
+        } 
+        
+        if($ErrorCount==0){
             
-            $dupemail = $mysql->select("select * from _tbl_sub_tour where SubTourTypeName='".$_POST['SubTourTypeName']."' and TourTypeID='".$_POST['TourType']."' and SubTourTypeID<>'".$data[0]['SubTourTypeID']."'");
-            if(sizeof($dupemail)>0){
-                $ErrSubTourTypeName ="Sub Tour Type Name Already Exist in this Tour Type";
-                $ErrorCount++;
-            }
-            
-            if($ErrorCount==0){
+            if(strlen($_FILES["uploadimage1"]["name"])>0) {
+                $target_dir = "../uploads/";
+                $file =  $_FILES["uploadimage1"]["name"];
+                $target_file = $target_dir .$file;
+                if (move_uploaded_file($_FILES["uploadimage1"]["tmp_name"], $target_file)) {
+                        
+                } 
                 
-                   if(strlen($_FILES["uploadimage1"]["name"])>0) {                                                 
-                        $target_dir = "../uploads/";
-                        $file =  $_FILES["uploadimage1"]["name"];
-                        $target_file = $target_dir .$file;
-
-                        if (move_uploaded_file($_FILES["uploadimage1"]["tmp_name"], $target_file)) {
-                        } 
-                    } else {
-                           $file = $data[0]['Image'];
-                    } 
-                $mysql->execute("update _tbl_sub_tour set `TourTypeID`      ='".$_POST['TourType']."',
-                                                               `TourTypeName`    ='".$tour[0]['TourTypeName']."',
-                                                               `SubTourTypeName` ='".$_POST['SubTourTypeName']."',
-                                                               `PriceStartingFrom` ='".$_POST['PriceStartingFrom']."',
-                                                               `IsPublish`       ='".$_POST['IsPublish']."',
-                                                               `Image`           ='".$file."' where SubTourTypeID='".$data[0]['SubTourTypeID']."'");
-           
-                $successmessage ="Updated Successfully";
-            }else {
-             $successmessage ="Error updating ";
+            } else {
+                $file = $data[0]['Image'];
+            } 
+                
+            $mysql->execute("update _tbl_sub_tour set `TourTypeID`        = '".$_POST['TourType']."',
+                                                      `TourTypeName`      = '".$tour[0]['TourTypeName']."',
+                                                      `SubTourTypeName`   = '".$_POST['SubTourTypeName']."',
+                                                      `PriceStartingFrom` = '".$_POST['PriceStartingFrom']."',
+                                                      `IsPublish`         = '".$_POST['IsPublish']."',
+                                                      `Image`             = '".$file."' where SubTourTypeID='".$data[0]['SubTourTypeID']."'");
+            $successmessage ="Updated Successfully";
+        }else {
+            $successmessage ="Error updating ";
         }
     }
     $data= $mysql->Select("select * from _tbl_sub_tour where md5(SubTourTypeID)='".$_GET['id']."'");
-
 ?>
 <script>
 $(document).ready(function () {
@@ -152,7 +153,7 @@ function SubmitProduct() {
                                         <div class="row">                                       
                                             <div class="col-md-12">
                                                 <input class="btn btn-warning" type="submit" name="btnsubmit" value="Update Sub Tour">&nbsp;
-                                                <a href="dashboard.php?action=SubTours/list" class="btn btn-warning btn-border">Back</a>
+                                                <a href="dashboard.php?action=Tours/viewsubtours&id=<?php echo md5($data[0]['TourTypeID']);?>" class="btn btn-warning btn-border">Back</a>
                                             </div>                                        
                                         </div>
                                     </div>
@@ -162,5 +163,4 @@ function SubmitProduct() {
                     </div>
                 </div>
             </div>
-
         <?php include_once("footer.php");?>

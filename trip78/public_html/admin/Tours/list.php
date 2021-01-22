@@ -1,6 +1,6 @@
 
 <div class="main-panel">
-    <div class="container">
+    <div class="container">          
         <div class="page-inner">
             <div class="row">
                 <div class="col-md-12">
@@ -24,7 +24,7 @@
                                             <tr>
                                                 <th scope="col"></th>
                                                 <th scope="col">Tour Name</th>
-                                                <th scope="col">Sub Tours</th>
+                                                <th scope="col" style="text-align:right;">Sub Tours</th>
                                                 <th scope="col"> </th>
                                             </tr>
                                         </thead>
@@ -35,7 +35,7 @@
                                             <tr>
                                                 <td><img src="<?php echo "../uploads/".$tour['Image'];?>" style='width: 50px;height:50px;margin-top: 5px;'></td>
                                                 <td><?php echo $tour['TourTypeName'];?></td>
-                                                <td><?php echo $tc[0]['cnt'];?></td>
+                                                <td style="text-align: right"><?php echo $tc[0]['cnt'];?></td>
                                                 <td style="text-align: right">                                                   
                                                     <div class="dropdown dropdown-kanban" style="float: right;">
                                                         <button class="" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border:none;font-size:14px;background:none !important;padding-right:0px;margin-right:0px;cursor:pointer">

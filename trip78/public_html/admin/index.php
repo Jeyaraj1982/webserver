@@ -8,6 +8,7 @@ $Page="login";
      
                 if (sizeof($userdata)>0) {
                     $_SESSION['User']=$userdata[0];
+                    $_SESSION['User']['Role']="Admin";
                    echo "<script>location.href='dashboard.php';</script>";
                 }  else {
                     echo "<script>alert('login failed');</script>" ;

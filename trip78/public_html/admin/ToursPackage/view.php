@@ -13,9 +13,14 @@ $subtour =$mysql->select("select * from _tbl_sub_tour where SubTourTypeID='".$da
                         <div class="col-md-12">
                             <div class="card">
                                 <div class="card-header">
-                                    <div class="card-title">View Tour Type</div>
+                                    <div class="card-title">View Package Information</div>
                                 </div>
                                     <div class="card-body">
+                                        <?php if ($data[0]['IsMostPopularTour']==1) { ?>
+                                        <div class="form-group form-show-validation row">
+                                            <div class="col-lg-12 col-md-12 col-sm-12" style="background:#f1f1f1;border:1px solid #eee;padding:10px;">Added into <b>Most Popular Tour</b></div>
+                                        </div>
+                                        <?php } ?>
                                         <div class="form-group form-show-validation row">
                                             <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-left">Tour Theme</label>
                                             <div class="col-lg-4 col-md-9 col-sm-8"><?php echo $tourtheme[0]['TourTheme'];?></div>
@@ -32,16 +37,21 @@ $subtour =$mysql->select("select * from _tbl_sub_tour where SubTourTypeID='".$da
                                             <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-left">Package Name</label>
                                             <div class="col-lg-4 col-md-9 col-sm-8"><?php echo $data[0]['PackageName'];?></div>
                                         </div>
+                                         <div class="form-group form-show-validation row">
+                                            <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-left">Short Description</label>
+                                            <div class="col-lg-4 col-md-9 col-sm-8"><?php echo $data[0]['ShortDescription'];?></div>
+                                        </div>
+                                         <div class="form-group form-show-validation row">
+                                            <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-left">Description</label>
+                                            <div class="col-lg-4 col-md-9 col-sm-8"><?php echo $data[0]['Description'];?></div>
+                                        </div>
                                         <div class="form-group form-show-validation row">
                                             <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-left">Package Price</label>
                                             <div class="col-lg-4 col-md-9 col-sm-8"><?php echo $data[0]['PackagePrice'];?></div>
                                         </div>
-                                        <div class="form-group form-show-validation row">
-                                            <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-left">Package Image</label>
-                                            <div class="col-sm-2"><img src="../<?php echo "uploads/package/".$data[0]['Image1'];?>" style='width: 100px;height:100px;margin-top: 5px;'></div>
-                                            <?php if(strlen($data[0]['Image2'])>1) { ?><div class="col-sm-2"><img src="../<?php echo "uploads/package/".$data[0]['Image2'];?>" style='width: 100px;height:100px;margin-top: 5px;'></div><?php } ?>
-                                            <?php if(strlen($data[0]['Image3'])>1) { ?><div class="col-sm-2"><img src="../<?php echo "uploads/package/".$data[0]['Image3'];?>" style='width: 100px;height:100px;margin-top: 5px;'></div><?php } ?>
-                                            <?php if(strlen($data[0]['Image4'])>1) { ?><div class="col-sm-2"><img src="../<?php echo "uploads/package/".$data[0]['Image4'];?>" style='width: 100px;height:100px;margin-top: 5px;'></div><?php } ?>
+                                         <div class="form-group form-show-validation row">
+                                            <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-left">Package Rating</label>
+                                            <div class="col-lg-4 col-md-9 col-sm-8"><?php echo $data[0]['PackageRating'];?></div>
                                         </div>
                                         <div class="form-group form-show-validation row">
                                             <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-left">Joining Place</label>
@@ -50,6 +60,10 @@ $subtour =$mysql->select("select * from _tbl_sub_tour where SubTourTypeID='".$da
                                         <div class="form-group form-show-validation row">
                                             <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-left">Leaving Place</label>
                                             <div class="col-lg-4 col-md-9 col-sm-8"><?php echo $data[0]['LeavingPlace'];?></div>
+                                        </div>
+                                        <div class="form-group form-show-validation row">
+                                            <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-left">Days</label>
+                                            <div class="col-lg-4 col-md-9 col-sm-8"><?php echo $data[0]['DaysCount'];?></div>
                                         </div>
                                         <div class="form-group form-show-validation row">
                                             <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-left">Nights</label>
@@ -105,17 +119,105 @@ $subtour =$mysql->select("select * from _tbl_sub_tour where SubTourTypeID='".$da
                                             <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-left">Added On</label>
                                             <div class="col-lg-4 col-md-9 col-sm-8"><?php echo $data[0]['AddedOn'];?></div>
                                         </div>
+                                        <div class="form-group form-show-validation row">
+                                            <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-left">Package Order</label>
+                                            <div class="col-lg-4 col-md-9 col-sm-8"><?php echo $data[0]['PackageOrder'];?></div>
+                                        </div>
+                                         <div class="form-group form-show-validation row">
+                                            <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-left">Package Ratings</label>
+                                            <div class="col-lg-4 col-md-9 col-sm-8"><?php echo $data[0]['PackageRating'];?></div>
+                                        </div>
                                     </div>
                                     <div class="card-action">
                                         <div class="row">
                                             <div class="col-md-12">                                  
-                                                <a href="dashboard.php?action=ToursPackage/list" class="btn btn-warning">Back</a>
+                                                <a href="dashboard.php?action=SubTours/viewpackages&id=<?php echo md5($data[0]['SubTourTypeID']);?>" class="btn btn-warning">Back</a>
                                             </div>                                        
                                         </div>
                                     </div>
                             </div>
                         </div>
                     </div>
+                    
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-header" style="padding-top:10px;padding-bottom:10px">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="card-title">
+                                                Thumbnails 
+                                            </div>
+                                        </div>      
+                                        <div class="col-md-6" style="text-align: right;">
+                                        <?php
+                                            if (isset($_POST['UploadThumb'])) {
+                                                $data= $mysql->Select("select * from _tbl_tours_package where md5(PackageID)='".$_GET['id']."'");
+                                                $target_dir = "../uploads/package/";
+                                                $image = strtolower(time()."_".$_FILES['file']["name"]);
+                                              
+                                                if (move_uploaded_file($_FILES['file']["tmp_name"], $target_dir .$image)) {
+                                                    $mysql->insert("_tbl_tours_package_images",array("PackageID"=>$data[0]['PackageID'],
+                                                                                                     "ImageName"=>$image,
+                                                                                                     "ImageOrder"=>sizeof($mysql->select("select * from _tbl_tours_package_images where IsDelete='0' PackageID='".$data[0]['PackageID']."'"))+1,
+                                                                                                     "IsDelete"=>"0"));
+                                                        }
+                                                                
+                                                 
+                                            }
+                                        ?>
+                                        <form action="" method="post" enctype="multipart/form-data">
+                                            <input type="file" name="file"><br>
+                                            Image Size: Width 950px X Height 700px
+                                            <button type="submit" name="UploadThumb" class="btn btn-primary btn-xs">Add Thumb</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                    <?php
+                                        if (isset($_POST['btnRemove'])) {
+                                            $mysql->execute("update _tbl_tours_package_images set IsDelete='1' where ImageID='".$_POST['ImageID']."'");
+                                        }
+                                        
+                                        if (isset($_POST['btnUpdateOrder'])) {
+                                            $mysql->execute("update _tbl_tours_package_images set ImageOrder='".$_POST['ImageOrder']."' where ImageID='".$_POST['ImageID']."'");
+                                        }
+                                        
+                                        
+                                        $images = $mysql->select("select * from _tbl_tours_package_images where IsDelete='0' and PackageID='".$data[0]['PackageID']."' order by ImageOrder");
+                                        
+                                        foreach($images  as $image) {
+                                    ?>
+                                        <div class="col-sm-3">
+                                            <img src="https://www.trip78.in/uploads/package/<?php echo $image['ImageName'];?>" style="width:100%">
+                                            <?php
+                                                list($width, $height) = getimagesize("../uploads/package/".$image['ImageName']);
+                                                echo $width."px x ".$height."px";
+                                            ?>
+                                            <form action="" method="post">
+                                                <input type="hidden" name="ImageID" value="<?php echo $image['ImageID'];?>">
+                                                <select name="ImageOrder" class="form-control">
+                                                    <option value="0">Select Order</option>            
+                                                    <?php for($i=1;$i<=sizeof($images);$i++) { ?>
+                                                            <option value="<?php echo $i;?>" <?php echo ($i==$image['ImageOrder']) ? " selected='selected' " : "";?> ><?php echo $i;?></option>
+                                                            <?php
+                                                        }
+                                                    ?>
+                                                </select>
+                                                <br>
+                                                <input type="submit" value="Update Order" name="btnUpdateOrder" class="btn btn-primary btn-sm">
+                                                <input type="submit" value="Remove Image" name="btnRemove" class="btn btn-danger btn-sm">
+                                            </form>
+                                        </div>
+                                        <?php } ?>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
                     <div class="row">
                         <div class="col-md-12">
                             <div class="card">
@@ -143,12 +245,29 @@ $subtour =$mysql->select("select * from _tbl_sub_tour where SubTourTypeID='".$da
                                             </tr>
                                         </thead>
                                         <tbody>
-                                        <?php $DayandEvents = $mysql->select("select * from _tbl_package_day_event where PackageID='".$data[0]['PackageID']."' order by DayandEventID");   ?>
+                                        <?php $DayandEvents = $mysql->select("select * from _tbl_package_day_event where PackageID='".$data[0]['PackageID']."' order by EventDay*1");   ?>
                                         <?php foreach($DayandEvents as $DayandEvent){ ?>
                                             <tr>
-                                                <td><?php echo $DayandEvent['EventDay'];?></td>
-                                                <td><?php echo $DayandEvent['EventTitle'];?></td>
-                                                <td><?php echo $DayandEvent['EventDescription'];?></td>
+                                                <td style="vertical-align:top !important;"><?php echo $DayandEvent['EventDay'];?></td>
+                                                <td style="vertical-align:top !important;"><?php echo $DayandEvent['EventTitle'];?></td>
+                                                <td style="vertical-align:top !important;">
+                                                    <?php
+                                                        $l = explode("\n",trim($DayandEvent['EventDescription']));
+                                                        if (sizeof($l)==1) {
+                                                    ?>
+                                                    <p><?php echo $DayandEvent['EventDescription'];?></p>
+                                                    <?php } else { ?>
+                                                    <ul style="padding-left:10px !important">
+                                                        <?php 
+                                                            foreach($l as $list) {
+                                                                if (trim($list)!="") {
+                                                                    echo "<li>".$list."</li>";
+                                                                }
+                                                            }
+                                                        ?>
+                                                    </ul>
+                                                    <?php } ?>
+                                                </td>
                                                 <td style="text-align: right">                                                   
                                                     <div class="dropdown dropdown-kanban" style="float: right;">
                                                         <button class="" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border:none;font-size:14px;background:none !important;padding-right:0px;margin-right:0px;cursor:pointer">
@@ -378,7 +497,28 @@ $subtour =$mysql->select("select * from _tbl_sub_tour where SubTourTypeID='".$da
                                                     </div>
                                                 </div>                                                                                                             
                                             </div>
-                                        </div>                                                     
+                                        </div>   
+                                        <div class="form-group row">
+                                            <div class="col-sm-6">
+                                                <div class="form-group form-show-validation row">
+                                                    <div class="col-sm-12">
+                                                        <label for="name">INCLUSIONS   </label>
+                                                        <textarea rows="6" name="inclusions" id="inclusions" class="form-control"><?php echo (isset($_POST['inclusions']) ? $_POST['inclusions'] :$additionalParam[0]['inclusions']);?></textarea>
+                                                    </div>
+                                                </div>                                                                                                             
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group form-show-validation row">
+                                                    <div class="col-sm-12">
+                                                        <label for="name">EXCLUSIONS </label>
+                                                        <textarea rows="6" name="exclusions" id="exclusions" class="form-control"><?php echo (isset($_POST['exclusions']) ? $_POST['exclusions'] :$additionalParam[0]['exclusions']);?></textarea>
+                                                    </div>
+                                                </div>                                                                                                             
+                                            </div>
+                                        </div>  
+                                        
+                                           
+                                                                                          
                                     </form>
                                 </div>                                                                                                                                
                                 <div class="card-action" style="padding: 10px;">

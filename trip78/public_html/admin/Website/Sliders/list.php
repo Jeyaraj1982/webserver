@@ -11,9 +11,9 @@
                                     <div class="card-title">
                                         Manage Sliders
                                     </div>
-                                </div>
+                                </div>                                                    
                                 <div class="col-md-6" style="text-align: right;">
-                                    <a href="dashboard.php?action=Sliders/add" class="btn btn-primary btn-xs">Add Slider</a>
+                                    <a href="dashboard.php?action=Website/Sliders/add" class="btn btn-primary btn-xs">Add Slider</a>
                                 </div>
                             </div>
                         </div>
@@ -24,13 +24,25 @@
                                             <tr>
                                                 <th scope="col">Slider</th>
                                                 <th scope="col"> </th>
+                                                <th scope="col"> </th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                        <?php $sliders = $mysql->select("select * from _tbl_sliders");?>
+                                        <?php $sliders = $mysql->select("select * from _tbl_sliders where IsActive='1'");?>
                                         <?php foreach($sliders as $slider){ ?>
                                             <tr>
                                                 <td><img src="<?php echo "../uploads/".$slider['SliderImage'];?>" style='height:100px;margin-top: 5px;'></td>
+                                                <td>
+                                                    <?php
+                                                        echo $slider['SliderTitle']."<br>";
+                                                        echo $slider['SliderDescription']."<br>";
+                                                        echo $slider['ButtonName']."<br>";
+                                                        echo $slider['ButtonLink']."<br>";
+                                                    ?>
+                                                   <div>
+                                                    <a href="dashboard.php?action=Website/Sliders/edit&slider=<?php echo $slider['SliderID'];?>" class="btn btn-primary btn-sm"  style='padding: 0px 10px;font-size: 10px;'>Edit</a>
+                                                   </div>
+                                                </td>
                                                 <td style="text-align: right"><span onclick='CallConfirmation(<?php echo $slider['SliderID'];?>)' class='btn btn-danger btn-sm' style='padding: 0px 10px;font-size: 10px;'>Delete</span></td>
                                             </tr>
                                         <?php } ?>
@@ -89,7 +101,7 @@
             html += "<div style='padding:20px;text-align:center'>" + "<button type='button' class='btn btn-outline-danger' data-dismiss='modal'>Cancel</button></div>"; 
         } else {
             html = "<div class='form-group row'><div class='col-sm-12' style='text-align:center'><img src='assets/tick.jpg' style='width:128px'><br><br>"+obj.message+"<br></div></div>";
-            html += "<div style='padding:20px;text-align:center'>" + "<a href='dashboard.php?action=Sliders/list' class='btn btn-outline-danger'>Continue</a></div>"; 
+            html += "<div style='padding:20px;text-align:center'>" + "<a href='dashboard.php?action=Website/Sliders/list' class='btn btn-outline-danger'>Continue</a></div>"; 
             $('#ConfirmationPopup').modal("show");
         }
         $("#confrimation_text").html(html);

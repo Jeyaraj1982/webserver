@@ -6,45 +6,13 @@ include_once("LeftMenu.php");
             
             $duppackage = $mysql->select("select * from _tbl_tours_package where PackageName='".$_POST['PackageName']."' and TourTypeID='".$_POST['TourType']."' and SubTourTypeID='".$_POST['SubTourType']."'");
             if(sizeof($duppackage)>0){
-                $ErrPackageName ="Package Name Already Exists";
-                $ErrorCount++;
+               // $ErrPackageName ="Package Name Already Exists";
+               /// $ErrorCount++;
             }
             
             if($ErrorCount==0){
                 
-                $target_dir = "../uploads/package/";
-                    $file1 =  $_FILES["uploadimage1"]["name"];
-                    $target_file1 = $target_dir .$file1;
-                    
-                    $file2 =  $_FILES["uploadimage2"]["name"];
-                    $target_file2 = $target_dir .$file2;
-                    
-                    $file3 =  $_FILES["uploadimage3"]["name"];
-                    $target_file3 = $target_dir .$file3;
-                    
-                    $file4 =  $_FILES["uploadimage4"]["name"];
-                    $target_file4 = $target_dir .$file4;
-
-                  if (move_uploaded_file($_FILES["uploadimage1"]["tmp_name"], $target_file1)) {
-                      $file1 =  $_FILES["uploadimage1"]["name"]; 
-                  }else {
-                        $successmessage ="<span style='color:red'>Error Uploading File 1</span>";
-                  }
-                  if (move_uploaded_file($_FILES["uploadimage2"]["tmp_name"], $target_file2)) {
-                      $file1 =  $_FILES["uploadimage2"]["name"]; 
-                  }else {
-                        $successmessage ="<span style='color:red'>Error Uploading File 2</span>";
-                  }
-                  if (move_uploaded_file($_FILES["uploadimage3"]["tmp_name"], $target_file3)) {
-                      $file1 =  $_FILES["uploadimage3"]["name"]; 
-                  }else {
-                        $successmessage ="<span style='color:red'>Error Uploading File 3</span>";
-                  }
-                  if (move_uploaded_file($_FILES["uploadimage4"]["tmp_name"], $target_file4)) {
-                      $file1 =  $_FILES["uploadimage4"]["name"]; 
-                  }else {
-                        $successmessage ="<span style='color:red'>Error Uploading File 4</span>";
-                  }
+               
                    $SavePrice = $_POST['PackagePrice']-$_POST['OfferPrice']; 
 
                     $id = $mysql->insert("_tbl_tours_package",array("TourThemeID"      => $_POST['TourTheme'],
@@ -54,13 +22,11 @@ include_once("LeftMenu.php");
                                                                     "PackagePrice"    => $_POST['PackagePrice'],
                                                                     "OfferPrice"      => $_POST['OfferPrice'],
                                                                     "SavePrice"       => $SavePrice,
-                                                                    "Image1"          => $file1,
-                                                                    "Image2"          => $file2,
-                                                                    "Image3"          => $file3,
-                                                                    "Image4"          => $file4,
+                                                                    
                                                                     "JoiningPlace"    => $_POST['JoiningPlace'],
                                                                     "LeavingPlace"    => $_POST['LeavingPlace'],
                                                                     "NightsCount"     => $_POST['NightsCount'],
+                                                                    "DaysCount"       => $_POST['DaysCount'],
                                                                     "CountryCount"    => $_POST['CountryCount'],
                                                                     "CityCount"       => $_POST['CityCount'],
                                                                     "Currency"        => $_POST['Currency'],
@@ -122,7 +88,7 @@ $(document).ready(function () {
     });
     $("#PackagePrice").blur(function () {
         if(IsNonEmpty("PackagePrice","ErrPackagePrice","Please Enter Package Price")){
-           IsNumeric("PackagePrice","ErrPackagePrice","Please Enter Numerics Character"); 
+        //  IsNumeric("PackagePrice","ErrPackagePrice","Please Enter Numerics Character"); 
         }
     });
     
@@ -161,7 +127,7 @@ function SubmitProduct() {
            IsAlphaNumeric("SubPackageName","ErrPackageName","Please Enter Alpha Numerics Character"); 
         }
         if(IsNonEmpty("PackagePrice","ErrPackagePrice","Please Enter Package Price")){
-           IsNumeric("PackagePrice","ErrPackagePrice","Please Enter Numerics Character"); 
+           //IsNumeric("PackagePrice","ErrPackagePrice","Please Enter Numerics Character"); 
         }
         
                 return (ErrorCount==0) ? true : false;
@@ -181,19 +147,9 @@ function SubmitProduct() {
                                 </div>
                                 <form id="exampleValidation" method="POST" action="" onsubmit="return SubmitProduct();" id="addProduct" enctype="multipart/form-data">
                                     <div class="card-body">
-                                        <div class="form-group form-show-validation row">
-                                            <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-left">Tour Theme<span class="required-label">*</span></label>
-                                            <div class="col-lg-4 col-md-9 col-sm-8">
-                                                <select class="form-control" id="TourTheme" name="TourTheme">   
-                                                    <option value="0" <?php echo ($_POST['TourTheme']=="0") ? " selected='selected' " : "";?>>Select Tour Theme</option>                                                                                     
-                                                <?php $TourThemes = $mysql->select("select * from _tbl_tour_theme");?>
-                                                <?php foreach($TourThemes as $TourTheme){ ?>
-                                                    <option value="<?php echo $TourTheme['TourThemeID'];?>" <?php echo ($_POST['TourTheme']==$TourTheme['TourTheme']) ? " selected='selected' " : "";?>> <?php echo $TourTheme['TourTheme'];?></option>
-                                                <?php }?>
-                                                </select>
-                                                <span class="errorstring" id="ErrTourTheme"><?php echo isset($ErrTourTheme)? $ErrTourTheme : "";?></span>
-                                            </div>
-                                        </div>
+                                 
+                                        
+                                       <!-- 
                                         <div class="form-group form-show-validation row">
                                             <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-left">Tour Type<span class="required-label">*</span></label>
                                             <div class="col-lg-4 col-md-9 col-sm-8">
@@ -218,6 +174,51 @@ function SubmitProduct() {
                                                 <span class="errorstring" id="ErrSubTourType"><?php echo isset($ErrSubTourType)? $ErrSubTourType : "";?></span>
                                             </div>
                                         </div>
+                                          -->
+                                        
+                                        <?php  
+    $st= $mysql->Select("select * from _tbl_sub_tour where md5(SubTourTypeID)='".$_GET['id']."'");
+    $t= $mysql->Select("select * from _tbl_tour where TourTypeID='".$st[0]['TourTypeID']."'");
+                                             ?>
+       <div class="form-group form-show-validation row">
+                                            <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-left">Tour Type<span class="required-label">*</span></label>
+                                            <div class="col-lg-4 col-md-9 col-sm-8">
+                                                <select class="form-control" id="TourType" name="TourType">   
+                                                                                                                                    
+                                                 
+                                                    <option value="<?php echo $t[0]['TourTypeID'];?>"   > <?php echo $t[0]['TourTypeName'];?></option>
+                                                 
+                                                </select>
+                                             
+                                            </div>
+                                        </div>
+                                        <div class="form-group form-show-validation row">
+                                            <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-left">Sub Tour Type<span class="required-label">*</span></label>
+                                            <div class="col-lg-4 col-md-9 col-sm-8">
+                                               <div id="div_subtourtype">
+                                                    <select class="form-control" name="SubTourType" id="SubTourType">
+                                                       <option value="<?php echo $st[0]['SubTourTypeID'];?>"   > <?php echo $st[0]['SubTourTypeName'];?></option>
+                                                    </select> 
+                                               </div>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                               <div class="form-group form-show-validation row">
+                                            <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-left">Tour Theme<span class="required-label">*</span></label>
+                                            <div class="col-lg-4 col-md-9 col-sm-8">
+                                                <select class="form-control" id="TourTheme" name="TourTheme">   
+                                                    <option value="0" <?php echo ($_POST['TourTheme']=="0") ? " selected='selected' " : "";?>>Select Tour Theme</option>                                                                                     
+                                                <?php $TourThemes = $mysql->select("select * from _tbl_tour_theme");?>
+                                                <?php foreach($TourThemes as $TourTheme){ ?>
+                                                    <option value="<?php echo $TourTheme['TourThemeID'];?>" <?php echo ($_POST['TourTheme']==$TourTheme['TourTheme']) ? " selected='selected' " : "";?>> <?php echo $TourTheme['TourTheme'];?></option>
+                                                <?php }?>
+                                                </select>
+                                                <span class="errorstring" id="ErrTourTheme"><?php echo isset($ErrTourTheme)? $ErrTourTheme : "";?></span>
+                                            </div>
+                                        </div>
+    
+    
                                         <div class="form-group form-show-validation row">
                                             <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-left">Package Name<span class="required-label">*</span></label>
                                             <div class="col-lg-4 col-md-9 col-sm-8">
@@ -239,30 +240,7 @@ function SubmitProduct() {
                                                 <span class="errorstring" id="ErrOfferPrice"><?php echo isset($ErrOfferPrice)? $ErrOfferPrice : "";?></span>
                                             </div>
                                         </div>
-                                        <div class="form-group form-show-validation row">
-                                            <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-left">Image<span class="required-label">*</span></label>
-                                            <div class="col-lg-4 col-md-9 col-sm-8">
-                                                <input type="file" name="uploadimage1" class="form-control" id="uploadimage1" accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.ppt,.pptx,.odt,.avi,.ogg,.m4a,.mov,.mp3,.mp4,.mpg,.wav,.wmv" >
-                                            </div>
-                                        </div>
-                                        <div class="form-group form-show-validation row">
-                                            <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-left">Image<span class="required-label">*</span></label>
-                                            <div class="col-lg-4 col-md-9 col-sm-8">
-                                                <input type="file" name="uploadimage2" class="form-control" id="uploadimage2" accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.ppt,.pptx,.odt,.avi,.ogg,.m4a,.mov,.mp3,.mp4,.mpg,.wav,.wmv" >
-                                            </div>
-                                        </div>
-                                        <div class="form-group form-show-validation row">
-                                            <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-left">Image<span class="required-label">*</span></label>
-                                            <div class="col-lg-4 col-md-9 col-sm-8">
-                                                <input type="file" name="uploadimage3" class="form-control" id="uploadimage3" accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.ppt,.pptx,.odt,.avi,.ogg,.m4a,.mov,.mp3,.mp4,.mpg,.wav,.wmv" >
-                                            </div>
-                                        </div>
-                                        <div class="form-group form-show-validation row">
-                                            <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-left">Image<span class="required-label">*</span></label>
-                                            <div class="col-lg-4 col-md-9 col-sm-8">
-                                                <input type="file" name="uploadimage4" class="form-control" id="uploadimage4" accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.ppt,.pptx,.odt,.avi,.ogg,.m4a,.mov,.mp3,.mp4,.mpg,.wav,.wmv" >
-                                            </div>
-                                        </div>
+                                            
                                         <div class="form-group form-show-validation row">
                                             <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-left">Joining Place<span class="required-label">*</span></label>
                                             <div class="col-lg-4 col-md-9 col-sm-8">
@@ -276,7 +254,18 @@ function SubmitProduct() {
                                                 <input type="text" class="form-control" id="LeavingPlace" name="LeavingPlace" placeholder="Enter Leaving Place" value="<?php echo (isset($_POST['LeavingPlace']) ? $_POST['LeavingPlace'] :"");?>">
                                                 <span class="errorstring" id="ErrLeavingPlace"><?php echo isset($ErrLeavingPlace)? $ErrLeavingPlace : "";?></span>
                                             </div>                                                                                    
-                                        </div>
+                                        </div>                                       
+                                        <div class="form-group form-show-validation row">
+                                            <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-left">Days<span class="required-label">*</span></label>
+                                            <div class="col-lg-4 col-md-9 col-sm-8">
+                                                <select class="form-control" id="DaysCount" name="DaysCount">
+                                                    <?php for($i=1;$i<=20;$i++){ ?>
+                                                    <option value="<?php echo $i;?>" <?php echo ($_POST['DaysCount']==$i) ? " selected='selected' " : "";?>> <?php echo $i;?></option>    
+                                                    <?php } ?>
+                                                </select>                                                                                              
+                                            </div>                                                                                    
+                                        </div> 
+                                        
                                         <div class="form-group form-show-validation row">
                                             <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-left">Nights<span class="required-label">*</span></label>
                                             <div class="col-lg-4 col-md-9 col-sm-8">
@@ -291,7 +280,7 @@ function SubmitProduct() {
                                             <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-left">Country<span class="required-label">*</span></label>
                                             <div class="col-lg-4 col-md-9 col-sm-8">
                                                 <select class="form-control" id="CountryCount" name="CountryCount">
-                                                    <?php for($i=1;$i<=10;$i++){ ?>
+                                                    <?php for($i=1;$i<=20;$i++){ ?>
                                                     <option value="<?php echo $i;?>" <?php echo ($_POST['CountryCount']==$i) ? " selected='selected' " : "";?>> <?php echo $i;?></option>    
                                                     <?php } ?>
                                                 </select>
@@ -301,7 +290,7 @@ function SubmitProduct() {
                                             <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-left">City<span class="required-label">*</span></label>
                                             <div class="col-lg-4 col-md-9 col-sm-8">
                                                 <select class="form-control" id="CityCount" name="CityCount">
-                                                    <?php for($i=1;$i<=10;$i++){ ?>
+                                                    <?php for($i=1;$i<=20;$i++){ ?>
                                                     <option value="<?php echo $i;?>" <?php echo ($_POST['CityCount']==$i) ? " selected='selected' " : "";?>> <?php echo $i;?></option>    
                                                     <?php } ?>
                                                 </select>
@@ -385,7 +374,7 @@ function SubmitProduct() {
                                         <div class="row">                                       
                                             <div class="col-md-12">
                                                 <input class="btn btn-warning" type="submit" name="btnsubmit" value="Add Package">&nbsp;
-                                                <a href="dashboard.php?action=ToursPackage/list" class="btn btn-warning btn-border">Back</a>
+                                                <a href="dashboard.php?action=SubTours/viewpackages&id=<?php echo $_GET['id'];?>" class="btn btn-warning btn-border">Back</a>
                                             </div>                                        
                                         </div>
                                     </div>

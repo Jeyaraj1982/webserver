@@ -3,7 +3,6 @@ include_once("header.php");
 include_once("LeftMenu.php"); 
 $data= $mysql->Select("select * from _tbl_sub_tour where md5(SubTourTypeID)='".$_GET['id']."'");
 $tour= $mysql->Select("select * from _tbl_tour where TourTypeID='".$data[0]['TourTypeID']."'");
- 
 ?>
         <div class="main-panel">
             <div class="container">
@@ -45,7 +44,7 @@ $tour= $mysql->Select("select * from _tbl_tour where TourTypeID='".$data[0]['Tou
                                     <div class="card-action">
                                         <div class="row">
                                             <div class="col-md-12">                                  
-                                                <a href="dashboard.php?action=SubTours/list" class="btn btn-warning">Back</a>
+                                                <a href="dashboard.php?action=Tours/viewsubtours&id=<?php echo md5($data[0]['TourTypeID']);?>" class="btn btn-warning">Back</a>
                                             </div>                                        
                                         </div>
                                     </div>

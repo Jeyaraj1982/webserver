@@ -35,8 +35,17 @@
                                         <?php foreach($packages as $package){ ?>
                                         <?php $t = $mysql->select("select * from _tbl_tour where TourTypeID='".$package['TourTypeID']."'") ?>   
                                         <?php $st = $mysql->select("select * from _tbl_sub_tour where SubTourTypeID='".$package['SubTourTypeID']."'") ?>   
+                                 <?php
+                                    $tourThumb =  $mysql->select("select * from _tbl_tours_package_images where IsDelete='0' and PackageID='".$package['PackageID']."' order by ImageOrder");
+                                 //https://trip78.in/images/logo_footer.png
+                                 if (sizeof($tourThumb)==0) {
+                                     $path = "https://trip78.in/images/logo_footer.png";
+                                 } else {
+                                     $path = "https://www.trip78.in/uploads/package/".$tourThumb[0]['ImageName'];;
+                                 }
+                                 ?>
                                             <tr>
-                                                <td><img src="<?php echo "../uploads/package/".$package['Image1'];?>" style='width: 50px;height:50px;margin-top: 5px;'></td>
+                                                <td><img src="<?php echo$path;?>" style='width: 50px;height:50px;margin-top: 5px;'></td>
                                                 <td><?php echo $t[0]['TourTypeName'];?></td>
                                                 <td><?php echo $st[0]['SubTourTypeName'];?></td>
                                                 <td><?php echo $package['PackageName'];?></td>
