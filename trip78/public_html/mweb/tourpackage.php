@@ -1,100 +1,204 @@
 <?php include_once("header.php");?>
-<style>
-  .style-1 #js_frm_040 {
-    height: 240px !important;
-}
-  </style>
-  
- 
-<?php 
-         $Packages = $mysql->select("select * from _tbl_tours_package where IsPublish='1' and md5(SubTourTypeID)='".$_GET['tid']."'");
-         $SubTours = $mysql->select("select * from _tbl_sub_tour where IsPublish='1' and md5(SubTourTypeID)='".$_GET['tid']."'");
-         $Tours = $mysql->select("select * from _tbl_tour where IsPublish='1' and TourTypeID='".$SubTours[0]['TourTypeID']."'");
-   ?>
- <div class="breadcrumb-content"> 
-      <nav aria-label="breadcrumb">
-        <ul class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-          <li class="breadcrumb-item" aria-current="page"><?php echo $Tours[0]['TourTypeName'];?></li>
-          <li class="breadcrumb-item active" aria-current="page"><?php echo $SubTours[0]['SubTourTypeName'];?></li>
-        </ul>
-      </nav>
-    </div>
-<section class="destinations" style="Padding-top:0px !important">
-  <div class="container">
-    <div class="row">
-        <div class="col-md-12">
-        <?php foreach($Packages as $Package) { ?>
-            <div class="recent-post clearfix sidebar-item" style="margin-bottom: 15px;padding:0px">
-                <div class="row">
-                    <div class="col-md-3 recent-image" >
-                        <a href=""><img src="https://www.trip78.in/uploads/package/<?php echo $Package['Image1'];?>" class="img-responsive img-thumbnail" style="height: 136px;max-width: 200% !important;width:140px;padding: 0px;border: none;border-radius:0px"></a>
-                    </div>
-                    <div class="col-md-9 recent-content" style="padding-left:50px;padding-top:5px"> 
-                        <h3 style="margin-top:0px;margin-bottom:0px;line-height:16px;font-size:13px"><a href="tourpackage.php?tid=<?php echo md5($SubTour['SubTourTypeID']);?>" style="font-size: 15px;"><?php echo ucfirst(strtolower($Package['PackageName']));?></a></h3>
-                        <div class="author-detail">
-                            <p style="font-size:11px"><?php echo $Package['NightsCount'];?> <?php if($Package['NightsCount']>1) { echo " Nights"; } else { echo " Night"; } ?>&nbsp;|&nbsp;<?php echo $Package['CountryCount'];?> <?php if($Package['CountryCount']>1){ echo " Countries"; } else { echo " Country"; } ?>&nbsp;|&nbsp;<?php echo $Package['CityCount'];?> <?php if($Package['CityCount']>1){ echo " Cities"; } else { echo " City"; } ?></p>                            
+<?php
+    $Packages = $mysql->select("select * from _tbl_tours_package where IsPublish='1' and SubTourTypeID='".$_GET['subtour']."'");
+    $SubTours = $mysql->select("select * from _tbl_sub_tour where IsPublish='1' and SubTourTypeID='".$_GET['subtour']."'");
+    $Tours = $mysql->select("select * from _tbl_tour where IsPublish='1' and TourTypeID='".$SubTours[0]['TourTypeID']."'");
+?>
+<div class="page" >
+    <form class="searchcontrol">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <button type="button" class="input-group-text close-search"><i class="material-icons">keyboard_backspace</i></button>
+            </div>
+            <input type="email" class="form-control border-0" placeholder="Search..." aria-label="Username">
+        </div>
+    </form>
+    <header class="row m-0 fixed-header">
+        <div class="left">
+            <a href="subtour.php?tour=<?php echo $Tours[0]['TourTypeID'] ;?>"><i class="material-icons">keyboard_backspace</i></a>
+        </div>
+        <div class="col center" style="padding-left:0px;">
+            <a href="javascript:void(0)" class="logo">
+            <!--<figure><img src="https://trip78.in/images/logo_footer.png" alt=""></figure>--><?php echo $SubTours[0]['SubTourTypeName'];?></a>
+        </div>
+        <div class="right">
+            <a href="javascript:void(0)" class="searchbtn"><i class="material-icons">search</i></a>
+            <!--<a href="javascript:void(0)" class="menu-right"><i class="material-icons">person</i></a>-->
+        </div>
+    </header>  
+    <div class="page-content" style="overflow:hidden">
+        <div class="content-sticky-footer" style="padding-bottom: 0px !important;margin-top:5px">            
+            <div class="row" style="padding:18px;padding-right: 18px;padding-top:0px;height:80vh; overflow: auto;">
+                <div class="col-12" style="padding-left: 5px;padding-right: 5px;">
+                    <?php foreach($Packages as $Package) {                             
+                        
+                             $tourThumb =  $mysql->select("select * from _tbl_tours_package_images where IsDelete='0' and PackageID='".$Package['PackageID']."' order by ImageOrder");
+                        ?>
+                    <div style="border:1px solid #eee;border-radius:7px;margin-top:5px;margin-bottom:7px;background:#f9f9f9">
+                                <div class="row">
+                                    <div class="col-5 col-md-4" style="padding-right:0px">
+                                        <a href="tourpackagedetails.php?tid=<?php echo $Package['PackageID'];?>">
+                                        <img src="https://www.trip78.in/uploads/package/<?php echo $tourThumb[0]['ImageName'];?>" alt="" width="100%" style="height: 100%;border-radius:6px 0px 0px 6px" />
+                                        </a>
+                                    </div>
+                                    <div class="col-7 col-md-8" style="padding-left:5px">
+                                        <a href="tourpackagedetails.php?tid=<?php echo $Package['PackageID'];?>">
+                                            <h6 style="font-size: 13px;font-weight: bold;color: #444;margin-top:5px;margin-bottom:5px;"><?php echo $Package['PackageName'];?></h6>
+                                        </a>
+                                        <div class="row" style="margin-left: 0px;margin-right: 0px;">
+                                            <div class="col-3 col-md-3" style="float: left;border-right:1px solid #eee;text-align:center;padding-left:0px;padding-right:3px">
+                                                <span style="color: #c6c6c6;font-size: 15px;font-weight: bold;"><?php echo $Package['NightsCount'];?></span>
+                                                <p style="color:#626060;;padding:0px;font-size:9px;margin-bottom: 0px;">Nights</p>
+                                            </div>
+                                            <div class="col-9 col-md-9" style="padding-left:3px;border-bottom: 1px solid #eee;">
+                                                <p style="color:#626060;;padding:0px;font-size:10px;margin-bottom: 0px;">Joining  < <span style="color: #0eb53d;font-weight: bold;"><?php echo $Package['JoiningPlace'];?></span></p>
+                                                <p style="color:#626060;;padding:0px;font-size:10px;margin-bottom: 0px;">Leaving  > <span style="color: red;font-weight: bold;"><?php echo $Package['LeavingPlace'];?></span></p>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="margin-left: 0px;margin-right: 0px;">
+                                             <div class="col-3 col-md-3" style="float: left;border-right:1px solid #eee;text-align:center;padding-left:0px;padding-right:3px">
+                                                <hr style="margin-top:0px;margin-bottom:0px">
+                                                <span style="color: #c6c6c6;font-size: 15px;font-weight: bold;"><?php echo $Package['CountryCount'];?></span> <p style="color:#626060;;padding:0px;font-size:9px;margin-bottom: 0px;">Country</p>
+                                                <hr style="margin-top:0px;margin-bottom:0px">
+                                                <span style="color: #c6c6c6;font-size: 15px;font-weight: bold;"><?php echo $Package['CityCount'];?></span> <p style="color:#626060;;padding:0px;font-size:9px;margin-bottom: 0px;"><?php echo ($Package['CityCount']>0)? "Cities" : "City";?></p>
+                                            </div>                                                    
+                                            <div class="col-9 col-md-9" style="padding-left:3px;padding-right:3px;text-align:center;padding-top:5px;">
+                                                <p style="color:#626060;font-size:10px;text-align:center;margin-bottom: 0px;">All inclusive price | Per Person<br>
+                                                    <span style="font-size:14px;font-weight:bold;color:red">Rs <?php echo $Package['PackagePrice'];?>*</span>
+                                                    <br>
+                                                    <a href="enquiry.php?package=<?php echo $Package['PackageID'];?>" class="btn btn-primary btn-sm" style="padding: 5px 10px;font-size: 11px;line-height: 1;text-transform: none;border-radius: 5px;margin-bottom:5px;margin-top:5px;">Enquiry Now</a>    
+                                                </p>    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>     
+                            </div>
+                        <?php } ?>
                         </div>
-                        <a style="padding-left:0px;font-size:15px;font-weight:bold" class="tag tag-blue"><?php echo "Rs. ". number_format($Package['OfferPrice'],2);?></a>
-                        <div class="button" style="margin-top:10px">
-                            <a href="tourpackage.php?tid=<?php echo md5($SubTour['SubTourTypeID']);?>" class="btn-blue btn-red" style="padding: 2px 10px;font-size:12px;border-radius:15px" tabindex="-1">View Details</a> 
-                            <a onclick="getEnquiryDetails('<?php echo md5($Packages[0]['PackageID']);?>')" class="btn-blue btn-red" style="padding: 2px 10px;font-size:12px;border-radius:15px;background:white;color:#d60d45;border:1px solid #d60d45;"  tabindex="-1">Enquiry</a> 
+                    </div>
+                </div>
+            </div> 
+   <!--<div class="container">  
+  <!--<h2>Carousel Example</h2>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img src="la.jpg" alt="Los Angeles" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Los Angeles</h3>
+          <p>LA is always so much fun!</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="chicago.jpg" alt="Chicago" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Chicago</h3>
+          <p>Thank you, Chicago!</p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="ny.jpg" alt="New York" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>New York</h3>
+          <p>We love the Big Apple!</p>
+        </div>
+      </div>
+  
+    </div>
+
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+    
+    
+ </div> -->            
+                <div class="footer-wrapper" style="display: none;">
+                    <div class="footer">
+                        <div class="row mx-0">
+                            <div class="col">
+                                Trip78
+                            </div>
+                            <div class="col-7 text-right">
+                                <a href="" class="social"><img src="img/facebook.png" alt=""></a>
+                                <a href="" class="social"><img src="img/googleplus.png" alt=""></a>
+                                <a href="" class="social"><img src="img/linkedin.png" alt=""></a>
+                                <a href="" class="social"><img src="img/twitter.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer dark" style="display: none;">
+                        <div class="row mx-0">
+                            <div class="col  text-center">
+                                Copyright @2018, Trip78.in
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-         <?php } ?>
         </div>
+        <!-- page main ends -->
+
     </div>
- </div>                                                                                                                             
- </section>                                                                                                             
-<?php include_once("footer.php");?>
-<script>
-$(document).ready(function () {
-  $('.carousel-inner').find('.item').first().addClass('active');
-}); 
-</script>
-<div class="modal fade"  id="ConfirmationPopup"  data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content" id="confrimation_text">    
-         
-    </div>
-  </div>
-</div>
-<script>
-   var loading = "<div class='modal-body' style='padding:10px;'><div class='form-group row'><div class='col-sm-12' style='text-align:center'><div  style='padding:80px;text-align:center;color:#aaa;text-align:center'><img src='assets/images/loading.gif'  style='width:80px'><br>Processing ...</div></div></div>";
-    function getDateandCostDetails(PackageID) {   
-        $("#confrimation_text").html(loading);
-        $.ajax({url:'webservice.php?action=getDateandCostDetails&PackageID='+PackageID,success:function(data){
-            $("#confrimation_text").html(data);
-            $('#ConfirmationPopup').modal("show");
-        }});
-    }
-    function getEnquiryDetails(PackageID) {   
-        
-        $("#confrimation_text").html(loading);
-        $.ajax({url:'webservice.php?action=getEnquiryDetails&PackageID='+PackageID,success:function(data){
-            $("#confrimation_text").html(data);
-            $('#ConfirmationPopup').modal("show");
-        }});
-    }
-    
-    function SaveEnquiryDetails() {
-     var param = $( "#EnquiryFrom").serialize();
-    $("#confrimation_text").html(loading);
-    $.post( "webservice.php?action=SubmitEnquiryDetails",param,function(data) {                                       
-        var obj = JSON.parse(data); 
-        var html = "";                                                                              
-        if (obj.status=="failure") {
-            html = "<div class='modal-body' style='padding:10px;'><div class='form-group row'><div class='col-sm-12' style='text-align:center'><img src='assets/images/accessdenied.png' style='width:128px;margin:0px auto'><br><br>"+obj.message+"<br></div></div>";                          
-            html += "<div style='padding:20px;text-align:center'>" + "<button type='button' class='gradient-button' data-dismiss='modal'>Cancel</button></div></div>"; 
-        } else {
-            html = "<div class='modal-body' style='padding:10px;'><div class='form-group row'><div class='col-sm-12' style='text-align:center'><img src='assets/images/tick.jpg' style='width:128px;margin:0px auto'><br><h5 style='line-height:30px;font-size: 16px;margin-bottom:0px'>"+obj.message+"</h5><br><a data-dismiss='modal' class='gradient-button'>Continue</a></div></div>";
-            html += "</div>"; 
-            $('#ConfirmationPopup').modal("show");
-        }
-        $("#confrimation_text").html(html);
-        
-    });
-}
-   </script>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://maxartkiller.com/website/mobileux/dashboard_html/js/jquery-3.2.1.min.js"></script>
+    <script src="https://maxartkiller.com/website/mobileux/dashboard_html/js/popper.min.js"></script>
+    <script src="https://maxartkiller.com/website/mobileux/dashboard_html/vendor/bootstrap-4.1.3/js/bootstrap.min.js"></script>
+
+    <!-- Cookie jquery file -->
+    <script src="https://maxartkiller.com/website/mobileux/dashboard_html/vendor/cookie/jquery.cookie.js"></script>
+
+    <!-- sparklines chart jquery file -->
+    <script src="https://maxartkiller.com/website/mobileux/dashboard_html/vendor/sparklines/jquery.sparkline.min.js"></script>
+
+    <!-- Circular progress gauge jquery file -->
+    <script src="https://maxartkiller.com/website/mobileux/dashboard_html/vendor/circle-progress/circle-progress.min.js"></script>
+
+    <!-- Swiper carousel jquery file -->
+    <script src="https://maxartkiller.com/website/mobileux/dashboard_html/vendor/swiper/js/swiper.min.js"></script>
+
+    <!-- Application main common jquery file -->
+    <script src="https://maxartkiller.com/website/mobileux/dashboard_html/js/main.js"></script>
+
+    <!-- page level script -->
+     <script>
+     
+     
+
+// fetch('https://api.unsplash.com/photos/random/?count=5&client_id=52d8369eb3e2576a5f5b6423865e074e9c7045761bff1ac5664ff3e0bdb57a1d') 
+//   .then(response => response.json())
+//   .then(data => {
+//     data.forEaach(function(image, i) {
+//       document.querySelector("#slide-" + (i+1)).innerHTML = `
+//         <img src="${image.urls.regular}" alt="">
+//         <p class="author-info">
+//           <a href="${image.links.html}?utm_source=slider-thing&utm_medium=referral&utm_campaign=api-credit">Photo by ${image.user.name}</a> on <a href="https://unsplash.com/">Unsplash</a>
+//         </p>
+//       `;
+//     });
+//   });
+
+
+     </script>
+</body>
+
+</html>

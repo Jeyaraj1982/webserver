@@ -1,200 +1,180 @@
 <?php include_once("header.php");?>
-  <style>
-  .style-1 #js_frm_040 {
-    height: 240px !important;
-}
-  </style>
-  
-<div id="home_banner" class="banner-style-1 banner-with-form">
-  <div id="js_frm_040" class="carousel slide ps_control_hrbrarrow swipe_x ps_easeOutQuint" data-ride="carousel" data-pause="hover" data-interval="4000" data-duration="2000">
-    <div class="carousel-inner" role="listbox">
-            <?php $sliders = $mysql->select("select * from _tbl_sliders where IsActive='1'");?>
-        <?php foreach($sliders as $slider){ ?>
-            <div class="item"> <img src="https://www.trip78.in/uploads/<?php echo $slider['SliderImage'];?>" alt="India" style="width:100%"/> </div>
-        <?php } ?>
-           </div>
-		  
-     
-    <a class="left carousel-control" href="#js_frm_040" role="button" data-slide="prev"> <span class="fa fa-arrow-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="right carousel-control" href="#js_frm_040" role="button" data-slide="next"> <span class="fa fa-arrow-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
-</div>
 
+        <!-- fullscreen menu ends -->
 
-       <style>
-       div.scrollmenu {
-  
-  overflow: auto;
-  white-space: nowrap;
-}
-
-div.scrollmenu a {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 3px;
-  text-decoration: none;
-}
-
-div.scrollmenu a:hover {
-  background-color: #777;
-}
-.thumbWidget { border:0px solid #333;margin:10px;margin-left:0px;margin-right:0px;padding-left:8px;padding-right:15px;}
-.budgetTour {padding:10px 20px;border:1px solid green;border-radius: 50px;color: green;margin-right: 10px;margin-bottom: 10px;}
-.budgetTour:hover{background:green;color:#fff}
-
-.SeasonTour {padding:10px 20px;border:1px solid #d62a94;border-radius: 50px;color: #d62a94;margin-right: 10px;margin-bottom: 10px;}
-.SeasonTour:hover{background:#d62a94;color:#fff}
-       </style>
-
- <div class="container">
-    <div class="row">
-        <div class="col-md-12 thumbWidget">
-        <h2 style="font-size:13px;margin-bottom:0px;">Destinations by Themes
-        <a href="DestinationByThemes.php" style="float:right;color:#5290dd">View All</a>
-        </h2>
-       <div class="scrollmenu">
-           <?php $Honey=$mysql->select("select * from _tbl_tours_package where IsPublish='1' and TourThemeID='1'"); ?>
-           <a href="tourpackagebythemes.php?tid=<?php echo md5($Honey[0]['TourThemeID']);?>"> <div style="font-size:12px;color:#888;text-align:left;line-height:15px">
-             <img src="https://img.traveltriangle.com/public-product/homepage_illustrations/Square/2x/honeymoon_romantic.png?tr=w-148,h-187" style="width:90px"><br>
-             <b>Honeymoon</b><br>
-             <span style="font-size:11px"><?php echo sizeof($Honey);?>&nbsp;Destination</span>
-            </div></a>
-           <?php $Family=$mysql->select("select * from _tbl_tours_package where IsPublish='1' and TourThemeID='2'"); ?> 
-           <a href="tourpackagebythemes.php?tid=<?php echo md5($Family[0]['TourThemeID']);?>"> <div style="font-size:12px;color:#888;text-align:left;line-height:15px">
-             <img src="https://img.traveltriangle.com/public-product/homepage_illustrations/Square/2x/family.png?tr=w-148,h-187" style="width:90px"><br>
-             <b>Family</b><br>
-             <span style="font-size:11px"><?php echo sizeof($Family);?>&nbsp;Destination</span>
-            </div>  </a>
-             <?php $Friends=$mysql->select("select * from _tbl_tours_package where IsPublish='1' and TourThemeID='3'"); ?> 
-             <a href="tourpackagebythemes.php?tid=<?php echo md5($Friends[0]['TourThemeID']);?>"><div style="font-size:12px;color:#888;text-align:left;line-height:15px">
-             <img src="https://img.traveltriangle.com/public-product/homepage_illustrations/Square/2x/friends_group.png?tr=w-148,h-187" style="width:90px"><br>
-             <b>Friends/Group</b><br>
-             <span style="font-size:11px"><?php echo sizeof($Friends);?>&nbsp;Destination</span>
-            </div>  </a>
-              <?php $Solo=$mysql->select("select * from _tbl_tours_package where IsPublish='1' and TourThemeID='4'"); ?> 
-             <a href="tourpackagebythemes.php?tid=<?php echo md5($Solo[0]['TourThemeID']);?>"><div style="font-size:12px;color:#888;text-align:left;">
-             <img src="https://img.traveltriangle.com/public-product/homepage_illustrations/Square/2x/solo.png?tr=w-148,h-187" style="width:90px"><br>
-             <b>Solo</b><br>
-             <span style="font-size:11px"><?php echo sizeof($Solo);?>&nbsp;Destination</span>
-            </div>  </a>
-              <?php $Adventure=$mysql->select("select * from _tbl_tours_package where IsPublish='1' and TourThemeID='5'"); ?> 
-              <a href="tourpackagebythemes.php?tid=<?php echo md5($Adventure[0]['TourThemeID']);?>"><div style="font-size:12px;color:#888;text-align:left;line-height:15px">
-             <img src="https://img.traveltriangle.com/public-product/homepage_illustrations/Square/2x/adventure.png?tr=w-148,h-187" style="width:90px"><br>
-             <b>Adventure</b><br>
-             <span style="font-size:11px"><?php echo sizeof($Adventure);?>&nbsp;Destination</span>
-            </div> </a>                                                                 
-              <?php $Nature=$mysql->select("select * from _tbl_tours_package where IsPublish='1' and TourThemeID='6'"); ?> 
-            <a href="tourpackagebythemes.php?tid=<?php echo md5($$NatureSolo[0]['TourThemeID']);?>"><div style="font-size:12px;color:#888;text-align:left;line-height:15px">
-             <img src="https://img.traveltriangle.com/public-product/homepage_illustrations/Square/2x/nature.png?tr=w-148,h-187" style="width:90px"><br>
-             <b>Nature</b><br>
-             <span style="font-size:11px"><?php echo sizeof($Nature);?>&nbsp;Destination</span>
-            </div>    </a>
-              <?php $Religious=$mysql->select("select * from _tbl_tours_package where IsPublish='1' and TourThemeID='7'"); ?> 
-              <a href="tourpackagebythemes.php?tid=<?php echo md5($Religious[0]['TourThemeID']);?>"><div style="font-size:12px;color:#888;text-align:left;line-height:15px">
-             <img src="https://img.traveltriangle.com/public-product/homepage_illustrations/Square/2x/religious.png?tr=w-148,h-187" style="width:90px"><br>
-             <b>Religious</b><br>
-             <span style="font-size:11px"><?php echo sizeof($Religious);?>&nbsp;Destination</span>
-            </div>   </a>
-             <?php $Wildlife=$mysql->select("select * from _tbl_tours_package where IsPublish='1' and TourThemeID='8'"); ?> 
-            <a href="tourpackagebythemes.php?tid=<?php echo md5($Wildlife[0]['TourThemeID']);?>"><div style="font-size:12px;color:#888;text-align:left;line-height:15px">
-             <img src="https://img.traveltriangle.com/public-product/homepage_illustrations/Square/2x/wildlife.png?tr=w-148,h-187" style="width:90px"><br>
-             <b>Wildlife</b><br>
-             <span style="font-size:11px"><?php echo sizeof($Wildlife);?>&nbsp;Destination</span>
-            </div>   </a>
-              <?php $Water=$mysql->select("select * from _tbl_tours_package where IsPublish='1' and TourThemeID='9'"); ?> 
-            <a href="tourpackagebythemes.php?tid=<?php echo md5($Water[0]['TourThemeID']);?>"><div style="font-size:12px;color:#888;text-align:left;line-height:15px">
-             <img src="https://img.traveltriangle.com/public-product/homepage_illustrations/Square/2x/water+activities.png?tr=w-148,h-187" style="width:90px"><br>
-             <b>Water Activities</b><br>
-             <span style="font-size:11px"><?php echo sizeof($Water);?>&nbsp;Destination</span>
-            </div>   </a>
-            
-            </div>
-            
-        </div>
-    </div>
- </div>
- 
- 
- <div class="container">
-    <div class="row">
-        <div class="col-md-12 thumbWidget">
-        <h2 style="font-size:13px;margin-bottom:0px;">International Tours
-        <a href="InternationalTours.php" style="float:right;color:#5290dd">View All</a>
-        </h2>
-       <div class="scrollmenu">
-           <?php $Tours = $mysql->select("select * from _tbl_sub_tour where TourTypeID='1' and IsPublish='1'");?>
-                    <?php foreach($Tours as $Tour) {?>
-           <a href="tourpackage.php?tid=<?php echo md5($Tour['SubTourTypeID']);?>"> <div style="font-size:12px;color:#888;text-align:left;line-height:15px">
-             <img src="https://www.trip78.in/uploads/<?php echo $Tour['Image'];?>" style="width:90px;height:113px"><br>
-             <b><?php echo $Tour['SubTourTypeName'];?></b><br>
-             <span style="font-size:11px"><?php echo sizeof($mysql->select("select * from _tbl_tours_package where IsPublish='1' and SubTourTypeID='".$Tour['SubTourTypeID']."'"));?>&nbsp;Destination</span>
-            </div></a>
-            
-            <?php } ?>
-            
-            </div>
-            
-        </div>
-    </div>
- </div>
- 
-  <div class="container">
-    <div class="row">
-        <div class="col-md-12 thumbWidget">
-        <h2 style="font-size:13px;margin-bottom:0px;">Indian Tours
-        <a href="IndianTours.php" style="float:right;color:#5290dd">View All</a>
-        </h2>
-       <div class="scrollmenu">
-           <?php $Tours = $mysql->select("select * from _tbl_sub_tour where TourTypeID='6' and IsPublish='1'");?>
-                    <?php foreach($Tours as $Tour) {?>
-           <a href="tourpackage.php?tid=<?php echo md5($Tour['SubTourTypeID']);?>"> <div style="font-size:12px;color:#888;text-align:left;line-height:15px">
-             <img src="https://www.trip78.in/uploads/<?php echo $Tour['Image'];?>" style="width:90px;height:113px"><br>
-             <b><?php echo $Tour['SubTourTypeName'];?></b><br>
-            </div></a>
-            
-            <?php } ?>
-            
-            </div>
-            
-        </div>
-    </div>
- </div>
-  
-  <div class="container">
-    <div class="row">
-        <div class="col-md-12 thumbWidget">
-        <h2 style="font-size:13px;margin-bottom:0px;">Budget Packages</h2>
-       <div style="text-align:center;line-height:50px;">         
-        <a class="budgetTour" href="tourpackagebudjetwise.php?fr=0&to=10000">Lessthan 10000</a>
-        <a class="budgetTour" href="tourpackagebudjetwise.php?fr=10000&to=20000">10000 to 20000</a>
-        <a class="budgetTour" href="tourpackagebudjetwise.php?fr=20000&to=40000">20000 to 40000</a>
-        <a class="budgetTour" href="tourpackagebudjetwise.php?fr=40000&to=60000">40000 to 60000</a>
-        <a class="budgetTour" href="tourpackagebudjetwise.php?fr=60000&to=80000">60000 to 80000</a>
-        <a class="budgetTour" href="tourpackagebudjetwise.php?fr=80000&to=above">80000 and more</a>
+        <!-- page main start -->
+        <style>
+        .content-sticky-footer {padding-bottom:0px !important;}
         
-            
-            </div>
-            
-        </div>
+        </style>
+        <div class="page">
+            <form class="searchcontrol">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <button type="button" class="input-group-text close-search"><i class="material-icons">keyboard_backspace</i></button>
+                    </div>
+                    <input type="email" class="form-control border-0" placeholder="Search..." aria-label="Username">
+                </div>
+            </form>
+            <header class="row m-0 fixed-header">
+                <div class="left">
+                    <!--<a href="javascript:void(0)" onclick="window.history.back();"><i class="material-icons">keyboard_backspace</i></a>-->
+                    <a href="javascript:void(0)" class="menu-left"><i class="material-icons">menu</i></a>
+                </div>
+                <div class="col center">
+                    <a href="" class="logo">
+                        <figure><img src="https://trip78.in/images/logo_footer.png" alt=""></figure></a>
+                </div>
+                <div class="right">
+                    <a href="javascript:void(0)" class="searchbtn"><i class="material-icons">search</i></a>
+                    <!--<a href="javascript:void(0)" class="menu-right"><i class="material-icons">person</i></a>-->
+                </div>
+            </header>
+            <div class="page-content" style="padding-top:34px">
+                <div class="content-sticky-footer" style="min-height: auto; padding-bottom: 0px !important;">
+                    <div data-pagination='{"el": ".swiper-pagination", "hideOnClick": true}' class="swiper-container swiper-init demo-swiper" style="height:180px;padding:0px;">
+                        <div class="swiper-pagination" style="margin-top:10px;"></div>
+                        <div class="swiper-wrapper" style="padding:0px !important">
+                         <?php
+                        $sliders = $mysql->select("select * from _tbl_sliders  ");     
+                      
+                        foreach($sliders as $slider) {
+                    ?>
+                            <div class="swiper-slide" style="padding:0px !important"><img style="width:100%;" src="<?php echo "https://www.trip78.in/uploads/".$slider['SliderImage'];?>" alt="Home Slider 1"></div>
+                            <?php } ?>
+                           
+                        </div>
+                    </div>
+                </div>
+                  <div class="content-sticky-footer" style="height: calc(100vh-270px); padding-bottom: 0px !important;verlfow:auto;margin-top:10px">
+                <div class="row" style="padding:18px;padding-right: 18px;padding-top:0px;padding-bottom:0px;">
+                    <?php
+                        $tours = $mysql->select("select * from _tbl_tour  where IsPublish='1' ");
+                        foreach($tours as $tour) {
+                            ?>
+                                <div  class="col-6" style="margin-bottom:13px;padding-left: 5px;padding-right: 5px;" >
+                                    <!--<a href="subtour.php?tour=<?php echo $tour['TourTypeID'];?>"><div style="background: #fff;padding:5px;border: 0px solid #222;">-->
+                                    <a href="subtour.php?tour=<?php echo $tour['TourTypeID'];?>">
+                                       <div style="background: #000;border: 0px solid #222;">
+                                    <!--<div style="border-radius:5px 5px 0px 0px;position:absolute;top:0px;margin-right:5px;color:#fff;background:rgba(45, 156, 210, 0.8);width:-moz-available;font-size:14px;padding:3px 5px"><?php echo $tour['TourTypeName'];?></div>-->
+                                    <div style="border-radius:5px 5px 0px 0px;position:absolute;top:0px;margin-right:5px;color:yellow;background:rgba(45, 156, 210, 0.8);width:-moz-available;font-size:14px;padding:3px 5px"><?php echo $tour['TourTypeName'];?></div>
+                                     <img src="https://www.trip78.in/uploads/<?php echo $tour['Image'];?>" style="width:100%;margin:0px auto;border-radius:5px;">
+                                     </div>
+                                     </a>
+                                </div>
+                            <?php
+                        }
+                    ?>
+                </div>
+                
+                
+                
+                <?php
+$MostPopularTourPackages=array();
+    $MostPopularTourPackages[] = array("TourThemeID"=>1,"PackageName"=>"Honeymoon","Image1"=>"https://img.traveltriangle.com/public-product/homepage_illustrations/Square/2x/honeymoon_romantic.png?tr=w-365,h-260");
+    $MostPopularTourPackages[] = array("TourThemeID"=>2,"PackageName"=>"Family","Image1"=>"https://img.traveltriangle.com/public-product/homepage_illustrations/Square/2x/family.png?tr=w-365,h-260");
+    $MostPopularTourPackages[] = array("TourThemeID"=>3,"PackageName"=>"Friends/Group","Image1"=>"https://img.traveltriangle.com/public-product/homepage_illustrations/Square/2x/friends_group.png?tr=w-365,h-260");
+    $MostPopularTourPackages[] = array("TourThemeID"=>4,"PackageName"=>"Solo","Image1"=>"https://img.traveltriangle.com/public-product/homepage_illustrations/Square/2x/solo.png?tr=w-365,h-260");
+?>
+    <div class="row" style="padding:18px;padding-right: 18px;padding-top:20px">
+    <div class="col-12" style="padding-left:10px;">
+    <div style="height:20px;">
+      <span style="float:left;color:yellow;padding-left:0px;font-size:18px;">Popular Packages</span>
+      <a style="float:right;font-size:12px;color:yellow;margin-top:5px;" href="viewthemes.php">View all</a>
     </div>
- </div>
+    <br>
+   
+    
+    </div>
+        <?php foreach($MostPopularTourPackages as $TourPackage) {?>
+        <div  class="col-6" style="margin-bottom:13px;padding-left: 5px;padding-right: 5px;" >
+        <!--<a href="subtour.php?tour=<?php echo $tour['TourTypeID'];?>"><div style="background: #fff;padding:5px;border: 0px solid #222;">-->
+            <a href="viewthemepackages.php?theme=<?php echo $TourPackage['TourThemeID'];?>&from=allthemes.php">
+            <div style="background: #000;border: 0px solid #222;">
+            <!--<div style="border-radius:5px 5px 0px 0px;position:absolute;top:0px;margin-right:5px;color:#fff;background:rgba(45, 156, 210, 0.8);width:-moz-available;font-size:14px;padding:3px 5px"><?php echo $tour['TourTypeName'];?></div>-->
+            <div style="border-radius:5px 5px 0px 0px;position:absolute;top:0px;margin-right:5px;color:yellow;background:rgba(45, 156, 210, 0.8);width:-moz-available;font-size:14px;padding:3px 5px"><?php echo (($TourPackage['PackageName']));?></div>
+                <img src="<?php echo $TourPackage['Image1'];?>" style="width:100%;margin:0px auto;border-radius:5px;">
+            </div>
+            </a>
+            <!--<p><?php echo sizeof($mysql->select("select * from _tbl_tours_package where IsPublish='1' and TourThemeID='".$TourPackage['TourThemeID']."'"));?> Destinations</p>-->
+        </div>
+    <?php } ?>
+            </div>
+    
  
-  <div class="container">
-    <div class="row">
-        <div class="col-md-12 thumbWidget">
-        <h2 style="font-size:13px;margin-bottom:0px;">Season Packages</h2>
-       <div style="text-align:center;line-height:50px;">         
-        <a class="SeasonTour" href="">Jan-Feb-Mar</a>
-        <a class="SeasonTour" href="">Apr-May-Jun</a><br>
-        <a class="SeasonTour" href="">Jly-Aug-Sep</a>
-        <a class="SeasonTour" href="">Oct-Nov-Dec</a>
+          <br>
+          <br>
+          <br>
+          <br>
+
+                </div>
+                
+                <div class="footer-wrapper" style="bottom:0px">
+                    <div class="footer dark" style="background:#333px;">
+                        <div class="row mx-0">
+                            <div class="col">
+                                <img src="https://trip78.in/images/logo_footer.png" style="height:50px;">
+                            </div>
+                            <div class="col-8 text-right" style="font-size:12px;">
+                             Copyright @2018 Trip78.in
+                           <!--     <a href="" class="social"><img src="img/facebook.png" alt=""></a>
+                                <a href="" class="social"><img src="img/googleplus.png" alt=""></a>
+                                <a href="" class="social"><img src="img/linkedin.png" alt=""></a>
+                                <a href="" class="social"><img src="img/twitter.png" alt=""></a>
+                                -->
+                            </div>
+                        </div>
+                    </div>
+                     
+                </div>
             </div>
         </div>
+        <!-- page main ends -->
+
     </div>
- </div>
- 
-<?php include_once("footer.php");?>
-<script>
-$(document).ready(function () {
-  $('.carousel-inner').find('.item').first().addClass('active');
-}); 
-</script>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://maxartkiller.com/website/mobileux/dashboard_html/js/jquery-3.2.1.min.js"></script>
+    <script src="https://maxartkiller.com/website/mobileux/dashboard_html/js/popper.min.js"></script>
+    <script src="https://maxartkiller.com/website/mobileux/dashboard_html/vendor/bootstrap-4.1.3/js/bootstrap.min.js"></script>
+
+    <!-- Cookie jquery file -->
+    <script src="https://maxartkiller.com/website/mobileux/dashboard_html/vendor/cookie/jquery.cookie.js"></script>
+
+    <!-- sparklines chart jquery file -->
+    <script src="https://maxartkiller.com/website/mobileux/dashboard_html/vendor/sparklines/jquery.sparkline.min.js"></script>
+
+    <!-- Circular progress gauge jquery file -->
+    <script src="https://maxartkiller.com/website/mobileux/dashboard_html/vendor/circle-progress/circle-progress.min.js"></script>
+
+    <!-- Swiper carousel jquery file -->
+    <script src="https://maxartkiller.com/website/mobileux/dashboard_html/vendor/swiper/js/swiper.min.js"></script>
+
+    <!-- Application main common jquery file -->
+    <script src="https://maxartkiller.com/website/mobileux/dashboard_html/js/main.js"></script>
+
+    <!-- page level script -->
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+            autoplay: {
+                delay: 5000,
+            },
+        });
+        setTimeout(function(){
+            $('.content-sticky-footer').css({"padding-bottom":"0px  !important"});
+            $('.swiper-container').css({"height":"180px !important"});
+        },1000);
+        
+
+    </script>
+</body>
+
+</html>

@@ -1,68 +1,143 @@
-<?php include_once("config.php");?>
+<?php
+    include_once("config.php");
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<!-- Mirrored from html.physcode.com/travel/single-tour.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 11 Dec 2020 08:10:04 GMT -->
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="Book Your Travel - Online Booking HTML Template">
-	<meta name="description" content="Book Your Travel - Online Booking HTML Template">
-	<meta name="author" content="themeenergy.com">
-	<title>Trip78</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Trip78</title>
     
-	<link rel="stylesheet" href="css/style.css" />
-	<link rel="stylesheet" href="css/theme-turqoise.css" id="template-color" />
-	<link rel="stylesheet" href="css/lightslider.min.css" />
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Roboto+Slab:400,700&subset=latin,latin-ext,greek-ext,greek,cyrillic,vietnamese,cyrillic-ext">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<script src="https://use.fontawesome.com/e808bf9397.js"></script>
-	<link rel="shortcut icon" href="images/favicon.ico" />
-	<link rel="stylesheet" href="css/styler.css" type="text/css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="js/app.js"></script>
+
+<link rel="apple-touch-icon" sizes="120x120" href="assets/fav/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/fav/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/fav/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="assets/fav/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
+
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="pingback" href="xmlrpc.html">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="assets/css/flaticon.css" type="text/css" media="all">
+    <link rel="stylesheet" href="assets/css/font-linearicons.css" type="text/css" media="all">
+    <link rel="stylesheet" href="assets/css/booking.css" type="text/css" media="all">
+    <link rel="stylesheet" href="assets/css/swipebox.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="assets/css/travel-setting.css" type="text/css" media="all">
+    <style>
+    .shortcode-tour-reviews {
+    background: rgb(38,189,247) url("images/bg-review.png");
+}
+    </style>
+   <style>
+.errorString {color:red;}
+</style> 
     
-    <link rel="stylesheet" href="css/lightgallery.min.css" />
 </head>
-<body>
-	<div class="loading">
-		<div class="ball"></div>
-		<div class="ball1"></div>                             
-	</div>
-	<header class="header" style="height:auto !important">
-		<div class="wrap">
-			<div class="logo"><a href="index.php" title="Book Your Travel"><img src="images/logo_trip78.png" style="height:100px"> </a></div>
-			<div class="contact" style="color:#0081C8">
-				<span style="color:#555">24/7 Support number</span>
-				<span style="color:#555" class="number">+91 9677536373, +91 9626787878</span>
+
+<body class="single-product travel_tour-page travel_tour">
+<div class="wrapper-container">
+	<header id="masthead" class="site-header sticky_header affix-top">
+		<div class="header_top_bar">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<aside id="text-15" class="widget_text">
+							<div class="textwidget">
+								<ul class="top_bar_info clearfix">
+									<li><i class="fa fa-clock-o"></i>Mon - Sun 9.00 AM - 9.00 PM</li>
+								</ul>
+							</div>
+						</aside>
+					</div>
+					<div class="col-sm-8 topbar-right">
+						<aside id="text-7" class="widget widget_text">
+							<div class="textwidget">
+								<ul class="top_bar_info clearfix">
+                                    <li><i class="fa fa-phone"></i> +91 9626687878</li>
+									<li><i class="fa fa-envelope"></i> trip78mail@gmail.com </li>
+								</ul>
+							</div>
+						</aside>
+						<aside id="travel_login_register_from-2" class="widget widget_login_form">
+							<span class="show_from loginx" onclick="location.href='login.php'"><i class="fa fa-user"></i>&nbsp;&nbsp;Login</span>
+							<span class="register_btnx" style="margin-left:15px;position: relative;" onclick="location.href='register.php'">Register</span>
+						</aside>
+					</div>
+				</div>
 			</div>
 		</div>
-		<nav class="main-nav" style="background:#F29A05 !important;">
-			<div class="wrap">
-				<ul class="slimmenu" id="nav">
-                <?php $Tours = $mysql->select("select * from _tbl_tour where IsPublish='1'");?>
-                <?php foreach($Tours as $Tour){?>
-					<li>
-                        <a href="subtour.php?tid=<?php echo md5($Tour['TourTypeID']);?>" title="index"><?php echo $Tour['TourTypeName'];?></a>
-                         <ul>
-                          <?php $SubTours = $mysql->select("select * from _tbl_sub_tour where IsPublish='1' and TourTypeID='".$Tour['TourTypeID']."'");?>
-                          <?php foreach($SubTours as $SubTour) { ?>
-                            <li><a href="tourpackages.php?tid=<?php echo md5($SubTour['SubTourTypeID']);?>"><?php echo $SubTour['SubTourTypeName'];?></a></li>
-                          <?php } ?>
-                        </ul>
-                    </li>
-                <?php } ?>
-                    <li>
-                        <a href="contactus.php" title="contact us">Contact</a>
-                    </li>
-				</ul>
+		<div class="navigation-menu">
+			<div class="container">
+				<div class="menu-mobile-effect navbar-toggle button-collapse" data-activates="mobile-demo">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</div>
+				<div class="width-logo sm-logo">
+					<a href="index.php" title="Travel" rel="home">
+						<img src="images/logo_trip78.png" alt="Logo" width="474" height="130" class="logo_transparent_static">
+						<img src="images/logo_trip78.png" alt="Sticky logo" width="474" height="130" class="logo_sticky">
+					</a>
+				</div>
+				<nav class="width-navigation">
+					<ul class="nav navbar-nav menu-main-menu side-nav" id="mobile-demo">
+						<li class="<?php echo $page=="index" ? 'current-menu-ancestor current-menu-parent' : 'menu-item-has-children';?>">
+							<a href="index.php">Home</a>							
+						</li>
+						<li class="<?php echo $page=="aboutus" ? 'current-menu-ancestor current-menu-parent' : 'menu-item-has-children';?>">
+							<a href="aboutus.php">About Us</a>							
+						</li>                      
+						<li class="<?php echo $page=="subtour" ? 'current-menu-ancestor current-menu-parent' : 'menu-item-has-children';?>">
+							<a href="javascript:void(0)">Tours</a>						
+                             <ul class="sub-menu">
+                             <?php
+                                 $MainTours = $mysql->select("select * from _tbl_tour where IsPublish='1'"); 
+                                 foreach($MainTours as $mTour) {
+                             ?>
+                                <li><a href="subtours.php?tours=<?php echo $mTour['TourTypeID'];?>" style="font-size:16px;padding-top:10px;padding-bottom:10px"><?php echo $mTour['TourTypeName'];?></a></li>
+                                <?php } ?>
+                                   <!-- <ul class="sub-menu">
+                                        <li><a href="tours-list.html">Tour List</a></li>
+                                        <li><a href="tours-2-cols.html">Grid – 2 cols</a></li>
+                                        <li><a href="tours.html">Grid – 3 cols(width sidebar)</a></li>
+                                        <li><a href="tours-3-cols.html">Grid – 3 cols (no sidebar)</a></li>
+                                        <li><a href="tours-4-cols.html">Grid – 4 cols</a></li>
+                                    </ul>-->       
+                                </li>
+                            </ul>    
+						</li>						
+						 
+                        <li class="<?php echo $page=="gallery" ? 'current-menu-ancestor current-menu-parent' : 'menu-item-has-children';?>" ><a href="gallery.php">Gallery</a></li>
+						<li class="<?php echo $page=="contactus" ? 'current-menu-ancestor current-menu-parent' : 'menu-item-has-children';?>" ><a href="contact.php">Contact</a></li>
+						<li class="menu-right">
+							<ul>
+								<li id="travel_social_widget-2" class="widget travel_search">
+									<div class="search-toggler-unit">
+										<div class="search-toggler">
+											<i class="fa fa-search"></i>
+										</div>
+									</div>
+									<div class="search-menu search-overlay search-hidden">
+										<div class="closeicon"></div>
+										<form method="get" class="search-form" action="search.php">
+											<input type="search" class="search-field" placeholder="Search ..." value="" name="s" title="Search for:">
+											<input type="submit" class="search-submit font-awesome" value="&#xf002;">
+										</form>
+										<div class="background-overlay"></div>
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
 			</div>
-		</nav>
+		</div>
 	</header>
-    
-    <style>
-.gradient-button{
-    background: #0081C8;
-}
-.gradient-button:hover{
-    background: #046aa0;
-}
-</style> 

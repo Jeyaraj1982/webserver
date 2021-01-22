@@ -59,14 +59,14 @@ class MySqldatabase
                 return 0;
             }
         }
-
+                                                                  
         public function __destruct()
         {
             $this->link = null;
         }
 
         public function writeSql($text) {
-            $myFile = sql_log.date("Y_m_d")."_.txt";
+            $myFile = Log_Path.date("Y_m_d")."_.txt";
             $fh = fopen($myFile, 'a') or die ("can't open file..");
             fwrite($fh, "[".date("Y-m-d H:i:s")."]\t".$text."\n");
             fclose($fh);
