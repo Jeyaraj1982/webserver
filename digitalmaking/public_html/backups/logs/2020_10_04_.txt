@@ -15,3 +15,66 @@
 [2020-10-04 10:01:08]	select * from _tbl_resume_additional_info where ResumeID='14'
 [2020-10-04 10:01:08]	select * from resume_visitor_log where ResumeID='14' and ipaddress='157.50.28.31'
 [2020-10-04 10:01:08]	select * from resume_visitor_log where ResumeID='14'  
+[2020-10-04 20:26:30]	select * from _counter where date(web_date)=date('2020-10-04')
+[2020-10-04 20:26:35]	select * from _counter where date(web_date)=date('2020-10-04')
+[2020-10-04 20:27:33]	select * from _counter where date(web_date)=date('2020-10-04')
+[2020-10-04 20:29:39]	select * from _counter where date(web_date)=date('2020-10-04')
+[2020-10-04 20:30:54]	select * from _counter where date(web_date)=date('2020-10-04')
+[2020-10-04 20:32:40]	select * from _counter where date(web_date)=date('2020-10-04')
+[2020-10-04 20:41:33]	select * from _counter where date(web_date)=date('2020-10-04')
+[2020-10-04 20:43:40]	select * from _counter where date(web_date)=date('2020-10-04')
+[2020-10-04 20:43:53]	select * from _counter where date(web_date)=date('2020-10-04')
+[2020-10-04 20:44:31]	select * from _counter where date(web_date)=date('2020-10-04')
+[2020-10-04 20:45:18]	select * from _counter where date(web_date)=date('2020-10-04')
+[2020-10-04 20:47:54]	select * from _counter where date(web_date)=date('2020-10-04')
+[2020-10-04 22:18:38]	select * from _tbl_resume_general_info where ResumeID='14' and IsDelete='0'
+[2020-10-04 22:18:38]	select * from _tbl_resume_education where ResumeID='14'
+[2020-10-04 22:18:38]	select * from _tbl_resume_experience where ResumeID='14'
+[2020-10-04 22:18:38]	select * from _tbl_resume_skills where ResumeID='14'
+[2020-10-04 22:18:38]	select * from _tbl_resume_additional_info where ResumeID='14' and AdditionalInfo='Carrier Objectives'
+[2020-10-04 22:18:38]	select * from _tbl_resume_additional_info where ResumeID='14'
+[2020-10-04 22:18:38]	select * from resume_visitor_log where ResumeID='14' and ipaddress='1.38.56.17'
+[2020-10-04 22:18:38]	select * from resume_visitor_log where ResumeID='14'  
+[2020-10-04 22:18:38]	insert into `resume_visitor_log` (`ResumeID`,`viewed`,`ipaddress`,`ViewedOn`) values ('14','1','1.38.56.17','2020-10-04 22:18:38')
+[2020-10-04 22:19:11]	select * from _tbl_resume_general_info where ResumeID='14' and IsDelete='0'
+[2020-10-04 22:19:11]	select * from _tbl_resume_education where ResumeID='14'
+[2020-10-04 22:19:11]	select * from _tbl_resume_experience where ResumeID='14'
+[2020-10-04 22:19:11]	select * from _tbl_resume_skills where ResumeID='14'
+[2020-10-04 22:19:11]	select * from _tbl_resume_additional_info where ResumeID='14' and AdditionalInfo='Carrier Objectives'
+[2020-10-04 22:19:11]	select * from _tbl_resume_additional_info where ResumeID='14'
+[2020-10-04 22:19:11]	select * from resume_visitor_log where ResumeID='14' and ipaddress='92.99.144.161'
+[2020-10-04 22:19:11]	select * from resume_visitor_log where ResumeID='14'  
+[2020-10-04 22:19:11]	insert into `resume_visitor_log` (`ResumeID`,`viewed`,`ipaddress`,`ViewedOn`) values ('14','1','92.99.144.161','2020-10-04 22:19:11')
+[2020-10-04 22:19:11]	select * from _tbl_resume_general_info where ResumeID='14' and IsDelete='0'
+[2020-10-04 22:19:11]	select * from _tbl_resume_education where ResumeID='14'
+[2020-10-04 22:19:11]	select * from _tbl_resume_experience where ResumeID='14'
+[2020-10-04 22:19:11]	select * from _tbl_resume_skills where ResumeID='14'
+[2020-10-04 22:19:11]	select * from _tbl_resume_additional_info where ResumeID='14' and AdditionalInfo='Carrier Objectives'
+[2020-10-04 22:19:11]	select * from _tbl_resume_additional_info where ResumeID='14'
+[2020-10-04 22:19:11]	select * from resume_visitor_log where ResumeID='14' and ipaddress='1.38.56.17'
+[2020-10-04 22:19:11]	select * from resume_visitor_log where ResumeID='14'  
+[2020-10-04 22:19:33]	select * from _tbl_resume_general_info where ResumeID='14' and IsDelete='0'
+[2020-10-04 22:19:33]	select * from _tbl_resume_education where ResumeID='14'
+[2020-10-04 22:19:33]	select * from _tbl_resume_experience where ResumeID='14'
+[2020-10-04 22:19:33]	select * from _tbl_resume_skills where ResumeID='14'
+[2020-10-04 22:19:33]	select * from _tbl_resume_additional_info where ResumeID='14' and AdditionalInfo='Carrier Objectives'
+[2020-10-04 22:19:33]	select * from _tbl_resume_additional_info where ResumeID='14'
+[2020-10-04 22:19:33]	select * from resume_visitor_log where ResumeID='14' and ipaddress='92.99.144.161'
+[2020-10-04 22:19:33]	select * from resume_visitor_log where ResumeID='14'  
+[2020-10-04 22:19:43]	select * from _tbl_resume_general_info where ResumeID='14' and IsDelete='0'
+[2020-10-04 22:19:43]	select * from _tbl_resume_education where ResumeID='14'
+[2020-10-04 22:19:43]	select * from _tbl_resume_experience where ResumeID='14'
+[2020-10-04 22:19:43]	select * from _tbl_resume_skills where ResumeID='14'
+[2020-10-04 22:19:43]	select * from _tbl_resume_additional_info where ResumeID='14' and AdditionalInfo='Carrier Objectives'
+[2020-10-04 22:19:43]	select * from _tbl_resume_additional_info where ResumeID='14'
+[2020-10-04 22:19:43]	select * from resume_visitor_log where ResumeID='14' and ipaddress='92.99.144.161'
+[2020-10-04 22:19:43]	select * from resume_visitor_log where ResumeID='14'  
+[2020-10-04 22:22:38]	select * from _tbl_resume_general_info where ResumeID='14' and IsDelete='0'
+[2020-10-04 22:22:38]	select * from _tbl_resume_education where ResumeID='14'
+[2020-10-04 22:22:38]	select * from _tbl_resume_experience where ResumeID='14'
+[2020-10-04 22:22:38]	select * from _tbl_resume_skills where ResumeID='14'
+[2020-10-04 22:22:38]	select * from _tbl_resume_additional_info where ResumeID='14' and AdditionalInfo='Carrier Objectives'
+[2020-10-04 22:22:38]	select * from _tbl_resume_additional_info where ResumeID='14'
+[2020-10-04 22:22:38]	select * from resume_visitor_log where ResumeID='14' and ipaddress='157.46.74.131'
+[2020-10-04 22:22:38]	select * from resume_visitor_log where ResumeID='14'  
+[2020-10-04 22:22:38]	insert into `resume_visitor_log` (`ResumeID`,`viewed`,`ipaddress`,`ViewedOn`) values ('14','1','157.46.74.131','2020-10-04 22:22:38')

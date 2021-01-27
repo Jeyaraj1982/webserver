@@ -116,6 +116,18 @@
              
             <!-- /.card -->
           </div>
+          
+          
+           <div class="col-md-6">
+                <div class="row">
+                
+                <div class="col-md-12">
+                    <a href="mycommission.php">View Commission</a>
+                
+                </div>
+                    
+                </div>
+           </div>
           <!--/.col (right) -->
         </div>
         <!-- /.row -->

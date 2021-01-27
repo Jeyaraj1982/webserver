@@ -1,16 +1,24 @@
-<?php include_once("header.php");?>
-    <div class="app-main__outer">
-        <div class="app-main__inner">
-            <div class="app-page-title">
-                <div class="page-title-wrapper">
-                    <div class="page-title-heading">
-                        <div class="page-title-icon">
-                            <i class="pe-7s-medal icon-gradient bg-tempting-azure"></i>
+
+<div class="main-panel">
+    <div class="container">
+        <div class="page-inner">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header" style="padding-top:10px;padding-bottom:10px">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card-title">
+                                        Genealogy Tree
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div>Genealogy Tree</div>
-                    </div>
-                </div>
-            </div> 
+                        <div class="card-body">
+                        
+ 
+ 
+       
             <div class="main-card mb-3 card">
                 <div class="card-body">
                     <div id="level0">
@@ -23,9 +31,9 @@
                                         <div style="border:3px solid #888;padding:5px;height:85px;width:85px;border-radius:50%;background:#fff;margin:0px auto">
                                             <img src="assets/images/user_small.png" style="height: 69px;width: 69px;">
                                         </div>
-                                        <b><?php echo $pMember[0]['MemberCode'];?></b>
-                                        <?php echo $pMember[0]['MemberName'];?><br>
-                                        <?php $dMembers=$mysql->select("select * from `_tbl_placements` where `UplineMemberCode`='".$pMember[0]['MemberCode']."'"); ?>
+                                        <b style="font-size:10px;"><?php echo $pMember[0]['MemberCode'];?></b><br>
+                                        <span style="font-size:10px;"><?php echo $pMember[0]['MemberName'];?></span><br>
+                                        <?php $dMembers=$mysql->select("select * from `_tbl_member` where `SponsorCode`='".$pMember[0]['MemberCode']."'"); ?>
                                         <?php echo "Direct: <b style='color:#c10b85'>".sizeof($dMembers)."</b>";?>
                                     </div>
                                 </td>
@@ -38,7 +46,7 @@
                                    return substr($code,0,1)=="5" ?  'border_5x' : 'border_1x';
                                 }
                             ?>
-                        <?php $pMember=$mysql->select("select * from `_tbl_placements` where `UplineMemberCode`='".$pMember[0]['MemberCode']."'"); ?>
+                        <?php $pMember=$mysql->select("select * from `_tbl_member` where `SponsorCode`='".$pMember[0]['MemberCode']."' order by `MemberCode`"); ?>
                         <table align="left" style="clear:both"  cellspacing="0" cellpadding="0">
                             <tr>
                                 <?php if (sizeof($pMember)==0) {?>
@@ -62,13 +70,13 @@
                                         $i++;
                                 ?>
                                 <td style="width:130px;vertical-align:top">
-                                    <div style="width:130px;margin:0px auto;text-align:center;font-size:12px;cursor:pointer" onclick="javascript:getTree('<?php echo $childa['ChildMemberCode'];?>','<?php echo $i?>','level2');">
+                                    <div style="width:130px;margin:0px auto;text-align:center;font-size:12px;cursor:pointer" onclick="javascript:getTree('<?php echo $childa['MemberCode'];?>','<?php echo $i?>','level2');">
                                         <div class="<?php echo getCss($childa['ChildMemberCode']);?>" style="padding:5px;height:85px;width:85px;border-radius:50%;background:#fff;margin:0px auto">
                                             <img src="assets/images/user_small.png" style="height: 69px;width: 69px;">
                                         </div>
-                                        <b><?php echo $childa['ChildMemberCode'];?></b>
-                                        <?php echo $childa['ChildMemberName'];?><br>
-                                        <?php $dMembers=$mysql->select("select * from `_tbl_placements` where `UplineMemberCode`='".$childa['ChildMemberCode']."'"); ?>
+                                        <b  style="font-size:10px;"><?php echo $childa['MemberCode'];?></b><br>
+                                        <span style="font-size:10px;"><?php echo $childa['MemberName'];?></span><br>
+                                        <?php $dMembers=$mysql->select("select * from `_tbl_member` where `SponsorCode`='".$childa['MemberCode']."'"); ?>
                                         <?php echo "Direct: <b style='color:#c10b85'>".sizeof($dMembers)."</b>";?>
                                     </div>
                                 </td>
@@ -94,6 +102,14 @@
                     <div id="level10"></div>
                 </div>
             </div>
+            
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            
         </div>
         <script>
         function getTree(MemCode,Column,Level) {

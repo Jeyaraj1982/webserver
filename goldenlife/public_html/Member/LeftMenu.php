@@ -30,6 +30,11 @@
                                             <span class="sub-item">My Members</span>
                                         </a>
                                     </li>
+                                    <li>
+                                        <a href="Dashboard.php?action=Genealogy">      
+                                            <span class="sub-item">Genealogy</span>
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                         </li>

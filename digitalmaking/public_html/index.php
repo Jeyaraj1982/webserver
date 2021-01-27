@@ -110,8 +110,8 @@ if (sizeof($d)==1) {
 } else {
     $d = $mysql->select("select * from _counter order by dayid desc");
     $i=$d[0]['count_1']+rand(5,15);
-    $j=$d[0]['count_2']+rand(1,9);
-    $k=$d[0]['count_3']+rand(1,8);
+    $j=$d[0]['count_2']+rand(1,10);
+    $k=$d[0]['count_3']+rand(1,10);
     $l=$d[0]['count_4']+rand(0,2);
     $mysql->insert("_counter",array("web_date"=>date("Y-m-d"),
                                     "count_1"=>$i,
@@ -121,32 +121,32 @@ if (sizeof($d)==1) {
     
 }
 ?>
-    var i=<?php echo $i;?>;
+    var i=0;
     setInterval(function() {
-        if (i<=2500) {
+        if (i<=<?php echo $i;?>) {
             $('#digitalCards').html(i);
             i=i+10;
         }},10);
-
-    var j=<?php echo $j;?>;
+                                              
+    var j=0;
     setInterval(function() {
-        if (j<=6700) {
+        if (j<=<?php echo $j;?>) {
             $('#digitalResume').html(j);  
             j=j+20;
         }},10);
     
-    var k=<?php echo $k;?>;
+    var k=0;
     setInterval(function() {
-        if (k<=7200) {
+        if (k<=<?php echo $k;?>) {
             $('#happyCustomers').html(k);
             k=k+17;
         }},10);
 
-    var l=<?php echo $l;?>;
+    var l=0;
     setInterval(function() {
-        if (l<=152) {
+        if (l<=<?php echo $l;?>) {
             $('#franchisee').html(l);
             l++;
-        }},10);
+        }},1);
 </script>       
 <?php include_once("footer.php"); ?>

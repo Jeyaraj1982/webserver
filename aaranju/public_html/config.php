@@ -30,6 +30,13 @@
            $user_balance = MoneyTransfer::get_balance($param['userid']);
            //}
            
+           if ($user[0]['userid']==9) {
+                $user_balance =  MoneyTransfer::get_balance($param['userid'])-21000;    
+           } else {
+                $user_balance =  MoneyTransfer::get_balance($param['userid'])-10000;
+            }
+
+           
            $qdata = $mysql->select("select * from _moneytransfer_incoming_bankaccount where accountnumber='".$param['BankAccountNumber']."'");
            if (sizeof($qdata)>0) {
                return array("response"=>array("status"=>"FAILURE","error"=>"Not allow to transfer. This account number has set to auto wallet update"));    
@@ -199,79 +206,77 @@
         }
         
         function doRecharge($param) {
+            
             global $mysql,$_txnid;
-            if (Recharge::get_balance($param['userid'])>$param['amount']) {
-                $txnid = $mysql->insert("_transactions",array("userid"          => $param['userid'],
-                                                              "txndate"         => date("Y-m-d H:i:s"),
-                                                              "rcnumber"        => $param['number'],
-                                                              "rcamount"        => $param['amount'],
-                                                              "optrcode"        => $param['optr'],
-                                                              "rctype"          => $param['optrtype'],
-                                                              "rcstatus"        => "SUCCESS",
-                                                              "transid"         => "0",
-                                                              "requestedurl"    => "0",
-                                                              "apiresponse"     => "0",
-                                                              "txn_from"        => $param['txn_from'],
-                                                              "api_uid"         => $param['uid'],
-                                                              "return_url"      => "",
-                                                              "txn_mode"        => (ONLINE=="1") ? "online" : "offline",
-                                                              "refundon"        => date("Y-m-d H:i:s"),
-                                                              "return_response" => ""));
-                 $_txnid = $txnid;
-                 $url = "https://vasanthamrecharge.com/ebird/api/rechargeapi.php?uname=JJSOFTAPI&password=72965&provider=".$param['optr']."&mobno=".$param['number']."&amount=".$param['amount']."&uid=".$txnid."&format=json";
-                 $mysql->execute("update `_transactions` set `requestedurl`='".$url."' where `rctxtid`='".$txnid."' ");
-                  
-                 $aid = $mysql->insert("_accounts",array("userid"      => $param['userid'],
-                                                         "txndate"     => date("Y-m-d H:i:s"),
-                                                         "particulars" => $param['optrtype'],
-                                                         "rcnumber"    => $param['number'],
-                                                         "rcamount"    => $param['amount'],
-                                                         "credits"     => "0",
-                                                         "debits"      => $param['amount'],
-                                                         "balance"     => Recharge::get_balance($param['userid'])-$param['amount'],
-                                                         "rctxnid"     => $txnid));  
-                 if (ONLINE=="1") {
-                    $ch = curl_init($url);
-                    curl_setopt($ch, CURLOPT_HEADER, false);
-                    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-                    $repsonse = curl_exec($ch);
-                    curl_close($ch);
-                    $res = json_decode($repsonse,true); 
-                    $mysql->execute("update `_transactions` set `apiresponse`='".$repsonse."', transid='".$res['response']['transid']."'  where `rctxtid`='".$txnid."' ");
-                 } else {
-                    $res['response']['status']="Accepted" ;
-                    $res['response']['transid']=$txnid;
-                 }
-                                          
-                 if ($res['response']['status']=="Accepted") {
-                      if ($param['optr']=="RJ") {
-                          $waitSeconds = 48;   
-                          for($i=1;$i<$waitSeconds;$i++) {
-                              $s = $mysql->select("select * from `_transactions` where `rctxtid`='".$txnid."'");
-                              if ($s[0]['rcstatus']=="FAILURE") {           
-                                  return array("response"=>array("status"=>"FAILURE","error"=>"0"));      
-                              }
-                              if ($s[0]['rcstatus']=="SUCCESS" && strlen($s[0]['transid'])>6) {
-                                   return array("response"=>array("status"=>"SUCCESS","transid"=>$s[0]['transid'],"uid"=>$param['uid'],"txnid"=>$txnid));    
-                              }
-                              sleep(1);
-                          }
+            
+            if (!(Recharge::get_balance($param['userid'])>$param['amount'])) {
+                 return array("response"=>array("status"=>"failure","error"=>"service unavailable"));
+            }
+           //  "txn_mode"        => (ONLINE=="1") ? "online" : "offline",
+            $txnid = $mysql->insert("_transactions",array("userid"          => $param['userid'],
+                                                          "txndate"         => date("Y-m-d H:i:s"),
+                                                          "rcnumber"        => $param['number'],
+                                                          "rcamount"        => $param['amount'],
+                                                          "optrcode"        => $param['optr'],
+                                                          "rctype"          => $param['optrtype'],
+                                                          "rcstatus"        => "SUCCESS",
+                                                          "transid"         => "0",
+                                                          "requestedurl"    => "0",
+                                                          "apiresponse"     => "0",
+                                                          "txn_from"        => $param['txn_from'],
+                                                          "api_uid"         => $param['uid'],
+                                                          "return_url"      => "",
+                                                          "txn_mode"        => $param['txn_from'],
+                                                          "refundon"        => date("Y-m-d H:i:s"),
+                                                          "return_response" => ""));
+            $_txnid = $txnid;
+            $url = "https://vasanthamrecharge.com/ebird/api/rechargeapi.php?uname=JJSOFTAPI&password=72965&provider=".$param['optr']."&mobno=".$param['number']."&amount=".$param['amount']."&uid=".$txnid."&format=json";
+            $mysql->execute("update `_transactions` set `requestedurl`='".$url."' where `rctxtid`='".$txnid."' ");
+            $aid = $mysql->insert("_accounts",array("userid"                    => $param['userid'],
+                                                    "txndate"                   => date("Y-m-d H:i:s"),
+                                                    "particulars"               => $param['optrtype'],
+                                                    "rcnumber"                  => $param['number'],
+                                                    "rcamount"                  => $param['amount'],
+                                                    "credits"                   => "0",
+                                                    "debits"                    => $param['amount'],
+                                                    "balance"                   => Recharge::get_balance($param['userid'])-$param['amount'],
+                                                    "rctxnid"                   => $txnid));  
+            if (ONLINE=="1") {
+                $ch = curl_init($url);
+                curl_setopt($ch, CURLOPT_HEADER, false);
+                curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                $repsonse = curl_exec($ch);
+                curl_close($ch);
+                $res = json_decode($repsonse,true); 
+                $mysql->execute("update `_transactions` set `apiresponse`='".$repsonse."', transid='".$res['response']['transid']."'  where `rctxtid`='".$txnid."' ");
+            } else {
+                $res['response']['status']="Accepted" ;
+                $res['response']['transid']=$txnid;
+            }
+            
+            if ($res['response']['status']=="Accepted") {
+                //if ($param['optr']=="RJ") {
+                    //$waitSeconds = 48;   
+                    //for($i=1;$i<$waitSeconds;$i++) {
+                    //$s = $mysql->select("select * from `_transactions` where `rctxtid`='".$txnid."'");
+                             // if ($s[0]['rcstatus']=="FAILURE") {           
+                                //  return array("response"=>array("status"=>"FAILURE","error"=>"0"));      
+                             // }
+                              //if ($s[0]['rcstatus']=="SUCCESS" && strlen($s[0]['transid'])>6) {
+                                   //return array("response"=>array("status"=>"SUCCESS","transid"=>$s[0]['transid'],"uid"=>$param['uid'],"txnid"=>$txnid));    
+                             // }
+                             // sleep(1);
+                          //}
                           //return array("response"=>array("status"=>"SUCCESS","transid"=>$res['response']['transid'],"uid"=>$param['uid'],"txnid"=>$txnid));    
                           //return array("response"=>array("status"=>"PENDING","transid"=>$res['response']['transid'],"uid"=>$param['uid'],"txnid"=>$txnid));    
-                      } else {
-                          return array("response"=>array("status"=>"SUCCESS","transid"=>$res['response']['transid'],"uid"=>$param['uid'],"txnid"=>$txnid));    
-                      }
-                     
-                 } else {
-                     $mysql->execute("update `_transactions` set `rcstatus`='FAILURE', `transid`='0' where `rctxtid`='".$txnid."'");
-                     $mysql->execute("update `_accounts` set `debits`='0', balance=(balance-debits) where `rctxnid`='".$txnid."'"); 
-                     return array("response"=>array("status"=>"FAILURE","error"=>$res['response']['error'],"txnid"=>$txnid));    
-                 }           
-             
-             } else {
-                return array("response"=>array("status"=>"FAILURE","error"=>"service unavailable"));
-             }
-        
+                      //} else {
+                          return array("response"=>array("status"=>"success","transid"=>$res['response']['transid'],"uid"=>$param['uid'],"txnid"=>$txnid));    
+                     // }
+            } else {
+                $mysql->execute("update `_transactions` set `rcstatus`='FAILURE', `transid`='0' where `rctxtid`='".$txnid."'");
+                $mysql->execute("update `_accounts` set `debits`='0', balance=(balance-debits) where `rctxnid`='".$txnid."'"); 
+                return array("response"=>array("status"=>"failure","error"=>$res['response']['error'],"txnid"=>$txnid));    
+            }           
         }
     }
     

@@ -9,21 +9,23 @@
     <meta name="keywords" content="Blimey,Codefest">
     <meta name="author" content="Codefest">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-    <base href="http://demo.codefest.co.uk/blimey/">
+    <!--<base href="http://demo.codefest.co.uk/blimey/">-->
     <!-- FAVICON -->
-    <link rel="icon" type="image/png" href="http://demo.codefest.co.uk/blimey/assets/images/favicon.png">
+    <!--<link rel="icon" type="image/png" href="http://demo.codefest.co.uk/blimey/assets/images/favicon.png">-->
     <!-- STYLESHEETS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">    
     <link rel="stylesheet" type="text/css" href="https://digitalmaking.in/assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="https://digitalmaking.in/assets/css/accordian.css" />
-    <link rel="stylesheet" href="http://demo.codefest.co.uk/blimey/assets/css/owl/owl.carousel.min.css">
-    <link rel="stylesheet" href="http://demo.codefest.co.uk/blimey/assets/css/owl/owl.theme.default.min.css">
+    <!--<link rel="stylesheet" href="http://demo.codefest.co.uk/blimey/assets/css/owl/owl.carousel.min.css">-->
+    <link rel="stylesheet" href="https://digitalmaking.in/assets/css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://digitalmaking.in/assets/css/owl/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- SCRIPTS -->
-    <script type="text/javascript" src="http://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=-WSjcgkhmO1CA5Z1p6rX9DWquDRoTuwEk26_TaDxqzEnhDdqoETo2PiPQknoTdoeRluVfRKCOgT__yPpLplQJg" charset="UTF-8"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="assets/js/smoothscroll.js"></script>
+    <!--<script type="text/javascript" src="http://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=-WSjcgkhmO1CA5Z1p6rX9DWquDRoTuwEk26_TaDxqzEnhDdqoETo2PiPQknoTdoeRluVfRKCOgT__yPpLplQJg" charset="UTF-8"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://digitalmaking.in/assets/js/smoothscroll.js"></script>
 </head>
     <body >
         <!-- NAVBAR -->

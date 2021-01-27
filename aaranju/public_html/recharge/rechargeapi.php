@@ -36,9 +36,9 @@
                     <?php if ($_SESSION['user']['mobiledthrecharge']==0)  {?>
               To enable this service please contact administrator
               <?php } else { ?>
-               http://www.aaranju.in/recharge/api.php?username=&lt;apiusername>&password=&lt;apipassword&gt;&number=&lt;mobilenumber&gt;&amount=&lt;amount&gt;&optr=&lt;operatorcode&gt;&uid=&lt;yourtxnid&gt;&response=&lt;csv/json&gt;  <br><br>
+               http://www.aaranju.in/recharge/api.php?apipassword=&lt;apiusername>&apipassword=&lt;apipassword&gt;&number=&lt;mobilenumber&gt;&amount=&lt;amount&gt;&optr=&lt;operatorcode&gt;&uid=&lt;yourtxnid&gt;&response=&lt;csv/json&gt;  <br><br>
                
-               http://www.aaranju.in/recharge/api_balance.php?username=&lt;apiusername>&password=&lt;apipassword&gt;<br><Br>
+               http://www.aaranju.in/recharge/api_balance.php?apipassword=&lt;apiusername>&apipassword=&lt;apipassword&gt;<br><Br>
                
                Operator Code<br><br>
                

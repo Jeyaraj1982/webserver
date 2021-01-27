@@ -37,9 +37,7 @@
 <script>
 $(document).ready(function () {
     $("#MobileNumber").blur(function () {
-        if(IsNonEmpty("MobileNumber","ErrMobileNumber","Please Enter Mobile Number")){
-           IsMobileNumber("MobileNumber","ErrMobileNumber","Please Enter Valid Mobile Number"); 
-        }
+        IsNonEmpty("MobileNumber","ErrMobileNumber","Please Enter Mobile Number");
     });
     $("#Credits").blur(function () {
         if(IsNonEmpty("Credits","ErrCredits","Please Enter Credits")){
@@ -50,9 +48,7 @@ $(document).ready(function () {
 function SubmitFranchisee() {
         ErrorCount=0;    
         $('#ErrMobileNumber').html("");
-            if(IsNonEmpty("MobileNumber","ErrMobileNumber","Please Enter Mobile Number")){
-               IsMobileNumber("MobileNumber","ErrMobileNumber","Please Enter Valid Mobile Number"); 
-            }
+            IsNonEmpty("MobileNumber","ErrMobileNumber","Please Enter Mobile Number");
                 return (ErrorCount==0) ? true : false;
          }
 function SubmitCredits() {
@@ -78,13 +74,8 @@ function SubmitCredits() {
                                 <div class="form-group form-show-validation row">
                                     <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-left">Mobile Number<span class="required-label">*</span></label>
                                     <div class="col-lg-4 col-md-9 col-sm-8">
-                                        <div class="input-group">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text" id="basic-addon1">+91</span>
-                                            </div>
-                                            <input type="text" class="form-control" id="MobileNumber" name="MobileNumber" maxlength="10" placeholder="Enter Mobile Number" value="<?php echo (isset($_POST['MobileNumber']) ? $_POST['MobileNumber'] :"");?>">                                    
-                                        </div>
-                                        <span class="errorstring" id="ErrMobileNumber"><?php echo isset($ErrMobileNumber)? $ErrMobileNumber : "";?></span>
+                                            <input type="text" class="form-control" id="MobileNumber" name="MobileNumber" placeholder="Enter Mobile Number" value="<?php echo (isset($_POST['MobileNumber']) ? $_POST['MobileNumber'] :"");?>">                                    
+                                            <span class="errorstring" id="ErrMobileNumber"><?php echo isset($ErrMobileNumber)? $ErrMobileNumber : "";?></span>
                                     </div>
                                 </div>
                                 <div class="form-group">

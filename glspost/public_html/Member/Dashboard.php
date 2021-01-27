@@ -81,6 +81,7 @@ if (isset($_GET['action'])) {
                             </div>
                         </div>
                     </div>
+                 
                     <div class="row">
                         <div class="col-sm-12" style="text-align: right;" >
                               <a href="Dashboard.php?action=CreateMember">
@@ -91,7 +92,7 @@ if (isset($_GET['action'])) {
                               <br><br>
                         </div>
                         <div class="col-sm-12" style="text-align: center;" >
-                          <a href="Dashboard.php?action=printmember">
+                          <a href="printmember.php">
                                 <button class="btn btn-primary btn-round">
                                     Print
                                 </button>
@@ -106,32 +107,86 @@ if (isset($_GET['action'])) {
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="card-title">
-                                                Recent Members
+                                                Level Chart
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card-body">
                                     <div class="table-responsive">
+                                    
+                                     <?php
+                            $level1=$mysql->select("select * from _tbl_member where SponsorCode='".$_SESSION['User']['MemberCode']."' order by MemberID");
+                            $array=array();
+                            $array['FM']="1H100002000030001";
+                            //Level 1                                 
+                            if (sizeof($level1)>0) {
+                                $array['FM1']=$level1[0]['MemberCode'];
+                                
+                                 $level2=$mysql->select("select * from _tbl_member where SponsorCode='".$level1[0]['MemberCode']."' order by MemberID");
+                                 if (sizeof($level2)>0) {
+                                    $array['FM2']=$level2[0]['MemberCode']; 
+                                    
+                                     $level3=$mysql->select("select * from _tbl_member where SponsorCode='".$level2[0]['MemberCode']."' order by MemberID");
+                                     if (sizeof($level3)>0) {
+                                        $array['FM3']=$level3[0]['MemberCode']; 
+                                        
+                                        $level4=$mysql->select("select * from _tbl_member where SponsorCode='".$level3[0]['MemberCode']."' order by MemberID");
+                                        if (sizeof($level4)>0) {
+                                            $array['FM4']=$level4[0]['MemberCode']; 
+                                            
+                                            $level5=$mysql->select("select * from _tbl_member where SponsorCode='".$level4[0]['MemberCode']."' order by MemberID");
+                                            if (sizeof($level5)>0) {
+                                                $array['FM5']=$level5[0]['MemberCode'];
+                                                
+                                                $level6=$mysql->select("select * from _tbl_member where SponsorCode='".$level5[0]['MemberCode']."' order by MemberID");
+                                                if (sizeof($level6)>0) {
+                                                    $array['FM6']=$level6[0]['MemberCode'];
+                                                    
+                                                    $level7=$mysql->select("select * from _tbl_member where SponsorCode='".$level6[0]['MemberCode']."' order by MemberID");
+                                                    if (sizeof($level7)>0) {
+                                                        //$array['FM7']=$level7[0]['MemberCode']; 
+                                                    } 
+                                                } 
+                                            }
+                                        }
+                                     }
+                                 }
+                            }
+                            
+                             $amount = array("","600","200","200","200","200","200","200");
+                             $amount = array("","600","200","200","200","200","200");
+                             $i=1;
+                           // print_r($array);
+                        ?>
+                        
                                         <table style="width: 100%;" border="1" >
                                             <thead>
                                                 <tr>
-                                                    <th style="text-align: center;font-weight:bold">Sl No</th>
+                                                    
+                                                    <th style="text-align: center;font-weight:bold">Level</th>
                                                     <th style="text-align: center;font-weight:bold">Member Code</th>
                                                     <th style="text-align: center;font-weight:bold">Name & Address</th>
-                                                    <th style="text-align: center;font-weight:bold">Admin</th>
-                                                    <th style="text-align: center;font-weight:bold">Amount</th>
-                                                    <th style="text-align: center;font-weight:bold">Details Bank & Postal Details</th>
+                                                    <th style="text-align: center;font-weight:bold">Admin & Amount</th>
+                                                    <th style="text-align: center;font-weight:bold">Postal Details</th>
+                                                    <th style="text-align: center;font-weight:bold">Bank Postal Details</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <?php
-                                                 $amount = array("","600","200","200","200","200","200","200");
-                                                 $allMembers = $mysql->select("Select * from _tbl_member where SponsorCode='".$_SESSION['User']['MemberCode']."' order by MemberID");
+                                                
+                                              //   $allMembers = $mysql->select("Select * from _tbl_member where SponsorCode='".$_SESSION['User']['MemberCode']."' order by MemberID");
                                                  ?>
-                                                <?php $i=1; foreach ($allMembers as $allMember){ ?>
-                                                <tr>
-                                                    <td style="vertical-align:top"><?php echo $i;?></td>
+                                                <?php  
+                                                //foreach ($allMembers as $allMember){
+                                                foreach ($array as $k=>$v){
+                                                
+                                                     $allMembers = $mysql->select("Select * from _tbl_member where MemberCode='".$v."' order by MemberID");
+                                                     $allMember=$allMembers[0];
+                                                 ?>
+                                                <tr>                        
+                                                   
+                                                    <td style="vertical-align:top"><?php echo $k;?></td>
                                                     <td style="vertical-align:top">
                                                         <b>ID Name:</b><br>
                                                         <?php echo $allMember['MemberCode'];?><br><br>
@@ -152,21 +207,19 @@ if (isset($_GET['action'])) {
                                                          echo "Member";
                                                      }
                                                      
-                                                     ?></td>
-                                                     <td style="text-align: center;vertical-align:top">
-                                                     
-                                                        <?php if (isset($amount[$i])) { ?>
+                                                     ?><br>
+                                                     Amount:
+                                                         <?php if (isset($amount[$i])) { ?>
                                                      Rs.<?php echo $amount[$i];?>/-
                                                      <?php } ?>
-                                                     
                                                      </td>
+                                                   
                                                     <td style="vertical-align:top">
                                                     <b>Village & Pin Code:</b><?php echo $allMember['MOVillage'];?><br>
                                                     <b>MO & A/C Number:</b><?php echo $allMember['MOAccount'];?><br>
                                                    
-                                                    
-                                                       <br>
-                                                   <!--<b>Bank Name:</b><br>-->
+                                                          </td>
+                                       <td style="vertical-align:top">
                                                     <b>A/C Number:</b><br>
                                                     <b>Bank & IFSC Code:</b><br>
                                                     <b>Name of Village:</b><br>
@@ -186,6 +239,8 @@ if (isset($_GET['action'])) {
                             </div>                                                                                             
                         </div>
                     </div>
+                    
+                    
                     <div class="row">
                         <div class="col-sm-12" style="text-align: center;" >
                               <a href="Dashboard.php?action=MyMembers">
@@ -195,6 +250,9 @@ if (isset($_GET['action'])) {
                               </a>
                         <br><br>
                         </div>
+                    </div>
+                    <div>
+                       
                     </div>
                 </div>
 

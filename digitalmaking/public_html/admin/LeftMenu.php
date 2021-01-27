@@ -65,6 +65,22 @@
                                 </ul>
                             </div>
                         </li>
+                        <li class="nav-item">   
+                            <a data-toggle="collapse" href="#Contacts">
+                                <i class="fas fa-users"></i>
+                                <p>Contacts</p>
+                                <span class="caret"></span>
+                            </a>
+                            <div class="collapse" id="Contacts">
+                                <ul class="nav nav-collapse">
+                                    <li>
+                                        <a href="dashboard.php?action=Contacts/List">      
+                                            <span class="sub-item">Manage Contacts</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>

@@ -39,7 +39,8 @@
                 <tr role="row">
                     <th class="sorting_asc">Txn Date</th>
                     <th class="sorting">Particulars</th>
-                    <th class="sorting">Amount</th>
+                    <th class="sorting" style="text-align: right;">Amount</th>
+                    <th class="sorting" style="text-align: right;">Commission</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -48,8 +49,9 @@
                 <tr role="row" class="<?php echo ($i%2)==0 ? 'even' : 'odd';?>">
                   <td class="sorting_1" ><?php echo $t['txndate'];?></td>
                   <td ><?php echo $t['particulars'];?>:&nbsp;&nbsp;<?php echo $t['ReferenceNo'];?></td>
-                  <td style="text-align:right;"><?php echo $t['rcamount'];?></td>
-                  </td>
+                  <td style="text-align:right;"><?php echo number_format($t['rcamount'],2);?></td>
+                  <td style="text-align:right;"><?php echo number_format($t['credits']-$t['rcamount'],2);?></td>
+                   
                 </tr>
                 <?php } ?>
               </tbody>

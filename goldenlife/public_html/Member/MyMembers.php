@@ -25,9 +25,9 @@
                                             <th style="text-align: center;font-weight:bold">Sl No</th>
                                             <th style="text-align: center;font-weight:bold">Member Code</th>
                                             <th style="text-align: center;font-weight:bold">Name & Address</th>
-                                            <th style="text-align: center;font-weight:bold">Admin</th>
-                                            <th style="text-align: center;font-weight:bold">Amount</th>
-                                            <th style="text-align: center;font-weight:bold">Details Bank & Postal Details</th>
+                                            <th style="text-align: center;font-weight:bold">Admin & Amount</th>
+                                            <th style="text-align: center;font-weight:bold">Postal Details</th>
+                                            <th style="text-align: center;font-weight:bold">Bank Details</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -54,21 +54,21 @@
                                                  echo "Member";
                                              }
                                              
-                                             ?></td>
-                                             <td style="text-align: center;vertical-align:top">
-                                             
-                                                <?php if (isset($amount[$i])) { ?>
+                                             ?><br>
+                                             Amount:
+                                               <?php if (isset($amount[$i])) { ?>
                                              Rs.<?php echo $amount[$i];?>/-
                                              <?php } ?>
                                              
                                              </td>
+                                              
                                             <td style="vertical-align:top">
                                             <b>Village & Pin Code:</b><?php echo $allMember['MOVillage'];?><br>
                                             <b>MO & A/C Number:</b><?php echo $allMember['MOAccount'];?><br>
                                            
-                                            
-                                               <br>
-                                           <!--<b>Bank Name:</b><br>-->
+                                                 </td>
+                                       <td style="vertical-align:top">
+                                       
                                             <b>A/C Number:</b><br>
                                             <b>Bank & IFSC Code:</b><br>
                                             <b>Name of Village:</b><br>

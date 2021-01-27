@@ -1,7 +1,7 @@
 <?php include_once("../config.php"); ?> 
 
 <?php 
-    $pMember=$mysql->select("select * from `_tbl_placements` where `UplineMemberCode`='".$_GET['MemberCode']."' order by `PlacementID`"); 
+    $pMember=$mysql->select("select * from `_tbl_member` where `SponsorCode`='".$_GET['MemberCode']."' order by `MemberCode`"); 
     $MemCode=$_GET['MemberCode'];
     $div = "";
     if ($_GET['N']=="level2") {
@@ -73,13 +73,13 @@
                                  $i++;
                                  ?>
                                 <td style="width:130px;vertical-align:top">
-                                <div style="width:130px;margin:0px auto;text-align:center;font-size:12px;cursor:pointer" onclick="javascript:getTree('<?php echo $childa['ChildMemberCode'];?>','<?php echo $_GET['C']+$i; ?>','<?php echo $div;?>');">
+                                <div style="width:130px;margin:0px auto;text-align:center;font-size:12px;cursor:pointer" onclick="javascript:getTree('<?php echo $childa['MemberCode'];?>','<?php echo $_GET['C']+$i; ?>','<?php echo $div;?>');">
                                     <div class="<?php echo getCss($childa['ChildMemberCode']);?>" style="padding:5px;height:85px;width:85px;border-radius:50%;background:#fff;margin:0px auto">
                                         <img src="assets/images/user_small.png" style="height: 69px;width: 69px;">
                                     </div>
-                                    <b><?php echo $childa['ChildMemberCode'];?></b>
-                                    <?php echo $childa['ChildMemberName'];?><br>
-                                    <?php $dMembers=$mysql->select("select * from `_tbl_placements` where `UplineMemberCode`='".$childa['ChildMemberCode']."'"); ?>
+                                    <b  style="font-size:10px;"><?php echo $childa['MemberCode'];?></b><br>
+                                        <span style="font-size:10px;"><?php echo $childa['MemberName'];?></span><br>
+                                    <?php $dMembers=$mysql->select("select * from `_tbl_member` where `SponsorCode`='".$childa['MemberCode']."'"); ?>
                                     <?php echo "Direct: <b style='color:#c10b85'>".sizeof($dMembers)."</b>";?>
                                 </div>
                                 </td>
