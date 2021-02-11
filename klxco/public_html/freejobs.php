@@ -170,25 +170,13 @@ $count = $mysql->select("select userid from _jusertable where date(createdon)>da
 
 
  
-$d = $mysql->select("select * from _counter where date(web_date)=date('".date("Y-m-d")."') order by dayid desc");
+$d = $mysql->select("select * from _counter order by dayid desc limit 0,1");
 if (sizeof($d)==1) {
     $i=$d[0]['count_5'];
     $j=$d[0]['count_6'];
     $k=$d[0]['count_7'];
     $l=$d[0]['count_8'];
-} else {
-    $d = $mysql->select("select * from _counter order by dayid desc");
-    $i=$d[0]['count_5']+10;
-    $j=$d[0]['count_6']+2;
-    $k=$d[0]['count_7'];
-    $l=$d[0]['count_8']+100;
-    $mysql->insert("_counter",array("web_date"=>date("Y-m-d"),
-                                    "count_5"=>$i,
-                                    "count_6"=>$j,
-                                    "count_7"=>$k,
-                                    "count_8"=>$l));
-    
-}
+}  
 
 //$i=$i+$card_count;
 //$j=$j+$resume_count;

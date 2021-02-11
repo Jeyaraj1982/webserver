@@ -933,6 +933,10 @@ function fupload() {
 }
 
 function CallConfirmation(){
+    if ($('#uploadimage1').val()=="") {
+            $('#Errimage1').html("Please Upload First Image");
+       }
+      
     var txt = ' <div class="form-group row">'
                     +'<div class="col-sm-12" style="text-align:center">'
                         +'CONFIRMATION'
@@ -982,11 +986,32 @@ function CallConfirmation(){
    var uploaded_count=0;
    var img_path = '<?php echo "assets/".$config['thumb'];?>';
    
+   function getUploadedFiles() {
+       var Count=0;
+       if ($('#uploadimage1').val()!="") {
+           Count++
+       }
+       if ($('#uploadimage2').val()!="") {
+           Count++;
+       }
+       if ($('#uploadimage3').val()!="") {
+           Count++;
+       }
+       if ($('#uploadimage4').val()!="") {
+           Count++;
+       }
+       if ($('#uploadimage5').val()=="") {
+           Count++;
+       } 
+       if ($('#uploadimage6').val()=="") {
+           Count++;
+       }
+   }
    $(document).ready(function(){
        
        $('#files').change(function() {
            $('#file_upload_progress').html();
-           $('#file_upload_error').html();
+           $('#Errimage1').html("");
            var form_data = new FormData();
            var p="";
            var error_txt="";
@@ -994,21 +1019,56 @@ function CallConfirmation(){
             
              
             //for (var index = 0; index < totalfiles; index++) {
-           if ((uploaded_count+totalfiles)>6) {
-                $('#file_upload_error').html("Maximum allowed 6 images"); 
+           if ((getUploadedFiles()+totalfiles)>6) {
+                $('#Errimage1').html("Maximum allowed 6 images"); 
                 //alert("Maximum allowed 6 images"); 
                 return true;
            }
                
          
           // for (var index = uploaded_count; index < (uploaded_count+totalfiles); index++) {
+          var up=[];
+            up[0]=0;
+            up[1]=0;
+            up[2]=0;
+            up[3]=0;
+            up[4]=0;
+            up[5]=0;
+            up[6]=0;
+            up[7]=0;
            for (var index = 0; index < (totalfiles); index++) {
                 form_data.append("files[]", document.getElementById('files').files[index]);
-                  $('#file_upload_error').html(document.getElementById('files').files[index]);
+                  $('#Errimage1').html(document.getElementById('files').files[index]);
                 
               //  p += "<div id='img"+img_count+"' style='border:1px solid #ccc;height:100px;width:100px;float:left;margin-right:5px;margin-bottom:5px;'>"+loadingGif+"</div>";
-                $('#div_'+(img_count+1)).html("<div id='img"+img_count+"' style='height:100px;width:100px;'>"+loadingGif+"</div>");
-                   img_count++;
+                
+                //$('#div_'+(img_count+1)).html("<div id='img"+img_count+"' style='height:100px;width:100px;'>"+loadingGif+"</div>");
+                if ($('#uploadimage1').val()=="") {
+                    $('#div_1').html("<div id='img1' style='height:100px;width:100px;'>"+loadingGif+"</div>");
+                    $('#uploadimage1').val("-");
+                    up[index]=1;
+                } else if ($('#uploadimage2').val()=="") {
+                    $('#div_2').html("<div id='img2' style='height:100px;width:100px;'>"+loadingGif+"</div>");
+                    $('#uploadimage2').val("-");
+                     up[index]=2;
+                } else if ($('#uploadimage3').val()=="") {
+                    $('#div_3').html("<div id='img3' style='height:100px;width:100px;'>"+loadingGif+"</div>");
+                    $('#uploadimage3').val("-");
+                     up[index]=3;
+                } else if ($('#uploadimage4').val()=="") {
+                    $('#div_4').html("<div id='img4' style='height:100px;width:100px;'>"+loadingGif+"</div>");
+                    $('#uploadimage4').val("-");
+                    up[index]=4;
+                } else if ($('#uploadimage5').val()=="") {
+                    $('#div_5').html("<div id='img5' style='height:100px;width:100px;'>"+loadingGif+"</div>");
+                    $('#uploadimage5').val("-");
+                    up[index]=5;
+                } else if ($('#uploadimage6').val()=="") {
+                    $('#div_6').html("<div id='img6' style='height:100px;width:100px;'>"+loadingGif+"</div>");
+                    $('#uploadimage6').val("-");
+                     up[index]=6;
+                }
+                img_count++;
             }
             if (uploaded_count==0) {          
               //  $('#previews').html(p);
@@ -1050,13 +1110,20 @@ function CallConfirmation(){
                        if (response[index]['error']==0) {
                         var src = response[index]['filename'];
                             //$('#preview').append('<img src="https://klx.co.in/testupload/'+src+'" width="200px;" height="200px">');
-                            $('#uploadimage'+(uploaded_count+1)).val(src);
-                            $('#img'+uploaded_count).html("<img src='https://www.klx.co.in/"+img_path+"/"+src+"' width='100px;' height='100px'><br><span onclick='image_close("+(uploaded_count+1)+")' class='btn btn-danger btn-sm' style='padding: 0px 10px;font-size: 10px;'>Delete</span>");
+                            
+                            //$('#uploadimage'+(uploaded_count+1)).val(src);
+                            //$('#img'+uploaded_count).html("<img src='https://www.klx.co.in/"+img_path+"/"+src+"' width='100px;' height='100px'><br><span onclick='image_close("+(uploaded_count+1)+")' class='btn btn-danger btn-sm' style='padding: 0px 10px;font-size: 10px;'>Delete</span>");
+                            
+                            if (up[index]>0) {
+                                $('#uploadimage'+up[index]).val(src);
+                                $('#img'+up[index]).html("<img src='https://www.klx.co.in/"+img_path+"/"+src+"' width='100px;' height='100px'><br><span onclick='image_close("+up[index]+")' class='btn btn-danger btn-sm' style='padding: 0px 10px;font-size: 10px;'>Delete</span>");
+                            }
                             //$('#img'+uploaded_count).html("<img src='https://www.klx.co.in/"+img_path+"/"+src+"' width='100px;' height='100px'>");
                             uploaded_count++;       
                        } else {
                             $('#uploadimage'+(uploaded_count+1)).val("");
                             $('#img'+uploaded_count).html("<div style='font-size:10px;color:red;text-align:center'>"+response[index]['message']+"</div>");
+                            $('#uploadimage'+up[index]).val();
                             uploaded_count++;  
                        }
                     }                                        
@@ -1108,6 +1175,7 @@ function CallConfirmation(){
         $('#uploadimage'+id).val("");
         $('#div_'+id).html('<img onclick="fupload()" id="src_image'+id+'" src="https://www.klx.co.in/assets/add-image.png" style="width: 64px;margin-top: 20px;opacity: 0.3;cursor: pointer;">');  
         $('#div_'+id).css({"border":"1px solid #ccc"});
+          $('#uploadimage'+id).val("");
         //$('#Errimage1').html("Please Upload Image");
     }
        

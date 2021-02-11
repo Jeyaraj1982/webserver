@@ -8,6 +8,18 @@ $countfiles = count($_FILES['files']['name']);
 // Upload directory
 $upload_location = "assets/".$config['thumb']."/";
 $upload_location = "assets/".$config['thumb']."/";
+if (!(is_dir($upload_location."/".date("Y")))) {
+    mkdir($upload_location."/".date("Y"));
+}
+
+if (!(is_dir($upload_location.date("Y")."/".date("m")))) {
+    mkdir($upload_location.date("Y")."/".date("m"));
+}
+
+if (!(is_dir($upload_location.date("Y")."/".date("m")."/".date("d")))) {
+    mkdir($upload_location.date("Y")."/".date("m")."/".date("d"));
+}                  
+$filename_prefix = date("Y")."/".date("m")."/".date("d")."/";
 
 // To store uploaded files path
 $files_arr = array();
@@ -102,7 +114,7 @@ imagecopy($im, $stamp, $centerX, $centerY, 0, 0, imagesx($stamp), imagesy($stamp
 
 // Output and free memory
 //imagepng($im,"j.png");
-$nfilename = "_".time().$filename;
+$nfilename = $filename_prefix."_".time().$filename;
 
 if ($exten[sizeof($exten)-1]=="png") {
 imagepng($im,$upload_location.$nfilename);

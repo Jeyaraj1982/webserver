@@ -141,15 +141,61 @@ if($_SESSION['USER']['isstaff']==0){
                 </a>
                 <button class="topbar more" style="width:190px;text-align:right">
                     <?php if ($_SESSION['USER']['userid']>0) { ?>
-                    <a class="btn btn-primary btn-sm" href="<?php echo country_url;?>freeadpost" style="padding:5px 10px !important;margin-right:12px;margin-top: -10px;">
+                    <table style="float: right;">
+                        <tr>
+                            <td> 
+                            <a class="btn btn-primary btn-sm" href="<?php echo country_url;?>freeadpost" style="padding:5px 10px !important;margin-right:12px;margin-top: -10px;border:1px solid red">
+                                Post Free Ad
+                            </a> </td>
+                    
+                    <td style="line-height: 10px !important;text-align: center;width:40px"> 
+                        <a href="<?php echo country_url;?>chats" style="text-decoration:none;">
+                             <i class="flaticon-chat-4" style="font-size:28px"></i>
+                        </a>
+                        <br><span style="font-size:10px">Chat</span>
+                    </td>
+                    <td style="line-height: 10px !important;text-align: center;width:40px">
+                        <a class="profile-pic" data-toggle="dropdown" href="javascript:void(0)" aria-expanded="false">
+                            <div class="avatar-sm" style="height: 18px;width:auto;">
+                            <i class="flaticon-user-1" style="font-size:28px"></i>
+                        </div>
+                    </a>
+                    <br>
+                    <span style="font-size:10px">Profile</span>  
+                    <ul class="dropdown-menu dropdown-user animated fadeIn" style="margin-top:30px;width:150px; overflow: hidden; ">
+                        <div class="dropdown-user-scroll scrollbar-outer">
+                            <li>          
+                                <div class="user-box">
+                                    <div class="u-text">
+                                        <h4><?php echo $_SESSION['USER']['personname'];?></h4>
+                                    </div>
+                                </div>
+                            </li>                              
+                            <li>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="<?php echo country_url;?>mypage" style="line-height:15px;">My Page</a>  
+                                <a class="dropdown-item" href="<?php echo country_url;?>myads" style="line-height:15px;">My Ads</a>  
+                                <a class="dropdown-item" href="<?php echo country_url;?>chats" style="line-height:15px;">Chat With Seller</a>  
+                                <a class="dropdown-item" href="<?php echo country_url;?>myprofile" style="line-height:15px;">My Profile</a>
+                                <a class="dropdown-item" href="<?php echo country_url;?>changepassword" style="line-height:15px;">Change Password</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="<?php echo base_url;?>index.php?action=logout" style="line-height:15px;">Logout</a>
+                            </li> 
+                        </div>
+                    </ul></td>
+                        </tr>
+                    </table>
+                    <!--
+                    <a class="btn btn-primary btn-sm" href="<?php echo country_url;?>freeadpost" style="padding:5px 10px !important;margin-right:12px;margin-top: -10px;border:1px solid red">
                         Post Free Ad
                     </a> 
-                    <a href="<?php echo country_url;?>chats" style="text-decoration:none;">
+                    <a href="<?php echo country_url;?>chats" style="text-decoration:none;line-height:10px;border:1px solid red">
                          <i class="flaticon-chat-4" style="font-size:28px"></i>
+                         <br><span style="font-size:10px">Chat</span>
                     </a>&nbsp;&nbsp;
                     <a class="profile-pic" data-toggle="dropdown" href="javascript:void(0)" aria-expanded="false" style="float:right">
                         <div class="avatar-sm" style="height: 50px;width:auto;">
-                            <!--<span style="font-size:16px;display:inline;font-weight:bold;">Hi !</span>-->
+                             
                             <i class="flaticon-user-1" style="font-size:28px"></i>
                         </div>
                     </a>  
@@ -173,7 +219,8 @@ if($_SESSION['USER']['isstaff']==0){
                                 <a class="dropdown-item" href="<?php echo base_url;?>index.php?action=logout" style="line-height:15px;">Logout</a>
                             </li> 
                         </div>
-                    </ul>          
+                    </ul>     
+                    -->     
                     <?php } else { ?>
                     <a class="btn btn-outline-primary" style="border:none;font-weight:bold !important;font-size:15px;" href="<?php echo country_url;?>login">Login</a>
                     <a class="btn btn-primary" style="color:#fff" href="<?php echo country_url;?>register">Sell</a>

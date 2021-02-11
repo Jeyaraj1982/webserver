@@ -60,31 +60,13 @@ $data = $mysql->select("select * from Ads_Photo order by PhotoAdID Desc");
     
 <script>
 <?php      
-$d = $mysql->select("select * from _counter where date(web_date)=date('".date("Y-m-d")."')");
+$d = $mysql->select("select * from _counter order by dayid desc limit 0,1");
 if (sizeof($d)==1) {
     $i=$d[0]['count_1'];
     $j=$d[0]['count_2'];
     $k=$d[0]['count_3'];
     $l=$d[0]['count_4'];
-} else {
-    $d = $mysql->select("select * from _counter order by dayid desc");
-    $i=$d[0]['count_1']+rand(5,15);
-    $j=$d[0]['count_2']+rand(1,10);
-    $k=$d[0]['count_3']+rand(1,10);
-    $l=$d[0]['count_4']+rand(0,2);
-    $mysql->insert("_counter",array("web_date"=>date("Y-m-d"),
-                                    "count_1"=>$i,
-                                    "count_2"=>$j,
-                                    "count_3"=>$k,
-                                    "count_4"=>$l));
-    
-}
-
-$resume_count = sizeof($mysql->select("select * from _tbl_resume_general_info"));
-$card_count = sizeof($mysql->select("select * from _tbl_card_general_info"));
-$i=$i+$card_count;
-$j=$j+$resume_count;
-$k=$i+$j;
+}  
 ?>
     var i=0;
     setInterval(function() {
