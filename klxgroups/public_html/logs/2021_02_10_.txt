@@ -1,0 +1,2 @@
+[2021-02-10 07:01:31]	select * from _tbl_taxi order by taxi_order
+[2021-02-10 07:01:35]	select * from _tbl_taxi where TaxiTypeID='1'
