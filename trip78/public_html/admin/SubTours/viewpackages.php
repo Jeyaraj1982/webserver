@@ -27,7 +27,7 @@
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
-                                 <table class="table table-striped mt-3">
+                                 <table id="tbl" class="table table-striped mt-3">
                                         <thead>
                                             <tr>
                                                 <th scope="col"></th>
@@ -44,7 +44,7 @@
                                         </thead>
                                         <tbody>
                                         <?php 
-                                            $packages = $mysql->select("select * from _tbl_tours_package where md5(SubTourTypeID)='".$_GET['id']."'");
+                                            $packages = $mysql->select("select * from _tbl_tours_package where md5(SubTourTypeID)='".$_GET['id']."' order by PackageOrder ");
                                             foreach($packages as $package){ 
                                             $Enquiries= $mysql->Select("SELECT COUNT(PackageID) AS cnt FROM _tbl_tour_enquiry where PackageID='".$package['PackageID']."'"); 
                                             //$UpcomingDates= $mysql->Select("SELECT COUNT(DateandCostID) AS cnt FROM _tbl_package_date_cost where PackageID='".$package['PackageID']."' and date(TourDate)>='".date("Y-m-d")."'"); 
@@ -64,6 +64,7 @@
                                                 <?php echo $package['JoiningPlace']; ?>-
                                                 <?php echo $package['LeavingPlace']; ?>
                                                 </span>
+                                                <br><?php echo $package['IsPublish']==1 ? "<span style='color:green'>active</span>" : "<span style='color:red'>de-active</span>"; ?>
                                                 </td>
                                                 <td style="text-align:right"><?php echo $package['PackagePrice'];?></td>
                                                 <td style="text-align:right"><?php echo $package['PackageOrder'];?></td>
@@ -196,5 +197,11 @@
         
     });
 }
+
+$(document).ready(function() {
+            $('#tbl').DataTable({
+                 "lengthMenu": [[-1], ["All"]]
+            });
+});
 </script>
 

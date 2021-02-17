@@ -23,7 +23,7 @@
                         </div>
                         <div class="card-body" style="padding-top:0px;">
                             <div class="table-responsive">
-                                 <table class="table table-striped">
+                                 <table id="tbl" class="table table-striped">
                                     <thead>
                                         <tr>
                                             <th scope="col"></th>
@@ -123,4 +123,8 @@ function DeleteSubTourType(SubTourID) {
         $("#confrimation_text").html(html);
     });
 }
+$(document).ready(function() {
+            $('#tbl').DataTable({
+            });
+});
 </script>

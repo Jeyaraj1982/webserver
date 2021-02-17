@@ -342,10 +342,10 @@ function SubmitProduct() {
                                             <div class="col-lg-3 col-md-9 col-sm-8">
                                                 <select class="form-control" name="PackageRating" id="PackageRating">
                                                     <option value="1" <?php echo (isset($_POST[ 'PackageRating'])) ? (($_POST[ 'PackageRating']=="1") ? " selected='selected' " : "") : (($data[0]['PackageRating']=="1") ? " selected='selected' " : "");?>>1</option>
-                                                    <option value="2" <?php echo (isset($_POST[ 'PackageRating'])) ? (($_POST[ 'PackageRating']=="2") ? " selected='selected' " : "") : (($data[0]['PackageRating']=="0") ? " selected='selected' " : "");?>>2</option>
-                                                    <option value="3" <?php echo (isset($_POST[ 'PackageRating'])) ? (($_POST[ 'PackageRating']=="3") ? " selected='selected' " : "") : (($data[0]['PackageRating']=="0") ? " selected='selected' " : "");?>>3</option>
-                                                    <option value="4" <?php echo (isset($_POST[ 'PackageRating'])) ? (($_POST[ 'PackageRating']=="4") ? " selected='selected' " : "") : (($data[0]['PackageRating']=="0") ? " selected='selected' " : "");?>>4</option>
-                                                    <option value="5" <?php echo (isset($_POST[ 'PackageRating'])) ? (($_POST[ 'PackageRating']=="5") ? " selected='selected' " : "") : (($data[0]['PackageRating']=="0") ? " selected='selected' " : "");?>>5</option>
+                                                    <option value="2" <?php echo (isset($_POST[ 'PackageRating'])) ? (($_POST[ 'PackageRating']=="2") ? " selected='selected' " : "") : (($data[0]['PackageRating']=="2") ? " selected='selected' " : "");?>>2</option>
+                                                    <option value="3" <?php echo (isset($_POST[ 'PackageRating'])) ? (($_POST[ 'PackageRating']=="3") ? " selected='selected' " : "") : (($data[0]['PackageRating']=="3") ? " selected='selected' " : "");?>>3</option>
+                                                    <option value="4" <?php echo (isset($_POST[ 'PackageRating'])) ? (($_POST[ 'PackageRating']=="4") ? " selected='selected' " : "") : (($data[0]['PackageRating']=="4") ? " selected='selected' " : "");?>>4</option>
+                                                    <option value="5" <?php echo (isset($_POST[ 'PackageRating'])) ? (($_POST[ 'PackageRating']=="5") ? " selected='selected' " : "") : (($data[0]['PackageRating']=="5") ? " selected='selected' " : "");?>>5</option>
                                                 </select>                                                                                                       
                                             </div>
                                         </div>

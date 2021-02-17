@@ -24,6 +24,7 @@ $data= $mysql->Select("select * from _tbl_tour where md5(TourTypeID)='".$_GET['i
             } 
                 $mysql->execute("update _tbl_tour set `TourTypeName`    ='".$_POST['TourTypeName']."',
                                                       `IsPublish`       ='".$_POST['IsPublish']."',
+                                                      `ListOrder`       ='".$_POST['ListOrder']."',
                                                       `Image`           ='".$file."' where TourTypeID='".$data[0]['TourTypeID']."'");
            
                 $successmessage ="Updated Successfully";
@@ -85,6 +86,12 @@ function SubmitProduct() {
                                                 </div>
                                                 <div class="errorstring" id="Errimage1"><?php echo isset($Errimage1)? $Errimage1 : "";?></div>
                                                 <img src='../assets/loading.gif' style='width:0px'>
+                                            </div>
+                                        </div>
+                                        <div class="form-group form-show-validation row">
+                                            <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-left">List Order<span class="required-label">*</span></label>
+                                            <div class="col-lg-4 col-md-9 col-sm-8">
+                                               <input type="text" class="form-control" id="ListOrder" name="ListOrder" placeholder="Enter List Order" value="<?php echo (isset($_POST['ListOrder']) ? $_POST['ListOrder'] : $data[0]['ListOrder']);?>">                                                                                                      
                                             </div>
                                         </div>
                                         <div class="form-group form-show-validation row">

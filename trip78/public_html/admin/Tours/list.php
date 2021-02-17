@@ -19,22 +19,24 @@
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
-                                 <table class="table table-striped mt-3">
+                                 <table id="tbl" class="table table-striped mt-3">
                                         <thead>
                                             <tr>
                                                 <th scope="col"></th>
                                                 <th scope="col">Tour Name</th>
+                                                <th scope="col">List Order</th>
                                                 <th scope="col" style="text-align:right;">Sub Tours</th>
                                                 <th scope="col"> </th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                        <?php $tours = $mysql->select("select * from _tbl_tour");?>
+                                        <?php $tours = $mysql->select("select * from _tbl_tour order by TourTypeName");?>
                                         <?php foreach($tours as $tour){ ?>
-                                            <?php $tc= $mysql->Select("SELECT COUNT(SubTourTypeID) AS cnt FROM _tbl_sub_tour where TourTypeID='".$tour['TourTypeID']."'"); ?>
-                                            <tr>
+                                            <?php $tc= $mysql->Select("SELECT COUNT(SubTourTypeID) AS cnt FROM _tbl_sub_tour where TourTypeID='".$tour['TourTypeID']."' "); ?>
+                                            <tr>                                                
                                                 <td><img src="<?php echo "../uploads/".$tour['Image'];?>" style='width: 50px;height:50px;margin-top: 5px;'></td>
                                                 <td><?php echo $tour['TourTypeName'];?></td>
+                                                <td style="text-align: right"><?php echo $tour['ListOrder'];?></td>
                                                 <td style="text-align: right"><?php echo $tc[0]['cnt'];?></td>
                                                 <td style="text-align: right">                                                   
                                                     <div class="dropdown dropdown-kanban" style="float: right;">
@@ -114,5 +116,9 @@
         
     });
 }
+$(document).ready(function() {
+            $('#tbl').DataTable({
+            });
+});
 </script>
 
