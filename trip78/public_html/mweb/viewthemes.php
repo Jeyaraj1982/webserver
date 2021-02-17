@@ -4,10 +4,34 @@
 
         <!-- page main start -->
         <style>
-        .content-sticky-footer {padding-bottom:0px !important;}
-        
-        </style>
-        <div class="page">
+                 
+                 div.scrollmenu {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  min-width:100%;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: #777;
+}
+.divactive {
+     background-color: #777;
+}
+
+         
+ 
+                 </style>
+                 
+        <div class="page" >
             <form class="searchcontrol">
                 <div class="input-group">
                     <div class="input-group-prepend">
@@ -18,74 +42,66 @@
             </form>
             <header class="row m-0 fixed-header">
                 <div class="left">
-                    <!--<a href="javascript:void(0)" onclick="window.history.back();"><i class="material-icons">keyboard_backspace</i></a>-->
-                    <a href="javascript:void(0)" class="menu-left"><i class="material-icons">menu</i></a>
+                <?php
+                     $tours = $mysql->select("select * from _tbl_tour   where TourTypeID='".$_GET['tour']."' and IsPublish='1' ");
+                ?>
+                    <a href="index.php"><i class="material-icons">keyboard_backspace</i></a>
+                   <!-- <a href="javascript:void(0)" class="menu-left"><i class="material-icons">menu</i></a>-->                                                                                                          
                 </div>
                 <div class="col center">
                     <a href="" class="logo">
-                        <figure><img src="https://trip78.in/images/logo_footer.png" alt=""></figure></a>
+                        Popular Packages
                 </div>
                 <div class="right">
                     <a href="javascript:void(0)" class="searchbtn"><i class="material-icons">search</i></a>
                     <!--<a href="javascript:void(0)" class="menu-right"><i class="material-icons">person</i></a>-->
                 </div>
+                 
             </header>
-            <div class="page-content" style="padding-top:34px">
-                <div class="content-sticky-footer" style="min-height: auto; padding-bottom: 0px !important;">
-                    <div data-pagination='{"el": ".swiper-pagination", "hideOnClick": true}' class="swiper-container swiper-init demo-swiper" style="height:180px;padding:0px;">
-                        <div class="swiper-pagination" style="margin-top:10px;"></div>
-                        <div class="swiper-wrapper" style="padding:0px !important">
-                         <?php
-                        $sliders = $mysql->select("select * from _tbl_sliders  ");     
-                      
-                        foreach($sliders as $slider) {
-                    ?>
-                            <div class="swiper-slide" style="padding:0px !important"><img style="width:100%;" src="<?php echo "https://www.trip78.in/uploads/".$slider['SliderImage'];?>" alt="Home Slider 1"></div>
-                            <?php } ?>
-                           
-                        </div>
-                    </div>
-                </div>
-                  <div class="content-sticky-footer" style="height: calc(100vh-270px); padding-bottom: 0px !important;verlfow:auto;margin-top:10px">
-                <div class="row" style="padding:18px;padding-right: 18px;padding-top:0px;padding-bottom:0px;">
-                    <?php
-                        $tours = $mysql->select("select * from _tbl_tour  where IsPublish='1' order by ListOrder ");
-                        foreach($tours as $tour) {
-                            ?>
-                                <div  class="col-6" style="margin-bottom:13px;padding-left: 5px;padding-right: 5px;" >
-                                    <!--<a href="subtour.php?tour=<?php echo $tour['TourTypeID'];?>"><div style="background: #fff;padding:5px;border: 0px solid #222;">-->
-                                    <a href="subtour.php?tour=<?php echo $tour['TourTypeID'];?>">
-                                       <div style="background: #000;border: 0px solid #222;">
-                                    <!--<div style="border-radius:5px 5px 0px 0px;position:absolute;top:0px;margin-right:5px;color:#fff;background:rgba(45, 156, 210, 0.8);width:-moz-available;font-size:14px;padding:3px 5px"><?php echo $tour['TourTypeName'];?></div>-->
-                                    <div style="border-radius:5px 5px 0px 0px;position:absolute;top:0px;margin-right:5px;color:yellow;background:rgba(45, 156, 210, 0.8);width:-moz-available;font-size:14px;padding:3px 5px"><?php echo $tour['TourTypeName'];?></div>
-                                     <img src="https://www.trip78.in/uploads/<?php echo $tour['Image'];?>" style="width:100%;margin:0px auto;border-radius:5px;">
-                                     </div>
-                                     </a>
-                                </div>
-                            <?php
-                        }
-                    ?>
-                </div>
+            <?php if ($i>2) {?>
+           <script>
+            var element = document.getElementById("tab<?php echo $_GET['tour'];?>");
+
+//element.scrollIntoView();
+//element.scrollIntoView(false);
+//element.scrollIntoView({block: "end"});
+//element.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+element.scrollIntoView({behavior: "smooth"});
+           </script>
+           <?php } ?>
+            <div class="page-content" style="overflow:hidden">
+                 
+                 
                 
-                
+                   
+ 
+
+                  <div class="content-sticky-footer" style="padding-bottom: 0px !important;margin-top:10px">            
+ 
+ 
+    
+      <div class="row" style="padding:18px;padding-right: 18px;padding-top:0px;height:80vh; overflow: auto;">
+             
+             
+                             
                 
                 <?php
 $MostPopularTourPackages=array();
     $MostPopularTourPackages[] = array("TourThemeID"=>1,"PackageName"=>"Honeymoon","Image1"=>"https://img.traveltriangle.com/public-product/homepage_illustrations/Square/2x/honeymoon_romantic.png?tr=w-365,h-260");
     $MostPopularTourPackages[] = array("TourThemeID"=>2,"PackageName"=>"Family","Image1"=>"https://img.traveltriangle.com/public-product/homepage_illustrations/Square/2x/family.png?tr=w-365,h-260");
     $MostPopularTourPackages[] = array("TourThemeID"=>3,"PackageName"=>"Friends/Group","Image1"=>"https://img.traveltriangle.com/public-product/homepage_illustrations/Square/2x/friends_group.png?tr=w-365,h-260");
-    $MostPopularTourPackages[] = array("TourThemeID"=>4,"PackageName"=>"Solo","Image1"=>"https://img.traveltriangle.com/public-product/homepage_illustrations/Square/2x/solo.png?tr=w-365,h-260");
-?>
-    <div class="row" style="padding:18px;padding-right: 18px;padding-top:20px">
-    <div class="col-12" style="padding-left:10px;">
-    <div style="height:20px;">
-      <span style="float:left;color:yellow;padding-left:0px;font-size:18px;">Popular Packages</span>
-      <a style="float:right;font-size:12px;color:yellow;margin-top:5px;" href="viewthemes.php">View all</a>
-    </div>
-    <br>
-   
     
-    </div>
+    
+    $MostPopularTourPackages[] = array("TourThemeID"=>4,"PackageName"=>"Solo","Image1"=>"https://img.traveltriangle.com/public-product/homepage_illustrations/Square/2x/solo.png?tr=w-365,h-260");
+    $MostPopularTourPackages[] = array("TourThemeID"=>5,"PackageName"=>"Adventure","Image1"=>"https://img.traveltriangle.com/public-product/homepage_illustrations/Square/2x/adventure.png?tr=w-365,h-260");
+    
+    $MostPopularTourPackages[] = array("TourThemeID"=>6,"PackageName"=>"Nature","Image1"=>"https://img.traveltriangle.com/public-product/homepage_illustrations/Square/2x/nature.png?tr=w-365,h-260");
+    $MostPopularTourPackages[] = array("TourThemeID"=>7,"PackageName"=>"Religious","Image1"=>"https://img.traveltriangle.com/public-product/homepage_illustrations/Square/2x/religious.png?tr=w-365,h-260");
+    
+    $MostPopularTourPackages[] = array("TourThemeID"=>7,"PackageName"=>"Wildlife","Image1"=>"https://img.traveltriangle.com/public-product/homepage_illustrations/Square/2x/wildlife.png?tr=w-365,h-260");
+    $MostPopularTourPackages[] = array("TourThemeID"=>7,"PackageName"=>"Water Activities","Image1"=>"https://img.traveltriangle.com/public-product/homepage_illustrations/Square/2x/water+activities.png?tr=w-365,h-260");
+?>
+    <div class="row" style="padding:18px;padding-right: 18px;padding-top:0px">
         <?php foreach($MostPopularTourPackages as $TourPackage) {?>
         <div  class="col-6" style="margin-bottom:13px;padding-left: 5px;padding-right: 5px;" >
         <!--<a href="subtour.php?tour=<?php echo $tour['TourTypeID'];?>"><div style="background: #fff;padding:5px;border: 0px solid #222;">-->
@@ -101,31 +117,35 @@ $MostPopularTourPackages=array();
     <?php } ?>
             </div>
     
- 
-          <br>
-          <br>
-          <br>
-          <br>
-
+    
                 </div>
+   
+   
+ 
+</div>
+      
                 
-                <div class="footer-wrapper" style="bottom:0px">
-                    <div class="footer dark" style="background:#333px;">
+                <div class="footer-wrapper" style="display: none;">
+                    <div class="footer">
                         <div class="row mx-0">
                             <div class="col">
-                                <img src="https://trip78.in/images/logo_footer.png" style="height:50px;">
+                                Trip78
                             </div>
-                            <div class="col-8 text-right" style="font-size:12px;">
-                             Copyright @2018 Trip78.in
-                           <!--     <a href="" class="social"><img src="img/facebook.png" alt=""></a>
+                            <div class="col-7 text-right">
+                                <a href="" class="social"><img src="img/facebook.png" alt=""></a>
                                 <a href="" class="social"><img src="img/googleplus.png" alt=""></a>
                                 <a href="" class="social"><img src="img/linkedin.png" alt=""></a>
                                 <a href="" class="social"><img src="img/twitter.png" alt=""></a>
-                                -->
                             </div>
                         </div>
                     </div>
-                     
+                    <div class="footer dark" style="display: none;">
+                        <div class="row mx-0">
+                            <div class="col  text-center">
+                                Copyright @2018, Trip78.in
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -158,23 +178,25 @@ $MostPopularTourPackages=array();
     <script src="https://maxartkiller.com/website/mobileux/dashboard_html/js/main.js"></script>
 
     <!-- page level script -->
-    <script>
-        var mySwiper = new Swiper('.swiper-container', {
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true
-            },
-            autoplay: {
-                delay: 5000,
-            },
-        });
-        setTimeout(function(){
-            $('.content-sticky-footer').css({"padding-bottom":"0px  !important"});
-            $('.swiper-container').css({"height":"180px !important"});
-        },1000);
-        
+     <script>
+     
+     
 
-    </script>
+// fetch('https://api.unsplash.com/photos/random/?count=5&client_id=52d8369eb3e2576a5f5b6423865e074e9c7045761bff1ac5664ff3e0bdb57a1d') 
+//   .then(response => response.json())
+//   .then(data => {
+//     data.forEaach(function(image, i) {
+//       document.querySelector("#slide-" + (i+1)).innerHTML = `
+//         <img src="${image.urls.regular}" alt="">
+//         <p class="author-info">
+//           <a href="${image.links.html}?utm_source=slider-thing&utm_medium=referral&utm_campaign=api-credit">Photo by ${image.user.name}</a> on <a href="https://unsplash.com/">Unsplash</a>
+//         </p>
+//       `;
+//     });
+//   });
+
+
+     </script>
 </body>
 
 </html>

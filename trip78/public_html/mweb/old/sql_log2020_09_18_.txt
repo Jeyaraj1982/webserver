@@ -1,4 +1,0 @@
-[2020-09-18 13:54:56]	select * from _tbl_sliders where IsActive='1'
-[2020-09-18 13:54:56]	select * from _tbl_tour where IsPublish='1'
-[2020-09-18 19:11:49]	select * from _tbl_sliders where IsActive='1'
-[2020-09-18 19:11:49]	select * from _tbl_tour where IsPublish='1'

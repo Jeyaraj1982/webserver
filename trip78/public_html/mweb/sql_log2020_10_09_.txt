@@ -1,3 +1,0 @@
-[2020-10-09 08:58:09]	select * from _tbl_tours_package where IsPublish='1' and offerPrice>='0' and offerPrice<='10000'
-[2020-10-09 08:58:09]	select * from _tbl_tour where IsPublish='1' and md5(TourTypeID)=''
-[2020-10-09 08:58:09]	select * from _tbl_sub_tour where IsPublish='1' and TourTypeID=''
