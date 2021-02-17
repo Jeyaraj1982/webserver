@@ -173,7 +173,7 @@
                 </div>
 			</div>
 
-			<div class="padding-top-6x padding-bottom-6x bg__shadow section-background" style="background-image:url(images/home/bg-pallarax.jpg)">
+			<div class="padding-top-6x padding-bottom-6x bg__shadow section-background" style="background-image:url(assets/bg-pallarax.jpeg)">
 				<div class="container">
 					<div class="shortcode_title text-white title-center title-decoration-bottom-center">
 						<div class="title_subtitle">Some statistics about Trip78</div>
@@ -193,7 +193,7 @@
 						<div class="col-sm-3">
 							<div class="stats_counter text-center text-white">
 								<div class="wrapper-icon">
-									<i class="flaticon-island"></i>
+									<i class="flaticon-island"></i>           
 								</div>
 								<div class="stats_counter_number">100</div>
 								<div class="stats_counter_title">Destinations</div>

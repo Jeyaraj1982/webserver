@@ -99,7 +99,7 @@
 							<a href="javascript:void(0)">Tours</a>						
                              <ul class="sub-menu">
                              <?php
-                                 $MainTours = $mysql->select("select * from _tbl_tour where IsPublish='1'"); 
+                                 $MainTours = $mysql->select("select * from _tbl_tour where IsPublish='1' order by ListOrder"); 
                                  foreach($MainTours as $mTour) {
                              ?>
                                 <li><a href="subtours.php?tours=<?php echo $mTour['TourTypeID'];?>" style="font-size:16px;padding-top:10px;padding-bottom:10px"><?php echo $mTour['TourTypeName'];?></a></li>
