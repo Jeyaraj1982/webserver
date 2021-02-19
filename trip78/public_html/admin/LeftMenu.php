@@ -103,13 +103,8 @@
                                 </a>
                             </li>                                          
                             <li>
-                                <a href="dashboard.php?action=Master/StateNames/list">      
-                                    <span class="sub-item">Manage State Names</span>
-                                </a>
-                            </li>
-                             <li>
-                                <a href="dashboard.php?action=Master/DistrictName/list">      
-                                    <span class="sub-item">Manage District Names</span>
+                                <a href="dashboard.php?action=Master/managecountrynames">      
+                                    <span class="sub-item">Manage Countries</span>
                                 </a>
                             </li>
                         </ul>

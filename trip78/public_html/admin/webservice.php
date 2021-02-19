@@ -3,6 +3,109 @@
 include_once("../config.php");
     echo $_REQUEST['action']();
     
+    function UpdateStateName() {
+        global $mysql,$app;
+   
+      $id=$mysql->execute("update _tbl_master_statenames set StateName='".$_POST['StateName']."' where StateID='".$_POST['StateID']."'");
+      if(sizeof($id)>0){
+        $result = array();
+        $result['status']="Success";
+        $result['message']="State Name updated.";  
+        $result['countryid']=$_POST['CountryID'];  
+        return json_encode($result);
+    } else {
+        $result = array();
+        $result['status']="failure";
+        $result['message']="Operator currently unavailable. please try later.";  
+        return json_encode($result);
+    }   
+    }
+    
+    
+    function UpdateCountryName() {
+    
+    global $mysql,$app;
+   
+      $id=$mysql->execute("update _tbl_master_countrynames set CountryName='".$_POST['CountryName']."' where CountryID='".$_POST['CountryID']."'");
+      if(sizeof($id)>0){
+        $result = array();
+        $result['status']="Success";
+        $result['message']="Country Name updated.";  
+        $result['post']=$_POST;  
+        return json_encode($result);
+    } else {
+        $result = array();
+        $result['status']="failure";
+        $result['message']="Operator currently unavailable. please try later.";  
+        return json_encode($result);
+    }
+    
+} 
+
+function deleteCountryName() {
+    global $mysql,$app;
+    $district = $mysql->select("select * from  _tbl_master_countrynames where CountryID='".$_GET['distid']."'");
+    $result = array();
+   
+    $result['countryid'] = $district[0]['CountryID'];  
+    $result['stateid']   = $district[0]['StateID'];  
+    {
+       $mysql->execute("delete from _tbl_master_countrynames where CountryID='".$_GET['distid']."'");
+        $result['status']  = "success";
+        $result['message'] = "Country Name deleted.";  
+    }  
+    return json_encode($result);
+}
+function deleteStateName() {
+    global $mysql,$app;
+    $district = $mysql->select("select * from  _tbl_master_statenames where StateID='".$_GET['distid']."'");
+    $result = array();
+   
+    $result['countryid'] = $district[0]['CountryID'];  
+    $result['stateid']   = $district[0]['StateID'];  
+    {
+       $mysql->execute("delete from _tbl_master_statenames where StateID='".$_GET['distid']."'");
+        $result['status']  = "success";
+        $result['message'] = "Country Name deleted.";  
+    }  
+    return json_encode($result);
+}
+
+function deleteDistrictName() {
+    global $mysql,$app;
+    $district = $mysql->select("select * from  _tbl_master_districtnames where DistrictNameID='".$_GET['distid']."'");
+    $result = array();
+   
+    $result['countryid'] = $district[0]['CountryID'];  
+    $result['stateid']   = $district[0]['StateID'];  
+    {
+       $mysql->execute("delete from _tbl_master_districtnames where DistrictNameID='".$_GET['distid']."'");
+        $result['status']  = "success";
+        $result['message'] = "District Name deleted.";  
+    }  
+    return json_encode($result);
+}
+
+
+
+function UpdateDistrictName() {
+    global $mysql,$app;
+    $id=$mysql->execute("update _tbl_master_districtnames set DistrictName='".$_POST['DistName']."' where DistrictNameID='".$_POST['distcid']."'");
+    $data=$mysql->select("select * from  _tbl_master_districtnames  where DistrictNameID='".$_POST['distcid']."'");
+    $result = array();
+    $result['countryid'] = $data[0]['CountryID'];  
+    $result['stateid']   = $data[0]['StateID'];  
+    if($id>0){
+        $result['status']  = "success";
+        $result['message'] = "District Name updated.";  
+    } else {
+        $result['status']  = "failure";
+        $result['message'] = "Unable to update. please try later.";  
+    }
+    return json_encode($result);
+}
+
+    
     function DeleteTourType() {
     
     global $mysql;
