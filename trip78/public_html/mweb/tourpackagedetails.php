@@ -43,14 +43,14 @@ div.scrollmenu a:hover {
  
                  </style>
 <div class="page" >
-    <form class="searchcontrol">
-        <div class="input-group">
-            <div class="input-group-prepend">
-                <button type="button" class="input-group-text close-search"><i class="material-icons">keyboard_backspace</i></button>
-            </div>
-            <input type="email" class="form-control border-0" placeholder="Search..." aria-label="Username">
-        </div>
-    </form>
+       <form class="searchcontrol" action="search.php" method="get">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <button type="button" class="input-group-text close-search"><i class="material-icons">keyboard_backspace</i></button>
+                    </div>
+                    <input type="text" class="form-control border-0" name="s" id="s"  placeholder="Search..." aria-label="Username">
+                </div>
+            </form>
     <header class="row m-0 fixed-header">
         <div class="left">
             <a href="tourpackage.php?subtour=<?php echo $Packages[0]['SubTourTypeID'] ;?>"><i class="material-icons">keyboard_backspace</i></a>
@@ -63,9 +63,10 @@ div.scrollmenu a:hover {
         <!--<div class="right">
         </div>-->
     </header>  
-    
+   <div class="page-content" style="overflow:hidden;height:70vh !important; overflow: auto;margin-top:0px">
+        <div class="content-sticky-footer" style="padding-bottom: 0px !important;padding-top:0px;">    
  
-     <div class="content-sticky-footer" style="min-height: auto; padding-bottom: 0px !important;margin-top:50px;margin-bottom:0px;">
+     <div class="content-sticky-footer" style="min-height: auto; padding-bottom: 0px !important;;margin-bottom:0px;">
         <div data-pagination='{"el": ".swiper-pagination", "hideOnClick": true}' class="swiper-container swiper-init demo-swiper" style="height:250px;padding:0px;">
             <div class="swiper-pagination" style="margin-top:10px;"></div>
             <div class="swiper-wrapper" style="padding:0px !important">
@@ -117,9 +118,9 @@ div.scrollmenu a:hover {
 </div>
      </div>
      <div class="page-content" style="padding-top:10px;margin-top:-50px;padding:10px;"  >
-        <div class="row" style="padding:18px;padding-right: 18px;padding-top:0px;height:65vh; overflow: auto;color:yellow">
+        <div class="row" style="padding:18px;padding-right: 18px;padding-top:0px;color:yellow">
         
-            <div style="display:none"  id="tab-1">
+            <div style="display:none;"  id="tab-1">
             
              <h5 style="color:yellow;font-weight:bold;"><?php echo $Packages[0]['PackageName'];?></h5>
               <span><?php echo $Packages[0]['NightsCount'];?> NIGHTS <?php echo $Packages[0]['DaysCount'];?> DAYS </span>
@@ -310,7 +311,7 @@ div.scrollmenu a:hover {
                                      <?php } ?>
                                 </div>
                                 
-                                <div style="display: none;"  id="tab-3">
+                                <div style="display: none;;"  id="tab-3">
                                     <h2  style="font-size:13px;font-weight:bold;color:red;font-size:16px;">Inclusions:</h2>
                                     <?php 
                                         $d = explode("\n",trim($adParam[0]['inclusions']));
@@ -343,36 +344,10 @@ div.scrollmenu a:hover {
             </div>
             
             </div>
-          <div class="footer-wrapper" style="display: none;">
-                    <div class="footer">
-                        <div class="row mx-0">
-                            <div class="col">
-                                Trip78
-                            </div>
-                            <div class="col-7 text-right">
-                                <a href="" class="social"><img src="img/facebook.png" alt=""></a>
-                                <a href="" class="social"><img src="img/googleplus.png" alt=""></a>
-                                <a href="" class="social"><img src="img/linkedin.png" alt=""></a>
-                                <a href="" class="social"><img src="img/twitter.png" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="footer dark" style="display: none;">
-                        <div class="row mx-0">
-                            <div class="col  text-center">
-                                Copyright @2018, Trip78.in
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            
             </div>
         </div>
-        <!-- page main ends -->
-
-    </div>
-
-
-
+     <?php include_once("footer.php");?>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

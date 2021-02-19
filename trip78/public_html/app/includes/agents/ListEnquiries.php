@@ -9,7 +9,7 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="card-title">
-                                        Manage Enquiries (<?php echo $_GET['pc'];?>)   
+                                        Manage Enquiries
                                     </div>
                                 </div>
                                 <div class="col-md-6" style="text-align: right;">
@@ -29,7 +29,8 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                        <?php $enquirys = $mysql->select("select * from _tbl_tour_enquiry where Pincode='".$_GET['pc']."' order by EnquiryID DESC");?>
+                                        <?php //$enquirys = $mysql->select("select * from _tbl_tour_enquiry where Pincode='".$_GET['pc']."' order by EnquiryID DESC");?>
+                                         <?php $enquirys = $mysql->select("select * from _tbl_tour_enquiry where Pincode IN (select Pincode from _tbl_agent_pincode where AgentID='".$_SESSION['User']['AgentID']."') order by EnquiryID DESC");?>
                                         <?php foreach($enquirys as $enquiry){ 
                                             $TourPackages = $mysql->select("select * from _tbl_tours_package where PackageID='".$enquiry['PackageID']."'");    
                                         ?>

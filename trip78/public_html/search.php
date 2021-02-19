@@ -1,5 +1,5 @@
 <?php include_once("header.php");?>
-<?php $TourPackages = $mysql->select("select * from _tbl_tours_package where IsPublish='1' and ( (PackageName like '%".$_GET['s']."%') or (ShortDescription like '%".$_GET['s']."%') or (Description like '%".$_GET['s']."%') ) ") ;?>
+<?php $TourPackages = $mysql->select("select * from _tbl_tours_package where IsPublish='1' and ( (SearchTags like '%".$_GET['s']."%') or (PackageName like '%".$_GET['s']."%') or (ShortDescription like '%".$_GET['s']."%') or (Description like '%".$_GET['s']."%') ) ") ;?>
 <?php $SubTours = $mysql->select("select * from _tbl_sub_tour where IsPublish='1' and SubTourTypeID='".$TourPackages[0]['SubTourTypeID']."'");?>
 <?php $Tours = $mysql->select("select * from _tbl_tour where IsPublish='1' and TourTypeID='".$TourPackages[0]['TourTypeID']."'");?>
 	<div class="site wrapper-content">

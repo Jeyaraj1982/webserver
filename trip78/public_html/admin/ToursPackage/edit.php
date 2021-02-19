@@ -17,31 +17,37 @@ $data= $mysql->Select("select * from _tbl_tours_package where md5(PackageID)='".
                   
                $ShortDescription = str_replace("'","\'",$_POST['ShortDescription']);
                $ShortDescription = str_replace('"','\"',$ShortDescription);
+              
+              
                $Description = str_replace("'","\'",$_POST['Description']);
                $Description = str_replace('"','\"',$Description);
+               
+               $SearchTags = str_replace("'","\'",$_POST['SearchTags']);
+               $SearchTags = str_replace('"','\"',$SearchTags);
                                                     
-                $mysql->execute("update _tbl_tours_package set `TourThemeID`     ='".$_POST['TourTheme']."',
-                                                               `TourTypeID`     ='".$_POST['TourType']."',
-                                                               `SubTourTypeID`  ='".$_POST['SubTourType']."',
-                                                               `PackageName`    ='".$_POST['PackageName']."',
-                                                               `PackagePrice`   ='".$_POST['PackagePrice']."',
-                                                               `Description`    ='".$Description."',
-                                                               `JoiningPlace`   ='".$_POST['JoiningPlace']."',
-                                                               `LeavingPlace`   ='".$_POST['LeavingPlace']."',
-                                                               `DaysCount`    ='".$_POST['DaysCount']."',
-                                                               `NightsCount`    ='".$_POST['NightsCount']."',
-                                                               `CountryCount`   ='".$_POST['CountryCount']."',
-                                                               `CityCount`      ='".$_POST['CityCount']."',
-                                                               `Currency`       ='".$_POST['Currency']."',
-                                                               `SpokenLanguage` ='".$_POST['SpokenLanguage']."',
-                                                               `VisaRequirements`='".$_POST['VisaRequirements']."',
+                $mysql->execute("update _tbl_tours_package set `TourThemeID`      ='".$_POST['TourTheme']."',
+                                                               `TourTypeID`       ='".$_POST['TourType']."',
+                                                               `SubTourTypeID`    ='".$_POST['SubTourType']."',
+                                                               `PackageName`      ='".$_POST['PackageName']."',
+                                                               `PackagePrice`     ='".$_POST['PackagePrice']."',
+                                                               `Description`      ='".$Description."',
+                                                               `SearchTags`       ='".$SearchTags."',
+                                                               `JoiningPlace`     ='".$_POST['JoiningPlace']."',
+                                                               `LeavingPlace`     ='".$_POST['LeavingPlace']."',
+                                                               `DaysCount`        ='".$_POST['DaysCount']."',
+                                                               `NightsCount`      ='".$_POST['NightsCount']."',
+                                                               `CountryCount`     ='".$_POST['CountryCount']."',
+                                                               `CityCount`        ='".$_POST['CityCount']."',
+                                                               `Currency`         ='".$_POST['Currency']."',
+                                                               `SpokenLanguage`   ='".$_POST['SpokenLanguage']."',
+                                                               `VisaRequirements` ='".$_POST['VisaRequirements']."',
                                                                `MealsType`        ='".$_POST['MealType']."',
-                                                               `SpecialMeal`     ='".$_POST['SpecialMeal']."',
+                                                               `SpecialMeal`      ='".$_POST['SpecialMeal']."',
                                                                `PackageOrder`     ='".$_POST['PackageOrder']."',
-                                                               `PackageRating`     ='".$_POST['PackageRating']."',
-                                                               `ShortDescription`     ='".$ShortDescription."',
-                                                               `Toppings`     ='".$_POST['Toppings']."',
-                                                               `IsPublish`      ='".$_POST['IsPublish']."' where PackageID='".$data[0]['PackageID']."'");
+                                                               `PackageRating`    ='".$_POST['PackageRating']."',
+                                                               `ShortDescription` ='".$ShortDescription."',
+                                                               `Toppings`         ='".$_POST['Toppings']."',
+                                                               `IsPublish`        ='".$_POST['IsPublish']."' where PackageID='".$data[0]['PackageID']."'");
 
                         $successmessage ="<span style='color:green'>Package Updated Successfully</span>";
                      } else {
@@ -196,7 +202,7 @@ function SubmitProduct() {
                                                 <input type="text" class="form-control" id="ShortDescription" name="ShortDescription" placeholder="Enter ShortDescription" value="<?php echo (isset($_POST['ShortDescription']) ? $_POST['ShortDescription'] : $data[0]['ShortDescription']);?>">
                                                 <span class="errorstring" id="ErrShortDescription"><?php echo isset($ErrShortDescription)? $ErrShortDescription : "";?></span>
                                             </div>
-                                        </div>
+                                        </div>    
                                         <div class="form-group form-show-validation row">
                                             <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-left">Package Price<span class="required-label">*</span></label>
                                             <div class="col-lg-9 col-md-9 col-sm-8">
@@ -321,6 +327,13 @@ function SubmitProduct() {
                                                 <textarea name="Description" style="height: 200px !important" id="Description" class="form-control"><?php echo (isset($_POST['Description']) ? $_POST['Description'] :$data[0]['Description']);?></textarea>
                                             </div>
                                         </div>
+                                        
+                                         <div class="form-group form-show-validation row">
+                                            <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-left">Search Tags/Keywords<span class="required-label">*</span></label>
+                                            <div class="col-lg-9 col-md-9 col-sm-8">
+                                                <textarea name="SearchTags" style="height: 200px !important" id="SearchTags" class="form-control"><?php echo (isset($_POST['SearchTags']) ? $_POST['SearchTags'] :$data[0]['SearchTags']);?></textarea>
+                                            </div>
+                                        </div>         
                                         
                                         <div class="form-group form-show-validation row">
                                             <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-left">Is publish<span class="required-label">*</span></label>

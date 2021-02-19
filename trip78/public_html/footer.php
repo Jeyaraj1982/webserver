@@ -95,39 +95,7 @@
 <script type="text/javascript" src="assets/js/waypoints.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.counterup.min.js"></script>
 <?php } ?>
-<!--<script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCaQjbVDR1vRh2iS_V3jLBXRrkQxmoxycQ'></script>
-<script type='text/javascript' src='assets/js/gmap.js'></script>-->
-
-
 </body>
-
-</body>
-
-<!-- Mirrored from html.physcode.com/travel/home-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 11 Dec 2020 08:17:59 GMT -->
-</html></script>
- <script type='text/javascript' src="assets/js/app.js"></script>
- <?php
-     if ($page == "gallery") {
-         ?>
-         <script type='text/javascript' src='assets/js/isotope.pkgd.min.js'></script>
-<script type='text/javascript' src='assets/js/jquery.swipebox.min.js'></script>
-         <?php
-     }
- ?>
-<?php if ($page!="details") { ?>
-<script type='text/javascript' src='assets/js/jquery.swipebox.min.js'></script>
-<script type='text/javascript' src='assets/js/owl.carousel.min.js'></script>
-<script type="text/javascript" src="assets/js/jquery.mb-comingsoon.min.js"></script>
-<script type="text/javascript" src="assets/js/waypoints.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.counterup.min.js"></script>
-<?php } ?>
-<!--<script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCaQjbVDR1vRh2iS_V3jLBXRrkQxmoxycQ'></script>
-<script type='text/javascript' src='assets/js/gmap.js'></script>-->
-
-
-</body>
-
-</body>
-
-<!-- Mirrored from html.physcode.com/travel/home-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 11 Dec 2020 08:17:59 GMT -->
 </html>
+                                                
+  

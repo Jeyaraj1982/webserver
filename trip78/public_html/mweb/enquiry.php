@@ -66,7 +66,7 @@
                                                 <div class="form-group" style="margin-bottom:0px">
                                                     <label style="font-weight:normal">&nbsp;&nbsp;&nbsp;Number of Adults (age: above 12)</label>
                                                     <select name="NumberofAdults" id="NumberofAdults" class="form-control" style="min-height:auto;padding-top:5px">
-                                                        <option value="0">0</option>
+                                                       
                                                         <option value="1">1</option>
                                                         <option value="2">2</option>
                                                         <option value="3">3</option>
@@ -142,6 +142,7 @@
                                       $("#ErrPincode").html("");
                                       $("#ErrEmailID").html("");
                                       $("#ErrMobileNumber").html("");
+                                    //  $("#ErrDescription").html("");
                                       var err=0;
                                       if ($('#FullName').val().trim().length==0) {
                                         $("#ErrFullName").html("Please enter full name");
@@ -158,20 +159,46 @@
                                         err++;
                                       }    
                                       
-                                        if ($('#MobileNumber').val().trim().length==0) {           
-                                        $("#ErrMobileNumber").html("Please enter Mobile Number");
-                                        err++;
-                                      }
+                                       // if ($('#MobileNumber').val().trim().length==0) {           
+                                      //  $("#ErrMobileNumber").html("Please enter Mobile Number");
+                                      //  err++;
+                                     // }
+                                      
+                                      
+                                         var mobilenumber =  $("#MobileNumber").val();
+                           
+                       if (mobilenumber.trim().length!=10) {
+                         
+                             $("#ErrMobileNumber").html("Please enter mobile number");
+                            err++;
+                       }
+                       
+                       var mobilenumber = parseInt( $("#MobileNumber").val().trim());
+                        mobilenumber = mobilenumber==NaN ? 0 : mobilenumber;
+                           if (!(mobilenumber<9999999999 && mobilenumber>6000000000)) {
+                             $("#ErrMobileNumber").html("Please enter valid mobile number");
+                            err++;
+                       }     
+                                      
+                                      
+                                      
+                                      
+                                                                                           
                                        
                                       if ($('#CurrentCity').val().trim().length==0) {            
                                         $("#ErrCurrentCity").html("Please enter city name");
-                                        return false;
+                                        err++;
                                       }
                                       
-                                        if ($('#Pincode').val().trim().length==0) {          
+                                        if ($('#Pincode').val().trim().length!=6) {          
                                         $("#ErrPincode").html("Please enter pincode");
                                         err++;
                                       }
+                                      
+                                       //  if ($('#Description').val().trim().length<3) {          
+                                       // $("#ErrDescription").html("Please enter description");
+                                      //  err++;
+                                    //  }
                                       
                                       if (err>0) {
                                           return false;

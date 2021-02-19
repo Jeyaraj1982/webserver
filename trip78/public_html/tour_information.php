@@ -381,27 +381,32 @@ $page="details";
                                                 <input type="hidden" value="<?php echo $Packages[0]['PackageID'];?>" name="PackageID">
                                                 <div class="">
                                                     <input name="FullName" id="FullName" value="" placeholder="First name" type="text">
+                                                     <span id="ErrorFullName" style="margin-top:10px;color:red;"></span>
                                                 </div>
                                                
                                                 <div class="">
                                                     <input name="EmailID" id="EmailID" value="" placeholder="Email" type="text">
+                                                    <span id="ErrorEmailID" style="margin-top:10px;color:red;"></span>
                                                 </div>
                                                 <div class="">
                                                     <input name="MobileNumber" id="MobileNumber" value="" placeholder="Phone" type="text">
+                                                     <span id="ErrorMobileNumber" style="margin-top:10px;color:red;"></span>
                                                 </div>
                                                  <div class="">
                                                     <input name="CurrentCity" id="CurrentCity" value="" placeholder="Current City" type="text">
+                                                     <span id="ErrorCurrentCity" style="margin-top:10px;color:red;"></span>
                                                 </div>
                                                  <div class="">
                                                     <input name="Pincode" id="Pincode" value="" placeholder="Pincode" type="text">
+                                                    <span id="ErrorPincode" style="margin-top:10px;color:red;"></span>
                                                 </div>
                                                  <div class="">
                                                     <input name="Description" id="Description" value="" placeholder="Description" type="text">
-                                                </div>
+                                                     <span id="ErrorDescription" style="color:red;margin-top:10px;"></span>
+                                                </div>    
                                                 <div>
                                                     <label style="font-weight:normal">Number of Adults (age: above 12)</label>
                                                     <select name="NumberofAdults" id="NumberofAdults" class="form-control">
-                                                        <option value="0">0</option>
                                                         <option value="1">1</option>
                                                         <option value="2">2</option>
                                                         <option value="3">3</option>
@@ -464,7 +469,80 @@ $page="details";
                                     </div>
                                <script>
                                
+                         
+
+function validateEmail(emailField){
+        var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+
+        if (reg.test(emailField) == false) 
+        {
+            //alert('Invalid Email Address');
+            return false;
+        }
+
+        return true;
+
+}
+
+
+                               
                                   function SaveEnquiryDetails() {
+                                       jQuery("#ErrorFullName").html("");
+                                       jQuery("#ErrorEmailID").html("");
+                                        jQuery("#ErrorMobileNumber").html("");
+                                         jQuery("#ErrorCurrentCity").html("");
+                                            jQuery("#ErrorPincode").html("");
+                                              jQuery("#ErrorDescription").html("");
+                                        
+                       var fullname = jQuery("#FullName").val();
+                       if (fullname.trim().length<3) {
+                            jQuery("#ErrorFullName").html("Please enter name");
+                            return false;
+                       }                
+                            
+                         var emailid = jQuery("#EmailID").val();
+                       if (emailid.trim().length<3) {
+                            jQuery("#ErrorEmailID").html("Please enter email id");
+                            return false;
+                       }                
+                             
+                             if (!(validateEmail(emailid)))               {
+                                  jQuery("#ErrorEmailID").html("Please enter valid email id");
+                                  return false;
+                             }
+                       
+                           var mobilenumber = jQuery("#MobileNumber").val();
+                           
+                       if (mobilenumber.trim().length!=10) {
+                         
+                            jQuery("#ErrorMobileNumber").html("Please enter mobile number");
+                            return false;
+                       }                         
+                       
+                       var mobilenumber = parseInt(jQuery("#MobileNumber").val().trim());
+                        mobilenumber = mobilenumber==NaN ? 0 : mobilenumber;
+                           if (!(mobilenumber<9999999999 && mobilenumber>6000000000)) {
+                            jQuery("#ErrorMobileNumber").html("Please enter valid mobile number");
+                            return false;
+                       }       
+                       
+                        var currentcity = jQuery("#CurrentCity").val();
+                       if (currentcity.trim().length<3) {
+                            jQuery("#ErrorCurrentCity").html("Please enter current city");
+                            return false;
+                       }           
+                          
+                              var pincode = jQuery("#Pincode").val();
+                       if (pincode.trim().length!=6) {
+                            jQuery("#ErrorPincode").html("Please enter pincode");
+                            return false;
+                       }                        
+                       
+                              //var description = jQuery("#Description").val();
+                    //   if (description.trim().length<3) {
+                       //     jQuery("#ErrorDescription").html("Please enter description");
+                         //   return false;
+                    //   }          
      var param = jQuery( "#tourBookingForm").serialize();
     //jQuery("#confrimation_text").html(loading);
     

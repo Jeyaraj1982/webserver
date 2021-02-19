@@ -8,12 +8,12 @@
         
         </style>
         <div class="page">
-            <form class="searchcontrol">
+            <form class="searchcontrol" action="search.php" method="get">
                 <div class="input-group">
                     <div class="input-group-prepend">
                         <button type="button" class="input-group-text close-search"><i class="material-icons">keyboard_backspace</i></button>
                     </div>
-                    <input type="email" class="form-control border-0" placeholder="Search..." aria-label="Username">
+                    <input type="text" class="form-control border-0" name="s" id="s"  placeholder="Search..." aria-label="Username">
                 </div>
             </form>
             <header class="row m-0 fixed-header">
@@ -30,7 +30,10 @@
                     <!--<a href="javascript:void(0)" class="menu-right"><i class="material-icons">person</i></a>-->
                 </div>
             </header>
-            <div class="page-content" style="padding-top:34px">
+          
+            
+             <div class="page-content" style="overflow:hidden;height:70vh !important; overflow: auto;margin-top:0px">
+        <div class="content-sticky-footer" style="padding-bottom: 0px !important;padding-top:0px;">  
                 <div class="content-sticky-footer" style="min-height: auto; padding-bottom: 0px !important;">
                     <div data-pagination='{"el": ".swiper-pagination", "hideOnClick": true}' class="swiper-container swiper-init demo-swiper" style="height:180px;padding:0px;">
                         <div class="swiper-pagination" style="margin-top:10px;"></div>
@@ -102,62 +105,14 @@ $MostPopularTourPackages=array();
             </div>
     
  
-          <br>
-          <br>
-          <br>
-          <br>
+        
 
-                </div>
-                
-                <div class="footer-wrapper" style="bottom:0px">
-                    <div class="footer dark" style="background:#333px;">
-                        <div class="row mx-0">
-                            <div class="col">
-                                <img src="https://trip78.in/images/logo_footer.png" style="height:50px;">
-                            </div>
-                            <div class="col-8 text-right" style="font-size:12px;">
-                             Copyright @2018 Trip78.in
-                           <!--     <a href="" class="social"><img src="img/facebook.png" alt=""></a>
-                                <a href="" class="social"><img src="img/googleplus.png" alt=""></a>
-                                <a href="" class="social"><img src="img/linkedin.png" alt=""></a>
-                                <a href="" class="social"><img src="img/twitter.png" alt=""></a>
-                                -->
-                            </div>
-                        </div>
-                    </div>
-                     
-                </div>
-            </div>
+                </div> 
         </div>
-        <!-- page main ends -->
-
-    </div>
-
-
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://maxartkiller.com/website/mobileux/dashboard_html/js/jquery-3.2.1.min.js"></script>
-    <script src="https://maxartkiller.com/website/mobileux/dashboard_html/js/popper.min.js"></script>
-    <script src="https://maxartkiller.com/website/mobileux/dashboard_html/vendor/bootstrap-4.1.3/js/bootstrap.min.js"></script>
-
-    <!-- Cookie jquery file -->
-    <script src="https://maxartkiller.com/website/mobileux/dashboard_html/vendor/cookie/jquery.cookie.js"></script>
-
-    <!-- sparklines chart jquery file -->
-    <script src="https://maxartkiller.com/website/mobileux/dashboard_html/vendor/sparklines/jquery.sparkline.min.js"></script>
-
-    <!-- Circular progress gauge jquery file -->
-    <script src="https://maxartkiller.com/website/mobileux/dashboard_html/vendor/circle-progress/circle-progress.min.js"></script>
-
-    <!-- Swiper carousel jquery file -->
-    <script src="https://maxartkiller.com/website/mobileux/dashboard_html/vendor/swiper/js/swiper.min.js"></script>
-
-    <!-- Application main common jquery file -->
-    <script src="https://maxartkiller.com/website/mobileux/dashboard_html/js/main.js"></script>
-
-    <!-- page level script -->
+        <br><Br><br>
+        </div>
+                
+              <?php include_once("footer.php");?>
     <script>
         var mySwiper = new Swiper('.swiper-container', {
             pagination: {

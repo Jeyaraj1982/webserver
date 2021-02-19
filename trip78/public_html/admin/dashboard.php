@@ -20,9 +20,25 @@ if (isset($_GET['action'])) {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>    
                 <div class="page-inner">
-                     
+                
+                 <?php
+                    $enq = $mysql->select("select * from _tbl_tour_enquiry where date(CreatedOn)=date('".date("Y-m-d")."')");
+                    
+                    if (sizeof($enq)>0) {
+                ?>
+                 <div class="row">
+                        <div class="col-md-12">
+                        
+                  <div class="alert alert-primary" role="alert">
+  Today you have recevied <?php echo (sizeof($enq));?> enquires. click to  <a href="dashboard.php?action=Enquiry/list&date=<?php echo date("Y-m-d");?>" class="alert-link" style="font-weight:normal;color:blue">view </a>. 
+</div>   
+
+                        </div>
+                    </div> 
+<?php } ?>
+                                                     
                     <div class="row">
                       <div class="col-sm-6 col-md-3">
                       <div class="card card-stats card-round" style="cursor: pointer;">

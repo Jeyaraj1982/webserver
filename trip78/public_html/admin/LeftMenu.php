@@ -101,6 +101,16 @@
                                 <a href="dashboard.php?action=Website/RoundSlider/list">      
                                     <span class="sub-item">Manage Round Slider</span>
                                 </a>
+                            </li>                                          
+                            <li>
+                                <a href="dashboard.php?action=Master/StateNames/list">      
+                                    <span class="sub-item">Manage State Names</span>
+                                </a>
+                            </li>
+                             <li>
+                                <a href="dashboard.php?action=Master/DistrictName/list">      
+                                    <span class="sub-item">Manage District Names</span>
+                                </a>
                             </li>
                         </ul>
                     </div>

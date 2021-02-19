@@ -25,11 +25,38 @@
         .errorString {color:red}
     </style>  
     <title>Trip78</title>
+    <style>
+div.scrollmenu {
+  background-color: #FED700;
+  overflow: auto;
+  white-space: nowrap;
+  min-width:100%;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: #000;
+  
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: #B6A23F;
+}
+.divactive {
+     background-color: #B6A23F;
+}
+
+         
+ 
+                 </style>
 </head>
 
 <body class="color-theme-blue push-content-right theme-light" style="background:#000">
     <div class="wrapper">
-        <!-- sidebar left start -->
+         
         <div class="sidebar sidebar-left">
             <div class="profile-link" style="background:#fff;"> 
                  <div>
@@ -73,20 +100,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a href="budjecttours.php" class="sidebar-close">
-                            <div class="item-title">
-                                <i class="material-icons">domain</i> Budjet Tours
-                            </div>
-                        </a>
-                    </li>
-                      <li class="nav-item">
-                        <a href="seasontours.php" class="sidebar-close">
-                            <div class="item-title">
-                                <i class="material-icons">domain</i> Season Tours
-                            </div>
-                        </a>
-                    </li>
+                    
                       <li class="nav-item">
                         <a href="aboutus.php" class="sidebar-close">
                             <div class="item-title">
@@ -120,9 +134,9 @@
             </div>
             -->
         </div>   
-        <!-- sidebar left ends -->
+         
 
-        <!-- sidebar right start -->
+         
         <div class="sidebar sidebar-right">
             <header class="row m-0 fixed-header">
                 <div class="left">
@@ -161,9 +175,9 @@
                 </div>
             </div>
         </div>
-        <!-- sidebar right ends -->
+         
 
-        <!-- fullscreen menu start -->
+         
 
         <div class="modal fade popup-fullmenu" id="fullscreenmenu" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog" role="document">

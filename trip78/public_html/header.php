@@ -3,7 +3,7 @@
 ?>
 <!DOCTYPE html>
 <html lang="en-US" prefix="og: http://ogp.me/ns#">
-<!-- Mirrored from html.physcode.com/travel/single-tour.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 11 Dec 2020 08:10:04 GMT -->
+ 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width">
@@ -104,13 +104,7 @@
                              ?>
                                 <li><a href="subtours.php?tours=<?php echo $mTour['TourTypeID'];?>" style="font-size:16px;padding-top:10px;padding-bottom:10px"><?php echo $mTour['TourTypeName'];?></a></li>
                                 <?php } ?>
-                                   <!-- <ul class="sub-menu">
-                                        <li><a href="tours-list.html">Tour List</a></li>
-                                        <li><a href="tours-2-cols.html">Grid – 2 cols</a></li>
-                                        <li><a href="tours.html">Grid – 3 cols(width sidebar)</a></li>
-                                        <li><a href="tours-3-cols.html">Grid – 3 cols (no sidebar)</a></li>
-                                        <li><a href="tours-4-cols.html">Grid – 4 cols</a></li>
-                                    </ul>-->       
+                                      
                                 </li>
                             </ul>    
 						</li>						
