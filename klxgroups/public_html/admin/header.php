@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Tours</title>
+    <title></title>
     <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
     <link rel="icon" href="images/favicon.png" type="image/x-icon"/>
 
@@ -49,7 +49,7 @@
             <div class="logo-header" data-background-color="dark">
                 
                 <a href="dashboard.php" class="logo" style="color:#fff;text-align:center;line-height:15px;text-align:left;height:30px !important">
-                    <span style="font-weight:bold;">Tours</span><br>
+                    <span style="font-weight:bold;"></span><br>
                 </a>
                 <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon">

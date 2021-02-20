@@ -20,6 +20,7 @@ $data= $mysql->Select("select * from _tbl_taxi where TaxiTypeID='".$_GET['TaxiTy
                 $mysql->execute("update _tbl_taxi set `TaxiName`    ='".$_POST['TaxiName']."',
                                                       `Description`       ='".$_POST['Description']."',
                                                       `taxi_order`       ='".$_POST['taxi_order']."',
+                                                        `IsAcive`       ='".$_POST['IsAcive']."' 
                                                       `TaxiThumb`           ='".$file."' where TaxiTypeID='".$data[0]['TaxiTypeID']."'");
            
                 $successmessage ="Updated Successfully";
@@ -98,9 +99,9 @@ function SubmitProduct() {
                                         <div class="form-group form-show-validation row">
                                             <label for="name" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-left">Is Delete<span class="required-label">*</span></label>
                                             <div class="col-lg-4 col-md-9 col-sm-8">
-                                                <select class="form-control" name="IsPublish" id="IsPublish">
-                                                    <option value="1" <?php echo (isset($_POST[ 'IsPublish'])) ? (($_POST[ 'IsPublish']=="1") ? " selected='selected' " : "") : (($data[0]['IsPublish']=="1") ? " selected='selected' " : "");?>>No</option>
-                                                    <option value="0" <?php echo (isset($_POST[ 'IsPublish'])) ? (($_POST[ 'IsPublish']=="0") ? " selected='selected' " : "") : (($data[0]['IsPublish']=="0") ? " selected='selected' " : "");?>>Yes</option>
+                                                <select class="form-control" name="IsAcive" id="IsAcive">
+                                                    <option value="1" <?php echo (isset($_POST[ 'IsAcive'])) ? (($_POST[ 'IsAcive']=="1") ? " selected='selected' " : "") : (($data[0]['IsAcive']=="1") ? " selected='selected' " : "");?>>No</option>
+                                                    <option value="0" <?php echo (isset($_POST[ 'IsAcive'])) ? (($_POST[ 'IsAcive']=="0") ? " selected='selected' " : "") : (($data[0]['IsAcive']=="0") ? " selected='selected' " : "");?>>Yes</option>
                                                 </select>                                                                                                       
                                             </div>
                                         </div>

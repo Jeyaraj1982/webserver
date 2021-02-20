@@ -1,74 +1,64 @@
-<?php include_once("header.php"); ?>
+ <?php include_once("header.php");?>
 
-  <!-- ======= Hero Section ======= -->
-   <!-- End Hero -->
-
+  
+     
   <main id="main">
 
-    <!-- ======= About Us Section ======= -->
-      
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
 
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services section-bg mt-5">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Foods</strong></h2>
-        <!--  <p>Laborum repudiandae omnis voluptatum consequatur mollitia ea est voluptas ut</p>-->
-        </div>
-       <div class="row" style="display: none;">
-            <div class="col-lg-6 col-md-6">
-                <div class="card">
-                    <div class="card-title">
-                Ordered Items
-                </div>
-                <div class="card-body">
-                
-                </div>
-                    
-                </div>
-                
-                
-            </div>
-            <div class="col-lg-6 col-md-6">
-                  <a href="foodorder.php" class="btn btn-primary">Order Now</a>
-            </div>
-       </div>
-        <div class="row">
-        <?php 
-        $foods = $mysql->select("select * from _tbl_foods"); 
-        foreach($foods  as $f) {
-        ?>
-          <div class="col-lg-3 col-md-3   " data-aos="zoom-in" data-aos-delay="100" style="margin-bottom:20px">
-            <div class="card">
-            <div class="card-body" style="text-align: center;">
-             <img src="assets/foods/<?php echo  $f['Thumb'];?>" style="height:150px;width:100%"> 
-              <h4 style="margin-top:10px;"><a href="taxi.php"><?php echo $f['FoodName'];?></a></h4>
-              <p><?php echo $f['Description'];?></p>
-              <p style="padding:30px;padding-bottom:0px">
-              Rs. <?php echo $f['Price'];?><br><br>
-              <a href="taxi.php" class="btn btn-success btn-sm">&nbsp;&nbsp;Add Item&nbsp;&nbsp;</a></p>
-                              </div>
-                              </div>
-          </div>
-         <?php } ?>
-    
+        <div class="d-flex justify-content-between align-items-center">
+          <h2 style="margin-bottom:0px;font-size:15px">Foods</h2>
            
-
-           
-
-           
-
         </div>
 
       </div>
-    </section> 
+    </section><!-- End Breadcrumbs -->
 
-    <!-- ======= Portfolio Section ======= -->
-      
-
+    <!-- ======= Contact Section ======= -->
      
-      
+    <script>
+    function getHotels(h) {
+        location.href='foodhotels_by_city.php?city='+h;
+    }
+    </script>
+    <section id="contact" class="contact" style="padding-top:10px;">
+      <div class="container">
 
-  </main> 
-  <?php include_once("footer.php");?>
+        <div class="row  justify-content-center">
+            <div class="col-lg-12"> 
+               <?php
+             $cityNames = $mysql->select("select * from _tbl_foods_citynames where isactive='1' order by CityName");
+             ?>
+               <br><br>
+               <p align="center">Food Order</p>
+          <h3 style="text-align:center;">Select City</h3><br>                                        
+                    <div class="card">
+                        <div  class="card-body" id="ListDiv" style="padding:0px !important;">
+                            <ul class="list-group list-group-bordered">
+                            <?php foreach($cityNames as $cityName) { ?>
+                                <li class="list-group-item cursor-hand" style="display: block" onclick="getHotels('<?php echo $cityName['HotelCityNameID'];?>')">
+                                
+                                <?php echo $cityName['CityName'];?>&nbsp;&nbsp;
+                                (<?php echo sizeof( $hotels = $mysql->select("select * from _tbl_foods_hotels where IsActive='1' and HotelCityNameID='".$cityName['HotelCityNameID']."'"));?>)
+                                <i class="flaticon-right-arrow-4" style="float: right;"></i>  
+                                </li>   
+                                <?php } ?>
+                         </ul>
+                         </div>
+                         </div>
+                         
+            </div>
+            
+          
+          </div> 
+      
+         
+
+      </div>                                                
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+  <script type="text/javascript">jssor_1_slider_init();</script>
+ <?php include_once("footer.php");?>

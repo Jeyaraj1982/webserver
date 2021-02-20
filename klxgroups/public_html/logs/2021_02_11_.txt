@@ -1,0 +1,521 @@
+[2021-02-11 05:04:55]	select * from _tbl_admin where UserName='admin@klxgroups.com' and Password='123456' 
+[2021-02-11 05:05:11]	select * from _tbl_booking_taxi   order by TaxiBookingID DESC
+[2021-02-11 05:05:11]	select * from _tbl_taxi where TaxiTypeID='11'
+[2021-02-11 05:05:14]	select * from _tbl_booking_taxi where md5(TaxiBookingID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-11 05:05:14]	select * from _tbl_taxi where TaxiTypeID='11'
+[2021-02-11 05:05:27]	select * from _tbl_taxi where IsActive='1' 
+[2021-02-11 05:05:48]	select * from _tbl_booking_taxi   order by TaxiBookingID DESC
+[2021-02-11 05:05:48]	select * from _tbl_taxi where TaxiTypeID='11'
+[2021-02-11 05:06:02]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName 
+[2021-02-11 05:06:19]	select * from _tbl_sliders where IsActive='1'
+[2021-02-11 05:06:19]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_sliders' doesn't exist
+[2021-02-11 07:36:47]	select * from _tbl_taxi where IsActive='1' order by taxi_order
+[2021-02-11 07:36:49]	select * from _tbl_taxi where TaxiTypeID='3'
+[2021-02-11 07:36:56]	select * from _tbl_taxi where IsActive='1' order by taxi_order
+[2021-02-11 09:51:57]	select * from _tbl_admin where UserName='admin@klxgroups.com' and Password='123456' 
+[2021-02-11 09:51:59]	select * from _tbl_booking_taxi   order by TaxiBookingID DESC
+[2021-02-11 09:51:59]	select * from _tbl_taxi where TaxiTypeID='11'
+[2021-02-11 09:52:02]	select * from _tbl_taxi where IsActive='1' 
+[2021-02-11 09:52:18]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName 
+[2021-02-11 10:13:22]	select * from _tbl_booking_taxi   order by TaxiBookingID DESC
+[2021-02-11 10:13:22]	select * from _tbl_taxi where TaxiTypeID='11'
+[2021-02-11 10:13:27]	select * from _tbl_booking_taxi   order by TaxiBookingID DESC
+[2021-02-11 10:13:27]	select * from _tbl_taxi where TaxiTypeID='11'
+[2021-02-11 10:19:33]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName 
+[2021-02-11 10:19:56]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName 
+[2021-02-11 10:20:39]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName 
+[2021-02-11 10:20:42]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName 
+[2021-02-11 10:20:44]	select * from _tbl_hotel_citynames where HotelCityNameID='3'
+[2021-02-11 10:20:44]	select * from _tbl_hotel_citynames where HotelCityNameID='3'
+[2021-02-11 10:20:45]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName 
+[2021-02-11 10:21:06]	select * from _tbl_sub_tour order by TourTypeID desc
+[2021-02-11 10:21:06]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_sub_tour' doesn't exist
+[2021-02-11 10:21:54]	select * from _tbl_sub_tour order by TourTypeID desc
+[2021-02-11 10:21:54]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_sub_tour' doesn't exist
+[2021-02-11 10:22:12]	select * from _tbl_sub_tour order by TourTypeID desc
+[2021-02-11 10:22:12]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_sub_tour' doesn't exist
+[2021-02-11 10:22:20]	select * from _tbl_sub_tour order by TourTypeID desc
+[2021-02-11 10:22:20]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_sub_tour' doesn't exist
+[2021-02-11 10:24:33]	select * from _tbl_hotels order by HotelID desc
+[2021-02-11 10:24:33]	select * from _tbl_hotels_packages where HotelID='4'
+[2021-02-11 10:24:33]	select * from _tbl_hotels_packages where HotelID='3'
+[2021-02-11 10:24:33]	select * from _tbl_hotels_packages where HotelID='2'
+[2021-02-11 10:24:33]	select * from _tbl_hotels_packages where HotelID='1'
+[2021-02-11 10:25:56]	select * from _tbl_hotels order by HotelID desc
+[2021-02-11 10:25:56]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 10:25:56]	select * from _tbl_hotels_packages where HotelID='4'
+[2021-02-11 10:25:56]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 10:25:56]	select * from _tbl_hotels_packages where HotelID='3'
+[2021-02-11 10:25:56]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 10:25:56]	select * from _tbl_hotels_packages where HotelID='2'
+[2021-02-11 10:25:56]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 10:25:56]	select * from _tbl_hotels_packages where HotelID='1'
+[2021-02-11 10:26:27]	select * from _tbl_hotels order by HotelID desc
+[2021-02-11 10:26:27]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 10:26:27]	select * from _tbl_hotels_packages where HotelID='4'
+[2021-02-11 10:26:27]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 10:26:27]	select * from _tbl_hotels_packages where HotelID='3'
+[2021-02-11 10:26:27]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 10:26:27]	select * from _tbl_hotels_packages where HotelID='2'
+[2021-02-11 10:26:27]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 10:26:27]	select * from _tbl_hotels_packages where HotelID='1'
+[2021-02-11 10:26:37]	select * from _tbl_hotels order by HotelID desc
+[2021-02-11 10:26:37]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 10:26:37]	select * from _tbl_hotels_packages where HotelID='4'
+[2021-02-11 10:26:37]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 10:26:37]	select * from _tbl_hotels_packages where HotelID='3'
+[2021-02-11 10:26:37]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 10:26:37]	select * from _tbl_hotels_packages where HotelID='2'
+[2021-02-11 10:26:37]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 10:26:37]	select * from _tbl_hotels_packages where HotelID='1'
+[2021-02-11 10:26:53]	select * from _tbl_hotel_citynames where isactive='1' order by CityName
+[2021-02-11 10:26:53]	select * from _tbl_hotels where HotelCityID='3'
+[2021-02-11 10:26:53]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'HotelCityID' in 'where clause'
+[2021-02-11 10:26:53]	select * from _tbl_hotels where HotelCityID='1'
+[2021-02-11 10:26:53]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'HotelCityID' in 'where clause'
+[2021-02-11 10:26:53]	select * from _tbl_hotels where HotelCityID='2'
+[2021-02-11 10:26:53]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'HotelCityID' in 'where clause'
+[2021-02-11 10:27:30]	select * from _tbl_hotel_citynames where isactive='1' order by CityName
+[2021-02-11 10:27:30]	select * from _tbl_hotels where HotelCityNameID='3'
+[2021-02-11 10:27:30]	select * from _tbl_hotels where HotelCityNameID='1'
+[2021-02-11 10:27:30]	select * from _tbl_hotels where HotelCityNameID='2'
+[2021-02-11 10:27:33]	select * from _tbl_hotels where HotelCityID='2'
+[2021-02-11 10:27:33]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'HotelCityID' in 'where clause'
+[2021-02-11 10:27:48]	select * from _tbl_hotels where HotelCityNameID='2'
+[2021-02-11 10:27:57]	select * from _tbl_hotels where HotelID='1'
+[2021-02-11 10:27:57]	select * from _tbl_hotels_packages where HotelID='1'
+[2021-02-11 10:28:04]	select * from _tbl_hotels order by HotelID desc
+[2021-02-11 10:28:04]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 10:28:04]	select * from _tbl_hotels_packages where HotelID='4'
+[2021-02-11 10:28:04]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 10:28:04]	select * from _tbl_hotels_packages where HotelID='3'
+[2021-02-11 10:28:04]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 10:28:04]	select * from _tbl_hotels_packages where HotelID='2'
+[2021-02-11 10:28:04]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 10:28:04]	select * from _tbl_hotels_packages where HotelID='1'
+[2021-02-11 10:56:57]	select * from _tbl_hotels order by HotelID desc
+[2021-02-11 10:56:57]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 10:56:57]	select * from _tbl_hotels_packages where HotelID='4'
+[2021-02-11 10:56:57]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 10:56:57]	select * from _tbl_hotels_packages where HotelID='3'
+[2021-02-11 10:56:57]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 10:56:57]	select * from _tbl_hotels_packages where HotelID='2'
+[2021-02-11 10:56:57]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 10:56:57]	select * from _tbl_hotels_packages where HotelID='1'
+[2021-02-11 11:26:24]	select * from _tbl_hotels order by HotelID desc
+[2021-02-11 11:26:24]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 11:26:24]	select * from _tbl_hotels_packages where HotelID='4'
+[2021-02-11 11:26:24]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 11:26:24]	select * from _tbl_hotels_packages where HotelID='3'
+[2021-02-11 11:26:24]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 11:26:24]	select * from _tbl_hotels_packages where HotelID='2'
+[2021-02-11 11:26:24]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 11:26:24]	select * from _tbl_hotels_packages where HotelID='1'
+[2021-02-11 11:26:29]	select * from _tbl_tour
+[2021-02-11 11:26:29]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tour' doesn't exist
+[2021-02-11 11:39:20]	select * _tbl_hotel_citynames where IsActive='1' order by CityName
+[2021-02-11 11:39:20]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '_tbl_hotel_citynames where IsActive='1' order by CityName' at line 1
+[2021-02-11 11:40:09]	select * _tbl_hotel_citynames where IsActive='1' order by CityName
+[2021-02-11 11:40:09]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '_tbl_hotel_citynames where IsActive='1' order by CityName' at line 1
+[2021-02-11 11:40:26]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName
+[2021-02-11 11:40:49]	select * from _tbl_sub_tour where SubTourTypeName='' and TourTypeID=''
+[2021-02-11 11:40:49]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_sub_tour' doesn't exist
+[2021-02-11 11:40:49]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName
+[2021-02-11 11:41:51]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName
+[2021-02-11 11:43:25]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName
+[2021-02-11 11:43:35]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName
+[2021-02-11 11:43:35]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName
+[2021-02-11 11:43:50]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName
+[2021-02-11 12:01:01]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName
+[2021-02-11 12:01:09]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName
+[2021-02-11 12:01:57]	insert into `_tbl_hotels` (`HotelCityNameID`,`HotelName`,`HotelDescription`,`IsActive`,`HotelThumb`) values ('3','GSSS','sadfgsagsag','1','sgs.jpg')
+[2021-02-11 12:01:57]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName
+[2021-02-11 12:02:26]	select * from _tbl_hotels order by HotelID desc
+[2021-02-11 12:02:26]	select * from _tbl_hotel_citynames where HotelCityNameID='3'
+[2021-02-11 12:02:26]	select * from _tbl_hotels_packages where HotelID='5'
+[2021-02-11 12:02:26]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 12:02:26]	select * from _tbl_hotels_packages where HotelID='4'
+[2021-02-11 12:02:26]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 12:02:26]	select * from _tbl_hotels_packages where HotelID='3'
+[2021-02-11 12:02:26]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 12:02:26]	select * from _tbl_hotels_packages where HotelID='2'
+[2021-02-11 12:02:26]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 12:02:26]	select * from _tbl_hotels_packages where HotelID='1'
+[2021-02-11 12:02:40]	select * from _tbl_sub_tour where md5(SubTourTypeID)=''
+[2021-02-11 12:02:40]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_sub_tour' doesn't exist
+[2021-02-11 12:02:40]	select * from _tbl_sub_tour where md5(SubTourTypeID)=''
+[2021-02-11 12:02:40]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_sub_tour' doesn't exist
+[2021-02-11 12:02:40]	select * from _tbl_tour
+[2021-02-11 12:02:40]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tour' doesn't exist
+[2021-02-11 19:15:49]	select * from _tbl_admin where UserName='admin@klxgroups.com' and Password='123456' 
+[2021-02-11 19:15:53]	select * from _tbl_hotels order by HotelID desc
+[2021-02-11 19:15:53]	select * from _tbl_hotel_citynames where HotelCityNameID='3'
+[2021-02-11 19:15:53]	select * from _tbl_hotels_packages where HotelID='5'
+[2021-02-11 19:15:53]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 19:15:53]	select * from _tbl_hotels_packages where HotelID='4'
+[2021-02-11 19:15:53]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 19:15:53]	select * from _tbl_hotels_packages where HotelID='3'
+[2021-02-11 19:15:53]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 19:15:53]	select * from _tbl_hotels_packages where HotelID='2'
+[2021-02-11 19:15:53]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 19:15:53]	select * from _tbl_hotels_packages where HotelID='1'
+[2021-02-11 19:15:57]	select * from _tbl_sub_tour where md5(SubTourTypeID)=''
+[2021-02-11 19:15:57]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_sub_tour' doesn't exist
+[2021-02-11 19:15:57]	select * from _tbl_sub_tour where md5(SubTourTypeID)=''
+[2021-02-11 19:15:57]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_sub_tour' doesn't exist
+[2021-02-11 19:15:57]	select * from _tbl_tour
+[2021-02-11 19:15:57]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tour' doesn't exist
+[2021-02-11 19:38:30]	select * from _tbl_hotels where md5(HotelID)='eccbc87e4b5ce2fe28308fd9f2a7baf3'
+[2021-02-11 19:38:30]	select * from _tbl_hotels where HotelID='3'
+[2021-02-11 19:38:30]	select * from _tbl_tour
+[2021-02-11 19:38:30]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tour' doesn't exist
+[2021-02-11 19:51:27]	select * from _tbl_hotels where md5(HotelID)='eccbc87e4b5ce2fe28308fd9f2a7baf3'
+[2021-02-11 19:51:27]	select * from _tbl_hotels where HotelID='3'
+[2021-02-11 19:51:27]	select * from _tbl_tour
+[2021-02-11 19:51:27]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tour' doesn't exist
+[2021-02-11 19:55:45]	select * from _tbl_hotels where md5(HotelID)='eccbc87e4b5ce2fe28308fd9f2a7baf3'
+[2021-02-11 19:55:45]	select * from _tbl_hotels where HotelID='3'
+[2021-02-11 19:55:45]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName
+[2021-02-11 19:56:09]	select * from _tbl_hotels order by HotelID desc
+[2021-02-11 19:56:09]	select * from _tbl_hotel_citynames where HotelCityNameID='3'
+[2021-02-11 19:56:09]	select * from _tbl_hotels_packages where HotelID='5'
+[2021-02-11 19:56:09]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 19:56:09]	select * from _tbl_hotels_packages where HotelID='4'
+[2021-02-11 19:56:09]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 19:56:09]	select * from _tbl_hotels_packages where HotelID='3'
+[2021-02-11 19:56:09]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 19:56:09]	select * from _tbl_hotels_packages where HotelID='2'
+[2021-02-11 19:56:09]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 19:56:09]	select * from _tbl_hotels_packages where HotelID='1'
+[2021-02-11 19:56:22]	select * from _tbl_hotels where md5(HotelID)='eccbc87e4b5ce2fe28308fd9f2a7baf3'
+[2021-02-11 19:56:22]	select * from _tbl_hotels where HotelID='3'
+[2021-02-11 19:56:22]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName
+[2021-02-11 19:57:17]	select * from _tbl_hotels order by HotelID desc
+[2021-02-11 19:57:17]	select * from _tbl_hotel_citynames where HotelCityNameID='3'
+[2021-02-11 19:57:17]	select * from _tbl_hotels_packages where HotelID='5'
+[2021-02-11 19:57:17]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 19:57:17]	select * from _tbl_hotels_packages where HotelID='4'
+[2021-02-11 19:57:17]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 19:57:17]	select * from _tbl_hotels_packages where HotelID='3'
+[2021-02-11 19:57:17]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 19:57:17]	select * from _tbl_hotels_packages where HotelID='2'
+[2021-02-11 19:57:17]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 19:57:17]	select * from _tbl_hotels_packages where HotelID='1'
+[2021-02-11 19:57:20]	select * from _tbl_hotels where md5(HotelID)='e4da3b7fbbce2345d7772b0674a318d5'
+[2021-02-11 19:57:20]	select * from _tbl_hotels where HotelID='5'
+[2021-02-11 19:57:20]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName
+[2021-02-11 19:57:32]	select * from _tbl_hotels where md5(HotelID)='e4da3b7fbbce2345d7772b0674a318d5'
+[2021-02-11 19:57:32]	select * from _tbl_hotels where HotelID='5'
+[2021-02-11 19:57:32]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName
+[2021-02-11 19:57:50]	select * from _tbl_hotels where md5(HotelID)='e4da3b7fbbce2345d7772b0674a318d5'
+[2021-02-11 19:57:50]	update _tbl_hotels set `HotelCityNameID`        = '3',
+                                                      `HotelName`      = '',
+                                                      `HotelDescription`   = '5 Star',
+                                                      `IsActive` = '',
+                                                     
+                                                      `Image`             = 'Hotel Ramraj Regency.jpg' where HotelID='5'
+[2021-02-11 19:57:50]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Image' in 'field list'
+[2021-02-11 19:57:50]	select * from _tbl_hotels where HotelID='5'
+[2021-02-11 19:57:50]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName
+[2021-02-11 19:57:53]	select * from _tbl_hotels where md5(HotelID)='e4da3b7fbbce2345d7772b0674a318d5'
+[2021-02-11 19:57:53]	select * from _tbl_hotels where HotelID='5'
+[2021-02-11 19:57:53]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName
+[2021-02-11 19:58:31]	select * from _tbl_hotels where md5(HotelID)='e4da3b7fbbce2345d7772b0674a318d5'
+[2021-02-11 19:58:31]	update _tbl_hotels set `HotelCityNameID`        = '1',
+                                                      `HotelName`      = '',
+                                                      `HotelDescription`   = 'sadfgsagsag 345',
+                                                      `IsActive` = '',
+                                                     
+                                                      `HotelThumb`             = 'Pepper Residency.png' where HotelID='5'
+[2021-02-11 19:58:31]	SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'IsActive' at row 1
+[2021-02-11 19:58:31]	select * from _tbl_hotels where HotelID='5'
+[2021-02-11 19:58:31]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName
+[2021-02-11 19:58:33]	select * from _tbl_hotels where md5(HotelID)='e4da3b7fbbce2345d7772b0674a318d5'
+[2021-02-11 19:58:33]	select * from _tbl_hotels where HotelID='5'
+[2021-02-11 19:58:33]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName
+[2021-02-11 19:59:09]	select * from _tbl_hotels where md5(HotelID)='e4da3b7fbbce2345d7772b0674a318d5'
+[2021-02-11 19:59:09]	select * from _tbl_hotels where HotelID='5'
+[2021-02-11 19:59:09]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName
+[2021-02-11 19:59:22]	select * from _tbl_hotels where md5(HotelID)='e4da3b7fbbce2345d7772b0674a318d5'
+[2021-02-11 19:59:22]	update _tbl_hotels set `HotelCityNameID`        = '1',
+                                                      `HotelName`      = '',
+                                                      `HotelDescription`   = 'sadfgsagsag456',
+                                                      `IsActive` = '1',
+                                                     
+                                                      `HotelThumb`             = 'Pepper Residency.png' where HotelID='5'
+[2021-02-11 19:59:22]	select * from _tbl_hotels where HotelID='5'
+[2021-02-11 19:59:22]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName
+[2021-02-11 19:59:25]	select * from _tbl_hotels where md5(HotelID)='e4da3b7fbbce2345d7772b0674a318d5'
+[2021-02-11 19:59:25]	select * from _tbl_hotels where HotelID='5'
+[2021-02-11 19:59:25]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName
+[2021-02-11 20:00:00]	select * from _tbl_hotels where md5(HotelID)='e4da3b7fbbce2345d7772b0674a318d5'
+[2021-02-11 20:00:00]	select * from _tbl_hotels where HotelID='5'
+[2021-02-11 20:00:00]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName
+[2021-02-11 20:00:05]	select * from _tbl_hotels where md5(HotelID)='e4da3b7fbbce2345d7772b0674a318d5'
+[2021-02-11 20:00:05]	update _tbl_hotels set `HotelCityNameID`        = '1',
+                                                      `HotelName`      = '',
+                                                      `HotelDescription`   = 'sadfgsagsag456',
+                                                      `IsActive` = '1',
+                                                     
+                                                      `HotelThumb`             = 'Pepper Residency.png' where HotelID='5'
+[2021-02-11 20:00:05]	select * from _tbl_hotels where HotelID='5'
+[2021-02-11 20:00:05]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName
+[2021-02-11 20:00:07]	select * from _tbl_hotels where md5(HotelID)='e4da3b7fbbce2345d7772b0674a318d5'
+[2021-02-11 20:00:07]	select * from _tbl_hotels where HotelID='5'
+[2021-02-11 20:00:07]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName
+[2021-02-11 20:00:43]	select * from _tbl_hotels where md5(HotelID)='e4da3b7fbbce2345d7772b0674a318d5'
+[2021-02-11 20:00:43]	select * from _tbl_hotels where HotelID='5'
+[2021-02-11 20:00:43]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName
+[2021-02-11 20:00:48]	select * from _tbl_hotels where md5(HotelID)='e4da3b7fbbce2345d7772b0674a318d5'
+[2021-02-11 20:00:48]	update _tbl_hotels set `HotelCityNameID`        = '1',
+                                                      `HotelName`      = '',
+                                                      `HotelDescription`   = 'sadfgsagsag456',
+                                                      `IsActive` = '1',
+                                                     
+                                                      `HotelThumb`             = 'Pepper Residency.png' where HotelID='5'
+[2021-02-11 20:00:48]	select * from _tbl_hotels where HotelID='5'
+[2021-02-11 20:00:48]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName
+[2021-02-11 20:00:50]	select * from _tbl_hotels where md5(HotelID)='e4da3b7fbbce2345d7772b0674a318d5'
+[2021-02-11 20:00:50]	select * from _tbl_hotels where HotelID='5'
+[2021-02-11 20:00:50]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName
+[2021-02-11 20:01:11]	select * from _tbl_hotels where md5(HotelID)='e4da3b7fbbce2345d7772b0674a318d5'
+[2021-02-11 20:01:11]	update _tbl_hotels set `HotelCityNameID`        = '1',
+                                                      `HotelName`      = 'GSSS 123',
+                                                      `HotelDescription`   = 'sadfgsagsag456',
+                                                      `IsActive` = '1',
+                                                     
+                                                      `HotelThumb`             = 'Pepper Residency.png' where HotelID='5'
+[2021-02-11 20:01:11]	select * from _tbl_hotels where HotelID='5'
+[2021-02-11 20:01:11]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName
+[2021-02-11 20:01:12]	select * from _tbl_hotels where md5(HotelID)='e4da3b7fbbce2345d7772b0674a318d5'
+[2021-02-11 20:01:12]	select * from _tbl_hotels where HotelID='5'
+[2021-02-11 20:01:12]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName
+[2021-02-11 22:01:30]	select * from _tbl_hotels order by HotelID desc
+[2021-02-11 22:01:30]	select * from _tbl_hotel_citynames where HotelCityNameID='1'
+[2021-02-11 22:01:30]	select * from _tbl_hotels_packages where HotelID='5'
+[2021-02-11 22:01:30]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 22:01:30]	select * from _tbl_hotels_packages where HotelID='4'
+[2021-02-11 22:01:30]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 22:01:30]	select * from _tbl_hotels_packages where HotelID='3'
+[2021-02-11 22:01:30]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 22:01:30]	select * from _tbl_hotels_packages where HotelID='2'
+[2021-02-11 22:01:30]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 22:01:30]	select * from _tbl_hotels_packages where HotelID='1'
+[2021-02-11 22:01:41]	select * from _tbl_hotels where md5(HotelID)='e4da3b7fbbce2345d7772b0674a318d5'
+[2021-02-11 22:01:41]	select * from _tbl_hotels where HotelID='5'
+[2021-02-11 22:01:41]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName
+[2021-02-11 22:01:50]	select * from _tbl_hotels order by HotelID desc
+[2021-02-11 22:01:50]	select * from _tbl_hotel_citynames where HotelCityNameID='1'
+[2021-02-11 22:01:50]	select * from _tbl_hotels_packages where HotelID='5'
+[2021-02-11 22:01:50]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 22:01:50]	select * from _tbl_hotels_packages where HotelID='4'
+[2021-02-11 22:01:50]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 22:01:50]	select * from _tbl_hotels_packages where HotelID='3'
+[2021-02-11 22:01:50]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 22:01:50]	select * from _tbl_hotels_packages where HotelID='2'
+[2021-02-11 22:01:50]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 22:01:50]	select * from _tbl_hotels_packages where HotelID='1'
+[2021-02-11 22:04:43]	select * from _tbl_hotels order by HotelID desc
+[2021-02-11 22:04:43]	select * from _tbl_hotel_citynames where HotelCityNameID='1'
+[2021-02-11 22:04:43]	select * from _tbl_hotels_packages where HotelID='5'
+[2021-02-11 22:04:43]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 22:04:43]	select * from _tbl_hotels_packages where HotelID='4'
+[2021-02-11 22:04:43]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 22:04:43]	select * from _tbl_hotels_packages where HotelID='3'
+[2021-02-11 22:04:43]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 22:04:43]	select * from _tbl_hotels_packages where HotelID='2'
+[2021-02-11 22:04:43]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 22:04:43]	select * from _tbl_hotels_packages where HotelID='1'
+[2021-02-11 22:04:48]	select * from _tbl_hotels order by HotelID desc
+[2021-02-11 22:04:48]	select * from _tbl_hotel_citynames where HotelCityNameID='1'
+[2021-02-11 22:04:48]	select * from _tbl_hotels_packages where HotelID='5'
+[2021-02-11 22:04:48]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 22:04:48]	select * from _tbl_hotels_packages where HotelID='4'
+[2021-02-11 22:04:48]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 22:04:48]	select * from _tbl_hotels_packages where HotelID='3'
+[2021-02-11 22:04:48]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 22:04:48]	select * from _tbl_hotels_packages where HotelID='2'
+[2021-02-11 22:04:48]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 22:04:48]	select * from _tbl_hotels_packages where HotelID='1'
+[2021-02-11 22:04:51]	select * from _tbl_hotels where md5(HotelID)='e4da3b7fbbce2345d7772b0674a318d5'
+[2021-02-11 22:04:51]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName
+[2021-02-11 22:05:24]	select * from _tbl_hotels where md5(HotelID)='e4da3b7fbbce2345d7772b0674a318d5'
+[2021-02-11 22:05:24]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName
+[2021-02-11 22:06:05]	select * from _tbl_hotels where md5(HotelID)='e4da3b7fbbce2345d7772b0674a318d5'
+[2021-02-11 22:06:05]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName
+[2021-02-11 22:06:11]	select * from _tbl_hotels order by HotelID desc
+[2021-02-11 22:06:11]	select * from _tbl_hotel_citynames where HotelCityNameID='1'
+[2021-02-11 22:06:11]	select * from _tbl_hotels_packages where HotelID='5'
+[2021-02-11 22:06:11]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 22:06:11]	select * from _tbl_hotels_packages where HotelID='4'
+[2021-02-11 22:06:11]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 22:06:11]	select * from _tbl_hotels_packages where HotelID='3'
+[2021-02-11 22:06:11]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 22:06:11]	select * from _tbl_hotels_packages where HotelID='2'
+[2021-02-11 22:06:11]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 22:06:11]	select * from _tbl_hotels_packages where HotelID='1'
+[2021-02-11 22:06:15]	select * from _tbl_hotels where md5(HotelID)='e4da3b7fbbce2345d7772b0674a318d5'
+[2021-02-11 22:06:15]	select * from _tbl_hotels where HotelID='5'
+[2021-02-11 22:06:15]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName
+[2021-02-11 22:06:20]	select * from _tbl_hotels where md5(HotelID)='e4da3b7fbbce2345d7772b0674a318d5'
+[2021-02-11 22:06:20]	update _tbl_hotels set `HotelCityNameID`        = '1',
+                                                      `HotelName`      = 'GSSS 123',
+                                                      `HotelDescription`   = 'sadfgsagsag456',
+                                                      `IsActive` = '0',
+                                                     
+                                                      `HotelThumb`             = 'Pepper Residency.png' where HotelID='5'
+[2021-02-11 22:06:20]	select * from _tbl_hotels where HotelID='5'
+[2021-02-11 22:06:20]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName
+[2021-02-11 22:06:22]	select * from _tbl_hotels order by HotelID desc
+[2021-02-11 22:06:22]	select * from _tbl_hotel_citynames where HotelCityNameID='1'
+[2021-02-11 22:06:22]	select * from _tbl_hotels_packages where HotelID='5'
+[2021-02-11 22:06:22]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 22:06:22]	select * from _tbl_hotels_packages where HotelID='4'
+[2021-02-11 22:06:22]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 22:06:22]	select * from _tbl_hotels_packages where HotelID='3'
+[2021-02-11 22:06:22]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 22:06:22]	select * from _tbl_hotels_packages where HotelID='2'
+[2021-02-11 22:06:22]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 22:06:22]	select * from _tbl_hotels_packages where HotelID='1'
+[2021-02-11 22:06:25]	select * from _tbl_hotels order by HotelID desc
+[2021-02-11 22:06:25]	select * from _tbl_hotel_citynames where HotelCityNameID='1'
+[2021-02-11 22:06:25]	select * from _tbl_hotels_packages where HotelID='5'
+[2021-02-11 22:06:25]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 22:06:25]	select * from _tbl_hotels_packages where HotelID='4'
+[2021-02-11 22:06:25]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 22:06:25]	select * from _tbl_hotels_packages where HotelID='3'
+[2021-02-11 22:06:25]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 22:06:25]	select * from _tbl_hotels_packages where HotelID='2'
+[2021-02-11 22:06:25]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 22:06:25]	select * from _tbl_hotels_packages where HotelID='1'
+[2021-02-11 22:06:44]	select * from _tbl_hotels where IsActive='1' order by HotelID desc
+[2021-02-11 22:06:44]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 22:06:44]	select * from _tbl_hotels_packages where HotelID='4'
+[2021-02-11 22:06:44]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 22:06:44]	select * from _tbl_hotels_packages where HotelID='3'
+[2021-02-11 22:06:44]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 22:06:44]	select * from _tbl_hotels_packages where HotelID='2'
+[2021-02-11 22:06:44]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 22:06:44]	select * from _tbl_hotels_packages where HotelID='1'
+[2021-02-11 22:11:54]	select * from _tbl_hotels where IsActive='1' order by HotelID desc
+[2021-02-11 22:11:54]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 22:11:54]	select * from _tbl_hotels_packages where HotelID='4'
+[2021-02-11 22:11:54]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 22:11:54]	select * from _tbl_hotels_packages where HotelID='3'
+[2021-02-11 22:11:54]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 22:11:54]	select * from _tbl_hotels_packages where HotelID='2'
+[2021-02-11 22:11:54]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 22:11:54]	select * from _tbl_hotels_packages where HotelID='1'
+[2021-02-11 22:12:03]	select * from _tbl_hotels where IsActive='1' order by HotelID desc
+[2021-02-11 22:12:03]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 22:12:03]	select * from _tbl_hotels_packages where HotelID='4'
+[2021-02-11 22:12:03]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 22:12:03]	select * from _tbl_hotels_packages where HotelID='3'
+[2021-02-11 22:12:03]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 22:12:03]	select * from _tbl_hotels_packages where HotelID='2'
+[2021-02-11 22:12:03]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 22:12:03]	select * from _tbl_hotels_packages where HotelID='1'
+[2021-02-11 22:13:31]	select * from _tbl_tours_package where HotelID='a87ff679a2f3e71d9181a67b7542122c'
+[2021-02-11 22:13:31]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tours_package' doesn't exist
+[2021-02-11 22:13:38]	select * from _tbl_hotels where IsActive='1' order by HotelID desc
+[2021-02-11 22:13:38]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 22:13:38]	select * from _tbl_hotels_packages where HotelID='4'
+[2021-02-11 22:13:38]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 22:13:38]	select * from _tbl_hotels_packages where HotelID='3'
+[2021-02-11 22:13:38]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 22:13:38]	select * from _tbl_hotels_packages where HotelID='2'
+[2021-02-11 22:13:38]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 22:13:38]	select * from _tbl_hotels_packages where HotelID='1'
+[2021-02-11 22:13:41]	select * from _tbl_tours_package where HotelID='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-11 22:13:41]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tours_package' doesn't exist
+[2021-02-11 22:14:08]	select * from _tbl_tours_package where md5(HotelID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-11 22:14:08]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tours_package' doesn't exist
+[2021-02-11 22:15:41]	select * from _tbl_hotels_packages where md5(HotelID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-11 22:15:41]	SELECT COUNT(PackageID) AS cnt FROM _tbl_tour_enquiry where PackageID=''
+[2021-02-11 22:15:41]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tour_enquiry' doesn't exist
+[2021-02-11 22:15:41]	select * from _tbl_tours_package_images where IsDelete='0' and PackageID='' order by ImageOrder
+[2021-02-11 22:15:41]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tours_package_images' doesn't exist
+[2021-02-11 22:15:41]	SELECT COUNT(PackageID) AS cnt FROM _tbl_tour_enquiry where PackageID=''
+[2021-02-11 22:15:41]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tour_enquiry' doesn't exist
+[2021-02-11 22:15:41]	select * from _tbl_tours_package_images where IsDelete='0' and PackageID='' order by ImageOrder
+[2021-02-11 22:15:41]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tours_package_images' doesn't exist
+[2021-02-11 22:15:41]	SELECT COUNT(PackageID) AS cnt FROM _tbl_tour_enquiry where PackageID=''
+[2021-02-11 22:15:41]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tour_enquiry' doesn't exist
+[2021-02-11 22:15:41]	select * from _tbl_tours_package_images where IsDelete='0' and PackageID='' order by ImageOrder
+[2021-02-11 22:15:41]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tours_package_images' doesn't exist
+[2021-02-11 22:15:41]	SELECT COUNT(PackageID) AS cnt FROM _tbl_tour_enquiry where PackageID=''
+[2021-02-11 22:15:41]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tour_enquiry' doesn't exist
+[2021-02-11 22:15:41]	select * from _tbl_tours_package_images where IsDelete='0' and PackageID='' order by ImageOrder
+[2021-02-11 22:15:41]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tours_package_images' doesn't exist
+[2021-02-11 22:17:38]	select * from _tbl_hotels_packages where md5(HotelID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-11 22:19:02]	select * from _tbl_hotels_packages where md5(HotelID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-11 22:21:19]	select * from _tbl_hotels_packages where md5(HotelID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-11 22:23:16]	select * from _tbl_hotels_packages where md5(HotelID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-11 22:25:39]	select * from _tbl_hotels_packages where md5(HotelID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-11 22:31:52]	select * from _tbl_tour
+[2021-02-11 22:31:52]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tour' doesn't exist
+[2021-02-11 22:31:52]	select * from _tbl_sub_tour where md5(SubTourTypeID)=''
+[2021-02-11 22:31:52]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_sub_tour' doesn't exist
+[2021-02-11 22:31:52]	select * from _tbl_tour where TourTypeID=''
+[2021-02-11 22:31:52]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tour' doesn't exist
+[2021-02-11 22:31:52]	select * from _tbl_tour_theme
+[2021-02-11 22:31:52]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tour_theme' doesn't exist
+[2021-02-11 22:33:19]	select * from _tbl_tour
+[2021-02-11 22:33:19]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tour' doesn't exist
+[2021-02-11 22:33:19]	select * from _tbl_sub_tour where md5(SubTourTypeID)=''
+[2021-02-11 22:33:19]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_sub_tour' doesn't exist
+[2021-02-11 22:33:19]	select * from _tbl_tour where TourTypeID=''
+[2021-02-11 22:33:19]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tour' doesn't exist
+[2021-02-11 22:33:19]	select * from _tbl_tour_theme
+[2021-02-11 22:33:19]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tour_theme' doesn't exist
+[2021-02-11 22:33:31]	select * from _tbl_tour
+[2021-02-11 22:33:31]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tour' doesn't exist
+[2021-02-11 22:33:31]	select * from _tbl_sub_tour where md5(SubTourTypeID)=''
+[2021-02-11 22:33:31]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_sub_tour' doesn't exist
+[2021-02-11 22:33:31]	select * from _tbl_tour where TourTypeID=''
+[2021-02-11 22:33:31]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tour' doesn't exist
+[2021-02-11 22:33:31]	select * from _tbl_tour_theme
+[2021-02-11 22:33:31]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tour_theme' doesn't exist
+[2021-02-11 22:34:07]	select * from _tbl_tour
+[2021-02-11 22:34:07]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tour' doesn't exist
+[2021-02-11 22:37:12]	select * from _tbl_tour
+[2021-02-11 22:37:12]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tour' doesn't exist
+[2021-02-11 22:37:44]	select * from _tbl_tour
+[2021-02-11 22:37:44]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tour' doesn't exist
+[2021-02-11 22:38:42]	select * from _tbl_tour
+[2021-02-11 22:38:42]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tour' doesn't exist
+[2021-02-11 22:40:21]	select * from _tbl_tour
+[2021-02-11 22:40:21]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tour' doesn't exist
+[2021-02-11 22:41:41]	select * from _tbl_tour
+[2021-02-11 22:41:41]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tour' doesn't exist
+[2021-02-11 22:41:45]	select * from _tbl_hotels_packages where md5(HotelID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-11 22:43:47]	select * from _tbl_hotels_packages where md5(HotelID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-11 22:44:12]	select * from _tbl_hotels_packages where md5(HotelID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-11 22:44:14]	select * from _tbl_tour
+[2021-02-11 22:44:14]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tour' doesn't exist
+[2021-02-11 22:45:25]	select * from _tbl_tour
+[2021-02-11 22:45:25]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tour' doesn't exist
+[2021-02-11 22:48:35]	select * from _tbl_tour
+[2021-02-11 22:48:35]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tour' doesn't exist
+[2021-02-11 22:48:56]	select * from _tbl_tours_package where PackageName='single' and TourTypeID='' and SubTourTypeID=''
+[2021-02-11 22:48:56]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tours_package' doesn't exist
+[2021-02-11 22:48:56]	insert into `_tbl_hotels_packages` (`TourThemeID`,`TourTypeID`,`PackageName`,`Price`,`OfferPrice`,`Description`) values ('','','single','1000','900','adsgasgsagsg')
+[2021-02-11 22:48:56]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'TourThemeID' in 'field list'
+[2021-02-11 22:48:56]	select * from _tbl_tour
+[2021-02-11 22:48:56]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tour' doesn't exist
+[2021-02-11 22:49:04]	select * from _tbl_hotels where IsActive='1' order by HotelID desc
+[2021-02-11 22:49:04]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 22:49:04]	select * from _tbl_hotels_packages where HotelID='4'
+[2021-02-11 22:49:04]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 22:49:04]	select * from _tbl_hotels_packages where HotelID='3'
+[2021-02-11 22:49:04]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 22:49:04]	select * from _tbl_hotels_packages where HotelID='2'
+[2021-02-11 22:49:04]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-11 22:49:04]	select * from _tbl_hotels_packages where HotelID='1'
+[2021-02-11 22:49:09]	select * from _tbl_hotels_packages where md5(HotelID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-11 22:49:54]	select * from _tbl_tour
+[2021-02-11 22:49:54]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tour' doesn't exist
+[2021-02-11 22:50:40]	select * from _tbl_tour
+[2021-02-11 22:50:40]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tour' doesn't exist
+[2021-02-11 22:50:52]	select * from _tbl_tour
+[2021-02-11 22:50:52]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tour' doesn't exist

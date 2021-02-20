@@ -24,19 +24,9 @@
            
           
         <div class="row  justify-content-center" data-aos="fade-up">
-          <div class="col-6">
-          <?php
-               $vechile = $mysql->select("select * from _tbl_taxi where TaxiTypeID='".$_GET['taxi']."'");
-               
-          ?>
-          
-                <img data-u="image" src="assets/cars/<?php echo $vechile[0]['TaxiThumb'];?>" style="width:100%;" /> 
-            
-          </div>
-           <div class="col-6">
+         
            
-           </div>
-          <div class="col-lg-12">
+          
            <!-- <h5 style="margin-bottom:20px">Taxi Booking</h5>-->
             <?php
                 if (isset($_POST['SubmitTaxiRequest'])) {
@@ -48,17 +38,40 @@
                                              "CustomerMobileNumber" => $_POST['CustomerMobileNumber'],
                                              "CustomerDetails"      => $_POST['CustomerDetails'],
                                              "RequestedOn"          => date("Y-m-d H:i:s")));
-             ?>
+             ?>   
+              <div class="col-lg-12">
               <div class="sent-message">Your request has submitted.</div>
+              </div>
              <?php
  
 }    else {
             ?>
+             <?php
+               $vechile = $mysql->select("select * from _tbl_taxi where TaxiTypeID='".$_GET['taxi']."'");
+               
+          ?>
+          <div class="row" style="margin-bottom:10px;">
+             <div class="col-6" style="text-align: center;" >
+         
+          
+                <img data-u="image" src="assets/cars/<?php echo $vechile[0]['TaxiThumb'];?>" style="width:100%;" /> <br>
+                
+                
             
+          </div>
+          <div class="col-5" style="margin:10px">
+               <b> <?php echo $vechile[0]['TaxiName'];?></b><br>
+              <?php echo $vechile[0]['Description'];?>
+                
+            
+          </div>
+          </div>
+          
+          <div class="col-lg-12">
             <form action="" method="post" role="form" class="php-email-form" style="padding:10px;">
             <input type="hidden" value="1" name="SubmitTaxiRequest">
-            <input type="hidden" value="0" name="NumberOfPerson">
-            <input type="hidden" value="0" name="TaxiType">
+      
+            <input type="hidden" value="<?php echo $_GET['taxi'];?>" name="TaxiType">
               <div class="row">
                 <div class="col-md-6 form-group">
                     <label>From Place</label>
@@ -71,7 +84,7 @@
                   <div class="validate"></div>
                 </div>
               </div>
-              <!--
+            
                <div class="row  mt-3">
                 <div class="col-md-6 form-group">
                     <label>No of Person</label>
@@ -86,6 +99,7 @@
                     </select>
                   <div class="validate"></div>
                 </div>
+                  <!--
                 <div class="col-md-6 form-group mt-3 mt-md-0">
                   <label>Taxi Type</label>
                  
@@ -96,8 +110,9 @@
                  
                   <div class="validate"></div>
                 </div>
+                -->
               </div>
-            -->
+            
                  <div class="row  mt-3">
                 <div class="col-md-6 form-group">
                     <label>Your Name</label>

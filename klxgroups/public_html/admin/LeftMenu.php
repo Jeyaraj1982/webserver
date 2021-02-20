@@ -11,115 +11,88 @@
                     </a>
                 </li>
                 <li class="nav-item">   
-                    <a data-toggle="collapse" href="#Tours">
-                        <i class="fas fa-users"></i><p>Tours</p>
+                    <a data-toggle="collapse" href="#Taxi">
+                        <i class="fas fa-users"></i><p>Taxi Booking</p>
                         <span class="caret"></span>
                     </a>
-                    <div class="collapse" id="Tours">
+                    <div class="collapse" id="Taxi">
                         <ul class="nav nav-collapse">
                             <li>
-                                <a href="dashboard.php?action=Tours/list">
-                                    <span class="sub-item">Manage Tours</span>
+                                <a href="dashboard.php?action=Taxi/BookingRequests">
+                                    <span class="sub-item">Booking Requests</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dashboard.php?action=Taxi/TaxiTypes">
+                                    <span class="sub-item">Manage Types</span>
+                                </a>
+                            </li>
+                             <li>
+                                <a href="dashboard.php?action=Taxi/Agents">
+                                    <span class="sub-item">Manage Agents</span>       
                                 </a>
                             </li>
                         </ul>
                     </div>                                   
                 </li>
+                 
                 <li class="nav-item">   
-                    <a data-toggle="collapse" href="#Agent">
-                        <i class="fas fa-users"></i><p>Agents</p>
+                    <a data-toggle="collapse" href="#Hotel">
+                        <i class="fas fa-users"></i><p>Hotel Booking</p>
                         <span class="caret"></span>
                     </a>
-                    <div class="collapse" id="Agent">
+                    <div class="collapse" id="Hotel">
                         <ul class="nav nav-collapse">
                             <li>
-                                <a href="dashboard.php?action=Agents/list&status=All">
-                                    <span class="sub-item">Manage Agents</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="nav-item">   
-                    <a data-toggle="collapse" href="#Members">
-                        <i class="fas fa-users"></i><p>Registered Users</p>
-                        <span class="caret"></span>
-                    </a>
-                    <div class="collapse" id="Members">
-                        <ul class="nav nav-collapse">
-                            <li>
-                                <a href="dashboard.php?action=Users/list&status=All">
-                                    <span class="sub-item">Manage Users</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="nav-item">   
-                    <a data-toggle="collapse" href="#Enquiry">
-                        <i class="fas fa-users"></i><p>Enquiry</p>
-                        <span class="caret"></span>
-                    </a>
-                    <div class="collapse" id="Enquiry">
-                        <ul class="nav nav-collapse">
-                            <li>
-                                <a href="dashboard.php?action=Enquiry/UnassignedPincode">
-                                    <span class="sub-item">Manage Unassign Pincode</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="nav-item">   
-                    <a data-toggle="collapse" href="#Website">
-                        <i class="fas fa-users"></i><p>Website</p>
-                        <span class="caret"></span>
-                    </a>
-                    <div class="collapse" id="Website">
-                        <ul class="nav nav-collapse">
-                            <li>
-                                <a href="dashboard.php?action=Website/Sliders/list">      
-                                    <span class="sub-item">Manage Sliders</span>
+                                <a href="dashboard.php?action=Hotel/BookingRequests">
+                                    <span class="sub-item">Booking Requests</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="dashboard.php?action=Website/Enquiry/Contact">      
-                                    <span class="sub-item">Contact Enquiries</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="dashboard.php?action=Website/Reviews/list">      
-                                    <span class="sub-item">Manage Reviews</span>
+                                <a href="dashboard.php?action=Hotel/CityNames/CityNames">
+                                    <span class="sub-item">Manage City Names</span>     
                                 </a>
                             </li>
                              <li>
-                                <a href="dashboard.php?action=Website/Gallery/list">      
-                                    <span class="sub-item">Manage Galleries</span>
-                                </a>
-                            </li> 
-                             <li>
-                                <a href="dashboard.php?action=Website/RoundSlider/list">      
-                                    <span class="sub-item">Manage Round Slider</span>
+                                <a href="dashboard.php?action=Hotel/Hotels/ManageHotels">
+                                    <span class="sub-item">Manage Hotels</span>        
                                 </a>
                             </li>
                         </ul>
-                    </div>
-                </li>
+                    </div>                                   
+                </li> 
+                
+                
                 <li class="nav-item">   
-                    <a data-toggle="collapse" href="#Logs">
-                        <i class="fas fa-users"></i><p>Logs</p>
+                    <a data-toggle="collapse" href="#Food">
+                        <i class="fas fa-users"></i><p>Food Orders</p>
                         <span class="caret"></span>
                     </a>
-                    <div class="collapse" id="Logs">
+                    <div class="collapse" id="Food">
                         <ul class="nav nav-collapse">
                             <li>
-                                <a href="dashboard.php?action=Logs/Email">      
-                                    <span class="sub-item">Email</span>
+                                <a href="dashboard.php?action=Food/OrderRequests">
+                                    <span class="sub-item">Order Requests</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dashboard.php?action=Food/CityNames/CityNames">
+                                    <span class="sub-item">Manage City Names</span>     
+                                </a>
+                            </li>
+                             <li>
+                                <a href="dashboard.php?action=Food/Hotels/ManageHotels">
+                                    <span class="sub-item">Manage Hotels</span>        
                                 </a>
                             </li>
                         </ul>
-                    </div>
+                    </div>                                   
                 </li>
+                 
+                 
+                 
+               
+                 
                 <li class="nav-item">   
                     <a data-toggle="collapse" href="#MemberProfile">
                         <i class="fas fa-users"></i><p>Profile</p>

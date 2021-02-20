@@ -27,7 +27,7 @@
                 <label>Select Hotel</label>
                </div>
            <?php
-                 $hotels = $mysql->select("select * from _tbl_hotels where HotelCityID='".$_GET['city']."'");
+                 $hotels = $mysql->select("select * from _tbl_hotels where IsActive='1' and HotelCityNameID='".$_GET['city']."'");
                  foreach($hotels as $hotel) {
              ?>  
               <div class="col-6 " style="text-align: center;margin-bottom:10px;">

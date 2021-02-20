@@ -29,16 +29,19 @@
             
                 if (isset($_POST['SubmitBookingRequest'])) {
                     
-    $mysql->insert("_tbl_booking_hotel",array("HotelPlaceName"       => $_POST['HotelPlaceName'],
-                                             "HotelType"            => $_POST['HotelType'],
+    $mysql->insert("_tbl_booking_hotel",array(
+                                             "HotelID"            => $_GET['hotel'],
+                                             "PackageID"            => $_POST['PackageID'],
                                              "CheckInDate"          => $_POST['YY']."-".$_POST['MM']."=".$_POST['DD'],
                                              "NumberOfDays"         => $_POST['NumberOfDays'],
                                              "adult"                => $_POST['adult'],
                                              "children"             => $_POST['children'],
                                              "PickupLocation"       => $_POST['PickupLocation'],
+                                             "CustomerName"         => $_POST['CustomerName'],
                                              "CustomerMobileNumber" => $_POST['CustomerMobileNumber'],
                                              "CustomerDetails"      => $_POST['CustomerDetails'],
                                              "RequestedOn"          => date("Y-m-d H:i:s")));
+                                             
              ?>
               <div class="sent-message">Your request has submitted.</div>
              <?php
@@ -46,7 +49,7 @@
 }    else {
             ?>
             <?php
-                 $hotels = $mysql->select("select * from _tbl_hotels where HotelID='".$_GET['hotel']."'");
+                 $hotels = $mysql->select("select * from _tbl_hotels where  HotelID='".$_GET['hotel']."'");
                  foreach($hotels as $hotel) {
              ?>  
               <div class="col-6 " style="text-align: center;margin-bottom:10px;">
@@ -65,12 +68,12 @@
              <div class="row  mt-3">
                 <div class="col-12">
                     <label>Package</label>
-                    <select class="form-control" name="adult"  id="adult"> / 
+                    <select class="form-control" name="PackageID"  id="PackageID"> / 
                     <?php
-                        $packages = $mysql->select("select * from _tbl_hotels_packages where HotelID='".$_GET['hotel']."'");
+                        $packages = $mysql->select("select * from _tbl_hotels_packages where IsActive='1' and HotelID='".$_GET['hotel']."'");
                         foreach($packages as $package) {
                             ?>
-                            <option value="<?php echo $package['HotelPackageID'];?>"><?php echo $package['PackageName'];?> (Rs. <?php echo $package['Price'];?>)</option>
+                            <option value="<?php echo $package['HotelPackageID'];?>"><?php echo $package['PackageName'];?> <strike>(Rs. <?php echo $package['Price'];?>)</strike>  (Offer Rs. <?php echo $package['OfferPrice'];?>)</option>
                             <?php
                         }
                     ?>

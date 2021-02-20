@@ -66,7 +66,7 @@ $("#Password").blur(function () {
 <body class="login">
     <div class="wrapper wrapper-login">
         <div class="container container-login animated fadeIn">
-            <h3 class="text-center"> <img src="https://www.trip78.in/images/logo_trip78.png" style="height:128px;margin:0px auto"><br><br>Admin Sign In</h3>
+            <h3 class="text-center"> Admin Sign In</h3>
             <form method="POST" action="" onsubmit="return SubmitLogin();">
                 <div class="login-form">
                 <div class="form-group form-floating-label">

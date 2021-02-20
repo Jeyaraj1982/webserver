@@ -26,7 +26,7 @@
                 <label>Select Vechile</label>
                </div>
            <?php
-                 $vechiles = $mysql->select("select * from _tbl_taxi order by taxi_order");
+                 $vechiles = $mysql->select("select * from _tbl_taxi where IsActive='1' order by taxi_order");
                  foreach($vechiles as $vechile) {
              ?>  
               <div class="col-6 ">

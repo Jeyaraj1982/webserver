@@ -1,0 +1,564 @@
+[2021-02-17 00:00:42]	select * from _tbl_taxi where TaxiTypeID='11'
+[2021-02-17 00:07:36]	select * from _tbl_foods
+[2021-02-17 00:08:53]	select * from _tbl_taxi where IsActive='1' order by taxi_order
+[2021-02-17 00:09:36]	select * from _tbl_hotel_citynames where isactive='1' order by CityName
+[2021-02-17 00:09:36]	select * from _tbl_hotels where IsActive='1' and HotelCityNameID='3'
+[2021-02-17 00:09:36]	select * from _tbl_hotels where IsActive='1' and HotelCityNameID='1'
+[2021-02-17 00:09:36]	select * from _tbl_hotels where IsActive='1' and HotelCityNameID='2'
+[2021-02-17 02:05:49]	select * from _tbl_taxi where TaxiTypeID='1'
+[2021-02-17 02:06:12]	select * from _tbl_taxi where TaxiTypeID='2'
+[2021-02-17 02:06:47]	select * from _tbl_taxi where TaxiTypeID='3'
+[2021-02-17 02:07:21]	select * from _tbl_taxi where TaxiTypeID='8'
+[2021-02-17 02:07:56]	select * from _tbl_taxi where TaxiTypeID='7'
+[2021-02-17 02:08:30]	select * from _tbl_taxi where TaxiTypeID='6'
+[2021-02-17 02:09:05]	select * from _tbl_taxi where TaxiTypeID='5'
+[2021-02-17 02:09:40]	select * from _tbl_taxi where TaxiTypeID='10'
+[2021-02-17 02:10:17]	select * from _tbl_taxi where TaxiTypeID='9'
+[2021-02-17 02:10:59]	select * from _tbl_taxi where TaxiTypeID='11'
+[2021-02-17 06:56:17]	select * from _tbl_admin where UserName='admin@klxgroups.com' and Password='123456' 
+[2021-02-17 06:56:27]	select * from _tbl_booking_taxi   order by TaxiBookingID DESC
+[2021-02-17 06:56:27]	select * from _tbl_taxi where TaxiTypeID='11'
+[2021-02-17 06:56:31]	select * from _tbl_taxi where IsActive='1' 
+[2021-02-17 06:56:41]	select * from _tbl_booking_hotel order by HotelBookingID DESC
+[2021-02-17 06:56:48]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName 
+[2021-02-17 06:56:59]	select * from _tbl_hotels where IsActive='1' order by HotelID desc
+[2021-02-17 06:56:59]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-17 06:56:59]	select * from _tbl_hotels_packages where  IsActive='1' and HotelID='4'
+[2021-02-17 06:56:59]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-17 06:56:59]	select * from _tbl_hotels_packages where  IsActive='1' and HotelID='3'
+[2021-02-17 06:56:59]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-17 06:56:59]	select * from _tbl_hotels_packages where  IsActive='1' and HotelID='2'
+[2021-02-17 06:56:59]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-17 06:56:59]	select * from _tbl_hotels_packages where  IsActive='1' and HotelID='1'
+[2021-02-17 06:57:32]	select * from _tbl_hotels where md5(HotelID)='a87ff679a2f3e71d9181a67b7542122c'
+[2021-02-17 06:57:32]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName
+[2021-02-17 06:57:38]	select * from _tbl_hotels where IsActive='1' order by HotelID desc
+[2021-02-17 06:57:38]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-17 06:57:38]	select * from _tbl_hotels_packages where  IsActive='1' and HotelID='4'
+[2021-02-17 06:57:38]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-17 06:57:38]	select * from _tbl_hotels_packages where  IsActive='1' and HotelID='3'
+[2021-02-17 06:57:38]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-17 06:57:38]	select * from _tbl_hotels_packages where  IsActive='1' and HotelID='2'
+[2021-02-17 06:57:38]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-17 06:57:38]	select * from _tbl_hotels_packages where  IsActive='1' and HotelID='1'
+[2021-02-17 06:57:42]	select * from _tbl_hotels where md5(HotelID)='eccbc87e4b5ce2fe28308fd9f2a7baf3'
+[2021-02-17 06:57:42]	select * from _tbl_hotels where md5(HotelID)='eccbc87e4b5ce2fe28308fd9f2a7baf3'
+[2021-02-17 06:57:42]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName
+[2021-02-17 06:58:24]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName 
+[2021-02-17 06:58:27]	select * from _tbl_hotel_citynames where HotelCityNameID='3'
+[2021-02-17 06:58:27]	select * from _tbl_hotel_citynames where HotelCityNameID='3'
+[2021-02-17 06:58:31]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName 
+[2021-02-17 06:58:42]	select * from _tbl_hotels where IsActive='1' order by HotelID desc
+[2021-02-17 06:58:42]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-17 06:58:42]	select * from _tbl_hotels_packages where  IsActive='1' and HotelID='4'
+[2021-02-17 06:58:42]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-17 06:58:42]	select * from _tbl_hotels_packages where  IsActive='1' and HotelID='3'
+[2021-02-17 06:58:42]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-17 06:58:42]	select * from _tbl_hotels_packages where  IsActive='1' and HotelID='2'
+[2021-02-17 06:58:42]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-17 06:58:42]	select * from _tbl_hotels_packages where  IsActive='1' and HotelID='1'
+[2021-02-17 06:58:46]	select * from _tbl_hotels_packages where IsActive='1' and md5(HotelID)='a87ff679a2f3e71d9181a67b7542122c'
+[2021-02-17 06:58:48]	select * from _tbl_tour
+[2021-02-17 06:58:48]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tour' doesn't exist
+[2021-02-17 06:59:13]	select * from _tbl_booking_hotel order by HotelBookingID DESC
+[2021-02-17 06:59:20]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName 
+[2021-02-17 06:59:24]	select * from _tbl_hotels where IsActive='1' order by HotelID desc
+[2021-02-17 06:59:24]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-17 06:59:24]	select * from _tbl_hotels_packages where  IsActive='1' and HotelID='4'
+[2021-02-17 06:59:24]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-17 06:59:24]	select * from _tbl_hotels_packages where  IsActive='1' and HotelID='3'
+[2021-02-17 06:59:24]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-17 06:59:24]	select * from _tbl_hotels_packages where  IsActive='1' and HotelID='2'
+[2021-02-17 06:59:24]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-17 06:59:24]	select * from _tbl_hotels_packages where  IsActive='1' and HotelID='1'
+[2021-02-17 06:59:27]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName
+[2021-02-17 06:59:46]	select * from _tbl_hotels where IsActive='1' order by HotelID desc
+[2021-02-17 06:59:46]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-17 06:59:46]	select * from _tbl_hotels_packages where  IsActive='1' and HotelID='4'
+[2021-02-17 06:59:46]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-17 06:59:46]	select * from _tbl_hotels_packages where  IsActive='1' and HotelID='3'
+[2021-02-17 06:59:46]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-17 06:59:46]	select * from _tbl_hotels_packages where  IsActive='1' and HotelID='2'
+[2021-02-17 06:59:46]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-17 06:59:46]	select * from _tbl_hotels_packages where  IsActive='1' and HotelID='1'
+[2021-02-17 06:59:50]	select * from _tbl_hotels where md5(HotelID)='a87ff679a2f3e71d9181a67b7542122c'
+[2021-02-17 06:59:50]	select * from _tbl_hotels where md5(HotelID)='a87ff679a2f3e71d9181a67b7542122c'
+[2021-02-17 06:59:50]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName
+[2021-02-17 06:59:59]	select * from _tbl_hotels where IsActive='1' order by HotelID desc
+[2021-02-17 06:59:59]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-17 06:59:59]	select * from _tbl_hotels_packages where  IsActive='1' and HotelID='4'
+[2021-02-17 06:59:59]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-17 06:59:59]	select * from _tbl_hotels_packages where  IsActive='1' and HotelID='3'
+[2021-02-17 06:59:59]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-17 06:59:59]	select * from _tbl_hotels_packages where  IsActive='1' and HotelID='2'
+[2021-02-17 06:59:59]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-17 06:59:59]	select * from _tbl_hotels_packages where  IsActive='1' and HotelID='1'
+[2021-02-17 07:00:00]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName
+[2021-02-17 10:05:25]	select * from _tbl_foods
+[2021-02-17 10:17:58]	select * from _tbl_admin where UserName='admin@klxgroups.com' and Password='123456' 
+[2021-02-17 10:18:03]	select * from _tbl_booking_hotel order by HotelBookingID DESC
+[2021-02-17 10:18:07]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName 
+[2021-02-17 10:18:10]	select * from _tbl_hotels where IsActive='1' order by HotelID desc
+[2021-02-17 10:18:10]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-17 10:18:10]	select * from _tbl_hotels_packages where  IsActive='1' and HotelID='4'
+[2021-02-17 10:18:10]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-17 10:18:10]	select * from _tbl_hotels_packages where  IsActive='1' and HotelID='3'
+[2021-02-17 10:18:10]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-17 10:18:10]	select * from _tbl_hotels_packages where  IsActive='1' and HotelID='2'
+[2021-02-17 10:18:10]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-17 10:18:10]	select * from _tbl_hotels_packages where  IsActive='1' and HotelID='1'
+[2021-02-17 10:18:28]	select * from _tbl_booking_hotel order by HotelBookingID DESC
+[2021-02-17 10:18:32]	select * from _tbl_booking_hotel order by HotelBookingID DESC
+[2021-02-17 10:24:57]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName 
+[2021-02-17 10:27:24]	select * from _tbl_foods_citynames where IsActive='1' order by CityName 
+[2021-02-17 10:27:58]	select * from _tbl_foods_citynames where IsActive='1' order by CityName 
+[2021-02-17 10:28:08]	select * from _tbl_foods_citynames where IsActive='1' order by CityName 
+[2021-02-17 10:28:12]	select * from _tbl_foods_citynames where IsActive='1' order by CityName 
+[2021-02-17 10:28:25]	select * from _tbl_foods_citynames where IsActive='1' order by CityName 
+[2021-02-17 10:28:33]	insert into `_tbl_foods_citynames` (`CityName`,`IsActive`) values ('Nagercoil','1')
+[2021-02-17 10:28:39]	insert into `_tbl_foods_citynames` (`CityName`,`IsActive`) values ('Kanyakumari','1')
+[2021-02-17 10:28:44]	insert into `_tbl_foods_citynames` (`CityName`,`IsActive`) values ('Monday Market','1')
+[2021-02-17 10:28:46]	select * from _tbl_foods_citynames where IsActive='1' order by CityName 
+[2021-02-17 10:28:53]	select * from _tbl_foods_citynames where HotelCityNameID='6'
+[2021-02-17 10:28:53]	select * from _tbl_foods_citynames where HotelCityNameID='6'
+[2021-02-17 10:29:06]	select * from _tbl_foods_citynames where HotelCityNameID='6'
+[2021-02-17 10:29:06]	update _tbl_foods_citynames set `CityName`    ='Kanya Kumari',
+                                                      `IsActive`       ='1' 
+                                                       where HotelCityNameID='6'
+[2021-02-17 10:29:06]	select * from _tbl_foods_citynames where HotelCityNameID='6'
+[2021-02-17 10:29:07]	select * from _tbl_foods_citynames where IsActive='1' order by CityName 
+[2021-02-17 10:29:25]	insert into `_tbl_foods_citynames` (`CityName`,`IsActive`) values ('Muttom','1')
+[2021-02-17 10:29:26]	select * from _tbl_foods_citynames where IsActive='1' order by CityName 
+[2021-02-17 10:29:28]	select * from _tbl_foods_citynames where HotelCityNameID='8'
+[2021-02-17 10:29:28]	select * from _tbl_foods_citynames where HotelCityNameID='8'
+[2021-02-17 10:29:31]	select * from _tbl_foods_citynames where HotelCityNameID='8'
+[2021-02-17 10:29:31]	update _tbl_foods_citynames set `CityName`    ='Muttom',
+                                                      `IsActive`       ='0' 
+                                                       where HotelCityNameID='8'
+[2021-02-17 10:29:31]	select * from _tbl_foods_citynames where HotelCityNameID='8'
+[2021-02-17 10:29:32]	select * from _tbl_foods_citynames where IsActive='1' order by CityName 
+[2021-02-17 10:29:45]	select * from _tbl_hotels where IsActive='1' order by HotelID desc
+[2021-02-17 10:29:45]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-17 10:29:45]	select * from _tbl_hotels_packages where  IsActive='1' and HotelID='4'
+[2021-02-17 10:29:45]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-17 10:29:45]	select * from _tbl_hotels_packages where  IsActive='1' and HotelID='3'
+[2021-02-17 10:29:45]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-17 10:29:45]	select * from _tbl_hotels_packages where  IsActive='1' and HotelID='2'
+[2021-02-17 10:29:45]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-17 10:29:45]	select * from _tbl_hotels_packages where  IsActive='1' and HotelID='1'
+[2021-02-17 10:54:37]	select * from _tbl_foods_hotels where IsActive='1' order by HotelID desc
+[2021-02-17 10:54:44]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName
+[2021-02-17 10:56:17]	select * from _tbl_foods_citynames where IsActive='1' order by CityName
+[2021-02-17 10:56:59]	select * from _tbl_foods_citynames where IsActive='1' order by CityName
+[2021-02-17 10:57:51]	insert into `_tbl_foods_hotels` (`HotelCityNameID`,`HotelName`,`HotelDescription`,`IsActive`,`HotelThumb`) values ('6','Maajid Food Care','Vegiteran','1','IMPS_new_logo.jpg')
+[2021-02-17 10:57:51]	select * from _tbl_foods_citynames where IsActive='1' order by CityName
+[2021-02-17 10:57:54]	select * from _tbl_foods_hotels where IsActive='1' order by HotelID desc
+[2021-02-17 10:57:54]	select * from _tbl_foods_citynames where HotelCityNameID='6'
+[2021-02-17 10:57:54]	select * from _tbl_foods_items where  IsActive='1' and FoodHotelID='6'
+[2021-02-17 10:59:53]	select * from _tbl_foods_hotels where md5(HotelID)='1679091c5a880faf6fb5e6087eb1b2dc'
+[2021-02-17 10:59:53]	select * from _tbl_foods_hotels where md5(HotelID)='1679091c5a880faf6fb5e6087eb1b2dc'
+[2021-02-17 10:59:53]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName
+[2021-02-17 11:00:40]	select * from _tbl_foods_hotels where md5(HotelID)='1679091c5a880faf6fb5e6087eb1b2dc'
+[2021-02-17 11:00:40]	select * from _tbl_foods_hotels where md5(HotelID)='1679091c5a880faf6fb5e6087eb1b2dc'
+[2021-02-17 11:00:40]	select * from _tbl_foods_citynames where IsActive='1' order by CityName
+[2021-02-17 11:01:09]	select * from _tbl_foods_hotels where md5(HotelID)='1679091c5a880faf6fb5e6087eb1b2dc'
+[2021-02-17 11:01:09]	select * from _tbl_foods_hotels where md5(HotelID)='1679091c5a880faf6fb5e6087eb1b2dc'
+[2021-02-17 11:01:09]	select * from _tbl_foods_citynames where IsActive='1' order by CityName
+[2021-02-17 11:01:27]	select * from _tbl_foods_hotels where md5(HotelID)='1679091c5a880faf6fb5e6087eb1b2dc'
+[2021-02-17 11:01:27]	update _tbl_foods_hotels set `HotelCityNameID`        = '5',
+                                                      `HotelName`      = 'Maajid Food Cabin',
+                                                      `HotelDescription`   = 'Veg, Non-Veg',
+                                                      `IsActive` = '1',
+                                                      `HotelThumb`             = 'IMPS_new_logo.jpg' where md5(HotelID)='1679091c5a880faf6fb5e6087eb1b2dc'
+[2021-02-17 11:01:27]	select * from _tbl_foods_hotels where md5(HotelID)='1679091c5a880faf6fb5e6087eb1b2dc'
+[2021-02-17 11:01:27]	select * from _tbl_foods_citynames where IsActive='1' order by CityName
+[2021-02-17 11:01:29]	select * from _tbl_foods_hotels where md5(HotelID)='1679091c5a880faf6fb5e6087eb1b2dc'
+[2021-02-17 11:01:29]	select * from _tbl_foods_hotels where md5(HotelID)='1679091c5a880faf6fb5e6087eb1b2dc'
+[2021-02-17 11:01:29]	select * from _tbl_foods_citynames where IsActive='1' order by CityName
+[2021-02-17 11:02:52]	select * from _tbl_foods_hotels where md5(HotelID)='1679091c5a880faf6fb5e6087eb1b2dc'
+[2021-02-17 11:02:52]	update _tbl_foods_hotels set `HotelCityNameID`        = '5',
+                                                      `HotelName`      = 'Maajid Food Cabin',
+                                                      `HotelDescription`   = 'Veg, Non-Veg',
+                                                      `IsActive` = '1',
+                                                      `HotelThumb`             = 'Pepper Residency.png' where md5(HotelID)='1679091c5a880faf6fb5e6087eb1b2dc'
+[2021-02-17 11:02:52]	select * from _tbl_foods_hotels where md5(HotelID)='1679091c5a880faf6fb5e6087eb1b2dc'
+[2021-02-17 11:02:52]	select * from _tbl_foods_citynames where IsActive='1' order by CityName
+[2021-02-17 11:03:47]	select * from _tbl_foods_hotels where md5(HotelID)='1679091c5a880faf6fb5e6087eb1b2dc'
+[2021-02-17 11:03:47]	select * from _tbl_foods_hotels where md5(HotelID)='1679091c5a880faf6fb5e6087eb1b2dc'
+[2021-02-17 11:03:47]	select * from _tbl_foods_citynames where IsActive='1' order by CityName
+[2021-02-17 11:04:27]	select * from _tbl_foods_hotels where IsActive='1' order by HotelID desc
+[2021-02-17 11:04:27]	select * from _tbl_foods_citynames where HotelCityNameID='5'
+[2021-02-17 11:04:27]	select * from _tbl_foods_items where  IsActive='1' and FoodHotelID='6'
+[2021-02-17 11:05:00]	select * from _tbl_hotels where md5(HotelID)='1679091c5a880faf6fb5e6087eb1b2dc'
+[2021-02-17 11:05:00]	select * from _tbl_hotel_citynames where IsActive='1' order by CityName
+[2021-02-17 11:06:06]	select * from _tbl_foods_hotels where md5(HotelID)='1679091c5a880faf6fb5e6087eb1b2dc'
+[2021-02-17 11:06:06]	select * from _tbl_foods_citynames where IsActive='1' order by CityName
+[2021-02-17 11:06:22]	select * from _tbl_foods_hotels where md5(HotelID)='1679091c5a880faf6fb5e6087eb1b2dc'
+[2021-02-17 11:06:22]	select * from _tbl_foods_citynames where IsActive='1' order by CityName
+[2021-02-17 11:06:33]	select * from _tbl_foods_hotels where IsActive='1' order by HotelID desc
+[2021-02-17 11:06:33]	select * from _tbl_foods_citynames where HotelCityNameID='5'
+[2021-02-17 11:06:33]	select * from _tbl_foods_items where  IsActive='1' and FoodHotelID='6'
+[2021-02-17 11:07:30]	select * from _tbl_foods_hotels where IsActive='1' order by HotelID desc
+[2021-02-17 11:07:30]	select * from _tbl_foods_citynames where HotelCityNameID='5'
+[2021-02-17 11:07:30]	select * from _tbl_foods_items where  IsActive='1' and FoodHotelID='6'
+[2021-02-17 11:07:35]	select * from _tbl_foods_hotels where IsActive='1' order by HotelID desc
+[2021-02-17 11:07:35]	select * from _tbl_foods_citynames where HotelCityNameID='5'
+[2021-02-17 11:07:35]	select * from _tbl_foods_items where  IsActive='1' and FoodHotelID='6'
+[2021-02-17 11:07:38]	select * from _tbl_foods_hotels where IsActive='1' order by HotelID desc
+[2021-02-17 11:07:38]	select * from _tbl_foods_citynames where HotelCityNameID='5'
+[2021-02-17 11:07:38]	select * from _tbl_foods_items where  IsActive='1' and FoodHotelID='6'
+[2021-02-17 11:07:41]	select * from _tbl_hotels_packages where IsActive='1' and md5(HotelID)='1679091c5a880faf6fb5e6087eb1b2dc'
+[2021-02-17 11:10:22]	select * from _tbl_foods_hotels where IsActive='1' order by HotelID desc
+[2021-02-17 11:10:22]	select * from _tbl_foods_citynames where HotelCityNameID='5'
+[2021-02-17 11:10:22]	select * from _tbl_foods_items where  IsActive='1' and FoodHotelID='6'
+[2021-02-17 11:10:46]	select * from _tbl_foods_hotels where IsActive='1' order by HotelID desc
+[2021-02-17 11:10:46]	select * from _tbl_foods_citynames where HotelCityNameID='5'
+[2021-02-17 11:10:46]	select * from _tbl_foods_items where  IsActive='1' and FoodHotelID='6'
+[2021-02-17 11:10:50]	select * from _tbl_foods_items where IsActive='1' and md5(HotelID)='1679091c5a880faf6fb5e6087eb1b2dc'
+[2021-02-17 11:10:50]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'HotelID' in 'where clause'
+[2021-02-17 11:11:26]	select * from _tbl_foods_items where IsActive='1' and md5(HotelID)='1679091c5a880faf6fb5e6087eb1b2dc'
+[2021-02-17 11:11:26]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'HotelID' in 'where clause'
+[2021-02-17 11:13:11]	select * from _tbl_tour
+[2021-02-17 11:13:11]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tour' doesn't exist
+[2021-02-17 11:13:43]	select * from _tbl_tour
+[2021-02-17 11:13:43]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tour' doesn't exist
+[2021-02-17 11:13:46]	select * from _tbl_foods_items where IsActive='1' and md5(HotelID)='1679091c5a880faf6fb5e6087eb1b2dc'
+[2021-02-17 11:13:46]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'HotelID' in 'where clause'
+[2021-02-17 11:13:52]	select * from _tbl_tour
+[2021-02-17 11:13:52]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tour' doesn't exist
+[2021-02-17 11:14:00]	select * from _tbl_tour
+[2021-02-17 11:14:00]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tour' doesn't exist
+[2021-02-17 11:14:05]	select * from _tbl_foods_items where IsActive='1' and md5(HotelID)='1679091c5a880faf6fb5e6087eb1b2dc'
+[2021-02-17 11:14:05]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'HotelID' in 'where clause'
+[2021-02-17 11:14:07]	select * from _tbl_tour
+[2021-02-17 11:14:07]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tour' doesn't exist
+[2021-02-17 11:16:22]	select * from _tbl_tour
+[2021-02-17 11:16:22]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tour' doesn't exist
+[2021-02-17 11:25:32]	select * from _tbl_foods_hotels where  md5(HotelID)='1679091c5a880faf6fb5e6087eb1b2dc'
+[2021-02-17 11:25:32]	insert into `_tbl_foods_items` (`HotelCityNameID`,`HotelID`,`ProductName`,`Price`,`FoodThumb`,`OfferPrice`,`Description`) values ('5','6','briyani','300','Biryani_Home.jpg','200','')
+[2021-02-17 11:25:32]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'HotelCityNameID' in 'field list'
+[2021-02-17 11:25:32]	select * from _tbl_tour
+[2021-02-17 11:25:32]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tour' doesn't exist
+[2021-02-17 11:25:43]	select * from _tbl_foods_items where IsActive='1' and md5(HotelID)='1679091c5a880faf6fb5e6087eb1b2dc'
+[2021-02-17 11:25:43]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'HotelID' in 'where clause'
+[2021-02-17 11:25:45]	select * from _tbl_foods_items where IsActive='1' and md5(HotelID)='1679091c5a880faf6fb5e6087eb1b2dc'
+[2021-02-17 11:25:45]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'HotelID' in 'where clause'
+[2021-02-17 11:26:22]	select * from _tbl_tour
+[2021-02-17 11:26:22]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tour' doesn't exist
+[2021-02-17 11:28:25]	select * from _tbl_foods_hotels where  md5(HotelID)='1679091c5a880faf6fb5e6087eb1b2dc'
+[2021-02-17 11:28:25]	insert into `_tbl_foods_items` (`FoodHotelCityNameID`,`FoodHotelID`,`ProductName`,`Price`,`FoodThumb`,`OfferPrice`,`Description`) values ('5','6','briyani','300','Biryani_Home.jpg','200','Briyani')
+[2021-02-17 11:28:25]	select * from _tbl_tour
+[2021-02-17 11:28:25]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_tour' doesn't exist
+[2021-02-17 11:28:57]	select * from _tbl_foods_items where IsActive='1' and md5(HotelID)='1679091c5a880faf6fb5e6087eb1b2dc'
+[2021-02-17 11:28:57]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'HotelID' in 'where clause'
+[2021-02-17 11:29:37]	select * from _tbl_foods_items where IsActive='1' and md5(FoodHotelID)='1679091c5a880faf6fb5e6087eb1b2dc'
+[2021-02-17 11:30:22]	select * from _tbl_foods_items where IsActive='1' and md5(FoodHotelID)='1679091c5a880faf6fb5e6087eb1b2dc'
+[2021-02-17 11:30:33]	select * from _tbl_foods_hotels where IsActive='1' order by HotelID desc
+[2021-02-17 11:30:33]	select * from _tbl_foods_citynames where HotelCityNameID='5'
+[2021-02-17 11:30:33]	select * from _tbl_foods_items where  IsActive='1' and FoodHotelID='6'
+[2021-02-17 11:30:37]	select * from _tbl_foods_items where IsActive='1' and md5(FoodHotelID)='1679091c5a880faf6fb5e6087eb1b2dc'
+[2021-02-17 11:49:57]	select * from _tbl_hotels_packages  where md5(HotelPackageID)='8f14e45fceea167a5a36dedd4bea2543'
+[2021-02-17 11:49:57]	select * from _tbl_hotels_packages  where md5(HotelPackageID)='8f14e45fceea167a5a36dedd4bea2543'
+[2021-02-17 11:51:17]	select * from _tbl_hotels_packages where IsActive='1' and md5(HotelID)='d41d8cd98f00b204e9800998ecf8427e'
+[2021-02-17 11:51:23]	select * from _tbl_foods_hotels where IsActive='1' order by HotelID desc
+[2021-02-17 11:51:23]	select * from _tbl_foods_citynames where HotelCityNameID='5'
+[2021-02-17 11:51:23]	select * from _tbl_foods_items where  IsActive='1' and FoodHotelID='6'
+[2021-02-17 11:51:26]	select * from _tbl_foods_items where IsActive='1' and md5(FoodHotelID)='1679091c5a880faf6fb5e6087eb1b2dc'
+[2021-02-17 11:52:21]	select * from _tbl_foods_items where IsActive='1' and md5(FoodHotelID)='1679091c5a880faf6fb5e6087eb1b2dc'
+[2021-02-17 11:52:22]	select * from _tbl_foods_items where IsActive='1' and md5(FoodHotelID)='1679091c5a880faf6fb5e6087eb1b2dc'
+[2021-02-17 11:52:42]	select * from _tbl_foods_items where IsActive='1' and md5(FoodHotelID)='1679091c5a880faf6fb5e6087eb1b2dc'
+[2021-02-17 11:52:44]	select * from _tbl_foods_items where IsActive='1' and md5(FoodHotelID)='1679091c5a880faf6fb5e6087eb1b2dc'
+[2021-02-17 11:52:50]	select * from _tbl_hotels_packages  where md5(HotelPackageID)='8f14e45fceea167a5a36dedd4bea2543'
+[2021-02-17 11:52:50]	select * from _tbl_hotels_packages  where md5(HotelPackageID)='8f14e45fceea167a5a36dedd4bea2543'
+[2021-02-17 11:57:08]	select * from _tbl_foods_items  where md5(FoodID)='8f14e45fceea167a5a36dedd4bea2543'
+[2021-02-17 11:57:08]	select * from _tbl_foods_items  where md5(FoodID)='8f14e45fceea167a5a36dedd4bea2543'
+[2021-02-17 11:57:37]	select * from _tbl_foods_items  where md5(FoodID)='8f14e45fceea167a5a36dedd4bea2543'
+[2021-02-17 11:57:37]	select * from _tbl_foods_items  where md5(FoodID)='8f14e45fceea167a5a36dedd4bea2543'
+[2021-02-17 11:58:18]	select * from _tbl_foods_items where IsActive='1' and md5(FoodHotelID)='d41d8cd98f00b204e9800998ecf8427e'
+[2021-02-17 11:58:32]	select * from _tbl_foods_items where IsActive='1' and md5(FoodHotelID)='d41d8cd98f00b204e9800998ecf8427e'
+[2021-02-17 11:58:34]	select * from _tbl_foods_items  where md5(FoodID)='8f14e45fceea167a5a36dedd4bea2543'
+[2021-02-17 11:58:34]	select * from _tbl_foods_items  where md5(FoodID)='8f14e45fceea167a5a36dedd4bea2543'
+[2021-02-17 11:58:50]	select * from _tbl_foods_items  where md5(FoodID)='8f14e45fceea167a5a36dedd4bea2543'
+[2021-02-17 11:58:50]	select * from _tbl_foods_items  where md5(FoodID)='8f14e45fceea167a5a36dedd4bea2543'
+[2021-02-17 11:58:53]	select * from _tbl_foods_items where IsActive='1' and md5(FoodHotelID)='1679091c5a880faf6fb5e6087eb1b2dc'
+[2021-02-17 11:58:59]	select * from _tbl_foods_items  where md5(FoodID)='8f14e45fceea167a5a36dedd4bea2543'
+[2021-02-17 11:58:59]	select * from _tbl_foods_items  where md5(FoodID)='8f14e45fceea167a5a36dedd4bea2543'
+[2021-02-17 11:59:32]	select * from _tbl_foods_items  where md5(FoodID)='8f14e45fceea167a5a36dedd4bea2543'
+[2021-02-17 11:59:32]	update _tbl_hotels_packages set 
+                                                                   ProductName ='briyani',
+                                                                   IsActive    ='1',
+                                                                   Price       ='3000',
+                                                                   OfferPrice  ='2000',
+                                                                   Description ='Briyani' where  md5(FoodID)='8f14e45fceea167a5a36dedd4bea2543'
+[2021-02-17 11:59:32]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'FoodID' in 'where clause'
+[2021-02-17 11:59:32]	select * from _tbl_foods_items  where md5(FoodID)='8f14e45fceea167a5a36dedd4bea2543'
+[2021-02-17 12:00:05]	select * from _tbl_foods_items  where md5(FoodID)='8f14e45fceea167a5a36dedd4bea2543'
+[2021-02-17 12:00:05]	update _tbl_foods_items set 
+                                                                   ProductName ='briyani',
+                                                                   IsActive    ='1',
+                                                                   Price       ='3001',
+                                                                   OfferPrice  ='2001',
+                                                                   Description ='Briyani' where  md5(FoodID)='8f14e45fceea167a5a36dedd4bea2543'
+[2021-02-17 12:00:05]	select * from _tbl_foods_items  where md5(FoodID)='8f14e45fceea167a5a36dedd4bea2543'
+[2021-02-17 12:00:19]	select * from _tbl_foods_items  where md5(FoodID)='8f14e45fceea167a5a36dedd4bea2543'
+[2021-02-17 12:00:19]	update _tbl_foods_items set 
+                                                                   ProductName ='briyani1',
+                                                                   IsActive    ='1',
+                                                                   Price       ='3001',
+                                                                   OfferPrice  ='2001',
+                                                                   Description ='Briyani 1' where  md5(FoodID)='8f14e45fceea167a5a36dedd4bea2543'
+[2021-02-17 12:00:19]	select * from _tbl_foods_items  where md5(FoodID)='8f14e45fceea167a5a36dedd4bea2543'
+[2021-02-17 12:01:20]	select * from _tbl_foods_items  where md5(FoodID)='8f14e45fceea167a5a36dedd4bea2543'
+[2021-02-17 12:01:20]	update _tbl_foods_items set 
+                                                                   ProductName ='briyani1',
+                                                                   IsActive    ='1',
+                                                                   Price       ='3001',
+                                                                   FoodThumb   ='jewellery_67167e8a-ce21-11e7-ac2e-6fc61cbabe91.jpg',
+                                                                   OfferPrice  ='2001',
+                                                                   Description ='Briyani 1' where  md5(FoodID)='8f14e45fceea167a5a36dedd4bea2543'
+[2021-02-17 12:01:20]	select * from _tbl_foods_items  where md5(FoodID)='8f14e45fceea167a5a36dedd4bea2543'
+[2021-02-17 12:01:45]	select * from _tbl_foods_items  where md5(FoodID)='8f14e45fceea167a5a36dedd4bea2543'
+[2021-02-17 12:01:45]	update _tbl_foods_items set 
+                                                                   ProductName ='briyani1',
+                                                                   IsActive    ='1',
+                                                                   Price       ='3001',
+                                                                   FoodThumb   ='Biryani_Home.jpg',
+                                                                   OfferPrice  ='2001',
+                                                                   Description ='Briyani 1' where  md5(FoodID)='8f14e45fceea167a5a36dedd4bea2543'
+[2021-02-17 12:01:45]	select * from _tbl_foods_items  where md5(FoodID)='8f14e45fceea167a5a36dedd4bea2543'
+[2021-02-17 12:01:50]	select * from _tbl_foods_items where IsActive='1' and md5(FoodHotelID)='1679091c5a880faf6fb5e6087eb1b2dc'
+[2021-02-17 12:02:01]	select * from _tbl_hotels_packages  where md5(HotelPackageID)='8f14e45fceea167a5a36dedd4bea2543'
+[2021-02-17 12:02:01]	select * from _tbl_hotels_packages  where md5(HotelPackageID)='8f14e45fceea167a5a36dedd4bea2543'
+[2021-02-17 12:04:18]	select * from _tbl_foods_items  where md5(FoodID)='8f14e45fceea167a5a36dedd4bea2543'
+[2021-02-17 12:04:18]	select * from _tbl_foods_items  where md5(FoodID)='8f14e45fceea167a5a36dedd4bea2543'
+[2021-02-17 12:04:47]	select * from _tbl_foods_items  where md5(FoodID)='8f14e45fceea167a5a36dedd4bea2543'
+[2021-02-17 12:04:47]	select * from _tbl_foods_items  where md5(FoodID)='8f14e45fceea167a5a36dedd4bea2543'
+[2021-02-17 12:05:39]	select * from _tbl_foods_items  where md5(FoodID)='8f14e45fceea167a5a36dedd4bea2543'
+[2021-02-17 12:05:39]	select * from _tbl_foods_items  where md5(FoodID)='8f14e45fceea167a5a36dedd4bea2543'
+[2021-02-17 12:05:51]	select * from _tbl_foods_items  where md5(FoodID)='8f14e45fceea167a5a36dedd4bea2543'
+[2021-02-17 12:05:51]	select * from _tbl_foods_items  where md5(FoodID)='8f14e45fceea167a5a36dedd4bea2543'
+[2021-02-17 12:05:57]	select * from _tbl_hotels where IsActive='1' order by HotelID desc
+[2021-02-17 12:05:57]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-17 12:05:57]	select * from _tbl_hotels_packages where  IsActive='1' and HotelID='4'
+[2021-02-17 12:05:57]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-17 12:05:57]	select * from _tbl_hotels_packages where  IsActive='1' and HotelID='3'
+[2021-02-17 12:05:57]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-17 12:05:57]	select * from _tbl_hotels_packages where  IsActive='1' and HotelID='2'
+[2021-02-17 12:05:57]	select * from _tbl_hotel_citynames where HotelCityNameID='2'
+[2021-02-17 12:05:57]	select * from _tbl_hotels_packages where  IsActive='1' and HotelID='1'
+[2021-02-17 12:06:02]	select * from _tbl_foods_items  where md5(FoodID)='8f14e45fceea167a5a36dedd4bea2543'
+[2021-02-17 12:06:02]	select * from _tbl_foods_items  where md5(FoodID)='8f14e45fceea167a5a36dedd4bea2543'
+[2021-02-17 12:06:15]	select * from _tbl_foods_items  where md5(FoodID)='8f14e45fceea167a5a36dedd4bea2543'
+[2021-02-17 12:06:15]	select * from _tbl_foods_items  where md5(FoodID)='8f14e45fceea167a5a36dedd4bea2543'
+[2021-02-17 12:06:17]	select * from _tbl_foods_hotels where IsActive='1' order by HotelID desc
+[2021-02-17 12:06:17]	select * from _tbl_foods_citynames where HotelCityNameID='5'
+[2021-02-17 12:06:17]	select * from _tbl_foods_items where  IsActive='1' and FoodHotelID='6'
+[2021-02-17 12:06:29]	select * from _tbl_foods_items where IsActive='1' and md5(FoodHotelID)='1679091c5a880faf6fb5e6087eb1b2dc'
+[2021-02-17 12:06:33]	select * from _tbl_foods_items  where md5(FoodID)='8f14e45fceea167a5a36dedd4bea2543'
+[2021-02-17 12:06:33]	select * from _tbl_foods_items  where md5(FoodID)='8f14e45fceea167a5a36dedd4bea2543'
+[2021-02-17 12:07:40]	select * from _tbl_foods
+[2021-02-17 12:07:40]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_foods' doesn't exist
+[2021-02-17 12:09:43]	select * from _tbl_foods_citynames where isactive='1' order by CityName
+[2021-02-17 12:09:43]	select * from _tbl_foods_hotels where IsActive='1' and HotelCityNameID='6'
+[2021-02-17 12:09:43]	select * from _tbl_foods_hotels where IsActive='1' and HotelCityNameID='7'
+[2021-02-17 12:09:43]	select * from _tbl_foods_hotels where IsActive='1' and HotelCityNameID='5'
+[2021-02-17 12:09:43]	select * from _tbl_foods
+[2021-02-17 12:09:43]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_foods' doesn't exist
+[2021-02-17 12:10:41]	select * from _tbl_foods_citynames where isactive='1' order by CityName
+[2021-02-17 12:10:41]	select * from _tbl_foods_hotels where IsActive='1' and HotelCityNameID='6'
+[2021-02-17 12:10:41]	select * from _tbl_foods_hotels where IsActive='1' and HotelCityNameID='7'
+[2021-02-17 12:10:41]	select * from _tbl_foods_hotels where IsActive='1' and HotelCityNameID='5'
+[2021-02-17 12:11:08]	select * from _tbl_foods_citynames where isactive='1' order by CityName
+[2021-02-17 12:11:08]	select * from _tbl_foods_hotels where IsActive='1' and HotelCityNameID='6'
+[2021-02-17 12:11:08]	select * from _tbl_foods_hotels where IsActive='1' and HotelCityNameID='7'
+[2021-02-17 12:11:08]	select * from _tbl_foods_hotels where IsActive='1' and HotelCityNameID='5'
+[2021-02-17 12:11:38]	select * from _tbl_foods_citynames where isactive='1' order by CityName
+[2021-02-17 12:11:38]	select * from _tbl_foods_hotels where IsActive='1' and HotelCityNameID='6'
+[2021-02-17 12:11:38]	select * from _tbl_foods_hotels where IsActive='1' and HotelCityNameID='7'
+[2021-02-17 12:11:38]	select * from _tbl_foods_hotels where IsActive='1' and HotelCityNameID='5'
+[2021-02-17 12:11:52]	select * from _tbl_foods_citynames where isactive='1' order by CityName
+[2021-02-17 12:11:52]	select * from _tbl_foods_hotels where IsActive='1' and HotelCityNameID='6'
+[2021-02-17 12:11:52]	select * from _tbl_foods_hotels where IsActive='1' and HotelCityNameID='7'
+[2021-02-17 12:11:52]	select * from _tbl_foods_hotels where IsActive='1' and HotelCityNameID='5'
+[2021-02-17 12:42:19]	select * from _tbl_foods_citynames where isactive='1' order by CityName
+[2021-02-17 12:42:19]	select * from _tbl_foods_hotels where IsActive='1' and HotelCityNameID='6'
+[2021-02-17 12:42:19]	select * from _tbl_foods_hotels where IsActive='1' and HotelCityNameID='7'
+[2021-02-17 12:42:19]	select * from _tbl_foods_hotels where IsActive='1' and HotelCityNameID='5'
+[2021-02-17 12:43:46]	select * from _tbl_foods_citynames where isactive='1' order by CityName
+[2021-02-17 12:43:46]	select * from _tbl_foods_hotels where IsActive='1' and HotelCityNameID='6'
+[2021-02-17 12:43:46]	select * from _tbl_foods_hotels where IsActive='1' and HotelCityNameID='7'
+[2021-02-17 12:43:46]	select * from _tbl_foods_hotels where IsActive='1' and HotelCityNameID='5'
+[2021-02-17 12:43:48]	select * from _tbl_foods_hotels where IsActive='1' and HotelCityNameID='5'
+[2021-02-17 12:46:15]	select * from _tbl_foods_hotels where IsActive='1' and HotelCityNameID='5'
+[2021-02-17 12:46:19]	select * from _tbl_foods
+[2021-02-17 12:46:19]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_foods' doesn't exist
+[2021-02-17 12:46:57]	select * from _tbl_foods
+[2021-02-17 12:46:57]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxgroup_database._tbl_foods' doesn't exist
+[2021-02-17 12:48:26]	select * from _tbl_foods_items where FoodHotelID='6'
+[2021-02-17 12:48:44]	select * from _tbl_foods_items where FoodHotelID='6'
+[2021-02-17 12:48:50]	select * from _tbl_foods_items where FoodHotelID='6'
+[2021-02-17 12:49:17]	select * from _tbl_foods_items where FoodHotelID='6'
+[2021-02-17 13:05:32]	select * from _tbl_foods_items where FoodHotelID='6'
+[2021-02-17 13:07:47]	select * from _tbl_foods_items where FoodHotelID='6'
+[2021-02-17 13:08:04]	select * from _tbl_foods_items where FoodHotelID='6'
+[2021-02-17 13:08:33]	select * from _tbl_foods_items where FoodHotelID='6'
+[2021-02-17 13:09:07]	select * from _tbl_foods_items where FoodHotelID='6'
+[2021-02-17 13:09:14]	select * from _tbl_foods_items where FoodHotelID='6'
+[2021-02-17 13:13:00]	select * from _tbl_foods_items where FoodHotelID='6'
+[2021-02-17 13:13:04]	select * from _tbl_foods_items where FoodHotelID='6'
+[2021-02-17 13:13:29]	select * from _tbl_foods_items where FoodHotelID='6'
+[2021-02-17 13:13:34]	select * from _tbl_foods_items where FoodHotelID='6'
+[2021-02-17 13:13:44]	select * from _tbl_foods_items where FoodHotelID='6'
+[2021-02-17 13:13:59]	select * from _tbl_foods_items where FoodHotelID='6'
+[2021-02-17 13:14:01]	select * from _tbl_foods_items where FoodHotelID='6'
+[2021-02-17 13:14:15]	select * from _tbl_foods_items where FoodHotelID='6'
+[2021-02-17 13:14:29]	select * from _tbl_foods_items where FoodHotelID='6'
+[2021-02-17 13:14:44]	select * from _tbl_foods_items where FoodHotelID='6'
+[2021-02-17 13:15:18]	select * from _tbl_foods_items where FoodHotelID='6'
+[2021-02-17 13:15:21]	select * from _tbl_foods_items where FoodHotelID='6'
+[2021-02-17 15:27:26]	select * from _tbl_foods_items where FoodHotelID='6'
+[2021-02-17 15:28:34]	select * from _tbl_foods_items where FoodHotelID='6'
+[2021-02-17 15:28:38]	select * from _tbl_foods_items where FoodHotelID='6'
+[2021-02-17 15:30:33]	select * from _tbl_foods_items where FoodHotelID='6'
+[2021-02-17 15:30:59]	select * from _tbl_foods_items where FoodHotelID='6'
+[2021-02-17 15:31:20]	select * from _tbl_foods_items where FoodHotelID='6'
+[2021-02-17 16:15:20]	select * from _tbl_foods_items where FoodID='7'
+[2021-02-17 16:15:41]	select * from _tbl_foods_items where FoodID='7'
+[2021-02-17 16:17:04]	select * from _tbl_foods_items where FoodID='7'
+[2021-02-17 16:17:04]	select * from _tbl_foods_hotels where HotelID='6'
+[2021-02-17 16:20:33]	select * from _tbl_foods_items where FoodID='7'
+[2021-02-17 16:20:33]	select * from _tbl_foods_hotels where HotelID='6'
+[2021-02-17 16:20:33]	select * from _tbl_foods_citynames where HotelCityNameID='5'
+[2021-02-17 16:20:54]	select * from _tbl_foods_items where FoodID='7'
+[2021-02-17 16:20:54]	select * from _tbl_foods_hotels where HotelID='6'
+[2021-02-17 16:20:54]	select * from _tbl_foods_citynames where HotelCityNameID='5'
+[2021-02-17 16:21:13]	select * from _tbl_foods_items where FoodID='7'
+[2021-02-17 16:21:13]	select * from _tbl_foods_hotels where HotelID='6'
+[2021-02-17 16:21:13]	select * from _tbl_foods_citynames where HotelCityNameID='5'
+[2021-02-17 16:21:27]	select * from _tbl_foods_items where FoodID='7'
+[2021-02-17 16:21:27]	select * from _tbl_foods_hotels where HotelID='6'
+[2021-02-17 16:21:27]	select * from _tbl_foods_citynames where HotelCityNameID='5'
+[2021-02-17 16:21:47]	select * from _tbl_foods_items where FoodID='7'
+[2021-02-17 16:21:47]	select * from _tbl_foods_hotels where HotelID='6'
+[2021-02-17 16:21:47]	select * from _tbl_foods_citynames where HotelCityNameID='5'
+[2021-02-17 16:22:02]	select * from _tbl_foods_items where FoodID='7'
+[2021-02-17 16:22:02]	select * from _tbl_foods_hotels where HotelID='6'
+[2021-02-17 16:22:02]	select * from _tbl_foods_citynames where HotelCityNameID='5'
+[2021-02-17 16:22:21]	select * from _tbl_foods_items where FoodID='7'
+[2021-02-17 16:22:21]	select * from _tbl_foods_hotels where HotelID='6'
+[2021-02-17 16:22:21]	select * from _tbl_foods_citynames where HotelCityNameID='5'
+[2021-02-17 16:23:19]	select * from _tbl_foods_items where FoodID='7'
+[2021-02-17 16:23:19]	select * from _tbl_foods_hotels where HotelID='6'
+[2021-02-17 16:23:19]	select * from _tbl_foods_citynames where HotelCityNameID='5'
+[2021-02-17 16:23:55]	select * from _tbl_foods_items where FoodID='7'
+[2021-02-17 16:23:55]	select * from _tbl_foods_hotels where HotelID='6'
+[2021-02-17 16:23:55]	select * from _tbl_foods_citynames where HotelCityNameID='5'
+[2021-02-17 16:24:42]	select * from _tbl_foods_items where FoodID='7'
+[2021-02-17 16:24:42]	select * from _tbl_foods_hotels where HotelID='6'
+[2021-02-17 16:24:42]	select * from _tbl_foods_citynames where HotelCityNameID='5'
+[2021-02-17 16:24:59]	select * from _tbl_foods_items where FoodID='7'
+[2021-02-17 16:24:59]	select * from _tbl_foods_hotels where HotelID='6'
+[2021-02-17 16:24:59]	select * from _tbl_foods_citynames where HotelCityNameID='5'
+[2021-02-17 16:26:41]	select * from _tbl_foods_items where FoodID='7'
+[2021-02-17 16:26:41]	select * from _tbl_foods_hotels where HotelID='6'
+[2021-02-17 16:26:41]	select * from _tbl_foods_citynames where HotelCityNameID='5'
+[2021-02-17 16:27:10]	select * from _tbl_foods_items where FoodID='7'
+[2021-02-17 16:27:10]	select * from _tbl_foods_hotels where HotelID='6'
+[2021-02-17 16:27:10]	select * from _tbl_foods_citynames where HotelCityNameID='5'
+[2021-02-17 16:27:27]	select * from _tbl_foods_items where FoodID='7'
+[2021-02-17 16:27:27]	select * from _tbl_foods_hotels where HotelID='6'
+[2021-02-17 16:27:27]	select * from _tbl_foods_citynames where HotelCityNameID='5'
+[2021-02-17 16:29:41]	select * from _tbl_foods_items where FoodID='7'
+[2021-02-17 16:29:41]	select * from _tbl_foods_hotels where HotelID='6'
+[2021-02-17 16:29:41]	select * from _tbl_foods_citynames where HotelCityNameID='5'
+[2021-02-17 16:33:29]	select * from _tbl_foods_items where FoodID='7'
+[2021-02-17 16:33:29]	select * from _tbl_foods_hotels where HotelID='6'
+[2021-02-17 16:33:29]	select * from _tbl_foods_citynames where HotelCityNameID='5'
+[2021-02-17 16:34:50]	select * from _tbl_foods_items where FoodID='7'
+[2021-02-17 16:34:50]	select * from _tbl_foods_hotels where HotelID='6'
+[2021-02-17 16:34:50]	select * from _tbl_foods_citynames where HotelCityNameID='5'
+[2021-02-17 16:35:04]	select * from _tbl_foods_items where FoodID='7'
+[2021-02-17 16:35:04]	select * from _tbl_foods_hotels where HotelID='6'
+[2021-02-17 16:35:04]	select * from _tbl_foods_citynames where HotelCityNameID='5'
+[2021-02-17 16:35:15]	select * from _tbl_foods_items where FoodID='7'
+[2021-02-17 16:35:15]	select * from _tbl_foods_hotels where HotelID='6'
+[2021-02-17 16:35:15]	select * from _tbl_foods_citynames where HotelCityNameID='5'
+[2021-02-17 16:35:22]	select * from _tbl_foods_items where FoodID='7'
+[2021-02-17 16:35:22]	select * from _tbl_foods_hotels where HotelID='6'
+[2021-02-17 16:35:22]	select * from _tbl_foods_citynames where HotelCityNameID='5'
+[2021-02-17 16:59:23]	select * from _tbl_foods_items where FoodID='7'
+[2021-02-17 16:59:23]	select * from _tbl_foods_hotels where HotelID='6'
+[2021-02-17 16:59:23]	select * from _tbl_foods_citynames where HotelCityNameID='5'
+[2021-02-17 16:59:56]	select * from _tbl_foods_items where FoodID='7'
+[2021-02-17 16:59:56]	select * from _tbl_foods_hotels where HotelID='6'
+[2021-02-17 16:59:56]	select * from _tbl_foods_citynames where HotelCityNameID='5'
+[2021-02-17 17:16:46]	select * from _tbl_foods_items where FoodID='7'
+[2021-02-17 17:16:46]	select * from _tbl_foods_hotels where HotelID='6'
+[2021-02-17 17:16:46]	select * from _tbl_foods_citynames where HotelCityNameID='5'
+[2021-02-17 17:20:19]	select * from _tbl_foods_items where FoodID='7'
+[2021-02-17 17:20:19]	select * from _tbl_foods_hotels where HotelID='6'
+[2021-02-17 17:20:19]	select * from _tbl_foods_citynames where HotelCityNameID='5'
+[2021-02-17 17:20:49]	select * from _tbl_foods_items where FoodID='7'
+[2021-02-17 17:20:49]	select * from _tbl_foods_hotels where HotelID='6'
+[2021-02-17 17:20:49]	select * from _tbl_foods_citynames where HotelCityNameID='5'
+[2021-02-17 17:21:01]	insert into `_tbl_booking_food` (`CustomerName`,`CustomerMobileNumber`,`CustomerDetails`,`AddressLine1`,`AddressLine2`,`Orderon`) values ('Nagercoil','9944872965','sgasgsahg','','Chennai','2021-02-17 17:21:01')
+[2021-02-17 17:21:01]	select * from _tbl_foods_items where FoodID='7'
+[2021-02-17 17:21:01]	select * from _tbl_foods_hotels where HotelID='6'
+[2021-02-17 17:21:01]	select * from _tbl_foods_citynames where HotelCityNameID='5'
+[2021-02-17 17:21:01]	insert into `_tbl_booking_food_items` (`FoodOrderID`,`HotelID`,`ProductID`,`ProductName`,`Qty`,`Price`,`OfferPrice`,`Amount`) values ('1','6','7','briyani1','1','3001','2001','2001')
+[2021-02-17 17:21:50]	select * from _tbl_booking_hotel order by HotelBookingID DESC
+[2021-02-17 17:32:35]	select * from _tbl_booking_food order by FoodOrderID DESC
+[2021-02-17 17:32:46]	select * from _tbl_booking_food order by FoodOrderID DESC
+[2021-02-17 17:32:52]	select * from _tbl_booking_food order by FoodOrderID DESC
+[2021-02-17 17:33:45]	select * from _tbl_booking_food order by FoodOrderID DESC
+[2021-02-17 17:35:12]	select * from _tbl_booking_food order by FoodOrderID DESC
+[2021-02-17 17:35:32]	select * from _tbl_booking_food order by FoodOrderID DESC
+[2021-02-17 17:37:36]	select * from _tbl_booking_food order by FoodOrderID DESC
+[2021-02-17 17:38:51]	select * from _tbl_booking_food order by FoodOrderID DESC
+[2021-02-17 17:43:09]	select * from _tbl_booking_food where FoodOrderID='1'
+[2021-02-17 17:43:09]	select * from _tbl_booking_food_items where FoodOrderID='1'
+[2021-02-17 17:43:30]	select * from _tbl_booking_food where FoodOrderID='1'
+[2021-02-17 17:43:30]	select * from _tbl_booking_food_items where FoodOrderID='1'
+[2021-02-17 17:44:18]	select * from _tbl_booking_food where FoodOrderID='1'
+[2021-02-17 17:44:18]	select * from _tbl_booking_food_items where FoodOrderID='1'
+[2021-02-17 17:45:31]	select * from _tbl_booking_food where FoodOrderID='1'
+[2021-02-17 17:45:31]	select * from _tbl_booking_food_items where FoodOrderID='1'
+[2021-02-17 17:45:31]	select * from _tbl_foods_hotels where HotelID='6'
+[2021-02-17 17:45:31]	select * from _tbl_foods_citynames where HotelCityNameID='5'
+[2021-02-17 19:24:09]	select * from _tbl_admin where UserName='admin@klxgroups.com' and Password='123456' 
+[2021-02-17 19:24:16]	select * from _tbl_booking_food order by FoodOrderID DESC
+[2021-02-17 19:24:24]	select * from _tbl_foods_citynames where IsActive='1' order by CityName 
+[2021-02-17 19:24:35]	select * from _tbl_foods_hotels where IsActive='1' order by HotelID desc
+[2021-02-17 19:24:35]	select * from _tbl_foods_citynames where HotelCityNameID='5'
+[2021-02-17 19:24:35]	select * from _tbl_foods_items where  IsActive='1' and FoodHotelID='6'
+[2021-02-17 19:24:42]	select * from _tbl_foods_citynames where IsActive='1' order by CityName
+[2021-02-17 19:24:46]	select * from _tbl_foods_hotels where IsActive='1' order by HotelID desc
+[2021-02-17 19:24:46]	select * from _tbl_foods_citynames where HotelCityNameID='5'
+[2021-02-17 19:24:46]	select * from _tbl_foods_items where  IsActive='1' and FoodHotelID='6'
+[2021-02-17 19:52:40]	select * from _tbl_booking_food order by FoodOrderID DESC
+[2021-02-17 19:52:43]	select * from _tbl_booking_food where FoodOrderID='1'
+[2021-02-17 19:52:43]	select * from _tbl_booking_food_items where FoodOrderID='1'
+[2021-02-17 19:52:43]	select * from _tbl_foods_hotels where HotelID='6'
+[2021-02-17 19:52:43]	select * from _tbl_foods_citynames where HotelCityNameID='5'
+[2021-02-17 20:21:29]	select * from _tbl_hotel_citynames where isactive='1' order by CityName
+[2021-02-17 20:21:29]	select * from _tbl_hotels where IsActive='1' and HotelCityNameID='3'
+[2021-02-17 20:21:29]	select * from _tbl_hotels where IsActive='1' and HotelCityNameID='1'
+[2021-02-17 20:21:29]	select * from _tbl_hotels where IsActive='1' and HotelCityNameID='2'
+[2021-02-17 20:21:32]	select * from _tbl_hotels where IsActive='1' and HotelCityNameID='2'
+[2021-02-17 20:21:33]	select * from _tbl_hotels where  HotelID='1'
+[2021-02-17 20:21:33]	select * from _tbl_hotels_packages where IsActive='1' and HotelID='1'
+[2021-02-17 20:44:21]	select * from _tbl_hotels where  HotelID='1'
+[2021-02-17 20:44:21]	select * from _tbl_hotels_packages where IsActive='1' and HotelID='1'
+[2021-02-17 20:44:34]	select * from _tbl_hotels where  HotelID='1'
+[2021-02-17 20:44:34]	select * from _tbl_hotels_packages where IsActive='1' and HotelID='1'
+[2021-02-17 20:44:47]	select * from _tbl_foods_citynames where isactive='1' order by CityName
+[2021-02-17 20:44:47]	select * from _tbl_foods_hotels where IsActive='1' and HotelCityNameID='6'
+[2021-02-17 20:44:47]	select * from _tbl_foods_hotels where IsActive='1' and HotelCityNameID='7'
+[2021-02-17 20:44:47]	select * from _tbl_foods_hotels where IsActive='1' and HotelCityNameID='5'
+[2021-02-17 20:44:49]	select * from _tbl_foods_hotels where IsActive='1' and HotelCityNameID='5'
+[2021-02-17 20:44:51]	select * from _tbl_foods_items where FoodHotelID='6'
+[2021-02-17 20:44:56]	select * from _tbl_foods_items where FoodHotelID='6'
+[2021-02-17 20:45:07]	select * from _tbl_foods_items where FoodHotelID='6'
+[2021-02-17 20:45:43]	select * from _tbl_foods_items where FoodID='7'
+[2021-02-17 20:45:43]	select * from _tbl_foods_hotels where HotelID='6'
+[2021-02-17 20:45:43]	select * from _tbl_foods_citynames where HotelCityNameID='5'
