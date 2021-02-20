@@ -1,0 +1,323 @@
+a:hover, a:focus, a:active {
+    color: #d81416;
+}
+.btn-primary {
+	background-color: #d81416;
+	border-color: #d81416;
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+	background-color: #d81416;
+	border-color: #d81416;
+}
+.btn-primary:hover, .btn-primary:focus {
+	background-color: #d81416;
+}
+.btn-primary.disabled, .btn-primary:disabled {
+	color: #fff;
+	background-color: #d81416;
+	border-color: #d81416;
+}
+.owl-controls .owl-dot:hover {
+	background: #d81416;
+}
+.owl-controls .owl-dot.active {
+	background: #d81416;
+}
+.owl-theme .owl-nav [class*="owl-"]:hover {
+	background: #d81416;
+}
+.loader {
+	background: #d81416;
+}
+.light .classy-navbar-toggler .navbarToggler span {
+	background-color: #d81416;
+}
+.light .classynav ul li.megamenu-item ul li .find-out-more-btn {
+	color: #d81416;
+}
+.main-header-area .classynav ul li a.active, .main-header-area .classynav ul li a:hover {
+	color: #d81416;
+}
+.main-header-area .classynav ul li .dropdown .active a {
+	color: #d81416;
+}
+.light .classynav ul li.megamenu-item ul .active a {
+	color: #d81416;
+}
+.main-header-area .searchbtn:hover {
+	color: #d81416 !important;
+}
+.main-header-area .light .classynav ul li .dropdown li .dropdown li a:hover {
+	color: #d81416;
+}
+.main-header-area .light .classynav ul li .dropdown li .dropdown .active a {
+	color: #d81416;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.main-header-area .searchbtn {
+		background-color: #d81416 !important;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.main-header-area .searchbtn {
+		background-color: #d81416;
+	}
+}
+.loader #largeBox {
+    background-color: #d81416;
+}
+#search .close {
+	color: #d81416;
+}
+#search .close:hover {
+    background: #d81416;
+    border-color: #d81416;
+}
+.top-header p a:hover {
+	color: #d81416;
+}
+.top-header ul li a:hover, .top-header ul li a:focus {
+    background: #d81416;
+    border-color: #d81416;
+}
+.top-header .btn {
+    border: 1px solid #d81416;
+}
+.top-header .btn-primary:hover, .top-header .btn-primary:focus {
+	color: #d81416;
+}
+.top-header .dropdown-toggle:hover {
+    color: #d81416;
+}
+.top-header .dropdown-menu {
+	background: #d81416;
+}
+.top-header .dropdown-item:focus, .top-header .dropdown-item:hover {
+	color: #d81416;
+}
+.upcoming-bike-content p {
+    color: #d81416;
+}
+.single-upcoming-bike:hover .upcoming-bike-content {
+    background: #d81416;
+}
+.features-box i {
+    color: #d81416;
+}
+.categories-item:hover::before {
+	background: #d81416;
+}
+.single-product .sale {
+	color: #d81416;
+	border: 1px dashed #d81416;
+}
+.single-product .discount {
+	background: #d81416;
+}
+.single-product .product-content p {
+	color: #d81416;
+}
+.modal-body .product-body .availability span {
+	color: #d81416;
+}
+.modal-body .product-body ul li span {
+	color: #d81416;
+}
+.modal-body .product-body .wishlist-compare:hover {
+	border-color: #d81416;
+    background: #d81416;
+}
+.advertise-area::before {
+	background: #d81416;
+}
+.fun-facts {
+	background: #d81416;
+}
+.fun-facts:hover i {
+	color: #d81416;
+}
+.fun-facts:hover .count {
+	color: #d81416;
+}
+.fun-facts:hover span {
+	color: #d81416;
+}
+.sale-product-content h4 a:hover {
+	color: #d81416;
+}
+.sale-product-content .price p span {
+	color: #d81416;
+}
+.blog-area .owl-controls .owl-dot.active, .blog-area .owl-controls .owl-dot:hover {
+	background: #d81416;
+}
+.single-blog-post:hover .date {
+	background: #d81416;
+}
+.post-content ul li a:hover {
+	color: #d81416;
+}
+.blog-details .thumb .date {
+	background: #d81416;
+}
+.blog-details-content .blockquote {
+	background: #d81416;
+}
+.blog-details-content .content-text ul li i {
+	color: #d81416;
+}
+.blog-details-footer {
+	background: #d81416;
+}
+.blog-details .about-admin {
+	background: #d81416;
+}
+.single-post-comments .content a {
+    color: #d81416;
+}
+.single-feedback span {
+	color: #d81416;
+}
+.instagram-item::before {
+	background: #d81416;
+}
+.page-title ul li.active {
+    color: #d81416;
+}
+.page-title ul li a:hover {
+	color: #d81416;
+}
+.timeline > li > .timeline-badge {
+	background-color: #d81416;
+}
+.timeline-heading p i {
+	color: #d81416;
+}
+.side-bar .title::before {
+	background: #d81416;
+}
+.side-bar .inputGroup input:checked ~ label {
+    color: #d81416;
+}
+.side-bar .inputGroup input:checked ~ label::after {
+	background-color: #d81416;
+	border-color: #d81416;
+}
+.side-bar form button:hover {
+	background: #d81416;
+}
+.side-bar .tags ul li a {
+    border: 1px solid #d81416;
+}
+.side-bar .tags ul li a:hover {
+	background: #d81416;
+}
+.side-bar .recent-post-content ul li a:hover {
+	color: #d81416;
+}
+.our-staff .pic::before {
+	background: #d81416;
+}
+.our-staff .social {
+	background: #d81416;
+}
+.our-staff .social li a:hover{
+    color: #d81416;
+}
+.single-staff:hover .pic {
+	background: #d81416;
+}
+.single-staff .post {
+	color: #d81416;
+}
+.staff-details span {
+	color: #d81416;
+}
+.staff-details .staff-contact-info li i {
+	color: #d81416;
+}
+.single-gallery .picture-icon a {
+	background: #d81416;
+}
+.product-details .product-review ul .customer-review a {
+    color: #d81416;
+}
+.product-details .price h4 span + span {
+    color: #d81416;
+}
+.tabset > label {
+    border: 1px dashed #d81416;
+}
+.tabset > label:hover, .tabset > input:focus + label {
+    background: #d81416;
+}
+.tabset > input:checked + label {
+    background: #d81416;
+}
+.tab-panel {
+    border: 1px dashed #d81416;
+}
+.checkout-area .title::before {
+	background: #d81416;
+}
+.payment-holder input[type="radio"]:checked ~ .check {
+	background: #d81416;
+	border-color: #d81416;
+}
+.payment-holder .place-order {
+	background: #d81416;
+}
+.payment-holder .place-order .btn {
+	color: #d81416;
+}
+.card {
+	border: 1px solid #d81416;
+}
+.card-header {
+	background: #d81416;
+}
+.login-content p a:hover {
+	color: #d81416;
+}
+.login-content h4 a {
+	color: #d81416;
+}
+.register-content h4 a {
+	color: #d81416;
+}
+.contact-box i {
+	border: 1px dashed #d81416;
+	color: #d81416;
+}
+.contact-box:hover i {
+    background: #d81416;
+}
+.contact-box p a:hover {
+	color: #d81416;
+}
+.page-item.active .page-link {
+	background-color: #d81416;
+	border-color: #d81416;
+}
+.page-link:hover {
+	background-color: #d81416;
+	border-color: #d81416;
+}
+.footer-area .widgets .usefull-links li a:hover {
+	color: #d81416;
+}
+.footer-area .widgets .contact-us li i {
+	color: #d81416;
+}
+.footer-area .widgets .contact-us li a:hover {
+	color: #d81416;
+}
+.footer-area .widgets .subscribe-us button {
+	background: #d81416;
+}
+.copyright-area p a {
+    color: #d81416;
+}
+.go-top:hover {
+	background-color: #d81416;
+}
