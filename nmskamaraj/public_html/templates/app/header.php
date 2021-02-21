@@ -140,7 +140,7 @@
                                 </li>
                                 <li><a href="#">GALLERY</a>
                                     <ul class="dropdown">
-                                        <li><a href="<?= $_SERVER['BASE_URL']; ?>galleryaicte">AICTE</a></li>
+                                        <li><a href="<?= $_SERVER['BASE_URL']; ?>galleryaicte">A.I.C.T.E</a></li>
                                         <li><a href="<?= $_SERVER['BASE_URL']; ?>Gallery">CAMPUS</a> </li>
                                     </ul>
                                 </li>

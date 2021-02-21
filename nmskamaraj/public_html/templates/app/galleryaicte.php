@@ -23,11 +23,14 @@
         <div class="container">
           <div class="section-content">
             <div class="row">
+            <div class="col-md-12" style="text-align: right;">
+                <a href="assets/AICTEApprovalCopy.pdf" target="_blank"><img src="assets/downloadpdf.png" style="border-radius: 10px;border: 2px solid #ccc;box-shadow: 2px 5px 10px#ccc;"></a>
+            </div>
               <div class="col-md-12">
                 <!-- Portfolio Filter -->
                 <div class="portfolio-filter">
                   <a href="#" class="active" data-filter="*">All</a>
-                  <a href="#branding" class="" data-filter=".branding">AICTE</a>
+                  <a href="#branding" class="" data-filter=".branding">A.I.C.T.E</a>
                 </div>
                 <!-- End Portfolio Filter -->
               
