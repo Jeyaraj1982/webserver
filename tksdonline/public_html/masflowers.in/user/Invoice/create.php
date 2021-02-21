@@ -1,25 +1,22 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" rel="stylesheet" type="text/css" media="all"/>
- 
-
-
 <style>
 .ui-state-active h4,
 .ui-state-active h4:visited {
-  /*  color: #26004d ;  */
+   
   color:black;
 }
 
 .ui-menu-item{
-    height: 80px;
+    height: 40px;
     border: 1px solid #ececf9;
     color:black;
 }                                                                                       
 .ui-widget-content .ui-state-active {
     background-color: orange !important;                                                                             
     border: none !important;
-}
+}                                                                                                           
 .list_item_container {
     width:740px;
     height: 80px;
@@ -56,7 +53,7 @@ input:focus{
                             <div class="card">
                                 <div class="card-body">
                                     <div style="text-align:center">
-                                        <img src="http://masflowers.in/admin/assets/accessdenied.png" style="width: 12%;"><br> <br>
+                                        <img src="https://masflowers.in/admin/assets/accessdenied.png" style="width: 12%;"><br> <br>
                                         <a href="dashboard.php?action=Customers/add&fr=invoice" class="btn btn-outline-success btn-border">Add Customer</a>
                                     </div>
                                 </div>
@@ -75,7 +72,7 @@ input:focus{
                             <div class="card">
                                 <div class="card-body">
                                     <div style="text-align:center">
-                                        <img src="http://masflowers.in/admin/assets/accessdenied.png" style="width: 12%;"><br> <br>
+                                        <img src="https://masflowers.in/admin/assets/accessdenied.png" style="width: 12%;"><br> <br>
                                         <a href="dashboard.php?action=Products/add&fr=invoice" class="btn btn-outline-success btn-border">Add Product</a>
                                     </div>
                                 </div>
@@ -87,92 +84,28 @@ input:focus{
         </div>
    <?php } else {  ?>
 <?php 
- if (isset($_POST['invoice_btn'])) {  
-     $cstmr = $mysql->select("select * from _tbl_sales_customers where CustomerID='".$_POST['UserDetails']."'");
-     $random = rand(100,999);
-     $order_code ="IN00".$random;
-     
-        $CashTwoThousand      =  $_POST['TwoThousand'];
-        $CashFiveHundred      =  $_POST['FiveHundred'];
-        $CashTwoHundred       =  $_POST['TwoHundred'];
-        $CashOneHundred       =  $_POST['OneHundred'];
-        $CashFiftyRupees      =  $_POST['FiftyRupees'];
-        $CashTwentyRupees     =  $_POST['TwentyRupees'];
-        $CashTenRupees        =  $_POST['TenRupees'];
-        $Coins                =  $_POST['Coins'];
-        $TotalCashReceived    =  $_POST['TotalCashReceived'];
-        $ReturnCashToCustomer =  $_POST['ReturnCashToCustomer'];
-     
-       $id = $mysql->insert("invoice_order",array("user_id"                 => $cstmr[0]['CustomerID'],
-                                                  "order_code"              => $order_code,
-                                                  "order_receiver_name"     => $cstmr[0]['CustomerName'],
-                                                  "order_receiver_address"  => $cstmr[0]['AddressLine1'].",".$cstmr[0]['AddressLine2'].",".$cstmr[0]['AddressLine3'],
-                                                 // "order_total_before_tax"  => $_POST['totalAftertax'],
-                                                 //  "order_total_tax"         => $_POST['taxAmount'],
-                                                 // "order_tax_per"           => $_POST['taxRate'],
-                                                  "order_total_after_tax"   => $_POST['subTotal'],
-                                                  "order_amount_paid"       => "0.00",
-                                                  "order_total_amount_due"  => $_POST['subTotal'],
-                                                  "TransactionMode"           => $_POST['TransactionMode'],
-                                                 // "CashTwoThousand"         => $CashTwoThousand,
-                                                // "CashFiveHundred"         => $CashFiveHundred,
-                                                //  "CashTwoHundred"          => $CashTwoHundred,
-                                                //  "CashOneHundred"          => $CashOneHundred,
-                                                //  "CashFiftyRupees"         => $CashFiftyRupees,
-                                                //  "CashTwentyRupees"        => $CashTwentyRupees,
-                                                //  "CashTenRupees"           => $CashTenRupees,
-                                                //  "Coins"                   => $Coins,
-                                                //  "TotalCashReceived"       => $TotalCashReceived,
-                                                //  "ReturnCashToCustomer"    => $ReturnCashToCustomer,
-                                                  "note"                    => $_POST['notes']));
-       $g = $mysql->qry; 
-                                                
-for ($i = 0; $i < count($_POST['productCode']); $i++) {
-     $pid= $mysql->insert("invoice_order_item",array("order_id"                 => $id,
-                                                  "item_code"                => $_POST['productCode'][$i],
-                                                  "item_name"                => $_POST['productName'][$i],
-                                                  "order_item_quantity"      => $_POST['quantity'][$i],
-                                                  "order_item_price"         => $_POST['price'][$i],
-                                                  "order_item_final_amount"  => $_POST['total'][$i]));
-      $f = $mysql->qry;                                                                                           
-}
-   $ReceiptCode ="RT00".$random; 
-              $rid= $mysql->insert("receipt",array("receipt_code"             => $ReceiptCode,
-                                                  "order_id"                 => $id,
-                                                  "order_date"               => date("Y-m-d H:i:s"),
-                                                  "user_id"                  => $cstmr[0]['CustomerID'],
-                                                  "receipt_amount"           => $_POST['amountPaid'],
-                                                  "invoice_due_amount"       => number_format($_POST['subTotal']-$_POST['amountPaid'],2),
-                                                  "receipt_date"             => date("Y-m-d H:i:s")));
-                                                  
-              $paidamount = $_POST['amountPaid'];                                                              
-              $dueamount  = $_POST['subTotal']-$paidamount;
-                   $mysql->execute("update invoice_order set `order_amount_paid`      ='".$paidamount."',
-                                                             `order_total_amount_due` ='".$dueamount."',                    
-                                                             `receipt_id`             ='".$rid."',
-                                                             `receipt_date`             ='".date("Y-m-d H:i:s")."'
-                                                              where `order_id`='".$id."'");  
-      if(sizeof($id)>0 && sizeof($pid)>0){                                                                           
-                  $successmessage= $g;   
-                 ?>                                                                   
-            <script>
-            $(document).ready(function() {                                                                        
-                successpopup('<?php echo MD5($id);?>','<?php echo $_POST['amountPaid'];?>');
-             });
-            </script>                                                                                     
-     <?php unset($_POST); }else {  ?>
-        <script>
-             $(document).ready(function() {
-                swal({ 
-                  title: "Error",
-                   text: "Error Create Invoice",
-                    type: "error" 
-                  });
-             });
-            </script>
-    <?php  }
- }   ?>
-<script src="http://masflowers.in/admin/assets/js/invoice/invoice.js"></script>
+$cstmr = $mysql->select("select * from _tbl_sales_customers where md5(CustomerID)='".$_GET['csid']."'");
+?>
+  <script type="text/javascript" src="assets/js/google_jsapi.js"></script>
+<script type="text/javascript">
+   google.load("elements", "1", {
+            packages: "transliteration"          });
+      function onLoad() {
+        var options = {
+          sourceLanguage: 'en',
+          destinationLanguage: ['ta'], 
+          shortcutKey: 'ctrl+g',
+          transliterationEnabled: true        };
+             var control =
+            new google.elements.transliteration.TransliterationControl(options);
+        var ids = ["CustomerNameTamil","ShopNameTamil"];
+        control.makeTransliteratable(ids);
+        //control.showControl('translControl'); 
+         control.c.qc.t13n.c[3].c.d.keyup[0].ia.F.p = 'https://www.google.com';
+        }
+      google.setOnLoadCallback(onLoad);
+</script>
+<script src="https://masflowers.in/admin/assets/js/invoice/invoice.js"></script>
 
 <div class="main-panel">
     <div class="container">
@@ -181,15 +114,19 @@ for ($i = 0; $i < count($_POST['productCode']); $i++) {
                 <div class="col-md-12">                                                                      
                     <div class="card">
                         <div class="container content-invoice">
+                        
                             <form action="" id="invoice-form" method="post" class="invoice-form" role="form" novalidate="">
                             <input type="hidden" name="TransactionMode" id="TransactionMode" class="form-control">
+                            <input type="hidden" name="AmountPaid" id="AmountPaid" class="form-control">
+                            <input type="hidden" name="TotalCashReceived" id="TotalCashReceived" class="form-control">
+                            <input type="hidden" name="ReturnCashToCustomer" id="ReturnCashToCustomer" class="form-control">
                                 <div class="load-animate animated fadeInUp">
                                     <div class="row">
                                         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
                                             <h2 class="title">Sales Screen</h2>
                                         </div>
                                     </div><br>
-                                    <input type="hidden" name="UserDetails" id="UserDetails" value="<?php echo (isset($_POST['UserDetails']) ? $_POST['UserDetails'] : md5($_GET['csid']));?>">
+                                    <input type="hidden" name="UserDetails" id="UserDetails" value="<?php echo (isset($_POST['UserDetails']) ? $_POST['UserDetails'] : $cstmr[0]['CustomerID']);?>">
                                     <input id="currency" type="hidden" value="$">                   
                                     <div class="row" id="SearchCustomerDiv">
                                             <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 pull-right">
@@ -199,10 +136,10 @@ for ($i = 0; $i < count($_POST['productCode']); $i++) {
                                             </div>
                                             <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                                                 <button type="button" class="btn btn-primary btn-sm" style="padding: 0px 10px;" onclick="AddCustomer()">Add Customer</button> 
-                                            </div>
+                                            </div>                                                          
                                    </div> 
                                    <div class="row">  
-                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 pull-right">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pull-right">
                                             <div id="div_customerdetails">
                                                                                                          
                                             </div> 
@@ -256,18 +193,7 @@ for ($i = 0; $i < count($_POST['productCode']); $i++) {
                                                         <span class="errorstring" id="ErrsubTotal"><?php echo isset($ErrsubTotal)? $ErrsubTotal : "";?></span>
                                                     </div>
                                                 </div>
-                                                <div class="form-group row">
-                                                    <div class="col-sm-8" style="text-align: right;"><label>Amount Paid:  </label></div>
-                                                    <div class="col-sm-4">
-                                                        <div class="input-group">
-                                                            <div class="input-group-prepend">
-                                                                <span class="input-group-text" id="basic-addon1">Rs</span>
-                                                            </div>
-                                                            <input value="<?php echo (isset($_POST['amountPaid']) ? $_POST['amountPaid'] :"0.00");?>" type="text" class="form-control" name="amountPaid" id="amountPaid" placeholder="Amount Paid" style="text-align: right;">
-                                                        </div>
-                                                        <span class="errorstring" id="ErramountPaid"><?php echo isset($ErramountPaid)? $ErramountPaid : "";?></span>
-                                                    </div>
-                                                </div>
+                                               <!-- 
                                                 <div class="form-group row">
                                                     <div class="col-sm-8" style="text-align: right;"><label>Amount Due:  </label></div>
                                                     <div class="col-sm-4">
@@ -279,36 +205,38 @@ for ($i = 0; $i < count($_POST['productCode']); $i++) {
                                                         </div>
                                                         <span class="errorstring" id="ErramountDue"><?php echo isset($ErramountDue)? $ErramountDue : "";?></span>
                                                     </div>
-                                                </div>
+                                                </div> -->
                                         </div>
                                     </div>
                                     <br>
-                                    <div class="row">
+                                    <div class="row"> 
                                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="text-align:right"> 
-                                            <button type="button" class="btn btn-outline-success" onclick="CallConfirmation('<?php echo "CashSale";?>')">Cash Sale</button>
-                                            <button type="button" class="btn btn-outline-success" onclick="CallConfirmation('<?php echo "CreditSale";?>')">Credit Sale</button>
-                                            <button type="submit" style="display:none" id="invoice_btn" name="invoice_btn" class="btn btn-success">Create Invoice</button>
+											<button type="button" class="btn btn-primary" onclick="CallConfirmationSaveInvoice()">Save</button>
+                                            <button type="button" class="btn btn-success" onclick="CallConfirmationCashSale()">Cash Sale</button>
+                                            <button type="button" class="btn btn-outline-success" onclick="CallConfirmationCreditSale()">Credit Sale</button>
+                                            <button type="button" style="display:none" id="invoice_btn" name="invoice_btn" class="btn btn-success">Create Invoice</button>
+                                            <button type="button" class="btn btn-warning" onclick="CallConfirmationCancel()">Cancel</button>
                                         </div>
                                     </div>
-                                    <br><br>
+                                    <br><br>                             
                                 </div>
                                 <div class="clearfix"></div>
                             </form> 
                         </div> 
                     </div>                                                                                        
-                </div>    
+                </div>                                                                                            
             </div>    
          </div>    
     </div>    
 </div>    
-<div class="modal fade right" id="customermodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+<div class="modal fade right" id="customermodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-keyboard="false" data-backdrop="static" style="top: 0px !important;">
       <div class="modal-dialog modal-side modal-bottom-right modal-notify modal-danger" role="document" style="float: right;margin-top:0px;margin-right:-15px;max-width:650px;min-width:650px">
         <div class="modal-content" >
         <div id="customerconfrimation_text"></div>
         </div>
       </div>
     </div>
-<div class="modal fade" id="selectProductModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true"  data-keyboard="false" data-backdrop="static">
+<div class="modal fade right" id="selectProductModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true"  data-keyboard="false" data-backdrop="static">
     <div class="modal-dialog" role="document">
         <div class="modal-content">  
             <form acton="" method="post" id="Productselect">
@@ -320,7 +248,7 @@ for ($i = 0; $i < count($_POST['productCode']); $i++) {
             </div>
             <div class="modal-body">
                <!--<select name="product" id="product" class="form-control selectpicker" data-live-search="true">-->       
-               <select name="product" id="product" class="form-control">
+               <select name="product" id="product" class="form-control">                                                  
                <?php $products = $mysql->select("select * from _tbl_sales_products");?>
                <?php foreach($products as $product){ ?>
                     <option value="<?php echo $product['ProductID'];?>" <?php echo ($_POST['product']==$product['ProductID']) ? " selected='selected' " : "";?>><?php echo $product['ProductName'];?>&nbsp;&nbsp;::&nbsp;&nbsp;<?php echo "1".$product['ProductUnitName'];?>&nbsp;&nbsp;::&nbsp;&nbsp;<?php echo"RS .". $product['ProductPrice'];?></option>
@@ -335,7 +263,7 @@ for ($i = 0; $i < count($_POST['productCode']); $i++) {
     </div>
   </div>
 </div>   
-<div class="modal fade" id="AddProductModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true"  data-keyboard="false" data-backdrop="static">
+<div class="modal fade" id="AddProductModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true"  data-keyboard="false" data-backdrop="static" style="top:0px !important">
     <div class="modal-dialog modal-dialog-centered" role="document" style="float: right;margin-top:0px;margin-right:-15px;max-width:650px;min-width:650px">
         <div class="modal-content">
             <form method="POST" action="" onsubmit="return SubmitProduct();" id="addProductFrm" enctype="multipart/form-data">
@@ -346,31 +274,31 @@ for ($i = 0; $i < count($_POST['productCode']); $i++) {
                     </button>
                 </div>
                 <div class="modal-body"> 
-                    <div class="form-group form-show-validation row">
+                    <div class="form-group form-show-validation row"> 
                         <label for="name" class="col-lg-5 col-md-5 col-sm-5 mt-sm-2 text-left">BarCode</label>
                         <div class="col-lg-7 col-md-7 col-sm-7">
-                            <input type="text" class="form-control" id="BarCode" name="BarCode" placeholder="Enter BarCode"  onchange="CheckDuplicateBarCode($(this).val())" value="<?php echo (isset($_POST['BarCode']) ? $_POST['BarCode'] :"");?>">
+                            <input type="text" class="form-control" onkeypress="SwitchPN(event)"  id="BarCode" name="BarCode" placeholder="Enter BarCode"  onchange="CheckDuplicateBarCode($(this).val())" value="<?php echo (isset($_POST['BarCode']) ? $_POST['BarCode'] :"");?>">
                             <span class="errorstring" id="ErrBarCode"><?php echo isset($ErrBarCode)? $ErrBarCode : "";?></span>
                         </div>                                                     
                     </div>
                     <div class="form-group form-show-validation row">
                         <label for="name" class="col-lg-5 col-md-5 col-sm-5 mt-sm-2 text-left">Product Name (In English)<span style="color:red">*</span></label>
                         <div class="col-lg-7 col-md-7 col-sm-7">
-                            <input type="text" class="form-control" id="ProductName" name="ProductName" onchange="CheckDuplicateProductName($(this).val())" placeholder="Enter Product Name In English" value="<?php echo (isset($_POST['ProductName']) ? $_POST['ProductName'] :"");?>">
+                            <input type="text" class="form-control" onkeypress="SwitchPNT(event)" id="ProductName" name="ProductName" onchange="CheckDuplicateProductName($(this).val())" placeholder="Enter Product Name In English" value="<?php echo (isset($_POST['ProductName']) ? $_POST['ProductName'] :"");?>">
                             <span class="errorstring" id="ErrProductName"><?php echo isset($ErrProductName)? $ErrProductName : "";?></span>
                         </div>                                                     
                     </div>
                     <div class="form-group form-show-validation row">
                         <label for="name" class="col-lg-5 col-md-5 col-sm-5 mt-sm-2 text-left">Product Name (In Tamil)</label>
                         <div class="col-lg-7 col-md-7 col-sm-7">
-                            <input type="text" class="form-control" id="ProductNameTamil" name="ProductNameTamil" onchange="CheckDuplicateProductNameTamil($(this).val())" placeholder="Enter Product Name In Tamil" value="<?php echo (isset($_POST['ProductNameTamil']) ? $_POST['ProductNameTamil'] :"");?>">
+                            <input type="text" class="form-control" id="ProductNameTamil" onkeypress="SwitchPQY(event)" name="ProductNameTamil" onchange="CheckDuplicateProductNameTamil($(this).val())" placeholder="Enter Product Name In Tamil" value="<?php echo (isset($_POST['ProductNameTamil']) ? $_POST['ProductNameTamil'] :"");?>">
                             <span class="errorstring" id="ErrProductNameTamil"><?php echo isset($ErrProductNameTamil)? $ErrProductNameTamil : "";?></span>
                         </div>                                                     
                     </div>
                     <div class="form-group form-show-validation row">
                         <label for="name" class="col-lg-5 col-md-5 col-sm-5 mt-sm-2 text-left">Unit of Measurement<span style="color:red">*</span></label>                   
                         <div class="col-lg-7 col-md-7 col-sm-7">
-                            <select name="ProductQty" id="ProductQty" class="form-control">
+                            <select name="ProductQty" id="ProductQty" class="form-control" onkeypress="SwitchPPU(event)" >
                                 <option value="0" <?php echo ($_POST['ProductQty']=="0") ? " selected='selected' " : "";?>>Select Unit of Measurement</option>
                                 <?php $units = $mysql->select("select * from _tbl_units"); foreach($units as $unit){ ?>
                                 <option value="<?php echo $unit['id'];?>" <?php echo ($_POST['ProductQty']==$unit['id']) ? " selected='selected' " : "";?>> <?php echo $unit['unitname'];?></option>
@@ -382,7 +310,7 @@ for ($i = 0; $i < count($_POST['productCode']); $i++) {
                     <div class="form-group form-show-validation row">
                         <label for="name" class="col-lg-5 col-md-5 col-sm-5 mt-sm-2 text-left">Price Per Unit<span style="color:red">*</span></label>
                         <div class="col-lg-7 col-md-7 col-sm-7">
-                            <input type="text" class="form-control" id="ProductPrice" name="ProductPrice" placeholder="Enter Product Price" value="<?php echo (isset($_POST['ProductPrice']) ? $_POST['ProductPrice'] :"");?>">
+                            <input type="text" class="form-control" id="ProductPrice" name="ProductPrice" onkeypress="SwitchPDS(event)"  placeholder="Enter Product Price" value="<?php echo (isset($_POST['ProductPrice']) ? $_POST['ProductPrice'] :"");?>">
                             <span class="errorstring" id="ErrProductPrice"><?php echo isset($ErrProductPrice)? $ErrProductPrice : "";?></span>
                         </div>
                     </div>
@@ -426,7 +354,7 @@ for ($i = 0; $i < count($_POST['productCode']); $i++) {
 function successpopup(receiptid,paidamount){
     var txt = '<div class="form-group row">'
                     +'<div class="col-sm-12" style="text-align:center">'
-                        +'<img src="http://masflowers.in/admin/assets/tick.jpg" style="width:30%"><br><span>Invoice Created</span><br>'
+                        +'<img src="https://masflowers.in/admin/assets/tick.jpg" style="width:30%"><br><span>Invoice Created</span><br>'
                     +'</div>'
                +'</div>'
                 +'<div style="padding:20px;text-align:center">'
@@ -574,56 +502,56 @@ function AddCustomer(){
                            +'<div class="form-group form-show-validation row">'
                                 +'<label for="name" class="col-lg-5 col-md-5 col-sm-5 mt-sm-2 text-left">Customer Name (In English)<span style="color: red;">*</span></label>'
                                 +'<div class="col-lg-7 col-md-7 col-sm-7">'
-                                    +'<input type="text" class="form-control" id="CustomerName" name="CustomerName" onchange="CheckDuplicateCustomerName($(this).val())" placeholder="Enter Customer Name In English" value="">'
+                                    +'<input type="text" class="form-control" id="CustomerName" name="CustomerName" placeholder="Enter Customer Name In English" value="" onkeypress="SwitchCNT(event)">'
                                     +'<span class="errorstring" id="ErrCustomerName"></span>'
                                 +'</div>'                                                     
                             +'</div>'
                             +'<div class="form-group form-show-validation row">'
                                 +'<label for="name" class="col-lg-5 col-md-5 col-sm-5 mt-sm-2 text-left">Customer Name (In Tamil)</label>'
                                 +'<div class="col-lg-7 col-md-7 col-sm-7">'
-                                    +'<input type="text" class="form-control" id="CustomerNameTamil" name="CustomerNameTamil" onchange="CheckDuplicateCustomerNameTamil($(this).val())" placeholder="Enter Customer Name In Tamil" value="">'
+                                    +'<input type="text" class="form-control" id="CustomerNameTamil" name="CustomerNameTamil" placeholder="Enter Customer Name In Tamil" value="" onkeypress="SwitchCSN(event)">'
                                     +'<span class="errorstring" id="ErrCustomerNameTamil"></span>'
                                 +'</div>'                                                     
                             +'</div>'
                             +'<div class="form-group form-show-validation row">'
                                 +'<label for="name" class="col-lg-5 col-md-5 col-sm-5 mt-sm-2 text-left">Shop Name (In English)<span style="color:red">*</span></label>'
                                 +'<div class="col-lg-7 col-md-7 col-sm-7">'
-                                    +'<input type="text" class="form-control" id="ShopName" name="ShopName" placeholder="Enter Shop Name In English" onchange="CheckDuplicateShopName($(this).val())" value="<?php echo (isset($_POST['ShopName']) ? $_POST['ShopName'] :"");?>">'
+                                    +'<input type="text" class="form-control" id="ShopName" name="ShopName" placeholder="Enter Shop Name In English" onkeypress="SwitchCSNT(event)" value="<?php echo (isset($_POST['ShopName']) ? $_POST['ShopName'] :"");?>">'
                                     +'<span class="errorstring" id="ErrShopName"></span>'
                                 +'</div>'                                                     
                             +'</div>'
                             +'<div class="form-group form-show-validation row">'
                                 +'<label for="name" class="col-lg-5 col-md-5 col-sm-5 mt-sm-2 text-left">Shop Name (In Tamil)</label>'
                                 +'<div class="col-lg-7 col-md-7 col-sm-7">'
-                                    +'<input type="text" class="form-control" id="ShopNameTamil" name="ShopNameTamil" placeholder="Enter Shop Name In Tamil" onchange="CheckDuplicateShopNameTamil($(this).val())" value="<?php echo (isset($_POST['ShopNameTamil']) ? $_POST['ShopNameTamil'] :"");?>">'
+                                    +'<input type="text" class="form-control" id="ShopNameTamil" name="ShopNameTamil" onkeypress="SwitchCMN(event)" placeholder="Enter Shop Name In Tamil" value="<?php echo (isset($_POST['ShopNameTamil']) ? $_POST['ShopNameTamil'] :"");?>">'
                                     +'<span class="errorstring" id="ErrShopNameTamil"></span>'
                                 +'</div>'                                                     
                             +'</div>'
                             +'<div class="form-group form-show-validation row">'
                                 +'<label for="name" class="col-lg-5 col-md-5 col-sm-5 mt-sm-2 text-left">Mobile Number<span style="color:red">*</span></label>'
                                 +'<div class="col-lg-7 col-md-7 col-sm-7">'
-                                    +'<input type="text" class="form-control" id="MobileNumber" name="MobileNumber" maxlength="10" placeholder="Enter Mobile Number" onchange="CheckDuplicateMobileNumber($(this).val())" value="<?php echo (isset($_POST['MobileNumber']) ? $_POST['MobileNumber'] :"");?>">'
+                                    +'<input type="text" class="form-control" id="MobileNumber" name="MobileNumber" onkeypress="SwitchCAL1(event)" maxlength="10" placeholder="Enter Mobile Number" onchange="CheckDuplicateMobileNumber($(this).val())" value="<?php echo (isset($_POST['MobileNumber']) ? $_POST['MobileNumber'] :"");?>">'
                                     +'<span class="errorstring" id="ErrMobileNumber"></span>'
                                 +'</div>'                                                     
                             +'</div>'
                             +'<div class="form-group form-show-validation row">'
                                 +'<label for="name" class="col-lg-5 col-md-5 col-sm-5 mt-sm-2 text-left">Address Line 1<span style="color: red;">*</span></label>'
                                 +'<div class="col-lg-7 col-md-7 col-sm-7">'
-                                    +'<input type="text" class="form-control" id="AddressLine1" name="AddressLine1" placeholder="Enter Address Line1" value="<?php echo (isset($_POST['AddressLine1']) ? $_POST['AddressLine1'] :"");?>">'
+                                    +'<input type="text" class="form-control" id="AddressLine1" name="AddressLine1" onkeypress="SwitchCAL2(event)" placeholder="Enter Address Line1" value="<?php echo (isset($_POST['AddressLine1']) ? $_POST['AddressLine1'] :"");?>">'
                                     +'<span class="errorstring" id="ErrAddressLine1"></span>'
                                 +'</div>'                                                     
                             +'</div>'
                             +'<div class="form-group form-show-validation row">'
                                 +'<label for="name" class="col-lg-5 col-md-5 col-sm-5 mt-sm-2 text-left"></label>'
                                 +'<div class="col-lg-7 col-md-7 col-sm-7">'
-                                    +'<input type="text" class="form-control" id="AddressLine2" name="AddressLine2" placeholder="Enter Address Line2" value="">'
+                                    +'<input type="text" class="form-control" id="AddressLine2" name="AddressLine2" onkeypress="SwitchCAL3(event)" placeholder="Enter Address Line2" value="">'
                                     +'<span class="errorstring" id="ErrAddressLine2"></span>'
                                 +'</div>'                                                     
                             +'</div>'
                             +'<div class="form-group form-show-validation row">'
                                 +'<label for="name" class="col-lg-5 col-md-5 col-sm-5 mt-sm-2 text-left"></label>'
                                 +'<div class="col-lg-7 col-md-7 col-sm-7">'                               
-                                    +'<input type="text" class="form-control" id="AddressLine3" name="AddressLine3" placeholder="Enter Address Line3" value="">'
+                                    +'<input type="text" class="form-control" id="AddressLine3" name="AddressLine3"  placeholder="Enter Address Line3" value="">'
                                     +'<span class="errorstring" id="ErrAddressLine3"></span>'
                                 +'</div>'                                                     
                             +'</div>' 
@@ -658,18 +586,18 @@ function CreateCustomer() {
         }
         IsNonEmpty("AddressLine1","ErrAddressLine1","Please Enter Address Line1");   
         if(ErrorCount==0) {  
-        var loading = "<div style='padding:80px;text-align:center;color:#aaa'><img src='http://masflowers.in/admin/assets/loading.gif'  style='width:80px'><br>Processing ...</div>";                                                                                
+        var loading = "<div style='padding:80px;text-align:center;color:#aaa'><img src='https://masflowers.in/admin/assets/loading.gif'  style='width:80px'><br>Processing ...</div>";                                                                                
             var param = $("#AddCustomerFrm").serialize();
             $("#confrimation_text").html(loading);
             
-            $.post( "http://masflowers.in/admin/webservice.php?action=AddCustomer", param,function( data ) {
+            $.post( "webservice.php?action=AddCustomer", param,function( data ) {
                 var obj = JSON.parse(data); 
                 var html = "";
                 if (obj.status=="failure") {    
-                    html = "<div style='width:100%;padding:10px;background:#fff;text-align:center;color:red'><img src='http://masflowers.in/admin/assets/accessdenied.png' style='width:128px'><br><br>Transaction failed.<br>"+obj.message;
+                    html = "<div style='width:100%;padding:10px;background:#fff;text-align:center;color:red'><img src='https://masflowers.in/admin/assets/accessdenied.png' style='width:128px'><br><br>Transaction failed.<br>"+obj.message;
                     html = '<div class="form-group row">'
                                 +'<div class="col-sm-12" style="text-align:center">'
-                                    +'<img src="http://masflowers.in/admin/assets/accessdenied.png" style="width:30%"><br><span>'+obj.message+'</span>'
+                                    +'<img src="https://masflowers.in/admin/assets/accessdenied.png" style="width:30%"><br><span>'+obj.message+'</span>'
                                 +'</div>'
                             +'</div>'
                             +'<div style="padding:20px;text-align:center">'
@@ -678,7 +606,7 @@ function CreateCustomer() {
                 } else { 
                     html = '<div class="form-group row">'
                                 +'<div class="col-sm-12" style="text-align:center">'
-                                    +'<img src="http://masflowers.in/admin/assets/tick.jpg" style="width:30%"><br><span>Customer Added Successfully</span>'
+                                    +'<img src="https://masflowers.in/admin/assets/tick.jpg" style="width:30%"><br><span>Customer Added Successfully</span>'
                                 +'</div>'
                             +'</div>'
                             +'<div style="padding:20px;text-align:center">'
@@ -686,41 +614,47 @@ function CreateCustomer() {
                             +'</div>';     
                     $('#customermodal').modal("show");    
                     // $('#ConfirmationPopup').modal("show"); 
-                }                                       
+                }                                        
                 //$("#confrimation_text").html(html);
-        $('#customerconfrimation_text').html(txt);                                       
+        $('#customerconfrimation_text').html(html);                                       
             });                                                   
         }else{
             return false;                                                                                                 
         }
 }       
 function CheckDuplicateMobileNumber(MobileNumber) {
-        $.ajax({url:'http://masflowers.in/admin/webservice.php?action=CheckDuplicateMobileNumber&MobileNumber='+MobileNumber,success:function(data){
+        $.ajax({url:'webservice.php?action=CheckDuplicateMobileNumber&MobileNumber='+MobileNumber,success:function(data){
             $('#ErrMobileNumber').html(data);
         }});
     }                                                        
 function getPaidAMountValidation(paidamount) {
         var totalamount= $('#subTotal').val();
-        $.ajax({url:'http://masflowers.in/admin/webservice.php?action=CheckPaidAMountValidation&PaidAmount='+paidamount+'&TotalAmount='+totalamount,success:function(data){
+        $.ajax({url:'webservice.php?action=CheckPaidAMountValidation&PaidAmount='+paidamount+'&TotalAmount='+totalamount,success:function(data){
             $('#ErramountPaid').html(data);
         }});
     }
 function getCustomerDetails(CustomerID,fr) {   
-        $.ajax({url:'http://masflowers.in/admin/webservice.php?action=getCustomerDetails&fr='+fr+'&CustomerID='+CustomerID,success:function(data){        
+        $.ajax({url:'/webservice.php?action=getCustomerDetails&fr='+fr+'&CustomerID='+CustomerID,success:function(data){        
             $('#div_customerdetails').html(data);
         $("#Errsearchcustomer").html(""); 
         }});
     }
 //Add Customer Finished
-
+                                                                                                          
 //Add Product  
 
 
-function AddNewProduct() {
+function AddNewProduct() {    
+    $('#BarCode').html("");
+    $('#ProductName').html("");
+    $('#ProductNametamil').html("");
+    $('#ProductQty'). val("0");                                                                      
+    $('#ProductPrice').html("");
+    $('#Description').html("");
     $("#AddProductModal").modal('show');                                                                   
 }
 function CreateNewProduct() {
-        ErrorCount=0; 
+        ErrorCount=0;                                                                                 
         $('#ErrProductName').html("");
         $('#ErrProductQty').html("");                                                                      
         $('#ErrProductPrice').html("");
@@ -732,7 +666,7 @@ function CreateNewProduct() {
         var ProductQty = $('#ProductQty').val().trim();
         if (ProductQty=="0") {
             $('#ErrProductQty').html("Please Select Unit of Measurement");  
-            ErrorCount++; 
+            ErrorCount++;                                                                                         
         }else{
             $('#ErrProductQty').html("");
         }
@@ -742,18 +676,18 @@ function CreateNewProduct() {
         } 
         if(ErrorCount==0) {  
             $("#AddProductModal").modal('hide');    
-        var loading = "<div style='padding:80px;text-align:center;color:#aaa'><img src='http://masflowers.in/admin/assets/loading.gif'  style='width:80px'><br>Processing ...</div>";                                                                                
+        var loading = "<div style='padding:80px;text-align:center;color:#aaa'><img src='https://masflowers.in/admin/assets/loading.gif'  style='width:80px'><br>Processing ...</div>";                                                                                
             var param = $("#addProductFrm").serialize();
             $("#xproduct_text").html(loading);
             
-            $.post( "http://masflowers.in/admin/webservice.php?action=AddProduct", param,function( data ) {
+            $.post( "webservice.php?action=AddProduct", param,function( data ) {
                 var obj = JSON.parse(data); 
                 var html = "";
                 if (obj.status=="failure") {    
-                    html = "<div style='width:100%;padding:10px;background:#fff;text-align:center;color:red'><img src='http://masflowers.in/admin/assets/accessdenied.png' style='width:128px'><br><br>Transaction failed.<br>"+obj.message;
+                    html = "<div style='width:100%;padding:10px;background:#fff;text-align:center;color:red'><img src='https://masflowers.in/admin/assets/accessdenied.png' style='width:128px'><br><br>Transaction failed.<br>"+obj.message;
                     html = '<div class="form-group row">'
                                 +'<div class="col-sm-12" style="text-align:center">'
-                                    +'<img src="http://masflowers.in/admin/assets/accessdenied.png" style="width:30%"><br><span>'+obj.message+'</span>'
+                                    +'<img src="https://masflowers.in/admin/assets/accessdenied.png" style="width:30%"><br><span>'+obj.message+'</span>'
                                 +'</div>'
                             +'</div>'
                             +'<div style="padding:20px;text-align:center">'
@@ -762,11 +696,11 @@ function CreateNewProduct() {
                 } else { 
                     html = '<div class="form-group row">'
                                 +'<div class="col-sm-12" style="text-align:center">'
-                                    +'<img src="http://masflowers.in/admin/assets/tick.jpg" style="width:30%"><br><span>Product Added Successfully</span>'
+                                    +'<img src="https://masflowers.in/admin/assets/tick.jpg" style="width:30%"><br><span>Product Added Successfully</span>'
                                 +'</div>'
                             +'</div>'
                             +'<div style="padding:20px;text-align:center">'
-                                +'<form method="post" id="selectPrduct"><input type="hidden" id="product" Name="product" value="'+obj.ProductID+'"><button type="button" class="btn btn-outline-success" onclick="selectproduct()"  id="addRows">Countinue</button></div>'
+                                +'<form method="post" id="selectPrduct"><input type="hidden" id="product" Name="product" value="'+obj.ProductID+'"><button type="button" class="btn btn-outline-success" onclick="selectproduct()"  >Countinue</button></div>'
                             +'</div>';                                                                   
                     $('#ProductPopup').modal("show");                                                                        
                 }
@@ -777,53 +711,66 @@ function CreateNewProduct() {
         }
 }                                                                                                                                                                              
 function CheckDuplicateBarCode(BarCode) {
-        $.ajax({url:'http://masflowers.in/admin/webservice.php?action=CheckDuplicateBarCode&BarCode='+BarCode,success:function(data){
+        $.ajax({url:'admin/webservice.php?action=CheckDuplicateBarCode&BarCode='+BarCode,success:function(data){
             $('#ErrBarCode').html(data);
         }});
     }
 function CheckDuplicateProductName(ProductName) {
-        $.ajax({url:'http://masflowers.in/admin/webservice.php?action=CheckDuplicateProductName&ProductName='+ProductName,success:function(data){
+        $.ajax({url:'webservice.php?action=CheckDuplicateProductName&ProductName='+ProductName,success:function(data){
             $('#ErrProductName').html(data);
         }});
     }
 function CheckDuplicateProductNameTamil(ProductNameTamil) {
-        $.ajax({url:'http://masflowers.in/admin/webservice.php?action=CheckDuplicateProductNameTamil&ProductNameTamil='+ProductNameTamil,success:function(data){
+        $.ajax({url:'webservice.php?action=CheckDuplicateProductNameTamil&ProductNameTamil='+ProductNameTamil,success:function(data){
             $('#ErrProductNameTamil').html(data);
         }});
     }
 function AddProduct() {
     $("#selectProductModal").modal('show');                                                                    
 }
-function selectproduct() {
-     var param = $( "#selectPrduct").serialize();
-   //  var param = $( "#Productselect").serialize();
-    
-     var param = $( "#selectPrduct").serialize();
-    $.post( "http://masflowers.in/admin/webservice.php?action=GetProduct",param,function(data) {
+function selectproduct() {  
+    var param = $( "#selectPrduct").serialize();
+         $.post( "webservice.php?action=GetProduct",param,function(data) {
+        var count = $(".itemRow").length;      
         var obj = JSON.parse(data); 
-        var html = ""; 
-        var count = $(".itemRow").length;                                                              
-        
+        count++;
+        var htmlRows = '';
+        htmlRows += '<tr>';
+        htmlRows += '<td><input class="itemRow" type="checkbox"></td>';          
+        htmlRows += '<td><input type="hidden" name="productCode[]" id="productCode_'+count+'" class="form-control" autocomplete="off" style="height: auto !important;"><input type="text" readonly="readonly" name="productName[]" id="productName_'+count+'" class="form-control" autocomplete="off" style="height: auto !important;"></td>';    
+        htmlRows += '<td><div class="input-group">'
+                            htmlRows += '<input type="text" name="quantity[]" onkeypress="SwitchamountBox(event)" id="quantity_'+count+'" class="form-control quantity" autocomplete="off" style="height: auto !important;text-align:center">'
+                            htmlRows += '<div class="input-group-append">'
+                                htmlRows += '<div class="input-group-text" id="Unit_'+count+'"></div>'
+                            htmlRows += '</div>'
+        htmlRows += '</div></td>';
+        htmlRows += '<td style="text-align:right"><input type="text" name="price[]" onkeypress="SwitchproductBox(event)" id="price_'+count+'" class="form-control price" autocomplete="off" style="height: auto !important;text-align:right"></td>';         
+        htmlRows += '<td style="text-align:right"><input type="text" readonly="readonly" name="total[]" id="total_'+count+'" class="form-control total" autocomplete="off" style="height: auto !important;text-align:right"></td>';          
+        htmlRows += '</tr>';
+        $('#invoiceItem').append(htmlRows);
+                                                                                                        
         $("#productCode_"+count).val(obj.ProductID);
-        $("#productName_"+count).val(obj.ProductName);
-        $("#price_"+count).val(obj.ProductPrice);
-        $("#quantity_"+count).val(obj.ProductQty);                                                        
-        $("#Unit_"+count).html(obj.ProductUnitName);
-        $("#quantity_"+count).focus();
-        $("#amountPaid").focus();
-        $("#ProductPopup").modal('hide');                                                                           
-    });
-}
+        $("#productName_"+count).val(obj.ProductNameTamil);
+        $("#price_"+count).val();
+		$("#price_"+count).attr("placeholder",obj.ProductPrice);
+        $("#quantity_"+count).val();                                                              
+        $("#Unit_"+count).html(obj.ProductUnitName);                                                 
+       $("#quantity_"+count).focus();
+       $("#ProductPopup").modal('hide');  
+         });
+}   
+    
 function selectproducts() {
     var param = $( "#selectPrduct").serialize();
-    $.post( "http://masflowers.in/admin/webservice.php?action=GetProduct",param,function(data) {
+    $.post( "webservice.php?action=GetProduct",param,function(data) {
         var obj = JSON.parse(data); 
         var html = ""; 
         var count = $(".itemRow").length;                                                              
         
         $("#productCode_"+count).val(obj.ProductID);
         $("#productName_"+count).val(obj.ProductName);
-        $("#price_"+count).val(obj.ProductPrice);
+        $("#price_"+count).val();
+		$("#price_"+count).attr("placeholder",obj.ProductPrice);
         $("#quantity_"+count).val(obj.ProductQty);                                                        
         $("#Unit_"+count).html(obj.ProductUnitName);
         $("#quantity_"+count).focus();
@@ -832,9 +779,29 @@ function selectproducts() {
     });
 }
 // Add Product Finished
-
+ 
 //Create Invoice
-function CallConfirmation(Sale){
+function CallConfirmationCancel(){
+     var txt = '<div class="form-group row">'                                                                     
+                    +'<div class="col-sm-12" style="text-align:center">'
+                        +'CONFIRMATION'
+                    +'</div>'
+               +'</div>'
+               +'<div class="form-group row">'                                                          
+                    +'<div class="col-sm-12" style="text-align:left">'
+                    +'Are you sure want to cancel create invoice?'
+                    +'</div>'
+                +'</div>'
+                +'<div style="padding:20px;text-align:center">'
+                    +'<button type="button" class="btn btn-outline-warning" data-dismiss="modal" >Cancel</button>&nbsp;&nbsp;&nbsp;'
+                    +'<button type="button" class="btn btn-warning" onclick="location.href=\'dashboard.php?action=Invoice/list\'" >Yes, Confirm</button>'
+                 +'</div>';  
+        
+        $('#xconfrimation_text').html(txt);                                       
+        $('#ConfirmationPopup').modal("show");
+}
+
+function CallConfirmationCashSale(){
     ErrorCount=0; 
     
     var Customer = $('#UserDetails').val().trim();
@@ -846,25 +813,17 @@ function CallConfirmation(Sale){
        if (count==0) {
             $('#ErrProduct').html("Please Select Product");                                                    
             ErrorCount++;                                                                                      
-        }else {
-           if (count>10) {
-            $('#ErrProduct').html("Please Select Less Than 10 Product");                                                    
-            ErrorCount++;                                                                                      
-        } 
-        }
-   /* var amountpaid = $('#amountPaid').val().trim();
-       if (amountpaid=="0.00") {
-            $('#ErramountPaid').html("Please Enter Paid Amount"); 
-            ErrorCount++;
-        }  */
+        } //else {
+           //if (count>10) {
+           // $('#ErrProduct').html("Please Select Less Than 10 Product");                                                    
+           // ErrorCount++;                                                                                      
+       // } 
+        //}
+    
    
     if(ErrorCount==0) {
-        if(Sale=="CashSale"){
-            $('#TransactionMode').val("Cash");    
-        }else{
-            $('#TransactionMode').val("Credit"); 
-        }
-    var txt = '<div class="form-group row">'                                                                     
+            $('#TransactionMode').val("Cash");  
+            var txt = '<div class="form-group row">'                                                                      
                     +'<div class="col-sm-12" style="text-align:center">'
                         +'CONFIRMATION'
                     +'</div>'
@@ -874,19 +833,220 @@ function CallConfirmation(Sale){
                     +'Are you sure want to create invoice?'
                     +'</div>'
                 +'</div>'
+                +'<div class="form-group row">'                                                          
+                    +'<div class="col-sm-12" style="text-align:left">'
+                        +'<label>Invoice Amount</label>'
+                        +'<div class="input-group">'                                                              
+                            +'<div class="input-group-prepend">'
+                                +'<span class="input-group-text" id="basic-addon1">Rs</span>'
+                            +'</div>'
+                            +'<input type="text" value="'+$('#subTotal').val()+'" disabled="disabled" class="form-control" name="InvoiceAmount" id="InvoiceAmount" placeholder="Invoice Amount" style="text-align: right;">'
+                        +'</div>'
+                    +'</div>'
+                +'</div>'
+                +'<div class="form-group row">'                                                          
+                    +'<div class="col-sm-12" style="text-align:left">'
+                        +'<label>Amount Paid</label>'
+                        +'<div class="input-group">'                                                              
+                            +'<div class="input-group-prepend">'
+                                +'<span class="input-group-text" id="basic-addon1">Rs</span>'
+                            +'</div>'
+                            +'<input type="text" value="'+$('#subTotal').val()+'" disabled="disabled" class="form-control" name="amountPaid" id="amountPaid" placeholder="Amount Paid" style="text-align: right;">'
+                        +'</div>'
+                    +'</div>'
+                +'</div>'
+                +'<div class="form-group row">'                                                          
+                    +'<div class="col-sm-12" style="text-align:left">'
+                        +'<label>Received Amount</label>'
+                        +'<div class="input-group">'                                                                                                             
+                            +'<div class="input-group-prepend">'
+                                +'<span class="input-group-text" id="basic-addon1">Rs</span>'
+                            +'</div>'                                                                                                                                    
+                            +'<input type="text" class="form-control" name="ReceivedAmount" id="ReceivedAmount" placeholder="Received Amount" style="text-align: right;" onchange="CashSaleAmountReceivedVal($(this).val())">'
+                        +'</div>'
+                        +'<span class="errorstring" id="ErrReceivedAmount"></span>'
+                    +'</div>'
+                +'</div>'
+                +'<div class="form-group row">'                                                          
+                    +'<div class="col-sm-12" style="text-align:left">'
+                        +'<label>Re-Pay Amount</label>'
+                        +'<div class="input-group">'                                                              
+                            +'<div class="input-group-prepend">'
+                                +'<span class="input-group-text" id="basic-addon1">Rs</span>'
+                            +'</div>'
+                            +'<input type="text" disabled="disabled" class="form-control" name="ReturnAmount" id="ReturnAmount" placeholder="Payable Amount" style="text-align: right;">'
+                        +'</div>'
+                    +'</div>'
+                +'</div>'
                 +'<div style="padding:20px;text-align:center">'
                     +'<button type="button" class="btn btn-outline-success" data-dismiss="modal" >Cancel</button>&nbsp;&nbsp;&nbsp;'
-                    +'<button type="button" class="btn btn-success" onclick="CreateInvoice()" >Yes, Confirm</button>'
+                    +'<button type="button" class="btn btn-success" onclick="CreateInvoice(\'Cash\')" >Yes, Confirm</button>'
                  +'</div>';  
+        
         $('#xconfrimation_text').html(txt);                                       
         $('#ConfirmationPopup').modal("show");
-    }else{
+    }else{                                                                                                                    
             return false;
         }
 }
-function CreateInvoice() {  
-    $("#invoice_btn" ).trigger( "click" );
+function CallConfirmationCreditSale(){
+    ErrorCount=0; 
+    
+    var Customer = $('#UserDetails').val().trim();
+       if (Customer.length==0) {                                                                                 
+            $('#Errsearchcustomer').html("Please Select Customer");                                                    
+            ErrorCount++;                                                                                      
+        }
+   var count = $(".itemRow").length; 
+       if (count==0) {
+            $('#ErrProduct').html("Please Select Product");                                                    
+            ErrorCount++;                                                                                      
+        }/*else {
+           if (count>10) {
+            $('#ErrProduct').html("Please Select Less Than 10 Product");                                                    
+            ErrorCount++;                                                                                      
+        } 
+        }*/
+    
+   
+    if(ErrorCount==0) {
+            $('#TransactionMode').val("Credit"); 
+            var txt = '<div class="form-group row">'                                                                     
+                    +'<div class="col-sm-12" style="text-align:center">'
+                        +'CONFIRMATION'
+                    +'</div>'
+               +'</div>'
+               +'<div class="form-group row">'                                                          
+                    +'<div class="col-sm-12" style="text-align:left">'
+                    +'Are you sure want to create invoice?'
+                    +'</div>'
+                +'</div>'
+                +'<div class="form-group row">'                                                          
+                    +'<div class="col-sm-12" style="text-align:left">'
+                        +'<label>Invoice Amount</label>'
+                        +'<div class="input-group">'                                                              
+                            +'<div class="input-group-prepend">'
+                                +'<span class="input-group-text" id="basic-addon1">Rs</span>'
+                            +'</div>'
+                            +'<input type="text" value="'+$('#subTotal').val()+'" disabled="disabled" class="form-control" name="InvoiceAmount" id="InvoiceAmount" placeholder="Invoice Amount" style="text-align: right;">'
+                        +'</div>'
+                    +'</div>'
+                +'</div>'
+                +'<div class="form-group row">'                                                          
+                    +'<div class="col-sm-12" style="text-align:left">'                                                                                                
+                        +'<label>Amount Paid</label>'
+                        +'<div class="input-group">'                                                              
+                            +'<div class="input-group-prepend">'
+                                +'<span class="input-group-text" id="basic-addon1">Rs</span>'
+                            +'</div>'
+                            +'<input type="text" class="form-control" name="CreditAmount" id="CreditAmount" placeholder="Amount Paid" style="text-align: right;" onchange="CreditSaleAmountReceivedVal($(this).val())">'
+                        +'</div>'
+                        +'<span class="errorstring" id="ErrCreditAmount"></span>'
+                    +'</div>'
+                +'</div>'
+                +'<div class="form-group row">'                                                          
+                    +'<div class="col-sm-12" style="text-align:left">'
+                        +'<label>Payable Amount</label>'
+                        +'<div class="input-group">'                                                              
+                            +'<div class="input-group-prepend">'
+                                +'<span class="input-group-text" id="basic-addon1">Rs</span>'
+                            +'</div>'
+                            +'<input type="text" disabled="disabled" class="form-control" name="PayableAmount" id="PayableAmount" placeholder="Payable Amount" style="text-align: right;">'
+                        +'</div>'
+                    +'</div>'
+                +'</div>'
+                +'<div style="padding:20px;text-align:center">'
+                    +'<button type="button" class="btn btn-outline-success" data-dismiss="modal" >Cancel</button>&nbsp;&nbsp;&nbsp;'
+                    +'<button type="button" class="btn btn-success" onclick="CreateInvoice(\'Credit\')" >Yes, Confirm</button>'
+                 +'</div>';
+        
+        $('#xconfrimation_text').html(txt);                                       
+        $('#ConfirmationPopup').modal("show");
+    }else{                                                                                                                    
+            return false;
+        }
+}
+function CreateInvoice(Sale) {  
+    ErrorCount=0; 
+   
+    if(Sale=="Cash"){
+       var InvoiceAmount = $('#InvoiceAmount').val().trim();
+       
+       var ReceivedAmount = $('#ReceivedAmount').val().trim();                                            
+       if (ReceivedAmount.length==0) {
+            $('#ErrReceivedAmount').html("Please Enter Received Amount");                                                    
+            ErrorCount++;                                                                                      
+        }
+        if($('#ReturnAmount').val().trim() < 0){ 
+               $('#ErrReceivedAmount').html("Please Enter Greater than or Equal To Invoice Amount");                                                    
+               ErrorCount++;                                                                                
+            }
+            
+    }if(Sale=="Credit") {
+        var InvoiceAmount = $('#InvoiceAmount').val().trim();
+       
+        var CreditAmount = $('#CreditAmount').val().trim();
+       if (CreditAmount.length==0) {
+            $('#ErrCreditAmount').html("Please Enter Paid Amount");                                                    
+            ErrorCount++;                                                                                        
+        }
+        if($('#PayableAmount').val().trim() < 0){ 
+               $('#ErrCreditAmount').html("Please Enter Less than or Equal To Invoice Amount");                                                    
+               ErrorCount++;                                                                                
+            }
+    }
+     
+     if(ErrorCount==0) {
+         
+        if(Sale=="Cash"){
+        $('#ReturnCashToCustomer').val($('#ReturnAmount').val());  
+        $('#TotalCashReceived').val($('#ReceivedAmount').val());
+        $('#AmountPaid').val($('#amountPaid').val());                                                 
+        }else {
+          $('#AmountPaid').val($('#CreditAmount').val());  
+        }  
+       // $("#invoice_btn" ).trigger( "click" );
+       
+       var loading = "<div style='padding:80px;text-align:center;color:#aaa'><img src='https://masflowers.in/admin/assets/loading.gif'  style='width:80px'><br>Processing ...</div>";                                                                                
+            var param = $("#invoice-form").serialize();
+            $("#xconfrimation_text").html(loading);
+            $.post( "webservice.php?action=CreateInvoice", param,function(data) {
+				var obj = JSON.parse(data); 
+                var html = "";
+				if (obj.status=="failure") {    
+                    html = "<div style='width:100%;padding:10px;background:#fff;text-align:center;color:red'><img src='https://masflowers.in/admin/assets/accessdenied.png' style='width:128px'><br><br>Transaction failed.<br>"+obj.message;
+                    html = '<div class="form-group row">'
+                                +'<div class="col-sm-12" style="text-align:center">'
+                                    +'<img src="https://masflowers.in/admin/assets/accessdenied.png" style="width:30%"><br><span>'+obj.message+'</span>'
+                                +'</div>'
+                            +'</div>'
+                            +'<div style="padding:20px;text-align:center">'
+                                +'<button type="button" class="btn btn-outline-success" data-dismiss="modal">Countinue</button>'
+                            +'</div>';
+                } else { 
+                    html = '<div class="form-group row">'
+                                +'<div class="col-sm-12" style="text-align:center">'
+                                    +'<img src="https://masflowers.in/admin/assets/tick.jpg" style="width:30%"><br><span>'+obj.message+'</span>'
+                                +'</div>'
+                            +'</div>'
+                            +'<div style="padding:20px;text-align:center">'
+                                +'<button type="button" class="btn btn-outline-success" onclick="location.href=\'dashboard.php?action=Invoice/view&invoice_id='+obj.InvoiceID+'\'">Countinue</button>'
+                            +'</div>';                                                                   
+                    $('#ConfirmationPopup').modal("show");                                                                        
+                }
+                $("#xconfrimation_text").html(html);
+            });         
+    }else{
+        return false;
+    }
 }  
+function CashSaleAmountReceivedVal(){
+       $('#ReturnAmount').val($('#ReceivedAmount').val()-$('#InvoiceAmount').val());  
+ }
+ function CreditSaleAmountReceivedVal(){
+       $('#PayableAmount').val($('#InvoiceAmount').val()-$('#CreditAmount').val());                        
+ }
+
  $(document).ready(function () {  
     $("#searchcustomer").blur(function () {
         $('#Errsearchcustomer').html("");
@@ -905,7 +1065,9 @@ function CreateInvoice() {
             $('#amountDue').val(totalAftertax);
         }
      });
-     getCustomerDetails('<?php echo $_GET['csid'];?>','1');   
+     <?php if($_GET['csid']!=""){ ?>
+     getCustomerDetails('<?php echo $_GET['csid'];?>','1');  
+     <?php } ?> 
  });
  function CheckTransactionMode(){
      if($('#TransactionMode').val()=="Cash"){
@@ -927,11 +1089,9 @@ $(document).ready(function(){
     $("#search").autocomplete({
         source: "webservice.php?action=GetProductName",
             focus: function( event, ui ) {
-            //$( "#search" ).val( ui.item.title ); // uncomment this line if you want to select value to search box  
             return false;
         },
         select: function( event, ui ) {
-            //window.location.href = ui.item.url;      
             SelectProduct(ui.item);                                                   
         }
     }).data( "ui-autocomplete" )._renderItem = function( ul, item ) {
@@ -960,7 +1120,7 @@ $(document).ready(function(){
     };
 });
 function SelectProduct(obj) {
-    
+           
         var count = $(".itemRow").length;                                                              
         
         count++;
@@ -981,31 +1141,38 @@ function SelectProduct(obj) {
         
         $("#productCode_"+count).val(obj.ProductID);
         $("#productName_"+count).val(obj.ProductNameTamil);
-        $("#price_"+count).val(obj.ProductPrice);
-        $("#quantity_"+count).val('1');                                                        
+        $("#price_"+count).val();
+		$("#price_"+count).attr("placeholder",obj.ProductPrice);
+        $("#quantity_"+count).val();                                                        
         $("#Unit_"+count).html(obj.ProductUnitName);                                                 
       //  $("#total_"+count).val(parseFloat(total));
        $("#quantity_"+count).focus();
-     //  $("#amountPaid").focus();
+     //  $("#amountPaid").focus();                
 }
 function SelectCustomer(obj) {
     
-        var htmlRows = '<div class="form-group">';
-                htmlRows += obj.CustomerName;
-                htmlRows += '<br>';
-                htmlRows += obj.ShopName;
-                htmlRows += '<br>';
-                htmlRows += obj.MobileNumber;
-                htmlRows += '<br>';
-                htmlRows += obj.EmailID;
-                htmlRows += '<br>';
-                htmlRows += obj.AddressLine1;
-                htmlRows += '<br>';
-                htmlRows += obj.AddressLine2;
-                htmlRows += '<br>';                                                                      
-                htmlRows += obj.AddressLine3;
-                htmlRows += '<br>';
-                htmlRows += '<button type="button" class="btn btn-primary btn-sm" style="padding: 0px 10px;" onclick="ChangeCustomer()">change Customer</button>&nbsp;&nbsp;<button type="button" class="btn btn-primary btn-sm" style="padding: 0px 10px;" onclick="AddCustomer()">Add Customer</button> ';
+        var htmlRows = '<div class="form-group row">';
+                htmlRows += '<div class="col-sm-6">';
+                    htmlRows += obj.CustomerName;
+                    htmlRows += '<br>';
+                    htmlRows += obj.ShopName;
+                    htmlRows += '<br>';
+                    htmlRows += obj.MobileNumber;
+                    htmlRows += '<br>';
+                    htmlRows += obj.EmailID;
+                    htmlRows += '<br>';
+                    htmlRows += obj.AddressLine1;
+                    htmlRows += '<br>';
+                    htmlRows += obj.AddressLine2;
+                    htmlRows += '<br>';                                                                      
+                    htmlRows += obj.AddressLine3;
+                    htmlRows += '<br>';
+                    htmlRows += '<button type="button" class="btn btn-primary btn-sm" style="padding: 0px 10px;" onclick="ChangeCustomer()">change Customer</button>&nbsp;&nbsp;<button type="button" class="btn btn-primary btn-sm" style="padding: 0px 10px;" onclick="AddCustomer()">Add Customer</button> ';
+                htmlRows += '</div>';
+                htmlRows += '<div class="col-sm-6">';
+                    htmlRows += 'Outstanding Amount : '+obj.OutstandingAmount;
+                htmlRows += '</div>';
+        
         $("#UserDetails").val(obj.CustomerID); 
         $("#div_customerdetails").html(htmlRows); 
         $("#SearchCustomerDiv").hide(); 
@@ -1024,14 +1191,173 @@ function SwitchamountBox(event){
         $("#price_"+count).focus(); 
         
     }
-}                                                                                                         
+}                                                                                                          
 function SwitchproductBox(event){
     var keycode = (event.keyCode ? event.keyCode : event.which); 
-    if(keycode == '13'){ 
+    if(keycode == 13){ 
         var count = $(".itemRow").length; 
         $("#search").focus(); 
         
     }
 }
+/*Add Customer */
+function SwitchCNT(event){
+    var keycode = (event.keyCode ? event.keyCode : event.which); 
+    if(keycode == 13){ 
+        $("#CustomerNameTamil").focus(); 
+        
+    }
+}
+function SwitchCSN(event){
+    var keycode = (event.keyCode ? event.keyCode : event.which); 
+    if(keycode == 13){ 
+        $("#ShopName").focus(); 
+        
+    }
+}function SwitchCSNT(event){
+    var keycode = (event.keyCode ? event.keyCode : event.which); 
+    if(keycode == 13){ 
+        $("#ShopNameTamil").focus(); 
+        
+    }
+}function SwitchCMN(event){
+    var keycode = (event.keyCode ? event.keyCode : event.which); 
+    if(keycode == 13){ 
+        $("#MobileNumber").focus(); 
+        
+    }
+}function SwitchCAL1(event){
+    var keycode = (event.keyCode ? event.keyCode : event.which); 
+    if(keycode == 13){ 
+        $("#AddressLine1").focus(); 
+        
+    }
+}function SwitchCAL2(event){
+    var keycode = (event.keyCode ? event.keyCode : event.which); 
+    if(keycode == 13){ 
+        $("#AddressLine2").focus(); 
+        
+    }
+}function SwitchCAL3(event){
+    var keycode = (event.keyCode ? event.keyCode : event.which); 
+    if(keycode == 13){ 
+        $("#AddressLine3").focus(); 
+        
+    }
+}function SwitchPN(event){
+    var keycode = (event.keyCode ? event.keyCode : event.which); 
+    if(keycode == 13){ 
+        $("#ProductName").focus(); 
+        
+    }
+}function SwitchPNT(event){
+    var keycode = (event.keyCode ? event.keyCode : event.which); 
+    if(keycode == 13){ 
+        $("#ProductNameTamil").focus(); 
+        
+    }
+}function SwitchPQY(event){
+    var keycode = (event.keyCode ? event.keyCode : event.which); 
+    if(keycode == 13){ 
+        $("#ProductQty").focus(); 
+        
+    }
+}function SwitchPPU(event){
+    var keycode = (event.keyCode ? event.keyCode : event.which); 
+    if(keycode == 13){ 
+        $("#ProductPrice").focus(); 
+        
+    }
+}function SwitchPDS(event){
+    var keycode = (event.keyCode ? event.keyCode : event.which); 
+    if(keycode == 13){ 
+        $("#Description").focus(); 
+        
+    }
+}
+
 </script> 
+<script>
+function CallConfirmationSaveInvoice(){
+    ErrorCount=0; 
+    
+    var Customer = $('#UserDetails').val().trim();
+       if (Customer.length==0) {
+            $('#Errsearchcustomer').html("Please Select Customer");                                                    
+            ErrorCount++;                                                                                      
+        }
+   var count = $(".itemRow").length; 
+       if (count==0) {
+            $('#ErrProduct').html("Please Select Product");                                                    
+            ErrorCount++;                                                                                      
+        }/*else {
+           if (count>10) {
+            $('#ErrProduct').html("Please Select Less Than 10 Product");                                                    
+            ErrorCount++;                                                                                      
+        } 
+        }*/
+    
+   
+    if(ErrorCount==0) {
+            var txt = '<div class="form-group row">'                                                                     
+                    +'<div class="col-sm-12" style="text-align:center">'
+                        +'CONFIRMATION'
+                    +'</div>'
+               +'</div>'
+               +'<div class="form-group row">'                                                          
+                    +'<div class="col-sm-12" style="text-align:left">'
+                    +'Are you sure want to save invoice?'
+                    +'</div>'
+                +'</div>'
+                +'<div style="padding:20px;text-align:center">'
+                    +'<button type="button" class="btn btn-outline-success" data-dismiss="modal" >Cancel</button>&nbsp;&nbsp;&nbsp;'
+                    +'<button type="button" class="btn btn-success" onclick="SaveInvoice()" >Yes, Confirm</button>'
+                 +'</div>';  
+        
+        $('#xconfrimation_text').html(txt);                                       
+        $('#ConfirmationPopup').modal("show");
+    }else{                                                                                                                    
+            return false;
+        }
+}
+function SaveInvoice() {  
+    ErrorCount=0; 
+   
+    if(ErrorCount==0) {
+        
+       var loading = "<div style='padding:80px;text-align:center;color:#aaa'><img src='https://masflowers.in/admin/assets/loading.gif'  style='width:80px'><br>Processing ...</div>";                                                                                
+            var param = $("#invoice-form").serialize();
+            $("#xconfrimation_text").html(loading);
+            
+            $.post( "webservice.php?action=SaveInvoice", param,function( data ) {
+                var obj = JSON.parse(data); 
+                var html = "";
+                if (obj.status=="failure") {    
+                    html = "<div style='width:100%;padding:10px;background:#fff;text-align:center;color:red'><img src='https://masflowers.in/admin/assets/accessdenied.png' style='width:128px'><br><br>Transaction failed.<br>"+obj.message;
+                    html = '<div class="form-group row">'
+                                +'<div class="col-sm-12" style="text-align:center">'
+                                    +'<img src="https://masflowers.in/admin/assets/accessdenied.png" style="width:30%"><br><span>'+obj.message+'</span>'
+                                +'</div>'
+                            +'</div>'
+                            +'<div style="padding:20px;text-align:center">'
+                                +'<button type="button" class="btn btn-outline-success" data-dismiss="modal">Countinue</button>'
+                            +'</div>';
+                } else { 
+                    html = '<div class="form-group row">'
+                                +'<div class="col-sm-12" style="text-align:center">'
+                                    +'<img src="https://masflowers.in/admin/assets/tick.jpg" style="width:30%"><br><span>'+obj.message+'</span>'
+                                +'</div>'
+                            +'</div>'
+                            +'<div style="padding:20px;text-align:center">'
+                                +'<button type="button" class="btn btn-outline-success" onclick="location.href=\'dashboard.php?action=Invoice/MySavedInvoices\'" >Countinue</button>'
+                            +'</div>';                                                                   
+                    $('#ConfirmationPopup').modal("show");                                                                        
+                }
+                $("#xconfrimation_text").html(html);
+            });         
+    }else{
+        return false;
+    }
+} 
+</script>
 <?php } //div_customerdetails ?> 

@@ -1,15 +1,15 @@
 <?php 
 if (isset($_GET['filter']) && $_GET['filter']=="all") {
- $Requests  = $mysql->select("SELECT * FROM _tbl_member where IsMember='1'" );
+ $Requests  = $mysql->select("SELECT * FROM _tbl_member where IsMember='1' order by MemberName" );
  $title="All Agents";
 } elseif (isset($_GET['filter']) && $_GET['filter']=="active") {
- $Requests  = $mysql->select("SELECT * FROM _tbl_member where IsMember='1' and IsActive='1' " );
+ $Requests  = $mysql->select("SELECT * FROM _tbl_member where IsMember='1' and IsActive='1' order by MemberName " );
  $title="Active  Agents";
 } elseif (isset($_GET['filter']) && $_GET['filter']=="deactive") {
- $Requests  = $mysql->select("SELECT * FROM _tbl_member where IsMember='1' and IsActive='0'" );
+ $Requests  = $mysql->select("SELECT * FROM _tbl_member where IsMember='1' and IsActive='0' order by MemberName" );
  $title="Deactive Agents";
 } else {
- $Requests  = $mysql->select("SELECT * FROM _tbl_member where IsMember='1'" );
+ $Requests  = $mysql->select("SELECT * FROM _tbl_member where IsMember='1' order by MemberName" );
  $title="All  Agents";
 }
   ?>

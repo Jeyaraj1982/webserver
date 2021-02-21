@@ -3,7 +3,9 @@ if (isset($_GET['htxn'])) {
     $mysql->execute("update _tbl_user_credits set IsShow='0' where `MemberID`='".$_SESSION['User']['MemberID']."' and CreditID='".$_GET['htxn']."'");
 }
     $summary = $mysql->select("select * from `_tbl_user_credits` where `MemberID`='".$_SESSION['User']['MemberID']."' and `IsShow`='1' order by CreditID desc");
-    $totalcredits = $mysql->select("select sum(Amount) as Amt from `_tbl_user_credits` where `MemberID`='".$_SESSION['User']['MemberID']."'  and `IsPaid`='0'  order by MemberID desc");
+    //$summary = $mysql->select("select * from `_tbl_user_credits` where `MemberID`='".$_SESSION['User']['MemberID']."'  order by CreditID desc");
+    //$totalcredits = $mysql->select("select sum(Amount) as Amt from `_tbl_user_credits` where `MemberID`='".$_SESSION['User']['MemberID']."'  and `IsPaid`='0'");
+    $totalcredits = $mysql->select("select sum(Amount) as Amt from `_tbl_user_credits` where `MemberID`='".$_SESSION['User']['MemberID']."'  and `PayableAmount`>0");
     
 ?>
 <h3 style="text-align: center;padding:10px;">Credit Sales</h3>

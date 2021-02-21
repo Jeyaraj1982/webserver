@@ -29,14 +29,18 @@ if ($_SESSION['User']['MoneyTransfer']==0) {
 }
    $upper_lmit =getUpperLimit($_SESSION['User']['MemberID']);
     $today_transfer  = getTodayTransfered($_SESSION['User']['MemberID']);
-?>
+      $today_dealer_transfer  = getDealerTodayTransfered($_SESSION['User']['MapedTo']);
+      
+      
+?>                                                             
 <?php if ($enable) { ?>
     <?php if (isset($_POST['submitRequest'])) { ?>
         <script>$('#myModal').modal("show");</script>
         <?php      
         $result = array();
         
-       // if ($_POST['Amount']<=($upper_lmit-$today_transfer)) {
+     //   if ($_POST['Amount']<=($upper_lmit-$today_transfer)) {
+        if ($_POST['Amount']<=($upper_lmit-($today_transfer+$today_dealer_transfer))) {
             
             $result = $application->doMoneyTransfer(array("MemberID"             => $_SESSION['User']['MemberID'],
                                                           "operator"             => $data[0]['OperatorLAPUCode'],
@@ -44,19 +48,19 @@ if ($_SESSION['User']['MoneyTransfer']==0) {
                                                           "number"               => $_POST['MobileNumber'],
                                                           "CustomerMobileNumber" => $_POST['CustomerMobileNumber'],
                                                           "Remarks"              => $_POST['Remarks'],
-                                                          "api"              => true,
                                                           "AccountName"          => $_POST['AccountName'],
+                                                          "api"          => true,
                                                           "markascredit"         => $_POST['markascredit'],
                                                           "credit_nickname"      => $_POST['credit_nickname'],
                                                           "IFSCode"              => $_POST['IFSCode'],
                                                           "CrAmount"             => $_POST['CrAmount'],
                                                           "amount"               => $_POST['Amount']));    
                                                          
-       //  } else {
-         //    $result['amount']  = $_POST['Amount'];   
-          //   $result['status']  = "failure";   
-          //   $result['message'] = "Failed. Your account allow to maximum ".($upper_lmit-$today_transfer)."/per transaction";   
-        // }                           
+         } else {
+             $result['amount']  = $_POST['Amount'];   
+             $result['status']  = "failure";   
+             $result['message'] = "Failed. Your account allow to maximum ".($upper_lmit-$today_transfer)."/per transaction";   
+         }                           
          
          echo "<script>$('#myModal').modal('hide');</script>";
         if ($result['status']=="success" || $result['status']=="requested") {
@@ -74,7 +78,7 @@ if ($_SESSION['User']['MoneyTransfer']==0) {
                     <a href="dashboard.php?action=creditsales_addtxnt&back=txnhistory&txn=<?php echo $result['txnid'];?>" ><i id="icon-arrow" class="bx bxs-pin"></i><br>credit<br>sale</a>     <br>
                     <?php } ?>              
                 </div>
-                <a href="dashboard.php?action=moneytranser_tobank" class="btn btn-primary  glow w-100 position-relative">Continue<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></a>
+                <a href="dashboard.php?action=moneytranser_tobank" class="btn btn-success  glow w-100 position-relative">Continue<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></a>
             </div>
         <?php } else {?>
             <div class="row">
@@ -86,36 +90,100 @@ if ($_SESSION['User']['MoneyTransfer']==0) {
                     Transaction failed<br>
                     <?php echo $result['message']; ?>
                 </div>
-                <a href="dashboard.php?action=moneytranser_tobank" class="btn btn-primary  glow w-100 position-relative">Continue<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></a><br><br>
-                <a href="dashboard.php?action=moneytransfer" class="btn btn-outline-primary glow w-100 position-relative">Back<i id="icon-arrow" class="bx bx-left-arrow-alt" style="float: left;"></i></a>
+                <a href="dashboard.php?action=moneytranser_tobank" class="btn btn-success  glow w-100 position-relative">Continue<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></a><br><br>
+                <a href="dashboard.php?action=moneytransfer" class="btn btn-outline-success glow w-100 position-relative">Back<i id="icon-arrow" class="bx bx-left-arrow-alt" style="float: left;"></i></a>
             </div>
         <?php } ?>
     <?php } else { ?> 
         <div class="row">
         <div class="col-12">
-      
+        <?php
+            
+            if ($upper_lmit>0) {
+               
+                ?>
+                <table align="center" style="width: 320px;">
+                    <tr>
+                        <td>Today Your's Upper Limit</td>
+                        <td style="text-align: right"><?php echo number_format($upper_lmit,2);?></td>
+                    </tr>
+                    <tr>
+                        <td>Today You Transfered</td>
+                        <td style="text-align: right"><?php echo number_format($today_transfer,2);?></td>
+                    </tr>
+                    <tr>
+                        <td>Today Allow to Transfer</td>
+                        <td style="text-align: right"><?php echo number_format($upper_lmit-$today_transfer,2);?></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                           <div style="border-radius:5px;background:#f0ffef;border:1px solid #c4f4c1;padding:10px;font-size:11px;color:#107707">To Increase today's limit, please contact support team.</div>
+                        </td>
+                    </tr>
+                </table>
+                <?php
+                
+            } else {
+                ?>
+                <table align="center" style="width: 300px;">
+                    <tr>
+                        <td>Today Your's Upper Limit</td>
+                        <td style="text-align: right"><?php echo number_format($upper_lmit,2);?></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align:center;color:red">
+                            Your are not allow to transfer money, please contact support team
+                        </td>
+                    </tr>
+                </table>
+                <style>
+                #frms{display:none}
+                </style>
+                <?php
+                 
+            }
+            
+        ?>
+        <?php
+            if (isset($_GET['bid'])) {
+                $benifechery_details = $mysql->select("select * from _tbl_moneytransfer_benifechery where md5(concat(BenificheryID,AccountNumber))='".$_GET['bid']."'");
+            }
+        ?>
             
             <form action="" method="post" id="frms"  onsubmit="return beforeSubmit()">
                 <div class="form-group"  style="margin-bottom:0px">
                     <label for="exampleInputEmail1">Account Name</label>
+                    <?php  if (sizeof($benifechery_details)>0) { ?>
+                    <input type="text" readonly="readonly" value="<?php echo $benifechery_details[0]['AccountHolderName'];?>" maxlength="30" name="AccountName" id="AccountName" class="form-control" placeholder="Account Name" >
+                    <?php } else { ?>
                     <input type="text" value="<?php echo isset($_POST['AccountName']) ? $_POST['AccountName'] : "";?>" maxlength="30" name="AccountName" id="AccountName" class="form-control" placeholder="Account Name" >
+                    <?php } ?>
                     <div class="errorstring" id="ErrAccountName"></div>
                 </div>
                 <div class="form-group" style="margin-bottom:0px">
                     <div class="input-group">
                         <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1" style="padding-left:9px;font-weight:bold;font-size:12px;">A/c Number</span>
+                            <span class="input-group-text" id="basic-addon1" style="width:90px;text-align:right;font-weight:bold;font-size:12px;">A/c Number</span>
                         </div>
-                        <input type="text" value="<?php echo isset($_POST['MobileNumber']) ? $_POST['MobileNumber'] : "";?>" maxlength="30" name="MobileNumber" id="MobileNumber" class="form-control" placeholder="Account Number" >
+                          <?php  if (sizeof($benifechery_details)>0) { ?>
+                          <input type="text" readonly="readonly" value="<?php echo $benifechery_details[0]['AccountNumber'];?>" maxlength="30" name="MobileNumber" id="MobileNumber" class="form-control" placeholder="Account Number" >
+                          <?php } else {?>
+                          <input type="text" value="<?php echo isset($_POST['MobileNumber']) ? $_POST['AccountNumber'] : "";?>" maxlength="30" name="MobileNumber" id="MobileNumber" class="form-control" placeholder="Account Number" >
+                            <?php } ?>
                     </div>
                     <div class="errorstring" id="ErrAccountNumber"></div>
                 </div>
                 <div class="form-group" style="margin-bottom:0px">
                     <div class="input-group">
                         <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1" style="padding-left:32px;font-weight:bold;font-size:12px;">IFSCode</span>
+                            <span class="input-group-text" id="basic-addon1" style="width:90px;text-align:right;font-weight:bold;font-size:12px;">IFSCode</span>
                         </div>
-                        <input type="text" onblur="getIFSCode()" value="<?php echo isset($_POST['IFSCode']) ? $_POST['IFSCode'] : "";?>" maxlength="11" name="IFSCode" id="IFSCode" class="form-control" placeholder="IFSCode" style="text-transform:uppercase;">
+                         
+                          <?php  if (sizeof($benifechery_details)>0) { ?>
+                          <input type="text"  readonly="readonly" value="<?php echo $benifechery_details[0]['IFSCCode'];?>" maxlength="11" name="IFSCode" id="IFSCode" class="form-control" placeholder="IFSCode" style="text-transform:uppercase;">
+                          <?php } else { ?>
+                          <input type="text" onblur="getIFSCode()" value="<?php echo isset($_POST['IFSCode']) ? $_POST['IFSCode'] : "";?>" maxlength="11" name="IFSCode" id="IFSCode" class="form-control" placeholder="IFSCode" style="text-transform:uppercase;">
+                        <?php } ?>
                         <div class="col-sm-12" id="result_div" style="padding:0px;"></div>
                     </div>
                     <div class="errorstring" id="ErrIFSCode"></div>
@@ -123,7 +191,7 @@ if ($_SESSION['User']['MoneyTransfer']==0) {
                 <div class="form-group" style="margin-bottom:0px">
                     <div class="input-group">
                         <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1" style="padding-left:59px;font-weight:bold;font-size:12px;">INR</span>
+                            <span class="input-group-text" id="basic-addon1" style="width:90px;text-align:right;font-weight:bold;font-size:12px;">INR</span>
                         </div>
                         <input type="number"  value="<?php echo isset($_POST['Amount']) ? $_POST['Amount'] : "";?>" maxlength="7" name="Amount" id="Amount" class="form-control" placeholder="Amount" >
                     </div>
@@ -132,7 +200,7 @@ if ($_SESSION['User']['MoneyTransfer']==0) {
                 <div class="form-group" style="margin-bottom:0px">
                     <div class="input-group">
                         <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1" style="padding-left:30px;font-weight:bold;font-size:12px;">Remarks</span>
+                            <span class="input-group-text" id="basic-addon1" style="width:90px;text-align:right;font-weight:bold;font-size:12px;">Remarks</span>
                         </div>
                         <input type="text"  value="<?php echo isset($_POST['Remarks']) ? $_POST['Remarks'] : "";?>"   name="Remarks" id="Remarks" class="form-control" placeholder="Remarks" >
                     </div>
@@ -141,9 +209,13 @@ if ($_SESSION['User']['MoneyTransfer']==0) {
                 <div class="form-group" style="margin-bottom:0px">
                     <div class="input-group">
                         <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1" style="padding-left:59px;font-weight:bold;font-size:12px;">+91</span>
+                            <span class="input-group-text" id="basic-addon1" style="width:90px;text-align:right;font-weight:bold;font-size:12px;">+91</span>
                         </div>
-                        <input type="number"  value="<?php echo isset($_POST['CustomerMobileNumber']) ? $_POST['CustomerMobileNumber'] : "";?>" maxlength="10" name="CustomerMobileNumber" id="CustomerMobileNumber" class="form-control" placeholder="Customer Mobile Number" >
+                        <?php  if (sizeof($benifechery_details)>0) { ?>
+                        <input type="number" readonly="readonly"  value="<?php echo $benifechery_details[0]['CustomerMobileNumber'];?>"  maxlength="10" name="CustomerMobileNumber" id="CustomerMobileNumber" class="form-control" placeholder="Customer Mobile Number" >
+                        <?php } else {?>
+                        <input type="number" value="<?php echo isset($_POST['CustomerMobileNumber']) ? $_POST['CustomerMobileNumber'] : "";?>" maxlength="10" name="CustomerMobileNumber" id="CustomerMobileNumber" class="form-control" placeholder="Customer Mobile Number" >
+                        <?php } ?>
                     </div>
                      <div class="errorstring" id="ErrCustomerMobileNumber"></div>
                 </div>
@@ -158,8 +230,8 @@ if ($_SESSION['User']['MoneyTransfer']==0) {
                 <div class="form-group">
                     <p align="center" style="color:red" id="error_msg">&nbsp;<?php echo $error;?></p>
                 </div>
-                <button type="submit" name="submitRequest" id="submitRequest" class="btn btn-primary  glow w-100 position-relative">Pay now<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></button><br><br>
-                <a href="dashboard.php?action=moneytransfer" class="btn btn-outline-primary glow w-100 position-relative">Back<i id="icon-arrow" class="bx bx-left-arrow-alt" style="float: left;"></i></a>
+                <button type="submit" name="submitRequest" id="submitRequest" class="btn btn-success  glow w-100 position-relative">Pay now<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></button><br><br>
+                <a href="dashboard.php?action=moneytransfer" class="btn btn-outline-success glow w-100 position-relative">Back<i id="icon-arrow" class="bx bx-left-arrow-alt" style="float: left;"></i></a>
                 <br><br>
                 <div style="text-align: center;">
                     <a href="dashboard.php?action=txnhistory&operator=<?php echo $_OPERATOR;?>" style="color:#555">Transaction History</a>
@@ -172,8 +244,8 @@ if ($_SESSION['User']['MoneyTransfer']==0) {
 <div class="row">
     <div class="col-12">
         <div style="padding:20px;color:red;text-align:center;width:100%;"><?php echo $enable_error;?></div>
-        <a href="dashboard.php?action=moneytranser_tobank" class="btn btn-primary  glow w-100  position-relative">Continue<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></a>  <br> <br>
-        <a href="dashboard.php?action=moneytransfer" class="btn btn-outline-primary  glow w-100  position-relative"><i id="icon-arrow" class="bx bx-left-arrow-alt">Back</i></a>
+        <a href="dashboard.php?action=moneytranser_tobank" class="btn btn-success  glow w-100  position-relative">Continue<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></a>  <br> <br>
+        <a href="dashboard.php?action=moneytransfer" class="btn btn-outline-success  glow w-100  position-relative"><i id="icon-arrow" class="bx bx-left-arrow-alt">Back</i></a>
     </div> 
 </div> 
 <?php } ?>
@@ -192,8 +264,8 @@ if ($_SESSION['User']['MoneyTransfer']==0) {
       </div>
       <div class="modal-body" id="confrimation_text">                                               
          <div id="xconfrimation_text" style="text-align: center;font-size:15px;"></div>
-          <button type="button" onclick="doConfrim()" class="btn btn-primary  glow w-100 position-relative">Pay now<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></button><br><br>
-          <a href="javascript:void(0)" data-dismiss="modal" class="btn btn-outline-primary glow w-100 position-relative">Back<i id="icon-arrow" class="bx bx-left-arrow-alt" style="float: left;"></i></a><br><br>
+          <button type="button" onclick="doConfrim()" class="btn btn-success  glow w-100 position-relative">Pay now<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></button><br><br>
+          <a href="javascript:void(0)" data-dismiss="modal" class="btn btn-outline-success glow w-100 position-relative">Back<i id="icon-arrow" class="bx bx-left-arrow-alt" style="float: left;"></i></a><br><br>
       </div>
     </div>
   </div>
@@ -435,7 +507,7 @@ var IsConfirm=0;
         if (!(parseFloat(amt)>=10 && parseFloat(amt)<=10000)) {
             $('#ErrAmount').html("Amount must have Rs.100 to  Rs.10000");
              error++;
-        }                     
+        }
         }
         
         if(!(valid_ifscode == 1)){
@@ -456,14 +528,15 @@ var IsConfirm=0;
     } else if (parseFloat($('#Amount').val())>7000 && $('#Amount').val()<=10000) {
         charge=20;
     }
-    
-      var charge_count =  parseInt( parseFloat($('#Amount').val())/5000);
+         
+         
+            var charge_count =  parseInt( parseFloat($('#Amount').val())/5000);
                   var charge_prefix = parseFloat($('#Amount').val())%5000;
                   if (charge_prefix>0) {
-                    charge_count++;                                                    
+                    charge_count++;
                   }
                   charge = charge_count * 15;
-         
+                 
          if (IsConfirm==0 ) {
       
             var txt = '<div class="form-group">'
@@ -542,3 +615,6 @@ upto 3,000 Rs. 10,
 7001 to 10,000 Rs. 20.
 */
 </script>
+ <?php  if (sizeof($benifechery_details)>0) { ?>
+                          <script> valid_ifscode = 1;</script>
+ <?php } ?>

@@ -27,5 +27,20 @@ function getTotalBalance($UserID) {
         $res = $mysql->select("select (sum(order_total_amount_due)) as bal from invoice_order where user_id='".$UserID."'");
         return isset($res[0]['bal']) ? $res[0]['bal'] : "0";
     }
+	function getTotalBalanceUserWallet($CustomerID) {
+        global $mysql;
+        $res = $mysql->select("select (sum(Credits)-sum(Debits)) as bal from _tbl_wallet where CustomerID='".$CustomerID."'");
+        return isset($res[0]['bal']) ? $res[0]['bal'] : "0";
+    }
+	function getTotalUserCredits($CustomerID) {
+        global $mysql;
+        $res = $mysql->select("select sum(Credits) as bal from _tbl_wallet where CustomerID='".$CustomerID."'");
+        return isset($res[0]['bal']) ? $res[0]['bal'] : "0";
+    }
+	function getTotalUserDebits($CustomerID) {
+        global $mysql;
+        $res = $mysql->select("select sum(Debits) as bal from _tbl_wallet where CustomerID='".$CustomerID."'");
+        return isset($res[0]['bal']) ? $res[0]['bal'] : "0";
+    }
 ?>
  

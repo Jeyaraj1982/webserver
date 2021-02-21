@@ -39,9 +39,23 @@
                                 </ul>
                             </div>
                         </li>
-                         
-                         
                         <li class="nav-item">   
+                            <a data-toggle="collapse" href="#Orders">
+                                <i class="fas fa-users"></i>
+                                <p>Orders</p>
+                                <span class="caret"></span>
+                            </a>
+                            <div class="collapse" id="Orders">
+                                <ul class="nav nav-collapse">
+                                    <li>
+                                        <a href="dashboard.php?action=Invoice/savedlist">
+                                            <span class="sub-item">Manage Saved Orders</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+						<li class="nav-item">   
                             <a data-toggle="collapse" href="#Invoice">
                                 <i class="fas fa-users"></i>
                                 <p>Invoice</p>
@@ -74,6 +88,27 @@
                             </div>
                         </li>
                         <li class="nav-item">   
+                            <a data-toggle="collapse" href="#Wallet">
+                                <i class="fas fa-users"></i>
+                                <p>Wallet</p>
+                                <span class="caret"></span>
+                            </a>
+                            <div class="collapse" id="Wallet">
+                                <ul class="nav nav-collapse">
+                                    <li>
+                                        <a href="dashboard.php?action=Wallet/Refill">
+                                            <span class="sub-item">Refill Wallet</span>
+                                        </a>
+                                    </li>
+									<li>
+                                        <a href="dashboard.php?action=Wallet/list">
+                                            <span class="sub-item">Wallet Summary</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+						<li class="nav-item">   
                             <a data-toggle="collapse" href="#Reports">
                                 <i class="fas fa-users"></i>
                                 <p>Reports</p>

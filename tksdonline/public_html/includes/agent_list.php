@@ -1,5 +1,5 @@
 <?php
-    $summary = $mysql->select("select * from `_tbl_member` where `MapedTo`='".$_SESSION['User']['MemberID']."' order by MemberID desc");
+    $summary = $mysql->select("select * from `_tbl_member` where `MapedTo`='".$_SESSION['User']['MemberID']."' order by MemberName");
 ?>
 <h3 style="text-align: center;padding:10px;"><?php echo $optttitle;?>My Agents</h3>
 <?php if ($_SESSION['User']['IsDistributor']=="1") { ?>

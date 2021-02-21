@@ -23,11 +23,8 @@ include_once("LeftMenu.php");
             }
             
             if($ErrorCount==0){
-                $random = rand(100,999);
-                $CustomerCode ="CSTR00".$random;
-             
-                        $id = $mysql->insert("_tbl_sales_customers",array("CustomerCode"       => $CustomerCode,
-                                                                          "CustomerName"       => $_POST['CustomerName'],
+                
+                        $id = $mysql->insert("_tbl_sales_customers",array("CustomerName"       => $_POST['CustomerName'],
                                                                           "CustomerNameTamil"  => $_POST['CustomerNameTamil'],
                                                                           "ShopName"           => $_POST['ShopName'],
                                                                           "ShopNameTamil"      => $_POST['ShopNameTamil'],
@@ -38,6 +35,9 @@ include_once("LeftMenu.php");
                                                                           "AddressLine2"       => str_replace("'","\\'",$_POST['AddressLine2']),
                                                                           "AddressLine3"       => str_replace("'","\\'",$_POST['AddressLine3']),
                                                                           "CreatedOn"          => date("Y-m-d H:i:s")));
+                                                                          
+                        $CustomerCode = "CSTR". str_pad($id,5,"0",STR_PAD_LEFT);
+                        $mysql->execute("update _tbl_sales_customers set CustomerCode='".$CustomerCode."' where CustomerID='".$id."'");
             if(sizeof($id)>0){
                 unset($_POST);
                 if($_GET['fr']=="invoice"){

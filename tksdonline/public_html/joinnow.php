@@ -31,6 +31,9 @@
                                                      "EmailID"      	=> $_POST['EmailID'],
                                                      "MobileNumber" 	=> $_POST['MobileNumber'],
                                                      "MemberPassword"   => $_POST['MemberPassword'],
+                                                     "Address1"         => $_POST['Address1'],
+                                                     "Address2"         => $_POST['Address2'],
+                                                     "PostalCode"       => $_POST['PostalCode'],
                                                      "MoneyTransfer"    => "1",
                                                      "IsActive"         => "1",
                                                      "IsMember"     	=> "1",
@@ -74,6 +77,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/core/menu/menu-types/vertical-menu.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/pages/authentication.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <style>                         
     input[type=number] {
   -moz-appearance:textfield;
@@ -119,20 +124,50 @@
 									<div class="form-group mb-50">
                                         <label class="text-bold-600" for="exampleInputEmail1">Email ID</label>
                                         <input type="text" value="<?php echo isset($_POST['EmailID']) ? $_POST['EmailID'] : "";?>" name="EmailID" id="EmailID" class="form-control" placeholder="EmailID">
-										<span class="errorstring" id="ErrEmailID"><?php echo isset($ErrEmailID)? $ErrEmailID : "";?></span>
+                                        <span class="errorstring" id="ErrEmailID"><?php echo isset($ErrEmailID)? $ErrEmailID : "";?></span>
 									</div>
+                                    <div class="form-group mb-50">
+                                        <label class="text-bold-600" for="exampleInputEmail1">Address Line1</label>
+                                        <input type="text" value="<?php echo isset($_POST['Address1']) ? $_POST['Address1'] : "";?>" name="Address1" id="Address1" class="form-control" placeholder="Address Line1">
+                                        <span class="errorstring" id="ErrAddress1"><?php echo isset($ErrAddress1)? $ErrAddress1 : "";?></span>
+                                    </div>
+                                    <div class="form-group mb-50">
+                                        <label class="text-bold-600" for="exampleInputEmail1">Address Line2</label>
+                                        <input type="text" value="<?php echo isset($_POST['Address2']) ? $_POST['Address2'] : "";?>" name="Address2" id="Address2" class="form-control" placeholder="Address Line2">
+                                        <span class="errorstring" id="ErrAddress2"><?php echo isset($ErrAddress2)? $ErrAddress2 : "";?></span>
+                                    </div>
+                                    <div class="form-group mb-50">
+                                        <label class="text-bold-600" for="exampleInputEmail1">PostalCode</label>
+                                        <input type="text" value="<?php echo isset($_POST['PostalCode']) ? $_POST['PostalCode'] : "";?>" name="PostalCode" id="PostalCode" class="form-control" placeholder="Postal Code">
+                                        <span class="errorstring" id="ErrPostalCode"><?php echo isset($ErrPostalCode)? $ErrPostalCode : "";?></span>
+                                    </div>
                                     <div class="form-group">
                                         <label class="text-bold-600" for="exampleInputPassword1">Password</label>
-                                        <input type="password" value="<?php echo isset($_POST['MemberPassword']) ? $_POST['MemberPassword'] : "";?>" name="MemberPassword" id="MemberPassword" class="form-control" placeholder="Password">
-										<span class="errorstring" id="ErrMemberPassword"><?php echo isset($ErrMemberPassword)? $ErrMemberPassword : "";?></span>
-									</div>
+                                        <div class="input-group">
+                                            <input type="password" value="<?php echo isset($_POST['MemberPassword']) ? $_POST['MemberPassword'] : "";?>" name="MemberPassword" id="MemberPassword" class="form-control" id="exampleInputPassword1" placeholder="Password" required="">
+                                            <span class="input-group-append bg-white">
+                                                <button class="btn border border-left-0" type="button" style="padding-top:0px"  onclick="showHidePwd('MemberPassword',$(this))"><i class="fa fa-eye-slash" ></i></button>
+                                            </span>
+                                        </div>
+                                        <span class="errorstring" id="ErrMemberPassword"><?php echo isset($ErrMemberPassword)? $ErrMemberPassword : "";?></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="text-bold-600" for="exampleInputPassword1">Comfirm Password</label>
+                                        <div class="input-group">
+                                            <input type="password" value="<?php echo isset($_POST['ConfirmMemberPassword']) ? $_POST['ConfirmMemberPassword'] : "";?>" name="ConfirmMemberPassword" id="ConfirmMemberPassword" class="form-control" id="exampleInputPassword1" placeholder="Password" required="">
+                                            <span class="input-group-append bg-white">
+                                                <button class="btn border border-left-0" type="button" style="padding-top:0px"  onclick="showHidePwd('ConfirmMemberPassword',$(this))"><i class="fa fa-eye-slash" ></i></button>
+                                            </span>
+                                        </div>
+                                        <span class="errorstring" id="ErrConfirmMemberPassword"><?php echo isset($ErrConfirmMemberPassword)? $ErrConfirmMemberPassword : "";?></span>
+                                    </div>
                                     <?php if (isset($error)) { ?>
                                     <div class="form-group">
                                         <p align="center" style="color:red">&nbsp;<?php echo $error;?></p>
                                     </div>
                                     <?php } ?>
                                     <button type="submit" name="submitBtn" class="btn btn-success  glow w-100 position-relative">Join Now<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></button>
-                                    <button type="button" onclick="location.href='https://tksdonlineservice.in/index.php'" class="btn btn-secondary  glow w-100 position-relative" style="clear:both;margin-top:20px;"><i id="icon-arrow" class="bx bx-left-arrow-alt" style="float: left;"></i>Back</button>
+                                    <button type="button" onclick="location.href='https://tksdonlineservice.in/index.php'" class="btn btn-outline-success glow w-100 position-relative" style="clear:both;margin-top:20px;"><i id="icon-arrow" class="bx bx-left-arrow-alt" style="float: left;"></i>Back</button>
                                 </form>
                             </div>
                         </div>
@@ -196,7 +231,15 @@ $(document).ready(function () {
         }
    });
    $("#MemberPassword").blur(function () {
-        IsNonEmpty("MemberPassword","ErrMemberPassword","Please Enter Member Password<br>");
+        IsNonEmpty("MemberPassword","ErrMemberPassword","Please Enter Password<br>");
+   });
+   $("#ConfirmMemberPassword").blur(function () {
+        IsNonEmpty("ConfirmMemberPassword","ErrConfirmMemberPassword","Please Enter Confirm Password<br>");
+   });
+    $("#ConfirmMemberPassword").blur(function () {
+        if($("#MemberPassword").val()!=$("#ConfirmMemberPassword").val()){
+            $('#ErrConfirmMemberPassword').html("Passwords do not match");    
+       }
    });                                                                                                    
 });
  function SubmitLogin() { 
@@ -205,6 +248,9 @@ $(document).ready(function () {
          $('#ErrEmailID').html("");            
          $('#ErrMobileNumber').html("");            
          $('#ErrMemberPassword').html("");
+         $('#ErrAddress1').html("");
+         $('#ErrAddress2').html("");
+         $('#ErrPostalCode').html("");
          
         if(IsNonEmpty("Name","ErrName","Please Enter Name<br>")){
            IsAlphaNumeric("Name","ErrName","Please Enter Alpha Numerics Characters Only<br>");
@@ -215,9 +261,30 @@ $(document).ready(function () {
         if(IsNonEmpty("MobileNumber","ErrMobileNumber","Please Enter Mobile Number<br>")){
             IsMobileNumber("MobileNumber","ErrMobileNumber","Please Enter Valid Mobile Number<br>");
         }
+       IsNonEmpty("Address1","ErrAddress1","Please Enter Address Line1<br>");
+       IsNonEmpty("Address2","ErrAddress2","Please Enter Address Line2<br>");
+       IsNonEmpty("PostalCode","ErrPostalCode","Please Enter Postal Code<br>");
        IsNonEmpty("MemberPassword","ErrMemberPassword","Please Enter Password<br>");
+       IsNonEmpty("ConfirmMemberPassword","ErrConfirmMemberPassword","Please Enter Confirm Password<br>");
+       
+       if($("#MemberPassword").val()!=$("#ConfirmMemberPassword").val()){
+            $('#ErrConfirmMemberPassword').html("Passwords do not match");    
+            ErrorCount++;
+       }
         return (ErrorCount==0) ? true : false;
  }
 </script>
   </body>
 </html>
+<script>
+function showHidePwd(pwd,btn) {
+  var x = document.getElementById(pwd);
+  if (x.type === "password") {
+    x.type = "text";
+    btn.html('<i class="fa fa-eye"></i>');
+  } else {
+    x.type = "password";
+    btn.html('<i class="fa fa-eye-slash"></i>');
+  }
+}
+</script>

@@ -1,6 +1,6 @@
 <?php
-class MySqldatabase
-   {
+    class MySqldatabase
+    {
         public $link   = "";
         public $qry    = "";
           public $error = "";
@@ -66,10 +66,10 @@ class MySqldatabase
         }
 
         public function writeSql($text) {
-            $myFile = date("Y_m_d")."_.txt";
+            $myFile = SQL_LOG_PATH."/".date("Y_m_d")."_.txt";
             $fh = fopen($myFile, 'a') or die ("can't open file..");
             fwrite($fh, "[".date("Y-m-d H:i:s")."]\t".$text."\n");
             fclose($fh);
         }
-}
+    }
 ?>

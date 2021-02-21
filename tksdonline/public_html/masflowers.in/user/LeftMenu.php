@@ -32,6 +32,32 @@
                          
                          
                         <li class="nav-item">   
+                            <a data-toggle="collapse" href="#Orders">
+                                <i class="fas fa-users"></i>
+                                <p>Orders</p>
+                                <span class="caret"></span>
+                            </a>
+                            <div class="collapse" id="Orders">
+                                <ul class="nav nav-collapse">
+                                    <li>
+                                        <a href="dashboard.php?action=Invoice/create">
+                                            <span class="sub-item">New Order</span>
+                                        </a>
+                                    </li>
+									<li>
+                                        <a href="dashboard.php?action=Invoice/MySavedInvoices">
+                                            <span class="sub-item">My Saved Orders</span>
+                                        </a>
+                                    </li>
+									<li>
+                                        <a href="dashboard.php?action=Invoice/AllSavedInvoices">
+                                            <span class="sub-item">All Saved Orders</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+						<li class="nav-item">   
                             <a data-toggle="collapse" href="#Invoice">
                                 <i class="fas fa-users"></i>
                                 <p>Invoice</p>

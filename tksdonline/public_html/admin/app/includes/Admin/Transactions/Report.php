@@ -126,7 +126,9 @@ txn.memberid=mem.MemberID where date(txn.txndate)=date('".$reportDate."') ".$opt
                     <option value="12" <?php echo $m==12 ? " selected='selected' " : "";?>>DEC</option>
                 </select>
                 <select name="y">
-                    <option value="2020"  <?php echo $y==1 ? " selected='selected' " : "";?>>2020</option>
+                    <?php for($i=$_CONFIG['START_YEAR'];$i<=$_CONFIG['END_YEAR'];$i++) { ?>
+                    <option value="<?php echo $i;?>"  <?php echo $y==$i ? " selected='selected' " : "";?>><?php echo $i;?></option>
+                    <?php } ?>
                 </select>
                 
                 <select name="o">

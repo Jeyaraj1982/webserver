@@ -120,6 +120,8 @@ if (sizeof($t)>0) {
 </div>
 <?php } ?>
 <!-- List of Plans -->
+<?php include_once("include_plans.php");?>
+<!--
 <div class="modal" id="plans">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -136,6 +138,7 @@ if (sizeof($t)>0) {
     </div>
   </div>
 </div>
+-->
 <!-- End of List Plans -->
 
 <!-- Confirmation Popup -->
@@ -219,7 +222,7 @@ var IsConfirm=0;
    function doConfrim() {
     IsConfirm=1;
      $('#ConfirmationPopup').modal("hide");
-     $('#overlay_body').show(); 
+       $('#overlay_body').show();
      $('#submitRequest').trigger("click");
 }
 </script>

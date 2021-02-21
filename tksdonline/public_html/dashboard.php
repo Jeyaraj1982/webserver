@@ -18,7 +18,13 @@
     <link rel="stylesheet" type="text/css" href="assets/css/colors.min.css?v=2.0.1">
     <link rel="stylesheet" type="text/css" href="assets/css/components.min.css?v=2.0.1">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css?v=2.0.1">
-    <script src="assets/js/plugin/webfont/webfont.min.js"></script>
+    <script src="assets/js/plugin/webfont/webfont.min.js"></script>     
+    <?php if($_GET['action']=="busticketbooking"){ ?>
+        <script src="admin/assets/js/jquery-min.js"></script> 
+        <script src="assets/js/jquery-ui.js"></script>   
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> 
+    <?php } ?>     
+    
     <script>
         WebFont.load({
             google: {"families":["Lato:300,400,700,900"]},
@@ -28,9 +34,12 @@
             }
         });
     </script>
+    <style>
+.errorstring{text-align: right;width:100%;font-size:12px;padding:5px;color:red}
+</style>
     <style>        
     input[type=number] {-moz-appearance:textfield;}
-    </style>
+    </style>   
     <script>
     function do_markascredit() {
         if($('#markascredit').prop("checked") == true){
@@ -68,7 +77,7 @@
     <div class="content-wrapper">         
         <div class="row">
             <div class="col-12">                                      
-                <div class="card">
+                <div class="card" style="box-shadow:none">
                     <div class="card-header" style="text-align: center;">
                         <img src="assets/img/title.jpg" style="width:80%">
                     </div>
@@ -108,11 +117,14 @@
     </div>
 </div>
       </div>                
-    </div>
+    </div>   
+    <?php if($_GET['action']!="busticketbooking"){ ?>     
     <script src="admin/assets/js/jquery-min.js"></script>
+    <?php } ?>
+    <script src="https://malsup.github.io/jquery.blockUI.js"></script>
     <script src="admin/assets/js/bootstrap.min.js"></script>
     <script src="admin/assets/js/popper.min.js"></script>
-    <script type="text/javascript">
+    <script type="text/javascript"> 
         function doValidate(e) {
             if(document.getElementById('MobileNumber').value.length>=10 && e.keyCode!=8) {
                 return false;   
@@ -133,6 +145,10 @@
         $( document ).ready(function() {
         $('#overlay_body').hide();   
         });
-</script>
-  </body>
+        
+        
+        
+        
+</script>   
+</body>
 </html>

@@ -63,7 +63,7 @@
                         <li class="nav-item">   
                             <a data-toggle="collapse" href="#Invoice">
                                 <i class="fas fa-users"></i>
-                                <p>Invoice</p>
+                                <p>Invoice</p> 
                                 <span class="caret"></span>
                             </a>
                             <div class="collapse" id="Invoice">
@@ -71,6 +71,11 @@
                                     <li>
                                         <a href="dashboard.php?action=Invoice/list">
                                             <span class="sub-item">Manage Invoice</span>
+                                        </a>
+                                    </li>
+									<li>
+                                        <a href="dashboard.php?action=Invoice/SavedInvoices">
+                                            <span class="sub-item">Manage Saved Invoice</span>
                                         </a>
                                     </li>
                                 </ul>

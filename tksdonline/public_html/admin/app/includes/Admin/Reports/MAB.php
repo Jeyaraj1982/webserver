@@ -1,24 +1,16 @@
 <?php
-      $list=array();
-$month = "05";
-$year = "2020";
+    $list=array();
+    
+    $month = isset($_GET['m']) ? $_GET['m'] : date("m");
+    $year = isset($_GET['y']) ? $_GET['y'] : date("Y");
 
-$month = isset($_GET['m']) ? $_GET['m'] : date("m");
-$year = isset($_GET['y']) ? $_GET['y'] : date("Y");
+    $start_date = "01-".$month."-".$year;
+    $start_time = strtotime($start_date);
+    $end_time = strtotime("+1 month", $start_time);
 
-$start_date = "01-".$month."-".$year;
-$start_time = strtotime($start_date);
-
-$end_time = strtotime("+1 month", $start_time);
-
-for($i=$start_time; $i<$end_time; $i+=86400)
-{
-   //$list[] = date('Y-m-d-D', $i);
-   $list[] = date('Y-m-d', $i);
-}
-
-//print_r($list);     
-
+    for($i=$start_time; $i<$end_time; $i+=86400) {
+        $list[] = date('Y-m-d', $i);
+    }
    $previous_bal = 0;  
 ?>
 <div style="padding:25px">
@@ -31,7 +23,6 @@ for($i=$start_time; $i<$end_time; $i+=86400)
             <li class="nav-item"><a href="dashboard.php?action=Members/AllMembers">Transactions</a></li>
         </ul>
     </div>
-     
     <style>
     .list_td {font-size:11px;padding:0px 5px !important;}
     </style>
@@ -43,40 +34,34 @@ for($i=$start_time; $i<$end_time; $i+=86400)
                 </div>
                 <div class="card-body">
                 <form action="" method="get">
-                <input type="hidden" value="Reports/MAB" name="action">
-                 
-                <select name="m">
-                    <option value="1"  <?php echo $month==1 ? " selected='selected' " : "";?>>JAN</option>
-                    <option value="2"  <?php echo $month==2 ? " selected='selected' " : "";?>>FEB</option>
-                    <option value="3"  <?php echo $month==3 ? " selected='selected' " : "";?>>MAR</option>
-                    <option value="4"  <?php echo $month==4 ? " selected='selected' " : "";?>>APR</option>
-                    <option value="5"  <?php echo $month==5 ? " selected='selected' " : "";?> >MAY</option>
-                    <option value="6"  <?php echo $month==6 ? " selected='selected' " : "";?> >JUN</option>
-                    <option value="7"  <?php echo $month==7 ? " selected='selected' " : "";?> >JLY</option>
-                    <option value="8"  <?php echo $month==8 ? " selected='selected' " : "";?>>AUG</option>
-                    <option value="9"  <?php echo $month==9 ? " selected='selected' " : "";?>>SEP</option>
-                    <option value="10" <?php echo $month==10 ? " selected='selected' " : "";?>>OCT</option>
-                    <option value="11" <?php echo $month==11 ? " selected='selected' " : "";?>>NOV</option>
-                    <option value="12" <?php echo $month==12 ? " selected='selected' " : "";?>>DEC</option>
-                </select>
-                <select name="y">
-                    <option value="2020"  <?php echo $year==1 ? " selected='selected' " : "";?>>2020</option>
-                </select>
-                
-                
-                
-<input type="submit" value="Report">
+                    <input type="hidden" value="Reports/MAB" name="action">
+                    <select name="m">
+                        <option value="1"  <?php echo $month==1 ? " selected='selected' " : "";?>>JAN</option>
+                        <option value="2"  <?php echo $month==2 ? " selected='selected' " : "";?>>FEB</option>
+                        <option value="3"  <?php echo $month==3 ? " selected='selected' " : "";?>>MAR</option>
+                        <option value="4"  <?php echo $month==4 ? " selected='selected' " : "";?>>APR</option>
+                        <option value="5"  <?php echo $month==5 ? " selected='selected' " : "";?> >MAY</option>
+                        <option value="6"  <?php echo $month==6 ? " selected='selected' " : "";?> >JUN</option>
+                        <option value="7"  <?php echo $month==7 ? " selected='selected' " : "";?> >JLY</option>
+                        <option value="8"  <?php echo $month==8 ? " selected='selected' " : "";?>>AUG</option>
+                        <option value="9"  <?php echo $month==9 ? " selected='selected' " : "";?>>SEP</option>
+                        <option value="10" <?php echo $month==10 ? " selected='selected' " : "";?>>OCT</option>
+                        <option value="11" <?php echo $month==11 ? " selected='selected' " : "";?>>NOV</option>
+                        <option value="12" <?php echo $month==12 ? " selected='selected' " : "";?>>DEC</option>
+                    </select>
+                    <select name="y">
+                        <?php for($i=$_CONFIG['START_YEAR'];$i<=$_CONFIG['END_YEAR'];$i++) { ?>
+                            <option value="<?php echo $i;?>"  <?php echo $year==$i ? " selected='selected' " : "";?>><?php echo $i;?></option>
+                        <?php } ?>
+                    </select>
+                    <input type="submit" value="Report">
                 </form>
-                    <div class="table-responsive">
-                    <?php
-                    
-                   
-echo "<table border='1'>";
-                        $data = $mysql->select("select * from _tbl_member where MAB_Enabled='1'");
-                        
-                                echo "<tr>";
-                                    echo "<td>Member Name</td>";
-                                    
+                <div class="table-responsive">
+                <?php
+                    $data = $mysql->select("select * from _tbl_member where MAB_Enabled='1'");
+                    echo "<table border='1'>";
+                        echo "<tr>";
+                            echo "<td>Member Name</td>";
                             foreach($list as $l) {
                                 echo "<td>".$l."</td>";
                             }
@@ -119,12 +104,9 @@ echo "</table>";
                     <input type="hidden" value="<?php echo $month;?>" name="m">
                       <input type="submit" value="Continue" name="ContinueButton">
                     </form>
-                               
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>  
- 
- 

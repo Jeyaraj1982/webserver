@@ -85,91 +85,7 @@ input:focus{
    <?php } else {  ?>
 <?php 
 $cstmr = $mysql->select("select * from _tbl_sales_customers where md5(CustomerID)='".$_GET['csid']."'");
- if (isset($_POST['invoice_btn'])) {  
-     
-     $random = sizeof($mysql->select("select * from invoice_order")) + 1;
-     $order_code ="IN00".$random;
-     
-        $CashTwoThousand      =  $_POST['TwoThousand'];
-        $CashFiveHundred      =  $_POST['FiveHundred'];
-        $CashTwoHundred       =  $_POST['TwoHundred'];
-        $CashOneHundred       =  $_POST['OneHundred'];
-        $CashFiftyRupees      =  $_POST['FiftyRupees'];
-        $CashTwentyRupees     =  $_POST['TwentyRupees'];
-        $CashTenRupees        =  $_POST['TenRupees'];
-        $Coins                =  $_POST['Coins'];
-        $TotalCashReceived    =  $_POST['TotalCashReceived'];
-        $ReturnCashToCustomer =  $_POST['ReturnCashToCustomer'];
-       $customer = $mysql->select("select * from _tbl_sales_customers where CustomerID='".$_POST['UserDetails']."'");
-       $id = $mysql->insert("invoice_order",array("user_id"                 => $_POST['UserDetails'], 
-                                                  "order_code"              => $order_code,
-                                                  "order_receiver_name"     => $customer[0]['CustomerName'],
-                                                  "order_receiver_address"  => $customer[0]['AddressLine1'].",".$customer[0]['AddressLine2'].",".$customer[0]['AddressLine3'],
-                                                 // "order_total_before_tax"  => $_POST['totalAftertax'],
-                                                 //  "order_total_tax"         => $_POST['taxAmount'],
-                                                 // "order_tax_per"           => $_POST['taxRate'],
-                                                  "order_total_after_tax"   => $_POST['subTotal'],
-                                                  "order_amount_paid"       => "0.00",
-                                                  "order_total_amount_due"  => $_POST['subTotal'],
-                                                  "TransactionMode"           => $_POST['TransactionMode'],
-                                                 // "CashTwoThousand"         => $CashTwoThousand,
-                                                // "CashFiveHundred"         => $CashFiveHundred,
-                                                //  "CashTwoHundred"          => $CashTwoHundred,                           
-                                                //  "CashOneHundred"          => $CashOneHundred,
-                                                //  "CashFiftyRupees"         => $CashFiftyRupees,
-                                                //  "CashTwentyRupees"        => $CashTwentyRupees,
-                                                //  "CashTenRupees"           => $CashTenRupees,
-                                                //  "Coins"                   => $Coins,
-                                                //  "TotalCashReceived"       => $TotalCashReceived,
-                                                //  "ReturnCashToCustomer"    => $ReturnCashToCustomer,
-                                                  "note"                    => $_POST['notes']));
-       $g = $mysql->qry; 
-                                                
-for ($i = 0; $i < count($_POST['productCode']); $i++) {
-     $pid= $mysql->insert("invoice_order_item",array("order_id"                 => $id,
-                                                  "item_code"                => $_POST['productCode'][$i],
-                                                  "item_name"                => $_POST['productName'][$i],
-                                                  "order_item_quantity"      => $_POST['quantity'][$i],
-                                                  "order_item_price"         => $_POST['price'][$i],
-                                                  "order_item_final_amount"  => $_POST['total'][$i]));
-      $f = $mysql->qry;                                                                                           
-}
-   $ReceiptCode ="RT00".$random; 
-              $rid= $mysql->insert("receipt",array("receipt_code"             => $ReceiptCode,
-                                                  "order_id"                 => $id,
-                                                  "order_date"               => date("Y-m-d H:i:s"),
-                                                  "user_id"                  => $customer[0]['CustomerID'],
-                                                  "receipt_amount"           => $_POST['AmountPaid'],
-                                                  "invoice_due_amount"       => number_format($_POST['subTotal']-$_POST['AmountPaid'],2),
-                                                  "receipt_date"             => date("Y-m-d H:i:s")));
-                                                  
-              $paidamount = $_POST['AmountPaid'];                                                              
-              $dueamount  = $_POST['subTotal']-$paidamount;
-                   $mysql->execute("update invoice_order set `order_amount_paid`      ='".$paidamount."',
-                                                             `order_total_amount_due` ='".$dueamount."',                    
-                                                             `receipt_id`             ='".$rid."',
-                                                             `receipt_date`             ='".date("Y-m-d H:i:s")."'
-                                                              where `order_id`='".$id."'");  
-      if(sizeof($id)>0 && sizeof($pid)>0){                                                                           
-                  $successmessage= $g;   
-                 ?>                                                                   
-            <script>
-            $(document).ready(function() {                                                                        
-                successpopup('<?php echo MD5($id);?>','<?php echo $_POST['AmountPaid'];?>');
-             });
-            </script>                                                                                     
-     <?php unset($_POST); }else {  ?>
-        <script>
-             $(document).ready(function() {
-                swal({ 
-                  title: "Error",
-                   text: "Error Create Invoice",
-                    type: "error" 
-                  });
-             });
-            </script>
-    <?php  }
- }   ?>
+?>
   <script type="text/javascript" src="assets/js/google_jsapi.js"></script>
 <script type="text/javascript">
    google.load("elements", "1", {
@@ -198,6 +114,7 @@ for ($i = 0; $i < count($_POST['productCode']); $i++) {
                 <div class="col-md-12">                                                                      
                     <div class="card">
                         <div class="container content-invoice">
+                        
                             <form action="" id="invoice-form" method="post" class="invoice-form" role="form" novalidate="">
                             <input type="hidden" name="TransactionMode" id="TransactionMode" class="form-control">
                             <input type="hidden" name="AmountPaid" id="AmountPaid" class="form-control">
@@ -893,12 +810,12 @@ function CallConfirmationCashSale(){
        if (count==0) {
             $('#ErrProduct').html("Please Select Product");                                                    
             ErrorCount++;                                                                                      
-        }else {
+        }/*else {
            if (count>10) {
             $('#ErrProduct').html("Please Select Less Than 10 Product");                                                    
             ErrorCount++;                                                                                      
         } 
-        }
+        }*/
     
    
     if(ErrorCount==0) {
@@ -981,12 +898,12 @@ function CallConfirmationCreditSale(){
        if (count==0) {
             $('#ErrProduct').html("Please Select Product");                                                    
             ErrorCount++;                                                                                      
-        }else {
+        }/*else {
            if (count>10) {
             $('#ErrProduct').html("Please Select Less Than 10 Product");                                                    
             ErrorCount++;                                                                                      
         } 
-        }
+        }*/
     
    
     if(ErrorCount==0) {
@@ -1353,5 +1270,6 @@ function SwitchCSN(event){
         
     }
 }
+
 </script> 
 <?php } //div_customerdetails ?> 

@@ -57,7 +57,7 @@
                 </div>
                 <div class="form-group">
                     <label class="text-bold-600" for="exampleInputEmail1">Gender</label>
-                    <select name="AccountType" class="form-control">
+                    <select name="Gender" class="form-control">
                         <option value="Male" <?php echo $myprofile[0]['Gender']=="Male" ? " selected='selected' " : ""; ?> >Male</option>
                         <option value="Female" <?php echo $myprofile[0]['Gender']=="Female" ? " selected='selected' " : ""; ?>  >Female</option>
                     </select>

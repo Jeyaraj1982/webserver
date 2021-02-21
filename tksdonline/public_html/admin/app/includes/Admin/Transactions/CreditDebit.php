@@ -68,9 +68,14 @@
                         </div>
                     </div>  
    <?php
-                        $d = date("d");
-                        $m = date("m");
-                        $y = date("Y");
+                        $d = isset($_POST['d']) ? $_POST['d'] : date("d");
+                        $m = isset($_POST['m']) ? $_POST['m'] : date("m");
+                        $y = isset($_POST['y']) ? $_POST['y'] : date("Y");
+                        
+                        $td = isset($_POST['td']) ? $_POST['td'] : date("d");
+                        $tm = isset($_POST['tm']) ? $_POST['tm'] : date("m");
+                        $ty = isset($_POST['ty']) ? $_POST['ty'] : date("Y");
+                        
                     ?>                 
                      <div class="row mb15"> 
                         <div class="col-md-12 col-xs-6 b-r"> 
@@ -124,7 +129,10 @@
                     <option value="12" <?php echo $m==12 ? " selected='selected' " : "";?>>DEC</option>
                 </select>
                 <select name="y">
-                    <option value="2020"  <?php echo $y==1 ? " selected='selected' " : "";?>>2020</option>
+                 <?php for($i=$_CONFIG['START_YEAR'];$i<=$_CONFIG['END_YEAR'];$i++) { ?>
+                            <option value="<?php echo $i;?>"  <?php echo $y==$i ? " selected='selected' " : "";?>><?php echo $i;?></option>
+                        <?php } ?>
+                     
                 </select>
                 
                 
@@ -178,7 +186,9 @@
                     <option value="12" <?php echo $m==12 ? " selected='selected' " : "";?>>DEC</option>
                 </select>
                 <select name="ty">
-                    <option value="2020"  <?php echo $y==1 ? " selected='selected' " : "";?>>2020</option>
+                  <?php for($i=$_CONFIG['START_YEAR'];$i<=$_CONFIG['END_YEAR'];$i++) { ?>
+                            <option value="<?php echo $i;?>"  <?php echo $ty==$i ? " selected='selected' " : "";?>><?php echo $i;?></option>
+                        <?php } ?>
                 </select>
                             
                         </div>

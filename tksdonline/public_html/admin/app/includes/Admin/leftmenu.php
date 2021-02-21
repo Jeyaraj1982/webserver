@@ -5,11 +5,11 @@
         </a>
     </li>
     <li class="nav-item">
-        <a data-toggle="collapse" href="#users"><i class="fas fa-layer-group"></i><p>Agents</p><span class="caret"></span></a>
+        <a data-toggle="collapse" href="#users"><i class="fas fa-layer-group"></i><p>Partners</p><span class="caret"></span></a>
         <div class="collapse" id="users">
             <ul class="nav nav-collapse">
                 <li><a href="dashboard.php?action=Distributors/List"><span class="sub-item">Manage Distributors</span></a></li>
-                <li><a href="dashboard.php?action=Users/List"><span class="sub-item">Manage Users</span></a></li>    
+                <li><a href="dashboard.php?action=Users/List"><span class="sub-item">Manage Agents</span></a></li>    
                 <!--<li><a href="dashboard.php?action=ApiUsers/List"><span class="sub-item">Manage Api Users</span></a></li>-->
             </ul>
         </div>          

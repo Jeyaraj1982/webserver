@@ -17,14 +17,15 @@ include_once("LeftMenu.php");
             
             if($ErrorCount==0){
                 $random = sizeof($mysql->select("select * from _tbl_sales_admin")) + 1;
-                $UserCode ="ADS0000".$random;
              
-                        $id = $mysql->insert("_tbl_sales_admin",array("AdminCode"       => $UserCode,
-                                                                          "AdminName"       => $_POST['UserName'],
+                        $id = $mysql->insert("_tbl_sales_admin",array("AdminName"       => $_POST['UserName'],
                                                                           "UserName"  => $_POST['LoginName'],
                                                                           "Password"           => $_POST['Password'],
                                                                           "IsAdmin"           => "0",
                                                                           "CreatedOn"          => date("Y-m-d H:i:s")));
+                              $UserCode = "ADS". str_pad($id,5,"0",STR_PAD_LEFT);
+                              $mysql->execute("update _tbl_sales_admin set AdminCode='".$UserCode."' where AdminID='".$id."'");                                                  
+                        
             if(sizeof($id)>0){
                 unset($_POST);
                 $link="Users/list&status=All";

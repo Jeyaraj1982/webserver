@@ -19,13 +19,10 @@ include_once("LeftMenu.php");
 
             // if (move_uploaded_file($_FILES["uploadimage1"]["tmp_name"], $target_file)) {
                  // echo "<script>alert('a');</script>";
-                  $random = sizeof($mysql->select("select * from _tbl_sales_products")) + 1;
-                $ProductCode ="MAS0000".$random;
-                 
+                
                  $unitm = $mysql->select("select * from _tbl_units where id='".$_POST['ProductQty']."'");
                
-                        $id = $mysql->insert("_tbl_sales_products",array("ProductCode"          => $ProductCode,
-                                                                         "BarCode"              => $_POST['BarCode'],
+                        $id = $mysql->insert("_tbl_sales_products",array("BarCode"              => $_POST['BarCode'],
                                                                          "ProductName"          => $_POST['ProductName'],
                                                                          "ProductNameTamil"     => $_POST['ProductNameTamil'],
                                                                          "ProductUnitID"        => $_POST['ProductQty'],
@@ -34,6 +31,8 @@ include_once("LeftMenu.php");
                                                                          "ProductPrice"         => $_POST['ProductPrice'],
                                                                          "Description"          => str_replace("'","\\'",$_POST['Description']),
                                                                          "AddedOn"              => date("Y-m-d H:i:s")));
+                        $ProductCode = "MAS". str_pad($id,5,"0",STR_PAD_LEFT);
+                        $mysql->execute("update _tbl_sales_products set ProductCode='".$ProductCode."' where ProductID='".$id."'");
             if(sizeof($id)>0){
                 unset($_POST);
                 if($_GET['fr']=="invoice"){

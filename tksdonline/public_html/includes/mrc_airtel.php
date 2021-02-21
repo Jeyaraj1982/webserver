@@ -26,7 +26,6 @@ if (sizeof($t)>0) {
 ?>
 <?php if ($enable) { ?>
     <?php if (isset($_POST['submitRequest'])) { ?>
-        <script>$('#myModal').modal("show");</script>
         <?php
         $result = $application->doRecharge(array("MemberID"        => $_SESSION['User']['MemberID'],
                                                  "operator"        => $data[0]['OperatorLAPUCode'],
@@ -36,7 +35,6 @@ if (sizeof($t)>0) {
                                                  "credit_nickname" => $_POST['credit_nickname'],
                                                  "CrAmount"        => $_POST['CrAmount'],
                                                  "amount"          => $_POST['Amount']));
-        echo "<script>$('#myModal').modal('hide');</script>";
         if ($result['status']=="success" || $result['status']=="pending") {
         ?>
             <div class="row">
@@ -200,7 +198,8 @@ if (sizeof($t)>0) {
     function doConfrim() {
         IsConfirm=1;
         $('#ConfirmationPopup').modal("hide");
-        $('#overlay_body').show(); 
+        //$('#myModal').modal("show");
+        $('#overlay_body').show();
         $('#submitRequest').trigger("click");
     }
 </script>

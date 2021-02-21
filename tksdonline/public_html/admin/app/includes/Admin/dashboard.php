@@ -30,7 +30,7 @@
                             </div>
                         </div>  -->
                         
-                        <div class="col-sm-6 col-md-3" style="cursor:pointer" onclick="loadPage('Agents/List')">
+                        <div class="col-sm-6 col-md-3" style="cursor:pointer" onclick="loadPage('Users/List')">
                             <div class="card card-stats card-primary card-round">
                                 <div class="card-body">
                                     <div class="row">

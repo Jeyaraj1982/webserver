@@ -20,9 +20,9 @@
                                         Manage Invoices
                                     </div>
                                 </div>
-                                <div class="col-md-6" style="text-align: right;">
+                                <!--<div class="col-md-6" style="text-align: right;">
                                     <a href="dashboard.php?action=Invoice/create" class="btn btn-primary btn-xs">Create Invoice</a>
-                                </div>
+                                </div>-->
                             </div>
                         </div>
                         <div class="card-body">
