@@ -20,7 +20,7 @@
 					<div id="content" class="col-md-8 col-sm-12 pull-left">
                         <div class="widget">
 							<div class="widget-title">
-								<h4>INSTAFOREX CLIENTS DEPOSIT WITHDRAWAL SEND YOUR DETAILS TO Whats App No.9994441105</h4>
+								<h4>INSTAFOREX CLIENTS DEPOSIT WITHDRAWAL SEND YOUR DETAILS to Whats App & GOOGLEPAY No.9994441105</h4>
 							</div><!-- end widget-title -->
                               <Table style="width:100%;">
             <tr>
@@ -35,13 +35,13 @@
             </tr>
             <tr>
                 <td style="width:45%;text-align:center;">
-                    BUY USD rate Rs.82 Per USD including exchange fees<Br>
+                    BUY USD rate Rs.81 Per USD including exchange fees<Br>
                     Min. Deposit 100 USD & Max Deposit 5000 USD per day<Br>
                     Deposit Instantly
                 </td>
                 <td></td>
                 <td style="width:45%;text-align:center;">
-                    SELL USD rate Rs.71 Per USD including exchange fees<Br>
+                    SELL USD rate Rs.72 Per USD including exchange fees<Br>
                     Min. Withdrawal 50 USD & Max Withdrawal 5000 USD per day<Br>
                     Withdrawal taken 24 hrs
                 </td>
