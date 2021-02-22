@@ -20,7 +20,7 @@
         <table align="center" style="margin:0px auto">
             <tr>
                 <td style="width:64px"><img src="images/fbs_logo.jpeg" style="height:64px"></td>
-                <td style="text-align:left;padding-left:10px;">FBS clients deposit withdraw,<br> send your details to  Whatapp No. 9994441105</td>
+                <td style="text-align:left;padding-left:10px;">FBS clients deposit withdraw,<br> send your details to  Whatapp & GOOGLEPAY No.9994441105</td>
             </tr>
         </table>
          
@@ -37,12 +37,12 @@
             </tr>
             <tr>
                 <td style="width:50%;text-align:center;">
-                    BUY USD rate Rs.82 Per USD including exchange fees<Br>
+                    BUY USD rate Rs.81 Per USD including exchange fees<Br>
                     Min. Deposit 100 USD & Max Deposit 5000 USD per day<Br>
                     Deposit Instantly
                 </td>
                 <td style="width:50%;text-align:center;">
-                    SELL USD rate Rs.71 Per USD including exchange fees<Br>
+                    SELL USD rate Rs.72 Per USD including exchange fees<Br>
                     Min. Withdrawal 50 USD & Max Withdrawal 5000 USD per day<Br>
                     Withdrawal taken 20 minutes
                 </td>
