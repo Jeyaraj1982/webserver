@@ -1,0 +1,268 @@
+Return-Path: <bounce@systemsplex.com>
+Delivered-To: mprsecurity@119-18-48-204.webhostbox.net
+Received: from 119-18-48-204.webhostbox.net
+	by 119-18-48-204.webhostbox.net with LMTP
+	id 6CzMCiOBkF+hJgAAFI3O4Q
+	(envelope-from <bounce@systemsplex.com>)
+	for <mprsecurity@119-18-48-204.webhostbox.net>; Thu, 22 Oct 2020 00:12:43 +0530
+Return-path: <bounce@systemsplex.com>
+Envelope-to: pravinraj@mprsecurityservices.com
+Delivery-date: Thu, 22 Oct 2020 00:12:43 +0530
+Received: from server.systemsplex.com ([162.214.148.119]:52408)
+	by 119-18-48-204.webhostbox.net with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.93)
+	(envelope-from <bounce@systemsplex.com>)
+	id 1kVJ4J-0002Yr-DR
+	for pravinraj@mprsecurityservices.com; Thu, 22 Oct 2020 00:12:43 +0530
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=systemsplex.com; s=default; h=List-Id:List-Unsubscribe:Content-Type:
+	MIME-Version:To:Reply-To:From:Subject:Date:Message-ID:Sender:Cc:
+	Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
+	Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+	References:List-Help:List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=QHmH0MEKfDh0XbFCGWewYj2AqAkjGB4UEwOznLuaCgw=; b=rYQWx1kr8iv67u4cuw4yqV6q7G
+	UwMkm5A88O+LgnsRKS7AiNQ0ljwBV9yY87XUH56E0wjnvBiweMlnMtld3Tg3t3vq/C6wGcmj6KYGD
+	hYLt+VUysTjw0i6Gq3SHox1HSmZR78PD80bxQjSV5lKEBfZ1KP60C3hWhR6Dw6YMdT3wxXHDJ0nux
+	mTz99h1DC22nfTj9BR16N7hDlh7DqenYsOXftNXaikWHCJnO7W4ZkoKOph2KM/0sVsvp33Uy1zRr2
+	NCEQw38kDALVEEWfYWQhz1UFkjErLa8WEY74g/ZCeYZoRk6BNWSYIN4O3LxBHSy6oXZGHK1VQYdcH
+	kB0NIeNw==;
+Received: from server.webmailrapid.com ([162.241.176.47]:40886 helo=webmailrapid.com)
+	by server.systemsplex.com with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.93)
+	(envelope-from <bounce@systemsplex.com>)
+	id 1kVJ3d-0004rK-8L
+	for pravinraj@mprsecurityservices.com; Wed, 21 Oct 2020 12:41:57 -0600
+Message-ID: <998cc9fb4e57a9014a69fd2aff17ecbe@systemsplex.com>
+Date: Wed, 21 Oct 2020 18:41:57 +0000
+Subject: Re: August 2020 Export Import Shipping Data Released
+From: Harsh Kumar <harsh@systemsplex.com>
+Reply-To: Harsh Kumar <harshkumar@tradegenius.co.in>
+To: "pravinraj@mprsecurityservices.com" <pravinraj@mprsecurityservices.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift_v4_1603305717_1d99b885b5c4d45af0455b8064c60831_=_"
+X-Sender: bounce@systemsplex.com
+X-Report-Abuse: Please report abuse for this campaign here:
+ http://webmailrapid.com/mail/index.php/campaigns/yh860kttnwd20/report-abuse/oj713l49q9e4e/yn350gnnxjaec
+X-Receiver: pravinraj@mprsecurityservices.com
+X-Apfc-Tracking-Did: 0
+X-Apfc-Subscriber-Uid: yn350gnnxjaec
+X-Apfc-Mailer: SwiftMailer - 5.4.x
+X-Apfc-EBS: http://webmailrapid.com/mail/index.php/lists/block-address
+X-Apfc-Delivery-Sid: 132
+X-Apfc-Customer-Uid: pq901qvsndf83
+X-Apfc-Customer-Gid: 0
+X-Apfc-Campaign-Uid: yh860kttnwd20
+Precedence: bulk
+List-Unsubscribe: <http://webmailrapid.com/mail/index.php/lists/oj713l49q9e4e/unsubscribe/yn350gnnxjaec/yh860kttnwd20/unsubscribe-direct?source=email-client-unsubscribe-button>,
+ <mailto:harshkumar@tradegenius.co.in?subject=Campaign-Uid:yh860kttnwd20 /
+ Subscriber-Uid:yn350gnnxjaec - Unsubscribe request&body=Please unsubscribe
+ me!>
+List-Id: oj713l49q9e4e <695017 to 852133-NA-G-Y_20 TGPL>
+Feedback-ID: yh860kttnwd20:yn350gnnxjaec:oj713l49q9e4e:pq901qvsndf83
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - server.systemsplex.com
+X-AntiAbuse: Original Domain - mprsecurityservices.com
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - systemsplex.com
+X-Get-Message-Sender-Via: server.systemsplex.com: authenticated_id: harsh@systemsplex.com
+X-Authenticated-Sender: server.systemsplex.com: harsh@systemsplex.com
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Spam-Status: No, score=4.9
+X-Spam-Score: 49
+X-Spam-Bar: ++++
+X-Ham-Report: Spam detection software, running on the system "119-18-48-204.webhostbox.net",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  India Import Export Data 2020 Dear P. Pratheesh Raj, Greetings!
+    Are you pursuing any new idea ? Is there any product/ country you would like
+    to analyze? I will be happy to assist you, do let me know y [...] 
+ Content analysis details:   (4.9 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: systemsplex.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or
+                             identical to background
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+  1.7 RAZOR2_CHECK           Listed in Razor2 (http://razor.sf.net/)
+  2.4 RAZOR2_CF_RANGE_51_100 Razor2 gives confidence level above 50%
+                             [cf: 100]
+  2.0 PYZOR_CHECK            Listed in Pyzor
+                             (https://pyzor.readthedocs.io/en/latest/)
+ -1.0 MAILING_LIST_MULTI     Multiple indicators imply a widely-seen list
+                             manager
+X-Spam-Flag: NO
+
+
+--_=_swift_v4_1603305717_1d99b885b5c4d45af0455b8064c60831_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+India Import Export Data 2020
+Dear P. Pratheesh Raj,
+Greetings!
+Are y=
+ou pursuing any new idea ? Is there any product/ country you
+would like t=
+o analyze?
+I will be happy to assist you, do let me know your thoughts an=
+d we can
+discuss it further.
+We would like to inform you that 90+ ports=
+ import export data is
+available like Bombay air, Bangalore Air, Hyderaba=
+d Air, Ludhiana ICD,
+Dadari, Loni, Petrapole, Calcutta Sea, Vizag Sea, Co=
+chin Sea,
+Hyderabad ICD, Bangalore ICD, and many more... Click below for =
+sample
+data.
+Sample Data On Request
+http://webmailrapid.com/mail/inde=
+x.php/campaigns/yh860kttnwd20/track-url/yn350gnnxjaec/6fdd8788bdb87efdb795d=
+0e6efd9f502ea54b602
+We cover US, UK, China, Russia, Indonesia, Vietnam, U=
+kraine,
+Philippines, Sri Lanka, Pakistan, Brazil, Argentina, Peru, Chile,=
+
+Colombia, Uruguay, Paraguay, Venezuela, Ecuador and many more
+countrie=
+s etc.
+Ask for a free demo report on your HS code/ Product for the follow=
+ing
+countries:
+China, USA, Russia, Vietnam, Indonesia, Sri Lanka, Korea=
+, All the
+Latin American countries, Ukraine, Pakistan and many more.
+Dr=
+op a line of your requirement at below required details and we will
+be gl=
+ad to assist you. Your Name:
+Your Contact Number:
+Your Company Name:
+=
+Assuring you the best of our services.
+With Best Regards --
+Harsh Kumar=
+ (Senior BDE)
+Trade Genius India
+(New Delhi)
+Contact: +91-8130246989=
+
+Email: harshkumar@tradegeniusindia.com
+Web: www.tradegeniusindia.com=
+
+http://webmailrapid.com/mail/index.php/campaigns/yh860kttnwd20/track-url=
+/yn350gnnxjaec/cfd67200e4308ff1a47c56b77114fde5226030db
+-----------------=
+--------
+UNSUBSCRIBE
+http://webmailrapid.com/mail/index.php/campaigns/y=
+h860kttnwd20/track-url/yn350gnnxjaec/a569c574d79b72e426d513a026b67da670b978=
+15,
+Trade Genius, Central Delhi, New Delhi, 110023, India
+
+--_=_swift_v4_1603305717_1d99b885b5c4d45af0455b8064c60831_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html>
+<head><meta charset=3D"utf-8"/>
+=09<title></title>
+<style type=3D"text/css">span.preheader{display:none!important;mso-hide:all=
+;}</style></head>
+<body><span class=3D"preheader" style=3D"display:none!important;mso-hide:al=
+l;">India Import Export Data 2020</span>
+<div style=3D"color:#202124;font-family:Roboto; font-size: 15px">Dear P. Pr=
+atheesh Raj,
+<p>Greetings!</p>
+
+<p>Are you pursuing any new idea ? Is there any product/ country you would =
+like to analyze?</p>
+
+<p>I will be happy to assist you, do let me know your thoughts and we can d=
+iscuss it further.</p>
+
+<p>We would like to inform you that 90+ ports import export data is availab=
+le like Bombay air, Bangalore Air, Hyderabad Air, Ludhiana ICD, Dadari, Lon=
+i, Petrapole, Calcutta Sea, Vizag Sea, Cochin Sea, Hyderabad ICD, Bangalore=
+ ICD, and many more... <strong>Click below for sample data.</strong></p>
+
+<table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"margin:auto;width:220px;" width=3D"220">
+=09<tbody>
+=09=09<tr>
+=09=09=09<td align=3D"center" bgcolor=3D"#39b54a" height=3D"51" style=3D"co=
+lor:#fff;font-family:Arial,Helvetica,sans-serif;font-size:16px"><a href=3D"=
+http://webmailrapid.com/mail/index.php/campaigns/yh860kttnwd20/track-url/yn=
+350gnnxjaec/6fdd8788bdb87efdb795d0e6efd9f502ea54b602" style=3D"text-decorat=
+ion:none;color:#fff" target=3D"_blank">Sample Data On Request</a></td>
+=09=09</tr>
+=09</tbody>
+</table>
+
+<p><br />
+<br />
+<br />
+We cover US, UK, China, Russia, Indonesia, Vietnam, Ukraine, Philippines, S=
+ri Lanka, Pakistan, Brazil, Argentina, Peru, Chile, Colombia, Uruguay, Para=
+guay, Venezuela, Ecuador and many more countries etc.</p>
+
+<p><strong>Ask for a free demo report on your HS code/ Product for the foll=
+owing countries:</strong></p>
+
+<p>China, USA, Russia, Vietnam, Indonesia, Sri Lanka, Korea, All the Latin =
+American countries, Ukraine, Pakistan and many more.</p>
+
+<p>Drop a line of your requirement at below required details and we will be=
+ glad to assist you.</p>
+<span style=3D"font-weight: 600; line-height: 25px">Your Name:<br />
+Your Contact Number:<br />
+Your Company Name: </span>
+
+<p>Assuring you the best of our services.</p>
+
+<p>With Best Regards</p>
+<span style=3D"font-family: 'Calibri Light'; font-size: 15px; line-height: =
+20px">--<br />
+<strong>Harsh Kumar (Senior BDE)</strong><br />
+<span style=3D"font-family: 'Arial Black'; font-size: 15px">Trade Genius In=
+dia<br />
+(New Delhi)</span><br />
+<strong>Contact: +91-8130246989</strong><br />
+<strong>Email: <a href=3D"mailto:harshkumar@tradegeniusindia.com" onclick=
+=3D"return rcmail.command('compose','harshkumar@tradegeniusindia.com',this)=
+" rel=3D"noreferrer">harshkumar@tradegeniusindia.com</a></strong><br />
+<strong>Web: <a href=3D"http://webmailrapid.com/mail/index.php/campaigns/yh=
+860kttnwd20/track-url/yn350gnnxjaec/cfd67200e4308ff1a47c56b77114fde5226030d=
+b" rel=3D"noreferrer" target=3D"_blank">www.tradegeniusindia.com</a></stron=
+g></span>
+
+<hr /><a data-unsubtag=3D"_UNSUBSCRIBE_URL_" href=3D"http://webmailrapid.co=
+m/mail/index.php/campaigns/yh860kttnwd20/track-url/yn350gnnxjaec/a569c574d7=
+9b72e426d513a026b67da670b97815">UNSUBSCRIBE</a>, Trade Genius, Central Delh=
+i, New Delhi, 110023, India</div>
+<img width=3D"1" height=3D"1" src=3D"http://webmailrapid.com/mail/index.php=
+/campaigns/yh860kttnwd20/track-opening/yn350gnnxjaec" alt=3D"" />
+</body>
+</html>
+
+--_=_swift_v4_1603305717_1d99b885b5c4d45af0455b8064c60831_=_--
+

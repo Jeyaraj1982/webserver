@@ -1,0 +1,127 @@
+Return-Path: <simonchiobowo@yahoo.com>
+Delivered-To: mprsecurity+spam@119-18-48-204.webhostbox.net
+Received: from 119-18-48-204.webhostbox.net
+	by 119-18-48-204.webhostbox.net with LMTP
+	id 2ErzDOKc0F8uHQAAFI3O4Q
+	(envelope-from <simonchiobowo@yahoo.com>)
+	for <mprsecurity+spam@119-18-48-204.webhostbox.net>; Wed, 09 Dec 2020 15:16:10 +0530
+Return-path: <simonchiobowo@yahoo.com>
+Envelope-to: careers@mprsecurityservices.com
+Delivery-date: Wed, 09 Dec 2020 15:16:10 +0530
+Received: from sonic313-13.consmr.mail.bf2.yahoo.com ([74.6.133.123]:39631)
+	by 119-18-48-204.webhostbox.net with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.93)
+	(envelope-from <simonchiobowo@yahoo.com>)
+	id 1kmw2x-0001w8-Mm
+	for careers@mprsecurityservices.com; Wed, 09 Dec 2020 15:16:10 +0530
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1607507126; bh=PEqZBU9KstljTILRrlbNeSucKTkW2iq3EUkhY+DH2uQ=; h=Date:From:Reply-To:Subject:References:From:Subject; b=mKKGxirQ5R4sl7Mp3HEy5ebSJ3vn8r3mfup6lE2gXAduDk7tAKiEpTq8hOsBYOspV7pU+taShMYT+xHHN6cnIDrwoukzjozpDlUnCBGXQO12c79h1LN8lHHfBjNPiQJsvUy/k7Oh/afDE5QX61fXpiPW7lNpj1U9GICCCUD3dHDIiZrKfLlmtWz6wSQmqz5yJNBw0yDFPN3iVso7ACOMBQDwv+Y9qX8S9AUCCFwuefUKJtWWk3oQbcLRt1bybR70w5KMOKILL5o1MAkd8pjWF7W9RlklAHGDrlle5DDzXAcPBwBJifL7Zgq0fFHTrSLI3xqXzPCK1zQJkJxxpTQQ8g==
+X-SONIC-DKIM-SIGN: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1607507126; bh=nCly2Op3lJZ2jRuboG8vmK+vwuQ1KCvDJpn45pspW99=; h=Date:From:Subject:From:Subject; b=sucuok8H5bp5EvenUaNYRsXWKSjTsu4dHhbmHYWJBdRfO1UrS3PiPWG9bDq0mhs22H9uuRjIPHsxmgMyKSjAixHM+JwmMnjLi+3EIIFZyiVHCpXdghZmyyUsqvb3hJ2bwWL+NOdgnWUdgTUUR2mzzUVjubGpEldjJsTldRgrcO4Ss7LANv3+u3/Yv1aqbVVXy6HlTwZpSkrMp4Y4rvt2o32nHtRsGT9BgbYT0s0O5Y7dvmTSGn1iFAUZ7ZrkxNwdkekuFdqEWjWCc+5rdduJ2oK1yrAM8SXvD49NzlyDAl4NOmhb7+C3iMhx7vkABU3nI1858M+yaFcOxrcQFMWXVg==
+X-YMail-OSG: G9pj2vcVM1l6ht2MQ0joQGVYS32bAfqOaR6OZ74dM3UzhurKj8VWMquwGvkF2lq
+ NaUbz4K.PpK6FJXD4kzlLzO4ahcPOltIPfNDxTzsCsRbl2MjtdHSmp_30curgrPnlSmYnjdBhs3l
+ 4cm3F3NDvxfhO63LXWiVa_gDxg3afCRMaAQcsL4xsGAS.J3wxA4bVI74QtBNsM6eGiLfWbXczxx0
+ C8IV5AOBudPJ4RucC0tiGDKbApEAZMPMlgkEeSPuWZRoEQ6zByoUZUkXsWIjJsDP9G2XpNWORLJd
+ Ru4Rr89tAhAaD3jXidb4nW5fSfsa.iCmxRIp9hSgrjEPZdwSbncYvie5YLgJK6tNmqXlDR3f_sN_
+ 3kJ._BIZ1EoBhjj2vFwopgkF7tIuQy6j6Dc3yORP9Y2j52RunvbehtJK9kPK3dhmoAIBbfmmFAAV
+ g1JP2kIGYkKWJggJ8qMd2OGyhAMzAcQmOD_C.IFoLXXjI14oTsYhMOmcJYZe57w5OH4yCmANTob5
+ KoUYxKW0ggQF8PWzjODZ5r7eepn9KbOcnKzRqLrMNnmiRqbQ1tPRtBh7t34fuLdzZVfXZ_WU1qLs
+ yPxHIJiuUqPdlz6OoN4o8G4wlvHbOPMIAaiPMT70CVg307F7_jpt0wnrblhNifoN6wblwZ_y.8i_
+ VsHHzLU5UlMGF8QNHC53DTxfKmeVgIo5VszZFgbszx6ms3QV7WQ7e7GYUGC2v4fP6XMc_Kp8c6Qr
+ 4QA81mSRX2rahLsReI6P6ahluVBNpvkizBAHhjZMyJY1ZnAW9oSfeS8gYdWTq63horOXNauei0l2
+ AyvzwhQZ8pK9BZs0jFfY9qdcQZOk4fwGsJygOQlIkZA1hbwyxBbbxGEj1.1cYt2hvH8Y_M1WwYQ1
+ HtIrAl7UV6PJEMeYNMaq8Iickispc_xPkq3f0QS0SnpL3Ts2SjBjHTJ1k0JM3r.jmC0jgjTcVuHu
+ YQJ6MSAjJLaOMuYGtgJeLDXrlteMi.1kdfwSqJllxl0O8jurKt7Rd3Utqhs9B4Q7Fo127AajJpns
+ _FzGzowag91kgHvioCBJHEZVLR0c1Um5X0V85spHMvg0h1Nq8_aFJDpPUUWz0FVWZB9C9_JF9TBM
+ BsfvJ7YCKMAcdeutMIjbeCui_Y9oiABuGTZQsDpU4Wk7fZdr1XGdFa_3N2kp_DLXbput4q7FIC3W
+ fxZS9ftLZphW48OFNBhYZLl8tZHzBMP_joR3qwQc7aBtPrDiOMEu5mdDmRvR3OpHfskMR2spwdA9
+ YdwtTL38uC3kzCWZOtOFcG3_9HIFxfFfknwQTpAsg_0b4tUq_fQiVI6i1EpLghJd1lQTu0rYnl0q
+ jcqg42.yPUofuek9IMZi1svK9Uyl9v.m4CjFhOsrlVPLA4AfbOZKhQ0HUy_TNUznrFZHoQnqckrm
+ pzJZDNQr56M7vibjviAJWEFhiF2NOrmUJqEbgURQybJdOZQzbgmQdAfMMJfQNXJYtiiM0j0kUb4V
+ qvZm3n20j_.AwUENjHvvVod3eUCxw.EBGQy7ZxpavZm88p0pfsu2hTlIdiQSyohaYZIUycAI4jG2
+ JJk.d8pAl49lGY6lr3jo34OJ.V6FLYYCYFZce.GytVBygPwnYuWMVwot_wALIRBw4UpjgSO0UKRL
+ f8XzsiJ64QjacTXFllGJ.D23yiGLMtkWXtLFXS5341nF9BMhjw3yA8c4PDu9NojPo.DD57VpaQT3
+ dXsD2qR_txj1l0kpFIdWyOn9u652yXiA_52GBjbCOpQW5HI_B7FACyJEI_WcLeEYuZNhJb9pjz4l
+ TUXAMfErsakwtgr5KHbeo9QePUxQPbFUMUOSilcV5sUVRs626fDc7MlI88Pg9TQSVBHvmgk.FDH3
+ 0gIPsThwO.zBzX8nBAYnAW_O8ZwHsAmdGUaI69wNacJOnVUgXkalKl8EzrfRs9HZRUrJN6H7qtoe
+ ZnWHBMgVyudOA7uHBPqrucKb20h1hukjDmhc6qEVYJ0yK3cCt9yvSBf6ii.i5DH67lXdt50zw0pT
+ whoD068PgkZkkXW0WEXfX6n6i_1Fu9qcgTHSvZgrMuCqSbRg48PvSo1SpWft7y1zzoSBMayrnK5K
+ nWTKfjk3WSN9rY_bZGnkKbTkFrjhcaSIHGS9yGc4APuOyAws_AgoxAYUsnyolBmbaDKNXKsjg09Y
+ ytZm7w8W861Yv5N0.EFLj9C9lmXFzvdzsOFAcllLF9MbczyjmUFWQW97.A2kEx7DZk9fG.NYFQ.w
+ 6Fl9K0c_HtFQVbG080zBWpDyD9POjL2Lr2B8gKe_fqeBmLGAAb.CeTG0WBlXPDz298RGCeK39gqd
+ JQNylhVUhvlRRYR44.MPu1jIPcrugs5qz5MtYAGHbUyynkRGYbmqIUrzc1.KmvPvMzYlU2IW4k1r
+ HfvqiYKAl2IX5fmrH6yGzH3NJibehbqOidZWtEZPi.npFE0MsvckbT3.mzOyuf56yjo4S7P7YVzV
+ 7beIKzlLnolsViNEpv1oPQfc.KZEo9nJ7iFwdixXWb_PfyNokfLVOQMqWqtyoinfl7BU4E.19dyt
+ IiF.g_SzySZS5b8axtF0LEbED3Fy2eeMFtoDi5QGHTWJKu9QCFZwlK_XI0JJwvoWbEeq9XG86PHb
+ V6Dwm6bTvqXug4djJDoVjdsReCdrjhQaDmSiZp2q4XbdOEUCFPBRm.Oo9JRv7oyT75L.TsPgRhiR
+ 7E9elmX3W6uXpoHUHhj176zXtHvx7AF459RqvyI5jTxUAMOCM7cpUgW_qevEbTFubrR2Al42Inu1
+ yOw6M7X11AxUOFckR6dxonYf3l.Ey5m7GTMTRcK783tZ2sljWGAy3knFQ_.S7HgeyDG2Oe0KWDzz
+ l144bnhxGtsjdDEfkJ9u3TWdJbX2E41C_7A4SohIP5qkZmgNyM7MtkosceWSAUyLynBlCfs20
+Received: from sonic.gate.mail.ne1.yahoo.com by sonic313.consmr.mail.bf2.yahoo.com with HTTP; Wed, 9 Dec 2020 09:45:26 +0000
+Date: Wed, 9 Dec 2020 09:45:15 +0000 (UTC)
+From: "Mr.Alliswill Henry" <simonchiobowo@yahoo.com>
+Reply-To: henryalliswell06500@gmail.com
+Message-ID: <1502099334.3775649.1607507115920@mail.yahoo.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+References: <1502099334.3775649.1607507115920.ref@mail.yahoo.com>
+X-Mailer: WebService/1.1.17111 YMailNodin Mozilla/5.0 (Windows NT 6.1; rv:83.0) Gecko/20100101 Firefox/83.0
+Content-Length: 890
+X-Spam-Status: Yes, score=10.3
+X-Spam-Score: 103
+X-Spam-Bar: ++++++++++
+X-Spam-Report: Spam detection software, running on the system "119-18-48-204.webhostbox.net",
+ has identified this incoming email as possible spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Dear friend, I know that this mail will come to you as a surprise.
+    I am a practitioner at law to a deceased Immigrant property Magnate. I hoped
+    that you will not expose or betray this trust and confident that I am [...]
+    
+ Content analysis details:   (10.3 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [simonchiobowo[at]yahoo.com]
+  1.2 MISSING_HEADERS        Missing To: header
+  0.2 FREEMAIL_REPLYTO_END_DIGIT Reply-To freemail username ends in
+                             digit
+                             [henryalliswell06500[at]gmail.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  2.6 DEAR_FRIEND            BODY: Dear Friend? That's not very dear!
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+  1.9 REPLYTO_WITHOUT_TO_CC  No description available.
+  0.1 HK_NAME_FM_MR_MRS      No description available.
+  0.0 LOTS_OF_MONEY          Huge... sums of money
+  1.9 MONEY_NOHTML           Lots of money in plain text
+  1.0 FREEMAIL_REPLYTO       Reply-To/From or Reply-To/body contain
+                             different freemails
+  1.6 MONEY_FREEMAIL_REPTO   Lots of money from someone using free
+                             email?
+  0.0 MONEY_FORM             Lots of money if you fill out a form
+X-Spam-Flag: YES
+Subject:  ***SPAM***  ok
+
+Dear friend,
+
+I know that this mail will come to you as a surprise. I am a practitioner at law to a deceased Immigrant property Magnate. I hoped that you will not expose or betray this trust and confident that I am about to repose on you for the mutual benefit of our both families.
+
+I have an important message for you concerning the death of your relative Enger.D.Bentley, and the funds valued at $11.5 million he left behind in Security and Finance Company here in my country Lome (Togo), Contact me at my private mailbox for the full details as soon as possible.
+This is the information that I will need from you.
+
+FULL NAMES/ADDRESS.....................
+AGE AND SEX.................
+COUNTRY........................
+PROFESSION........................
+PHONE NUMBER...................
+EMAIL...............................
+Reply via Email: at, ...........
+Best Regards,
+Mr.Alliswill Henry 

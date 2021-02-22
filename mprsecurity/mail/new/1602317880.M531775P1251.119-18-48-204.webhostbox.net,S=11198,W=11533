@@ -1,0 +1,335 @@
+Return-Path: <garima@websollutions.com>
+Delivered-To: mprsecurity@119-18-48-204.webhostbox.net
+Received: from 119-18-48-204.webhostbox.net
+	by 119-18-48-204.webhostbox.net with LMTP
+	id V9UHHzhugV/jBAAAFI3O4Q
+	(envelope-from <garima@websollutions.com>)
+	for <mprsecurity@119-18-48-204.webhostbox.net>; Sat, 10 Oct 2020 13:48:00 +0530
+Return-path: <garima@websollutions.com>
+Envelope-to: careers@mprsecurityservices.com
+Delivery-date: Sat, 10 Oct 2020 13:48:00 +0530
+Received: from mail-pg1-f181.google.com ([209.85.215.181]:37606)
+	by 119-18-48-204.webhostbox.net with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.93)
+	(envelope-from <garima@websollutions.com>)
+	id 1kRA4i-0000L2-9W
+	for careers@mprsecurityservices.com; Sat, 10 Oct 2020 13:48:00 +0530
+Received: by mail-pg1-f181.google.com with SMTP id h6so9230480pgk.4
+        for <careers@mprsecurityservices.com>; Sat, 10 Oct 2020 01:17:36 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=websollutions-com.20150623.gappssmtp.com; s=20150623;
+        h=from:to:subject:date:message-id:mime-version:thread-index
+         :content-language;
+        bh=wFx7s/Jv5crZXgVGKwiAo9EcC3GjXQb1iETv2NfoSdQ=;
+        b=P8X+gZaF8jCd+PwqbjgQ2mRefGG5LVZZ0GHTxIr0nXMOE/njVF5m30RgbE4UY3T2QN
+         Wl1ckJ4kHzvY2QSS3xRwWygOd/12SOtl585PlSHfHB4rprxSJEgdtqEDLHEhcEejyI8V
+         XFDKYL3oN/dZvyM0SfKfGfSmDMmlndu2OBmTHssEhStsEmkKq4h/oIVFaiHtF0LIjvAb
+         PlCInd9weZwZi7um4f2EjqrRyG5L5ghRAFKwdadvC2CIV9N8b6uLtJ/Xe6g0nAuOa01u
+         rH7oKHPE8bDGu0pG7ZbQVxO3g6Y77zQaE8j/FMk9I8kuMjqXK5wC4a/pXAnzoeZj6p9q
+         g6rA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:from:to:subject:date:message-id:mime-version
+         :thread-index:content-language;
+        bh=wFx7s/Jv5crZXgVGKwiAo9EcC3GjXQb1iETv2NfoSdQ=;
+        b=bW1BxNVtSuepEOTG2q8OoqkKnN3mttuSYMLOT6qp6806uL3jElCY17QiuLFFS5769S
+         XgjMskHYgBvSfqsuRZG31egAN107zkLlZagwswGUGWmyO/QpPo2OFgrcfofYi6uZiecH
+         gi1v1muZNdin8NNw3TMW8e5vHQ03JE0d4roANfwoF1XjUm/iD+ezAcyEdBiQITI/dvLt
+         kHylitd6Sstja2kuzujeL6S9SLBeBARcNHCodqhHRazfDH/DUPVZArI/T4z9vI4q/Lel
+         vwFts4VCe6L3V7OTSBAavj6b521AMaytaZ4uDHuOcEjBYOkkmfgKW1+cToxOV+gbEEJE
+         2QaA==
+X-Gm-Message-State: AOAM533qwLSkMFddW9SCNDhlhzGiclD/t+Us5u495ewyEA/LGoYew8fD
+	F6sWPTwjpiuG4p6HlwM/yicdgOaIMVj76g==
+X-Google-Smtp-Source: ABdhPJw/8JJZfvZikWl/OSVXJ4+mbZdRgHFJP0KUxVqePMKGcZAmZN9QsV+A7S9SENLEq+yMmNV8rA==
+X-Received: by 2002:a63:570d:: with SMTP id l13mr6231390pgb.172.1602317833394;
+        Sat, 10 Oct 2020 01:17:13 -0700 (PDT)
+Received: from sPC ([223.190.113.206])
+        by smtp.gmail.com with ESMTPSA id c77sm10665083pfb.177.2020.10.10.01.17.12
+        for <careers@mprsecurityservices.com>
+        (version=TLS1 cipher=ECDHE-ECDSA-AES128-SHA bits=128/128);
+        Sat, 10 Oct 2020 01:17:12 -0700 (PDT)
+From: "Garima" <garima@websollutions.com>
+To: <careers@mprsecurityservices.com>
+Subject: World-Class Web Development Services
+Date: Sat, 10 Oct 2020 13:46:33 +0530
+Message-ID: <0b3b01d69edd$cee76300$6cb62900$@com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_0B3C_01D69F0B.E89F9F00"
+X-Mailer: Microsoft Office Outlook 12.0
+Thread-Index: Adae3aRmBOEqtQvlQtGkc4L2SwIrDA==
+Content-Language: en-us
+X-Spam-Status: No, score=0.8
+X-Spam-Score: 8
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "119-18-48-204.webhostbox.net",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Hello, Are you looking for Website Designer or Developers?
+    If so, we're an internationally recognized web design Agency. We understand
+    your needs and what message you are trying to get across through your website.
+    We provide a comprehensive analysis of your n [...] 
+ Content analysis details:   (0.8 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+  0.8 CPANEL_LOTS_OF_EMPTY_LINE RAW: Spam that has large block of
+                             empty lines
+X-Spam-Flag: NO
+
+This is a multipart message in MIME format.
+
+------=_NextPart_000_0B3C_01D69F0B.E89F9F00
+Content-Type: text/plain;
+	charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+ 
+
+Are you looking for Website Designer or Developers?
+
+ 
+
+If so, we're an internationally recognized web design Agency. We understand
+your needs and what message you are trying to get across through your
+website. We provide a comprehensive analysis of your needs and will tailor
+web solutions that will improve every aspect of your business.
+
+ 
+
+Have a Question?
+
+ 
+
+Need a Quote? (Send Requirements)
+
+ 
+
+If interested in speaking with us about a potential project, Drop us a line.
+
+ 
+
+Kind Regards
+
+Garima,
+
+Web Development Manager (India)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+------=_NextPart_000_0B3C_01D69F0B.E89F9F00
+Content-Type: text/html;
+	charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" =
+xmlns:o=3D"urn:schemas-microsoft-com:office:office" =
+xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" =
+xmlns=3D"http://www.w3.org/TR/REC-html40">
+
+<head>
+<META HTTP-EQUIV=3D"Content-Type" CONTENT=3D"text/html; =
+charset=3Dus-ascii">
+<meta name=3DGenerator content=3D"Microsoft Word 12 (filtered medium)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+p
+	{mso-style-priority:99;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{mso-style-priority:1;
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+.MsoChpDefault
+	{mso-style-type:export-only;}
+.MsoPapDefault
+	{mso-style-type:export-only;
+	margin-bottom:10.0pt;
+	line-height:115%;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext=3D"edit">
+  <o:idmap v:ext=3D"edit" data=3D"1" />
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=3DEN-US link=3Dblue vlink=3Dpurple>
+
+<div class=3DSection1>
+
+<p class=3DMsoNoSpacing><span =
+style=3D'font-size:12.0pt;font-family:"Cambria","serif";
+color:black'>Hello,<o:p></o:p></span></p>
+
+<p class=3DMsoNoSpacing><b><span =
+style=3D'font-size:12.0pt;font-family:"Cambria","serif";
+color:black'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=3DMsoNoSpacing><b><span =
+style=3D'font-size:12.0pt;font-family:"Cambria","serif";
+color:black'>Are you looking for Website Designer or =
+Developers?</span></b><b><span
+style=3D'font-size:12.0pt;font-family:"Cambria","serif";color:black'><o:p=
+></o:p></span></b></p>
+
+<p class=3DMsoNoSpacing><span =
+style=3D'font-size:12.0pt;font-family:"Cambria","serif";
+color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=3DMsoNoSpacing><span =
+style=3D'font-size:12.0pt;font-family:"Cambria","serif";
+color:black'>If so, we're an internationally recognized web design =
+Agency. We
+understand your needs and what message you are trying to get across =
+through
+your website. We provide a comprehensive analysis of your needs and will =
+tailor
+web solutions that will improve every aspect of your =
+business.<o:p></o:p></span></p>
+
+<p class=3DMsoNoSpacing><span =
+style=3D'font-size:12.0pt;font-family:"Cambria","serif";
+color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=3DMsoNoSpacing><span =
+style=3D'font-size:12.0pt;font-family:"Cambria","serif";
+color:black'>Have a Question?<o:p></o:p></span></p>
+
+<p class=3DMsoNoSpacing><b><span =
+style=3D'font-size:12.0pt;font-family:"Cambria","serif";
+color:black'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=3DMsoNoSpacing><b><span =
+style=3D'font-size:12.0pt;font-family:"Cambria","serif";
+color:black'>Need a Quote? (Send Requirements)</span></b><b><span
+style=3D'font-size:12.0pt;font-family:"Cambria","serif";color:black'><o:p=
+></o:p></span></b></p>
+
+<p class=3DMsoNoSpacing><span =
+style=3D'font-size:12.0pt;font-family:"Cambria","serif";
+color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=3DMsoNoSpacing><span =
+style=3D'font-size:12.0pt;font-family:"Cambria","serif";
+color:black'>If interested in speaking with us about a potential =
+project, Drop
+us a line.<o:p></o:p></span></p>
+
+<p class=3DMsoNoSpacing><b><span =
+style=3D'font-size:12.0pt;font-family:"Cambria","serif";
+color:black'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=3DMsoNoSpacing><b><span =
+style=3D'font-size:12.0pt;font-family:"Cambria","serif";
+color:black'>Kind Regards</span></b><span =
+style=3D'font-size:12.0pt;font-family:
+"Cambria","serif";color:black'><o:p></o:p></span></p>
+
+<p class=3DMsoNoSpacing><b><span =
+style=3D'font-size:12.0pt;font-family:"Cambria","serif";
+color:black'>Garima,<o:p></o:p></span></b></p>
+
+<p class=3DMsoNoSpacing><b><span =
+style=3D'font-size:12.0pt;font-family:"Cambria","serif";
+color:black'>Web Development Manager (India)<o:p></o:p></span></b></p>
+
+<p class=3DMsoNoSpacing><span =
+style=3D'font-size:12.0pt;font-family:"Cambria","serif";
+color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=3DMsoNoSpacing><span =
+style=3D'font-size:12.0pt;font-family:"Cambria","serif";
+color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=3DMsoNoSpacing><span =
+style=3D'font-size:12.0pt;font-family:"Cambria","serif"'>&nbsp;<o:p></o:p=
+></span></p>
+
+<p class=3DMsoNoSpacing><span =
+style=3D'font-size:12.0pt;font-family:"Cambria","serif"'><o:p>&nbsp;</o:p=
+></span></p>
+
+<p class=3DMsoNoSpacing><span =
+style=3D'font-size:12.0pt;font-family:"Cambria","serif"'><o:p>&nbsp;</o:p=
+></span></p>
+
+<p class=3DMsoNoSpacing><span =
+style=3D'font-size:12.0pt;font-family:"Cambria","serif"'><o:p>&nbsp;</o:p=
+></span></p>
+
+<p class=3DMsoNoSpacing><span =
+style=3D'font-size:12.0pt;font-family:"Cambria","serif"'><o:p>&nbsp;</o:p=
+></span></p>
+
+</div>
+
+</body>
+
+</html>
+
+------=_NextPart_000_0B3C_01D69F0B.E89F9F00--
+

@@ -1,0 +1,418 @@
+Return-Path: <vanturlulia67@gmail.com>
+Delivered-To: mprsecurity@119-18-48-204.webhostbox.net
+Received: from 119-18-48-204.webhostbox.net
+	by 119-18-48-204.webhostbox.net with LMTP
+	id KlsSK7FaKmBZYQAAFI3O4Q
+	(envelope-from <vanturlulia67@gmail.com>)
+	for <mprsecurity@119-18-48-204.webhostbox.net>; Mon, 15 Feb 2021 16:57:45 +0530
+Return-path: <vanturlulia67@gmail.com>
+Envelope-to: careers@mprsecurityservices.com
+Delivery-date: Mon, 15 Feb 2021 16:57:45 +0530
+Received: from mail-pf1-f179.google.com ([209.85.210.179]:41566)
+	by 119-18-48-204.webhostbox.net with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.93)
+	(envelope-from <vanturlulia67@gmail.com>)
+	id 1lBc2W-0006TH-LV
+	for careers@mprsecurityservices.com; Mon, 15 Feb 2021 16:57:45 +0530
+Received: by mail-pf1-f179.google.com with SMTP id q20so3995495pfu.8
+        for <careers@mprsecurityservices.com>; Mon, 15 Feb 2021 03:27:21 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=from:to:references:in-reply-to:subject:date:message-id:mime-version
+         :thread-index:content-language;
+        bh=Jgz7OqsakWhV6oSwbKhok/C49X0cWdMNlhXiZbUrJDk=;
+        b=PF79KCBiL74CB7Xoyz31v30EmZtvX8fOK32jlUgOS0iuoC/wmmFlIpnypbRM443kHi
+         GoieF7t03Ix4qLKqAUa2aFxnxdR8xWO09ME8r2AmscgB1w9M9b8vxo/V41Qa/o2l1qKe
+         KiWHoz5+DAEKqM4Ks+B6BgXbLHQGi/9hIkgbfs1Tgmgt1LbGNC/8i1Ydo6/iJ54Otu9/
+         z0nMREQiJ3yHVjr6cAh/n6/GLpTms9jYkPGZvHKlvGOCqKc7gKCkkDwzZBraqp3GXpIw
+         u26Sy+DSQej2SstL8SdX7h5BFAAmT01kUI50lZoNtlpcKkMiG502D/4Uywx7zpMKAcsi
+         lGGQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:from:to:references:in-reply-to:subject:date
+         :message-id:mime-version:thread-index:content-language;
+        bh=Jgz7OqsakWhV6oSwbKhok/C49X0cWdMNlhXiZbUrJDk=;
+        b=ZPu3v6BU+8StlVNlGxefW+Rcrj/t90jhKHME4Tn/NNwWD3JMX+kmvpcMSjtLp0kDBl
+         /AR+Z7HzAUVK3/XN73k2O68Ak014yriUrTZvIakiuKuFKgleBwz1HwqPgrJy2ex7HBWH
+         Mw4mUqNNMT2zmHcvn4p8L+O8ZNCpQj5BXAMSfcpo9Oa5kzIz/xqbkTzAj2yd1B+12Q3y
+         1451lygWb9BNuCaFwkNjc85qrbWhp77hV0wLsaXWT1b0ZpgU0avH7vplJHNvygRbRyzC
+         RMISIig50pc7Eqe+woKZnlzMqtwdr6A3mD1SrTv8n9jB/wbcBnG6ZpEx1TTj3XzWUhmZ
+         646w==
+X-Gm-Message-State: AOAM532yzGriu/IOj3Y5qhQWJYLOetpOWfP7dvdUVt/Iiw5ZW51xZkAO
+	7djsSyCHeAC3xNn7QE1W2bmp+gFeA7M=
+X-Google-Smtp-Source: ABdhPJyCy89IIyhRDMW9Puh54rTcX9ljcxsaTn3BNfbgCU6Sckbi9ak7/taAcF6Luij4tpaD5T/OkQ==
+X-Received: by 2002:a63:fe09:: with SMTP id p9mr11618305pgh.174.1613388418482;
+        Mon, 15 Feb 2021 03:26:58 -0800 (PST)
+Received: from AdminPC ([2405:201:4019:68a7:dcf1:7e57:3f8e:a0cd])
+        by smtp.gmail.com with ESMTPSA id c23sm17751323pfi.47.2021.02.15.03.26.57
+        for <careers@mprsecurityservices.com>
+        (version=TLS1 cipher=ECDHE-ECDSA-AES128-SHA bits=128/128);
+        Mon, 15 Feb 2021 03:26:58 -0800 (PST)
+From: "Lulia Vantur" <vanturlulia67@gmail.com>
+To: "'Lulia Vantur'" <vanturlulia67@gmail.com>,
+	<careers@mprsecurityservices.com>
+References: 
+In-Reply-To: 
+Subject: RE: Growing Business using Apps...//
+Date: Mon, 15 Feb 2021 16:56:05 +0530
+Message-ID: <25ac01d7038d$7880fbb0$6982f310$@com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_25AD_01D703BB.923937B0"
+X-Mailer: Microsoft Office Outlook 12.0
+Thread-Index: AdcB04sLyMVnaOQARjiTRhRUguD4wgBqab3Q
+Content-Language: en-us
+X-Spam-Status: No, score=0.1
+X-Spam-Score: 1
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "119-18-48-204.webhostbox.net",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Hi, I sent you an email a few days ago in regards to the Web
+    and App Services. if you are interested. I will be happy to send the Details
+    of the Entire work done by me. 
+ Content analysis details:   (0.1 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [vanturlulia67[at]gmail.com]
+  0.2 FREEMAIL_ENVFROM_END_DIGIT Envelope-from freemail username ends
+                             in digit
+                             [vanturlulia67[at]gmail.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+X-Spam-Flag: NO
+
+This is a multipart message in MIME format.
+
+------=_NextPart_000_25AD_01D703BB.923937B0
+Content-Type: text/plain;
+	charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+
+Hi,
+
+I sent you an email a few days ago in regards to the Web and App Services.
+
+if you are interested.  I will be happy to send the Details of the Entire
+work done by me.
+
+Just send me WhatsApp Number....?
+
+Thanks & Regards
+
+ 
+
+From: Lulia Vantur [mailto:vanturlulia67@gmail.com] 
+Sent: 13 February, 2021 12:39 PM
+To: 'careers@mprsecurityservices.com'
+Subject: Growing Business using Apps...//
+
+ 
+
+Hi!
+
+ 
+
+Please, could you let me know whether you are looking for:
+
+ 
+
+We build all kinds of Apps for verticals like
+
+ 
+
+.         Medical App
+
+.         Education Apps
+
+.         Beauty App
+
+.         Food Delivery Apps
+
+.         Health Fitness Apps
+
+.         E-Commerce Apps
+
+.         News Magazine Apps
+
+.         Real Estate Apps
+
+.         Social Networking Apps
+
+.         Payment Gateway
+
+.         Travel Apps
+
+ 
+
+I was wondering, if you might be interested in our service, I am sure you
+are. Please share your App's Idea, Requirement with us. then I can send you
+our Past Work Details, Price List, Company Information and an Affordable
+Quotation with the best offer.
+
+ 
+
+Just send me WhatsApp Number...
+
+ 
+
+Thanks & Regards
+
+Lulia Vantur
+
+
+------=_NextPart_000_25AD_01D703BB.923937B0
+Content-Type: text/html;
+	charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" =
+xmlns:o=3D"urn:schemas-microsoft-com:office:office" =
+xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" =
+xmlns=3D"http://www.w3.org/TR/REC-html40">
+
+<head>
+<META HTTP-EQUIV=3D"Content-Type" CONTENT=3D"text/html; =
+charset=3Dus-ascii">
+<meta name=3DGenerator content=3D"Microsoft Word 12 (filtered medium)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+p
+	{mso-style-priority:99;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{mso-style-priority:1;
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+span.EmailStyle19
+	{mso-style-type:personal-reply;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext=3D"edit">
+  <o:idmap v:ext=3D"edit" data=3D"1" />
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=3DEN-US link=3Dblue vlink=3Dpurple>
+
+<div class=3DSection1>
+
+<p class=3DMsoNormal><span =
+style=3D'font-size:11.5pt;line-height:115%'>Hi,<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'font-size:11.5pt;line-height:115%'>I =
+sent you
+an email a few days ago in regards to the <b><i><span =
+style=3D'color:#0000CC'>Web</span></i></b>
+and <b><i><span style=3D'color:#0000CC'>App</span></i></b> =
+Services.<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span =
+style=3D'font-size:11.5pt;line-height:115%'>if you are
+interested.&nbsp; I will be happy to send the <i><span =
+style=3D'color:#0000CC'>Details</span></i>
+of the <i><span style=3D'color:#0000CC'>Entire work</span></i> done by =
+me.<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span =
+style=3D'font-size:11.5pt;line-height:115%'>Just send me
+<i><span style=3D'color:#0000CC'>WhatsApp =
+Number</span></i>....?<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span =
+style=3D'font-size:11.5pt;line-height:115%'>Thanks &amp;
+Regards</span><span style=3D'color:#1F497D'><o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span =
+style=3D'color:#1F497D'><o:p>&nbsp;</o:p></span></p>
+
+<div>
+
+<div style=3D'border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt =
+0in 0in 0in'>
+
+<p class=3DMsoNormal =
+style=3D'margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><b><span =
+style=3D'font-size:10.0pt;font-family:"Tahoma","sans-serif"'>From:</span>=
+</b><span
+style=3D'font-size:10.0pt;font-family:"Tahoma","sans-serif"'> Lulia =
+Vantur
+[mailto:vanturlulia67@gmail.com] <br>
+<b>Sent:</b> 13 February, 2021 12:39 PM<br>
+<b>To:</b> 'careers@mprsecurityservices.com'<br>
+<b>Subject:</b> Growing Business using Apps...//<o:p></o:p></span></p>
+
+</div>
+
+</div>
+
+<p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=3DMsoNoSpacing>Hi!<o:p></o:p></p>
+
+<p class=3DMsoNoSpacing><o:p>&nbsp;</o:p></p>
+
+<p class=3DMsoNoSpacing>Please, could you let me know whether you are =
+looking
+for:<o:p></o:p></p>
+
+<p class=3DMsoNoSpacing><o:p>&nbsp;</o:p></p>
+
+<p class=3DMsoNoSpacing>We build all kinds of Apps for verticals =
+like<o:p></o:p></p>
+
+<p class=3DMsoNoSpacing><o:p>&nbsp;</o:p></p>
+
+<p class=3DMsoNoSpacing><span =
+style=3D'color:#0000CC'>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;
+Medical App<o:p></o:p></span></p>
+
+<p class=3DMsoNoSpacing><span =
+style=3D'color:#0000CC'>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;
+Education Apps<o:p></o:p></span></p>
+
+<p class=3DMsoNoSpacing><span =
+style=3D'color:#0000CC'>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;
+Beauty App<o:p></o:p></span></p>
+
+<p class=3DMsoNoSpacing><span =
+style=3D'color:#0000CC'>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;
+Food Delivery Apps<o:p></o:p></span></p>
+
+<p class=3DMsoNoSpacing><span =
+style=3D'color:#0000CC'>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;
+Health Fitness Apps<o:p></o:p></span></p>
+
+<p class=3DMsoNoSpacing><span =
+style=3D'color:#0000CC'>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;
+E-Commerce Apps<o:p></o:p></span></p>
+
+<p class=3DMsoNoSpacing><span =
+style=3D'color:#0000CC'>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;
+News Magazine Apps<o:p></o:p></span></p>
+
+<p class=3DMsoNoSpacing><span =
+style=3D'color:#0000CC'>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;
+Real Estate Apps<o:p></o:p></span></p>
+
+<p class=3DMsoNoSpacing><span =
+style=3D'color:#0000CC'>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;
+Social Networking Apps<o:p></o:p></span></p>
+
+<p class=3DMsoNoSpacing><span =
+style=3D'color:#0000CC'>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;
+Payment Gateway<o:p></o:p></span></p>
+
+<p class=3DMsoNoSpacing><span =
+style=3D'color:#0000CC'>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;
+Travel Apps</span><o:p></o:p></p>
+
+<p class=3DMsoNoSpacing><o:p>&nbsp;</o:p></p>
+
+<p class=3DMsoNoSpacing>I was wondering, if you might be interested in =
+our
+service, I am sure you are. Please share your <i><span =
+style=3D'color:#0000CC'>App</span></i>&#8217;<i><span
+style=3D'color:#0000CC'>s</span></i> <i><span =
+style=3D'color:#0000CC'>Idea</span></i>,
+<i><span style=3D'color:#0000CC'>Requirement</span></i> with us. then I =
+can send
+you our <i><span style=3D'color:#0000CC'>Past Work Details</span></i>, =
+<i><span
+style=3D'color:#0000CC'>Price List</span></i>, <i><span =
+style=3D'color:#0000CC'>Company
+Information</span></i> and an <i><span =
+style=3D'color:#0000CC;text-transform:
+uppercase'>A</span><span style=3D'color:#0000CC'>ffordable =
+Quotation</span></i>
+with the best offer.<o:p></o:p></p>
+
+<p class=3DMsoNoSpacing><o:p>&nbsp;</o:p></p>
+
+<p class=3DMsoNoSpacing>Just send me WhatsApp Number...<o:p></o:p></p>
+
+<p class=3DMsoNoSpacing><o:p>&nbsp;</o:p></p>
+
+<p class=3DMsoNoSpacing>Thanks &amp; Regards<o:p></o:p></p>
+
+<p class=3DMsoNoSpacing><i>Lulia Vantur<o:p></o:p></i></p>
+
+</div>
+
+</body>
+
+</html>
+
+------=_NextPart_000_25AD_01D703BB.923937B0--
+

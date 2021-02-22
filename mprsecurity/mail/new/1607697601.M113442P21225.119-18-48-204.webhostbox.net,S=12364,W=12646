@@ -1,0 +1,282 @@
+Return-Path: <csatishtaxconsultancy@gmail.com>
+Delivered-To: mprsecurity@119-18-48-204.webhostbox.net
+Received: from 119-18-48-204.webhostbox.net
+	by 119-18-48-204.webhostbox.net with LMTP
+	id msDZBcGE01/pUgAAFI3O4Q
+	(envelope-from <csatishtaxconsultancy@gmail.com>)
+	for <mprsecurity@119-18-48-204.webhostbox.net>; Fri, 11 Dec 2020 20:10:01 +0530
+Return-path: <csatishtaxconsultancy@gmail.com>
+Envelope-to: pravinraj@mprsecurityservices.com
+Delivery-date: Fri, 11 Dec 2020 20:10:01 +0530
+Received: from mail-lj1-f173.google.com ([209.85.208.173]:40977)
+	by 119-18-48-204.webhostbox.net with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.93)
+	(envelope-from <csatishtaxconsultancy@gmail.com>)
+	id 1knjaO-0005Vr-Pf
+	for pravinraj@mprsecurityservices.com; Fri, 11 Dec 2020 20:10:01 +0530
+Received: by mail-lj1-f173.google.com with SMTP id f11so11128853ljm.8
+        for <pravinraj@mprsecurityservices.com>; Fri, 11 Dec 2020 06:39:38 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=9Lg6fPfjzGyELe2yucml7QNPSdHJg8LerW6zT6lIcIE=;
+        b=pAt9z8WbbR5JZLL7YynGXOYF89pAQf570h5xBIXv7JQrSeseHMNV3+e/3wEzTfHTZx
+         vMRVgWJjn7otfNJmdf+v9C/YJhJB6SlVIDPCsGg5LxjykTWsGDdn9d6Ya3VAzUO/SC2K
+         UdHoOX6Xrw1g+9JsJjyMOEj6mPOoj70Sg910PDQB38s4uKuCeIWnW5PaJZOrLa0Z2fyS
+         qIN2sdVJu3wQOs9v0HVIce8wt9LYFLO6Syk6dQ0R4RUA0ThjgiwmKsrrrdIbevGZ8WDQ
+         5fAH5CE1Q0uDCqCRSMl7pjnNwO2WjpjdNen4bTkGXlylAgv2QE0IjsLKFtDI1EAvHIj3
+         HgYA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=9Lg6fPfjzGyELe2yucml7QNPSdHJg8LerW6zT6lIcIE=;
+        b=uBglp7/5CgPD94eiunPN5q0ALYrPYHQieH5wADGABr2HH1BS3at33Oosx2W48o5Hcl
+         Z/BMX+GH3HqVFMyajOmDB+09riRgnjPEebJf/r7xZABJrxsF00Y8br3+anrcDY634CQI
+         /DAAAhcWuxOoCGJIDK+O81zt98xJqA3vI2RpwZHwFOquB3pFToXIYbhxVlkM3Zh3dMZU
+         H1x3cQ8aKrMoIDfXu3VK8PARTBFUEkV6fM0z3bUm+P+7F0+grU7jdzwOsCnn16s3Tbv3
+         CF/xIyGJ440hs+1UfKzF66fs/xK6enYROCb2Quopgxw1Zt3xA2LrmXW97IIYewN7J8yH
+         yvQw==
+X-Gm-Message-State: AOAM530CfOBLCjNmN8gsKkGInZ60NW25qhy38qT0y76nWlhvSl8d/+/C
+	nnOgQjdlPSJPiZUOFs6kyS8kGj1sBVGFmEGLNEs=
+X-Google-Smtp-Source: ABdhPJzemHKxkjpurJ/RfrWRkRAhZZGb8Q14Lf90cPL6gZL5Uid8Vvkq6MRyc2p9IWecRkhkVhoggSzHyvRkkcrcbAM=
+X-Received: by 2002:a2e:9c5:: with SMTP id 188mr4930588ljj.446.1607697554858;
+ Fri, 11 Dec 2020 06:39:14 -0800 (PST)
+MIME-Version: 1.0
+From: csatish taxconsultancy <csatishtaxconsultancy@gmail.com>
+Date: Fri, 11 Dec 2020 20:08:48 +0530
+Message-ID: <CALg34oqe+5B494uEAXiBVEvURYENZ4cf9tCvBtSXhm==P0=zJQ@mail.gmail.com>
+Subject: Wish to Associate with you
+To: mprsspravinraj@gmail.com, pravinraj@mprsecurityservices.com
+Content-Type: multipart/alternative; boundary="000000000000a9ea4205b631412f"
+X-Spam-Status: No, score=-0.2
+X-Spam-Score: -1
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "119-18-48-204.webhostbox.net",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  SIR / MADAM Greetings! I am a Tax & Job Consultant from Hyderabad,
+    presently I am working only in Hyderabad, I wish to develop my profession
+    and searching for new clients. Actually I wish to Associate with you and
+   your serv [...] 
+ Content analysis details:   (-0.2 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [csatishtaxconsultancy[at]gmail.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+X-Spam-Flag: NO
+
+--000000000000a9ea4205b631412f
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+SIR / MADAM
+
+Greetings!
+
+
+
+I am a Tax & Job Consultant from Hyderabad, presently I am working only in
+Hyderabad, I wish to develop my profession and searching for new clients.
+Actually I wish to Associate with you and your services. With the help of
+you we both can generate income by supporting mutually with your services.
+
+
+
+*SERVICES I WISH TO ASSOCIATE:*
+
+1.       SECURITY AGENCY
+
+2.       HOUSE KEEPING AGENCY
+
+3.       MANPOWER SUPPLY
+
+4.       LANDSCAPING
+
+
+
+So whenever I get new clients , I will connect you to Clients , overall
+work will be done by you. My interest with this is, as a goodwill I am
+expecting 25% on income generates as long as you are connected with that
+company.
+
+
+
+If you are interested and accepted with my proposal requesting you to
+kindly send your company profile, services and Locations where you can give
+services, so that I can study about your services and search for new
+clients and connect you to that Company.
+
+
+
+Awaiting for your kind reply,
+
+
+
+thanking you,
+
+
+
+Please Contact below mentioned details
+
+C.SATISH,
+
+C S & Associates,
+
+Tax Consultant
+
+Nagaram, Hyderabad, Telangana =E2=80=93 500083 INDIA
+
+Ph.No.: 7997261385 / 9985400932 (Whatsapp),
+
+Email: csatishtaxconsultancy@gmail.com
+
+--000000000000a9ea4205b631412f
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><p class=3D"MsoNormal" style=3D"margin:0cm 0cm 0.0001pt;te=
+xt-align:justify;line-height:115%;font-size:11pt;font-family:Calibri,sans-s=
+erif">SIR / MADAM</p>
+
+<p class=3D"MsoNormal" style=3D"margin:0cm 0cm 0.0001pt;text-align:justify;=
+line-height:115%;font-size:11pt;font-family:Calibri,sans-serif">Greetings! =
+</p>
+
+<p class=3D"MsoNormal" style=3D"margin:0cm 0cm 0.0001pt;text-align:justify;=
+line-height:115%;font-size:11pt;font-family:Calibri,sans-serif">=C2=A0</p>
+
+<p class=3D"MsoNormal" style=3D"margin:0cm 0cm 0.0001pt;text-align:justify;=
+line-height:115%;font-size:11pt;font-family:Calibri,sans-serif">I am a Tax =
+&amp; Job Consultant
+from Hyderabad, presently I am
+working only in Hyderabad, I wish to develop my profession and searching fo=
+r
+new clients. Actually I wish to Associate with you and your services. With =
+the help of you we both can generate
+income by supporting mutually with your services.</p>
+
+<p class=3D"MsoNormal" style=3D"margin:0cm 0cm 0.0001pt;text-align:justify;=
+line-height:115%;font-size:11pt;font-family:Calibri,sans-serif">=C2=A0</p>
+
+<p class=3D"MsoNormal" style=3D"margin:0cm 0cm 0.0001pt;text-align:justify;=
+line-height:115%;font-size:11pt;font-family:Calibri,sans-serif"><u>SERVICES=
+ I WISH TO ASSOCIATE:</u></p>
+
+<p class=3D"gmail-MsoListParagraphCxSpFirst" style=3D"margin:0cm 0cm 0.0001=
+pt 36pt;text-align:justify;line-height:115%;font-size:11pt;font-family:Cali=
+bri,sans-serif"><span lang=3D"EN-US">1.<span style=3D"font-variant-numeric:=
+normal;font-variant-east-asian:normal;font-stretch:normal;font-size:7pt;lin=
+e-height:normal;font-family:&quot;Times New Roman&quot;">=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0 </span></span><span lang=3D"EN-US">SECURITY AGENCY</span=
+></p>
+
+<p class=3D"gmail-MsoListParagraphCxSpMiddle" style=3D"margin:0cm 0cm 0.000=
+1pt 36pt;text-align:justify;line-height:115%;font-size:11pt;font-family:Cal=
+ibri,sans-serif"><span lang=3D"EN-US">2.<span style=3D"font-variant-numeric=
+:normal;font-variant-east-asian:normal;font-stretch:normal;font-size:7pt;li=
+ne-height:normal;font-family:&quot;Times New Roman&quot;">=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0 </span></span><span lang=3D"EN-US">HOUSE KEEPING AGEN=
+CY</span></p>
+
+<p class=3D"gmail-MsoListParagraphCxSpMiddle" style=3D"margin:0cm 0cm 0.000=
+1pt 36pt;text-align:justify;line-height:115%;font-size:11pt;font-family:Cal=
+ibri,sans-serif"><span lang=3D"EN-US">3.<span style=3D"font-variant-numeric=
+:normal;font-variant-east-asian:normal;font-stretch:normal;font-size:7pt;li=
+ne-height:normal;font-family:&quot;Times New Roman&quot;">=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0 </span></span><span lang=3D"EN-US">MANPOWER SUPPLY</s=
+pan></p>
+
+<p class=3D"gmail-MsoListParagraphCxSpLast" style=3D"margin:0cm 0cm 0.0001p=
+t 36pt;text-align:justify;line-height:115%;font-size:11pt;font-family:Calib=
+ri,sans-serif"><span lang=3D"EN-US">4.<span style=3D"font-variant-numeric:n=
+ormal;font-variant-east-asian:normal;font-stretch:normal;font-size:7pt;line=
+-height:normal;font-family:&quot;Times New Roman&quot;">=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0 </span></span><span lang=3D"EN-US">LANDSCAPING</span></p=
+>
+
+<p class=3D"MsoNormal" style=3D"margin:0cm 0cm 0.0001pt;text-align:justify;=
+line-height:115%;font-size:11pt;font-family:Calibri,sans-serif">=C2=A0</p>
+
+<p class=3D"MsoNormal" style=3D"margin:0cm 0cm 0.0001pt;text-align:justify;=
+line-height:115%;font-size:11pt;font-family:Calibri,sans-serif">So
+whenever I get new clients , I will connect you to Clients , overall work w=
+ill
+be done by you. My interest with this is, as a goodwill I am expecting 25% =
+on
+income generates as long as you are connected with that company. </p>
+
+<p class=3D"MsoNormal" style=3D"margin:0cm 0cm 0.0001pt;text-align:justify;=
+line-height:115%;font-size:11pt;font-family:Calibri,sans-serif">=C2=A0</p>
+
+<p class=3D"MsoNormal" style=3D"margin:0cm 0cm 0.0001pt;text-align:justify;=
+line-height:115%;font-size:11pt;font-family:Calibri,sans-serif">If
+you are interested and accepted with my proposal requesting you to kindly s=
+end
+your company profile, services and Locations where you can give services, s=
+o
+that I can study about your services and search for new clients and connect=
+ you
+to that Company.</p>
+
+<p class=3D"MsoNormal" style=3D"margin:0cm 0cm 0.0001pt;text-align:justify;=
+line-height:115%;font-size:11pt;font-family:Calibri,sans-serif">=C2=A0</p>
+
+<p class=3D"MsoNormal" style=3D"margin:0cm 0cm 0.0001pt;text-align:justify;=
+line-height:115%;font-size:11pt;font-family:Calibri,sans-serif">Awaiting
+for your kind reply, </p>
+
+<p class=3D"MsoNormal" style=3D"margin:0cm 0cm 0.0001pt;text-align:justify;=
+line-height:115%;font-size:11pt;font-family:Calibri,sans-serif">=C2=A0</p>
+
+<p class=3D"MsoNormal" style=3D"margin:0cm 0cm 0.0001pt;text-align:justify;=
+line-height:115%;font-size:11pt;font-family:Calibri,sans-serif">thanking yo=
+u, </p>
+
+<p class=3D"MsoNormal" style=3D"margin:0cm 0cm 0.0001pt;text-align:justify;=
+line-height:115%;font-size:11pt;font-family:Calibri,sans-serif">=C2=A0</p>
+
+<p class=3D"MsoNormal" style=3D"margin:0cm 0cm 0.0001pt;text-align:justify;=
+line-height:115%;font-size:11pt;font-family:Calibri,sans-serif">Please Cont=
+act below mentioned
+details</p>
+
+<p class=3D"MsoNormal" style=3D"margin:0cm 0cm 0.0001pt;text-align:justify;=
+line-height:115%;font-size:11pt;font-family:Calibri,sans-serif">C.SATISH, <=
+/p>
+
+<p class=3D"MsoNormal" style=3D"margin:0cm 0cm 0.0001pt;text-align:justify;=
+line-height:115%;font-size:11pt;font-family:Calibri,sans-serif">C S &amp; A=
+ssociates, </p>
+
+<p class=3D"MsoNormal" style=3D"margin:0cm 0cm 0.0001pt;text-align:justify;=
+line-height:115%;font-size:11pt;font-family:Calibri,sans-serif">Tax Consult=
+ant</p>
+
+<p class=3D"MsoNormal" style=3D"margin:0cm 0cm 0.0001pt;text-align:justify;=
+line-height:115%;font-size:11pt;font-family:Calibri,sans-serif">Nagaram, Hy=
+derabad, Telangana =E2=80=93
+500083 INDIA</p>
+
+<p class=3D"MsoNormal" style=3D"margin:0cm 0cm 0.0001pt;text-align:justify;=
+line-height:115%;font-size:11pt;font-family:Calibri,sans-serif">Ph.No.: 799=
+7261385 / 9985400932
+(Whatsapp),</p>
+
+<p class=3D"MsoNormal" style=3D"margin:0cm 0cm 0.0001pt;text-align:justify;=
+line-height:115%;font-size:11pt;font-family:Calibri,sans-serif">Email:
+<a href=3D"mailto:csatishtaxconsultancy@gmail.com">csatishtaxconsultancy@gm=
+ail.com</a><br></p></div>
+
+--000000000000a9ea4205b631412f--

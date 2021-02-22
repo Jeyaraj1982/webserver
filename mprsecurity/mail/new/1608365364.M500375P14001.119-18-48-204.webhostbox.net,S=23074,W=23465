@@ -1,0 +1,391 @@
+Return-Path: <sheetal.varmamanager@hotmail.com>
+Delivered-To: mprsecurity@119-18-48-204.webhostbox.net
+Received: from 119-18-48-204.webhostbox.net
+	by 119-18-48-204.webhostbox.net with LMTP
+	id rwVCHTS13V+xNgAAFI3O4Q
+	(envelope-from <sheetal.varmamanager@hotmail.com>)
+	for <mprsecurity@119-18-48-204.webhostbox.net>; Sat, 19 Dec 2020 13:39:24 +0530
+Return-path: <sheetal.varmamanager@hotmail.com>
+Envelope-to: careers@mprsecurityservices.com
+Delivery-date: Sat, 19 Dec 2020 13:39:24 +0530
+Received: from mail-oln040092253041.outbound.protection.outlook.com ([40.92.253.41]:60166 helo=APC01-SG2-obe.outbound.protection.outlook.com)
+	by 119-18-48-204.webhostbox.net with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.93)
+	(envelope-from <sheetal.varmamanager@hotmail.com>)
+	id 1kqXIm-0003ci-RJ
+	for careers@mprsecurityservices.com; Sat, 19 Dec 2020 13:39:24 +0530
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=FZ3chnll4n0W8VobX2+c5wD9lOXn/JmUqFgNs6FpoTBPnW+EWSCeFID/ku2NRbRrUcEUKcKPfQZWAiId7jrwdOof/EHSlmP9z3mugNKTnyzy6FH1w2FWMVRySGhSU2XMKBhCIJavwxN74GaoIflVOgA4Jd4gQbj/Q7/CLj0oxYYyjP0hFDq+x1q96drsJeEDyNz5C0QaJ/55XcIdpqEhCNrgHTcxEN7JjjUvU26X9iAwL+uzbrdnbXfA9nLAvzHRwcgF+t42OiDsVjXXzU6WfAoHU+L7pKf7WhgDAKe8zTYIgx1DMKq8ol+H4yHNZzewobC1/Jngc0D6J+Pr9gusFA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=LdMnm5uL45dFwDYAHg0wQ2Is0WQl7wGy2T/I48FZwcE=;
+ b=UylfcWEQp0AYAJndIdAcwrxv5TfaU4qCZmvCEdpk1d0IrLXDnTbvmphTjPTpIFrFADxw1VsM1O1cFnnUlx1iCjkqKKvFXO9Y+swQuPmvBm5B7VzBJGTsAePDxuvl5DNEUCHGtKLf1lLxsWuvfvIrz1O8JYSlE5wkgIUrCk/1/77Ccy6YDWBQUahV36+bh0UKKlTFVeTOetBXELGx2jn1S4r/fRWDK5BBy42qcnlFJv0JwkNHQJh9pKOIJ1tnP8tg8MXbK/RXURqHDT6AzS9vaE6ho1hb/F7nYRAn3NfIhrN7rPDyk/3IDNzXFIgB0S474BkrXMjmeZaRoGGe0ZVnCQ==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=none; dmarc=none;
+ dkim=none; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=hotmail.com;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=LdMnm5uL45dFwDYAHg0wQ2Is0WQl7wGy2T/I48FZwcE=;
+ b=uYDvV62PHuv/AyExGxJ5De0pZamedAGds7MO14R7BYo2lmWQRSyppi2kWMD/SHEoYSb8zMYfUewo1O9wpPQX9qZ35a7hUC+duVvCJEIraK5QojEKUcjfbTrimhQn8FN80aHEA1fo44rdGX1T7DBmzdYA0Zg4foRAjgIVynBiMIcQ01hofbFGYXyYrf5YQgqUCXU8OMOcMy7GJ6u0+EA4FwYNDYYWn9/B4NknZfOX5BxmZBtQqYRNj56Ne8IRDvBzu0pIq2/YsFMtRT3AdxCCN43FtnCfJK5l65DM8aPQmq8NHCZ84pFruCWcLn3oOFAbBCRpRQy/GynWpJ0ARr6UrQ==
+Received: from PU1APC01FT025.eop-APC01.prod.protection.outlook.com
+ (2a01:111:e400:7ebe::46) by
+ PU1APC01HT165.eop-APC01.prod.protection.outlook.com (2a01:111:e400:7ebe::462)
+ with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3676.22; Sat, 19 Dec
+ 2020 08:08:07 +0000
+Received: from ME3P282MB1969.AUSP282.PROD.OUTLOOK.COM (10.152.252.57) by
+ PU1APC01FT025.mail.protection.outlook.com (10.152.252.237) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3676.22 via Frontend Transport; Sat, 19 Dec 2020 08:08:06 +0000
+Received: from ME3P282MB1969.AUSP282.PROD.OUTLOOK.COM
+ ([fe80::2df0:9309:1764:2a7d]) by ME3P282MB1969.AUSP282.PROD.OUTLOOK.COM
+ ([fe80::2df0:9309:1764:2a7d%9]) with mapi id 15.20.3676.025; Sat, 19 Dec 2020
+ 08:08:06 +0000
+From: Sheetal Varma <sheetal.varmamanager@hotmail.com>
+To: "sheela.greenbyte@gmail.com" <sheela.greenbyte@gmail.com>
+Subject:
+ =?iso-8859-1?Q?%%Website_Design,_Development_&_optimization=B7__!!!!?=
+Thread-Topic:
+ =?iso-8859-1?Q?%%Website_Design,_Development_&_optimization=B7__!!!!?=
+Thread-Index: AQHW1d4A0ibansDP70i0Rc0rvymvtg==
+Date: Sat, 19 Dec 2020 08:08:06 +0000
+Message-ID:
+ <ME3P282MB1969734F0384B9D708D1792499C20@ME3P282MB1969.AUSP282.PROD.OUTLOOK.COM>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+x-incomingtopheadermarker:
+ OriginalChecksum:2D633D0E79BBD6361A1813C55BFFAFF9D962F85951EC682931DEDC17A04566B4;UpperCasedChecksum:A89F81A7CDAED5C890AC0C1A4E1B5D6B28E764694E6048BADA8BCAE141522BC0;SizeAsReceived:18808;Count:41
+x-tmn: [v8CHncD6LN1X7C2N19TTwDyLQQiMiGyQZm2uxo35Q+Fsv1kVmaOzH8XDfpXcDjrc]
+x-ms-publictraffictype: Email
+x-incomingheadercount: 41
+x-eopattributedmessage: 0
+x-ms-office365-filtering-correlation-id: 530db4aa-2e3a-4833-96f1-08d8a3f5377a
+x-ms-exchange-slblob-mailprops:
+ 79Jo46q8hhBJ+yFvjeZjGbToIApVztC8xxB8JhkkegH95S82h1+0CoqTT2K83Wh/H6lYRsRJfXBzJupb94ZR0fbp2nWSg4QwbRCDUedo1b+F7JrPlYF0kDl9ZTSDVCHO2bFuBTwHZzdeScdcuMEAkEti5r89aPYm+T1FfW5lD/qXz4RvGkkBNkAju4hoNVMZBjsIrZEjFoyWqlBuomFHnemr+spQXny186ZsC75E0xsUCXLOEqAp1KGe/MwOyfitiPOoy9g8yn8eye3Yaa8d0N0vjWsqzaD9qSRcJsT76TH9dSLM+3y+j2TCznh0ARFY0sNc0Te4d3KSF+r2gbbyu20JoKyDu2ZFaXne+Yqlksi2/LlDSsZh8IFzGvS5g+NCHLHNR41Qw+LPRP2U48V/3yF08p8HybXsJ3Y5VeuJ9XZKUKgp7cv0yd86B9j4MxroajoZkJaEM9CyC38UJcfn5eKtDZWGH6CseNinLszb5xW9xATewPHXMfSyHs8lZrr//mYZ5I8WGBOUA+3dcYcst1+Skxupc4onXYFHkveCaYRiS1egSGml0pgzbShacM9LPKIIIxde8hzTqG3c/NnnPdH9v+dSS+ln7sMHv5qOtoHOKgJRwNVvtmipIjYu9EtnQY5+lTtcg5WN1FlfRYAHvSZ/whXRZ8Dru+rSjxvwFDjLTIFS9zxQFzJNrEfdrV6W
+x-ms-traffictypediagnostic: PU1APC01HT165:
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:
+ IO2Mr245EvOHPCbal0F9Iwf2UkbUxPSVZD8dYtZefyuPglYY01b1MTP+yrB4LSVpgg1Z+Q909B5DX0b9EG5ynoY7nN/76nUJs4mFicMWBbfPTGKSfsy7HVuJ+1MjDjiK6JgKpniWzErlb3CYdHzorGnb6IJ5lier7uuYwrxl/Hx0NU6W03TGMntXRGlbbDTknK5coOTvYUzDGCCoCaTaiY71Zmgo+RcizWpAnHy8s2gvOxQIdEgfQXRY0g5rD5kH
+x-ms-exchange-antispam-messagedata:
+ S/bxNtNtEWle2e2QyB0Jbn6HuEklri0xUwS5oxc1M7LjEqs0s5BS5QQZdPtEJrXbLOqhSpqCgg0FdTZFdwbmsI/FHNHWU27mHa3BaDX8RFSHJRfIv6eq1xas+0OpyL0i8eDJgTm+SU+m7Wg5akUicom9YZ/PEpU40zccJlHaCyBp1udA4BnphgYmoIn7cTk+Q5XsF0a9+Vz+UAX1N2WbyQ==
+x-ms-exchange-transport-forked: True
+Content-Type: multipart/alternative;
+	boundary="_000_ME3P282MB1969734F0384B9D708D1792499C20ME3P282MB1969AUSP_"
+MIME-Version: 1.0
+X-OriginatorOrg: hotmail.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-AuthSource: PU1APC01FT025.eop-APC01.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-CrossTenant-Network-Message-Id: 530db4aa-2e3a-4833-96f1-08d8a3f5377a
+X-MS-Exchange-CrossTenant-originalarrivaltime: 19 Dec 2020 08:08:06.4457
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Internet
+X-MS-Exchange-CrossTenant-id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-rms-persistedconsumerorg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PU1APC01HT165
+X-Spam-Status: No, score=-0.2
+X-Spam-Score: -1
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "119-18-48-204.webhostbox.net",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Hello, We are an IT company specialized in Web & Digital Marketing
+    Services. Are you looking to outsource your Web & other digital Marketing
+    Projects? 
+ Content analysis details:   (-0.2 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [sheetal.varmamanager[at]hotmail.com]
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+X-Spam-Flag: NO
+
+--_000_ME3P282MB1969734F0384B9D708D1792499C20ME3P282MB1969AUSP_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+
+Hello,
+
+
+
+We are an IT company specialized in Web & Digital Marketing Services.
+
+
+
+Are you looking to outsource your Web & other digital Marketing Projects?
+
+
+
+We offer the following Services:=B7
+
+
+
+Website Design, Development & optimization=B7
+
+Social Media Marketing
+
+New Logo Designing
+
+
+
+So, if you are interested in taking our services.
+
+
+
+Please revert to this mail; I would be happy to share our Work Portfolio wi=
+th you.
+
+
+
+Thanks & Regards,
+
+Alka
+
+Online Marketing Executive
+
+
+
+--_000_ME3P282MB1969734F0384B9D708D1792499C20ME3P282MB1969AUSP_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div style=3D"font-family: Calibri, Helvetica, sans-serif; font-size: 12pt;=
+ color: rgb(0, 0, 0);">
+<p style=3D"margin-right:0in;margin-left:0in;font-size:12pt;font-family:&qu=
+ot;Times New Roman&quot;, serif;text-align:justify;text-justify:inter-ideog=
+raph;background:white">
+<span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-=
+serif&quot;;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-lat=
+in;mso-bidi-theme-font:minor-latin;color:black;background:white"><o:p>&nbsp=
+;</o:p></span></p>
+<p style=3D"margin-right:0in;margin-left:0in;font-size:12pt;font-family:&qu=
+ot;Times New Roman&quot;, serif;text-align:justify;text-justify:inter-ideog=
+raph;background:white">
+<span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-=
+serif&quot;;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-lat=
+in;mso-bidi-theme-font:minor-latin;color:black;background:white">Hello,</sp=
+an><span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sa=
+ns-serif&quot;;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-=
+latin;mso-bidi-theme-font:minor-latin;color:black"><o:p>&nbsp;</o:p></span>=
+</p>
+<p style=3D"margin-right:0in;margin-left:0in;font-size:12pt;font-family:&qu=
+ot;Times New Roman&quot;, serif;text-align:justify;text-justify:inter-ideog=
+raph;background:white">
+<span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-=
+serif&quot;;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-lat=
+in;mso-bidi-theme-font:minor-latin;color:black;background:white">&nbsp;</sp=
+an><span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sa=
+ns-serif&quot;;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-=
+latin;mso-bidi-theme-font:minor-latin;color:black"><o:p>&nbsp;</o:p></span>=
+</p>
+<p style=3D"margin-right:0in;margin-left:0in;font-size:12pt;font-family:&qu=
+ot;Times New Roman&quot;, serif;text-align:justify;text-justify:inter-ideog=
+raph;background:white">
+<span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-=
+serif&quot;;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-lat=
+in;mso-bidi-theme-font:minor-latin;color:black;background:white">We&nbsp;ar=
+e&nbsp;an&nbsp;IT&nbsp;company&nbsp;specialized&nbsp;in&nbsp;Web&nbsp;&amp;=
+&nbsp;Digital&nbsp;Marketing&nbsp;Services.</span><span style=3D"font-size:=
+11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;mso-ascii-the=
+me-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:mi=
+nor-latin;color:black"><o:p>&nbsp;</o:p></span></p>
+<p style=3D"margin-right:0in;margin-left:0in;font-size:12pt;font-family:&qu=
+ot;Times New Roman&quot;, serif;text-align:justify;text-justify:inter-ideog=
+raph;background:white">
+<span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-=
+serif&quot;;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-lat=
+in;mso-bidi-theme-font:minor-latin;color:black;background:white">&nbsp;</sp=
+an><span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sa=
+ns-serif&quot;;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-=
+latin;mso-bidi-theme-font:minor-latin;color:black"><o:p>&nbsp;</o:p></span>=
+</p>
+<p style=3D"margin-right:0in;margin-left:0in;font-size:12pt;font-family:&qu=
+ot;Times New Roman&quot;, serif;text-align:justify;text-justify:inter-ideog=
+raph;background:white">
+<span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-=
+serif&quot;;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-lat=
+in;mso-bidi-theme-font:minor-latin;color:black;background:white">Are&nbsp;y=
+ou&nbsp;looking&nbsp;to&nbsp;outsource&nbsp;your&nbsp;Web&nbsp;&amp;&nbsp;o=
+ther&nbsp;digital&nbsp;Marketing&nbsp;Projects?</span><span style=3D"font-s=
+ize:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;mso-ascii=
+-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-fon=
+t:minor-latin;color:black"><o:p>&nbsp;</o:p></span></p>
+<p style=3D"margin-right:0in;margin-left:0in;font-size:12pt;font-family:&qu=
+ot;Times New Roman&quot;, serif;text-align:justify;text-justify:inter-ideog=
+raph;background:white">
+<span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-=
+serif&quot;;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-lat=
+in;mso-bidi-theme-font:minor-latin;color:black;background:white">&nbsp;</sp=
+an><span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sa=
+ns-serif&quot;;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-=
+latin;mso-bidi-theme-font:minor-latin;color:black"><o:p>&nbsp;</o:p></span>=
+</p>
+<p style=3D"margin-right:0in;margin-left:0in;font-size:12pt;font-family:&qu=
+ot;Times New Roman&quot;, serif;text-align:justify;text-justify:inter-ideog=
+raph;background:white">
+<span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-=
+serif&quot;;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-lat=
+in;mso-bidi-theme-font:minor-latin;color:black;background:white">We&nbsp;of=
+fer the following&nbsp;Services:=B7&nbsp;</span><span style=3D"font-size:11=
+.0pt;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;mso-ascii-theme=
+-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:mino=
+r-latin;color:black"><o:p>&nbsp;</o:p></span></p>
+<p style=3D"margin-right:0in;margin-left:0in;font-size:12pt;font-family:&qu=
+ot;Times New Roman&quot;, serif;text-align:justify;text-justify:inter-ideog=
+raph;background:white">
+<span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-=
+serif&quot;;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-lat=
+in;mso-bidi-theme-font:minor-latin;color:black;background:white">&nbsp;</sp=
+an><span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sa=
+ns-serif&quot;;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-=
+latin;mso-bidi-theme-font:minor-latin;color:black"><o:p>&nbsp;</o:p></span>=
+</p>
+<p style=3D"margin-right:0in;margin-left:0in;font-size:12pt;font-family:&qu=
+ot;Times New Roman&quot;, serif;text-align:justify;text-justify:inter-ideog=
+raph;background:white">
+<span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-=
+serif&quot;;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-lat=
+in;mso-bidi-theme-font:minor-latin;color:black;background:white">Website&nb=
+sp;Design,&nbsp;Development&nbsp;&amp;&nbsp;optimization=B7&nbsp;</span><sp=
+an style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-ser=
+if&quot;;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;=
+mso-bidi-theme-font:minor-latin;color:black"><o:p>&nbsp;</o:p></span></p>
+<p style=3D"margin-right:0in;margin-left:0in;font-size:12pt;font-family:&qu=
+ot;Times New Roman&quot;, serif;text-align:justify;text-justify:inter-ideog=
+raph;background:white">
+<span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-=
+serif&quot;;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-lat=
+in;mso-bidi-theme-font:minor-latin;color:black;background:white">Social Med=
+ia Marketing
+</span><span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,&quo=
+t;sans-serif&quot;;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:mi=
+nor-latin;mso-bidi-theme-font:minor-latin;color:black"><o:p>&nbsp;</o:p></s=
+pan></p>
+<p style=3D"margin-right:0in;margin-left:0in;font-size:12pt;font-family:&qu=
+ot;Times New Roman&quot;, serif;text-align:justify;text-justify:inter-ideog=
+raph;background:white">
+<span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-=
+serif&quot;;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-lat=
+in;mso-bidi-theme-font:minor-latin;color:black;background:white">New Logo&n=
+bsp;Designing&nbsp;</span><span style=3D"font-size:11.0pt;font-family:&quot=
+;Calibri&quot;,&quot;sans-serif&quot;;mso-ascii-theme-font:minor-latin;mso-=
+hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;color:black"><=
+o:p>&nbsp;</o:p></span></p>
+<p style=3D"margin-right:0in;margin-left:0in;font-size:12pt;font-family:&qu=
+ot;Times New Roman&quot;, serif;text-align:justify;text-justify:inter-ideog=
+raph;background:white">
+<span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-=
+serif&quot;;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-lat=
+in;mso-bidi-theme-font:minor-latin;color:black;background:white">&nbsp;</sp=
+an><span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sa=
+ns-serif&quot;;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-=
+latin;mso-bidi-theme-font:minor-latin;color:black"><o:p>&nbsp;</o:p></span>=
+</p>
+<p style=3D"margin-right:0in;margin-left:0in;font-size:12pt;font-family:&qu=
+ot;Times New Roman&quot;, serif;text-align:justify;text-justify:inter-ideog=
+raph;background:white">
+<span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-=
+serif&quot;;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-lat=
+in;mso-bidi-theme-font:minor-latin;color:black;background:white">So,&nbsp;i=
+f&nbsp;you&nbsp;are&nbsp;interested&nbsp;in&nbsp;taking&nbsp;our&nbsp;servi=
+ces.</span><span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,=
+&quot;sans-serif&quot;;mso-ascii-theme-font:minor-latin;mso-hansi-theme-fon=
+t:minor-latin;mso-bidi-theme-font:minor-latin;color:black"><o:p>&nbsp;</o:p=
+></span></p>
+<p style=3D"margin-right:0in;margin-left:0in;font-size:12pt;font-family:&qu=
+ot;Times New Roman&quot;, serif;text-align:justify;text-justify:inter-ideog=
+raph;background:white">
+<span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-=
+serif&quot;;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-lat=
+in;mso-bidi-theme-font:minor-latin;color:black;background:white">&nbsp;</sp=
+an><span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sa=
+ns-serif&quot;;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-=
+latin;mso-bidi-theme-font:minor-latin;color:black"><o:p>&nbsp;</o:p></span>=
+</p>
+<p style=3D"margin-right:0in;margin-left:0in;font-size:12pt;font-family:&qu=
+ot;Times New Roman&quot;, serif;text-align:justify;text-justify:inter-ideog=
+raph;background:white">
+<span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-=
+serif&quot;;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-lat=
+in;mso-bidi-theme-font:minor-latin;color:black;background:white">Please&nbs=
+p;revert&nbsp;to&nbsp;this&nbsp;mail; I&nbsp;would&nbsp;be&nbsp;happy&nbsp;=
+to&nbsp;share&nbsp;our&nbsp;Work&nbsp;Portfolio&nbsp;with&nbsp;you.</span><=
+span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-s=
+erif&quot;;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-lati=
+n;mso-bidi-theme-font:minor-latin;color:black"><o:p>&nbsp;</o:p></span></p>
+<p style=3D"margin-right:0in;margin-left:0in;font-size:12pt;font-family:&qu=
+ot;Times New Roman&quot;, serif;text-align:justify;text-justify:inter-ideog=
+raph;background:white">
+<span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-=
+serif&quot;;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-lat=
+in;mso-bidi-theme-font:minor-latin;color:black;background:white">&nbsp;</sp=
+an><span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sa=
+ns-serif&quot;;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-=
+latin;mso-bidi-theme-font:minor-latin;color:black"><o:p>&nbsp;</o:p></span>=
+</p>
+<p style=3D"margin-right:0in;margin-left:0in;font-size:12pt;font-family:&qu=
+ot;Times New Roman&quot;, serif;text-align:justify;text-justify:inter-ideog=
+raph;background:white">
+<span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-=
+serif&quot;;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-lat=
+in;mso-bidi-theme-font:minor-latin;color:black;background:white">Thanks&nbs=
+p;&amp;&nbsp;Regards,</span><span style=3D"font-size:11.0pt;font-family:&qu=
+ot;Calibri&quot;,&quot;sans-serif&quot;;mso-ascii-theme-font:minor-latin;ms=
+o-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;color:black"=
+><o:p>&nbsp;</o:p></span></p>
+<p style=3D"margin-right:0in;margin-left:0in;font-size:12pt;font-family:&qu=
+ot;Times New Roman&quot;, serif;text-align:justify;text-justify:inter-ideog=
+raph;background:white">
+<span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-=
+serif&quot;;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-lat=
+in;mso-bidi-theme-font:minor-latin;color:black;background:white">Alka</span=
+><span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans=
+-serif&quot;;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-la=
+tin;mso-bidi-theme-font:minor-latin;color:black"><o:p>&nbsp;</o:p></span></=
+p>
+<p style=3D"margin-right:0in;margin-left:0in;font-size:12pt;font-family:&qu=
+ot;Times New Roman&quot;, serif;text-align:justify;text-justify:inter-ideog=
+raph;background:white">
+<span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,&quot;sans-=
+serif&quot;;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-lat=
+in;mso-bidi-theme-font:minor-latin;color:black;background:white">Online&nbs=
+p;Marketing&nbsp;Executive</span><span style=3D"font-size:11.0pt;font-famil=
+y:&quot;Calibri&quot;,&quot;sans-serif&quot;;mso-ascii-theme-font:minor-lat=
+in;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;color:b=
+lack"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal" align=3D"left" style=3D"margin:0in 0in 10pt;text-ali=
+gn:left;font-size:12pt;font-family:&quot;Times New Roman&quot;, serif;margi=
+n-right:0in;margin-left:0in;mso-pagination:widow-orphan">
+<span style=3D"font-size:11.0pt;mso-bidi-font-family:Calibri;mso-bidi-theme=
+-font:minor-latin"><o:p>&nbsp;</o:p></span></p>
+<br>
+</div>
+</body>
+</html>
+
+--_000_ME3P282MB1969734F0384B9D708D1792499C20ME3P282MB1969AUSP_--

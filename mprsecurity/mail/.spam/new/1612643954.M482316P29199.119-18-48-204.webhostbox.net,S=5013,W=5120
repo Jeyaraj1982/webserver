@@ -1,0 +1,107 @@
+Return-Path: <ritagraham1111@gmail.com>
+Delivered-To: mprsecurity+spam@119-18-48-204.webhostbox.net
+Received: from 119-18-48-204.webhostbox.net
+	by 119-18-48-204.webhostbox.net with LMTP
+	id oMX6G3L+HmAPcgAAFI3O4Q
+	(envelope-from <ritagraham1111@gmail.com>)
+	for <mprsecurity+spam@119-18-48-204.webhostbox.net>; Sun, 07 Feb 2021 02:09:14 +0530
+Return-path: <ritagraham1111@gmail.com>
+Envelope-to: pravinraj@mprsecurityservices.com
+Delivery-date: Sun, 07 Feb 2021 02:09:14 +0530
+Received: from mail.phoenixtsc.vn ([124.158.10.9]:59372)
+	by 119-18-48-204.webhostbox.net with esmtp (Exim 4.93)
+	(envelope-from <ritagraham1111@gmail.com>)
+	id 1l8UMJ-0007ad-Bs
+	for pravinraj@mprsecurityservices.com; Sun, 07 Feb 2021 02:09:14 +0530
+Received: from User (unknown [62.148.158.119])
+	by mail.phoenixtsc.vn (Postfix) with SMTP id 9B62442801DA;
+	Sat,  6 Feb 2021 23:11:11 +0700 (+07)
+Reply-To: <ritagraham777@gmail.com>
+From: "Rita Graham"<ritagraham1111@gmail.com>
+X-Spam-Status: Yes, score=25.4
+X-Spam-Score: 254
+X-Spam-Bar: +++++++++++++++++++++++++
+X-Spam-Report: Spam detection software, running on the system "119-18-48-204.webhostbox.net",
+ has identified this incoming email as possible spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Can we do business? Date: Sat, 6 Feb 2021 08:11:35 -0800 MIME-Version:
+    1.0 Content-Type: text/plain; charset="Windows-1251" Content-Transfer-Encoding:
+    7bit X-Priority: 3 X-MSMail-Priority: Normal X-Ma [...] 
+ Content analysis details:   (25.4 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 NSL_RCVD_FROM_USER     Received from User
+  1.2 MISSING_HEADERS        Missing To: header
+  1.2 RCVD_IN_BL_SPAMCOP_NET RBL: Received via a relay in
+                             bl.spamcop.net
+                [Blocked - see <https://www.spamcop.net/bl.shtml?124.158.10.9>]
+  2.7 RCVD_IN_PSBL           RBL: Received via a relay in PSBL
+                             [124.158.10.9 listed in psbl.surriel.com]
+  0.0 DKIM_ADSP_CUSTOM_MED   No valid author signature, adsp_override is
+                              CUSTOM_MED
+  0.2 FREEMAIL_ENVFROM_END_DIGIT Envelope-from freemail username ends
+                             in digit
+                             [ritagraham1111[at]gmail.com]
+  1.5 SPF_SOFTFAIL           SPF: sender does not match SPF record (softfail)
+  0.2 FREEMAIL_REPLYTO_END_DIGIT Reply-To freemail username ends in
+                             digit
+                             [ritagraham777[at]gmail.com]
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [ritagraham1111[at]gmail.com]
+  1.0 FORGED_GMAIL_RCVD      'From' gmail.com does not match 'Received'
+                             headers
+  0.0 FSL_NEW_HELO_USER      Spam's using Helo and User
+  1.4 MISSING_DATE           Missing Date: header
+  0.0 FROM_MISSP_USER        From misspaced, from "User"
+  1.9 REPLYTO_WITHOUT_TO_CC  No description available.
+  1.0 FREEMAIL_REPLYTO       Reply-To/From or Reply-To/body contain
+                             different freemails
+  2.5 FROM_MISSP_REPLYTO     From misspaced, has Reply-To
+  0.0 FROM_MISSPACED         From: missing whitespace
+  0.0 TO_NO_BRKTS_FROM_MSSP  Multiple header formatting problems
+  1.2 NML_ADSP_CUSTOM_MED    ADSP custom_med hit, and not from a mailing
+                             list
+  0.0 FROM_MISSP_EH_MATCH    From misspaced, matches envelope
+  1.5 SPOOFED_FREEMAIL       No description available.
+  2.5 SPOOFED_FREEM_REPTO    Forged freemail sender with freemail
+                             reply-to
+  0.4 SPOOF_GMAIL_MID        From Gmail but it doesn't seem to be...
+  3.1 FROM_MISSP_FREEMAIL    From misspaced + freemail provider
+  1.7 ADVANCE_FEE_3_NEW      Appears to be advance fee fraud (Nigerian 419)
+X-Spam-Flag: YES
+Subject:  ***SPAM***  
+
+Can we do business?
+Date: Sat, 6 Feb 2021 08:11:35 -0800
+MIME-Version: 1.0
+Content-Type: text/plain;
+	charset="Windows-1251"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-MSMail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2600.0000
+
+Dearest,
+
+My name is Rita, I am an account officer in Union Bank Plc. I am contacting
+you for a very beneficial business of a huge sum of money from a deceased
+account.
+
+I am aware that this letter has come to you as a surprise as we have not
+met before or handled any business deal in the past. 
+
+Nevertheless, I have contacted you with good faith and genuine intentions,
+and I hope I can trust you with this fund which I will explain to you
+immediately I hear from you.
+
+Can we do business? if interested kindly respond to me through my personal
+email address below To facilitate the process of this transaction.
+
+Regards,
+
+Rita Graham
+

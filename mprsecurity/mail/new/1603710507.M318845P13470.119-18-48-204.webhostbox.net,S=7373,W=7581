@@ -1,0 +1,208 @@
+Return-Path: <anshika@websollutions.com>
+Delivered-To: mprsecurity@119-18-48-204.webhostbox.net
+Received: from 119-18-48-204.webhostbox.net
+	by 119-18-48-204.webhostbox.net with LMTP
+	id vBjgESuull+eNAAAFI3O4Q
+	(envelope-from <anshika@websollutions.com>)
+	for <mprsecurity@119-18-48-204.webhostbox.net>; Mon, 26 Oct 2020 16:38:27 +0530
+Return-path: <anshika@websollutions.com>
+Envelope-to: careers@mprsecurityservices.com
+Delivery-date: Mon, 26 Oct 2020 16:38:27 +0530
+Received: from mail-pl1-f194.google.com ([209.85.214.194]:42565)
+	by 119-18-48-204.webhostbox.net with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.93)
+	(envelope-from <anshika@websollutions.com>)
+	id 1kX0MQ-0003Ub-C0
+	for careers@mprsecurityservices.com; Mon, 26 Oct 2020 16:38:27 +0530
+Received: by mail-pl1-f194.google.com with SMTP id t22so4570922plr.9
+        for <careers@mprsecurityservices.com>; Mon, 26 Oct 2020 04:08:02 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=websollutions-com.20150623.gappssmtp.com; s=20150623;
+        h=from:to:subject:date:message-id:mime-version:thread-index
+         :content-language;
+        bh=bPmcSjvxQj4qjPGos0S3ENl7F+1NjmWbsAvjYr1V6JE=;
+        b=BoeyVpsEtPZ3Z5f9gTBOM/vL7NG11A/WCc6QgbWZWQn76tRIrgqKTQqb3ljA6LiKSM
+         SRssHH+hD9PQs4+zs35aQi0woVGv/SUlii75ilHSsPBrkZ+GMXjCGrOdQHeoFb4sEbX4
+         AybIr8hZmSSwhTv/YMHKGyXHEJ9lD2sThdcWT2rKRBts8X9ofFENf1oPsTluDpduLLJx
+         +PLHMr+b+b5Wv67zeoV55M1cAvSuH6OdHqShNy+vA4T4qHcgjTLw7riRP5byTuR1NokJ
+         zN9G6IFeGFVet7OEGKHJmuquZnNyij4VMG7m7YZJwtuRL4pHth65UZEoPpT/ewnqq+q/
+         sCAw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:from:to:subject:date:message-id:mime-version
+         :thread-index:content-language;
+        bh=bPmcSjvxQj4qjPGos0S3ENl7F+1NjmWbsAvjYr1V6JE=;
+        b=Fe3gW3+mWInUeuXFCKIpazI1K+vchvC4Sx0Njez2ZiuCD1U1owM3Mb3GVUkNTiQIZd
+         LGXhkS2T8DuRLxzOp4tUwVSnSUCwxtiYn4584+NxTeQAGagJ86HbbjsDhgd25XqNXFH9
+         cJuVr/NkQHLlWBL+QxJaLQjIENepVCTJbKROzaQInjgBJAXbPzgig7kysO36yWKgPtX6
+         L4T6Z1pdT9D72ovlXoNgrXI12+jdPe1/O0AsRKnrNsQDQdzZGjpae+YF5g08EcJv6bFt
+         3k9E+bp6V8KptEbVaJV5Z9gDed0b/k1LCJT5teRLWjPpJF/8On8cNhBerI76DZWvy93a
+         zolw==
+X-Gm-Message-State: AOAM532+jPNHvsapek0/xMMiKmEB7RsUQUjnqUxpXJBWjhVViRu1ln1W
+	rYV8UVi6bEoa+O85ZvWX3OT8ixzC42k4BT8S
+X-Google-Smtp-Source: ABdhPJzmdQ5+jeVt0Z050NxV6EWQEF9zRyyEqqArSlSfnxcN0Hw+Epw9y75ECvEuoNlLM2MPF5I1bA==
+X-Received: by 2002:a17:902:d909:b029:d3:d52c:b98b with SMTP id c9-20020a170902d909b02900d3d52cb98bmr13470394plz.54.1603710459278;
+        Mon, 26 Oct 2020 04:07:39 -0700 (PDT)
+Received: from futurePC ([122.180.253.251])
+        by smtp.gmail.com with ESMTPSA id ei4sm12085661pjb.4.2020.10.26.04.07.37
+        for <careers@mprsecurityservices.com>
+        (version=TLS1 cipher=ECDHE-ECDSA-AES128-SHA bits=128/128);
+        Mon, 26 Oct 2020 04:07:38 -0700 (PDT)
+From: "Anshika" <anshika@websollutions.com>
+To: <careers@mprsecurityservices.com>
+Subject: Brilliant SEO Services
+Date: Mon, 26 Oct 2020 16:37:09 +0530
+Message-ID: <b16001d6ab88$58350520$089f0f60$@com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_B161_01D6ABB6.71ED4120"
+X-Mailer: Microsoft Office Outlook 12.0
+Thread-Index: AdariB+nxoFITABjS8C+FXjV3c5pEg==
+Content-Language: en-us
+X-Spam-Status: No, score=0.0
+X-Spam-Score: 0
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "119-18-48-204.webhostbox.net",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Hello, Are you interested in SEO services? If yes, So please
+    give me your website URL then I can send you our best SEO proposal. 
+ Content analysis details:   (0.0 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+X-Spam-Flag: NO
+
+This is a multipart message in MIME format.
+
+------=_NextPart_000_B161_01D6ABB6.71ED4120
+Content-Type: text/plain;
+	charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+ 
+
+Are you interested in SEO services?
+
+ 
+
+If yes, So please give me your website URL then I can send you our best SEO
+proposal.
+
+ 
+
+Thanks
+
+Anshika
+
+
+------=_NextPart_000_B161_01D6ABB6.71ED4120
+Content-Type: text/html;
+	charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" =
+xmlns:o=3D"urn:schemas-microsoft-com:office:office" =
+xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" =
+xmlns=3D"http://www.w3.org/TR/REC-html40">
+
+<head>
+<META HTTP-EQUIV=3D"Content-Type" CONTENT=3D"text/html; =
+charset=3Dus-ascii">
+<meta name=3DGenerator content=3D"Microsoft Word 12 (filtered medium)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Comic Sans MS";
+	panose-1:3 15 7 2 3 3 2 2 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{mso-style-priority:1;
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+.MsoChpDefault
+	{mso-style-type:export-only;}
+.MsoPapDefault
+	{mso-style-type:export-only;
+	margin-bottom:10.0pt;
+	line-height:115%;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext=3D"edit">
+  <o:idmap v:ext=3D"edit" data=3D"1" />
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=3DEN-US>
+
+<div class=3DSection1>
+
+<p class=3DMsoNoSpacing><span =
+style=3D'font-size:12.0pt'>Hello,<o:p></o:p></span></p>
+
+<p class=3DMsoNoSpacing><span =
+style=3D'font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=3DMsoNoSpacing><span style=3D'font-size:12.0pt'>Are you =
+interested in SEO
+services?<o:p></o:p></span></p>
+
+<p class=3DMsoNoSpacing><span =
+style=3D'font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=3DMsoNoSpacing><span style=3D'font-size:12.0pt'>If yes, So =
+please give me
+your website URL then I can send you our best SEO =
+proposal.<o:p></o:p></span></p>
+
+<p class=3DMsoNoSpacing><span =
+style=3D'font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=3DMsoNoSpacing><b><span =
+style=3D'font-size:12.0pt'>Thanks<o:p></o:p></span></b></p>
+
+<p class=3DMsoNormal><b><span style=3D'font-family:"Comic Sans =
+MS"'>Anshika</span></b></p>
+
+</div>
+
+</body>
+
+</html>
+
+------=_NextPart_000_B161_01D6ABB6.71ED4120--
+

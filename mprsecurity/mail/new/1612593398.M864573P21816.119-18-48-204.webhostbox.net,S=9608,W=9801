@@ -1,0 +1,193 @@
+Return-Path: <zariataylor0okm@gmail.com>
+Delivered-To: mprsecurity@119-18-48-204.webhostbox.net
+Received: from 119-18-48-204.webhostbox.net
+	by 119-18-48-204.webhostbox.net with LMTP
+	id 5smJMvY4HmA4VQAAFI3O4Q
+	(envelope-from <zariataylor0okm@gmail.com>)
+	for <mprsecurity@119-18-48-204.webhostbox.net>; Sat, 06 Feb 2021 12:06:38 +0530
+Return-path: <zariataylor0okm@gmail.com>
+Envelope-to: pravinraj@mprsecurityservices.com
+Delivery-date: Sat, 06 Feb 2021 12:06:38 +0530
+Received: from mail-ed1-f50.google.com ([209.85.208.50]:39470)
+	by 119-18-48-204.webhostbox.net with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.93)
+	(envelope-from <zariataylor0okm@gmail.com>)
+	id 1l8HCr-0005eu-Fm
+	for pravinraj@mprsecurityservices.com; Sat, 06 Feb 2021 12:06:38 +0530
+Received: by mail-ed1-f50.google.com with SMTP id y8so11784481ede.6
+        for <pravinraj@mprsecurityservices.com>; Fri, 05 Feb 2021 22:36:14 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:sender:from:date:message-id:subject:to;
+        bh=po5h1XmDy9hupyP2UvVuC1aRAj+YhICDBgsr0D8J1E4=;
+        b=q4YhN6euZpK+q0ufL17wUuePLtZeiai7qiw0aHEsdS5eqH2L71Ph63PnOjfUaZ/Y7i
+         eI6AeuL+3BaEQsy2j3pI4OnkQezHnJfWtL8GBJ/OgxcQQLuGiqkdktgd+pTXpc9I8Nyn
+         5gdVvgGA5erNTC0RHNW2FdO1iwW3RvTbTneU6boZMaEcq2JIYxjqoIGsUn4ulQLbBcrK
+         eocKMzld1JNiRP3fVGnBakselaC6D6QJBZCsQdIm0QQpeTXmhJBvwZvZMlZlxWbAqz/n
+         eFI+cR1+OFpDVLXVMruX2vXt1pnj46UywrogM/WrF0C8w6EYjIw9F3HOdlL7amKKajhR
+         xAww==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:sender:from:date:message-id:subject
+         :to;
+        bh=po5h1XmDy9hupyP2UvVuC1aRAj+YhICDBgsr0D8J1E4=;
+        b=K1PXk1rtLshwVqnvX1AN5wJG91HoVn/wcssuTS2S/2v8Fnn19t32ji0EmxaAx2VNsA
+         fXR7Cdg7Rrk9hYYEptmkZLajcrwQapGt14KP/VtnDxDrOdGNTtbM3QCUyg/XEcd/two0
+         s3jXxUrpdeN0MZH/TG8NTtm2bboyohOp0vmRAleCNEM54j3MUjcvjJYRhG7PpUMeVgGm
+         hC8v8tmGPKGrlCYrzoLs0omSVOmEaD+AWaQt3ZsLhhBrFndtW4A02EBPnxXfPdjqDLZJ
+         2BYI1qqoYAuWyY46QTDKebD9NziSifls2LseYO5JSwOB0uRyyLG2xpu7KYMeisVKkwnc
+         p/og==
+X-Gm-Message-State: AOAM530fXDcxeHduCMgYmRpapNP67Hm2M2aC1HYgDNHDooCpilwAAa0w
+	3YCGQbkObADDhppJaN8r5rZhcOvT+gzj5i13omk4wzQp
+X-Google-Smtp-Source: ABdhPJypyjw2mtYG6iI2wQuZ0BoIvcGRN1JuMv+tkxl9IpOS/G9wgJgaR6HA8Bw3Tg9eVDHnJZnBz4F69qd7JqMx8YQ=
+X-Received: by 2002:aa7:c407:: with SMTP id j7mr6980129edq.28.1612593350420;
+ Fri, 05 Feb 2021 22:35:50 -0800 (PST)
+Received: from 52669349336 named unknown by gmailapi.google.com with HTTPREST;
+ Fri, 5 Feb 2021 22:35:49 -0800
+MIME-Version: 1.0
+Sender: Zaria Taylor <zariataylor0okm@gmail.com>
+From: Zaria Taylor <zariataylor0okm@gmail.com>
+Date: Fri, 5 Feb 2021 22:35:49 -0800
+X-Google-Sender-Auth: fXlSqG1ghz6je-2QIXQ2USL7BnA
+Message-ID: <CAPTkfEtShrhaVDHPH7BpjaOtdx23rjdj0gV8rj=wL26o-iYBNg@mail.gmail.com>
+Subject: Digital marketing
+To: Pravinraj <pravinraj@mprsecurityservices.com>
+Content-Type: multipart/alternative; boundary="000000000000d1acad05baa52597"
+X-Spam-Status: No, score=-0.2
+X-Spam-Score: -1
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "119-18-48-204.webhostbox.net",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Hi, Hope you're doing well. I saw your Facebook profile and.
+    I’d love to talk to you about your business. *Are you looking to create
+    a new website or re-design your current website?* 
+ Content analysis details:   (-0.2 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: zariataylor0okm-dot-yamm-track.appspot.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [zariataylor0okm[at]gmail.com]
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+X-Spam-Flag: NO
+
+--000000000000d1acad05baa52597
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi,
+Hope you're doing well.
+
+
+
+I saw your Facebook profile and. I=E2=80=99d love to talk to you about your
+business.
+
+
+*Are you looking to create a new website or re-design your current website?=
+*
+
+*Our Services*: E Commerce Website Design, Website Development, Mobile
+Application {Apps}, Software Development and Google Ranking (SEO).
+
+If you're interested, please *share your requirements* and *WhatsApp
+number *so that we can discuss further.
+
+Waiting for your reply.
+
+
+
+Regards,
+
+Zaria Taylor
+
+
+[image: beacon]
+
+--000000000000d1acad05baa52597
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><h1 style=3D"margin:12pt 0in 0.0001pt;line-height:115%;bre=
+ak-after:avoid;font-size:16pt;font-family:Cambria,serif;color:rgb(54,95,145=
+);font-weight:normal"><span lang=3D"EN-IN">Hi,<br>
+Hope you&#39;re doing well.</span></h1>
+
+<p class=3D"MsoNormal" style=3D"margin:0in 0in 0.0001pt;line-height:normal;=
+background-image:initial;background-position:initial;background-size:initia=
+l;background-repeat:initial;background-origin:initial;background-clip:initi=
+al;font-size:11pt;font-family:Calibri,sans-serif"><span lang=3D"EN-IN" styl=
+e=3D"font-size:12pt;font-family:Verdana,sans-serif">=C2=A0</span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0in 0in 0.0001pt;line-height:normal;=
+background-image:initial;background-position:initial;background-size:initia=
+l;background-repeat:initial;background-origin:initial;background-clip:initi=
+al;font-size:11pt;font-family:Calibri,sans-serif"><span lang=3D"EN-IN" styl=
+e=3D"font-size:10pt;font-family:Verdana,sans-serif">I saw your Facebook pro=
+file and. I=E2=80=99d love to talk to you about your
+business.</span><span lang=3D"EN-IN" style=3D"font-size:12pt;font-family:Ve=
+rdana,sans-serif"></span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0in 0in 0.0001pt;line-height:normal;=
+background-image:initial;background-position:initial;background-size:initia=
+l;background-repeat:initial;background-origin:initial;background-clip:initi=
+al;font-size:11pt;font-family:Calibri,sans-serif"><span lang=3D"EN-IN" styl=
+e=3D"font-size:12pt;font-family:Verdana,sans-serif"><br>
+<b>Are you looking to create a new website or re-design your current websit=
+e?</b><br>
+<br>
+<b>Our Services</b>:=C2=A0</span><span lang=3D"EN-IN" style=3D"font-size:12=
+pt;font-family:Verdana,sans-serif;color:blue">E Commerce Website Design, We=
+bsite Development,
+Mobile Application {Apps}, Software Development and Google Ranking (SEO).</=
+span><span lang=3D"EN-IN" style=3D"font-size:12pt;font-family:Verdana,sans-=
+serif">=C2=A0=C2=A0
+=C2=A0<br>
+<br>
+If you&#39;re interested, please=C2=A0<b>share your requirements</b>=C2=A0a=
+nd=C2=A0<b>WhatsApp
+number=C2=A0</b>so that we can discuss further.<br>
+<br>
+Waiting for your reply.</span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0in 0in 0.0001pt;line-height:normal;=
+background-image:initial;background-position:initial;background-size:initia=
+l;background-repeat:initial;background-origin:initial;background-clip:initi=
+al;font-size:11pt;font-family:Calibri,sans-serif"><span lang=3D"EN-IN" styl=
+e=3D"font-size:12pt;font-family:Verdana,sans-serif">=C2=A0</span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0in 0in 0.0001pt;line-height:normal;=
+background-image:initial;background-position:initial;background-size:initia=
+l;background-repeat:initial;background-origin:initial;background-clip:initi=
+al;font-size:11pt;font-family:Calibri,sans-serif"><span lang=3D"EN-IN" styl=
+e=3D"font-size:12pt;font-family:Verdana,sans-serif">Regards,</span></p><p c=
+lass=3D"MsoNormal" style=3D"margin:0in 0in 0.0001pt;line-height:normal;back=
+ground-image:initial;background-position:initial;background-size:initial;ba=
+ckground-repeat:initial;background-origin:initial;background-clip:initial;f=
+ont-size:11pt;font-family:Calibri,sans-serif"><span style=3D"color:rgb(32,3=
+3,36);font-family:&quot;Google Sans&quot;,Roboto,RobotoDraft,Helvetica,Aria=
+l,sans-serif;font-size:16px;letter-spacing:0.29px;text-align:center;white-s=
+pace:nowrap">Zaria Taylor</span></p><p class=3D"MsoNormal" style=3D"margin:=
+0in 0in 0.0001pt;line-height:normal;font-size:11pt;font-family:Calibri,sans=
+-serif"><br class=3D"gmail-Apple-interchange-newline"></p></div>
+<img src=3D"https://zariataylor0okm-dot-yamm-track.appspot.com/FireBase?uke=
+y=3D1ovl9DQXmtEN6kTV9iGLbSYFvGOpTdmRDUM-mcPLWcwY-0&amp;key=3DYAMMID-9334561=
+7" width=3D"1" height=3D"1" alt=3D"beacon" style=3D"display:none; display:n=
+one!important;">
+
+--000000000000d1acad05baa52597--

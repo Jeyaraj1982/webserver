@@ -1,0 +1,142 @@
+Return-Path: <sharmakavya2103@yahoo.com>
+Delivered-To: mprsecurity@119-18-48-204.webhostbox.net
+Received: from 119-18-48-204.webhostbox.net
+	by 119-18-48-204.webhostbox.net with LMTP
+	id GTglCPuB+V/yNAAAFI3O4Q
+	(envelope-from <sharmakavya2103@yahoo.com>)
+	for <mprsecurity@119-18-48-204.webhostbox.net>; Sat, 09 Jan 2021 15:44:19 +0530
+Return-path: <sharmakavya2103@yahoo.com>
+Envelope-to: careers@mprsecurityservices.com
+Delivery-date: Sat, 09 Jan 2021 15:44:19 +0530
+Received: from sonic302-20.consmr.mail.sg3.yahoo.com ([106.10.242.140]:37809)
+	by 119-18-48-204.webhostbox.net with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.93)
+	(envelope-from <sharmakavya2103@yahoo.com>)
+	id 1kyBGA-0003Vn-8F
+	for careers@mprsecurityservices.com; Sat, 09 Jan 2021 15:44:19 +0530
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1610187214; bh=H1HhUPFIrWJhtmCDkXhOwGiqYMjDhAdlx27MtoT9crc=; h=Date:From:Subject:References:From:Subject; b=EFvjtaiaQjR9LlU//+MX8QeMOinA7HLijYkMcSIpbD97v34wVxaUORkW+L1lAksC36Z4topE6CU11BYy1+7lYYNWI8NmGXxS5E0HM+znXUw8RJgdZZjH8BtNDbvgJnFbU5rhPAL2cPaslDAxGzRvaxqowGbrO1NJ77KpNigM0zMM08SDcwCQkpTFWTkS6qWj7APqUs+HPlMa7CnVfGG4Ooi5EVC29ExevUDuaF/+99GXU6nl6Z35Okue9Ky5PmHOBRIP1TgwBRzXrL1tuEbuLDklV8R6QrdoM0c8562wmvBLNm3q3AguqTroDo++kykCzKI4g8xQImHuewnn+6FGmg==
+X-SONIC-DKIM-SIGN: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1610187214; bh=GTbG/4XFYYepFnR9PrXJnwEa9tj03qgwdOJXv/RyT8/=; h=Date:From:Subject:From:Subject; b=C0AFRvTTdWoNFZ2baTcaSzIgshsMFuCfjRDkU6M2We+T/9tklX+n4a49Pa2xdkSib3R3MEk47Hu1VADTIsTxSgG+hBbezodJbn2XLslkvsGGE736P8clvAVHQqftcvEK91oEMUjzuDjaKIW+i+fnBhYupjl1T24WhMjQr8vNeb8zrzQCskUvIF7hddBtr7mupONCmXuZKp13vzc96FUvsEdILPbiZBO/VtoDwcaNeBGIjFZas/Jhe0roYMD9XVCxEIA3c5oGhSqG4k3vaX4Xh/umJHvvNJ6WuMPk27WysyiLujt48reVHpgCkTeXkIdo3S9bynLSA5jnzbBtxVbn3Q==
+X-YMail-OSG: UH2EjrkVM1lS4ZOVIuFMpoPpwDcSXPKulObCUyhtbLbxSPZMQMXuGv65umG7k2f
+ Bk7N0hc9gcbZBtBNhB19VxTs.pAxubROre_YJudv9zUU4SQLrnz6HgF37KwDnNNHrw6YrRTyN8yg
+ zwdmc8NRHEHCwangSq5AL6AeAlPNi9ltG4TglHtRTiTNZPtn5w6.JYn80n96FHRyyesYv3keKDHy
+ NVR7ru73z91wS_Ts7xjOJ.ziwRReK5FTSPmK7rgBrchp8uFacmx4CHl6vDzexyc_FVRHgU.AFMCP
+ dwJ2V6zBI2TpCzo_EYA2rogOwOtzKs.RMg2bd5oWZeIVvuhIMpBf.4NBoqisG.XNjTE6ObP2ZAhL
+ cXbXT0PEL_bCjSY1Jc9zg5J9xFMyvds6usKsbQxIJi_LOsbfmnkY1do583SvQYuYL4ShtBI7mtxF
+ Ms2JKQiMQXPhAiLskx9239qp9v4kk9lwZuDka8353Vd37BKl2qiW_639j1b..a5gzljvW_XlCYbz
+ 1LI5b_JN5PfHVsVu2e5yFN1rR_anrdy3DrZzmq54Us0Co.ZSGu2Hm0PzhKFYR4DKy_pFp6VElSws
+ 49ZGnei.6IhlORln8jIjcMxikb3VPYZNY.L9gbgzZQxLHASyahbOejd_ccxVeu5tucd.WklyLlrE
+ 3hcQZz2Maum79Pxoyx2pQ4YBUAG54SX4MVPnmq6UVl57UyDIY0egiScUjlAlfai2UOzZCN9og2ME
+ ZPyqgiHwooh1sfEK1krrisgDiRevnY985IAjP96MOARvE5eYKwLZKSJYPIPREFMKciwan2tzlmJS
+ 0exR96g3WZWOVM66k98d1iLuf9UZP0Y_Gv837RV5FcEi57INYaMhoRPO93IvB54.dS6.CcKKgz3G
+ 7CHLyMPfQdw.HWpulQqrTX9KD68VYR7D6CDQbDILfRzyT9x_TuXteGbuy32P8Z0MPYTdIKLAUz5I
+ iI4BxtR9tJZ4dVSa2Qsf2UJsxx02V7X98Amu7HmIljg8feZPGpsWSK1Bf7mMyd3UAd75hEV83B3t
+ SRxXAFUUnj2yrzVoHAz1MBYwPlE1CrllPsC1HTq9LrxX3pI1WAjDv97KzxmSPAME67FshDtDoCkf
+ 4pEo4WcbEiHsSsNXphjaSFHfoAcylF5WFQCREDwv2zMl0foYrdx2d9eHQW8bjVqE_Zc.XDqam8dj
+ CrlwzS.UJTpoFDSGIEj3tNyCwek46wfEtiWhCKhxoSZhv9IYcgEjViRd02qnYfrCPV5nv_7Ouu00
+ qcKW8_Jexi3SturqIlrAKfVJF_NUbbPcl9gQnqd7qjYVW.OaYuryjSfeZu6gtrbWAo9hR8FK9QOQ
+ k2mlJXZAVFKHmfRDYnqF8EA8yv7G7meGE6aHLUdTy2loVKbApmH1Uj64Dp5QK2fGtTixPNiSWdMi
+ s1gTcGvwOoBq6xWWCe7fJhU9R8k9vL4EcjMgaYalyDFSsbigaBGVTw1iILbOIp__ZRri3bvPiEZC
+ cWwMFuDVYR5QRcm3fQ_zGaOvXL5edkyOui5660HAPhOWurc_mY.oip9UOlKYtTwkNdpH4S94FuOW
+ S0u_8upENmamuxvNhIqSUPceE4WhnrPBKTO0pV2GIHNbh3n.KxLLJUKu1aCK9y1ybR3tbJCnthpw
+ Dq0ZXFoxaFzOLVeHS7N1ZTT1qjnzOUZjdj0YHWRobzvOfEJwobcNhyAuE99RJR0uKBIwY5xsCiQ7
+ p6j4.aTVY8kYXX3v0tCGvbQctiB_rs0N2QaAFvVJYxnOVakvlY_ltMXJPIIFkMbNK88SMlDM5Reb
+ 6O7frEtsxugLyXD.y0mUS1ax13E8LGrFT5KV6eFUsm9JAaZUBKfLs_H0suNBHuLtDDqAXbmw9TWf
+ PXsg17ygjPDwTqZkR85mip0Nylhbk5fH.UiE5ycaDcWQP7si2W5qaUqAAVf.YQgz3pAj7YEeENsH
+ B3gHRlA1OMvgCkGYjP32uOYL4wi9lCPQnwypg6WfgMlW1FZ7XJgrE6dYX09OLz2Fm0fLuKPAnfBz
+ oHRe0jyonoYTh2xzwsOmnVIbIYBo5aPFh3cunIqm8._q0_TItjAhoPC2.9btQO9i9OsHnA2J.HEl
+ vay9T77WzlEvcPwj6PCVWWvsq9BPg.e8w13FdJ6cx6CY3wFrGmzfp8Jf3aEKbTfY1suSCF9jcU3x
+ LFZUn_LjurzMTkCd4jXEqX_G7WDq265iLw28gDSkj4.p7gdt5mlz3I0BvHrmAtV_XcOzP_lb_m.W
+ oIrNWpQbTUeJ9KpHgr3ntA9SyF8F63m.JpgG6W0W1.8OZKPE.xsX3Vr5h2iWFsz1GvpaMLgzJoW4
+ 6j43rbZKb.fFndO3AVW0kLVG14jCv5GQ01_DjjLqf8WNkz1y.w5VhAgbfHtKUyRaS5BkICxBy_Mg
+ klGmsoRVGzSIK682umFfV00YexRq4tzcphCL2SY9Z080Y338PlvN_ladQYQRPDG_41xRPWqWmP1L
+ PeTebdmX77etf2Zu4H3Tvzs4VcVqxaCHTLLIjA35rJKWiAyDSesZYw5Y_WVIDNq.zdd3hEpZjDx6
+ uo_nUWDrf6ARi5T3E3brkSty1v8abogcIzbxTuBXWkQaAdEtrinnNAs7l1Po1EPVSqqX9ECkI.qu
+ BJo9EKXKwQ0UhXtv6NBhCHecEPM9wzoCK_NmUPm2b3SZHEkRo5c8M5_D3n4KaUJdO3s4_shyEZpN
+ TrFqGjcUu3g1koAThAQibTcwzzkIe6kIVZMkghyI7rpyKBEpPW3kK2d1SmuvBgTtznT29._9mXus
+ qValfBU2l06PzE.l7sQygQU_5EmV.jeYwG92zf1CtGv2TvKSl1CCDkOlYvYz97yRDnuPJ.VDpoGE
+ 7m66d49fU61rDccbsZwpgST3FlGT6dyfBQygrlqs3cxyQYpIvgncptNEoOK1IEyZDiHivVCew1ve
+ Qec_IBSw0VSoYp8Uxf5wfHaz5NEZsIft6tQjjcsFNalVydNNC5Ap0KGr8YPtdhA7fpn5mjJfrXtP
+ K_a1vgzVuUJyZA.ZVu3_RbmzrxLGbpS9P01Okjhj90PwUdwdwzOBx4yA35.yfRuePwU_ao5XbuH3
+ 5tGjYlXakNgDvp6uEs9P5MGyayX5IQgHSVr7UHdbFR30St5msdRVgEqr6AZMsTtyJUpJfQTBPP6T
+ For745JCHNJB2A8bFM2TwIUtPBYXqk_ZPPrJ4K530tHyS15v6drsP1o6a7GEf0yKBSMeFFK5qEz6
+ PIYYLe1csGQS7U50zfs9WKSoT8reckiZ_b205cKmJLLdklq08ETxmaePdxcpeqjrTD_eLZMYiCRR
+ B5P5.8nmYSyJsxtw7hjbvqb8jYm.bUmhRBxEF5wINTD4IGKx3wc_tvWSbeXc5mm0O82Yv9lf1vvr
+ 7v2kMNtWVboBURevevHp6rKahSbfZhBmbzRqfDJyBIg7dC4Uj36OLpsLzVtt15HBypmX6zHJJ.Jp
+ GK9jR4EHcZhNOI9W6rmkylXsIf_nOowinZStkwBVwZ6U4grPMZTdFqcBP9aTSxoQXW0O6h0JBCFS
+ trfq2ev_juP.2CkAcM9AVIW4rCu.LT3xGA0Rcju5t9rXYBOE.jr5CTE7UdZ1fG5who9Brm2C6zqj
+ 0GMopLiepQBSWdmB6pHu70bR9ZOp1Upw-
+Received: from sonic.gate.mail.ne1.yahoo.com by sonic302.consmr.mail.sg3.yahoo.com with HTTP; Sat, 9 Jan 2021 10:13:34 +0000
+Date: Sat, 9 Jan 2021 10:13:32 +0000 (UTC)
+From: Kavya Sharma <sharmakavya2103@yahoo.com>
+Message-ID: <1770463043.98721.1610187212584@mail.yahoo.com>
+Subject: Traditional Web Design Services
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_98720_938869492.1610187212583"
+References: <1770463043.98721.1610187212584.ref@mail.yahoo.com>
+X-Mailer: WebService/1.1.17501 YMailNorrin Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:84.0) Gecko/20100101 Firefox/84.0
+Content-Length: 1364
+X-Spam-Status: No, score=3.0
+X-Spam-Score: 30
+X-Spam-Bar: +++
+X-Ham-Report: Spam detection software, running on the system "119-18-48-204.webhostbox.net",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Hi,   Hope you are doing well! Get Professional Website development
+    services at very competitive price. We use a very different approach compared
+    to other Web Design agencies. 
+ Content analysis details:   (3.0 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [sharmakavya2103[at]yahoo.com]
+  0.2 FREEMAIL_ENVFROM_END_DIGIT Envelope-from freemail username ends
+                             in digit
+                             [sharmakavya2103[at]yahoo.com]
+  1.2 MISSING_HEADERS        Missing To: header
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  1.8 MALFORMED_FREEMAIL     Bad headers on message from free email
+                             service
+X-Spam-Flag: NO
+
+------=_Part_98720_938869492.1610187212583
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hi,
+=C2=A0
+Hope you are doing well!
+
+Get Professional Website development services at very competitive price.=20
+
+We use a very different approach compared to other Web Design agencies.
+
+We will guide you and make sure you get an eye catching website.
+
+Please let me know if you need a beautiful and responsive website.
+
+I am waiting for your reply.
+
+Kinds Regards,
+Kavya,
+Web Development Manager,
+
+
+
+------=_Part_98720_938869492.1610187212583
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html><head></head><body><div class="yahoo-style-wrap" style="font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-size:16px;"><div dir="ltr" data-setdir="false"><div>Hi,<br>&nbsp;<br>Hope you are doing well!<br><br>Get Professional Website development services at very competitive price. <br><br>We use a very different approach compared to other Web Design agencies.<br><br>We will guide you and make sure you get an eye catching website.<br><br>Please let me know if you need a beautiful and responsive website.<br><br>I am waiting for your reply.<br><br>Kinds Regards,<br>Kavya,<br>Web Development Manager,<br><br></div><div><br></div></div></div></body></html>
+------=_Part_98720_938869492.1610187212583--

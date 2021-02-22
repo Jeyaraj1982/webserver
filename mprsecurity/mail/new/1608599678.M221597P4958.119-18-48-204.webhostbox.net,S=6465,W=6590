@@ -1,0 +1,125 @@
+Return-Path: <orko_r@advidsdesign.com>
+Delivered-To: mprsecurity@119-18-48-204.webhostbox.net
+Received: from 119-18-48-204.webhostbox.net
+	by 119-18-48-204.webhostbox.net with LMTP
+	id OatnDH5I4V9eEwAAFI3O4Q
+	(envelope-from <orko_r@advidsdesign.com>)
+	for <mprsecurity@119-18-48-204.webhostbox.net>; Tue, 22 Dec 2020 06:44:38 +0530
+Return-path: <orko_r@advidsdesign.com>
+Envelope-to: raj@mprsecurityservices.com
+Delivery-date: Tue, 22 Dec 2020 06:44:38 +0530
+Received: from mail-io1-f72.google.com ([209.85.166.72]:54875)
+	by 119-18-48-204.webhostbox.net with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.93)
+	(envelope-from <orko_r@advidsdesign.com>)
+	id 1krWG1-0001HX-4X
+	for raj@mprsecurityservices.com; Tue, 22 Dec 2020 06:44:38 +0530
+Received: by mail-io1-f72.google.com with SMTP id w26so6456610iox.21
+        for <raj@mprsecurityservices.com>; Mon, 21 Dec 2020 17:14:12 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=advidsdesign.com; s=google;
+        h=mime-version:message-id:date:subject:from:to;
+        bh=0YRzL0FBltUSO//AhEV+O4h0JJRp0ZlSnl+0crIUrlg=;
+        b=WyJFRrESauJC71QDbuONDOWpzu2M7/98fz9AtkyrB6dLZiPL5m7IOTXSVNdy+Xy6zQ
+         Um5wD9fnagkL9R/aTxQjlTM2xyiJhcoj7KDWpbbYxVfA1pOExRObfRXltA3xb1m/wk1z
+         aBrG2T9lMQowvTyEIgG2zEcqqfeqKrkjf01PYsVUHMiROq8XhU4shJQzlyrdGlrYUKeK
+         10hXdAwMcviCxLGeVB96OHDnLeuKli1c859BTxnofKwLCKGqYV/FPLAh6RAMVztip/gt
+         4H8QkyI3vfljzZUadoGhbZGfRMHxSham7thtPNicrE9E38Dv8zCu8HFg+hWqaBFcxmbx
+         3qZA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:message-id:date:subject:from:to;
+        bh=0YRzL0FBltUSO//AhEV+O4h0JJRp0ZlSnl+0crIUrlg=;
+        b=rKE+oxkuYwI3WE/5r64lxUifFS+aIbFTGTDQCXVJ6NKdjLh6haZS/YCI8nEwLMh2T9
+         9AElTBGIWaVTHlPoF7hgeQiZBXVQDdtONwN8eo+WOxJjN8HhxmQMrDbw2lUSbla8HIM/
+         GxKKoQiiIxQIXlh5uaEYxmhb02gw1NwwuwBbYWkDPl2KFRfFpEPxmKftparShgvMidXK
+         vwla9F3tOMxmyrL8aVzKkNwS5zDBslD27cMYYqIh1JMLPxsmEnAdCYpIEqPHZDQvwVZY
+         VgK8VBNuOflpIDRrT4y86ERXaJjlmsfd1j1cD0KHy3iZSQjhdFdK5uf+Sr7owpnyARiv
+         gdzw==
+X-Gm-Message-State: AOAM532e9Iy4BpPsJqAXCK41I7zc1SGSPjRt4U6G2GsNLHDpL4gAbP7N
+	5WLN60a0B5zEQC5naQ05SPOVO38c0JdU
+X-Google-Smtp-Source: ABdhPJxTFwUxXmpEC2Ak8mwlhfZNiV9IEQBwBsevYwyzVhLnAdJ5NJKm7M68VlN2u3eOv9LHecHqCsCIgQ==
+MIME-Version: 1.0
+X-Received: by 2002:a05:6638:604:: with SMTP id g4mr17351521jar.22.1608599629674;
+ Mon, 21 Dec 2020 17:13:49 -0800 (PST)
+Message-ID: <00000000000083772405b7034984@google.com>
+Date: Tue, 22 Dec 2020 01:13:49 +0000
+Subject: Mpr video
+From: orko_r@advidsdesign.com
+To: raj@mprsecurityservices.com
+Content-Type: multipart/alternative; boundary="00000000000083771c05b7034981"
+X-Spam-Status: No, score=-0.2
+X-Spam-Score: -1
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "119-18-48-204.webhostbox.net",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Hi Pravin, <p>I’m Orko working as a Producer at Advids.</p>
+    <p>Mpr offerings & expertise communicated in a marketing video can capture
+    your audience attention. We work with companies, at $ 1000 budget range for
+    creating similar marketing videos.</p> 
+ Content analysis details:   (-0.2 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: advidsdesign.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+X-Spam-Flag: NO
+
+--00000000000083771c05b7034981
+Content-Type: text/plain; charset="UTF-8"; format=flowed; delsp=yes
+Content-Transfer-Encoding: base64
+
+SGkgUHJhdmluLA0KPHA+SeKAmW0gT3JrbyB3b3JraW5nIGFzIGEgUHJvZHVjZXIgYXQgQWR2aWRz
+LjwvcD4NCg0KPHA+TXByIG9mZmVyaW5ncyAmIGV4cGVydGlzZSBjb21tdW5pY2F0ZWQgaW4gYSBt
+YXJrZXRpbmcgdmlkZW8gY2FuIGNhcHR1cmUgIA0KeW91ciBhdWRpZW5jZSBhdHRlbnRpb24uIFdl
+IHdvcmsgd2l0aCBjb21wYW5pZXMsIGF0ICQgMTAwMCBidWRnZXQgcmFuZ2UgZm9yICANCmNyZWF0
+aW5nIHNpbWlsYXIgbWFya2V0aW5nIHZpZGVvcy48L3A+DQoNCjxwPlBsZWFzZSBjaGVja291dCBv
+dXIgPGEgIA0KaHJlZj0iaHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1sMVhZWEUtQ2th
+ZyI+RGVzaWduICYgQ3JlYXRpdmUgIA0KQ2FwYWJpbGl0aWVzIFZpZGVvLjwvYT48L3A+DQoNCjxw
+PldvdWxkIHlvdSBiZSBhdmFpbGFibGUgdG8gZGlzY3Vzcy9jaGF0IGFib3V0IGNvc3RzLCBjb250
+ZW50IGlkZWFzIGFuZCAgDQp2aWRlbyBvcHRpb25zPzwvcD4NCg0KDQo8cD5CZSBBd2Vzb21lDQoN
+Cjxicj5PcmtvIHx8IERpcmVjdG9yICYgUHJvZHVjZXINCg0KPGJyPlBIICsxODY2NDQ4MzA3Mw0K
+DQo8YnI+PGEgIA0KaHJlZj0iaHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vZm9ybXMvZC9lLzFGQUlw
+UUxTY2JObjVBelVGeVl2Z0hOSktoNlVJUnJlT2ZCQjg4Y0oyLWE4bV9VaGtFcW1ycnlRL3ZpZXdm
+b3JtIj5GaWxsICANCkVtYWlsIFRvIFVuc3Vic2NyaWJlPC9hPjwvcD4NCg==
+--00000000000083771c05b7034981
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Pravin,
+<p>I=E2=80=99m Orko working as a Producer at Advids.</p>
+
+<p>Mpr offerings & expertise communicated in a marketing video can capture =
+your audience attention. We work with companies, at $ 1000 budget range for=
+ creating similar marketing videos.</p>
+
+<p>Please checkout our <a href=3D"https://www.youtube.com/watch?v=3Dl1XYXE-=
+Ckag">Design & Creative Capabilities Video.</a></p>
+
+<p>Would you be available to discuss/chat about costs, content ideas and vi=
+deo options?</p>
+
+
+<p>Be Awesome
+
+<br>Orko || Director & Producer
+
+<br>PH +18664483073=20
+
+<br><a href=3D"https://docs.google.com/forms/d/e/1FAIpQLScbNn5AzUFyYvgHNJKh=
+6UIRreOfBB88cJ2-a8m_UhkEqmrryQ/viewform">Fill Email To Unsubscribe</a></p>
+--00000000000083771c05b7034981--

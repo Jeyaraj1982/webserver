@@ -1,0 +1,78 @@
+Return-Path: <gregson890@daum.net>
+Delivered-To: mprsecurity@119-18-48-204.webhostbox.net
+Received: from 119-18-48-204.webhostbox.net
+	by 119-18-48-204.webhostbox.net with LMTP
+	id 1BXBLJKmZ1/4UAAAFI3O4Q
+	(envelope-from <gregson890@daum.net>)
+	for <mprsecurity@119-18-48-204.webhostbox.net>; Mon, 21 Sep 2020 00:29:30 +0530
+Return-path: <gregson890@daum.net>
+Envelope-to: info@mprsecurityservices.com
+Delivery-date: Mon, 21 Sep 2020 00:29:30 +0530
+Received: from mail-smail-vm87.daum.net ([211.231.106.162]:26556 helo=mail-smail-vm87.hanmail.net)
+	by 119-18-48-204.webhostbox.net with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.93)
+	(envelope-from <gregson890@daum.net>)
+	id 1kK4YX-0005PB-6J
+	for info@mprsecurityservices.com; Mon, 21 Sep 2020 00:29:30 +0530
+Received: from mail-hmail-pgwas6 ([10.194.50.164])
+        by mail-smail-vm87.hanmail.net (8.13.8/8.9.1) with SMTP id 08KIqoHa007149
+        for <info@mprsecurityservices.com>; Mon, 21 Sep 2020 03:52:50 +0900
+X-Hermes-Message-Id: o8L3qoK8j1309258882
+Received: from mail-hammer-was3.s2.krane.9rum.cc ([10.197.7.233]) by hermes of mail-hmail-pgwas6 (10.194.50.164) with ESMTP id o8L3qoK8j1309258882 for <info@mprsecurityservices.com>; Mon, 21 Sep 2020 03:52:50 +0900 (KST)
+Date: Mon, 21 Sep 2020 03:52:50 +0900 (KST)
+From: Allan Goodman <gregson890@daum.net>
+To: allangoodman01@gmail.com
+Message-ID: <20200921035250.rrQ9DEEPQD2R0RPitdggOQ@gregson890.hanmail.net>
+Subject: CV
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: base64
+X-Mailer: Daum Mint Web 1.0
+X-Originating-IP: [107.155.34.118]
+X-HM-UT: iVoxc/6zTA5yp61foY1W+TlYP+VxvgxMviOQfYmThj8=
+X-Spam-Status: No, score=2.0
+X-Spam-Score: 20
+X-Spam-Bar: ++
+X-Ham-Report: Spam detection software, running on the system "119-18-48-204.webhostbox.net",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Greetings My name is Allan Goodman, We are in need of private
+    family driver to work in our home we are UK base family we live and work
+   here your email/CV was shortlisted to us via recruitment site kindly contac
+    [...] 
+ Content analysis details:   (2.0 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.2 FREEMAIL_ENVFROM_END_DIGIT Envelope-from freemail username ends
+                             in digit
+                             [gregson890[at]daum.net]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [gregson890[at]daum.net]
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+  1.6 HTML_IMAGE_ONLY_12     BODY: HTML: images with 800-1200 bytes of
+                             words
+  0.0 T_REMOTE_IMAGE         Message contains an external image
+X-Spam-Flag: NO
+
+PGh0bWw+CjxoZWFkPgogICAgPHN0eWxlPgogICAgICAgIHB7bWFyZ2luLXRvcDowO21hcmdpbi1i
+b3R0b206MH0KICAgIDwvc3R5bGU+CjwvaGVhZD4KPGJvZHk+CiAgICA8dGFibGUgY2xhc3M9InR4
+Yy13cmFwcGVyIiBib3JkZXI9IjAiIGNlbGxzcGFjaW5nPSIwIiBjZWxscGFkZGluZz0iMCIgd2lk
+dGg9IjEwMCUiPjx0cj48dGQgY2xhc3M9InR4Yy13cmFwcGVyLXRkIj48ZGl2IGNsYXNzPSJ0eGMt
+Y29udGVudC13cmFwcGVyIiBzdHlsZT0iY29sb3I6IzExMTtmb250LWZhbWlseTpBcHBsZSBTRCBH
+b3RoaWMgTmVvLE1hbGd1biBHb3RoaWMsJ+unkeydgCDqs6DrlJUnLHNhbnMtc2VyaWY7Zm9udC1z
+aXplOjEwcHQ7bGluZS1oZWlnaHQ6MS41OyI+PHA+R3JlZXRpbmdzPGJyPjxicj5NeSBuYW1lIGlz
+IEFsbGFuIEdvb2RtYW4sIFdlIGFyZSBpbiBuZWVkIG9mIHByaXZhdGUgCmZhbWlseSBkcml2ZXIg
+dG8gd29yayBpbiBvdXIgaG9tZSB3ZSBhcmUgVUsgYmFzZSBmYW1pbHkgd2UgbGl2ZSBhbmQgd29y
+awogaGVyZSB5b3VyIGVtYWlsL0NWIHdhcyBzaG9ydGxpc3RlZCB0byB1cyB2aWEgcmVjcnVpdG1l
+bnQgc2l0ZSBraW5kbHkgCmNvbnRhY3QgbWUgdmlhIGVtYWlsIGZvciBkZXRhaWxzLHdoaWNoIGlu
+Y2x1ZGVzIHRyYXZlbCBwbGFuLHNhbGFyeSBhbmQgCm1vcmUgYmVuZWZpdDxicj48L3A+CjxwPjxi
+cj48YnI+PC9wPgo8cD48YnI+PC9wPgo8cD48YnI+PC9wPjwvZGl2PjwvdGQ+PC90cj48L3RhYmxl
+Pgo8L2JvZHk+CjwvaHRtbD4KPGltZyBzcmM9Imh0dHBzOi8vY29uZmlybS5tYWlsLmRhdW0ubmV0
+L2NvbmZpcm1hcGkvdjEvdXNlcnMvZ3JlZ3Nvbjg5MCU0MGhhbm1haWwlMkVuZXQvY21haWxzLzIw
+MjAwOTIxMDM1MjUwJTJFcnJROURFRVBRRDJSMFJQaXRkZ2dPUSU0MGdyZWdzb244OTAlMkVoYW5t
+YWlsJTJFbmV0L3JlY2lwaWVudHMvaW5mbyU0MG1wcnNlY3VyaXR5c2VydmljZXMlMkVjb20iPg==

@@ -1,0 +1,116 @@
+Return-Path: <ravipay2web@icloud.com>
+Delivered-To: mprsecurity+spam@119-18-48-204.webhostbox.net
+Received: from 119-18-48-204.webhostbox.net
+	by 119-18-48-204.webhostbox.net with LMTP
+	id uLfnL2qnBGCLDQAAFI3O4Q
+	(envelope-from <ravipay2web@icloud.com>)
+	for <mprsecurity+spam@119-18-48-204.webhostbox.net>; Mon, 18 Jan 2021 02:38:58 +0530
+Return-path: <ravipay2web@icloud.com>
+Envelope-to: pravinraj@mprsecurityservices.com
+Delivery-date: Mon, 18 Jan 2021 02:38:58 +0530
+Received: from [157.119.121.164] (port=59644 helo=localhost.localdomain.com)
+	by 119-18-48-204.webhostbox.net with esmtp (Exim 4.93)
+	(envelope-from <ravipay2web@icloud.com>)
+	id 1l1FI6-0000tY-W6
+	for pravinraj@mprsecurityservices.com; Mon, 18 Jan 2021 02:38:58 +0530
+X-Sender: "Ravi Gupta" <ravipay2web@icloud.com>
+X-Receiver: pravinraj@mprsecurityservices.com
+MIME-Version: 1.0
+From: "Ravi Gupta" <ravipay2web@icloud.com>
+To: pravinraj@mprsecurityservices.com
+Reply-To: "Ravi Gupta" <ravipay2web@gmail.com>
+Date: 17 Jan 2021 13:08:13 -0800
+Content-Type: text/html; charset=Windows-1252
+Content-Transfer-Encoding: quoted-printable
+Priority: urgent
+Importance: normal
+X-Spam-Status: Yes, score=15.7
+X-Spam-Score: 157
+X-Spam-Bar: +++++++++++++++
+X-Spam-Report: Spam detection software, running on the system "119-18-48-204.webhostbox.net",
+ has identified this incoming email as possible spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Hi, I hope you are well and safe with Covid-19. We are a firm
+    that provides Design, Development and Digital Marketing Services to your
+   company on an offshore basis. We have worked with clients in different countries
+    like: USA, Canada, UK, UAE, Euro [...] 
+ Content analysis details:   (15.7 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: mprsecurityservices.com]
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [ravipay2web[at]icloud.com]
+  1.5 SPF_SOFTFAIL           SPF: sender does not match SPF record (softfail)
+  4.0 SPF_HELO_FAIL          SPF: HELO does not match SPF record (fail)
+ [SPF failed: Please see http://www.openspf.org/Why?s=helo;id=localhost.localdomain.com;ip=157.119.121.164;r=119-18-48-204.webhostbox.net]
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+  0.6 HTML_MIME_NO_HTML_TAG  HTML-only message, but there is no HTML
+                             tag
+  2.0 APP_DEVELOPMENT_NORDNS App development pitch, no rDNS
+  2.0 RDNS_NONE              Delivered to internal network by a host with no rDNS
+  1.0 FREEMAIL_REPLYTO       Reply-To/From or Reply-To/body contain
+                             different freemails
+  0.0 SPOOFED_FREEMAIL_NO_RDNS From SPOOFED_FREEMAIL and no rDNS
+  2.0 TO_NO_BRKTS_NORDNS_HTML To: lacks brackets and no rDNS and HTML
+                             only
+  2.5 SPOOFED_FREEM_REPTO    Forged freemail sender with freemail
+                             reply-to
+X-Spam-Flag: YES
+Subject:  ***SPAM***  Re: Quick Proposal | Website | Apps Development | Digital Marketing
+ (Best Price Guaranteed) mprsecurityservices.com
+
+<BODY scroll=3Dauto><P><FONT color=3D#000040 face=3DCalibri>Hi,</=
+FONT></P>=0D=0A<P><FONT color=3D#000040 face=3DCalibri>I hope you=
+ are well and safe with Covid-19.</FONT></P>=0D=0A<P><FONT color=3D=
+#000040 face=3DCalibri>We are a firm that provides <STRONG>Design=
+, Development</STRONG> and <STRONG>Digital Marketing Services</ST=
+RONG> to your company on an offshore basis. We have worked with c=
+lients in different countries like: <STRONG>USA, Canada, UK, UAE,=
+ Europe, Australia</STRONG> .etc</FONT></P>=0D=0A<P><FONT color=3D=
+#000040 face=3DCalibri>Are you looking to <STRONG>Digital Marketi=
+ng</STRONG> or <STRONG>Create/Update</STRONG> your <STRONG>Mobile=
+ Apps</STRONG> or <STRONG>Business Website</STRONG>?</FONT></P>=0D=0A=
+<P><FONT color=3D#000040 face=3DCalibri><STRONG>Our Creative Serv=
+ices Cover the Following Areas:-</STRONG></FONT></P>=0D=0A<P><FON=
+T color=3D#000040 face=3DCalibri><STRONG>=95 <FONT color=3D#00404=
+0>Website Designing</FONT> (HTML Designing, Corporate Website Des=
+ign, PSD to HTML) .etc<BR>=95 <FONT color=3D#004040>Website Devel=
+opment</FONT> (Custom Website, WordPress, PHP, Angular, React) .e=
+tc<BR>=95 <FONT color=3D#004040>Mobile Application Development</F=
+ONT> (iPhone, Android, Blackberry, Windows) .etc<BR>=95 <FONT col=
+or=3D#004040>TV Application Development</FONT> (Roku TV, Android =
+TV, Fire TV, Apple TV, Samsung TV, LG TV) .etc<BR>=95 <FONT color=
+=3D#004040>E-Commerce Website Development</FONT> (Custom, Magento=
+, Shopify, PHP, WordPress) .etc<BR>=95 <FONT color=3D#004040>Web =
+Programming Services</FONT> (PHP, Angular, React, Node JS, Python=
+, Ruby, Java) .etc<BR>=95 <FONT color=3D#004040>Digital Marketing=
+ Services</FONT> (SEO, SMO, SEM, PPC) .etc</STRONG></FONT></P>=0D=0A=
+<P><FONT color=3D#000040 face=3DCalibri>Although we are remote, w=
+e work the same hours that you do, ensuring that you have missed =
+any important task. Our dedicated team provides you the best resu=
+lts according to your needs.</FONT></P>=0D=0A<P><FONT color=3D#00=
+0040 face=3DCalibri><STRONG>Need a Quote</STRONG>, please <STRONG=
+>SHARE YOUR REQUIREMENTS</STRONG> and <STRONG>WhatsApp</STRONG> N=
+umber.</FONT></P>=0D=0A<P><FONT color=3D#000040 face=3DCalibri>I =
+look forward to hearing from you soon.</FONT></P>=0D=0A<P><FONT c=
+olor=3D#000040 face=3DCalibri><STRONG>Regards,</STRONG></FONT></P=
+>=0D=0A<P><FONT color=3D#000040 face=3DCalibri><STRONG>Ravi Gupta=
+</STRONG></FONT></P>=0D=0A<P><FONT color=3D#000040><FONT face=3DC=
+alibri><FONT size=3D2><STRONG>Recipients ID:</STRONG> Email: prav=
+inraj@mprsecurityservices.com Website: mprsecurityservices.com</F=
+ONT><BR><STRONG>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D</STRONG><BR><FONT size=3D2><STRONG>Disclaimer:</STRO=
+NG> To stop receiving further mail please reply with <STRONG><FON=
+T color=3D#400000>"Remove"</FONT></STRONG> in the subject line.. =
+We are sorry for the inconvenience.</FONT></FONT></FONT></P></BOD=
+Y>=0D=0A
