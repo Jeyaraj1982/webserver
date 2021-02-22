@@ -45,6 +45,7 @@
              
             
               $txndata = $mysql->select("SELECT _accounts.*,_transactions.optrcode as optrcode,_transactions.transid as transid,_transactions.rcstatus as rcstatus,_transactions.api_uid as api_uid,_transactions.rctxtid as trctxtid FROM _accounts LEFT JOIN _transactions ON _accounts.rctxnid=_transactions.rctxtid WHERE date(_accounts.txndate)=date('".$date."') and _accounts.userid='".$_SESSION['user']['userid']."' order by _accounts.actxnid desc ");
+            
               
               ?>
               <div class="row">
@@ -59,7 +60,7 @@
                                                     Rs. <?php echo number_format(Recharge::get_balance($_SESSION['user']['userid']),2);?>
                                                 </h4>
                                             </div>
-                                        </div>
+                                        </div>                        
                                     </div>
                                 </div>
                             </div>
@@ -114,19 +115,53 @@
                                                         <option value="12" <?php echo date("m",strtotime($date))==12 ? " selected='selected'" : "";?>>DEC</option>
                                                     </select> -
                                                     <select name="y">
-                                                        <option value="2020" <?php echo date("y",strtotime($date))==2020 ? " selected='selected'" : "";?>>2020</option>
-                                                        <option value="2021" <?php echo date("y",strtotime($date))==2021 ? " selected='selected'" : "";?>>2021</option>
+                                                        <option value="2020" <?php echo date("Y",strtotime($date))==2020 ? " selected='selected'" : "";?>>2020</option>
+                                                        <option value="2021" <?php echo date("Y",strtotime($date))==2021 ? " selected='selected'" : "";?>>2021</option>
                                                     </select> 
                                                     <input type="submit" value="View">
                                                  
                                                 </h4>
-                                                   </form>
+                                                   </form>           
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-sm-12 col-md-12">
+                    Month Sales Report for additional earnings
+                    <table style="background:#f1f1f1;margin-top:10px;margin-bottom:20px">
+                        <tr>
+                            <td style="text-align: right;">Bsnl</td>
+                            <td style="text-align: right;">VI</td>
+                            <td style="text-align: right;"></td>
+                        </tr>
+                        <tr>
+                            
+                            <td style="text-align:right;width:200px">
+                                <?php 
+                                    $data = $mysql->select("select sum(rcamount) as rcamount from _transactions where  userid='".$_SESSION['user']['userid']."' and (optrcode='RB' or optrcode='RT')  and month(txndate)='".date("m")."' and year(txndate)='".date("Y")."' and rcstatus='success'");
+                                    $amt = isset($data[0]['rcamount']) ? $data[0]['rcamount']: 0;
+                                    echo number_format($amt,2);
+                                ?>
+                               <br><span style="font-size:14px">Incentive: 5% above 10 lakhs</span>
+                            </td>
+                            
+                            <td style="text-align:right;;width:200px">
+                                <?php 
+                                    $data = $mysql->select("select sum(rcamount) as rcamount from _transactions where  userid='".$_SESSION['user']['userid']."' and (optrcode='RV' or optrcode='RI') and month(txndate)='".date("m")."' and year(txndate)='".date("Y")."' and rcstatus='success'");
+                                    $amt = isset($data[0]['rcamount']) ? $data[0]['rcamount']: 0;
+                                    echo number_format($amt,2);
+                                ?>
+                                <br><span style="font-size:14px">Incentive: 2% above 10 lakhs</span>
+                            </td>
+                            <td style="width: 50px;">&nbsp;</td>
+                        </tr>
+                    </table>
+                </div>
               </div>
               <style>
               .odd {background:#fcfcfc !important}

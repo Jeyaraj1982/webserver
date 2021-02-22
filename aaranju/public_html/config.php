@@ -20,23 +20,16 @@
         }
         
        public static function doTransfer($param) {
+           
            global $mysql,$_txnid;
            
-           $user_balance = MoneyTransfer::get_balance($param['userid']);
+           $min = $mysql->select("select * from _users where userid='".$param['userid']."'");
+           $user_balance =  MoneyTransfer::get_balance($param['userid'])-$min[0]['maintain_balance'];
            
-           //if ($param['userid']==9) {
-           //$user_balance = MoneyTransfer::get_balance($param['userid'])-10000;   
-           //} else {                                 
-           $user_balance = MoneyTransfer::get_balance($param['userid']);
-           //}
-           
-           if ($user[0]['userid']==9) {
-                $user_balance =  MoneyTransfer::get_balance($param['userid'])-21000;    
-           } else {
-                $user_balance =  MoneyTransfer::get_balance($param['userid'])-10000;
-            }
+           if (!($param['Amount']<$user_balance)) {
+               return array("response"=>array("status"=>"FAILURE","error"=>"insufficant balance"));
+           }
 
-           
            $qdata = $mysql->select("select * from _moneytransfer_incoming_bankaccount where accountnumber='".$param['BankAccountNumber']."'");
            if (sizeof($qdata)>0) {
                return array("response"=>array("status"=>"FAILURE","error"=>"Not allow to transfer. This account number has set to auto wallet update"));    
@@ -45,10 +38,11 @@
            if (trim($param['BankAccountNumber'])=="70809070809073244") {
                 return array("response"=>array("status"=>"FAILURE","error"=>"Not allow to transfer. This account number"));  
            }
-                                                                 
-           if (!($param['Amount']<$user_balance)) {
-               return array("response"=>array("status"=>"FAILURE","error"=>"insufficant balance"));
+           if (trim($param['BankAccountNumber'])=="70809073244") {
+                return array("response"=>array("status"=>"FAILURE","error"=>"Not allow to transfer. This account number"));  
            }
+                                                                 
+           $user_balance  = MoneyTransfer::get_balance($param['userid']);
            
            $txnid = $mysql->insert("_tbl_money_transfer",array("UserID"             => $param['userid'],
                                                                "TxnDate"            => date("Y-m-d H:i:s"),
@@ -64,12 +58,14 @@
                                                                "Remarks"            => $param['Remarks'],
                                                                "BeneficiaryName"    => $param['BeneficiaryName'],
                                                                "ReferenceNumber"    => "",
-                                                               "APIResponse_1"        => "",
+                                                               "APIResponse_1"      => "",
                                                                "TransactionStatus"  => "REQUESTED",
-                                                               "uid"  => isset($param['uid']) ? $param['uid'] : "0",
+                                                               "uid"                => isset($param['uid']) ? $param['uid'] : "0",
                                                                "BankReferenceID"    => "0",
                                                                "RequestedFrom"      => $param['txn_from']));
            $apiToken = "f16f19b5-16fc-4fe0-bbb3-3adafa0301e8";       
+           
+           $apiToken = "f30d8248-8c1e-430c-a65e-a84e7c0093ba";       
            $api_url  = "https://partners.hypto.in"     ;
            $data = array("amount"           => $param['Amount'],     
                          "payment_type"     => "IMPS",
@@ -82,7 +78,7 @@
                          "beneficiary_name" => $param['BeneficiaryName'],
                          "reference_number" => "aaranju".$txnid);
            $ch = curl_init( $api_url."/api/transfers/initiate" );
-           curl_setopt($ch, CURLOPT_HTTPHEADER, array('Authorization: f16f19b5-16fc-4fe0-bbb3-3adafa0301e8',
+           curl_setopt($ch, CURLOPT_HTTPHEADER, array('Authorization: '.$apiToken,
                                                       'Content-Type: application/json'));
            $payload = json_encode( $data );
            curl_setopt( $ch, CURLOPT_POSTFIELDS, $payload );
@@ -99,14 +95,15 @@
                if (strlen(trim($td[0]['moneytransfer_callback']))>5) {
                    $ch = curl_init($td[0]['moneytransfer_callback']."&action=sendMessage&Message=".urlencode("Transaction failure. Number: ". $param['BankAccountNumber'].", IFSCode: ".$param['IFSCode'].", Amount: ".$param['Amount']." Balance: ".$user_balance));
                    curl_exec($ch);
-                   curl_close($ch);
+                   curl_close($ch);                                             
                }
                return array("response"=>array("status"=>"FAILURE","error"=>"failed to initiate","txnid"=>$txnid)); 
                //return array("response"=>array("status"=>"FAILURE","error"=>$res['reason'],"txnid"=>$txnid)); 
            } else {
                sleep(10);
                $ch = curl_init( $api_url."/api/transfers/status/".$res['data']['reference_number']);
-               curl_setopt($ch, CURLOPT_HTTPHEADER, array('Authorization: f16f19b5-16fc-4fe0-bbb3-3adafa0301e8','Content-Type: application/json'));
+               //curl_setopt($ch, CURLOPT_HTTPHEADER, array('Authorization: f16f19b5-16fc-4fe0-bbb3-3adafa0301e8','Content-Type: application/json'));
+               curl_setopt($ch, CURLOPT_HTTPHEADER, array('Authorization: '.$apiToken,'Content-Type: application/json'));
                curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true );
                $res2 = curl_exec($ch);
                curl_close($ch);
@@ -116,7 +113,8 @@
                if (strlen(trim($res2))<5) {
                    sleep(10);
                    $ch = curl_init( $api_url."/api/transfers/status/".$res['data']['reference_number']);
-                   curl_setopt($ch, CURLOPT_HTTPHEADER, array('Authorization: f16f19b5-16fc-4fe0-bbb3-3adafa0301e8','Content-Type: application/json'));
+                   //curl_setopt($ch, CURLOPT_HTTPHEADER, array('Authorization: f16f19b5-16fc-4fe0-bbb3-3adafa0301e8','Content-Type: application/json'));
+                   curl_setopt($ch, CURLOPT_HTTPHEADER, array('Authorization: '.$apiToken,'Content-Type: application/json'));
                    curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true );
                    $res2 = curl_exec($ch);
                    curl_close($ch);
@@ -179,9 +177,9 @@
                        $url =  $td[0]['moneytransfer_callback']."&action=sendMessage&Message=".urlencode("Transaction Success. Number: ". $param['BankAccountNumber'].", IFSCode: ".$param['IFSCode'].", Amount: ".$param['Amount'].", Balance: ".$user_balance);
                        $ch = curl_init($url);
                        curl_exec($ch);
-                       curl_close($ch);
+                       curl_close($ch);                                                                              
                    }                                        
-                   return array("response"=>array("status"=>"SUCCESS","transid"=>$res2['data']['bank_ref_num'],"uid"=>$param['uid'],"txnid"=>$txnid));  
+                   return array("response"=>array("status"=>"SUCCESS","transid"=>trim($res2['data']['bank_ref_num']),"beneficiary_name"=>trim($res2['data']['transfer_account_holder']) ,"uid"=>$param['uid'],"txnid"=>$txnid));  
                }           
            }
         }

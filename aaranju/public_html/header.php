@@ -146,7 +146,7 @@ if (!($_SESSION['user']['userid']>0)) {
           </li>
           <!--<li class="nav-header">Services</li>  -->
           <li class="nav-header">&nbsp;</li>
-          <li class="nav-item has-treeview">
+          <li class="nav-item has-treeview" style="display: none;">
             <a href="javascript:void(0)" class="nav-link">
               <i class="nav-icon far fa-envelope"></i>
               <p>Transactional SMS<i class="fas fa-angle-left right"></i></p>
@@ -305,7 +305,7 @@ if (!($_SESSION['user']['userid']>0)) {
             </ul>
           </li>
           
-                    <li class="nav-item has-treeview">
+                    <li class="nav-item has-treeview" style="display:none">
             <a href="javascript:void(0)" class="nav-link">
               <i class="nav-icon far fa-envelope"></i>
               <p>Whatsapp SMS<i class="fas fa-angle-left right"></i></p>

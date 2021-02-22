@@ -64,10 +64,13 @@ include_once("config.php");?>
     
   </div>
   <div style='text-align:center;color: #777;font-size: 13px;font-family: "Source Sans Pro",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";'>
-        Mobile/DTH Recharge API | Bus Ticket API | Money Transfer API <br>
-        Transactional SMS API | Promotional SMS API | Whatsapp SMS API <br>
+        Mobile/DTH Recharge API | Bus Ticket API | Money Transfer API (IMPS/NEFT/UPI/Bank Account Verification/UPI ID Verification)
+        Send Text/Image/Doc using Telegram API
+        
+        <br>
+        <!--Transactional SMS API | Promotional SMS API | Whatsapp SMS API <br>
         PIN Code API | IFS Code API | Bulk Email API <br>
-        HTML To PDF API | Text On Image API </div>
+        HTML To PDF API | Text On Image API--> </div>
 </div>
 
 <p align="center" style='color: #aaa;font-size: 13px;font-family: "Source Sans Pro",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";'>Powered By <b>aaranju api services</b></p>

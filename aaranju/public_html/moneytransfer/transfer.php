@@ -50,7 +50,7 @@
                            <div class="alert alert-success alert-dismissible">
                   <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
                   <h5><i class="icon fas fa-check"></i>Transfer Success</h5>
-                  Bank Ref ID: <?php echo $res['transid'];?>
+                  Bank Ref ID: <?php echo $res['response']['transid'];?>
                 </div>
                           <?php
                           unset($_POST);
@@ -58,8 +58,8 @@
                          ?>
                            <div class="alert alert-danger  alert-dismissible">
                   <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                  <h5><i class="icon fas fa-check"></i><?php echo $res['error'];?></h5>
-                    <?php echo $res['response']["error"]; ?>
+                  <h5> 
+                    <?php echo $res['response']["error"]; ?></h5>
                 </div>
                          <?php
                       }
@@ -152,23 +152,24 @@
               <div class="card-body">
               <b>Virtual Account Details</b><br>
               <?php echo $_SESSION['user']['virtual_account_name'];?><br>
-              70809070809073244<br>
-              ICIC0000104<br><br>
+              <?php echo $_SESSION['user']['virtual_account_number'];?><br>
+              <?php echo $_SESSION['user']['virtual_ifscode'];?><br><br>
+             
               
               
               <b>Fixed Maintain</b><br>
               Rs. <?php echo $_SESSION['user']['maintain_balance'];?><br>
               Max Allowed To Transfer. Rs.<?php echo $_SESSION['user']['maintain_balance'];?>/ per txn.<br><br>
               
-              
+              <!--  
               <b>Upload Funds Charges</b><br>
               Rs. 5 per fund upload for Fixed Maintain<br>
               Rs. 50 per fund upload for Non-Maintain Fixed Maintain<br><br>
-              
+              -->
               
               <b>Time To Update</b><br>
               IMPS: Instant<br>
-              NEFT: Min: 2hrs Max: 4hrs (depends on bank working day)<br><br>
+              <!--NEFT: Min: 2hrs Max: 4hrs (depends on bank working day)--><br><br>
               
               <b>Allow Incoming Account(s) to automate</b><br>
               <?php
@@ -247,6 +248,7 @@
                     <th class="sorting_asc">Txn Date</th>
                     <th class="sorting">Particulars</th>
                     <th class="sorting">Txn Amount</th>
+                    <th class="sorting">Charges</th>
                     <th class="sorting">Credit</th>
                     <th class="sorting">Debit</th>
                     <th class="sorting">Balance</th>
@@ -280,6 +282,7 @@
                   
                   </td>
                   <td style="text-align:right;font-size:12px;"><?php echo number_format($t['TxnAmount'],2);?></td>
+                  <td style="text-align:right;font-size:12px;"><?php echo number_format($t['Charges'],2);?></td>
                   <td style="text-align:right;font-size:12px;"><?php echo number_format($t['Credit'],2);?></td>
                   <td style="text-align:right;font-size:12px;"><?php echo number_format($t['Debit'],2);?></td>
                   <td style="text-align:right;font-size:12px;"><?php echo number_format($t['Balance'],2);?></td>

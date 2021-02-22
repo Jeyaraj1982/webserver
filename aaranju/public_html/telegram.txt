@@ -1,0 +1,153 @@
+
+2020-12-24 19:03:16	{"update_id":461654383,
+"message":{"message_id":1693,"from":{"id":1082754303,"is_bot":false,"first_name":"Sangaralingam N","language_code":"en"},"chat":{"id":1082754303,"first_name":"Sangaralingam N","type":"private"},"date":1608816796,"text":"How to update in wallet"}}
+2020-12-26 16:44:17	{"update_id":29040819,
+"message":{"message_id":95,"from":{"id":1107300198,"is_bot":false,"first_name":"Jeyaraj","language_code":"en"},"chat":{"id":1107300198,"first_name":"Jeyaraj","type":"private"},"date":1608981257,"photo":[{"file_id":"AgACAgUAAxkBAANfX-cbCeEt21Wn7UBaZ0Np56-4LTgAAsqrMRtLJTlX7iHOAAEmgLWsCLG7bnQAAwEAAwIAA20AA83DAAIeBA","file_unique_id":"AQADCLG7bnQAA83DAAI","file_size":17617,"width":180,"height":320},{"file_id":"AgACAgUAAxkBAANfX-cbCeEt21Wn7UBaZ0Np56-4LTgAAsqrMRtLJTlX7iHOAAEmgLWsCLG7bnQAAwEAAwIAA3gAA8_DAAIeBA","file_unique_id":"AQADCLG7bnQAA8_DAAI","file_size":65265,"width":450,"height":800},{"file_id":"AgACAgUAAxkBAANfX-cbCeEt21Wn7UBaZ0Np56-4LTgAAsqrMRtLJTlX7iHOAAEmgLWsCLG7bnQAAwEAAwIAA3kAA9DDAAIeBA","file_unique_id":"AQADCLG7bnQAA9DDAAI","file_size":131884,"width":720,"height":1280},{"file_id":"AgACAgUAAxkBAANfX-cbCeEt21Wn7UBaZ0Np56-4LTgAAsqrMRtLJTlX7iHOAAEmgLWsCLG7bnQAAwEAAwIAA3cAA9HDAAIeBA","file_unique_id":"AQADCLG7bnQAA9HDAAI","file_size":405864,"width":1440,"height":2560}]}}
+2020-12-26 16:44:38	{"update_id":29040820,
+"message":{"message_id":96,"from":{"id":1107300198,"is_bot":false,"first_name":"Jeyaraj","language_code":"en"},"chat":{"id":1107300198,"first_name":"Jeyaraj","type":"private"},"date":1608981279,"photo":[{"file_id":"AgACAgUAAxkBAANgX-cbHpUESQABnnaPFB6nGm4q3EpbAALLqzEbSyU5V0z87Tg2oNYKwiIRb3QAAwEAAwIAA20AA3nNAAIeBA","file_unique_id":"AQADwiIRb3QAA3nNAAI","file_size":15691,"width":180,"height":320},{"file_id":"AgACAgUAAxkBAANgX-cbHpUESQABnnaPFB6nGm4q3EpbAALLqzEbSyU5V0z87Tg2oNYKwiIRb3QAAwEAAwIAA3gAA3fNAAIeBA","file_unique_id":"AQADwiIRb3QAA3fNAAI","file_size":60668,"width":450,"height":800},{"file_id":"AgACAgUAAxkBAANgX-cbHpUESQABnnaPFB6nGm4q3EpbAALLqzEbSyU5V0z87Tg2oNYKwiIRb3QAAwEAAwIAA3kAA3bNAAIeBA","file_unique_id":"AQADwiIRb3QAA3bNAAI","file_size":125290,"width":720,"height":1280},{"file_id":"AgACAgUAAxkBAANgX-cbHpUESQABnnaPFB6nGm4q3EpbAALLqzEbSyU5V0z87Tg2oNYKwiIRb3QAAwEAAwIAA3cAA3rNAAIeBA","file_unique_id":"AQADwiIRb3QAA3rNAAI","file_size":375444,"width":1440,"height":2560}]}}
+2020-12-27 13:28:09	{"update_id":461654384,
+"message":{"message_id":1728,"from":{"id":1129474725,"is_bot":false,"first_name":"Ravi","last_name":"Ravi","language_code":"en"},"chat":{"id":1129474725,"first_name":"Ravi","last_name":"Ravi","type":"private"},"date":1609055889,"photo":[{"file_id":"AgACAgUAAxkBAAIGwF_oPpF8Jlzqu2ibRoS4YiyTDAZCAAJ2qjEb2YRAV95-UiJxGdiXyxnBbHQAAwEAAwIAA20AA9CLBQABHgQ","file_unique_id":"AQADyxnBbHQAA9CLBQAB","file_size":10722,"width":172,"height":320},{"file_id":"AgACAgUAAxkBAAIGwF_oPpF8Jlzqu2ibRoS4YiyTDAZCAAJ2qjEb2YRAV95-UiJxGdiXyxnBbHQAAwEAAwIAA3gAA9GLBQABHgQ","file_unique_id":"AQADyxnBbHQAA9GLBQAB","file_size":40501,"width":429,"height":800},{"file_id":"AgACAgUAAxkBAAIGwF_oPpF8Jlzqu2ibRoS4YiyTDAZCAAJ2qjEb2YRAV95-UiJxGdiXyxnBbHQAAwEAAwIAA3kAA86LBQABHgQ","file_unique_id":"AQADyxnBbHQAA86LBQAB","file_size":62534,"width":687,"height":1280}],"caption":"Photo from Sellaiahravi"}}
+2020-12-28 10:59:25	{"update_id":461654385,
+"message":{"message_id":1802,"from":{"id":1082754303,"is_bot":false,"first_name":"Sangaralingam N","language_code":"en"},"chat":{"id":1082754303,"first_name":"Sangaralingam N","type":"private"},"date":1609133365,"text":"Y issue in maximum time"}}
+2020-12-30 13:04:11	{"update_id":461654386,
+"message":{"message_id":1906,"from":{"id":1430216536,"is_bot":false,"first_name":"Sasikumar","last_name":"M","language_code":"en"},"chat":{"id":1430216536,"first_name":"Sasikumar","last_name":"M","type":"private"},"date":1609313651,"text":"Hi"}}
+2020-12-30 13:04:57	{"update_id":461654387,
+"message":{"message_id":1907,"from":{"id":1430216536,"is_bot":false,"first_name":"Sasikumar","last_name":"M","language_code":"en"},"chat":{"id":1430216536,"first_name":"Sasikumar","last_name":"M","type":"private"},"date":1609313698,"voice":{"duration":13,"mime_type":"audio/ogg","file_id":"AwACAgUAAxkBAAIHc1_sLaJtRS4K481ODxa_MPjzQa_kAAIwAgACCExgV5RxdqtE_f6bHgQ","file_unique_id":"AgADMAIAAghMYFc","file_size":45472}}}
+2020-12-31 17:22:29	{"update_id":461654388,
+"message":{"message_id":1923,"from":{"id":1082754303,"is_bot":false,"first_name":"Sangaralingam N","language_code":"en"},"chat":{"id":1082754303,"first_name":"Sangaralingam N","type":"private"},"date":1609415550,"text":"Credit my account"}}
+2020-12-31 18:45:34	{"update_id":461654389,
+"message":{"message_id":1925,"from":{"id":1107300198,"is_bot":false,"first_name":"Jeyaraj","language_code":"en"},"chat":{"id":1107300198,"first_name":"Jeyaraj","type":"private"},"date":1609420534,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}
+2021-01-01 11:26:38	{"update_id":44918429,
+"message":{"message_id":48,"from":{"id":1498244953,"is_bot":false,"first_name":"Antony","last_name":"S","language_code":"en"},"chat":{"id":1498244953,"first_name":"Antony","last_name":"S","type":"private"},"date":1609480597,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}
+2021-01-01 11:27:00	{"update_id":44918430,
+"message":{"message_id":49,"from":{"id":1498244953,"is_bot":false,"first_name":"Antony","last_name":"S","language_code":"en"},"chat":{"id":1498244953,"first_name":"Antony","last_name":"S","type":"private"},"date":1609480620,"text":"abj9943708856"}}
+2021-01-01 11:37:35	{"update_id":44918431,
+"message":{"message_id":52,"from":{"id":1038708315,"is_bot":false,"first_name":"ANTONY RAJ","last_name":"S","language_code":"en"},"chat":{"id":1038708315,"first_name":"ANTONY RAJ","last_name":"S","type":"private"},"date":1609481255,"text":"Hai"}}
+2021-01-01 11:39:08	{"update_id":44918432,
+"message":{"message_id":53,"from":{"id":1498244953,"is_bot":false,"first_name":"Antony","last_name":"S","language_code":"en"},"chat":{"id":1498244953,"first_name":"Antony","last_name":"S","type":"private"},"date":1609481348,"text":"Start"}}
+2021-01-01 11:41:33	{"update_id":44918433,
+"message":{"message_id":54,"from":{"id":1498244953,"is_bot":false,"first_name":"Antony","last_name":"S","language_code":"en"},"chat":{"id":1498244953,"first_name":"Antony","last_name":"S","type":"private"},"date":1609481493,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}
+2021-01-01 11:41:50	{"update_id":44918434,
+"message":{"message_id":55,"from":{"id":1498244953,"is_bot":false,"first_name":"Antony","last_name":"S","language_code":"en"},"chat":{"id":1498244953,"first_name":"Antony","last_name":"S","type":"private"},"date":1609481510,"text":"abj8489265640"}}
+2021-01-01 12:19:49	{"update_id":44918435,
+"message":{"message_id":61,"from":{"id":316574188,"is_bot":false,"first_name":"S","last_name":"T","username":"Myworldofdream","language_code":"en"},"chat":{"id":316574188,"first_name":"S","last_name":"T","username":"Myworldofdream","type":"private"},"date":1609483789,"text":"Abj9003638869"}}
+2021-01-02 16:42:38	{"update_id":461654390,
+"message":{"message_id":1955,"from":{"id":1238398571,"is_bot":false,"first_name":"prabha","last_name":"karan","language_code":"en"},"chat":{"id":1238398571,"first_name":"prabha","last_name":"karan","type":"private"},"date":1609585959,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}
+2021-01-02 16:43:01	{"update_id":461654391,
+"message":{"message_id":1956,"from":{"id":1238398571,"is_bot":false,"first_name":"prabha","last_name":"karan","language_code":"en"},"chat":{"id":1238398571,"first_name":"prabha","last_name":"karan","type":"private"},"date":1609585982,"text":"Hi"}}
+2021-01-03 19:36:28	{"update_id":461654392,
+"message":{"message_id":1963,"from":{"id":1082754303,"is_bot":false,"first_name":"Sangaralingam N","language_code":"en"},"chat":{"id":1082754303,"first_name":"Sangaralingam N","type":"private"},"date":1609682788,"text":"Sun direct recharge completed or not"}}
+2021-01-05 14:31:54	{"update_id":44918436,
+"message":{"message_id":77,"from":{"id":1007644414,"is_bot":false,"first_name":"Arul Raja","last_name":"J"},"chat":{"id":1007644414,"first_name":"Arul Raja","last_name":"J","type":"private"},"date":1609837314,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}
+2021-01-05 14:33:07	{"update_id":44918437,
+"message":{"message_id":78,"from":{"id":1007644414,"is_bot":false,"first_name":"Arul Raja","last_name":"J","language_code":"en"},"chat":{"id":1007644414,"first_name":"Arul Raja","last_name":"J","type":"private"},"date":1609837387,"text":"abj7010290879"}}
+2021-01-05 15:06:41	{"update_id":44918438,
+"message":{"message_id":80,"from":{"id":1547886161,"is_bot":false,"first_name":"John","last_name":"S"},"chat":{"id":1547886161,"first_name":"John","last_name":"S","type":"private"},"date":1609839401,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}
+2021-01-05 15:06:57	{"update_id":44918439,
+"message":{"message_id":81,"from":{"id":1547886161,"is_bot":false,"first_name":"John","last_name":"S","language_code":"en"},"chat":{"id":1547886161,"first_name":"John","last_name":"S","type":"private"},"date":1609839418,"text":"Abj7826854833"}}
+2021-01-06 12:19:59	{"update_id":461654393,
+"message":{"message_id":2054,"from":{"id":1430216536,"is_bot":false,"first_name":"Sasikumar","last_name":"M","language_code":"en"},"chat":{"id":1430216536,"first_name":"Sasikumar","last_name":"M","type":"private"},"date":1609915799,"text":"Airtel not working"}}
+2021-01-08 08:12:30	{"update_id":461654394,
+"message":{"message_id":2073,"from":{"id":1082754303,"is_bot":false,"first_name":"Sangaralingam N","language_code":"en"},"chat":{"id":1082754303,"first_name":"Sangaralingam N","type":"private"},"date":1610073751,"text":"Kindly account my account"}}
+2021-01-10 18:46:34	{"update_id":461654395,
+"message":{"message_id":2117,"from":{"id":1082754303,"is_bot":false,"first_name":"Sangaralingam N","language_code":"en"},"chat":{"id":1082754303,"first_name":"Sangaralingam N","type":"private"},"date":1610284594,"text":"Kindly credit my account"}}
+2021-01-10 18:47:25	{"update_id":461654396,
+"message":{"message_id":2119,"from":{"id":1082754303,"is_bot":false,"first_name":"Sangaralingam N","language_code":"en"},"chat":{"id":1082754303,"first_name":"Sangaralingam N","type":"private"},"date":1610284646,"text":"Thanks to support"}}
+2021-01-13 10:02:22	{"update_id":461654397,
+"message":{"message_id":2146,"from":{"id":1379697084,"is_bot":false,"first_name":"Ellayappachi","last_name":"RAKKAPAN","language_code":"en"},"chat":{"id":1379697084,"first_name":"Ellayappachi","last_name":"RAKKAPAN","type":"private"},"date":1610512342,"text":"Please credit my account \u20b9 2000"}}
+2021-01-13 10:06:10	{"update_id":461654398,
+"message":{"message_id":2147,"from":{"id":1430216536,"is_bot":false,"first_name":"Sasikumar","last_name":"M","language_code":"en"},"chat":{"id":1430216536,"first_name":"Sasikumar","last_name":"M","type":"private"},"date":1610512571,"text":"Vi not working"}}
+2021-01-13 10:19:07	{"update_id":461654399,
+"message":{"message_id":2148,"from":{"id":1430216536,"is_bot":false,"first_name":"Sasikumar","last_name":"M","language_code":"en"},"chat":{"id":1430216536,"first_name":"Sasikumar","last_name":"M","type":"private"},"date":1610513348,"photo":[{"file_id":"AgACAgUAAxkBAAIIZF_-e8TGNanjKzvuKEhPKEO3OTNEAAIUqzEbmlPwVyTKpl2kY2jTWBrBbHQAAwEAAwIAA20AAwMCBgABHgQ","file_unique_id":"AQADWBrBbHQAAwMCBgAB","file_size":7356,"width":148,"height":320},{"file_id":"AgACAgUAAxkBAAIIZF_-e8TGNanjKzvuKEhPKEO3OTNEAAIUqzEbmlPwVyTKpl2kY2jTWBrBbHQAAwEAAwIAA3gAAwQCBgABHgQ","file_unique_id":"AQADWBrBbHQAAwQCBgAB","file_size":27652,"width":369,"height":800},{"file_id":"AgACAgUAAxkBAAIIZF_-e8TGNanjKzvuKEhPKEO3OTNEAAIUqzEbmlPwVyTKpl2kY2jTWBrBbHQAAwEAAwIAA3kAAwICBgABHgQ","file_unique_id":"AQADWBrBbHQAAwICBgAB","file_size":39126,"width":591,"height":1280}],"caption":"Screenshot (13-Jan-2021 10:18:56 am)"}}
+2021-01-13 10:19:38	{"update_id":461654400,
+"message":{"message_id":2149,"from":{"id":1430216536,"is_bot":false,"first_name":"Sasikumar","last_name":"M","language_code":"en"},"chat":{"id":1430216536,"first_name":"Sasikumar","last_name":"M","type":"private"},"date":1610513379,"text":"Pls cancel this transaction"}}
+2021-01-15 09:03:40	{"update_id":461654401,
+"message":{"message_id":2196,"from":{"id":1430216536,"is_bot":false,"first_name":"Sasikumar","last_name":"M","language_code":"en"},"chat":{"id":1430216536,"first_name":"Sasikumar","last_name":"M","type":"private"},"date":1610681620,"photo":[{"file_id":"AgACAgUAAxkBAAIIlGABDRSkCgABsOBvdED6vIkxTgnZXQACR6sxG-fkCVT9xHGk89Ua8WgDsW50AAMBAAMCAANtAAN4YQEAAR4E","file_unique_id":"AQADaAOxbnQAA3hhAQAB","file_size":13000,"width":148,"height":320},{"file_id":"AgACAgUAAxkBAAIIlGABDRSkCgABsOBvdED6vIkxTgnZXQACR6sxG-fkCVT9xHGk89Ua8WgDsW50AAMBAAMCAAN4AAN6YQEAAR4E","file_unique_id":"AQADaAOxbnQAA3phAQAB","file_size":56853,"width":369,"height":800},{"file_id":"AgACAgUAAxkBAAIIlGABDRSkCgABsOBvdED6vIkxTgnZXQACR6sxG-fkCVT9xHGk89Ua8WgDsW50AAMBAAMCAAN5AAN5YQEAAR4E","file_unique_id":"AQADaAOxbnQAA3lhAQAB","file_size":91154,"width":591,"height":1280}],"caption":"Screenshot (15-Jan-2021 9:03:29 am)"}}
+2021-01-15 09:03:45	{"update_id":461654402,
+"message":{"message_id":2197,"from":{"id":1430216536,"is_bot":false,"first_name":"Sasikumar","last_name":"M","language_code":"en"},"chat":{"id":1430216536,"first_name":"Sasikumar","last_name":"M","type":"private"},"date":1610681626,"text":"Hi"}}
+2021-01-15 09:04:21	{"update_id":461654403,
+"message":{"message_id":2198,"from":{"id":1430216536,"is_bot":false,"first_name":"Sasikumar","last_name":"M","language_code":"en"},"chat":{"id":1430216536,"first_name":"Sasikumar","last_name":"M","type":"private"},"date":1610681661,"text":"Pls details updated some plans of jio"}}
+2021-01-15 09:04:51	{"update_id":461654404,
+"message":{"message_id":2199,"from":{"id":1430216536,"is_bot":false,"first_name":"Sasikumar","last_name":"M","language_code":"en"},"chat":{"id":1430216536,"first_name":"Sasikumar","last_name":"M","type":"private"},"date":1610681692,"text":"Example -399/-plan"}}
+2021-01-15 09:05:31	{"update_id":461654405,
+"message":{"message_id":2200,"from":{"id":1430216536,"is_bot":false,"first_name":"Sasikumar","last_name":"M","language_code":"en"},"chat":{"id":1430216536,"first_name":"Sasikumar","last_name":"M","type":"private"},"date":1610681731,"text":"How many days of valitidy"}}
+2021-01-18 17:07:28	{"update_id":461654406,
+"message":{"message_id":2289,"from":{"id":1129474725,"is_bot":false,"first_name":"Ravi","last_name":"Ravi","language_code":"en"},"chat":{"id":1129474725,"first_name":"Ravi","last_name":"Ravi","type":"private"},"date":1610969849,"text":"Last 4days some time jio down, after Vodafone, some time airtel, today also same condition. What's the problem."}}
+2021-01-20 17:45:21	{"update_id":461654407,
+"message":{"message_id":2400,"from":{"id":1405996295,"is_bot":false,"first_name":"V-3","last_name":"Viji"},"chat":{"id":1405996295,"first_name":"V-3","last_name":"Viji","type":"private"},"date":1611144922,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}
+2021-01-20 17:47:28	{"update_id":461654408,
+"message":{"message_id":2401,"from":{"id":1405996295,"is_bot":false,"first_name":"V-3","last_name":"Viji","language_code":"en"},"chat":{"id":1405996295,"first_name":"V-3","last_name":"Viji","type":"private"},"date":1611145048,"text":"tksd/7339529936","entities":[{"offset":5,"length":10,"type":"phone_number"}]}}
+2021-01-21 17:55:20	{"update_id":461654409,
+"message":{"message_id":2513,"from":{"id":1508687357,"is_bot":false,"first_name":"A.V.M. SHAIK ABDULLAH 014"},"chat":{"id":1508687357,"first_name":"A.V.M. SHAIK ABDULLAH 014","type":"private"},"date":1611231921,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}
+2021-01-21 17:59:36	{"update_id":461654410,
+"message":{"message_id":2514,"from":{"id":1508687357,"is_bot":false,"first_name":"A.V.M. SHAIK ABDULLAH 014","language_code":"en"},"chat":{"id":1508687357,"first_name":"A.V.M. SHAIK ABDULLAH 014","type":"private"},"date":1611232177,"text":"TKSD8807488014"}}
+2021-01-21 18:07:05	{"update_id":461654411,
+"message":{"message_id":2515,"from":{"id":1508687357,"is_bot":false,"first_name":"AVM SHAIK ABDULLAH 014","language_code":"en"},"chat":{"id":1508687357,"first_name":"AVM SHAIK ABDULLAH 014","type":"private"},"date":1611232625,"text":"Hi"}}
+2021-01-21 18:08:44	{"update_id":461654412,
+"message":{"message_id":2516,"from":{"id":1508687357,"is_bot":false,"first_name":"AVM SHAIK ABDULLAH 014","language_code":"en"},"chat":{"id":1508687357,"first_name":"AVM SHAIK ABDULLAH 014","type":"private"},"date":1611232725,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}
+2021-01-21 18:09:17	{"update_id":461654413,
+"message":{"message_id":2517,"from":{"id":1508687357,"is_bot":false,"first_name":"AVM SHAIK ABDULLAH 014","language_code":"en"},"chat":{"id":1508687357,"first_name":"AVM SHAIK ABDULLAH 014","type":"private"},"date":1611232758,"text":"TKSD8807488014"}}
+2021-01-27 08:56:14	{"update_id":461654414,
+"message":{"message_id":2656,"from":{"id":1082754303,"is_bot":false,"first_name":"Sangaralingam N","language_code":"en"},"chat":{"id":1082754303,"first_name":"Sangaralingam N","type":"private"},"date":1611717974,"text":"Kindly account it"}}
+2021-01-29 21:15:41	{"update_id":461654415,
+"message":{"message_id":2743,"from":{"id":635195474,"is_bot":false,"first_name":"nazar","last_name":"Nazar","language_code":"en"},"chat":{"id":635195474,"first_name":"nazar","last_name":"Nazar","type":"private"},"date":1611935141,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}
+2021-01-29 21:16:02	{"update_id":461654416,
+"message":{"message_id":2744,"from":{"id":635195474,"is_bot":false,"first_name":"nazar","last_name":"Nazar","language_code":"en"},"chat":{"id":635195474,"first_name":"nazar","last_name":"Nazar","type":"private"},"date":1611935163,"text":"TKSD8056374445"}}
+2021-01-30 08:51:16	{"update_id":461654417,
+"message":{"message_id":2745,"from":{"id":1129474725,"is_bot":false,"first_name":"Ravi","last_name":"Ravi","language_code":"en"},"chat":{"id":1129474725,"first_name":"Ravi","last_name":"Ravi","type":"private"},"date":1611976876,"photo":[{"file_id":"AgACAgUAAxkBAAIKuWAU0Kx2CJpESpZQbvpsjisa7KQPAALpqzEbRVWpVJr-z3U6vZxgqNAbb3QAAwEAAwIAA20AAxnCAQABHgQ","file_unique_id":"AQADqNAbb3QAAxnCAQAB","file_size":10719,"width":172,"height":320},{"file_id":"AgACAgUAAxkBAAIKuWAU0Kx2CJpESpZQbvpsjisa7KQPAALpqzEbRVWpVJr-z3U6vZxgqNAbb3QAAwEAAwIAA3gAAxvCAQABHgQ","file_unique_id":"AQADqNAbb3QAAxvCAQAB","file_size":40506,"width":429,"height":800},{"file_id":"AgACAgUAAxkBAAIKuWAU0Kx2CJpESpZQbvpsjisa7KQPAALpqzEbRVWpVJr-z3U6vZxgqNAbb3QAAwEAAwIAA3kAAxrCAQABHgQ","file_unique_id":"AQADqNAbb3QAAxrCAQAB","file_size":62459,"width":687,"height":1280}],"caption":"Photo from Sellaiahravi"}}
+2021-01-30 13:20:12	{"update_id":29040821,
+"message":{"message_id":141,"from":{"id":1107300198,"is_bot":false,"first_name":"Jeyaraj","language_code":"en"},"chat":{"id":1107300198,"first_name":"Jeyaraj","type":"private"},"date":1611993012,"text":"https://hamiec.j2jsoftwaresolutions.com/mweb/dashboard.php","entities":[{"offset":0,"length":58,"type":"url"}]}}
+2021-01-30 14:13:25	{"update_id":461654418,
+"message":{"message_id":2752,"from":{"id":1107300198,"is_bot":false,"first_name":"Jeyaraj","language_code":"en"},"chat":{"id":1107300198,"first_name":"Jeyaraj","type":"private"},"date":1611996206,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}
+2021-01-30 14:25:02	{"update_id":461654419,
+"message":{"message_id":2753,"from":{"id":1107300198,"is_bot":false,"first_name":"Jeyaraj","language_code":"en"},"chat":{"id":1107300198,"first_name":"Jeyaraj","type":"private"},"date":1611996903,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}
+2021-01-30 14:26:37	{"update_id":461654420,
+"message":{"message_id":2754,"from":{"id":1107300198,"is_bot":false,"first_name":"Jeyaraj","language_code":"en"},"chat":{"id":1107300198,"first_name":"Jeyaraj","type":"private"},"date":1611996997,"text":"https"}}
+2021-01-30 15:45:49	{"update_id":461654421,
+"message":{"message_id":2755,"from":{"id":635195474,"is_bot":false,"first_name":"nazar","last_name":"Nazar","language_code":"en"},"chat":{"id":635195474,"first_name":"nazar","last_name":"Nazar","type":"private"},"date":1612001749,"text":"TKSD8056374445"}}
+2021-01-30 17:43:52	{"update_id":29040822,
+"message":{"message_id":142,"from":{"id":1107300198,"is_bot":false,"first_name":"Jeyaraj","language_code":"en"},"chat":{"id":1107300198,"first_name":"Jeyaraj","type":"private"},"date":1612008833,"text":"https://hamiec.j2jsoftwaresolutions.com/mweb/","entities":[{"offset":0,"length":45,"type":"url"}]}}
+2021-01-30 18:22:14	{"update_id":29040823,
+"message":{"message_id":143,"from":{"id":1107300198,"is_bot":false,"first_name":"Jeyaraj","language_code":"en"},"chat":{"id":1107300198,"first_name":"Jeyaraj","type":"private"},"date":1612011135,"text":"https://hamiec.j2jsoftwaresolutions.com/index.php?mindex=2","entities":[{"offset":0,"length":58,"type":"url"}]}}
+2021-02-02 19:02:29	{"update_id":461654422,
+"message":{"message_id":2796,"from":{"id":1495479220,"is_bot":false,"first_name":"Kumar","language_code":"en"},"chat":{"id":1495479220,"first_name":"Kumar","type":"private"},"date":1612272750,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}
+2021-02-02 19:03:11	{"update_id":461654423,
+"message":{"message_id":2797,"from":{"id":1495479220,"is_bot":false,"first_name":"Kumar","language_code":"en"},"chat":{"id":1495479220,"first_name":"Kumar","type":"private"},"date":1612272792,"text":"TKSD9677383478"}}
+2021-02-02 19:12:16	{"update_id":461654424,
+"message":{"message_id":2799,"from":{"id":1505297079,"is_bot":false,"first_name":"Vinoth","last_name":"Kumar"},"chat":{"id":1505297079,"first_name":"Vinoth","last_name":"Kumar","type":"private"},"date":1612273336,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}
+2021-02-02 19:12:31	{"update_id":461654425,
+"message":{"message_id":2800,"from":{"id":1505297079,"is_bot":false,"first_name":"Vinoth","last_name":"Kumar","language_code":"en"},"chat":{"id":1505297079,"first_name":"Vinoth","last_name":"Kumar","type":"private"},"date":1612273352,"text":"TKSD 9080624223","entities":[{"offset":5,"length":10,"type":"phone_number"}]}}
+2021-02-02 19:13:57	{"update_id":461654426,
+"message":{"message_id":2802,"from":{"id":1505297079,"is_bot":false,"first_name":"Vinoth","last_name":"Kumar","language_code":"en"},"chat":{"id":1505297079,"first_name":"Vinoth","last_name":"Kumar","type":"private"},"date":1612273437,"text":"TKSD908062423"}}
+2021-02-03 07:28:15	{"update_id":461654427,
+"message":{"message_id":2805,"from":{"id":1505297079,"is_bot":false,"first_name":"Vinoth","last_name":"Kumar","language_code":"en"},"chat":{"id":1505297079,"first_name":"Vinoth","last_name":"Kumar","type":"private"},"date":1612317495,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}
+2021-02-03 07:28:32	{"update_id":461654428,
+"message":{"message_id":2806,"from":{"id":1505297079,"is_bot":false,"first_name":"Vinoth","last_name":"Kumar","language_code":"en"},"chat":{"id":1505297079,"first_name":"Vinoth","last_name":"Kumar","type":"private"},"date":1612317513,"text":"TKSD9080624223"}}
+2021-02-03 18:08:27	{"update_id":461654429,
+"message":{"message_id":2819,"from":{"id":1669002870,"is_bot":false,"first_name":"Bright Media"},"chat":{"id":1669002870,"first_name":"Bright Media","type":"private"},"date":1612355907,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}
+2021-02-03 18:08:55	{"update_id":461654430,
+"message":{"message_id":2820,"from":{"id":1669002870,"is_bot":false,"first_name":"Bright Media","language_code":"en"},"chat":{"id":1669002870,"first_name":"Bright Media","type":"private"},"date":1612355936,"text":"Tksd9952770330"}}
+2021-02-04 12:16:14	{"update_id":29040824,
+"message":{"message_id":150,"from":{"id":685405236,"is_bot":false,"first_name":"Raja","last_name":"ERP Software","language_code":"en"},"chat":{"id":685405236,"first_name":"Raja","last_name":"ERP Software","type":"private"},"date":1612421175,"text":"Ok"}}
+2021-02-06 11:12:09	{"update_id":461654431,
+"message":{"message_id":2934,"from":{"id":1129474725,"is_bot":false,"first_name":"Ravi","last_name":"Ravi","language_code":"en"},"chat":{"id":1129474725,"first_name":"Ravi","last_name":"Ravi","type":"private"},"date":1612590130,"text":"Jio down?"}}
+2021-02-06 13:16:53	{"update_id":29040825,
+"message":{"message_id":151,"from":{"id":1107300198,"is_bot":false,"first_name":"Jeyaraj","language_code":"en"},"chat":{"id":1107300198,"first_name":"Jeyaraj","type":"private"},"date":1612597614,"text":"https://web.whatsapp.com/send?phone=919372222492&text=1525252","entities":[{"offset":0,"length":61,"type":"url"}]}}
+2021-02-06 13:17:24	{"update_id":29040826,
+"message":{"message_id":152,"from":{"id":1107300198,"is_bot":false,"first_name":"Jeyaraj","language_code":"en"},"chat":{"id":1107300198,"first_name":"Jeyaraj","type":"private"},"date":1612597645,"text":"https://api.whatsapp.com/send/?phone=919372222492&text=1525252","entities":[{"offset":0,"length":62,"type":"url"}]}}
+2021-02-06 13:18:01	{"update_id":29040827,
+"message":{"message_id":153,"from":{"id":1107300198,"is_bot":false,"first_name":"Jeyaraj","language_code":"en"},"chat":{"id":1107300198,"first_name":"Jeyaraj","type":"private"},"date":1612597683,"text":"UI TEXT\nhttps://api.whatsapp.com/send/?phone=919372222492&text=1525252","entities":[{"offset":8,"length":62,"type":"url"}]}}
+2021-02-06 13:18:18	{"update_id":29040828,
+"message":{"message_id":154,"from":{"id":1107300198,"is_bot":false,"first_name":"Jeyaraj","language_code":"en"},"chat":{"id":1107300198,"first_name":"Jeyaraj","type":"private"},"date":1612597700,"text":"ttps://api.whatsapp.com/send/?phone=919372222492&text=1525252"}}
+2021-02-06 15:10:05	{"update_id":461654432,
+"message":{"message_id":2941,"from":{"id":1129474725,"is_bot":false,"first_name":"Ravi","last_name":"Ravi","language_code":"en"},"chat":{"id":1129474725,"first_name":"Ravi","last_name":"Ravi","type":"private"},"date":1612604406,"text":"Jio still problem"}}
+2021-02-07 18:45:07	{"update_id":461654433,
+"message":{"message_id":2956,"from":{"id":1407111301,"is_bot":false,"first_name":"Smart","last_name":"Kalki"},"chat":{"id":1407111301,"first_name":"Smart","last_name":"Kalki","type":"private"},"date":1612703707,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}
+2021-02-07 18:45:21	{"update_id":461654434,
+"message":{"message_id":2957,"from":{"id":1407111301,"is_bot":false,"first_name":"Smart","last_name":"Kalki","language_code":"en"},"chat":{"id":1407111301,"first_name":"Smart","last_name":"Kalki","type":"private"},"date":1612703721,"text":"Tksd8523978554"}}
+2021-02-11 10:03:46	{"update_id":461654435,
+"message":{"message_id":3044,"from":{"id":1129474725,"is_bot":false,"first_name":"Ravi","last_name":"Ravi","language_code":"en"},"chat":{"id":1129474725,"first_name":"Ravi","last_name":"Ravi","type":"private"},"date":1613018026,"text":"Airtel no working"}}
+2021-02-17 09:45:38	{"update_id":461654436,
+"message":{"message_id":3153,"from":{"id":1505297079,"is_bot":false,"first_name":"Vinoth","last_name":"Kumar","language_code":"en"},"chat":{"id":1505297079,"first_name":"Vinoth","last_name":"Kumar","type":"private"},"date":1613535338,"text":"\ud83d\udc4d"}}
+2021-02-17 09:45:41	{"update_id":461654437,
+"message":{"message_id":3154,"from":{"id":1505297079,"is_bot":false,"first_name":"Vinoth","last_name":"Kumar","language_code":"en"},"chat":{"id":1505297079,"first_name":"Vinoth","last_name":"Kumar","type":"private"},"date":1613535342,"text":"\ud83d\udc4c"}}

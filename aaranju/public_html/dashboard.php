@@ -20,7 +20,7 @@
             <div class="row">
                 <?php
                 if ($_SESSION['user']['transactionsms']==1) {
-                    echo transactionsms();
+                   // echo transactionsms();
                 }
                 
                 if ($_SESSION['user']['international_sms']==1) {
@@ -28,7 +28,7 @@
                 }
                 
                 if ($_SESSION['user']['promotionalsms']==1) {
-                    echo promotionalsms();
+                   // echo promotionalsms();
                 }
                 
                 if ($_SESSION['user']['service_ifscode']==1) {
@@ -56,7 +56,7 @@
                 }
                 
                 if ($_SESSION['user']['service_whatsapp']==1) {
-                    echo service_whatsapp();
+                   // echo service_whatsapp();
                 }
                 
                 if ($_SESSION['user']['service_rechargeplan']==1) {
@@ -68,7 +68,7 @@
                 }
                 
                 if ($_SESSION['user']['service_tnebbill_payment']==1) {
-                    echo service_tnebbill_payment();
+                   // echo service_tnebbill_payment();
                 }
                 
                 if ($_SESSION['user']['service_telegram']==1) {
@@ -79,7 +79,7 @@
             <div class="row">
                 <?php
                 if ($_SESSION['user']['transactionsms']==0) {
-                    echo transactionsms();
+                   // echo transactionsms();
                 }
                 
                  if ($_SESSION['user']['international_sms']==0) {
@@ -87,7 +87,7 @@
                 }
                 
                 if ($_SESSION['user']['promotionalsms']==0) {
-                    echo promotionalsms();
+                   // echo promotionalsms();
                 }
                 
                 if ($_SESSION['user']['service_ifscode']==0) {
@@ -115,7 +115,7 @@
                 }
                 
                 if ($_SESSION['user']['service_whatsapp']==0) {
-                    echo service_whatsapp();
+                   // echo service_whatsapp();
                 }
                 
                 if ($_SESSION['user']['service_rechargeplan']==0) {
@@ -127,7 +127,7 @@
                 }
                 
                 if ($_SESSION['user']['service_tnebbill_payment']==0) {
-                    echo service_tnebbill_payment();
+                   // echo service_tnebbill_payment();
                 }
                 
                 if ($_SESSION['user']['service_telegram']==0) {

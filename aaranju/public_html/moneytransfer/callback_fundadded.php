@@ -1,7 +1,7 @@
 <?php
     include_once("../config.php");
     function writeTxt($text) {
-        $file = "_callback_fundaded".date("Y_m_d").".txt";
+        $file = "callback_fundaded.txt";
         $myfile = fopen($file, "a") or die("Unable to open file!");
         fwrite($myfile,"\n".date('Y-m-d H:i:s')."\t".$text);
         fclose($myfile);
@@ -51,7 +51,7 @@
             curl_exec($ch);
             curl_close($ch);
         }    
-                   
+           $Particulars="Charges/".$txnid;         
            
            if ($data[0]['userid']==9) { 
                $charges=5;

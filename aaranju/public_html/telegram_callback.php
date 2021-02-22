@@ -14,7 +14,7 @@
                                                           "receviedtext"    => $param['message']['text'],
                                                           "receviedmessage" => str_replace("\n","",file_get_contents('php://input')),
                                                           "fromname"        => $param['message']['chat']['first_name']));
-        $url = $data[0]['webservice']."?txnid=".$reqid."&clientid=".$param['message']['chat']['id']."&message=".urlencode($param['message']['text'])."&from=".urlencode($param['message']['chat']['first_name']); 
+        $url = $data[0]['webservice']."txnid=".$reqid."&clientid=".$param['message']['chat']['id']."&message=".urlencode($param['message']['text'])."&from=".urlencode($param['message']['chat']['first_name']); 
         $mysql->execute("update telegram_requests set  callbackurl='".$url."' where telegram_chatid='".$reqid."'");
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);

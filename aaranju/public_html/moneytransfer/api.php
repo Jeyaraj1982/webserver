@@ -2,7 +2,7 @@
 include_once("../config.php");
 
 function writeTxt($text) {
-    $file = "api_mtransfer_".date("Y_m_d").".txt";
+    $file = "api.txt";
     $myfile = fopen($file, "a") or die("Unable to open file!");
     fwrite($myfile,"\n".date('Y-m-d H:i:s')."\t".$text);
     fclose($myfile);
@@ -28,7 +28,7 @@ if (isset($_GET['AddIncommingBankAccount'])) {
         exit;
     }
     
-    $duplicate = $mysql->select("select * from _moneytransfer_incoming_bankaccount='".trim($_GET['accountnumber'])."'");
+    $duplicate = $mysql->select("select * from _moneytransfer_incoming_bankaccount where accountnumber='".trim($_GET['accountnumber'])."'");
     if (sizeof($duplicate)>0) {
         echo return_result(array("response"=>array("status"=>"FAILURE","error"=>"This account number already exists.")));    
         exit; 
@@ -38,14 +38,11 @@ if (isset($_GET['AddIncommingBankAccount'])) {
                                                                         "accountnumber" => trim($_GET['accountnumber']),
                                                                         "accountname"   => trim($_GET['accountname']),
                                                                         "ifscode"       => $_GET['ifscode'],
-                                                                        "addedon"       => date("Y-m-d H:i:s")));
+                                                                        "addedon"       => date("Y-m-d H:i:s")));      
     
     echo return_result(array("status"=>"SUCCESS","txnid"=>$txnid));                                                            
     exit;
 }
-
-
-
  
 if (!(isset($_GET['account_name']))) {
     echo return_result(array("response"=>array("status"=>"FAILURE","error"=>"param:account_name missing")));        
@@ -69,9 +66,15 @@ if (!(isset($_GET['uid']))) {
 if (!(isset($_GET['ifsc_code']))) {
     echo return_result(array("response"=>array("status"=>"FAILURE","error"=>"param:ifsc_code missing")));        
     exit;
-}                
+}   
+             
 if (!(isset($_GET['remarks']))) {
     echo return_result(array("response"=>array("status"=>"FAILURE","error"=>"param:remarks missing")));        
+    exit;
+}
+
+if (!(strlen(trim($_GET['account_name']))>5)) {
+    echo return_result(array("response"=>array("status"=>"FAILURE","error"=>"param:account_name must have length greater than 5")));        
     exit;
 }
 
@@ -92,15 +95,13 @@ if (!($user[0]['moneytransfer']==1)) {
     exit;
 }
 
-$qdata = $mysql->select("select * from _moneytransfer_incoming_bankaccount where accountnumber='".$_GET['number']."'");
-if (sizeof($qdata)>0) {
-     echo return_result(array("response"=>array("status"=>"FAILURE","error"=>"Not allow to transfer. This account number has set to auto wallet update")));    
-    exit; 
+if (!($_GET['amount']>=1)) {
+    //echo return_result(array("response"=>array("status"=>"FAILURE","error"=>"Minimum Amount Rs.1")));      
 }
-   
- 
- 
- 
+
+if (!($_GET['amount']<=$user[0]['maintain_balance'])) {
+    echo return_result(array("response"=>array("status"=>"FAILURE","error"=>"Allow to Transfer in your account Maxiumum Rs.".$user[0]['maintain_balance'])));      
+}
 
 $param['amount']   = $_GET['amount'] ;
 $param['userid']   = $user[0]['userid'];
@@ -129,12 +130,8 @@ if (!($_GET['amount']>=10 && $_GET['amount']<=10000)) {
         echo return_result(array("response"=>array("status"=>"FAILURE","error"=>"Amount must have 10 To 10000","txnid"=>$txnid)));        
         exit;
 }
-if ($user[0]['userid']==9) {
-    $xbalance =  MoneyTransfer::get_balance($user[0]['userid'])-10000;    
-} else {
-    $xbalance =  MoneyTransfer::get_balance($user[0]['userid']);
-}
 
+$xbalance =  MoneyTransfer::get_balance($user[0]['userid'])-$user[0]['maintain_balance'];
 
 if ($xbalance<$_GET['amount']) { 
     $txnid = $mysql->insert("_transactions",array("userid"          => $param['userid'],
@@ -165,8 +162,8 @@ if ($xbalance<$_GET['amount']) {
    $param['Amount']=  $_GET['amount'] ;
    $param['Remarks']=  $_GET['remarks'] ;
    $param['txn_from']= "API";                   
-                        
-                      $param['uid'] =$_GET['uid'] ;
-$response = MoneyTransfer::doTransfer($param); 
-echo return_result($response);
+   $param['uid'] =$_GET['uid'] ;
+   $response = MoneyTransfer::doTransfer($param); 
+   
+   echo return_result($response);
 ?>
