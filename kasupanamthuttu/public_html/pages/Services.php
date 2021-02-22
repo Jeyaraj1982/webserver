@@ -4,7 +4,7 @@
                
                <div class="col-sm-8">
                  <h3 style="text-align: left;font-family: arial;border:none">Services</h3> 
-                <table style="width:250px">
+                <table style="width:250px;display:none">
     <tbody><tr>
         <td style="width:50px;padding-right:0px"><img src="assets/whatsapp_icon.png" style="height:32px;width:32px;"></td>
         <td style="width: 200px;">+91 979 133 0770</td>
@@ -42,6 +42,7 @@ Www.nammamarriage.com
                </div>                                        
                
                <div class="col-sm-4">
+               <!--
                <h3 style="text-align: left;font-family: arial;border:none">nammamarriage.com</h3> <br>
                No 1 matrimonial service 
                <a href="https://www.nammamarriage.com"><img src="https://www.kasupanamthuttu.com/assets/nammamarriage.png" style="width:100%;border:1px solid #999;padding:5px;"> </a>
@@ -54,7 +55,7 @@ Www.nammamarriage.com
                 <h3 style="text-align: left;font-family: arial;border:none">cinemanewfaces.com</h3> 
                 cinemanewfaces website
                 <a href="https://www.cinemanewfaces.com"><img src="https://www.kasupanamthuttu.com/assets/cinema.png" style="width:100%;border:1px solid #999;padding:5px;"> </a>
-               
+                -->
                </div>
                    
                    

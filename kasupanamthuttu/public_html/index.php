@@ -395,8 +395,9 @@
                      <!--<li><a href="PlayAndWin">Play and Win</a></li>-->
                      <li><a href="PartTimeJob">Part Time Job</a></li>
                      <li><a href="shippingjobs">Shipping Job</a></li>
-                     <li><a href="Services">Extra Benefits</a></li>
-                     <li><a href="Buy">Bright Future</a></li>
+                     <li><a href="Services">Business Ads</a></li>
+                     <!--<li><a href="Buy">Bright Future</a></li>-->
+                     <li><a href="Buy">download and Earn</a></li>
                      <li><a href="CollegeAdmission">College Admission</a></li>
                      
                      <?php if ($dashboard!="login") {?>

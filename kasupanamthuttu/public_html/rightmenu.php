@@ -107,16 +107,16 @@
                                                              <tr>
                                                                 <td style="background:#fff">&nbsp;</td>
                                                             </tr>
-                                                            <tr style="background:none;background:#6ddbdb;"><td style="padding:5px;padding-left:20px;font-weight:bold"><a href="Service_Add" class="lmenu">Service</a></td></tr> 
-                                                            <tr style="background:none;background:#e0ffff;"><td style="padding:5px;padding-left:20px"><a href="Service_Add" class="lmenu">Add Service</a></td></tr> 
-                                                            <tr style="background:none;background:#e0ffff;"><td style="padding:5px;padding-left:20px"><a href="Service_List" class="lmenu">Service List</a></td></tr> 
+                                                            <tr style="background:none;background:#6ddbdb;"><td style="padding:5px;padding-left:20px;font-weight:bold"><a href="Service_Add" class="lmenu">Business Ads</a></td></tr> 
+                                                            <tr style="background:none;background:#e0ffff;"><td style="padding:5px;padding-left:20px"><a href="Service_Add" class="lmenu">Add Ads</a></td></tr> 
+                                                            <tr style="background:none;background:#e0ffff;"><td style="padding:5px;padding-left:20px"><a href="Service_List" class="lmenu">List All</a></td></tr> 
                                                             
                                                              <tr>
                                                                 <td style="background:#fff">&nbsp;</td>
                                                             </tr>
-                                                            <tr style="background:none;background:#f2c993;"><td style="padding:5px;padding-left:20px;font-weight:bold">Offer</td></tr> 
-                                                            <tr style="background:none;background:#fcedd9;"><td style="padding:5px;padding-left:20px"><a href="Offer_Add" class="lmenu">Add Offer</a></td></tr> 
-                                                            <tr style="background:none;background:#fcedd9;"><td style="padding:5px;padding-left:20px"><a href="Offer_List" class="lmenu">Offer's List</a></td></tr> 
+                                                            <tr style="background:none;background:#f2c993;"><td style="padding:5px;padding-left:20px;font-weight:bold">Take Free</td></tr> 
+                                                            <tr style="background:none;background:#fcedd9;"><td style="padding:5px;padding-left:20px"><a href="Offer_Add" class="lmenu">Add Take Free</a></td></tr> 
+                                                            <tr style="background:none;background:#fcedd9;"><td style="padding:5px;padding-left:20px"><a href="Offer_List" class="lmenu">List All</a></td></tr> 
                                                             
                                                             
                                                               <tr>

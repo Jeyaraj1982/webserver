@@ -34,7 +34,7 @@
 <p>Please kindly confirm the number of candidates at the earliest, so that we can plan accordingly.</p>
 <p>For confirmation of seat booking, please pay the course fee at the earliest.</p>
 <p>For more details please call us </p>
-<table style="width:250px">
+<table style="width:250px;display:none">
     <tr>
         <td style="width:50px;padding-right:0px"><img src='assets/whatsapp_icon.png' style="height:32px;width:32px;"></td>
         <td style="width: 200px;">+91 890 383 3896</td>
