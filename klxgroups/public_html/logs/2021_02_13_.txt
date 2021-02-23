@@ -1,6 +1,0 @@
-[2021-02-13 21:31:31]	select * from _tbl_taxi where IsActive='1' order by taxi_order
-[2021-02-13 21:40:49]	select * from _tbl_hotel_citynames where isactive='1' order by CityName
-[2021-02-13 21:40:49]	select * from _tbl_hotels where IsActive='1' and HotelCityNameID='3'
-[2021-02-13 21:40:49]	select * from _tbl_hotels where IsActive='1' and HotelCityNameID='1'
-[2021-02-13 21:40:49]	select * from _tbl_hotels where IsActive='1' and HotelCityNameID='2'
-[2021-02-13 21:40:56]	select * from _tbl_hotels where IsActive='1' and HotelCityNameID='2'
