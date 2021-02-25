@@ -1,0 +1,75 @@
+[2020-11-30 06:15:49]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-11-30 06:15:49]	select * from _tbl_sub_category where IsActive='1' and CategoryID='1' order by SubCategoryName
+[2020-11-30 06:15:49]	select * from _tbl_sliders order by SliderOrder asc
+[2020-11-30 06:15:49]	select * from _tbl_products where CategoryID='1' and IsActive='1'
+[2020-11-30 06:15:49]	select * from _tbl_products where IsActive='1'
+[2020-11-30 07:34:12]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-11-30 07:34:12]	select * from _tbl_sub_category where IsActive='1' and CategoryID='1' order by SubCategoryName
+[2020-11-30 07:34:12]	select * from _tbl_sliders order by SliderOrder asc
+[2020-11-30 07:34:12]	select * from _tbl_products where CategoryID='1' and IsActive='1'
+[2020-11-30 07:34:12]	select * from _tbl_products where IsActive='1'
+[2020-11-30 07:34:22]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-11-30 07:34:22]	select * from _tbl_sub_category where IsActive='1' and CategoryID='1' order by SubCategoryName
+[2020-11-30 07:34:22]	select * from _tbl_sliders order by SliderOrder asc
+[2020-11-30 07:34:22]	select * from _tbl_products where CategoryID='1' and IsActive='1'
+[2020-11-30 07:34:22]	select * from _tbl_products where IsActive='1'
+[2020-11-30 07:34:26]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-11-30 07:34:26]	select * from _tbl_sub_category where IsActive='1' and CategoryID='1' order by SubCategoryName
+[2020-11-30 07:34:26]	select * from _tbl_sliders order by SliderOrder asc
+[2020-11-30 07:34:26]	select * from _tbl_products where CategoryID='1' and IsActive='1'
+[2020-11-30 07:34:26]	select * from _tbl_products where IsActive='1'
+[2020-11-30 08:07:24]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-11-30 08:07:24]	select * from _tbl_sub_category where IsActive='1' and CategoryID='1' order by SubCategoryName
+[2020-11-30 08:07:24]	select * from _tbl_sliders order by SliderOrder asc
+[2020-11-30 08:07:24]	select * from _tbl_products where CategoryID='1' and IsActive='1'
+[2020-11-30 08:07:24]	select * from _tbl_products where IsActive='1'
+[2020-11-30 08:07:32]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-11-30 08:07:32]	select * from _tbl_sub_category where IsActive='1' and CategoryID='1' order by SubCategoryName
+[2020-11-30 08:07:32]	select * from _tbl_sliders order by SliderOrder asc
+[2020-11-30 08:07:32]	select * from _tbl_products where CategoryID='1' and IsActive='1'
+[2020-11-30 08:07:32]	select * from _tbl_products where IsActive='1'
+[2020-11-30 08:07:32]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-11-30 08:07:32]	select * from _tbl_sub_category where IsActive='1' and CategoryID='1' order by SubCategoryName
+[2020-11-30 08:07:32]	select * from _tbl_sliders order by SliderOrder asc
+[2020-11-30 08:07:32]	select * from _tbl_products where CategoryID='1' and IsActive='1'
+[2020-11-30 08:07:32]	select * from _tbl_products where IsActive='1'
+[2020-11-30 09:03:06]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-11-30 09:03:06]	select * from _tbl_sub_category where IsActive='1' and CategoryID='1' order by SubCategoryName
+[2020-11-30 09:03:06]	select * from _tbl_sliders order by SliderOrder asc
+[2020-11-30 09:03:06]	select * from _tbl_products where CategoryID='1' and IsActive='1'
+[2020-11-30 09:03:06]	select * from _tbl_products where IsActive='1'
+[2020-11-30 09:03:07]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-11-30 09:03:07]	select * from _tbl_sub_category where IsActive='1' and CategoryID='1' order by SubCategoryName
+[2020-11-30 09:03:07]	select * from _tbl_sliders order by SliderOrder asc
+[2020-11-30 09:03:07]	select * from _tbl_products where CategoryID='1' and IsActive='1'
+[2020-11-30 09:03:07]	select * from _tbl_products where IsActive='1'
+[2020-11-30 09:51:53]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-11-30 09:51:53]	select * from _tbl_sub_category where IsActive='1' and CategoryID='1' order by SubCategoryName
+[2020-11-30 09:51:53]	select * from _tbl_sliders order by SliderOrder asc
+[2020-11-30 09:51:53]	select * from _tbl_products where CategoryID='1' and IsActive='1'
+[2020-11-30 09:51:53]	select * from _tbl_products where IsActive='1'
+[2020-11-30 09:52:37]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-11-30 09:52:37]	select * from _tbl_sub_category where IsActive='1' and CategoryID='1' order by SubCategoryName
+[2020-11-30 09:52:37]	select * from _tbl_products where CategoryID='1' and SubCategoryID='2' and IsActive='1'
+[2020-11-30 09:52:37]	select * from _tbl_category where CategoryID=''
+[2020-11-30 09:52:37]	select * from _tbl_sub_category where SubCategoryID=''
+[2020-11-30 09:52:40]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-11-30 09:52:40]	select * from _tbl_sub_category where IsActive='1' and CategoryID='1' order by SubCategoryName
+[2020-11-30 09:52:40]	select * from _tbl_sliders order by SliderOrder asc
+[2020-11-30 09:52:40]	select * from _tbl_products where CategoryID='1' and IsActive='1'
+[2020-11-30 09:52:40]	select * from _tbl_products where IsActive='1'
+[2020-11-30 16:20:52]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-11-30 16:20:52]	select * from _tbl_sub_category where IsActive='1' and CategoryID='1' order by SubCategoryName
+[2020-11-30 16:20:52]	select * from _tbl_sliders order by SliderOrder asc
+[2020-11-30 16:20:52]	select * from _tbl_products where CategoryID='1' and IsActive='1'
+[2020-11-30 16:20:52]	select * from _tbl_products where IsActive='1'
+[2020-11-30 21:42:28]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-11-30 21:42:28]	select * from _tbl_sub_category where IsActive='1' and CategoryID='1' order by SubCategoryName
+[2020-11-30 21:42:28]	select * from _tbl_sliders order by SliderOrder asc
+[2020-11-30 21:42:28]	select * from _tbl_products where CategoryID='1' and IsActive='1'
+[2020-11-30 21:42:28]	select * from _tbl_products where IsActive='1'
+[2020-11-30 22:33:26]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-11-30 22:33:26]	select * from _tbl_sub_category where IsActive='1' and CategoryID='1' order by SubCategoryName
+[2020-11-30 22:33:26]	select * from _tbl_sliders order by SliderOrder asc
+[2020-11-30 22:33:26]	select * from _tbl_products where CategoryID='1' and IsActive='1'
+[2020-11-30 22:33:26]	select * from _tbl_products where IsActive='1'

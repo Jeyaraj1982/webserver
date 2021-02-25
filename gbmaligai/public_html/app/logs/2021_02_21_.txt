@@ -1,0 +1,757 @@
+[2021-02-21 02:07:33]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 02:07:33]	select * from _tbl_sliders order by SliderOrder asc
+[2021-02-21 02:07:33]	select * from _tbl_right_sliders order by SliderOrder asc
+[2021-02-21 02:07:33]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 02:07:33]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID 
+[2021-02-21 02:07:33]	select * from _tbl_products where CategoryID='14' and IsActive='1' order by ProductID 
+[2021-02-21 02:07:33]	select * from _tbl_products where CategoryID='19' and IsActive='1' order by ProductID 
+[2021-02-21 02:07:33]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID 
+[2021-02-21 02:07:33]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID 
+[2021-02-21 02:07:33]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID 
+[2021-02-21 02:07:33]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID 
+[2021-02-21 02:07:33]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID 
+[2021-02-21 02:07:33]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID 
+[2021-02-21 02:07:33]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID 
+[2021-02-21 02:07:33]	select * from _tbl_products where CategoryID='15' and IsActive='1' order by ProductID 
+[2021-02-21 02:07:33]	select * from _tbl_products where CategoryID='16' and IsActive='1' order by ProductID 
+[2021-02-21 02:07:33]	select * from _tbl_products where CategoryID='17' and IsActive='1' order by ProductID 
+[2021-02-21 02:07:33]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID 
+[2021-02-21 02:07:33]	select * from _tbl_products where CategoryID='18' and IsActive='1' order by ProductID 
+[2021-02-21 02:07:33]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 02:07:33]	select * from _tbl_sliders order by SliderOrder asc
+[2021-02-21 02:07:33]	select * from _tbl_right_sliders order by SliderOrder asc
+[2021-02-21 02:07:33]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 02:07:33]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID 
+[2021-02-21 02:07:33]	select * from _tbl_products where CategoryID='14' and IsActive='1' order by ProductID 
+[2021-02-21 02:07:33]	select * from _tbl_products where CategoryID='19' and IsActive='1' order by ProductID 
+[2021-02-21 02:07:33]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID 
+[2021-02-21 02:07:33]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID 
+[2021-02-21 02:07:33]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID 
+[2021-02-21 02:07:33]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID 
+[2021-02-21 02:07:33]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID 
+[2021-02-21 02:07:33]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID 
+[2021-02-21 02:07:33]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID 
+[2021-02-21 02:07:33]	select * from _tbl_products where CategoryID='15' and IsActive='1' order by ProductID 
+[2021-02-21 02:07:33]	select * from _tbl_products where CategoryID='16' and IsActive='1' order by ProductID 
+[2021-02-21 02:07:34]	select * from _tbl_products where CategoryID='17' and IsActive='1' order by ProductID 
+[2021-02-21 02:07:34]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID 
+[2021-02-21 02:07:34]	select * from _tbl_products where CategoryID='18' and IsActive='1' order by ProductID 
+[2021-02-21 02:07:34]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 02:07:34]	select * from _tbl_sliders order by SliderOrder asc
+[2021-02-21 02:07:34]	select * from _tbl_right_sliders order by SliderOrder asc
+[2021-02-21 02:07:34]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 02:07:34]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID 
+[2021-02-21 02:07:34]	select * from _tbl_products where CategoryID='14' and IsActive='1' order by ProductID 
+[2021-02-21 02:07:34]	select * from _tbl_products where CategoryID='19' and IsActive='1' order by ProductID 
+[2021-02-21 02:07:34]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID 
+[2021-02-21 02:07:34]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID 
+[2021-02-21 02:07:34]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID 
+[2021-02-21 02:07:34]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID 
+[2021-02-21 02:07:34]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID 
+[2021-02-21 02:07:34]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID 
+[2021-02-21 02:07:34]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID 
+[2021-02-21 02:07:34]	select * from _tbl_products where CategoryID='15' and IsActive='1' order by ProductID 
+[2021-02-21 02:07:34]	select * from _tbl_products where CategoryID='16' and IsActive='1' order by ProductID 
+[2021-02-21 02:07:34]	select * from _tbl_products where CategoryID='17' and IsActive='1' order by ProductID 
+[2021-02-21 02:07:34]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID 
+[2021-02-21 02:07:34]	select * from _tbl_products where CategoryID='18' and IsActive='1' order by ProductID 
+[2021-02-21 03:15:18]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 03:15:18]	select * from _tbl_sliders order by SliderOrder asc
+[2021-02-21 03:15:18]	select * from _tbl_right_sliders order by SliderOrder asc
+[2021-02-21 03:15:18]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 03:15:18]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID 
+[2021-02-21 03:15:18]	select * from _tbl_products where CategoryID='14' and IsActive='1' order by ProductID 
+[2021-02-21 03:15:18]	select * from _tbl_products where CategoryID='19' and IsActive='1' order by ProductID 
+[2021-02-21 03:15:18]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID 
+[2021-02-21 03:15:18]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID 
+[2021-02-21 03:15:18]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID 
+[2021-02-21 03:15:18]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID 
+[2021-02-21 03:15:18]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID 
+[2021-02-21 03:15:18]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID 
+[2021-02-21 03:15:18]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID 
+[2021-02-21 03:15:18]	select * from _tbl_products where CategoryID='15' and IsActive='1' order by ProductID 
+[2021-02-21 03:15:18]	select * from _tbl_products where CategoryID='16' and IsActive='1' order by ProductID 
+[2021-02-21 03:15:18]	select * from _tbl_products where CategoryID='17' and IsActive='1' order by ProductID 
+[2021-02-21 03:15:18]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID 
+[2021-02-21 03:15:18]	select * from _tbl_products where CategoryID='18' and IsActive='1' order by ProductID 
+[2021-02-21 03:15:20]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 03:15:20]	select * from _tbl_sliders order by SliderOrder asc
+[2021-02-21 03:15:20]	select * from _tbl_right_sliders order by SliderOrder asc
+[2021-02-21 03:15:20]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 03:15:20]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID 
+[2021-02-21 03:15:20]	select * from _tbl_products where CategoryID='14' and IsActive='1' order by ProductID 
+[2021-02-21 03:15:20]	select * from _tbl_products where CategoryID='19' and IsActive='1' order by ProductID 
+[2021-02-21 03:15:20]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID 
+[2021-02-21 03:15:20]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID 
+[2021-02-21 03:15:20]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID 
+[2021-02-21 03:15:20]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID 
+[2021-02-21 03:15:20]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID 
+[2021-02-21 03:15:20]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID 
+[2021-02-21 03:15:20]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID 
+[2021-02-21 03:15:20]	select * from _tbl_products where CategoryID='15' and IsActive='1' order by ProductID 
+[2021-02-21 03:15:20]	select * from _tbl_products where CategoryID='16' and IsActive='1' order by ProductID 
+[2021-02-21 03:15:20]	select * from _tbl_products where CategoryID='17' and IsActive='1' order by ProductID 
+[2021-02-21 03:15:20]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID 
+[2021-02-21 03:15:20]	select * from _tbl_products where CategoryID='18' and IsActive='1' order by ProductID 
+[2021-02-21 03:15:21]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 03:15:21]	select * from _tbl_sliders order by SliderOrder asc
+[2021-02-21 03:15:21]	select * from _tbl_right_sliders order by SliderOrder asc
+[2021-02-21 03:15:21]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 03:15:21]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID 
+[2021-02-21 03:15:21]	select * from _tbl_products where CategoryID='14' and IsActive='1' order by ProductID 
+[2021-02-21 03:15:21]	select * from _tbl_products where CategoryID='19' and IsActive='1' order by ProductID 
+[2021-02-21 03:15:21]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID 
+[2021-02-21 03:15:21]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID 
+[2021-02-21 03:15:21]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID 
+[2021-02-21 03:15:21]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID 
+[2021-02-21 03:15:21]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID 
+[2021-02-21 03:15:21]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID 
+[2021-02-21 03:15:21]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID 
+[2021-02-21 03:15:21]	select * from _tbl_products where CategoryID='15' and IsActive='1' order by ProductID 
+[2021-02-21 03:15:21]	select * from _tbl_products where CategoryID='16' and IsActive='1' order by ProductID 
+[2021-02-21 03:15:21]	select * from _tbl_products where CategoryID='17' and IsActive='1' order by ProductID 
+[2021-02-21 03:15:21]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID 
+[2021-02-21 03:15:21]	select * from _tbl_products where CategoryID='18' and IsActive='1' order by ProductID 
+[2021-02-21 05:01:40]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 05:01:40]	select * from _tbl_sliders order by SliderOrder asc
+[2021-02-21 05:01:40]	select * from _tbl_right_sliders order by SliderOrder asc
+[2021-02-21 05:01:40]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 05:01:40]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID 
+[2021-02-21 05:01:40]	select * from _tbl_products where CategoryID='14' and IsActive='1' order by ProductID 
+[2021-02-21 05:01:40]	select * from _tbl_products where CategoryID='19' and IsActive='1' order by ProductID 
+[2021-02-21 05:01:40]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID 
+[2021-02-21 05:01:40]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID 
+[2021-02-21 05:01:40]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID 
+[2021-02-21 05:01:40]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID 
+[2021-02-21 05:01:40]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID 
+[2021-02-21 05:01:40]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID 
+[2021-02-21 05:01:40]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID 
+[2021-02-21 05:01:40]	select * from _tbl_products where CategoryID='15' and IsActive='1' order by ProductID 
+[2021-02-21 05:01:40]	select * from _tbl_products where CategoryID='16' and IsActive='1' order by ProductID 
+[2021-02-21 05:01:40]	select * from _tbl_products where CategoryID='17' and IsActive='1' order by ProductID 
+[2021-02-21 05:01:40]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID 
+[2021-02-21 05:01:40]	select * from _tbl_products where CategoryID='18' and IsActive='1' order by ProductID 
+[2021-02-21 07:59:44]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 07:59:44]	select * from _tbl_sliders order by SliderOrder asc
+[2021-02-21 07:59:44]	select * from _tbl_right_sliders order by SliderOrder asc
+[2021-02-21 07:59:44]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 07:59:44]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID 
+[2021-02-21 07:59:44]	select * from _tbl_products where CategoryID='14' and IsActive='1' order by ProductID 
+[2021-02-21 07:59:44]	select * from _tbl_products where CategoryID='19' and IsActive='1' order by ProductID 
+[2021-02-21 07:59:44]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID 
+[2021-02-21 07:59:44]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID 
+[2021-02-21 07:59:44]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID 
+[2021-02-21 07:59:44]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID 
+[2021-02-21 07:59:44]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID 
+[2021-02-21 07:59:44]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID 
+[2021-02-21 07:59:44]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID 
+[2021-02-21 07:59:44]	select * from _tbl_products where CategoryID='15' and IsActive='1' order by ProductID 
+[2021-02-21 07:59:44]	select * from _tbl_products where CategoryID='16' and IsActive='1' order by ProductID 
+[2021-02-21 07:59:44]	select * from _tbl_products where CategoryID='17' and IsActive='1' order by ProductID 
+[2021-02-21 07:59:44]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID 
+[2021-02-21 07:59:44]	select * from _tbl_products where CategoryID='18' and IsActive='1' order by ProductID 
+[2021-02-21 07:59:46]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 07:59:46]	select * from _tbl_sliders order by SliderOrder asc
+[2021-02-21 07:59:46]	select * from _tbl_right_sliders order by SliderOrder asc
+[2021-02-21 07:59:46]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 07:59:46]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID 
+[2021-02-21 07:59:46]	select * from _tbl_products where CategoryID='14' and IsActive='1' order by ProductID 
+[2021-02-21 07:59:46]	select * from _tbl_products where CategoryID='19' and IsActive='1' order by ProductID 
+[2021-02-21 07:59:46]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID 
+[2021-02-21 07:59:46]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID 
+[2021-02-21 07:59:46]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID 
+[2021-02-21 07:59:46]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID 
+[2021-02-21 07:59:46]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID 
+[2021-02-21 07:59:46]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID 
+[2021-02-21 07:59:46]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID 
+[2021-02-21 07:59:46]	select * from _tbl_products where CategoryID='15' and IsActive='1' order by ProductID 
+[2021-02-21 07:59:46]	select * from _tbl_products where CategoryID='16' and IsActive='1' order by ProductID 
+[2021-02-21 07:59:46]	select * from _tbl_products where CategoryID='17' and IsActive='1' order by ProductID 
+[2021-02-21 07:59:46]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID 
+[2021-02-21 07:59:46]	select * from _tbl_products where CategoryID='18' and IsActive='1' order by ProductID 
+[2021-02-21 10:26:16]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 10:26:16]	select * from _tbl_sliders order by SliderOrder asc
+[2021-02-21 10:26:16]	select * from _tbl_right_sliders order by SliderOrder asc
+[2021-02-21 10:26:16]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 10:26:16]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID 
+[2021-02-21 10:26:16]	select * from _tbl_products where CategoryID='14' and IsActive='1' order by ProductID 
+[2021-02-21 10:26:16]	select * from _tbl_products where CategoryID='19' and IsActive='1' order by ProductID 
+[2021-02-21 10:26:16]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID 
+[2021-02-21 10:26:16]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID 
+[2021-02-21 10:26:16]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID 
+[2021-02-21 10:26:16]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID 
+[2021-02-21 10:26:16]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID 
+[2021-02-21 10:26:16]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID 
+[2021-02-21 10:26:16]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID 
+[2021-02-21 10:26:16]	select * from _tbl_products where CategoryID='15' and IsActive='1' order by ProductID 
+[2021-02-21 10:26:16]	select * from _tbl_products where CategoryID='16' and IsActive='1' order by ProductID 
+[2021-02-21 10:26:16]	select * from _tbl_products where CategoryID='17' and IsActive='1' order by ProductID 
+[2021-02-21 10:26:16]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID 
+[2021-02-21 10:26:16]	select * from _tbl_products where CategoryID='18' and IsActive='1' order by ProductID 
+[2021-02-21 10:27:55]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 10:27:55]	select * from _tbl_sliders order by SliderOrder asc
+[2021-02-21 10:27:55]	select * from _tbl_right_sliders order by SliderOrder asc
+[2021-02-21 10:27:55]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 10:27:55]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID 
+[2021-02-21 10:27:55]	select * from _tbl_products where CategoryID='14' and IsActive='1' order by ProductID 
+[2021-02-21 10:27:55]	select * from _tbl_products where CategoryID='19' and IsActive='1' order by ProductID 
+[2021-02-21 10:27:55]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID 
+[2021-02-21 10:27:55]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID 
+[2021-02-21 10:27:55]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID 
+[2021-02-21 10:27:55]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID 
+[2021-02-21 10:27:55]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID 
+[2021-02-21 10:27:55]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID 
+[2021-02-21 10:27:55]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID 
+[2021-02-21 10:27:55]	select * from _tbl_products where CategoryID='15' and IsActive='1' order by ProductID 
+[2021-02-21 10:27:55]	select * from _tbl_products where CategoryID='16' and IsActive='1' order by ProductID 
+[2021-02-21 10:27:55]	select * from _tbl_products where CategoryID='17' and IsActive='1' order by ProductID 
+[2021-02-21 10:27:55]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID 
+[2021-02-21 10:27:55]	select * from _tbl_products where CategoryID='18' and IsActive='1' order by ProductID 
+[2021-02-21 10:41:23]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 10:41:23]	select * from _tbl_sliders order by SliderOrder asc
+[2021-02-21 10:41:23]	select * from _tbl_right_sliders order by SliderOrder asc
+[2021-02-21 10:41:23]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 10:41:23]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID 
+[2021-02-21 10:41:23]	select * from _tbl_products where CategoryID='14' and IsActive='1' order by ProductID 
+[2021-02-21 10:41:23]	select * from _tbl_products where CategoryID='19' and IsActive='1' order by ProductID 
+[2021-02-21 10:41:23]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID 
+[2021-02-21 10:41:23]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID 
+[2021-02-21 10:41:23]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID 
+[2021-02-21 10:41:23]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID 
+[2021-02-21 10:41:23]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID 
+[2021-02-21 10:41:23]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID 
+[2021-02-21 10:41:23]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID 
+[2021-02-21 10:41:23]	select * from _tbl_products where CategoryID='15' and IsActive='1' order by ProductID 
+[2021-02-21 10:41:23]	select * from _tbl_products where CategoryID='16' and IsActive='1' order by ProductID 
+[2021-02-21 10:41:23]	select * from _tbl_products where CategoryID='17' and IsActive='1' order by ProductID 
+[2021-02-21 10:41:23]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID 
+[2021-02-21 10:41:23]	select * from _tbl_products where CategoryID='18' and IsActive='1' order by ProductID 
+[2021-02-21 10:45:14]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 10:45:14]	select * from _tbl_sliders order by SliderOrder asc
+[2021-02-21 10:45:14]	select * from _tbl_right_sliders order by SliderOrder asc
+[2021-02-21 10:45:14]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 10:45:14]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID 
+[2021-02-21 10:45:14]	select * from _tbl_products where CategoryID='14' and IsActive='1' order by ProductID 
+[2021-02-21 10:45:14]	select * from _tbl_products where CategoryID='19' and IsActive='1' order by ProductID 
+[2021-02-21 10:45:14]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID 
+[2021-02-21 10:45:14]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID 
+[2021-02-21 10:45:14]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID 
+[2021-02-21 10:45:14]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID 
+[2021-02-21 10:45:14]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID 
+[2021-02-21 10:45:14]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID 
+[2021-02-21 10:45:14]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID 
+[2021-02-21 10:45:14]	select * from _tbl_products where CategoryID='15' and IsActive='1' order by ProductID 
+[2021-02-21 10:45:14]	select * from _tbl_products where CategoryID='16' and IsActive='1' order by ProductID 
+[2021-02-21 10:45:14]	select * from _tbl_products where CategoryID='17' and IsActive='1' order by ProductID 
+[2021-02-21 10:45:14]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID 
+[2021-02-21 10:45:14]	select * from _tbl_products where CategoryID='18' and IsActive='1' order by ProductID 
+[2021-02-21 10:45:26]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 10:45:26]	select * from _tbl_sliders order by SliderOrder asc
+[2021-02-21 10:45:26]	select * from _tbl_right_sliders order by SliderOrder asc
+[2021-02-21 10:45:26]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 10:45:26]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID 
+[2021-02-21 10:45:26]	select * from _tbl_products where CategoryID='14' and IsActive='1' order by ProductID 
+[2021-02-21 10:45:26]	select * from _tbl_products where CategoryID='19' and IsActive='1' order by ProductID 
+[2021-02-21 10:45:26]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID 
+[2021-02-21 10:45:26]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID 
+[2021-02-21 10:45:26]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID 
+[2021-02-21 10:45:26]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID 
+[2021-02-21 10:45:26]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID 
+[2021-02-21 10:45:26]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID 
+[2021-02-21 10:45:26]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID 
+[2021-02-21 10:45:26]	select * from _tbl_products where CategoryID='15' and IsActive='1' order by ProductID 
+[2021-02-21 10:45:26]	select * from _tbl_products where CategoryID='16' and IsActive='1' order by ProductID 
+[2021-02-21 10:45:26]	select * from _tbl_products where CategoryID='17' and IsActive='1' order by ProductID 
+[2021-02-21 10:45:26]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID 
+[2021-02-21 10:45:26]	select * from _tbl_products where CategoryID='18' and IsActive='1' order by ProductID 
+[2021-02-21 10:45:33]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 10:45:35]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 10:45:35]	select * from _tbl_products where md5(ProductID)='c45147dee729311ef5b5c3003946c48f'
+[2021-02-21 10:45:35]	select * from _tbl_product_additional_image where ProductID='116'
+[2021-02-21 10:45:38]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 10:45:38]	select * from _tbl_products where md5(ProductID)='6364d3f0f495b6ab9dcf8d3b5c6e0b01'
+[2021-02-21 10:45:38]	select * from _tbl_product_additional_image where ProductID='32'
+[2021-02-21 10:45:40]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 10:45:40]	select * from _tbl_products where md5(ProductID)='02e74f10e0327ad868d138f2b4fdd6f0'
+[2021-02-21 10:45:40]	select * from _tbl_product_additional_image where ProductID='27'
+[2021-02-21 10:45:42]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 10:45:42]	select * from _tbl_products where md5(ProductID)='1afa34a7f984eeabdbb0a7d494132ee5'
+[2021-02-21 10:45:42]	select * from _tbl_product_additional_image where ProductID='131'
+[2021-02-21 10:45:44]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 10:45:44]	select * from _tbl_products where CategoryID='5' and SubCategoryID='' and IsActive='1'
+[2021-02-21 10:45:44]	select * from _tbl_products where CategoryID='5'  and IsActive='1'
+[2021-02-21 10:45:44]	select * from _tbl_category where CategoryID=''
+[2021-02-21 10:45:44]	select * from _tbl_sub_category where SubCategoryID=''
+[2021-02-21 10:45:44]	select * from _tbl_sub_category where CategoryID='5' order by SubCategoryName
+[2021-02-21 10:45:44]	select CategoryID from _tbl_products where SubCategoryID='7'  and IsActive='1'
+[2021-02-21 10:45:44]	select CategoryID from _tbl_products where SubCategoryID='10'  and IsActive='1'
+[2021-02-21 10:45:44]	select CategoryID from _tbl_products where SubCategoryID='5'  and IsActive='1'
+[2021-02-21 10:45:44]	select CategoryID from _tbl_products where SubCategoryID='11'  and IsActive='1'
+[2021-02-21 10:45:46]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 10:45:46]	select * from _tbl_products where CategoryID='17' and SubCategoryID='' and IsActive='1'
+[2021-02-21 10:45:46]	select * from _tbl_products where CategoryID='17'  and IsActive='1'
+[2021-02-21 10:45:46]	select * from _tbl_category where CategoryID=''
+[2021-02-21 10:45:46]	select * from _tbl_sub_category where SubCategoryID=''
+[2021-02-21 10:45:46]	select * from _tbl_sub_category where CategoryID='17' order by SubCategoryName
+[2021-02-21 10:45:48]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 10:45:48]	select * from _tbl_products where md5(ProductID)='a0a080f42e6f13b3a2df133f073095dd'
+[2021-02-21 10:45:48]	select * from _tbl_product_additional_image where ProductID='122'
+[2021-02-21 10:45:51]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 10:45:51]	select * from _tbl_products where md5(ProductID)='54229abfcfa5649e7003b83dd4755294'
+[2021-02-21 10:45:51]	select * from _tbl_product_additional_image where ProductID='91'
+[2021-02-21 10:45:53]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 10:45:53]	select * from _tbl_sliders order by SliderOrder asc
+[2021-02-21 10:45:53]	select * from _tbl_right_sliders order by SliderOrder asc
+[2021-02-21 10:45:53]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 10:45:53]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID 
+[2021-02-21 10:45:53]	select * from _tbl_products where CategoryID='14' and IsActive='1' order by ProductID 
+[2021-02-21 10:45:53]	select * from _tbl_products where CategoryID='19' and IsActive='1' order by ProductID 
+[2021-02-21 10:45:53]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID 
+[2021-02-21 10:45:53]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID 
+[2021-02-21 10:45:53]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID 
+[2021-02-21 10:45:53]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID 
+[2021-02-21 10:45:53]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID 
+[2021-02-21 10:45:53]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID 
+[2021-02-21 10:45:53]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID 
+[2021-02-21 10:45:53]	select * from _tbl_products where CategoryID='15' and IsActive='1' order by ProductID 
+[2021-02-21 10:45:53]	select * from _tbl_products where CategoryID='16' and IsActive='1' order by ProductID 
+[2021-02-21 10:45:53]	select * from _tbl_products where CategoryID='17' and IsActive='1' order by ProductID 
+[2021-02-21 10:45:53]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID 
+[2021-02-21 10:45:53]	select * from _tbl_products where CategoryID='18' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:13]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 10:51:13]	select * from _tbl_sliders order by SliderOrder asc
+[2021-02-21 10:51:13]	select * from _tbl_right_sliders order by SliderOrder asc
+[2021-02-21 10:51:13]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 10:51:13]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:13]	select * from _tbl_products where CategoryID='14' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:13]	select * from _tbl_products where CategoryID='19' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:13]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:13]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:13]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:13]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:13]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:13]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:13]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:13]	select * from _tbl_products where CategoryID='15' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:13]	select * from _tbl_products where CategoryID='16' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:13]	select * from _tbl_products where CategoryID='17' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:13]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:13]	select * from _tbl_products where CategoryID='18' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:20]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 10:51:20]	select * from _tbl_sliders order by SliderOrder asc
+[2021-02-21 10:51:20]	select * from _tbl_right_sliders order by SliderOrder asc
+[2021-02-21 10:51:20]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 10:51:20]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:20]	select * from _tbl_products where CategoryID='14' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:20]	select * from _tbl_products where CategoryID='19' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:20]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:20]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:20]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:20]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:20]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:20]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:20]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:20]	select * from _tbl_products where CategoryID='15' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:20]	select * from _tbl_products where CategoryID='16' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:20]	select * from _tbl_products where CategoryID='17' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:20]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:20]	select * from _tbl_products where CategoryID='18' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:42]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 10:51:42]	select * from _tbl_sliders order by SliderOrder asc
+[2021-02-21 10:51:42]	select * from _tbl_right_sliders order by SliderOrder asc
+[2021-02-21 10:51:42]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 10:51:42]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:42]	select * from _tbl_products where CategoryID='14' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:42]	select * from _tbl_products where CategoryID='19' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:42]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:43]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:43]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:43]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:43]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:43]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:43]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:43]	select * from _tbl_products where CategoryID='15' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:43]	select * from _tbl_products where CategoryID='16' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:43]	select * from _tbl_products where CategoryID='17' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:43]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:43]	select * from _tbl_products where CategoryID='18' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:43]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 10:51:43]	select * from _tbl_sliders order by SliderOrder asc
+[2021-02-21 10:51:43]	select * from _tbl_right_sliders order by SliderOrder asc
+[2021-02-21 10:51:43]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 10:51:43]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:43]	select * from _tbl_products where CategoryID='14' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:43]	select * from _tbl_products where CategoryID='19' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:43]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:43]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:43]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:43]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:43]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:43]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:43]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:43]	select * from _tbl_products where CategoryID='15' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:43]	select * from _tbl_products where CategoryID='16' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:43]	select * from _tbl_products where CategoryID='17' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:43]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:43]	select * from _tbl_products where CategoryID='18' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:50]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 10:51:50]	select * from _tbl_sliders order by SliderOrder asc
+[2021-02-21 10:51:50]	select * from _tbl_right_sliders order by SliderOrder asc
+[2021-02-21 10:51:50]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 10:51:50]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:50]	select * from _tbl_products where CategoryID='14' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:50]	select * from _tbl_products where CategoryID='19' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:50]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:50]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:50]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:50]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:50]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:50]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:50]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:50]	select * from _tbl_products where CategoryID='15' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:50]	select * from _tbl_products where CategoryID='16' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:50]	select * from _tbl_products where CategoryID='17' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:50]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID 
+[2021-02-21 10:51:50]	select * from _tbl_products where CategoryID='18' and IsActive='1' order by ProductID 
+[2021-02-21 10:52:13]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 10:52:13]	select * from _tbl_sliders order by SliderOrder asc
+[2021-02-21 10:52:13]	select * from _tbl_right_sliders order by SliderOrder asc
+[2021-02-21 10:52:13]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 10:52:13]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID 
+[2021-02-21 10:52:13]	select * from _tbl_products where CategoryID='14' and IsActive='1' order by ProductID 
+[2021-02-21 10:52:13]	select * from _tbl_products where CategoryID='19' and IsActive='1' order by ProductID 
+[2021-02-21 10:52:13]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID 
+[2021-02-21 10:52:13]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID 
+[2021-02-21 10:52:13]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID 
+[2021-02-21 10:52:13]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID 
+[2021-02-21 10:52:13]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID 
+[2021-02-21 10:52:13]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID 
+[2021-02-21 10:52:13]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID 
+[2021-02-21 10:52:13]	select * from _tbl_products where CategoryID='15' and IsActive='1' order by ProductID 
+[2021-02-21 10:52:13]	select * from _tbl_products where CategoryID='16' and IsActive='1' order by ProductID 
+[2021-02-21 10:52:13]	select * from _tbl_products where CategoryID='17' and IsActive='1' order by ProductID 
+[2021-02-21 10:52:13]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID 
+[2021-02-21 10:52:13]	select * from _tbl_products where CategoryID='18' and IsActive='1' order by ProductID 
+[2021-02-21 11:06:44]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 11:06:44]	select * from _tbl_sliders order by SliderOrder asc
+[2021-02-21 11:06:44]	select * from _tbl_right_sliders order by SliderOrder asc
+[2021-02-21 11:06:44]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 11:06:44]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID 
+[2021-02-21 11:06:44]	select * from _tbl_products where CategoryID='14' and IsActive='1' order by ProductID 
+[2021-02-21 11:06:44]	select * from _tbl_products where CategoryID='19' and IsActive='1' order by ProductID 
+[2021-02-21 11:06:44]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID 
+[2021-02-21 11:06:44]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID 
+[2021-02-21 11:06:44]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID 
+[2021-02-21 11:06:44]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID 
+[2021-02-21 11:06:44]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID 
+[2021-02-21 11:06:44]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID 
+[2021-02-21 11:06:44]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID 
+[2021-02-21 11:06:44]	select * from _tbl_products where CategoryID='15' and IsActive='1' order by ProductID 
+[2021-02-21 11:06:44]	select * from _tbl_products where CategoryID='16' and IsActive='1' order by ProductID 
+[2021-02-21 11:06:44]	select * from _tbl_products where CategoryID='17' and IsActive='1' order by ProductID 
+[2021-02-21 11:06:44]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID 
+[2021-02-21 11:06:44]	select * from _tbl_products where CategoryID='18' and IsActive='1' order by ProductID 
+[2021-02-21 14:21:13]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 14:21:13]	select * from _tbl_sliders order by SliderOrder asc
+[2021-02-21 14:21:13]	select * from _tbl_right_sliders order by SliderOrder asc
+[2021-02-21 14:21:13]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 14:21:13]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID 
+[2021-02-21 14:21:13]	select * from _tbl_products where CategoryID='14' and IsActive='1' order by ProductID 
+[2021-02-21 14:21:13]	select * from _tbl_products where CategoryID='19' and IsActive='1' order by ProductID 
+[2021-02-21 14:21:13]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID 
+[2021-02-21 14:21:13]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID 
+[2021-02-21 14:21:13]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID 
+[2021-02-21 14:21:13]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID 
+[2021-02-21 14:21:13]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID 
+[2021-02-21 14:21:13]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID 
+[2021-02-21 14:21:13]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID 
+[2021-02-21 14:21:13]	select * from _tbl_products where CategoryID='15' and IsActive='1' order by ProductID 
+[2021-02-21 14:21:13]	select * from _tbl_products where CategoryID='16' and IsActive='1' order by ProductID 
+[2021-02-21 14:21:13]	select * from _tbl_products where CategoryID='17' and IsActive='1' order by ProductID 
+[2021-02-21 14:21:13]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID 
+[2021-02-21 14:21:13]	select * from _tbl_products where CategoryID='18' and IsActive='1' order by ProductID 
+[2021-02-21 17:14:35]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 17:14:35]	select * from _tbl_sliders order by SliderOrder asc
+[2021-02-21 17:14:35]	select * from _tbl_right_sliders order by SliderOrder asc
+[2021-02-21 17:14:35]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 17:14:35]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID 
+[2021-02-21 17:14:35]	select * from _tbl_products where CategoryID='14' and IsActive='1' order by ProductID 
+[2021-02-21 17:14:35]	select * from _tbl_products where CategoryID='19' and IsActive='1' order by ProductID 
+[2021-02-21 17:14:35]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID 
+[2021-02-21 17:14:35]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID 
+[2021-02-21 17:14:35]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID 
+[2021-02-21 17:14:35]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID 
+[2021-02-21 17:14:35]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID 
+[2021-02-21 17:14:35]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID 
+[2021-02-21 17:14:35]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID 
+[2021-02-21 17:14:35]	select * from _tbl_products where CategoryID='15' and IsActive='1' order by ProductID 
+[2021-02-21 17:14:35]	select * from _tbl_products where CategoryID='16' and IsActive='1' order by ProductID 
+[2021-02-21 17:14:35]	select * from _tbl_products where CategoryID='17' and IsActive='1' order by ProductID 
+[2021-02-21 17:14:35]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID 
+[2021-02-21 17:14:35]	select * from _tbl_products where CategoryID='18' and IsActive='1' order by ProductID 
+[2021-02-21 17:17:07]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 17:17:07]	select * from _tbl_sliders order by SliderOrder asc
+[2021-02-21 17:17:07]	select * from _tbl_right_sliders order by SliderOrder asc
+[2021-02-21 17:17:07]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 17:17:07]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID 
+[2021-02-21 17:17:07]	select * from _tbl_products where CategoryID='14' and IsActive='1' order by ProductID 
+[2021-02-21 17:17:07]	select * from _tbl_products where CategoryID='19' and IsActive='1' order by ProductID 
+[2021-02-21 17:17:07]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID 
+[2021-02-21 17:17:07]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID 
+[2021-02-21 17:17:07]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID 
+[2021-02-21 17:17:07]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID 
+[2021-02-21 17:17:07]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID 
+[2021-02-21 17:17:07]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID 
+[2021-02-21 17:17:07]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID 
+[2021-02-21 17:17:07]	select * from _tbl_products where CategoryID='15' and IsActive='1' order by ProductID 
+[2021-02-21 17:17:07]	select * from _tbl_products where CategoryID='16' and IsActive='1' order by ProductID 
+[2021-02-21 17:17:07]	select * from _tbl_products where CategoryID='17' and IsActive='1' order by ProductID 
+[2021-02-21 17:17:07]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID 
+[2021-02-21 17:17:07]	select * from _tbl_products where CategoryID='18' and IsActive='1' order by ProductID 
+[2021-02-21 18:22:41]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 18:22:41]	select * from _tbl_sliders order by SliderOrder asc
+[2021-02-21 18:22:41]	select * from _tbl_right_sliders order by SliderOrder asc
+[2021-02-21 18:22:41]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 18:22:41]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID 
+[2021-02-21 18:22:41]	select * from _tbl_products where CategoryID='14' and IsActive='1' order by ProductID 
+[2021-02-21 18:22:41]	select * from _tbl_products where CategoryID='19' and IsActive='1' order by ProductID 
+[2021-02-21 18:22:41]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID 
+[2021-02-21 18:22:41]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID 
+[2021-02-21 18:22:41]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID 
+[2021-02-21 18:22:41]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID 
+[2021-02-21 18:22:41]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID 
+[2021-02-21 18:22:41]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID 
+[2021-02-21 18:22:41]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID 
+[2021-02-21 18:22:41]	select * from _tbl_products where CategoryID='15' and IsActive='1' order by ProductID 
+[2021-02-21 18:22:41]	select * from _tbl_products where CategoryID='16' and IsActive='1' order by ProductID 
+[2021-02-21 18:22:41]	select * from _tbl_products where CategoryID='17' and IsActive='1' order by ProductID 
+[2021-02-21 18:22:41]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID 
+[2021-02-21 18:22:41]	select * from _tbl_products where CategoryID='18' and IsActive='1' order by ProductID 
+[2021-02-21 18:32:55]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 18:32:55]	select * from _tbl_products where CategoryID='5' and SubCategoryID='' and IsActive='1'
+[2021-02-21 18:32:55]	select * from _tbl_products where CategoryID='5'  and IsActive='1'
+[2021-02-21 18:32:55]	select * from _tbl_category where CategoryID=''
+[2021-02-21 18:32:55]	select * from _tbl_sub_category where SubCategoryID=''
+[2021-02-21 18:32:55]	select * from _tbl_sub_category where CategoryID='5' order by SubCategoryName
+[2021-02-21 18:32:55]	select CategoryID from _tbl_products where SubCategoryID='7'  and IsActive='1'
+[2021-02-21 18:32:55]	select CategoryID from _tbl_products where SubCategoryID='10'  and IsActive='1'
+[2021-02-21 18:32:55]	select CategoryID from _tbl_products where SubCategoryID='5'  and IsActive='1'
+[2021-02-21 18:32:55]	select CategoryID from _tbl_products where SubCategoryID='11'  and IsActive='1'
+[2021-02-21 18:33:21]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 18:33:21]	select * from _tbl_products where CategoryID='5'' and SubCategoryID='' and IsActive='1'
+[2021-02-21 18:33:21]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1'' at line 1
+[2021-02-21 18:33:21]	select * from _tbl_products where CategoryID='5''  and IsActive='1'
+[2021-02-21 18:33:21]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1'' at line 1
+[2021-02-21 18:33:21]	select * from _tbl_category where CategoryID=''
+[2021-02-21 18:33:21]	select * from _tbl_sub_category where SubCategoryID=''
+[2021-02-21 18:33:21]	select * from _tbl_sub_category where CategoryID='5'' order by SubCategoryName
+[2021-02-21 18:33:21]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''5'' order by SubCategoryName' at line 1
+[2021-02-21 18:33:25]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 18:33:25]	select * from _tbl_products where CategoryID='5' and SubCategoryID='' and IsActive='1'
+[2021-02-21 18:33:25]	select * from _tbl_products where CategoryID='5'  and IsActive='1'
+[2021-02-21 18:33:25]	select * from _tbl_category where CategoryID=''
+[2021-02-21 18:33:25]	select * from _tbl_sub_category where SubCategoryID=''
+[2021-02-21 18:33:25]	select * from _tbl_sub_category where CategoryID='5' order by SubCategoryName
+[2021-02-21 18:33:25]	select CategoryID from _tbl_products where SubCategoryID='7'  and IsActive='1'
+[2021-02-21 18:33:25]	select CategoryID from _tbl_products where SubCategoryID='10'  and IsActive='1'
+[2021-02-21 18:33:25]	select CategoryID from _tbl_products where SubCategoryID='5'  and IsActive='1'
+[2021-02-21 18:33:25]	select CategoryID from _tbl_products where SubCategoryID='11'  and IsActive='1'
+[2021-02-21 18:33:28]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 18:33:28]	select * from _tbl_products where CategoryID='5'' and SubCategoryID='' and IsActive='1'
+[2021-02-21 18:33:28]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1'' at line 1
+[2021-02-21 18:33:28]	select * from _tbl_products where CategoryID='5''  and IsActive='1'
+[2021-02-21 18:33:28]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1'' at line 1
+[2021-02-21 18:33:28]	select * from _tbl_category where CategoryID=''
+[2021-02-21 18:33:28]	select * from _tbl_sub_category where SubCategoryID=''
+[2021-02-21 18:33:28]	select * from _tbl_sub_category where CategoryID='5'' order by SubCategoryName
+[2021-02-21 18:33:28]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''5'' order by SubCategoryName' at line 1
+[2021-02-21 18:55:12]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 18:55:12]	select * from _tbl_sliders order by SliderOrder asc
+[2021-02-21 18:55:12]	select * from _tbl_right_sliders order by SliderOrder asc
+[2021-02-21 18:55:12]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 18:55:12]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:12]	select * from _tbl_products where CategoryID='14' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:12]	select * from _tbl_products where CategoryID='19' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:12]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:12]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:12]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:12]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:12]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:12]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:12]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:12]	select * from _tbl_products where CategoryID='15' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:12]	select * from _tbl_products where CategoryID='16' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:12]	select * from _tbl_products where CategoryID='17' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:12]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:12]	select * from _tbl_products where CategoryID='18' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:28]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 18:55:28]	select * from _tbl_sliders order by SliderOrder asc
+[2021-02-21 18:55:28]	select * from _tbl_right_sliders order by SliderOrder asc
+[2021-02-21 18:55:28]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 18:55:28]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:28]	select * from _tbl_products where CategoryID='14' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:28]	select * from _tbl_products where CategoryID='19' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:28]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:28]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:28]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:28]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:28]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:28]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:28]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:28]	select * from _tbl_products where CategoryID='15' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:28]	select * from _tbl_products where CategoryID='16' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:28]	select * from _tbl_products where CategoryID='17' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:28]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:28]	select * from _tbl_products where CategoryID='18' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:28]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 18:55:28]	select * from _tbl_sliders order by SliderOrder asc
+[2021-02-21 18:55:28]	select * from _tbl_right_sliders order by SliderOrder asc
+[2021-02-21 18:55:28]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 18:55:28]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:28]	select * from _tbl_products where CategoryID='14' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:28]	select * from _tbl_products where CategoryID='19' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:28]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:28]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:28]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:28]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:28]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:28]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:28]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:28]	select * from _tbl_products where CategoryID='15' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:28]	select * from _tbl_products where CategoryID='16' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:28]	select * from _tbl_products where CategoryID='17' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:28]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:28]	select * from _tbl_products where CategoryID='18' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:29]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 18:55:29]	select * from _tbl_sliders order by SliderOrder asc
+[2021-02-21 18:55:29]	select * from _tbl_right_sliders order by SliderOrder asc
+[2021-02-21 18:55:29]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 18:55:29]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:29]	select * from _tbl_products where CategoryID='14' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:29]	select * from _tbl_products where CategoryID='19' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:29]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:29]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:29]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:29]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:29]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:29]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:29]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:29]	select * from _tbl_products where CategoryID='15' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:29]	select * from _tbl_products where CategoryID='16' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:29]	select * from _tbl_products where CategoryID='17' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:29]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:29]	select * from _tbl_products where CategoryID='18' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:29]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 18:55:29]	select * from _tbl_sliders order by SliderOrder asc
+[2021-02-21 18:55:29]	select * from _tbl_right_sliders order by SliderOrder asc
+[2021-02-21 18:55:29]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 18:55:29]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:29]	select * from _tbl_products where CategoryID='14' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:29]	select * from _tbl_products where CategoryID='19' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:29]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:29]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:29]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:29]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:29]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:29]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:29]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:29]	select * from _tbl_products where CategoryID='15' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:29]	select * from _tbl_products where CategoryID='16' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:29]	select * from _tbl_products where CategoryID='17' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:29]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID 
+[2021-02-21 18:55:29]	select * from _tbl_products where CategoryID='18' and IsActive='1' order by ProductID 
+[2021-02-21 19:32:25]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 19:32:25]	select * from _tbl_sliders order by SliderOrder asc
+[2021-02-21 19:32:25]	select * from _tbl_right_sliders order by SliderOrder asc
+[2021-02-21 19:32:25]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 19:32:25]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID 
+[2021-02-21 19:32:25]	select * from _tbl_products where CategoryID='14' and IsActive='1' order by ProductID 
+[2021-02-21 19:32:25]	select * from _tbl_products where CategoryID='19' and IsActive='1' order by ProductID 
+[2021-02-21 19:32:25]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID 
+[2021-02-21 19:32:25]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID 
+[2021-02-21 19:32:25]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID 
+[2021-02-21 19:32:25]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID 
+[2021-02-21 19:32:25]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID 
+[2021-02-21 19:32:25]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID 
+[2021-02-21 19:32:25]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID 
+[2021-02-21 19:32:25]	select * from _tbl_products where CategoryID='15' and IsActive='1' order by ProductID 
+[2021-02-21 19:32:25]	select * from _tbl_products where CategoryID='16' and IsActive='1' order by ProductID 
+[2021-02-21 19:32:25]	select * from _tbl_products where CategoryID='17' and IsActive='1' order by ProductID 
+[2021-02-21 19:32:25]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID 
+[2021-02-21 19:32:25]	select * from _tbl_products where CategoryID='18' and IsActive='1' order by ProductID 
+[2021-02-21 20:23:51]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 20:24:11]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 20:24:19]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 20:27:23]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 20:27:42]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 20:28:18]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 20:28:48]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 20:28:48]	select * from _tbl_admin where AdminEmail='admin@klx.com' and Password='1234567'
+[2021-02-21 20:28:53]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 20:28:53]	select * from _tbl_admin where AdminEmail='admin@klx.com' and Password='123456'
+[2021-02-21 20:29:09]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 20:29:09]	select * from _tbl_admin where AdminEmail='admin@klxmart.com' and Password='123456'
+[2021-02-21 20:29:10]	select (sum(order_total_after_tax)) as bal from invoice_order where date(order_date)='2021-02-21'
+[2021-02-21 20:29:10]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxmart_ecommerce.invoice_order' doesn't exist
+[2021-02-21 20:29:10]	SELECT * FROM _tbl_products WHERE IsActive='1'  order by ProductID Desc
+[2021-02-21 20:29:35]	SELECT * FROM _tbl_orders where OrderStatus='1' order by OrderID desc
+[2021-02-21 20:29:41]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 20:29:56]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 20:30:11]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 20:30:11]	select * from _tbl_admin where AdminEmail='admin@klxmart.com' and Password='123456'
+[2021-02-21 20:30:11]	select (sum(order_total_after_tax)) as bal from invoice_order where date(order_date)='2021-02-21'
+[2021-02-21 20:30:11]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxmart_ecommerce.invoice_order' doesn't exist
+[2021-02-21 20:30:11]	SELECT * FROM _tbl_products WHERE IsActive='1'  order by ProductID Desc
+[2021-02-21 20:31:04]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 20:31:12]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 20:31:40]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 20:32:27]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 20:32:27]	select * from _tbl_admin where AdminEmail='admin@klxmart.com' and Password='123456'
+[2021-02-21 20:32:28]	select (sum(order_total_after_tax)) as bal from invoice_order where date(order_date)='2021-02-21'
+[2021-02-21 20:32:28]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxmart_ecommerce.invoice_order' doesn't exist
+[2021-02-21 20:32:28]	SELECT * FROM _tbl_products WHERE IsActive='1'  order by ProductID Desc
+[2021-02-21 20:34:34]	select (sum(order_total_after_tax)) as bal from invoice_order where date(order_date)='2021-02-21'
+[2021-02-21 20:34:34]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxmart_ecommerce.invoice_order' doesn't exist
+[2021-02-21 20:34:34]	SELECT * FROM _tbl_products WHERE IsActive='1'  order by ProductID Desc
+[2021-02-21 20:46:04]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 20:48:18]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 20:49:00]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 20:50:28]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 21:17:58]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 21:17:58]	select * from _tbl_sliders order by SliderOrder asc
+[2021-02-21 21:17:58]	select * from _tbl_right_sliders order by SliderOrder asc
+[2021-02-21 21:17:58]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 21:17:58]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID 
+[2021-02-21 21:17:58]	select * from _tbl_products where CategoryID='14' and IsActive='1' order by ProductID 
+[2021-02-21 21:17:58]	select * from _tbl_products where CategoryID='19' and IsActive='1' order by ProductID 
+[2021-02-21 21:17:59]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID 
+[2021-02-21 21:17:59]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID 
+[2021-02-21 21:17:59]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID 
+[2021-02-21 21:17:59]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID 
+[2021-02-21 21:17:59]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID 
+[2021-02-21 21:17:59]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID 
+[2021-02-21 21:17:59]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID 
+[2021-02-21 21:17:59]	select * from _tbl_products where CategoryID='15' and IsActive='1' order by ProductID 
+[2021-02-21 21:17:59]	select * from _tbl_products where CategoryID='16' and IsActive='1' order by ProductID 
+[2021-02-21 21:17:59]	select * from _tbl_products where CategoryID='17' and IsActive='1' order by ProductID 
+[2021-02-21 21:17:59]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID 
+[2021-02-21 21:17:59]	select * from _tbl_products where CategoryID='18' and IsActive='1' order by ProductID 
+[2021-02-21 22:44:57]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 22:44:57]	select * from _tbl_sliders order by SliderOrder asc
+[2021-02-21 22:44:57]	select * from _tbl_right_sliders order by SliderOrder asc
+[2021-02-21 22:44:57]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-21 22:44:57]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID 
+[2021-02-21 22:44:57]	select * from _tbl_products where CategoryID='14' and IsActive='1' order by ProductID 
+[2021-02-21 22:44:57]	select * from _tbl_products where CategoryID='19' and IsActive='1' order by ProductID 
+[2021-02-21 22:44:57]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID 
+[2021-02-21 22:44:57]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID 
+[2021-02-21 22:44:57]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID 
+[2021-02-21 22:44:57]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID 
+[2021-02-21 22:44:57]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID 
+[2021-02-21 22:44:57]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID 
+[2021-02-21 22:44:57]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID 
+[2021-02-21 22:44:57]	select * from _tbl_products where CategoryID='15' and IsActive='1' order by ProductID 
+[2021-02-21 22:44:57]	select * from _tbl_products where CategoryID='16' and IsActive='1' order by ProductID 
+[2021-02-21 22:44:57]	select * from _tbl_products where CategoryID='17' and IsActive='1' order by ProductID 
+[2021-02-21 22:44:57]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID 
+[2021-02-21 22:44:57]	select * from _tbl_products where CategoryID='18' and IsActive='1' order by ProductID 
