@@ -323,3 +323,15 @@ Stack trace:
 [24-Feb-2021 13:04:11 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/pedalscycle/public_html/config.php on line 2
 [24-Feb-2021 20:09:00 Asia/Calcutta] PHP Warning:  move_uploaded_file(../assets/events/1614177540_whatsapp image 2021-02-23 at 10.50.50 am.jpeg): failed to open stream: No such file or directory in /home/pedalscycle/public_html/admin/Events/view.php on line 85
 [24-Feb-2021 20:09:00 Asia/Calcutta] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpRAS6ID' to '../assets/events/1614177540_whatsapp image 2021-02-23 at 10.50.50 am.jpeg' in /home/pedalscycle/public_html/admin/Events/view.php on line 85
+[25-Feb-2021 10:29:12 Asia/Calcutta] PHP Warning:  sizeof(): Parameter must be an array or an object that implements Countable in /home/pedalscycle/public_html/admin/Events/add.php on line 57
+[25-Feb-2021 04:59:17 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/pedalscycle/public_html/config.php on line 2
+[25-Feb-2021 09:57:14 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/pedalscycle/public_html/config.php on line 2
+[25-Feb-2021 15:27:14 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Call to undefined function DeleteEvent() in /home/pedalscycle/public_html/admin/webservice.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/pedalscycle/public_html/admin/webservice.php on line 4
+[25-Feb-2021 09:58:13 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/pedalscycle/public_html/config.php on line 2
+[25-Feb-2021 15:28:13 Asia/Calcutta] PHP Fatal error:  Uncaught Error: Call to undefined function DeleteEvent() in /home/pedalscycle/public_html/admin/webservice.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/pedalscycle/public_html/admin/webservice.php on line 4

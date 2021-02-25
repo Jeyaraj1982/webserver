@@ -39,7 +39,24 @@
                              <img src="assets/events/<?php echo $images[0]['ImageName'];?>" alt="upcoming-bike" style="width:100%;height:100%">
                         </div>
                     </div>
-                    
+                  <script>
+                  function myFunction() {
+  /* Get the text field */
+  var copyText = document.getElementById("myInput");
+ 
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+  /* Copy the text inside the text field */
+  document.execCommand("copy");
+
+  /* Alert the copied text */
+  //alert("Copied the text: " + copyText.value);
+  $('#sx').html("link copied!");
+} 
+                  </script>  
                     <div class="col-lg-8 col-md-6 col-sm-7">
                         <div class="about-text" style="text-align: justify;">
                             <h2><?php echo $Event[0]['EventTitle'];?></h2>
@@ -47,10 +64,13 @@
                             <br><br>
                             <p><?php echo $Event[0]['Description'];?></p><br>
                             
-                            <p>Starting: <?php echo $Event[0]['StartingPoint'];?></p>
-                            <p>Ending: <?php echo $Event[0]['EndingPoint'];?></p>
+                            <p>Starting Point: <?php echo $Event[0]['StartingPoint'];?></p>
+                            <p>Ending Point: <?php echo $Event[0]['EndingPoint'];?></p>
                             <p>Routes: <?php echo $Event[0]['EndingPoint'];?></p>
-                            
+                                   <br><br><br>
+                             <input type="text" style="height:0px;width:0px;" value="https://www.pedalscycle.com/news.php?event=<?php echo md5($Event[0]['EventID']);?>" id="myInput" name="myInput">
+                            <button  class="btn btn-success btn-sm" onclick="myFunction()">Copy Link</button> <br>
+                            <div style="color:green" id="sx"></div>
                         </div>
                     </div>
                     

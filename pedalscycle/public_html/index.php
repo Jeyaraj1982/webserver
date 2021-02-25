@@ -37,7 +37,7 @@
                 <div class="col-lg-3 col-md-5 col-sm-5 p-0">
                     <div class="upcoming-bike-text">
                         <h2><?php echo sizeof($NewProducts);?>+</h2>
-                        <h3>Upcoming Cycles</h3>
+                        <h3>News & Events</h3>
                     </div>
                 </div>
 

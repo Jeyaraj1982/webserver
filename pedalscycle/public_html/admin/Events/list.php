@@ -88,7 +88,7 @@
  
  function CallConfirmation(PackageID){
     var txt = '<form action="" method="POST" id="TourFrm_'+PackageID+'">'
-                    +'<input type="hidden" value="'+PackageID+'" id="PackageID" Name="PackageID">'
+                    +'<input type="hidden" value="'+PackageID+'" id="EventID" Name="EventID">'
                     +'<div class="form-group row">'
                     +'<div class="col-sm-12" style="text-align:center">'
                         +'CONFIRMATION'
