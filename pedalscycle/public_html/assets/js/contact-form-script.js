@@ -26,11 +26,17 @@
 
         $.ajax({
             type: "POST",
-            url: "contact.php",
+            url: "contactsubmit.php",
             data:form.serialize(), //"name=" + name + "&email=" + email + "&msg_subject=" + msg_subject + "&message=" + message,
             success : function(text){
                 if (text == "success"){
                     formSuccess();
+                     $("#ContactName").val("");
+                     $("#Email").val("");
+                     $("#MobileNumber").val("");
+                     $("#Subject").val("");
+                     $("#Description").val("");
+                    
                 } else {
                     formError();
                     submitMSG(false,text);
@@ -41,7 +47,7 @@
 
     function formSuccess(){
         $("#contactForm")[0].reset();
-        submitMSG(true, "Message Submitted!")
+        submitMSG(true, "Submitted!")
     }
 
     function formError(){

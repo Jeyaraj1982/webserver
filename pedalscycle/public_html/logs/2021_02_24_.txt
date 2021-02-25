@@ -1,0 +1,1227 @@
+[2021-02-24 07:01:17]	select * from _tbl_sliders where IsActive='1'
+[2021-02-24 07:01:17]	select * from _tbl_products where IsUpcomming='1' and IsPublish='1'
+[2021-02-24 07:01:17]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 07:01:17]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 07:01:17]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 07:01:17]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 07:01:17]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 07:01:17]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 07:01:17]	select * from _tbl_products where IsNew='1' and IsPublish='1'
+[2021-02-24 07:01:17]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 07:01:17]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 07:01:17]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 07:01:17]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 07:01:17]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 07:01:17]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 07:01:17]	select * from _tbl_products where IsPopular='1' and IsPublish='1'
+[2021-02-24 07:01:17]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 07:01:17]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 07:01:17]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 07:01:17]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 07:01:17]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 07:01:17]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 07:01:17]	select * from _tbl_products where IsFeatured='1' and IsPublish='1'
+[2021-02-24 07:01:17]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 07:01:17]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 07:01:17]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 07:01:17]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 07:01:17]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 07:01:17]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 07:01:17]	select * from _tbl_customer_reviews where IsActive='1'
+[2021-02-24 07:04:14]	select * from _tbl_products where IsUpcomming='1' and IsPublish='1'
+[2021-02-24 07:04:14]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 07:04:14]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 07:04:14]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 07:04:14]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 07:04:14]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 07:04:14]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 07:04:14]	select * from _tbl_products where IsNew='1' and IsPublish='1'
+[2021-02-24 07:04:14]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 07:04:14]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 07:04:14]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 07:04:14]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 07:04:14]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 07:04:14]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 07:04:14]	select * from _tbl_products where IsPopular='1' and IsPublish='1'
+[2021-02-24 07:04:14]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 07:04:14]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 07:04:14]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 07:04:14]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 07:04:14]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 07:04:14]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 07:04:14]	select * from _tbl_products where IsFeatured='1' and IsPublish='1'
+[2021-02-24 07:04:14]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 07:04:14]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 07:04:14]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 07:04:14]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 07:04:14]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 07:04:14]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 07:04:53]	select * from _tbl_products where IsNew='1' and IsPublish='1'
+[2021-02-24 07:04:53]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 07:04:53]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 07:04:53]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 07:04:53]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 07:04:53]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 07:04:53]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 07:04:53]	select * from _tbl_products where IsPopular='1' and IsPublish='1'
+[2021-02-24 07:04:53]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 07:04:53]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 07:04:53]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 07:04:53]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 07:04:53]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 07:04:53]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 07:04:53]	select * from _tbl_products where IsFeatured='1' and IsPublish='1'
+[2021-02-24 07:04:53]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 07:04:53]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 07:04:53]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 07:04:53]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 07:04:53]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 07:04:53]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 07:06:12]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 07:06:12]	select * from _tbl_gallery_images where IsActive='1' order by GalleryID
+[2021-02-24 07:06:36]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 07:06:36]	select * from _tbl_gallery_images where IsActive='1' order by GalleryID
+[2021-02-24 07:11:37]	select * from _tbl_admin where UserName='admin@pedalscycle.com' and Password='123456' 
+[2021-02-24 07:16:41]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 07:16:41]	select * from _tbl_gallery_names where GalleryID=''
+[2021-02-24 07:16:41]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='' 
+[2021-02-24 07:16:41]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 07:16:41]	select * from _tbl_gallery_names where GalleryID=''
+[2021-02-24 07:16:41]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='' 
+[2021-02-24 07:16:50]	insert into `_tbl_gallery_names` (`GalleryName`,`IsActive`) values ('Cycles','1')
+[2021-02-24 07:16:50]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 07:16:50]	select * from _tbl_gallery_names where GalleryID=''
+[2021-02-24 07:16:50]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='' 
+[2021-02-24 07:16:54]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 07:16:54]	select * from _tbl_gallery_names where GalleryID='2'
+[2021-02-24 07:16:54]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='2' 
+[2021-02-24 07:17:06]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 07:17:06]	select * from _tbl_gallery_images where IsActive='1' order by GalleryID
+[2021-02-24 07:17:38]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 07:17:38]	select * from _tbl_gallery_names where GalleryID='2'
+[2021-02-24 07:17:38]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='2' 
+[2021-02-24 07:17:41]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 07:17:41]	select * from _tbl_gallery_names where GalleryID='2'
+[2021-02-24 07:17:41]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='2' 
+[2021-02-24 07:20:18]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 07:20:18]	select * from _tbl_gallery_names where GalleryID='2'
+[2021-02-24 07:20:18]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='2' 
+[2021-02-24 07:20:28]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 07:20:28]	select * from _tbl_gallery_names where GalleryID='2'
+[2021-02-24 07:20:28]	insert into `_tbl_gallery_images` (`GalleryID`,`GalleryTitle`,`GalleryImage`,`IsActive`) values ('2','','1614131428_bike1.jpg','1')
+[2021-02-24 07:20:28]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='2' 
+[2021-02-24 07:20:51]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 07:20:51]	select * from _tbl_gallery_names where GalleryID='2'
+[2021-02-24 07:20:51]	insert into `_tbl_gallery_images` (`GalleryID`,`GalleryTitle`,`GalleryImage`,`IsActive`) values ('2','','1614131451_bike2.jpg','1')
+[2021-02-24 07:20:51]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='2' 
+[2021-02-24 07:21:02]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 07:21:02]	select * from _tbl_gallery_names where GalleryID='2'
+[2021-02-24 07:21:02]	insert into `_tbl_gallery_images` (`GalleryID`,`GalleryTitle`,`GalleryImage`,`IsActive`) values ('2','','1614131462_bike3.jpg','1')
+[2021-02-24 07:21:02]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='2' 
+[2021-02-24 07:21:13]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 07:21:13]	select * from _tbl_gallery_names where GalleryID='2'
+[2021-02-24 07:21:13]	insert into `_tbl_gallery_images` (`GalleryID`,`GalleryTitle`,`GalleryImage`,`IsActive`) values ('2','','1614131473_bike4.jpg','1')
+[2021-02-24 07:21:13]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='2' 
+[2021-02-24 07:21:27]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 07:21:27]	select * from _tbl_gallery_names where GalleryID='2'
+[2021-02-24 07:21:27]	insert into `_tbl_gallery_images` (`GalleryID`,`GalleryTitle`,`GalleryImage`,`IsActive`) values ('2','','1614131487_bike5.jpg','1')
+[2021-02-24 07:21:27]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='2' 
+[2021-02-24 07:21:39]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 07:21:39]	select * from _tbl_gallery_names where GalleryID='2'
+[2021-02-24 07:21:39]	insert into `_tbl_gallery_images` (`GalleryID`,`GalleryTitle`,`GalleryImage`,`IsActive`) values ('2','','1614131499_bike6.jpg','1')
+[2021-02-24 07:21:39]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='2' 
+[2021-02-24 07:21:51]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 07:21:51]	select * from _tbl_gallery_names where GalleryID='2'
+[2021-02-24 07:21:51]	insert into `_tbl_gallery_images` (`GalleryID`,`GalleryTitle`,`GalleryImage`,`IsActive`) values ('2','','1614131511_bike7.jpg','1')
+[2021-02-24 07:21:51]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='2' 
+[2021-02-24 07:22:03]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 07:22:03]	select * from _tbl_gallery_names where GalleryID='2'
+[2021-02-24 07:22:03]	insert into `_tbl_gallery_images` (`GalleryID`,`GalleryTitle`,`GalleryImage`,`IsActive`) values ('2','','1614131523_bike8.jpg','1')
+[2021-02-24 07:22:03]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='2' 
+[2021-02-24 07:22:16]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 07:22:16]	select * from _tbl_gallery_names where GalleryID='2'
+[2021-02-24 07:22:16]	insert into `_tbl_gallery_images` (`GalleryID`,`GalleryTitle`,`GalleryImage`,`IsActive`) values ('2','','1614131536_bike9.jpg','1')
+[2021-02-24 07:22:16]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='2' 
+[2021-02-24 07:22:29]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 07:22:29]	select * from _tbl_gallery_names where GalleryID='2'
+[2021-02-24 07:22:29]	insert into `_tbl_gallery_images` (`GalleryID`,`GalleryTitle`,`GalleryImage`,`IsActive`) values ('2','','1614131549_bike10.jpg','1')
+[2021-02-24 07:22:29]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='2' 
+[2021-02-24 07:22:40]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 07:22:40]	select * from _tbl_gallery_names where GalleryID='2'
+[2021-02-24 07:22:40]	insert into `_tbl_gallery_images` (`GalleryID`,`GalleryTitle`,`GalleryImage`,`IsActive`) values ('2','','1614131560_bike11.jpg','1')
+[2021-02-24 07:22:40]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='2' 
+[2021-02-24 07:22:51]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 07:22:51]	select * from _tbl_gallery_names where GalleryID='2'
+[2021-02-24 07:22:51]	insert into `_tbl_gallery_images` (`GalleryID`,`GalleryTitle`,`GalleryImage`,`IsActive`) values ('2','','1614131571_bike12.jpg','1')
+[2021-02-24 07:22:51]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='2' 
+[2021-02-24 07:23:03]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 07:23:03]	select * from _tbl_gallery_names where GalleryID='2'
+[2021-02-24 07:23:03]	insert into `_tbl_gallery_images` (`GalleryID`,`GalleryTitle`,`GalleryImage`,`IsActive`) values ('2','','1614131583_bike13.jpg','1')
+[2021-02-24 07:23:03]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='2' 
+[2021-02-24 07:23:15]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 07:23:15]	select * from _tbl_gallery_names where GalleryID='2'
+[2021-02-24 07:23:15]	insert into `_tbl_gallery_images` (`GalleryID`,`GalleryTitle`,`GalleryImage`,`IsActive`) values ('2','','1614131595_bike14.jpg','1')
+[2021-02-24 07:23:15]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='2' 
+[2021-02-24 07:23:25]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 07:23:25]	select * from _tbl_gallery_names where GalleryID='2'
+[2021-02-24 07:23:25]	insert into `_tbl_gallery_images` (`GalleryID`,`GalleryTitle`,`GalleryImage`,`IsActive`) values ('2','','1614131605_bike15.jpg','1')
+[2021-02-24 07:23:25]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='2' 
+[2021-02-24 07:23:42]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 07:23:42]	select * from _tbl_gallery_names where GalleryID='2'
+[2021-02-24 07:23:42]	insert into `_tbl_gallery_images` (`GalleryID`,`GalleryTitle`,`GalleryImage`,`IsActive`) values ('2','','1614131622_bike16.jpg','1')
+[2021-02-24 07:23:42]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='2' 
+[2021-02-24 07:23:51]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 07:23:51]	select * from _tbl_gallery_names where GalleryID='2'
+[2021-02-24 07:23:51]	insert into `_tbl_gallery_images` (`GalleryID`,`GalleryTitle`,`GalleryImage`,`IsActive`) values ('2','','1614131631_bike17.jpg','1')
+[2021-02-24 07:23:51]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='2' 
+[2021-02-24 07:24:02]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 07:24:02]	select * from _tbl_gallery_names where GalleryID='2'
+[2021-02-24 07:24:02]	insert into `_tbl_gallery_images` (`GalleryID`,`GalleryTitle`,`GalleryImage`,`IsActive`) values ('2','','1614131642_bike18.jpg','1')
+[2021-02-24 07:24:02]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='2' 
+[2021-02-24 07:24:12]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 07:24:12]	select * from _tbl_gallery_names where GalleryID='2'
+[2021-02-24 07:24:12]	insert into `_tbl_gallery_images` (`GalleryID`,`GalleryTitle`,`GalleryImage`,`IsActive`) values ('2','','1614131652_bike19.jpg','1')
+[2021-02-24 07:24:12]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='2' 
+[2021-02-24 07:24:23]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 07:24:23]	select * from _tbl_gallery_names where GalleryID='2'
+[2021-02-24 07:24:23]	insert into `_tbl_gallery_images` (`GalleryID`,`GalleryTitle`,`GalleryImage`,`IsActive`) values ('2','','1614131663_bike20.jpg','1')
+[2021-02-24 07:24:23]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='2' 
+[2021-02-24 07:24:36]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 07:24:36]	select * from _tbl_gallery_names where GalleryID='2'
+[2021-02-24 07:24:36]	insert into `_tbl_gallery_images` (`GalleryID`,`GalleryTitle`,`GalleryImage`,`IsActive`) values ('2','','1614131676_bike21.jpg','1')
+[2021-02-24 07:24:36]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='2' 
+[2021-02-24 07:24:47]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 07:24:47]	select * from _tbl_gallery_names where GalleryID='2'
+[2021-02-24 07:24:47]	insert into `_tbl_gallery_images` (`GalleryID`,`GalleryTitle`,`GalleryImage`,`IsActive`) values ('2','','1614131687_bike22.jpg','1')
+[2021-02-24 07:24:47]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='2' 
+[2021-02-24 07:24:56]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 07:24:56]	select * from _tbl_gallery_names where GalleryID='2'
+[2021-02-24 07:24:56]	insert into `_tbl_gallery_images` (`GalleryID`,`GalleryTitle`,`GalleryImage`,`IsActive`) values ('2','','1614131696_bike23.jpg','1')
+[2021-02-24 07:24:56]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='2' 
+[2021-02-24 07:25:08]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 07:25:08]	select * from _tbl_gallery_names where GalleryID='2'
+[2021-02-24 07:25:08]	insert into `_tbl_gallery_images` (`GalleryID`,`GalleryTitle`,`GalleryImage`,`IsActive`) values ('2','','1614131708_bike24.jpg','1')
+[2021-02-24 07:25:08]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='2' 
+[2021-02-24 07:25:12]	select * from _tbl_sliders where IsActive='1'
+[2021-02-24 07:25:12]	select * from _tbl_products where IsUpcomming='1' and IsPublish='1'
+[2021-02-24 07:25:12]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 07:25:12]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 07:25:12]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 07:25:12]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 07:25:12]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 07:25:12]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 07:25:12]	select * from _tbl_products where IsNew='1' and IsPublish='1'
+[2021-02-24 07:25:12]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 07:25:12]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 07:25:12]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 07:25:12]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 07:25:12]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 07:25:12]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 07:25:12]	select * from _tbl_products where IsPopular='1' and IsPublish='1'
+[2021-02-24 07:25:12]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 07:25:12]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 07:25:12]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 07:25:12]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 07:25:12]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 07:25:12]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 07:25:12]	select * from _tbl_products where IsFeatured='1' and IsPublish='1'
+[2021-02-24 07:25:12]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 07:25:12]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 07:25:12]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 07:25:12]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 07:25:12]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 07:25:12]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 07:25:12]	select * from _tbl_customer_reviews where IsActive='1'
+[2021-02-24 07:25:29]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 07:25:29]	select * from _tbl_gallery_images where IsActive='1' order by GalleryID
+[2021-02-24 07:26:31]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 07:26:31]	select * from _tbl_gallery_images where IsActive='1' order by GalleryID
+[2021-02-24 07:27:03]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 07:27:03]	select * from _tbl_gallery_images where IsActive='1' order by GalleryID
+[2021-02-24 07:27:23]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 07:27:23]	select * from _tbl_gallery_images where IsActive='1' order by GalleryID
+[2021-02-24 07:29:42]	select * from _tbl_gallery_images where IsActive='1' order by GalleryID
+[2021-02-24 07:31:45]	select * from _tbl_sliders where IsActive='1'
+[2021-02-24 07:31:45]	select * from _tbl_products where IsUpcomming='1' and IsPublish='1'
+[2021-02-24 07:31:45]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 07:31:45]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 07:31:45]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 07:31:45]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 07:31:45]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 07:31:45]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 07:31:45]	select * from _tbl_products where IsNew='1' and IsPublish='1'
+[2021-02-24 07:31:45]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 07:31:45]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 07:31:45]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 07:31:45]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 07:31:45]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 07:31:45]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 07:31:45]	select * from _tbl_products where IsPopular='1' and IsPublish='1'
+[2021-02-24 07:31:45]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 07:31:45]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 07:31:45]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 07:31:45]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 07:31:45]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 07:31:45]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 07:31:45]	select * from _tbl_products where IsFeatured='1' and IsPublish='1'
+[2021-02-24 07:31:45]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 07:31:45]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 07:31:45]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 07:31:45]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 07:31:45]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 07:31:45]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 07:31:45]	select * from _tbl_customer_reviews where IsActive='1'
+[2021-02-24 09:16:20]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 09:16:20]	select * from _tbl_gallery_names where GalleryID='2'
+[2021-02-24 09:16:20]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='2' 
+[2021-02-24 09:16:24]	select * from _tbl_contactus order by ContactID DESC
+[2021-02-24 09:24:28]	insert into `_tbl_contactus` (`ContactName`,`Email`,`MobileNumber`,`Subject`,`Description`,`AddedOn`) values ('asdgadg','sagasg@gmail.com','9944872965','asdgasgh','sahgsahash','2021-02-24 09:24:28')
+[2021-02-24 09:25:12]	select * from _tbl_contactus order by ContactID DESC
+[2021-02-24 09:25:14]	select * from _tbl_contactus where md5(ContactID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 09:50:34]	insert into `_tbl_contactus` (`ContactName`,`Email`,`MobileNumber`,`Subject`,`Description`,`AddedOn`) values ('asdgadg','sagasg@gmail.com','9944872965','asdgasgh','sahgsahash','2021-02-24 09:50:34')
+[2021-02-24 09:50:38]	select * from _tbl_contactus order by ContactID DESC
+[2021-02-24 10:03:59]	select * from _tbl_sliders where IsActive='1'
+[2021-02-24 10:03:59]	select * from _tbl_products where IsUpcomming='1' and IsPublish='1'
+[2021-02-24 10:03:59]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 10:03:59]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 10:03:59]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 10:03:59]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 10:03:59]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 10:03:59]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 10:03:59]	select * from _tbl_products where IsNew='1' and IsPublish='1'
+[2021-02-24 10:03:59]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 10:03:59]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 10:03:59]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 10:03:59]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 10:03:59]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 10:03:59]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 10:03:59]	select * from _tbl_products where IsPopular='1' and IsPublish='1'
+[2021-02-24 10:03:59]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 10:03:59]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 10:03:59]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 10:03:59]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 10:03:59]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 10:03:59]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 10:03:59]	select * from _tbl_products where IsFeatured='1' and IsPublish='1'
+[2021-02-24 10:03:59]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 10:03:59]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 10:03:59]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 10:03:59]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 10:03:59]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 10:03:59]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 10:03:59]	select * from _tbl_customer_reviews where IsActive='1'
+[2021-02-24 11:12:51]	select * from _tbl_sliders where IsActive='1'
+[2021-02-24 11:12:51]	select * from _tbl_products where IsUpcomming='1' and IsPublish='1'
+[2021-02-24 11:12:51]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 11:12:51]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 11:12:51]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 11:12:51]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 11:12:51]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 11:12:51]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 11:12:51]	select * from _tbl_products where IsNew='1' and IsPublish='1'
+[2021-02-24 11:12:51]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 11:12:51]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 11:12:51]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 11:12:51]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 11:12:51]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 11:12:51]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 11:12:51]	select * from _tbl_products where IsPopular='1' and IsPublish='1'
+[2021-02-24 11:12:51]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 11:12:51]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 11:12:51]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 11:12:51]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 11:12:51]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 11:12:51]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 11:12:51]	select * from _tbl_products where IsFeatured='1' and IsPublish='1'
+[2021-02-24 11:12:51]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 11:12:51]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 11:12:51]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 11:12:51]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 11:12:51]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 11:12:51]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 11:12:51]	select * from _tbl_customer_reviews where IsActive='1'
+[2021-02-24 11:15:30]	select * from _tbl_contactus order by ContactID DESC
+[2021-02-24 11:15:34]	select * from _tbl_events where IsActive='1'
+[2021-02-24 11:30:29]	select * from _tbl_admin where UserName='admin@admin.com' and Password='123456789' 
+[2021-02-24 11:30:33]	select * from _tbl_admin where UserName='admin@admin.com' and Password='123456789' 
+[2021-02-24 11:30:45]	select * from _tbl_admin where UserName='admin@pedalscycle.com' and Password='123456' 
+[2021-02-24 11:30:50]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 11:30:50]	select * from _tbl_gallery_names where GalleryID=''
+[2021-02-24 11:30:50]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='' 
+[2021-02-24 11:30:50]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 11:30:50]	select * from _tbl_gallery_names where GalleryID='2'
+[2021-02-24 11:30:50]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='2' 
+[2021-02-24 11:31:00]	select * from _tbl_sliders where IsActive='1'
+[2021-02-24 11:31:00]	select * from _tbl_products where IsUpcomming='1' and IsPublish='1'
+[2021-02-24 11:31:00]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 11:31:00]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 11:31:00]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 11:31:00]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 11:31:00]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 11:31:00]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 11:31:00]	select * from _tbl_products where IsNew='1' and IsPublish='1'
+[2021-02-24 11:31:00]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 11:31:00]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 11:31:00]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 11:31:00]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 11:31:00]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 11:31:00]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 11:31:00]	select * from _tbl_products where IsPopular='1' and IsPublish='1'
+[2021-02-24 11:31:00]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 11:31:00]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 11:31:00]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 11:31:00]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 11:31:00]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 11:31:00]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 11:31:00]	select * from _tbl_products where IsFeatured='1' and IsPublish='1'
+[2021-02-24 11:31:00]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 11:31:00]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 11:31:00]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 11:31:00]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 11:31:00]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 11:31:00]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 11:31:00]	select * from _tbl_customer_reviews where IsActive='1'
+[2021-02-24 11:31:09]	select * from _tbl_gallery_images where IsActive='1' order by GalleryID
+[2021-02-24 11:31:21]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 11:31:21]	select * from _tbl_gallery_names where GalleryID='2'
+[2021-02-24 11:31:21]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='2' 
+[2021-02-24 11:31:34]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 11:31:34]	select * from _tbl_gallery_names where GalleryID='2'
+[2021-02-24 11:31:34]	insert into `_tbl_gallery_images` (`GalleryID`,`GalleryTitle`,`GalleryImage`,`IsActive`) values ('2','','1614146494_world_tour.jpg','1')
+[2021-02-24 11:31:34]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='2' 
+[2021-02-24 11:31:40]	select * from _tbl_gallery_images where IsActive='1' order by GalleryID
+[2021-02-24 11:31:47]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 11:31:47]	select * from _tbl_gallery_names where GalleryID='2'
+[2021-02-24 11:31:47]	update _tbl_gallery_images set GalleryTitle='' where GalleryImageID='25'
+[2021-02-24 11:31:47]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='2' 
+[2021-02-24 11:31:51]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 11:31:51]	select * from _tbl_gallery_names where GalleryID='2'
+[2021-02-24 11:31:51]	update _tbl_gallery_images set GalleryTitle='' where GalleryImageID='25'
+[2021-02-24 11:31:51]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='2' 
+[2021-02-24 11:31:54]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 11:31:54]	select * from _tbl_gallery_names where GalleryID='2'
+[2021-02-24 11:31:54]	update _tbl_gallery_images set IsActive='0' where GalleryImageID='25'
+[2021-02-24 11:31:54]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='2' 
+[2021-02-24 11:32:03]	insert into `_tbl_gallery_names` (`GalleryName`,`IsActive`) values ('demo','1')
+[2021-02-24 11:32:03]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 11:32:03]	select * from _tbl_gallery_names where GalleryID='2'
+[2021-02-24 11:32:03]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='2' 
+[2021-02-24 11:32:07]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 11:32:07]	select * from _tbl_gallery_names where GalleryID='3'
+[2021-02-24 11:32:07]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='3' 
+[2021-02-24 11:32:12]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 11:32:12]	select * from _tbl_gallery_names where GalleryID='3'
+[2021-02-24 11:32:12]	insert into `_tbl_gallery_images` (`GalleryID`,`GalleryTitle`,`GalleryImage`,`IsActive`) values ('3','','1614146532_location-thailand-malaysia-singapore.jpg','1')
+[2021-02-24 11:32:12]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='3' 
+[2021-02-24 11:32:15]	select * from _tbl_gallery_images where IsActive='1' order by GalleryID
+[2021-02-24 11:32:25]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 11:32:25]	select * from _tbl_gallery_names where GalleryID='3'
+[2021-02-24 11:32:25]	update _tbl_gallery_images set IsActive='0' where GalleryImageID='26'
+[2021-02-24 11:32:25]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='3' 
+[2021-02-24 11:32:27]	select * from _tbl_gallery_names where IsActive = '1' and GalleryID='3'
+[2021-02-24 11:32:27]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='3' 
+[2021-02-24 11:32:28]	update _tbl_gallery_names set IsActive = '0' where GalleryID='3'
+[2021-02-24 11:32:28]	select * from _tbl_gallery_names where IsActive = '1' and GalleryID='3'
+[2021-02-24 11:32:29]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 11:32:29]	select * from _tbl_gallery_names where GalleryID=''
+[2021-02-24 11:32:29]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='' 
+[2021-02-24 11:32:30]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 11:32:30]	select * from _tbl_gallery_names where GalleryID='2'
+[2021-02-24 11:32:30]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='2' 
+[2021-02-24 11:32:34]	select * from _tbl_gallery_images where IsActive='1' order by GalleryID
+[2021-02-24 11:32:36]	select * from _tbl_sliders where IsActive='1'
+[2021-02-24 11:32:36]	select * from _tbl_products where IsUpcomming='1' and IsPublish='1'
+[2021-02-24 11:32:36]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 11:32:36]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 11:32:36]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 11:32:36]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 11:32:36]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 11:32:36]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 11:32:36]	select * from _tbl_products where IsNew='1' and IsPublish='1'
+[2021-02-24 11:32:36]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 11:32:36]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 11:32:36]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 11:32:36]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 11:32:36]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 11:32:36]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 11:32:36]	select * from _tbl_products where IsPopular='1' and IsPublish='1'
+[2021-02-24 11:32:36]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 11:32:36]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 11:32:36]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 11:32:36]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 11:32:36]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 11:32:36]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 11:32:36]	select * from _tbl_products where IsFeatured='1' and IsPublish='1'
+[2021-02-24 11:32:36]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 11:32:36]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 11:32:36]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 11:32:36]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 11:32:36]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 11:32:36]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 11:32:36]	select * from _tbl_customer_reviews where IsActive='1'
+[2021-02-24 11:33:09]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 11:33:09]	select * from _tbl_gallery_names where GalleryID='2'
+[2021-02-24 11:33:09]	update _tbl_gallery_images set GalleryTitle='' where GalleryImageID='1'
+[2021-02-24 11:33:09]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='2' 
+[2021-02-24 11:33:10]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 11:33:10]	select * from _tbl_gallery_names where GalleryID='2'
+[2021-02-24 11:33:10]	update _tbl_gallery_images set GalleryTitle='' where GalleryImageID='1'
+[2021-02-24 11:33:10]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='2' 
+[2021-02-24 11:33:38]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 11:33:38]	select * from _tbl_gallery_names where GalleryID='2'
+[2021-02-24 11:33:38]	update _tbl_gallery_images set GalleryTitle='' where GalleryImageID='2'
+[2021-02-24 11:33:38]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='2' 
+[2021-02-24 11:33:39]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 11:33:39]	select * from _tbl_gallery_names where GalleryID='2'
+[2021-02-24 11:33:39]	update _tbl_gallery_images set GalleryTitle='' where GalleryImageID='2'
+[2021-02-24 11:33:39]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='2' 
+[2021-02-24 11:33:45]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 11:33:45]	select * from _tbl_gallery_names where GalleryID='2'
+[2021-02-24 11:33:45]	update _tbl_gallery_images set GalleryTitle='' where GalleryImageID='1'
+[2021-02-24 11:33:45]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='2' 
+[2021-02-24 11:34:58]	select * from _tbl_products where IsNew='1' and IsPublish='1'
+[2021-02-24 11:34:58]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 11:34:58]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 11:34:58]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 11:34:58]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 11:34:58]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 11:34:58]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 11:34:58]	select * from _tbl_products where IsPopular='1' and IsPublish='1'
+[2021-02-24 11:34:58]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 11:34:58]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 11:34:58]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 11:34:58]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 11:34:58]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 11:34:58]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 11:34:58]	select * from _tbl_products where IsFeatured='1' and IsPublish='1'
+[2021-02-24 11:34:58]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 11:34:58]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 11:34:58]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 11:34:58]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 11:34:58]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 11:34:58]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 11:35:00]	select * from _tbl_gallery_images where IsActive='1' order by GalleryID
+[2021-02-24 11:35:03]	select * from _tbl_sliders where IsActive='1'
+[2021-02-24 11:35:03]	select * from _tbl_products where IsUpcomming='1' and IsPublish='1'
+[2021-02-24 11:35:03]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 11:35:03]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 11:35:03]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 11:35:03]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 11:35:03]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 11:35:03]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 11:35:03]	select * from _tbl_products where IsNew='1' and IsPublish='1'
+[2021-02-24 11:35:03]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 11:35:03]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 11:35:03]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 11:35:03]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 11:35:03]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 11:35:03]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 11:35:03]	select * from _tbl_products where IsPopular='1' and IsPublish='1'
+[2021-02-24 11:35:03]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 11:35:03]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 11:35:03]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 11:35:03]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 11:35:03]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 11:35:03]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 11:35:03]	select * from _tbl_products where IsFeatured='1' and IsPublish='1'
+[2021-02-24 11:35:03]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 11:35:03]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 11:35:03]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 11:35:03]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 11:35:03]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 11:35:03]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 11:35:03]	select * from _tbl_customer_reviews where IsActive='1'
+[2021-02-24 11:35:51]	insert into `_tbl_contactus` (`ContactName`,`Email`,`MobileNumber`,`Subject`,`Description`,`AddedOn`) values ('nexify','nexify@gmail.com','9638527410','demo','demo','2021-02-24 11:35:51')
+[2021-02-24 11:36:01]	select * from _tbl_contactus order by ContactID DESC
+[2021-02-24 11:36:06]	select * from _tbl_contactus where md5(ContactID)='eccbc87e4b5ce2fe28308fd9f2a7baf3'
+[2021-02-24 11:50:29]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 11:50:29]	select * from _tbl_gallery_names where GalleryID=''
+[2021-02-24 11:50:29]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='' 
+[2021-02-24 11:50:29]	select * from _tbl_gallery_names where IsActive='1' order by GalleryName
+[2021-02-24 11:50:29]	select * from _tbl_gallery_names where GalleryID='2'
+[2021-02-24 11:50:29]	select * from _tbl_gallery_images where IsActive='1' and GalleryID='2' 
+[2021-02-24 13:21:21]	select * from _tbl_products
+[2021-02-24 13:21:21]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 13:21:21]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 13:21:21]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 13:21:21]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 13:21:21]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 13:21:21]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 13:21:21]	select * from _tbl_products_images where IsDelete='0' and ProductID='7' order by ImageOrder
+[2021-02-24 13:21:21]	select * from _tbl_products_images where IsDelete='0' and ProductID='8' order by ImageOrder
+[2021-02-24 13:28:35]	select * from _tbl_sliders where IsActive='1'
+[2021-02-24 13:28:35]	select * from _tbl_products where IsUpcomming='1' and IsPublish='1'
+[2021-02-24 13:28:35]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 13:28:35]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 13:28:35]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 13:28:35]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 13:28:35]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 13:28:35]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 13:28:35]	select * from _tbl_products where IsNew='1' and IsPublish='1'
+[2021-02-24 13:28:35]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 13:28:35]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 13:28:35]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 13:28:35]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 13:28:35]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 13:28:35]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 13:28:35]	select * from _tbl_products where IsPopular='1' and IsPublish='1'
+[2021-02-24 13:28:35]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 13:28:35]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 13:28:35]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 13:28:35]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 13:28:35]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 13:28:35]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 13:28:35]	select * from _tbl_products where IsFeatured='1' and IsPublish='1'
+[2021-02-24 13:28:35]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 13:28:35]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 13:28:35]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 13:28:35]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 13:28:35]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 13:28:35]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 13:28:35]	select * from _tbl_customer_reviews where IsActive='1'
+[2021-02-24 13:50:22]	select * from _tbl_sliders where IsActive='1'
+[2021-02-24 13:50:22]	select * from _tbl_sliders where IsActive='1'
+[2021-02-24 13:50:22]	select * from _tbl_sliders where IsActive='1'
+[2021-02-24 13:50:22]	select * from _tbl_products where IsUpcomming='1' and IsPublish='1'
+[2021-02-24 13:50:22]	select * from _tbl_products where IsUpcomming='1' and IsPublish='1'
+[2021-02-24 13:50:22]	select * from _tbl_products where IsUpcomming='1' and IsPublish='1'
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products where IsNew='1' and IsPublish='1'
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products where IsNew='1' and IsPublish='1'
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products where IsNew='1' and IsPublish='1'
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products where IsPopular='1' and IsPublish='1'
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products where IsPopular='1' and IsPublish='1'
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products where IsPopular='1' and IsPublish='1'
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products where IsFeatured='1' and IsPublish='1'
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_customer_reviews where IsActive='1'
+[2021-02-24 13:50:22]	select * from _tbl_products where IsFeatured='1' and IsPublish='1'
+[2021-02-24 13:50:22]	select * from _tbl_products where IsFeatured='1' and IsPublish='1'
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_customer_reviews where IsActive='1'
+[2021-02-24 13:50:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 13:50:22]	select * from _tbl_customer_reviews where IsActive='1'
+[2021-02-24 13:50:23]	select * from _tbl_sliders where IsActive='1'
+[2021-02-24 13:50:23]	select * from _tbl_products where IsUpcomming='1' and IsPublish='1'
+[2021-02-24 13:50:23]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 13:50:23]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 13:50:23]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 13:50:23]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 13:50:23]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 13:50:23]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 13:50:23]	select * from _tbl_products where IsNew='1' and IsPublish='1'
+[2021-02-24 13:50:23]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 13:50:23]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 13:50:23]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 13:50:23]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 13:50:23]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 13:50:23]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 13:50:23]	select * from _tbl_products where IsPopular='1' and IsPublish='1'
+[2021-02-24 13:50:23]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 13:50:23]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 13:50:23]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 13:50:23]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 13:50:23]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 13:50:23]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 13:50:23]	select * from _tbl_products where IsFeatured='1' and IsPublish='1'
+[2021-02-24 13:50:23]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 13:50:23]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 13:50:23]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 13:50:23]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 13:50:23]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 13:50:23]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 13:50:23]	select * from _tbl_customer_reviews where IsActive='1'
+[2021-02-24 13:50:23]	select * from _tbl_sliders where IsActive='1'
+[2021-02-24 13:50:23]	select * from _tbl_products where IsUpcomming='1' and IsPublish='1'
+[2021-02-24 13:50:23]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 13:50:23]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 13:50:23]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 13:50:23]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 13:50:23]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 13:50:23]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 13:50:23]	select * from _tbl_products where IsNew='1' and IsPublish='1'
+[2021-02-24 13:50:23]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 13:50:23]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 13:50:23]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 13:50:23]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 13:50:23]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 13:50:23]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 13:50:23]	select * from _tbl_products where IsPopular='1' and IsPublish='1'
+[2021-02-24 13:50:23]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 13:50:23]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 13:50:23]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 13:50:23]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 13:50:23]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 13:50:23]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 13:50:23]	select * from _tbl_products where IsFeatured='1' and IsPublish='1'
+[2021-02-24 13:50:23]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 13:50:23]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 13:50:23]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 13:50:23]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 13:50:23]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 13:50:23]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 13:50:23]	select * from _tbl_customer_reviews where IsActive='1'
+[2021-02-24 14:50:32]	select * from _tbl_sliders where IsActive='1'
+[2021-02-24 14:50:32]	select * from _tbl_products where IsUpcomming='1' and IsPublish='1'
+[2021-02-24 14:50:32]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 14:50:32]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 14:50:32]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 14:50:32]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 14:50:32]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 14:50:32]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 14:50:32]	select * from _tbl_products where IsNew='1' and IsPublish='1'
+[2021-02-24 14:50:32]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 14:50:32]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 14:50:32]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 14:50:32]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 14:50:32]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 14:50:32]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 14:50:32]	select * from _tbl_products where IsPopular='1' and IsPublish='1'
+[2021-02-24 14:50:32]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 14:50:32]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 14:50:32]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 14:50:32]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 14:50:32]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 14:50:32]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 14:50:32]	select * from _tbl_products where IsFeatured='1' and IsPublish='1'
+[2021-02-24 14:50:32]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 14:50:32]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 14:50:32]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 14:50:32]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 14:50:32]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 14:50:32]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 14:50:32]	select * from _tbl_customer_reviews where IsActive='1'
+[2021-02-24 14:50:34]	insert into `_tbl_contactus` (`ContactName`,`Email`,`MobileNumber`,`Subject`,`Description`,`AddedOn`) values ('Eric Jones','eric.jones.z.mail@gmail.com','555-555-1212','Try this, get more leads','Hi, my name is Eric and I’m betting you’d like your website pedalscycle.com to generate more leads.
+
+Here’s how:
+Talk With Web Visitor is a software widget that’s works on your site, ready to capture any visitor’s Name, Email address and Phone Number.  It signals you as soon as they say they’re interested – so that you can talk to that lead while they’re still there at pedalscycle.com.
+
+Talk With Web Visitor – CLICK HERE http://talkwithcustomer.com for a live demo now.
+
+And now that you’ve got their phone number, our new SMS Text With Lead feature enables you to start a text (SMS) conversation – answer questions, provide more info, and close a deal that way.
+
+If they don’t take you up on your offer then, just follow up with text messages for new offers, content links, even just “how you doing?” notes to build a relationship.
+
+CLICK HERE http://talkwithcustomer.com to discover what Talk With Web Visitor can do for your business.
+
+The difference between contacting someone within 5 minutes versus a half-hour means you could be converting up to 100X more leads today!
+
+Try Talk With Web Visitor and get more leads now.
+
+Eric
+PS: The studies show 7 out of 10 visitors don’t hang around – you can’t afford to lose them!
+Talk With Web Visitor offers a FREE 14 days trial – and it even includes International Long Distance Calling. 
+You have customers waiting to talk with you right now… don’t keep them waiting. 
+CLICK HERE http://talkwithcustomer.com to try Talk With Web Visitor now.
+
+If you'd like to unsubscribe click here http://talkwithcustomer.com/unsubscribe.aspx?d=pedalscycle.com
+','2021-02-24 14:50:34')
+[2021-02-24 14:50:34]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'd like to unsubscribe click here http://talkwithcustomer.com/unsubscribe.aspx?d=' at line 1
+[2021-02-24 15:10:43]	select * from _tbl_sliders where IsActive='1'
+[2021-02-24 15:10:43]	select * from _tbl_products where IsUpcomming='1' and IsPublish='1'
+[2021-02-24 15:10:43]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 15:10:43]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 15:10:43]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 15:10:43]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 15:10:43]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 15:10:43]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 15:10:43]	select * from _tbl_products where IsNew='1' and IsPublish='1'
+[2021-02-24 15:10:43]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 15:10:43]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 15:10:43]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 15:10:43]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 15:10:43]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 15:10:43]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 15:10:43]	select * from _tbl_products where IsPopular='1' and IsPublish='1'
+[2021-02-24 15:10:43]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 15:10:43]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 15:10:43]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 15:10:43]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 15:10:43]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 15:10:43]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 15:10:43]	select * from _tbl_products where IsFeatured='1' and IsPublish='1'
+[2021-02-24 15:10:43]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 15:10:43]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 15:10:43]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 15:10:43]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 15:10:43]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 15:10:43]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 15:10:43]	select * from _tbl_customer_reviews where IsActive='1'
+[2021-02-24 15:10:48]	select * from _tbl_products
+[2021-02-24 15:10:48]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 15:10:48]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 15:10:48]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 15:10:48]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 15:10:48]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 15:10:48]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 15:10:48]	select * from _tbl_products_images where IsDelete='0' and ProductID='7' order by ImageOrder
+[2021-02-24 15:10:48]	select * from _tbl_products_images where IsDelete='0' and ProductID='8' order by ImageOrder
+[2021-02-24 15:21:41]	select * from _tbl_events
+[2021-02-24 15:21:47]	select * from _tbl_events
+[2021-02-24 15:21:57]	select * from _tbl_events
+[2021-02-24 15:22:24]	select * from _tbl_events
+[2021-02-24 15:22:26]	select * from _tbl_events
+[2021-02-24 15:38:14]	select * from _tbl_events where EventTitle='On Road Ride' 
+[2021-02-24 15:38:14]	insert into `_tbl_events` (`EventTitle`,`EventDate`,`StartingPoint`,`EndingPoint`,`Routes`,`Description`,`AddedOn`) values ('On Road Ride','--','Parvathipuram','Chettikulam','Parvathipuram, kavalkinaru,kanyakumari, manakudi, chettikulam','Parvathipuram, kavalkinaru,kanyakumari, manakudi, chettikulam','2021-02-24 15:38:14')
+[2021-02-24 15:38:27]	select * from _tbl_events
+[2021-02-24 15:38:27]	select * from _tbl_events_images where IsDelete='0' and EventID='1' order by ImageOrder
+[2021-02-24 15:38:27]	select * from _tbl_events
+[2021-02-24 15:38:27]	select * from _tbl_events_images where IsDelete='0' and EventID='1' order by ImageOrder
+[2021-02-24 15:39:18]	select * from _tbl_events
+[2021-02-24 15:39:18]	select * from _tbl_events_images where IsDelete='0' and EventID='1' order by ImageOrder
+[2021-02-24 15:39:19]	select * from _tbl_events
+[2021-02-24 15:39:19]	select * from _tbl_events_images where IsDelete='0' and EventID='1' order by ImageOrder
+[2021-02-24 15:40:35]	select * from _tbl_events
+[2021-02-24 15:40:35]	select * from _tbl_events_images where IsDelete='0' and EventID='1' order by ImageOrder
+[2021-02-24 15:40:35]	select * from _tbl_events
+[2021-02-24 15:40:35]	select * from _tbl_events_images where IsDelete='0' and EventID='1' order by ImageOrder
+[2021-02-24 15:42:26]	select * from _tbl_events
+[2021-02-24 15:42:26]	select * from _tbl_events_images where IsDelete='0' and EventID='1' order by ImageOrder
+[2021-02-24 15:42:26]	select * from _tbl_events
+[2021-02-24 15:42:26]	select * from _tbl_events_images where IsDelete='0' and EventID='1' order by ImageOrder
+[2021-02-24 15:42:31]	select * from _tbl_products where md5(ProductID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 15:42:31]	select * from _tbl_products where md5(ProductID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 15:42:33]	select * from _tbl_products where md5(ProductID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 15:42:33]	select * from _tbl_products where md5(ProductID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 15:42:33]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 15:42:33]	select * from _tbl_tour_enquiry where PackageID=''
+[2021-02-24 15:42:33]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pedalscy_database._tbl_tour_enquiry' doesn't exist
+[2021-02-24 15:42:33]	select * from _tbl_sub_tour where TourTypeID=''
+[2021-02-24 15:42:33]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pedalscy_database._tbl_sub_tour' doesn't exist
+[2021-02-24 17:47:37]	select * from _tbl_events
+[2021-02-24 17:47:37]	select * from _tbl_events_images where IsDelete='0' and EventID='1' order by ImageOrder
+[2021-02-24 17:47:37]	select * from _tbl_events
+[2021-02-24 17:47:37]	select * from _tbl_events_images where IsDelete='0' and EventID='1' order by ImageOrder
+[2021-02-24 17:47:38]	select * from _tbl_events
+[2021-02-24 17:47:38]	select * from _tbl_events_images where IsDelete='0' and EventID='1' order by ImageOrder
+[2021-02-24 18:15:23]	select * from _tbl_eventss where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 18:15:23]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pedalscy_database._tbl_eventss' doesn't exist
+[2021-02-24 18:15:23]	select * from _tbl_events where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 18:15:23]	select * from _tbl_sub_tour where TourTypeID=''
+[2021-02-24 18:15:23]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pedalscy_database._tbl_sub_tour' doesn't exist
+[2021-02-24 18:17:06]	select * from _tbl_eventss where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 18:17:06]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pedalscy_database._tbl_eventss' doesn't exist
+[2021-02-24 18:17:06]	select * from _tbl_events where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 18:17:07]	select * from _tbl_sub_tour where TourTypeID=''
+[2021-02-24 18:17:07]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pedalscy_database._tbl_sub_tour' doesn't exist
+[2021-02-24 18:17:16]	select * from _tbl_events
+[2021-02-24 18:17:16]	select * from _tbl_events_images where IsDelete='0' and EventID='1' order by ImageOrder
+[2021-02-24 18:17:16]	select * from _tbl_events
+[2021-02-24 18:17:16]	select * from _tbl_events_images where IsDelete='0' and EventID='1' order by ImageOrder
+[2021-02-24 18:17:33]	select * from _tbl_eventss where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 18:17:33]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pedalscy_database._tbl_eventss' doesn't exist
+[2021-02-24 18:17:33]	select * from _tbl_events where EventTitle='' and EventID<>''
+[2021-02-24 18:17:33]	update _tbl_events set `EventTitle`     ='',
+                                                        `EventDate`     ='2021',
+                                                        `StartPoint`       ='',
+                                                        `EndPoint`       ='',
+                                                        `Routes`       ='Parvathipuram, kavalkinaru,kanyakumari, manakudi, chettikulam',
+                                                        `Description`      ='Parvathipuram, kavalkinaru,kanyakumari, manakudi, chettikulam',
+                                                        `IsPublish`        ='1' where EventID=''
+[2021-02-24 18:17:33]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'StartPoint' in 'field list'
+[2021-02-24 18:17:33]	select * from _tbl_events where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 18:17:34]	select * from _tbl_sub_tour where TourTypeID=''
+[2021-02-24 18:17:34]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pedalscy_database._tbl_sub_tour' doesn't exist
+[2021-02-24 18:19:11]	select * from _tbl_eventss where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 18:19:11]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pedalscy_database._tbl_eventss' doesn't exist
+[2021-02-24 18:19:11]	select * from _tbl_events where EventTitle='' and EventID<>''
+[2021-02-24 18:19:11]	update _tbl_events set `EventTitle`     ='',
+                                                        `EventDate`     ='2021',
+                                                        `StartPoint`       ='',
+                                                        `EndPoint`       ='',
+                                                        `Routes`       ='Parvathipuram, kavalkinaru,kanyakumari, manakudi, chettikulam',
+                                                        `Description`      ='Parvathipuram, kavalkinaru,kanyakumari, manakudi, chettikulam',
+                                                        `IsPublish`        ='1' where EventID=''
+[2021-02-24 18:19:11]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'StartPoint' in 'field list'
+[2021-02-24 18:19:11]	select * from _tbl_events where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 18:19:11]	select * from _tbl_sub_tour where TourTypeID=''
+[2021-02-24 18:19:11]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pedalscy_database._tbl_sub_tour' doesn't exist
+[2021-02-24 18:19:38]	select * from _tbl_eventss where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 18:19:38]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pedalscy_database._tbl_eventss' doesn't exist
+[2021-02-24 18:19:38]	select * from _tbl_events where EventTitle='' and EventID<>''
+[2021-02-24 18:19:38]	update _tbl_events set `EventTitle`     ='',
+                                                        `EventDate`     ='2021-3-1',
+                                                        `StartPoint`       ='',
+                                                        `EndPoint`       ='',
+                                                        `Routes`       ='Parvathipuram, kavalkinaru,kanyakumari, manakudi, chettikulam',
+                                                        `Description`      ='Parvathipuram, kavalkinaru,kanyakumari, manakudi, chettikulam',
+                                                        `IsPublish`        ='1' where EventID=''
+[2021-02-24 18:19:38]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'StartPoint' in 'field list'
+[2021-02-24 18:19:38]	select * from _tbl_events where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 18:19:39]	select * from _tbl_sub_tour where TourTypeID=''
+[2021-02-24 18:19:39]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pedalscy_database._tbl_sub_tour' doesn't exist
+[2021-02-24 18:19:40]	select * from _tbl_eventss where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 18:19:40]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pedalscy_database._tbl_eventss' doesn't exist
+[2021-02-24 18:19:40]	select * from _tbl_events where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 18:19:41]	select * from _tbl_sub_tour where TourTypeID=''
+[2021-02-24 18:19:41]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pedalscy_database._tbl_sub_tour' doesn't exist
+[2021-02-24 18:20:41]	select * from _tbl_events where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 18:20:41]	select * from _tbl_events where EventTitle='' and EventID<>'1'
+[2021-02-24 18:20:41]	update _tbl_events set `EventTitle`     ='',
+                                                        `EventDate`     ='2021-3-1',
+                                                        `StartPoint`       ='',
+                                                        `EndPoint`       ='',
+                                                        `Routes`       ='Parvathipuram, kavalkinaru,kanyakumari, manakudi, chettikulam',
+                                                        `Description`      ='Parvathipuram, kavalkinaru,kanyakumari, manakudi, chettikulam',
+                                                        `IsPublish`        ='1' where EventID='1'
+[2021-02-24 18:20:41]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'StartPoint' in 'field list'
+[2021-02-24 18:20:41]	select * from _tbl_events where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 18:20:42]	select * from _tbl_sub_tour where TourTypeID=''
+[2021-02-24 18:20:42]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pedalscy_database._tbl_sub_tour' doesn't exist
+[2021-02-24 18:20:47]	select * from _tbl_events where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 18:20:47]	select * from _tbl_events where EventTitle='' and EventID<>'1'
+[2021-02-24 18:20:47]	update _tbl_events set `EventTitle`     ='',
+                                                        `EventDate`     ='2021-3-1',
+                                                        `StartPoint`       ='',
+                                                        `EndPoint`       ='',
+                                                        `Routes`       ='Parvathipuram, kavalkinaru,kanyakumari, manakudi, chettikulam',
+                                                        `Description`      ='Parvathipuram, kavalkinaru,kanyakumari, manakudi, chettikulam',
+                                                        `IsPublish`        ='1' where EventID='1'
+[2021-02-24 18:20:47]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'StartPoint' in 'field list'
+[2021-02-24 18:20:47]	select * from _tbl_events where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 18:20:48]	select * from _tbl_sub_tour where TourTypeID=''
+[2021-02-24 18:20:48]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pedalscy_database._tbl_sub_tour' doesn't exist
+[2021-02-24 18:21:26]	select * from _tbl_events where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 18:21:26]	select * from _tbl_events where EventTitle='' and EventID<>'1'
+[2021-02-24 18:21:26]	update _tbl_events set `EventTitle`     ='',
+                                                        `EventDate`     ='2021-1-1',
+                                                        `StartPoint`       ='',
+                                                        `EndPoint`       ='',
+                                                        `Routes`       ='Parvathipuram, kavalkinaru,kanyakumari, manakudi, chettikulam',
+                                                        `Description`      ='Parvathipuram, kavalkinaru,kanyakumari, manakudi, chettikulam',
+                                                        `IsPublish`        ='1' where EventID='1'
+[2021-02-24 18:21:26]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'StartPoint' in 'field list'
+[2021-02-24 18:21:26]	select * from _tbl_events where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 18:21:26]	select * from _tbl_sub_tour where TourTypeID=''
+[2021-02-24 18:21:26]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pedalscy_database._tbl_sub_tour' doesn't exist
+[2021-02-24 18:21:38]	select * from _tbl_events where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 18:21:38]	select * from _tbl_events where EventTitle='' and EventID<>'1'
+[2021-02-24 18:21:38]	update _tbl_events set `EventTitle`     ='',
+                                                        `EventDate`     ='2021-3-1',
+                                                        `StartPoint`       ='',
+                                                        `EndPoint`       ='',
+                                                        `Routes`       ='Parvathipuram, kavalkinaru,kanyakumari, manakudi, chettikulam',
+                                                        `Description`      ='Parvathipuram, kavalkinaru,kanyakumari, manakudi, chettikulam',
+                                                        `IsPublish`        ='1' where EventID='1'
+[2021-02-24 18:21:38]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'StartPoint' in 'field list'
+[2021-02-24 18:21:38]	select * from _tbl_events where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 18:21:38]	select * from _tbl_sub_tour where TourTypeID=''
+[2021-02-24 18:21:38]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pedalscy_database._tbl_sub_tour' doesn't exist
+[2021-02-24 18:22:47]	select * from _tbl_events where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 18:22:47]	select * from _tbl_events where EventTitle='' and EventID<>'1'
+[2021-02-24 18:22:47]	update _tbl_events set `EventTitle`     ='',
+                                                        `EventDate`     ='2021-3-1',
+                                                        `StartingPoint`       ='Parvathipuram',
+                                                        `EndingPoint`       ='',
+                                                        `Routes`       ='Parvathipuram, kavalkinaru,kanyakumari, manakudi, chettikulam',
+                                                        `Description`      ='Parvathipuram, kavalkinaru,kanyakumari, manakudi, chettikulam',
+                                                        `IsPublish`        ='1' where EventID='1'
+[2021-02-24 18:22:47]	select * from _tbl_events where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 18:22:48]	select * from _tbl_sub_tour where TourTypeID=''
+[2021-02-24 18:22:48]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pedalscy_database._tbl_sub_tour' doesn't exist
+[2021-02-24 18:22:52]	select * from _tbl_events where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 18:22:52]	select * from _tbl_events where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 18:22:53]	select * from _tbl_sub_tour where TourTypeID=''
+[2021-02-24 18:22:53]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pedalscy_database._tbl_sub_tour' doesn't exist
+[2021-02-24 18:23:28]	select * from _tbl_events where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 18:23:28]	select * from _tbl_events where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 18:23:29]	select * from _tbl_sub_tour where TourTypeID=''
+[2021-02-24 18:23:29]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pedalscy_database._tbl_sub_tour' doesn't exist
+[2021-02-24 18:23:43]	select * from _tbl_events where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 18:23:43]	select * from _tbl_events where EventTitle='On Road Ride' and EventID<>'1'
+[2021-02-24 18:23:43]	update _tbl_events set `EventTitle`     ='On Road Ride',
+                                                        `EventDate`     ='2021-3-1',
+                                                        `StartingPoint`       ='Parvathipuram',
+                                                        `EndingPoint`       ='',
+                                                        `Routes`       ='Parvathipuram, kavalkinaru,kanyakumari, manakudi, chettikulam',
+                                                        `Description`      ='Parvathipuram, kavalkinaru,kanyakumari, manakudi, chettikulam',
+                                                        `IsPublish`        ='1' where EventID='1'
+[2021-02-24 18:23:43]	select * from _tbl_events where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 18:23:44]	select * from _tbl_sub_tour where TourTypeID=''
+[2021-02-24 18:23:44]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pedalscy_database._tbl_sub_tour' doesn't exist
+[2021-02-24 18:23:46]	select * from _tbl_events where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 18:23:46]	select * from _tbl_events where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 18:23:47]	select * from _tbl_sub_tour where TourTypeID=''
+[2021-02-24 18:23:47]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pedalscy_database._tbl_sub_tour' doesn't exist
+[2021-02-24 18:23:51]	select * from _tbl_events where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 18:23:51]	select * from _tbl_events where EventTitle='On Road Ride' and EventID<>'1'
+[2021-02-24 18:23:51]	update _tbl_events set `EventTitle`     ='On Road Ride',
+                                                        `EventDate`     ='2021-3-1',
+                                                        `StartingPoint`       ='Parvathipuram',
+                                                        `EndingPoint`       ='',
+                                                        `Routes`       ='Parvathipuram, kavalkinaru,kanyakumari, manakudi, chettikulam',
+                                                        `Description`      ='Parvathipuram, kavalkinaru,kanyakumari, manakudi, chettikulam',
+                                                        `IsPublish`        ='1' where EventID='1'
+[2021-02-24 18:23:51]	select * from _tbl_events where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 18:23:52]	select * from _tbl_sub_tour where TourTypeID=''
+[2021-02-24 18:23:52]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pedalscy_database._tbl_sub_tour' doesn't exist
+[2021-02-24 18:24:11]	select * from _tbl_events where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 18:24:11]	select * from _tbl_events where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 18:24:12]	select * from _tbl_sub_tour where TourTypeID=''
+[2021-02-24 18:24:12]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pedalscy_database._tbl_sub_tour' doesn't exist
+[2021-02-24 18:24:53]	select * from _tbl_events where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 18:24:53]	select * from _tbl_events where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 18:24:53]	select * from _tbl_sub_tour where TourTypeID=''
+[2021-02-24 18:24:53]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pedalscy_database._tbl_sub_tour' doesn't exist
+[2021-02-24 18:29:45]	select * from _tbl_events where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 18:29:45]	select * from _tbl_events where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 18:29:45]	select * from _tbl_sub_tour where TourTypeID=''
+[2021-02-24 18:29:45]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pedalscy_database._tbl_sub_tour' doesn't exist
+[2021-02-24 18:32:45]	select * from _tbl_events
+[2021-02-24 18:32:45]	select * from _tbl_events_images where IsDelete='0' and EventID='1' order by ImageOrder
+[2021-02-24 18:32:45]	select * from _tbl_events
+[2021-02-24 18:32:45]	select * from _tbl_events_images where IsDelete='0' and EventID='1' order by ImageOrder
+[2021-02-24 18:34:10]	select * from _tbl_events where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 18:34:10]	select * from _tbl_events where EventTitle='On Road Ride' and EventID<>'1'
+[2021-02-24 18:34:10]	update _tbl_events set `EventTitle`     ='On Road Ride',
+                                                        `EventDate`     ='2021-3-1',
+                                                        `StartingPoint`       ='Parvathipuram',
+                                                        `EndingPoint`       ='Chettikulam',
+                                                        `Routes`       ='Parvathipuram, kavalkinaru,kanyakumari, manakudi, chettikulam',
+                                                        `Description`      ='Parvathipuram, kavalkinaru,kanyakumari, manakudi, chettikulam',
+                                                        `IsPublish`        ='1' where EventID='1'
+[2021-02-24 18:34:10]	select * from _tbl_events where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 18:34:11]	select * from _tbl_sub_tour where TourTypeID=''
+[2021-02-24 18:34:11]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pedalscy_database._tbl_sub_tour' doesn't exist
+[2021-02-24 18:34:13]	select * from _tbl_events
+[2021-02-24 18:34:13]	select * from _tbl_events_images where IsDelete='0' and EventID='1' order by ImageOrder
+[2021-02-24 18:34:13]	select * from _tbl_events
+[2021-02-24 18:34:13]	select * from _tbl_events_images where IsDelete='0' and EventID='1' order by ImageOrder
+[2021-02-24 18:34:21]	select * from _tbl_products where md5(ProductID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 18:34:21]	select * from _tbl_products where md5(ProductID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 18:34:21]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 18:34:21]	select * from _tbl_tour_enquiry where PackageID=''
+[2021-02-24 18:34:21]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pedalscy_database._tbl_tour_enquiry' doesn't exist
+[2021-02-24 18:41:31]	select * from _tbl_sliders where IsActive='1'
+[2021-02-24 18:41:31]	select * from _tbl_products where IsUpcomming='1' and IsPublish='1'
+[2021-02-24 18:41:31]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 18:41:31]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 18:41:31]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 18:41:31]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 18:41:31]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 18:41:31]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 18:41:31]	select * from _tbl_products where IsNew='1' and IsPublish='1'
+[2021-02-24 18:41:31]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 18:41:31]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 18:41:31]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 18:41:31]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 18:41:31]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 18:41:31]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 18:41:31]	select * from _tbl_products where IsPopular='1' and IsPublish='1'
+[2021-02-24 18:41:31]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 18:41:31]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 18:41:31]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 18:41:31]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 18:41:31]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 18:41:31]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 18:41:31]	select * from _tbl_products where IsFeatured='1' and IsPublish='1'
+[2021-02-24 18:41:31]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 18:41:31]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 18:41:31]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 18:41:31]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 18:41:31]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 18:41:31]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 18:41:31]	select * from _tbl_customer_reviews where IsActive='1'
+[2021-02-24 19:50:42]	select * from _tbl_products where md5(ProductID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 19:50:42]	select * from _tbl_products where md5(ProductID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 19:50:42]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 19:50:42]	select * from _tbl_tour_enquiry where PackageID=''
+[2021-02-24 19:50:42]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pedalscy_database._tbl_tour_enquiry' doesn't exist
+[2021-02-24 19:53:19]	select * from _tbl_products where md5(ProductID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 19:53:19]	select * from _tbl_products where md5(ProductID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 19:53:19]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 19:53:19]	select * from _tbl_tour_enquiry where PackageID=''
+[2021-02-24 19:53:19]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pedalscy_database._tbl_tour_enquiry' doesn't exist
+[2021-02-24 20:07:56]	select * from _tbl_events where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 20:07:56]	select * from _tbl_events_images where IsDelete='0' and EventID='1' order by ImageOrder
+[2021-02-24 20:07:56]	select * from _tbl_tour_enquiry where PackageID=''
+[2021-02-24 20:07:56]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pedalscy_database._tbl_tour_enquiry' doesn't exist
+[2021-02-24 20:08:15]	select * from _tbl_events where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 20:08:15]	select * from _tbl_events_images where IsDelete='0' and EventID='1' order by ImageOrder
+[2021-02-24 20:08:15]	select * from _tbl_tour_enquiry where PackageID=''
+[2021-02-24 20:08:15]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pedalscy_database._tbl_tour_enquiry' doesn't exist
+[2021-02-24 20:08:20]	select * from _tbl_events where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 20:08:20]	select * from _tbl_events_images where IsDelete='0' and EventID='1' order by ImageOrder
+[2021-02-24 20:08:20]	select * from _tbl_tour_enquiry where PackageID=''
+[2021-02-24 20:08:20]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pedalscy_database._tbl_tour_enquiry' doesn't exist
+[2021-02-24 20:08:42]	select * from _tbl_events where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 20:08:42]	select * from _tbl_events_images where IsDelete='0' and EventID='1' order by ImageOrder
+[2021-02-24 20:08:42]	select * from _tbl_tour_enquiry where PackageID=''
+[2021-02-24 20:08:42]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pedalscy_database._tbl_tour_enquiry' doesn't exist
+[2021-02-24 20:08:47]	select * from _tbl_events where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 20:08:47]	select * from _tbl_events_images where IsDelete='0' and EventID='1' order by ImageOrder
+[2021-02-24 20:08:47]	select * from _tbl_tour_enquiry where PackageID=''
+[2021-02-24 20:08:47]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pedalscy_database._tbl_tour_enquiry' doesn't exist
+[2021-02-24 20:09:00]	select * from _tbl_events where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 20:09:00]	select * from _tbl_events_images where IsDelete='0' and EventID='1' order by ImageOrder
+[2021-02-24 20:09:00]	select * from _tbl_tour_enquiry where PackageID=''
+[2021-02-24 20:09:00]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pedalscy_database._tbl_tour_enquiry' doesn't exist
+[2021-02-24 20:10:32]	select * from _tbl_events where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 20:10:32]	select * from _tbl_events_image where IsDelete='0' EventID='1'
+[2021-02-24 20:10:32]	SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'EventID='1'' at line 1
+[2021-02-24 20:10:32]	insert into `_tbl_events_images` (`EventID`,`ImageName`,`ImageOrder`,`IsDelete`) values ('1','1614177632_whatsapp image 2021-02-23 at 10.50.50 am.jpeg','1','0')
+[2021-02-24 20:10:33]	select * from _tbl_events_images where IsDelete='0' and EventID='1' order by ImageOrder
+[2021-02-24 20:10:33]	select * from _tbl_tour_enquiry where PackageID=''
+[2021-02-24 20:10:33]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pedalscy_database._tbl_tour_enquiry' doesn't exist
+[2021-02-24 20:12:09]	select * from _tbl_events where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 20:12:09]	select * from _tbl_events_images where IsDelete='0' and EventID='1' order by ImageOrder
+[2021-02-24 20:12:28]	select * from _tbl_events where md5(EventID)='c4ca4238a0b923820dcc509a6f75849b'
+[2021-02-24 20:12:28]	select * from _tbl_events_images where IsDelete='0' and EventID='1' order by ImageOrder
+[2021-02-24 22:13:22]	select * from _tbl_sliders where IsActive='1'
+[2021-02-24 22:13:22]	select * from _tbl_products where IsUpcomming='1' and IsPublish='1'
+[2021-02-24 22:13:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 22:13:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 22:13:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 22:13:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 22:13:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 22:13:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 22:13:22]	select * from _tbl_products where IsNew='1' and IsPublish='1'
+[2021-02-24 22:13:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 22:13:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 22:13:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 22:13:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 22:13:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 22:13:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 22:13:22]	select * from _tbl_products where IsPopular='1' and IsPublish='1'
+[2021-02-24 22:13:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 22:13:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 22:13:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 22:13:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 22:13:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 22:13:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 22:13:22]	select * from _tbl_products where IsFeatured='1' and IsPublish='1'
+[2021-02-24 22:13:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 22:13:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 22:13:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 22:13:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 22:13:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 22:13:22]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 22:13:22]	select * from _tbl_customer_reviews where IsActive='1'
+[2021-02-24 22:32:04]	select * from _tbl_sliders where IsActive='1'
+[2021-02-24 22:32:04]	select * from _tbl_products where IsUpcomming='1' and IsPublish='1'
+[2021-02-24 22:32:04]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 22:32:04]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 22:32:04]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 22:32:04]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 22:32:04]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 22:32:04]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 22:32:04]	select * from _tbl_products where IsNew='1' and IsPublish='1'
+[2021-02-24 22:32:04]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 22:32:04]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 22:32:04]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 22:32:04]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 22:32:04]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 22:32:04]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 22:32:04]	select * from _tbl_products where IsPopular='1' and IsPublish='1'
+[2021-02-24 22:32:04]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 22:32:04]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 22:32:04]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 22:32:04]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 22:32:04]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 22:32:04]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 22:32:04]	select * from _tbl_products where IsFeatured='1' and IsPublish='1'
+[2021-02-24 22:32:04]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 22:32:04]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 22:32:04]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 22:32:04]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 22:32:04]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 22:32:04]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 22:32:04]	select * from _tbl_customer_reviews where IsActive='1'
+[2021-02-24 22:41:15]	select * from _tbl_sliders where IsActive='1'
+[2021-02-24 22:41:15]	select * from _tbl_products where IsUpcomming='1' and IsPublish='1'
+[2021-02-24 22:41:15]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 22:41:15]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 22:41:15]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 22:41:15]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 22:41:15]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 22:41:15]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 22:41:15]	select * from _tbl_products where IsNew='1' and IsPublish='1'
+[2021-02-24 22:41:15]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 22:41:15]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 22:41:15]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 22:41:15]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 22:41:15]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 22:41:15]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 22:41:15]	select * from _tbl_products where IsPopular='1' and IsPublish='1'
+[2021-02-24 22:41:15]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 22:41:15]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 22:41:15]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 22:41:15]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 22:41:15]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 22:41:15]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 22:41:15]	select * from _tbl_products where IsFeatured='1' and IsPublish='1'
+[2021-02-24 22:41:15]	select * from _tbl_products_images where IsDelete='0' and ProductID='1' order by ImageOrder
+[2021-02-24 22:41:15]	select * from _tbl_products_images where IsDelete='0' and ProductID='2' order by ImageOrder
+[2021-02-24 22:41:15]	select * from _tbl_products_images where IsDelete='0' and ProductID='3' order by ImageOrder
+[2021-02-24 22:41:15]	select * from _tbl_products_images where IsDelete='0' and ProductID='4' order by ImageOrder
+[2021-02-24 22:41:15]	select * from _tbl_products_images where IsDelete='0' and ProductID='5' order by ImageOrder
+[2021-02-24 22:41:15]	select * from _tbl_products_images where IsDelete='0' and ProductID='6' order by ImageOrder
+[2021-02-24 22:41:15]	select * from _tbl_customer_reviews where IsActive='1'
