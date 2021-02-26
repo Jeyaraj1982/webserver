@@ -44,7 +44,7 @@ $data= $mysql->Select("select * from _queen_expenses where MD5(ExpenseID)='".$_G
                             <div class="card-action">
                                 <div class="row">
                                     <div class="col-md-12"> 
-                                        <a href="dashboard.php?action=Expenses/list&status=All" class="btn btn-warning btn-border">Back</a>
+                                        <a href="dashboard.php?action=Expenses/list&date=<?php echo date("Y-m-d",strtotime($data[0]['CreatedOn']));?>" class="btn btn-warning btn-border">Back</a>
                                     </div>                                        
                                 </div>
                             </div>

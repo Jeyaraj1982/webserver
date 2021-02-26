@@ -85,119 +85,10 @@ input:focus{
             </div>
         </div>
    <?php } else {  ?>
-<?php  
- if (isset($_POST['invoice_btn'])) {  
-		$random = sizeof($mysql->select("select * from _queen_orders")) + 1;
-		$OrderCode ="ORD0000".$random;
-		
-		$Agentdetails = $mysql->select("select * from _queen_agent where AgentID='".$_POST['Agent']."'"); 
-		
-		$id = $mysql->insert("_queen_orders",array("AgentID"            => $Agentdetails[0]['AgentID'],
-                                                   "AgentCode"          => $Agentdetails[0]['AgentCode'],
-                                                   "AgentName"          => $Agentdetails[0]['AgentName'],
-                                                   "AgentMobileNumber"  => $Agentdetails[0]['MobileNumber'],
-												   "StaffID"            => $_SESSION['User']['StaffID'],
-                                                   "StaffCode"          => $_SESSION['User']['StaffCode'],
-                                                   "StaffName"          => $_SESSION['User']['StaffName'],
-                                                   "OrderCode"          => $OrderCode,
-                                                   "OrderTotal"   	    => $_POST['subtotal'],
-                                                   "OrderOn"   			=> date("Y-m-d H:i:s")));
-                              
-				for ($i = 0; $i < count($_POST['ServiceCode']); $i++) {
-				                                                                      
-				$sid= $mysql->insert("_queen_order_item",array("OrderID"     => $id,
-                                                               "ServiceID"   => $_POST['ServiceID'][$i],
-															   "ServiceCode" => $_POST['ServiceCode'][$i],
-															   "ServiceName" => $_POST['ServiceName'][$i],
-															   "Charge"      => $_POST['ServiceCharge'][$i],
-                                                               "FeeAmount"   => $_POST['FeeAmount'][$i],
-                                                               "TotalAmount" => $_POST['total'][$i]));
-				}
-    
-      if(sizeof($id)>0 && sizeof($sid)>0){                                                                           
-                 ?>                                                                   
-            <script>
-				$(document).ready(function() {
-					swal("Order Created Successfully", {
-						icon:"success",
-						confirm: {value: 'Continue'}
-					}).then((value) => {
-						location.href='dashboard.php?action=Orders/view&id=<?php echo md5($_GET['sid']); ?>&status=All'
-					});                                     
-				});
-			</script>                                                                                   
-     <?php unset($_POST); }else {  ?>
-        <script>
-             $(document).ready(function() {
-                swal({ 
-                  title: "Error",
-                   text: "Error Create Invoice",
-                    type: "error" 
-                  });
-             });
-            </script>
-    <?php  }
- }   ?>
- <?php  
- if (isset($_POST['saveorder_btn'])) {  
-		$random = sizeof($mysql->select("select * from _queen_temp_orders")) + 1;
-		$OrderCode ="ORD0000".$random;
-		
-		$Agentdetails = $mysql->select("select * from _queen_agent where AgentID='".$_POST['Agent']."'"); 
-		
-		$id = $mysql->insert("_queen_temp_orders",array("AgentID"            => $Agentdetails[0]['AgentID'],
-														"AgentCode"          => $Agentdetails[0]['AgentCode'],
-														"AgentName"          => $Agentdetails[0]['AgentName'],
-														"AgentMobileNumber"  => $Agentdetails[0]['MobileNumber'],
-														"StaffID"            => $_SESSION['User']['StaffID'],
-														"StaffCode"          => $_SESSION['User']['StaffCode'],
-														"StaffName"          => $_SESSION['User']['StaffName'],
-														"OrderCode"          => $OrderCode,
-														"OrderTotal"   	     => $_POST['subtotal'],
-														"OrderOn"   		 => date("Y-m-d H:i:s"),
-														"LastUpdatedBy"      => "Staff",
-														"LastUpdatedByID"    => $_SESSION['User']['StaffID'],
-														"LastUpdatedOn"      => date("Y-m-d H:i:s")));
-                               
-				for ($i = 0; $i < count($_POST['ServiceCode']); $i++) {
-				                                                                      
-				$sid= $mysql->insert("_queen_temp_order_item",array("OrderID"     => $id,
-                                                               "ServiceID"   => $_POST['ServiceID'][$i],
-															   "ServiceCode" => $_POST['ServiceCode'][$i],
-															   "ServiceName" => $_POST['ServiceName'][$i],
-															   "Charge"      => $_POST['ServiceCharge'][$i],
-                                                               "FeeAmount"   => $_POST['FeeAmount'][$i],
-                                                               "TotalAmount" => $_POST['total'][$i],
-															   "AddedBy"     => "Staff",
-															   "AddedByID"   => $_SESSION['User']['StaffID'],
-															   "AddedOn"     => date("Y-m-d H:i:s")));
-				}
-    
-      if(sizeof($id)>0 && sizeof($sid)>0){                                                                           
-                 ?>                                                                   
-            <script>
-				$(document).ready(function() {
-					swal("Order Saved Successfully", {
-						icon:"success",
-						confirm: {value: 'Continue'}
-					}).then((value) => {
-						location.href='dashboard.php?action=Orders/MySavedOrders'
-					});                                     
-				});
-			</script>                                                                                   
-     <?php unset($_POST); }else {  ?>
-        <script>
-             $(document).ready(function() {
-                swal({ 
-                  title: "Error",
-                   text: "Error Save Invoice",
-                    type: "error" 
-                  });
-             });
-            </script>
-    <?php  }
- }   ?>
-<script src="http://japps.online/demo/admin/assets/js/invoice/invoice.js"></script>
+   
+ 
+ 
+<script src="assets/js/invoice/invoice.js"></script>
 
 <div class="main-panel">
     <div class="container">
@@ -231,7 +122,7 @@ input:focus{
                                         <div id="agent_div" class="col-xs-4 col-sm-4 col-md-4 col-lg-4 pull-right" style="display: none;">
                                             <label class="col-sm-12" style="padding-left: 0px;">Select Agent</label>  
                                             <input type="text" autocomplete="off" id="AgentDetails" name="AgentDetails" class="form-control input-lg" placeholder="Enter Agent Details Here" style="height:auto !important;">
-                                            <span class="errorstring" id="ErrAgent"><?php echo isset($ErrAgent)? $ErrAgent : "";?></span> 
+                                            <!--<span class="errorstring" id="ErrAgent"><?php echo isset($ErrAgent)? $ErrAgent : "";?></span> -->
                                         </div>
                                         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
                                             <div id="div_agentdetails">
@@ -244,7 +135,7 @@ input:focus{
                                         <div  id="customer_div" style="display: none;" class="col-xs-4 col-sm-4 col-md-4 col-lg-4 pull-right">
                                             <label class="col-sm-12" style="padding-left: 0px;">Select Customer</label>  
                                             <input type="text" autocomplete="off" id="CustomerDetails" name="CustomerDetails" class="form-control input-lg" placeholder="Enter Customer Details Here" style="height:auto !important;">
-                                            <span class="errorstring" id="ErrCustomer"><?php echo isset($ErrCustomer)? $ErrCustomer : "";?></span>
+                                            <!--<span class="errorstring" id="ErrCustomer"><?php echo isset($ErrCustomer)? $ErrCustomer : "";?></span>-->
                                         </div>
                                         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
                                            <div id="div_customerdetails">
@@ -252,23 +143,90 @@ input:focus{
                                             </div>
                                         </div>
                                    </div>                                            
-                                   
-                                    <br><br>
+                                   <div class="row">
+                                    <div class="col-sm-12 errorstring" id="ErrAgent" style="color:red;font-size:12px"></div>
+                                   </div>
+                                    <br> 
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                    <select name="frmDay" class="form-control">
+                                                        <option value="01">01</option>
+                                                        <option value="02">02</option>
+                                                        <option value="03">03</option>
+                                                        <option value="04">04</option>
+                                                        <option value="05">05</option>
+                                                        <option value="06">06</option>
+                                                        <option value="07">07</option>
+                                                        <option value="08">08</option>
+                                                        <option value="09">09</option>
+                                                        <option value="10">10</option>
+                                                        <option value="11">11</option>
+                                                        <option value="12">12</option>
+                                                        <option value="13">13</option>
+                                                        <option value="14">14</option>
+                                                        <option value="15">15</option>
+                                                        <option value="16">16</option>
+                                                        <option value="17">17</option>
+                                                        <option value="18">18</option>
+                                                        <option value="19">19</option>
+                                                        <option value="20">20</option>
+                                                        <option value="21">21</option>
+                                                        <option value="22">22</option>
+                                                        <option value="23">23</option>
+                                                        <option value="24">24</option>
+                                                        <option value="25">25</option>
+                                                        <option value="26">26</option>
+                                                        <option value="27">27</option>
+                                                        <option value="28">28</option>
+                                                        <option value="29">29</option>
+                                                        <option value="30">30</option>
+                                                        <option value="31">31</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <select name="frmMonth" class="form-control"> 
+                                                        <option value="1">Jan</option>
+                                                        <option value="2">Feb</option>
+                                                        <option value="3">Mar</option>
+                                                        <option value="4">Apr</option>
+                                                        <option value="5">May</option>
+                                                        <option value="6">Jun</option>
+                                                        <option value="7">Jly</option>
+                                                        <option value="8">Aug</option>
+                                                        <option value="9">Sep</option>
+                                                        <option value="10">Oct</option>
+                                                        <option value="11">Nov</option>
+                                                        <option value="12">Dec</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <select name="frmYear" class="form-control"> 
+                                                        <option value="2020">2020</option>
+                                                        <option value="2021" selected='selected'>2021</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <br> 
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                             <table class="table table-bordered table-hover" id="invoiceItem">
                                                 <tr>
-                                                    <th width="2%"><input id="checkAll" class="formcontrol" type="checkbox"></th>
+                                                   
                                                     <th width="38%">Service</th>
                                                     <th width="15%">Charge</th>
                                                     <th width="15%">Fee</th>
                                                     <th width="15%">Total</th>
+                                                    <th></th>
                                                 </tr>
                                                 
                                             </table> 
                                             <table class="table table-bordered table-hover" id="invoiceItem">
                                                 <tr>
-                                                    <th width="2%"><input id="checkAll" class="formcontrol" type="checkbox" disabled="disabled"></th>
+                                                    
                                                     <th width="38%"><input type="text" autocomplete="off" id="Service" class="form-control input-lg" placeholder="Enter Service Name Here" style="height:auto !important">
 														<!--<select class="form-control" name="Service" id="Service" onclick="SelectService($(this).val())"  style="height:auto !important">
 															<option value="0" <?php echo ($_POST['Service']=="0") ? " selected='selected' " : "";?>>Select Service</option>
@@ -287,11 +245,7 @@ input:focus{
                                             <span class="errorstring" id="ErrService"><?php echo isset($ErrService)? $ErrService : "";?></span>                                                      
                                         </div>
                                     </div>
-                                    <div class="row">                                                                  
-                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> <!--id="addRows" -->
-                                            <button class="btn btn-danger btn-sm delete" id="removeRows" type="button"  style="padding: 0px 10px;">Delete</button>
-                                        </div>
-                                    </div>
+                                   
                                     <div class="clearfix"></div>
 									<div class="row">
 										<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8"></div>
@@ -304,7 +258,7 @@ input:focus{
 														<div class="input-group-prepend">
 															<span class="input-group-text" id="basic-addon1">RS</span>
 														</div>
-														<input readonly="readonly" value="<?php echo (isset($_POST['subtotal']) ? $_POST['subtotal'] :"0.00");?>" type="number" class="form-control" name="subtotal" id="subtotal" placeholder="Total" />
+														<input readonly="readonly" value="<?php echo (isset($_POST['subtotal']) ? $_POST['subtotal'] :"0.00");?>" type="number" class="form-control" name="subtotal" id="subtotal" placeholder="Total" style="text-align:right;font-weight:bold;" />
 													</div>
 												</div>
 											</div>
@@ -313,12 +267,13 @@ input:focus{
 									</div>  
 									<div class="row">
 										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="text-align:right">
-											<div class="form-group">
+											<div class="form-group"> 
 												<button type="button" onclick="location.href='dashboard.php?action=Orders/ManageOrders'" class="btn btn-outline-success submit_btn invoice-save-btm">Cancel Order</button>
-												<button type="button" value="Save Order" onclick="CallConfirmation()" class="btn btn-success submit_btn invoice-save-btm">Create Order</button>
-												<button type="button" value="Save Order" onclick="CallConfirmationSaveOrder()" class="btn btn-primary submit_btn invoice-save-btm">Save Order</button>
-												<button type="submit" style="display:none" name="invoice_btn" id="invoice_btn" class="btn btn-success submit_btn invoice-save-btm" ></button>
-												<button type="submit" style="display:none" name="saveorder_btn" id="saveorder_btn" class="btn btn-success submit_btn invoice-save-btm" ></button>
+												<!--<button type="button" value="Save Order" onclick="CallConfirmation()" class="btn btn-success submit_btn invoice-save-btm">Create Order</button>
+												<button type="button" value="Save Order" onclick="CallConfirmation()" class="btn btn-success submit_btn invoice-save-btm">Paynow</button>          -->
+												<button type="button" value="Save Order" onclick="CallConfirmationSaveOrder()" class="btn btn-success submit_btn">Save Order</button>
+												<button type="button" style="display:none" name="invoice_btn" id="invoice_btn" class="btn btn-success submit_btn invoice-save-btm" ></button>
+												<button type="button" style="display:none" name="saveorder_btn" id="saveorder_btn" class="btn btn-success submit_btn invoice-save-btm" ></button>
 												
 											</div>
 										</div>
@@ -380,7 +335,7 @@ function successpopup(receiptid,paidamount){
         $('#ConfirmationPopup').modal("show");
 }
 
-function CallConfirmation(){
+function CallConfirmation() {
     ErrorCount=0; 
     var Agent = $('#Agent').val().trim();
        if (Agent=="0") {
@@ -418,9 +373,7 @@ function CallConfirmation(){
             return false;
         }
 }
-function CreateInvoice() { 
-    $("#invoice_btn" ).trigger( "click" );
-}  
+  
  $(document).ready(function () {  
     $("#Agent").blur(function () {
         $('#ErrAgent').html("");
@@ -431,21 +384,14 @@ function CreateInvoice() {
     });                
     
  });
-
-</script>
-
-<script type="text/javascript">
-
+ 
 function SwitchBox(event){
     var keycode = (event.keyCode ? event.keyCode : event.which); 
-    if(keycode == '13'){ 
-        $("#search").focus(); 
-        
+    if(keycode == 13){ 
+        $("#Service").focus(); 
     }
-    
 }
-</script>
-<script>
+ 
 /*function SelectAgent(AgentID){
 	$.ajax({url:'../webservice.php?action=GetAgentDetails&AgentID='+AgentID,success:function(data){
             $('#div_agentdetails').html(data);
@@ -461,7 +407,7 @@ $(document).ready(function(){
             SelectAgent(ui.item);                                                   
         }
     }).data( "ui-autocomplete" )._renderItem = function( ul, item ) {
-        var inner_html = '<div onclick="SelectAgent('+ item +')">' + item.AgentName + '</div>';
+        var inner_html = '<div onclick="SelectAgent('+ item +')">' + item.AgentName + ' (Agent Code : '+item.AgentCode+')</div>';
         return $( "<li></li>" )
                 .data( "item.autocomplete", item )
                 .append(inner_html)
@@ -518,7 +464,7 @@ $(document).ready(function(){
     };
 })
 function SelectCustomer(obj) {
-        alert(obj);
+        
         var htmlRows = '<div class="form-group row">';
                 htmlRows += '<div style="border:1px solid #dee2e6;width: 100%;padding: 10px;">';
                     htmlRows += '<div class="col-sm-6" style="float:left"><h5> Customer Details</h5>';
@@ -550,7 +496,7 @@ $(document).ready(function(){
             return false;
         },
         select: function( event, ui ) {
-            SelectService(ui.item);                                                   
+            SelectService(ui.item);  
         }
     }).data( "ui-autocomplete" )._renderItem = function( ul, item ) {
 		var inner_html = '<div onclick="SelectService('+ item +')">' + item.ServiceName + '</div>';
@@ -565,12 +511,24 @@ function SelectService(obj){
 		var count = $(".itemRow").length;                                                              
         count++;
         var htmlRows = '';
-        htmlRows += '<tr>';
-			htmlRows += '<td><input class="itemRow" type="checkbox"></td>';          
-			htmlRows += '<td><input type="hidden" name="ServiceCode[]" id="ServiceCode_'+count+'" class="form-control" autocomplete="off" style="height: auto !important;"><input type="hidden" name="ServiceID[]" id="ServiceID_'+count+'" class="form-control" autocomplete="off" style="height: auto !important;"><input type="text" readonly="readonly" name="ServiceName[]" id="ServiceName_'+count+'" class="form-control" autocomplete="off" style="height: auto !important;"></td>';    
-			htmlRows += '<td><input type="text" readonly="readonly" name="ServiceCharge[]" id="ServiceCharge_'+count+'" class="form-control quantity" autocomplete="off" style="height: auto !important;text-align:center"></td>';
-			htmlRows += '<td style="text-align:right"><input type="text" readonly="readonly" name="FeeAmount[]" id="FeeAmount_'+count+'" class="form-control price" autocomplete="off" style="height: auto !important;text-align:center"></td>';         
+         htmlRows += '<tr id="items_'+count+'">';
+			htmlRows += '<td><input class="itemRow" type="checkbox" style="display: none;"><input type="hidden" name="ServiceCode[]" id="ServiceCode_'+count+'" class="form-control" autocomplete="off" style="height: auto !important;"><input type="hidden" name="ServiceID[]" id="ServiceID_'+count+'" class="form-control" autocomplete="off" style="height: auto !important;"><input type="text" readonly="readonly" name="ServiceName[]" id="ServiceName_'+count+'" class="form-control" autocomplete="off" style="height: auto !important;"><br>';    
+            htmlRows += '<input type="text" Placeholder="Vechile Number / Applicant Name" onkeypress="SwitchBox(event)" name="DocDetails[]" id="DocDetails_'+count+'" class="form-control quantity" autocomplete="off" style="height: auto !important;"></td>';
+            
+            if (obj.AllowtoChangeStaff=="1") {
+                htmlRows += '<td><input type="text" onkeyup="calc()" name="ServiceCharge[]" id="ServiceCharge_'+count+'" class="form-control quantity" autocomplete="off" style="height: auto !important;text-align:center"></td>';    
+            } else {
+                htmlRows += '<td><input type="text" onkeyup="calc()" readonly="readonly" name="ServiceCharge[]" id="ServiceCharge_'+count+'" class="form-control quantity" autocomplete="off" style="height: auto !important;text-align:center"></td>';    
+            }
+			
+            if (obj.AllowtochargeChangeStaff=="1") {
+                htmlRows += '<td style="text-align:right"><input onkeyup="calc()" type="text"  name="FeeAmount[]" id="FeeAmount_'+count+'" class="form-control price" autocomplete="off" style="height: auto !important;text-align:center"></td>';         
+            } else {
+			    htmlRows += '<td style="text-align:right"><input onkeyup="calc()" type="text" readonly="readonly" name="FeeAmount[]" id="FeeAmount_'+count+'" class="form-control price" autocomplete="off" style="height: auto !important;text-align:center"></td>';         
+            }
+            
 			htmlRows += '<td style="text-align:right"><input type="text" readonly="readonly" name="total[]" id="total_'+count+'" class="form-control total" autocomplete="off" style="height: auto !important;text-align:right"></td>';          
+            htmlRows += '<td style="text-align:center"><span onclick="callconfirmationremoveitem('+count+')" style="float: left;"><i class="fas fa-trash"></i></span></td>';          
         htmlRows += '</tr>';
         $('#invoiceItem').append(htmlRows);
         
@@ -590,6 +548,9 @@ function SelectService(obj){
 		
 		
 		$('#ErrService').html("");
+        
+        //alert('DocDetails_'+count); 
+      
        
 }
 /*function SelectService(ServiceID){
@@ -616,11 +577,26 @@ function SelectService(obj){
         }});
 	}
 }*/
+
+function calc() {
+    var count = $(".itemRow").length;  
+    var subtotal = 0;
+      
+      for(i=1;i<=count;i++) {
+        var charge=parseInt($("#ServiceCharge_"+i).val());
+        var fee=parseInt($("#FeeAmount_"+i).val());
+        $('#total_'+i).val(charge+fee);
+        subtotal+= (charge+fee);
+       // var fee =parseInt(obj.FeeAmount);
+       // var total = parseInt(charge+fee);  
+      }
+        $("#subtotal").val(subtotal); 
+}
 function CallConfirmationSaveOrder(){
     ErrorCount=0; 
     var Agent = $('#Agent').val().trim();
-       if (Agent=="0") {
-            $('#ErrAgent').html("Please Select Agent");                                                    
+       if (Agent.length==0) {
+            $('#ErrAgent').html("Please Select Agent / Customer");                                                    
             ErrorCount++;                                                                                      
         }
 		if($(".itemRow").length=="0"){
@@ -655,7 +631,59 @@ function CallConfirmationSaveOrder(){
         }
 }
 function SaveOrder() { 
-    $("#saveorder_btn" ).trigger( "click" );
-}  
+     $('#ConfirmationPopup').modal("hide");
+    //$("#saveorder_btn" ).trigger( "click" );
+    var param = $('#invoice-form').serialize();
+    $.post('webservice.php?action=SaveOrder',param,function(data){
+        var obj = JSON.parse(data); 
+        if (obj.status=="success") {
+                swal("Order Saved Successfully", {
+                        icon:"success",
+                        confirm: {value: 'Continue'}
+                    }).then((value) => {
+                        location.href='dashboard.php?action=Orders/editsavedOrders&id='+obj.OrderID
+                    }); 
+        } else {
+                swal({ 
+                  title: "Error",
+                   text: obj.message,
+                    type: "error" 
+                  });
+             }});
+        }
+       
+        
+    
+
+  function CreateInvoice() { 
+   // $("#invoice_btn" ).trigger( "click" );
+    
+    var param = $('#invoice-form').serialize();
+    $.post('webservice.php?action=CreateInvoice',param,function(data){
+        var obj = JSON.parse(data); 
+        if (obj.status=="success") {
+                swal("Order Saved Successfully", {
+                        icon:"success",
+                        confirm: {value: 'Continue'}
+                    }).then((value) => {
+                        location.href='dashboard.php?action=Orders/MySavedOrders'
+                    }); 
+        } else {
+                swal({ 
+                  title: "Error",
+                   text: "Error Save Invoice",
+                    type: "error" 
+                  });
+             }});
+}
+
+ 
+  function callconfirmationremoveitem(count){
+             
+            var subtotal = parseInt($("#subtotal").val()-$("#total_"+count).val());
+            $("#subtotal").val(subtotal);
+            $("#items_"+count).remove();   
+            
+        }
 </script> 
-<?php } //div_customerdetails ?> 
+<?php }  ?> 

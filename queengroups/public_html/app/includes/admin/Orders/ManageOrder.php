@@ -140,12 +140,12 @@
                                  <table class="table table-striped mt-3">
                                         <thead>
                                             <tr>
-                                                <th>Order ID.</th>
-                                                <th>Date</th>
-                                                <th>Staff Name</th>
-                                                <th>Agent Name</th>
-                                                <th style="text-align:right">Order Value</th>
-                                                <th>Status</th>
+                                                <th>Order On</th>
+                                                <th>Agent / Customer</th> 
+                                                <th style="text-align:right">Order Value</th>                             
+												<th>Created</th>
+                                                <th style="text-align:right">We Have</th>
+												<th style="text-align:right">Payable</th>
                                                 <th></th>
                                             </tr>
                                         </thead>
@@ -155,18 +155,34 @@
                                         $OrderDate = date("d M, Y, H:i", strtotime($Order["OrderOn"]));
                                          ?>
                                             <tr>
-                                                <td><?php echo $Order["OrderCode"];?></td>
                                                 <td><?php echo $OrderDate;?></td>
+												<td><?php echo $Order["AgentName"];?></td>
+												<td style="text-align:right"><?php echo number_format($Order["OrderTotal"],2);?></td>
                                                 <td><?php echo $Order["StaffName"];?></td>
-                                                <td><?php echo $Order["AgentName"];?></td>
-                                                <td style="text-align:right"><?php echo number_format($Order["OrderTotal"],2);?></td>
-                                                <td><?php if($Order['IsPaid']=="1"){ echo "<span style='color:green'>Paid</span>"; } else { echo "<span style='color:red'>Unpaid</span>";} ?></td>
+                                                <td style="text-align:right">
+                                                    <?php if(getTotalBalanceWallet($Order['AgentID'])>0){
+                                                                echo number_format(getTotalBalanceWallet($Order['AgentID']),2);
+                                                    }else{
+                                                        echo "0.00";
+                                                    }
+                                                    ?> 
+                                                </td>
+                                                <td style="text-align:right">
+                                                    <?php if(getTotalBalanceWallet($Order['AgentID'])<0){
+                                                                $payable = (getTotalBalanceWallet($Order['AgentID']) * (-1)); 
+                                                                echo number_format($payable,2);
+                                                    }else{
+                                                        echo "0.00"; 
+                                                    }
+                                                    ?> 
+                                                </td>
                                                 <td style="text-align: right">                                                   
                                                     <div class="dropdown dropdown-kanban" style="float: right;">
                                                         <button class="" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border:none;font-size:14px;background:none !important;padding-right:0px;margin-right:0px;cursor:pointer">
                                                             <i class="icon-options-vertical"></i>
                                                         </button>
                                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                            <a class="dropdown-item" href="dashboard.php?action=Orders/edit&id=<?php echo md5($Order["OrderID"]);?>" draggable="false">Edit</a>
                                                             <a class="dropdown-item" href="dashboard.php?action=Orders/view&id=<?php echo md5($Order["OrderID"]);?>" draggable="false">View</a>
                                                             <!--<a class="dropdown-item" draggable="false"><span onclick='CallConfirmation(<?php echo $Order["OrderID"];?>)' class='btn btn-danger btn-sm' style='padding: 0px 10px;font-size: 10px;'>Delete</span></a>-->
                                                         </div>

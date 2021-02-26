@@ -136,7 +136,7 @@ $(document).ready(function () {
                                                 </div>
                                             </div>
                                             <div class="col-sm-6" style="padding-right: 0px;">
-                                                <label for="name">Alternative MobileNumber<span style="color:red">*</span></label>
+                                                <label for="name">Alternative MobileNumber</label>
                                                 <div class="col-sm-12" style="padding-right: 0px;padding-left:0px">
                                                     <div class="input-group">
                                                         <div class="input-group-prepend">

@@ -46,8 +46,13 @@
                     <div class="collapse" id="MyExpenses">
                         <ul class="nav nav-collapse">
                             <li>
-                                <a href="dashboard.php?action=Expenses/list&status=All">
-                                    <span class="sub-item">My Expenses</span>
+                                <a href="dashboard.php?action=Expenses/add">
+                                    <span class="sub-item">Add Expense</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dashboard.php?action=Expenses/history">
+                                    <span class="sub-item">Expenses Hisotry</span>
                                 </a>
                             </li>
                         </ul>
@@ -66,6 +71,28 @@
                                     <span class="sub-item">Add Payments</span>
                                 </a>
                             </li>
+                             <li>
+                                <a href="dashboard.php?action=Payments/history">
+                                    <span class="sub-item">Payment History</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">   
+                    <a data-toggle="collapse" href="#MyReports"> 
+                        <i class="fas fa-users"></i>
+                        <p>Reports</p>
+                        <span class="caret"></span>
+                    </a>
+                    <div class="collapse" id="MyReports">
+                        <ul class="nav nav-collapse">
+                            <li>
+                                <a href="dashboard.php?action=Reports/DailyReport">
+                                    <span class="sub-item">DailyReport</span>
+                                </a>
+                            </li>
+                              
                         </ul>
                     </div>
                 </li>
@@ -82,14 +109,24 @@
                                     <span class="sub-item">New Order</span>
                                 </a>
                             </li>
-							<li>
-                                <a href="dashboard.php?action=Orders/ManageOrders">
-                                    <span class="sub-item">Manage Orders</span>
-                                </a>
-                            </li>
-							<li>
+                            <li>
                                 <a href="dashboard.php?action=Orders/MySavedOrders">
                                     <span class="sub-item">My Saved Orders</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dashboard.php?action=Orders/AllSavedOrders">
+                                    <span class="sub-item">All Saved Orders</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dashboard.php?action=Orders/MyOpenedOrders">
+                                    <span class="sub-item">My Opened Orders</span>
+                                </a>                                                        
+                            </li>
+							<li>
+                                <a href="dashboard.php?action=Orders/ManageOrders">
+                                    <span class="sub-item">Completed Orders</span>
                                 </a>
                             </li>
 						</ul>

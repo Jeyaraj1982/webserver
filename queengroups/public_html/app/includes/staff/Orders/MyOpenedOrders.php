@@ -1,11 +1,5 @@
 <?php 
-     $fromDate = isset($_POST['fdate']) ? $_POST['fdate'] : date("Y-m-d");
-     $toDate = isset($_POST['tdate']) ? $_POST['tdate'] : date("Y-m-d");
-     if($fromDate!="" && $toDate!=""){
-        $Orders = $mysql->select("SELECT * FROM _queen_orders where (date(OrderOn)>=date('".$fromDate."') and date(OrderOn)<=date('".$toDate."') ) order by OrderID desc");
-     }else {
-        $Orders = $mysql->select("SELECT * FROM _queen_orders order by OrderID desc"); 
-     }
+    $Orders = $mysql->select("SELECT * FROM _queen_temp_orders where Edit='".$_SESSION['User']['StaffID']."'  order by OrderID desc"); 
 ?>
 <div class="main-panel">
     <div class="container">
@@ -17,7 +11,7 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="card-title">
-                                        Manage Orders
+                                        My Opened Orders
                                     </div>
                                 </div>
                                 <div class="col-md-6" style="text-align: right;">
@@ -26,25 +20,6 @@
                             </div>
                         </div>
                         <div class="card-body">
-                        <form action="" method="post">
-                                <div class="row">                                                              
-                                    <div class="col-sm-2">
-                                        <div class="form-group form-group-default">          
-                                            <label>From Date</label>
-                                            <input type="text" class="form-control" id="fdate" name="fdate" value="<?php echo $fromDate;?>" placeholder="From Date">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <div class="form-group form-group-default">
-                                            <label>To Date</label>
-                                            <input type="text" class="form-control" id="tdate" name="tdate" value="<?php echo  $toDate;?>" placeholder="To Date">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <input type="submit" value="View Orders" class="btn btn-primary" name="viewinvoice">
-                                    </div>
-                                </div>
-                            </form>
                             <div class="table-responsive">
                                  <table class="table table-striped mt-3">
                                         <thead>
@@ -59,6 +34,7 @@
                                             </tr>
                                         </thead>
                                         <tbody>
+                                        
                                         <?php foreach($Orders as $Order){
                                         $OrderDate = date("d M, Y, H:i", strtotime($Order["OrderOn"]));
                                          ?>
@@ -90,7 +66,8 @@
                                                             <i class="icon-options-vertical"></i>
                                                         </button>
                                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                            <a class="dropdown-item" href="dashboard.php?action=Orders/view&id=<?php echo md5($Order["OrderID"]);?>" draggable="false">View</a>
+                                                            <a class="dropdown-item" href="dashboard.php?action=Orders/editsavedOrders&id=<?php echo md5($Order["OrderID"]);?>" draggable="false">Edit</a>
+                                                            <a class="dropdown-item" href="dashboard.php?action=Orders/viewsavedOrders&id=<?php echo md5($Order["OrderID"]);?>" draggable="false">View</a>
                                                             <!--<a class="dropdown-item" draggable="false"><span onclick='CallConfirmation(<?php echo $Order["OrderID"];?>)' class='btn btn-danger btn-sm' style='padding: 0px 10px;font-size: 10px;'>Delete</span></a>-->
                                                         </div>
                                                     </div>
@@ -108,7 +85,7 @@
                         </div>                                                                                                                                            
                     </div>                                                                                             
                 </div>
-            </div>
+            </div>                                                                     
         </div>
     </div>
 </div>
@@ -151,7 +128,7 @@
  function DeleteInvoice(Invoiceid) {
      var param = $( "#InvoiceFrm_"+Invoiceid).serialize();
     $("#confrimation_text").html(loading);
-    $.post( "http://japps.online/demo/admin/webservice.php?action=DeleteInvoice",param,function(data) {
+    $.post( "http://japps.online/demo/admin/webservice.php?action=DeleteSavedInvoice",param,function(data) {
         var obj = JSON.parse(data); 
         var html = "";                                                                              
         if (obj.status=="failure") {

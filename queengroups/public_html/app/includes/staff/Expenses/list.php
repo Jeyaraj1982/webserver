@@ -9,6 +9,7 @@
         $Expenses = $mysql->select("select * from _queen_expenses where StaffID='".$_SESSION['User']['StaffID']."' and IsActive='0' order by ExpenseID desc");
         $title="Blocked Expenses";
     }
+     $Expenses = $mysql->select("select * from _queen_expenses where StaffID='".$_SESSION['User']['StaffID']."' and date(CreatedOn)='".$_GET['date']."' order by ExpenseID desc");
 ?>
 <div class="main-panel">                                                                                                                                                                      
     <div class="container">
@@ -34,9 +35,11 @@
                                  <table class="table table-striped mt-3">
                                         <thead>
                                             <tr>
+                                                <th scope="col">Date</th>
                                                 <th scope="col">Expense Type</th>
                                                 <th scope="col">Short Description</th>
                                                 <th scope="col" style="text-align:right">Expense Amount</th>
+                                                <th scope="col">Payment Mode</th>
                                                 <th scope="col"></th>
                                             </tr>                            
                                         </thead>
@@ -44,10 +47,12 @@
                                         
                                         <?php foreach($Expenses as $Expense){ ?>
                                        <tr>
+                                                <td><?php echo date("d M, Y, H:i",strtotime($Expense['CreatedOn']));?></td>
                                                 <td><?php echo $Expense['ExpenseType'];?></td>
                                                 <td><?php echo $Expense['ShortDescription'];?></td>
                                                 <td style="text-align:right"><?php echo number_format($Expense['ExpenseAmount'],2);?></td>
-                                                <td style="text-align: right">                                                   
+                                                <td><?php echo $Expense['PaymentMode'];?></td>
+												<td style="text-align: right">                                                   
                                                         <div class="dropdown dropdown-kanban" style="float: right;">
                                                             <button class="" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border:none;font-size:14px;background:none !important;padding-right:0px;margin-right:0px;cursor:pointer">
                                                                 <i class="icon-options-vertical"></i>
@@ -60,7 +65,7 @@
                                             </tr>
                                         <?php } if(sizeof($Expenses)=="0"){ ?>
                                             <tr>
-												<td style="text-align: center;" colspan="5">No Expenses found</td>
+												<td style="text-align: center;" colspan="6">No Expenses found</td>
                                             </tr>
                                         <?php } ?> 
                                         </tbody>

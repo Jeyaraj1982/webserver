@@ -3,7 +3,7 @@
     if (! (isset($_SESSION['User']['StaffID']) || isset($_SESSION['User']['AdminID']) )) {
         ?>
         <script>
-        location.href='../login.php';
+        location.href='../index.php';
         </script>
         <?php
     }

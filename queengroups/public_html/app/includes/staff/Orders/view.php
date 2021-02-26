@@ -24,9 +24,7 @@ $items = $mysql->select("select * from _queen_order_item where OrderID='".$Order
                             <div class="row" style="margin-right:0px;margin-left:0px">
                                 <div class="col-md-12" style="padding-right:0px;padding-left:0px">
                                     <div class="col-md-6" style="padding-right:0px;padding-left:0px;float: left;">
-                                       <h5 style="margin-bottom:0px;font-weight: bold;">Staff Details</h5>
-                                        <?php echo $Orders[0]['StaffName'];?><br><br>
-										
+                                       
                                         <h5 style="margin-bottom:0px;font-weight: bold;">Agent Details</h5>
                                         <?php echo $Orders[0]['AgentName'];?><br>
                                         <?php echo $Orders[0]['AgentMobileNumber'];?><br>
@@ -34,10 +32,12 @@ $items = $mysql->select("select * from _queen_order_item where OrderID='".$Order
                                     <div class="col-md-6" style="padding-right:0px;padding-left:0px;float: left;text-align: right;">
                                         <h5 style="margin-bottom:0px;font-weight: bold;">Order Details</h5>
                                         <?php echo "Order Number: ".$Orders[0]['OrderCode'];?><br>
-                                        <?php echo date("M d, Y H:i",strtotime($Orders[0]['OrderOn']));?><br>
+                                        <?php echo date("M d, Y H:i",strtotime($Orders[0]['OrderOn']));?><br><br>
+										<h5 style="margin-bottom:0px;font-weight: bold;">Staff Details</h5>
+                                        <?php echo $Orders[0]['StaffName'];?><br><br>
                                     </div>
                                 </div>
-			                </div>
+							</div>
                         </div>
 			            <div class="card-body">
 				        
@@ -96,6 +96,12 @@ $items = $mysql->select("select * from _queen_order_item where OrderID='".$Order
 				        </div>
 		            </div>
 	            </div>
+            </div>
+			<div class="row">
+                <div class="col-md-12" style="padding-right:0px;padding-left:0px;text-align:center">
+                    <a href="dashboard.php?action=Orders/ManageOrders" class="btn btn-outline-primary">Back</a>&nbsp;&nbsp;
+                    <a href="printorder.php?id=<?php echo $_GET['id'];?>" target="blank" class="btn btn-primary">Print</a>&nbsp;
+				</div>
             </div>
         </div>
     </div>

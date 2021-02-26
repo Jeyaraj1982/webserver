@@ -103,7 +103,7 @@ $(document).ready(function () {
                                                     <span class="input-icon-addon">
                                                         <i class="fas fa-rupee-sign"></i>
                                                     </span>
-                                                    <input type="text" class="form-control" id="FeeAmount" name="FeeAmount" placeholder="Enter Fee Amount" value="<?php echo (isset($_POST['FeeAmount']) ? $_POST['FeeAmount'] :"");?>">
+                                                    <input type="text" class="form-control" id="FeeAmount" name="FeeAmount" placeholder="Enter Fee Amount" value="<?php echo (isset($_POST['FeeAmount']) ? $_POST['FeeAmount'] :"0");?>">
                                                 </div>
                                                 <div class="col-sm-12" style="padding: 0px;">
                                                     <div class="custom-control custom-checkbox">

@@ -42,6 +42,8 @@
                                                 <th scope="col">Mobile Number</th>
                                                 <?php if($_GET['status']=="All"){ ?><th scope="col">Status</th><?php } ?>
 												<th scope="col">Created On</th>
+												<th scope="col" style="text-align:right">We Have</th>
+												<th scope="col" style="text-align:right">Payable</th>
 												<th></th>
                                             </tr>                            
                                         </thead>
@@ -53,14 +55,33 @@
                                                 <td><?php echo $Agent['AgentName'];?><br><span style="font-size: 11px;color: #55576A;"><?php echo $Agent['SurName'];?></span></td>
                                                 <td><?php echo $Agent['MobileNumber'];?></td>
                                                 <?php if($_GET['status']=="All"){ ?><td><?php if($Agent['IsActive']=="1") { echo "Active"; } else { echo "Blocked";}?></td><?php } ?>
-                                                <td><?php echo date("d M, Y, H:i",strtotime($Agent['CreatedOn']));?></td>
+                                                <td><?php echo date("M d, Y",strtotime($Agent['CreatedOn']));?></td>
+												<td style="text-align:right">
+													<?php if(getTotalBalanceWallet($Agent['AgentID'])>0){
+																echo number_format(getTotalBalanceWallet($Agent['AgentID']),2);
+													}else{
+														echo "0.00";
+													}
+													?> 
+												</td>
+												<td style="text-align:right">
+													<?php if(getTotalBalanceWallet($Agent['AgentID'])<0){
+																$payable = (getTotalBalanceWallet($Agent['AgentID']) * (-1)); 
+                                                                echo number_format($payable,2);
+													}else{
+														echo "0.00";
+													}
+													?> 
+												</td>
 												<td style="text-align: right">                                                   
                                                         <div class="dropdown dropdown-kanban" style="float: right;">
                                                             <button class="" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border:none;font-size:14px;background:none !important;padding-right:0px;margin-right:0px;cursor:pointer">
                                                                 <i class="icon-options-vertical"></i>
                                                             </button>
                                                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                                <a class="dropdown-item" href="dashboard.php?action=Agent/edit&id=<?php echo md5($Agent['AgentID']);?>" draggable="false">Edit</a>
+                                                                <a class="dropdown-item" href="dashboard.php?action=Agent/Transactions&id=<?php echo md5($Agent['AgentID']);?>" draggable="false">View Transactions</a>
+                                                                <a class="dropdown-item" href="dashboard.php?action=Agent/Orders&id=<?php echo md5($Agent['AgentID']);?>" draggable="false">View Orders</a>
+																<a class="dropdown-item" href="dashboard.php?action=Agent/edit&id=<?php echo md5($Agent['AgentID']);?>" draggable="false">Edit</a>
 															</div>
                                                         </div>
                                                     </td>

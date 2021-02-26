@@ -27,10 +27,20 @@
                                         <div class="col-7 col-stats">
                                             <div class="numbers">
                                                 <p class="card-category">Agents</p>
-                                                <h3 class="card-title"><?php echo sizeof($mysql->select("select * from _queen_agent where IsActive='1' and IsAgent='1'")); ?></h3>
+                                                <h3 class="card-title"><?php echo sizeof($mysql->select("select * from _queen_agent where IsAgent='1'")); ?></h3>
                                             </div>
-                                        </div>
+										</div>
                                     </div>
+									<div class="row">
+										<div class="col-4">
+										</div>
+										<div class="col-4">
+											<p><i class="fas fa-bullseye" style="color:green"></i> <?php echo sizeof($mysql->select("select * from _queen_agent where IsActive='1' and IsAgent='1'")); ?></p>
+										</div>
+										<div class="col-4">
+											<p><i class="fas fa-bullseye" style="color:grey"></i> <?php echo sizeof($mysql->select("select * from _queen_agent where IsActive='0' and IsAgent='1'")); ?></p>
+										</div>
+									</div>
                                 </div>
                             </div>
                         </div>
@@ -46,10 +56,20 @@
                                         <div class="col-7 col-stats">
                                             <div class="numbers">
                                                 <p class="card-category">Customers</p>
-                                                <h3 class="card-title"><?php echo sizeof($mysql->select("select * from _queen_agent where IsActive='1' and IsAgent='0'")); ?></h3>
+                                                <h3 class="card-title"><?php echo sizeof($mysql->select("select * from _queen_agent where IsAgent='0'")); ?></h3>
                                             </div>
                                         </div>
                                     </div>
+									<div class="row">
+										<div class="col-4">
+										</div>
+										<div class="col-4">
+											<p><i class="fas fa-bullseye" style="color:green"></i> <?php echo sizeof($mysql->select("select * from _queen_agent where IsActive='1' and IsAgent='0'")); ?></p>
+										</div>
+										<div class="col-4">
+											<p><i class="fas fa-bullseye" style="color:grey"></i> <?php echo sizeof($mysql->select("select * from _queen_agent where IsActive='0' and IsAgent='0'")); ?></p>
+										</div>
+									</div>
                                 </div>
                             </div>
                         </div>
@@ -65,10 +85,20 @@
                                         <div class="col-7 col-stats">
                                             <div class="numbers">
                                                 <p class="card-category">Staffs</p>
-                                                <h3 class="card-title"><?php echo sizeof($mysql->select("select * from _queen_staffs where IsActive='1'")); ?></h3>
+                                                <h3 class="card-title"><?php echo sizeof($mysql->select("select * from _queen_staffs")); ?></h3>
                                             </div>
                                         </div>
                                     </div>
+									<div class="row">
+										<div class="col-4">
+										</div>
+										<div class="col-4">
+											<p><i class="fas fa-bullseye" style="color:green"></i> <?php echo sizeof($mysql->select("select * from _queen_staffs where IsActive='1'")); ?></p>
+										</div>
+										<div class="col-4">
+											<p><i class="fas fa-bullseye" style="color:grey"></i> <?php echo sizeof($mysql->select("select * from _queen_staffs where IsActive='0'")); ?></p>
+										</div>
+									</div>
                                 </div>
                             </div>
                         </div>
@@ -84,10 +114,20 @@
                                         <div class="col-7 col-stats">
                                             <div class="numbers">
                                                 <p class="card-category">Services</p>
-                                                <h3 class="card-title"><?php echo sizeof($mysql->select("select * from _queen_services where IsActive='1'")); ?></h3>
+                                                <h3 class="card-title"><?php echo sizeof($mysql->select("select * from _queen_services")); ?></h3>
                                             </div>
                                         </div>
                                     </div>
+									<div class="row">
+										<div class="col-4">
+										</div>
+										<div class="col-4">
+											<p><i class="fas fa-bullseye" style="color:green"></i> <?php echo sizeof($mysql->select("select * from _queen_services where IsActive='1'")); ?></p>
+										</div>
+										<div class="col-4">
+											<p><i class="fas fa-bullseye" style="color:grey"></i> <?php echo sizeof($mysql->select("select * from _queen_services where IsActive='0'")); ?></p>
+										</div>
+									</div>
                                 </div>
                             </div>
                         </div>
@@ -140,6 +180,7 @@
                                 </div>
                             </div>
                         </div>
+						
                         <div class="col-sm-6 col-md-3">
                             <div class="card card-stats card-round" style="cursor: pointer;">
                                 <div class="card-body ">
@@ -163,5 +204,53 @@
                                 </div>
                             </div>
                         </div>
-                    </div> 
+                    </div>
+					<div class="row">
+						<div class="col-sm-6 col-md-3">
+                            <div class="card card-stats card-round" style="cursor: pointer;">
+                                <div class="card-body ">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="icon-big text-center">
+                                                <i class="flaticon-analytics text-warning"></i>
+                                            </div>
+                                        </div> 
+                                        <div class="col-9 col-stats">
+                                            <div class="numbers">
+                                                <p class="card-category">Fee Value</p>
+                                                <h3 class="card-title">
+                                                    <?php 
+                                                    $d = $mysql->select("select (sum(FeeAmount)) as bal from _queen_order_item");
+                                                    echo number_format(isset($d[0]['bal']) ? $d[0]['bal'] : 0,2);
+                                                   ?></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+						<div class="col-sm-6 col-md-3">
+                            <div class="card card-stats card-round" style="cursor: pointer;">
+                                <div class="card-body ">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="icon-big text-center">
+                                                <i class="flaticon-analytics text-warning"></i>
+                                            </div>
+                                        </div> 
+                                        <div class="col-9 col-stats">
+                                            <div class="numbers">
+                                                <p class="card-category">Charge Value</p>
+                                                <h3 class="card-title">
+                                                    <?php 
+                                                    $d = $mysql->select("select (sum(Charge)) as bal from _queen_order_item");
+                                                    echo number_format(isset($d[0]['bal']) ? $d[0]['bal'] : 0,2);
+                                                   ?></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+					</div>
                 </div>
