@@ -51,7 +51,7 @@
     margin:0px auto;
     text-align:left     
 }
-.table-striped tbody tr:nth-of-type(2n+1) {background:yellow !important}
+/*.table-striped tbody tr:nth-of-type(2n+1) {background:yellow !important}*/
 </style>    
 
 <body>

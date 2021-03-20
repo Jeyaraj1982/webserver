@@ -73,7 +73,7 @@
                                         <?php } ?>
                                           <?php  if(sizeof($Categorys)=="0"){ ?>
                                             <tr>
-                                                <td style="text-align: center;" colspan="4">No Categories found</td>
+                                                <td style="text-align: center;" colspan="6">No Categories found</td>
                                             </tr>
                                         <?php } ?>
                                         </tbody>

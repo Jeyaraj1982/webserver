@@ -1,30 +1,7 @@
 <footer>
 
-
-      <div class="foot-top" style="background:#f7f7f7;"><div class="container"><div>    <div class="slide-padding">
+<div class="foot-top" style="display: none;"><div class="container"><div>    <div class="slide-padding">
     <div class="service">
-    <div class="row" style="margin-top:10px;">
-                    <div class=" col-sm-3 col-xs-12">
-                        <div style="text-align: center;" >
-                            <img src="<?php echo WEB_URL;?>/assets/lowest_guranty.png" style="height:100px;margin:0px auto">
-                            <br><!--Buy groceries , Vegetables, Fruits, Household items, Electronics, furnitures,  Online at www.klxmart.online and-->Get the lowest price guarantee on your Favourite Brands and Products in klxmart.com
-                        </div>
-                    </div>
-                    <div class=" col-sm-3 col-xs-12">
-                        <div style="text-align: center;" >
-                            <img src="<?php echo WEB_URL;?>/assets/cash_on_delivery.png" style="height:100px;margin:0px auto">
-                            <br>We Provide 100% Cash on Delivery (COD) at your doorstep. You can pay for 'Cash on Delivery' orders by cash at your doorstep, once u receive your products
-                        </div>
-                    </div>
-                    
-                     <div class=" col-sm-3 col-xs-12">
-                        <div style="text-align: center;" >
-                            <img src="<?php echo WEB_URL;?>/assets/free_delivery.png" style="height:100px;margin:0px auto">
-                            <br>Orders of ₹1000 or above you will get Free Delivery , And Orders between ₹1000, charges of ₹50 shall be applied to your Orders
-                        </div>
-                    </div>
-                </div>
-                <!--
             <div class="row">
                 <ul class="col-xs-12 col-sm-3 col-md-3 list-inline">
                     <li class="del1"><svg width="36px" height="36px"> <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#gift"></use> </svg></li>
@@ -55,7 +32,35 @@
                     </li>
                 </ul>
             </div>
-            -->
+    </div>
+  </div></div>
+
+</div></div>
+
+      <div class="foot-top" style="background:#f7f7f7;"><div class="container"><div>    <div class="slide-padding">
+    <div class="service">
+    <div class="row" style="margin-top:10px;">
+                    <div class=" col-sm-3 col-xs-12">
+                        <div style="text-align: center;" >
+                            <img src="<?php echo WEB_URL;?>/assets/lowest_guranty.png" style="height:100px;margin:0px auto">
+                            <br>Lowest Price Guarantee 
+                        </div>
+                    </div>
+                    <div class=" col-sm-3 col-xs-12">
+                        <div style="text-align: center;" >
+                            <img src="<?php echo WEB_URL;?>/assets/cash_on_delivery.png" style="height:100px;margin:0px auto">
+                            <br>Cash on Delivery<br>at your doorstep
+                        </div>
+                    </div>
+                    
+                     <div class=" col-sm-3 col-xs-12">
+                        <div style="text-align: center;" >
+                            <img src="<?php echo WEB_URL;?>/assets/free_delivery.png" style="height:100px;margin:0px auto">
+                            <br>Free Delivery<br>Your Order value above Rs.2000
+                        </div>
+                    </div>
+                </div>
+                 
     </div>
   </div></div>
 
@@ -63,18 +68,17 @@
 
   <div class="container">
     <div class="row">
-    <aside id="column-left1" class="col-sm-3">
+    <aside id="column-left1" class="col-sm-6">
     <div>  <h5><span>Contact us</span>
    <button type="button" class="btn btn-primary toggle collapsed" data-toggle="collapse" data-target="#contact"></button>
 </h5>
 <div id="contact" class="collapse footer-collapse footcontact">
 <ul class="list-unstyled f-left">
-  <li><i class="fa fa-map-marker"></i>No: 34 Main Road, Marthandam.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kanyakumari Dist</li>
-  <li><i class="fa fa-map-marker"></i>No: 23/1 Harikrishna St,<br>Saligramam. Chennai</li>
+  <li><i class="fa fa-map-marker"></i>3/105, West Street, Eraviputhoor P.O</li>
+  <li><i class="fa fa-map-marker"></i>Kanyakumari District. 629402</li>
   <!--<li><i class="fa fa-envelope"></i>company@gmail.com</li>-->
-  <li><i class="fa fa-phone"></i>(+91) - 9791330770 </li>
-  <!--<li><i class="fa fa-print" aria-hidden="true"></i> &nbsp;
-fax@company.com</li>-->
+  <li><i class="fa fa-phone"></i>9566585866</li>
+  <li><i class="fa fa-print" aria-hidden="true"></i>&nbsp;gbmaligai@gmail.com</li>
   </ul>
   <!--<ul class="list-inline list-unstyled foot-social">
   <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -89,46 +93,30 @@ fax@company.com</li>-->
   <div class="col-sm-6">
     <div class="row">
     <div class="middle-footer">
-      <div class="col-sm-4">
-          <h5>Extras
-            <button type="button" class="btn btn-primary toggle collapsed" data-toggle="collapse" data-target="#extra"></button>
-          </h5>
-          <div id="extra" class="collapse footer-collapse">
-          <ul class="list-unstyled">
-            <li><a href="">Brands</a></li>
-            <li><a href="">Gift Certificates</a></li>
-            <li><a href="">Affiliate</a></li>
-            <li><a href="">Specials</a></li>
-            <li><a href="">Contact Us</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-sm-4">
+       
+      <div class="col-sm-6">
                 <h5>Information
           <button type="button" class="btn btn-primary toggle collapsed" data-toggle="collapse" data-target="#info"></button>
         </h5>
         <div id="info" class="collapse footer-collapse">
         <ul class="list-unstyled">
                    <li><a href="">About Us</a></li>
-                    <li><a href="">Delivery Information</a></li>
                     <li><a href="">Privacy Policy</a></li>
                     <li><a href="">Terms &amp; Conditions</a></li>
                     <li><a href="">Contact Us</a></li>
-          <li><a href="">Site Map</a></li>
+         
         </ul>
         </div>
               </div>
-      <div class="col-sm-4">
+      <div class="col-sm-6">
         <h5>My Account
           <button type="button" class="btn btn-primary toggle collapsed" data-toggle="collapse" data-target="#account"></button>
         </h5>
         <div id="account" class="collapse footer-collapse">
         <ul class="list-unstyled lastb">
           <li><a href="">My Account</a></li>
-          <li><a href="">Order History</a></li>
-          <li><a href="">Wish List</a></li>
-          <li><a href="">Newsletter</a></li>
-          <li><a href="">Returns</a></li>
+          <li><a href="">My Orders</a></li>
+          <li><a href="">My WishList</a></li>
         </ul>
         </div>
       </div>
@@ -139,6 +127,7 @@ fax@company.com</li>-->
       </div>
     </div>
 
+     <!--
   <div class="container">
     <div class="foot-bottom">
       <div>  <div class="row">
@@ -166,9 +155,10 @@ fax@company.com</li>-->
 
     </div>
   </div>
-   <div class="foot-power">
+   -->
+   <div class="foot-power" style="background: #222;">
         <div class="container">
-            <div class="copy text-center">Powered By <a href="http://www.klxmart.com">klxmart.com</a>2020-2021</div>
+            <div class="copy text-center">Powered By <a href=""></a>2020-2021</div>
         </div>
     </div>
 </footer>
@@ -514,8 +504,13 @@ function Cart_RemoveItem(ProductID){
             }
         }); 
 
+        
+        function goSearch(search_text) {
+            $('#btn-search-category').click();
+        }
         $('#btn-search-category').click(function () {
             var url = 'http://templatetasarim.com/opencart/Basket/index.php?route=product/search';
+            var url = 'search_products.php?';
             var text_search = $('#text-search').val();
             if(text_search) {
                 url += '&search=' + encodeURIComponent(text_search);
@@ -559,20 +554,23 @@ function Cart_RemoveItem(ProductID){
         }
         
         function ajaxSearch(text_search, cate_search) {
+            if (text_search.length>2) {
             $.ajax({
-                url         : 'http://templatetasarim.com/opencart/Basket/index.php?route=extension/module/ocsearchcategory/ajaxSearch',
+                url         : 'webservice.php?action=ajaxSearch',
                 type        : 'post',
                 data        : { text_search : text_search, cate_search : cate_search },
                 beforeSend  : function () {
                     $('.ajax-loader-container').show();
                 },
                 success     : function(json) {
-                    if(json['success'] == true) {
-                        $('.ajax-result-container').html(json['result_html']);
+                  var obj = JSON.parse(json);
+                    if(obj.success == true) {
+                        $('.ajax-result-container').html(obj.result_html);
                         $('.ajax-loader-container').hide();
                     }
                 }
             });
+            }
         }
 
     });    

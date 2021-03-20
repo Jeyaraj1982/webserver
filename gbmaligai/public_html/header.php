@@ -43,10 +43,11 @@
                 .static-menu li{padding-bottom:14px !important;}
                 .errorstring{font-size:11px;color:red;}
                 #sub a {color: green;}
-                .theme-menu-background{background:#700f6a !important}
+               /* .theme-menu-background{background:#700f6a !important}
                 #theme-background{background:#700f6a !important}
                 .cart_button {width: 90%;padding: 10px;border: none;background: #700f6a;color: #fff;font-weight: bold;margin-top:10px;border-radius:5px;}
                 .cart_button:hover {background: #ffcafc;color: #700f6a}
+                */
             </style>
         </head>
         <body>
@@ -89,17 +90,21 @@
                                         <?php } ?>
                                     </ul>
                                 </li>
-                            </ul>
+                            </ul>                                                 
                         </div>
                     </div>
                 </div>
             </nav>
             
-            <header>
+            <header style="background:#49a140;">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-3">
-                            <div id="logo"><a href="<?php echo WEB_URL;?>/index.php"><img src="<?php echo $_CONFIG['LOGO_URL']; ?>" title=" " alt=" " class="img-responsive" style="height:60px !important;max-width:none !important;margin-left:0px !important;" /></a></div>
+                            <div id="logo">
+                                <a href="<?php echo WEB_URL;?>/index.php">
+                                    <img src="<?php echo $_CONFIG['LOGO_URL']; ?>" title=" " alt=" " class="img-responsive" style="height:60px !important;max-width:none !important;margin-left:0px !important;" />
+                                </a>
+                            </div>
                         </div>
                         <div class="col-lg-6 col-md-7 co-sm-6 col-xs-12 xsse">
                             <div id="search-by-category">
@@ -113,7 +118,7 @@
                                 </div>
                                 <div class="search-ajax">
                                     <div class="ajax-loader-container" style="display: none;">
-                                        <img src="http://templatetasarim.com/opencart/Basket/image/catalog/loader.gif" class="ajax-load-img" alt="loader" />
+                                        <img src="https://templatetasarim.com/opencart/Basket/image/catalog/loader.gif" class="ajax-load-img" alt="loader" />
                                     </div>
                                     <div class="ajax-result-container">
                                         <!-- Content of search results -->
@@ -123,11 +128,11 @@
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-2 col-sm-3 text-right xs-cart">
-                            <a href="http://templatetasarim.com/opencart/Basket/index.php?route=information/contact" class="hidden-sm hidden-xs hidden-md">
+                            <a href="" class="hidden-sm hidden-xs hidden-md">
                                 <img src="image/catalog/icon-call.png"/>
                                 <div class="cartco">
                                     <span>Call us:</span><br>
-                                    <span id="cart-total">9791330770</span>
+                                    <span id="cart-total">9566585866</span>
                                 </div>
                             </a>
                             <div id="cart" class="btn-group">
@@ -153,34 +158,60 @@
                 </div>
             </header>
 
-            <div class="allmenu theme-menu-background">
+            <div class="allmenu theme-menu-background" style="background:#218417">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-3 col-sm-4">
                             <div class="hidden-xs">
                                 <div id="wr-menu">
-                                    <button class="btn-block text-left" type="button" data-target="#all-menu" data-toggle="collapse" aria-expanded="false">
+                                    <button class="btn-block text-left" type="button" data-target="#all-menu" data-toggle="collapse" aria-expanded="true" >
                                         <i class="fa fa-bars"></i>
                                         <span class="cate">All Categories</span>
                                     </button>
-                                </div>
-                                <div id="all-menu" class="collapse"  aria-expanded="false">
+                                </div>                      
+                               <?php if (strtolower($_SERVER['SCRIPT_NAME'])=="/index.php") { ?>
+                                <div id="all-menu" class="collapse in" aria-expanded="true">
+                                <?php } else {?>
+                                <div id="all-menu" class="collapse">
+                                <?php } ?>
                                     <nav id="menu" class="navbar">
                                         <div class="navbar-header"><span id="category" class="visible-xs">All Categories</span>
                                             <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
                                         </div>
                                         <div class="collapse navbar-collapse navbar-ex1-collapse">
                                             <ul class="nav">
-                                                <?php foreach($Categories as $Category) { ?>
-                                                <li class="moremenu">
-                                                    <a href="Products.php?cid=<?php echo $Category['CategoryID'];?>">
+                                                <?php 
+                                                    foreach($Categories as $Category) {
+                                                        $SubCategories = $mysql->select("select * from _tbl_sub_category where CategoryID='".$Category['CategoryID']."' and IsActive='1' order by ListOrder");  
+                                                ?>
+                                                <li class="<?php echo (sizeof($SubCategories)>0) ? 'dropdown moremenu' : 'moremenu';?>">
+                                                <?php if (sizeof($SubCategories)>0) {?>
+                                                    <a href="javascript:void(0)">
+                                                <?php } else { ?>
+                                                    <a href="<?php echo WEB_URL;?>/c<?php echo $Category['CategoryID']."_".parseStringForURL($Category['CategoryName']);?>">
+                                                <?php } ?>
                                                         <!--
                                                         <div class="menu-img pull-left">
                                                             <img src="http://templatetasarim.com/opencart/Basket/image/catalog/menu-icon/9.png" alt="beauty">
                                                         </div>
                                                         -->
                                                         <?php echo $Category['CategoryName'];?>
-                                                    </a>
+                                                        <?php if (sizeof($SubCategories)>0) {?>
+                                                        <i class="fa fa-angle-down pull-right enangle"></i>
+                                                        <?php } ?>
+                                                    </a>                                          
+                                                    <?php if (sizeof($SubCategories)>0) { ?>
+                                                     <div class="dropdown-menu">
+                                                        <div class="dropdown-inner">   
+                                                            <ul class="nav">
+                                                                <?php foreach($SubCategories as $SubCategory) { ?> 
+                                                                <li><a href="s<?php echo $SubCategory['SubCategoryID']."_".parseStringForURL($SubCategory['SubCategoryName']);?>"> <?php echo $SubCategory['SubCategoryName'];?> </a> </li>
+                                                                <?php } ?>
+                                                                <li><a href="c<?php echo $Category['CategoryID']."_".parseStringForURL($Category['CategoryName']);?>">All Items</a> </li>
+                                                            </ul>
+                                                        </div>
+                                                     </div>
+                                                     <?php } ?>
                                                 </li>
                                                 <?php } ?> 
                                              </ul>
@@ -234,44 +265,43 @@
   </div>
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav">
-        <?php foreach($Categories as $Category) { ?>
-        <li>
-            <a href="Products.php?cid=<?php echo $Category['CategoryID'];?>">
-                <?php echo $Category['CategoryName'];?>
-            </a>
-        </li>
-        <?php } ?>
-        <!--
-        <li class="dropdown"><a href="http://templatetasarim.com/opencart/Basket/index.php?route=product/category&amp;path=20" class="dropdown-toggle header-menu" data-toggle="dropdown">Desktops<i class="fa fa-angle-down pull-right"></i></a>
-          <div class="dropdown-menu">
-            <div class="dropdown-inner">               <ul class="list-unstyled">
-                                 
-                    <li class="dropdown-submenu"> <a href="http://templatetasarim.com/opencart/Basket/index.php?route=product/category&amp;path=20_26" class="submenu-title"> PC (17) </a>
-                                            <ul class="list-unstyled grand-child">
-                                                <li><a href="http://templatetasarim.com/opencart/Basket/index.php?route=product/category&amp;path=26_61"> beuty &amp; Spa (6) </a> </li>
-                                                <li><a href="http://templatetasarim.com/opencart/Basket/index.php?route=product/category&amp;path=26_63"> Smart Phone (16) </a> </li>
-                                                <li><a href="http://templatetasarim.com/opencart/Basket/index.php?route=product/category&amp;path=26_62"> Smart watch (17) </a> </li>
-                                              </ul>
-                                          </li>
-                     
-                              </ul>
-                            <ul class="list-unstyled">
-                                 
-                    <li class="dropdown-submenu"> <a href="http://templatetasarim.com/opencart/Basket/index.php?route=product/category&amp;path=20_27" class="submenu-title"> Mac (17) </a>
-                                            <ul class="list-unstyled grand-child">
-                                                <li><a href="http://templatetasarim.com/opencart/Basket/index.php?route=product/category&amp;path=27_66"> Decor (15) </a> </li>
-                                                <li><a href="http://templatetasarim.com/opencart/Basket/index.php?route=product/category&amp;path=27_67"> Decor (15) </a> </li>
-                                                <li><a href="http://templatetasarim.com/opencart/Basket/index.php?route=product/category&amp;path=27_64"> Printers (5) </a> </li>
-                                                <li><a href="http://templatetasarim.com/opencart/Basket/index.php?route=product/category&amp;path=27_65"> Trackballs (8) </a> </li>
-                                              </ul>
-                                          </li>
-                     
-                              </ul>
-              </div>
-            <a href="http://templatetasarim.com/opencart/Basket/index.php?route=product/category&amp;path=20" class="see-all">Show All Desktops</a> </div>
-        </li>
-        -->
-        </ul>
+       
+                                                <?php 
+                                                    foreach($Categories as $Category) {
+                                                        $SubCategories = $mysql->select("select * from _tbl_sub_category where CategoryID='".$Category['CategoryID']."' and IsActive='1' order by ListOrder");  
+                                                ?>
+                                                <li class="<?php echo (sizeof($SubCategories)>0) ? 'dropdown moremenu' : 'moremenu';?>">
+                                                <?php if (sizeof($SubCategories)>0) {?>
+                                                    <a href="javascript:void(0)" class="dropdown-toggle header-menu" data-toggle="dropdown">
+                                                <?php } else { ?>
+                                                    <a href="<?php echo WEB_URL;?>/c<?php echo $Category['CategoryID']."_".parseStringForURL($Category['CategoryName']);?>">
+                                                <?php } ?>
+                                                        <!--
+                                                        <div class="menu-img pull-left">
+                                                            <img src="http://templatetasarim.com/opencart/Basket/image/catalog/menu-icon/9.png" alt="beauty">
+                                                        </div>
+                                                        -->
+                                                        <?php echo $Category['CategoryName'];?>
+                                                        <?php if (sizeof($SubCategories)>0) {?>
+                                                        <i class="fa fa-angle-down pull-right enangle"></i>
+                                                        <?php } ?>
+                                                    </a>                                          
+                                                    <?php if (sizeof($SubCategories)>0) { ?>
+                                                     <div class="dropdown-menu">
+                                                        <div class="dropdown-inner">   
+                                                            <ul class="list-unstyled">
+                                                                <?php foreach($SubCategories as $SubCategory) { ?> 
+                                                                <li><a href="s<?php echo $SubCategory['SubCategoryID']."_".parseStringForURL($SubCategory['SubCategoryName']);?>" style="font-weight:normal"> <?php echo $SubCategory['SubCategoryName'];?> </a> </li>
+                                                                <?php } ?>
+                                                                <li><a href="c<?php echo $Category['CategoryID']."_".parseStringForURL($Category['CategoryName']);?>">All Items</a> </li>
+                                                            </ul>
+                                                        </div>
+                                                     </div>
+                                                     <?php } ?>
+                                                </li>
+                                                <?php } ?> 
+                                             </ul>
+                                         
     </div>
     </div>
   </nav>
@@ -329,10 +359,10 @@ jQuery(window).scroll(function() {headermenu();});
 </div>
 </div>
   
-<div id="page-preloader" class="visible">
+<!--<div id="page-preloader" class="visible">
       <div class="preloader">
           <div id="loading-center-absolute">
                 <div class="object" id="object_one"></div>
           </div>
       </div>
-</div>
+</div>-->

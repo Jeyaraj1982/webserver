@@ -23,12 +23,6 @@ include_once("LeftMenu.php");
                                                          "BrandName"            => $Brand[0]['BrandName'],
                                                          "ProductCode"          => $ProductCode,
                                                          "ProductName"          => $_POST['ProductName'],
-                                                         "ProductPrice"         => $_POST['ProductPrice'],
-                                                         "ProductImage"         => $_POST['ProductImage'],
-                                                         "SellingPrice"         => $_POST['SellingPrice'],
-                                                         "Commission"           => $_POST['Commission'],
-                                                         "CommissionL2"           => $_POST['CommissionL2'],
-                                                         "CommissionL3"           => $_POST['CommissionL3'],
                                                          "StockAvailable"       => $_POST['StockAvailable'],
                                                          "ShortDescription"     => str_replace("'","\\'",$_POST['ShortDescription']),
                                                          "DetailDescription"    => str_replace("'","\\'",$_POST['DetailDescription']),
@@ -128,24 +122,24 @@ $(document).ready(function () {
          //  Alphanumericwithdash("ProductName","ErrProductName","Please Enter Alpha Numerics Character"); 
         }
     });
-    $("#ProductPrice").blur(function () {
-        if(IsNonEmpty("ProductPrice","ErrProductPrice","Please Enter MRP")){
-           IsNumeric("ProductPrice","ErrProductPrice","Please Enter Numerics Character"); 
-        }
-    });
-    $("#SellingPrice").blur(function () {
-        if(IsNonEmpty("SellingPrice","ErrSellingPrice","Please Enter Selling Price")){
-           IsNumeric("SellingPrice","ErrSellingPrice","Please Enter Numerics Character"); 
-        }
-    });
-    $("#ProductImage").blur(function () {
-        IsNonEmpty("ProductImage","ErrProductImage","Please Upload Product Image");
-    });
-    $("#SellingPrice").blur(function () {
-        if(parseFloat($('#ProductPrice').val()) < parseFloat($('#SellingPrice').val())){
-           $('#ErrSellingPrice').html("Selling price Must Less than or Equal to MRP"); 
-        }
-    });
+ //   $("#ProductPrice").blur(function () {
+     //   if(IsNonEmpty("ProductPrice","ErrProductPrice","Please Enter MRP")){
+     //      IsNumeric("ProductPrice","ErrProductPrice","Please Enter Numerics Character"); 
+     //   }
+   // });
+   // $("#SellingPrice").blur(function () {
+      //  if(IsNonEmpty("SellingPrice","ErrSellingPrice","Please Enter Selling Price")){
+      //     IsNumeric("SellingPrice","ErrSellingPrice","Please Enter Numerics Character"); 
+      //  }
+  //  });
+  //  $("#ProductImage").blur(function () {
+      //  IsNonEmpty("ProductImage","ErrProductImage","Please Upload Product Image");
+  //  });
+  //  $("#SellingPrice").blur(function () {
+       // if(parseFloat($('#ProductPrice').val()) < parseFloat($('#SellingPrice').val())){
+          // $('#ErrSellingPrice').html("Selling price Must Less than or Equal to MRP"); 
+       // }
+   // });
 });
 
 </script>
@@ -172,7 +166,7 @@ $(document).ready(function () {
                                    <input type="file" onchange="image1_onchage()" name="image1" id="image1" style="display: none;">    
                                     <div class="card-body">
                                        <div class="form-group row">
-                                            <div class="col-sm-4" style="text-align: center;">
+                                            <div class="col-sm-4" style="text-align: center;display:none">
                                                 <div id="div_PI">
                                                     <img id="src_image1" onclick="uploadimage('1')" src="assets/add-image.png" style="width: 64px;margin-top: 20px;opacity: 0.3;cursor: pointer;">
                                                 </div> 
@@ -232,46 +226,6 @@ $(document).ready(function () {
                                                     <label class="col-form-label" style="padding-top:0px;font-weight: normal;">Max 300 characters&nbsp;&nbsp;|&nbsp;&nbsp;<span id="textarea_feedback"></span></label>
                                                     <span class="errorstring" id="ErrShortDescription"><?php echo isset($ErrShortDescription)? $ErrShortDescription : "";?></span>
                                                 </div> 
-                                                <div class="form-group form-show-validation row">
-                                                    <div class="col-sm-6" style="padding-left: 0px;">
-                                                        <label for="name">MRP (Rs)<span style="color:red">*</span></label>
-                                                        <input type="text" class="form-control" id="ProductPrice" name="ProductPrice" placeholder="Enter Product Price" value="<?php echo (isset($_POST['ProductPrice']) ? $_POST['ProductPrice'] :"");?>">
-                                                        <span class="errorstring" id="ErrProductPrice"><?php echo isset($ErrProductPrice)? $ErrProductPrice : "";?></span>    
-                                                    </div>
-                                                    <div class="col-sm-6" style="padding-left: 0px;padding-right: 0px;">
-                                                        <label for="name">Selling Price (Rs)<span style="color:red">*</span></label>
-                                                        <input type="text" class="form-control" id="SellingPrice" name="SellingPrice" placeholder="Enter Selling Price" value="<?php echo (isset($_POST['SellingPrice']) ? $_POST['SellingPrice'] :"");?>">
-                                                        <span class="errorstring" id="ErrSellingPrice"><?php echo isset($ErrSellingPrice)? $ErrSellingPrice : "";?></span>
-                                                    </div>
-                                               </div> 
-                                               <div class="form-group form-show-validation row">
-                                                    <div class="col-sm-12" style="padding-left: 0px;">
-                                                        <label for="name">Stock Available<span style="color:red">*</span></label>
-                                                        <select class="form-control" name="StockAvailable" id="StockAvailable">
-                                                            <option value="Yes" <?php echo ($_POST['StockAvailable']=="Yes") ? " selected='selected' " : "";?>>Yes</option>
-                                                            <option value="No" <?php echo ($_POST['StockAvailable']=="No") ? " selected='selected' " : "";?>>No</option>
-                                                        </select>
-                                                        <span class="errorstring" id="ErrStockAvailable"><?php echo isset($ErrStockAvailable)? $ErrStockAvailable : "";?></span>
-                                                    </div>  
-                                                    
-                                                    <div class="col-sm-12" style="padding-left: 0px;">
-                                                        <label for="name">Refferal Commission Level 1<span style="color:red">*</span></label>
-                                                        <input type="text" class="form-control" id="Commission" name="Commission" placeholder="Enter Commission" value="<?php echo (isset($_POST['Commission']) ? $_POST['Commission'] :"");?>">
-                                                        <span class="errorstring" id="ErrCommission"><?php echo isset($ErrCommission)? $ErrCommission : "";?></span>
-                                                    </div>
-                                                   
-                                                   <div class="col-sm-12" style="padding-left: 0px;">
-                                                        <label for="name">Refferal Commission Level 2<span style="color:red">*</span></label>
-                                                        <input type="text" class="form-control" id="CommissionL2" name="CommissionL2" placeholder="Enter Commission Level 2" value="<?php echo (isset($_POST['CommissionL2']) ? $_POST['CommissionL2'] :"");?>">
-                                                        <span class="errorstring" id="ErrCommissionL2"><?php echo isset($ErrCommission)? $ErrCommission : "";?></span>
-                                                    </div>  
-                                                    
-                                                    <div class="col-sm-12" style="padding-left: 0px;">
-                                                        <label for="name">Refferal Commission Level 3<span style="color:red">*</span></label>
-                                                        <input type="text" class="form-control" id="CommissionL3" name="CommissionL3" placeholder="Enter Commission Level 3" value="<?php echo (isset($_POST['CommissionL3']) ? $_POST['CommissionL3'] :"");?>">
-                                                        <span class="errorstring" id="ErrCommissionL3"><?php echo isset($ErrCommission)? $ErrCommission : "";?></span>
-                                                    </div>
-                                               </div>  
                                             </div>
                                        </div> 
                                         
@@ -334,9 +288,9 @@ function CallConfirmation(){
         $('#ErrSubCategory').html("");
         $('#ErrBrandName').html("");
         $('#ErrProductName').html("");
-        $('#ErrProductPrice').html("");
-        $('#ErrSellingPrice').html("");
-        $('#ErrProductImage').html("");
+       // $('#ErrProductPrice').html("");
+       // $('#ErrSellingPrice').html("");
+       // $('#ErrProductImage').html("");
         
         if($('#Category').val()=="0"){
             ErrorCount++;
@@ -353,17 +307,17 @@ function CallConfirmation(){
         if(IsNonEmpty("ProductName","ErrProductName","Please Enter Product Name")){    
          //  Alphanumericwithdash("ProductName","ErrProductName","Please Enter Alpha Numerics Character"); 
         }
-        if(IsNonEmpty("ProductPrice","ErrProductPrice","Please Enter MRP")){
-           IsNumeric("ProductPrice","ErrProductPrice","Please Enter Numerics Character"); 
-        }
-        if(IsNonEmpty("SellingPrice","ErrSellingPrice","Please Enter Selling Price")){
-           IsNumeric("SellingPrice","ErrSellingPrice","Please Enter Numerics Character"); 
-        }
-        IsNonEmpty("ProductImage","ErrProductImage","Please Upload Product Image");
-        if(parseFloat($('#ProductPrice').val()) < parseFloat($('#SellingPrice').val())){
-           ErrorCount++;
-           $('#ErrSellingPrice').html("Selling price Must Less than or Equal to MRP"); 
-        }
+      //  if(IsNonEmpty("ProductPrice","ErrProductPrice","Please Enter MRP")){
+        //   IsNumeric("ProductPrice","ErrProductPrice","Please Enter Numerics Character"); 
+       // }
+      //  if(IsNonEmpty("SellingPrice","ErrSellingPrice","Please Enter Selling Price")){
+        //   IsNumeric("SellingPrice","ErrSellingPrice","Please Enter Numerics Character"); 
+      //  }
+      //  IsNonEmpty("ProductImage","ErrProductImage","Please Upload Product Image");
+       // if(parseFloat($('#ProductPrice').val()) < parseFloat($('#SellingPrice').val())){
+         //  ErrorCount++;
+          // $('#ErrSellingPrice').html("Selling price Must Less than or Equal to MRP"); 
+      //  }
         if(ErrorCount==0) {
             var txt= '<div class="modal-header" style="padding-bottom:5px">'
                          +'<h4 class="heading"><strong>Confirmation</strong> </h4>'

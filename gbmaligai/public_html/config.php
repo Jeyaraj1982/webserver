@@ -4,14 +4,16 @@ date_default_timezone_set('Asia/Calcutta');
 
 define("SERVER_PATH",__DIR__);
 define("log_path",SERVER_PATH."/app/logs/");
-define("WEB_URL","https://www.klxmart.com");
-define("LOGOUT_PATH","https://www.klxmart.com");
-define("WEB_Title","KlX Mart Online Shopping Hub");   
+define("WEB_URL","https://www.gbmaligai.com");
+define("LOGOUT_PATH","https://www.gbmaligai.com");
+define("WEB_Title","GBMaligai.Com :: Online Grocery Shopping Hub");   
 
-define("DBSERVER","localhost");
-define("DBUSER","klxmart_user");
+define("DBSERVER","localhost");                      
+define("DBUSER","gbmaliga_user");
 define("DBPASSWORD","mysql@Pwd");
-define("DBNAME","klxmart_ecommerce");
+define("DBNAME","gbmaliga_database");
+
+ 
 
 if (isset($_GET['do']) && $_GET['do']=="logout") {
     session_destroy();
@@ -19,10 +21,10 @@ if (isset($_GET['do']) && $_GET['do']=="logout") {
     exit;
 }
 
-define("Mail_Host","mail.klxmart.com");
-define("SMTP_UserName","support@klxmart.com");
+define("Mail_Host","mail.gbmaligai.com");
+define("SMTP_UserName","support@gbmaligai.com");
 define("SMTP_Password","Welcome@82");
-define("SMTP_Sender","klxmart");
+define("SMTP_Sender","gbmaligai");
           
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -42,7 +44,7 @@ include_once("app/controller/EmailController.php");
 include_once("app/controller/DatabaseController.php");
 $mysql = new MySqldatabase(DBSERVER,DBUSER,DBPASSWORD,DBNAME);
 
-$_CONFIG['LOGO_URL'] = WEB_URL."/assets/klxmart_newlogo_copy.png";
+$_CONFIG['LOGO_URL'] = WEB_URL."/assets/new_weblogo.png";
 
 if (isset($_SESSION['User']) && $_SESSION['User']['Role']=="User") {
     define("UserRole","user");
@@ -52,8 +54,29 @@ if (isset($_SESSION['User']) && $_SESSION['User']['Role']=="Admin") {
 }
 
 
+  function parseStringForURL($string) {
+        $string = strtolower(trim($string));
+        $string = str_replace("&","and",$string);
+        $string = str_replace("  "," ",$string);
+        $string = str_replace("/"," ",$string);
+        $string = str_replace(" ","-",$string);
+        return $string;
+    }
+
+      function parseStringForPhysicalPath($string) {
+        $string = strtolower(trim($string));
+        $string = str_replace("&","and",$string);
+        $string = str_replace("  "," ",$string);
+        $string = str_replace("/"," ",$string);
+        $string = str_replace(" ","_",$string);
+        return $string;
+    }
 
 class JApp {
+    
+     const REFERAL_PROGRAM = false;
+     const MANDATORY_EMAIL = false;
+     const REGISTER_EMAIL = false;
     
     const CURRENT_PASSWORD_MINIMUM_LENGTH = 6;
     const CURRENT_PASSWORD_MAXIMUM_LENGTH = 12;                                         

@@ -1,7 +1,71 @@
 <?php
 include_once("config.php");
+ 
     echo $_REQUEST['action']();
     
+  
+  
+ function ajaxSearch() {
+      global $mysql;
+      $products = $mysql->select("select * from _tbl_products where ProductName like '%".$_POST['text_search']."%'  and IsActive='1'");
+      
+      $result['success']=true;
+
+    $result_html = "done"; 
+   
+    $result_html  = '<ul class="ajax-result-list">
+    <li class="ajax-result-item">
+    <div class="product-info col-lg-6 col-md-12 col-sm-12 col-xs-12">
+    <a class="product-image col-lg-4 col-sm-3 col-xs-4" href="http://templatetasarim.com/opencart/Basket/index.php?route=product/product&amp;product_id=42&amp;search=apple&amp;category_id=0">
+    <div class="product-image">
+    <img src="http://templatetasarim.com/opencart/Basket/image/cache/catalog/product/01-700x700.png" alt="Apple Cinema 30&quot;" class="img-responsive center-block" />
+    </div>
+    </a>
+    <div class="detail col-lg-8 col-sm-9 col-xs-8">
+    <h2 class="product-name">
+    <a href="http://templatetasarim.com/opencart/Basket/index.php?route=product/product&amp;product_id=42&amp;search=apple&amp;category_id=0">Apple Cinema 30&quot;</a>
+    </h2>                        <p class="list-des">Maecenas ullamcorper ut augue non porttitor. Etiam euismod, lorem vel interdum condimentum, lacus qu..</p>
+    <div class="price-box">
+    <p class="old-price"><span class="sprice">$122.00</span></p>
+    <p class="special-price"><span class="sprice"></span></p>
+    </div>
+    </div>
+    </div>
+    </li>
+    </ul>';   
+    
+    $result_html  = '<ul class="ajax-result-list">';
+   //<a href="p'.$product['ProductID'].'_'.parseStringForURL($product['ProductName']).'"> 
+    foreach($products as $product) {
+        $result_html .= '<li class="ajax-result-item">
+                            <div class="product-info col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:10px 0px !important">
+                                <!--<a class="product-image col-lg-4 col-sm-3 col-xs-4" href="http://templatetasarim.com/opencart/Basket/index.php?route=product/product&amp;product_id=42&amp;search=apple&amp;category_id=0">
+                                    <div class="product-image">
+                                        <img src="http://templatetasarim.com/opencart/Basket/image/cache/catalog/product/01-700x700.png" alt="Apple Cinema 30&quot;" class="img-responsive center-block" />
+                                    </div>
+                                </a>-->
+                                <div class="detail col-lg-8 col-sm-9 col-xs-8">
+                                    <h2 class="product-name" style="margin-bottom:0px">
+                                        <a href="search_products.php?search='.$product['ProductName'].'">
+                                            '.$product['ProductName'].'
+                                        </a>
+                                    </h2>
+                                    <!--<p class="list-des">Maecenas ullamcorper ut augue non porttitor. Etiam euismod, lorem vel interdum condimentum, lacus qu..</p>
+                                    <div class="price-box">
+                                        <p class="old-price"><span class="sprice">$122.00</span></p>
+                                        <p class="special-price"><span class="sprice"></span></p>
+                                    </div>
+                                    -->
+                                </div>
+                            </div>
+                         </li>';
+    } 
+    $result_html .= '</ul>';                    
+    
+    $result['result_html']=$result_html;
+    return json_encode($result);
+ }  
+                                               
 
 function DeleteProductImage(){
     global $mysql;
@@ -215,7 +279,7 @@ function DeleteSubCategory() {
 
     function Register(){
         global $mysql;
-        
+           $ErrorCount=0;        
             $dupMobile = $mysql->select("select * from _tbl_customer where MobileNumber='".$_POST['MobileNumber']."'");
             if(sizeof($dupMobile)>0){
                 $ErrorCount++;
@@ -224,15 +288,23 @@ function DeleteSubCategory() {
                 $result['message']="Mobile Number Already Exist<br>";  
                 return json_encode($result);
             }
-            $dupemail = $mysql->select("select * from _tbl_customer where EmailID='".$_POST['EmailID']."'");
-            if(sizeof($dupemail)>0){
-                $ErrorCount++;
-                $result = array();
-                $result['status']="failure";
-                $result['message']="Email ID Already Exist<br>";  
-                return json_encode($result);
+            
+             
+            if (JAPP::REGISTER_EMAIL) {
+            if (isset($_POST['EmailID']) && strlen($_POST['EmailID'])>0) {
+                $dupemail = $mysql->select("select * from _tbl_customer where EmailID='".$_POST['EmailID']."'");
+                if(sizeof($dupemail)>0){
+                    $ErrorCount++;
+                    $result = array();
+                    $result['status']="failure";
+                    $result['message']="Email ID Already Exist<br>";  
+                    return json_encode($result);
+                }
+            }
             }
             
+            if (JApp::REFERAL_PROGRAM) {
+              
             if (isset($_POST['Referral']) && strlen(trim($_POST['Referral']))>0) {
                   $dupReferral = $mysql->select("select * from _tbl_customer where Referral='".$_POST['Referral']."'");
                   if(sizeof($dupReferral)==0){
@@ -244,20 +316,25 @@ function DeleteSubCategory() {
                   }
             }
             
-            if($ErrorCount==0){
+            }
+            
+           
+            
+            if($ErrorCount==0) {
                    $random = sizeof($mysql->select("select * from _tbl_customer")) + 1;
                    $UserCode ="CSTMR0000".$random;
-                   
+                     
               $id = $mysql->insert("_tbl_customer",array("CustomerCode" => $UserCode,
                                                          "CustomerName" => $_POST['Name'],
                                                          "EmailID"      => $_POST['EmailID'],
                                                          "MobileNumber" => $_POST['MobileNumber'],
-                                                         "CreatedBy"    => $dupReferral[0]['CustomerID'],
+                                                         "CreatedBy"    => isset($dupReferral[0]['CustomerID']) ? $dupReferral[0]['CustomerID'] : "0",
                                                          "Password"     => $_POST['Password'],
                                                          "CreatedOn"    => date("Y-m-d H:i:s")));
               
               
             if($id>0){
+                  
                 $referralCode= getCode($id);
                 $mysql->execute("update _tbl_customer set Referral='".$referralCode."' where CustomerID='".$id."'");
               
@@ -268,7 +345,8 @@ function DeleteSubCategory() {
                 $result['Name']=$user[0]['CustomerName'];
                 $result['Mobile']=$user[0]['MobileNumber'];
                 $result['Email']=$user[0]['EmailID'];
-                $result['message']="Registered Successfully<br>";  
+                $result['message']="Registered Successfully";  
+              
                 return json_encode($result);                                        
             }
     }
@@ -336,7 +414,7 @@ function DeleteSubCategory() {
                                          
         foreach($_SESSION['items'] as $item) {
             $ProductInfo = $mysql->select("select * from _tbl_products where ProductID='".$item['ProductID']."'");
-            $subtotal+=$item['Qty']*$item['Price'];
+            $subtotal += $item['Qty']*$item['Price'];
             $mysql->insert("_tbl_orders_items",array("OrderID"     => $id,
                                                      "ProductID"   => $item['ProductID'],
                                                      "ProductName" => $item['ProductName'],
@@ -347,18 +425,17 @@ function DeleteSubCategory() {
                                                      "TotalEarningPoints"  => "0",
                                                      "ProductCommission"   => $ProductInfo[0]['Commission'],
                                                      "TotalCommission"     => $ProductInfo[0]['Commission']*$item['Qty']));
+           
             $TotalUplevelCommission+=$ProductInfo[0]['Commission']*$item['Qty'];
             $TotalUplevelCommissionL2+=$ProductInfo[0]['CommissionL2']*$item['Qty'];
             $TotalUplevelCommissionL3+=$ProductInfo[0]['CommissionL3']*$item['Qty'];
         }
         
-        $mysql->execute("update _tbl_orders set OrderTotal='".$subtotal."', 
-        
-                        TotalUplevelCommission='".$TotalUplevelCommission."'
-                        TotalUplevelCommissionL2='".$TotalUplevelCommissionL2."'
-                        TotalUplevelCommissionL3='".$TotalUplevelCommissionL3."'
-        
-        
+        $mysql->execute("update _tbl_orders set 
+                                    OrderTotal='".$subtotal."', 
+                                    TotalUplevelCommission='".$TotalUplevelCommission."',
+                                    TotalUplevelCommissionL2='".$TotalUplevelCommissionL2."',
+                                    TotalUplevelCommissionL3='".$TotalUplevelCommissionL3."'
          where OrderID='".$id."'");
         
         $id = $mysql->insert("_tbl_orders_status",array("OrderID"   => $id,

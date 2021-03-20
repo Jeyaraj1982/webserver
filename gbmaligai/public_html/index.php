@@ -109,7 +109,7 @@
             </div>-->
             <?php $Categories = $mysql->select("select * from _tbl_category where IsActive='1' order by ListOrder");?>
             <?php foreach($Categories as $Category) { ?>
-                <?php $Products = $mysql->select("select * from _tbl_products where CategoryID='".$Category['CategoryID']."' and IsActive='1' order by ProductID ");?>
+                <?php $Products = $mysql->select("select * from _tbl_products where CategoryID='".$Category['CategoryID']."' and IsActive='1' order by ProductID desc limit 0,4");?>
                 <?php if (sizeof($Products)>0) {?>
                 <div class="container pro-bg">
                     <h2 class="home-head pull-left"><?php echo $Category['CategoryName'];?></h2>

@@ -3,15 +3,10 @@
     include_once("header.php");
     
     
-    $Products=array();
-    if (isset($_GET['category'])) {
-        $Products = $mysql->select("select * from _tbl_products where CategoryID='".$_GET['category']."' and IsActive='1'"); 
-    }
     
-    if (isset($_GET['subcategory'])) {
-        $Products = $mysql->select("select * from _tbl_products where SubCategoryID='".$_GET['subcategory']."' and IsActive='1'"); 
-    }
-    
+        $Products = $mysql->select("select * from _tbl_products where ProductName like '%".$_GET['search']."%' and IsActive='1'"); 
+      
+   
     
 ?>
 <style>
@@ -41,20 +36,12 @@
     </div>
 </div>
 <?php } else { ?>
-<?php
-       $SubCategory = $mysql->select("select * from _tbl_sub_category where SubCategoryID='".$Products[0]['SubCategoryID']."'"); 
-        $Category = $mysql->select("select * from _tbl_category where CategoryID='".$Products[0]['CategoryID']."'"); 
-        $SubCategories = $mysql->select("select * from _tbl_sub_category where CategoryID='".$Products[0]['CategoryID']."' order by SubCategoryName");
-?>
+ 
 
 <div id="product-category" class="container">
     <div class="row">
         <div id="content" class="col-sm-12">
-            <ul class="breadcrumb">
-                <li><a href="index.php">Home</a></li>
-                <li><a><?php echo $Category[0]['CategoryName'];?></a></li>
-                <li><a><?php echo $SubCategory[0]['SubCategoryName'];?></a></li>
-            </ul>
+           
             <div class="row">
                 <div id="column-left" class="col-md-3 col-sm-4 col-xs-12">
                     <div class="list-group cateleft">
@@ -63,6 +50,7 @@
                         <?php } ?>
                     </div>
                 </div>
+                
                 <div id="content" class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
                    
                     <div class="row cate-border" style="margin-top:0px;">
@@ -95,7 +83,7 @@
                         </div>
                     </div>
                     <div class="row catebg">
-                        <?php 
+                  <?php 
                             foreach($Products as $Product){  
                                 include("include_product_widget.php")    ;
                             } 

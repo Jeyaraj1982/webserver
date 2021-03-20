@@ -44,21 +44,25 @@
                                  <table class="table table-striped mt-3">
                                         <thead>
                                             <tr>
+                                                <th scope="col"> </th>
                                                 <th scope="col">Product Code</th>
                                                 <th scope="col">Product Name</th>
-                                                <th scope="col" style="text-align: right;">MRP (Rs)</th>                                   
-                                                <th scope="col" style="text-align: right;">Selling Price (Rs)</th>                                   
                                                 <th scope="col"> </th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                         
-                                        <?php foreach($products as $product){ ?>
+                                        <?php foreach($products as $product) { 
+                                            $img = $mysql->select("select * from _tbl_products_images where ProductID='".$product['ProductID']."' and ImageOrder=1 and IsDelete='0'");
+                                            ?>
                                             <tr>
+                                                <td>
+                                                    <?php if (sizeof($img)>0) {?>
+                                                      <img src="../uploads/products/<?php echo $product['ProductID'];?>/<?php echo $img[0]['ImageName'];?>" style="height:75px;text-align:center;margin:5px">
+                                                    <?php } ?>
+                                                </td>
                                                 <td><?php echo $product['ProductCode'];?></td>
                                                 <td><?php echo $product['ProductName'];?></td>
-                                                <td style="text-align:right"><?php echo number_format($product['ProductPrice'],2);?></td>
-                                                <td style="text-align:right"><?php echo number_format($product['SellingPrice'],2);?></td>
                                                 <td style="text-align: right">                                                   
                                                         <div class="dropdown dropdown-kanban" style="float: right;">
                                                             <button class="" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border:none;font-size:14px;background:none !important;padding-right:0px;margin-right:0px;cursor:pointer">

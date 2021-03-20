@@ -1,5 +1,10 @@
 <?php include_once("header.php");?>
-<?php $Product=$mysql->select("select * from _tbl_products where md5(ProductID)='".$_GET['id']."'");?>
+<?php 
+    $Product=$mysql->select("select * from _tbl_products where ProductID='".$_GET['productid']."'");
+    $Category = $mysql->select("select * from _tbl_category where CategoryID='".$Product[0]['CategoryID']."'"); 
+    $SubCategories = $mysql->select("select * from _tbl_sub_category where CategoryID='".$Product[0]['CategoryID']."' order by SubCategoryName");  
+      $product_prices = $mysql->select("select * from _tbl_products_prices where ProductID='".$Product[0]['ProductID']."'");
+?>
 <form method="post" action="" id=frmid_<?php echo $Product[0]['ProductID'];?>>
 <input type="hidden" name="ProductID" id="ProductID" value="<?php echo $Product[0]['ProductID'];?>"> 
 <div id="product-product" class="container common-shed">
@@ -8,30 +13,37 @@
             <ul class="breadcrumb">
                 <li><a href="index.php">Home</a></li>
                 <li>
-                    <a><?php echo $Product[0]['ProductName'];?></a>
+                    <a href="c<?php echo $Category[0]['CategoryID'];?>_<?php echo parseStringForURL($Category[0]['CategoryName']);?>"><?php echo $Category[0]['CategoryName'];?></a>
+                </li>
+                <li>
+                    <a href="s<?php echo $SubCategories[0]['SubCategoryID'];?>_<?php echo parseStringForURL($SubCategories[0]['SubCategoryName']);?>"><?php echo $SubCategories[0]['SubCategoryName'];?></a>
+                </li>
+                <li>
+                    <a href="<?php echo parseStringForURL($Product[0]['ProductName'])."_p".$Product[0]['ProductID'];?>"><?php echo $Product[0]['ProductName'];?></a>
                 </li>
             </ul>
             <div class="row">
-                <div class="col-md-5 col-sm-6 proimg">
+                <div class="col-md-4 col-sm-6 proimg">
                     <ul class="thumbnails">
+                          <?php $productimage = $mysql->select("select * from _tbl_products_images where IsDelete='0' and ProductID='".$Product[0]['ProductID']."' order by ImageOrder");?>
                         <li>
-                            <a class="thumbnail" href="uploads/<?php echo $Product[0]['ProductImage'];?>" title="iPod Classic">
-                                <img data-zoom-image="uploads/<?php echo $Product[0]['ProductImage'];?>" src="uploads/<?php echo $Product[0]['ProductImage'];?>" id="inspzoom" class="img-responsive center-block" alt="image" />
+                            <a class="thumbnail" href="uploads/products/<?php echo $Product[0]['ProductID'];?>/<?php echo $productimage[0]['ImageName'];?>" title="iPod Classic">
+                                <img data-zoom-image="uploads/products/<?php echo $Product[0]['ProductID'];?>/<?php echo $productimage[0]['ImageName'];?>" src="uploads/products/<?php echo $Product[0]['ProductID'];?>/<?php echo $productimage[0]['ImageName'];?>" id="inspzoom" class="img-responsive center-block" alt="image" />
                             </a>
                         </li>
                         <div class="row addoinalrow">
                             <li id="additional" class="owl-carousel">
-                                <?php $productimage = $mysql->select("select * from _tbl_product_additional_image where ProductID='".$Product[0]['ProductID']."'");?>
+                              
                                 <?php foreach($productimage as $image) { ?>
-                                <a class="col-xs-12" data-zoom-image="uploads/<?php echo $image['ProductImage'];?>" data-image="uploads/<?php echo $image['ProductImage'];?>" href="uploads/<?php echo $image['ProductImage'];?>">
-                                    <img src="uploads/<?php echo $image['ProductImage'];?>" class="img-responsive center-block" alt="additional image" />
+                                <a class="col-xs-12" data-zoom-image="uploads/products/<?php echo $Product[0]['ProductID'];?>/<?php echo $image['ImageName'];?>" data-image="uploads/products/<?php echo $Product[0]['ProductID'];?>/<?php echo $image['ImageName'];?>" href="uploads/products/<?php echo $Product[0]['ProductID'];?>/<?php echo $image['ImageName'];?>">
+                                    <img src="uploads/products/<?php echo $Product[0]['ProductID'];?>/<?php echo $image['ImageName'];?>" class="img-responsive center-block" alt="additional image" />
                                 </a>
                                 <?php } ?>
                             </li>
                         </div>
                     </ul>
                 </div>
-                <div class="col-md-7 col-sm-6 product-right">
+                <div class="col-md-8 col-sm-6 product-right">
                     <h1><?php echo $Product[0]['ProductName'];?></h1>
                     <hr class="prosp" />
                     <ul class="list-unstyled">
@@ -76,7 +88,19 @@
                             </td>
                         </tr>
                     </table>
-
+                    <div class="row">
+                        <div class="col-6">
+                            <select class="form-control">
+                     <?php
+                         foreach($product_prices as $product_price) {
+                             ?>
+                               <option value=""><?php echo $product_price['Units']." ".$product_price['UnitName']." ".number_format($product_price['SellingPrice']);?></option>
+                             <?php
+                         }
+                     ?>
+                     </select>
+                      </div>
+                    </div>
                     <div id="product">
                         <!-- Quantity option -->
                         <div class="form-group">

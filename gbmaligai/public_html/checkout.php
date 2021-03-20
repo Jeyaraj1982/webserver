@@ -20,21 +20,29 @@
 											<input type="text" id="Name" name="Name" value="<?php echo (isset($_POST['Name']) ? $_POST['Name'] :"");?>" class="form-control" />
 											<span class="errorstring" id="ErrName"><?php echo isset($ErrName)? $ErrName : "";?></span>
 										</div>
+                                        <?php if (JApp::REGISTER_EMAIL) {?>
 										<div class="form-group">
-											<label class="control-label" for="input-email">Email ID<span class="required" style="color:red">*</span></label>
+											<label class="control-label" for="input-email">Email ID
+                                            <?php if (JApp::MANDATORY_EMAIL) {?>
+                                            <span class="required" style="color:red">*</span>
+                                            <?php } ?>
+                                            </label>
 											<input type="text" id="EmailID" name="EmailID" value="<?php echo (isset($_POST['EmailID']) ? $_POST['EmailID'] :"");?>" class="form-control" />
 											<span class="errorstring" id="ErrEmailID"><?php echo isset($ErrEmailID)? $ErrEmailID : "";?></span>
 										</div>
+                                        <?php } ?>
 										<div class="form-group">
 											<label class="control-label" for="input-email">Mobile Number<span class="required" style="color:red">*</span></label>
 											<input type="text" id="MobileNumber" name="MobileNumber" maxlength="10" value="<?php echo (isset($_POST['MobileNumber']) ? $_POST['MobileNumber'] :"");?>" class="form-control onlynumeric" />
 											<span class="errorstring" id="ErrMobileNumber"><?php echo isset($ErrMobileNumber)? $ErrMobileNumber : "";?></span>
 										</div>
+                                        <?php  if (JApp::REFERAL_PROGRAM) {?>
                                         <div class="form-group">
                                             <label class="control-label" for="input-email">Referral Code</label>
                                             <input type="text" id="Referral" name="Referral" value="<?php echo (isset($_POST['Referral']) ? $_POST['Referral'] :"");?>" class="form-control" />
                                             <span class="errorstring" id="ErrReferral"><?php echo isset($ErrReferral)? $ErrReferral : "";?></span>
                                         </div>
+                                        <?php } ?>
 										<div class="form-group">
 											<label class="control-label" for="input-password">Password<span class="required" style="color:red">*</span></label>
 											<input type="password" id="Password" name="Password" value="<?php echo (isset($_POST['Password']) ? $_POST['Password'] :"");?>" class="form-control" />
@@ -200,7 +208,7 @@ var loading = "<div style='padding:80px;text-align:center;color:#aaa'><img src='
  function CallRegister(){
      ErrorCount=0;       
          $('#ErrName').html("");            
-         $('#ErrEmailID').html("");            
+       //  $('#ErrEmailID').html("");            
          $('#ErrMobileNumber').html("");            
          $('#ErrPassword').html("");
          $('#reg_message').html("");
@@ -208,9 +216,9 @@ var loading = "<div style='padding:80px;text-align:center;color:#aaa'><img src='
         if(IsNonEmpty("Name","ErrName","Please Enter Name<br>")){
            IsAlphaNumeric("Name","ErrName","Please Enter Alpha Numerics Characters Only<br>");
         }
-        if(IsNonEmpty("EmailID","ErrEmailID","Please Enter Email address<br>")){
-            IsEmail("EmailID","ErrEmailID","Please Enter Valid Email address<br>");
-        }
+      //  if(IsNonEmpty("EmailID","ErrEmailID","Please Enter Email address<br>")){
+          //  IsEmail("EmailID","ErrEmailID","Please Enter Valid Email address<br>");
+       // }
         if(IsNonEmpty("MobileNumber","ErrMobileNumber","Please Enter Mobile Number<br>")){
             IsMobileNumber("MobileNumber","ErrMobileNumber","Please Enter Valid Mobile Number<br>");
         }
@@ -237,7 +245,7 @@ var loading = "<div style='padding:80px;text-align:center;color:#aaa'><img src='
  function CallLogin(){
          
          ErrorCount=0;       
-         $('#ErrLoginEmailID').html("");            
+        // $('#ErrLoginEmailID').html("");            
          $('#ErrLoginPassword').html("");
        if(IsNonEmpty("LoginMobileNumber","ErrLoginMobileNumber","Please Enter Mobile Number<br>")){
             //IsEmail("LoginEmailID","ErrLoginEmailID","Please Enter Valid Email address<br>");

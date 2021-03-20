@@ -205,7 +205,9 @@ $(document).ready(function () {
                                                         </select>
                                                         <span class="errorstring" id="ErrIsActive"><?php echo isset($ErrIsActive)? $ErrIsActive : "";?></span>
                                                     </div> 
-                                                    
+                                                    <?php
+                                                        if (JAPP::REFERAL_PROGRAM) {
+                                                    ?> 
                                                     <div class="col-sm-12" style="padding-left: 0px;">
                                                         <label for="name">Refferal Commission (Level; 1)<span style="color:red">*</span></label>
                                                         <input type="text" class="form-control" id="Commission" name="Commission" placeholder="Enter Commission" value="<?php echo (isset($_POST['Commission']) ? $_POST['Commission'] : $data[0]['Commission']);?>">
@@ -221,6 +223,12 @@ $(document).ready(function () {
                                                         <input type="text" class="form-control" id="Commission" name="CommissionL3" placeholder="Enter Commission Level 3" value="<?php echo (isset($_POST['CommissionL3']) ? $_POST['CommissionL3'] : $data[0]['CommissionL3']);?>">
                                                         <span class="errorstring" id="ErrCommissionL3"><?php echo isset($ErrCommissionL3)? $ErrCommissionL3 : "";?></span>
                                                     </div> 
+                                                    
+                                                      <?php } else { ?>
+                                                    <input type="hidden" class="form-control" id="Commission" name="Commission" value="0">
+                                                    <input type="hidden" class="form-control" id="CommissionL2" name="CommissionL2"  value="0">
+                                                    <input type="hidden" class="form-control" id="CommissionL2" name="CommissionL2" value="0">
+                                                    <?php } ?>
                                                </div>  
                                             </div>
                                        </div>
