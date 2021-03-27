@@ -57,7 +57,7 @@
                         <li><span class="text-prodecor">Availability:</span> In Stock</li>
                         <hr class="prosp" />
                     </ul>
-                    <table>
+                    <table style="display: none;">
                         <tr>
                             <td style="padding-right: 10px;">
                                 <p class="price">
@@ -89,19 +89,40 @@
                         </tr>
                     </table>
                     <div class="row">
-                        <div class="col-6">
-                            <select class="form-control">
+                      <div class="col-sm-12">
+                          
                      <?php
                          foreach($product_prices as $product_price) {
                              ?>
-                               <option value=""><?php echo $product_price['Units']." ".$product_price['UnitName']." ".number_format($product_price['SellingPrice']);?></option>
+                               <div class="row">
+                                   <div class="col-sm-4">
+                                        <h2 style="margin-bottom:0px"><span style="font-size:16px">₹</span><?php echo number_format($product_price['SellingPrice']); ?></h2>
+                                        <span style='color:#555;'><?php echo $product_price['Units']." ".$product_price['UnitName'];?></span>
+                                  </div>
+                                  
+                                        <div class="col-sm-4 op-box qty-plus-minus">
+                                            <button type="button" class="form-control pull-left btn-number btnminus" onClick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty ) &amp;&amp; qty &gt; 1 ) result.value--;return false;" class="dec qtybutton">
+                                                <i class="fa fa-minus">&nbsp;</i>
+                                            </button>
+                                            <input id="qty_<?php echo $product_price['PriceTagID'];?>" type="text" name="qty" value="1" size="2" id="input-quantity" class="form-control input-number pull-left" />
+                                            <button type="button" class="form-control pull-left btn-number btnplus"  onClick="var result = document.getElementById('qty_<?php echo $product_price['PriceTagID'];?>'); var qty = result.value; if( !isNaN( qty )) result.value++;return false;" class="inc qtybutton">
+                                                <i class="fa fa-plus">&nbsp;</i>
+                                            </button>
+                                        </div>
+                                    
+                                  
+                                  <div class="col-sm-4">
+                                    <button type="button" id="buttoncart" onclick="addtocart('<?php echo $Product[0]['ProductID'];?>')" data-loading-text="Loading..." class="btn add-to-cart btn-primary">Add to Cart</button>  
+                                  </div>
+                              </div>
+                              
                              <?php
                          }
                      ?>
-                     </select>
+                     
                       </div>
                     </div>
-                    <div id="product">
+                    <div id="product" style="display:none;">
                         <!-- Quantity option -->
                         <div class="form-group">
                             <div class="row">
