@@ -59,6 +59,8 @@
                                                 <td>
                                                     <?php if (sizeof($img)>0) {?>
                                                       <img src="../uploads/products/<?php echo $product['ProductID'];?>/<?php echo $img[0]['ImageName'];?>" style="height:75px;text-align:center;margin:5px">
+                                                    <?php } else { ?>
+                                                    <img src="../assets/noimages.png" style="height:75px;text-align:center;margin:5px">
                                                     <?php } ?>
                                                 </td>
                                                 <td><?php echo $product['ProductCode'];?></td>

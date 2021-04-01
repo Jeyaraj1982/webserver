@@ -1,21 +1,34 @@
 <?php 
- 
     include_once("header.php");
     
-    
     $Products=array();
+    
+    $p = (isset($_GET['p'])) ? $_GET['p'] : 1;
+    $s = (isset($_GET['s'])) ?  $_GET['s'] : 1;
+        
+    if ($s==1) {
+        $q = " order by trim(ProductName) ";
+    }
+    
+    if ($s==2) {
+        $q = " order by trim(ProductName) desc ";
+    }
+        
     if (isset($_GET['category'])) {
-        $Products = $mysql->select("select * from _tbl_products where CategoryID='".$_GET['category']."' and IsActive='1'"); 
+        $count = $mysql->select("select count(*) as c from _tbl_products where CategoryID='".$_GET['category']."' and IsActive='1'"); 
+        $Products = $mysql->select("select * from _tbl_products where CategoryID='".$_GET['category']."' and IsActive='1' ".$q." limit ".(($p-1)*JApp::WEB_PRODUCTS_PER_PAGE).", ".JApp::WEB_PRODUCTS_PER_PAGE); 
     }
     
     if (isset($_GET['subcategory'])) {
-        $Products = $mysql->select("select * from _tbl_products where SubCategoryID='".$_GET['subcategory']."' and IsActive='1'"); 
+        $count = $mysql->select("select count(*) as c from _tbl_products where SubCategoryID='".$_GET['subcategory']."' and IsActive='1'"); 
+        $Products = $mysql->select("select * from _tbl_products where SubCategoryID='".$_GET['subcategory']."' and IsActive='1' ".$q." limit ".(($p-1)*JApp::WEB_PRODUCTS_PER_PAGE).", ".JApp::WEB_PRODUCTS_PER_PAGE); 
     }
-    
     
 ?>
 <style>
 .active {color:#700f6a !important;font-weight:bold}
+.page_navi {border:1px solid #ccc;padding:10px;text-align:center;margin-left:5px}
+.page_nave_active {border:1px solid #444;padding:10px;text-align:center;margin-left:5px;background:#444;color:#fff}
 </style>
 
 <?php if (sizeof($Products)==0) { ?>
@@ -43,10 +56,17 @@
 <?php } else { ?>
 <?php
        $SubCategory = $mysql->select("select * from _tbl_sub_category where SubCategoryID='".$Products[0]['SubCategoryID']."'"); 
-        $Category = $mysql->select("select * from _tbl_category where CategoryID='".$Products[0]['CategoryID']."'"); 
-        $SubCategories = $mysql->select("select * from _tbl_sub_category where CategoryID='".$Products[0]['CategoryID']."' order by SubCategoryName");
+       $Category = $mysql->select("select * from _tbl_category where CategoryID='".$Products[0]['CategoryID']."'"); 
+       $SubCategories = $mysql->select("select * from _tbl_sub_category where CategoryID='".$Products[0]['CategoryID']."' order by SubCategoryName");
+       
+       $total_page = 1;
+       if ($count[0]['c']>JApp::WEB_PRODUCTS_PER_PAGE) {
+           $total_page = intval($count[0]['c']/JApp::WEB_PRODUCTS_PER_PAGE);
+           if (($count[0]['c']%JApp::WEB_PRODUCTS_PER_PAGE)>0) {
+               $total_page++;
+           }
+       }
 ?>
-
 <div id="product-category" class="container">
     <div class="row">
         <div id="content" class="col-sm-12">
@@ -64,7 +84,6 @@
                     </div>
                 </div>
                 <div id="content" class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
-                   
                     <div class="row cate-border" style="margin-top:0px;">
                         <div class="col-md-8 col-sm-8 col-xs-3 catebt">
                             <div class="inspdes" style="border:none !important; padding:7px !important;padding-left:0px !important"> 
@@ -84,12 +103,14 @@
                         <div class="col-lg-4 col-md-4 col-xs-5 col-sm-4 sorting">
                             <div class="input-group input-group-sm">
                                 <label class="input-group-addon" for="input-sort" style="font-size:13px !important">Sort By:</label>
-                                <select id="input-sort" class="form-control" onchange="location = 'products.php?cid=<?php echo $_GET['cid'];?>'+this.value;">
-                                    <option value="name_asc" selected="selected">Default</option>
-                                    <option value="name_asc">Name (A - Z)</option>
-                                    <option value="name_desc">Name (Z - A)</option>
-                                    <option value="price_asc">Price (Low &gt; High)</option>
-                                    <option value="price_desc">Price (High &gt; Low)</option>
+                                <select id="input-sort" class="form-control" onchange="location = '<?php echo WEB_URL.$_SERVER['REDIRECT_URL']."?s=";?>'+this.value;">
+                                    <option value="0" >Default</option>
+                                    <option value="1" <?php echo $s==1 ? 'selected=selected' : "";?>>Name (A - Z)</option>
+                                    <option value="2" <?php echo $s==2 ? 'selected=selected' : "";?>>Name (Z - A)</option>
+                                    <!--  
+                                        <option value="price_asc">Price (Low &gt; High)</option>
+                                        <option value="price_desc">Price (High &gt; Low)</option>
+                                    -->
                                 </select>
                             </div>
                         </div>
@@ -100,7 +121,12 @@
                                 include("include_product_widget.php")    ;
                             } 
                         ?>
-                    </div>     
+                    </div>   
+                    <div class="col-sm-12" style="text-align: right;padding-right: 4px;padding-top: 15px;">
+                        <?php for($i=1;$i<=$total_page;$i++) { ?>
+                            <a href="<?php echo WEB_URL.$_SERVER['REDIRECT_URL']."?p=".$i."&s=".$s;?>" class="<?php echo $i==$p ? 'page_nave_active' : 'page_navi' ;?>"><?php echo $i;?></a>
+                        <?php } ?>
+                    </div>  
                 </div>
             </div>
         </div>

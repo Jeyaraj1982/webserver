@@ -20,12 +20,12 @@ $data=$mysql->select("select * from _tbl_products where md5(ProductID)='".$_GET[
                                                         `BrandID`           ='".$Brand[0]['BrandID']."',
                                                         `BrandName`         ='".$Brand[0]['BrandName']."',
                                                         `ProductName`       ='".$_POST['ProductName']."',
-                                                        `ProductPrice`      ='".$_POST['ProductPrice']."',
+                                                       
                                                         `ProductImage`      ='".$_POST['ProductImage']."',
                                                         `Commission`        ='".$_POST['Commission']."',
                                                         `CommissionL2`      ='".$_POST['CommissionL2']."',
                                                         `CommissionL3`      ='".$_POST['CommissionL3']."',
-                                                        `SellingPrice`      ='".$_POST['SellingPrice']."',
+                                                        
                                                         `StockAvailable`    ='".$_POST['StockAvailable']."',
                                                         `IsActive`          ='".$_POST['IsActive']."',
                                                         `ShortDescription`  ='".str_replace("'","\\'",$_POST['ShortDescription'])."',
@@ -75,24 +75,11 @@ $(document).ready(function () {
          //  Alphanumericwithdash("ProductName","ErrProductName","Please Enter Alpha Numerics Character"); 
         }
     });
-    $("#ProductPrice").blur(function () {
-        if(IsNonEmpty("ProductPrice","ErrProductPrice","Please Enter MRP")){
-           IsNumeric("ProductPrice","ErrProductPrice","Please Enter Numerics Character"); 
-        }
-    });
-    $("#SellingPrice").blur(function () {
-        if(IsNonEmpty("SellingPrice","ErrSellingPrice","Please Enter Selling Price")){
-           IsNumeric("SellingPrice","ErrSellingPrice","Please Enter Numerics Character"); 
-        }
-    });
+ 
     $("#ProductImage").blur(function () {
         IsNonEmpty("ProductImage","ErrProductImage","Please Upload Product Image");
     });
-    $("#ErrSellingPrice").blur(function () {
-        if(parseFloat($('#ProductPrice').val()) < parseFloat($('#SellingPrice').val())){
-           $('#ErrSellingPrice').html("Selling price Must Less than or Equal to MRP"); 
-        }
-    });
+   
     
 });
 
@@ -123,15 +110,7 @@ $(document).ready(function () {
                                      <input type="hidden" name="totalfiles" id="totalfiles">
                                      <input type="hidden" name="ProductID" id="ProductID" value="<?php echo $data[0]['ProductID'];?>">
                                     <div class="card-body">
-                                       <div class="form-group row">
-                                            <div class="col-sm-4" style="text-align: center;">
-                                                <div id="div_PI">
-                                                    <div><img src='../uploads/<?php echo $data[0]['ProductImage'];?>' style='width: 64px;margin-top: 5px;'><br><span onclick='image1_close()' class='btn btn-danger btn-sm' style='padding: 0px 10px;font-size: 10px;'>Delete</span></div>
-                                                </div> 
-                                                <button type="button" onclick="uploadimage('1')" class="btn btn-primary btn-sm" style="padding: 0px 10px 0px 10px;">Browse</button>
-                                                <div class="errorstring" id="ErrProductImage"><?php echo isset($ErrProductImage)? $ErrProductImage : "";?></div>  
-                                            </div>
-                                            <div class="col-sm-8">
+                                     
 												<div class="form-group form-show-validation row">
                                                     <label for="name">Category Name<span style="color:red">*</span></label>
                                                     <select class="form-control" name="Category" id="Category" onchange="getSubCategory($(this).val())">
@@ -176,18 +155,7 @@ $(document).ready(function () {
                                                     <label class="col-form-label" style="padding-top:0px;font-weight: normal;">Max 300 characters&nbsp;&nbsp;|&nbsp;&nbsp;<span id="textarea_feedback"></span></label>
                                                     <span class="errorstring" id="ErrProductName"><?php echo isset($ErrProductName)? $ErrProductName : "";?></span>
                                                 </div> 
-                                                <div class="form-group form-show-validation row">
-                                                    <div class="col-sm-6" style="padding-left: 0px;">
-                                                        <label for="name">MRP (Rs)<span style="color:red">*</span></label>
-                                                        <input type="text" class="form-control" id="ProductPrice" name="ProductPrice" placeholder="Enter Product Price" value="<?php echo (isset($_POST['ProductPrice']) ? $_POST['ProductPrice'] :$data[0]['ProductPrice']);?>">
-                                                        <span class="errorstring" id="ErrProductPrice"><?php echo isset($ErrProductPrice)? $ErrProductPrice : "";?></span>    
-                                                    </div>
-                                                    <div class="col-sm-6" style="padding-left: 0px;padding-right: 0px;">
-                                                        <label for="name">Selling Price (Rs)<span style="color:red">*</span></label>
-                                                        <input type="text" class="form-control" id="SellingPrice" name="SellingPrice" placeholder="Enter Selling Price" value="<?php echo (isset($_POST['SellingPrice']) ? $_POST['SellingPrice'] :$data[0]['SellingPrice']);?>">
-                                                        <span class="errorstring" id="ErrSellingPrice"><?php echo isset($ErrSellingPrice)? $ErrSellingPrice : "";?></span>
-                                                    </div>
-                                               </div> 
+                                                  
                                                <div class="form-group form-show-validation row">
                                                     <div class="col-sm-6" style="padding-left: 0px;">
                                                         <label for="name">Stock Available<span style="color:red">*</span></label>
@@ -230,8 +198,8 @@ $(document).ready(function () {
                                                     <input type="hidden" class="form-control" id="CommissionL2" name="CommissionL2" value="0">
                                                     <?php } ?>
                                                </div>  
-                                            </div>
-                                       </div>
+                                           
+                                 
                                       
                                        <div class="form-group form-show-validation row">
                                             <label for="name">Detail Description</label>
@@ -239,26 +207,7 @@ $(document).ready(function () {
                                             <span class="errorstring" id="ErrDetailDescription"><?php echo isset($ErrDetailDescription)? $ErrDetailDescription : "";?></span>
                                        </div>
                                        
-                                         <div class="form-group form-show-validation row">
-                                            <div class="col-sm-12" style="text-align: right;">
-                                                 <button type="button" class="btn btn-primary btn-sm" onclick="$('#files').trigger('click');"><i class="fas fa-cloud-upload-alt"></i>&nbsp;&nbsp;&nbsp;&nbsp;Add Thumb</button>
-                                                 <div id="file_upload_progress" style="color:red"></div>
-                                                 <div id="file_upload_error" style="color:red"></div>
-                                                 <div style="border: 1px solid #ebedf2;padding:10px;height:250px" id="total_div">
-                                                 <?php $additionals= $mysql->select("select * from _tbl_product_additional_image where ProductID='".$data[0]['ProductID']."'");
-                                                       foreach($additionals as $additional){ ?> 
-                                                         <?php $i=1; ?>
-                                                                <div id="div_<?php echo $additional['ProductImageID'];?>" style="float: left;margin-right:10px;margin-bottom:25px;height:113px;width:70px;text-align: center;border: 1px solid #ccc;border-radius: 5px;">
-                                                                    <div>
-                                                                        <img src='<?php echo "../uploads/".$additional['ProductImage'];?>' style='width: 60px;height:80px;;margin-top: 5px;'>
-                                                                        <br><span onclick="CallConfirmDeleteImage('<?php echo $additional['ProductImageID'];?>',<?php echo $additional['ProductImageID'];?>)" class='btn btn-danger btn-sm' style='padding: 0px 10px;font-size: 10px;'>Delete</span>
-                                                                    </div>
-                                                                </div>     
-                                                         <?php $i++; ?>    
-                                                       <?php } ?>    
-                                                 </div> 
-                                            </div>               
-                                        </div>
+                                          
                                         <div class="form-group">
                                         <div class="col-lg-4 col-md-9 col-sm-8" style="text-align:center;color: green;"><?php echo $successmessage;?> </div>
                                     </div>
@@ -307,8 +256,7 @@ function CallConfirmation(){
         $('#ErrSubCategory').html("");
         $('#ErrBrandName').html("");
         $('#ErrProductName').html("");
-        $('#ErrProductPrice').html("");
-        $('#ErrSellingPrice').html("");
+     
         $('#ErrProductImage').html("");
         
         
@@ -328,17 +276,8 @@ function CallConfirmation(){
         if(IsNonEmpty("ProductName","ErrProductName","Please Enter Product Name")){
           // Alphanumericwithdash("ProductName","ErrProductName","Please Enter Alpha Numerics Character"); 
         }
-        if(IsNonEmpty("ProductPrice","ErrProductPrice","Please Enter MRP")){
-           IsNumeric("ProductPrice","ErrProductPrice","Please Enter Numerics Character"); 
-        }
-        if(IsNonEmpty("SellingPrice","ErrSellingPrice","Please Enter Selling Price")){
-           IsNumeric("SellingPrice","ErrSellingPrice","Please Enter Numerics Character"); 
-        }
-        IsNonEmpty("ProductImage","ErrProductImage","Please Upload Product Image");
-        if(parseFloat($('#ProductPrice').val()) < parseFloat($('#SellingPrice').val())){
-           ErrorCount++;
-           $('#ErrSellingPrice').html("Selling price Must Less than or Equal to MRP"); 
-        }
+        
+            
         if(ErrorCount==0) {
             var txt= '<div class="modal-header" style="padding-bottom:5px">'
                          +'<h4 class="heading"><strong>Confirmation</strong> </h4>'

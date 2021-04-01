@@ -43,7 +43,7 @@
                     <div class=" col-sm-3 col-xs-12">
                         <div style="text-align: center;" >
                             <img src="<?php echo WEB_URL;?>/assets/lowest_guranty.png" style="height:100px;margin:0px auto">
-                            <br>Lowest Price Guarantee 
+                            <br>Lowest Price & Quality Guarantee 
                         </div>
                     </div>
                     <div class=" col-sm-3 col-xs-12">

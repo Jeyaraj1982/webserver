@@ -54,20 +54,24 @@ if (isset($_SESSION['User']) && $_SESSION['User']['Role']=="Admin") {
 }
 
 
-  function parseStringForURL($string) {
+    function parseStringForURL($string) {
         $string = strtolower(trim($string));
         $string = str_replace("&","and",$string);
-        $string = str_replace("  "," ",$string);
         $string = str_replace("/"," ",$string);
+        $string = str_replace("'"," ",$string);
+        $string = str_replace("%"," ",$string);
+        $string = str_replace("  "," ",$string);
         $string = str_replace(" ","-",$string);
         return $string;
-    }
-
-      function parseStringForPhysicalPath($string) {
+    }   
+    
+    function parseStringForPhysicalPath($string) {
         $string = strtolower(trim($string));
         $string = str_replace("&","and",$string);
-        $string = str_replace("  "," ",$string);
+        $string = str_replace("'"," ",$string);
         $string = str_replace("/"," ",$string);
+        $string = str_replace("%"," ",$string);
+        $string = str_replace("  "," ",$string);
         $string = str_replace(" ","_",$string);
         return $string;
     }
@@ -107,6 +111,7 @@ class JApp {
     const PINCODE_MAXIMUM_LENGTH = 10;
     
     const GENDER = array("Male","Female");
+    const WEB_PRODUCTS_PER_PAGE = 20;
 }
 
 class Messages{

@@ -1,9 +1,4 @@
-<?php
-/*include_once("header.php");
-include_once("LeftMenu.php"); 
-if (isset($_GET['action'])) {
-         include_once($_GET['action'].".php");
-     } else { */?>
+ 
 <br><br><br>
 <div class="main-panel full-height">
     <div class="container">
@@ -58,21 +53,29 @@ if (isset($_GET['action'])) {
                                         <table id="myTable" class="table table-striped">
                                             <thead>
                                                 <tr>
-                                                    <th>Product Name</th>                                                                                           
-                                                    <th>MRP (Rs)</th> 
-                                                    <th>Selling Price (Rs)</th> 
-                                                    <th></th>
+                                                   <th scope="col"> </th>
+                                                <th scope="col">Product Code</th>
+                                                <th scope="col">Product Name</th>
+                                                <th scope="col"> </th>
                                                 </tr>
                                             </thead>                                                                         
                                             <tbody>
                                             <?php
-                                                $products = $mysql->select("SELECT * FROM _tbl_products WHERE IsActive='1'  order by ProductID Desc");
+                                                $products = $mysql->select("SELECT * FROM _tbl_products WHERE IsActive='1'  order by ProductID Desc limit 0,5");
                                                ?>                                                                                                   
-                                                <?php foreach($products as $product){ ?>                                                           
+                                                <?php foreach($products as $product){ 
+                                                     $img = $mysql->select("select * from _tbl_products_images where ProductID='".$product['ProductID']."' and ImageOrder=1 and IsDelete='0'");
+                                                    ?> 
                                                 <tr>
+                                                 <td>
+                                                    <?php if (sizeof($img)>0) {?>
+                                                      <img src="../uploads/products/<?php echo $product['ProductID'];?>/<?php echo $img[0]['ImageName'];?>" style="height:75px;text-align:center;margin:5px">  
+                                                    <?php } else { ?>
+                                                    <img src="../assets/noimages.png" style="height:75px;text-align:center;margin:5px">
+                                                    <?php } ?>
+                                                </td>
+                                                <td><?php echo $product['ProductCode'];?></td>
                                                     <td><?php echo $product['ProductName'];?></td>
-                                                    <td style="text-align:right"><?php echo number_format($product['ProductPrice'],2);?></td>
-                                                    <td style="text-align:right"><?php echo number_format($product['SellingPrice'],2);?></td>
                                                     <td style="text-align: right">                                                   
                                                         <div class="dropdown dropdown-kanban" style="float: right;">
                                                             <button class="" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border:none;font-size:14px;background:none !important;padding-right:0px;margin-right:0px;cursor:pointer">
@@ -85,9 +88,14 @@ if (isset($_GET['action'])) {
                                                         </div>
                                                     </td>
                                                 </tr>
-                                                <?php } if(sizeof($products)=="0"){ ?>
+                                                <?php } ?>
+                                                <?php if(sizeof($products)=="0"){ ?>
                                                     <tr>
                                                         <td style="text-align: center;" colspan="4">No Products found</td>
+                                                    </tr>
+                                                <?php } else {?>
+                                                     <tr>
+                                                        <td colspan="4" style=""><a href="dashboard.php?action=Products/list&status=All">List all products</a></td>
                                                     </tr>
                                                 <?php } ?>
                                             </tbody>
@@ -102,5 +110,4 @@ if (isset($_GET['action'])) {
         </div>
     </div>
 </div>
-<?php //} ?>
-<?php //include_once("footer.php");?>
+ 

@@ -210,6 +210,16 @@ $data= $mysql->Select("select * from _tbl_products where md5(ProductID)='".$_GET
                                                                                 "IsDelete"=>"0",
                                                                                 "AddedOn"=>date("Y-m-d H:i:s")));
                                 }
+                                
+                                if (isset($_POST['UpdateBtn'])) {
+                                      $Units = $mysql->select("select * from _tbl_master_units where UnitID='".$_POST['UnitID']."'");
+                                     $mysql->execute("update _tbl_products_prices set UnitID='".$_POST['UnitID']."' ,
+                                                                                        Units='".$_POST['Units']."' ,
+                                                                                        UnitName='".$Units[0]['UnitName']."'  ,
+                                                                                        MRP='".$_POST['MRP']."' ,
+                                                                                        SellingPrice='".$_POST['SellingPrice']."' ,
+                                                                                        Description='".$_POST['Description']."' where  md5(PriceTagID)='".$_POST['TagID']."'");
+                                }
                             ?>
                                 <div class="table-responsive">
                                     <table class="table table-bordered" style="border: 1px solid #dee2e6;">
@@ -237,8 +247,8 @@ $data= $mysql->Select("select * from _tbl_products where md5(ProductID)='".$_GET
                                                         <i class="icon-options-vertical"></i>
                                                     </button>                                                                                                        
                                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                        <a class="dropdown-item" draggable="false" href="javascript:void(0)" onclick="EditDayandEventDetails('<?php echo md5($DayandEvent['DayandEventID']);?>')">Edit</a>
-                                                        <a class="dropdown-item" draggable="false"><span onclick='CallConfirmationDeleteDayEvent(<?php echo $DayandEvent['DayandEventID'];?>)' class='btn btn-danger btn-sm' style='padding: 0px 10px;font-size: 10px;'>Delete</span></a>
+                                                        <a class="dropdown-item" draggable="false" href="javascript:void(0)" onclick="EditPrice('<?php echo md5($Price['PriceTagID']);?>')">Edit</a>
+                                                        <a class="dropdown-item" draggable="false"><span onclick='CallConfirmationDeleteDayEvent(<?php echo $Price['PriceTagID'];?>)' class='btn btn-danger btn-sm' style='padding: 0px 10px;font-size: 10px;'>Delete</span></a>
                                                     </div>
                                                 </div>
                                             </td>
@@ -448,31 +458,16 @@ $data= $mysql->Select("select * from _tbl_products where md5(ProductID)='".$_GET
          $("#confrimation_text").html($('#priceTagModel').html());
             $('#ConfirmationPopup').modal("show");
     }
- function SaveDayandEventDetails() {
-         var param = $( "#DayandEventFrom").serialize();
+ 
+    function EditPrice(TagID) {   
         $("#confrimation_text").html(loading);
-        $.post( "webservice.php?action=SubmitDayandEventDetails",param,function(data) {                                       
-            var obj = JSON.parse(data); 
-            var html = "";                                                                              
-            if (obj.status=="failure") {
-                html = "<div class='modal-body' style='padding:10px;'><div class='form-group row'><div class='col-sm-12' style='text-align:center'><img src='assets/accessdenied.png' style='width:128px;margin:0px auto'><br><br>"+obj.message+"<br></div></div>";                          
-                html += "<div style='padding:20px;text-align:center'>" + "<button type='button' class='btn btn-primary' data-dismiss='modal'>Cancel</button></div></div>"; 
-            } else {
-                html = "<div class='modal-body' style='padding:10px;'><div class='form-group row'><div class='col-sm-12' style='text-align:center'><img src='assets/tick.jpg' style='width:128px;margin:0px auto'><br><h5 style='line-height:30px;font-size: 16px;margin-bottom:0px'>"+obj.message+"</h5><br><a href='' class='btn btn-primary'>Continue</button></div></div>";
-                html += "</div>"; 
-                $('#ConfirmationPopup').modal("show");
-            }
-            $("#confrimation_text").html(html);
-            
-        });
-    }
-    function EditDayandEventDetails(DayandEventID) {   
-        $("#confrimation_text").html(loading);
-        $.ajax({url:'webservice.php?action=EditDayandEventDetails&DayandEventID='+DayandEventID,success:function(data){
+        $.ajax({url:'webservice.php?action=EditPrice&TagID='+TagID,success:function(data){
             $("#confrimation_text").html(data);
             $('#ConfirmationPopup').modal("show");
         }});
     }
+    
+    
     
     function UpdateDayandEventDetails() {
         var param = $( "#EditDayandEventFrom").serialize();
