@@ -18,7 +18,7 @@ $data= $mysql->Select("select * from _tbl_products where md5(ProductID)='".$_GET
                                     <div class="form-group form-show-validation row">
                                         <div class="col-sm-12" style="padding-left:0px;color:#666"><?php echo $data[0]['ShortDescription'];?></div>
                                     </div>
-									<div class="form-group form-show-validation row">
+                                    <div class="form-group form-show-validation row">
                                         <div class="col-sm-4" style="padding-left: 0px;">
                                             <label for="name" style="font-weight:bold">Category Name</label>
                                             <div style="color:#666"><?php echo $data[0]['CategoryName'];?></div>    
@@ -33,10 +33,6 @@ $data= $mysql->Select("select * from _tbl_products where md5(ProductID)='".$_GET
                                         </div>
                                     </div>
                                     <div class="form-group form-show-validation row">
-                                        <div class="col-sm-4" style="padding-left: 0px;">
-                                            <label for="name" style="font-weight:bold">Stock Available</label>
-                                            <div style="color:#666"><?php echo $data[0]['StockAvailable'];?></div> 
-                                        </div>  
                                         <div class="col-sm-4" style="padding-left: 0px;">
                                             <label for="name" style="font-weight:bold">Is Active</label>
                                             <div style="color:#666"><?php if($data[0]['IsActive']=="1") { echo "Yes"; } else { echo "No";}?></div> 
@@ -160,117 +156,28 @@ $data= $mysql->Select("select * from _tbl_products where md5(ProductID)='".$_GET
                     </div>
                 </div>
             </div>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-              <div class="row">
-                    <div class="col-md-12">
-                        <div class="card">
-                            <div class="card-header" style="padding-top:10px;padding-bottom:10px">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="card-title">
-                                           Price Tags
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6" style="text-align: right;">
-                                        <button type="button" onclick="PriceTagPopup()" class="btn btn-primary btn-xs">Add Price</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                            <?php
-                                if (isset($_POST['AddBtn'])){
-                                   
-                                    $Units = $mysql->select("select * from _tbl_master_units where UnitID='".$_POST['UnitID']."'");
-                                    $mysql->insert("_tbl_products_prices",array("ProductID"=>$data[0]['ProductID'],
-                                                                                "UnitID"=>$_POST['UnitID'],
-                                                                                "Units"=>$_POST['Units'],
-                                                                                "UnitName"=>$Units[0]['UnitName'],
-                                                                                "MRP"=>$_POST['MRP'],
-                                                                                "SellingPrice"=>$_POST['SellingPrice'],
-                                                                                "Description"=>$_POST['Description'],
-                                                                                "ListOrder"=>"0",
-                                                                                "IsDelete"=>"0",
-                                                                                "AddedOn"=>date("Y-m-d H:i:s")));
-                                }
-                                
-                                if (isset($_POST['UpdateBtn'])) {
-                                      $Units = $mysql->select("select * from _tbl_master_units where UnitID='".$_POST['UnitID']."'");
-                                     $mysql->execute("update _tbl_products_prices set UnitID='".$_POST['UnitID']."' ,
-                                                                                        Units='".$_POST['Units']."' ,
-                                                                                        UnitName='".$Units[0]['UnitName']."'  ,
-                                                                                        MRP='".$_POST['MRP']."' ,
-                                                                                        SellingPrice='".$_POST['SellingPrice']."' ,
-                                                                                        Description='".$_POST['Description']."' where  md5(PriceTagID)='".$_POST['TagID']."'");
-                                }
-                            ?>
-                                <div class="table-responsive">
-                                    <table class="table table-bordered" style="border: 1px solid #dee2e6;">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col" style="text-align: left;">Units</th>
-                                            <th scope="col" style="text-align: right;">MRP</th>
-                                            <th scope="col" style="text-align: right;">Selling Price</th>
-                                            <th scope="col" style="text-align: right;">List Order</th>
-                                            <th scope="col"></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                    <?php $Prices = $mysql->select("select * from _tbl_products_prices where ProductID='".$data[0]['ProductID']."' order by ListOrder*1");   ?>
-                                    <?php foreach($Prices as $Price){ ?>
-                                        <tr>
-                                            <td><?php echo $Price['Units'];?> <?php echo $Price['UnitName'];?></td>
-                                            <td style="text-align: right"><?php echo number_format($Price['MRP'],2);?></td>
-                                            <td style="text-align: right"><?php echo number_format($Price['SellingPrice'],2);?></td>
-                                            <td style="text-align: right"><?php echo $Price['ListOrder'];?></td>
-                                             
-                                            <td style="text-align: right">                                                   
-                                                <div class="dropdown dropdown-kanban" style="float: right;">
-                                                    <button class="" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border:none;font-size:14px;background:none !important;padding-right:0px;margin-right:0px;cursor:pointer">
-                                                        <i class="icon-options-vertical"></i>
-                                                    </button>                                                                                                        
-                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                        <a class="dropdown-item" draggable="false" href="javascript:void(0)" onclick="EditPrice('<?php echo md5($Price['PriceTagID']);?>')">Edit</a>
-                                                        <a class="dropdown-item" draggable="false"><span onclick='CallConfirmationDeleteDayEvent(<?php echo $Price['PriceTagID'];?>)' class='btn btn-danger btn-sm' style='padding: 0px 10px;font-size: 10px;'>Delete</span></a>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    <?php } ?>
-                                    </tbody>
-                                </table>
-                                </div>
-                            </div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header" style="padding-top:10px;padding-bottom:10px">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card-title">
+                            Price Tags
                         </div>
                     </div>
+                    <div class="col-md-6" style="text-align: right;">
+                        <button type="button" onclick="PriceTag_New('<?php echo $data[0]['ProductID'];?>')" class="btn btn-primary btn-xs">Add Price</button>
+                    </div>
                 </div>
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
+            </div>
+            <div class="card-body">
+                <div class="table-responsive" id="tbl_priceTag"></div>
+            </div>
+        </div>
+    </div>
+</div>
                 <div class="row" style="display: none;">
                     <div class="col-md-12">
                         <div class="card">
@@ -361,291 +268,144 @@ $data= $mysql->Select("select * from _tbl_products where md5(ProductID)='".$_GET
                         </div>
                     </div>
                 </div>
-                 
-                 
         </div>
     </div>
 </div>
-
-<script>
-
-    function doPriceTagValidate() {
-         var UnitsTxt = $('#Units').val();
-       
-        return true;
-        $('#ErrUnits').html('');
-        var UnitsTxt = $('#Units').val();
-        if (UnitsTxt=="") {
-           $('#ErrUnits').html('Please enter weight/measurements');  
-           return false;
-        }
-        return true;
-    }
-</script>
-
-<div id="priceTagModel">
-    <div class="row">
-        <div class="col-sm-12">
-            <div class="card" style="margin-bottom:0px">
-                <div class="card-body">
-                    <form action="" method="post" onsubmit="return doPriceTagValidate()">
-                        <div class="form-group form-show-validation row">
-                            <label class="col-sm-12"  style="padding-left:0px" for="name">Unit<span style="color:red">*</span></label>
-                             <div class="col-sm-4" style="padding-left:0px">
-                            <input type="text" class="form-control" id="Units" name="Units" placeholder="Enter Units">
-                            <span style="color:red" id="ErrUnits"></span>
-                            </div>
-                             <div class="col-sm-4">
-                            <select class="form-control" name="UnitID" id="UnitID">
-                                <option value="0" <?php echo ($_POST['BrandName']=="0") ? " selected='selected' " : "";?>>Select Unit</option>
-                                <?php $BrandNames = $mysql->select("select * from _tbl_master_units where IsActive='1' order by UnitName");?>
-                                <?php foreach($BrandNames as $BrandName) { ?>
-                                    <option value="<?php echo $BrandName['UnitID'];?>"  ><?php echo $BrandName['UnitName'];?></option>
-                                <?php } ?>
-                             </select>
-                             </div>
-                            <span class="errorstring" id="ErrBrandName"><?php echo isset($ErrBrandName)? $ErrBrandName : "";?></span>
-                        </div>
-                        <div class="form-group form-show-validation row">
-                            <label for="name">MRP<span style="color:red">*</span></label>
-                            <input type="text" class="form-control" id="MRP" name="MRP" placeholder="Enter MRP" value="">
-                            <span class="errorstring" id="ErrProductName"><?php echo isset($ErrProductName)? $ErrProductName : "";?></span>
-                        </div> 
-                        <div class="form-group form-show-validation row">
-                            <label for="name">Selling Price<span style="color:red">*</span></label>
-                            <input type="text" class="form-control" id="SellingPrice" name="SellingPrice" placeholder="Enter Selling Price" value="">
-                            <span class="errorstring" id="ErrProductName"><?php echo isset($ErrProductName)? $ErrProductName : "";?></span>
-                        </div> 
-                        <div class="form-group form-show-validation row">
-                            <label for="name">Description</label>
-                            <input type="text" class="form-control" id="Description" name="Description" placeholder="Enter Description" value="">
-                            <span class="errorstring" id="ErrProductName"><?php echo isset($ErrProductName)? $ErrProductName : "";?></span>
-                        </div> 
-                        <div class="form-group form-show-validation row" style="text-align: right;">
-                            <input type="Button" value="Cancel" name="" class="btn btn-gray btn-sm">  &nbsp;
-                            <input type="submit" value="Add" name="AddBtn" class="btn btn-primary btn-sm"> 
-                        </div> 
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-
 
 <div class="modal fade" id="ConfirmationPopup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content" id="confrimation_text">    
-         
     </div>
   </div>
 </div>
 
-
 <script>
- var loading = "<div class='modal-body' style='padding:10px;'><div class='form-group row'><div class='col-sm-12' style='text-align:center'><div  style='padding:80px;text-align:center;color:#aaa;text-align:center'><img src='assets/loading.gif'  style='width:80px'><br>Processing ...</div></div></div>";
- function PriceTagPopup() {   
-        $("#confrimation_text").html(loading);
-        //$.ajax({url:'webservice.php?action=AddDayandEventDetails&PackageID='+PackageID,success:function(data){
-          //  $("#confrimation_text").html(data);
-//            $('#ConfirmationPopup').modal("show");
-        //}});
+    var loading = "<div class='modal-body' style='padding:10px;'><div class='form-group row'><div class='col-sm-12' style='text-align:center'><div  style='padding:80px;text-align:center;color:#aaa;text-align:center'><img src='assets/loading.gif'  style='width:80px'><br>Processing ...</div></div></div>";
+    
+    $( document ).ready(function() {
+        PriceTag_List();
+    });
+    
+    function doPriceTagValidate(formid,action) {
         
-         $("#confrimation_text").html($('#priceTagModel').html());
+        $('#ErrMessage').html('');
+        
+        var UnitsTxt = $('#Units').val();
+        if (UnitsTxt=="") {
+           $('#ErrMessage').html('Please enter Units');  
+           return false;
+        }
+        
+        var _UnitID = parseInt($('#UnitID').val());
+        if (_UnitID==0) {
+           $('#ErrMessage').html('Please select measurements');  
+           return false;
+        }
+        
+        <?php   if (BrandSize) { ?>
+        var _BrandSizeID = parseInt($('#BrandSizeID').val());
+        if (_BrandSizeID==0) {
+           $('#ErrMessage').html('Please select size');  
+           return false;
+        }
+        <?php } ?>
+        
+        var _MRP = parseFloat($('#MRP').val());
+        if (!(_MRP>0)) {
+           $('#ErrMessage').html('Please enter MRP');  
+           return false;
+        }
+        
+        var _SellingPrice = parseFloat($('#SellingPrice').val());
+        if (!(_SellingPrice>0)) {
+           $('#ErrMessage').html('Please enter selling price');  
+           return false;
+        }
+        
+        if (!(_MRP>=_SellingPrice)) {
+            $('#ErrMessage').html('Selling price must bellow MRP');  
+            return false;
+        }
+        
+        var param = $( "#form_newprice_"+formid).serialize();
+        var _action = (action=="save") ? "PriceTag_Save" : "PriceTag_Update";
+        
+        $.post( "webservice.php?action="+_action,param,function(data) {
+        var obj = JSON.parse(data); 
+        var html = "";                                                                              
+        if (obj.status=="failure") {
+            html = "<div class='form-group row'><div class='col-sm-12' style='text-align:center'><img src='assets/accessdenied.png' style='width:128px'><br><br>"+obj.message+"<br></div></div>";
+            html += "<div style='padding:20px;text-align:center'>" + "<button type='button' class='btn btn-outline-danger' data-dismiss='modal'>Cancel</button></div>"; 
+        } else {
+            $('#tbl_priceTag').html(obj.Content);
+            html = "<div class='form-group row'><div class='col-sm-12' style='text-align:center'><img src='assets/tick.jpg' style='width:128px'><br><br>"+obj.message+"<br></div></div>";
+            html += "<div style='padding:20px;text-align:center'>" + "<a  data-dismiss='modal' class='btn btn-outline-danger'>Continue</a></div>"; 
             $('#ConfirmationPopup').modal("show");
+        }                                                                                                 
+        $("#confrimation_text").html(html);
+        }); 
     }
- 
-    function EditPrice(TagID) {   
+    
+    function PriceTag_New(ProductID) {
         $("#confrimation_text").html(loading);
-        $.ajax({url:'webservice.php?action=EditPrice&TagID='+TagID,success:function(data){
+        $('#ConfirmationPopup').modal("show");
+        $.ajax({url:'webservice.php?action=PriceTag_New&rand='+ProductID,success:function(data){
             $("#confrimation_text").html(data);
-            $('#ConfirmationPopup').modal("show");
         }});
     }
     
-    
-    
-    function UpdateDayandEventDetails() {
-        var param = $( "#EditDayandEventFrom").serialize();
+    function PriceTag_Edit(TagID) {
         $("#confrimation_text").html(loading);
-        $.post( "webservice.php?action=SubmitUpdateDayandEventDetails",param,function(data) {                                       
-            var obj = JSON.parse(data); 
-            var html = "";                                                                              
-            if (obj.status=="failure") {                                                                                                                                                                                                                                                                 
-                html = "<div class='modal-body' style='padding:10px;'><div class='form-group row'><div class='col-sm-12' style='text-align:center'><img src='assets/accessdenied.png' style='width:128px;margin:0px auto'><br><br>"+obj.message+"<br></div></div>";                          
-                html += "<div style='padding:20px;text-align:center'>" + "<button type='button' class='btn btn-primary' data-dismiss='modal'>Cancel</button></div></div>"; 
-            } else {
-                html = "<div class='modal-body' style='padding:10px;'><div class='form-group row'><div class='col-sm-12' style='text-align:center'><img src='assets/tick.jpg' style='width:128px;margin:0px auto'><br><h5 style='line-height:30px;font-size: 16px;margin-bottom:0px'>"+obj.message+"</h5><br><a href='' class='btn btn-primary'>Continue</button></div></div>";
-                html += "</div>"; 
-                $('#ConfirmationPopup').modal("show");
-            }
-            $("#confrimation_text").html(html);
-            
-        });
-    }
- function AddDateandCostDetails(PackageID) {   
-        $("#confrimation_text").html(loading);
-        $.ajax({url:'webservice.php?action=AddDateandCostDetails&PackageID='+PackageID,success:function(data){
+        $('#ConfirmationPopup').modal("show");
+        $.ajax({url:'webservice.php?action=PriceTag_Edit&TagID='+TagID,success:function(data){
             $("#confrimation_text").html(data);
-            $('#ConfirmationPopup').modal("show");
+        }});
+    } 
+    
+    function PriceTag_List() {
+        $("#tbl_priceTag").html(loading);
+        $.ajax({url:'webservice.php?action=PriceTag_List&ProductID=<?php echo $data[0]['ProductID'];?>',success:function(data){
+            $("#tbl_priceTag").html(data);
         }});
     }
- function SaveDateandCostDetails() {
-         var param = $( "#DateandCostFrom").serialize();
+    
+    function CallConfirmationDeletePrice(PriceTagID){
+        var txt = '<form action="" method="POST" id="DeleteForm_'+PriceTagID+'">'
+                        +'<input type="hidden" value="'+PriceTagID+'" id="PriceTagID" Name="PriceTagID">'
+                        +'<div class="form-group row">'
+                            +'<div class="col-sm-12" style="text-align:center">'
+                                +'CONFIRMATION'
+                            +'</div>'
+                        +'</div>'
+                        +'<div class="form-group row">'
+                            +'<div class="col-sm-12" style="text-align:left">'
+                                +'Are you sure want to delete?'
+                            +'</div>'
+                        +'</div>'
+                        +'<div style="padding:20px;text-align:center">'
+                            +'<button type="button" class="btn btn-outline-danger" data-dismiss="modal" >Cancel</button>&nbsp;&nbsp;&nbsp;'
+                            +'<button type="button" class="btn btn-success" onclick="PriceTag_Delete(\''+PriceTagID+'\')" >Yes, Confirm</button>'
+                        +'</div></form>';  
+        $('#confrimation_text').html(txt);                                       
+        $('#ConfirmationPopup').modal("show");
+    } 
+    
+    function PriceTag_Delete(PriceTagID) {
+        var param = $( "#DeleteForm_"+PriceTagID).serialize();
         $("#confrimation_text").html(loading);
-        $.post( "webservice.php?action=SubmitDateandCostDetails",param,function(data) {                                       
+        $.post( "webservice.php?action=PriceTag_Delete",param,function(data) {
             var obj = JSON.parse(data); 
             var html = "";                                                                              
             if (obj.status=="failure") {
-                html = "<div class='modal-body' style='padding:10px;'><div class='form-group row'><div class='col-sm-12' style='text-align:center'><img src='assets/accessdenied.png' style='width:128px;margin:0px auto'><br><br>"+obj.message+"<br></div></div>";                          
-                html += "<div style='padding:20px;text-align:center'>" + "<button type='button' class='gradient-button' data-dismiss='modal'>Cancel</button></div></div>"; 
+                html = "<div class='form-group row'><div class='col-sm-12' style='text-align:center'><img src='assets/accessdenied.png' style='width:128px'><br><br>"+obj.message+"<br></div></div>";
+                html += "<div style='padding:20px;text-align:center'>" + "<button type='button' class='btn btn-outline-danger' data-dismiss='modal'>Cancel</button></div>"; 
             } else {
-                html = "<div class='modal-body' style='padding:10px;'><div class='form-group row'><div class='col-sm-12' style='text-align:center'><img src='assets/tick.jpg' style='width:128px;margin:0px auto'><br><h5 style='line-height:30px;font-size: 16px;margin-bottom:0px'>"+obj.message+"</h5><br><a href='' class='btn btn-primary'>Continue</button></div></div>";
-                html += "</div>"; 
+                $('#tbl_priceTag').html(obj.Content);
+                html = "<div class='form-group row'><div class='col-sm-12' style='text-align:center'><img src='assets/tick.jpg' style='width:128px'><br><br>"+obj.message+"<br></div></div>";
+                html += "<div style='padding:20px;text-align:center'>" + "<a   data-dismiss='modal'  class='btn btn-outline-danger'>Continue</a></div>"; 
                 $('#ConfirmationPopup').modal("show");
-            }
+            }                                                                                                 
             $("#confrimation_text").html(html);
-            
         });
-    }
- 
- function EditDateandCostDetails(DateandCostID) {   
-        $("#confrimation_text").html(loading);
-        $.ajax({url:'webservice.php?action=EditDateandCostDetails&DateandCostID='+DateandCostID,success:function(data){
-            $("#confrimation_text").html(data);
-            $('#ConfirmationPopup').modal("show");
-        }});
-    }
-    
-    function UpdateDateandCostDetails() {
-        var param = $( "#EditDateandCostFrom").serialize();
-        $("#confrimation_text").html(loading);
-        $.post( "webservice.php?action=SubmitUpdateDateandCostDetails",param,function(data) {                                       
-            var obj = JSON.parse(data); 
-            var html = "";                                                                              
-            if (obj.status=="failure") {                                                                                                                                                                                                                                                                 
-                html = "<div class='modal-body' style='padding:10px;'><div class='form-group row'><div class='col-sm-12' style='text-align:center'><img src='assets/accessdenied.png' style='width:128px;margin:0px auto'><br><br>"+obj.message+"<br></div></div>";                          
-                html += "<div style='padding:20px;text-align:center'>" + "<button type='button' class='gradient-button' data-dismiss='modal'>Cancel</button></div></div>"; 
-            } else {
-                html = "<div class='modal-body' style='padding:10px;'><div class='form-group row'><div class='col-sm-12' style='text-align:center'><img src='assets/tick.jpg' style='width:128px;margin:0px auto'><br><h5 style='line-height:30px;font-size: 16px;margin-bottom:0px'>"+obj.message+"</h5><br><a href='' class='btn btn-primary'>Continue</button></div></div>";
-                html += "</div>"; 
-                $('#ConfirmationPopup').modal("show");
-            }
-            $("#confrimation_text").html(html);
-            
-        });
-    }
-    function ViewEnquiryDetails(EnquiryID) {   
-        $("#confrimation_text").html(loading);
-        $.ajax({url:'webservice.php?action=ViewEnquiryDetails&EnquiryID='+EnquiryID,success:function(data){
-            $("#confrimation_text").html(data);
-            $('#ConfirmationPopup').modal("show");
-        }});
-    }
-    function ViewEnquiryByDate(DateandCostID,rowid) {   
-        $("#EnquiryDetails").html(loading);
-        $.ajax({url:'webservice.php?action=ViewEnquiryByDate&DateandCostID='+DateandCostID+'&rowid='+rowid,success:function(data){
-            $("#EnquiryDetails_"+rowid).last().after(data);
-        }});                                                               
-    }                                                                                                             
-     
-     function CallConfirmationDeleteDateCost(DateandCostID){
-        var txt = '<form action="" method="POST" id="DateandCostFrm'+DateandCostID+'">'
-                        +'<input type="hidden" value="'+DateandCostID+'" id="DateandCostID" Name="DateandCostID">'
-                        +'<div class="form-group row">'
-                        +'<div class="col-sm-12" style="text-align:center">'
-                            +'CONFIRMATION'
-                        +'</div>'
-                   +'</div>'
-                   +'<div class="form-group row">'
-                        +'<div class="col-sm-12" style="text-align:left">'
-                        +'Are you sure want to delete date and cost?'
-                        +'</div>'
-                    +'</div>'
-                    +'<div style="padding:20px;text-align:center">'
-                        +'<button type="button" class="btn btn-outline-danger" data-dismiss="modal" >Cancel</button>&nbsp;&nbsp;&nbsp;'
-                        +'<button type="button" class="btn btn-success" onclick="DeleteDateandCost(\''+DateandCostID+'\')" >Yes, Confirm</button>'
-                     +'</div></form>';  
-            $('#confrimation_text').html(txt);                                       
-            $('#ConfirmationPopup').modal("show");
     } 
-    function DeleteDateandCost(DateandCostID) {
-     var param = $( "#DateandCostFrm"+DateandCostID).serialize();
-    $("#confrimation_text").html(loading);
-    $.post( "webservice.php?action=DeleteDateandCost",param,function(data) {
-        var obj = JSON.parse(data); 
-        var html = "";                                                                              
-        if (obj.status=="failure") {
-            html = "<div class='form-group row'><div class='col-sm-12' style='text-align:center'><img src='assets/accessdenied.png' style='width:128px'><br><br>"+obj.message+"<br></div></div>";
-            html += "<div style='padding:20px;text-align:center'>" + "<button type='button' class='btn btn-outline-danger' data-dismiss='modal'>Cancel</button></div>"; 
-        } else {
-            html = "<div class='form-group row'><div class='col-sm-12' style='text-align:center'><img src='assets/tick.jpg' style='width:128px'><br><br>"+obj.message+"<br></div></div>";
-            html += "<div style='padding:20px;text-align:center'>" + "<a href='' class='btn btn-outline-danger'>Continue</a></div>"; 
-            $('#ConfirmationPopup').modal("show");
-        }                                                                                                 
-        $("#confrimation_text").html(html);
-        
-    });
-}
-function CallConfirmationDeleteDayEvent(DayandEventID){
-        var txt = '<form action="" method="POST" id="DayandEventDeleteFrm'+DayandEventID+'">'
-                        +'<input type="hidden" value="'+DayandEventID+'" id="DayandEventID" Name="DayandEventID">'
-                        +'<div class="form-group row">'
-                        +'<div class="col-sm-12" style="text-align:center">'
-                            +'CONFIRMATION'
-                        +'</div>'
-                   +'</div>'
-                   +'<div class="form-group row">'
-                        +'<div class="col-sm-12" style="text-align:left">'
-                        +'Are you sure want to delete day and event?'
-                        +'</div>'
-                    +'</div>'
-                    +'<div style="padding:20px;text-align:center">'
-                        +'<button type="button" class="btn btn-outline-danger" data-dismiss="modal" >Cancel</button>&nbsp;&nbsp;&nbsp;'
-                        +'<button type="button" class="btn btn-success" onclick="DeleteDayandEvent(\''+DayandEventID+'\')" >Yes, Confirm</button>'
-                     +'</div></form>';  
-            $('#confrimation_text').html(txt);                                       
-            $('#ConfirmationPopup').modal("show");
-    } 
-    function DeleteDayandEvent(DayandEventID) {
-     var param = $( "#DayandEventDeleteFrm"+DayandEventID).serialize();
-    $("#confrimation_text").html(loading);
-    $.post( "webservice.php?action=DeleteDayandEvent",param,function(data) {
-        var obj = JSON.parse(data); 
-        var html = "";                                                                              
-        if (obj.status=="failure") {
-            html = "<div class='form-group row'><div class='col-sm-12' style='text-align:center'><img src='assets/accessdenied.png' style='width:128px'><br><br>"+obj.message+"<br></div></div>";
-            html += "<div style='padding:20px;text-align:center'>" + "<button type='button' class='btn btn-outline-danger' data-dismiss='modal'>Cancel</button></div>"; 
-        } else {
-            html = "<div class='form-group row'><div class='col-sm-12' style='text-align:center'><img src='assets/tick.jpg' style='width:128px'><br><br>"+obj.message+"<br></div></div>";
-            html += "<div style='padding:20px;text-align:center'>" + "<a href='' class='btn btn-outline-danger'>Continue</a></div>"; 
-            $('#ConfirmationPopup').modal("show");
-        }                                                                                                 
-        $("#confrimation_text").html(html);
-        
-    });
-} 
-function AddAdditionalDetails() {
-         var param = $( "#additionparamsFrm").serialize();
-        $("#confrimation_text").html(loading);
-        $.post( "webservice.php?action=SubmitAdditionalDetails",param,function(data) {                                       
-            var obj = JSON.parse(data); 
-            var html = "";                                                                              
-            if (obj.status=="failure") {                                                                                                                                                                                                                                                                                        
-                html = "<div class='modal-body' style='padding:10px;'><div class='form-group row'><div class='col-sm-12' style='text-align:center'><img src='assets/accessdenied.png' style='width:128px;margin:0px auto'><br><br>"+obj.message+"<br></div></div>";                          
-                html += "<div style='padding:20px;text-align:center'>" + "<button type='button' class='gradient-button' data-dismiss='modal'>Cancel</button></div></div>"; 
-            } else {
-                html = "<div class='modal-body' style='padding:10px;'><div class='form-group row'><div class='col-sm-12' style='text-align:center'><img src='assets/tick.jpg' style='width:128px;margin:0px auto'><br><h5 style='line-height:30px;font-size: 16px;margin-bottom:0px'>"+obj.message+"</h5><br><a data-dismiss='modal' class='btn btn-primary' style='color:white'>Continue</button></div></div>";
-                html += "</div>"; 
-                $('#ConfirmationPopup').modal("show");
-            }
-            $("#confrimation_text").html(html);
-            
-        });
-    }
- 
- </script>
+</script>

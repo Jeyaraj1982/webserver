@@ -1,33 +1,38 @@
 <?php
-include_once("header.php");
-include_once("LeftMenu.php"); 
+    include_once("header.php");
+    include_once("LeftMenu.php"); 
+    
     if (isset($_POST['btnsubmit'])) {
+        
         $ErrorCount =0;
-            $dupemail = $mysql->select("select * from _tbl_products where ProductName='".$_POST['ProductName']."' and CategoryID='".$_POST['Category']."' and SubCategoryID='".$_POST['SubCategory']."'");
-            if(sizeof($dupemail)>0){
-                $ErrProductName ="Product Name Already Exist";
-                $ErrorCount++;
-            }
-            if($ErrorCount==0){
-                   $random = sizeof($mysql->select("select * from _tbl_products")) + 1;
-                   $ProductCode ="PCT0000".$random;
-                   
-              $Brand = $mysql->select("select * from _tbl_brands where BrandID='".$_POST['BrandName']."'"); 
-              $Category = $mysql->select("select * from _tbl_category where CategoryID='".$_POST['Category']."'");
-              $SubCategory = $mysql->select("select * from _tbl_sub_category where SubCategoryID='".$_POST['SubCategory']."'");
-			  $id = $mysql->insert("_tbl_products",array("CategoryID"           => $Category[0]['CategoryID'],
-                                                         "CategoryName"         => $Category[0]['CategoryName'],
-                                                         "SubCategoryID"        => $SubCategory[0]['SubCategoryID'],
-                                                         "SubCategoryName"      => $SubCategory[0]['SubCategoryName'],
-                                                         "BrandID"              => $Brand[0]['BrandID'],
-                                                         "BrandName"            => $Brand[0]['BrandName'],
-                                                         "ProductCode"          => $ProductCode,
-                                                         "ProductName"          => $_POST['ProductName'],
-                                                         "StockAvailable"       => $_POST['StockAvailable'],
-                                                         "ShortDescription"     => str_replace("'","\\'",$_POST['ShortDescription']),
-                                                         "DetailDescription"    => str_replace("'","\\'",$_POST['DetailDescription']),
-                                                         "AddedOn"              => date("Y-m-d H:i:s")));
-            if(sizeof($id)>0){
+        
+        $dupProduct = $mysql->select("select * from _tbl_products where ProductName='".trim($_POST['ProductName'])."' and CategoryID='".$_POST['Category']."' and SubCategoryID='".$_POST['SubCategory']."'");
+        if(sizeof($dupProduct)>0){
+            $ErrProductName ="Product Name Already Exist";
+            $ErrorCount++;
+        }
+        
+        if($ErrorCount==0){
+            
+            $random = sizeof($mysql->select("select * from _tbl_products")) + 1;
+            $ProductCode ="PCT0000".$random;
+            
+            $Brand = $mysql->select("select * from _tbl_brands where BrandID='".$_POST['BrandName']."'"); 
+            $Category = $mysql->select("select * from _tbl_category where CategoryID='".$_POST['Category']."'");
+            $SubCategory = $mysql->select("select * from _tbl_sub_category where SubCategoryID='".$_POST['SubCategory']."'");
+			
+            $id = $mysql->insert("_tbl_products",array("CategoryID"           => $Category[0]['CategoryID'],
+                                                       "CategoryName"         => $Category[0]['CategoryName'],
+                                                       "SubCategoryID"        => $SubCategory[0]['SubCategoryID'],
+                                                       "SubCategoryName"      => $SubCategory[0]['SubCategoryName'],
+                                                       "BrandID"              => $Brand[0]['BrandID'],
+                                                       "BrandName"            => $Brand[0]['BrandName'],
+                                                       "ProductCode"          => $ProductCode,
+                                                       "ProductName"          => $_POST['ProductName'],
+                                                       "ShortDescription"     => $_POST['ShortDescription'],
+                                                       "DetailDescription"    => $_POST['DetailDescription'],
+                                                       "AddedOn"              => date("Y-m-d H:i:s")));    
+            if(sizeof($id)>0) {
                 unset($_POST);
                 if($_GET['fr']=="c"){
                 ?>
@@ -166,13 +171,6 @@ $(document).ready(function () {
                                    <input type="file" onchange="image1_onchage()" name="image1" id="image1" style="display: none;">    
                                     <div class="card-body">
                                        <div class="form-group row">
-                                            <div class="col-sm-4" style="text-align: center;display:none">
-                                                <div id="div_PI">
-                                                    <img id="src_image1" onclick="uploadimage('1')" src="assets/add-image.png" style="width: 64px;margin-top: 20px;opacity: 0.3;cursor: pointer;">
-                                                </div> 
-                                                <button type="button" onclick="uploadimage('1')" class="btn btn-primary btn-sm" style="padding: 0px 10px 0px 10px;">Browse</button>
-                                                <div class="errorstring" id="ErrProductImage"><?php echo isset($ErrProductImage)? $ErrProductImage : "";?></div>  
-                                            </div>
                                             <div class="col-sm-8">
                                                <div class="form-group form-show-validation row">
                                                     <label for="name">Category Name<span style="color:red">*</span></label>
@@ -226,14 +224,13 @@ $(document).ready(function () {
                                                     <label class="col-form-label" style="padding-top:0px;font-weight: normal;">Max 300 characters&nbsp;&nbsp;|&nbsp;&nbsp;<span id="textarea_feedback"></span></label>
                                                     <span class="errorstring" id="ErrShortDescription"><?php echo isset($ErrShortDescription)? $ErrShortDescription : "";?></span>
                                                 </div> 
-                                            </div>
-                                       </div> 
-                                        
-                                       <div class="form-group form-show-validation row">
+                                                <div class="form-group form-show-validation row">
                                             <label for="name">Detail Description</label>
                                             <textarea class="form-control" rows="5" id="DetailDescription" name="DetailDescription" placeholder="Enter Detail Description"><?php echo (isset($_POST['DetailDescription']) ? $_POST['DetailDescription'] :"");?></textarea>
                                             <span class="errorstring" id="ErrDetailDescription"><?php echo isset($ErrDetailDescription)? $ErrDetailDescription : "";?></span>
                                        </div>
+                                            </div>
+                                       </div> 
                                         <div class="form-group">
                                         <div class="col-lg-4 col-md-9 col-sm-8" style="text-align:center;color: green;"><?php echo $successmessage;?> </div>
                                     </div>

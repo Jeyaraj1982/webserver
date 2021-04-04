@@ -12,25 +12,30 @@ $data=$mysql->select("select * from _tbl_products where md5(ProductID)='".$_GET[
                $Brand = $mysql->select("select * from _tbl_brands where BrandID='".$_POST['BrandName']."'"); 
                $Category = $mysql->select("select * from _tbl_category where CategoryID='".$_POST['Category']."'");
                $SubCategory = $mysql->select("select * from _tbl_sub_category where SubCategoryID='".$_POST['SubCategory']."'");
-                
-              $mysql->execute("update _tbl_products set `CategoryID`        ='".$Category[0]['CategoryID']."',
+               
+               $id = $mysql->sqlUpdate("_tbl_products",array("CategoryID"        => $Category[0]['CategoryID'],
+                                                       "CategoryName"      => $Category[0]['CategoryName'],
+                                                       "SubCategoryID"     => $SubCategory[0]['SubCategoryID'],
+                                                       "SubCategoryName"   => $SubCategory[0]['SubCategoryName'],
+                                                       "BrandID"           => $Brand[0]['BrandID'],
+                                                       "BrandName"         => $Brand[0]['BrandName'],
+                                                       "ProductName"       => $_POST['ProductName'],
+                                                       "IsActive"          => $_POST['IsActive'],
+                                                       "ShortDescription"  => $_POST['ShortDescription'],
+                                                       "DetailDescription" => $_POST['DetailDescription']), " ProductID='".$data[0]['ProductID']."'");
+               
+              
+              /*$mysql->execute("update _tbl_products set `CategoryID`        ='".$Category[0]['CategoryID']."',
                                                         `CategoryName`      ='".$Category[0]['CategoryName']."',
                                                         `SubCategoryID`     ='".$SubCategory[0]['SubCategoryID']."',
                                                         `SubCategoryName`   ='".$SubCategory[0]['SubCategoryName']."',
                                                         `BrandID`           ='".$Brand[0]['BrandID']."',
                                                         `BrandName`         ='".$Brand[0]['BrandName']."',
                                                         `ProductName`       ='".$_POST['ProductName']."',
-                                                       
-                                                        `ProductImage`      ='".$_POST['ProductImage']."',
-                                                        `Commission`        ='".$_POST['Commission']."',
-                                                        `CommissionL2`      ='".$_POST['CommissionL2']."',
-                                                        `CommissionL3`      ='".$_POST['CommissionL3']."',
-                                                        
-                                                        `StockAvailable`    ='".$_POST['StockAvailable']."',
                                                         `IsActive`          ='".$_POST['IsActive']."',
                                                         `ShortDescription`  ='".str_replace("'","\\'",$_POST['ShortDescription'])."',
-                                                        `DetailDescription` ='".str_replace("'","\\'",$_POST['DetailDescription'])."' where ProductID='".$data[0]['ProductID']."'");
-               
+                                                        `DetailDescription` ='".str_replace("'","\\'",$_POST['DetailDescription'])."' where ProductID='".$data[0]['ProductID']."'");  */
+               if ($id>0 ) {
                 ?>
                 <script>
                     $(document).ready(function() {
@@ -39,7 +44,19 @@ $data=$mysql->select("select * from _tbl_products where md5(ProductID)='".$_GET[
                         })
                     });
                     </script>
-       <?php     }
+       <?php   } else { ?>
+       
+                 <script>
+                    $(document).ready(function() {
+                        swal("Records not affected.", {
+                            icon:"success"
+                        })
+                    });
+                    </script>
+       <?php } ?>  
+               
+        <?php         
+               }
         
     }
   $data=$mysql->select("select * from _tbl_products where md5(ProductID)='".$_GET['id']."'");  
@@ -101,6 +118,7 @@ $(document).ready(function () {
                             <div class="card">
                                 <div class="card-header">
                                     <div class="card-title">Edit Product</div>
+                                    <span><?php echo $data[0]['ProductCode'];?> </span>
                                 </div>
                                 <form id="exampleValidation" method="POST" action="" onsubmit="return SubmitProduct();" id="addProduct" enctype="multipart/form-data">
                                    <input type="hidden" name="ProductImage" id="ProductImage" value="<?php echo (isset($_POST['ProductImage']) ? $_POST['ProductImage'] :$data[0]['ProductImage']);?>">
@@ -110,7 +128,8 @@ $(document).ready(function () {
                                      <input type="hidden" name="totalfiles" id="totalfiles">
                                      <input type="hidden" name="ProductID" id="ProductID" value="<?php echo $data[0]['ProductID'];?>">
                                     <div class="card-body">
-                                     
+                                          <div class="form-group form-show-validation row">
+                                            <div class="col-sm-8">
 												<div class="form-group form-show-validation row">
                                                     <label for="name">Category Name<span style="color:red">*</span></label>
                                                     <select class="form-control" name="Category" id="Category" onchange="getSubCategory($(this).val())">
@@ -157,14 +176,7 @@ $(document).ready(function () {
                                                 </div> 
                                                   
                                                <div class="form-group form-show-validation row">
-                                                    <div class="col-sm-6" style="padding-left: 0px;">
-                                                        <label for="name">Stock Available<span style="color:red">*</span></label>
-                                                        <select class="form-control" name="StockAvailable" id="StockAvailable">
-                                                            <option value="Yes" <?php echo (isset($_POST[ 'StockAvailable'])) ? (($_POST[ 'StockAvailable']=="Yes") ? " selected='selected' " : "") : (($data[0]['StockAvailable']=="Yes") ? " selected='selected' " : "");?>>Yes</option>
-                                                            <option value="No" <?php echo (isset($_POST[ 'StockAvailable'])) ? (($_POST[ 'StockAvailable']=="No") ? " selected='selected' " : "") : (($data[0]['StockAvailable']=="No") ? " selected='selected' " : "");?>>No</option>
-                                                        </select>
-                                                        <span class="errorstring" id="ErrStockAvailable"><?php echo isset($ErrStockAvailable)? $ErrStockAvailable : "";?></span>
-                                                    </div>
+                                                   
                                                     <div class="col-sm-6" style="padding-left: 0px;">
                                                         <label for="name">Is Active<span style="color:red">*</span></label>
                                                         <select class="form-control" name="IsActive" id="IsActive">
@@ -206,6 +218,8 @@ $(document).ready(function () {
                                             <textarea class="form-control" rows="5" id="DetailDescription" name="DetailDescription" placeholder="Enter Detail Description"><?php echo (isset($_POST['DetailDescription']) ? $_POST['DetailDescription'] :$data[0]['DetailDescription']);?></textarea>
                                             <span class="errorstring" id="ErrDetailDescription"><?php echo isset($ErrDetailDescription)? $ErrDetailDescription : "";?></span>
                                        </div>
+                                       </div>
+                                       </div>
                                        
                                           
                                         <div class="form-group">
@@ -235,7 +249,7 @@ $(document).ready(function () {
     </div>
   </div>
 </div>
-<string name="image_chooser" style="display:none;">File Chooser</string>
+
 <script>
  $(document).ready(function() {
         var text_max = 300;
