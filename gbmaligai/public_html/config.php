@@ -13,8 +13,6 @@ define("DBUSER","gbmaliga_user");
 define("DBPASSWORD","mysql@Pwd");
 define("DBNAME","gbmaliga_database");
 
- 
-
 if (isset($_GET['do']) && $_GET['do']=="logout") {
     session_destroy();
     echo "<script>location.href='".LOGOUT_PATH."';</script>";
@@ -25,7 +23,7 @@ define("Mail_Host","mail.gbmaligai.com");
 define("SMTP_UserName","support@gbmaligai.com");
 define("SMTP_Password","Welcome@82");
 define("SMTP_Sender","gbmaligai");
-          
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -40,11 +38,8 @@ function reInitMail() {
 }
     
 include_once("app/controller/EmailController.php");
-
 include_once("app/controller/DatabaseController.php");
 $mysql = new MySqldatabase(DBSERVER,DBUSER,DBPASSWORD,DBNAME);
-
-$_CONFIG['LOGO_URL'] = WEB_URL."/assets/new_weblogo.png";
 
 if (isset($_SESSION['User']) && $_SESSION['User']['Role']=="User") {
     define("UserRole","user");
@@ -53,28 +48,30 @@ if (isset($_SESSION['User']) && $_SESSION['User']['Role']=="Admin") {
     define("UserRole","admin");
 }
 
+$_CONFIG['LOGO_URL'] = WEB_URL."/assets/new_weblogo.png";
+define("BrandSize",1);
 
-    function parseStringForURL($string) {
-        $string = strtolower(trim($string));
-        $string = str_replace("&","and",$string);
-        $string = str_replace("/"," ",$string);
-        $string = str_replace("'"," ",$string);
-        $string = str_replace("%"," ",$string);
-        $string = str_replace("  "," ",$string);
-        $string = str_replace(" ","-",$string);
-        return $string;
-    }   
+function parseStringForURL($string) {
+    $string = strtolower(trim($string));
+    $string = str_replace("&","and",$string);
+    $string = str_replace("/"," ",$string);
+    $string = str_replace("'"," ",$string);
+    $string = str_replace("%"," ",$string);
+    $string = str_replace("  "," ",$string);
+    $string = str_replace(" ","-",$string);
+    return $string;
+}   
     
-    function parseStringForPhysicalPath($string) {
-        $string = strtolower(trim($string));
-        $string = str_replace("&","and",$string);
-        $string = str_replace("'"," ",$string);
-        $string = str_replace("/"," ",$string);
-        $string = str_replace("%"," ",$string);
-        $string = str_replace("  "," ",$string);
-        $string = str_replace(" ","_",$string);
-        return $string;
-    }
+function parseStringForPhysicalPath($string) {
+    $string = strtolower(trim($string));
+    $string = str_replace("&","and",$string);
+    $string = str_replace("'"," ",$string);
+    $string = str_replace("/"," ",$string);
+    $string = str_replace("%"," ",$string);
+    $string = str_replace("  "," ",$string);
+    $string = str_replace(" ","_",$string);
+    return $string;
+}
 
 class JApp {
     
@@ -113,6 +110,21 @@ class JApp {
     const GENDER = array("Male","Female");
     const WEB_PRODUCTS_PER_PAGE = 20;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 class Messages{
     
