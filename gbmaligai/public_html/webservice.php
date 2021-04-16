@@ -225,36 +225,49 @@ function DeleteSubCategory() {
             }
            return json_encode($result); 
     }
+    
 	function addtocart(){
-               if (!(isset($_SESSION['items'] ))) {
+        
+        if (!(isset($_SESSION['items'] ))) {
                    $_SESSION['items'] =array();
-                   
-               }
+        }
+        
         global $mysql;
-             $e=0; 
-             $subtotal=0;
-             foreach($_SESSION['items'] as $item) {
-                 $subtotal += $item['Price']*$item['Qty'];
-                 if ($item['ProductID']==$_POST['ProductID']) {
-                     
-                     $e++;
-                 }                                                        
-             }
-            if ($e==0)  {
-                if($_POST['ProductID']>0){
-                    $Products = $mysql->select("select * from _tbl_products where ProductID='".$_POST['ProductID']."'");
-                    $_SESSION['items'][] = array("ProductID"    => $Products[0]['ProductID'],
-                                                 "ProductCode"    => $Products[0]['ProductCode'],
-                                                 "ProductIDen"  => md5($Products[0]['ProductID']),
-                                                 "ProductName"  => $Products[0]['ProductName'],
-                                                 "ProductImage" => $Products[0]['ProductImage'],
-                                                 "Price"        => $Products[0]['SellingPrice'],
-                                                 "Qty"          => $_POST['qty']
-                                                 );    
-                    $result=array("items"=>$_SESSION['items'],"IsCart"=>"1","subtotal"=>number_format($subtotal+($_POST['qty']*$Products[0]['SellingPrice']),2));
-                } else{
-                    $result=array("items"=>$_SESSION['items'],"subtotal"=>number_format($subtotal,2),"IsCart"=>"0");
-                }
+        
+        $e=0; 
+        
+        $subtotal=0;
+        foreach($_SESSION['items'] as $item) {
+            $subtotal += $item['Price']*$item['Qty'];
+            if ($item['PriceTagID']==$_POST['PriceTagID']) {
+                $e++;
+            }                                                        
+        }
+        
+        if ($e==0)  {
+            if($_POST['ProductID']>0){
+                $Products = $mysql->select("select * from _tbl_products where ProductID='".$_POST['ProductID']."'");
+                $productimage = $mysql->select("select * from _tbl_products_images where IsDelete='0' and ProductID='".$_POST['ProductID']."' order by ImageOrder");
+                $product_prices = $mysql->select("select * from _tbl_products_prices where PriceTagID='".$_POST['PriceTagID']."'");
+                                                  
+                $_SESSION['items'][] = array("ProductID"    => $Products[0]['ProductID'],
+                                             "ProductCode"  => $Products[0]['ProductCode'],
+                                             "ProductIDen"  => md5($Products[0]['ProductID']),
+                                             "ProductName"  => $Products[0]['ProductName'],
+                                             "ProductImage" => "/products/".$Products[0]['ProductID']."/".$productimage[0]['ImageName'],
+                                             "Price"        => $product_prices[0]['SellingPrice'],
+                                             "Units"        => $product_prices[0]['Units'],
+                                             "UnitName"     => $product_prices[0]['UnitName'],
+                                             "UnitID"       => $product_prices[0]['UnitID'],
+                                             "PriceTagID"   => $_POST['PriceTagID'],
+                                             "BrandSizeText"=> $product_prices[0]['BrandSizeText'], 
+                                             "Qty"          => $_POST['qty']
+                                             ); 
+                $subtotal +=  $_POST['qty']* $product_prices[0]['SellingPrice']; 
+                $result=array("items"=>$_SESSION['items'],"IsCart"=>"1","subtotal"=>number_format($subtotal,2),"Qty"=>$_POST['qty']);
+            } else{
+                $result=array("items"=>$_SESSION['items'],"subtotal"=>number_format($subtotal,2),"IsCart"=>"0");
+            }
             } else {
               $result=array("items"=>$_SESSION['items'],"subtotal"=>number_format($subtotal,2),"IsCart"=>"0");
                                                                                                                                                                                                 
@@ -266,7 +279,7 @@ function DeleteSubCategory() {
          $temp=array();
          $subtotal=0;
         foreach($_SESSION['items'] as $item) {
-                 if ($item['ProductID']!=$_GET['ProductID']) {
+                 if ($item['PriceTagID']!=$_GET['PriceTagID']) {
                     $subtotal += $item['Price']*$item['Qty']; 
                     $temp[]=$item;  
                  }
@@ -417,30 +430,28 @@ function DeleteSubCategory() {
             $subtotal += $item['Qty']*$item['Price'];
             $mysql->insert("_tbl_orders_items",array("OrderID"     => $id,
                                                      "ProductID"   => $item['ProductID'],
+                                                     "ProductCode" => $item['ProductCode'],
                                                      "ProductName" => $item['ProductName'],
                                                      "Qty"         => $item['Qty'],
                                                      "Price"       => $item['Price'],
                                                      "Amount"      => $item['Qty']*$item['Price'],
-                                                     "EarningPoints"       => "0",
-                                                     "TotalEarningPoints"  => "0",
-                                                     "ProductCommission"   => $ProductInfo[0]['Commission'],
-                                                     "TotalCommission"     => $ProductInfo[0]['Commission']*$item['Qty']));
+                                                     "Units"        => $item['Units'],
+                                                     "UnitName"     => $item['UnitName'],
+                                                     "UnitID"       => $item['UnitID'],
+                                                     "PriceTagID"   => $item['PriceTagID']));
            
-            $TotalUplevelCommission+=$ProductInfo[0]['Commission']*$item['Qty'];
-            $TotalUplevelCommissionL2+=$ProductInfo[0]['CommissionL2']*$item['Qty'];
-            $TotalUplevelCommissionL3+=$ProductInfo[0]['CommissionL3']*$item['Qty'];
+           // $TotalUplevelCommission+=$ProductInfo[0]['Commission']*$item['Qty'];
+            //$TotalUplevelCommissionL2+=$ProductInfo[0]['CommissionL2']*$item['Qty'];
+            //$TotalUplevelCommissionL3+=$ProductInfo[0]['CommissionL3']*$item['Qty'];
         }
         
         $mysql->execute("update _tbl_orders set 
-                                    OrderTotal='".$subtotal."', 
-                                    TotalUplevelCommission='".$TotalUplevelCommission."',
-                                    TotalUplevelCommissionL2='".$TotalUplevelCommissionL2."',
-                                    TotalUplevelCommissionL3='".$TotalUplevelCommissionL3."'
+                                    OrderTotal='".$subtotal."' 
+                                  
          where OrderID='".$id."'");
         
         $id = $mysql->insert("_tbl_orders_status",array("OrderID"   => $id,
-                                                        "OrderCode" => $OrderCode,
-                                                        "Status"    => "Order Placed",
+                                                        "StatusText"    => "Order Placed",
                                                         "Remarks"   => "",
                                                         "StatusOn"  => date("Y-m-d H:i:s")));
                                                         
@@ -454,7 +465,7 @@ function DeleteSubCategory() {
         }
         
         $MailContent = Order::OrderPlacedMailContent($id);
-        $mparam['MailTo']="Jeyaraj_123@yahoo.com";
+        $mparam['MailTo']="Jeyaraj_123@yahoo.com";                                  
         $mparam['CustomerID']="0";
         $mparam['Message'] = $MailContent['MailBody'];
         $mparam['Subject'] = $MailContent['MailSubject']; 
@@ -490,8 +501,8 @@ function DeleteSubCategory() {
         
         
         $id = $mysql->insert("_tbl_orders_status",array("OrderID"   => $order[0]['OrderID'],
-                                                        "OrderCode" => $order[0]['OrderCode'],
-                                                        "Status"    => "Order Cancelled",
+                                                        
+                                                        "StatusText"    => "Order Cancelled",
                                                         "Remarks"   => "Placed Order then Cancelled. ".$_POST['Remarks'],
                                                         "StatusOn"  => date("Y-m-d H:i:s")));
                                                        
@@ -529,8 +540,8 @@ function DeleteSubCategory() {
         }
         
         $id = $mysql->insert("_tbl_orders_status",array("OrderID"   => $order[0]['OrderID'],
-                                                        "OrderCode" => $order[0]['OrderCode'],
-                                                        "Status"    => "Order Confirmed",
+                                                        
+                                                        "StatusText"    => "Order Confirmed",
                                                         "Remarks"   => "Placed Order then Confirmed ".$_POST['Remarks'],
                                                         "StatusOn"  => date("Y-m-d H:i:s")));
                                                         
@@ -560,8 +571,8 @@ function DeleteSubCategory() {
         $order = $mysql->select("select * from _tbl_orders where OrderID='".$_POST['OrderID']."'");
         
               $id = $mysql->insert("_tbl_orders_status",array("OrderID"   => $order[0]['OrderID'],
-                                                             "OrderCode" => $order[0]['OrderCode'],
-                                                             "Status"    => "Order Dispatched",
+                                                              "StatusText"=>"Order Dispatched",                                                               
+                                                            
                                                              "Remarks"   => "Processing To Dispatched ".$_POST['Remarks'],
                                                              "StatusOn"  => date("Y-m-d H:i:s")));
                    $mysql->execute("update _tbl_orders set OrderStatus='4' where OrderID='".$_POST['OrderID']."'"); 
@@ -591,7 +602,7 @@ function DeleteSubCategory() {
                     $mparam['CustomerID']=$order[0]['CustomerID'];
                     $mparam['Subject']="Your Order (".$order[0]['OrderCode'].") Dispatched";
                     $mparam['Message']=$message;
-                    MailController::Send($mparam,$mailError);
+                   // MailController::Send($mparam,$mailError);
                 $result = array();
                 $result['status']="success";
                 $result['message']="Order Dispatched Successfully<br>";  
@@ -599,13 +610,12 @@ function DeleteSubCategory() {
             }
     }
  
- function DeliveredOrderFromAdmin(){
+ function DeliveredOrderFromAdmin(){                            
      global $mysql;
      $order = $mysql->select("select * from _tbl_orders where OrderID='".$_POST['OrderID']."'");
      
      $id = $mysql->insert("_tbl_orders_status",array("OrderID"   => $order[0]['OrderID'],
-                                                     "OrderCode" => $order[0]['OrderCode'],
-                                                     "Status"    => "Order Delivered",
+                                                     "StatusText"    => "Order Delivered",
                                                      "Remarks"   => "Dispatched To Delivered ".$_POST['Remarks'],
                                                      "StatusOn"  => date("Y-m-d H:i:s")));
      $mysql->execute("update _tbl_orders set OrderStatus='5' where OrderID='".$_POST['OrderID']."'"); 
@@ -684,7 +694,7 @@ function DeleteSubCategory() {
                    // MailController::Send($mparam,$mailError);
                 $result = array();
                 $result['status']="success";
-                $result['message']="Order Delivered Successfully<br>".$additionalMessage;  
+                $result['message']="Order Delivered Successfully";  
                 return json_encode($result);                                        
             }
     }    

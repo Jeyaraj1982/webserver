@@ -339,6 +339,8 @@ jQuery(window).scroll(function() {headermenu();});
 			</ul>
 			</li>
 			<?php } ?> 
+             <li class="dropdown open"><a class="dropdown-toggle" href="payment-method.php">Payment Methods</a></li>
+             <li class="dropdown open"><a class="dropdown-toggle" href="contact-us.php">Support</a></li>
 			<!--<li class="dropdown open" style="float:right;margin-right:0px;padding-right:0px"><a class="dropdown-toggle"><span>My Account</span></a>
 				<ul class="dropdown-menu dropdown-menu-right userdown">
 					<?php if(isset($_SESSION['User']['CustomerID'])){ ?>

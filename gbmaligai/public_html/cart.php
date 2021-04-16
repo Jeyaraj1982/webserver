@@ -13,59 +13,98 @@
                     <div class="buttons clearfix"> <a class="btn btn-default" href="index.php"> Continue shopping&nbsp; <i class="fa fa-arrow-right"> </i></a></div>
                 </div>
             <?php }else{ ?>
-            <form action="" method="post" enctype="multipart/form-data">
+                <?php
+                    if (isset($_POST['updateQtyBtn'])) {
+                        $temp = array();
+                        foreach($_SESSION['items'] as $item) {
+                            if ($item['PriceTagID']==$_POST['PriceTagID']) {
+                                if ($_POST['Qty']>0) {
+                                    $item['Qty']=$_POST['Qty'];
+                                } else {
+                                    $item=array();
+                                }
+                            } 
+                            if (sizeof($item)>0) {
+                                $temp[] = $item;      
+                            }                                                      
+                        }
+                        $_SESSION['items']=$temp;
+                    }
+                    if (isset($_POST['removeQtyBtn'])) {
+                        $temp = array();
+                        foreach($_SESSION['items'] as $item) {
+                            if ($item['PriceTagID']==$_POST['PriceTagID']) {
+                                    $item=array();
+                            } 
+                            if (sizeof($item)>0) {
+                                $temp[] = $item;      
+                            }                                                      
+                        }
+                        $_SESSION['items']=$temp;
+                    }
+                ?>
                 <div class="table-responsive">
                     <table class="table table-bordered">
                         <thead>
                             <tr>
-                                <td class="text-center">Image</td>
+                                <td class="text-center" style="width:100px">Image</td>
                                 <td class="text-left">Product Name</td>
-                                <td class="text-left">Quantity</td>
-                                <td class="text-right">Unit Price</td>
-                                <td class="text-right">Total</td>
+                                <td class="text-left" style="width:120px">Unit</td>
+                                <td class="text-right" style="width:120px">Unit Price</td>
+                                <td class="text-left" style="width:120px;text-align:center">Quantity</td>
+                                <td class="text-right" style="width:150px">Total</td>
                             </tr>
                         </thead>
                         <tbody>
 						<?php 
 							$subtotal=0;
 							foreach($_SESSION['items'] as $item) { 
-							$subtotal+=$item['Qty']*$item['Price'];
+							    $subtotal+=$item['Qty']*$item['Price'];
 						?>
                             <tr>
-                                <td class="text-center">
+                                <td class="text-center" style="padding:0px !important">
                                     <a href="uploads/<?php echo $item['ProductImage'];?>">
                                         <img src="uploads/<?php echo $item['ProductImage'];?>" class="img-thumbnail" style="height:64px" />
                                     </a>
                                 </td>
-                                <td class="text-left"><a><?php echo $item['ProductName'];?></a></td>
                                 <td class="text-left">
-                                    <div class="input-group btn-block" style="max-width: 200px;">
-                                        <input type="text" name="quantity[137]" value="<?php echo $item['Qty'];?>" size="1" class="form-control" />
+                                    <a><?php echo $item['ProductName'];?></a>
+                                    <form action="" method="post" style="margin-top: 7px;">
+                                        <input type="hidden" value="<?php echo $item['PriceTagID'];?>" name="PriceTagID">
+                                        <button type="submit" name="removeQtyBtn" style="padding: 0px 10px;font-size: 12px;border: 1px solid #ccc;background: #f1f1f1;padding-top: 2px;">Remove</button>
+                                    </form>
+                                </td>
+                                <td class="text-left"><a><?php echo $item['Units'];?>-<?php echo $item['UnitName'];?></a></td>
+                                <td class="text-right">&#8377;<?php echo number_format($item['Price'],2);?></td>
+                                <td class="text-left">
+                                    <form action="" method="post">
+                                    <div class="input-group btn-block" style="max-width: 118px;">
+                                        <input type="hidden" value="<?php echo $item['PriceTagID'];?>" name="PriceTagID">
+                                        <input type="number" name="Qty" value="<?php echo $item['Qty'];?>" size="1" class="form-control" style="width:80px" />
                                         <span class="input-group-btn">
-                                            <button type="submit" data-toggle="tooltip" title="Update" class="btn btn-primary cartbt"><i class="fa fa-refresh"></i></button>
-                                            <button type="button" data-toggle="tooltip" title="Remove" class="btn btn-danger" onclick="CallConfirmation('<?php echo $item['ProductID'];?>')"><i class="fa fa-times-circle"></i></button>
+                                            <button type="submit" name="updateQtyBtn" data-toggle="tooltip" title="Update" class="btn btn-primary cartbt"><i class="fa fa-refresh"></i></button>
                                         </span>
                                     </div>
+                                    </form>
                                 </td>
-                                <td class="text-right">&#8377;<?php echo number_format($item['Price'],2);?></td>
                                 <td class="text-right">&#8377;<?php echo number_format($item['Qty']*$item['Price'],2);?></td>
                             </tr>
-						<?php } ?>
+						<?php } ?> 
                         </tbody>
                     </table>
                 </div>
-            </form>
+            
            
             <div class="row">
                 <div class="col-sm-4 col-sm-offset-8">
-                    <table class="table table-bordered">
+                    <table class="table table-bordered" style="width:270px;float:right">
                         <tr>
-                            <td class="text-right"><strong>Sub-Total:</strong></td>
-                            <td class="text-right">&#8377;<?php echo number_format($item['Qty']*$item['Price'],2);?></td>
+                            <td class="text-right"  style="width:120px"><strong>Sub-Total:</strong></td>
+                            <td class="text-right"  style="width:150px">&#8377;<?php echo number_format($subtotal,2);?></td>
                         </tr>
                         <tr>
                             <td class="text-right"><strong>Total:</strong></td>
-                            <td class="text-right">&#8377;<?php echo number_format($item['Qty']*$item['Price'],2);?></td>
+                            <td class="text-right">&#8377;<?php echo number_format($subtotal,2);?></td>
                         </tr>
                     </table>
                 </div>

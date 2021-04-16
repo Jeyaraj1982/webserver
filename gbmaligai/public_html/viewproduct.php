@@ -1,12 +1,10 @@
 <?php include_once("header.php");?>
 <?php 
-    $Product=$mysql->select("select * from _tbl_products where ProductID='".$_GET['productid']."'");
+    $Product=$mysql->select("select * from _tbl_products where IsActive='1' and IsDelete='0' and ProductID='".$_GET['productid']."'");
     $Category = $mysql->select("select * from _tbl_category where CategoryID='".$Product[0]['CategoryID']."'"); 
     $SubCategories = $mysql->select("select * from _tbl_sub_category where CategoryID='".$Product[0]['CategoryID']."' order by SubCategoryName");  
-      $product_prices = $mysql->select("select * from _tbl_products_prices where ProductID='".$Product[0]['ProductID']."'");
+    $product_prices = $mysql->select("select * from _tbl_products_prices where ProductID='".$Product[0]['ProductID']."'");
 ?>
-<form method="post" action="" id=frmid_<?php echo $Product[0]['ProductID'];?>>
-<input type="hidden" name="ProductID" id="ProductID" value="<?php echo $Product[0]['ProductID'];?>"> 
 <div id="product-product" class="container common-shed">
     <div class="row">
         <div id="content" class="col-sm-12">
@@ -45,11 +43,14 @@
                 </div>
                 <div class="col-md-8 col-sm-6 product-right">
                     <h1><?php echo $Product[0]['ProductName'];?></h1>
+                    <?php echo $Product[0]['ShortDescription'];?>
                     <hr class="prosp" />
                     <ul class="list-unstyled">
+                        <!--
                         <li>
                             <span class="text-prodecor">Brands</span><a class="textdeb"><?php echo $Product[0]['BrandName'];?></a>
                         </li>
+                        -->
                         <li>
                             <span class="text-prodecor">Product Code:</span>
                             <?php echo $Product[0]['ProductCode'];?>
@@ -57,63 +58,73 @@
                         <li><span class="text-prodecor">Availability:</span> In Stock</li>
                         <hr class="prosp" />
                     </ul>
-                    <table style="display: none;">
-                        <tr>
-                            <td style="padding-right: 10px;">
-                                <p class="price">
-                                    <span class="price-new" style="color: green; font-weight: bold;">
-                                        &#8377;
-                                        <?php echo number_format($Product[0]['SellingPrice'],2);?>
-                                    </span>
-                                </p>
-                            </td>
-                            <td style="padding-right: 10px;">
-                                <p class="price">
-                                    <strike>
-                                        <span class="price-old" style="color: #575757; font-weight: bold;">
-                                            &#8377;
-                                            <?php echo number_format($Product[0]['ProductPrice'],2);?>
-                                        </span>
-                                    </strike>
-                                </p>
-                            </td>
-                            <td style="padding-right: 10px;">
-                                <p>
-                                    <span class="price" style="color: green;font-weightbold">
-                                        <?php 
-					 $Percentage = 100-(($Product[0]['SellingPrice']*100)/($Product[0]['ProductPrice']*1));
-					echo ceil($Percentage)."% off";?>
-                                    </span>
-                                </p>
-                            </td>
-                        </tr>
-                    </table>
+                     
                     <div class="row">
                       <div class="col-sm-12">
                           
                      <?php
                          foreach($product_prices as $product_price) {
+                             
+                              $isCart=0;
+                              $cartQty=0;
+                              foreach($_SESSION['items'] as $item) {
+                                if ($item['PriceTagID']==$product_price['PriceTagID']) {
+                                    $isCart++;
+                                    $cartQty=$item['Qty'];
+                                }                                                        
+                              }
+                                      
                              ?>
-                               <div class="row">
-                                   <div class="col-sm-4">
-                                        <h2 style="margin-bottom:0px"><span style="font-size:16px">₹</span><?php echo number_format($product_price['SellingPrice']); ?></h2>
+                               <div class="row" style="border-bottom:1px solid #eee;margin-bottom:20px;">
+                                   <div class="col-sm-4 col-md-4 ">
+                                        <?php if (strlen($product_price['BrandSizeText'])>0) {?>
+                                        Size: <span style='color:green;'><?php echo $product_price['BrandSizeText'];?></span>&nbsp;&nbsp;
+                                        <?php } ?>
                                         <span style='color:#555;'><?php echo $product_price['Units']." ".$product_price['UnitName'];?></span>
+                                        <h2 style="margin-bottom:10px;color:#ea3a3c;margin-top:0px">
+                                            <span style="font-size:16px">₹</span><?php echo number_format($product_price['SellingPrice']); ?>
+                                            <?php 
+                                                if ($product_price['SellingPrice']<$product_price['MRP']) {
+                                                    echo "<span style=' text-decoration: line-through;color:#444'><span style='font-size:16px'>₹</span>".number_format($product_price['MRP'])."</span>"; 
+                                                }             
+                                            ?>
+                                        </h2>
+                                        
                                   </div>
-                                  
-                                        <div class="col-sm-4 op-box qty-plus-minus">
-                                            <button type="button" class="form-control pull-left btn-number btnminus" onClick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty ) &amp;&amp; qty &gt; 1 ) result.value--;return false;" class="dec qtybutton">
+                                    
+                                        <div class="col-sm-4 col-md-4 col-xs-6">
+                                            <div class="op-box qty-plus-minus" style="height:30px;" id="qtydiv_<?php echo $product_price['PriceTagID'];?>">
+                                        
+                                            <?php if ($isCart>0) { ?>
+                                                   <?php echo "Qty: ".$cartQty;?>
+                                            <?php } else {?>
+                                            <form method="post" id=frmid_<?php echo $product_price['PriceTagID'];?>>
+                                        <input type="hidden" name="ProductID" id="ProductID" value="<?php echo $Product[0]['ProductID'];?>"> 
+                                        <input type="hidden" name="PriceTagID" id="PriceTagID" value="<?php echo $product_price['PriceTagID'];?>"> 
+                                            <button type="button" class="form-control pull-left btn-number btnminus" onClick="var result = document.getElementById('qty_<?php echo $product_price['PriceTagID'];?>'); var qty = result.value; if( !isNaN( qty ) &amp;&amp; qty &gt; 1 ) result.value--;return false;" class="dec qtybutton">
                                                 <i class="fa fa-minus">&nbsp;</i>
                                             </button>
                                             <input id="qty_<?php echo $product_price['PriceTagID'];?>" type="text" name="qty" value="1" size="2" id="input-quantity" class="form-control input-number pull-left" />
                                             <button type="button" class="form-control pull-left btn-number btnplus"  onClick="var result = document.getElementById('qty_<?php echo $product_price['PriceTagID'];?>'); var qty = result.value; if( !isNaN( qty )) result.value++;return false;" class="inc qtybutton">
                                                 <i class="fa fa-plus">&nbsp;</i>
                                             </button>
+                                             </form>
+                                            <?php } ?>
+                                              
+                                               </div>
                                         </div>
-                                    
+                                 
                                   
-                                  <div class="col-sm-4">
-                                    <button type="button" id="buttoncart" onclick="addtocart('<?php echo $Product[0]['ProductID'];?>')" data-loading-text="Loading..." class="btn add-to-cart btn-primary">Add to Cart</button>  
-                                  </div>
+                                  <div class="col-sm-4 col-md-4 col-xs-4">
+                                    <div id="cartadded_<?php echo $product_price['PriceTagID'];?>" style="<?php echo ($isCart>0) ? '' : ' display: none ';?>">
+                                        <button type="button" style="background:#25bb25 !important" id="buttoncart_<?php echo $product_price['PriceTagID'];?>" class="btn add-to-cart btn-success" disabled="disabled"><i class="fa fa-check"></i> Added to cart</button>
+                                        <a href="javascript:void(0)" onclick="CallConfirmationtopcart('<?php echo $product_price['PriceTagID'];?>')">Remove</a>
+                                      </div>
+                                      <div id="cartadd_<?php echo $product_price['PriceTagID'];?>"  style="<?php echo ($isCart>0) ? ' display: none ' : '  ';?>">
+                                        <button type="button" id="buttoncart_<?php echo $product_price['PriceTagID'];?>" onclick="addtocart('<?php echo $Product[0]['ProductID'];?>','<?php echo $product_price['PriceTagID'];?>')" class="btn add-to-cart btn-primary"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;add to cart</button>
+                                      </div>
+                                      
+                                       </div>
                               </div>
                               
                              <?php
@@ -191,20 +202,20 @@
         </div>
     </div>
 </div>
-</form>
+
 
 
 <script type="text/javascript">
 
-    $(document).ready(function() {
-      $('.thumbnails').magnificPopup({
-        type:'image',
-        delegate: 'a',
-        gallery: {
-          enabled: true
-        }
-      });
-    });
+  //  $(document).ready(function() {
+ //     $('.thumbnails').magnificPopup({
+  //      type:'image',
+   //     delegate: 'a',
+    //    gallery: {
+   //       enabled: true
+    //    }
+    //  });
+   // });
     //-->
 </script>
 <!-- related -->

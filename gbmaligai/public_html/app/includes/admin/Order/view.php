@@ -1,9 +1,9 @@
 <?php 
     $Orders = $mysql->select("select * from _tbl_orders where md5(concat('Jeyaraj',OrderID))='".$_GET['Order']."'");
     $items = $mysql->select("select * from _tbl_orders_items where OrderID='".$Orders[0]['OrderID']."'");
-    $statuses = $mysql->select("select * from _tbl_order_status where OrderID='".$Orders[0]['order_id']."' order by StatusID desc");
+    $statuses = $mysql->select("select * from _tbl_orders_status where OrderID='".$Orders[0]['order_id']."' order by StatusID desc");
 ?>    
-<?php $Stts = $mysql->select("select * from _tbl_order_status where OrderID='".$Orders[0]['order_id']."' order by StatusID Desc");?>
+<?php $Stts = $mysql->select("select * from _tbl_orders_status where OrderID='".$Orders[0]['order_id']."' order by StatusID Desc");?>
 <div class="main-panel">
     <div class="container">
         <div class="page-inner">
@@ -34,7 +34,8 @@
                                         <?php echo "Date:" .date("M d, Y H:i",strtotime($Orders[0]['OrderDate']));?><br>
                                         <span style="font-weight: bold;color:red"><?php echo Order::OrderStatus($Orders[0]['OrderStatus']);?></span>
                                         <br><br><br><br><br>
-                                        <!--<a href="printorder.php?id=<?php echo md5($Orders[0]['order_id']);?>" target="blank" class="btn btn-primary btn-sm">Print</a>-->
+                                        <a href="../printorder.php?id=<?php echo md5($Orders[0]['OrderID']);?>" target="blank" class="btn btn-primary btn-sm">Print</a>
+                                        <a href="../printorder_custom.php?id=<?php echo md5($Orders[0]['OrderID']);?>" target="blank" class="btn btn-danger btn-sm">Ref Print</a>
 				                    </div>
                                 </div>
 			                </div>
@@ -50,27 +51,34 @@
 									            <table class="table table-striped">
 										            <thead>
 											            <tr>
+                                                            <th>Sl<br>&nbsp;</th>
                                                             <th>Product Name<br>&nbsp;</th>
+                                                            <th>Units<br>&nbsp;</th>
                                                             <th style="text-align:right">Price<br> ( <i class="fas fa-rupee-sign"></i> )</th>
                                                             <th style="text-align:right">Quantity<br>&nbsp;</th>
+                                                         
                                                             <th style="text-align:right">Total<br> ( <i class="fas fa-rupee-sign"></i> )</th>
 											            </tr>
 										            </thead>
 										            <tbody>
-                                                        <?php foreach($items as $item){ ?>
+                                                        <?php 
+                                                        $i=1;
+                                                        foreach($items as $item){ ?>
                                                         <tr>
+                                                            <td><?php echo $i;?></td>
                                                             <td><?php echo $item['ProductName'];?></td>
+                                                            <td><?php echo $item['Units']." ".$item['UnitName'];?></td>      
                                                             <td style="text-align:right"><?php echo number_format($item['Price'],2);?></td>
                                                             <td style="text-align:right"><?php echo $item['Qty'];?></td>
                                                             <td style="text-align:right"><?php echo number_format($item['Amount'],2);?></td>
                                                         </tr>
-                                                        <?php } ?>
+                                                        <?php $i++;} ?>
                                                         <tr>
-                                                            <td colspan="3" style="text-align:right">Sub Total ( <i class="fas fa-rupee-sign"></i> )</td>
+                                                            <td colspan="5" style="text-align:right">Sub Total ( <i class="fas fa-rupee-sign"></i> )</td>
                                                             <td style="text-align:right"> <?php echo number_format($Orders[0]['OrderTotal'],2);?></td> 
                                                         </tr>
                                                          <tr>
-                                                            <td colspan="3" style="text-align:right">Total Amount ( <i class="fas fa-rupee-sign"></i> )</td>
+                                                            <td colspan="5" style="text-align:right">Total Amount ( <i class="fas fa-rupee-sign"></i> )</td>
                                                             <td style="text-align:right"> <?php echo number_format($Orders[0]['OrderTotal'],2);?></td> 
                                                         </tr>
                                                     </tbody>

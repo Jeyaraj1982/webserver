@@ -1,41 +1,6 @@
 <footer>
 
-<div class="foot-top" style="display: none;"><div class="container"><div>    <div class="slide-padding">
-    <div class="service">
-            <div class="row">
-                <ul class="col-xs-12 col-sm-3 col-md-3 list-inline">
-                    <li class="del1"><svg width="36px" height="36px"> <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#gift"></use> </svg></li>
-                    <li class="se1 text-xs-left">
-                    <h4>special gift cards</h4>
-                    <p>give a perfect gift</p>
-                    </li>
-                </ul>
-                <ul class="col-xs-12 col-sm-3 col-md-3 sborder list-inline">
-                    <li class="del4"><svg width="36px" height="36px"> <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#pay"></use> </svg></li>
-                    <li class="se1  text-xs-left">
-                    <h4>secure payment</h4>
-                    <p>100% secure payment</p>
-                    </li>
-                </ul>
-                <ul class="col-xs-12 col-sm-3 col-md-3 sborder list-inline">
-                    <li class="del2"><svg width="36px" height="36px"> <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#support"></use> </svg></li>
-                    <li class="se1  text-xs-left">
-                    <h4>24/7 support</h4>
-                    <p>online support 24/7</p>
-                    </li>
-                </ul>
-                <ul class="col-xs-12 col-sm-3 col-md-3 sborder list-inline">
-                    <li class="del3"><svg width="36px" height="36px"> <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ship"></use> </svg></li>
-                    <li class="se1  text-xs-left">
-                    <h4>free shipping</h4>
-                    <p>on order over $101</p>
-                    </li>
-                </ul>
-            </div>
-    </div>
-  </div></div>
-
-</div></div>
+ 
 
       <div class="foot-top" style="background:#f7f7f7;"><div class="container"><div>    <div class="slide-padding">
     <div class="service">
@@ -103,7 +68,8 @@
                    <li><a href="">About Us</a></li>
                     <li><a href="">Privacy Policy</a></li>
                     <li><a href="">Terms &amp; Conditions</a></li>
-                    <li><a href="">Contact Us</a></li>
+                    <li><a href="Payment-method.php">Payment Method</a></li>
+                    <li><a href="contact-us.php">Contact Us</a></li>
          
         </ul>
         </div>
@@ -203,11 +169,11 @@ function listaddtocart(ProductID){
         return false;
      }
  }
-
+                                         
     
  
 $(document).ready(function () {
-  addtocart(0);
+  addtocart(0,0);
  $('#success').hide();
  
 }); 
@@ -228,46 +194,28 @@ Please donate via PayPal to donate@opencart.com
     </div>
   </div>
 </div>
- <script>
- function addtocart(ProductID){
-     
-    $('#buttoncart').button('loading'); 
-     ErrorCount=0;   
-     
-     if (ProductID==0) {
-         ErrorCount=0;
-     } else {
-       // $('#ErrBrandSize').html("");
-       // if($('#BrandSize').val()==""){
-       //     ErrorCount++;  
-       //     $('#ErrBrandSize').html("<br>Please Select Size");    
-      //  } 
-     }
-     
-     if(ErrorCount==0) {
-         if (ProductID==0) {
-             var param = "";
-         } else {
-             var param = $("#frmid_"+ProductID).serialize();
-         }
+
+<script>
+    function addtocart(ProductID,PriceTagID) {
+        
+        var param = (ProductID==0 || PriceTagID==0) ? "" : $("#frmid_"+PriceTagID).serialize();
         
         $.post("webservice.php?action=addtocart", param,function( data ) {
-          DisplayCartItem(data);
-		  //$('.breadcrumb').after('<div id="success"><div  class="alert alert-success alert-dismissible">Added Cart<button type="button" class="close" data-dismiss="alert">&times;</button></div></div>');
-		  $('html, body').animate({ scrollTop: 0 }, 'slow');
-		  var obj = JSON.parse(data); 
-		  if(obj.IsCart=="1"){
-			$('#buttoncart').html('Added');
-		  }else {
-			$('#buttoncart').html('Add to Cart'); 
-			$('#buttoncart').button('reset');	
-		  }
-	
-		});
-     } else{
-        return false;
-     }
- }
+            DisplayCartItem(data);
+		    //$('.breadcrumb').after('<div id="success"><div  class="alert alert-success alert-dismissible">Added Cart<button type="button" class="close" data-dismiss="alert">&times;</button></div></div>');
+		    $('html, body').animate({ scrollTop: 0 }, 'slow');
+		    var obj = JSON.parse(data); 
+		    if(obj.IsCart=="1"){
+                $('#cartadded_'+PriceTagID).show();
+                $('#cartadd_'+PriceTagID).hide();
+                $('#qtydiv_'+PriceTagID).html('Qty: '+ obj.Qty);
+		    } else {
+			    //$('#buttoncart_'+PriceTagID).html('<i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;Add to Cart'); 
+			    //$('#buttoncart_'+PriceTagID).button('reset');	
+		    }
+        });
+    }
+    
  function DisplayCartItem(data) {
      var obj = JSON.parse(data);
      var subamount=0;
@@ -281,8 +229,11 @@ Please donate via PayPal to donate@opencart.com
                             text+='<tr>'
                                         +'<td class="text-center"> <a><img src="uploads/'+value.ProductImage+'" alt="" title="" class="img-thumbnail" style="width:50px"> </a> </td>'
                                         +'<td class="text-left"><a>'+value.ProductName+'</a><Br><span style="color:#888">x '+value.Qty+'</span></td>'
-                                        +'<td class="text-right">'+parseFloat(value.Price).toFixed(2)+'</td>'
-                                        +'<td class="text-center"><button type="button"  onclick="CallConfirmationtopcart(\''+value.ProductID+'\')" title="Remove" class="btn btn-danger btn-xs" style="font-size: 10px !important;padding: 3px 6px;"><i class="fa fa-times" style="font-size:11px"></i></button></td>'
+                                        +'<td class="text-right">'+parseFloat(value.Price).toFixed(2)+'</td>';
+                                         if (value.BrandSizeText != null) {
+                                                text += '<td class="text-right">Size: '+value.BrandSizeText+'</td>';
+                                            }
+                                         text +='<td class="text-center"><button type="button"  onclick="CallConfirmationtopcart(\''+value.PriceTagID+'\')" title="Remove" class="btn btn-danger btn-xs" style="font-size: 10px !important;padding: 3px 6px;"><i class="fa fa-times" style="font-size:11px"></i></button></td>'
                                     +'</tr>';
                             if(value.IsCart==1){  
                                 $('#buttoncart').html('Added'); 
@@ -308,8 +259,8 @@ Please donate via PayPal to donate@opencart.com
                 $('#cart_amt').html(obj.subtotal);
 				$('#cart_items').html(text);    
 	}
-function CallConfirmationtopcart(ProductID) {
-    var text = '<input type="hidden" value="'+ProductID+'" id="ProductID" Name="ProductID">'
+function CallConfirmationtopcart(PriceTagID) {
+    var text = '<input type="hidden" value="'+PriceTagID+'" id="ProductID" Name="ProductID">'
                      +'<div class="modal-header" style="border-bottom: 1px solid #e5e5e5;">'
                         +'<h4 class="heading"><strong>Confirmation</strong> </h4>'
                         +'<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color:white;margin-top: -30px;">'
@@ -325,13 +276,13 @@ function CallConfirmationtopcart(ProductID) {
                      +'</div>'
                      +'<div class="modal-footer">'
                         +'<button type="button" class="btn btn-outline-danger" data-dismiss="modal" >Cancel</button>&nbsp;&nbsp;&nbsp;'
-                        +'<button type="button" class="btn btn-danger" onclick="RemoveItem(\''+ProductID+'\')" >Yes, Confirm</button>'
+                        +'<button type="button" class="btn btn-danger" onclick="RemoveItem(\''+PriceTagID+'\')" >Yes, Confirm</button>'
                      +'</div>';  
         $('#xconfrimation_text').html(text);                                       
         $('#ConfirmationPopup').modal("show");
     }
-function RemoveItem(ProductID){
-    $.ajax({url:'webservice.php?action=RemoveItem&ProductID='+ProductID,success:function(data){
+function RemoveItem(PriceTagID){
+    $.ajax({url:'webservice.php?action=RemoveItem&PriceTagID='+PriceTagID,success:function(data){
         DisplayCartItem(data);
 		location.href='';
 		
@@ -340,8 +291,8 @@ function RemoveItem(ProductID){
 
  </script>
  <script>
-function CallConfirmation(ProductID){
-    var text = '<input type="hidden" value="'+ProductID+'" id="ProductID" Name="ProductID">'
+function CallConfirmation(PriceTagID){
+    var text = '<input type="hidden" value="'+PriceTagID+'" id="PriceTagID" Name="PriceTagID">'
                      +'<div class="modal-header" style="border-bottom: 1px solid #e5e5e5;">'
                         +'<h4 class="heading"><strong>Confirmation</strong> </h4>'
                         +'<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color:white;margin-top: -30px;">'
@@ -357,17 +308,24 @@ function CallConfirmation(ProductID){
                      +'</div>'
                      +'<div class="modal-footer">'
                         +'<button type="button" class="btn btn-outline-danger" data-dismiss="modal" >Cancel</button>&nbsp;&nbsp;&nbsp;'
-                        +'<button type="button" class="btn btn-danger" onclick="Cart_RemoveItem(\''+ProductID+'\')" >Yes, Confirm</button>'
+                        +'<button type="button" class="btn btn-danger" onclick="Cart_RemoveItem(\''+PriceTagID+'\')" >Yes, Confirm</button>'
                      +'</div>';  
         $('#xconfrimation_text').html(text);                                       
         $('#ConfirmationPopup').modal("show");
     }
-function Cart_RemoveItem(ProductID){
-    $.ajax({url:'webservice.php?action=RemoveItem&ProductID='+ProductID,success:function(data){
+function Cart_RemoveItem(PriceTagID){
+    $.ajax({url:'webservice.php?action=RemoveItem&PriceTagID='+PriceTagID,success:function(data){
         location.href='cart.php';
 		
         }});  
 }  
+
+
+
+
+
+
+
  function addtowishlist(ProductID){                                   
     $.ajax({url:'webservice.php?action=addtowishlist&ProductID='+ProductID,success:function(data){
         var obj = JSON.parse(data); 

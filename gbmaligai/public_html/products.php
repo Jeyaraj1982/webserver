@@ -17,11 +17,17 @@
     if (isset($_GET['category'])) {
         $count = $mysql->select("select count(*) as c from _tbl_products where CategoryID='".$_GET['category']."' and IsActive='1'"); 
         $Products = $mysql->select("select * from _tbl_products where CategoryID='".$_GET['category']."' and IsActive='1' ".$q." limit ".(($p-1)*JApp::WEB_PRODUCTS_PER_PAGE).", ".JApp::WEB_PRODUCTS_PER_PAGE); 
+        $SubCategories = $mysql->select("select * from _tbl_sub_category where CategoryID='".$_GET['category']."' and IsActive='1'  order by SubCategoryName"); 
+          $CateogryInfo = $mysql->select("select * from _tbl_category where CategoryID='".$_GET['category']."'"); 
+          //$SubCateogry = $mysql->select("select * from _tbl_sub_category where SubCategoryID='".$SubCategories[0]['SubCategoryID']."'"); 
     }
     
     if (isset($_GET['subcategory'])) {
         $count = $mysql->select("select count(*) as c from _tbl_products where SubCategoryID='".$_GET['subcategory']."' and IsActive='1'"); 
+        $SubCateogry = $mysql->select("select * from _tbl_sub_category where SubCategoryID='".$_GET['subcategory']."'"); 
+        $CateogryInfo = $mysql->select("select * from _tbl_category where CategoryID='".$SubCateogry[0]['CategoryID']."'"); 
         $Products = $mysql->select("select * from _tbl_products where SubCategoryID='".$_GET['subcategory']."' and IsActive='1' ".$q." limit ".(($p-1)*JApp::WEB_PRODUCTS_PER_PAGE).", ".JApp::WEB_PRODUCTS_PER_PAGE); 
+        $SubCategories = $mysql->select("select * from _tbl_sub_category where CategoryID='".$SubCateogry[0]['CategoryID']."' and IsActive='1'  order by SubCategoryName"); 
     }
     
 ?>
@@ -35,24 +41,36 @@
 <div id="product-category" class="container">
     <div class="row">
         <div id="content" class="col-sm-12">
-             
+               <ul class="breadcrumb">
+                <li><a href="index.php">Home</a></li>
+                <li><a><?php echo $CateogryInfo[0]['CategoryName'];?></a></li>
+                <?php if (isset($SubCateogry[0]['SubCategoryName'])) {?>
+                <li><a><?php echo $SubCateogry[0]['SubCategoryName'];?></a></li>
+                <?php } ?>
+            </ul>
             <div class="row">
                 <div id="column-left" class="col-md-3 col-sm-4 col-xs-12">
                     <div class="list-group cateleft">
                         <?php foreach($SubCategories  as $subcategory) { ?>                                           
-                            <a href="products.php?sid=<?php echo $subcategory['SubCategoryID'];?>" class="list-group-item <?php echo ($subcategory['SubCategoryID']==$_GET['sid']) ? 'active' :'';?>"><?php echo $subcategory['SubCategoryName'];?> (<?php echo sizeof($mysql->select("select CategoryID from _tbl_products where SubCategoryID='".$subcategory['SubCategoryID']."'  and IsActive='1'"));?>)</a> 
+                            <a href="s<?php echo $subcategory['SubCategoryID']."_".parseStringForURL($subcategory['SubCategoryName']);?>" class="list-group-item <?php echo ($subcategory['SubCategoryID']==$_GET['sid']) ? 'active' :'';?>"><?php echo $subcategory['SubCategoryName'];?> (<?php echo sizeof($mysql->select("select CategoryID from _tbl_products where SubCategoryID='".$subcategory['SubCategoryID']."'  and IsActive='1'"));?>)</a> 
                         <?php } ?>
                     </div>
                 </div>
                 <div id="content" class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
-                     
-                     No Products found.
-                          
+                      
+             <div class="row cate-border" style="margin-top:0px;">
+                        <div class="col-md-12" style="text-align: center;">
+                             
+                              No Products found.
+                        </div>
+                   
+                     </div>
+               </div>           
                 </div>
             </div>
         </div>
     </div>
-</div>
+ 
 <?php } else { ?>
 <?php
        $SubCategory = $mysql->select("select * from _tbl_sub_category where SubCategoryID='".$Products[0]['SubCategoryID']."'"); 

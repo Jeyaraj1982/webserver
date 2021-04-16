@@ -49,7 +49,7 @@ if (isset($_SESSION['User']) && $_SESSION['User']['Role']=="Admin") {
 }
 
 $_CONFIG['LOGO_URL'] = WEB_URL."/assets/new_weblogo.png";
-define("BrandSize",1);
+define("BrandSize",0);
 
 function parseStringForURL($string) {
     $string = strtolower(trim($string));
