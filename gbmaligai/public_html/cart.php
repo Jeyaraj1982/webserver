@@ -111,7 +111,7 @@
             </div>
             <div class="buttons clearfix">
                 <div class="pull-left"><a href="index.php" class="btn btn-default">Continue Shopping</a></div>
-                <div class="pull-right"><a href="checkout.php" class="btn btn-primary">Checkout</a></div>
+                <div class="pull-right"><a href="checkout.php" class="btn btn-primary">Continue Purchase</a></div>
             </div>
             <?php } ?>
         </div>

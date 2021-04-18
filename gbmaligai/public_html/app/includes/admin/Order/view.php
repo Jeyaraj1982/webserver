@@ -54,9 +54,10 @@
                                                             <th>Sl<br>&nbsp;</th>
                                                             <th>Product Name<br>&nbsp;</th>
                                                             <th>Units<br>&nbsp;</th>
-                                                            <th style="text-align:right">Price<br> ( <i class="fas fa-rupee-sign"></i> )</th>
+                                                            
+                                                            <th style="text-align:right">M.R.P<br> ( <i class="fas fa-rupee-sign"></i> )</th>
+                                                            <th style="text-align:right">GB Price<br> ( <i class="fas fa-rupee-sign"></i> )</th>
                                                             <th style="text-align:right">Quantity<br>&nbsp;</th>
-                                                         
                                                             <th style="text-align:right">Total<br> ( <i class="fas fa-rupee-sign"></i> )</th>
 											            </tr>
 										            </thead>
@@ -68,22 +69,55 @@
                                                             <td><?php echo $i;?></td>
                                                             <td><?php echo $item['ProductName'];?></td>
                                                             <td><?php echo $item['Units']." ".$item['UnitName'];?></td>      
-                                                            <td style="text-align:right"><?php echo number_format($item['Price'],2);?></td>
-                                                            <td style="text-align:right"><?php echo $item['Qty'];?></td>
-                                                            <td style="text-align:right"><?php echo number_format($item['Amount'],2);?></td>
+                                                            
+                                                            <!--
+                                                            <td style="text-align:right">
+                                            <table style="width: 100%;" cellpadding="0" cellspacing="0" border="0">
+                                                <tr>
+                                                    <td style="text-align: right;width:50%">
+                                                    <?php if (($item['MRP']-$item['Price'])>0) { ?>
+                                                        (<span style="text-decoration: line-through"><?php echo number_format($item['MRP'],2);?></span>)&nbsp;&nbsp;
+                                                       
+                                                  <?php } ?>
+                                                     </td>
+                                                     <td style="text-align: right;">
+                                                      <?php echo number_format($item['Price'],2);?>
+                                                     </td>
+                                                </tr>
+                                            </table>
+                                                            </td> -->
+                                                             <td style="text-align:right"><?php echo number_format($item['MRP'],2);?></td>
+                                          <td style="text-align:right"><?php echo number_format($item['Price'],2);?></td>
+                                          <td style="text-align:right"><?php echo $item['Qty'];?></td>
+                                                         <td style="text-align:right"><?php echo number_format($item['Amount'],2);?></td>
                                                         </tr>
                                                         <?php $i++;} ?>
                                                         <tr>
-                                                            <td colspan="5" style="text-align:right">Sub Total ( <i class="fas fa-rupee-sign"></i> )</td>
+                                                            <td colspan="6" style="text-align:right">Sub Total ( <i class="fas fa-rupee-sign"></i> )</td>
                                                             <td style="text-align:right"> <?php echo number_format($Orders[0]['OrderTotal'],2);?></td> 
                                                         </tr>
                                                          <tr>
-                                                            <td colspan="5" style="text-align:right">Total Amount ( <i class="fas fa-rupee-sign"></i> )</td>
+                                                            <td colspan="6" style="text-align:right">Total Amount ( <i class="fas fa-rupee-sign"></i> )</td>
                                                             <td style="text-align:right"> <?php echo number_format($Orders[0]['OrderTotal'],2);?></td> 
                                                         </tr>
                                                     </tbody>
 									            </table>
 								            </div>
+                                            
+                                            <div class="row">
+                         <div class="col-sm-6" style="text-align:left">
+                              <?php if ($Orders[0]['OrderSavedAmount']>0) {?>
+                            <h4 class="checkout-sep" style="border:none;margin-bottom:0px">You Saved</h4>
+                            <h3 style="color:Green">&#8377; <?php echo number_format($Orders[0]['OrderSavedAmount'],2);?></h3>
+                             <?php } ?>
+                        </div>
+                        <div class="col-sm-6" style="text-align:right">
+                           
+                            <h4 class="checkout-sep" style="border:none;margin-bottom:0px">Total Amount</h4>
+                            <h3 style="color:red">&#8377; <?php echo number_format($Orders[0]['OrderTotal'],2);?></h3>
+                           
+                        </div>
+                    </div>
 							            </div>
 						            </div>	
                                 </div>	

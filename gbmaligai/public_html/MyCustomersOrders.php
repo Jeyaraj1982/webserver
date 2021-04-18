@@ -39,13 +39,13 @@
 						<?php 	if($order['OrderStatus']=="1"){
 									echo "Order Placed";
 								}if($order['OrderStatus']=="2"){
-									echo "Confirmed";
-								}if($order['OrderStatus']=="3"){
 									echo "Cancel";
+								}if($order['OrderStatus']=="3"){
+									echo "Confirmed";
 								}if($order['OrderStatus']=="4"){
 									echo "Processing";
 								}if($order['OrderStatus']=="5"){
-                                    echo "Dispatched";
+                                    echo "Dispatched";                   
                                 }if($order['OrderStatus']=="6"){
 									echo "Delivered";
 								} 

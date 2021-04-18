@@ -1,7 +1,7 @@
 <?php include_once("header.php");?>
 <?php $Orders = $mysql->select("select * from _tbl_orders where md5(concat('Jeyaraj',OrderCode))='".$_GET['Order']."'");
 $items = $mysql->select("select * from _tbl_orders_items where OrderID='".$Orders[0]['OrderID']."'");
-?>	
+?>    
 <?php $Stts = $mysql->select("select * from _tbl_order_status where OrderID='".$Orders[0]['OrderID']."' order by StatusID Desc");?>   
 <div class=" " style="">
 <section class="main-container col2-right-layout">
@@ -10,6 +10,11 @@ $items = $mysql->select("select * from _tbl_orders_items where OrderID='".$Order
             <div class="col-main col-sm-9 col-xs-12">
                     
                 <div class="page-content checkout-page">
+                    <div class="row">
+                        <div class="col-sm-12" style="text-align:right">
+                            <a href="printorder.php?id=<?php echo md5($Orders[0]['OrderID']);?>" class="btn btn-primary btn-sm">Print</a>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col-sm-6">
                             <h4 class='checkout-sep' style="border:none;margin-bottom:0px">Customer Details</h4>
@@ -38,7 +43,9 @@ $items = $mysql->select("select * from _tbl_orders_items where OrderID='".$Order
                                     <th>Sl No</th>
                                     <th>Item Name</th>
                                     <th style="text-align:left">Unit</th>
-                                    <th style="text-align:right">Price ( &#8377; )</th>
+                                    
+                                    <th style="text-align:right">M.R.P ( &#8377; )</th>
+                                    <th style="text-align:right">GB Price ( &#8377; )</th>
                                     <th style="text-align:right">Quantity</th>
                                     <th style="text-align:right">Total ( &#8377; )</th> 
                                 </tr>
@@ -50,18 +57,37 @@ $items = $mysql->select("select * from _tbl_orders_items where OrderID='".$Order
                                     foreach($items as $item){ 
                                 ?>
                                     <tr>
-                                        <td><?php echo $i;?></td>
+                                        <td style="text-align:right"><?php echo $i;?>.&nbsp;</td>
                                         <td><?php echo $item['ProductName'];?></td>
                                         <td class="text-left"><a><?php echo $item['Units'];?>-<?php echo $item['UnitName'];?></a></td>
-                                        <td style="text-align:right"><?php echo number_format($item['Price'],2);?></td>
-                                        <td style="text-align:right"><?php echo $item['Qty'];?></td>
+                                          
+                                          <!--<td style="text-align:right">
+                                            <table style="width: 100%;" cellpadding="0" cellspacing="0" border="0">
+                                                <tr>
+                                                    <td style="text-align: right;width:50%">
+                                                    <?php if (($item['MRP']-$item['Price'])>0) { ?>
+                                                        (<span style="text-decoration: line-through"><?php echo number_format($item['MRP'],2);?></span>)&nbsp;&nbsp;
+                                                       
+                                                  <?php } ?>
+                                                     </td>
+                                                     <td style="text-align: right;">
+                                                      <?php echo number_format($item['Price'],2);?>
+                                                     </td>
+                                                </tr>
+                                            </table>
+                                         
+                                        </td>
+                                        -->
+                                         <td style="text-align:right"><?php echo number_format($item['MRP'],2);?></td>
+                                          <td style="text-align:right"><?php echo number_format($item['Price'],2);?></td>
+                                          <td style="text-align:right"><?php echo $item['Qty'];?></td>
                                         <td style="text-align:right"><?php echo number_format($item['Amount'],2);?></td>
                                     </tr>
                                 <?php                               
                                     $i++;
                                     } ?>
                                     <tr>
-                                        <td colspan="5" style="text-align:right">Sub Total (&#8377;)</td>
+                                        <td colspan="6" style="text-align:right">Sub Total (&#8377;)</td>
                                         <td style="text-align:right;font-weight:bold"><?php echo number_format($Orders[0]['OrderTotal'],2);?></td> 
                                     </tr>
                             </tbody>
@@ -70,9 +96,17 @@ $items = $mysql->select("select * from _tbl_orders_items where OrderID='".$Order
                     <hr>
                     
                     <div class="row">
-                        <div class="col-sm-12" style="text-align:right">
+                         <div class="col-sm-6" style="text-align:left">
+                              <?php if ($Orders[0]['OrderSavedAmount']>0) {?>
+                            <h4 class="checkout-sep" style="border:none;margin-bottom:0px">You Saved</h4>
+                            <h3 style="color:Green">&#8377; <?php echo number_format($Orders[0]['OrderSavedAmount'],2);?></h3>
+                             <?php } ?>
+                        </div>
+                        <div class="col-sm-6" style="text-align:right">
+                           
                             <h4 class="checkout-sep" style="border:none;margin-bottom:0px">Total Amount</h4>
                             <h3 style="color:red">&#8377; <?php echo number_format($Orders[0]['OrderTotal'],2);?></h3>
+                           
                         </div>
                     </div>
                     <hr>
@@ -103,4 +137,5 @@ $items = $mysql->select("select * from _tbl_orders_items where OrderID='".$Order
         </div>
     </section>
 </div>
+<?php include_once("footer.php");?>
  

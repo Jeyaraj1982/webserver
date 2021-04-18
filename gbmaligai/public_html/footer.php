@@ -230,7 +230,7 @@ Please donate via PayPal to donate@opencart.com
                                         +'<td class="text-center"> <a><img src="uploads/'+value.ProductImage+'" alt="" title="" class="img-thumbnail" style="width:50px"> </a> </td>'
                                         +'<td class="text-left"><a>'+value.ProductName+'</a><Br><span style="color:#888">x '+value.Qty+'</span></td>'
                                         +'<td class="text-right">'+parseFloat(value.Price).toFixed(2)+'</td>';
-                                         if (value.BrandSizeText != null) {
+                                         if (value.BrandSizeText != null && value.BrandSizeText !="") {
                                                 text += '<td class="text-right">Size: '+value.BrandSizeText+'</td>';
                                             }
                                          text +='<td class="text-center"><button type="button"  onclick="CallConfirmationtopcart(\''+value.PriceTagID+'\')" title="Remove" class="btn btn-danger btn-xs" style="font-size: 10px !important;padding: 3px 6px;"><i class="fa fa-times" style="font-size:11px"></i></button></td>'
@@ -248,7 +248,7 @@ Please donate via PayPal to donate@opencart.com
 						+'</tr>'
                     + '</tbody>'
                 + '</table>'
-                + '<p class="text-right" style="padding-right:10px;"><a href="cart.php" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> View Cart</a>&nbsp;&nbsp;&nbsp;<a href="checkout.php" class="btn btn-primary"><i class="fa fa-share"></i> Checkout</a></p>'
+                + '<p class="text-right" style="padding-right:10px;"><a href="cart.php" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> View Cart</a>&nbsp;&nbsp;&nbsp;<a href="checkout.php" class="btn btn-primary"><i class="fa fa-share"></i> Continue Purchase</a></p>'
                 + '</li>';
 				} else {
 					text+='<li>'

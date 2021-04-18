@@ -1,6 +1,6 @@
  <?php 
     if($_GET['status']=="All"){ 
-        $products = $mysql->select("select * from _tbl_products order by ProductID Desc");
+        $products = $mysql->select("select * from _tbl_products order by ProductID Desc limit 0,100");
         $title="All Products";
     }if($_GET['status']=="Active"){
         $products = $mysql->select("select * from _tbl_products where IsActive='1' order by ProductID Desc");
@@ -8,14 +8,15 @@
     }if($_GET['status']=="Disable"){
         $products = $mysql->select("select * from _tbl_products where IsActive='0' order by ProductID Desc");
         $title="Disable Products";
-    }/*if($_GET['status']=="Unsold"){
-        $products = $mysql->select("SELECT * FROM _tbl_products WHERE NOT EXISTS (SELECT * FROM invoice_order_item WHERE _tbl_products.ProductID = invoice_order_item.order_id)  order by ProductID Desc");
-        $title="Unsold Products";
+    } 
+    
+    
+    if (isset($_GET['search_key'])) {
+         $products = $mysql->select("select * from _tbl_products where  ProductName like '%".$_GET['search_key']."%' order by ProductID Desc");
+        $title="Searh Result: ".$_GET['search_key']; 
     }
-    if($_GET['status']=="Mostsold"){
-        $products = $mysql->select("SELECT * FROM _tbl_products WHERE (SELECT  order_id,  COUNT (*) FROM invoice_order_item GROUP BY order_id)  order by ProductID Desc");
-        $title="Mostsold Products";
-    }   */
+    
+//    
 ?>
 <div class="main-panel">                                                                                                                                                                      
     <div class="container">
@@ -23,7 +24,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="card">
-                        <div class="card-header" style="padding-top:10px;padding-bottom:10px">
+                        <div class="card-header" style="padding-top:10px;padding-bottom:10px">    
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="card-title">
@@ -39,7 +40,18 @@
                                 </div>
                             </div>
                         </div>                                       
-                        <div class="card-body">                                                                                                                                             
+                        <div class="card-body">
+                            <form action="dashboard.php" method="get">
+                            <input type="hidden" name="action" value="Products/list">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" name="search_key" value="<?php echo isset($_GET['search_key']) ? $_GET['search_key']  : "";?>" placeholder="Enter Product Name">
+                                </div>
+                                <div class="col-sm-3">
+                                    <input type="submit" class="btn btn-primary" value="Search">
+                                </div>
+                            </div>
+                            </form>  
                             <div class="table-responsive">
                                  <table class="table table-striped mt-3">
                                         <thead>

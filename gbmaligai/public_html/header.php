@@ -147,7 +147,7 @@
                                         </span>
                                     </div>
                                 </button>
-                                <ul class="dropdown-menu pull-right" id="cart_items" style="list-style: none;">
+                                <ul class="dropdown-menu pull-right" id="cart_items" style="list-style: none;width:320px;">
                                     <li>
                                         <p class="text-center">Your shopping cart is empty!</p>
                                     </li>

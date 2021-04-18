@@ -59,6 +59,7 @@ function parseStringForURL($string) {
     $string = str_replace("%"," ",$string);
     $string = str_replace("  "," ",$string);
     $string = str_replace(" ","-",$string);
+    $string = preg_replace('/[\x00-\x1F\x80-\xFF]/', '', $string); 
     return $string;
 }   
     
@@ -70,6 +71,7 @@ function parseStringForPhysicalPath($string) {
     $string = str_replace("%"," ",$string);
     $string = str_replace("  "," ",$string);
     $string = str_replace(" ","_",$string);
+    $string = preg_replace('/[\x00-\x1F\x80-\xFF]/', '', $string);
     return $string;
 }
 

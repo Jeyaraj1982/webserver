@@ -1,12 +1,12 @@
 <?php 
     if($_GET['status']=="All"){ 
-        $Categorys = $mysql->select("select * from _tbl_category order by CategoryID desc");
+        $Categorys = $mysql->select("select * from _tbl_category order by ListOrder");
         $title ="All Category";
     }if($_GET['status']=="Active"){
-        $Categorys = $mysql->select("select * from _tbl_category where IsActive='1' order by CategoryID desc");
+        $Categorys = $mysql->select("select * from _tbl_category where IsActive='1' order by ListOrder");
         $title ="Active Category";
     }if($_GET['status']=="Disable"){
-       $Categorys = $mysql->select("select * from _tbl_category where IsActive='0' order by CategoryID desc");
+       $Categorys = $mysql->select("select * from _tbl_category where IsActive='0' order by ListOrder");
        $title ="Disable Category";
     }
 ?>

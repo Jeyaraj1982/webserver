@@ -226,7 +226,7 @@ function DeleteSubCategory() {
            return json_encode($result); 
     }
     
-	function addtocart(){
+    function addtocart(){
         
         if (!(isset($_SESSION['items'] ))) {
                    $_SESSION['items'] =array();
@@ -237,6 +237,7 @@ function DeleteSubCategory() {
         $e=0; 
         
         $subtotal=0;
+        $OrderSavedAmount=0;
         foreach($_SESSION['items'] as $item) {
             $subtotal += $item['Price']*$item['Qty'];
             if ($item['PriceTagID']==$_POST['PriceTagID']) {
@@ -256,6 +257,9 @@ function DeleteSubCategory() {
                                              "ProductName"  => $Products[0]['ProductName'],
                                              "ProductImage" => "/products/".$Products[0]['ProductID']."/".$productimage[0]['ImageName'],
                                              "Price"        => $product_prices[0]['SellingPrice'],
+                                             "MRP"          => $product_prices[0]['MRP'],
+                                             "SavedPerQty"  => $product_prices[0]['MRP']-$product_prices[0]['SellingPrice'],
+                                             "SavedPerItem" => $_POST['qty']*($product_prices[0]['MRP']-$product_prices[0]['SellingPrice']),
                                              "Units"        => $product_prices[0]['Units'],
                                              "UnitName"     => $product_prices[0]['UnitName'],
                                              "UnitID"       => $product_prices[0]['UnitID'],
@@ -264,7 +268,8 @@ function DeleteSubCategory() {
                                              "Qty"          => $_POST['qty']
                                              ); 
                 $subtotal +=  $_POST['qty']* $product_prices[0]['SellingPrice']; 
-                $result=array("items"=>$_SESSION['items'],"IsCart"=>"1","subtotal"=>number_format($subtotal,2),"Qty"=>$_POST['qty']);
+                $OrderSavedAmount +=  $_POST['qty']*($product_prices[0]['SellingPrice']-$product_prices[0]['MRP']);
+                $result=array("items"=>$_SESSION['items'],"IsCart"=>"1","subtotal"=>number_format($subtotal,2),"Qty"=>$_POST['qty'],"YouSaved"=>$OrderSavedAmount);
             } else{
                 $result=array("items"=>$_SESSION['items'],"subtotal"=>number_format($subtotal,2),"IsCart"=>"0");
             }
@@ -421,36 +426,36 @@ function DeleteSubCategory() {
                                                  "OrderDate"            => date("Y-m-d H:i:s")));
         
         $subtotal=0;   
-        $TotalUplevelCommission=0;  
-        $TotalUplevelCommissionL2=0;  
-        $TotalUplevelCommissionL3=0;  
+        $OrderTotalMRP=0;   
                                          
         foreach($_SESSION['items'] as $item) {
             $ProductInfo = $mysql->select("select * from _tbl_products where ProductID='".$item['ProductID']."'");
             $subtotal += $item['Qty']*$item['Price'];
-            $mysql->insert("_tbl_orders_items",array("OrderID"     => $id,
-                                                     "ProductID"   => $item['ProductID'],
-                                                     "ProductCode" => $item['ProductCode'],
-                                                     "ProductName" => $item['ProductName'],
-                                                     "Qty"         => $item['Qty'],
-                                                     "Price"       => $item['Price'],
-                                                     "Amount"      => $item['Qty']*$item['Price'],
+            $OrderTotalMRP  += $item['SavedPerItem'];
+            
+            $mysql->insert("_tbl_orders_items",array("OrderID"      => $id,
+                                                     "ProductID"    => $item['ProductID'],
+                                                     "ProductCode"  => $item['ProductCode'],
+                                                     "ProductName"  => $item['ProductName'],
+                                                     "Qty"          => $item['Qty'],
+                                                     "Price"        => $item['Price'],
+                                                     "MRP"          => $item['MRP'],   
+                                                     "SavedPerQty"  => $item['SavedPerQty'],   
+                                                     "SavedPerItem" => $item['SavedPerItem'],
+                                                     "Amount"       => $item['Qty']*$item['Price'],
                                                      "Units"        => $item['Units'],
                                                      "UnitName"     => $item['UnitName'],
                                                      "UnitID"       => $item['UnitID'],
                                                      "PriceTagID"   => $item['PriceTagID']));
            
-           // $TotalUplevelCommission+=$ProductInfo[0]['Commission']*$item['Qty'];
-            //$TotalUplevelCommissionL2+=$ProductInfo[0]['CommissionL2']*$item['Qty'];
-            //$TotalUplevelCommissionL3+=$ProductInfo[0]['CommissionL3']*$item['Qty'];
         }
         
-        $mysql->execute("update _tbl_orders set 
-                                    OrderTotal='".$subtotal."' 
-                                  
-         where OrderID='".$id."'");
+        $mysql->execute("update _tbl_orders set OrderTotal       = '".$subtotal."',
+                                                OrderTotalMRP    = '".$OrderTotalMRP."',
+                                                OrderSavedAmount ='".($OrderTotalMRP-$subtotal)."' where OrderID='".$id."'");
         
         $id = $mysql->insert("_tbl_orders_status",array("OrderID"   => $id,
+                                                        "StatusCode"    => "1",
                                                         "StatusText"    => "Order Placed",
                                                         "Remarks"   => "",
                                                         "StatusOn"  => date("Y-m-d H:i:s")));
@@ -708,5 +713,5 @@ function DeleteSubCategory() {
             return json_encode($result);  
          
     } 
-  	
+      
 ?>
