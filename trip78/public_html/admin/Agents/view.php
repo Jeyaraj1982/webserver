@@ -93,7 +93,7 @@ $data = $mysql->select("select * from _tbl_tour_agents where md5(AgentID)='".$_G
                                             </tr>
                                         </thead>
                                         <tbody>
-                                        <?php $Pincodes = $mysql->select("select * from _tbl_agent_pincode where AgentID='".$data[0]['AgentID']."' order by Pincode");   ?>
+                                        <?php $Pincodes = $mysql->select("select * from _tbl_agent_pincode where isactive='1' and  AgentID='".$data[0]['AgentID']."' order by Pincode");   ?>
                                         <?php foreach($Pincodes as $Pincode){ ?>
                                             <tr>
                                                 <td><?php echo $Pincode['Pincode'];?></td>

@@ -35,11 +35,7 @@
                                             <span class="sub-item">My Enquiry</span>
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="dashboard.php?action=ChangePassword">      
-                                            <span class="sub-item">Change Password</span>
-                                        </a>
-                                    </li>
+                                     
                                 </ul>
                             </div>
                         </li>

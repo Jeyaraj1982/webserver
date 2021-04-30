@@ -55,6 +55,7 @@
                                                 <th scope="col">Full Name</th>
                                                 <th scope="col">Mobile Number</th>
                                                 <th scope="col">Package</th>
+                                                <th scope="col">Agent</th>
                                                 <th scope="col">Pincode</th>
                                                 <th scope="col"></th>
                                             </tr>
@@ -65,12 +66,15 @@
                                         <?php 
                                          foreach($enquirys as $enquiry){ 
                                               $TourPackages = $mysql->select("select * from _tbl_tours_package where PackageID='".$enquiry['PackageID']."'");        
+                                              $Agent  = $mysql->select("select * from _tbl_agent_pincode where isactive='1' and pincode='".$enquiry['Pincode']."'");        
+                                              $AgentDetails = $mysql->select("select * from _tbl_tour_agents where AgentID='".$Agent[0]['AgentID']."'");        
                                         ?>
                                             <tr>
                                                 <td><?php echo date("M,d Y", strtotime($enquiry['CreatedOn']));?></td>
                                                 <td><?php echo $enquiry['FullName'];?></td>
                                                 <td><?php echo $enquiry['MobileNumber'];?></td>
                                                 <td><?php echo $TourPackages[0]['PackageName'];?></td>
+                                                <td><?php echo $AgentDetails[0]['AgentName'];?></td>
                                                 <td><?php echo $enquiry['Pincode'];?></td>
                                                 <td style="text-align: right"><a href="javascript:void(0)" onclick="ViewEnquiryDetails('<?php echo md5($enquiry['EnquiryID']);?>')">View</a></td>
                                             </tr>

@@ -30,7 +30,7 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                        <?php $enquirys = $mysql->select("select * from _tbl_tour_enquiry where Pincode  IN (select Pincode from _tbl_agent_pincode where md5(AgentID)='".$_GET['id']."') order by EnquiryID DESC");?>
+                                        <?php $enquirys = $mysql->select("select * from _tbl_tour_enquiry where Pincode  IN (select Pincode from _tbl_agent_pincode where isactive='1' and md5(AgentID)='".$_GET['id']."') order by EnquiryID DESC");?>
                                         <?php 
                                          foreach($enquirys as $enquiry){ 
                                               $TourPackages = $mysql->select("select * from _tbl_tours_package where PackageID='".$enquiry['PackageID']."'");        

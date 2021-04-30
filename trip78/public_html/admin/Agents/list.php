@@ -58,8 +58,8 @@
                                                 <td><?php echo $agent['LoginName'];?></td>
                                                 <td><?php echo $agent['StateName'];?></td>
                                                 <td><?php echo $agent['DistrictName'];?></td>
-                                                <td style="text-align: right;"><?php $pincode = $mysql->Select("SELECT COUNT(PincodeID) AS cnt FROM _tbl_agent_pincode where AgentID='".$agent['AgentID']."'"); echo $pincode[0]['cnt'];?></td>
-                                                <td style="text-align: right;"><?php $enquirys = $mysql->select("select * from _tbl_tour_enquiry where Pincode IN (select Pincode from _tbl_agent_pincode where AgentID='".$agent['AgentID']."') order by EnquiryID DESC"); echo sizeof($enquirys);?></td>
+                                                <td style="text-align: right;"><?php $pincode = $mysql->Select("SELECT COUNT(PincodeID) AS cnt FROM _tbl_agent_pincode where isactive='1' and AgentID='".$agent['AgentID']."'"); echo $pincode[0]['cnt'];?></td>
+                                                <td style="text-align: right;"><?php $enquirys = $mysql->select("select * from _tbl_tour_enquiry where Pincode IN (select Pincode from _tbl_agent_pincode where isactive='1' and AgentID='".$agent['AgentID']."') order by EnquiryID DESC"); echo sizeof($enquirys);?></td>
                                                 <td style="text-align: right">                                                   
                                                     <div class="dropdown dropdown-kanban" style="float: right;">
                                                         <button class="" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border:none;font-size:14px;background:none !important;padding-right:0px;margin-right:0px;cursor:pointer">

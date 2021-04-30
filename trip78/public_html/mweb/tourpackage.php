@@ -65,11 +65,13 @@
                                             <div class="col-9 col-md-9" style="padding-left:3px;padding-right:3px;text-align:center;padding-top:5px;">
                                                 <p style="color:#626060;font-size:10px;text-align:center;margin-bottom: 0px;">All inclusive price | Per Person<br>
                                                     <span style="font-size:14px;font-weight:bold;color:red">Rs <?php echo $Package['PackagePrice'];?>*</span>
-                                                    <br>
-                                                    <a href="enquiry.php?package=<?php echo $Package['PackageID'];?>" class="btn btn-primary btn-sm" style="padding: 5px 10px;font-size: 11px;line-height: 1;text-transform: none;border-radius: 5px;margin-bottom:5px;margin-top:5px;">Enquiry Now</a>    
                                                 </p>    
                                             </div>
                                         </div>
+                                        <p style="text-align:right;margin-bottom: 0px;padding-right: 10px;">
+                                            <a href="enquiry.php?package=<?php echo $Package['PackageID'];?>" class="btn btn-primary btn-sm" style="padding: 5px 10px;font-size: 11px;line-height: 1;text-transform: none;border-radius: 5px;margin-bottom:5px;margin-top:5px;">Enquiry Now</a>    &nbsp;
+                                            <a href="tourpackagedetails.php?tid=<?php echo $Package['PackageID'];?>" class="btn btn-danger btn-sm" style="padding: 5px 10px;font-size: 11px;line-height: 1;text-transform: none;border-radius: 5px;margin-bottom:5px;margin-top:5px;">View Details</a>    
+                                        </p>
                                     </div>
                                 </div>     
                             </div>

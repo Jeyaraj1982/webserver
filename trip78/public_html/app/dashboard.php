@@ -126,11 +126,7 @@
                                             </div>
                                         </div>         
                                     </li>
-                                    <li>
-                                        <div class="dropdown-divider"></div>                                    
-                                        <a class="dropdown-item" href="dashboard.php?action=ChangePassword">Change Password</a>
-                                        <a class="dropdown-item" href="dashboard.php?action=logout">Logout</a>
-                                    </li>
+                                     
                                 </div>
                             </ul>
                         </li>

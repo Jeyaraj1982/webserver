@@ -63,7 +63,7 @@
 								<li><a target="_blank" href="https://twitter.com/Trip784"><i class="fa fa-twitter"></i></a></li>
                                 <li><a target="_blank" href="https://www.facebook.com/trip.seveneight.3"><i class="fa fa-facebook"></i></a></li>
                                 <li><a target="_blank" href="https://www.instagram.com/trip_seveneight"><i class="fa fa-instagram"></i></a>
-                                <li><a target="_blank" href="http://trip78.tumblr.com/"><i class="fa fa-tumblr"></i></a>
+                                <li><a target="_blank" href="https://trip78.tumblr.com/"><i class="fa fa-tumblr"></i></a>
                                 <li><a target="_blank" href="https://in.pinterest.com/trip78mail/_saved"><i class="fa fa-pinterest"></i></a>
 								</li>
 							</ul>

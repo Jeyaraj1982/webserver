@@ -150,14 +150,15 @@
                                       }
                                       
                                         if ($('#EmailID').val().trim().length==0) {
-                                        $("#ErrEmailID").html("Please enter email id");
-                                        err++;
+                                      //  $("#ErrEmailID").html("Please enter email id");
+                                        //err++;
                                       } 
-                                      
+                                        if ($('#EmailID').val().trim().length>0) {
                                       if (!(validateEmail($('#EmailID').val())))            {
                                         $("#ErrEmailID").html("Please enter valid email id");
                                         err++;
-                                      }    
+                                      } 
+                                        }   
                                       
                                        // if ($('#MobileNumber').val().trim().length==0) {           
                                       //  $("#ErrMobileNumber").html("Please enter Mobile Number");

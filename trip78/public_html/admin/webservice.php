@@ -813,11 +813,11 @@ function UpdateDistrictName() {
     
     global $mysql;
     
-    $data = $mysql->select("select * from _tbl_agent_pincode where Pincode='".$_POST['Pincode']."'");
+    $data = $mysql->select("select * from _tbl_agent_pincode where isactive='1' and Pincode='".$_POST['Pincode']."'");
     if(sizeof($data)>0){
         $result = array();
         $result['status']="failure";
-        $result['message']="Pincode already exists.";  
+        $result['message']="Pincode already assigned to agent.";  
         return json_encode($result);    
     }
    
@@ -836,6 +836,7 @@ function UpdateDistrictName() {
         return json_encode($result); 
     }
     }
+    
     function EditAgentPincode(){
        global $mysql;
        $Pincode = $mysql->select("select * from _tbl_agent_pincode where md5(PincodeID)='".$_REQUEST['PincodeID']."'");
@@ -900,7 +901,8 @@ function UpdateDistrictName() {
     
     global $mysql;
    
-      $id=$mysql->execute("DELETE FROM _tbl_agent_pincode where PincodeID='".$_POST['PincodeID']."'");
+     // $id=$mysql->execute("DELETE FROM _tbl_agent_pincode where PincodeID='".$_POST['PincodeID']."'");
+      $id=$mysql->execute("update  _tbl_agent_pincode set isactive='0' where PincodeID='".$_POST['PincodeID']."'");
      
         $result = array();
         $result['status']="Success";

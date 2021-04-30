@@ -31,8 +31,8 @@
                                             <?php foreach($sliders as $slider){ ?>
                                             <tr>
                                                 <td style="text-align: center;">
-                                                    <img src="<?php echo "../uploads/customerreview/".$slider['CustomerThumb'];?>" style='height:100px;margin-top: 5px;border-radius:50%'>
-                                                    <?php echo $slider['CustomerName']."<br>"; ?>
+                                                    <img src="<?php echo "../uploads/customerreview/".$slider['CustomerThumb'];?>" style='height:100px;margin-top: 5px;border-radius:50%'><br>
+                                                    <?php echo $slider['CustomerName']; ?>
                                                 </td>
                                                 <td>
                                                     <div style="padding-top:10px">

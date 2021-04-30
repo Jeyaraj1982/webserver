@@ -66,11 +66,14 @@
                                             <div class="col-9 col-md-9" style="padding-left:3px;padding-right:3px;text-align:center;padding-top:5px;">
                                                 <p style="color:#626060;font-size:10px;text-align:center;margin-bottom: 0px;">All inclusive price | Per Person<br>
                                                     <span style="font-size:14px;font-weight:bold;color:red">Rs <?php echo $Package['PackagePrice'];?>*</span>
-                                                    <br>
-                                                    <a href="enquiry.php?package=<?php echo $Package['PackageID'];?>" class="btn btn-primary btn-sm" style="padding: 5px 10px;font-size: 11px;line-height: 1;text-transform: none;border-radius: 5px;margin-bottom:5px;margin-top:5px;">Enquiry Now</a>    
-                                                </p>    
+                                                                            </p>    
                                             </div>
+                                           
                                         </div>
+                                           <p style="text-align:right;margin-bottom: 0px;padding-right: 10px;">
+                                            <a href="enquiry.php?package=<?php echo $Package['PackageID'];?>" class="btn btn-primary btn-sm" style="padding: 5px 10px;font-size: 11px;line-height: 1;text-transform: none;border-radius: 5px;margin-bottom:5px;margin-top:5px;">Enquiry Now</a>    &nbsp;
+                                            <a href="tourpackagedetails.php?tid=<?php echo $Package['PackageID'];?>" class="btn btn-danger btn-sm" style="padding: 5px 10px;font-size: 11px;line-height: 1;text-transform: none;border-radius: 5px;margin-bottom:5px;margin-top:5px;">View Details</a>    
+                                        </p>
                                     </div>
                                 </div>     
                             </div>
@@ -79,127 +82,5 @@
                     </div>
                 </div>
             </div> 
-   <!--<div class="container">  
-  <!--<h2>Carousel Example</h2>
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
-    <div class="carousel-inner">
-
-      <div class="item active">
-        <img src="la.jpg" alt="Los Angeles" style="width:100%;">
-        <div class="carousel-caption">
-          <h3>Los Angeles</h3>
-          <p>LA is always so much fun!</p>
-        </div>
-      </div>
-
-      <div class="item">
-        <img src="chicago.jpg" alt="Chicago" style="width:100%;">
-        <div class="carousel-caption">
-          <h3>Chicago</h3>
-          <p>Thank you, Chicago!</p>
-        </div>
-      </div>
-    
-      <div class="item">
-        <img src="ny.jpg" alt="New York" style="width:100%;">
-        <div class="carousel-caption">
-          <h3>New York</h3>
-          <p>We love the Big Apple!</p>
-        </div>
-      </div>
-  
-    </div>
-
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-    
-    
- </div> -->            
-                <div class="footer-wrapper" style="display: none;">
-                    <div class="footer">
-                        <div class="row mx-0">
-                            <div class="col">
-                                Trip78
-                            </div>
-                            <div class="col-7 text-right">
-                                <a href="" class="social"><img src="img/facebook.png" alt=""></a>
-                                <a href="" class="social"><img src="img/googleplus.png" alt=""></a>
-                                <a href="" class="social"><img src="img/linkedin.png" alt=""></a>
-                                <a href="" class="social"><img src="img/twitter.png" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="footer dark" style="display: none;">
-                        <div class="row mx-0">
-                            <div class="col  text-center">
-                                Copyright @2018, Trip78.in
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- page main ends -->
-
-    </div>
-
-
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://maxartkiller.com/website/mobileux/dashboard_html/js/jquery-3.2.1.min.js"></script>
-    <script src="https://maxartkiller.com/website/mobileux/dashboard_html/js/popper.min.js"></script>
-    <script src="https://maxartkiller.com/website/mobileux/dashboard_html/vendor/bootstrap-4.1.3/js/bootstrap.min.js"></script>
-
-    <!-- Cookie jquery file -->
-    <script src="https://maxartkiller.com/website/mobileux/dashboard_html/vendor/cookie/jquery.cookie.js"></script>
-
-    <!-- sparklines chart jquery file -->
-    <script src="https://maxartkiller.com/website/mobileux/dashboard_html/vendor/sparklines/jquery.sparkline.min.js"></script>
-
-    <!-- Circular progress gauge jquery file -->
-    <script src="https://maxartkiller.com/website/mobileux/dashboard_html/vendor/circle-progress/circle-progress.min.js"></script>
-
-    <!-- Swiper carousel jquery file -->
-    <script src="https://maxartkiller.com/website/mobileux/dashboard_html/vendor/swiper/js/swiper.min.js"></script>
-
-    <!-- Application main common jquery file -->
-    <script src="https://maxartkiller.com/website/mobileux/dashboard_html/js/main.js"></script>
-
-    <!-- page level script -->
-     <script>
-     
-     
-
-// fetch('https://api.unsplash.com/photos/random/?count=5&client_id=52d8369eb3e2576a5f5b6423865e074e9c7045761bff1ac5664ff3e0bdb57a1d') 
-//   .then(response => response.json())
-//   .then(data => {
-//     data.forEaach(function(image, i) {
-//       document.querySelector("#slide-" + (i+1)).innerHTML = `
-//         <img src="${image.urls.regular}" alt="">
-//         <p class="author-info">
-//           <a href="${image.links.html}?utm_source=slider-thing&utm_medium=referral&utm_campaign=api-credit">Photo by ${image.user.name}</a> on <a href="https://unsplash.com/">Unsplash</a>
-//         </p>
-//       `;
-//     });
-//   });
-
-
-     </script>
-</body>
-
-</html>
+               
+               <?php include_once("footer.php");?>
