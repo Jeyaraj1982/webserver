@@ -1,5 +1,0 @@
-
-2020-07-30 06:29:11	{"username":"a2x4Lmn2cvLmluI","password":"IGhhcHB==","uid":"6343","account_name":"Christopherronaldo","account_number":"134801000020780","ifsc_code":"IOBA0001348","amount":"300","remarks":"Exam fees obtain"}
-2020-07-30 12:52:13	{"username":"d2VsY29tZUA","password":"jM0NTY3ODk","uid":"13249","account_name":"Maajid multi mart ","account_number":"22950200000594","ifsc_code":"Fdrl0002295","amount":"10000","remarks":"9003638869"}
-2020-07-30 12:53:30	{"username":"d2VsY29tZUA","password":"jM0NTY3ODk","uid":"13251","account_name":"Maajid multi mart ","account_number":"22950200000594","ifsc_code":"Fdrl0002295","amount":"2800","remarks":"9003638869"}
-2020-07-30 14:47:55	{"username":"a2x4Lmn2cvLmluI","password":"IGhhcHB==","uid":"6523","account_name":"Christopherronaldo","account_number":"134801000020780","ifsc_code":"IOBA0001348","amount":"200","remarks":"Exam fees obtain"}

@@ -1,6 +1,0 @@
-
-2020-07-31 11:28:58	{"username":"a2x4Lmn2cvLmluI","password":"IGhhcHB==","uid":"6805","account_name":"Christopherronaldo","account_number":"134801000020780","ifsc_code":"IOBA0001348","amount":"325","remarks":"Exam fees obtain"}
-2020-07-31 14:12:27	{"username":"a2x4Lmn2cvLmluI","password":"IGhhcHB==","uid":"6868","account_name":"Indra","account_number":"31550177549","ifsc_code":"SBIN0011067","amount":"500","remarks":"Nagarajan M"}
-2020-07-31 14:15:43	{"username":"a2x4Lmn2cvLmluI","password":"IGhhcHB==","uid":"6869","account_name":"Rajakumar","account_number":"343100080201198","ifsc_code":"TMBL0000343","amount":"1300","remarks":"Ngarajan N"}
-2020-07-31 14:24:17	{"username":"a2x4Lmn2cvLmluI","password":"IGhhcHB==","uid":"6871","account_name":"Rajkumar","account_number":"343100080201198","ifsc_code":"TMBL0000343","amount":"1300","remarks":"Nagarajan M"}
-2020-07-31 16:51:06	{"username":"a2x4Lmn2cvLmluI","password":"IGhhcHB==","uid":"6895","account_name":"Christopherronaldo","account_number":"134801000020780","ifsc_code":"IOBA0001348","amount":"400","remarks":"Exam fees obtain"}
