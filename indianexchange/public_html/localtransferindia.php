@@ -37,12 +37,12 @@
             </tr>
             <tr>
                 <td style="width:50%;text-align:center;">
-                    BUY USD rate Rs.81 Per USD including exchange fees<Br>
+                    BUY USD rate Rs.78 Per USD including exchange fees<Br>
                     Min. Deposit 100 USD & Max Deposit 5000 USD per day<Br>
                     Deposit Instantly
                 </td>
                 <td style="width:50%;text-align:center;">
-                    SELL USD rate Rs.72 Per USD including exchange fees<Br>
+                    SELL USD rate Rs.70 Per USD including exchange fees<Br>
                     Min. Withdrawal 50 USD & Max Withdrawal 5000 USD per day<Br>
                     Withdrawal taken 20 minutes
                 </td>
