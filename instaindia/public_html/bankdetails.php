@@ -35,7 +35,7 @@
             </tr>
             <tr>
                 <td style="width:45%;text-align:center;">
-                    BUY USD rate Rs.81 Per USD including exchange fees<Br>
+                    BUY USD rate Rs.78 Per USD including exchange fees<Br>
                     Min. Deposit 100 USD & Max Deposit 5000 USD per day<Br>
                     Deposit Instantly
                 </td>
