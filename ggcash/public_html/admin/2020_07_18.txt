@@ -1,7 +1,0 @@
-[2020-07-18 15:37:35]	select count(MemberID) as count FROM _tbl_Members
-[2020-07-18 15:37:35]	select count(RequestID) as count FROM _tbl_wallet_request_epin where IsApproved='0' and IsRejected='0'
-[2020-07-18 15:37:35]	select count(RequestID) as count FROM _tbl_wallet_request_utility where IsApproved='0' and IsRejected='0'
-[2020-07-18 15:37:35]	select count(OrderID) as count FROM PaymentStatus where OrderDeliveredon=null
-[2020-07-18 15:37:35]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ggcash_database.PaymentStatus' doesn't exist
-[2020-07-18 15:37:35]	select * from _VoucherRegistration where IsActivated='0' and md5(concat('JJ',CouponRegID))='e8cd83509dec8183f9e59fb128aa2521'
-[2020-07-18 15:37:35]	select * from _VoucherRegistration where md5(concat('JJ',CouponRegID))='e8cd83509dec8183f9e59fb128aa2521'
