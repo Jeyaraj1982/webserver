@@ -1,7 +1,0 @@
-[2020-08-19 16:29:26]	insert into `_VoucherRegistration` (`ApplicantName`,`Gender`,`DateOfBirth`,`MaritalStatus`,`AddressLine1`,`AddressLine2`,`Town`,`PinCode`,`DistrictName`,`StateName`,`MobileNumber`,`EmailAddress`,`AadhaarNumber`,`Amount`,`Remarks`,`ReferredByCode`,`ReferredByName`,`RequestedOn`,`IsActivated`,`VoucherKey`) values ('Nazeem banu','Female','1983-5-12','Married','26A/5 new no 61','Sudalai Pothi Kovil Street','vasudevanallur','627758','Tirunelveli','Tamil Nadu','9791151224','mydeen280@gmail.com','833044007920','1000','NIL','7339412006','Sheikmydeen','2020-08-19 16:29:26','0','')
-[2020-08-19 16:29:26]	select * from _tbl_Members where MemberID='9000000177'
-[2020-08-19 16:29:26]	insert into `_tbl_Log_MobileSMS` (`MemberID`,`MemberCode`,`SmsTo`,`Message`,`Url`,`MessagedOn`) values (Null,Null,'9791151224','Dear Nazeem banu, Your request accepted. Your VRNumber 9791151224-177 Thanks GGCash.in',' ','2020-08-19 16:29:26')
-[2020-08-19 16:29:26]	select * from `_tbl_Settings_Params` where ParamCode in ('EnableSendSMS')
-[2020-08-19 16:29:26]	select * from `_tbl_Settings_Params` where ParamCode in ('MobileSMSSendAPI')
-[2020-08-19 16:29:26]	update _tbl_Log_MobileSMS set Url='http://www.aaranju.in/sms/api.php?apiusername=Z2djYXNoQGdtY&apipassword=WlsLmNvbQ==&sender=GOODGW&&number=9791151224&message=Dear+Nazeem+banu%2C+Your+request+accepted.+Your+VRNumber+9791151224-177+Thanks+GGCash.in&uid=1350' where SMSID='1350'
-[2020-08-19 16:29:26]	update _tbl_Log_MobileSMS set APIResponse=' {"response":{"status":"SUCCESS","transid":false}}' where SMSID='1350'
