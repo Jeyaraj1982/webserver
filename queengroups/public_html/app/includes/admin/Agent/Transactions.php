@@ -1,5 +1,5 @@
 <?php
-$data= $mysql->Select("select * from _queen_agent where MD5(AgentID)='".$_GET['id']."'");
+$data= $mysql->Select("select * from _queen_agent where MD5(AgentCode)='".$_GET['id']."'");
 ?>
 
 <div class="main-panel">
@@ -77,27 +77,44 @@ $data= $mysql->Select("select * from _queen_agent where MD5(AgentID)='".$_GET['i
                                  <table class="table table-striped mt-3">
                                         <thead>
                                             <tr>
+                                                <th scope="col" style="text-align:Left">Txn Date</th>
+                                                <th scope="col" style="text-align:Left">Particular</th>
+                                                <th scope="col" style="text-align:right">Service</th>
+                                                <th scope="col" style="text-align:right">AppMame</th>
+                                                <th scope="col" style="text-align:right">Charge</th>
+                                                <th scope="col" style="text-align:right">Fee</th>
+                                                <th scope="col" style="text-align:right">Commission</th>
                                                 <th scope="col" style="text-align:right">Credits</th>
 												<th scope="col" style="text-align:right">Debits</th>
 												<th scope="col" style="text-align:right">Available Balance</th>
-												<th scope="col">Added On</th>
-												<th scope="col">Added By</th>
+											<!--	<th scope="col">Added On</th>
+												<th scope="col">Added By</th>     -->
 												<th></th>
                                             </tr>                            
                                         </thead>
                                         <tbody>
                                                                                    
                                         <?php 
-											$transactions = $mysql->select("select * from _queen_wallet where md5(AgentID)='".$_GET['id']."'");
+											//$transactions = $mysql->select("select * from _queen_wallet where md5(AgentID)='".$_GET['id']."'");
+                                            
+                                            $transactions= $mysql->Select("select * from _tbl_transactions where MD5(AgentID)='".$_GET['id']."'");
+                                            
 											foreach($transactions as $transaction){ 
-											$staff = $mysql->select("select * from _queen_staffs where StaffID='".$transaction['StaffID']."'");
+											//$staff = $mysql->select("select * from _queen_staffs where StaffID='".$transaction['StaffID']."'");
 										?>
 											<tr>
+                                                <td style="text-align:left"><?php echo $transaction['TxnDate'];?></td>
+                                                <td style="text-align:left"><?php echo $transaction['Particulars'];?></td>
+                                                <td style="text-align:left"><?php echo $transaction['ServiceName'];?></td>
+                                                <td style="text-align:left"><?php echo $transaction['ApplicantName'];?></td>
+                                                <td style="text-align:right"><?php echo number_format($transaction['Charge'],2);?></td>
+                                                <td style="text-align:right"><?php echo number_format($transaction['Fee'],2);?></td>
+                                                <td style="text-align:right"><?php echo number_format($transaction['Commission'],2);?></td>
                                                 <td style="text-align:right"><?php echo number_format($transaction['Credits'],2);?></td>
                                                 <td style="text-align:right"><?php echo number_format($transaction['Debits'],2);?></td>
                                                 <td style="text-align:right"><?php echo number_format($transaction['AvailableBalance'],2);?></td>
-                                                <td><?php echo date("M d,Y H:i", strtotime($transaction['AddOn']));?></td>
-                                                <td><?php echo $staff[0]['StaffName'];?></td>
+                                              <!--    <td><?php echo date("M d,Y H:i", strtotime($transaction['AddOn']));?></td>
+                                              <td><?php echo $staff[0]['StaffName'];?></td>-->
                                             </tr> 
                                         <?php } if(sizeof($transactions)=="0"){ ?>
                                             <tr>

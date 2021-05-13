@@ -42,22 +42,38 @@ input:focus{
 
 </style>
 <?php
+
+     
+
     if (isset($_POST['btnsubmit'])) {
         $ErrorCount =0; 
-            
+             $Agentdetails = $mysql->select("select * from _queen_agent where AgentID='".$_POST['Agent']."'");  
             if($ErrorCount==0){ 
                   $Created = $_POST['frmYear']."-".$_POST['frmMonth']."-".$_POST['frmDay'];
-               $id = $mysql->insert("_queen_wallet",array("AgentID"   		=> $_POST['Agent'],
-                                                           "Particulars"              => "Payment Recevied ",
-                                                           "Credits"      		=> "0",
-                                                           "Debits"       		=> $_POST['Amount'],
-                                                           "AvailableBalance"   => getTotalBalanceWallet($_POST['Agent'])-$_POST['Amount'],
-                                                           "TransactionID"      => $_POST['TxnID'],
-                                                           "Remarks"              => $_POST['Remarks'],
-                                                           "IsRecevied"      	    => "1",
-                                                           "StaffID"      	    => $_SESSION['User']['StaffID'],
-                                                           "AddOn"              => $Created));
+                  
+                  
+                  $id=   $mysql->insert("_tbl_transactions",array("TxnDate"       => $Created,
+                                                                  "TxnOn"         => date("Y-m-d H:i:s"),
+                                                                  "AgentCode"       => $Agentdetails[0]['AgentCode'],
+                                                                  "StaffID"       => $_SESSION['User']['StaffID'],
+                                                                  "ServiceID"     => "0",
+                                                                  "ServiceName"   => "0",
+                                                                  "Particulars"   => "Cash Recevied",
+                                                                  "ApplicantName" => "",
+                                                                  "Charge"        => "0",
+                                                                  "Fee"           => "0",
+                                                                  "Commission"    => "0",
+                                                                  "Debits"        => $_POST['Amount'],
+                                                                  "TxnRemarks"        => $_POST['Remarks'],
+                                                                  "Credits"       => "0",
+                                                                  "AvailableBalance" => getBalance($Agentdetails[0]['AgentCode'])+($_POST['Amount'])));
+              
+              
+          
             if(sizeof($id)>0){ 
+                 $message = "Rs. ".$_POST['Amount']. " has recevied from agent ".$Agentdetails[0]['AgentName']." (".$Agentdetails[0]['AgentCode'].") records updated by ".$_SESSION['User']['StaffName']; 
+               SendTextTelegram(1661537746,$message);
+               SendTextTelegram(1107300198,$message);
                 unset($_POST);
                 ?>
                 <script>

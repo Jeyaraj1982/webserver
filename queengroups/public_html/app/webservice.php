@@ -128,14 +128,14 @@ function GetAgentInfo() {
         $sql = "SELECT Agent.*, IFNULL(Wallet.AvailableBalance,0) AS AvailableBalance FROM 
                 (SELECT * FROM _queen_agent WHERE IsAgent='1' and (AgentName Like '".$_GET['term']."%' or AgentCode Like '".$_GET['term']."%') order by AgentName) AS Agent 
                 LEFT JOIN 
-                (SELECT AgentID,SUM(Credits)-SUM(Debits) AS AvailableBalance FROM _queen_wallet GROUP BY AgentID HAVING SUM(Credits)>=0 ) AS Wallet
-                ON Agent.AgentID = Wallet.AgentID";
-    }else{
+                (SELECT AgentCode,SUM(Credits)-SUM(Debits) AS AvailableBalance FROM _tbl_transactions GROUP BY AgentCode HAVING SUM(Credits)>=0 ) AS Wallet
+                ON Agent.AgentCode = Wallet.AgentCode";
+    } else {
         $sql = "SELECT Agent.*, IFNULL(Wallet.AvailableBalance,0) AS AvailableBalance FROM 
                 (SELECT * FROM _queen_agent WHERE IsAgent='1' order by AgentName) AS Agent 
                 LEFT JOIN 
-                (SELECT AgentID,SUM(Credits)-SUM(Debits) AS AvailableBalance FROM _queen_wallet GROUP BY AgentID HAVING SUM(Credits)>=0 ) AS Wallet
-                ON Agent.AgentID = Wallet.AgentID";
+                (SELECT AgentCode, SUM(Credits)-SUM(Debits) AS AvailableBalance FROM _tbl_transactions GROUP BY AgentCode HAVING SUM(Credits)>=0 ) AS Wallet
+                ON Agent.AgentCode = Wallet.AgentCode";
     }
     return json_encode($mysql->select($sql));
 }
@@ -302,19 +302,44 @@ function ConfirmBack(){
 
 
 
-function SaveOrder() {
-    global $mysql;
-    
-    if (!(isset($_POST['Agent']) && $_POST['Agent']>0)) {
-       return json_encode(array("status"=>"failure","message"=>"Please select Agent/Customer")); 
-    }
-    $random = sizeof($mysql->select("select * from _queen_temp_orders")) + 1;
-        $OrderCode ="ORD0000".$random;
+    function SaveOrder() {
+        
+        global $mysql;
+        
+        if (!(isset($_POST['Agent']) && $_POST['Agent']>0)) {
+            return json_encode(array("status"=>"failure","message"=>"Please select Agent/Customer")); 
+        }
         
         $Agentdetails = $mysql->select("select * from _queen_agent where AgentID='".$_POST['Agent']."'"); 
         
-        $isHaveOrder = $mysql->select("select * from _queen_temp_orders where AgentID='".$Agentdetails[0]['AgentID']."' and date(OrderOn)=date('".date("Y-m-d")."')");
+        for ($i = 0; $i < count($_POST['ServiceCode']); $i++) {
+            $id=   $mysql->insert("_tbl_transactions",array("TxnDate"       => $_POST['frmYear']."-".$_POST['frmMonth']."-".$_POST['frmDay'],
+                                                            "TxnOn"         => date("Y-m-d H:i:s"),
+                                                            "AgentCode"       => $Agentdetails[0]['AgentCode'],
+                                                            "StaffID"       => $_SESSION['User']['StaffID'],
+                                                            "ServiceID"     => $_POST['ServiceID'][$i],
+                                                            "ServiceName"   => $_POST['ServiceName'][$i],
+                                                            "Particulars"   => "Service Provide",
+                                                            "ApplicantName" => $_POST['DocDetails'][$i],
+                                                            "Charge"        => $_POST['ServiceCharge'][$i],
+                                                            "Fee"           => $_POST['FeeAmount'][$i],
+                                                            "Commission"    => $_POST['ComAmount'][$i],
+                                                            "Debits"        => $_POST['total'][$i],
+                                                            "Credits"       => "0",
+                                                            "AvailableBalance" => getBalance($Agentdetails[0]['AgentCode'])-($_POST['total'][$i])));
+            
+        }
+        if(sizeof($id)>0){      
+            return json_encode(array("status"=>"success","OrderID"=>md5($id),"OrderCode"=>$OrderCode));
+        } else {
+            return json_encode(array("status"=>"failure","message"=>"Couldn't be save"));
+        }    
         
+        $Agentdetails = $mysql->select("select * from _queen_agent where AgentID='".$_POST['Agent']."'"); 
+        $orderOn = $_POST['frmYear']."-".$_POST['frmMonth']."-".$_POST['frmDay'] ;
+        $random = sizeof($mysql->select("select * from _queen_temp_orders")) + 1;
+        $OrderCode ="ORD0000".$random;
+        $isHaveOrder = $mysql->select("select * from _queen_temp_orders where AgentID='".$Agentdetails[0]['AgentID']."' and date(OrderOn)=date('".date("Y-m-d")."')"); 
         if (sizeof($isHaveOrder)==0) {
               //"OrderOn"            => date("Y-m-d H:i:s"),
               $orderOn = $_POST['frmYear']."-".$_POST['frmMonth']."-".$_POST['frmDay'];

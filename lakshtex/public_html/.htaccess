@@ -1,4 +1,4 @@
-
+RewriteRule ^R(.*)$ register.php?Ref=$1
 
 # php -- BEGIN cPanel-generated handler, do not edit
 # Set the “ea-php72” package as the default “PHP” programming language.

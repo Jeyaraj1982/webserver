@@ -2,6 +2,15 @@
     $Orders = $mysql->select("select * from _tbl_orders where md5(concat('Jeyaraj',OrderID))='".$_GET['Order']."'");
     $items = $mysql->select("select * from _tbl_orders_items where OrderID='".$Orders[0]['OrderID']."'");
     $statuses = $mysql->select("select * from _tbl_orders_status where OrderID='".$Orders[0]['order_id']."' order by StatusID desc");
+    
+    $log = $mysql->select("select * from _tbl_orders_viewlogs where OrderID='".$Orders[0]['OrderID']."' and AdminID='".$_SESSION['User']['AdminID']."' and StatusCode='".$Orders[0]['OrderID']."'");
+if (sizeof($log)==0)  {
+      $mysql->insert("_tbl_orders_viewlogs",array("OrderID"=>$Orders[0]['OrderID'],
+                                                  "ViewedOn"=>date("Y-m-d H:i:s"),
+                                                  "AdminID"=>$_SESSION['User']['AdminID'],
+                                                  "StatusCode"=>$Orders[0]['OrderStatus']));
+}
+  
 ?>    
 <?php $Stts = $mysql->select("select * from _tbl_orders_status where OrderID='".$Orders[0]['order_id']."' order by StatusID Desc");?>
 <div class="main-panel">

@@ -38,8 +38,8 @@
              }
              }
              if($Error==0){                                                       
-                 $target_dir = "/home/japps/public_html/games/uploads/GameImage/";
-                 $target_dir_file = "/home/japps/public_html/games/uploads/GameFile/";
+                 $target_dir = "/home/j2jsoftwares/public_html/domains/pcgames/uploads/GameImage/";
+                 $target_dir_file = "/home/j2jsoftwares/public_html/domains/pcgames/uploads/GameFile/";
                   //  if (!is_dir($target_dir)) {
                     //    mkdir($target_dir, 0777, true);
                     //}
@@ -102,10 +102,10 @@
                             $result = array("image"=>$imageurl[0],"torrent"=>"https://www.gamestorrents.nu/wp-content/uploads/files/".$torrentulr[0],"youtube"=>"https://www.youtube.com/embed/".$youtubeulr[0]);
                             
                             $GameImage = time()."_".basename($imageurl[0]);
-                            file_put_contents("/home/japps/public_html/games/uploads/GameImage/".$GameImage,getHttp($imageurl[0]));
+                            file_put_contents("/home/j2jsoftwares/public_html/domains/pcgames/uploads/GameImage/".$GameImage,getHttp($imageurl[0]));
                             
                             $GameFile = time()."_".basename($torrentulr[0]);
-                            file_put_contents("/home/japps/public_html/games/uploads/GameFile/".$GameFile,getHttp($result['torrent']));
+                            file_put_contents("/home/j2jsoftwares/public_html/domains/pcgames/uploads/GameFile/".$GameFile,getHttp($result['torrent']));
 
                             $youtubeurl = ($_POST['YoutubeUrl']==1) ? $result['youtube'] :  $_POST['YoutubeUrl'];
                         }
@@ -153,7 +153,7 @@
                                                                        "GameUrl"       => $_POST['GameUrl'],
                                                                        "CreatedOn"     => date("Y-m-d H:i:s")));
                           
-                       print_r($mysql->qry);                            
+                        unset($_POST);
                  if (sizeof($id)>0) {     
                    ?>
 

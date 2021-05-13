@@ -18,8 +18,10 @@
                         
                            <?php
                                     if (isset($_POST['DeleteBtn'])) {
+                                               
                                         $mysql->execute("delete from Ads_Others where OtherAdID='".$_POST['OtherAdID']."'");
                                         echo "<div style='color:green'>Deleted Successfully</div>";
+                                      
                                     }
                                 ?>
                                 
@@ -33,7 +35,7 @@
                                             <td class="mytdhead" style="width:110px;">Created On</td>
                                             <td class="mytdhead">&nbsp;</td>  
                                         </tr>
-                                    </thead>  
+                                    </thead>                                                            
                                     <tbody>
                                         <?php 
                                         $data = $mysql->select("select * from Ads_Others order by OtherAdID Desc");
@@ -46,8 +48,8 @@
                                            <td class="mytd">
                                            <form action="" method="post">
                                            <input type="hidden" value="<?php echo $r['OtherAdID'];?>" name="OtherAdID">
-                                            <button type="submit" style="display: none;" class="btn btn-success btn-sm" id="DeleteBtn" name="DeleteBtn">Delete</button>
-                                            <button type="button" onclick="CallConfirmation()" class="btn btn-success btn-sm">Delete</button>
+                                            <button type="submit" style="width:0px;height:0px;padding:0px;" class="btn btn-success btn-sm" id="DeleteBtn_<?php echo $r['OtherAdID'];?>" name="DeleteBtn"></button>
+                                            <button type="button" onclick="CallConfirmation('<?php echo $r['OtherAdID'];?>')" class="btn btn-success btn-sm">Delete</button>
                                            </form>
                                            </td>
                                         </tr>
@@ -70,7 +72,7 @@
   </div>
 </div>
 <script>
-function CallConfirmation(){
+function CallConfirmation(id){
     var text = '<div class="modal-header" style="padding-bottom:5px">'
                     +'<h4 class="heading"><strong>Confirmation</strong> </h4>'
                     +'<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color:white">'
@@ -86,12 +88,12 @@ function CallConfirmation(){
                  +'</div>'
                  +'<div class="modal-footer">'
                     +'<button type="button" class="btn btn-outline-danger" data-dismiss="modal" >Cancel</button>&nbsp;&nbsp;&nbsp;'
-                    +'<button type="button" class="btn btn-danger" onclick="DeleteAd()" >Yes, Confirm</button>'
+                    +'<button type="button" class="btn btn-danger" onclick="DeleteAd(\''+id+'\')" >Yes, Confirm</button>'
                  +'</div>';  
         $('#xconfrimation_text').html(text);                                       
         $('#ConfirmationPopup').modal("show");
 } 
-function DeleteAd(){
-    $( "#DeleteBtn" ).trigger( "click" );
+function DeleteAd(id){
+    $( "#DeleteBtn_"+id ).trigger( "click" );
 }
 </script>

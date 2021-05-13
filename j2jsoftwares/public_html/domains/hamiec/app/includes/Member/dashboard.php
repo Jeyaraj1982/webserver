@@ -111,7 +111,7 @@
                                             <div class="numbers" style="width: 100% !important;">
                                                 <p class="card-category" style="color:#000">Utility Wallet</p>
                                                 <h4 class="card-title" style="font-weight:bold;color:#888">
-                                                    <?php echo number_format($app->getBalance($_SESSION['User']['MemberID']),2);?>
+                                                    <?php echo number_format($application->getBalance($_SESSION['User']['MemberID']),2);?>
                                                 </h4>
                                                 <a href="dashboard.php?action=UtilityWallet/WalletRequest"  style="font-size:12px">Add Fund</a>
                                             </div>
@@ -135,9 +135,9 @@
                                             <div class="numbers">
                                                 <p class="card-category" style="color:#000">DMT Wallet</p>       
                                                 <h4 class="card-title" style="font-weight:bold;color:#888">
-                                                <?php echo number_format($app->getCommissionMemberCredited($_SESSION['User']['MemberID']),2);?>
+                                                <?php echo number_format(0,2);?>
                                                 </h4>
-                                                <a href="" style="font-size:12px">Add Fund</a>
+                                                <a href="dashboard.php?action=UtilityWallet/AutoWalletUpdate" style="font-size:12px">Add Fund</a>
                                             </div>
                                         </div>
                                     </div>

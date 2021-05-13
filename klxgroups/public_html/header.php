@@ -53,7 +53,8 @@
         
           <li class="active"><a href="index.php">Home</a></li>
           <li><a href="about.php">About Us</a></li>
-          <li><a href="travels.php">Klx travels</a></li>
+          <!--<li><a href="travels.php">Klx tours & travels</a></li>-->
+          <li><a href="onlineservice.php">Online Services</a></li>
           <li><a href="softwaredevelopment.php">Klx Software Development</a></li>
           <li><a href="contact.php">Contact</a></li>
         </ul>
@@ -69,5 +70,5 @@
       </div>
       -->
          
-    </div>
+    </div>                                                  
   </header><!-- End Header -->

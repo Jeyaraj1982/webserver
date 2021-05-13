@@ -8,7 +8,7 @@
     <section id="about-us" class="about-us mt-5">
       <div class="container" data-aos="fade-up">
                <div class="section-title">
-          <h2>KLX Travels</h2>
+          <h2>KLX Tours & Travels</h2>
         <!--  <p>Laborum repudiandae omnis voluptatum consequatur mollitia ea est voluptas ut</p>-->
         </div>
                                                   

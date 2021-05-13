@@ -10,7 +10,6 @@ if ($_SESSION['User']['MemberID']==0 || (!isset($_SESSION['User']['MemberID'])))
     echo "<script>location.href='../index.php';</script>";
 }
  
- 
 include_once("header.php");
 include_once("includes/".$_SESSION['User']['UserRole']."/LeftMenu.php");
 if (isset($_GET['action'])) {

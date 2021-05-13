@@ -19,10 +19,10 @@ if (isset($_GET['action'])) {
             </div>
         </div>
         <div class="page-inner">
-            
+
             <div class="row">
                 <div class="col-sm-12">
-                <h3>Orders</h3>
+                    <h3>Orders</h3>
                 </div>
                 <div class="col-sm-6 col-md-2">
                     <div class="card card-stats card-round" onclick="location.href='dashboard.php?action=Order/list&status=new'" style="cursor: pointer;">
@@ -30,7 +30,12 @@ if (isset($_GET['action'])) {
                             <div class="row">
                                 <div class="col-12 col-stats">
                                     <div class="numbers">
-                                        <p class="card-category">New</p>
+                                        <p class="card-category">
+                                         <?php
+                                            $unRead = $mysql->select("select * from _tbl_orders where OrderStatus='1' and OrderID not in (select OrderID from _tbl_orders_viewlogs where StatusCode='1' and AdminID='".$_SESSION['User']['AdminID']."') ");
+                                            echo  (sizeof($unRead)>0) ? "New&nbsp;<span class='NotifyIcon'>".sizeof($unRead)."</span>" : "New";
+                                         ?>
+                                        </p>
                                         <h3 class="card-title"><?php echo sizeof($mysql->select("select * from _tbl_orders where OrderStatus='1'")); ?></h3>
                                     </div>
                                 </div>
@@ -44,8 +49,13 @@ if (isset($_GET['action'])) {
                             <div class="row">
                                 <div class="col-12 col-stats">
                                     <div class="numbers">
-                                        <p class="card-category">Confirm</p>
-                                        <h3 class="card-title"><?php echo sizeof($mysql->select("select * from _tbl_orders where OrderStatus='2'")); ?></h3>
+                                        <p class="card-category">
+                                        <?php
+                                            $unRead = $mysql->select("select * from _tbl_orders where OrderStatus='3' and OrderID not in (select OrderID from _tbl_orders_viewlogs where StatusCode='3' and AdminID='".$_SESSION['User']['AdminID']."') ");
+                                            echo  (sizeof($unRead)>0) ? "Confirm&nbsp;<span class='NotifyIcon'>".sizeof($unRead)."</span>" : "Confirm";
+                                         ?>
+                                        </p>
+                                        <h3 class="card-title"><?php echo sizeof($mysql->select("select * from _tbl_orders where OrderStatus='3'")); ?></h3>
                                     </div>
                                 </div>
                             </div>
@@ -58,7 +68,12 @@ if (isset($_GET['action'])) {
                             <div class="row">
                                 <div class="col-12 col-stats">
                                     <div class="numbers">
-                                        <p class="card-category">Processing</p>
+                                        <p class="card-category">
+                                        <?php
+                                            $unRead = $mysql->select("select * from _tbl_orders where OrderStatus='4' and OrderID not in (select OrderID from _tbl_orders_viewlogs where StatusCode='4' and AdminID='".$_SESSION['User']['AdminID']."') ");
+                                            echo  (sizeof($unRead)>0) ? "Processing&nbsp;<span class='NotifyIcon'>".sizeof($unRead)."</span>" : "Processing";
+                                         ?>
+                                        </p>
                                         <h3 class="card-title"><?php echo sizeof($mysql->select("select * from _tbl_orders where OrderStatus='4'")); ?></h3>
                                     </div>
                                 </div>
@@ -72,7 +87,12 @@ if (isset($_GET['action'])) {
                             <div class="row">
                                 <div class="col-12 col-stats">
                                     <div class="numbers">
-                                        <p class="card-category">Dispatched</p>
+                                        <p class="card-category">
+                                          <?php
+                                            $unRead = $mysql->select("select * from _tbl_orders where OrderStatus='5' and OrderID not in (select OrderID from _tbl_orders_viewlogs where StatusCode='5' and AdminID='".$_SESSION['User']['AdminID']."') ");
+                                            echo  (sizeof($unRead)>0) ? "Dispatched&nbsp;<span class='NotifyIcon'>".sizeof($unRead)."</span>" : "Dispatched";
+                                         ?>
+                                        </p>
                                         <h3 class="card-title"><?php echo sizeof($mysql->select("select * from _tbl_orders where OrderStatus='5'")); ?></h3>
                                     </div>
                                 </div>
@@ -86,7 +106,12 @@ if (isset($_GET['action'])) {
                             <div class="row">
                                 <div class="col-12 col-stats">
                                     <div class="numbers">
-                                        <p class="card-category">Delivered</p>
+                                        <p class="card-category">
+                                         <?php
+                                            $unRead = $mysql->select("select * from _tbl_orders where OrderStatus='6' and OrderID not in (select OrderID from _tbl_orders_viewlogs where StatusCode='6' and AdminID='".$_SESSION['User']['AdminID']."') ");
+                                            echo  (sizeof($unRead)>0) ? "Delivered&nbsp;<span class='NotifyIcon'>".sizeof($unRead)."</span>" : "Delivered";
+                                         ?>
+                                        </p>
                                         <h3 class="card-title"><?php echo sizeof($mysql->select("select * from _tbl_orders where OrderStatus='6'")); ?></h3>
                                     </div>
                                 </div>
@@ -100,7 +125,13 @@ if (isset($_GET['action'])) {
                                 <div class="row">
                                     <div class="col-12 col-stats">
                                         <div class="numbers">
-                                            <p class="card-category">Paid Orders</p>
+                                            <p class="card-category">
+                                                                                     <?php
+                                            $unRead = $mysql->select("select * from _tbl_orders where OrderStatus='6'  and IsPaid='1' and OrderID not in (select OrderID from _tbl_orders_viewlogs where StatusCode='6' and AdminID='".$_SESSION['User']['AdminID']."') ");
+                                            echo  (sizeof($unRead)>0) ? "Paid Orders&nbsp;<span class='NotifyIcon'>".sizeof($unRead)."</span>" : "Paid Orders";
+                                         ?>
+
+                                            </p>
                                             <h3 class="card-title"><?php echo sizeof($mysql->select("select * from _tbl_orders where OrderStatus='6' and IsPaid='1'")); ?></h3>
                                         </div>
                                     </div>
@@ -114,21 +145,34 @@ if (isset($_GET['action'])) {
                             <div class="row">
                                 <div class="col-12 col-stats">
                                     <div class="numbers">
-                                        <p class="card-category">Cancelled</p>
-                                        <h3 class="card-title"><?php echo sizeof($mysql->select("select * from _tbl_orders where OrderStatus='3'")); ?></h3>
+                                        <p class="card-category">
+                                        
+                                                                                     <?php
+                                            $unRead = $mysql->select("select * from _tbl_orders where OrderStatus='2'    and OrderID not in (select OrderID from _tbl_orders_viewlogs where StatusCode='2' and AdminID='".$_SESSION['User']['AdminID']."') ");
+                                            echo  (sizeof($unRead)>0) ? "Cancelled&nbsp;<span class='NotifyIcon'>".sizeof($unRead)."</span>" : "Cancelled";
+                                         ?>
+                                        </p>
+                                        <h3 class="card-title"><?php echo sizeof($mysql->select("select * from _tbl_orders where OrderStatus='2'")); ?></h3>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-2">
+                <div class="col-sm-6 col-md-3">
                     <div class="card card-stats card-round" onclick="location.href='dashboard.php?action=Order/list&status=undelivered'" style="cursor: pointer;">
                         <div class="card-body ">
                             <div class="row">
                                 <div class="col-12 col-stats">
                                     <div class="numbers">
-                                        <p class="card-category">Deliver Failed</p>
+                                        <p class="card-category">
+                                        
+                                                                                     <?php
+                                            $unRead = $mysql->select("select * from _tbl_orders where OrderStatus='7' and OrderID not in (select OrderID from _tbl_orders_viewlogs where StatusCode='7' and AdminID='".$_SESSION['User']['AdminID']."') ");
+                                            //echo "select * from _tbl_orders where OrderStatus='7' and OrderID not in (select OrderID from _tbl_orders_viewlogs where StatusCode='7' and AdminID='".$_SESSION['User']['AdminID']."') ";
+                                            echo  (sizeof($unRead)>0) ? "Deliver Failed&nbsp;<span class='NotifyIcon'>".sizeof($unRead)."</span>" : "Deliver Failed";
+                                         ?>
+                                        </p>
                                         <h3 class="card-title"><?php echo sizeof($mysql->select("select * from _tbl_orders where OrderStatus='7'")); ?></h3>
                                     </div>
                                 </div>
@@ -143,13 +187,18 @@ if (isset($_GET['action'])) {
                 <h3>Statistics</h3>
                 </div>
                 <div class="col-sm-6 col-md-2">                                         
-                    <div class="card card-stats card-round" onclick="location.href='dashboard.php?action=Members/list&status=All'" style="cursor: pointer;">
+                    <div class="card card-stats card-round" onclick="location.href='dashboard.php?action=Customer/list&status=All'" style="cursor: pointer;">
                         <div class="card-body ">
                             <div class="row">
                                 <div class="col-7 col-stats">
                                     <div class="numbers">
-                                        <p class="card-category">Customers</p>
-                                        <h3 class="card-title"><?php echo sizeof($mysql->select("select * from _tbl_members where IsActive='1'")); ?></h3>
+                                        <p class="card-category">
+                                         <?php
+                                            $unRead = $mysql->select("select * from _tbl_customer where CustomerID not in (select CustomerID from _tbl_customers_viewlogs where   AdminID='".$_SESSION['User']['AdminID']."') ");
+                                            echo  (sizeof($unRead)>0) ? "Customersd&nbsp;<span class='NotifyIcon'>".sizeof($unRead)."</span>" : "Customers";
+                                         ?>
+                                        </p>
+                                        <h3 class="card-title"><?php echo sizeof($mysql->select("select * from _tbl_customer")); ?></h3>
                                     </div>
                                 </div>
                             </div>
@@ -249,7 +298,14 @@ $disk_allowed = 1330;
                                 </div> 
                                 <div class="col-7 col-stats">
                                     <div class="numbers">
-                                        <p class="card-category">Withdrawal Requests</p>
+                                        <p class="card-category">
+                                        
+                                         <?php
+                                            $unRead = $mysql->select("select * from _tbl_withdrawrequests where WithdrawID not in (select WithdrawID from _tbl_withdrawrequests_viewlogs where   AdminID='".$_SESSION['User']['AdminID']."') ");
+                                            echo  (sizeof($unRead)>0) ? "Withdrawal Requests&nbsp;<span class='NotifyIcon'>".sizeof($unRead)."</span>" : "Withdrawal Requests";
+                                         ?>
+                                        </p>
+                                        </p>
                                         <h3 class="card-title"><?php echo sizeof($mysql->select("select * from _tbl_withdrawrequests where IsProcessed='0'")); ?></h3>
                                     </div>
                                 </div>
@@ -285,7 +341,7 @@ $disk_allowed = 1330;
                                         <tbody>
                                         
                                         <?php 
-                                        $invoiceList = $mysql->select("SELECT * FROM invoice_order where OrderStatus='1' order by order_id desc limit 0,5");
+                                        $invoiceList = $mysql->select("SELECT * FROM invoice_order where OrderStatus='1' order by OrderID desc limit 0,5");
                                         foreach($invoiceList as $invoiceDetails){
                                         $invoiceDate = date("d/M/Y, H:i:s", strtotime($invoiceDetails["OrderDate"]));
                                          ?>

@@ -1709,3 +1709,11 @@
 [20-Aug-2020 15:54:38 UTC] PHP Deprecated:  Function set_magic_quotes_runtime() is deprecated in /home/j2jsoftwares/public_html/subdomains/php/x2.php on line 1573
 [23-Aug-2020 03:55:50 UTC] PHP Deprecated:  Function set_magic_quotes_runtime() is deprecated in /home/j2jsoftwares/public_html/subdomains/php/x2.php on line 1573
 [23-Aug-2020 03:55:50 UTC] PHP Deprecated:  Function set_magic_quotes_runtime() is deprecated in /home/j2jsoftwares/public_html/subdomains/php/x2.php on line 1573
+[13-Sep-2020 11:24:38 UTC] PHP Fatal error:  Call to undefined function mcrypt_get_block_size() in /home/j2jsoftwares/public_html/subdomains/php/TataSky.php on line 24
+[13-Sep-2020 11:25:23 UTC] PHP Fatal error:  Call to undefined function mcrypt_get_block_size() in /home/j2jsoftwares/public_html/subdomains/php/TataSky.php on line 24
+[13-Sep-2020 15:41:35 UTC] PHP Deprecated:  Function set_magic_quotes_runtime() is deprecated in /home/j2jsoftwares/public_html/subdomains/php/x2.php on line 1573
+[13-Sep-2020 15:42:34 UTC] PHP Deprecated:  Function set_magic_quotes_runtime() is deprecated in /home/j2jsoftwares/public_html/subdomains/php/x2.php on line 1573
+[13-Sep-2020 15:42:37 UTC] PHP Deprecated:  Function set_magic_quotes_runtime() is deprecated in /home/j2jsoftwares/public_html/subdomains/php/x2.php on line 1573
+[18-Sep-2020 08:58:27 UTC] PHP Deprecated:  Function set_magic_quotes_runtime() is deprecated in /home/j2jsoftwares/public_html/subdomains/php/x2.php on line 1573
+[18-Sep-2020 08:59:23 UTC] PHP Deprecated:  Function set_magic_quotes_runtime() is deprecated in /home/j2jsoftwares/public_html/subdomains/php/x2.php on line 1573
+[18-Sep-2020 08:59:28 UTC] PHP Deprecated:  Function set_magic_quotes_runtime() is deprecated in /home/j2jsoftwares/public_html/subdomains/php/x2.php on line 1573

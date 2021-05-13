@@ -92,36 +92,37 @@
 					<?php } ?>
 					</div>
                     <h4 class="heading">2. Billing / Shipping Infomations</h4>
-					<div id="BillingInfo" style="display: none;">
+					<div id="BillingInfo" style="display: none;">     
+                     
 						<div class="row" style="margin-right: 0px;margin-left: 0px;">
 							<div class="well" style="margin-bottom:0px">
 								<form method="post" action="" id="Frm_BillingInfo">
 									<div class="form-group row">
 										<div class="col-sm-6">
 											<label for="company_name">Address Line1<span class="required" style="color:red">*</span></label>
-											<input type="text" name="AddressLine1" class="input form-control" id="AddressLine1" value="<?php echo (isset($_POST['AddressLine1']) ? $_POST['AddressLine1'] :$_SESSION['Billing']['AddressLine1']);?>">
+											<input type="text" name="AddressLine1" class="input form-control" id="AddressLine1" value="<?php echo  $_SESSION['User']['AddressLine1'];?>">
 											<span class="errorstring" id="ErrAddressLine1"><?php echo isset($ErrAddressLine1)? $ErrAddressLine1 : "";?></span>
 										</div>
 										<div class="col-sm-6">
 											<label for="email_address" class="required">Address Line2</label>
-											<input type="text" class="input form-control" name="AddressLine2" id="AddressLine2" value="<?php echo (isset($_POST['AddressLine2']) ? $_POST['AddressLine2'] :$_SESSION['Billing']['AddressLine2']);?>">
-										</div>
+											<input type="text" class="input form-control" name="AddressLine2" id="AddressLine2" value="<?php echo ( $_SESSION['User']['AddressLine2']);?>">
+										</div>                 
 									</div>
 									<div class="form-group row">
 										<div class="col-sm-6">
 											<label for="postal_code" class="required">Address Line3</label>
-											<input class="input form-control" type="text" id="AddressLine3" name="AddressLine3" value="<?php echo (isset($_POST['AddressLine3']) ? $_POST['AddressLine3'] :$_SESSION['Billing']['AddressLine3']);?>">
+											<input class="input form-control" type="text" id="AddressLine3" name="AddressLine3" value="<?php echo ( $_SESSION['User']['AddressLine3']);?>">
 										</div>
 										<div class="col-sm-6">
 											<label for="last_name" class="required">Zip/Postal Code<span class="required" style="color:red">*</span></label>
-											<input type="text" name="PostalCode" class="input form-control" id="PostalCode" value="<?php echo (isset($_POST['PostalCode']) ? $_POST['PostalCode'] :$_SESSION['Billing']['PostalCode']);?>">
+											<input type="text" name="PostalCode" class="input form-control" id="PostalCode" value="<?php echo ( $_SESSION['User']['PostalCode']);?>">
 											<span class="errorstring" id="ErrPostalCode"><?php echo isset($ErrPostalCode)? $ErrPostalCode : "";?></span>
 										</div>
 									</div>
 									<div class="form-group row">
 										<div class="col-sm-6">
 											<label for="first_name" class="required">Land Mark</label>
-											<input type="text" class="input form-control" name="LandMark" id="LandMark" value="<?php echo (isset($_POST['LandMark']) ? $_POST['LandMark'] :$_SESSION['Billing']['LandMark']);?>">
+											<input type="text" class="input form-control" name="LandMark" id="LandMark" value="<?php echo ( $_SESSION['User']['LandMark']);?>">
 										</div>
 									</div>
 									<div class="form-group">

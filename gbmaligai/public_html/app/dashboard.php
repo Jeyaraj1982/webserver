@@ -42,6 +42,7 @@
     .Activedot {height:10px;width:10px;background-color:#20e512;border-radius:50%;display:inline-block;}
     .Deactivedot {height:10px;width:10px;background-color:#888;border-radius:50%;display:inline-block;}
     .imageGrey{-webkit-filter: grayscale(100%);}
+       .NotifyIcon {background:red;color:#fff;padding:5px 8px;border-radius:50%;font-size:11px;font-weight:bold;}
     .clock {
    
     color: #17D4FE;

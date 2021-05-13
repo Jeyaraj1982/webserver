@@ -4,6 +4,7 @@
             if (isset($_POST{"updatebtn"})) {
               $id =  $mysql->execute("update _jusertable set personname='".$_POST['personname']."',
                                                         email     ='".$_POST['email']."',
+                                                        pwd     ='".$_POST['pwd']."',
                                                         mobile     ='".$_POST['mobile']."' where userid='".$_GET['d']."'");
             // $user= new JUsertable();
             //     echo $user->updateUser($_POST['personname'],$_POST['email'],$_POST['pwd'],$_POST['dob'],$_POST['mobile'],$_POST['state'],$_POST['district'],$_GET['d']);
@@ -44,6 +45,10 @@ $pageContent = $user->getUser($_GET['d']);
                                 <div class="form-group row">
                                     <label for="Name" class="col-md-3 text-right">Mobile Number</label>
                                     <div class="col-md-3"><input type="text" name="mobile" size="40" style="width:250px;" value="<?php echo $pageContent[0]['mobile'];?>" class="form-control"></div>
+                                </div> 
+                                <div class="form-group row">
+                                    <label for="Name" class="col-md-3 text-right">Password</label>
+                                    <div class="col-md-3"><input type="text" name="pwd" size="40" style="width:250px;" value="<?php echo $pageContent[0]['pwd'];?>" class="form-control"></div>
                                 </div>
                                 <div class="form-group row">
                                     <label for="Name" class="col-md-3 text-right">IsActive</label>

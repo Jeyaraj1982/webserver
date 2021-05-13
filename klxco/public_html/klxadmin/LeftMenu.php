@@ -230,6 +230,20 @@
                         </ul>
                     </div>
                 </li>
+                
+                 <li class="nav-item">   
+                    <a data-toggle="collapse" href="#othersettings">
+                        <i class="fas fa-users"></i>
+                        <p>Other Settings</p>
+                        <span class="caret"></span>
+                    </a>                                                                         
+                    <div class="collapse" id="othersettings">
+                        <ul class="nav nav-collapse">
+                            <li><a href="dashboard.php?action=othersettings/counter"><span class="sub-item">Counter</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                
               <!--  <li class="nav-item">   
                     <a data-toggle="collapse" href="#UserManage">
                         <i class="fas fa-users"></i>

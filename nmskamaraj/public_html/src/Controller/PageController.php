@@ -278,6 +278,25 @@ class PageController extends BaseController
         $this->tags->og('description', $this->params['editsecondyear']['description']);
         $this->render('editsecondyear');
     }
+    
+     public function actionmandatorydisclosure()
+    {
+        $this->tags->title($this->params['editsecondyear']['title']);
+        $this->tags->meta('keywords', $this->params['editsecondyear']['keywords']);
+        $this->tags->meta('description', $this->params['editsecondyear']['description']);
+        $this->tags->og('title', $this->params['editsecondyear']['title']);
+        $this->tags->og('description', $this->params['editsecondyear']['description']);
+        $this->render('mandatorydisclosure');
+    }
+     public function actionRules()
+    {
+        $this->tags->title($this->params['editsecondyear']['title']);
+        $this->tags->meta('keywords', $this->params['editsecondyear']['keywords']);
+        $this->tags->meta('description', $this->params['editsecondyear']['description']);
+        $this->tags->og('title', $this->params['editsecondyear']['title']);
+        $this->tags->og('description', $this->params['editsecondyear']['description']);
+        $this->render('rules');
+    }
 
     public function actionContactSubmit()
     {

@@ -64,6 +64,25 @@
         </div>
 
         <div class="row">
+        
+         <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-blue" style="padding:20px 20px 20px 20px">
+                <img src="assets/klx_travels.jpg" style="height:200px;width:100%">
+                
+              <h4><a href="taxi.php">KLX Travels</a></h4>
+              <p>
+               <a href="flight.php"><img src="assets/_flight.png" style="height:80px;width:80px;border:1px solid #ccc;margin-bottom:10px;margin-right:10px"></a>
+               <a href="visa.php"><img src="assets/_visa.png" style="height:80px;width:80px;border:1px solid #ccc;margin-bottom:10px;margin-right:10px"></a>
+               <a href="travels.php"><img src="assets/_holidays.png" style="height:80px;width:80px;border:1px solid #ccc;margin-bottom:10px"></a>
+               <a href="curise.php"><img src="assets/_curise.png" style="height:80px;width:80px;border:1px solid #ccc;margin-bottom:10px;margin-right:10px"></a>
+               <a href="studyabroad.php"><img src="assets/_studyabroad.png" style="height:80px;width:80px;border:1px solid #ccc;margin-bottom:10px;margin-right:10px"></a>
+              
+              </p>
+              
+            </div>                                            
+          </div>
+
+          
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-blue" style="padding:20px 20px 20px 20px">
                 <img src="assets/car.jpg" style="height:200px;width:100%">
@@ -83,7 +102,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300" style="margin-top:25px !important;">
             <div class="icon-box iconbox-pink" style="padding:20px 20px 20px 20px">
              <img src="assets/foodimage.jpg" style="height:200px;width:100%">
               <h4><a href="food.php">Food Order</a></h4>
@@ -93,6 +112,12 @@
           </div>
 
            
+             <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300" style="margin-top:25px !important;">
+            <div class="icon-box iconbox-pink" style="padding:20px 20px 20px 20px;width:100%">
+             <img src="assets/freead.jpeg" style="height:295px;width:100%">
+              <p style="padding:30px;padding-bottom:0px"><a href="https://www.klx.co.in" class="btn btn-info">&nbsp;&nbsp;Post Free Ad&nbsp;&nbsp;</a></p>
+            </div>
+          </div>
 
            
 

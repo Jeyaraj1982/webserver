@@ -398,13 +398,32 @@ return $resp;
  function WalletRequest() {
     global $mysql,$app;
     
+    $result = array();
+    $duplicate_reference = $mysql->select("select * from _tbl_wallet_request where Remarks='".trim($_POST['Remarks']."'"));
+    
+    if (sizeof($duplicate_reference)>0) {
+        $result['status']="failure";
+        $result['message']="Transaction id already exits."; 
+        sleep(10);
+        return json_encode($result);
+    }
+    $current_date = strtotime(date("Y-m-d"));
+    $request_date = strtotime($_POST['TxnDate']);
+    if (!($request_date<=$current_date)) {
+        $result['status']="failure";
+        $result['message']="Payment Date is post date."; 
+        sleep(10);
+        return json_encode($result);
+    }
+   
     $id = $mysql->insert("_tbl_wallet_request",array("MemberID"       => $_SESSION['User']['MemberID'],
-                                                         "TransferTo"     =>$_POST['TransferTo'],
-                                                         "Amount"         =>$_POST['Amount'],
-                                                         "TransferMode"   =>$_POST['Mode'],
-                                                         "TxnDate"        =>$_POST['TxnDate'],
-                                                         "Remarks"        =>$_POST['Remarks']));
-    $mem = $mysql->select("select * from _tbl_Members where MemberID='".$_SESSION['User']['MemberID']."'");
+                                                     "TransferTo"     => "1",
+                                                     "Amount"         =>$_POST['Amount'],
+                                                     "TransferMode"   =>$_POST['Mode'],
+                                                     "TxnDate"        =>$_POST['TxnDate'],
+                                                     "Remarks"        =>trim($_POST['Remarks'])));
+                                                     
+    $mem = $mysql->select("select * from _tbl_members where MemberID='".$_SESSION['User']['MemberID']."'");
     if(sizeof($id)>0){
         $result = array();
         $result['status']="Success";
@@ -415,20 +434,22 @@ return $resp;
            $message = "Dear Retailer, Your account wallet request has been sent";
        }
         
-          MobileSMS::sendSMS($mem[0]['MobileNumber'],$message,$id);  
-          $mparam['MailTo']=$mem[0]['EmailID'];
-          $mparam['MemberID']=$id;
-          $mparam['Subject']="Wallet Request Sent";
-          $mparam['Message']=$message;
-          MailController::Send($mparam,$mailError);
+         // MobileSMS::sendSMS($mem[0]['MobileNumber'],$message,$id);  
+         // $mparam['MailTo']=$mem[0]['EmailID'];
+         /// $mparam['MemberID']=$id;
+         // $mparam['Subject']="Wallet Request Sent";
+         // $mparam['Message']=$message;
+         // MailController::Send($mparam,$mailError);
          
-        return json_encode($result);
+        
     } else {
        $result = array();
         $result['status']="failure";
         $result['message']="Wallet Request Sent failed.";  
-        return json_encode($result); 
+        
     }
+     sleep(20);
+    return json_encode($result);
 }
 
  function ApproveMemberWalletRequest() {
@@ -1321,6 +1342,5 @@ function getTNPolic() {
     $data = $mysql->select("select * from _tbl_utility_tnpolice where TxnID='".$_GET['txn']."'");
     return json_encode($data[0]);
 }
-
 echo $_GET['action']();
 ?> 

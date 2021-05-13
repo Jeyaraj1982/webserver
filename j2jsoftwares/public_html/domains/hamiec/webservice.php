@@ -77,8 +77,13 @@
                                                                        "CountryName"   => $clientinfo['country'],
                                                                        "BrowserName"   => $clientinfo['UserAgent'],
                                                                        "APIResponse"   => json_encode($clientinfo),
-                                                                       "LoginPassword" => $_POST['Password']));  
-                    $return['url']= SITE_URL."/app/dashboard.php";
+                                                                      "LoginPassword" => $_POST['Password']));  
+                    if ($_GET['f']=="m") {
+                    $return['url']= SITE_URL."/dashboard.php";    
+                    } else {
+                    $return['url']= SITE_URL."/app/dashboard.php";    
+                    }
+                    
                     return returnSuccess($return);
                 } else {
                     return returnError("Account Deactivated");

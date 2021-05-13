@@ -41,6 +41,8 @@ include_once("app/controller/EmailController.php");
 include_once("app/controller/DatabaseController.php");
 $mysql = new MySqldatabase(DBSERVER,DBUSER,DBPASSWORD,DBNAME);
 
+include_once("app/controller/class.TelegramMessageController.php");
+
 if (isset($_SESSION['User']) && $_SESSION['User']['Role']=="User") {
     define("UserRole","user");
 }

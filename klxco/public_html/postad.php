@@ -109,7 +109,7 @@ $(document).ready(function(){
         $("#uploadimage1").blur(function(){     
            $('#Errimage1').html("");   
             var im = $('#uploadimage1').val().trim();
-                if (im.length==0) {
+                if (im.length<5) {
                     $('#Errimage1').html("Please Upload Image");
                 }
         });
@@ -702,9 +702,6 @@ function dovalidation() {
         <input type="hidden" name="uploadimage4" id="uploadimage4">
         <input type="hidden" name="uploadimage5" id="uploadimage5">
         <input type="hidden" name="uploadimage6" id="uploadimage6">
-        
-                                                                          
-         
                             
         <div class="main-panel" style="width: 100%;height:auto !important">
             <div class="container" style="margin-top:0px">
@@ -932,10 +929,31 @@ function fupload() {
     $('#files').trigger('click');
 }
 
+function showErrorMessage(ErrorMessage) {
+        var txt = ' <div class="form-group row">'
+                    +'<div class="col-sm-12" style="text-align:center">'
+                        +'Error'
+                    +'</div>'
+               +'</div>'
+               +'<div class="form-group row">'
+                    +'<div class="col-sm-12" style="text-align:left">'
+                    + ErrorMessage + 
+                    +'</div>'
+                +'</div>'
+                +'<div style="padding:20px;text-align:center">'
+                    +'<button type="button" class="btn btn-outline-danger" data-dismiss="modal" >Cancel</button>&nbsp;&nbsp;&nbsp;'
+                    
+                 +'</div> ';  
+        $('#xconfrimation_text').html(txt);                                       
+        $('#ConfirmationPopup').modal("show");
+}
 function CallConfirmation(){
-    if ($('#uploadimage1').val()=="") {
-            $('#Errimage1').html("Please Upload First Image");
-       }
+ 
+          var im = $('#uploadimage1').val().trim();
+                if (im.length<5) {
+                    $('#Errimage1').html("Please Upload Image");   
+                    return false;
+                }
       
     var txt = ' <div class="form-group row">'
                     +'<div class="col-sm-12" style="text-align:center">'
@@ -955,8 +973,15 @@ function CallConfirmation(){
         $('#ConfirmationPopup').modal("show");
 }
 
- function doPostAd() {
-   
+    function doPostAd() {
+        
+        var im = $('#uploadimage1').val().trim();
+        if (im.length<5) {
+            //$('#Errimage1').html("Please Upload First Image");
+            showErrorMessage("Please Upload First Image");
+            return false;
+        }
+       
         var param = $("#adpostfrom").serialize();
         $("#confrimation_text").html(loading);
         
@@ -974,8 +999,7 @@ function CallConfirmation(){
             }
             $("#confrimation_text").html(html);
         });
-     
-}
+    }
 </script>
 <string name="image_chooser" style="display:none">File Chooser</string>
 <script>
@@ -1103,83 +1127,67 @@ function CallConfirmation(){
                    contentType: false,                                            
                    processData: false,
                    success: function (response) {
-                   $('#files').val("");
-                   
+                       $('#files').val("");
                        
-                   for(var index = 0; index < response.length; index++) {
-                       if (response[index]['error']==0) {
-                        var src = response[index]['filename'];
-                            //$('#preview').append('<img src="https://klx.co.in/testupload/'+src+'" width="200px;" height="200px">');
-                            
-                            //$('#uploadimage'+(uploaded_count+1)).val(src);
-                            //$('#img'+uploaded_count).html("<img src='https://www.klx.co.in/"+img_path+"/"+src+"' width='100px;' height='100px'><br><span onclick='image_close("+(uploaded_count+1)+")' class='btn btn-danger btn-sm' style='padding: 0px 10px;font-size: 10px;'>Delete</span>");
-                            
-                            if (up[index]>0) {
-                                $('#uploadimage'+up[index]).val(src);
-                                $('#img'+up[index]).html("<img src='https://www.klx.co.in/"+img_path+"/"+src+"' width='100px;' height='100px'><br><span onclick='image_close("+up[index]+")' class='btn btn-danger btn-sm' style='padding: 0px 10px;font-size: 10px;'>Delete</span>");
-                            }
-                            //$('#img'+uploaded_count).html("<img src='https://www.klx.co.in/"+img_path+"/"+src+"' width='100px;' height='100px'>");
-                            uploaded_count++;       
-                       } else {
-                            $('#uploadimage'+(uploaded_count+1)).val("");
-                            $('#img'+uploaded_count).html("<div style='font-size:10px;color:red;text-align:center'>"+response[index]['message']+"</div>");
-                            $('#uploadimage'+up[index]).val();
-                            uploaded_count++;  
-                       }
-                    }                                        
-                    
-                   
-                }
+                       for (var index = 0; index < response.length; index++) {
+                           if (response[index]['error']==0) {
+                               var src = response[index]['filename'];
+                               if (up[index]>0) {
+                                   $('#uploadimage'+up[index]).val(src);
+                                   $('#img'+up[index]).html("<img src='https://www.klx.co.in/"+img_path+"/"+src+"' width='100px;' height='100px'><br><span onclick='image_close("+up[index]+")' class='btn btn-danger btn-sm' style='padding: 0px 10px;font-size: 10px;'>Delete</span>");
+                               }
+                               uploaded_count++;       
+                           } else {
+                               $('#uploadimage'+(uploaded_count+1)).val("");
+                               $('#img'+uploaded_count).html("<div style='font-size:10px;color:red;text-align:center'>"+response[index]['message']+"</div>");
+                               $('#uploadimage'+up[index]).val();
+                               uploaded_count++;  
+                           }
+                       }                                        
+                   }
             });
-        });
-    });                        
+       });
+   });                        
     
-    
-   
-    
-    </script>          
-    <script type="text/javascript">
     <?php if($slsubcategory[0]['categid']!="5") {?>
-         var amount = document.querySelector('#amount'), preAmount = amount.value;
-        amount.addEventListener('input', function(){
-            if(isNaN(Number(amount.value))){
-                amount.value = preAmount;
-                return;
-            }
-
-            var numberAfterDecimal = amount.value.split(".")[1];
-            if(numberAfterDecimal && numberAfterDecimal.length > 3){
-                amount.value = Number(amount.value).toFixed(3);;
-            }
-            preAmount = amount.value;
-        })
+    var amount = document.querySelector('#amount'), preAmount = amount.value;
+    amount.addEventListener('input', function(){
+        if(isNaN(Number(amount.value))){
+            amount.value = preAmount;
+            return;
+        }
+        
+        var numberAfterDecimal = amount.value.split(".")[1];
+        if(numberAfterDecimal && numberAfterDecimal.length > 3){
+            amount.value = Number(amount.value).toFixed(3);;
+        }
+        preAmount = amount.value;
+    })
     <?php } ?>
+    
     <?php if($_GET['subc']=="60" || $_GET['subc']=="61"|| $_GET['subc']=="62" || $_GET['subc']=="65" || $_GET['subc']=="66" ) { ?>
-        var km = document.querySelector('#KMDriven'), preAmount = km.value;
-        km.addEventListener('input', function(){
-            if(isNaN(Number(km.value))){
-                km.value = preAmount;
-                return;
-            }
+    var km = document.querySelector('#KMDriven'), preAmount = km.value;
+    km.addEventListener('input', function(){
+        if(isNaN(Number(km.value))){
+            km.value = preAmount;
+            return;
+        }
+        
+        var numberAfterDecimal = km.value.split(".")[1];
+        if(numberAfterDecimal && numberAfterDecimal.length > 3){
+            km.value = Number(km.value).toFixed(3);;
+        }
+        preAmount = km.value;
+    })
+    <?php } ?> 
 
-            var numberAfterDecimal = km.value.split(".")[1];
-            if(numberAfterDecimal && numberAfterDecimal.length > 3){
-                km.value = Number(km.value).toFixed(3);;
-            }
-            preAmount = km.value;
-        })
-    <?php }?> 
-    
-    
-       function image_close(id) {
+    function image_close(id) {
         $('#uploadimage'+id).val("");
         $('#div_'+id).html('<img onclick="fupload()" id="src_image'+id+'" src="https://www.klx.co.in/assets/add-image.png" style="width: 64px;margin-top: 20px;opacity: 0.3;cursor: pointer;">');  
         $('#div_'+id).css({"border":"1px solid #ccc"});
-          $('#uploadimage'+id).val("");
-        //$('#Errimage1').html("Please Upload Image");
+         $('#uploadimage'+id).val("");
+
     }
-       
-    </script>
-   
+</script>
 <?php // }  
 include_once("footer.php"); ?>

@@ -154,7 +154,9 @@
                                 </ul>
                             </div>
                         </div>
+                        
                     </div>
+                  
                 </div>
             </header>
 
@@ -357,8 +359,10 @@ jQuery(window).scroll(function() {headermenu();});
         </ul>
       </div>
     </div>
+   
   </div>
-</div>
+   
+</div>  
 </div>
   
 <!--<div id="page-preloader" class="visible">

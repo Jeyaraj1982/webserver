@@ -425,7 +425,7 @@
 </ul>
 </div>
 <div class="col-md-12 footercopy">
-<a href="https://doctordatabaseusa.com/" target=”_blank” style="color:#ff6f00;">United States Doctor Database
+<a href="https://doctordatabaseusa.com/" target=â€_blankâ€ style="color:#ff6f00;">United States Doctor Database
 </a>
 <a style="color:white;"> |
 </a>

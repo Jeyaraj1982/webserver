@@ -187,15 +187,15 @@ input:focus{
                                                 </div>
                                                 <div class="col-sm-4">
                                                     <select name="frmMonth" class="form-control"> 
-                                                        <option value="1">Jan</option>
-                                                        <option value="2">Feb</option>
-                                                        <option value="3">Mar</option>
-                                                        <option value="4">Apr</option>
-                                                        <option value="5">May</option>
-                                                        <option value="6">Jun</option>
-                                                        <option value="7">Jly</option>
-                                                        <option value="8">Aug</option>
-                                                        <option value="9">Sep</option>
+                                                        <option value="01">Jan</option>
+                                                        <option value="02">Feb</option>
+                                                        <option value="03">Mar</option>
+                                                        <option value="04">Apr</option>
+                                                        <option value="05">May</option>
+                                                        <option value="06">Jun</option>
+                                                        <option value="07">Jly</option>
+                                                        <option value="08">Aug</option>
+                                                        <option value="09">Sep</option>
                                                         <option value="10">Oct</option>
                                                         <option value="11">Nov</option>
                                                         <option value="12">Dec</option>
@@ -216,10 +216,12 @@ input:focus{
                                             <table class="table table-bordered table-hover" id="invoiceItem">
                                                 <tr>
                                                    
-                                                    <th width="38%">Service</th>
-                                                    <th width="15%">Charge</th>
-                                                    <th width="15%">Fee</th>
-                                                    <th width="15%">Total</th>
+                                                    <th style="text-align:left;">Service</th>
+                                                    <th style="text-align:left;">App/Doc Details</th>
+                                                    <th style="text-align:right;">Charge</th>
+                                                    <th style="text-align:right;">Fee</th>
+                                                    <th style="text-align:right;">Commission</th>
+                                                    <th style="text-align:right;">Total</th>
                                                     <th></th>
                                                 </tr>
                                                 
@@ -236,6 +238,8 @@ input:focus{
 															<?php } ?>
 														</select>--> 
 													</th>
+                                                    <th width="15%"></th>
+                                                    <th width="15%"></th>
                                                     <th width="15%"></th>
                                                     <th width="15%"></th>
                                                     <th width="15%"></th>
@@ -512,34 +516,36 @@ function SelectService(obj){
         count++;
         var htmlRows = '';
          htmlRows += '<tr id="items_'+count+'">';
-			htmlRows += '<td><input class="itemRow" type="checkbox" style="display: none;"><input type="hidden" name="ServiceCode[]" id="ServiceCode_'+count+'" class="form-control" autocomplete="off" style="height: auto !important;"><input type="hidden" name="ServiceID[]" id="ServiceID_'+count+'" class="form-control" autocomplete="off" style="height: auto !important;"><input type="text" readonly="readonly" name="ServiceName[]" id="ServiceName_'+count+'" class="form-control" autocomplete="off" style="height: auto !important;"><br>';    
-            htmlRows += '<input type="text" Placeholder="Vechile Number / Applicant Name" onkeypress="SwitchBox(event)" name="DocDetails[]" id="DocDetails_'+count+'" class="form-control quantity" autocomplete="off" style="height: auto !important;"></td>';
+			htmlRows += '<td><input class="itemRow" type="checkbox" style="display: none;"><input type="hidden" name="ServiceCode[]" id="ServiceCode_'+count+'" class="form-control" autocomplete="off" style="height: auto !important;"><input type="hidden" name="ServiceID[]" id="ServiceID_'+count+'" class="form-control" autocomplete="off" style="height: auto !important;"><input type="text" readonly="readonly" name="ServiceName[]" id="ServiceName_'+count+'" class="form-control" autocomplete="off" style="height: auto !important;"></td>';    
+            htmlRows += '<td><input type="text" Placeholder="Vechile Number / Applicant Name" onkeypress="SwitchBox(event)" name="DocDetails[]" id="DocDetails_'+count+'" class="form-control quantity" autocomplete="off" style="height: auto !important;;width:200px"></td>';
             
             if (obj.AllowtoChangeStaff=="1") {
-                htmlRows += '<td><input type="text" onkeyup="calc()" name="ServiceCharge[]" id="ServiceCharge_'+count+'" class="form-control quantity" autocomplete="off" style="height: auto !important;text-align:center"></td>';    
+                htmlRows += '<td><input type="text" onkeyup="calc()" name="ServiceCharge[]" id="ServiceCharge_'+count+'" class="form-control quantity" autocomplete="off" value="0"  style="height: auto !important;text-align:center;width:100px;text-align:right"></td>';    
             } else {
-                htmlRows += '<td><input type="text" onkeyup="calc()" readonly="readonly" name="ServiceCharge[]" id="ServiceCharge_'+count+'" class="form-control quantity" autocomplete="off" style="height: auto !important;text-align:center"></td>';    
+                htmlRows += '<td><input type="text" onkeyup="calc()" readonly="readonly" name="ServiceCharge[]" id="ServiceCharge_'+count+'" class="form-control quantity" value="0"  autocomplete="off" style="height: auto !important;text-align:center;width:100px;text-align:right"></td>';    
             }
 			
             if (obj.AllowtochargeChangeStaff=="1") {
-                htmlRows += '<td style="text-align:right"><input onkeyup="calc()" type="text"  name="FeeAmount[]" id="FeeAmount_'+count+'" class="form-control price" autocomplete="off" style="height: auto !important;text-align:center"></td>';         
+                htmlRows += '<td style="text-align:right"><input onkeyup="calc()" type="text"  name="FeeAmount[]" id="FeeAmount_'+count+'" class="form-control price" value="0"  autocomplete="off" style="height: auto !important;text-align:center;width:100px;text-align:right"></td>';         
             } else {
-			    htmlRows += '<td style="text-align:right"><input onkeyup="calc()" type="text" readonly="readonly" name="FeeAmount[]" id="FeeAmount_'+count+'" class="form-control price" autocomplete="off" style="height: auto !important;text-align:center"></td>';         
+			    htmlRows += '<td style="text-align:right"><input onkeyup="calc()" type="text" readonly="readonly" name="FeeAmount[]" id="FeeAmount_'+count+'" value="0"  class="form-control price" autocomplete="off" style="height: auto !important;text-align:center;width:100px;text-align:right"></td>';         
             }
             
-			htmlRows += '<td style="text-align:right"><input type="text" readonly="readonly" name="total[]" id="total_'+count+'" class="form-control total" autocomplete="off" style="height: auto !important;text-align:right"></td>';          
+            htmlRows += '<td style="text-align:right"><input type="text" onkeyup="calc()"  name="ComAmount[]" id="comm_'+count+'" class="form-control total" value="0" autocomplete="off" style="height: auto !important;text-align:right;width:100px"></td>';          
+            
+			htmlRows += '<td style="text-align:right"><input type="text" readonly="readonly" name="total[]" id="total_'+count+'" class="form-control total" autocomplete="off" style="height: auto !important;text-align:right;width:100px"></td>';          
             htmlRows += '<td style="text-align:center"><span onclick="callconfirmationremoveitem('+count+')" style="float: left;"><i class="fas fa-trash"></i></span></td>';          
         htmlRows += '</tr>';
         $('#invoiceItem').append(htmlRows);
-        
         $("#ServiceID_"+count).val(obj.ServiceID); 
         $("#ServiceCode_"+count).val(obj.ServiceCode); 
         $("#ServiceName_"+count).val(obj.ServiceName);
         $("#ServiceCharge_"+count).val(obj.ServiceCharge);
         $("#FeeAmount_"+count).val(obj.FeeAmount);
 		var charge=parseInt(obj.ServiceCharge);
+        var comm=0;
 		var fee =parseInt(obj.FeeAmount);
-		var total = parseInt(charge+fee);
+		var total = parseInt(charge+fee+comm);
         $("#total_"+count).val(total);
         
 		var STotal =parseInt($("#subtotal").val()); 
@@ -585,8 +591,9 @@ function calc() {
       for(i=1;i<=count;i++) {
         var charge=parseInt($("#ServiceCharge_"+i).val());
         var fee=parseInt($("#FeeAmount_"+i).val());
-        $('#total_'+i).val(charge+fee);
-        subtotal+= (charge+fee);
+        var com=parseInt($("#comm_"+i).val());
+        $('#total_'+i).val(charge+fee+com);
+        subtotal+= (charge+fee+com);
        // var fee =parseInt(obj.FeeAmount);
        // var total = parseInt(charge+fee);  
       }

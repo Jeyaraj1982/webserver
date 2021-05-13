@@ -1,12 +1,32 @@
 <?php include_once("header.php");?>
 <div id="common-home" class="container-fluid">
+     
     <div class="row">
         <div id="content" class="col-sm-12">
             <div class="container">
                 <div class="row">
                     <div class="col-md-3 col-sm-4"></div>
                     <div class="col-md-6 col-sm-8 slide-padding">
+                        
                         <div class="homeslide">
+                         <div class="row">
+                    <div class="col-md-12">
+                            <div>
+                            <table  style="background:#f1f1f1;width: 100%;margin-bottom: 10px;padding: important;border-radius: 5px;">
+                                <tr>
+                                    <td style="padding-top:1px;width: 100px;background: #ccc;">&nbsp;Free Delivery:</td>
+                                    <td style="padding-left:10px"> 
+                                        <marquee>
+                                            Nagercoil, Agastheeswaram taluk, Thovalai taluk 
+                                        </marquee>
+                                    </td>
+                                     <td style="text-align: right;padding-left:10px">More...:</td>
+                                </tr>
+                            </table>
+                          </div> 
+    
+                        </div>
+                    </div>
                             <div id="slideshow0" class="owl-carousel owl-theme">
 							<?php $sliders=$mysql->select("select * from _tbl_sliders order by SliderOrder asc");?>
 							<?php foreach($sliders as $slider){ ?>

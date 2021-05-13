@@ -101,18 +101,34 @@
                                     </div>
                                     <p style="text-align: center;;font-size:11px;">Video Ads</p>
                                 </div>
+                                <!--
                                 <div class="col-4 cursor-hand" onclick="location.href='https://www.klx.co.in/digitaljobs.php'"style="padding-right:0px">
                                     <div style="border:none;background:#ffc4c4;border-radius:50%;padding:16px;height: 64px;width: 64px;margin:0px auto;">
                                         <img src="<?php echo base_url;?>assets/icons/photocard.png" style=""> 
                                     </div>
-                                    <!--<p style="text-align: center;;font-size:11px;">Photo Ads</p>-->
+                                    <p style="text-align: center;;font-size:11px;">Photo Ads</p>
                                     <p style="text-align: center;;font-size:11px;">Digital Jobs</p>
                                 </div>
+                                -->
+                                <div class="col-4 cursor-hand" onclick="location.href='https://www.klx.co.in/start-own-business.php'"style="padding-right:0px">
+                                    <div style="border:none;background:#ffc4c4;border-radius:50%;padding:16px;height: 64px;width: 64px;margin:0px auto;">
+                                        <img src="<?php echo base_url;?>assets/icons/photocard.png" style=""> 
+                                    </div>
+                                    <p style="text-align: center;;font-size:11px;">Start Own Business</p>
+                                </div>
+                                <!--
                                 <div class="col-4 cursor-hand" onclick="location.href='https://www.klx.co.in/businessoffers.php'"  style="padding-right:0px">
                                     <div style="border:none;background:#bfa8ff;border-radius:50%;padding:16px;height: 64px;width: 64px;margin:0px auto;">
                                         <img src="<?php echo base_url;?>assets/icons/ads.png" style=""> 
                                     </div>
                                     <p style="text-align: center;;font-size:11px;">Business Offer</p>
+                                </div>  
+                                -->
+                                <div class="col-4 cursor-hand" onclick="location.href='https://www.klx.co.in/put-your-ad.php'"  style="padding-right:0px">
+                                    <div style="border:none;background:#bfa8ff;border-radius:50%;padding:16px;height: 64px;width: 64px;margin:0px auto;">
+                                        <img src="<?php echo base_url;?>assets/icons/ads.png" style=""> 
+                                    </div>
+                                    <p style="text-align: center;;font-size:11px;">Put Your Ad & Earn Money</p>
                                 </div>
                             </div>
                         </div>

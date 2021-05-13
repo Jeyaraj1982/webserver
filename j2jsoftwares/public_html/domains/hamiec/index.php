@@ -1,3 +1,8 @@
+<?php
+    if (isset($_GET['mindex'])) {
+        include_once("mindex.php");
+    } else {
+?>
 <?php include_once("header.php");?>
 	<div id="top"></div>
 	<!-- WRAPPER -->	
@@ -374,17 +379,21 @@
 									<h3 class="blog-card-title">Small Retailer</h3>
 									<p class="blog-card-details" style="line-height:1;">
                                     Prepaid Recharge
-                                    <br><span style="font-size:12px;color:#888">Cashback 2.5%</span><br><br>
+                                    <br><span style="font-size:12px;color:#888">Cashback 2.50%</span><br><br>
                                     DTH Recharge
-                                    <br><span style="font-size:12px;color:#888">Cashback 2.5%</span><br><br>
+                                    <br><span style="font-size:12px;color:#888">Cashback 2.50%</span><br><br>
+                                    Bill Payments
+                                    <br><span style="font-size:12px;color:#888">Cashback 0.50%</span><br><br>
                                     Money Transfer
-                                    <br><span style="font-size:12px;color:#888">Charge Rs.5 each Rs. 5,000</span> 
+                                    <br><span style="font-size:12px;color:#888">Charge Rs.5 each Rs. 3,000</span><br><br>
+                                    Minimum Purcahse
+                                    <br><span style="font-size:12px;color:#888">Rs.5000 and above</span>
                                     </p>
 									<div class="col-md-12 btn-section blog-btn-section">
-										<a href="<?php echo SITE_URL;?>/retailer.php?plan=small_retailer" class="theme-btn readmore-btn">Pay Rs. 399</a>
+										<a href="<?php echo SITE_URL;?>/retailer.php?plan=small_retailer" class="theme-btn readmore-btn">Pay Rs. 99</a>
 									</div>
                                     <div class="col-md-12" style="padding-left:0px;font-size:12px;margin-top:5px;">
-                                    Rs. 399 Frist Yr then Rs. 199/Yr
+                                    Rs. 99 Frist Yr then Rs. 99/Yr
                                     </div>
 								</div>
 							</div>
@@ -404,18 +413,22 @@
 									<h3 class="blog-card-title">Large Retailer</h3>
 									<p class="blog-card-details" style="line-height:1;">
                                     Prepaid Recharge
-                                    <br><span style="font-size:12px;color:#888">Cashback 3.0%</span><br><br>
+                                    <br><span style="font-size:12px;color:#888">Cashback 3.00%</span><br><br>
                                     DTH Recharge
-                                    <br><span style="font-size:12px;color:#888">Cashback 3.0%</span><br><br>
+                                    <br><span style="font-size:12px;color:#888">Cashback 3.00%</span><br><br>
+                                    Bill Payments
+                                    <br><span style="font-size:12px;color:#888">Cashback 0.75%</span><br><br>
                                     Money Transfer
-                                    <br><span style="font-size:12px;color:#888">Charge Rs.5 each Rs. 5,000</span> 
+                                    <br><span style="font-size:12px;color:#888">Charge Rs.5 each Rs. 5,000</span><br><br>
+                                    Minimum Purcahse
+                                    <br><span style="font-size:12px;color:#888">Rs.5000 and above</span>
                                     </p>
                                     
 									<div class="col-md-12 btn-section blog-btn-section">
-										<a href="<?php echo SITE_URL;?>/retailer.php?plan=large_retailer" class="theme-btn readmore-btn">Pay Rs. 699</a>
+										<a href="<?php echo SITE_URL;?>/retailer.php?plan=large_retailer" class="theme-btn readmore-btn">Pay Rs. 199</a>
 									</div>
                                     <div class="col-md-12" style="padding-left:0px;font-size:12px;margin-top:5px;">
-                                    Rs. 699 Frist Yr then Rs. 199/Yr
+                                    Rs. 199 Frist Yr then Rs. 199/Yr
                                     </div>
 								</div>
 							</div>
@@ -435,17 +448,21 @@
 									<h3 class="blog-card-title">Enterprise</h3>
 									<p class="blog-card-details" style="line-height:1;">
                                     Prepaid Recharge
-                                    <br><span style="font-size:12px;color:#888">Cashback 3.5%</span><br><br>
+                                    <br><span style="font-size:12px;color:#888">Cashback 3.50%</span><br><br>
                                     DTH Recharge
-                                    <br><span style="font-size:12px;color:#888">Cashback 3.5%</span><br><br>
+                                    <br><span style="font-size:12px;color:#888">Cashback 3.50%</span><br><br>
+                                    Bill Payments
+                                    <br><span style="font-size:12px;color:#888">Cashback 1.00%</span><br><br>
                                     Money Transfer
-                                    <br><span style="font-size:12px;color:#888">Charge Rs.5 each Rs. 10,000</span> 
+                                    <br><span style="font-size:12px;color:#888">Charge Rs.5 each Rs. 10,000</span><br><br>
+                                    Minimum Purcahse
+                                    <br><span style="font-size:12px;color:#888">Rs.10,000 and above</span>
                                     </p>
 									<div class="col-md-12 btn-section blog-btn-section">
-										<a href="<?php echo SITE_URL;?>/retailer.php?plan=enterprise_retailer" class="theme-btn readmore-btn">Pay Rs. 999</a>
+										<a href="<?php echo SITE_URL;?>/retailer.php?plan=enterprise_retailer" class="theme-btn readmore-btn">Pay Rs. 399</a>
 									</div>
                                     <div class="col-md-12" style="padding-left:0px;font-size:12px;margin-top:5px;">
-                                    Rs. 999 Frist Yr then Rs. 199/Yr
+                                    Rs. 399 Frist Yr then Rs. 399/Yr
                                     </div>
 								</div>
 							</div>
@@ -496,3 +513,4 @@
 			</div>
     	<!-- SECTION LABEL -->
 	<?php include_once("footer.php"); ?>
+    <?php } ?>

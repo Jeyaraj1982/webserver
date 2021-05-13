@@ -29,7 +29,7 @@
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                <?php $resumes = $mysql->select("select * from _tbl_resume_general_info where IsDelete='0' and CreatedBy='Franchisee' and CreatedByID='".$_SESSION['FRANCHISEE']['FranchiseeID']."' order by ResumeID desc limit 0,5");?>
+                                                <?php $resumes = $mysql->select("select * from _tbl_resume_general_info where IsDelete='0' and CreatedBy='Franchisee' and CreatedByID='".$_SESSION['FRANCHISEE']['FranchiseeID']."' order by ResumeID desc");?>
                                                 <?php foreach($resumes as $resume){ ?>
                                                     <tr>
                                                         <td style="padding-right:0px !important;padding-left:0px !important"><img src="<?php echo "../share/uploads/".$resume['ProfilePhoto'];?>" style='width: 50px;height:50px;margin-top: 5px;'></td>

@@ -21,7 +21,7 @@
                      <div class=" col-sm-3 col-xs-12">
                         <div style="text-align: center;" >
                             <img src="<?php echo WEB_URL;?>/assets/free_delivery.png" style="height:100px;margin:0px auto">
-                            <br>Free Delivery<br>Your Order value above Rs.2000
+                            <br>Free Delivery<br>Your Order value above Rs.1000
                         </div>
                     </div>
                 </div>

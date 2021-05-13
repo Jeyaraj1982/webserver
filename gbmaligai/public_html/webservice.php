@@ -380,6 +380,11 @@ function DeleteSubCategory() {
                 $result['Name']=$userdata[0]['CustomerName'];
                 $result['Mobile']=$userdata[0]['MobileNumber'];
                 $result['Email']=$userdata[0]['EmailID'];
+                $result['AddressLine1']=$userdata[0]['AddressLine1'];
+                $result['AddressLine2']=$userdata[0]['AddressLine2'];
+                $result['AddressLine3']=$userdata[0]['AddressLine3'];
+                $result['PostalCode']=$userdata[0]['PostalCode'];
+                $result['LandMark']=$userdata[0]['LandMark'];
                 $result['message']="Login Successfully<br>";  
                 return json_encode($result);
             }  else {
@@ -411,10 +416,19 @@ function DeleteSubCategory() {
     function PlaceOrder() {
         
         global $mysql;
+        
+        if (!(isset($_SESSION['User']['CustomerID']) && $_SESSION['User']['CustomerID']>0)) {
+            return json_encode(array("status"=>"failure","message"=>"Session expired, Order couldn't be submit."));
+        }
+        
+        $user = $mysql->select("select * from _tbl_customer where CustomerID='".$_SESSION['User']['CustomerID']."'");
+        if (sizeof($user)==0) {
+             return json_encode(array("status"=>"failure","message"=>"Session expired, Order couldn't be submit."));
+        }
+        
         $random = sizeof($mysql->select("select * from _tbl_orders")) + 1;
-        $OrderCode ="ORD0000".$random;
-        $id = $mysql->insert("_tbl_orders",array("OrderCode"            => $OrderCode,
-                                                 "CustomerID"           => $_SESSION['User']['CustomerID'],
+       
+        $id = $mysql->insert("_tbl_orders",array("CustomerID"           => $_SESSION['User']['CustomerID'],
                                                  "CustomerName"         => $_SESSION['User']['CustomerName'],
                                                  "CustomerEmailID"      => $_SESSION['User']['EmailID'],
                                                  "CustomerMobileNumber" => $_SESSION['User']['MobileNumber'],
@@ -424,16 +438,46 @@ function DeleteSubCategory() {
                                                  "BillingPincode"       => $_SESSION['Billing']['PostalCode'],
                                                  "BillingLandMark"      => $_SESSION['Billing']['LandMark'],
                                                  "OrderDate"            => date("Y-m-d H:i:s")));
+          
+         if (!($id>0)) {
+             return json_encode(array("status"=>"failure","message"=>"Error Occured, Order couldn't be submit."));
+        }
         
-        $subtotal=0;   
-        $OrderTotalMRP=0;   
+        $OrderCode ="ORD0000".$id;                                       
+        $mysql->execute("update _tbl_orders set OrderCode='".$OrderCode."' where OrderID='".$id."'");
+        
+        if (strlen(trim($user[0]['AddressLine1']))==0) {
+            $mysql->execute("update _tbl_customer set AddressLine1='".$_SESSION['Billing']['AddressLine1']."' where CustomerID='".$_SESSION['User']['CustomerID']."'");
+        }
+        
+        if (strlen(trim($user[0]['AddressLine2']))==0) {
+            $mysql->execute("update _tbl_customer set AddressLine2='".$_SESSION['Billing']['AddressLine2']."' where CustomerID='".$_SESSION['User']['CustomerID']."'");
+        }
+        
+        if (strlen(trim($user[0]['AddressLine3']))==0) {
+            $mysql->execute("update _tbl_customer set AddressLine3='".$_SESSION['Billing']['AddressLine3']."' where CustomerID='".$_SESSION['User']['CustomerID']."'");
+        }
+        
+        if (strlen(trim($user[0]['PostalCode']))==0) {
+            $mysql->execute("update _tbl_customer set PostalCode='".$_SESSION['Billing']['PostalCode']."' where CustomerID='".$_SESSION['User']['CustomerID']."'");
+        }
+        
+        if (strlen(trim($user[0]['LandMark']))==0) {
+            $mysql->execute("update _tbl_customer set LandMark='".$_SESSION['Billing']['LandMark']."' where CustomerID='".$_SESSION['User']['CustomerID']."'");
+        }
+        
+        $orderid = $id;
+        $subtotal=0; 
+        $OrderTotalMRP=0;  
+        $SavedPerItem=0;   
                                          
         foreach($_SESSION['items'] as $item) {
             $ProductInfo = $mysql->select("select * from _tbl_products where ProductID='".$item['ProductID']."'");
             $subtotal += $item['Qty']*$item['Price'];
-            $OrderTotalMRP  += $item['SavedPerItem'];
+            $OrderTotalMRP += $item['Qty']*$item['MRP'];
+            $SavedPerItem  += $item['SavedPerItem'];
             
-            $mysql->insert("_tbl_orders_items",array("OrderID"      => $id,
+            $mysql->insert("_tbl_orders_items",array("OrderID"      => $orderid,
                                                      "ProductID"    => $item['ProductID'],
                                                      "ProductCode"  => $item['ProductCode'],
                                                      "ProductName"  => $item['ProductName'],
@@ -452,7 +496,7 @@ function DeleteSubCategory() {
         
         $mysql->execute("update _tbl_orders set OrderTotal       = '".$subtotal."',
                                                 OrderTotalMRP    = '".$OrderTotalMRP."',
-                                                OrderSavedAmount ='".($OrderTotalMRP-$subtotal)."' where OrderID='".$id."'");
+                                                OrderSavedAmount ='".($SavedPerItem)."' where OrderID='".$id."'");
         
         $id = $mysql->insert("_tbl_orders_status",array("OrderID"   => $id,
                                                         "StatusCode"    => "1",
@@ -474,7 +518,10 @@ function DeleteSubCategory() {
         $mparam['CustomerID']="0";
         $mparam['Message'] = $MailContent['MailBody'];
         $mparam['Subject'] = $MailContent['MailSubject']; 
-        MailController::Send($mparam,$mailError);  
+       // MailController::Send($mparam,$mailError);  
+       $Message = "Order Placed,  ".$_SESSION['User']['CustomerName']." (mobileno: ".$_SESSION['User']['MobileNumber'].") has placed new order worth Rs.".number_format($subtotal)." delver pincode: ".$_SESSION['Billing']['PostalCode'].", click to view order  https://www.gbmaligai.com/printorder.php?id=".md5($orderid);
+       TelegramMessageController::sendSMS(1107300198,$Message,0,0); 
+       TelegramMessageController::sendSMS(1644885253,$Message,0,0); 
         
         sleep(5);
         unset($_SESSION['items']);

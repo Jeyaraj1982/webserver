@@ -101,7 +101,12 @@
                         <nav id="menuzord" class="menuzord default menuzord-responsive">
                             <ul class="menuzord-menu">
                                 <li class="active"><a href="<?= $_SERVER['BASE_URL']; ?>">Home</a></li>
-                                <li><a href="<?= $_SERVER['BASE_URL']; ?>about-us">About Us</a></li>
+                                <li><a href="#">About Us</a>
+                                    <ul class="dropdown">
+                                        <li><a href="<?= $_SERVER['BASE_URL']; ?>about-us">About Us</a></li>
+                                        <li><a href="<?= $_SERVER['BASE_URL']; ?>mandatorydisclosure">Mandatory Disclosure</a></li>
+                                    </ul>
+                                </li>
                                 <li><a href="#">Department</a>
                                     <ul class="dropdown">
                                         <li><a href="<?= $_SERVER['BASE_URL']; ?>department/automobile-engineering">Automobile Engineering</a></li>
@@ -136,6 +141,12 @@
                                         <li><a href="<?= $_SERVER['BASE_URL']; ?>sports">Sports</a></li>
                                         <li><a href="<?= $_SERVER['BASE_URL']; ?>social-activities">Social Activities</a></li>
                                         <li><a href="<?= $_SERVER['BASE_URL']; ?>special-events-celebrations">Special Events And Celebrations</a></li>
+                                    </ul>
+                                </li>
+                                
+                                <li><a href="#">SGRC</a>
+                                    <ul class="dropdown">
+                                        <li><a href="<?= $_SERVER['BASE_URL']; ?>rules">Student Grievances Redressal Cell</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="#">GALLERY</a>

@@ -1,12 +1,12 @@
  <?php 
     if($_GET['status']=="All"){ 
-        $Agents = $mysql->select("select * from _queen_agent where IsAgent='1' order by AgentID desc");
+        $Agents = $mysql->select("select * from _queen_agent where IsAgent='1' order by AgentCode*1 desc");
         $title="All Agents";
     }if($_GET['status']=="Active"){
-        $Agents = $mysql->select("select * from _queen_agent where IsAgent='1' and IsActive='1' order by AgentID desc");
+        $Agents = $mysql->select("select * from _queen_agent where IsAgent='1' and IsActive='1' order by AgentCode*1 desc");
         $title="Active Agents";
     }if($_GET['status']=="Deactive"){
-        $Agents = $mysql->select("select * from _queen_agent where IsAgent='1' and IsActive='0' order by AgentID desc");
+        $Agents = $mysql->select("select * from _queen_agent where IsAgent='1' and IsActive='0' order by AgentCode*1 desc");
         $title="Blocked Agents";
     }
 ?>
@@ -41,9 +41,8 @@
                                                 <th scope="col">Agent Name</th>
                                                 <th scope="col">Mobile Number</th>
                                                 <?php if($_GET['status']=="All"){ ?><th scope="col">Status</th><?php } ?>
-												<th scope="col">Created On</th>
-												<th scope="col" style="text-align:right">We Have</th>
-												<th scope="col" style="text-align:right">Payable</th>
+												<th scope="col" style="text-align:right">Queen Has</th>
+												<th scope="col" style="text-align:right">Payable By Agent</th>
 												<th></th>
                                             </tr>                            
                                         </thead>
@@ -55,18 +54,17 @@
                                                 <td><?php echo $Agent['AgentName'];?><br><span style="font-size: 11px;color: #55576A;"><?php echo $Agent['SurName'];?></span></td>
                                                 <td><?php echo $Agent['MobileNumber'];?><br><span style="font-size: 11px;color: #55576A;"><?php echo $Agent['AlternativeMobileNumber'];?></span></td>
                                                 <?php if($_GET['status']=="All"){ ?><td><?php if($Agent['IsActive']=="1") { echo "Active"; } else { echo "Blocked";}?></td><?php } ?>
-                                                <td><?php echo date("M d, Y",strtotime($Agent['CreatedOn']));?></td>
 												<td style="text-align:right">
-													<?php if(getTotalBalanceWallet($Agent['AgentID'])>0){
-																echo number_format(getTotalBalanceWallet($Agent['AgentID']),2);
+													<?php if(getBalance($Agent['AgentCode'])>0){
+																echo number_format(getBalance($Agent['AgentCode']),2);
 													}else{
 														echo "0.00";
 													}
 													?> 
 												</td>
 												<td style="text-align:right">
-													<?php if(getTotalBalanceWallet($Agent['AgentID'])<0){
-                                                                $payable = (getTotalBalanceWallet($Agent['AgentID']) * (-1)); 
+													<?php if(getBalance($Agent['AgentCode'])<0){
+                                                                $payable = (getBalance($Agent['AgentCode']) * (-1)); 
 																echo number_format($payable,2);
 													}else{
 														echo "0.00";
@@ -79,7 +77,7 @@
                                                                 <i class="icon-options-vertical"></i>
                                                             </button>
                                                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                                <a class="dropdown-item" href="dashboard.php?action=Agent/Transactions&id=<?php echo md5($Agent['AgentID']);?>" draggable="false">View Transactions</a>
+                                                                <a class="dropdown-item" href="dashboard.php?action=Agent/Transactions&id=<?php echo md5($Agent['AgentCode']);?>" draggable="false">View Transactions</a>
                                                                 <a class="dropdown-item" href="dashboard.php?action=Agent/Orders&id=<?php echo md5($Agent['AgentID']);?>" draggable="false">View Orders</a>
                                                                 <a class="dropdown-item" href="dashboard.php?action=Agent/edit&id=<?php echo md5($Agent['AgentID']);?>" draggable="false">Edit</a>
                                                                 <a class="dropdown-item" href="dashboard.php?action=Agent/view&id=<?php echo md5($Agent['AgentID']);?>" draggable="false">View</a>

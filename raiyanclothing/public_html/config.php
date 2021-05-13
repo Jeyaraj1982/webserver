@@ -1,11 +1,8 @@
 <?php
             
  
-
-
-
-         //   $mysql = new MySql("localhost","nicus79q_nicus","abcd1234","nicus79q_raiyan");
-            $mysql = new MySqlDb("localhost","raiyancl_user","mysqlPwd","raiyancl_database");
+       //   $mysql = new MySql("localhost","nicus79q_nicus","abcd1234","nicus79q_raiyan");
+          
             
          class MySqlDb
 {
@@ -71,4 +68,7 @@
  
 
 }
+     $mysql = new MySqlDb("localhost","raiyancl_user","mysqlPwd","raiyancl_database");
+
+     
     ?> 

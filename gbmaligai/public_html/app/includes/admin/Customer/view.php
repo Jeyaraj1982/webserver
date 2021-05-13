@@ -1,5 +1,12 @@
 <?php
 $data= $mysql->Select("select * from _tbl_customer where md5(CustomerID)='".$_GET['id']."'");
+
+    $log = $mysql->select("select * from _tbl_customers_viewlogs where CustomerID='".$data[0]['CustomerID']."' and AdminID='".$_SESSION['User']['AdminID']."' ");
+if (sizeof($log)==0)  {
+      $mysql->insert("_tbl_orders_viewlogs",array("CustomerID"=>$data[0]['CustomerID'],
+                                                  "ViewedOn"=>date("Y-m-d H:i:s"),
+                                                  "AdminID"=>$_SESSION['User']['AdminID']));
+}
 ?>
 
 <div class="main-panel">
