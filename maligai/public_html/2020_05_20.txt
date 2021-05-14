@@ -1,4 +1,0 @@
-[2020-05-20 10:46:15]	select * from `_tbl_admin` where  `AdminEmail`='admin@admin.com'
-[2020-05-20 10:46:15]	insert into `_tbl_admin_login_logs` (`AdminID`,`LoginOn`,`IsSuccess`) values ('2','2020-05-20 10:46:15','1')
-[2020-05-20 10:46:15]	select * from _tbl_Settings_Params where ParamCode='AdminLoginEmailOTPRequired'
-[2020-05-20 10:46:15]	select * from _tbl_Settings_Params where ParamCode='AdminLoginMobileOTPRequired'

@@ -1,8 +1,0 @@
-[2020-05-15 03:04:37]	SELECT * FROM `_tblEpins` where md5(concat(EPIN,PINPassword,EPINID))=''
-[2020-05-15 03:04:37]	select * from _tbl_Members where md5(concat(MemberCode,MemberName))='' 
-[2020-05-15 10:27:33]	select * from `_tbl_Members` where  `MemberCode`='MLADM0001'
-[2020-05-15 10:27:33]	select * from _tbl_Settings_Packages where PackageID='1'
-[2020-05-15 10:27:33]	insert into `_tbl_members_login_logs` (`MemberID`,`LoginOn`,`IsSuccess`) values ('1','2020-05-15 10:27:33','1')
-[2020-05-15 10:32:37]	select * from `_tbl_Members` where  `MemberCode`='MLADM0001'
-[2020-05-15 10:32:37]	select * from _tbl_Settings_Packages where PackageID='1'
-[2020-05-15 10:32:37]	insert into `_tbl_members_login_logs` (`MemberID`,`LoginOn`,`IsSuccess`) values ('1','2020-05-15 10:32:37','1')
