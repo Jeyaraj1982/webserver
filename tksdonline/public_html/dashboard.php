@@ -47,11 +47,13 @@
             $('#credit_nickname').attr("required","");
             $('#CrAmount').show();
             $('#CrAmount').attr("required","");
+             $('#credit_nickname').val($('#MemberCode option:selected').text());
         } else if($('#markascredit').prop("checked") == false) {
             $('#credit_nickname').hide();
             $('#credit_nickname').removeAttr("required");
             $('#CrAmount').hide();
             $('#CrAmount').removeAttr("required");
+             $('#credit_nickname').val("");
         }
     }
     </script> 
@@ -78,46 +80,107 @@
         <div class="row">
             <div class="col-12">                                      
                 <div class="card" style="box-shadow:none">
-                    <div class="card-header" style="text-align: center;">
-                        <img src="assets/img/title.jpg" style="width:80%">
-                    </div>
                     <div class="card-content">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-3" style="padding-right:6px;padding-left:6px;">
-                                    <a href="dashboard.php" class="btn btn-success mb-1" style="width:100%"><i class="bx bx-home"></i></a>
+                        <div class="card-body" style="padding-top: 15px;padding-left: 15px;padding-right: 20px;background:#fff !important;">
+                            
+                            <div class="row" style="position:fixed;top:0px;width:100%;background:#fff !important;z-index:20;padding-top:16px">
+                                <div class="col-2" style="padding-right:6px;padding-left:6px;">
+                                    <a href="dashboard.php" class="btn btn-success mb-1" style="width:100%;padding-left:15px"><i class="bx bx-home"></i></a>
                                 </div>
-                                <div class="col-6" style="padding-right:6px;padding-left:6px;text-align:center">
-                     
+                                <div class="col-8" style="padding-right:0px;padding-left:0px;text-align:center;">
+                                      <img src="assets/img/title.jpg" style="width:100%">
                                 </div>
-                                <div class="col-3" style="padding-right:6px;padding-left:6px;">
-                                    <a href="dashboard.php?action=logout" class="btn btn-success mb-1" style="width:100%"><i class="bx bx-power-off"></i></a>
-                                </div>
-                            </div>
-                            <?php if (!(isset($_GET['action']))) { ?>
-                            <div class="row">
-                                <div class="col-12" style="padding-right:6px;padding-left:6px;text-align:center;padding-bottom:20px;">
-                                    <?php if($_SESSION[User]['IsAPI']=="1"){ ?><h6 style="padding-bottom:0px;margin-bottom:0px;color:#016237;text-transform: uppercase;float:right">API Panel</h6> <?php } ?>
-                                    <h6 style="padding-bottom:0px;margin-bottom:0px;color:#016237;font-size:22px;text-transform: uppercase;text-align:center"><?php echo $_SESSION['User']['MemberName']; ?></h6>
-                                    <label>Rs. <?php echo number_format($application->getBalance($_SESSION['User']['MemberID']),2);?></label>
+                                <div class="col-2" style="padding-right:6px;padding-left:6px;">
+                                    <a href="dashboard.php?action=logout" class="btn btn-success mb-1" style="width:100%;padding-left:15px"><i class="bx bx-power-off"></i></a>
                                 </div>
                             </div>
-                            <?php } ?>
+                           
+                            <div class="row" style="margin-bottom:20px;background:#ebffee;position:fixed;top:62px;width:100%;z-index:20">
+                                <div class="col-8" style="padding-right:6px;padding-top: 8px;border-top: 1px dashed green;;border-bottom: 1px dashed green;">
+                                    <?php if($_SESSION['User']['IsAPI']==1 ){ ?>
+                                        <h6 style="padding-bottom:10px;margin-bottom:0px;color:#016237;text-transform: uppercase;float:right">API Panel</h6> 
+                                    <?php } ?>
+                                    <h6 style="padding-bottom:0px;margin-bottom:8px;color:#016237;font-size:15px;font-weight:bold;;text-transform: uppercase;"><?php echo $_SESSION['User']['MemberName']; ?></h6>
+                                </div>
+                                <div class="col-4" style="text-align: right;padding-top: 8px;border-top: 1px dashed green;;border-bottom: 1px dashed green;padding-left:0px">
+                                    <h6 style="padding-bottom:0px;margin-bottom:8px;color:#016237;font-size:15px;font-weight:bold;text-transform: uppercase;"><?php echo number_format($application->getBalance($_SESSION['User']['MemberID']),2);?></h6>
+                                </div>
+                            </div>
+                            
+                          
+                          
+                            
+                             
                             <?php
                                 if (isset($_GET['action'])) {
+                                    ?>
+                                    <div style="margin-top:100px">
+                                    <?php
                                     include_once("includes/".$_GET['action'].".php");
                                 } else {
+                                    ?>
+                                     <div style="margin-top:200px">
+                                      <div class="row" style="border-bottom:1px solid #eee;position:fixed;top:98px;width:100%;background:#fff !important;z-index:20">
+                                <div class="col-12" style="padding-right:0px;padding-left:0px">
+                                    <div style="background:#f1ffbe;padding: 10px;color: green;font-size:13px;text-align:center;padding-bottom:5px;padding-top:7px">
+                                      <?php
+                                      $u = $mysql->select("select * from _tbl_member where MemberID='".$_SESSION['User']['MemberID']."'");
+                                 if (!($u[0]['DepositAmount']*1>0))
+                                 {
+                            ?>
+                                      <marquee>  Get 15% profit on  every month 1st from your deposit amount </marquee>
+                              <?php } else {?>      
+                                        Deposited Amount
+                                        <b style="font-size:15px"><?php echo number_format($u[0]['DepositAmount'],0); ?></b>
+                                        <?php } ?>
+                                    </div>
+                                </div>
+                                    
+                            </div>
+
+                            <?php
+                                $commission = $mysql->select("select * from _temp_settings where param='msr_interet'");
+                                $msrAmount = $mysql->select("select * from _temp_settings where param='msr_amt'");
+                                $tSale = $mysql->select("select sum(rcamount) as dbt from _tbl_transactions where TxnStatus='success' and (month(txndate)='".date("m")."' and year(txndate)='".date("Y")."') and memberid='".$_SESSION['User']['MemberID']."' ");          
+                            ?>
+                    
+                            <div class="row" style="border-bottom:1px solid #eee;position:fixed;top:130px;width:100%;padding-top:8px;padding-bottom:10px;background:#fff !important;z-index:20">
+                                <div class="col-4" style="padding-right:6px;padding-left:6px">
+                                    <div style="background:#f1ffbe;border-radius:10px;padding: 10px;color: green;font-size:13px;text-align:center">
+                                        Sales Target<br>
+                                        <b style="font-size:15px"><?php echo number_format($msrAmount[0]['paramvalue'],0); ?></b>
+                                    </div>
+                                </div>
+                                <div class="col-4" style="padding-right:6px;padding-left:6px">
+                                    <div style="background:#ebffe1;border-radius:10px;padding: 10px;color: green;font-size:13px;text-align:center">
+                                        You Achieved<br>
+                                        <b style="font-size:15px"><?php echo number_format($tSale[0]['dbt'],0); ?></b>
+                                    </div>
+                                </div>
+                                <div class="col-4"  style="padding-right:6px;padding-left:6px;text-align: right;">
+                                    <div style="background:#fff5e3;border-radius:10px;padding: 10px;color: #bf7f0a;font-size:13px;text-align:center">
+                                        Your Incentive<br>
+                                        <?php if ($tSale[0]['dbt']>=$msrAmount[0]['paramvalue']) { ?>
+                                            <b style="font-size:15px"><?php echo number_format(($tSale[0]['dbt']*$commission[0]['paramvalue']/100),2);?></b>
+                                        <?php } else {?>
+                                            <b style="font-size:15px"><?php echo number_format(0,2);?></b>
+                                        <?php } ?>
+                                    </div>
+                                </div>      
+                            </div>
+                                    <?php
                                     include_once("includes/dashboard.php");
                                 }
                             ?>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-      </div>                
-    </div>   
+</div>                
+   
     <?php if($_GET['action']!="busticketbooking"){ ?>     
     <script src="admin/assets/js/jquery-min.js"></script>
     <?php } ?>

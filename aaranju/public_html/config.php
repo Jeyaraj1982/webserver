@@ -395,7 +395,15 @@
                 $charge ="0.25";              
                 $charge ="0.00";
             }  
+            $response = json_decode($data,true);
             $Text = str_replace("'","\'",$Text);
+            $messagestatus = "success";
+            $errormessage = "";
+            if (isset($response['error_code'])) {
+                $messagestatus = "failure";
+                $errormessage = $response['description'];    
+            }
+            
             $id=$mysql->insert("telegram_outgoing",array("txndate"          => date("Y-m-d H:i:s"),
                                                          "userid"           => $userid,
                                                          "telegramid"       => "0",
@@ -412,6 +420,8 @@
                                                          "msg_type"         => $type,
                                                          "txnfrom"          => $txnfrom,
                                                          "uid"              => $smsid,
+                                                         "messagestatus"              => $messagestatus,
+                                                         "errormessage"              => $errormessage,
                                                          "apiresposne"      => $data));
             return $id;                        
         }

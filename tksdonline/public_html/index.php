@@ -70,7 +70,7 @@ if (isset($_POST['submitBtn'])) {
     input[type=number] {
   -moz-appearance:textfield;
 }
-    </style>
+    </style>                                                                
   </head>
   <body class="vertical-layout vertical-menu-modern 1-column  navbar-sticky footer-static bg-full-screen-image  blank-page blank-page" data-open="click" data-menu="vertical-menu-modern" data-col="1-column" style="background-image:none;background:#006134 !important;">
     <div class="app-content content">
@@ -78,21 +78,21 @@ if (isset($_POST['submitBtn'])) {
       <div class="content-wrapper">         
         <div class="content-header row">
         </div>
-        <div class="content-body"> 
-<section id="auth-login" class="row flexbox-container">
-    <div class="col-xl-8 col-11">
+        <div class="content-body" style="padding-top: 15px;padding-bottom: 15px;"> 
+<section id="auth-login" class="row flexbox-container" style="margin-left: 0px;margin-right: 0px;">
+    <div class="col-xl-12 col-12">
         <div class="card bg-authentication mb-0">
             <div class="row m-0">
                 <div class="col-md-12 col-12 px-0">
-                    <div class="card disable-rounded-right mb-0 p-2 h-100 d-flex justify-content-center">
+                    <div class="card disable-rounded-right mb-0 h-100 d-flex justify-content-center">
                         <div class="card-header pb-1">
                             <div class="card-title text-center">
                                 <div class="text-center" style="margin-bottom:10px;"><img src="assets/img/logo.png" style="width: 150px;"></div>
-                                <label class="text-bold-600 text-center" style="font-size:16px">Login</label>
+                                <label class="text-bold-600 text-center" style="font-size:16px">TKSD Online Service</label>
                             </div>
                         </div>
                         <div class="card-content">
-                            <div class="card-body">
+                            <div class="card-body" style="padding-bottom:10px">
                                 <form action="" method="post">
                                     <div class="form-group mb-50">
                                         <label class="text-bold-600" for="exampleInputEmail1">Mobile Number</label>
@@ -127,8 +127,8 @@ if (isset($_POST['submitBtn'])) {
                                     <button type="submit" name="submitBtn" class="btn btn-info  glow w-100 position-relative">Demo Login<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></button>
                                 </form>  -->
                                 
-                                <div class="form-group"> 
-                                <br><B>Maajid Multi Mart</b><br>
+                                <div class="form-group" style="font-size:13px"> 
+                                <br><B style="font-size:16px">Maajid Multi Mart</b><br>
                                 147, Pallivasal complex, CMC Road, <br>
                                 Senjai, Karaikudi - 630 001.<br><Br>
                                 Email: tksdhelpdesk@gmail.com<br>

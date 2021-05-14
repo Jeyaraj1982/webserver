@@ -66,7 +66,7 @@
                             <br>
                             <input type="text" name="Message" id="Message"  class="form-control" required="required" style="border:1px solid #ccc">
                         </div>
-                    </div>          
+                    </div>                    
                     <div class="row mb15">
                         <div class="col-md-4 col-xs-6 b-r">
                             <button type="submit" name="sendMessage" id="sendMessage" class="btn btn-primary" >Send Messages</button>
@@ -78,4 +78,3 @@
         </div>
     </div>            
 </div>
-<?php include_once("footer.php"); ?> 

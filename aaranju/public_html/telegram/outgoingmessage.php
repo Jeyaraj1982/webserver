@@ -35,13 +35,14 @@
                                                 <tr role="row">
                                                     <th class="sorting_asc">Txn Date</th>
                                                     <th class="sorting">Client ID</th>
-                                                    <th class="sorting">Particular</th>
+                                                    <th class="sorting">Particular</th>                                                     
                                                     <th class="sorting">Message</th>
                                                     <!--<th class="sorting">Credits</th>
                                                     <th class="sorting">Debits</th>  -->
                                                     <th class="sorting">Txn From</th>
+                                                    <th class="sorting">Status</th>
                                                     <th class="sorting">API UID</th>
-                                                </tr>             
+                                                </tr>                                                              
                                             </thead>
                                             <tbody>
                                             <?php $txndata = $mysql->select("Select * from telegram_outgoing where userid='".$_SESSION['user']['userid']."' order by telegram_txnid desc limit 0,100");?>
@@ -55,6 +56,7 @@
                                                     <td style="text-align:right"><?php echo $t['debits'];?></td>
                                                     <td><?php echo $t['balance'];?></td>-->
                                                     <td style="text-align:left"><?php echo $t['txnfrom'];?></td>
+                                                    <td style="text-align:left"><?php echo $t['messagestatus']=="failure" ? "<span style='color:red'>". $t['messagestatus']."<br>".$t['errormessage']."</span>" : "delivered";?></td>
                                                     <td style="text-align:left"><?php echo $t['uid'];?></td>
                                                 </tr>
                                             <?php } ?>                                   

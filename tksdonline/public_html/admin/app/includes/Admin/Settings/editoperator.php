@@ -2,6 +2,22 @@
     
     if (isset($_POST['submitBtn'])) {
         
+     $record = $mysql->select("select * from _tbl_operators where  OperatorRefID='".$_GET['operator']."'");
+     if ($record[0]['IsActive']!=$_POST['IsActive']) {
+        $subscribed_agents = $mysql->select("select * from _tbl_member where TelegramID>0 and MapedTo<>3");
+           
+          if ($_POST['IsActive']==1) {
+            $message = $_POST['OperatorName']. " Currently available ".$_POST['TelegramMessage'];  
+          } else {
+            $message = $_POST['OperatorName']. " Currently offline. ".$_POST['TelegramMessage'];  
+          }
+          
+          foreach($subscribed_agents as $agent) {
+            TelegramMessageController::sendSMS($agent['TelegramID'],$message,$agent['MemberID'],0);  
+        }
+        echo "Message has been sent '".$message."'";
+     }
+        
       $id=  $mysql->execute("update _tbl_operators set OperatorName='".$_POST['OperatorName']."',
                                                    OperatorCode='".$_POST['OperatorCode']."',
                                                    IsCashback='".$_POST['IsCashback']."',
@@ -131,10 +147,17 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-12 ">
+                            <div class="col-md-6 ">
                                 <div class="form-group user-test" id="user-exists">
                                     <label>Inactive Message<span style="color:red">*</span></label>
                                     <input name="InactiveMessage" id="InactiveMessage" placeholder="Inactive Message" value="<?php echo isset($_POST['InactiveMessage']) ? $_POST['InactiveMessage'] :  $data[0]['InactiveMessage'];?>" class="form-control" required=""  type="text">
+                                    <div class="help-block"><p class="error" id="username-exists"></p></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 ">
+                                <div class="form-group user-test" id="user-exists">
+                                    <label>Telegram Message<span style="color:red">*</span></label>
+                                    <input name="TelegramMessage" id="TelegramMessage" placeholder="Telegram Message" value="<?php echo isset($_POST['TelegramMessage']) ? $_POST['TelegramMessage'] :  $data[0]['TelegramMessage'];?>" class="form-control"    type="text">
                                     <div class="help-block"><p class="error" id="username-exists"></p></div>
                                 </div>
                             </div>

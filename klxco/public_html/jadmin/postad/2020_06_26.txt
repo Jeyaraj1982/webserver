@@ -1,2 +1,0 @@
-[2020-06-26 09:43:46]	select * from _jusertable order by userid desc
-[2020-06-26 09:44:37]	select * from _jusertable order by userid desc

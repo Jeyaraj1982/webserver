@@ -95,8 +95,9 @@
                                                             <td> <select disabled="disabled">
                                                                    <!--<option value="1" <?php echo ($Member['APIID']==1) ? " selected='selected' " : "";?> >Lapu</option> -->
                                                                    <option value="2" <?php echo ($Member['APIID']==2) ? " selected='selected' " : "";?> >Mrobotics</option> 
-                                                                   <!--<option value="3" <?php echo ($Member['APIID']==3) ? " selected='selected' " : "";?> >Ezytm</option> -->
+                                                                   <!--<option value="3" <?php echo ($Member['APIID']==3) ? " selected='selected' " : "";?> >Ezytm</option> -->             
                                                                    <option value="4" <?php echo ($Member['APIID']==4) ? " selected='selected' " : "";?> >Aaranju Lapu</option> 
+                                                                   <option value="5" <?php echo ($Member['APIID']==5) ? " selected='selected' " : "";?> >TKSD Lapu</option> 
                                                             </select>
                                                             <a href="dashboard.php?action=Settings/editoperator&operator=<?php echo $Member['OperatorRefID'];?>">Edit</a>
                                                             </td>

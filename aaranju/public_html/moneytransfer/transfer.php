@@ -169,7 +169,12 @@
               
               <b>Time To Update</b><br>
               IMPS: Instant<br>
-              <!--NEFT: Min: 2hrs Max: 4hrs (depends on bank working day)--><br><br>
+              <!--NEFT: Min: 2hrs Max: 4hrs (depends on bank working day)--><br>
+              
+              <?php if ($_SESSION['user']['userid']==9) {?>
+              <b>lien Amount:</b><br>
+              16,653.00<br><br>
+              <?php } ?>
               
               <b>Allow Incoming Account(s) to automate</b><br>
               <?php

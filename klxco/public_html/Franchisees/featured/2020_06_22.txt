@@ -1,5 +1,0 @@
-[2020-06-22 16:59:05]	select * from _jstatenames
-[2020-06-22 16:59:05]	select * from _jcategory
-[2020-06-22 16:59:33]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where fad.ispublish='1' and date(fad.enddate)>=date('2020-06-22') ORDER BY fad.featureadid desc
-[2020-06-22 16:59:55]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where fad.ispublish='0' ORDER BY fad.featureadid desc
-[2020-06-22 17:00:01]	SELECT * FROM _tbl_featured AS fad LEFT JOIN _jpostads AS jad ON fad.adid=jad.postadid where fad.ispublish='1' and  date(fad.enddate)<date('2020-06-22')   ORDER BY fad.featureadid desc

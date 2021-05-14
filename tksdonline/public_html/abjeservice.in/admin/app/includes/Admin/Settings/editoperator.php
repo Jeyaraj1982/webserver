@@ -149,6 +149,7 @@
                                         <option value="2" <?php echo ($data[0]['APIID']==2) ? " selected='selected' " : "";?> >Mrobotics</option> 
                                         <!--<option value="3" <?php echo ($data[0]['APIID']==3) ? " selected='selected' " : "";?> >Ezytm</option> -->
                                         <option value="4" <?php echo ($data[0]['APIID']==4) ? " selected='selected' " : "";?> >Aaranju Lapu</option> 
+                                        <option value="5" <?php echo ($data[0]['APIID']==5) ? " selected='selected' " : "";?> >TKSD Lapu</option> 
                                     </select>
                                 </div>         
                             </div>                                

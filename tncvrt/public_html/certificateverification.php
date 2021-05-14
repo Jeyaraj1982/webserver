@@ -10,6 +10,7 @@
              include_once("tncvrt/config.php");
              $dob = $_POST['year']."-".$_POST['month']."-".$_POST['date'];
              $data = $mysql->select("select * from `_tbl_upload_certificates` where date(DateOfBirth)=date('".$dob."') and RegisterNumber='".$_POST['CNumber']."'");
+             
              //echo "select * from `_tbl_upload_certificates` where RegisterNumber='".$_POST['CNumber']."'";
              if (sizeof($data)>0) {
                  $mysql->insert("_tblHistory",array("RegisterNumber"=>$_POST['CNumber'],"ViewedOn"=>date("Y-m-d H:i:s")));

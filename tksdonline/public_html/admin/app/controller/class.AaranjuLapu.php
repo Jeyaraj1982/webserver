@@ -11,9 +11,18 @@
             if ($param['operator']=="RB") {
                 $api_url .= "optr=RB";        
             }
+            
+              if ($param['operator']=="RJ") {
+                $api_url .= "optr=RJ";        
+            }
+            
+              if ($param['operator']=="RA") {
+                $api_url .= "optr=RA";        
+            }
+            
             if ($param['operator']=="TB") {
                 $api_url .= "optr=RT";        
-            }
+            }                                                 
              
             if ($param['operator']=="RV") {
                 $api_url .= "optr=RV";
@@ -46,18 +55,18 @@
             //update api response
             $mysql->execute("update `_tbl_transactions` set `urlresponse`='".$api_response."',`OperatorDate`='".date("Y-m-d H:i:s")."' where `txnid`='".$param['txnid']."'");
         
-            $response = json_decode($api_response,true);       
+            $response = json_decode(trim($api_response),true);       
             if ($response['status']=="SUCCESS") {
                 $return['status']="success";
                 $return['operatorid']=$response['tnx_id'];  
                 $return['lapuno']="0";
-            } elseif (isset($response['error']) || $response['status']=="failure") { 
+            } elseif ( isset($response['response']['error']) || $response['response']['status']=="failure" ) { 
                 $return['status']="failure";
-                $return['message']=$response['error'];
+                $return['message']=$response['response']['error'];
                 $return['lapuno']="0";
             } else {
                 $return['status']="pending";
-                $return['message']=$response['error'];
+                $return['message']=$response['response']['error'];
                 $return['lapuno']="0";
             }
             

@@ -1,5 +1,0 @@
-[2020-06-06 11:09:25]	select * from _jpostads  where (date(postedon)>=date('2020-06-06') and date(postedon)<=date('2020-06-06') )  order by postadid desc  
-[2020-06-06 11:09:35]	select * from _jpostads  where (date(postedon)>=date('2020-1-1') and date(postedon)<=date('2020-6-6') )  order by postadid desc  
-[2020-06-06 11:12:13]	select * from _jpostads  where (date(postedon)>=date('2020-1-1') and date(postedon)<=date('2020-6-6') )  order by postadid desc  
-[2020-06-06 16:42:02]	select * from _jpostads  where (date(postedon)>=date('2020-06-06') and date(postedon)<=date('2020-06-06') )  order by postadid desc  
-[2020-06-06 16:42:11]	select * from _jpostads  where (date(postedon)>=date('2020-1-1') and date(postedon)<=date('2020-6-6') )  order by postadid desc  

@@ -40,9 +40,9 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <?php if (sizeof($requests)==0) { ?>
+                                <?php if (sizeof($summary)==0) { ?>
                                 <tr>
-                                    <td colspan="8" style="text-align:center;"><?php echo $error;?></td>
+                                    <td colspan="8" style="text-align:center;">No Records found></td>
                                 </tr>
                                 <?php } ?>
                                 <?php foreach ($summary as $request){ ?>
@@ -63,9 +63,9 @@
                                     <td class="list_td">
                                      <div style="text-align:right;">
                                     <?php if ($request['Credit']>0) {?>
-            <span style="color:Green">+<?php echo number_format($request['Credit'],2);?></span>
+            <span style="color:Green">+<?php echo number_format( (isset($request['Credit']) ? $request['Credit'] : 0),2);?></span>
             <?php } else { ?>
-            <span style="color:red">-<?php echo number_format($request['Debit'],2);?></span>
+            <span style="color:red">-<?php echo number_format( (isset($request['Debit']) ? $request['Debit'] : 0),2);?></span>
             <?php } ?>
             <br>
             <span style="color:#888"><?php echo number_format($request['Balance'],2);?></span>

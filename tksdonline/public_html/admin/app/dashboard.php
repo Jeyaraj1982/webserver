@@ -7,6 +7,15 @@
         location.href='../index.php';
         </script>
         <?php
+    } 
+    
+    if (UserRole=="") {
+        ?>
+        <script>
+        location.href='../index.php';
+        </script>
+        <?php
+        exit;
     }
 ?>
 <!DOCTYPE html>
@@ -134,7 +143,7 @@ function billerrorDialog() {
     }                                                     
     
        if (isset($_POST['reverseBtn'])) {
-        $return = $application->reverseBillPay($_POST['txnid'],$_POST['Remarks'],$errormsg);
+        $return = $application->reverseBillPay($_POST['txnid'],$_POST['message'].$_POST['Remark'],$errormsg);
          $t = $mysql->select("select * from  _tbl_transactions where txnid='".$_POST['txnid']."'");
             $mem = $mysql->select("select * from _tbl_member where MemberID='".$t[0]['memberid']."'");
             $optr = $mysql->select("select * from _tbl_operators where  operatorcode='".$t[0]['memberid']."'");

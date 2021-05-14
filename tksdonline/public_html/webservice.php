@@ -83,7 +83,7 @@ function savemycontact() {
                                                  "DTHOperator"    => $_POST['DTHOperator'],
                                                  "TNEBRegion"     => $_POST['region'],
                                                  "TNEBNumber"     => $_POST['TNEBNumber'])); 
-      if(sizeof($id)>0){
+      if($id>0){
         $result = array();
         $result['status']="Success";
         $result['message']="Contact saved successfully.";  
@@ -588,10 +588,19 @@ class Webservice {
         
         var $serverURL="";
         
-        function Webservice() {
+         function __construct() {
             global $loginID;
             $this->serverURL  = "https://www.aaranju.in/busticket/api.php?action="; 
-        }
+  }
+  public function __destruct()
+    {
+        //ob_end_flush();
+    }
+  
+        //function Webservice() {
+          //  global $loginID;
+            //$this->serverURL  = "https://www.aaranju.in/busticket/api.php?action="; 
+        //}
 
         function getData($method,$param=array()) {  
             return $this->_callUrl($method,$param) ;

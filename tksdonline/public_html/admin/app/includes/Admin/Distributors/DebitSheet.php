@@ -50,7 +50,7 @@
            
            
               
-            <span style="color:red">-<?php echo number_format($s['Debit'],2);?></span>
+            <span style="color:red">-<?php echo number_format((isset($s['Debit']) ? $s['Debit'] : 0) ,2);?></span>
           
             <br>
             <span style="color:#888"><?php echo number_format($s['Balance'],2);?></span>

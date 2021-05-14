@@ -55,9 +55,9 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <?php if (sizeof($requests)==0) { ?>
+                                <?php if (sizeof($summary)==0) { ?>
                                 <tr>
-                                    <td colspan="8" style="text-align:center;"><?php echo $error;?></td>
+                                    <td colspan="8" style="text-align:center;">No records found</td>
                                 </tr>
                                 <?php } ?>
                                 <?php foreach ($summary as $request){ ?>

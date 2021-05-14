@@ -120,6 +120,7 @@ function SubmitEnquiryDetails() {
                                  <tr><td>CurrentCity</td><td>:".$_POST['CurrentCity']."</td></tr>
                                  <tr><td>NumberofAdults</td><td>:".$_POST['NumberofAdults']."</td></tr>
                                  <tr><td>NumberofChildrens</td><td>:".$_POST['NumberofChildrens']."</td></tr>
+                                 <tr><td>NumberofInfants</td><td>:".$_POST['NumberofInfants']."</td></tr>
                                  <tr><td>Pincode</td><td>:".$_POST['Pincode']."</td></tr>
                                  <tr><td>EmailID</td><td>:".$_POST['EmailID']."</td></tr>
                                  <tr><td>MobileNumber</td><td>:".$_POST['MobileNumber']."</td></tr>

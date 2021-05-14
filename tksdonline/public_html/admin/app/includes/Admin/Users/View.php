@@ -142,6 +142,12 @@
                                     <div style="color:#999"><?php echo $data[0]['MoneyTransferLimit'];?></div>
                                 </div>
                             </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Deposit Amount</label>                       
+                                    <div style="color:#999"><?php echo $data[0]['DepositAmount'];?></div>
+                                </div>
+                            </div>
                         </div>
                         
                         

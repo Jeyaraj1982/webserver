@@ -65,10 +65,15 @@
            }
                                                      
           //   MobileSMS::sendSMS($summary[0]['MobileNumber'],"Your wallet has credited Rs. ".$_POST['Amount'].". Wallet Balance Rs.".number_format($balance,2),$summary[0]['MemberID']);
-            if ($summary[0]['TelegramID']>0)  {     
-            $message = "Dear ".$summary[0]['MemberName'].", Your wallet has been credited Rs. ".$_POST['Amount'].". Wallet Balance Rs.".number_format($balance,2);
-            TelegramMessageController::sendSMS($summary[0]['TelegramID'],$message,0,0);
-        }
+          if ($summary[0]['TelegramID']>0)  {
+              $message = "Dear ".$summary[0]['MemberName'].", Your wallet has been credited Rs. ".$_POST['Amount'].". Wallet Balance Rs.".number_format($balance,2);
+              TelegramMessageController::sendSMS($summary[0]['TelegramID'],$message,0,0);
+            
+            if (isset($_POST['CrAmount']) && $_POST['CrAmount']>0) {
+                $message = "Dear ".$member[0]['MemberName'].",  please trasfer your outstanding balance Rs. ".$_POST['CrAmount']." shortly. ";  //" Transaction ID: ".$credit_note;
+                TelegramMessageController::sendSMS($summary[0]['TelegramID'],$message,0,0);
+            }
+          }
                                       
             ?>     
              <div class="modal fade" id="Resposne_success_Popup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

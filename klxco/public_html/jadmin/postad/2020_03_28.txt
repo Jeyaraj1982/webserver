@@ -1,2 +1,0 @@
-[2020-03-28 09:08:22]	select * from _jusertable
-[2020-03-28 12:01:38]	select * from _jusertable

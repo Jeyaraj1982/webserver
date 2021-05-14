@@ -73,7 +73,7 @@
                                     <td id="txnid_<?php echo $Member['txnid'];?>"><?php echo $Member['txnid'];?></td>
                                     <td id="id_<?php echo $Member['txnid'];?>"><?php echo $Member['MobileNumber'];?></td>
                                     <td id="number_<?php echo $Member['txnid'];?>"><?php echo $Member['rcnumber'];?></td>
-                                    <td id="amount_<?php echo $Member['txnid'];?>" style="text-align: right"><?php echo number_format($Member['rcamount'],2);?></td>
+                                    <td id="amount_<?php echo $Member['txnid'];?>" style="text-align: right"><?php echo number_format( (isset($Member['rcamount']) ? $Member['rcamount'] : 0),2);?></td>
                                     <?php if (isset($_GET['filter']) && $_GET['filter']=="paid") { ?>
                                     <td style="text-align: right;"><?php echo $Member['OperatorNumber'];?></td>
                                     <td style="text-align: right;"><a href="javascript:openTxnTNEBViewDialog('<?php echo $Member['txnid'];?>')">View</a></td>

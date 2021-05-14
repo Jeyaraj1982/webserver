@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 date_default_timezone_set('Asia/Calcutta'); 
 //ini_set('display_errors', 1);
 //ini_set('display_startup_errors', 1);
@@ -18,6 +19,8 @@ define("DbHost","localhost");
 define("DbName","tksdonli_abjeservice");
 define("DbUser","tksdonli_user");
 define("DbPassword","mysqluser@123");
+define("AdminTelegramID","1498244953");  
+define("TKSDADMIN","316574188");  
 
 include_once(__DIR__."/app/controller/class.DatabaseController.php");
 include_once(__DIR__."/app/controller/class.MobileSMSController.php");
@@ -25,6 +28,7 @@ include_once(__DIR__."/app/controller/class.TelegramMessageController.php");
 include_once(__DIR__."/app/controller/class.EzytmAPI.php");
 include_once(__DIR__."/app/controller/class.MRoboticsAPI.php");
 include_once(__DIR__."/app/controller/class.AaranjuLapu.php");
+include_once(__DIR__."/app/controller/class.TKSD.php");
 
 define("SITE_TITLE","abjeservice.in");
 define("SiteTitle","abjeservice.in");
@@ -126,6 +130,7 @@ class JApplication {
     function doRecharge($param) {
         
         global $mysql;
+        sleep(15);
         $result = array();
         $error = 0;
         $result['number'] = $param['number'];
@@ -151,19 +156,20 @@ class JApplication {
         
         if (sizeof($api)==0) {
             $result['status']="failure";
-            $result['message']="Operator currently unavailable.";  
+            $result['message']="Operator currently unavailable..";    
             return $result;
         }
         
+         
         $dup = $mysql->select("select * from reqTbl where  operatorcode='".$param['operator']."' and rcnumber='".$param['number']."' and rcamount='".$param['amount']."' order by txnid desc limit 0,2");
         if (sizeof($dup)>1) {
-              // if ( (strtotime(date("Y-m-d H:i:s"))-strtotime($dup[0]['txndate']))<=300 ) {
-               if ( (strtotime($dup[0]['txndate'])-strtotime($dup[1]['txndate']))<=300 ) {
+            
+               if ( (strtotime($dup[0]['txndate'])-strtotime($dup[1]['txndate']))<=150 ) {
                   $result['status']="failure";
-                  $result['message']="Failed. Duplicate not allow lessthan 15 minutes";  
+                  $result['message']="Failed. Duplicate not allow lessthan 5 minutes";  
                   return $result; 
                }
-        }
+        }   
         
         //  $result['status']="failure";
           //  $result['message']="manual.".json_encode($dup).(strtotime(date("Y-m-d H:i:s"))-strtotime($dup[0]['txndate']));  
@@ -246,37 +252,37 @@ class JApplication {
                         
                         if ($param['operator']=="RB" || $param['operator']=="TB") {
                             $mysql->execute("update _tbl_operators set APIID='4' where OperatorCode='RB'");
-                            TelegramMessageController::sendSMS(316574188,"Dear Admin: BSNL Topup/Recharge API has been auot-switched to ArranjuLapu",0,0);
+                            TelegramMessageController::sendSMS(AdminTelegramID,"Dear Admin: BSNL Topup/Recharge API has been auot-switched to ArranjuLapu",0,0);
                             $response = AaranjuLapu::sendRequest($param);
                         }
                           
                         if ($param['operator']=="RV") {
                             $mysql->execute("update _tbl_operators set APIID='4' where OperatorCode='RV'");
-                            TelegramMessageController::sendSMS(316574188,"Dear Admin: Vodafone API has been auot-switched to ArranjuLapu",0,0);
+                            TelegramMessageController::sendSMS(AdminTelegramID,"Dear Admin: Vodafone API has been auot-switched to ArranjuLapu",0,0);
                             $response = AaranjuLapu::sendRequest($param);
                         }
                         
                         if ($param['operator']=="DS") {
                             $mysql->execute("update _tbl_operators set APIID='4' where OperatorCode='DS'");
-                            TelegramMessageController::sendSMS(316574188,"Dear Admin: SunDirect API has been auot-switched to ArranjuLapu",0,0);
+                            TelegramMessageController::sendSMS(AdminTelegramID,"Dear Admin: SunDirect API has been auot-switched to ArranjuLapu",0,0);
                             $response = AaranjuLapu::sendRequest($param);
                         } 
                         
                         if ($param['operator']=="TA") {
                             $mysql->execute("update _tbl_operators set APIID='4' where OperatorCode='TA'");
-                            TelegramMessageController::sendSMS(316574188,"Dear Admin: AirtelDigitalTV API has been auot-switched to ArranjuLapu",0,0);
+                            TelegramMessageController::sendSMS(AdminTelegramID,"Dear Admin: AirtelDigitalTV API has been auot-switched to ArranjuLapu",0,0);
                             $response = AaranjuLapu::sendRequest($param);
                         }
                         
                         if ($param['operator']=="DD") {
                             $mysql->execute("update _tbl_operators set APIID='4' where OperatorCode='DD'");
-                            TelegramMessageController::sendSMS(316574188,"Dear Admin: DishTV API has been auot-switched to ArranjuLapu",0,0);
+                            TelegramMessageController::sendSMS(AdminTelegramID,"Dear Admin: DishTV API has been auot-switched to ArranjuLapu",0,0);
                             $response = AaranjuLapu::sendRequest($param);
                         }
                         
                         if ($param['operator']=="DV") {
                             $mysql->execute("update _tbl_operators set APIID='4' where OperatorCode='DV'");
-                            TelegramMessageController::sendSMS(316574188,"Dear Admin: Videoond2h API has been auot-switched to ArranjuLapu",0,0);
+                            TelegramMessageController::sendSMS(AdminTelegramID,"Dear Admin: Videoond2h API has been auot-switched to ArranjuLapu",0,0);
                             $response = AaranjuLapu::sendRequest($param);
                         }
                     }
@@ -286,7 +292,9 @@ class JApplication {
                 $response = EzytmAPI::sendRequest($param);
             } elseif ($api[0]['APIID']==4) {
                 $response = AaranjuLapu::sendRequest($param);
-            }  
+            }  elseif ($api[0]['APIID']==5) {
+                $response = TKSD::sendRequest($param);
+            }   
 
              if ($response['status']=="failure") {
                $result['status']="failure";
@@ -410,6 +418,8 @@ class JApplication {
                                                             "Balance"     => $balance-$param['amount'],
                                                             "Voucher"     => "31"));        
 
+            TelegramMessageController::sendSMS(TKSDADMIN,"Dear Admin: You have received on off-line billpayment ".$param['particulars']."/".$param['number']."/".$param['operator']." amount : ".$param['amount'] ,0,0);
+ 
             $cashback_commission = $mysql->select("select * from _tbl_operators where OperatorCode='".$param['operator']."'");
             $m = $mysql->select("select * from _tbl_member where MemberID='".$param['MemberID']."'") ;
             $Cashback_ACtxnid = 0;

@@ -14,7 +14,7 @@
                     icon:"success",
                     confirm: {value: 'Continue'}
                 }).then((value) => {
-                    location.href='dashboard.php?action=SendAllDistributorss'
+                    location.href='dashboard.php?action=SendAllDistributors'
                 });
             </script>
         <?php } else { ?>
@@ -78,4 +78,3 @@
         </div>
     </div>            
 </div>
-<?php include_once("footer.php"); ?> 

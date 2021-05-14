@@ -141,4 +141,3 @@ function doCreditSalesPaynow() {
     <div style="padding:20px;color:red;text-align:center;width:100%;"><?php echo $data[0]['InactiveMessage'];?></div>
 </div>
 <?php } ?>          
-<?php include_once("footer.php"); ?>

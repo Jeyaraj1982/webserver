@@ -41,12 +41,19 @@ if ($_GET['mem']!="all") {
 
 $operators = $mysql->select("select * from _tbl_operators ");
                 
-$d = isset($_GET['d']) ? $_GET['d'] : date("d");
-$m = isset($_GET['m']) ? $_GET['m'] : date("m");
-$y = isset($_GET['y']) ? $_GET['y'] : date("Y");
-$reportDate = $y."-".$m."-".$d;
+$fd = isset($_GET['fd']) ? $_GET['fd'] : date("d");
+$fm = isset($_GET['fm']) ? $_GET['fm'] : date("m");
+$fy = isset($_GET['fy']) ? $_GET['fy'] : date("Y");
+$freportDate = $fy."-".$fm."-".$fd;
+
+$td = isset($_GET['td']) ? $_GET['td'] : date("d");
+$tm = isset($_GET['tm']) ? $_GET['tm'] : date("m");
+$ty = isset($_GET['ty']) ? $_GET['ty'] : date("Y");
+$treportDate = $ty."-".$tm."-".$td;
+
+
 $requests=$mysql->select("select * from _tbl_transactions as txn left join _tbl_member as mem on
-txn.memberid=mem.MemberID where date(txn.txndate)=date('".$reportDate."') ".$optr_sql."order by txn.txnid desc");
+txn.memberid=mem.MemberID where (date(txn.txndate)>=date('".$freportDate."') and date(txn.txndate)<=date('".$treportDate."') ) ".$optr_sql." order by txn.txnid desc");
 ?>
 <div style="padding:25px">
     <div class="page-header">
@@ -73,63 +80,120 @@ txn.memberid=mem.MemberID where date(txn.txndate)=date('".$reportDate."') ".$opt
             <div class="card">
                 <div class="card-header">
                     <h4 class="card-title">Transactions</h4>
-                    Report Date : <?php echo $reportDate; ?>
+                    Report Date : <?php echo $freportDate; ?> To <?php echo $treportDate; ?>
                 </div>
                 <div class="card-body">
                 <form action="" method="get">
                 <input type="hidden" value="Transactions/Report" name="action">
-                <select name="d">
-                    <option value="1"  <?php echo $d==1 ? " selected='selected' " : "";?> >1</option>
-                    <option value="2"  <?php echo $d==2 ? " selected='selected' " : "";?>>2</option>
-                    <option value="3"  <?php echo $d==3 ? " selected='selected' " : "";?>>3</option>
-                    <option value="4"  <?php echo $d==4 ? " selected='selected' " : "";?>>4</option>
-                    <option value="5"  <?php echo $d==5 ? " selected='selected' " : "";?>>5</option>
-                    <option value="6"  <?php echo $d==6 ? " selected='selected' " : "";?>>6</option>
-                    <option value="7"  <?php echo $d==7 ? " selected='selected' " : "";?>>7</option>
-                    <option value="8"  <?php echo $d==8 ? " selected='selected' " : "";?>>8</option>
-                    <option value="9"  <?php echo $d==9 ? " selected='selected' " : "";?>>9</option>
-                    <option value="10" <?php echo $d==10 ? " selected='selected' " : "";?>>10</option>
-                    <option value="11" <?php echo $d==11 ? " selected='selected' " : "";?>>11</option>
-                    <option value="12" <?php echo $d==12 ? " selected='selected' " : "";?>>12</option>
-                    <option value="13" <?php echo $d==13 ? " selected='selected' " : "";?>>13</option>
-                    <option value="14" <?php echo $d==14 ? " selected='selected' " : "";?>>14</option>
-                    <option value="15" <?php echo $d==15 ? " selected='selected' " : "";?>>15</option>
-                    <option value="16" <?php echo $d==16 ? " selected='selected' " : "";?>>16</option>
-                    <option value="17" <?php echo $d==17 ? " selected='selected' " : "";?>>17</option>
-                    <option value="18" <?php echo $d==18 ? " selected='selected' " : "";?>>18</option>
-                    <option value="19" <?php echo $d==19 ? " selected='selected' " : "";?>>19</option>
-                    <option value="20" <?php echo $d==20 ? " selected='selected' " : "";?>>20</option>
-                    <option value="21" <?php echo $d==21 ? " selected='selected' " : "";?>>21</option>
-                    <option value="22" <?php echo $d==22 ? " selected='selected' " : "";?>>22</option>
-                    <option value="23" <?php echo $d==23 ? " selected='selected' " : "";?>>23</option>
-                    <option value="24" <?php echo $d==24 ? " selected='selected' " : "";?>>24</option>
-                    <option value="25" <?php echo $d==25 ? " selected='selected' " : "";?>>25</option>
-                    <option value="26" <?php echo $d==26 ? " selected='selected' " : "";?>>26</option>
-                    <option value="27" <?php echo $d==27 ? " selected='selected' " : "";?>>27</option>
-                    <option value="28" <?php echo $d==28 ? " selected='selected' " : "";?>>28</option>
-                    <option value="29" <?php echo $d==29 ? " selected='selected' " : "";?>>29</option>
-                    <option value="30" <?php echo $d==30 ? " selected='selected' " : "";?>>30</option>
-                    <option value="31" <?php echo $d==31 ? " selected='selected' " : "";?>>31</option>
+                From : <select name="fd">
+                    <option value="1"  <?php echo $fd==1 ? " selected='selected' " : "";?> >1</option>
+                    <option value="2"  <?php echo $fd==2 ? " selected='selected' " : "";?>>2</option>
+                    <option value="3"  <?php echo $fd==3 ? " selected='selected' " : "";?>>3</option>
+                    <option value="4"  <?php echo $fd==4 ? " selected='selected' " : "";?>>4</option>
+                    <option value="5"  <?php echo $fd==5 ? " selected='selected' " : "";?>>5</option>
+                    <option value="6"  <?php echo $fd==6 ? " selected='selected' " : "";?>>6</option>
+                    <option value="7"  <?php echo $fd==7 ? " selected='selected' " : "";?>>7</option>
+                    <option value="8"  <?php echo $fd==8 ? " selected='selected' " : "";?>>8</option>
+                    <option value="9"  <?php echo $fd==9 ? " selected='selected' " : "";?>>9</option>
+                    <option value="10" <?php echo $fd==10 ? " selected='selected' " : "";?>>10</option>
+                    <option value="11" <?php echo $fd==11 ? " selected='selected' " : "";?>>11</option>
+                    <option value="12" <?php echo $fd==12 ? " selected='selected' " : "";?>>12</option>
+                    <option value="13" <?php echo $fd==13 ? " selected='selected' " : "";?>>13</option>
+                    <option value="14" <?php echo $fd==14 ? " selected='selected' " : "";?>>14</option>
+                    <option value="15" <?php echo $fd==15 ? " selected='selected' " : "";?>>15</option>
+                    <option value="16" <?php echo $fd==16 ? " selected='selected' " : "";?>>16</option>
+                    <option value="17" <?php echo $fd==17 ? " selected='selected' " : "";?>>17</option>
+                    <option value="18" <?php echo $fd==18 ? " selected='selected' " : "";?>>18</option>
+                    <option value="19" <?php echo $fd==19 ? " selected='selected' " : "";?>>19</option>
+                    <option value="20" <?php echo $fd==20 ? " selected='selected' " : "";?>>20</option>
+                    <option value="21" <?php echo $fd==21 ? " selected='selected' " : "";?>>21</option>
+                    <option value="22" <?php echo $fd==22 ? " selected='selected' " : "";?>>22</option>
+                    <option value="23" <?php echo $fd==23 ? " selected='selected' " : "";?>>23</option>
+                    <option value="24" <?php echo $fd==24 ? " selected='selected' " : "";?>>24</option>
+                    <option value="25" <?php echo $fd==25 ? " selected='selected' " : "";?>>25</option>
+                    <option value="26" <?php echo $fd==26 ? " selected='selected' " : "";?>>26</option>
+                    <option value="27" <?php echo $fd==27 ? " selected='selected' " : "";?>>27</option>
+                    <option value="28" <?php echo $fd==28 ? " selected='selected' " : "";?>>28</option>
+                    <option value="29" <?php echo $fd==29 ? " selected='selected' " : "";?>>29</option>
+                    <option value="30" <?php echo $fd==30 ? " selected='selected' " : "";?>>30</option>
+                    <option value="31" <?php echo $fd==31 ? " selected='selected' " : "";?>>31</option>
                 </select>
-                <select name="m">
-                    <option value="1"  <?php echo $m==1 ? " selected='selected' " : "";?>>JAN</option>
-                    <option value="2"  <?php echo $m==2 ? " selected='selected' " : "";?>>FEB</option>
-                    <option value="3"  <?php echo $m==3 ? " selected='selected' " : "";?>>MAR</option>
-                    <option value="4"  <?php echo $m==4 ? " selected='selected' " : "";?>>APR</option>
-                    <option value="5"  <?php echo $m==5 ? " selected='selected' " : "";?> >MAY</option>
-                    <option value="6"  <?php echo $m==6 ? " selected='selected' " : "";?> >JUN</option>
-                    <option value="7"  <?php echo $m==7 ? " selected='selected' " : "";?> >JLY</option>
-                    <option value="8"  <?php echo $m==8 ? " selected='selected' " : "";?>>AUG</option>
-                    <option value="9"  <?php echo $m==9 ? " selected='selected' " : "";?>>SEP</option>
-                    <option value="10" <?php echo $m==10 ? " selected='selected' " : "";?>>OCT</option>
-                    <option value="11" <?php echo $m==11 ? " selected='selected' " : "";?>>NOV</option>
-                    <option value="12" <?php echo $m==12 ? " selected='selected' " : "";?>>DEC</option>
+                <select name="fm">
+                    <option value="1"  <?php echo $fm==1 ? " selected='selected' " : "";?>>JAN</option>
+                    <option value="2"  <?php echo $fm==2 ? " selected='selected' " : "";?>>FEB</option>
+                    <option value="3"  <?php echo $fm==3 ? " selected='selected' " : "";?>>MAR</option>
+                    <option value="4"  <?php echo $fm==4 ? " selected='selected' " : "";?>>APR</option>
+                    <option value="5"  <?php echo $fm==5 ? " selected='selected' " : "";?> >MAY</option>
+                    <option value="6"  <?php echo $fm==6 ? " selected='selected' " : "";?> >JUN</option>
+                    <option value="7"  <?php echo $fm==7 ? " selected='selected' " : "";?> >JLY</option>
+                    <option value="8"  <?php echo $fm==8 ? " selected='selected' " : "";?>>AUG</option>
+                    <option value="9"  <?php echo $fm==9 ? " selected='selected' " : "";?>>SEP</option>
+                    <option value="10" <?php echo $fm==10 ? " selected='selected' " : "";?>>OCT</option>
+                    <option value="11" <?php echo $fm==11 ? " selected='selected' " : "";?>>NOV</option>
+                    <option value="12" <?php echo $fm==12 ? " selected='selected' " : "";?>>DEC</option>
                 </select>
-                <select name="y">
+                <select name="fy">
                     <?php for($i=$_CONFIG['START_YEAR'];$i<=$_CONFIG['END_YEAR'];$i++) { ?>
-                    <option value="<?php echo $i;?>"  <?php echo $y==$i ? " selected='selected' " : "";?>><?php echo $i;?></option>
+                    <option value="<?php echo $i;?>"  <?php echo $fy==$i ? " selected='selected' " : "";?>><?php echo $i;?></option>
                     <?php } ?>
                 </select>
+                <br>
+                
+                   
+               To : <select name="td">
+                    <option value="1"  <?php echo $td==1 ? " selected='selected' " : "";?> >1</option>
+                    <option value="2"  <?php echo $td==2 ? " selected='selected' " : "";?>>2</option>
+                    <option value="3"  <?php echo $td==3 ? " selected='selected' " : "";?>>3</option>
+                    <option value="4"  <?php echo $td==4 ? " selected='selected' " : "";?>>4</option>
+                    <option value="5"  <?php echo $td==5 ? " selected='selected' " : "";?>>5</option>
+                    <option value="6"  <?php echo $td==6 ? " selected='selected' " : "";?>>6</option>
+                    <option value="7"  <?php echo $td==7 ? " selected='selected' " : "";?>>7</option>
+                    <option value="8"  <?php echo $td==8 ? " selected='selected' " : "";?>>8</option>
+                    <option value="9"  <?php echo $td==9 ? " selected='selected' " : "";?>>9</option>
+                    <option value="10" <?php echo $td==10 ? " selected='selected' " : "";?>>10</option>
+                    <option value="11" <?php echo $td==11 ? " selected='selected' " : "";?>>11</option>
+                    <option value="12" <?php echo $td==12 ? " selected='selected' " : "";?>>12</option>
+                    <option value="13" <?php echo $td==13 ? " selected='selected' " : "";?>>13</option>
+                    <option value="14" <?php echo $td==14 ? " selected='selected' " : "";?>>14</option>
+                    <option value="15" <?php echo $td==15 ? " selected='selected' " : "";?>>15</option>
+                    <option value="16" <?php echo $td==16 ? " selected='selected' " : "";?>>16</option>
+                    <option value="17" <?php echo $td==17 ? " selected='selected' " : "";?>>17</option>
+                    <option value="18" <?php echo $td==18 ? " selected='selected' " : "";?>>18</option>
+                    <option value="19" <?php echo $td==19 ? " selected='selected' " : "";?>>19</option>
+                    <option value="20" <?php echo $td==20 ? " selected='selected' " : "";?>>20</option>
+                    <option value="21" <?php echo $td==21 ? " selected='selected' " : "";?>>21</option>
+                    <option value="22" <?php echo $td==22 ? " selected='selected' " : "";?>>22</option>
+                    <option value="23" <?php echo $td==23 ? " selected='selected' " : "";?>>23</option>
+                    <option value="24" <?php echo $td==24 ? " selected='selected' " : "";?>>24</option>
+                    <option value="25" <?php echo $td==25 ? " selected='selected' " : "";?>>25</option>
+                    <option value="26" <?php echo $td==26 ? " selected='selected' " : "";?>>26</option>
+                    <option value="27" <?php echo $td==27 ? " selected='selected' " : "";?>>27</option>
+                    <option value="28" <?php echo $td==28 ? " selected='selected' " : "";?>>28</option>
+                    <option value="29" <?php echo $td==29 ? " selected='selected' " : "";?>>29</option>
+                    <option value="30" <?php echo $td==30 ? " selected='selected' " : "";?>>30</option>
+                    <option value="31" <?php echo $td==31 ? " selected='selected' " : "";?>>31</option>
+                </select>
+                <select name="tm">
+                    <option value="1"  <?php echo $tm==1 ? " selected='selected' " : "";?>>JAN</option>
+                    <option value="2"  <?php echo $tm==2 ? " selected='selected' " : "";?>>FEB</option>
+                    <option value="3"  <?php echo $tm==3 ? " selected='selected' " : "";?>>MAR</option>
+                    <option value="4"  <?php echo $tm==4 ? " selected='selected' " : "";?>>APR</option>
+                    <option value="5"  <?php echo $tm==5 ? " selected='selected' " : "";?> >MAY</option>
+                    <option value="6"  <?php echo $tm==6 ? " selected='selected' " : "";?> >JUN</option>
+                    <option value="7"  <?php echo $tm==7 ? " selected='selected' " : "";?> >JLY</option>
+                    <option value="8"  <?php echo $tm==8 ? " selected='selected' " : "";?>>AUG</option>
+                    <option value="9"  <?php echo $tm==9 ? " selected='selected' " : "";?>>SEP</option>
+                    <option value="10" <?php echo $tm==10 ? " selected='selected' " : "";?>>OCT</option>
+                    <option value="11" <?php echo $tm==11 ? " selected='selected' " : "";?>>NOV</option>
+                    <option value="12" <?php echo $tm==12 ? " selected='selected' " : "";?>>DEC</option>
+                </select>
+                <select name="ty">
+                    <?php for($i=$_CONFIG['START_YEAR'];$i<=$_CONFIG['END_YEAR'];$i++) { ?>
+                    <option value="<?php echo $i;?>"  <?php echo $ty==$i ? " selected='selected' " : "";?>><?php echo $i;?></option>
+                    <?php } ?>
+                </select>
+                <br>
+                <br>
                 
                 <select name="o">
                     <option value="all" <?php echo "all"==$_GET['o'] ? " selected='selected' " :"";?>>All</option>
@@ -143,6 +207,7 @@ txn.memberid=mem.MemberID where date(txn.txndate)=date('".$reportDate."') ".$opt
                     <option value="reversed">REVERSED</option>
                     <option value="pending">PENDING</option>
                     <option value="accepted">ACCEPTED</option>
+                    <option value="failure">FAILURE</option>
                 </select>
                 
                  <select name="mem">

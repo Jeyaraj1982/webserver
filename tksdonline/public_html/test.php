@@ -1,6 +1,9 @@
 <?php
-     $t1=strtotime("2020-07-14 11:30:00");
-     $t2=strtotime("2020-07-14 11:35:00");
-     
-     echo $t2-$t1;
- ?> 
+    include_once("admin/config.php");
+  
+        TelegramMessageController::sendSMS(1107300198,"Test sms",0,0);  
+        //TelegramMessageController::sendSMS(1408513698,"Test sms",0,0);  
+        TelegramMessageController::sendSMS(514115811,"Test sms",0,0);  
+      
+      
+?> 

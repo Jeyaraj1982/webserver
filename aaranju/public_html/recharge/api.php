@@ -70,6 +70,13 @@ if ($_GET['amount']<10) {
         exit;
 }
 
+if ($user[0]['userid']==9) {
+   if (Recharge::get_balance($user[0]['userid'])<14900)  {
+       echo return_result(array("response"=>array("status"=>"failure","error"=>"Lapu is Offline"))); 
+       exit; 
+   }
+}
+
 if (Recharge::get_balance($user[0]['userid'])<$_GET['amount']) { 
     $txnid = $mysql->insert("_transactions",array("userid"          => $param['userid'],
                                                   "txndate"         => date("Y-m-d H:i:s"),
@@ -89,6 +96,7 @@ if (Recharge::get_balance($user[0]['userid'])<$_GET['amount']) {
     echo return_result(array("response"=>array("status"=>"failure","error"=>"Lapu is Offline","txnid"=>$txnid))); 
     exit;
 } 
+ 
 
 if ($_GET['optr']=="xRJ") {
 

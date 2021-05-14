@@ -54,7 +54,7 @@
     <div class="col-3" style="text-align: right;padding-left:0px;">
     <a href="javascript:void(0);" onclick="ViewContacts('<?php echo $s['ContactName'];?>','<?php echo $s['MobileNumber'];?>','<?php echo $s['MobileOperator'];?>','<?php echo $s['DTHNumber'];?>','<?php echo $s['DTHOperator'];?>','<?php echo $s['TNEBNumber'];?>','<?php echo $TnebRegion[$s['TNEBRegion']]; ?>','<?php echo $s['ContactID'];?>')"><img src="http://tksdonlineservice.in/assets/img/maximize.png"></a>
          <!--<a href="dashboard.php?action=settings_mycontacts_edit&cid=<?php echo $s['ContactID'];?>">Edit</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-         <a href="javascript:void(0);" onclick="ViewContacts('<?php/* echo $s['ContactName'];?>','<?php echo $s['MobileNumber'];?>','<?php echo $s['MobileOperator'];?>','<?php echo $s['DTHNumber'];?>','<?php echo $s['DTHOperator'];?>','<?php echo $s['TNEBNumber'];?>','<?php echo $TnebRegion[$s['TNEBRegion']]; */?>')">View</a>-->
+         <a href="javascript:void(0);" onclick="ViewContacts('<?php // echo $s['ContactName'];?>','<?php echo $s['MobileNumber'];?>','<?php echo $s['MobileOperator'];?>','<?php echo $s['DTHNumber'];?>','<?php echo $s['DTHOperator'];?>','<?php echo $s['TNEBNumber'];?>','<?php echo $TnebRegion[$s['TNEBRegion']];?>')">View</a>-->
     </div>
 </div>
 <div class="row">

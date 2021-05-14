@@ -4,6 +4,7 @@
 <?php
     $_OPERATOR = "MTB";
     $data = $mysql->select("select * from _tbl_operators where OperatorCode='".$_OPERATOR."'");
+    $benifechery_details=array();
 ?>
 
 <div style="padding:0px;text-align:center;margin-bottom:20px;">

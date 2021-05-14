@@ -1,11 +1,13 @@
 <?php
     session_start();
     date_default_timezone_set('Asia/Calcutta');
-    define("SITE_URL","https://hamiec.j2jsoftwaresolutions.com");
+    ini_set('memory_limit', '-1');
+    
+    define("SITE_URL","https://www.tksdonlineservice.in");
     define("SITE_TITLE","tksdonlineservice.in");
     define("SQL_LOG_PATH","/home/tksdonline/public_html/admin/logs");
     define("AdminTelegramID","316574188"); 
-    define("loginUrl","http://tksdonlineservice.in/index.php");
+    define("loginUrl","https://www.tksdonlineservice.in/index.php");
     
     if (isset($_GET['action']) && $_GET['action']=="logout") {
         session_destroy();
@@ -15,13 +17,14 @@
         echo "<script>location.href='".loginUrl."';</script>"; 
         exit;
     }
-    
+    $userRole="";
     if (isset($_SESSION['User']) && $_SESSION['User']['Role']=="Member") {
-        define("UserRole","Member");
+        $userRole = "Member";
     }
     if (isset($_SESSION['User']) && $_SESSION['User']['Role']=="Admin") {
         define("UserRole","Admin");
     }
+    define("UserRole",$userRole);
                                          
     define("DbHost","localhost");
     define("DbName","tksdonli_database");

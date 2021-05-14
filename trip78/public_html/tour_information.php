@@ -501,15 +501,16 @@ function validateEmail(emailField){
                        }                
                             
                          var emailid = jQuery("#EmailID").val();
-                       if (emailid.trim().length<3) {
-                            jQuery("#ErrorEmailID").html("Please enter email id");
-                            return false;
-                       }                
-                             
+                     //  if (emailid.trim().length<3) {
+                       //     jQuery("#ErrorEmailID").html("Please enter email id");
+                         //   return false;
+                       //}                
+                            if (emailid.trim().length>0) {  
                              if (!(validateEmail(emailid)))               {
                                   jQuery("#ErrorEmailID").html("Please enter valid email id");
                                   return false;
                              }
+                            }
                        
                            var mobilenumber = jQuery("#MobileNumber").val();
                            

@@ -3,7 +3,7 @@
             $duplicate = $mysql->select("select * from _tbl_member_bankaccounts where AccountNumber='".trim($_POST['AccountNumber'])."'");
             if (sizeof($duplicate)==0) {
                 
-                $url = "https://www.aaranju.in/moneytransfer/api.php?apiusername=d2VsY29tZUA&apipassword=jM0NTY3ODk&AddIncommingBankAccount=1&accountnumber=".ltrim(trim($_POST['AccountNumber']),'0')."&accountname=".$_POST['AccountName']."&ifscode=".$_POST['IFSCode'];
+                $url = "https://www.aaranju.in/moneytransfer/api.php?apiusername=d2VsY29tZUA&apipassword=jM0NTY3ODk&AddIncommingBankAccount=1&accountnumber=".ltrim(trim($_POST['AccountNumber']),'0')."&accountname=".urlencode(trim($_POST['AccountName']))."&ifscode=".trim($_POST['IFSCode']);
                 $mysql->insert("_tbl_member_bankaccounts",array("MemberID"=>$_SESSION['User']['MemberID'],
                                                                 "AccountName"=>trim($_POST['AccountName']),
                                                                 "AccountNumber"=>ltrim(trim($_POST['AccountNumber']),'0'),

@@ -4,6 +4,7 @@
             <i class="fas fa-home"></i><p>Dashboard</p>
         </a>
     </li>
+    <?php if ($_SESSION['User']['IsAdmin']==1) { ?>
     <li class="nav-item">
         <a data-toggle="collapse" href="#users"><i class="fas fa-layer-group"></i><p>Partners</p><span class="caret"></span></a>
         <div class="collapse" id="users">
@@ -36,6 +37,8 @@
                 <li><a href="dashboard.php?action=Transactions/CreditDebit"><span class="sub-item">Credit/Debit</span></a></li>
                 <li><a href="dashboard.php?action=Transactions/Report"><span class="sub-item">Transaction Reports</span></a></li>
                 <li><a href="dashboard.php?action=Reports/MAB"><span class="sub-item">MAB Reports</span></a></li>
+                <li><a href="dashboard.php?action=Reports/MonthlySalesReport"><span class="sub-item">Monthly Sales</span></a></li>
+                <li><a href="dashboard.php?action=Reports/SalesReport"><span class="sub-item">Sales Report</span></a></li>
             </ul>
         </div>
     </li>
@@ -57,6 +60,7 @@
                 <li><a href="dashboard.php?action=RechargePlans/List"><span class="sub-item">Recharge Plan</span></a></li>
                 <li><a href="dashboard.php?action=Imps/UpdateLimits"><span class="sub-item">Update IMPS Limit</span></a></li>
                 <li><a href="dashboard.php?action=Transactions/TxnIDUpdate"><span class="sub-item">Txn ID Update</span></a></li>
+                <li><a href="dashboard.php?action=Settings/GeneralSettings"><span class="sub-item">General Settings</span></a></li>
                 <!--<li><a href="dashboard.php?action=Settings/LapuLog"><span class="sub-item">Lapu log</span></a></li>-->
             </ul>
         </div>
@@ -73,7 +77,17 @@
         </div>
     </li>
    
- 
+  <?php } else { ?>
+          <li class="nav-item">
+        <a data-toggle="collapse" href="#report"><i class="fas fa-layer-group"></i><p>Reports</p><span class="caret"></span></a>
+        <div class="collapse" id="report">
+            <ul class="nav nav-collapse">
+               
+                <li><a href="dashboard.php?action=Transactions/StaffReport"><span class="sub-item">Transaction Reports</span></a></li>
+            </ul>
+        </div>
+    </li>
+  <?php } ?>
        
       
       <li  class="nav-item"><a href="dashboard.php?action=logout"><span class="sub-item">Logout</span></a></li>

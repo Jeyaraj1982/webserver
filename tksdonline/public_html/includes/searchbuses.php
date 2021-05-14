@@ -34,14 +34,14 @@ class Webservice {
         
     class BusTicket {
         
-        function getTime($time) {
+       public static function getTime($time) {
             $hour = (int)($time / 60);
             $remainder = $time % 60;
             $remainder = ($remainder == 0) ? "00"  : $remainder;
             return (($hour>23) ? (($hour%24)) :  $hour).":".$remainder;
         }
     
-        function CalculateDateTime($doj,$time) {
+        public static function CalculateDateTime($doj,$time) {
             $hour = (int)($time / 60);
             $remainder = $time % 60;
             $remainder = ($remainder == 0) ? "00"  : $remainder; 
@@ -57,7 +57,7 @@ class Webservice {
             }  
         }
     
-        function CalculateDate($doj,$time) {
+      public static  function CalculateDate($doj,$time) {
             $hour = (int)($time / 60);
             $remainder = $time % 60;
             $remainder = ($remainder == 0) ? "00"  : $remainder; 
@@ -73,7 +73,7 @@ class Webservice {
             }  
         }
     
-        function GetDuration($doj,$btime,$dtime) {
+       public static function GetDuration($doj,$btime,$dtime) {
             $datetime1 = new DateTime(BusTicket::CalculateDateTime($doj,$btime));
             $datetime2 = new DateTime(BusTicket::CalculateDateTime($doj,$dtime));
             $interval = $datetime1->diff($datetime2);
@@ -509,8 +509,10 @@ class Webservice {
                                //print_r($datas);
                               ?>
                              <?php  
+                             $datas['availableTrips'] = isset($datas['availableTrips']) ? $datas['availableTrips'] : array();
                                 foreach($datas['availableTrips'] as $data) {
-                                    if ( $data['availableSeats']>0) {
+                                    if ( isset($data['availableSeats']) && $data['availableSeats']>0) {
+                                        
                                         if (isset($data['boardingTimes'][0])) {
                                             $bTime = $data['boardingTimes'][0]['time'];
                                         } else {
@@ -523,7 +525,7 @@ class Webservice {
                                             $dTime  =  $data['droppingTimes']['time'];
                                         }
                                       //  $duration = BusTicket::GetDuration($_GET['doj'],$bTime,$dTime); 
-                                      //  $can_policy=canPolicy($data['cancellationPolicy'],farearray($data['fares']),$_GET['doj']." ".BusTicket::getTime($bTime));
+                                        $can_policy=canPolicy($data['cancellationPolicy'],farearray($data['fares']),$_GET['doj']." ".BusTicket::getTime($bTime));
                                ?>
                                 <div style="border: 1px solid #ddd;margin-top: 20px;padding: 10px;padding-bottom:0px;" >
                                     <div class="row">
@@ -545,7 +547,8 @@ class Webservice {
 									</div>
 									<div class="row">
 										<div class="col-12">
-											<h5><?php echo $data['travels'];?> <?php if(sizeof($data['busServiceId'])>0) { // echo "(".$data['busServiceId'].")"; 
+                                        
+											<h5><?php echo $data['travels'];?> <?php if($data['busServiceId']>0) { // echo "(".$data['busServiceId'].")"; 
 											} ?></h5>
 											<p style="color: #7e7e8c;"><?php echo $data['busType'];?><!--&nbsp;(<?php echo $data['id'];?>)--></p>
 											<p style="color: #7e7e8c;">

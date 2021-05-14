@@ -97,7 +97,7 @@
              <option value="<?php echo $a['MemberID'];?>">
              
              <?php echo $a['MemberName']." (".$a['MobileNumber'].") ";?>
-             Balance: <?php echo number_format($application->getBalance($a['MemberID']),2);?>
+             <!--Balance: <?php // echo number_format($application->getBalance($a['MemberID']),2);?>-->
              
              </option>
         <?php
@@ -125,4 +125,3 @@
         </div>
     </div>            
 </div>
-<?php include_once("footer.php"); ?>

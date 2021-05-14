@@ -452,6 +452,7 @@
                                         $apicode[2]="MRoboticsAPI";
                                         $apicode[3]="EzytmAPI";
                                         $apicode[4]="AaranjuLapu";
+                                        $apicode[5]="TKSD";        
                                         
                                     ?>
                                         <div class="col-md-12">
@@ -463,7 +464,7 @@
                                                         <th>Operator</th>
                                                         <th style="text-align:right">Amount</th>
                                                    </tr>
-                                                </thead>
+                                                </thead>           
                                                 <tbody>
                                                     <?php foreach($dreport as $d) {
                                                         $o = $mysql->select("select * from _tbl_operators where OperatorCode='".$d['operatorcode']."'");

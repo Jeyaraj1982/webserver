@@ -37,6 +37,7 @@
     }  
     if (strtolower($_GET['message'])=="/start") {
         TelegramMessageController::sendSMS($_GET['clientid'],"Thanks for joiin us",0,0);
+        echo $_GET['message'];
     } 
     //txnid=1&clientid=316574188&message=Hi&from=S
       

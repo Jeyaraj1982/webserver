@@ -1,4 +1,21 @@
 <?php 
+if (isset($_GET['htxn'])) {
+    $mysql->execute("update _tbl_admin_credits set `IsShow`='0' where CreditID='".$_GET['htxn']."'");
+    $txn = $mysql->select("select * from _tbl_admin_credits where CreditID='".$_GET['htxn']."'");
+    
+    $member = $mysql->select("select * from _tbl_member where MemberID='".$txn[0]['MemberID']."'");
+    
+    if (isset($member[0]['TelegramID']) && $member[0]['TelegramID']>0) {
+        $txn_amount = $mysql->select("select sum(Amount) as PayableAmount from _tbl_admin_credits where `IsShow`='1' and MemberID='".$txn[0]['MemberID']."'");
+        $message = "Dear ".$member[0]['MemberName'].",  We recevied   Rs. ".$txn[0]['Amount'].".";
+        if (isset($txn_amount[0]['Payableamount']) && $txn_amount[0]['Payableamount']>0){
+            $message .= " Your total outstanding is Rs. ".$txn_amount[0]['Payableamount'];
+        } else {
+            $message .= " Your outstanding amount is Nill";
+        }
+        TelegramMessageController::sendSMS($member[0]['TelegramID'],$message,0,0);
+    }
+}
 $summary = $mysql->select("select * from `_tbl_admin_credits` where `AdminID`='".$_SESSION['User']['AdminID']."' and `IsShow`='1' order by CreditID desc");
     $totalcredits = $mysql->select("select sum(Amount) as Amt from `_tbl_admin_credits` where `AdminID`='".$_SESSION['User']['AdminID']."'  and `IsPaid`='0'  order by AdminID desc");
   ?>

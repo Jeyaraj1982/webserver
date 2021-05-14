@@ -3,12 +3,15 @@
     $data   = $mysql->select("select * from _tbl_operators where OperatorCode='".$_OPERATOR."'");
     $plans  = $mysql->select("SELECT * FROM _tbl_operator_plans  where IsActive='1'  and OperatorCode='".$_OPERATOR."' order by Amount Desc" );
 ?>
-<div style="padding:0px;text-align:center;margin-bottom:20px;">
-    <h5><?php echo $data[0]['OperatorTypeCode'];?></h5>
-    <h6 style="color:#999">Balance: Rs. <?php echo number_format($application->getBalance($_SESSION['User']['MemberID']),2);?></h6>
-</div> 
-<div class="row" style="padding-bottom:30px">
-    <img src="assets/img/<?php echo $data[0]['IconFile'];?>" style="width:25%;border:1px solid #ccc;border-radius:10px;margin:0px auto">    
+ 
+<div class="row" style="padding-top:10px">
+    <div class="col-9" style="padding-left:20px">
+    <h5 style="color:#666;padding-top: 2px;"><?php echo $data[0]['OperatorTypeCode'];?></h5>
+    </div>
+    <div class="col-3" style="padding-right:20px">
+    <img src="assets/img/<?php echo $data[0]['IconFile'];?>" style="width:100%;border:1px solid #ccc;border-radius:10px;margin:0px auto">    
+    </div>
+    
 </div>
 <?php
 $enable = true;
@@ -71,7 +74,7 @@ if (sizeof($t)>0) {
         <?php } ?>
     <?php } else { ?>
         <div class="row">
-            <form action="" method="post" style="width: 80%;margin: 0px auto;"  onsubmit="return checkInputs()">
+            <form action="" method="post" style="width: 100%;margin: 0px auto;padding: 20px;padding-top: 0px;"  onsubmit="return checkInputs()">
                 <div class="form-group">
                     <label class="text-bold-600" for="exampleInputEmail1">Mobile Number</label>
                     <?php 
@@ -81,11 +84,11 @@ if (sizeof($t)>0) {
                             $mob ="";
                         }
                     ?>
-                    <input type="number" onKeyDown="return doValidate(event)" value="<?php echo isset($_POST['MobileNumber']) ? $_POST['MobileNumber'] : $mob;?>" maxlength="10" name="MobileNumber" id="MobileNumber" class="form-control" id="exampleInputEmail1" placeholder="Mobile Number" required="">
+                    <input type="number" onKeyDown="return doValidate(event)" value="<?php echo isset($_POST['MobileNumber']) ? $_POST['MobileNumber'] : $mob;?>" maxlength="10" name="MobileNumber" id="MobileNumber" class="form-control" id="exampleInputEmail1" placeholder="Mobile Number">
                 </div>
                 <div class="form-group">
                     <label class="text-bold-600" for="exampleInputEmail1">Amount</label>
-                    <input type="number"  value="<?php echo isset($_POST['Amount']) ? $_POST['Amount'] : "";?>" maxlength="10" name="Amount" id="Amount" class="form-control" placeholder="Amount" required="">
+                    <input type="number"  value="<?php echo isset($_POST['Amount']) ? $_POST['Amount'] : "";?>" maxlength="10" name="Amount" id="Amount" class="form-control" placeholder="Amount">
                     <?php if (sizeof($plans)>0) {?>
                     <a href="javascript:void(0)" onclick="showPlans()">Browse Plans</a>
                     <?php } ?>
@@ -101,9 +104,15 @@ if (sizeof($t)>0) {
                 <div class="form-group">
                     <p align="center" style="color:red" id="error_msg">&nbsp;<?php echo $error;?></p>
                 </div>
-                <button type="submit" name="submitRequest" id="submitRequest" class="btn btn-success  glow w-100 position-relative">Recharge now<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></button><br><br>
-                <a href="dashboard.php?action=mobilerc" class="btn btn-outline-success glow w-100 position-relative">Back<i id="icon-arrow" class="bx bx-left-arrow-alt" style="float: left;"></i></a>
-                <br><br>
+                 <div class="row form-group">
+                    <div class="col-5">
+                        <a href="dashboard.php?action=mobilerc" class="btn btn-outline-success glow w-100 position-relative">Back<i id="icon-arrow" class="bx bx-left-arrow-alt" style="float: left;"></i></a>
+                    </div>
+                    <div class="col-7">
+                        <button type="submit" name="submitRequest" id="submitRequest" class="btn btn-success  glow w-100 position-relative">Recharge now<i id="icon-arrow" class="bx bx-right-arrow-alt" style="float: right;"></i></button><br><br>
+                    </div>
+                </div>
+               
                 <div style="text-align: center;">
                     <a href="dashboard.php?action=txnhistory&operator=<?php echo $_OPERATOR;?>" style="color:#555">Transaction History</a>
                 </div>
@@ -155,6 +164,10 @@ if (sizeof($t)>0) {
     function checkInputs() {
         $('#error_msg').html("&nbsp;");  
         var ebnumber = $('#MobileNumber').val();
+        if (ebnumber.length==0) {
+            $('#error_msg').html("Please enter mobile number");
+            return false;
+        }
         if (!(ebnumber.length==10)) {
             $('#error_msg').html("Invalid Mobile Number");
             return false;

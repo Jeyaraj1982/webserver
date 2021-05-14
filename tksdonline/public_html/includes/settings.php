@@ -37,7 +37,7 @@
         </a>
     </div>
     
-                <?php if($_SESSION[User]['IsAPI']=="1"){ ?>
+                <?php if($_SESSION['User']['IsAPI']=="1"){ ?>
                     <div class="col-4" style="padding-right:6px;padding-left:6px;text-align: right;">
                     <a href="dashboard.php?action=settings_apikey"  class="btn btn-icon  glow mb-1" style="width:100%" >
                         <img src="assets/img/logo_myprofile.png" style="width:100%;border:1px solid #ccc;border-radius:10px;">

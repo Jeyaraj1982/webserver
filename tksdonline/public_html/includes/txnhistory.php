@@ -61,8 +61,8 @@
             Rs. <?php echo $s['rcamount'];?><br>
             <?php if ($s['TxnStatus']=="reversed") {
                   echo "<span style='color:orange'>".strtoupper($s['TxnStatus'])."</span><br>";
-                  echo "<span style='color:#888'>".strtoupper($s['msg'])."</span><br>";
-                  echo "<span style='color:#888'>".$s['revDate']."</span>";
+                  echo "<span style='color:red;font-size:11px;'>".strtoupper($s['reverseResponse'])."</span><br>";
+                  echo "<span style='color:#888;font-size:11px'>Reversed on ".$s['revDate']."</span>";
             } ?>
             <?php if ($s['TxnStatus']=="success") {
                   echo "<span style='color:green'>".strtoupper($s['TxnStatus'])."</span><br>";

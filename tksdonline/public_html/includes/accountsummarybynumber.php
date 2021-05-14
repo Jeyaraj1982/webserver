@@ -45,9 +45,9 @@
             <?php echo $s['Particulars'];?>
             <div style="text-align:right;">
             <?php if ($s['Credit']>0) {?>
-            <span style="color:Green">+<?php echo number_format($s['Credit'],2);?></span>
+            <span style="color:Green">+<?php echo number_format(((isset($s['Credit']) && $s['Credit']>0) ? $s['Credit'] : 0),2);?></span>
             <?php } else { ?>
-            <span style="color:red">-<?php echo number_format($s['Debit'],2);?></span>
+            <span style="color:red">-<?php echo number_format(((isset($s['Debit']) && $s['Debit']>0) ? $s['Debit'] : 0),2);?></span>
             <?php } ?>
             <br>
             <span style="color:#888"><?php echo number_format($s['Balance'],2);?></span>

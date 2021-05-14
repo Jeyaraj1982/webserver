@@ -37,6 +37,7 @@
                                                                Address1        = '".$_POST['Address1']."',
                                                                Address2        = '".$_POST['Address2']."',
                                                                MoneyTransferLimit = '".$_POST['MoneyTransferLimit']."',
+                                                               DepositAmount = '".$_POST['DepositAmount']."',
                                                                MoneyTransfer      = '".$_POST['MoneyTransfer']."'  
                                                                where MemberID  = '".$_GET['User']."'");
              ?>
@@ -178,6 +179,13 @@
                                 <div class="form-group">
                                     <label>Confirm Password<span style="color:red">*</span></label>
                                     <input name="CMemberPassword" id="CMemberPassword" placeholder="Confirm Password" value="<?php echo isset($_POST['MemberPassword']) ? $_POST['MemberPassword'] : $data[0]['MemberPassword'];?>" class="form-control" required="" aria-invalid="true" data-validation-required-message="Please enter Confirm Password" type="password">
+                                    <div class="help-block"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Deposit Amount<span style="color:red">*</span></label>
+                                    <input name="DepositAmount" id="DepositAmount" placeholder="Deposit Amount" value="<?php echo isset($_POST['DepositAmount']) ? $_POST['DepositAmount'] : $data[0]['DepositAmount'];?>" class="form-control" required="" aria-invalid="true" data-validation-required-message="Please enter Deposit Amount" type="DepositAmount">
                                     <div class="help-block"></div>
                                 </div>
                             </div>

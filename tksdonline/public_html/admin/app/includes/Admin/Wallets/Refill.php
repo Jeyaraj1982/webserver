@@ -7,6 +7,7 @@
             $error++;
             $errormsg = "Agent not found";
         }
+        
         if (!($_POST['Amount']*1>=0 && $_POST['Amount']*1<=10000000)) {
             $error++;
             $errormsg = "Amount must have greater than Rs.100 and Rs.10000000";
@@ -25,6 +26,7 @@
             if (isset($_POST['markascredit']) && $_POST['markascredit']=="on") {
                 $credit_note = $mysql->insert("_tbl_admin_credits",array("AdminID"        => $_SESSION['User']['AdminID'],
                                                                          "NickName"       => $_POST['credit_nickname'],
+                                                                         "MemberID"       => $member[0]['MemberID'],
                                                                          "TxnAmount"      => $_POST['Amount'],
                                                                          "CreditUpdated"  => date("Y-m-d H:i:s"),
                                                                          "Amount"         => $_POST['CrAmount'],
@@ -36,7 +38,13 @@
         if ($member[0]['TelegramID']>0)  {
             $message = "Dear ".$member[0]['MemberName'].", Your wallet has been credited Rs. ".$_POST['Amount'].". Wallet Balance Rs.".number_format($balance,2);
             TelegramMessageController::sendSMS($member[0]['TelegramID'],$message,0,0);
+            
+            if (isset($_POST['CrAmount']) && $_POST['CrAmount']>0) {
+                $message = "Dear ".$member[0]['MemberName'].",  please trasfer your outstanding balance Rs. ".$_POST['CrAmount']." shortly."; // Transaction ID: ".$credit_note;
+            TelegramMessageController::sendSMS($member[0]['TelegramID'],$message,0,0);
+            }
         }
+        
         
         //MobileSMS::sendSMS($member[0]['MobileNumber'],"Your wallet has credited Rs. ".$_POST['Amount'].". Wallet Balance Rs.".number_format($balance,2),$member[0]['MemberID']);
         ?>
@@ -105,9 +113,9 @@
     
     <?php $agents = $mysql->select("select * from _tbl_member order by MemberName");
     foreach($agents as $a) {
-        ?>
+        ?>                                            
              <option value="<?php echo $a['MemberID'];?>"><?php echo $a['MemberName']." (".$a['MobileNumber'].") ";?>
-              Balance: <?php echo number_format($application->getBalance($a['MemberID']),2);?>
+              <!-- Balance: <?php // echo number_format($application->getBalance($a['MemberID']),2);?> -->
              </option>
         <?php
     }
@@ -142,7 +150,7 @@
         </div>
     </div>            
 </div>
-<?php include_once("footer.php"); ?>
+
 <script>
                 function do_markascredit() {
                     if($('#markascredit').prop("checked") == true){
@@ -150,11 +158,13 @@
                         $('#credit_nickname').attr("required","");
                         $('#CrAmount').show();
                         $('#CrAmount').attr("required","");
+                        $('#credit_nickname').val($('#MemberCode option:selected').text());
                     } else if($('#markascredit').prop("checked") == false) {
                         $('#credit_nickname').hide();
                         $('#credit_nickname').removeAttr("required");
                         $('#CrAmount').hide();
                         $('#CrAmount').removeAttr("required");
+                         $('#credit_nickname').val();
                     }
                 }
                </script>

@@ -70,6 +70,7 @@ define('LoginPassword', 'welcome');
     }
     
     public function writeSql($sql) {
+        return true;
         $myFile = date("Y_m_d").".txt";
         $fh = fopen($myFile, 'a') or die("can't open file");
         fwrite($fh, "[".date("Y-m-d H:i:s")."]\t".$sql."\n");

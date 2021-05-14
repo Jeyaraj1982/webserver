@@ -21,8 +21,8 @@
         $data = $result['data'];
         
         //Maajid ID
-        $Message = "Your ICICI Virutal account will updated with Rs. ".$data['TxnAmount'].", Refill From ".$data['InCommingAccountName']." (".$data['InCommingAccountNumber'].")";
-        TelegramMessageController::sendSMS(316574188,$Message,0,0); 
+        $Message = "Your Virutal account will updated with Rs. ".$data['TxnAmount'].", Refill From ".$data['InCommingAccountName']." (".$data['InCommingAccountNumber'].")";
+        TelegramMessageController::sendSMS(AdminTelegramID,$Message,0,0); 
         
         $bankData = $mysql->select("select * from _tbl_member_bankaccounts where AccountNumber='".ltrim($data['InCommingAccountNumber'], '0')."'");
         if (sizeof($bankData)>0) {
@@ -58,14 +58,14 @@
             
             //Maajid ID
             $Message = "Wallet Refilled from Autowallet update to  ".$member[0]['MemberName']." with INR. ".$data['TxnAmount'];
-            TelegramMessageController::sendSMS(316574188,$Message,0,0);
+            TelegramMessageController::sendSMS(AdminTelegramID,$Message,0,0);
         } 
         exit;
     }
     
     if (isset($_GET['action']) && $_GET['action']=="sendMessage") {
         //Maajid ID
-        TelegramMessageController::sendSMS(316574188,$_GET['Message'],0,0);
+        TelegramMessageController::sendSMS(AdminTelegramID,$_GET['Message'],0,0);
         exit;
     }
 ?> 
