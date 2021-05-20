@@ -1,8 +1,0 @@
-[2020-09-11 15:03:15]	select * from `_tbl_upload_certificates` where date(DateOfBirth)=date('1973-06-10') and RegisterNumber='159/2020'
-[2020-09-11 15:05:07]	select * from `_tbl_upload_certificates` where date(DateOfBirth)=date('1973-06-10') and RegisterNumber='159'
-[2020-09-11 15:08:57]	select * from `_tbl_upload_certificates` where date(DateOfBirth)=date('1973-06-10') and RegisterNumber='Tncvrt. 159/2020'
-[2020-09-11 16:39:07]	select * from `_tbl_upload_certificates` where date(DateOfBirth)=date('1973-06-10') and RegisterNumber='TN 159'
-[2020-09-11 16:39:43]	select * from `_tbl_upload_certificates` where date(DateOfBirth)=date('1971-12-12') and RegisterNumber='TN 159'
-[2020-09-11 16:39:45]	select * from `_tbl_upload_certificates` where date(DateOfBirth)=date('1971-12-12') and RegisterNumber='TN 159'
-[2020-09-11 16:46:02]	select * from `_tbl_upload_certificates` where date(DateOfBirth)=date('1973-06-10') and RegisterNumber='TN 159 / 6.5.2020'
-[2020-09-11 16:49:34]	select * from `_tbl_upload_certificates` where date(DateOfBirth)=date('1973-06-10') and RegisterNumber='157'

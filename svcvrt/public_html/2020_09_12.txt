@@ -1,1 +1,0 @@
-[2020-09-12 20:30:37]	select * from `_tbl_upload_certificates` where date(DateOfBirth)=date('1973-06-10') and RegisterNumber='TN 159'

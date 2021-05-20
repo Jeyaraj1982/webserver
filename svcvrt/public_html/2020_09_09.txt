@@ -1,2 +1,0 @@
-[2020-09-09 10:37:54]	select * from `_tbl_upload_certificates` where date(DateOfBirth)=date('1960-01-01') and RegisterNumber=''
-[2020-09-09 10:37:59]	select * from `_tbl_upload_certificates` where date(DateOfBirth)=date('1960-01-01') and RegisterNumber='5525525525'
