@@ -1,0 +1,90 @@
+[16-Oct-2015 11:45:49 Etc/GMT] PHP Notice:  Undefined variable: mysql in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/books.php on line 4
+[16-Oct-2015 11:45:49 Etc/GMT] PHP Fatal error:  Call to a member function select() on a non-object in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/books.php on line 4
+[16-Oct-2015 11:45:49 Etc/GMT] PHP Fatal error:  Class 'CommonController' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/contactform.php on line 7
+[16-Oct-2015 11:45:49 Etc/GMT] PHP Fatal error:  Class 'JFrame' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/footer.php on line 3
+[16-Oct-2015 11:45:50 Etc/GMT] PHP Fatal error:  Class 'JFrame' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/header.php on line 4
+[16-Oct-2015 11:45:50 Etc/GMT] PHP Notice:  Undefined variable: mysql in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/home.php on line 2
+[16-Oct-2015 11:45:50 Etc/GMT] PHP Fatal error:  Call to a member function select() on a non-object in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/home.php on line 2
+[16-Oct-2015 11:45:50 Etc/GMT] PHP Fatal error:  Class 'JPages' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/hp_feature_events.php on line 12
+[16-Oct-2015 11:45:50 Etc/GMT] PHP Fatal error:  Class 'JPages' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/hp_feature_news.php on line 4
+[16-Oct-2015 11:45:50 Etc/GMT] PHP Fatal error:  Class 'JPhotogallery' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/hp_feature_photos.php on line 7
+[16-Oct-2015 11:45:50 Etc/GMT] PHP Fatal error:  Class 'JVideos' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/hp_feature_videos.php on line 4
+[16-Oct-2015 11:45:51 Etc/GMT] PHP Notice:  Undefined variable: mysql in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/osai.php on line 3
+[16-Oct-2015 11:45:51 Etc/GMT] PHP Fatal error:  Call to a member function select() on a non-object in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/osai.php on line 3
+[16-Oct-2015 11:45:51 Etc/GMT] PHP Fatal error:  Class 'JFrame' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/sharethis.php on line 3
+[16-Oct-2015 11:45:51 Etc/GMT] PHP Fatal error:  Class 'JFrame' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/side.php on line 1
+[11-May-2016 05:26:26 Etc/GMT] PHP Notice:  Undefined variable: mysql in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/books.php on line 4
+[11-May-2016 05:26:26 Etc/GMT] PHP Fatal error:  Call to a member function select() on a non-object in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/books.php on line 4
+[11-May-2016 05:26:26 Etc/GMT] PHP Fatal error:  Class 'CommonController' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/contactform.php on line 7
+[11-May-2016 05:26:26 Etc/GMT] PHP Fatal error:  Class 'JFrame' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/footer.php on line 3
+[11-May-2016 05:26:27 Etc/GMT] PHP Fatal error:  Class 'JFrame' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/header.php on line 4
+[11-May-2016 05:26:27 Etc/GMT] PHP Notice:  Undefined variable: mysql in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/home.php on line 2
+[11-May-2016 05:26:27 Etc/GMT] PHP Fatal error:  Call to a member function select() on a non-object in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/home.php on line 2
+[11-May-2016 05:26:27 Etc/GMT] PHP Fatal error:  Class 'JPages' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/hp_feature_events.php on line 12
+[11-May-2016 05:26:27 Etc/GMT] PHP Fatal error:  Class 'JPages' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/hp_feature_news.php on line 4
+[11-May-2016 05:26:27 Etc/GMT] PHP Fatal error:  Class 'JPhotogallery' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/hp_feature_photos.php on line 7
+[11-May-2016 05:26:28 Etc/GMT] PHP Fatal error:  Class 'JVideos' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/hp_feature_videos.php on line 4
+[11-May-2016 05:26:28 Etc/GMT] PHP Notice:  Undefined variable: mysql in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/osai.php on line 3
+[11-May-2016 05:26:28 Etc/GMT] PHP Fatal error:  Call to a member function select() on a non-object in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/osai.php on line 3
+[11-May-2016 05:26:28 Etc/GMT] PHP Fatal error:  Class 'JFrame' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/sharethis.php on line 3
+[11-May-2016 05:26:28 Etc/GMT] PHP Fatal error:  Class 'JFrame' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/side.php on line 1
+[11-Jun-2016 05:28:15 Etc/GMT] PHP Notice:  Undefined variable: mysql in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/books.php on line 4
+[11-Jun-2016 05:28:16 Etc/GMT] PHP Fatal error:  Class 'CommonController' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/contactform.php on line 7
+[11-Jun-2016 05:28:15 Etc/GMT] PHP Fatal error:  Call to a member function select() on a non-object in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/books.php on line 4
+[11-Jun-2016 05:28:16 Etc/GMT] PHP Fatal error:  Class 'JFrame' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/footer.php on line 3
+[11-Jun-2016 05:28:16 Etc/GMT] PHP Fatal error:  Class 'JFrame' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/header.php on line 4
+[11-Jun-2016 05:28:16 Etc/GMT] PHP Notice:  Undefined variable: mysql in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/home.php on line 2
+[11-Jun-2016 05:28:16 Etc/GMT] PHP Fatal error:  Call to a member function select() on a non-object in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/home.php on line 2
+[11-Jun-2016 05:28:16 Etc/GMT] PHP Fatal error:  Class 'JPages' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/hp_feature_events.php on line 12
+[11-Jun-2016 05:28:17 Etc/GMT] PHP Fatal error:  Class 'JPages' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/hp_feature_news.php on line 4
+[11-Jun-2016 05:28:17 Etc/GMT] PHP Fatal error:  Class 'JPhotogallery' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/hp_feature_photos.php on line 7
+[11-Jun-2016 05:28:17 Etc/GMT] PHP Fatal error:  Class 'JVideos' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/hp_feature_videos.php on line 4
+[11-Jun-2016 05:28:18 Etc/GMT] PHP Notice:  Undefined variable: mysql in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/osai.php on line 3
+[11-Jun-2016 05:28:18 Etc/GMT] PHP Fatal error:  Call to a member function select() on a non-object in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/osai.php on line 3
+[11-Jun-2016 05:28:18 Etc/GMT] PHP Fatal error:  Class 'JFrame' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/sharethis.php on line 3
+[11-Jun-2016 05:28:18 Etc/GMT] PHP Fatal error:  Class 'JFrame' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/side.php on line 1
+[11-Jul-2016 05:29:47 Etc/GMT] PHP Notice:  Undefined variable: mysql in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/books.php on line 4
+[11-Jul-2016 05:29:47 Etc/GMT] PHP Fatal error:  Call to a member function select() on a non-object in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/books.php on line 4
+[11-Jul-2016 05:29:47 Etc/GMT] PHP Fatal error:  Class 'CommonController' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/contactform.php on line 7
+[11-Jul-2016 05:29:47 Etc/GMT] PHP Fatal error:  Class 'JFrame' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/footer.php on line 3
+[11-Jul-2016 05:29:48 Etc/GMT] PHP Fatal error:  Class 'JFrame' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/header.php on line 4
+[11-Jul-2016 05:29:48 Etc/GMT] PHP Notice:  Undefined variable: mysql in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/home.php on line 2
+[11-Jul-2016 05:29:48 Etc/GMT] PHP Fatal error:  Call to a member function select() on a non-object in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/home.php on line 2
+[11-Jul-2016 05:29:48 Etc/GMT] PHP Fatal error:  Class 'JPages' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/hp_feature_events.php on line 12
+[11-Jul-2016 05:29:48 Etc/GMT] PHP Fatal error:  Class 'JPages' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/hp_feature_news.php on line 4
+[11-Jul-2016 05:29:49 Etc/GMT] PHP Fatal error:  Class 'JPhotogallery' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/hp_feature_photos.php on line 7
+[11-Jul-2016 05:29:49 Etc/GMT] PHP Fatal error:  Class 'JVideos' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/hp_feature_videos.php on line 4
+[11-Jul-2016 05:29:49 Etc/GMT] PHP Notice:  Undefined variable: mysql in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/osai.php on line 3
+[11-Jul-2016 05:29:49 Etc/GMT] PHP Fatal error:  Call to a member function select() on a non-object in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/osai.php on line 3
+[11-Jul-2016 05:29:49 Etc/GMT] PHP Fatal error:  Class 'JFrame' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/sharethis.php on line 3
+[11-Jul-2016 05:29:50 Etc/GMT] PHP Fatal error:  Class 'JFrame' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/side.php on line 1
+[11-Aug-2016 05:27:50 Etc/GMT] PHP Notice:  Undefined variable: mysql in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/books.php on line 4
+[11-Aug-2016 05:27:50 Etc/GMT] PHP Fatal error:  Call to a member function select() on a non-object in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/books.php on line 4
+[11-Aug-2016 05:27:50 Etc/GMT] PHP Fatal error:  Class 'CommonController' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/contactform.php on line 7
+[11-Aug-2016 05:27:51 Etc/GMT] PHP Fatal error:  Class 'JFrame' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/footer.php on line 3
+[11-Aug-2016 05:27:51 Etc/GMT] PHP Fatal error:  Class 'JFrame' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/header.php on line 4
+[11-Aug-2016 05:27:51 Etc/GMT] PHP Notice:  Undefined variable: mysql in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/home.php on line 2
+[11-Aug-2016 05:27:51 Etc/GMT] PHP Fatal error:  Call to a member function select() on a non-object in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/home.php on line 2
+[11-Aug-2016 05:27:51 Etc/GMT] PHP Fatal error:  Class 'JPages' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/hp_feature_events.php on line 12
+[11-Aug-2016 05:27:51 Etc/GMT] PHP Fatal error:  Class 'JPages' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/hp_feature_news.php on line 4
+[11-Aug-2016 05:27:52 Etc/GMT] PHP Fatal error:  Class 'JPhotogallery' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/hp_feature_photos.php on line 7
+[11-Aug-2016 05:27:52 Etc/GMT] PHP Fatal error:  Class 'JVideos' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/hp_feature_videos.php on line 4
+[11-Aug-2016 05:27:52 Etc/GMT] PHP Notice:  Undefined variable: mysql in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/osai.php on line 3
+[11-Aug-2016 05:27:52 Etc/GMT] PHP Fatal error:  Call to a member function select() on a non-object in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/osai.php on line 3
+[11-Aug-2016 05:27:52 Etc/GMT] PHP Fatal error:  Class 'JFrame' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/sharethis.php on line 3
+[11-Aug-2016 05:27:53 Etc/GMT] PHP Fatal error:  Class 'JFrame' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/side.php on line 1
+[11-Sep-2016 05:28:38 Etc/GMT] PHP Notice:  Undefined variable: mysql in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/books.php on line 4
+[11-Sep-2016 05:28:38 Etc/GMT] PHP Fatal error:  Call to a member function select() on a non-object in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/books.php on line 4
+[11-Sep-2016 05:28:39 Etc/GMT] PHP Fatal error:  Class 'CommonController' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/contactform.php on line 7
+[11-Sep-2016 05:28:39 Etc/GMT] PHP Fatal error:  Class 'JFrame' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/footer.php on line 3
+[11-Sep-2016 05:28:39 Etc/GMT] PHP Fatal error:  Class 'JFrame' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/header.php on line 4
+[11-Sep-2016 05:28:39 Etc/GMT] PHP Notice:  Undefined variable: mysql in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/home.php on line 2
+[11-Sep-2016 05:28:39 Etc/GMT] PHP Fatal error:  Call to a member function select() on a non-object in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/home.php on line 2
+[11-Sep-2016 05:28:39 Etc/GMT] PHP Fatal error:  Class 'JPages' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/hp_feature_events.php on line 12
+[11-Sep-2016 05:28:40 Etc/GMT] PHP Fatal error:  Class 'JPages' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/hp_feature_news.php on line 4
+[11-Sep-2016 05:28:40 Etc/GMT] PHP Fatal error:  Class 'JPhotogallery' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/hp_feature_photos.php on line 7
+[11-Sep-2016 05:28:40 Etc/GMT] PHP Fatal error:  Class 'JVideos' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/hp_feature_videos.php on line 4
+[11-Sep-2016 05:28:40 Etc/GMT] PHP Notice:  Undefined variable: mysql in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/osai.php on line 3
+[11-Sep-2016 05:28:40 Etc/GMT] PHP Fatal error:  Call to a member function select() on a non-object in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/osai.php on line 3
+[11-Sep-2016 05:28:41 Etc/GMT] PHP Fatal error:  Class 'JFrame' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/sharethis.php on line 3
+[11-Sep-2016 05:28:41 Etc/GMT] PHP Fatal error:  Class 'JFrame' not found in /home/abcaduac/public_html/domains/devasahayammountshrine.com/includes/side.php on line 1
