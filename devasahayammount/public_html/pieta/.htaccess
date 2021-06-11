@@ -1,0 +1,19 @@
+RewriteRule ^s([0-9]+)_(.*)$ products.php?subcategory=$1   [QSA,L]
+RewriteRule ^c([0-9]+)_(.*)$ products.php?category=$1&text=$2    [QSA,L]
+#RewriteRule ^(.*)_p(.*)$ viewproduct.php?productid=$2&text=$1    [QSA,L]
+RewriteRule ^p([0-9]+)_(.*)$ viewproduct.php?productid=$1&text=$2    [QSA,L]
+
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php72 .php .php7 .phtml
+</IfModule>
+
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+</IfModule>
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php73” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php73 .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
