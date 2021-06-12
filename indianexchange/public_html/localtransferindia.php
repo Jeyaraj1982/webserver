@@ -20,7 +20,7 @@
         <table align="center" style="margin:0px auto">
             <tr>
                 <td style="width:64px"><img src="images/fbs_logo.jpeg" style="height:64px"></td>
-                <td style="text-align:left;padding-left:10px;">FBS clients deposit withdraw,<br> send your details to  Whatapp & GOOGLEPAY No.9994441105</td>
+                <td style="text-align:left;padding-left:10px;">FBS clients deposit withdraw,<br> send your details to  Whatapp & GOOGLEPAY & Phonepay 9994441105</td>
             </tr>
         </table>
          
