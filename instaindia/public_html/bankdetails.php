@@ -41,7 +41,7 @@
                 </td>
                 <td></td>
                 <td style="width:45%;text-align:center;">
-                    SELL USD rate Rs.72 Per USD including exchange fees<Br>
+                    SELL USD rate Rs.71 Per USD including exchange fees<Br>
                     Min. Withdrawal 50 USD & Max Withdrawal 5000 USD per day<Br>
                     Withdrawal taken 24 hrs
                 </td>
