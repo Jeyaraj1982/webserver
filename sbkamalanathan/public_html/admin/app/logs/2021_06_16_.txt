@@ -1,0 +1,954 @@
+[2021-06-16 19:16:08]	select * from _tbl_admin where IsActive='1' and LoginName='superadmin@gmail.com' and LoginPassword='123456'
+[2021-06-16 19:16:08]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:16:08]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:16:08]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:16:08]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:16:08]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:16:08]	select * from _tbl_master_staffs
+[2021-06-16 19:16:08]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:16:08]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:16:08]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:16:09]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:16:25]	select ClientID, ClientID as value,ClientName as text, ClientName, MobileNumber,ContactAddressLine1 as Address from _tbl_master_clients where IsActive='1' order by ClientName
+[2021-06-16 19:16:26]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:16:48]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:16:51]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:16:51]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:16:51]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:16:51]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:16:51]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:16:51]	select * from _tbl_master_staffs
+[2021-06-16 19:16:51]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:16:51]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:16:51]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:16:51]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:23:41]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:23:41]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:23:41]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:23:41]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:23:41]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:23:41]	select * from _tbl_master_staffs
+[2021-06-16 19:23:41]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:23:41]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:23:41]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:23:42]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:25:10]	select * from _tbl_admin where IsActive='1' and LoginName='superadmin@gmail.com' and LoginPassword='123456'
+[2021-06-16 19:25:10]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:25:10]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:25:10]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:25:10]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:25:10]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:25:10]	select * from _tbl_master_staffs
+[2021-06-16 19:25:10]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:25:10]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:25:10]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:25:12]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:25:33]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:25:33]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:25:33]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:25:33]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:25:33]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:25:33]	select * from _tbl_master_staffs
+[2021-06-16 19:25:33]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:25:33]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:25:33]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:25:33]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:25:45]	select * from _tbl_master_clients where  (IsActive=1 or IsActive=0)
+[2021-06-16 19:25:45]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:25:49]	select * from _tbl_master_clienttypes where IsActive='1' order by ClientTypeName
+[2021-06-16 19:25:49]	select * from _tbl_master_religionnames where IsActive='1' order by ReligionName
+[2021-06-16 19:25:49]	select * from _tbl_master_nationality where IsActive='1' order by NationalityName
+[2021-06-16 19:25:49]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:26:21]	select * from _tbl_master_clienttypes where IsActive='1' order by ClientTypeName
+[2021-06-16 19:26:21]	select * from _tbl_master_clients where EmailID='info@nexifysoftware.com'
+[2021-06-16 19:26:21]	select * from _tbl_master_religionnames where IsActive='1' order by ReligionName
+[2021-06-16 19:26:21]	select * from _tbl_master_nationality where IsActive='1' order by NationalityName
+[2021-06-16 19:26:21]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:27:38]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:27:38]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:27:38]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:27:38]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:27:38]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:27:38]	select * from _tbl_master_staffs
+[2021-06-16 19:27:38]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:27:38]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:27:39]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:27:39]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:27:48]	select * from _tbl_master_advocates where  (IsActive=1 or IsActive=0)
+[2021-06-16 19:27:48]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:27:49]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:27:49]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:27:49]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:27:49]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:27:49]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:27:49]	select * from _tbl_master_staffs
+[2021-06-16 19:27:49]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:27:49]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:27:49]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:27:50]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:27:51]	select * from _tbl_master_clients where  (IsActive=1 or IsActive=0)
+[2021-06-16 19:27:51]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:28:01]	select * from _tbl_cases_register where  (IsActive=1 or IsActive=0)
+[2021-06-16 19:28:02]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:28:06]	select * from _tbl_master_clients where  (IsActive=1 or IsActive=0)
+[2021-06-16 19:28:06]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:28:08]	select ClientID, ClientID as value,ClientName as text, ClientName, MobileNumber,ContactAddressLine1 as Address from _tbl_master_clients where IsActive='1' order by ClientName
+[2021-06-16 19:28:08]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:28:12]	select ClientID, ClientID as value,ClientName as text, ClientName, MobileNumber,ContactAddressLine1 as Address from _tbl_master_clients where IsActive='1' order by ClientName
+[2021-06-16 19:28:13]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:28:26]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:28:26]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:28:26]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:28:26]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:28:26]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:28:26]	select * from _tbl_master_staffs
+[2021-06-16 19:28:26]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:28:26]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:28:26]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:28:26]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:28:34]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:28:34]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:28:34]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:28:34]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:28:34]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:28:34]	select * from _tbl_master_staffs
+[2021-06-16 19:28:34]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:28:34]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:28:35]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:28:35]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:28:49]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:28:49]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:28:49]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:28:49]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:28:49]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:28:49]	select * from _tbl_master_staffs
+[2021-06-16 19:28:49]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:28:49]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:28:49]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:28:49]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:28:52]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:28:54]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:28:54]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:28:54]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:28:54]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:28:54]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:28:54]	select * from _tbl_master_staffs
+[2021-06-16 19:28:54]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:28:54]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:28:54]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:28:55]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:29:02]	select * from _tbl_admin where IsAdmin='1' and (IsActive=1 or IsActive=0)
+[2021-06-16 19:29:02]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:29:03]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:29:03]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:29:03]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:29:03]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:29:03]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:29:03]	select * from _tbl_master_staffs
+[2021-06-16 19:29:03]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:29:03]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:29:03]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:29:04]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:29:19]	select * from _tbl_cases_register where  (IsActive=1 or IsActive=0)
+[2021-06-16 19:29:20]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:29:21]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:29:21]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:29:21]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:29:21]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:29:21]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:29:21]	select * from _tbl_master_staffs
+[2021-06-16 19:29:21]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:29:21]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:29:21]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:29:22]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:29:23]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:29:25]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:29:25]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:29:25]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:29:25]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:29:25]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:29:25]	select * from _tbl_master_staffs
+[2021-06-16 19:29:25]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:29:25]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:29:25]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:29:26]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:29:28]	select * from _tbl_master_clients where  (IsActive=1 or IsActive=0)
+[2021-06-16 19:29:28]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:29:30]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:29:30]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:29:30]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:29:30]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:29:30]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:29:30]	select * from _tbl_master_staffs
+[2021-06-16 19:29:30]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:29:30]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:29:30]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:29:31]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:29:44]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:29:44]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:29:44]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:29:44]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:29:44]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:29:44]	select * from _tbl_master_staffs
+[2021-06-16 19:29:44]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:29:44]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:29:44]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:29:44]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:29:52]	select * from _tbl_cases_register where  (IsActive=1 or IsActive=0)
+[2021-06-16 19:29:53]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:29:53]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:29:53]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:29:53]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:29:53]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:29:53]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:29:53]	select * from _tbl_master_staffs
+[2021-06-16 19:29:53]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:29:53]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:29:53]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:29:54]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:30:45]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:30:45]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:30:45]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:30:45]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:30:45]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:30:45]	select * from _tbl_master_staffs
+[2021-06-16 19:30:45]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:30:45]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:30:45]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:30:47]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:30:56]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:30:58]	select * from _tbl_cases_register where CaseNumber='123456' or CNRNumber='123456'
+[2021-06-16 19:30:59]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:31:02]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:31:02]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:31:02]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:31:02]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:31:02]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:31:02]	select * from _tbl_master_staffs
+[2021-06-16 19:31:02]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:31:02]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:31:03]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:31:03]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:31:21]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:31:21]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:31:21]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:31:21]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:31:21]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:31:21]	select * from _tbl_master_staffs
+[2021-06-16 19:31:21]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:31:21]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:31:21]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:31:21]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:31:26]	select * from _tbl_master_advocates where  (IsActive=1 or IsActive=0)
+[2021-06-16 19:31:26]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:31:27]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:31:27]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:31:27]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:31:27]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:31:27]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:31:27]	select * from _tbl_master_staffs
+[2021-06-16 19:31:27]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:31:27]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:31:27]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:31:27]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:31:29]	select * from _tbl_admin where AdminID='1'
+[2021-06-16 19:31:29]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:31:31]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:31:31]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:31:31]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:31:31]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:31:31]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:31:31]	select * from _tbl_master_staffs
+[2021-06-16 19:31:31]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:31:31]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:31:31]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:31:31]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:31:33]	select * from _tbl_cases_register where  (IsActive=1 or IsActive=0)
+[2021-06-16 19:31:33]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:31:34]	select * from _tbl_master_clienttypes where IsActive='1' order by ClientTypeName
+[2021-06-16 19:31:34]	select * from _tbl_master_religionnames where IsActive='1' order by ReligionName
+[2021-06-16 19:31:34]	select * from _tbl_master_nationality where IsActive='1' order by NationalityName
+[2021-06-16 19:31:34]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:31:35]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:31:35]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:31:35]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:31:35]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:31:35]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:31:35]	select * from _tbl_master_staffs
+[2021-06-16 19:31:35]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:31:35]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:31:35]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:31:35]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:31:37]	select ClientID, ClientID as value,ClientName as text, ClientName, MobileNumber,ContactAddressLine1 as Address from _tbl_master_clients where IsActive='1' order by ClientName
+[2021-06-16 19:31:37]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:31:38]	select * from _tbl_master_clients where  (IsActive=1 or IsActive=0)
+[2021-06-16 19:31:39]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:31:39]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:31:39]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:31:39]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:31:39]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:31:39]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:31:39]	select * from _tbl_master_staffs
+[2021-06-16 19:31:39]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:31:39]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:31:39]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:31:39]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:31:49]	select * from _tbl_master_clients where  (IsActive=1 or IsActive=0)
+[2021-06-16 19:31:49]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:31:50]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:31:50]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:31:50]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:31:50]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:31:50]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:31:50]	select * from _tbl_master_staffs
+[2021-06-16 19:31:50]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:31:50]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:31:50]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:31:51]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:31:53]	select * from _tbl_master_staffs where  (IsActive=1 or IsActive=0)
+[2021-06-16 19:31:54]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:31:55]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:31:55]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:31:55]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:31:55]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:31:55]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:31:55]	select * from _tbl_master_staffs
+[2021-06-16 19:31:55]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:31:55]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:31:55]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:31:55]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:32:03]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:32:03]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:32:03]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:32:03]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:32:03]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:32:03]	select * from _tbl_master_staffs
+[2021-06-16 19:32:03]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:32:03]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:32:03]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:32:04]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:32:10]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:32:10]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:32:10]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:32:10]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:32:10]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:32:10]	select * from _tbl_master_staffs
+[2021-06-16 19:32:10]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:32:10]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:32:10]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:32:11]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:32:21]	select * from _tbl_master_staffs where  (IsActive=1 or IsActive=0)
+[2021-06-16 19:32:21]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:32:22]	select * from _tbl_master_districtnames order by DistrictName
+[2021-06-16 19:32:22]	select * from _tbl_master_area order by AreaName
+[2021-06-16 19:32:22]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'aaranju_lawoffice._tbl_master_area' doesn't exist
+[2021-06-16 19:32:22]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:32:27]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:32:27]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:32:27]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:32:27]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:32:27]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:32:27]	select * from _tbl_master_staffs
+[2021-06-16 19:32:27]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:32:27]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:32:27]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:32:28]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:33:03]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:33:03]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:33:03]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:33:03]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:33:03]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:33:03]	select * from _tbl_master_staffs
+[2021-06-16 19:33:03]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:33:03]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:33:03]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:33:04]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:34:08]	select * from _tbl_master_staffs where  (IsActive=1 or IsActive=0)
+[2021-06-16 19:34:08]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:34:09]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:34:09]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:34:09]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:34:09]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:34:09]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:34:09]	select * from _tbl_master_staffs
+[2021-06-16 19:34:09]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:34:09]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:34:09]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:34:09]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:34:59]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:34:59]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:34:59]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:34:59]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:34:59]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:34:59]	select * from _tbl_master_staffs
+[2021-06-16 19:34:59]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:34:59]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:34:59]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:34:59]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:35:02]	select * from _tbl_admin where IsAdmin='1' and (IsActive=1 or IsActive=0)
+[2021-06-16 19:35:02]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:35:03]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:35:03]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:35:03]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:35:03]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:35:03]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:35:03]	select * from _tbl_master_staffs
+[2021-06-16 19:35:03]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:35:03]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:35:03]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:35:03]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:35:10]	select * from _tbl_master_clienttypes where IsActive='1' order by ClientTypeName
+[2021-06-16 19:35:10]	select * from _tbl_master_religionnames where IsActive='1' order by ReligionName
+[2021-06-16 19:35:10]	select * from _tbl_master_nationality where IsActive='1' order by NationalityName
+[2021-06-16 19:35:11]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:35:13]	select ClientID, ClientID as value,ClientName as text, ClientName, MobileNumber,ContactAddressLine1 as Address from _tbl_master_clients where IsActive='1' order by ClientName
+[2021-06-16 19:35:13]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:35:14]	select * from _tbl_master_clienttypes where IsActive='1' order by ClientTypeName
+[2021-06-16 19:35:14]	select * from _tbl_master_religionnames where IsActive='1' order by ReligionName
+[2021-06-16 19:35:14]	select * from _tbl_master_nationality where IsActive='1' order by NationalityName
+[2021-06-16 19:35:15]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:35:15]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:35:15]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:35:15]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:35:15]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:35:15]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:35:15]	select * from _tbl_master_staffs
+[2021-06-16 19:35:15]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:35:15]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:35:15]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:35:16]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:35:25]	select * from _tbl_master_advocates where  (IsActive=1 or IsActive=0)
+[2021-06-16 19:35:25]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:35:27]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:35:27]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:35:27]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:35:27]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:35:27]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:35:27]	select * from _tbl_master_staffs
+[2021-06-16 19:35:27]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:35:27]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:35:27]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:35:27]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:36:20]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:36:20]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:36:20]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:36:20]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:36:20]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:36:20]	select * from _tbl_master_staffs
+[2021-06-16 19:36:20]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:36:20]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:36:20]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:36:20]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:36:27]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:36:27]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:36:27]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:36:27]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:36:27]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:36:27]	select * from _tbl_master_staffs
+[2021-06-16 19:36:27]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:36:27]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:36:27]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:36:27]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:36:34]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:36:34]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:36:34]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:36:34]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:36:34]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:36:34]	select * from _tbl_master_staffs
+[2021-06-16 19:36:34]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:36:34]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:36:34]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:36:34]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:36:36]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:36:36]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:36:36]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:36:36]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:36:36]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:36:36]	select * from _tbl_master_staffs
+[2021-06-16 19:36:36]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:36:36]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:36:36]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:36:36]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:36:43]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:36:44]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:36:44]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:36:44]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:36:44]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:36:44]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:36:44]	select * from _tbl_master_staffs
+[2021-06-16 19:36:44]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:36:44]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:36:44]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:36:44]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:36:51]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:36:51]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:36:51]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:36:51]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:36:51]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:36:51]	select * from _tbl_master_staffs
+[2021-06-16 19:36:51]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:36:51]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:36:51]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:36:52]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:37:37]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:37:37]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:37:37]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:37:37]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:37:37]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:37:37]	select * from _tbl_master_staffs
+[2021-06-16 19:37:37]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:37:37]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:37:37]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:37:38]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:38:48]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:38:48]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:38:48]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:38:48]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:38:48]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:38:48]	select * from _tbl_master_staffs
+[2021-06-16 19:38:48]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:38:48]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:38:48]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:38:48]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:39:05]	select * from _tbl_master_clients where  (IsActive=1 or IsActive=0)
+[2021-06-16 19:39:05]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:39:08]	select * from _tbl_cases_register where  (IsActive=1 or IsActive=0)
+[2021-06-16 19:39:08]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:39:10]	select ClientID, ClientID as value,ClientName as text, ClientName, MobileNumber,ContactAddressLine1 as Address from _tbl_master_clients where IsActive='1' order by ClientName
+[2021-06-16 19:39:10]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:39:12]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:39:12]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:39:12]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:39:12]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:39:12]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:39:12]	select * from _tbl_master_staffs
+[2021-06-16 19:39:12]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:39:12]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:39:12]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:39:13]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:43:37]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:43:37]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:43:37]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:43:37]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:43:37]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:43:37]	select * from _tbl_master_staffs
+[2021-06-16 19:43:37]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:43:37]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:43:37]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:43:38]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:43:42]	select * from _tbl_master_clients where  (IsActive=1 or IsActive=0)
+[2021-06-16 19:43:43]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:43:46]	select * from _tbl_master_clienttypes where IsActive='1' order by ClientTypeName
+[2021-06-16 19:43:46]	select * from _tbl_master_religionnames where IsActive='1' order by ReligionName
+[2021-06-16 19:43:46]	select * from _tbl_master_nationality where IsActive='1' order by NationalityName
+[2021-06-16 19:43:47]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:43:53]	select * from _tbl_master_statenames where (IsActive=1 or IsActive=0)
+[2021-06-16 19:43:53]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:43:54]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:44:00]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:44:00]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:44:00]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:44:00]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:44:00]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:44:00]	select * from _tbl_master_staffs
+[2021-06-16 19:44:00]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:44:00]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:44:00]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:44:01]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:44:03]	select * from _tbl_admin where IsAdmin='1' and (IsActive=1 or IsActive=0)
+[2021-06-16 19:44:04]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:44:05]	select * from _tbl_master_advocates where  (IsActive=1 or IsActive=0)
+[2021-06-16 19:44:05]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:44:06]	select * from _tbl_master_statenames where IsActive='1' order by StateName
+[2021-06-16 19:44:09]	select * from _tbl_master_casetypes where (IsActive=1 or IsActive=0)
+[2021-06-16 19:44:09]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:44:12]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:44:15]	select * from _tbl_master_clienttypes where (IsActive=1 or IsActive=0)
+[2021-06-16 19:44:15]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:44:22]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:44:22]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:44:22]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:44:22]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:44:22]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:44:22]	select * from _tbl_master_staffs
+[2021-06-16 19:44:22]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:44:22]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:44:22]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:44:23]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:45:08]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:45:08]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:45:08]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:45:08]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:45:08]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:45:08]	select * from _tbl_master_staffs
+[2021-06-16 19:45:08]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:45:08]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:45:08]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:45:09]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:51:56]	select * from _tbl_master_statenames where (IsActive=1 or IsActive=0)
+[2021-06-16 19:51:57]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:51:59]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:52:15]	select * from _tbl_master_advocates where  (IsActive=1 or IsActive=0)
+[2021-06-16 19:52:15]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:52:18]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:52:18]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:52:18]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:52:18]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:52:18]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:52:18]	select * from _tbl_master_staffs
+[2021-06-16 19:52:18]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:52:18]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:52:18]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:52:18]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:52:24]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:52:24]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:52:24]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:52:24]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:52:24]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:52:24]	select * from _tbl_master_staffs
+[2021-06-16 19:52:24]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:52:24]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:52:24]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:52:24]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:53:56]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:53:56]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:53:56]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:53:56]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:53:56]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:53:56]	select * from _tbl_master_staffs
+[2021-06-16 19:53:56]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:53:56]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:53:56]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:53:57]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:55:07]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:55:07]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:55:07]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:55:07]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:55:07]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:55:07]	select * from _tbl_master_staffs
+[2021-06-16 19:55:07]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:55:07]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:55:07]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:55:07]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:55:11]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 19:55:11]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 19:55:11]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 19:55:11]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 19:55:11]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 19:55:11]	select * from _tbl_master_staffs
+[2021-06-16 19:55:11]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 19:55:11]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 19:55:11]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 19:55:12]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:56:18]	select * from _tbl_master_casetypes where (IsActive=1 or IsActive=0)
+[2021-06-16 19:56:18]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 19:56:19]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 20:02:18]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 20:02:18]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 20:02:18]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 20:02:18]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 20:02:18]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 20:02:18]	select * from _tbl_master_staffs
+[2021-06-16 20:02:18]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 20:02:18]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 20:02:18]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 20:02:19]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 20:02:27]	select * from _tbl_cases_register where  (IsActive=1 or IsActive=0)
+[2021-06-16 20:02:28]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 20:02:32]	select ClientID, ClientID as value,ClientName as text, ClientName, MobileNumber,ContactAddressLine1 as Address from _tbl_master_clients where IsActive='1' order by ClientName
+[2021-06-16 20:02:33]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 20:02:42]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 20:02:42]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 20:02:42]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 20:02:42]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 20:02:42]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 20:02:42]	select * from _tbl_master_staffs
+[2021-06-16 20:02:42]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 20:02:42]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 20:02:42]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 20:02:43]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 20:03:17]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 20:03:17]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 20:03:17]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 20:03:17]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 20:03:17]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 20:03:17]	select * from _tbl_master_staffs
+[2021-06-16 20:03:17]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 20:03:17]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 20:03:17]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 20:03:17]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 20:03:39]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 20:03:39]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 20:03:39]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 20:03:39]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 20:03:39]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 20:03:39]	select * from _tbl_master_staffs
+[2021-06-16 20:03:39]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 20:03:39]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 20:03:39]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 20:03:40]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 20:15:47]	select * from _tbl_master_staffs where  (IsActive=1 or IsActive=0)
+[2021-06-16 20:15:47]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 20:15:49]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 20:15:49]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 20:15:49]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 20:15:49]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 20:15:49]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 20:15:49]	select * from _tbl_master_staffs
+[2021-06-16 20:15:49]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 20:15:49]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 20:15:49]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 20:15:49]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 20:25:58]	select * from _tbl_admin where IsActive='1' and LoginName='superadmin@gmail.com' and LoginPassword='123456'
+[2021-06-16 20:25:59]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 20:25:59]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 20:25:59]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 20:25:59]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 20:25:59]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 20:25:59]	select * from _tbl_master_staffs
+[2021-06-16 20:25:59]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 20:25:59]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 20:25:59]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 20:26:00]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 20:39:07]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 20:39:07]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 20:39:07]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 20:39:07]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 20:39:07]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 20:39:07]	select * from _tbl_master_staffs
+[2021-06-16 20:39:07]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 20:39:07]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 20:39:07]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 20:39:08]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 20:42:34]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 20:42:34]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 20:42:34]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 20:42:34]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 20:42:34]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 20:42:34]	select * from _tbl_master_staffs
+[2021-06-16 20:42:34]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 20:42:34]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 20:42:34]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 20:42:36]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 20:42:41]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 20:42:41]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 20:42:41]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 20:42:41]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 20:42:41]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 20:42:41]	select * from _tbl_master_staffs
+[2021-06-16 20:42:41]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 20:42:41]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 20:42:41]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 20:42:43]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 20:42:47]	select ClientID, ClientID as value,ClientName as text, ClientName, MobileNumber,ContactAddressLine1 as Address from _tbl_master_clients where IsActive='1' order by ClientName
+[2021-06-16 20:42:48]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 20:42:49]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 20:42:49]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 20:42:49]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 20:42:49]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 20:42:49]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 20:42:49]	select * from _tbl_master_staffs
+[2021-06-16 20:42:49]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 20:42:49]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 20:42:49]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 20:42:50]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 20:44:29]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 20:44:29]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 20:44:29]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 20:44:29]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 20:44:29]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 20:44:29]	select * from _tbl_master_staffs
+[2021-06-16 20:44:29]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 20:44:29]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 20:44:29]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 20:44:30]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 20:44:31]	select * from _tbl_master_clients where  (IsActive=1 or IsActive=0)
+[2021-06-16 20:44:33]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 20:44:36]	select * from _tbl_master_advocates where  (IsActive=1 or IsActive=0)
+[2021-06-16 20:44:36]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 20:44:38]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 20:44:38]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 20:44:38]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 20:44:38]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 20:44:38]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 20:44:38]	select * from _tbl_master_staffs
+[2021-06-16 20:44:38]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 20:44:38]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 20:44:38]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 20:44:39]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 20:44:53]	select * from _tbl_master_advocates where  (IsActive=1 or IsActive=0)
+[2021-06-16 20:44:53]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 20:44:54]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 20:44:54]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 20:44:54]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 20:44:54]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 20:44:54]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 20:44:54]	select * from _tbl_master_staffs
+[2021-06-16 20:44:54]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 20:44:54]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 20:44:54]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 20:44:55]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 20:45:02]	select * from _tbl_admin where IsAdmin='1' and (IsActive=1 or IsActive=0)
+[2021-06-16 20:45:02]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 20:45:03]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 20:45:03]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 20:45:03]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 20:45:03]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 20:45:03]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 20:45:03]	select * from _tbl_master_staffs
+[2021-06-16 20:45:03]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 20:45:03]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 20:45:03]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 20:45:04]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 20:45:13]	select * from _tbl_master_staffs where  (IsActive=1 or IsActive=0)
+[2021-06-16 20:45:13]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 20:45:15]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 20:45:15]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 20:45:15]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 20:45:15]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 20:45:15]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 20:45:15]	select * from _tbl_master_staffs
+[2021-06-16 20:45:15]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 20:45:15]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 20:45:15]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 20:45:16]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 20:45:32]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 20:45:32]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 20:45:32]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 20:45:32]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 20:45:32]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 20:45:32]	select * from _tbl_master_staffs
+[2021-06-16 20:45:32]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 20:45:32]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 20:45:32]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 20:45:32]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 20:46:35]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 20:46:35]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 20:46:35]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 20:46:35]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 20:46:35]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 20:46:35]	select * from _tbl_master_staffs
+[2021-06-16 20:46:35]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 20:46:35]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 20:46:35]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 20:46:35]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 20:46:38]	select * from _tbl_master_clients where  (IsActive=1 or IsActive=0)
+[2021-06-16 20:46:38]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 20:46:40]	select * from _tbl_admin where IsAdmin='1' and (IsActive=1 or IsActive=0)
+[2021-06-16 20:46:40]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 20:46:42]	select * from _tbl_cases_register where  (IsActive=1 or IsActive=0)
+[2021-06-16 20:46:42]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 20:46:43]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 20:46:43]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 20:46:43]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 20:46:43]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 20:46:43]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 20:46:43]	select * from _tbl_master_staffs
+[2021-06-16 20:46:43]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 20:46:43]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 20:46:43]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 20:46:44]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 20:47:10]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 20:47:10]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 20:47:10]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 20:47:10]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 20:47:10]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 20:47:10]	select * from _tbl_master_staffs
+[2021-06-16 20:47:10]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 20:47:10]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 20:47:10]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 20:47:10]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 20:47:13]	select * from _tbl_master_clients where  (IsActive=1 or IsActive=0)
+[2021-06-16 20:47:13]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 20:47:15]	select * from _tbl_cases_register where  (IsActive=1 or IsActive=0)
+[2021-06-16 20:47:15]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 20:47:16]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 20:47:16]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 20:47:16]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 20:47:16]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 20:47:16]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 20:47:16]	select * from _tbl_master_staffs
+[2021-06-16 20:47:16]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 20:47:16]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 20:47:16]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 20:47:17]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 20:47:25]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 20:47:25]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 20:47:25]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 20:47:25]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 20:47:25]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 20:47:25]	select * from _tbl_master_staffs
+[2021-06-16 20:47:25]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 20:47:25]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 20:47:25]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 20:47:26]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 20:50:59]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 20:50:59]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 20:50:59]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 20:50:59]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 20:50:59]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 20:50:59]	select * from _tbl_master_staffs
+[2021-06-16 20:50:59]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 20:50:59]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 20:50:59]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 20:50:59]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 20:51:47]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 20:51:47]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 20:51:47]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 20:51:47]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 20:51:47]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 20:51:47]	select * from _tbl_master_staffs
+[2021-06-16 20:51:47]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 20:51:47]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 20:51:47]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 20:51:47]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 20:53:52]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 20:53:52]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 20:53:52]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 20:53:52]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 20:53:52]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 20:53:52]	select * from _tbl_master_staffs
+[2021-06-16 20:53:52]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 20:53:52]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 20:53:52]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 20:53:53]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 20:55:31]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 20:55:31]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 20:55:31]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 20:55:31]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 20:55:31]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 20:55:31]	select * from _tbl_master_staffs
+[2021-06-16 20:55:31]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 20:55:31]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 20:55:31]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 20:55:31]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 20:58:33]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 20:58:33]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 20:58:33]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 20:58:33]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 20:58:33]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 20:58:33]	select * from _tbl_master_staffs
+[2021-06-16 20:58:33]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 20:58:33]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 20:58:33]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 20:58:34]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 21:04:19]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 21:04:19]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 21:04:19]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 21:04:19]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 21:04:19]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 21:04:19]	select * from _tbl_master_staffs
+[2021-06-16 21:04:19]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 21:04:19]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 21:04:19]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 21:04:20]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
+[2021-06-16 21:07:32]	select * from _tbl_cases_register where IsActive='1'
+[2021-06-16 21:07:32]	select * from _tbl_master_advocates where IsActive='1'
+[2021-06-16 21:07:32]	select * from _tbl_master_clients where IsActive='1'
+[2021-06-16 21:07:32]	select * from _tbl_master_clients where Gender='Male' and IsActive='1'
+[2021-06-16 21:07:32]	select * from _tbl_master_clients where Gender='Female' and IsActive='1'
+[2021-06-16 21:07:32]	select * from _tbl_master_staffs
+[2021-06-16 21:07:32]	select * from _tbl_master_staffs where   IsActive='1'
+[2021-06-16 21:07:32]	select * from _tbl_master_staffs where   IsActive='0'
+[2021-06-16 21:07:32]	SELECT `CourtID`, COUNT(*) as `cnt` FROM `_tbl_cases_register` GROUP BY `CourtID`
+[2021-06-16 21:07:33]	select * from _tbl_master_districtnames where IsActive='1' and StateNameID='undefined' order by DistrictName
