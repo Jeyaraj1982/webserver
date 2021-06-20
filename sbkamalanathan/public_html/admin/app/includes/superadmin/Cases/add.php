@@ -35,11 +35,11 @@
                 $HighCourtName = $HighCourt[0]['HighCourtName'];
             }
 
-            $HighCourtBenchtID  = "0";
+            $HighCourtBenchID  = "0";
             $HighCourtBenchName = "";
-            if ($_POST['HighCourtBenchtID']>0){
-                $HighCourtBench     = $mysql->select("select * from _tbl_master_highcourts_bench where HighCourtBenchtID='".$_POST['HighCourtBenchtID']."'");
-                $HighCourtBenchtID  = $_POST['HighCourtBenchtID'];
+            if ($_POST['HighCourtBenchID']>0){
+                $HighCourtBench     = $mysql->select("select * from _tbl_master_highcourts_bench where HighCourtBenchID='".$_POST['HighCourtBenchID']."'");
+                $HighCourtBenchID  = $_POST['HighCourtBenchtD'];
                 $HighCourtBenchName = $HighCourtBench[0]['BenchName'];
             }
 
@@ -151,7 +151,7 @@
                                                         "DairyYear"                    => $_POST['DairyYear'],
                                                         "HighCourtID"                  => $HighCourtID,
                                                         "HighCourtName"                => $HighCourtName,
-                                                        "HighCourtBenchtID"            => $HighCourtBenchtID,
+                                                        "HighCourtBenchID"            => $HighCourtBenchID,
                                                         "HighCourtBenchtName"          => $HighCourtBenchName,
                                                         "DistrctCourtStateNameID"      => $DistrctCourtStateNameID,
                                                         "DistrctCourtStateName"        => $DistrctCourtStateName,
@@ -392,10 +392,10 @@
     </div>
     <div class="col-md-4">
         <label class="form-label" for="validationCustom01">Bench</label>
-        <select class="form-select" id="HighCourtBenchtID" name="HighCourtBenchtID">
+        <select class="form-select" id="HighCourtBenchID" name="HighCourtBenchID">
             <option value="0">Select Bench</option>
         </select>
-        <div id="ErrHighCourtBenchtID" style="color:red"><?php echo isset($HighCourtBenchtID) ? $HighCourtBenchtID : "";?></div>
+        <div id="ErrHighCourtBenchID" style="color:red"><?php echo isset($HighCourtBenchID) ? $HighCourtBenchID : "";?></div>
     </div>
 </div>
                          

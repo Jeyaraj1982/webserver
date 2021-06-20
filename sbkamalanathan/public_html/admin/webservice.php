@@ -39,10 +39,10 @@
          $benches = $mysql->select("select * from _tbl_master_highcourts_bench where HighCourtID='".$_GET['HighCourt']."' and IsActive='1' order by BenchName") ;
          
          echo "<script>";
-         echo "\$('#HighCourtBenchtID').children().remove().end();";
-         echo "\$('#HighCourtBenchtID').append(new Option('Select Bench', '0'));";
+         echo "\$('#HighCourtBenchID').children().remove().end();";
+         echo "\$('#HighCourtBenchID').append(new Option('Select Bench', '0'));";
             foreach($benches as $benche) {
-                echo "\$('#HighCourtBenchtID').append(new Option('".$benche['BenchName']."', '".$benche['HighCourtBenchtID']."'));";
+                echo "\$('#HighCourtBenchID').append(new Option('".$benche['BenchName']."', '".$benche['HighCourtBenchID']."'));";
             }
             
          echo "</script>";

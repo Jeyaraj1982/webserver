@@ -36,7 +36,8 @@
                                 <?php if (strlen(trim($client_data[0]['ProfilePhoto']))>0) { ?>
                                 <img src="<?php echo $client_data[0]['ProfilePhoto'];?>" style="max-width: 100%;height:180px;border:1px solid #ccc;padding:3px;border-radius:3px;background:#fff"> 
                                 <?php } else { ?>
-                                <img src="assets/app/noimage.jpg" style="height:100px;border:1px solid #ccc;padding:3px;border-radius:3px;background:#222">                             <?php } ?>
+                                <img src="assets/app/noimage.jpg" style="height:100px;border:1px solid #ccc;padding:3px;border-radius:3px;background:#222">                            
+                                 <?php } ?>
                             </div>
                             
                         </div>
@@ -78,8 +79,8 @@
                             </div>
                                                                                  
                             <div class="col-md-4">
-                                <label class="form-label" for="validationCustom01"   style="font-weight: bold;">Nationality</label>
-                                <?php echo   $client_data[0]['Nationality'];?>&nbsp;
+                                <label class="form-label" for="validationCustom01"   style="font-weight: bold;">Nationality</label><br>
+                                <?php echo   $client_data[0]['NationalityName'];?>&nbsp;
                             </div>
                         </div>
                         <div class="row g-3  mb-3">
@@ -118,6 +119,19 @@
                                   
                             </div>
                         </div>
+                         <div class="row g-3 mb-3">
+                             <div class="col-md-12">
+                                <label class="form-label" for="validationCustom03" style="font-weight: bold;">District Name</label><br>
+                                <?php echo   $client_data[0]['DistrictName'];?>&nbsp;
+                            </div>
+                        </div>
+                        
+                         <div class="row g-3 mb-3">
+                             <div class="col-md-12">
+                                <label class="form-label" for="validationCustom03" style="font-weight: bold;">State Name</label><br>
+                                <?php echo   $client_data[0]['StateName'];?>&nbsp;
+                            </div>
+                        </div>
                         <div class="row g-3 mb-3">
                              <div class="col-md-12">
                                 <label class="form-label" for="validationCustom03" style="font-weight: bold;">Contact numbers</label><br>
@@ -148,6 +162,7 @@
                             </div>
                         </div>
                      
+                      
                       
                          
                         <div class="row g-3 mb-3">

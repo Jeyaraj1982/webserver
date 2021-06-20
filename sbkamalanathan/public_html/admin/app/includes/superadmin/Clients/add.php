@@ -20,7 +20,7 @@
         }
         
         if ($_POST['ClientTypeID']==0) {
-            $ClientType = "Please select Client Type";
+            $ClientTypeID = "Please select Client Type";
             $error++;
         }
         
@@ -34,10 +34,20 @@
             $error++;
         }
         
-        if ($_POST['Gender']==0) {
+        if ($_POST['Gender']=="0") {
             $Gender = "Please select Gender";
             $error++;
         } 
+        
+        if ($_POST['StateNameID']==0) {
+            $StateNameID = "Please select State Name";
+            $error++;
+        } else {
+              if ($_POST['DistrictNameID']==0) {
+                $DistrictNameID = "Please select District Name";
+                $error++;
+              }
+        }
         
         if (strlen(trim($_POST['EmailID']))>0) {
             if (!filter_var($_POST['EmailID'], FILTER_VALIDATE_EMAIL)) {
@@ -128,8 +138,8 @@
             $client_type       = $mysql->select("select * from _tbl_master_clienttypes where ClientTypeID='".$_POST['ClientTypeID']."'");
             $nationality_names = $mysql->select("select * from _tbl_master_nationality where NationalityID='".$_POST['NationalityID']."'");
             $religion_names    = $mysql->select("select * from _tbl_master_religionnames where ReligionNameID='".$_POST['ReligionNameID']."'");
-            
-            
+            $StateNameData     = $mysql->select("select * from _tbl_master_statenames where StateNameID='".$_POST['StateNameID']."'");
+            $DistrictNameData  = $mysql->select("select * from _tbl_master_districtnames where DistrictNameID='".$_POST['DistrictNameID']."'");
                   
             $client_id =  $mysql->insert("_tbl_master_clients",array("ClientName"                 => trim($_POST['ClientName']),
                                                        "FatherName"                 => trim($_POST['FatherName']),
@@ -151,6 +161,12 @@
                                                        "ContactAddressLine2"        => trim($_POST['ContactAddressLine2']),
                                                        "ContactAddressLine3"        => trim($_POST['ContactAddressLine3']),
                                                        "ContactPincode"             => trim($_POST['ContactPincode']),
+                                                       
+                                                       "StateNameID"             => trim($_POST['StateNameID']),
+                                                       "StateName"             => $StateNameData[0]['StateName'],
+                                                       "DistrictNameID"             => trim($_POST['DistrictNameID']),
+                                                       "DistrictName"             => trim($DistrictNameData[0]['DistrictName']),
+                                                       
                                                        "ContactAdditonalNumbers"    => trim($_POST['ContactAdditonalNumbers']),
                                                        "ContactRemarks"             => trim($_POST['ContactRemarks']),
                                                        "OfficeAddressLine1"         => trim($_POST['OfficeAddressLine1']),
@@ -188,6 +204,9 @@
                 <div class="card">
               <div class="alert alert-danger outline alert-dismissible fade show" role="alert" style="margin-bottom: 0px;">
                       <p style="white-space:normal !important;max-width:100%;"><b> Error found! </b>Couldn't able to create client account.</p>
+                      <?php
+                          print_r($_POST);
+                      ?>
                       <button class="btn-close" type="button" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
                     </div>
@@ -231,8 +250,8 @@
                                 <label class="form-label" for="validationCustom03">Gender</label>
                                 <select class="form-select" id="Gender" name="Gender">
                                     <option value="0">Select Gender</option>
-                                    <option value="Male">Male</option>
-                                    <option value="Female">Female</option>
+                                    <option value="Male" <?php echo ($_POST['Gender']=="Male") ? " selected='selected' " :"";?>>Male</option>
+                                    <option value="Female" <?php echo ($_POST['Gender']=="Female") ? " selected='selected' " :"";?>>Female</option>
                                 </select>
                                 <div id="ErrGender" style="color:red"><?php echo isset($Gender) ? $Gender : "";?></div>
                             </div>
@@ -285,7 +304,7 @@
                                 <select class="form-select" id="ReligionNameID" name="ReligionNameID">
                                     <option value="0">Select Religion</option>
                                     <?php foreach($religionnames as $religionname) { ?>
-                                        <option value="<?php echo $religionname['ReligionNameID'];?>" <?php echo $religionname['ReligionNameID']==$_POST['ClientTypeID'] ? ' selected="selected" ' : '';?> ><?php echo $religionname['ReligionName'];?></option>
+                                        <option value="<?php echo $religionname['ReligionNameID'];?>" <?php echo $religionname['ReligionNameID']==$_POST['ReligionNameID'] ? ' selected="selected" ' : '';?> ><?php echo $religionname['ReligionName'];?></option>
                                     <?php } ?>
                                 </select>
                                 <div id="ErrReligionNameID" style="color:red"><?php echo isset($ReligionNameID) ? $ReligionNameID : "";?></div>
@@ -342,6 +361,35 @@
                                 <label class="form-label" for="validationCustom03">ContactPincode</label>
                                 <input class="form-control" name="ContactPincode" id="ContactPincode" type="text" placeholder="Pincode"  value="<?php echo isset($_POST['ContactPincode']) ? $_POST['ContactPincode'] : "";?>">
                             </div>
+                        </div>
+                        <script>
+    function getDistrictNamesList(StateID,DivID,Selected) {
+        $.ajax({url:'webservice.php?action=getDistrictNamesList&Selected='+Selected+'&DivID='+DivID+'&rand='+Math.random()+'&StateNameID='+StateID,success:function(data){
+            $('#ajax_getDistrictNamesList').html(data);
+        }});
+    }
+    
+</script> 
+                        <div class="row g-3 mb-3">
+                        <div class="col-md-6">
+        <label class="form-label" for="validationCustom01">State Name</label>
+        <?php $statenames = $mysql->select("select * from _tbl_master_statenames where IsActive='1' order by StateName"); ?>
+        <select class="form-select" id="StateNameID" name="StateNameID" onchange="getDistrictNamesList($(this).val(),'DistrictNameID',0)">
+            <option value="0">Select State</option>
+            <?php foreach($statenames as $statename) {?>
+            <option value="<?php echo $statename['StateNameID'];?>" <?php echo ($statename['StateNameID']==$_POST['StateNameID']) ? " selected='selected' " : ""; ?>><?php echo $statename['StateName'];?></option>
+            <?php } ?>
+        </select>
+        <div id="ErrStateNameID" style="color:red"><?php echo isset($StateNameID) ? $StateNameID : "";?></div>
+        <span id="ajax_getDistrictNamesList"></span>
+    </div>
+    <div class="col-md-6">
+        <label class="form-label" for="validationCustom01">District Name</label>
+        <select class="form-select" id="DistrictNameID" name="DistrictNameID">
+            <option value="0">Select District</option>
+        </select>
+        <div id="ErrDistrictNameID" style="color:red"><?php echo isset($DistrictNameID) ? $DistrictNameID : "";?></div>
+    </div>
                         </div>
                          
                         <div class="row g-3 mb-3">
@@ -439,3 +487,11 @@
     </div>
 </div>
 <!-- Tooltips and popovers modal-->
+
+<script>
+    setTimeout(function(){
+    <?php if (isset($_POST)) { ?>
+        getDistrictNamesList('<?php echo $_POST['StateNameID'];?>','DistrictNameID','<?php echo $_POST['DistrictNameID'];?>');
+    <?php } ?>
+    },2000);
+</script>

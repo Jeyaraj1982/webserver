@@ -27,6 +27,7 @@
                     <li><a href="dashboard.php?action=Dashboard/CaseForm&redirect=AddHirings"><span>Add Hiring</span></a></li>
                     <li><a href="dashboard.php?action=Dashboard/CaseForm&redirect=AddDocuments"><span>Attach Document</span></a></li>
                     <li><a href="dashboard.php?action=Dashboard/CaseForm&redirect=AddNotes"><span>Add Notes</span></a></li>
+                    <li><a href="dashboard.php?action=Dashboard/CaseForm&redirect=AddIADetails"><span>Add IA Details</span></a></li>
                     <li><a href="dashboard.php?action=Dashboard/CaseForm&redirect=AddExpenses"><span>Add Expenses</span></a></li>
                     <li><a href="dashboard.php?action=Dashboard/CaseForm&redirect=AddPayments"><span>Add Recevied Payment</span></a></li>
                     <li><a href="dashboard.php?action=Dashboard/CaseForm&redirect=AddTimeSheet"><span>Add TimeSheet</span></a></li>
@@ -42,6 +43,10 @@
                     <li><a href="dashboard.php?action=DistrictCourtTypes/list">District Court Types</a></li>
                     <li><a href="dashboard.php?action=DistrictNames/list">District Names</a></li>
                     <li><a href="dashboard.php?action=Courts/list">Main Courts</a></li>
+                    
+                    <li><a href="dashboard.php?action=HighCourts/list">High Courts</a></li>
+                    <li><a href="dashboard.php?action=HighCourtBenchNames/list">High Court's Benches</a></li>
+                    
                     <li><a href="dashboard.php?action=Nationality/list">Nationalities</a></li> 
                     <li><a href="dashboard.php?action=PlaceNames/list">Place Names</a></li>
                     <li><a href="dashboard.php?action=Priority/list">Priorities</a></li> 

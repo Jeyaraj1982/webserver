@@ -10,6 +10,21 @@
 </div>
 <div class="container-fluid">
 <?php
+if (isset($_POST['profilePhotoRemove'])) {
+     $mysql->execute("update _tbl_master_clients set ProfilePhoto = '' where md5(concat(CreatedOn,ClientID))='".$_GET['edit']."'");   
+   ?>
+         <div class="row">
+                <div class="col-12">
+                <div class="card">
+              <div class="alert alert-success outline alert-dismissible fade show" role="alert" style="margin-bottom: 0px;">
+                      <p style="white-space:normal !important;max-width:100%;"><b> Well done! </b>profile photo removed.</p>
+                      <button class="btn-close" type="button" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    </div>
+              </div>
+              </div>
+   <?php  
+}
 $data = $mysql->select("select * from _tbl_master_clients  where md5(concat(CreatedOn,ClientID))='".$_GET['edit']."'");
 
     $ClientTypeNames = $mysql->select("select * from _tbl_master_clienttypes where IsActive='1' order by ClientTypeName");
@@ -40,6 +55,16 @@ $data = $mysql->select("select * from _tbl_master_clients  where md5(concat(Crea
         if ($_POST['Gender']=="0") {
           //  $Gender = "Please select Gender";
           //  $error++;
+        }
+        
+        if ($_POST['StateNameID']==0) {
+            $StateNameID = "Please select State Name";
+            $error++;
+        } else {
+              if ($_POST['DistrictNameID']==0) {
+                $DistrictNameID = "Please select District Name";
+                $error++;
+              }
         }
         
         if (strlen(trim($_POST['EmailID']))>0) {
@@ -129,13 +154,10 @@ $data = $mysql->select("select * from _tbl_master_clients  where md5(concat(Crea
         if ($error==0) {
             //ProfilePhoto"               => $ProfilePhoto_FileName,
             $client_type = $mysql->select("select * from _tbl_master_clienttypes where ClientTypeID='".$_POST['ClientTypeID']."'");
-            
-            $nationality_names = $mysql->select("select * from _tbl_master_clienttypes where NationalityID='".$_POST['NationalityID']."'");
-            $religion_names    = $mysql->select("select * from _tbl_master_clienttypes where ReligionNameID='".$_POST['ReligionNameID']."'");
-         
-          $nationality_names = $mysql->select("select * from _tbl_master_nationality where NationalityID='".$_POST['NationalityID']."'");
+            $nationality_names = $mysql->select("select * from _tbl_master_nationality where NationalityID='".$_POST['NationalityID']."'");
             $religion_names    = $mysql->select("select * from _tbl_master_religionnames where ReligionNameID='".$_POST['ReligionNameID']."'");
-         
+            $StateNameData     = $mysql->select("select * from _tbl_master_statenames where StateNameID='".$_POST['StateNameID']."'");
+            $DistrictNameData  = $mysql->select("select * from _tbl_master_districtnames where DistrictNameID='".$_POST['DistrictNameID']."'");
             
             $mysql->execute("update _tbl_master_clients set ClientName                 = '".trim($_POST['ClientName'])."',
                                                             FatherName                 = '".trim($_POST['FatherName'])."',
@@ -156,6 +178,10 @@ $data = $mysql->select("select * from _tbl_master_clients  where md5(concat(Crea
                                                             ContactAddressLine2        = '".trim($_POST['ContactAddressLine2'])."',
                                                             ContactAddressLine3        = '".trim($_POST['ContactAddressLine3'])."',
                                                             ContactPincode             = '".trim($_POST['ContactPincode'])."',
+                                                            StateNameID                = '".trim($_POST['StateNameID'])."',
+                                                            StateName                  = '".trim($StateNameData[0]['StateName'])."',
+                                                            DistrictNameID             = '".trim($_POST['DistrictNameID'])."',
+                                                            DistrictName               = '".trim($DistrictNameData[0]['DistrictName'])."',
                                                             ContactAdditonalNumbers    = '".trim($_POST['ContactAdditonalNumbers'])."',
                                                             ContactRemarks             = '".trim($_POST['ContactRemarks'])."',
                                                             OfficeAddressLine1         = '".trim($_POST['OfficeAddressLine1'])."',
@@ -310,6 +336,7 @@ $data = $mysql->select("select * from _tbl_master_clients  where md5(concat(Crea
                                 <label class="form-label" for="validationCustom03">Profile Phtoto</label>
                                 <?php if (strlen(trim($data[0]['ProfilePhoto']))>0) { ?>
                                     <br><img src="<?php echo $data[0]['ProfilePhoto'];?>" style="height:100px;"><br>
+                                    <br><input onclick="removePhoto()" type="button" value="Remove" class="btn btn-danger btn-sm"><br><br>
                                 <?php } ?>
                                 <input class="form-control" name="ProfilePhoto" id="ProfilePhoto" type="file" >
 
@@ -387,7 +414,37 @@ $data = $mysql->select("select * from _tbl_master_clients  where md5(concat(Crea
                                 <input class="form-control" name="ContactPincode" id="ContactPincode" type="text" placeholder="Pincode"  value="<?php echo isset($_POST['ContactPincode']) ? $_POST['ContactPincode'] : $data[0]['ContactPincode'];?>">
                             </div>
                         </div>
-                         
+                     
+                       <script>
+    function getDistrictNamesList(StateID,DivID,Selected) {
+        $.ajax({url:'webservice.php?action=getDistrictNamesList&Selected='+Selected+'&DivID='+DivID+'&rand='+Math.random()+'&StateNameID='+StateID,success:function(data){
+            $('#ajax_getDistrictNamesList').html(data);
+        }});
+    }
+    
+</script> 
+                        <div class="row g-3 mb-3">
+                        <div class="col-md-6">
+        <label class="form-label" for="validationCustom01">State Name</label>
+        <?php $statenames = $mysql->select("select * from _tbl_master_statenames where IsActive='1' order by StateName"); ?>
+        <select class="form-select" id="StateNameID" name="StateNameID" onchange="getDistrictNamesList($(this).val(),'DistrictNameID',0)">
+            <option value="0">Select State</option>
+            <?php foreach($statenames as $statename) {?>
+            <option value="<?php echo $statename['StateNameID'];?>" <?php echo ($statename['StateNameID']==$data[0]['StateNameID']) ? " selected='selected' " : ""; ?>><?php echo $statename['StateName'];?></option>
+            <?php } ?>
+        </select>
+        <div id="ErrStateNameID" style="color:red"><?php echo isset($StateNameID) ? $StateNameID : "";?></div>
+        <span id="ajax_getDistrictNamesList"></span>
+    </div>
+    <div class="col-md-6">
+        <label class="form-label" for="validationCustom01">District Name</label>
+        <select class="form-select" id="DistrictNameID" name="DistrictNameID">
+            <option value="0">Select District</option>
+        </select>
+        <div id="ErrDistrictNameID" style="color:red"><?php echo isset($DistrictNameID) ? $DistrictNameID : "";?></div>
+    </div>
+                        </div>
+                            
                         <div class="row g-3 mb-3">
                              <div class="col-md-12">
                                 <label class="form-label" for="validationCustom03">Additional Contact numbers</label>
@@ -522,9 +579,42 @@ $data = $mysql->select("select * from _tbl_master_clients  where md5(concat(Crea
         </div>
     </div>
 </div>
+
+<div class="modal fade" id="removeProfilePhoto" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenter" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <form action="" method="post">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Confirmation</h5>
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Are you want to <b style="color:red">delete</b> profile photo</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline-danger" type="button" data-bs-dismiss="modal">Close</button>
+                <button class="btn btn-danger" name="profilePhotoRemove" type="submit">Yes, Continue</button>
+            </div>
+        </div>
+        </form>
+    </div>
+</div>
 <!-- Tooltips and popovers modal--> 
 <script>
 function confirmDelete() {
    $('#exampleModalCenterDelete').modal('show') ;
+   
 }
+
+function removePhoto() {
+   $('#removeProfilePhoto').modal('show') ; 
+}
+
+</script>
+<script>
+    setTimeout(function(){
+    <?php if (isset($data)) { ?>
+        getDistrictNamesList('<?php echo $data[0]['StateNameID'];?>','DistrictNameID','<?php echo $data[0]['DistrictNameID'];?>');
+    <?php } ?>
+    },2000);
 </script>

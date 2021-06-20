@@ -50,7 +50,7 @@ function DisplaySuccessMessage($message) {
     <meta name="author" content="nexifysoftware.com">
     <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-    <title><?php echo SITE_TITLE;?></title>
+    <title><?php echo $_SETTINGS['SiteTitle'];?></title>
     <script src="assets/js/jquery-3.5.1.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900&amp;display=swap" rel="stylesheet">
@@ -110,6 +110,7 @@ function DisplaySuccessMessage($message) {
                   <li><a href="dashboard.php?action=Dashboard/CaseForm&redirect=AddExpenses" data-original-title="" title=""><span>Add Expenses</span></a></li>
                   <li><a href="dashboard.php?action=Dashboard/CaseForm&redirect=AddPayments" data-original-title="" title=""><span>Add Recevied Payment</span></a></li>
                   <li><a href="dashboard.php?action=Dashboard/CaseForm&redirect=AddTimeSheet" data-original-title="" title=""><span>Add TimeSheet</span></a></li>
+                  <li><a href="dashboard.php?action=Dashboard/CaseForm&redirect=AddIADetails" data-original-title="" title=""><span>Add IA Details</span></a></li>
                 </ul>
               </li>
             </ul>
@@ -1418,6 +1419,7 @@ function DisplaySuccessMessage($message) {
                     error++;
                 }
                 
+            
                                                                
                 if (error==0) {
                     $('#exampleModalCenter').modal('show');    
@@ -1426,10 +1428,59 @@ function DisplaySuccessMessage($message) {
                 return (error==0) ? true : false;
             } 
             
+             if (frm=="create_highcourt") {
+                
+                $('#ErrCourtName').html("");
+                if ($('#CourtName').val().length==0) {      
+                    $('#ErrCourtName').html("Please enter Court Name");
+                    error++;
+                }                                                  
+                if (error==0) {
+                    $('#exampleModalCenter').modal('show');    
+                }
+                return false;
+                return (error==0) ? true : false;
+            } 
             
             
-            
-            
+             if (frm=="create_benchname") {
+                
+                $('#ErrBenchName').html("");
+                if ($('#BenchName').val().length==0) {      
+                    $('#ErrBenchName').html("Please enter Bench Name");
+                    error++;
+                }  
+                
+                $('#ErrHighCourtID').html("");
+                if ($('#HighCourtID').val()==0) {      
+                    $('#ErrHighCourtID').html("Please enter Select High Court");
+                    error++;
+                }                                                  
+                if (error==0) {
+                    $('#exampleModalCenter').modal('show');    
+                }
+                return false;
+                return (error==0) ? true : false;
+            } 
+             if (frm=="create_case_iadetails") {
+                
+                $('#ErrFillingDate').html("");
+                if ($('#FillingDate').val().length==0) {      
+                    $('#ErrFillingDate').html("Please select date");
+                    error++;
+                }  
+                
+                $('#ErrIANumber').html("");
+                if ($('#IANumber').val()==0) {      
+                    $('#ErrIANumber').html("Please enter IA Number");
+                    error++;
+                }                                                  
+                if (error==0) {
+                    $('#exampleModalCenter').modal('show');    
+                }
+                return false;
+                return (error==0) ? true : false;
+            } 
             
             return false;
         }
