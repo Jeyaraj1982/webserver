@@ -1,0 +1,1 @@
+[2021-04-25 07:16:51]	select * from _tbl_joboffers order by JobOfferID desc

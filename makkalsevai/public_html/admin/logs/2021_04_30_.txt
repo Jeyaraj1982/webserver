@@ -1,0 +1,5 @@
+[2021-04-30 20:42:48]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-30 20:46:29]	select * from _tbl_customers where MobileNumber='9944872965' and Password='123456' 
+[2021-04-30 20:46:29]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-30 20:46:31]	select * from _tbl_servicerequests where CustomerID='1' order by ServiceRequestID
+[2021-04-30 21:00:01]	select * from _tbl_services where IsActive='1' order by ServiceOrder

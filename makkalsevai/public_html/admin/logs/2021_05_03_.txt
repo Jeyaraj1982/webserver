@@ -1,0 +1,2 @@
+[2021-05-03 14:19:29]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-05-03 14:20:45]	select * from _tbl_services where IsActive='1' order by ServiceOrder

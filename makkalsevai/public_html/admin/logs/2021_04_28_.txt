@@ -1,0 +1,306 @@
+[2021-04-28 09:33:44]	select * from _tbl_admin where UserName='admin@admin.com' and Password='123456' 
+[2021-04-28 09:33:44]	select * from _tbl_resume_general_info where IsDelete='0' order by ResumeID desc limit 0,5
+[2021-04-28 09:33:44]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'makkalse_database._tbl_resume_general_info' doesn't exist
+[2021-04-28 09:33:44]	select * from _tbl_card_general_info where IsDelete='0' order by ResumeID desc limit 0,5
+[2021-04-28 09:33:44]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'makkalse_database._tbl_card_general_info' doesn't exist
+[2021-04-28 09:37:22]	select * from _tbl_services order by ServiceID
+[2021-04-28 09:39:29]	select * from _tbl_services order by ServiceID
+[2021-04-28 09:39:43]	select * from _tbl_services order by ServiceID
+[2021-04-28 09:40:07]	select * from _tbl_services order by ServiceID
+[2021-04-28 09:44:29]	insert into `_tbl_services` (`ServiceTitle`,`ServiceDescription`,`IsActive`) values ('dsagsfagha','safhsfahsfah','1')
+[2021-04-28 09:44:32]	select * from _tbl_services order by ServiceID
+[2021-04-28 09:45:18]	insert into `_tbl_services` (`ServiceTitle`,`ServiceDescription`,`IsActive`) values ('மின் கட்டணம் செலுத்துதல்','உங்கள்  மின் கட்டண விவரத்தை பெற்று கொண்டு, மின் கட்டணத்தை செலுத்திய ரசீதுடன் வீட்டுக்கு வந்து பணத்தை பெற்று கொள்வோம் ','1')
+[2021-04-28 09:45:19]	select * from _tbl_services order by ServiceID
+[2021-04-28 09:45:38]	select * from _tbl_brands where md5(BrandID)='c81e728d9d4c2f636f067f89cc14862c'
+[2021-04-28 09:45:38]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'makkalse_database._tbl_brands' doesn't exist
+[2021-04-28 09:45:38]	select * from _tbl_brands where md5(BrandID)='c81e728d9d4c2f636f067f89cc14862c'
+[2021-04-28 09:45:38]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'makkalse_database._tbl_brands' doesn't exist
+[2021-04-28 09:45:38]	SELECT COUNT(ProductID) AS cnt FROM _tbl_products where BrandID=''
+[2021-04-28 09:45:38]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'makkalse_database._tbl_products' doesn't exist
+[2021-04-28 10:11:18]	select * from _tbl_services where md5(ServiceID)='c81e728d9d4c2f636f067f89cc14862c'
+[2021-04-28 10:11:18]	select * from _tbl_services where md5(ServiceID)='c81e728d9d4c2f636f067f89cc14862c'
+[2021-04-28 10:11:33]	select * from _tbl_services where md5(ServiceID)='c81e728d9d4c2f636f067f89cc14862c'
+[2021-04-28 10:11:33]	select * from _tbl_services where md5(ServiceID)='c81e728d9d4c2f636f067f89cc14862c'
+[2021-04-28 10:11:49]	select * from _tbl_services where md5(ServiceID)='c81e728d9d4c2f636f067f89cc14862c'
+[2021-04-28 10:11:49]	select * from _tbl_services where md5(ServiceID)='c81e728d9d4c2f636f067f89cc14862c'
+[2021-04-28 10:12:05]	select * from _tbl_services where md5(ServiceID)='c81e728d9d4c2f636f067f89cc14862c'
+[2021-04-28 10:12:05]	select * from _tbl_services where md5(ServiceID)='c81e728d9d4c2f636f067f89cc14862c'
+[2021-04-28 10:12:11]	select * from _tbl_services where md5(ServiceID)='c81e728d9d4c2f636f067f89cc14862c'
+[2021-04-28 10:12:11]	update _tbl_services set 
+                                                `ServiceTitle` ='மின் கட்டணம் செலுத்துதல்',
+                                                `ServiceDescription` ='உங்கள்  மின் கட்டண விவரத்தை பெற்று கொண்டு, மின் கட்டணத்தை செலுத்திய ரசீதுடன் வீட்டுக்கு வந்து பணத்தை பெற்று கொள்வோம் ',
+                                                `ServiceOrder` ='' 
+                                                              where ServiceID='2'
+[2021-04-28 10:12:11]	SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'ServiceOrder' at row 1
+[2021-04-28 10:12:11]	select * from _tbl_services where md5(ServiceID)='c81e728d9d4c2f636f067f89cc14862c'
+[2021-04-28 10:12:21]	select * from _tbl_services where md5(ServiceID)='c81e728d9d4c2f636f067f89cc14862c'
+[2021-04-28 10:12:21]	update _tbl_services set 
+                                                `ServiceTitle` ='மின் கட்டணம் செலுத்துதல்1',
+                                                `ServiceDescription` ='1உங்கள்  மின் கட்டண விவரத்தை பெற்று கொண்டு, மின் கட்டணத்தை செலுத்திய ரசீதுடன் வீட்டுக்கு வந்து பணத்தை பெற்று கொள்வோம் ',
+                                                `ServiceOrder` ='11' 
+                                                              where ServiceID='2'
+[2021-04-28 10:12:21]	select * from _tbl_services where md5(ServiceID)='c81e728d9d4c2f636f067f89cc14862c'
+[2021-04-28 10:12:24]	select * from _tbl_services where md5(ServiceID)='c81e728d9d4c2f636f067f89cc14862c'
+[2021-04-28 10:12:24]	select * from _tbl_services where md5(ServiceID)='c81e728d9d4c2f636f067f89cc14862c'
+[2021-04-28 10:12:28]	select * from _tbl_services where IsActive='1' order by ServiceID
+[2021-04-28 10:15:50]	select * from _tbl_services where IsActive='1' order by ServiceID
+[2021-04-28 10:16:00]	select * from _tbl_services where IsActive='1' order by ServiceID
+[2021-04-28 10:16:14]	update _tbl_services set IsActive='1' where ServiceID=''
+[2021-04-28 10:16:32]	select * from _tbl_services where IsActive='1' order by ServiceID
+[2021-04-28 10:16:33]	select * from _tbl_services where IsActive='1' order by ServiceID
+[2021-04-28 10:16:40]	update _tbl_services set IsActive='1' where ServiceID=''
+[2021-04-28 10:16:42]	select * from _tbl_services where IsActive='1' order by ServiceID
+[2021-04-28 10:17:08]	update _tbl_services set IsActive='1' where ServiceID='undefined'
+[2021-04-28 10:17:10]	select * from _tbl_services where IsActive='1' order by ServiceID
+[2021-04-28 10:17:28]	update _tbl_services set IsActive='1' where ServiceID='undefined'
+[2021-04-28 10:17:32]	select * from _tbl_services where IsActive='1' order by ServiceID
+[2021-04-28 10:17:53]	select * from _tbl_services where IsActive='1' order by ServiceID
+[2021-04-28 10:17:56]	update _tbl_services set IsActive='1' where ServiceID='1'
+[2021-04-28 10:17:57]	select * from _tbl_services where IsActive='1' order by ServiceID
+[2021-04-28 10:18:03]	update _tbl_services set IsActive='1' where ServiceID='1'
+[2021-04-28 10:18:18]	select * from _tbl_services where IsActive='1' order by ServiceID
+[2021-04-28 10:18:22]	update _tbl_services set IsActive='0' where ServiceID='1'
+[2021-04-28 10:18:23]	select * from _tbl_services where IsActive='1' order by ServiceID
+[2021-04-28 10:24:37]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 10:24:59]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 10:25:15]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 10:25:38]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 10:25:53]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 10:26:16]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 10:27:24]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 10:27:29]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 10:44:55]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 10:45:01]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 10:45:09]	select * from _tbl_customers where MobileNumber='9944872965' and Password='123456' 
+[2021-04-28 10:45:43]	select * from _tbl_customers where MobileNumber='9944872965' and Password='123456' 
+[2021-04-28 10:47:22]	select * from _tbl_customers where MobileNumber='9944872965' and Password='123456' 
+[2021-04-28 10:47:30]	select * from _tbl_customers where MobileNumber='9944872965' and Password='123456' 
+[2021-04-28 10:48:15]	select * from _tbl_customers where MobileNumber='9944872965' and Password='123456' 
+[2021-04-28 10:50:31]	select * from _tbl_customers where MobileNumber='9944872965' and Password='123456' 
+[2021-04-28 10:50:32]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 10:51:05]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 10:51:36]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 10:52:06]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 10:53:17]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 10:53:45]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 10:54:22]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 10:54:29]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 10:55:38]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 10:55:42]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 10:55:49]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 10:55:51]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 10:55:53]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 10:56:12]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 10:59:21]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 10:59:59]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 11:00:29]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 11:01:24]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 11:01:47]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 11:11:08]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 11:14:37]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 11:15:34]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 11:16:34]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 11:17:05]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 11:23:11]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 11:23:38]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 11:23:48]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 11:24:13]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 11:30:13]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 11:31:23]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 11:32:19]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 11:32:44]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 11:32:59]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 11:34:02]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 11:35:32]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 11:37:31]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 11:38:13]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 11:38:26]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 11:38:32]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 11:38:46]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 11:39:39]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 11:40:05]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 11:40:53]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 11:51:56]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 11:52:35]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 12:02:26]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 12:04:05]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 12:04:11]	select * from _tbl_services where IsActive='1' and ServiceID='2'
+[2021-04-28 12:04:11]	insert into `_tbl_servicerequests` (`ServiceID`,`ServiceTitle`,`CustomerID`,`CustomerMobileNumber`) values ('2','மின் கட்டணம் செலுத்துதல்1','','')
+[2021-04-28 12:04:11]	SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'CustomerID' at row 1
+[2021-04-28 12:04:11]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 12:06:19]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 12:06:34]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 12:07:26]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 12:07:55]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 12:07:58]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 12:08:06]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 12:08:13]	select * from _tbl_customers where MobileNumber='9944872965' and Password='123456' 
+[2021-04-28 12:08:14]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 12:11:57]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 12:12:27]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 12:12:51]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 12:13:32]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 12:13:56]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 12:14:07]	select * from _tbl_services where IsActive='1' and ServiceID='2'
+[2021-04-28 12:14:07]	insert into `_tbl_servicerequests` (`RequestedOn`,`ServiceID`,`ServiceTitle`,`CustomerID`,`CustomerMobileNumber`) values ('2021-04-28 12:14:07','2','மின் கட்டணம் செலுத்துதல்1','','')
+[2021-04-28 12:14:07]	SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'CustomerID' at row 1
+[2021-04-28 12:14:07]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 12:27:46]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 12:27:49]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 12:29:39]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 12:32:06]	select * from _tbl_admin where UserName='admin@admin.com' and Password='123456' 
+[2021-04-28 12:32:06]	select * from _tbl_resume_general_info where IsDelete='0' order by ResumeID desc limit 0,5
+[2021-04-28 12:32:06]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'makkalse_database._tbl_resume_general_info' doesn't exist
+[2021-04-28 12:32:06]	select * from _tbl_card_general_info where IsDelete='0' order by ResumeID desc limit 0,5
+[2021-04-28 12:32:06]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'makkalse_database._tbl_card_general_info' doesn't exist
+[2021-04-28 12:34:35]	select * from _tbl_servicerequests order by ServiceRequestID desc
+[2021-04-28 12:34:46]	select * from _tbl_servicerequests order by ServiceRequestID desc
+[2021-04-28 12:35:53]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 12:36:02]	select * from _tbl_customers where MobileNumber='9944872965' and Password='123456' 
+[2021-04-28 12:36:02]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 12:36:06]	select * from _tbl_services where IsActive='1' and ServiceID='2'
+[2021-04-28 12:36:06]	insert into `_tbl_servicerequests` (`RequestedOn`,`ServiceID`,`ServiceTitle`,`CustomerID`,`CustomerMobileNumber`) values ('2021-04-28 12:36:06','2','மின் கட்டணம் செலுத்துதல்1','','')
+[2021-04-28 12:36:06]	SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'CustomerID' at row 1
+[2021-04-28 12:36:06]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 12:36:33]	select * from _tbl_services where IsActive='1' and ServiceID='2'
+[2021-04-28 12:36:33]	insert into `_tbl_servicerequests` (`RequestedOn`,`ServiceID`,`ServiceTitle`,`CustomerID`,`CustomerMobileNumber`) values ('2021-04-28 12:36:33','2','மின் கட்டணம் செலுத்துதல்1','','')
+[2021-04-28 12:36:33]	SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'CustomerID' at row 1
+[2021-04-28 12:36:33]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 12:36:40]	select * from _tbl_services where IsActive='1' and ServiceID='2'
+[2021-04-28 12:36:40]	insert into `_tbl_servicerequests` (`RequestedOn`,`ServiceID`,`ServiceTitle`,`CustomerID`,`CustomerMobileNumber`) values ('2021-04-28 12:36:40','2','மின் கட்டணம் செலுத்துதல்1','','')
+[2021-04-28 12:36:40]	SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'CustomerID' at row 1
+[2021-04-28 12:36:40]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 12:37:46]	select * from _tbl_services where IsActive='1' and ServiceID='2'
+[2021-04-28 12:37:46]	insert into `_tbl_servicerequests` (`RequestedOn`,`ServiceID`,`ServiceTitle`,`CustomerID`,`CustomerMobileNumber`) values ('2021-04-28 12:37:46','2','மின் கட்டணம் செலுத்துதல்1','','')
+[2021-04-28 12:37:46]	SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'CustomerID' at row 1
+[2021-04-28 12:37:46]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 12:38:21]	select * from _tbl_services where IsActive='1' and ServiceID='2'
+[2021-04-28 12:38:21]	insert into `_tbl_servicerequests` (`RequestedOn`,`ServiceID`,`ServiceTitle`,`CustomerID`,`CustomerMobileNumber`) values ('2021-04-28 12:38:21','2','மின் கட்டணம் செலுத்துதல்1','','')
+[2021-04-28 12:38:21]	SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'CustomerID' at row 1
+[2021-04-28 12:38:21]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 12:38:46]	select * from _tbl_services where IsActive='1' and ServiceID='2'
+[2021-04-28 12:38:46]	insert into `_tbl_servicerequests` (`RequestedOn`,`ServiceID`,`ServiceTitle`,`CustomerID`,`CustomerMobileNumber`) values ('2021-04-28 12:38:46','2','மின் கட்டணம் செலுத்துதல்1','','')
+[2021-04-28 12:38:46]	SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'CustomerID' at row 1
+[2021-04-28 12:38:46]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 12:39:01]	select * from _tbl_services where IsActive='1' and ServiceID='2'
+[2021-04-28 12:39:01]	insert into `_tbl_servicerequests` (`RequestedOn`,`ServiceID`,`ServiceTitle`,`CustomerID`,`CustomerMobileNumber`) values ('2021-04-28 12:39:01','2','மின் கட்டணம் செலுத்துதல்1','','')
+[2021-04-28 12:39:01]	SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'CustomerID' at row 1
+[2021-04-28 12:39:01]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 12:39:15]	select * from _tbl_services where IsActive='1' and ServiceID='2'
+[2021-04-28 12:39:15]	insert into `_tbl_servicerequests` (`RequestedOn`,`ServiceID`,`ServiceTitle`,`CustomerID`,`CustomerMobileNumber`) values ('2021-04-28 12:39:15','2','மின் கட்டணம் செலுத்துதல்1','1','9944872965')
+[2021-04-28 12:39:15]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 12:39:47]	select * from _tbl_servicerequests order by ServiceRequestID desc
+[2021-04-28 12:40:34]	select * from _tbl_services where IsActive='1' and ServiceID='2'
+[2021-04-28 12:40:34]	insert into `_tbl_servicerequests` (`RequestedOn`,`ServiceID`,`ServiceTitle`,`CustomerID`,`CustomerName`,`CustomerMobileNumber`) values ('2021-04-28 12:40:34','2','மின் கட்டணம் செலுத்துதல்1','1','jeyaraj','9944872965')
+[2021-04-28 12:40:34]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 12:40:37]	select * from _tbl_servicerequests order by ServiceRequestID desc
+[2021-04-28 12:41:05]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 12:41:53]	select * from _tbl_customers where MobileNumber='9944872965' and Password='123456' 
+[2021-04-28 12:41:53]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 12:42:16]	select * from _tbl_services where IsActive='1' and ServiceID='2'
+[2021-04-28 12:42:16]	insert into `_tbl_servicerequests` (`RequestedOn`,`ServiceID`,`ServiceTitle`,`CustomerID`,`CustomerName`,`CustomerMobileNumber`) values ('2021-04-28 12:42:16','2','மின் கட்டணம் செலுத்துதல்1','1','jeyaraj','9944872965')
+[2021-04-28 12:42:16]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 12:44:48]	select * from _tbl_servicerequests where CustomerID='1' order by ServiceRequestID
+[2021-04-28 12:58:53]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 13:00:14]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 13:00:33]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 13:01:11]	insert into `_tbl_services` (`ServiceTitle`,`ServiceDescription`,`IsActive`) values ('வாகன காப்பீடு ','வாகன காப்பீடு ','1')
+[2021-04-28 13:01:13]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 13:02:03]	insert into `_tbl_services` (`ServiceTitle`,`ServiceDescription`,`IsActive`) values ('ரேஷன் கார்டு பெயர் நீக்கம்','ரேஷன் கார்டு பெயர் நீக்கம்','1')
+[2021-04-28 13:02:04]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 13:02:16]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 13:02:21]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 13:03:36]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 13:03:59]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 13:04:08]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 13:06:04]	insert into `_tbl_servicerequests` (`RequestedOn`,`ServiceID`,`ServiceTitle`,`CustomerID`,`CustomerName`,`CustomerMobileNumber`) values ('2021-04-28 13:06:04','2','','1','jeyaraj','9944872965')
+[2021-04-28 13:06:04]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 13:06:11]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 13:06:13]	select * from _tbl_servicerequests order by ServiceRequestID desc
+[2021-04-28 13:07:03]	insert into `_tbl_servicerequests` (`RequestedOn`,`ServiceID`,`ServiceTitle`,`CustomerID`,`CustomerName`,`CustomerMobileNumber`) values ('2021-04-28 13:07:03','2','','1','jeyaraj','9944872965')
+[2021-04-28 13:07:03]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 13:10:29]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 13:10:34]	select * from _tbl_services where IsActive='1' and ServiceID='3'
+[2021-04-28 13:10:34]	select * from _tbl_services where IsActive='1' and ServiceID='4'
+[2021-04-28 13:10:34]	insert into `_tbl_servicerequests` (`RequestedOn`,`ServiceID`,`ServiceTitle`,`CustomerID`,`CustomerName`,`CustomerMobileNumber`) values ('2021-04-28 13:10:34','Array','<br>வாகன காப்பீடு <br>ரேஷன் கார்டு பெயர் நீக்கம்','1','jeyaraj','9944872965')
+[2021-04-28 13:10:34]	SQLSTATE[HY000]: General error: 1366 Incorrect integer value: 'Array' for column 'ServiceID' at row 1
+[2021-04-28 13:10:34]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 13:10:38]	select * from _tbl_servicerequests order by ServiceRequestID desc
+[2021-04-28 13:13:34]	select * from _tbl_services where ServiceID='3'
+[2021-04-28 13:13:34]	select * from _tbl_services where ServiceID='4'
+[2021-04-28 13:13:34]	insert into `_tbl_servicerequests` (`RequestedOn`,`ServiceID`,`ServiceTitle`,`CustomerID`,`CustomerName`,`CustomerMobileNumber`) values ('2021-04-28 13:13:34','0','<br>வாகன காப்பீடு <br>ரேஷன் கார்டு பெயர் நீக்கம்','1','jeyaraj','9944872965')
+[2021-04-28 13:13:34]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 13:13:41]	select * from _tbl_servicerequests order by ServiceRequestID desc
+[2021-04-28 13:14:19]	select * from _tbl_services where ServiceID='3'
+[2021-04-28 13:14:19]	select * from _tbl_services where ServiceID='4'
+[2021-04-28 13:14:19]	insert into `_tbl_servicerequests` (`RequestedOn`,`ServiceID`,`ServiceTitle`,`CustomerID`,`CustomerName`,`CustomerMobileNumber`) values ('2021-04-28 13:14:19','0','<br>வாகன காப்பீடு <br>ரேஷன் கார்டு பெயர் நீக்கம்','1','jeyaraj','9944872965')
+[2021-04-28 13:14:19]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 13:14:38]	select * from _tbl_servicerequests where CustomerID='1' order by ServiceRequestID
+[2021-04-28 13:34:56]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 14:18:40]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 14:19:15]	select * from _tbl_customers where MobileNumber='9944872965' and Password='123456' 
+[2021-04-28 14:19:15]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 14:19:29]	select * from _tbl_services where ServiceID='3'
+[2021-04-28 14:19:29]	select * from _tbl_services where ServiceID='4'
+[2021-04-28 14:19:29]	select * from _tbl_services where ServiceID='2'
+[2021-04-28 14:19:29]	insert into `_tbl_servicerequests` (`RequestedOn`,`ServiceID`,`ServiceTitle`,`CustomerID`,`CustomerName`,`CustomerMobileNumber`) values ('2021-04-28 14:19:29','0','<br>வாகன காப்பீடு <br>ரேஷன் கார்டு பெயர் நீக்கம்<br>மின் கட்டணம் செலுத்துதல்1','1','jeyaraj','9944872965')
+[2021-04-28 14:19:29]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 14:19:29]	select * from _tbl_services where ServiceID='3'
+[2021-04-28 14:19:29]	select * from _tbl_services where ServiceID='4'
+[2021-04-28 14:19:29]	select * from _tbl_services where ServiceID='2'
+[2021-04-28 14:19:29]	insert into `_tbl_servicerequests` (`RequestedOn`,`ServiceID`,`ServiceTitle`,`CustomerID`,`CustomerName`,`CustomerMobileNumber`) values ('2021-04-28 14:19:29','0','<br>வாகன காப்பீடு <br>ரேஷன் கார்டு பெயர் நீக்கம்<br>மின் கட்டணம் செலுத்துதல்1','1','jeyaraj','9944872965')
+[2021-04-28 14:19:29]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 14:19:34]	select * from _tbl_servicerequests where CustomerID='1' order by ServiceRequestID
+[2021-04-28 16:31:18]	select * from _tbl_customers where MobileNumber='9791330770'
+[2021-04-28 16:31:29]	select * from _tbl_customers where MobileNumber='9791330770'
+[2021-04-28 16:31:42]	select * from _tbl_customers where MobileNumber='9791330770'
+[2021-04-28 16:32:48]	select * from _tbl_admin where UserName='admin@admin.com' and Password='123456' 
+[2021-04-28 16:32:48]	select * from _tbl_resume_general_info where IsDelete='0' order by ResumeID desc limit 0,5
+[2021-04-28 16:32:48]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'makkalse_database._tbl_resume_general_info' doesn't exist
+[2021-04-28 16:32:48]	select * from _tbl_card_general_info where IsDelete='0' order by ResumeID desc limit 0,5
+[2021-04-28 16:32:48]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'makkalse_database._tbl_card_general_info' doesn't exist
+[2021-04-28 16:32:50]	select * from _tbl_customers order by CustomerID desc
+[2021-04-28 16:33:53]	select * from _tbl_customers where MobileNumber='9876543210'
+[2021-04-28 16:35:47]	select * from _tbl_customers where MobileNumber='9876543210'
+[2021-04-28 16:44:46]	select * from _tbl_customers where MobileNumber='9791330770'
+[2021-04-28 16:44:46]	insert into `_tbl_customers` (`CustomerName`,`MobileNumber`,`Password`,`CreatedOn`) values ('Jeevan','9791330770','123456','2021-04-28 16:44:46')
+[2021-04-28 16:44:49]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 16:45:16]	select * from _tbl_customers where MobileNumber='9791330770' and Password='12345' 
+[2021-04-28 16:45:27]	select * from _tbl_customers where MobileNumber='9791330770' and Password='123456' 
+[2021-04-28 16:45:28]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 16:46:26]	select * from _tbl_admin where UserName='admin@admin.com' and Password='123456' 
+[2021-04-28 16:46:26]	select * from _tbl_resume_general_info where IsDelete='0' order by ResumeID desc limit 0,5
+[2021-04-28 16:46:26]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'makkalse_database._tbl_resume_general_info' doesn't exist
+[2021-04-28 16:46:26]	select * from _tbl_card_general_info where IsDelete='0' order by ResumeID desc limit 0,5
+[2021-04-28 16:46:26]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'makkalse_database._tbl_card_general_info' doesn't exist
+[2021-04-28 16:46:34]	select * from _tbl_servicerequests order by ServiceRequestID desc
+[2021-04-28 16:47:02]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 16:47:14]	select * from _tbl_customers order by CustomerID desc
+[2021-04-28 16:47:25]	select * from _tbl_resume_general_info where IsDelete='0' order by ResumeID desc limit 0,5
+[2021-04-28 16:47:25]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'makkalse_database._tbl_resume_general_info' doesn't exist
+[2021-04-28 16:47:25]	select * from _tbl_card_general_info where IsDelete='0' order by ResumeID desc limit 0,5
+[2021-04-28 16:47:25]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'makkalse_database._tbl_card_general_info' doesn't exist
+[2021-04-28 16:47:28]	select * from _tbl_servicerequests order by ServiceRequestID desc
+[2021-04-28 16:53:12]	select * from _tbl_customers order by CustomerID desc
+[2021-04-28 16:53:14]	select * from _tbl_servicerequests order by ServiceRequestID desc
+[2021-04-28 16:54:24]	select * from _tbl_customers where MobileNumber='9791330770' and Password='123456' 
+[2021-04-28 16:54:24]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 16:54:33]	select * from _tbl_services where ServiceID='3'
+[2021-04-28 16:54:33]	select * from _tbl_services where ServiceID='2'
+[2021-04-28 16:54:33]	insert into `_tbl_servicerequests` (`RequestedOn`,`ServiceID`,`ServiceTitle`,`CustomerID`,`CustomerName`,`CustomerMobileNumber`) values ('2021-04-28 16:54:33','0','<br>வாகன காப்பீடு <br>மின் கட்டணம் செலுத்துதல்1','17','Jeevan','9791330770')
+[2021-04-28 16:54:33]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 16:54:35]	select * from _tbl_servicerequests where CustomerID='17' order by ServiceRequestID
+[2021-04-28 16:54:39]	select * from _tbl_servicerequests order by ServiceRequestID desc
+[2021-04-28 17:03:09]	select * from _tbl_admin where UserName='admin@admin.com' and Password='123456' 
+[2021-04-28 17:03:09]	select * from _tbl_resume_general_info where IsDelete='0' order by ResumeID desc limit 0,5
+[2021-04-28 17:03:09]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'makkalse_database._tbl_resume_general_info' doesn't exist
+[2021-04-28 17:03:09]	select * from _tbl_card_general_info where IsDelete='0' order by ResumeID desc limit 0,5
+[2021-04-28 17:03:09]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'makkalse_database._tbl_card_general_info' doesn't exist
+[2021-04-28 17:03:17]	select * from _tbl_servicerequests order by ServiceRequestID desc
+[2021-04-28 17:04:22]	select * from _tbl_servicerequests order by ServiceRequestID desc
+[2021-04-28 17:07:31]	select * from _tbl_servicerequests order by ServiceRequestID desc
+[2021-04-28 17:08:00]	select * from _tbl_servicerequests order by ServiceRequestID desc
+[2021-04-28 17:32:45]	select * from _tbl_servicerequests order by ServiceRequestID desc
+[2021-04-28 18:06:41]	select * from _tbl_servicerequests order by ServiceRequestID desc
+[2021-04-28 18:06:48]	select * from _tbl_services where IsActive='1' order by ServiceOrder
+[2021-04-28 21:47:01]	select * from _tbl_services where IsActive='1' order by ServiceOrder
