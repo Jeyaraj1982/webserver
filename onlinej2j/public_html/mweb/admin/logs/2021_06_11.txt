@@ -1,0 +1,2 @@
+[2021-06-11 18:37:09]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID=''
+[2021-06-11 18:37:10]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'

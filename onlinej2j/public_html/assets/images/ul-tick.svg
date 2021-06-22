@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+  <g id="tick" transform="translate(1 1)">
+    <g id="Group_574" data-name="Group 574" transform="translate(5.698 3.015)">
+      <g id="Group_573" data-name="Group 573">
+        <path id="Path_913" data-name="Path 913" d="M139.183,64.593a.9.9,0,0,0-1.279,0L127.053,75.414l-3.915-4.252a.9.9,0,1,0-1.331,1.225l4.553,4.944a.9.9,0,0,0,.646.292h.019a.905.905,0,0,0,.639-.264l11.518-11.487A.9.9,0,0,0,139.183,64.593Z" transform="translate(-121.568 -64.327)" fill="#6d78fe" stroke="#6d78fe" stroke-width="2"/>
+      </g>
+    </g>
+    <g id="Group_576" data-name="Group 576">
+      <g id="Group_575" data-name="Group 575">
+        <path id="Path_914" data-name="Path 914" d="M23.1,11.1a.9.9,0,0,0-.9.9A10.191,10.191,0,1,1,12,1.809.9.9,0,1,0,12,0,12,12,0,1,0,24,12,.9.9,0,0,0,23.1,11.1Z" fill="#ff7e79" stroke="#ff7e79" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>

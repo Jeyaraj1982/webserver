@@ -1,0 +1,2 @@
+insert into `_tbl_accounts` values (Null,'','2021-04-21 13:00:47','Interst Credited  of  Additional Sales Commission: 0.00,  Interest: 0.00','0','0','0','10627.064999128','989','0')
+insert into `_tbl_accounts` values (Null,'','2021-04-21 13:03:07','Interst Credited  of  Additional Sales Commission: 0.00,  Interest: 0.00','0','0','0','10627.064999128','989','0')

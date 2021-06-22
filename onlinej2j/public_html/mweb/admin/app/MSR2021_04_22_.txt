@@ -1,0 +1,6 @@
+insert into `_tbl_accounts` values (Null,'','2021-04-22 10:34:16','Interst Credited  of  Additional Sales Commission: 0.00,  Interest: 0.00','0','0','0','8375.7899991265','989','0')
+insert into `_tbl_accounts` values (Null,'3','2021-04-22 10:35:54','Interst Credited  of  Additional Sales Commission: 0.00,  Interest: 0.00','0','0','0','8375.7899991265','989','0')
+insert into `_tbl_accounts` values (Null,'3','2021-04-22 10:37:07','Interst Credited  of  Additional Sales Commission: 0.00,  Interest: 0.00','0','0','0','8375.7899991265','989','0')
+insert into `_tbl_accounts` values (Null,'3','2021-04-22 10:37:53','Interst Credited  of  Additional Sales Commission: 0.00,  Interest: 0.00','0','0','0','8375.7899991265','989','0')
+insert into `_tbl_accounts` values (Null,'3','2021-04-22 10:38:45','Interst Credited  of  Additional Sales Commission: 79,076.00,  Interest: 790.76','790.76','790.76','0','8375.7899991265','989','0')
+insert into `_tbl_accounts` values (Null,'3','2021-04-22 10:42:03','Interst Credited  of  Additional Sales Commission: 79,076.00,  Interest: 790.76','790.76','790.76','0','9166.5499991265','989','0')

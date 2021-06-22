@@ -1,0 +1,3 @@
+insert into `_tbl_accounts` values (Null,'3','2021-05-01 04:23:50','Incentive Credited  of  Additional Sales Commission: 126,672.00,  Interest: 1,266.72','1266.72','1266.72','0','15846.159999086','989','0')
+insert into `_tbl_accounts` values (Null,'122','2021-05-01 04:23:50','Incentive Credited  of  Additional Sales Commission: 47,238.00,  Interest: 472.38','472.38','472.38','0','5748.1799999966','989','0')
+insert into `_tbl_accounts` values (Null,'144','2021-05-01 04:23:50','Incentive Credited  of  Additional Sales Commission: 53,115.00,  Interest: 531.15','531.15','531.15','0','2136.7599999984','989','0')

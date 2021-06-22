@@ -1,0 +1,137 @@
+[2021-06-10 22:32:02]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 22:32:11]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 22:32:11]	select * from _tbl_operators where OperatorCode='RA'
+[2021-06-10 22:32:11]	SELECT * FROM _tbl_operator_plans  where IsActive='1'  and OperatorCode='RA' order by Amount Desc
+[2021-06-10 22:32:11]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'j2jsoftw_hamiec._tbl_operator_plans' doesn't exist
+[2021-06-10 22:32:11]	select * from _tbl_member_operator where MemberID='280' and OperatorCode='RA'
+[2021-06-10 22:32:11]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'j2jsoftw_hamiec._tbl_member_operator' doesn't exist
+[2021-06-10 22:32:15]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 22:32:27]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID=''
+[2021-06-10 22:32:39]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 22:32:39]	select * from _tbl_operators where OperatorCode='RA'
+[2021-06-10 22:32:39]	SELECT * FROM _tbl_operator_plans  where IsActive='1'  and OperatorCode='RA' order by Amount Desc
+[2021-06-10 22:32:39]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'j2jsoftw_hamiec._tbl_operator_plans' doesn't exist
+[2021-06-10 22:32:39]	select * from _tbl_member_operator where MemberID='280' and OperatorCode='RA'
+[2021-06-10 22:32:39]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'j2jsoftw_hamiec._tbl_member_operator' doesn't exist
+[2021-06-10 22:33:07]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 22:33:09]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 22:33:09]	select * from _tbl_operators where OperatorCode='RA'
+[2021-06-10 22:33:09]	SELECT * FROM _tbl_operator_plans  where IsActive='1'  and OperatorCode='RA' order by Amount Desc
+[2021-06-10 22:33:09]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'j2jsoftw_hamiec._tbl_operator_plans' doesn't exist
+[2021-06-10 22:33:09]	select * from _tbl_member_operator where MemberID='280' and OperatorCode='RA'
+[2021-06-10 22:33:09]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'j2jsoftw_hamiec._tbl_member_operator' doesn't exist
+[2021-06-10 22:33:20]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 22:34:34]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 22:34:44]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 22:34:47]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 22:35:42]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 22:38:57]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 22:40:28]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 22:40:44]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 22:41:11]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 22:41:48]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 22:43:00]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 22:43:18]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 22:43:44]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 22:43:56]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 22:44:36]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 22:44:58]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 22:45:09]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 22:45:22]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 22:45:25]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 22:45:35]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 22:50:05]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 22:50:23]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 22:51:30]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 22:52:14]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 22:52:28]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 22:53:17]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 22:53:28]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 22:53:37]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 22:54:16]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 22:54:34]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 22:54:46]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 22:57:24]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 22:57:46]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 22:57:54]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 22:57:54]	select * from _tbl_operators where OperatorCode='RA'
+[2021-06-10 22:57:54]	SELECT * FROM _tbl_operator_plans  where IsActive='1'  and OperatorCode='RA' order by Amount Desc
+[2021-06-10 22:57:54]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'j2jsoftw_hamiec._tbl_operator_plans' doesn't exist
+[2021-06-10 22:57:54]	select * from _tbl_member_operator where MemberID='280' and OperatorCode='RA'
+[2021-06-10 22:57:54]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'j2jsoftw_hamiec._tbl_member_operator' doesn't exist
+[2021-06-10 22:57:57]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 22:58:00]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 22:59:30]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 23:03:47]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 23:04:09]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 23:04:09]	select * from _tbl_operators where OperatorCode='RA'
+[2021-06-10 23:04:09]	SELECT * FROM _tbl_operator_plans  where IsActive='1'  and OperatorCode='RA' order by Amount Desc
+[2021-06-10 23:04:09]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'j2jsoftw_hamiec._tbl_operator_plans' doesn't exist
+[2021-06-10 23:04:09]	select * from _tbl_member_operator where MemberID='280' and OperatorCode='RA'
+[2021-06-10 23:04:09]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'j2jsoftw_hamiec._tbl_member_operator' doesn't exist
+[2021-06-10 23:04:17]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 23:04:17]	select * from _tbl_operators where `OperatorCode`='RA' 
+[2021-06-10 23:04:17]	select * from `_tbl_transactions` where `operatorcode`='RA' and (date(txndate)>=date('2021-06-10') and date(txndate)<=date('2021-06-10') ) and `MemberID`='280' order by txnid desc
+[2021-06-10 23:04:21]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 23:04:21]	select * from _tbl_transactions where MemberID='280' order by txnid desc
+[2021-06-10 23:04:23]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 23:04:23]	select * from _tbl_transactions where (date(txndate)>=date('2021-06-10') and date(txndate)<=date('2021-06-10') ) and MemberID='280' order by txnid desc
+[2021-06-10 23:04:28]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 23:04:28]	select * from _tbl_transactions where (date(txndate)>=date('2021-06-10') and date(txndate)<=date('2021-06-10') ) and MemberID='280' order by txnid desc
+[2021-06-10 23:04:32]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 23:04:32]	select * from _tbl_transactions where (date(txndate)>=date('2021-06-10') and date(txndate)<=date('2021-06-10') ) and MemberID='280' order by txnid desc
+[2021-06-10 23:04:34]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 23:04:34]	select * from _tbl_transactions where MemberID='280' order by txnid desc
+[2021-06-10 23:04:39]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 23:04:42]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 23:04:42]	select * from _tbl_operators where OperatorCode='RB'
+[2021-06-10 23:04:42]	SELECT * FROM _tbl_operator_plans  where IsActive='1'  and OperatorCode='RB' order by Amount Desc
+[2021-06-10 23:04:42]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'j2jsoftw_hamiec._tbl_operator_plans' doesn't exist
+[2021-06-10 23:04:42]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 23:04:42]	select * from _tbl_member_operator where MemberID='280' and OperatorCode='RB'
+[2021-06-10 23:04:42]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'j2jsoftw_hamiec._tbl_member_operator' doesn't exist
+[2021-06-10 23:04:47]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 23:04:49]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 23:04:49]	select * from _tbl_operators where OperatorCode='RA'
+[2021-06-10 23:04:49]	SELECT * FROM _tbl_operator_plans  where IsActive='1'  and OperatorCode='RA' order by Amount Desc
+[2021-06-10 23:04:49]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'j2jsoftw_hamiec._tbl_operator_plans' doesn't exist
+[2021-06-10 23:04:49]	select * from _tbl_member_operator where MemberID='280' and OperatorCode='RA'
+[2021-06-10 23:04:49]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'j2jsoftw_hamiec._tbl_member_operator' doesn't exist
+[2021-06-10 23:05:02]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 23:05:02]	select * from _tbl_operators where `OperatorCode`='RA' 
+[2021-06-10 23:05:02]	select * from `_tbl_transactions` where `operatorcode`='RA' and (date(txndate)>=date('2021-06-10') and date(txndate)<=date('2021-06-10') ) and `MemberID`='280' order by txnid desc
+[2021-06-10 23:05:11]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 23:05:11]	select * from _tbl_operators where OperatorCode='RA'
+[2021-06-10 23:05:11]	SELECT * FROM _tbl_operator_plans  where IsActive='1'  and OperatorCode='RA' order by Amount Desc
+[2021-06-10 23:05:11]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'j2jsoftw_hamiec._tbl_operator_plans' doesn't exist
+[2021-06-10 23:05:11]	select * from _tbl_member_operator where MemberID='280' and OperatorCode='RA'
+[2021-06-10 23:05:11]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'j2jsoftw_hamiec._tbl_member_operator' doesn't exist
+[2021-06-10 23:06:50]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 23:06:50]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 23:06:50]	select * from _tbl_operators where OperatorCode='RB'
+[2021-06-10 23:06:50]	SELECT * FROM _tbl_operator_plans  where IsActive='1'  and OperatorCode='RB' order by Amount Desc
+[2021-06-10 23:06:50]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'j2jsoftw_hamiec._tbl_operator_plans' doesn't exist
+[2021-06-10 23:06:50]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 23:06:50]	select * from _tbl_member_operator where MemberID='280' and OperatorCode='RB'
+[2021-06-10 23:06:50]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'j2jsoftw_hamiec._tbl_member_operator' doesn't exist
+[2021-06-10 23:06:55]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 23:06:56]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 23:06:56]	select * from _tbl_operators where OperatorCode='MTB'
+[2021-06-10 23:06:56]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 23:06:56]	select * from _tbl_member_operator where MemberID='280' and OperatorCode='MTB'
+[2021-06-10 23:06:56]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'j2jsoftw_hamiec._tbl_member_operator' doesn't exist
+[2021-06-10 23:06:56]	select * from _tbl_member where MemberID='280'
+[2021-06-10 23:06:56]	select * from _tbl_members_imps_limits where MemberID='280' and  date(TxnDate)=date('2021-06-10') order by id desc 
+[2021-06-10 23:06:56]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'j2jsoftw_hamiec._tbl_members_imps_limits' doesn't exist
+[2021-06-10 23:06:56]	select (sum(Credit)-sum(Debit)) as previous_balance from _tbl_accounts where date(TxnDate)<=date('2021-06-09') and MemberID='280'
+[2021-06-10 23:06:56]	select sum(rcamount) as rcamount from _tbl_transactions where TxnStatus='success' and memberid='280' and date(txndate)=date('2021-06-10') and operatorcode='MTB' 
+[2021-06-10 23:06:56]	select sum(rcamount) as rcamount from _tbl_transactions where TxnStatus='success' and memberid in (select MemberID from _tbl_member where MapedTo ='280') and date(txndate)=date('2021-06-10') and operatorcode='MTB' 
+[2021-06-10 23:06:59]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 23:07:02]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 23:07:02]	select * from _tbl_operators where OperatorCode='RV'
+[2021-06-10 23:07:02]	SELECT * FROM _tbl_operator_plans  where IsActive='1'  and OperatorCode='RV' order by Amount Desc
+[2021-06-10 23:07:02]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'j2jsoftw_hamiec._tbl_operator_plans' doesn't exist
+[2021-06-10 23:07:02]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'
+[2021-06-10 23:07:02]	select * from _tbl_member_operator where MemberID='280' and OperatorCode='RV'
+[2021-06-10 23:07:02]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'j2jsoftw_hamiec._tbl_member_operator' doesn't exist
+[2021-06-10 23:07:05]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='280'

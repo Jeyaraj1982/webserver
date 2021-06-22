@@ -1,0 +1,260 @@
+[2021-06-11 18:37:09]	select * from _tbl_member where md5(concat('J2J',MobileNumber))='4c5af795eabcb37ffdc2e9573be3829c' and md5(concat('J2J',MemberPassword))='20f8faabd653aa08a72dc7715d804ce6' and IsActive='1'
+[2021-06-11 21:03:26]	select MobileNumber from `_tbl_member` where `MobileNumber`='9944872965'
+[2021-06-11 21:06:49]	select MobileNumber from `_tbl_member` where `MobileNumber`='9944872965'
+[2021-06-11 21:17:29]	select MobileNumber from `_tbl_member` where `MobileNumber`='9944872966'
+[2021-06-11 21:17:29]	insert into `_tbl_member` (`MemberName`,`EmailID`,`MobileNumber`,`MemberPassword`,`Address1`,`Address2`,`PostalCode`,`MAB_Enabled`,`MoneyTransfer`,`IsActive`,`IsMember`,`MapedTo`,`MapedToName`,`create_from`,`CreatedOn`) values ('Jeyaraj','','9944872966','123456','','','','0','1','1','1','1','OnlineJ2J','Web','2021-06-11 21:17:29')
+[2021-06-11 21:17:29]	select * from _tbl_member where MemberID='284'
+[2021-06-11 21:18:25]	select MobileNumber from `_tbl_member` where `MobileNumber`='9944872965'
+[2021-06-11 21:18:25]	insert into `_tbl_member` (`MemberName`,`EmailID`,`MobileNumber`,`MemberPassword`,`Address1`,`Address2`,`PostalCode`,`MAB_Enabled`,`MoneyTransfer`,`IsActive`,`IsMember`,`MapedTo`,`MapedToName`,`create_from`,`CreatedOn`) values ('Jeyaraj','','9944872965','123456','','','','0','1','1','1','1','OnlineJ2J','Web','2021-06-11 21:18:25')
+[2021-06-11 21:18:25]	select * from _tbl_member where MemberID='285'
+[2021-06-11 21:19:05]	select MobileNumber from `_tbl_member` where `MobileNumber`='9944872965'
+[2021-06-11 21:19:05]	insert into `_tbl_member` (`MemberName`,`EmailID`,`MobileNumber`,`MemberPassword`,`Address1`,`Address2`,`PostalCode`,`MAB_Enabled`,`MoneyTransfer`,`IsActive`,`IsMember`,`MapedTo`,`MapedToName`,`create_from`,`CreatedOn`) values ('Jeyaraj','','9944872965','123456','','','','0','1','1','1','1','OnlineJ2J','Web','2021-06-11 21:19:05')
+[2021-06-11 21:19:05]	select * from _tbl_member where MemberID='286'
+[2021-06-11 21:22:31]	select MobileNumber from `_tbl_member` where `MobileNumber`='9944872965'
+[2021-06-11 21:22:31]	insert into `_tbl_member` (`MemberName`,`EmailID`,`MobileNumber`,`MemberPassword`,`Address1`,`Address2`,`PostalCode`,`MAB_Enabled`,`MoneyTransfer`,`IsActive`,`IsMember`,`MapedTo`,`MapedToName`,`create_from`,`CreatedOn`) values ('Jeyaraj','','9944872965','123456','','','','0','1','1','1','1','OnlineJ2J','Web','2021-06-11 21:22:31')
+[2021-06-11 21:22:31]	select * from _tbl_member where MemberID='287'
+[2021-06-11 21:25:53]	select MobileNumber from `_tbl_member` where `MobileNumber`='9944872965'
+[2021-06-11 21:25:53]	insert into `_tbl_member` (`MemberName`,`EmailID`,`MobileNumber`,`MemberPassword`,`Address1`,`Address2`,`PostalCode`,`MAB_Enabled`,`MoneyTransfer`,`IsActive`,`IsMember`,`MapedTo`,`MapedToName`,`create_from`,`CreatedOn`) values ('Jeyaraj','','9944872965','123456','','','','0','1','1','1','1','OnlineJ2J','Web','2021-06-11 21:25:53')
+[2021-06-11 21:25:53]	select * from _tbl_member where MemberID='288'
+[2021-06-11 21:27:45]	select MobileNumber from `_tbl_member` where `MobileNumber`='9944872965'
+[2021-06-11 21:27:45]	insert into `_tbl_member` (`MemberName`,`EmailID`,`MobileNumber`,`MemberPassword`,`Address1`,`Address2`,`PostalCode`,`MAB_Enabled`,`MoneyTransfer`,`IsActive`,`IsMember`,`MapedTo`,`MapedToName`,`create_from`,`CreatedOn`) values ('Jeyaraj','','9944872965','123456','','','','0','1','1','1','1','OnlineJ2J','Web','2021-06-11 21:27:45')
+[2021-06-11 21:27:45]	select * from _tbl_member where MemberID='289'
+[2021-06-11 21:27:53]	select * from _tbl_members where MemberID='289'
+[2021-06-11 21:27:53]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'j2jsoftw_hamiec._tbl_members' doesn't exist
+[2021-06-11 21:31:04]	select * from _tbl_members where MemberID='289'
+[2021-06-11 21:31:04]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'j2jsoftw_hamiec._tbl_members' doesn't exist
+[2021-06-11 21:32:57]	select * from _tbl_members where MemberID='289'
+[2021-06-11 21:32:57]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'j2jsoftw_hamiec._tbl_members' doesn't exist
+[2021-06-11 21:33:50]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RA'
+[2021-06-11 21:33:51]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RB'
+[2021-06-11 21:33:51]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RJ'
+[2021-06-11 21:33:51]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RV'
+[2021-06-11 21:33:51]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RI'
+[2021-06-11 21:33:51]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DA'
+[2021-06-11 21:33:51]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DS'
+[2021-06-11 21:33:51]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DV'
+[2021-06-11 21:33:51]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DB'
+[2021-06-11 21:33:51]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DT'
+[2021-06-11 21:33:51]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DD'
+[2021-06-11 21:33:51]	select * from `_tbl_news` where (NewsFor='Retailers' or NewsFor='All') and IsPublish='1' and NewsID not in (select NewsID from _tbl_news_log where MemberID='289')  order by `NewsID` desc 
+[2021-06-11 21:33:51]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'j2jsoftw_hamiec._tbl_news' doesn't exist
+[2021-06-11 21:33:51]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='289'
+[2021-06-11 21:33:51]	select * from _tbl_transactions where MemberID='289' order by txnid desc limit 0,5
+[2021-06-11 21:33:51]	select * from _tbl_transactions where MemberID='289' order by txnid desc limit 0,5
+[2021-06-11 21:34:09]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RA'
+[2021-06-11 21:34:09]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RB'
+[2021-06-11 21:34:09]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RJ'
+[2021-06-11 21:34:09]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RV'
+[2021-06-11 21:34:09]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RI'
+[2021-06-11 21:34:09]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DA'
+[2021-06-11 21:34:09]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DS'
+[2021-06-11 21:34:09]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DV'
+[2021-06-11 21:34:09]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DB'
+[2021-06-11 21:34:09]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DT'
+[2021-06-11 21:34:09]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DD'
+[2021-06-11 21:34:09]	select * from `_tbl_news` where (NewsFor='Retailers' or NewsFor='All') and IsPublish='1' and NewsID not in (select NewsID from _tbl_news_log where MemberID='289')  order by `NewsID` desc 
+[2021-06-11 21:34:09]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'j2jsoftw_hamiec._tbl_news' doesn't exist
+[2021-06-11 21:34:09]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='289'
+[2021-06-11 21:34:09]	select * from _tbl_transactions where MemberID='289' order by txnid desc limit 0,5
+[2021-06-11 21:34:09]	select * from _tbl_transactions where MemberID='289' order by txnid desc limit 0,5
+[2021-06-11 21:34:55]	select * from tbl_admin_bank_details where IsActive='1' and is_dmt='0'
+[2021-06-11 21:34:57]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RA'
+[2021-06-11 21:34:57]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RB'
+[2021-06-11 21:34:57]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RJ'
+[2021-06-11 21:34:57]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RV'
+[2021-06-11 21:34:57]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RI'
+[2021-06-11 21:34:57]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DA'
+[2021-06-11 21:34:57]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DS'
+[2021-06-11 21:34:57]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DV'
+[2021-06-11 21:34:57]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DB'
+[2021-06-11 21:34:57]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DT'
+[2021-06-11 21:34:57]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DD'
+[2021-06-11 21:34:57]	select * from `_tbl_news` where (NewsFor='Retailers' or NewsFor='All') and IsPublish='1' and NewsID not in (select NewsID from _tbl_news_log where MemberID='289')  order by `NewsID` desc 
+[2021-06-11 21:34:57]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'j2jsoftw_hamiec._tbl_news' doesn't exist
+[2021-06-11 21:34:57]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='289'
+[2021-06-11 21:34:57]	select * from _tbl_transactions where MemberID='289' order by txnid desc limit 0,5
+[2021-06-11 21:34:57]	select * from _tbl_transactions where MemberID='289' order by txnid desc limit 0,5
+[2021-06-11 21:35:59]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RA'
+[2021-06-11 21:35:59]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RB'
+[2021-06-11 21:35:59]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RJ'
+[2021-06-11 21:35:59]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RV'
+[2021-06-11 21:35:59]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RI'
+[2021-06-11 21:35:59]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DA'
+[2021-06-11 21:35:59]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DS'
+[2021-06-11 21:35:59]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DV'
+[2021-06-11 21:35:59]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DB'
+[2021-06-11 21:35:59]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DT'
+[2021-06-11 21:35:59]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DD'
+[2021-06-11 21:35:59]	select * from `_tbl_news` where (NewsFor='Retailers' or NewsFor='All') and IsPublish='1' and NewsID not in (select NewsID from _tbl_news_log where MemberID='289')  order by `NewsID` desc 
+[2021-06-11 21:35:59]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'j2jsoftw_hamiec._tbl_news' doesn't exist
+[2021-06-11 21:35:59]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='289'
+[2021-06-11 21:35:59]	select * from _tbl_transactions where MemberID='289' order by txnid desc limit 0,5
+[2021-06-11 21:35:59]	select * from _tbl_transactions where MemberID='289' order by txnid desc limit 0,5
+[2021-06-11 21:36:03]	select * from _tbl_transactions where operatorcode in ('RA','RB','RJ','RV','RI') and MemberID='289' order by txnid desc limit 0,10
+[2021-06-11 21:36:03]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RA'
+[2021-06-11 21:36:03]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RB'
+[2021-06-11 21:36:03]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RJ'
+[2021-06-11 21:36:03]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RV'
+[2021-06-11 21:36:03]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RI'
+[2021-06-11 21:36:07]	select * from _tbl_transactions where operatorcode in ('DA','DS','DV','DB','DT','DD') and MemberID='289' order by txnid desc limit 0,10
+[2021-06-11 21:36:07]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DA'
+[2021-06-11 21:36:07]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DS'
+[2021-06-11 21:36:07]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DV'
+[2021-06-11 21:36:07]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DB'
+[2021-06-11 21:36:07]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DT'
+[2021-06-11 21:36:07]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DD'
+[2021-06-11 21:36:10]	select * from _tbl_operators where OperatorCode='MTB'
+[2021-06-11 21:36:10]	select * from _tbl_member_operator where MemberID='289' and OperatorCode='MTB'
+[2021-06-11 21:36:10]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'j2jsoftw_hamiec._tbl_member_operator' doesn't exist
+[2021-06-11 21:36:14]	select * from _tbl_accounts where (date(TxnDate)>=date('2021-06-11') and date(TxnDate)<=date('2021-06-11') ) and MemberID='289' order by AccountID desc
+[2021-06-11 21:37:08]	select * from _tbl_accounts where (date(TxnDate)>=date('2021-06-11') and date(TxnDate)<=date('2021-06-11') ) and MemberID='289' order by AccountID desc
+[2021-06-11 21:37:34]	select * from _tbl_Members where MemberID='289'
+[2021-06-11 21:37:34]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'j2jsoftw_hamiec._tbl_Members' doesn't exist
+[2021-06-11 21:37:34]	select * from _tbl_region where IsActive='1'
+[2021-06-11 21:39:49]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RA'
+[2021-06-11 21:39:49]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RB'
+[2021-06-11 21:39:49]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RJ'
+[2021-06-11 21:39:49]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RV'
+[2021-06-11 21:39:49]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RI'
+[2021-06-11 21:39:49]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DA'
+[2021-06-11 21:39:49]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DS'
+[2021-06-11 21:39:49]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DV'
+[2021-06-11 21:39:49]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DB'
+[2021-06-11 21:39:49]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DT'
+[2021-06-11 21:39:49]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DD'
+[2021-06-11 21:39:49]	select * from `_tbl_news` where (NewsFor='Retailers' or NewsFor='All') and IsPublish='1' and NewsID not in (select NewsID from _tbl_news_log where MemberID='289')  order by `NewsID` desc 
+[2021-06-11 21:39:49]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'j2jsoftw_hamiec._tbl_news' doesn't exist
+[2021-06-11 21:39:49]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='289'
+[2021-06-11 21:39:49]	select * from _tbl_transactions where MemberID='289' order by txnid desc limit 0,5
+[2021-06-11 21:39:49]	select * from _tbl_transactions where MemberID='289' order by txnid desc limit 0,5
+[2021-06-11 21:40:13]	select * from tbl_admin_bank_details where IsActive='1' and is_dmt='0'
+[2021-06-11 21:40:18]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RA'
+[2021-06-11 21:40:18]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RB'
+[2021-06-11 21:40:18]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RJ'
+[2021-06-11 21:40:18]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RV'
+[2021-06-11 21:40:18]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RI'
+[2021-06-11 21:40:18]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DA'
+[2021-06-11 21:40:18]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DS'
+[2021-06-11 21:40:18]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DV'
+[2021-06-11 21:40:18]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DB'
+[2021-06-11 21:40:18]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DT'
+[2021-06-11 21:40:18]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DD'
+[2021-06-11 21:40:18]	select * from `_tbl_news` where (NewsFor='Retailers' or NewsFor='All') and IsPublish='1' and NewsID not in (select NewsID from _tbl_news_log where MemberID='289')  order by `NewsID` desc 
+[2021-06-11 21:40:18]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'j2jsoftw_hamiec._tbl_news' doesn't exist
+[2021-06-11 21:40:18]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='289'
+[2021-06-11 21:40:18]	select * from _tbl_transactions where MemberID='289' order by txnid desc limit 0,5
+[2021-06-11 21:40:18]	select * from _tbl_transactions where MemberID='289' order by txnid desc limit 0,5
+[2021-06-11 21:40:19]	select * from tbl_admin_bank_details where IsActive='1' and is_dmt='0'
+[2021-06-11 21:40:22]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RA'
+[2021-06-11 21:40:22]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RB'
+[2021-06-11 21:40:22]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RJ'
+[2021-06-11 21:40:22]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RV'
+[2021-06-11 21:40:22]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RI'
+[2021-06-11 21:40:22]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DA'
+[2021-06-11 21:40:22]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DS'
+[2021-06-11 21:40:22]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DV'
+[2021-06-11 21:40:22]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DB'
+[2021-06-11 21:40:22]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DT'
+[2021-06-11 21:40:22]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DD'
+[2021-06-11 21:40:22]	select * from `_tbl_news` where (NewsFor='Retailers' or NewsFor='All') and IsPublish='1' and NewsID not in (select NewsID from _tbl_news_log where MemberID='289')  order by `NewsID` desc 
+[2021-06-11 21:40:22]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'j2jsoftw_hamiec._tbl_news' doesn't exist
+[2021-06-11 21:40:22]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='289'
+[2021-06-11 21:40:22]	select * from _tbl_transactions where MemberID='289' order by txnid desc limit 0,5
+[2021-06-11 21:40:22]	select * from _tbl_transactions where MemberID='289' order by txnid desc limit 0,5
+[2021-06-11 21:40:24]	select * from tbl_admin_bank_details where IsActive='1' and is_dmt='0'
+[2021-06-11 21:41:00]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RA'
+[2021-06-11 21:41:00]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RB'
+[2021-06-11 21:41:00]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RJ'
+[2021-06-11 21:41:00]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RV'
+[2021-06-11 21:41:00]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RI'
+[2021-06-11 21:41:00]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DA'
+[2021-06-11 21:41:00]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DS'
+[2021-06-11 21:41:00]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DV'
+[2021-06-11 21:41:00]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DB'
+[2021-06-11 21:41:00]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DT'
+[2021-06-11 21:41:00]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DD'
+[2021-06-11 21:41:00]	select * from `_tbl_news` where (NewsFor='Retailers' or NewsFor='All') and IsPublish='1' and NewsID not in (select NewsID from _tbl_news_log where MemberID='289')  order by `NewsID` desc 
+[2021-06-11 21:41:00]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'j2jsoftw_hamiec._tbl_news' doesn't exist
+[2021-06-11 21:41:00]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='289'
+[2021-06-11 21:41:00]	select * from _tbl_transactions where MemberID='289' order by txnid desc limit 0,5
+[2021-06-11 21:41:00]	select * from _tbl_transactions where MemberID='289' order by txnid desc limit 0,5
+[2021-06-11 21:41:03]	select * from tbl_admin_bank_details where IsActive='1' and is_dmt='0'
+[2021-06-11 21:41:59]	select * from _tbl_accounts where MemberID='289' and TxnDoneBy  <>'289' order by AccountID desc
+[2021-06-11 21:41:59]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'TxnDoneBy' in 'where clause'
+[2021-06-11 21:42:42]	select * from _tbl_accounts where MemberID='289' and TxnDoneBy  <>'289' order by AccountID desc
+[2021-06-11 21:42:42]	SQLSTATE[42S22]: Column not found: 1054 Unknown column 'TxnDoneBy' in 'where clause'
+[2021-06-11 21:42:45]	select * from _tbl_accounts where (date(TxnDate)>=date('2021-06-11') and date(TxnDate)<=date('2021-06-11') ) and MemberID='289' order by AccountID desc
+[2021-06-11 21:42:59]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RA'
+[2021-06-11 21:42:59]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RB'
+[2021-06-11 21:42:59]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RJ'
+[2021-06-11 21:42:59]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RV'
+[2021-06-11 21:42:59]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RI'
+[2021-06-11 21:42:59]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DA'
+[2021-06-11 21:42:59]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DS'
+[2021-06-11 21:42:59]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DV'
+[2021-06-11 21:42:59]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DB'
+[2021-06-11 21:42:59]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DT'
+[2021-06-11 21:42:59]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DD'
+[2021-06-11 21:42:59]	select * from `_tbl_news` where (NewsFor='Retailers' or NewsFor='All') and IsPublish='1' and NewsID not in (select NewsID from _tbl_news_log where MemberID='289')  order by `NewsID` desc 
+[2021-06-11 21:42:59]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'j2jsoftw_hamiec._tbl_news' doesn't exist
+[2021-06-11 21:42:59]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='289'
+[2021-06-11 21:42:59]	select * from _tbl_transactions where MemberID='289' order by txnid desc limit 0,5
+[2021-06-11 21:42:59]	select * from _tbl_transactions where MemberID='289' order by txnid desc limit 0,5
+[2021-06-11 21:51:20]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RA'
+[2021-06-11 21:51:20]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RB'
+[2021-06-11 21:51:20]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RJ'
+[2021-06-11 21:51:20]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RV'
+[2021-06-11 21:51:20]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RI'
+[2021-06-11 21:51:20]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DA'
+[2021-06-11 21:51:20]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DS'
+[2021-06-11 21:51:20]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DV'
+[2021-06-11 21:51:20]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DB'
+[2021-06-11 21:51:20]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DT'
+[2021-06-11 21:51:20]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DD'
+[2021-06-11 21:51:20]	select * from `_tbl_news` where (NewsFor='Retailers' or NewsFor='All') and IsPublish='1' and NewsID not in (select NewsID from _tbl_news_log where MemberID='289')  order by `NewsID` desc 
+[2021-06-11 21:51:20]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'j2jsoftw_hamiec._tbl_news' doesn't exist
+[2021-06-11 21:51:20]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='289'
+[2021-06-11 21:51:20]	select * from _tbl_transactions where MemberID='289' order by txnid desc limit 0,5
+[2021-06-11 21:51:20]	select * from _tbl_transactions where MemberID='289' order by txnid desc limit 0,5
+[2021-06-11 21:52:05]	select * from `_tbl_Members` where  `MemberID`='289'
+[2021-06-11 21:52:05]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'j2jsoftw_hamiec._tbl_Members' doesn't exist
+[2021-06-11 21:52:12]	select * from `_tbl_Members` where  `MemberID`='1'
+[2021-06-11 21:52:12]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'j2jsoftw_hamiec._tbl_Members' doesn't exist
+[2021-06-11 21:52:18]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RA'
+[2021-06-11 21:52:18]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RB'
+[2021-06-11 21:52:18]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RJ'
+[2021-06-11 21:52:18]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RV'
+[2021-06-11 21:52:18]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RI'
+[2021-06-11 21:52:18]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DA'
+[2021-06-11 21:52:18]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DS'
+[2021-06-11 21:52:18]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DV'
+[2021-06-11 21:52:18]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DB'
+[2021-06-11 21:52:18]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DT'
+[2021-06-11 21:52:18]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DD'
+[2021-06-11 21:52:18]	select * from `_tbl_news` where (NewsFor='Retailers' or NewsFor='All') and IsPublish='1' and NewsID not in (select NewsID from _tbl_news_log where MemberID='289')  order by `NewsID` desc 
+[2021-06-11 21:52:18]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'j2jsoftw_hamiec._tbl_news' doesn't exist
+[2021-06-11 21:52:18]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='289'
+[2021-06-11 21:52:18]	select * from _tbl_transactions where MemberID='289' order by txnid desc limit 0,5
+[2021-06-11 21:52:18]	select * from _tbl_transactions where MemberID='289' order by txnid desc limit 0,5
+[2021-06-11 22:00:19]	select * from _tbl_transactions where operatorcode in ('RA','RB','RJ','RV','RI') and MemberID='289' order by txnid desc limit 0,10
+[2021-06-11 22:00:19]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RA'
+[2021-06-11 22:00:19]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RB'
+[2021-06-11 22:00:19]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RJ'
+[2021-06-11 22:00:19]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RV'
+[2021-06-11 22:00:19]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RI'
+[2021-06-11 22:01:59]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RA'
+[2021-06-11 22:01:59]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RB'
+[2021-06-11 22:01:59]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RJ'
+[2021-06-11 22:01:59]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RV'
+[2021-06-11 22:01:59]	select * from `_tbl_operators` where APIID='0' and OperatorCode='RI'
+[2021-06-11 22:01:59]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DA'
+[2021-06-11 22:01:59]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DS'
+[2021-06-11 22:01:59]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DV'
+[2021-06-11 22:01:59]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DB'
+[2021-06-11 22:01:59]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DT'
+[2021-06-11 22:01:59]	select * from `_tbl_operators` where APIID='0' and OperatorCode='DD'
+[2021-06-11 22:01:59]	select * from `_tbl_news` where (NewsFor='Retailers' or NewsFor='All') and IsPublish='1' and NewsID not in (select NewsID from _tbl_news_log where MemberID='289')  order by `NewsID` desc 
+[2021-06-11 22:01:59]	SQLSTATE[42S02]: Base table or view not found: 1146 Table 'j2jsoftw_hamiec._tbl_news' doesn't exist
+[2021-06-11 22:01:59]	select (sum(Credit)-sum(Debit)) as bal from _tbl_accounts where MemberID='289'
+[2021-06-11 22:01:59]	select * from _tbl_transactions where MemberID='289' order by txnid desc limit 0,5
+[2021-06-11 22:01:59]	select * from _tbl_transactions where MemberID='289' order by txnid desc limit 0,5
